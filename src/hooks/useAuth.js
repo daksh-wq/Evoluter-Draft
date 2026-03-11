@@ -177,7 +177,43 @@ export function useAuth() {
         setLoginError('');
         setAuthLoading(true);
         try {
-            const result = await createUserWithEmailAndPassword(auth, email, password);
+            const emailLower = email.toLowerCase();
+            const domain = emailLower.split('@')[1];
+
+            // 1. Block known dummy domains quickly
+            const blockedDomains = [
+                'example.com', 'test.com', 'tempmail.com',
+                'mailinator.com', '10minutemail.com', 'guerrillamail.com',
+                'none.com', 'fake.com', 'yopmail.com', 'asdf.com'
+            ];
+
+            if (blockedDomains.includes(domain)) {
+                throw {
+                    code: 'custom/invalid-email-dns',
+                    reason: `The domain '@${domain}' is a disposable email provider. Please use a real email address.`
+                };
+            }
+
+            // 2. Perform Deep DNS Validation directly from frontend via Google's public DNS over HTTPS
+            try {
+                const response = await fetch(`https://dns.google/resolve?name=${domain}&type=MX`);
+                const data = await response.json();
+
+                // If the Answer array doesn't exist or is empty, the domain has no MX records
+                if (!data.Answer || data.Answer.length === 0) {
+                    throw {
+                        code: 'custom/invalid-email-dns',
+                        reason: `The domain '@${domain}' cannot receive emails. Please check for spelling errors.`
+                    };
+                }
+            } catch (networkOrDnsError) {
+                // If it's our custom throw, bubble it up. Otherwise, it might be a fetch error, let it pass to not block real users if DNS API is down.
+                if (networkOrDnsError.code === 'custom/invalid-email-dns') throw networkOrDnsError;
+                logger.warn("DNS check failed, falling back to allowing signup", networkOrDnsError);
+            }
+
+            // STEP 3: Create user in Firebase Auth
+            const result = await createUserWithEmailAndPassword(auth, emailLower, password);
             const newUser = result.user;
 
             // Update Auth Profile
@@ -193,8 +229,10 @@ export function useAuth() {
                 setLoginError('Account already exists. Please Sign In.');
             } else if (error.code === 'auth/weak-password') {
                 setLoginError('Password should be at least 6 characters.');
+            } else if (error.code === 'custom/invalid-email-dns') {
+                setLoginError(`Email validation failed: ${error.reason || 'Disposable or invalid domains are not allowed.'}`);
             } else {
-                setLoginError('Failed to create account. Try again.');
+                setLoginError(error.message || 'Failed to create account. Try again.');
             }
         } finally {
             setAuthLoading(false);

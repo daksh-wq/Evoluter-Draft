@@ -36,6 +36,7 @@ exports.validateTestSession = proctoring.validateTestSession;
 const authValidation = require('./src/authValidation');
 exports.validateUserSession = authValidation.validateUserSession;
 exports.onUserCreate = authValidation.onUserCreate;
+exports.validateEmailDNS = authValidation.validateEmailDNS;
 
 // ─── Usage Stats (SCALE-4) ──────────────────────────────
 const usageStats = require('./src/usageStats');
