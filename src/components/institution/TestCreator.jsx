@@ -7,6 +7,7 @@ import logger from '../../utils/logger';
 import { generateQuestions, generateQuestionsFromDocument, suggestTestTopics } from '../../services/geminiService';
 import { extractTextFromPDF } from '../../utils/pdfExtractor';
 import { batchService } from '../../features/exam-engine/services/batchService';
+import { CustomDropdown } from '../common';
 
 const TestCreator = ({ userData }) => {
     const navigate = useNavigate();
@@ -375,19 +376,31 @@ const TestCreator = ({ userData }) => {
                         </h1>
                     </div>
                     <div className="flex items-center gap-4">
-                        <div className="hidden md:flex text-sm font-medium text-slate-500 gap-6">
-                            <span>{questions.length} Questions</span>
-                            <span>{duration} Mins</span>
+                        <div className="flex items-center gap-3">
+                            <span className="hidden md:inline-block text-sm font-bold text-slate-400 mr-4">
+                                {questions.length} Question{questions.length !== 1 && 's'}
+                            </span>
+                            <button onClick={() => navigate(-1)} className="px-4 py-2 font-bold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors text-sm">
+                                Cancel
+                            </button>
+                            <button
+                                onClick={handlePublish}
+                                disabled={isSubmitting || questions.length === 0}
+                                className="px-5 py-2 bg-[#2278B0] text-white font-bold rounded-lg shadow-sm hover:bg-[#1b5f8a] transition-all flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                            >
+                                {isSubmitting ? <RefreshCw className="animate-spin" size={16} /> : <Save size={16} />}
+                                Publish
+                            </button>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <main className="max-w-7xl mx-auto px-4 md:px-6 py-8 pb-32">
-                <div className="flex flex-col xl:flex-row gap-8">
+            <main className="max-w-7xl mx-auto px-4 md:px-6 py-8 pb-16">
+                <div className="space-y-8">
 
-                    {/* LEFT PANEL: CONFIGURATION */}
-                    <div className="w-full xl:w-1/3 space-y-6">
+                    {/* Row 1: CONFIGURATION GRIDS */}
+                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8">
 
                         {/* 1. Test Metadata Card */}
                         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
@@ -418,18 +431,19 @@ const TestCreator = ({ userData }) => {
                                     </div>
                                     <div>
                                         <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Duration</label>
-                                        <select
-                                            value={duration}
-                                            onChange={(e) => setDuration(e.target.value)}
-                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium text-slate-700 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
-                                        >
-                                            <option value="15">15 Mins</option>
-                                            <option value="30">30 Mins</option>
-                                            <option value="60">1 Hour</option>
-                                            <option value="90">1.5 Hours</option>
-                                            <option value="120">2 Hours</option>
-                                            <option value="180">3 Hours</option>
-                                        </select>
+                                        <CustomDropdown
+                                            options={[
+                                                { label: '15 Mins', value: '15' },
+                                                { label: '30 Mins', value: '30' },
+                                                { label: '1 Hour', value: '60' },
+                                                { label: '1.5 Hours', value: '90' },
+                                                { label: '2 Hours', value: '120' },
+                                                { label: '3 Hours', value: '180' }
+                                            ]}
+                                            value={String(duration)}
+                                            onChange={(val) => setDuration(val)}
+                                            fullWidth={true}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -495,6 +509,10 @@ const TestCreator = ({ userData }) => {
                                 </div>
                             )}
                         </div>
+                    </div> {/* End Row 1 */}
+
+                    {/* Row 2: Schedule & Generator */}
+                    <div className="grid grid-cols-1 xl:grid-cols-2 items-start gap-6 lg:gap-8">
 
                         {/* 1.75 Scheduling */}
                         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
@@ -573,13 +591,7 @@ const TestCreator = ({ userData }) => {
                                 {/* MANUAL MODE */}
                                 {mode === 'manual' && (
                                     <div className="text-center py-6">
-                                        <div className="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600">
-                                            <Plus size={32} />
-                                        </div>
-                                        <p className="text-slate-500 text-sm mb-6">Build your test question by question using the editor on the right.</p>
-                                        <button onClick={addQuestion} className="w-full py-3.5 border-2 border-dashed border-indigo-200 text-indigo-600 font-bold rounded-xl hover:bg-indigo-50 hover:border-indigo-300 transition-all flex items-center justify-center gap-2">
-                                            <Plus size={20} /> Add New Question
-                                        </button>
+                                        <p className="text-slate-500 text-sm">Build your test question by question using the editor below.</p>
                                     </div>
                                 )}
 
@@ -637,27 +649,29 @@ const TestCreator = ({ userData }) => {
                                         <div className="grid grid-cols-2 gap-3">
                                             <div>
                                                 <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Count</label>
-                                                <select
-                                                    value={genConfig.count}
-                                                    onChange={(e) => setGenConfig({ ...genConfig, count: e.target.value })}
-                                                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium outline-none"
-                                                >
-                                                    <option value="5">5 Qs</option>
-                                                    <option value="10">10 Qs</option>
-                                                    <option value="20">20 Qs</option>
-                                                </select>
+                                                <CustomDropdown
+                                                    options={[
+                                                        { label: '5 Qs', value: '5' },
+                                                        { label: '10 Qs', value: '10' },
+                                                        { label: '20 Qs', value: '20' }
+                                                    ]}
+                                                    value={String(genConfig.count)}
+                                                    onChange={(val) => setGenConfig({ ...genConfig, count: val })}
+                                                    fullWidth={true}
+                                                />
                                             </div>
                                             <div>
                                                 <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Difficulty</label>
-                                                <select
+                                                <CustomDropdown
+                                                    options={[
+                                                        { label: 'Easy', value: 'Easy' },
+                                                        { label: 'Medium', value: 'Medium' },
+                                                        { label: 'Hard', value: 'Hard' }
+                                                    ]}
                                                     value={genConfig.difficulty}
-                                                    onChange={(e) => setGenConfig({ ...genConfig, difficulty: e.target.value })}
-                                                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium outline-none"
-                                                >
-                                                    <option value="Easy">Easy</option>
-                                                    <option value="Medium">Medium</option>
-                                                    <option value="Hard">Hard</option>
-                                                </select>
+                                                    onChange={(val) => setGenConfig({ ...genConfig, difficulty: val })}
+                                                    fullWidth={true}
+                                                />
                                             </div>
                                         </div>
                                         <button
@@ -708,27 +722,29 @@ const TestCreator = ({ userData }) => {
                                         <div className="grid grid-cols-2 gap-3">
                                             <div>
                                                 <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Count</label>
-                                                <select
-                                                    value={genConfig.count}
-                                                    onChange={(e) => setGenConfig({ ...genConfig, count: e.target.value })}
-                                                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium outline-none"
-                                                >
-                                                    <option value="5">5 Qs</option>
-                                                    <option value="10">10 Qs</option>
-                                                    <option value="20">20 Qs</option>
-                                                </select>
+                                                <CustomDropdown
+                                                    options={[
+                                                        { label: '5 Qs', value: '5' },
+                                                        { label: '10 Qs', value: '10' },
+                                                        { label: '20 Qs', value: '20' }
+                                                    ]}
+                                                    value={String(genConfig.count)}
+                                                    onChange={(val) => setGenConfig({ ...genConfig, count: val })}
+                                                    fullWidth={true}
+                                                />
                                             </div>
                                             <div>
                                                 <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Difficulty</label>
-                                                <select
+                                                <CustomDropdown
+                                                    options={[
+                                                        { label: 'Easy', value: 'Easy' },
+                                                        { label: 'Medium', value: 'Medium' },
+                                                        { label: 'Hard', value: 'Hard' }
+                                                    ]}
                                                     value={genConfig.difficulty}
-                                                    onChange={(e) => setGenConfig({ ...genConfig, difficulty: e.target.value })}
-                                                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium outline-none"
-                                                >
-                                                    <option value="Easy">Easy</option>
-                                                    <option value="Medium">Medium</option>
-                                                    <option value="Hard">Hard</option>
-                                                </select>
+                                                    onChange={(val) => setGenConfig({ ...genConfig, difficulty: val })}
+                                                    fullWidth={true}
+                                                />
                                             </div>
                                         </div>
 
@@ -756,10 +772,10 @@ const TestCreator = ({ userData }) => {
                                 )}
                             </div>
                         </div>
-                    </div>
+                    </div> {/* End Row 2 */}
 
-                    {/* RIGHT PANEL: QUESTION EDITOR */}
-                    <div className="flex-1 space-y-6">
+                    {/* FULL WIDTH: QUESTION EDITOR */}
+                    <div className="space-y-6 border-t border-slate-200 pt-8 mt-8">
                         <div className="flex items-center justify-between">
                             <h3 className="font-bold text-lg text-slate-800 flex items-center gap-2">
                                 <span className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center text-slate-500 text-sm font-black border border-slate-200">
@@ -792,8 +808,12 @@ const TestCreator = ({ userData }) => {
                                         <textarea
                                             placeholder="Type your question here..."
                                             value={q.text}
-                                            onChange={(e) => updateQuestion(qIdx, 'text', e.target.value)}
-                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl p-4 font-bold text-slate-800 min-h-[100px] focus:bg-white focus:border-indigo-500 focus:ring-0 outline-none resize-none transition-all placeholder:text-slate-400"
+                                            onChange={(e) => {
+                                                updateQuestion(qIdx, 'text', e.target.value);
+                                                e.target.style.height = 'auto';
+                                                e.target.style.height = e.target.scrollHeight + 'px';
+                                            }}
+                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl p-4 font-bold text-slate-800 min-h-[100px] focus:bg-white focus:border-indigo-500 focus:ring-0 outline-none resize-none transition-colors overflow-hidden placeholder:text-slate-400"
                                         />
                                     </div>
 
@@ -849,9 +869,29 @@ const TestCreator = ({ userData }) => {
                                         <BookOpen size={40} />
                                     </div>
                                     <h4 className="text-lg font-bold text-slate-700 mb-2">Workspace Empty</h4>
-                                    <p className="text-slate-400 max-w-xs mx-auto">
+                                    <p className="text-slate-400 max-w-xs mx-auto mb-6">
                                         Use the panel on the left to add questions manually, by topic, or from a PDF.
                                     </p>
+                                    <button
+                                        onClick={addQuestion}
+                                        className="bg-white border-2 border-dashed border-indigo-200 text-indigo-600 font-bold px-6 py-3 rounded-xl hover:bg-indigo-50 hover:border-indigo-300 transition-all inline-flex items-center gap-2 shadow-sm hover:shadow"
+                                    >
+                                        <Plus size={20} />
+                                        Add First Question
+                                    </button>
+                                </div>
+                            )}
+
+                            {/* Floating "Add Question" Button mimicking Google Forms */}
+                            {questions.length > 0 && (
+                                <div className="flex justify-center mt-8">
+                                    <button
+                                        onClick={addQuestion}
+                                        className="bg-white border-2 border-dashed border-indigo-200 text-indigo-600 font-bold px-8 py-4 rounded-xl hover:bg-indigo-50 hover:border-indigo-300 transition-all flex items-center gap-3 shadow-sm hover:shadow"
+                                    >
+                                        <Plus size={20} />
+                                        Add Another Question
+                                    </button>
                                 </div>
                             )}
                         </div>
@@ -859,27 +899,7 @@ const TestCreator = ({ userData }) => {
                 </div>
             </main>
 
-            {/* Sticky Action Footer */}
-            <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/80 backdrop-blur-md border-t border-slate-200 z-40">
-                <div className="max-w-7xl mx-auto flex items-center justify-between">
-                    <p className="hidden md:block text-sm text-slate-500 font-medium">
-                        {questions.length > 0 ? 'Ready to publish?' : 'Add questions to proceed'}
-                    </p>
-                    <div className="flex items-center gap-4 w-full md:w-auto justify-end">
-                        <button onClick={() => navigate(-1)} className="px-6 py-3 font-bold text-slate-500 hover:bg-slate-100 rounded-xl transition-colors">
-                            Cancel
-                        </button>
-                        <button
-                            onClick={handlePublish}
-                            disabled={isSubmitting || questions.length === 0}
-                            className="px-8 py-3 bg-indigo-950 text-white font-bold rounded-xl shadow-lg hover:bg-indigo-900 transition-all flex items-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-indigo-500/20 active:scale-95"
-                        >
-                            {isSubmitting ? <RefreshCw className="animate-spin" /> : <Save size={20} />}
-                            Publish Test
-                        </button>
-                    </div>
-                </div>
-            </div>
+            {/* Footer actions moved to header to completely prevent overlap on scrolling */}
         </div>
     );
 };

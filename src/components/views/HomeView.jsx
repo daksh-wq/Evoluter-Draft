@@ -686,17 +686,19 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                                 </div>
                             </div>
 
-                            {/* Floating Badge */}
-                            <motion.div
-                                className="absolute -bottom-6 -left-6 bg-indigo-600 text-white p-4 rounded-xl shadow-xl flex items-center gap-3"
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                            >
-                                <div className="font-bold text-2xl">30%</div>
-                                <div className="text-xs font-medium opacity-80 leading-tight">
-                                    Improvement in <br /> Student Scores
-                                </div>
-                            </motion.div>
+                            {/* Floating Badge — centered below the card in normal flow */}
+                            <div className="flex justify-center mt-8">
+                                <motion.div
+                                    className="bg-indigo-600 text-white px-6 py-4 rounded-2xl shadow-xl shadow-indigo-300/40 flex items-center gap-3"
+                                    animate={{ y: [0, -8, 0] }}
+                                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                >
+                                    <div className="font-black text-3xl leading-none">30%</div>
+                                    <div className="text-xs font-semibold opacity-90 leading-tight">
+                                        Improvement in <br /> Student Scores
+                                    </div>
+                                </motion.div>
+                            </div>
                         </motion.div>
                     </div>
                 </div>

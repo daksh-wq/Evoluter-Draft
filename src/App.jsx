@@ -16,7 +16,6 @@ const SyllabusView = lazy(() => import('./components/views/SyllabusView'));
 // const LeaderboardView = lazy(() => import('./components/views/LeaderboardView'));
 const TestView = lazy(() => import('./components/views/TestView'));
 const OnboardingView = lazy(() => import('./components/views/OnboardingView'));
-const ProfileView = lazy(() => import('./components/views/ProfileView'));
 const ResultView = lazy(() => import('./components/views/ResultView'));
 const HomeView = lazy(() => import('./components/views/HomeView'));
 const FlashcardsView = lazy(() => import('./components/views/FlashcardsView'));
@@ -61,6 +60,8 @@ const TestCreator = lazy(() => import('./components/institution/TestCreator'));
 const TestManager = lazy(() => import('./components/institution/TestManager'));
 const StudentInstitutionView = lazy(() => import('./components/institution/StudentInstitutionView'));
 const TestAnalytics = lazy(() => import('./components/institution/TestAnalytics'));
+const InstitutionProfileView = lazy(() => import('./components/institution/InstitutionProfileView'));
+const ProfileView = lazy(() => import('./components/views/ProfileView'));
 const StudentClassroom = lazy(() => import('./components/student/StudentClassroom'));
 
 const ProtectedLayout = ({
@@ -498,7 +499,11 @@ function App() {
 
         <Route path={ROUTES.PROFILE} element={
           <ProtectedLayout {...layoutProps}>
-            <ProfileView />
+            {userData?.role === 'institution' ? (
+              <InstitutionProfileView user={user} userData={userData} onLogout={handleLogout} />
+            ) : (
+              <ProfileView user={user} userData={userData} onLogout={handleLogout} />
+            )}
           </ProtectedLayout>
         } />
 

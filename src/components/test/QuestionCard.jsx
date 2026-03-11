@@ -31,7 +31,7 @@ export const QuestionCard = ({
     const topicTag = question.tags?.find(t => t.type === 'topic') || { type: 'topic', label: question.topic };
 
     return (
-        <div className="max-w-3xl mx-auto pb-24">
+        <div className="max-w-3xl mx-auto">
             {/* Question Header & Tags */}
             <div className={`flex flex-col gap-3 mb-6 transition-all duration-300 ${isZenMode ? 'mt-16 sticky top-20 z-40 bg-white/80 backdrop-blur p-4 rounded-2xl shadow-sm border border-slate-100' : ''}`}>
                 <div className="flex justify-between items-start">
@@ -84,9 +84,9 @@ export const QuestionCard = ({
             </div>
 
             {/* Question Card */}
-            <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 mb-6">
+            <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100">
                 {/* Question Text with Statement Support */}
-                <div className="mb-8">
+                <div className="mb-6">
                     {question.text.split(/(?=(?:^|\s)\d{1,2}\.\s)/g).map((part, i) => {
                         const trimmed = part.trim();
                         const isStatement = /^\d{1,2}\./.test(trimmed);
@@ -102,7 +102,7 @@ export const QuestionCard = ({
                 </div>
 
                 {/* Options */}
-                <div className="grid grid-cols-1 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {question.options.map((option, idx) => {
                         const isSelected = selectedAnswer === idx;
                         return (

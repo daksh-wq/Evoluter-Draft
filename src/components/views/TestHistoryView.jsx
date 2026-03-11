@@ -10,6 +10,7 @@ import {
 import logger from '../../utils/logger';
 import { getCachedOrFetch, removeFromCache, CACHE_TTL } from '../../services/cacheService';
 import { showToast } from '../../utils/errorHandler';
+import { CustomDropdown } from '../common';
 
 /**
  * TestHistoryView Component
@@ -195,35 +196,35 @@ const TestHistoryView = () => {
             )}
 
             {/* Filters */}
-            <div className="flex flex-wrap gap-3 mb-6">
-                <div className="relative">
-                    <Filter size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-                    <select
-                        value={filterTopic}
-                        onChange={(e) => setFilterTopic(e.target.value)}
-                        className="pl-9 pr-8 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:outline-none focus:border-[#2278B0] focus:ring-2 focus:ring-[#2278B0]/20 appearance-none cursor-pointer"
-                    >
-                        <option value="all">All Tests</option>
-                        <option value="institution">🏫 Institution Tests</option>
-                        {topics.map(topic => (
-                            <option key={topic} value={topic}>{topic}</option>
-                        ))}
-                    </select>
-                    <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-                </div>
+            <div className="flex flex-wrap gap-3 mb-6 items-center">
+                <span className="text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-1.5 mr-1">
+                    <Filter size={11} /> Filters
+                </span>
+                
+                <CustomDropdown
+                    label="All Tests"
+                    options={[
+                        { label: 'All Tests', value: 'all' },
+                        { label: '🏫 Institution Tests', value: 'institution' },
+                        ...topics.map(t => ({ label: t, value: t }))
+                    ]}
+                    value={filterTopic}
+                    onChange={setFilterTopic}
+                    initialShowCount={8}
+                    isFilter={true}
+                />
 
-                <div className="relative">
-                    <select
-                        value={sortBy}
-                        onChange={(e) => setSortBy(e.target.value)}
-                        className="px-4 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:outline-none focus:border-[#2278B0] focus:ring-2 focus:ring-[#2278B0]/20 appearance-none cursor-pointer pr-8"
-                    >
-                        <option value="date">Sort by Date</option>
-                        <option value="score">Sort by Score</option>
-                        <option value="accuracy">Sort by Accuracy</option>
-                    </select>
-                    <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-                </div>
+                <CustomDropdown
+                    label="Sort By"
+                    options={[
+                        { label: 'Sort by Date', value: 'date' },
+                        { label: 'Sort by Score', value: 'score' },
+                        { label: 'Sort by Accuracy', value: 'accuracy' }
+                    ]}
+                    value={sortBy}
+                    onChange={setSortBy}
+                    initialShowCount={5}
+                />
             </div>
 
             {/* Test Results List */}

@@ -5,6 +5,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, storage } from '../../services/firebase'; // Ensure storage is exported in firebase.js
 import { DEFAULT_USER_STATS } from '../../constants/data';
 import logger from '../../utils/logger';
+import { CustomDropdown } from '../common';
 
 /**
  * OnboardingView Component
@@ -195,16 +196,15 @@ const OnboardingView = ({ user, onComplete }) => {
                 <label className="text-sm font-bold text-slate-700 flex items-center gap-2">
                     <Calendar size={16} className="text-orange-500" /> Target Year
                 </label>
-                <select
-                    value={targetYear}
-                    onChange={(e) => setTargetYear(e.target.value)}
-                    className="w-full p-4 rounded-xl border border-slate-200 bg-slate-50 font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#2278B0]/20"
-                >
-                    {[0, 1, 2, 3].map(offset => {
-                        const year = new Date().getFullYear() + offset;
-                        return <option key={year} value={year}>{year}</option>
+                <CustomDropdown
+                    options={[0, 1, 2, 3].map(offset => {
+                        const year = String(new Date().getFullYear() + offset);
+                        return { label: year, value: year };
                     })}
-                </select>
+                    value={String(targetYear)}
+                    onChange={(val) => setTargetYear(val)}
+                    fullWidth={true}
+                />
             </div>
 
             <div className="flex gap-3">

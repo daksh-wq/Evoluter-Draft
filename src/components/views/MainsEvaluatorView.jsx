@@ -15,6 +15,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { evaluateAnswer } from '../../services/geminiService';
 import { UPSC_SYLLABUS } from '../../constants/syllabusData';
 import logger from '../../utils/logger';
+import { CustomDropdown } from '../common';
 
 /**
  * MainsEvaluatorView Component
@@ -114,17 +115,15 @@ const MainsEvaluatorView = () => {
                             <div className="md:col-span-1">
                                 <label className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2 block">Subject</label>
                                 <div className="relative">
-                                    <select
+                                    <CustomDropdown
+                                        options={[
+                                            ...Object.keys(UPSC_SYLLABUS).map(key => ({ label: UPSC_SYLLABUS[key].name, value: key })),
+                                            { label: 'General / Essay', value: 'General' }
+                                        ]}
                                         value={subject}
-                                        onChange={(e) => setSubject(e.target.value)}
-                                        className="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 font-bold text-slate-700 appearance-none focus:outline-none focus:ring-2 focus:ring-[#2278B0]"
-                                    >
-                                        {Object.keys(UPSC_SYLLABUS).map(key => (
-                                            <option key={key} value={key}>{UPSC_SYLLABUS[key].name}</option>
-                                        ))}
-                                        <option value="General">General / Essay</option>
-                                    </select>
-                                    <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" size={16} />
+                                        onChange={(val) => setSubject(val)}
+                                        fullWidth={true}
+                                    />
                                 </div>
                             </div>
                             <div className="md:col-span-2">

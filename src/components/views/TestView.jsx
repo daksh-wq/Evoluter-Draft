@@ -131,7 +131,7 @@ const TestView = ({
 
             <div className="flex-1 flex overflow-hidden">
                 {/* Question Area */}
-                <div className="flex-1 overflow-y-auto p-6 lg:p-10 relative">
+                <div className="flex-1 overflow-y-auto px-4 py-4 lg:px-10 lg:py-6 relative">
                     <QuestionCard
                         question={safeQuestion}
                         currentIndex={currentIndex}

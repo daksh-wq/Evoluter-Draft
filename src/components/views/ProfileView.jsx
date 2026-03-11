@@ -8,6 +8,7 @@ import { updateProfile } from 'firebase/auth';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, auth, storage } from '../../services/firebase';
 import logger from '../../utils/logger';
+import { CustomDropdown } from '../common';
 
 /**
  * ProfileView Component
@@ -256,38 +257,36 @@ const ProfileView = ({ user, userData, onLogout }) => {
                                         <Target size={12} /> Target Exam
                                     </label>
                                     {isEditing ? (
-                                        <select
-                                            name="targetExam"
-                                            value={formData.targetExam}
-                                            onChange={handleChange}
-                                            className="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-100 font-bold text-slate-700"
-                                        >
-                                            <option>UPSC CSE</option>
-                                            <option>State PSC</option>
-                                        </select>
-                                    ) : (
-                                        <div className="font-bold text-slate-800">{formData.targetExam}</div>
-                                    )}
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
-                                        <Calendar size={12} /> Target Year
-                                    </label>
-                                    {isEditing ? (
-                                        <select
-                                            name="targetYear"
-                                            value={formData.targetYear}
-                                            onChange={handleChange}
-                                            className="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-100 font-bold text-slate-700"
-                                        >
-                                            {[0, 1, 2, 3].map(offset => {
-                                                const year = new Date().getFullYear() + offset;
-                                                return <option key={year} value={year}>{year}</option>
-                                            })}
-                                        </select>
-                                    ) : (
-                                        <div className="font-bold text-slate-800">{formData.targetYear}</div>
-                                    )}
+                                    <CustomDropdown
+                                        options={[
+                                            { label: 'UPSC CSE', value: 'UPSC CSE' },
+                                            { label: 'State PSC', value: 'State PSC' }
+                                        ]}
+                                        value={formData.targetExam}
+                                        onChange={(val) => setFormData(prev => ({ ...prev, targetExam: val }))}
+                                        fullWidth={true}
+                                    />
+                                ) : (
+                                    <div className="font-bold text-slate-800">{formData.targetExam}</div>
+                                )}
+                            </div>
+                            <div className="space-y-2">
+                                <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
+                                    <Calendar size={12} /> Target Year
+                                </label>
+                                {isEditing ? (
+                                    <CustomDropdown
+                                        options={[0, 1, 2, 3].map(offset => {
+                                            const year = String(new Date().getFullYear() + offset);
+                                            return { label: year, value: year };
+                                        })}
+                                        value={String(formData.targetYear)}
+                                        onChange={(val) => setFormData(prev => ({ ...prev, targetYear: val }))}
+                                        fullWidth={true}
+                                    />
+                                ) : (
+                                    <div className="font-bold text-slate-800">{formData.targetYear}</div>
+                                )}
                                 </div>
                             </div>
 

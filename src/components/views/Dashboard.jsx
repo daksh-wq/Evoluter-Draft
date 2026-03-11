@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
     Brain,
     Zap,
-    Award,
     Shield,
     CalendarDays,
     Flame,
@@ -210,7 +209,7 @@ const Dashboard = ({
                 </div>
 
                 {/* Stats Cards */}
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-4 w-full xl:w-auto">
+                <div className="flex w-full xl:w-auto">
                     {/* Streak Card */}
                     <div className="bg-white px-5 py-3 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between gap-4">
                         <div className="text-right flex-1">
@@ -223,21 +222,6 @@ const Dashboard = ({
                         </div>
                         <div className="p-2 bg-orange-50 rounded-xl shrink-0">
                             <Flame size={20} className="text-orange-500" fill="currentColor" />
-                        </div>
-                    </div>
-
-                    {/* XP Card */}
-                    <div className="bg-white px-5 py-3 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between gap-4">
-                        <div className="text-right flex-1">
-                            <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">
-                                Level {userStats.level}
-                            </div>
-                            <div className="text-xl font-black text-[#2278B0]">
-                                {userStats.xp} XP
-                            </div>
-                        </div>
-                        <div className="p-2 bg-[#2278B0]/10 rounded-xl shrink-0">
-                            <Award size={20} className="text-[#2278B0]" />
                         </div>
                     </div>
                 </div>
