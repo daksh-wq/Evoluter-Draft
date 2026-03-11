@@ -50,9 +50,9 @@ export const NAV_ITEMS = [
     { id: 'pyqs', label: 'PYQs', icon: 'History' },
     { id: 'test-history', label: 'Test History', icon: 'Clock' },
     { id: 'syllabus', label: 'Syllabus', icon: 'ListChecks' },
-    { id: 'news', label: 'Current Affairs', icon: 'Newspaper' },
-    { id: 'mains', label: 'Evaluator', icon: 'FileText' },
-    { id: 'leaderboard', label: 'Leaderboard', icon: 'Trophy' },
+    // { id: 'news', label: 'Current Affairs', icon: 'Newspaper' },
+    // { id: 'mains', label: 'Evaluator', icon: 'FileText' },
+    // { id: 'leaderboard', label: 'Leaderboard', icon: 'Trophy' },
 ];
 
 export const INSTITUTION_NAV_ITEMS = [

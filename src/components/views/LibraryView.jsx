@@ -1,39 +1,18 @@
-import React, { useRef } from 'react';
-import { BookOpen, FileText, Upload, RefreshCw, Zap, Eye, Trash2, ExternalLink } from 'lucide-react';
+import React from 'react';
+import { BookOpen, FileText, ExternalLink } from 'lucide-react';
 import { LIBRARY_TABS } from '../../constants/data';
 import { UPSC_LIBRARY_RESOURCES } from '../../constants/upscLibrary';
 
 
 /**
  * LibraryView Component
- * Resource library for managing PDFs and study materials
+ * Resource library for managing study materials
  */
-const LibraryView = ({
-    docs,
-    handleFileUpload,
-    uploadingDoc,
-    onDeleteDoc,
-    onExtractQuestions
-}) => {
-    const fileInputRef = useRef(null);
-
-    const onUploadClick = () => {
-        fileInputRef.current?.click();
-    };
-
-    const onFileChange = (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            handleFileUpload(file);
-        }
-    };
-
+const LibraryView = () => {
     const [activeTab, setActiveTab] = React.useState(LIBRARY_TABS[0]);
     const [searchTerm, setSearchTerm] = React.useState('');
 
-    const allDocs = [...docs, ...UPSC_LIBRARY_RESOURCES];
-
-    const filteredDocs = allDocs.filter(doc => {
+    const filteredDocs = UPSC_LIBRARY_RESOURCES.filter(doc => {
         const matchesSearch = doc.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
             doc.category?.toLowerCase().includes(searchTerm.toLowerCase()) ||
             doc.tags?.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
@@ -45,37 +24,14 @@ const LibraryView = ({
 
     return (
         <div className="space-y-8 animate-in fade-in duration-500 pb-20">
-            {/* Hidden File Input */}
-            <input
-                type="file"
-                ref={fileInputRef}
-                onChange={onFileChange}
-                accept=".pdf,.doc,.docx,.txt"
-                className="hidden"
-            />
-
             {/* Header */}
-            <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-200 pb-6">
-                <div>
-                    <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight">
-                        Resource Library
-                    </h1>
-                    <p className="text-slate-500 mt-1">
-                        Manage source materials for AI extraction.
-                    </p>
-                </div>
-                <button
-                    onClick={onUploadClick}
-                    disabled={uploadingDoc}
-                    className="w-full md:w-auto bg-[#2278B0] hover:bg-[#1b5f8a] text-white px-5 py-2.5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-[#2278B0]/20 disabled:opacity-50"
-                >
-                    {uploadingDoc ? (
-                        <RefreshCw size={18} className="animate-spin" />
-                    ) : (
-                        <Upload size={18} />
-                    )}
-                    {uploadingDoc ? 'Processing...' : 'Upload Resource'}
-                </button>
+            <header className="border-b border-slate-200 pb-6">
+                <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight">
+                    Resource Library
+                </h1>
+                <p className="text-slate-500 mt-1">
+                    Browse curated study materials and resources.
+                </p>
             </header>
 
             {/* Search Bar */}
@@ -122,11 +78,11 @@ const LibraryView = ({
             </div>
 
             {/* Empty State */}
-            {docs.length === 0 && !uploadingDoc && (
+            {filteredDocs.length === 0 && (
                 <div className="text-center py-20 bg-slate-50 border-2 border-dashed border-slate-200 rounded-3xl">
                     <BookOpen className="w-16 h-16 text-slate-300 mx-auto mb-4" />
-                    <h3 className="text-xl font-bold text-slate-700 mb-2">Library is Empty</h3>
-                    <p className="text-slate-500">Upload your first PDF to generate AI questions.</p>
+                    <h3 className="text-xl font-bold text-slate-700 mb-2">No Results Found</h3>
+                    <p className="text-slate-500">Try adjusting your search or filter.</p>
                 </div>
             )}
 
@@ -178,33 +134,14 @@ const LibraryView = ({
 
                         {/* Actions */}
                         <div className="mt-4 flex gap-2">
-                            {doc.type === 'Link' ? (
-                                <a
-                                    href={doc.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex-1 py-3 bg-[#2278B0] text-white hover:bg-[#1b5f8a] rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-sm"
-                                >
-                                    <ExternalLink size={14} /> Read Now
-                                </a>
-                            ) : (
-                                <>
-                                    <button
-                                        onClick={() => onExtractQuestions(doc)}
-                                        className="flex-1 py-3 bg-[#2278B0]/5 text-[#2278B0] group-hover:bg-[#2278B0] group-hover:text-white rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 border border-[#2278B0]/10 group-hover:border-[#2278B0] shadow-sm"
-                                    >
-                                        <Zap size={14} /> Extract Qs
-                                    </button>
-
-                                    <button
-                                        onClick={() => onDeleteDoc(doc.id)}
-                                        className="p-3 bg-white text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-xl border border-slate-200 transition-colors"
-                                        title="Delete Document"
-                                    >
-                                        <Trash2 size={18} />
-                                    </button>
-                                </>
-                            )}
+                            <a
+                                href={doc.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 py-3 bg-[#2278B0] text-white hover:bg-[#1b5f8a] rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-sm"
+                            >
+                                <ExternalLink size={14} /> Read Now
+                            </a>
                         </div>
                     </div>
                 ))}

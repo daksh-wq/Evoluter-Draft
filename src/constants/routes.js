@@ -36,8 +36,8 @@ export const ROUTES = {
     MAINS_EVALUATOR: '/mains-evaluator',
 
     // Community Routes
-    LEADERBOARD: '/leaderboard',
-    NEWS: '/news',
+    // LEADERBOARD: '/leaderboard',
+    // NEWS: '/news',
 
     // User Routes
     PROFILE: '/profile',
@@ -88,16 +88,16 @@ export const ROUTE_CONFIG = {
         icon: 'CheckSquare',
         requiresAuth: true,
     },
-    [ROUTES.NEWS]: {
-        title: 'Current Affairs',
-        icon: 'Newspaper',
-        requiresAuth: true,
-    },
-    [ROUTES.LEADERBOARD]: {
-        title: 'Leaderboard',
-        icon: 'Trophy',
-        requiresAuth: true,
-    },
+    // [ROUTES.NEWS]: {
+    //     title: 'Current Affairs',
+    //     icon: 'Newspaper',
+    //     requiresAuth: true,
+    // },
+    // [ROUTES.LEADERBOARD]: {
+    //     title: 'Leaderboard',
+    //     icon: 'Trophy',
+    //     requiresAuth: true,
+    // },
     [ROUTES.PROFILE]: {
         title: 'Profile',
         icon: 'User',

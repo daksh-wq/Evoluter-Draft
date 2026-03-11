@@ -12,8 +12,8 @@ const Dashboard = lazy(() => import('./components/views/Dashboard'));
 const LibraryView = lazy(() => import('./components/views/LibraryView'));
 const PYQView = lazy(() => import('./components/views/PYQView'));
 const SyllabusView = lazy(() => import('./components/views/SyllabusView'));
-const NewsView = lazy(() => import('./components/views/NewsView'));
-const LeaderboardView = lazy(() => import('./components/views/LeaderboardView'));
+// const NewsView = lazy(() => import('./components/views/NewsView'));
+// const LeaderboardView = lazy(() => import('./components/views/LeaderboardView'));
 const TestView = lazy(() => import('./components/views/TestView'));
 const OnboardingView = lazy(() => import('./components/views/OnboardingView'));
 const ProfileView = lazy(() => import('./components/views/ProfileView'));
@@ -458,13 +458,7 @@ function App() {
 
         <Route path={ROUTES.LIBRARY} element={
           <ProtectedLayout {...layoutProps}>
-            <LibraryView
-              docs={docs}
-              handleFileUpload={handleFileUpload}
-              uploadingDoc={uploadingDoc}
-              onDeleteDoc={handleDeleteDoc}
-              onExtractQuestions={handleExtractQuestions}
-            />
+            <LibraryView />
           </ProtectedLayout>
         } />
 
@@ -480,17 +474,17 @@ function App() {
           </ProtectedLayout>
         } />
 
-        <Route path="/news" element={
+        {/* <Route path="/news" element={
           <ProtectedLayout {...layoutProps}>
             <NewsView />
           </ProtectedLayout>
-        } />
+        } /> */}
 
-        <Route path={ROUTES.LEADERBOARD} element={
+        {/* <Route path={ROUTES.LEADERBOARD} element={
           <ProtectedLayout {...layoutProps}>
             <LeaderboardView />
           </ProtectedLayout>
-        } />
+        } /> */}
 
         <Route path={ROUTES.PROFILE} element={
           <ProtectedLayout {...layoutProps}>
