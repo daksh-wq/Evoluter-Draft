@@ -108,3 +108,18 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-gray-600);
 }
+
+/* Dark Scrollbar for Chat UI components */
+.dark-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

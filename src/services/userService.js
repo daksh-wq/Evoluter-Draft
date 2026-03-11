@@ -110,45 +110,120 @@ const updateSyllabusProgress = async (uid, questions, userAnswers) => {
 };
 
 /**
- * Calculate topic-wise mastery based on test performance
+ * The 5 canonical UPSC subjects that the Knowledge Graph tracks.
+ * All raw AI-generated topic tags are normalized to one of these.
+ */
+const CANONICAL_TOPICS = ['History', 'Economy', 'Polity', 'Science', 'Geography'];
+
+/**
+ * Keyword maps that map raw topic tags → canonical subjects.
+ * Short-circuit order matters: more specific keys first.
+ */
+const TOPIC_KEYWORD_MAP = {
+    History: [
+        'history', 'ancient', 'medieval', 'modern', 'revolt', 'mughal',
+        'vijayanagara', 'harappan', 'indus', 'colonial', 'freedom',
+        'gandhi', 'independence', 'british', 'maratha', 'sultanate',
+        'advent', 'european', 'social-religious', 'socio', 'reform',
+        'nationalism', '1857', 'historical', 'background'
+    ],
+    Economy: [
+        'economy', 'economic', 'fiscal', 'gdp', 'inflation', 'banking',
+        'finance', 'budget', 'monetary', 'rbi', 'market', 'planning',
+        'balance of payment', 'financial', 'financial markets'
+    ],
+    Polity: [
+        'polity', 'constitution', 'constitutional', 'parliament', 'preamble',
+        'fundamental', 'rights', 'directive', 'governor', 'president',
+        'prime minister', 'judiciary', 'election', 'federal', 'union',
+        'territory', 'amendment', 'article', 'schedule', 'panchayati',
+        'municipal', 'local', 'administrative', 'parliamentary', 'system',
+        'public policy', 'governance'
+    ],
+    Science: [
+        'science', 'technology', 'biology', 'chemistry', 'physics',
+        'space', 'health', 'disease', 'nutrition', 'material', 'energy',
+        'nuclear', 'it', 'computer', 'biotech', 'nano', 'defence',
+        'innovation', 'research', 'isro', 'ai', 'robots'
+    ],
+    Geography: [
+        'geography', 'geomorphology', 'climate', 'monsoon', 'river',
+        'mountain', 'plateau', 'ocean', 'earthquake', 'volcanic',
+        'indian geography', 'world geography', 'environment', 'ecology',
+        'biodiversity', 'ecosystem', 'pollution', 'food security',
+        'sustainable', 'international', 'relations', 'foreign', 'border'
+    ],
+};
+
+/**
+ * Map any raw topic string to one of the 5 canonical UPSC subjects.
+ * Falls back to 'General' (which is then ignored in the aggregation).
+ */
+const normalizeToCanonicalTopic = (rawTopic) => {
+    if (!rawTopic) return null;
+    const lower = rawTopic.toLowerCase();
+
+    // Check direct match first (case-insensitive)
+    const direct = CANONICAL_TOPICS.find(c => c.toLowerCase() === lower);
+    if (direct) return direct;
+
+    // Keyword-based mapping
+    for (const [canonical, keywords] of Object.entries(TOPIC_KEYWORD_MAP)) {
+        if (keywords.some(kw => lower.includes(kw))) {
+            return canonical;
+        }
+    }
+
+    return null; // Unknown topic — skip entirely
+};
+
+/**
+ * Calculate topic-wise mastery based on test performance.
+ * Only tracks the 5 canonical UPSC subjects — all raw AI topic tags
+ * are normalized before aggregation so Firestore never grows beyond 5 keys.
+ *
  * @param {Array} questions - Test questions
  * @param {object} userAnswers - User's answers
- * @param {object} currentMastery - Current topic mastery scores
- * @returns {object} Updated mastery scores
+ * @param {object} currentMastery - Current topic mastery scores (from Firestore)
+ * @returns {object} Updated mastery scores — always exactly the 5 canonical topics
  */
 const calculateTopicMastery = (questions, userAnswers, currentMastery) => {
-    // Group questions by topic
+    // Initialize aggregator for this test session only with canonical topics
     const topicStats = {};
 
     questions.forEach((question) => {
-        // Extract topic from question tags
+        // Extract raw topic from question tags or fallback fields
         const topicTag = question.tags?.find(tag => tag.type === 'topic');
-        const topic = topicTag?.label || question.topic || 'General';
+        const rawTopic = topicTag?.label || question.topic || null;
 
-        if (!topicStats[topic]) {
-            topicStats[topic] = { correct: 0, total: 0 };
+        // Normalize to one of the 5 canonical subjects
+        const canonical = normalizeToCanonicalTopic(rawTopic);
+        if (!canonical) return; // skip unrecognized topics
+
+        if (!topicStats[canonical]) {
+            topicStats[canonical] = { correct: 0, total: 0 };
         }
+        topicStats[canonical].total += 1;
 
-        topicStats[topic].total += 1;
-
-        // Check if answer is correct
         const userAnswer = userAnswers[question.id];
         if (userAnswer !== undefined && userAnswer === question.correctAnswer) {
-            topicStats[topic].correct += 1;
+            topicStats[canonical].correct += 1;
         }
     });
 
-    // Calculate new mastery scores with weighted average
-    // 70% weight to existing mastery, 30% weight to current test performance
-    const updatedMastery = { ...currentMastery };
+    // Start ONLY from canonical topics — drop any stale non-canonical keys
+    // that may have accumulated in Firestore from previous behaviour.
+    const cleanBaseMastery = {};
+    CANONICAL_TOPICS.forEach(c => {
+        cleanBaseMastery[c] = currentMastery[c] ?? 0;
+    });
 
-    Object.entries(topicStats).forEach(([topic, stats]) => {
+    // Apply weighted average: 70% existing, 30% current test performance
+    const updatedMastery = { ...cleanBaseMastery };
+    Object.entries(topicStats).forEach(([canonical, stats]) => {
         const currentTestAccuracy = (stats.correct / stats.total) * 100;
-        const existingMastery = updatedMastery[topic] || 0;
-
-        // Weighted average: smooth progression over time
-        updatedMastery[topic] = Math.round(
-            existingMastery * 0.7 + currentTestAccuracy * 0.3
+        updatedMastery[canonical] = Math.round(
+            cleanBaseMastery[canonical] * 0.7 + currentTestAccuracy * 0.3
         );
     });
 

@@ -177,7 +177,17 @@ function App() {
     navigate(ROUTES.LOGIN);
   };
 
-  const userStats = userData?.stats || DEFAULT_USER_STATS;
+  // Sanitize topicMastery: keep only the 5 canonical subjects.
+  // This instantly fixes any stale Firestore docs that accumulated >5 topics.
+  const CANONICAL_TOPICS = ['History', 'Economy', 'Polity', 'Science', 'Geography'];
+  const rawStats = userData?.stats || DEFAULT_USER_STATS;
+  const userStats = {
+    ...rawStats,
+    topicMastery: CANONICAL_TOPICS.reduce((acc, topic) => {
+      acc[topic] = rawStats.topicMastery?.[topic] ?? 0;
+      return acc;
+    }, {}),
+  };
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // --- Test State ---
