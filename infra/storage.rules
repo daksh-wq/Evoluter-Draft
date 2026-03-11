@@ -1,0 +1,62 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // ─── HELPER FUNCTIONS ───────────────────────────────
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+
+    function isPDF() {
+      return request.resource.contentType.matches('application/pdf');
+    }
+    
+    function isSizeBelow(mb) {
+      return request.resource.size < mb * 1024 * 1024;
+    }
+
+    // ─── USER FILES ─────────────────────────────────────
+    
+    // Documents (PDFs only, Max 20MB)
+    match /users/{userId}/docs/{fileName} {
+      allow read: if isOwner(userId);
+      allow write: if isOwner(userId) 
+                   && isPDF() 
+                   && isSizeBelow(20);
+      allow delete: if isOwner(userId);
+    }
+
+    // Profile Pictures (Images only, Max 5MB)
+    match /users/{userId}/profile/{fileName} {
+      allow read: if isAuthenticated(); // Public to authenticated users
+      allow write: if isOwner(userId) 
+                   && isImage()
+                   && isSizeBelow(5);
+    }
+
+    // ─── INSTITUTION FILES ──────────────────────────────
+    
+    // Institution Logos (Images only, Max 5MB)
+    // Note: This matches the path used in OnboardingView.jsx: `institutions/${user.uid}/logo_${Date.now()}`
+    match /institutions/{instId}/{fileName} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(instId)
+                   && isImage()
+                   && isSizeBelow(5);
+    }
+
+    // ─── DEFAULT DENY ───────────────────────────────────
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

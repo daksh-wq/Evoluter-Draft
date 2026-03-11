@@ -1,0 +1,44 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Helper: check authentication
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Helper: check file ownership
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // User document uploads
+    match /users/{userId}/docs/{fileName} {
+      // Owner can read their own files
+      allow read: if isOwner(userId);
+      
+      // Owner can upload with restrictions
+      allow write: if isOwner(userId)
+        // Max file size: 20MB
+        && request.resource.size < 20 * 1024 * 1024
+        // Only allowed file types
+        && request.resource.contentType.matches('application/pdf|image/.*|text/.*');
+      
+      // Owner can delete their own files
+      allow delete: if isOwner(userId);
+    }
+
+    // User profile images
+    match /users/{userId}/profile/{fileName} {
+      allow read: if isAuthenticated(); // Any user can view profile pics
+      allow write: if isOwner(userId)
+        && request.resource.size < 5 * 1024 * 1024 // 5MB max
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    // Deny all other paths by default
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

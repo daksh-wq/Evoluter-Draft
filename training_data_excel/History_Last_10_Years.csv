@@ -1,0 +1,383 @@
+Year,Subject,Topic,Difficulty,Question Text,Option A,Option B,Option C,Option D,Correct Answer (0-3),Correct Answer Text,Explanation
+"2024","History","Ancient History","Hard","Consider the following statements regarding the Indus Valley Civilization:
+1. The Great Bath was a ritual bathing site.
+2. The script used by the Indus people has been deciphered.
+3. The economy was primarily based on agriculture and trade.","Only 1 and 2","Only 2 and 3","Only 1 and 3","1, 2 and 3",2,"Only 1 and 3","The Great Bath at Mohenjo-daro is widely believed to have been used for ritual bathing. The Indus script remains undeciphered. The Indus economy was based on agriculture and trade, with evidence of extensive trade networks."
+"2024","History","Medieval History","Hard","The term 'Tankha' during the Delhi Sultanate referred to:","Land revenue","A copper coin","Salary paid to officials","A type of tax",2,"Salary paid to officials","During the Delhi Sultanate, 'Tankha' referred to the salary paid to officials, often in the form of land assignments or revenue rights."
+"2024","History","Modern History","Hard","The 'Poona Pact' of 1932 was an agreement between:","Gandhi and Jinnah","Gandhi and Ambedkar","Nehru and Patel","Ambedkar and Jinnah",1,"Gandhi and Ambedkar","The Poona Pact of 1932 was an agreement between Mahatma Gandhi and B.R. Ambedkar, concerning the reservation of electoral seats for the depressed classes in the legislature."
+"2024","History","Indus Valley Civilization & Vedic Age","Hard","The term 'Rita' in the Vedic period refers to:","Moral order","Cosmic order","Sacrificial rituals","Social hierarchy",1,"Cosmic order","'Rita' in the Vedic period refers to the cosmic and moral order."
+"2024","History","Gupta Period: Golden Age of Art & Science","Hard","With reference to the art and architectural developments during the Gupta period, which of the following is/are true? 1. The use of stone as the primary building material became widespread. 2. The concept of 'Nagara' style of temple architecture gained prominence. Select the correct answer using the code given below:","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Stone usage increased and Nagara style emerged during the Gupta period."
+"2024","History","Bhakti & Sufi Movements","Hard","Consider the following statements regarding the influence of Sufi saints:
+1. They often mediated between the rulers and the common people.
+2. Their teachings were exclusively for Muslims.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Sufi saints often acted as intermediaries, and their teachings were inclusive."
+"2024","History","Mughal Administration, Art & Architecture","Hard","Consider the following statements regarding the Mughal administration:
+1. The Subedar was the head of the province.
+2. The Faujdar was responsible for maintaining law and order in the districts.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both Subedar and Faujdar had important administrative roles."
+"2024","History","Vijayanagara Empire","Hard","Consider the following statements regarding the Vijayanagara army:
+1. It consisted of infantry, cavalry, and elephants.
+2. It had a strong naval force.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Vijayanagara army had infantry, cavalry, elephants, and a strong navy."
+"2024","History","Advent of Europeans & British Expansion","Hard","Which of the following statements is/are correct regarding the Charter Act of 1853?
+1. It introduced open competition for recruitment to the civil services.
+2. It extended the Company's rule for an indefinite period.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The Charter Act of 1853 introduced open competition for civil services."
+"2024","History","Social-Religious Reform Movements (19th Century)","Hard","Consider the following statements regarding the impact of the social reform movements in 19th century India:
+1. They led to a complete eradication of caste-based discrimination.
+2. They contributed to the rise of nationalism.
+3. They had a limited impact on the lives of women.
+Which of the statements given above is/are correct?","1 and 2 only","2 only","1 and 3 only","1, 2 and 3",1,"2 only","The movements did not eradicate caste discrimination, and they significantly improved women's lives."
+"2024","History","Revolt of 1857 & Rise of Nationalism","Hard","Which of the following best describes the impact of the Revolt of 1857 on the British administration in India?","It led to the complete withdrawal of the British from India.","It resulted in the transfer of power from the East India Company to the British Crown.","It had no significant impact on the British administration.","It led to the immediate independence of India.",1,"It resulted in the transfer of power from the East India Company to the British Crown.","The revolt led to the transfer of power to the British Crown."
+"2024","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","Which of the following statements best describes the impact of the Civil Disobedience Movement on the Indian economy?","It led to a significant increase in industrial production.","It resulted in a widespread boycott of foreign goods, impacting British trade.","It had no noticeable impact on the Indian economy.","It primarily affected the agricultural sector.",1,"It resulted in a widespread boycott of foreign goods, impacting British trade.","The Civil Disobedience Movement significantly impacted British trade through boycotts."
+"2024","History","General","Hard","In the Mauryan period, who was the officer responsible for the safe custody of the royal treasury and the storehouse?","Samahartri","Sannidhatri","Koshadhyaksha","Dandapala",1,"Sannidhatri","According to Kautilya's Arthashastra, the Sannidhatri was the Treasurer and Keeper of the Stores in the Mauryan administration."
+"2023","History","Ancient History","Hard","With reference to ancient India, consider the following statements:
+1. The concept of Stupa is Buddhist in origin.
+2. Stupa was generally a repository of relics.
+3. Stupa was a votive and commemorative structure in Buddhist tradition.
+Which of the statements given above are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are correct. Stupas are Buddhist in origin, served as relic repositories, and were both votive and commemorative structures."
+"2023","History","Medieval History","Hard","With reference to the history of India, the term 'parivrajaka' refers to","Renunciant and Wanderer","Merchant","Priest","Physician",0,"Renunciant and Wanderer","Parivrajaka refers to a renunciant and wanderer in ancient and medieval India, often associated with ascetic traditions."
+"2023","History","Indus Valley Civilization & Vedic Age","Hard","Which of the following crops were NOT known to the people of the Indus Valley Civilization?","Wheat","Barley","Rice","Sugarcane",3,"Sugarcane","Sugarcane was not cultivated during the Indus Valley Civilization."
+"2023","History","Buddhism & Jainism: Philosophy & Architecture","Hard","Which of the following sites is renowned for its Jain temples and is located in Rajasthan?","Mount Abu","Khajuraho","Sanchi","Amaravati",0,"Mount Abu","Mount Abu is famous for its Dilwara Jain temples in Rajasthan."
+"2023","History","Mauryan Empire: Administration & Art","Hard","Which of the following best describes the function of 'Samaharta' in Mauryan administration?","Chief Military Commander","Chief Revenue Collector","Chief Justice","Chief Priest",1,"Chief Revenue Collector","Samaharta was the Chief Revenue Collector."
+"2023","History","Gupta Period: Golden Age of Art & Science","Hard","Consider the following statements regarding the Gupta coinage: 1. Gupta coins were primarily made of gold. 2. They depicted images of the Gupta rulers and their deities. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Gupta coins were mostly gold and featured rulers and deities."
+"2023","History","Bhakti & Sufi Movements","Hard","Which of the following statements best describes the philosophy of Vallabhacharya?","Advaita Vedanta","Vishishtadvaita","Dvaitadvaita","Shuddhadvaita",3,"Shuddhadvaita","Vallabhacharya propounded the philosophy of Shuddhadvaita (pure non-dualism)."
+"2023","History","Mughal Administration, Art & Architecture","Hard","Consider the following pairs:
+1. Diwan-i-Insha: Royal Correspondence
+2. Mir Bakshi: Military Affairs
+3. Qazi-ul-Quzat: Religious Affairs
+Which of the pairs given above are correctly matched?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All the pairs are correctly matched."
+"2023","History","Vijayanagara Empire","Hard","Consider the following statements about the Vijayanagara Empire:
+1. It was founded on the banks of the Tungabhadra River.
+2. It faced constant conflict with the Bahmani Sultanate.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Vijayanagara Empire was founded on the banks of the Tungabhadra and faced conflict with the Bahmani Sultanate."
+"2023","History","Advent of Europeans & British Expansion","Hard","Consider the following statements regarding the economic policies of the British in India:
+1. The British promoted the cultivation of cash crops.
+2. The British encouraged the development of traditional Indian handicrafts.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The British promoted cash crops but discouraged traditional handicrafts."
+"2023","History","Social-Religious Reform Movements (19th Century)","Hard","Which of the following best describes the relationship between social reform movements and the Indian National Congress?","The Congress actively promoted social reform as its primary goal.","The Congress largely avoided social reform to focus on political independence.","The Congress opposed social reform movements.","The Congress was founded by social reformers.",1,"The Congress largely avoided social reform to focus on political independence.","The Congress prioritized political independence, often deferring social reform to avoid internal divisions."
+"2023","History","Revolt of 1857 & Rise of Nationalism","Hard","Who among the following was the founder of the 'Ghadar Party'?","Bhagat Singh","Lala Hardayal","Subhas Chandra Bose","Sardar Vallabhbhai Patel",1,"Lala Hardayal","Lala Hardayal was the founder of the Ghadar Party."
+"2023","History","Indian National Congress (Moderate & Extremist Phase)","Hard","Consider the following statements: 1. Moderates believed in the efficacy of prayers and petitions. 2. Extremists advocated for self-reliance and constructive programs. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements accurately describe the beliefs of Moderates and Extremists."
+"2023","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","Which of the following events is considered the immediate cause for the launch of the Quit India Movement?","Failure of the Cripps Mission","The August Offer","The Second World War","The Simon Commission Report",0,"Failure of the Cripps Mission","The failure of the Cripps Mission was the immediate cause for the Quit India Movement."
+"2023","History","General","Hard","Dhanyakataka, which flourished as a prominent Buddhist centre under the Mahasanghikas, is located in which one of the following regions?","Andhra","Gandhara","Kalinga","Magadha",0,"Andhra","Dhanyakataka, modern-day Amaravati in Andhra Pradesh, was a significant capital and Buddhist site for the Satavahana dynasty."
+"2022","History","Ancient History","Hard","With reference to the history of ancient India, consider the following statements:
+1. Unlike the Mauryas, the Sungas did not give much importance to stone architecture.
+2. As a result of their conquests, the Kalingas emerged as the earliest rulers to establish their kingdom in the peninsular India.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","Statement 1 is incorrect. The Sungas continued Mauryan traditions in art and architecture, including stone architecture. Statement 2 is incorrect. The Satavahanas were the earliest rulers to establish a kingdom in peninsular India, not the Kalingas. Therefore, neither statement is correct."
+"2022","History","Medieval History","Hard","Which of the following statements about the 'Welfare State' are correct?
+1. The concept of Welfare State is mentioned in the Constitution of India.
+2. The goal of Welfare State is to promote the well-being of the people.
+3. The Welfare State is based on the principles of democracy and social justice.
+Select the correct answer using the code given below:","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Statement 1 is correct. The Directive Principles of State Policy in the Constitution of India embody the concept of a Welfare State. Statement 2 is correct. Promoting the well-being of the people is a core objective. Statement 3 is correct. Welfare states are generally associated with democratic principles and social justice. Therefore, all three statements are correct."
+"2022","History","Indus Valley Civilization & Vedic Age","Hard","Consider the following statements regarding the Vedic period:
+1. The early Vedic society was primarily pastoral.
+2. The concept of 'Varna' was absent in the early Vedic period.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Early Vedic society was pastoral, and the Varna system was not yet fully developed."
+"2022","History","Buddhism & Jainism: Philosophy & Architecture","Hard","Consider the following pairs:
+1. Stupa: Depository of relics
+2. Chaitya: Place of worship
+3. Vihara: Dwelling place of monks
+Which of the pairs given above is/are correctly matched?","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three pairs correctly describe the function of Stupas, Chaityas, and Viharas."
+"2022","History","Mauryan Empire: Administration & Art","Hard","Which of the following officials in the Mauryan administration was responsible for maintaining law and order in cities?","Rajukas","Yuktas","Nagaraka","Pradeshikas",2,"Nagaraka","Nagaraka was responsible for maintaining law and order in cities."
+"2022","History","Gupta Period: Golden Age of Art & Science","Hard","Which of the following mathematicians is credited with the concept of zero and the decimal system during the Gupta period?","Aryabhata","Varahamihira","Brahmagupta","Bhaskara I",0,"Aryabhata","Aryabhata is credited with significant contributions to the decimal system and concept of zero."
+"2022","History","Bhakti & Sufi Movements","Hard","Consider the following pairs:
+Saint : Teaching
+1. Dadu Dayal : Rejection of caste
+2. Mirabai : Devotion to Krishna
+3. Guru Nanak : Emphasis on pilgrimage
+Which of the pairs given above is/are correctly matched?","1 and 2 only","2 only","1 and 3 only","1, 2 and 3",0,"1 and 2 only","Dadu Dayal rejected caste, Mirabai was devoted to Krishna, Nanak opposed pilgrimage."
+"2022","History","Mughal Administration, Art & Architecture","Hard","Which of the following best describes the 'Mahzar Nama' issued by Akbar?","A decree on land revenue","A document asserting religious authority","A military proclamation","A trade agreement",1,"A document asserting religious authority","Mahzar Nama asserted Akbar's religious authority."
+"2022","History","Vijayanagara Empire","Hard","Which of the following was NOT a feature of the Vijayanagara administration?","Centralized control over provinces","Nayankara system","Village autonomy","Strong navy",0,"Centralized control over provinces","Vijayanagara administration was decentralized, not centrally controlled."
+"2022","History","Advent of Europeans & British Expansion","Hard","Which of the following factors contributed to the success of the British in India?
+1. Superior military technology
+2. Political disunity among Indian rulers
+3. Economic policies that favored the British
+Select the correct answer using the code given below:","1 only","1 and 2 only","2 and 3 only","1, 2 and 3",3,"1, 2 and 3","All the factors contributed to the success of the British in India."
+"2022","History","Social-Religious Reform Movements (19th Century)","Hard","Consider the following pairs:
+Movement: Leader
+1. Aligarh Movement: Muhammad Iqbal
+2. Arya Samaj: Swami Dayanand Saraswati
+3. Brahmo Samaj: Raja Ram Mohan Roy
+Which of the pairs given above is/are correctly matched?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",1,"2 and 3 only","Muhammad Iqbal was not the leader of Aligarh Movement."
+"2022","History","Revolt of 1857 & Rise of Nationalism","Hard","Consider the following pairs:
+1. Radhakanta Deb : Founder of Hindu College, Calcutta
+2. Lakshmi Bai : Died in Gwalior
+3. Surendranath Banerjee : Founder of the Indian Association
+Which of the pairs given above is/are correct?","1 and 2","2 and 3","2 only","1 and 3",1,"2 and 3","Lakshmi Bai died in Gwalior and Surendranath Banerjee founded the Indian Association."
+"2022","History","Indian National Congress (Moderate & Extremist Phase)","Hard","Which of the following methods was NOT typically employed by the Moderate leaders of the Indian National Congress?","Petitions to the British government","Constitutional agitation","Mass mobilization and strikes","Public awareness campaigns",2,"Mass mobilization and strikes","Moderates did not typically employ mass mobilization and strikes."
+"2022","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","Consider the following statements regarding the impact of the Non-Cooperation Movement:
+1. It led to the widespread participation of women in the national movement.
+2. It resulted in the establishment of numerous national schools and colleges.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the impact of the Non-Cooperation Movement."
+"2022","History","General","Hard","Consider the following pairs:
+Ashoka's major rock edicts : Location in the State of
+1. Dhauli : Odisha
+2. Erragudi : Andhra Pradesh
+3. Jaugada : Madhya Pradesh
+4. Kalsi : Karnataka
+How many pairs given above are correctly matched?","Only one pair","Only two pairs","Only three pairs","All four pairs",1,"Only two pairs","Dhauli (Odisha) and Erragudi (Andhra Pradesh) are correctly matched; Jaugada is in Odisha and Kalsi is in Uttarakhand."
+"2021","History","Medieval History","Hard","With reference to the history of India, the terms ‘kulyavapa’ and ‘dronavapa’ denote","measurement of land","coins of different monetary value","classification of urban land","religious rituals",0,"measurement of land","In the context of medieval Indian history, particularly during the Delhi Sultanate period, 'kulyavapa' and 'dronavapa' were terms used to denote measurements of land. They were units used for assessing land revenue."
+"2021","History","Indus Valley Civilization & Vedic Age","Hard","Which of the following is/are NOT the characteristic(s) of the Indus Valley Civilization?
+1. Well-planned cities with advanced drainage systems.
+2. Standardized weights and measures.
+3. Iron implements for agriculture.
+Select the correct answer using the code given below:","1 only","3 only","1 and 2 only","2 and 3 only",1,"3 only","The Indus Valley Civilization did not use iron implements for agriculture."
+"2021","History","Buddhism & Jainism: Philosophy & Architecture","Hard","Which of the following architectural features is commonly found in Jain temples?","Toranas","Chattrimukha","Gopurams","Stupas",1,"Chattrimukha","Chattrimukha, a four-faced structure, is a common feature in Jain temples."
+"2021","History","Gupta Period: Golden Age of Art & Science","Hard","Consider the following statements regarding the Ajanta caves: 1. They depict stories from the Jataka tales. 2. They were primarily patronized by the Gupta rulers. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Ajanta caves depict Jataka tales, but were patronized by various dynasties, not just Guptas."
+"2021","History","Bhakti & Sufi Movements","Hard","Consider the following statements:
+1. The Bhakti movement originated in South India.
+2. The Sufi movement originated in Persia.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the origins of the movements."
+"2021","History","Mughal Administration, Art & Architecture","Hard","Who among the following translated the 'Rajatarangini' into Persian during the Mughal period?","Abul Fazl","Faizi","Mulla Shah Badakhshi","Abdul Qadir Badauni",2,"Mulla Shah Badakhshi","Mulla Shah Badakhshi translated Rajatarangini into Persian."
+"2021","History","Vijayanagara Empire","Hard","The Battle of Talikota was fought in which year?","1526 AD","1565 AD","1600 AD","1761 AD",1,"1565 AD","The Battle of Talikota was fought in 1565 AD."
+"2021","History","Advent of Europeans & British Expansion","Hard","Consider the following statements regarding the impact of British rule on the Indian economy:
+1. The British introduced a uniform currency system.
+2. The British promoted the growth of Indian industries.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The British introduced a uniform currency system, but did not promote Indian industries."
+"2021","History","Social-Religious Reform Movements (19th Century)","Hard","Which of the following social reformers is known for his efforts in promoting education among women and establishing schools for girls?","Swami Vivekananda","Raja Ram Mohan Roy","Jyotiba Phule","Dayananda Saraswati",2,"Jyotiba Phule","Jyotiba Phule is renowned for his pioneering work in women's education."
+"2021","History","Revolt of 1857 & Rise of Nationalism","Hard","Who among the following organized the 'Asiatic Society of Bengal'?","William Jones","Warren Hastings","Lord Curzon","Lord Wellesley",0,"William Jones","William Jones organized the Asiatic Society of Bengal."
+"2021","History","Indian National Congress (Moderate & Extremist Phase)","Hard","With reference to the Indian freedom struggle, who of the following was/were associated with the 'Extremist' wing of the Congress? 1. Aurobindo Ghosh 2. M.G. Ranade 3. Rash Behari Bose","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",2,"1 and 3 only","Aurobindo Ghosh and Rash Behari Bose were associated with the Extremist wing."
+"2021","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","Who among the following advocated for the establishment of 'Lok Sevak Sangh' after the dissolution of the Indian National Congress?","Jayaprakash Narayan","Acharya Narendra Dev","Mahatma Gandhi","Vinoba Bhave",2,"Mahatma Gandhi","Mahatma Gandhi advocated for the establishment of 'Lok Sevak Sangh'."
+"2021","History","General","Hard","Consider the following statements about Chausath Yogini Temple situated near Morena:
+1. It is a circular temple built during the reign of Kachchhapaghata Dynasty.
+2. It is the only circular temple built in India.
+3. It was meant to promote the Vaishnava cult in the region.
+4. Its design has given rise to a popular belief that it was the inspiration behind the Indian Parliament building.
+Which of the statements given above are correct?","1 and 2","2 and 3 only","1 and 4","2, 3 and 4",2,"1 and 4","The temple was built by the Kachchhapaghata king Devapala and its circular design is believed to have inspired the old Parliament House."
+"2020","History","Ancient History","Hard","Which one of the following explains the meaning of the term 'Therigatha'?","Hymns in praise of Jain Tirthankaras","Buddhist nuns' songs","A grammar book related to Vedic rituals","Stories on lives of certain powerful women",1,"Buddhist nuns' songs","'Therigatha' is a collection of poems written by Buddhist nuns, making it a part of the Buddhist Pali Canon. These songs express their personal experiences and insights on their spiritual journey."
+"2020","History","Medieval History","Hard","With reference to the history of India, the terms ‘kulyavapa’ or ‘dronavapa’ denote","measurement of land","coins of different monetary value","classification of urban land","religious rituals",0,"measurement of land","Kulyavapa and Dronavapa were units of land measurement used during the Delhi Sultanate period in India."
+"2020","History","Modern History","Hard","Who among the following Mughal Emperors shifted emphasis from illustrated manuscripts to album and individual portrait?","Humayun","Akbar","Jahangir","Shah Jahan",2,"Jahangir","Jahangir shifted the emphasis from illustrated manuscripts to albums and individual portraits. He was known for his keen interest in art and portraiture."
+"2020","History","Buddhism & Jainism: Philosophy & Architecture","Hard","Which of the following philosophical systems is/are associated with the concept of 'Syadvada'?","Buddhism","Jainism","Ajivika","Ajñana",1,"Jainism","Syadvada, the doctrine of 'maybe', is a core tenet of Jain philosophy."
+"2020","History","Mauryan Empire: Administration & Art","Hard","The term 'Dhamma' in Ashokan inscriptions refers to:","A specific religious sect.","A set of ethical principles and moral conduct.","A system of taxation.","A type of currency.",1,"A set of ethical principles and moral conduct.","Dhamma refers to a set of ethical principles and moral conduct."
+"2020","History","Gupta Period: Golden Age of Art & Science","Hard","Consider the following statements regarding the Gupta period: 1. It witnessed the construction of numerous rock-cut caves. 2. The decimal system, including the concept of zero, was developed during this period. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The decimal system with zero was developed during the Gupta period, but rock-cut caves existed before."
+"2020","History","Bhakti & Sufi Movements","Hard","Which of the following is/are the core teachings of Sufism?
+1. Emphasis on love and devotion to God.
+2. Rejection of worldly possessions.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Sufism emphasizes love for God and detachment from worldly things."
+"2020","History","Mughal Administration, Art & Architecture","Hard","With reference to Mughal India, what is/are the difference/differences between Jagirdar and Zamindar?
+1. Jagirdars were holders of land assignments in lieu of salary, whereas Zamindars were holders of revenue rights without obligation to perform any duty other than revenue collection.
+2. Jagirdars were responsible for police and judicial duties in their assignments, whereas Zamindars were not.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Jagirdars held land assignments, Zamindars had revenue rights."
+"2020","History","Vijayanagara Empire","Hard","The Vijayanagara ruler Krishnadeva Raya's work Amuktamalyada was in which language?","Telugu","Tamil","Kannada","Sanskrit",0,"Telugu","Amuktamalyada was written in Telugu by Krishnadeva Raya."
+"2020","History","Advent of Europeans & British Expansion","Hard","Consider the following events related to British expansion in India:
+1. Annexation of Sindh
+2. Second Anglo-Sikh War
+3. Subsidiary Alliance with Awadh
+Arrange these events in chronological order.","1-2-3","3-1-2","2-3-1","1-3-2",1,"3-1-2","The correct chronological order is Subsidiary Alliance, Annexation of Sindh, Second Anglo-Sikh War."
+"2020","History","Social-Religious Reform Movements (19th Century)","Hard","Consider the following statements regarding the social and religious reform movements in India during the 19th century:
+1. They were primarily focused on addressing the issues of the upper castes.
+2. They often drew inspiration from Western ideas and values.
+3. They played a significant role in promoting national consciousness.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",1,"2 and 3 only","The movements addressed issues across castes and significantly contributed to nationalism."
+"2020","History","Revolt of 1857 & Rise of Nationalism","Hard","Which of the following factors contributed to the rise of Indian nationalism in the late 19th century?
+1. Economic exploitation by the British.
+2. Western education and its impact.
+3. Socio-religious reform movements.
+Select the correct answer using the code given below:","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",4,"","All the factors contributed to the rise of Indian nationalism."
+"2020","History","Indian National Congress (Moderate & Extremist Phase)","Hard","Consider the following statements regarding the Swadeshi Movement: 1. It was primarily an economic movement aimed at promoting Indian industries. 2. It led to the establishment of national schools and colleges. 3. It was supported by both Moderate and Extremist leaders within the Congress.","1 and 2 only","1 and 3 only","2 and 3 only","1, 2 and 3",3,"1, 2 and 3","The Swadeshi Movement had economic and educational dimensions and garnered support from both factions."
+"2020","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","With reference to the proposals of Cripps Mission, consider the following statements:
+1. The Constituent Assembly would have members nominated by the Provincial Assemblies as well as by the Princely States.
+2. Any Province which was not prepared to accept the new Constitution would have the right to sign a separate agreement with Britain regarding its future status.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements regarding the Cripps Mission are correct."
+"2020","History","General","Hard","With reference to the religious history of India, consider the following statements:
+1. Sthaviravadins belong to Mahayana Buddhism.
+2. Lokottaravadin sect was an offshoot of Mahasanghika sect of Buddhism.
+3. The deification of Buddha by Mahasanghikas fostered the Mahayana Buddhism.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","3 only","1, 2 and 3",1,"2 and 3 only","Sthaviravadins belong to Hinayana, while the Lokottaravadin sect and the concept of a deified Buddha are associated with the Mahasanghikas, precursors to Mahayana."
+"2019","History","Medieval History","Hard","Which of the following statements is/are correct regarding the material used for the construction of Qutub Minar?
+1. It was built using red sandstone and marble.
+2. It was built using only red sandstone.
+Select the correct answer using the code given below:","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Qutub Minar was constructed using red sandstone and marble. Different rulers added to the structure over time, using both materials."
+"2019","History","Modern History","Hard","In the context of colonial India, Shah Nawaz Khan, Prem Kumar Sehgal and Gurbaksh Singh Dhillon are remembered as:","Leaders of Swadeshi and Boycott Movement","Members of the Drafting Committee in the Constituent Assembly","Officers of the Indian National Army","Members of the Interim Government in 1946",2,"Officers of the Indian National Army","Shah Nawaz Khan, Prem Kumar Sehgal, and Gurbaksh Singh Dhillon were officers of the Indian National Army (INA) and were tried in the INA trials after World War II."
+"2019","History","Indus Valley Civilization & Vedic Age","Hard","Consider the following statements regarding the Indus Valley Civilization:
+1. It was predominantly a secular civilization and the religious element, though present, did not dominate the scene.
+2. During this period, cotton was used for manufacturing textiles in India.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Indus Valley Civilization was secular, and cotton was used for textiles."
+"2019","History","Mauryan Empire: Administration & Art","Hard","Consider the following statements regarding Mauryan art: 1. It was influenced by Persian art. 2. It was primarily religious in nature. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct about Mauryan art's influences and nature."
+"2019","History","Gupta Period: Golden Age of Art & Science","Hard","Which of the following literary works are attributed to Kalidasa, a prominent figure of the Gupta period? 1. Raghuvamsha. 2. Abhijnanashakuntalam. 3. Kadambari. Select the correct answer using the code given below:","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",0,"1 and 2 only","Raghuvamsha and Abhijnanashakuntalam are by Kalidasa; Kadambari is by Banabhatta."
+"2019","History","Mughal Administration, Art & Architecture","Hard","Consider the following statements regarding the reign of Shah Jahan:
+1. The Peacock Throne was commissioned during his reign.
+2. He introduced the Chahar Taslim custom.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both the Peacock Throne and Chahar Taslim were introduced."
+"2019","History","Vijayanagara Empire","Hard","Who among the following was the founder of the Vijayanagara Empire?","Harihara and Bukka","Krishnadeva Raya","Ramaraya","Sadasiva Raya",0,"Harihara and Bukka","Harihara and Bukka founded the Vijayanagara Empire."
+"2019","History","Advent of Europeans & British Expansion","Hard","Consider the following statements regarding the impact of British rule on Indian society:
+1. The British introduced Western education.
+2. The British promoted social reforms such as the abolition of Sati.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The British introduced Western education and promoted social reforms."
+"2019","History","Revolt of 1857 & Rise of Nationalism","Hard","Who among the following was/were associated with the suppression of the Revolt of 1857 in Delhi?
+1. John Nicholson
+2. Colin Campbell
+3. Hugh Rose
+Select the correct answer using the code given below:","1 only","1 and 2 only","2 and 3 only","1, 2 and 3",1,"1 and 2 only","John Nicholson was associated with the suppression of the Revolt of 1857 in Delhi."
+"2019","History","Indian National Congress (Moderate & Extremist Phase)","Hard","The concept of 'passive resistance' was primarily advocated by which group within the Indian National Congress?","Moderates","Extremists","Revolutionaries","Socialists",1,"Extremists","Extremists often advocated for passive resistance."
+"2019","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","With reference to the Indian freedom struggle, consider the following events:
+1. Mutiny of Royal Indian Navy
+2. Quit India Movement Launched
+3. Second Round Table Conference
+What is the correct chronological sequence of the above events?","1-2-3","2-3-1","3-2-1","3-1-2",2,"3-2-1","The correct chronological order is 3-2-1 (Second Round Table Conference, Quit India, RIN Mutiny)."
+"2019","History","General","Hard","With reference to the cultural history of India, consider the following pairs:
+1. Parivrajaka : Renunciant and Wanderer
+2. Shramana : Priest with a high status
+3. Upasaka : Lay follower of Buddhism
+Which of the pairs given above are correctly matched?","1 and 2 only","1 and 3 only","2 and 3 only","1, 2 and 3",1,"1 and 3 only","Parivrajaka (wanderer) and Upasaka (lay follower) are correct, but a Shramana was an ascetic, not necessarily a high-status priest."
+"2018","History","Medieval History","Hard","Which of the following statements is/are applicable to Jain doctrine?
+1. The surest way of annihilating karma is to practice penance.
+2. Every object, even the smallest particle has a soul.
+3. Karma is the bane of the soul and must be ended.
+Select the correct answer using the code given below:","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are applicable to Jain doctrine. Jainism emphasizes the importance of penance (tapas) to eliminate karma, believes that every object has a soul (jiva), and considers karma to be the root cause of suffering."
+"2018","History","Modern History","Hard","Consider the following events:
+1. Establishment of the Singa Sangha
+2. Establishment of the Ghadar Party
+3. Establishment of the Bharat Dharma Mahamandala
+4. Establishment of the Servant of India Society
+What is the correct chronological sequence of the above events?","1, 2, 3, 4","2, 1, 4, 3","2, 1, 3, 4","3, 2, 1, 4",2,"2, 1, 3, 4","The correct chronological order is:
+2. Ghadar Party (1913)
+1. Singha Sabha (1873)
+4. Servants of India Society (1905)
+3. Bharat Dharma Mahamandala (1887)"
+"2018","History","Indus Valley Civilization & Vedic Age","Hard","Which of the following sites of the Indus Valley Civilization is located in Rajasthan?","Lothal","Kalibangan","Mohenjodaro","Harappa",1,"Kalibangan","Kalibangan is located in Rajasthan."
+"2018","History","Buddhism & Jainism: Philosophy & Architecture","Hard","The Sravanabelagola Gomateshwara statue represents which of the following?","Buddha","Mahavira","Bahubali","Parshvanatha",2,"Bahubali","The Gomateshwara statue at Sravanabelagola represents Bahubali, a Jain saint."
+"2018","History","Mauryan Empire: Administration & Art","Hard","Which of the following best describes the role of 'Dharmamahamatras' in the Mauryan Empire?","Military commanders.","Revenue collectors.","Officials appointed to propagate Dhamma.","Judicial officers.",2,"Officials appointed to propagate Dhamma.","Dharmamahamatras were appointed to propagate Dhamma."
+"2018","History","Gupta Period: Golden Age of Art & Science","Hard","Which of the following are characteristic features of Gupta art? 1. Emphasis on spiritual expression. 2. Use of local materials. 3. Synthesis of Indian and foreign styles. Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Gupta art emphasized spiritual expression, used local materials, and synthesized Indian and foreign styles."
+"2018","History","Bhakti & Sufi Movements","Hard","Which of the following statements is/are correct regarding Sufism in India?
+1. Sufis believed in the concept of Wahdat-ul-Wujud.
+2. Sufi saints like Nizamuddin Auliya emphasized on Sama.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both Wahdat-ul-Wujud and Sama were important aspects of Sufism."
+"2018","History","Mughal Administration, Art & Architecture","Hard","Consider the following statements regarding the Mughal architecture:
+1. Pietra dura inlay work was extensively used in the Taj Mahal.
+2. Charbagh style gardens were a common feature of Mughal architecture.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both Pietra dura and Charbagh style are Mughal features."
+"2018","History","Vijayanagara Empire","Hard","Consider the following statements regarding the socio-economic conditions during the Vijayanagara Empire:
+1. Agriculture was the main occupation of the people.
+2. Trade and commerce flourished, with both internal and external trade.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both agriculture and trade flourished during the Vijayanagara Empire."
+"2018","History","Advent of Europeans & British Expansion","Hard","Which of the following statements is/are correct regarding the Regulating Act of 1773?
+1. It established the Supreme Court at Calcutta.
+2. It designated the Governor of Bengal as the Governor-General of Bengal.
+3. It prohibited private trade by the Company's servants.
+Select the correct answer using the code given below:","1 only","1 and 2 only","2 and 3 only","1, 2 and 3",3,"1, 2 and 3","All the statements regarding the Regulating Act of 1773 are correct."
+"2018","History","Social-Religious Reform Movements (19th Century)","Hard","Who among the following founded the 'All India Trade Union Congress'?","V.V. Giri","S.A. Dange","N.M. Joshi","Lala Lajpat Rai",2,"N.M. Joshi","N.M. Joshi was a key founder of the All India Trade Union Congress."
+"2018","History","Revolt of 1857 & Rise of Nationalism","Hard","Consider the following statements regarding the Revolt of 1857:
+1. It was primarily a mutiny of sepoys in the Bengal Army.
+2. The revolt was widespread, encompassing all regions of India.
+3. The revolt was triggered by the introduction of the Enfield rifle cartridges.
+Which of the statements given above is/are correct?","1 and 2 only","3 only","2 and 3 only","1 and 3 only",3,"1 and 3 only","The revolt was triggered by the Enfield rifle cartridges and was primarily a sepoy mutiny."
+"2018","History","Indian National Congress (Moderate & Extremist Phase)","Hard","Which of the following statements is/are correct regarding the Moderate phase of the Indian National Congress? 1. They believed in constitutional methods and peaceful means. 2. They advocated for complete independence from British rule. 3. They aimed at gradual reforms within the existing framework.","1 and 2 only","1 and 3 only","2 and 3 only","1, 2 and 3",1,"1 and 3 only","Moderates advocated for gradual reforms and believed in constitutional methods, not complete independence."
+"2018","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","The Gandhi-Irwin Pact included which of the following?
+1. Invitation to Congress to participate in the Round Table Conference
+2. Acceptance of Congress demand for complete independence
+3. Withdrawal of Ordinances promulgated in connection with the Civil Disobedience Movement
+4. Acceptance of Congress demand for enquiry into police excesses
+Select the correct answer using the code given below.","1, 2 and 4","1 and 3 only","2, 3 and 4","1 only",1,"1 and 3 only","The Gandhi-Irwin Pact included invitation to RTC and withdrawal of ordinances."
+"2018","History","General","Hard","Which one of the following foreign travellers elaborately discussed about diamonds and diamond mines of India?","Francois Bernier","Jean-Baptiste Tavernier","Jean de Thevenot","Abbe Barthelemy Carre",1,"Jean-Baptiste Tavernier","Jean-Baptiste Tavernier, a 17th-century French gem merchant, travelled extensively in India and wrote detailed accounts of its diamond mines."
+"2017","History","Medieval History","Hard","Which of the following statements is/are applicable to the system of 'Dalit' in the context of administration of Delhi Sultanate?
+1. It was an elaborate system of revenue collection.
+2. It was introduced by Muhammad bin Tughlaq.
+3. The office of 'Dalit' passed on hereditary lines.
+Select the correct answer using the code given below:","1 only","Only 2 and 3","Only 1 and 3","None",3,"None","The term 'Dalit' is not related to the administration of the Delhi Sultanate. Therefore, all the statements are incorrect."
+"2017","History","Modern History","Hard","In the context of Indian history, the Rakhmabai case of 1884 revolved around
+1. women's right to gain education
+2. age of consent
+3. restitution of conjugal rights
+Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",1,"2 and 3 only","The Rakhmabai case of 1884 primarily revolved around the age of consent and the restitution of conjugal rights. Rakhmabai refused to live with her husband because she was married at a young age and did not consent to the marriage. This case brought attention to the issues of child marriage and women's rights."
+"2017","History","Indus Valley Civilization & Vedic Age","Hard","Which of the following characterizes/characterize the people of Indus Civilization?
+1. They possessed great palaces and temples.
+2. They worshipped both male and female deities.
+3. They employed horse-drawn chariots in warfare.
+Select the correct answer using the code given below.","1 and 2 only","2 only","1, 2 and 3","None",1,"2 only","Indus Valley people worshipped both male and female deities, but lacked palaces and horse-drawn chariots."
+"2017","History","Mauryan Empire: Administration & Art","Hard","Which of the following describes the most appropriate relationship between the Mauryan state and the Kalinga War?","The Kalinga War led to the complete collapse of the Mauryan Empire.","The Kalinga War prompted Ashoka to adopt a policy of Dhamma and non-aggression.","The Kalinga War had no significant impact on the Mauryan Empire.","The Kalinga War resulted in the expansion of the Mauryan Empire to its greatest extent.",1,"The Kalinga War prompted Ashoka to adopt a policy of Dhamma and non-aggression.","The Kalinga War led Ashoka to embrace Dhamma and renounce further conquest."
+"2017","History","Gupta Period: Golden Age of Art & Science","Hard","The Gupta period is often referred to as the 'Golden Age' of India. Which of the following factors best support this claim? 1. Significant advancements in science and technology. 2. Flourishing of art and literature. 3. Political stability and economic prosperity. Select the correct answer using the code given below:","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three factors – science, art, and stability – contributed to the 'Golden Age' designation."
+"2017","History","Bhakti & Sufi Movements","Hard","Consider the following statements regarding the Bhakti movement:
+1. It emphasized the importance of personal devotion and love for God.
+2. It rejected the caste system and promoted social equality.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Bhakti movement stressed devotion and often challenged caste hierarchies."
+"2017","History","Mughal Administration, Art & Architecture","Hard","Which of the following Mughal emperors shifted emphasis from illustrated manuscripts to album and individual portrait?","Humayun","Akbar","Jahangir","Shah Jahan",2,"Jahangir","Jahangir was known for his love of art and portraiture."
+"2017","History","Vijayanagara Empire","Hard","Consider the following statements regarding the Nayankara system:
+1. It was a system of military land grants.
+2. It was prevalent during the Vijayanagara Empire.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Nayankara system, a system of military land grants, was prevalent during the Vijayanagara Empire."
+"2017","History","Advent of Europeans & British Expansion","Hard","With reference to Pondicherry (now Puducherry), consider the following statements:
+1. The first European power to occupy Pondicherry was the Portuguese.
+2. The second European power to occupy Pondicherry was the French.
+3. The English never occupied Pondicherry.
+Which of the statements given above is/are correct?","1 only","2 and 3 only","3 only","1, 2 and 3",0,"1 only","The Portuguese were the first Europeans to occupy Pondicherry."
+"2017","History","Social-Religious Reform Movements (19th Century)","Hard","With reference to the history of India, the terms 'kulyavapa' and 'dronavapa' denote","measurement of land","coins of different monetary value","classification of urban land","religious rituals",0,"measurement of land","Kulyavapa and dronavapa were units used for land measurement."
+"2017","History","Revolt of 1857 & Rise of Nationalism","Hard","With reference to the history of India, the term ‘Rakhmabai Case’ of 1884 pertained to:
+","Women’s right to gain education","Age of Consent","Restitution of conjugal rights","Women’s right to seek employment",2,"Restitution of conjugal rights","The Rakhmabai case (1884) was related to the restitution of conjugal rights."
+"2017","History","Indian National Congress (Moderate & Extremist Phase)","Hard","Which of the following events is considered a turning point leading to the rise of Extremism within the Indian National Congress?","The Ilbert Bill controversy","The formation of the Indian National Congress","The passing of the Vernacular Press Act","The execution of Bhagat Singh",0,"The Ilbert Bill controversy","The Ilbert Bill controversy exposed racial inequalities and fueled Extremism."
+"2017","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","Which of the following statements is/are correct regarding the Quit India Movement?
+1. It was a spontaneous movement.
+2. It was led by Mahatma Gandhi.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The Quit India Movement was largely spontaneous after the initial arrests of leaders."
+"2017","History","General","Hard","With reference to the difference between the culture of Rigvedic Aryans and Indus Valley people, which of the following statements is/are correct?
+1. Rigvedic Aryans used the coat of mail and helmet in warfare whereas the people of Indus Valley Civilization did not leave any evidence of using them.
+2. Rigvedic Aryans knew gold, silver and copper whereas Indus Valley people knew only copper and iron.
+3. Rigvedic Aryans had domesticated the horse whereas there is no evidence of Indus Valley people having been aware of this animal.
+Select the correct answer using the code given below.","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",0,"1 only","Rigvedic Aryans were militaristic with helmets and armour, unlike the more peaceful IVC people who also did not use iron."
+"2016","History","Medieval History","Hard","Which of the following statements is/are applicable to Kishkindha Kandha, a chapter in Ramayana?
+1. It is set in the region of present-day Karnataka.
+2. It narrates the story of Hanuman's devotion to Rama.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Kishkindha Kanda is indeed set in the region of present-day Karnataka and narrates the story of Hanuman's devotion to Rama."
+"2016","History","Indus Valley Civilization & Vedic Age","Hard","The social division of the Rig Vedic society was based on:","Birth","Occupation","Wealth","Education",1,"Occupation","The early Rig Vedic society was primarily divided based on occupation."
+"2016","History","Buddhism & Jainism: Philosophy & Architecture","Hard","Which of the following is/are the distinguishing characteristic(s) of 'Mahayana Buddhism'?
+1. Idol worship
+2. Emphasis on devotion
+3. Belief in Bodhisattvas
+Select the correct answer using the code given below.","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Mahayana Buddhism emphasizes idol worship, devotion, and the concept of Bodhisattvas."
+"2016","History","Buddhism & Jainism: Philosophy & Architecture","Hard","The Barabar Caves, dating back to the Mauryan period, are primarily associated with which religious group?","Ajivikas","Buddhists","Jains","Hindus",0,"Ajivikas","The Barabar Caves were primarily used by the Ajivikas."
+"2016","History","Mauryan Empire: Administration & Art","Hard","The Sarnath Lion Capital is associated with which of the following rulers?","Chandragupta Maurya","Bindusara","Ashoka","Kanishka",2,"Ashoka","The Sarnath Lion Capital is associated with Ashoka."
+"2016","History","Gupta Period: Golden Age of Art & Science","Hard","Which of the following is NOT a characteristic feature of Gupta sculpture?","Emphasis on grace and elegance","Use of elaborate ornamentation","Depiction of human emotions","Dominance of abstract forms",3,"Dominance of abstract forms","Gupta sculpture emphasized grace, ornamentation, and emotions, not abstract forms."
+"2016","History","Bhakti & Sufi Movements","Hard","Which of the following Sufi saints is associated with the Chishti order?
+","Sheikh Abdul Qadir Jilani","Khwaja Moinuddin Chishti","Sheikh Ahmad Sirhindi","Shah Waliullah Dehlawi",1,"Khwaja Moinuddin Chishti","Khwaja Moinuddin Chishti founded the Chishti order in India."
+"2016","History","Mughal Administration, Art & Architecture","Hard","Which of the following Mughal emperors is credited with the construction of the Red Fort in Delhi?","Akbar","Jahangir","Shah Jahan","Aurangzeb",2,"Shah Jahan","Shah Jahan commissioned the Red Fort in Delhi."
+"2016","History","Vijayanagara Empire","Hard","Which of the following statements regarding the Vijayanagara Empire is/are correct?
+1. Krishnadeva Raya built the Hazara Rama Temple.
+2. The empire was known for its efficient village administration.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Krishnadeva Raya built the Hazara Rama Temple, and the Vijayanagara Empire had an efficient village administration."
+"2016","History","Advent of Europeans & British Expansion","Hard","The Dual System of Government in Bengal was abolished by:","Lord Clive","Warren Hastings","Lord Cornwallis","Lord Wellesley",1,"Warren Hastings","Warren Hastings abolished the Dual System of Government in Bengal."
+"2016","History","Social-Religious Reform Movements (19th Century)","Hard","The object of the Butler Committee of 1927 was to","define the jurisdiction of the Central and Provincial Governments","define the powers of the Secretary of State for India","impose censorship on national press","improve the relationship between the Government of India and the Indian States",3,"improve the relationship between the Government of India and the Indian States","The Butler Committee aimed to improve relations between British India and the Princely States."
+"2016","History","Revolt of 1857 & Rise of Nationalism","Hard","The Ilbert Bill controversy was related to:","Imposition of restrictions on Indian newspapers and magazines.","Imposition of restrictions on the education of Indian women.","Removal of disqualifications imposed on Indian magistrates with regard to the trial of Europeans.","Enactment of laws to control the activities of Indian revolutionaries.",3,"Enactment of laws to control the activities of Indian revolutionaries.","The Ilbert Bill controversy was related to the trial of Europeans by Indian magistrates."
+"2016","History","Indian National Congress (Moderate & Extremist Phase)","Hard","Which of the following newspapers was associated with the Extremist ideology?","The Hindu","Amrita Bazar Patrika","Kesari","The Statesman",2,"Kesari","'Kesari' was associated with Bal Gangadhar Tilak and Extremist ideology."
+"2016","History","Gandhian Era: Non-Cooperation, Civil Disobedience, Quit India","Hard","Consider the following statements:
+1. The Non-Cooperation Movement was launched in 1920.
+2. One of the reasons for launching the Non-Cooperation Movement was the Jallianwala Bagh massacre.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the Non-Cooperation Movement."
+"2016","History","General","Hard","The 'Swadeshi' and 'Boycott' were adopted as methods of struggle for the first time during the","agitation against the Partition of Bengal","Home Rule Movement","Non-Cooperation Movement","visit of the Simon Commission to India",0,"agitation against the Partition of Bengal","The Swadeshi and Boycott movements were formally started from Town Hall, Calcutta on August 7, 1905, to protest the partition of Bengal."
+"2015","History","Medieval History","Hard","Which of the following statements is/are applicable to Jizya?
+1. It was levied on all non-Muslims.
+2. It was a tax on land.
+3. It was a tax on property.","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",0,"1 only","Jizya was a per capita tax levied on non-Muslims in some Islamic states. It was not a land or property tax."
+"2015","History","Modern History","Hard","Which of the following led to the introduction of English as a medium of instruction in India?
+1. The Charter Act of 1813
+2. General Committee of Public Instruction, 1823
+3. Macaulay’s Minute of 1835","1 and 2 only","2 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three factors contributed. The Charter Act of 1813 initiated funding for education, the General Committee debated the direction, and Macaulay's Minute strongly advocated for English."
+"2015","History","Indus Valley Civilization & Vedic Age","Hard","Which of the following is/are the characteristic(s) of Indus Valley Civilization?
+1. They possessed great palaces and temples.
+2. They worshipped both male and female deities.
+3. They employed horse-drawn chariots in warfare.
+Select the correct answer using the code given below.","1 and 2 only","2 only","1, 2 and 3","None",1,"2 only","Indus Valley people worshipped both male and female deities, but lacked palaces and horse-drawn chariots."
+"2015","History","Buddhism & Jainism: Philosophy & Architecture","Hard","Which of the following caves features both Buddhist and Jain art?","Ellora Caves","Ajanta Caves","Karla Caves","Bhaja Caves",0,"Ellora Caves","Ellora Caves contain Buddhist, Hindu, and Jain cave temples."
+"2015","History","Mauryan Empire: Administration & Art","Hard","With reference to the Mauryan administration, consider the following statements: 1. The Mauryan empire was divided into provinces, each under a prince or a governor. 2. The Mauryan administration was highly centralized. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding Mauryan provincial administration."
+"2015","History","Gupta Period: Golden Age of Art & Science","Hard","Which of the following is/are the most likely reason/reasons for the decline of the Gupta empire? 1. Inferior successors of the Gupta rulers. 2. Invasions by the Hunas. 3. Weakening of the economic structure. Select the correct answer using the code given below:","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Inferior successors, Huna invasions, and a weakening economy all contributed to the Gupta decline."
+"2015","History","Bhakti & Sufi Movements","Hard","Who among the following was associated with the Bhakti cult of Maharashtra?","Vallabhacharya","Namadeva","Dyaneshwar","Chaitanya",1,"Namadeva","Namadeva was a prominent figure in the Bhakti movement of Maharashtra."
+"2015","History","Mughal Administration, Art & Architecture","Hard","Consider the following statements regarding the Mughal administration:
+1. Mansabdari system was a unique feature of the Mughal administration.
+2. Jagir system was an integral part of the Mughal revenue system.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both Mansabdari and Jagir systems were key features."
+"2015","History","Vijayanagara Empire","Hard","Which of the following foreign travelers visited the Vijayanagara Empire?
+1. Nicolo de Conti
+2. Abdur Razzak
+3. Domingo Paes
+Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three travelers, Nicolo de Conti, Abdur Razzak, and Domingo Paes, visited the Vijayanagara Empire."
+"2015","History","Social-Religious Reform Movements (19th Century)","Hard","Consider the following statements regarding Brahmo Samaj:
+1. It opposed idolatry.
+2. It denied the need for a priestly class for interpreting religious texts.
+3. It popularized the doctrine that the scriptures are infallible.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",0,"1 and 2 only","Brahmo Samaj opposed idolatry and priestly interpretation, but did not believe in scriptural infallibility."
+"2015","History","Revolt of 1857 & Rise of Nationalism","Hard","Who among the following rulers was the first to organize Haj pilgrimage at state expense?","Alauddin Khilji","Firoz Shah Tughlaq","Akbar","Aurangzeb",2,"Akbar","Akbar was the first to organize Haj pilgrimage at state expense."
+"2015","History","Indian National Congress (Moderate & Extremist Phase)","Hard","Which of the following leaders is associated with the Extremist faction of the Indian National Congress?","Gopal Krishna Gokhale","Surendranath Banerjee","Bal Gangadhar Tilak","Dadabhai Naoroji",2,"Bal Gangadhar Tilak","Bal Gangadhar Tilak was a prominent leader of the Extremist faction."
+"2015","History","General","Hard","Who of the following was/were economic critic/critics of colonialism in India?
+1. Dadabhai Naoroji
+2. G. Subramania Iyer
+3. R. C. Dutt
+Select the correct answer using the code given below.","1 only","1 and 2 only","2 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three, Dadabhai Naoroji ('Drain of Wealth' theory), R.C. Dutt ('Economic History of India'), and G.S. Iyer, were prominent early nationalist economic critics of British rule."

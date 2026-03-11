@@ -1,0 +1,574 @@
+Year,Subject,Topic,Difficulty,Question Text,Option A,Option B,Option C,Option D,Correct Answer (0-3),Correct Answer Text,Explanation
+"2024","Polity","Constitutional Amendments","Hard","Which of the following statements regarding the 101st Constitutional Amendment Act is/are correct?
+1. It introduced the Goods and Services Tax (GST) in India.
+2. It amended Article 279A to provide for a GST Council.
+3. It mandated the sharing of GST revenue between the Union and the States.","Only 1 and 2","Only 2 and 3","Only 1 and 3","1, 2 and 3",0,"Only 1 and 2","The 101st Constitutional Amendment Act, 2016, introduced the Goods and Services Tax (GST) in India and amended Article 279A to provide for a GST Council. While it enabled the sharing of GST revenue, it didn't mandate it directly; the specific modalities are determined by the GST Council's recommendations and subsequent legislation."
+"2024","Polity","Directive Principles","Hard","Which part of the Indian Constitution deals with the Directive Principles of State Policy?","Part II","Part III","Part IV","Part V",2,"Part IV","Part IV of the Indian Constitution (Articles 36-51) deals with the Directive Principles of State Policy (DPSP)."
+"2024","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Which of the following committees recommended the abolition of dyarchy at the provincial level?","Muddiman Committee","Simon Commission","Butler Committee","Cripps Mission",1,"Simon Commission","The Simon Commission recommended the abolition of dyarchy at the provincial level."
+"2024","Polity","Making of the Constitution & Salient Features","Hard","Which of the following statements is/are correct regarding the Drafting Committee of the Constituent Assembly?
+1. It was chaired by Dr. B.R. Ambedkar.
+2. It included representatives from all major communities in India.
+3. It was responsible for preparing the first draft of the Constitution.
+Select the correct answer using the codes given below:","1 only","2 only","1 and 3 only","1, 2 and 3",2,"1 and 3 only","Ambedkar chaired the committee, and it prepared the draft; it aimed for broad representation."
+"2024","Polity","Preamble: Keywords and Significance","Hard","Consider the following statements regarding the Preamble of the Indian Constitution:
+1. It is enforceable in a court of law.
+2. It indicates the source from which the constitution derives its authority.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The Preamble is not enforceable but indicates the source of the Constitution's authority."
+"2024","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Consider the following statements:
+1. Article 2 of the Constitution deals with the establishment of new states.
+2. Article 3 of the Constitution deals with the admission of new states.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","Article 2 deals with admission, and Article 3 deals with formation of new states."
+"2024","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","Consider the following statements regarding Article 13: 1. It declares laws inconsistent with the Fundamental Rights as void. 2. It applies to both pre-constitutional and post-constitutional laws. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding Article 13."
+"2024","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following statements best describes the relationship between Fundamental Rights and Directive Principles of State Policy?","They are mutually exclusive and contradictory.","Directive Principles are subordinate to Fundamental Rights.","Fundamental Rights are subordinate to Directive Principles.","They are complementary and should be interpreted harmoniously.",3,"They are complementary and should be interpreted harmoniously.","Fundamental Rights and Directive Principles are complementary."
+"2024","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","Consider the following statements regarding the application of the Basic Structure doctrine: 1. It applies only to amendments affecting Fundamental Rights. 2. It is used by the judiciary to assess the validity of constitutional amendments. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The doctrine applies to all amendments, not just those affecting Fundamental Rights."
+"2024","Polity","Parliamentary System vs Presidential System","Hard","Consider the following statements regarding the powers of the President in a Presidential system:
+1. The President can veto legislation passed by the legislature.
+2. The President can dissolve the legislature at will.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The President can veto legislation, but generally cannot dissolve the legislature."
+"2024","Polity","Federal System & Center-State Relations (Legislative, Admin, Financial)","Hard","Consider the following statements regarding the powers of the Governor:
+1. The Governor can reserve a bill for the President's consideration even if it is not unconstitutional.
+2. The Governor acts as a link between the Union Government and the State Government.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the powers of the Governor."
+"2024","Polity","Emergency Provisions (National, State, Financial)","Hard","Consider the following statements regarding the impact of a National Emergency on the distribution of financial resources between the Union and the States:
+1. The President can modify the constitutional provisions regarding the distribution of revenues.
+2. Such modifications continue to operate until the end of the financial year in which the Emergency ceases to operate.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements accurately describe the impact on financial resource distribution during a National Emergency."
+"2024","Polity","Prime Minister & Council of Ministers","Hard","Consider the following statements regarding the Attorney General of India:
+1. He is the highest law officer in the country.
+2. He is a member of the Cabinet.
+3. He has the right to speak in the Parliament.
+Which of the statements given above is/are correct?","1 and 2 only","1 and 3 only","2 and 3 only","1, 2 and 3",1,"1 and 3 only","The Attorney General is not a member of the Cabinet."
+"2024","Polity","Parliament: Sessions, Motions, Bills, Committees, Budget","Hard","Consider the following statements regarding the Public Accounts Committee (PAC):
+1. The Chairman of the PAC is appointed by the Speaker of the Lok Sabha.
+2. The PAC examines the reports of the Comptroller and Auditor General of India (CAG) on the accounts of the Union and State governments.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct about the PAC."
+"2024","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Consider the following statements regarding the writ jurisdiction of the Supreme Court:
+1. It is wider than that of the High Courts.
+2. It can be invoked only for the enforcement of Fundamental Rights.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The writ jurisdiction of the Supreme Court is narrower than that of High Courts, and only for Fundamental Rights."
+"2024","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","If a bill passed by the State Legislature is reserved by the Governor for the consideration of the President, what is the next step?","The President must give assent to the bill.","The President can either give assent or withhold assent to the bill.","The President must return the bill to the State Legislature for reconsideration.","The bill automatically becomes law after six months.",1,"The President can either give assent or withhold assent to the bill.","The President has the power to assent or withhold assent."
+"2024","Polity","State Legislature & Chief Minister","Hard","Consider the following statements regarding the composition of the State Legislative Council:
+1. Not more than 1/6th of the total members are nominated by the Governor.
+2. 1/3rd are elected by members of local bodies.
+3. 1/12th are elected by graduates residing in the State.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All statements accurately reflect the composition of the Legislative Council."
+"2024","Polity","High Courts & Subordinate Courts","Hard","Which of the following statements accurately describes the relationship between High Courts and the Supreme Court regarding advisory jurisdiction?
+","High Courts possess advisory jurisdiction similar to the Supreme Court under Article 143.","High Courts can offer advisory opinions to the Governor of the state on matters of public importance.","Only the Supreme Court has advisory jurisdiction; High Courts do not.","High Courts can request advisory opinions from the Supreme Court on complex legal matters.",2,"Only the Supreme Court has advisory jurisdiction; High Courts do not.","Only the Supreme Court has advisory jurisdiction under Article 143."
+"2024","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Consider the following statements regarding Metropolitan Planning Committees:
+1. They are constituted under the 74th Amendment.
+2. They prepare draft development plans for metropolitan areas.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding Metropolitan Planning Committees."
+"2024","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","Which of the following statements is correct regarding the National Commission for Scheduled Castes (NCSC)?","It is a statutory body established by an Act of Parliament.","It has the power to investigate all matters relating to the safeguards provided for the Scheduled Castes under the Constitution.","It can only make recommendations to the government, which are not binding.","The Chairperson of the NCSC must be a retired judge of the Supreme Court.",1,"It has the power to investigate all matters relating to the safeguards provided for the Scheduled Castes under the Constitution.","NCSC has the power to investigate matters relating to safeguards for SCs."
+"2024","Polity","General","Hard","Consider the following statements regarding the Speaker of the Lok Sabha:
+1. The Speaker's salary and allowances are charged on the Consolidated Fund of India and are not subject to the annual vote of Parliament.
+2. The Speaker can be removed by a resolution passed by a majority of all the then members of the Lok Sabha.
+3. While a resolution for his removal is under consideration, the Speaker cannot preside at the sitting of the House, but he can speak and take part in its proceedings.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are correct as per the provisions laid out in Articles 94, 95, and 96 of the Indian Constitution regarding the Speaker of the Lok Sabha."
+"2023","Polity","Constitutional Amendments","Hard","Consider the following statements:
+1. In India, imprisonment cannot be imposed on a citizen for failing to discharge certain contractual obligations.
+2. No person can be arrested or detained in custody without being informed of the grounds for such arrest.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Statement 1 is correct. Article 21 prohibits imprisonment for failing to discharge contractual obligations. Statement 2 is correct. Article 22(1) mandates that no person can be arrested without being informed of the grounds for such arrest."
+"2023","Polity","Parliament","Hard","Consider the following statements:
+1. The Constitution of India classifies ministers into four ranks i.e., Cabinet Minister, Minister of State with Independent Charge, Minister of State and Deputy Minister.
+2. The total number of ministers in the Union Government, including the Prime Minister, shall not exceed 15 percent of the total number of members of the Lok Sabha.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Statement 1 is incorrect as the Constitution does not classify ministers into ranks. Statement 2 is correct as per the 91st Constitutional Amendment Act."
+"2023","Polity","Panchayati Raj","Hard","Consider the following statements about the functions of the Election Commission of India:
+1. The Election Commission conducts elections for the Parliament, State Legislatures, Municipal Corporations and Panchayats.
+2. The Election Commission prepares and maintains the electoral rolls.
+3. The Election Commission adjudicates election disputes.
+4. The Election Commission lays down the code of conduct for the parties and the candidates during elections.
+Which of the statements given above are correct?","1, 2 and 3","2, 3 and 4","1, 2 and 4","1, 3 and 4",2,"1, 2 and 4","Statement 1 is incorrect as the Election Commission does not conduct elections for Municipal Corporations and Panchayats. Statement 3 is incorrect as the Election Commission does not adjudicate election disputes."
+"2023","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Which of the following Acts empowered the Governor-General to issue ordinances?","Regulating Act, 1773","Pitt's India Act, 1784","Charter Act, 1833","Indian Councils Act, 1861",3,"Indian Councils Act, 1861","The Indian Councils Act of 1861 empowered the Governor-General to issue ordinances."
+"2023","Polity","Making of the Constitution & Salient Features","Hard","Consider the following statements regarding the Preamble to the Constitution of India:
+1. The Preamble is not enforceable in any court of law.
+2. The Preamble indicates the source from which the Constitution derives its authority.
+3. The Preamble states the objectives which the Constitution seeks to establish and promote.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements accurately describe the Preamble's nature and function."
+"2023","Polity","Preamble: Keywords and Significance","Hard","The concept of 'Fraternity' in the Preamble primarily aims to promote:","National Unity and Integrity","Economic Equality","Social Justice","Political Stability",0,"National Unity and Integrity","Fraternity in the Preamble aims to promote National Unity and Integrity."
+"2023","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Consider the following statements regarding Article 3 of the Indian Constitution:
+1. A bill contemplating the changes under Article 3 can be introduced only in the Lok Sabha.
+2. Prior recommendation of the President is required for introducing such a bill.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The bill can be introduced in either house, but requires the President's recommendation."
+"2023","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","Which of the following statements is correct regarding the writ of Prohibition?","It is issued to direct a public official to perform a duty.","It is issued to prevent an inferior court from exceeding its jurisdiction.","It is issued to release a person unlawfully detained.","It is issued to question the legality of a person holding a public office.",1,"It is issued to prevent an inferior court from exceeding its jurisdiction.","Prohibition prevents an inferior court from exceeding its jurisdiction."
+"2023","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following statements is/are correct regarding Fundamental Duties?
+1. Fundamental Duties are enforceable through writs.
+2. Fundamental Duties were originally a part of the Constitution.
+3. Fundamental Duties are applicable only to citizens.","1 only","3 only","1 and 2","2 and 3",1,"3 only","Fundamental Duties are not enforceable and were added later; they apply only to citizens."
+"2023","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following articles of the Constitution deals with the promotion of international peace and security?","Article 48","Article 49","Article 50","Article 51",3,"Article 51","Article 51 promotes international peace and security."
+"2023","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","Which of the following cases directly dealt with the amendability of Fundamental Rights?","Minerva Mills v. Union of India","Golaknath v. State of Punjab","Shankari Prasad v. Union of India","All of the above",3,"All of the above","All mentioned cases dealt with the amendability of Fundamental Rights."
+"2023","Polity","Parliamentary System vs Presidential System","Hard","Which of the following best describes the relationship between the executive and legislature in a parliamentary system?","Independent","Interdependent","Mutually exclusive","Completely separate",1,"Interdependent","The executive and legislature are interdependent in a parliamentary system."
+"2023","Polity","Federal System & Center-State Relations (Legislative, Admin, Financial)","Hard","Consider the following statements regarding the Goods and Services Tax (GST) Council:
+1. It is a constitutional body.
+2. It makes recommendations to the Union and State Governments on issues related to GST.
+3. Every decision of the GST Council requires a three-fourth majority of the weighted votes of the members present and voting.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are correct regarding the GST Council."
+"2023","Polity","Emergency Provisions (National, State, Financial)","Hard","Consider the following statements regarding Financial Emergency under Article 360 of the Constitution:
+1. A proclamation declaring a Financial Emergency must be approved by both Houses of Parliament within two months.
+2. During a Financial Emergency, the salaries and allowances of all classes of employees, including Judges of the Supreme Court and High Courts, can be reduced.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements regarding the Financial Emergency are correct as per Article 360."
+"2023","Polity","President & Vice-President: Election, Powers, Impeachment","Hard","Consider the following statements regarding the powers of the President of India:
+1. The President can declare war or conclude peace, subject to parliamentary approval.
+2. The President can nominate members to the Rajya Sabha from amongst persons having special knowledge or practical experience in respect of literature, science, art and social service.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The President can declare war/peace and nominate Rajya Sabha members."
+"2023","Polity","Prime Minister & Council of Ministers","Hard","Consider the following statements regarding the role of the Cabinet Secretariat:
+1. It provides secretarial assistance to the Cabinet and its committees.
+2. It deals with the allocation of portfolios to Ministers.
+3. It is responsible for the smooth transaction of business in the Parliament.
+Which of the statements given above is/are correct?","1 and 2 only","1 and 3 only","2 and 3 only","1, 2 and 3",0,"1 and 2 only","The Cabinet Secretariat does not directly handle parliamentary business."
+"2023","Polity","Parliament: Sessions, Motions, Bills, Committees, Budget","Hard","Consider the following statements:
+1. Attorney General of India can participate in the proceedings of the Parliament.
+2. Attorney General of India can vote in the Parliament.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The Attorney General can participate but cannot vote."
+"2023","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Which of the following statements accurately describes the advisory jurisdiction of the Supreme Court?
+1. It is binding on the President.
+2. It can be exercised on any question of law or fact of public importance.
+Select the correct answer using the code given below:","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The advisory jurisdiction is not binding, but can be exercised on questions of law/fact."
+"2023","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","Which of the following situations allows the Governor to exercise his/her discretionary power in appointing the Chief Minister?
+","When a single party wins an absolute majority in the Legislative Assembly.","When a coalition government is formed with a pre-election alliance.","When no single party or coalition commands a clear majority after the election.","When the Chief Minister resigns due to personal reasons.",3,"When the Chief Minister resigns due to personal reasons.","Governor uses discretion when no party has a clear majority."
+"2023","Polity","State Legislature & Chief Minister","Hard","Which of the following statements is/are correct regarding the State Legislature?
+1. A bill pending in the Legislature of a State shall lapse by reason of prorogation.
+2. A bill pending in the Legislative Council of a State, which has not been passed by the Legislative Assembly, shall not lapse on dissolution of the Assembly.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","A bill lapses on prorogation, but not on dissolution if only in the Council."
+"2023","Polity","High Courts & Subordinate Courts","Hard","Consider the following statements regarding the jurisdiction of High Courts in India:
+1. A High Court can issue writs to any person or authority within its territorial jurisdiction.
+2. A High Court can transfer cases from subordinate courts to itself if it involves a substantial question of law.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","High Courts can issue writs within their jurisdiction and transfer cases with substantial legal questions."
+"2023","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Which schedule of the Indian Constitution deals with the powers, authority and responsibilities of Panchayats?","Ninth Schedule","Tenth Schedule","Eleventh Schedule","Twelfth Schedule",2,"Eleventh Schedule","The Eleventh Schedule lists the powers of the Panchayats."
+"2023","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The Finance Commission is constituted under Article 280 of the Constitution. Which of the following functions is/are performed by the Finance Commission? 1. Distribution of net proceeds of taxes between the Union and the States. 2. Determining the principles which should govern the grants-in-aid to the States out of the Consolidated Fund of India. 3. Recommending measures to augment the Consolidated Fund of a State to supplement the resources of the Panchayats in the State. Select the correct answer using the code given below:","1 only","2 and 3 only","1 and 2 only","1, 2 and 3",3,"1, 2 and 3","All three statements accurately describe the functions of the Finance Commission."
+"2023","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","Consider the following statements regarding the National Commission for Scheduled Tribes (NCST): 1. The NCST was established by amending Article 338 of the Constitution. 2. The NCST presents its annual reports to the President. 3. The NCST has the power to investigate all matters relating to the safeguards provided for the Scheduled Tribes under the Constitution. Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",1,"2 and 3 only","NCST was established by Article 338A, not amending 338."
+"2023","Polity","General","Hard","With reference to Finance Bills in India, which of the following statements is/are correct?
+1. When the Lok Sabha transmits a Finance Bill to the Rajya Sabha, it can amend or reject the Bill.
+2. When the Lok Sabha transmits a Money Bill to the Rajya Sabha, it cannot amend or reject the Bill, it can only make recommendations.
+3. In the case of a disagreement between the Lok Sabha and the Rajya Sabha, there is no joint sitting for a Money Bill, but a joint sitting becomes necessary for a Finance Bill.","1 only","2 and 3 only","1, 2 and 3","None",1,"2 and 3 only","Statement 1 is incorrect as Rajya Sabha cannot amend or reject a Money Bill, which a Finance Bill (Category A) is; Statement 3 is incorrect as joint sitting is not necessary but an option for a Finance Bill (not a Money Bill)."
+"2022","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Consider the following statements:
+1. The Government of India Act, 1919 introduced bicameral legislature at the centre.
+2. The Government of India Act, 1935 abolished dyarchy in the provinces.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the Acts of 1919 and 1935."
+"2022","Polity","Making of the Constitution & Salient Features","Hard","Consider the following statements:
+1. The Constitution of India has 20 Parts.
+2. There are 390 Articles in the Constitution of India.
+3. Ninth, Tenth, Eleventh and Twelfth Schedules were added to the Constitution of India by Constitution Amendment Acts.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","3 only","1, 2 and 3",2,"3 only","Only statement 3 is correct; the Constitution has more than 20 parts and 390 articles."
+"2022","Polity","Preamble: Keywords and Significance","Hard","Which of the following is NOT explicitly mentioned in the Preamble to the Constitution of India?","Justice","Liberty","Equality","Adult Suffrage",3,"Adult Suffrage","Adult Suffrage is not explicitly mentioned in the Preamble."
+"2022","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Under which article of the Constitution can Parliament form a new State by separating territory from any State?","Article 1","Article 2","Article 3","Article 4",2,"Article 3","Article 3 allows Parliament to form a new State by separating territory."
+"2022","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","Consider the following statements regarding the writ of Habeas Corpus: 1. It is a remedy against unlawful detention. 2. It can be issued against both public authorities and private individuals. 3. The court examines the legality of the detention. Which of the statements given above are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are correct regarding the writ of Habeas Corpus."
+"2022","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Consider the following statements:
+1. The Constitution of India defines 'minorities'.
+2. The Constitution of India recognizes only religious minorities.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","The Constitution does not define 'minorities' and recognizes linguistic minorities as well."
+"2022","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","The concept of 'equal justice and free legal aid' is enshrined in which article of the Indian Constitution?","Article 39A","Article 41","Article 43","Article 48A",0,"Article 39A","Article 39A provides for equal justice and free legal aid."
+"2022","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","Consider the following statements regarding the Basic Structure doctrine: 1. It limits the power of the Parliament to amend the Constitution. 2. It was first articulated in the Golaknath case. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Only statement 1 is correct; it was articulated in Kesavananda Bharati."
+"2022","Polity","Parliamentary System vs Presidential System","Hard","In a presidential system, the President is accountable to:","The Legislature","The Judiciary","The People","The Prime Minister",2,"The People","The President is directly accountable to the people who elected them."
+"2022","Polity","Federal System & Center-State Relations (Legislative, Admin, Financial)","Hard","Which of the following are the features of a federal system?
+1. Dual government
+2. Written constitution
+3. Division of powers
+4. Supremacy of the constitution
+Select the correct answer using the code given below.","1, 2 and 3 only","1, 3 and 4 only","2 and 4 only","1, 2, 3 and 4",3,"1, 2, 3 and 4","All listed options are features of a federal system."
+"2022","Polity","Emergency Provisions (National, State, Financial)","Hard","Under which of the following circumstances can the President of India declare a National Emergency?
+1. War
+2. External Aggression
+3. Armed Rebellion
+Select the correct answer using the code given below.","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","National Emergency can be declared on grounds of war, external aggression, or armed rebellion."
+"2022","Polity","President & Vice-President: Election, Powers, Impeachment","Hard","Which of the following statements is correct regarding the election of the Vice-President of India?
+","He is elected by the elected members of both Houses of Parliament.","He is elected by the elected members of the Rajya Sabha only.","He is elected by an electoral college consisting of the members of both Houses of Parliament.","He is elected by the members of the Lok Sabha only.",2,"He is elected by an electoral college consisting of the members of both Houses of Parliament.","The Vice-President is elected by an electoral college of both Houses."
+"2022","Polity","Parliament: Sessions, Motions, Bills, Committees, Budget","Hard","Consider the following statements regarding the procedure of 'Motion of Thanks' in the Indian Parliament:
+1. It is a motion moved after the President addresses both Houses of Parliament assembled together at the commencement of the first Session after each general election and at the commencement of the first session of each year.
+2. Amendments to the Motion of Thanks can be moved.
+3. The Motion of Thanks must be passed in the House.
+Which of the statements given above are correct?","1 and 2 only","1 and 3 only","2 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are correct regarding the Motion of Thanks."
+"2022","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Consider the following statements regarding the Supreme Court of India:
+1. It is the guardian of the Constitution.
+2. It has the power of judicial review over legislative enactments.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Supreme Court is the guardian of the Constitution and has judicial review power."
+"2022","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Which of the following statements best describes the term 'judicial overreach'?","The judiciary interfering in the legislative domain.","The judiciary exercising its power of judicial review.","The judiciary interpreting the Constitution.","The judiciary enforcing Fundamental Rights.",0,"The judiciary interfering in the legislative domain.","Judicial overreach is when the judiciary interferes in the legislative domain."
+"2022","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","Consider the following statements regarding the ordinance-making power of the Governor:
+1. The Governor can promulgate an ordinance when the State Legislature is not in session.
+2. An ordinance promulgated by the Governor has the same force and effect as an Act of the State Legislature.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements regarding the Governor's ordinance-making power are correct."
+"2022","Polity","State Legislature & Chief Minister","Hard","Consider the following statements regarding the Chief Minister of a State:
+1. The Chief Minister is appointed by the Governor.
+2. The Chief Minister is the head of the State Council of Ministers.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the Chief Minister."
+"2022","Polity","High Courts & Subordinate Courts","Hard","Consider the following statements regarding the removal of a High Court judge:
+1. A High Court judge can be removed by the President on the ground of proved misbehaviour or incapacity.
+2. A resolution for removing a judge must be passed by a special majority in each House of Parliament.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Removal requires presidential order after a special majority resolution in Parliament."
+"2022","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Consider the following statements regarding the 74th Constitutional Amendment Act:
+1. It provides for the constitution of Nagar Panchayats for areas in transition from rural to urban.
+2. It mandates the establishment of Metropolitan Planning Committees.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements accurately reflect provisions of the 74th Amendment."
+"2022","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","With reference to the Election Commission of India, consider the following statements: 1. The Election Commission of India is a five-member body. 2. Union Ministry of Home Affairs decides the election schedule for the conduct of both general elections and bye-elections. 3. The Election Commission resolves the disputes relating to the split/merger of recognised political parties. Which of the statements given above is/are correct?","1 and 2 only","2 only","2 and 3 only","3 only",3,"3 only","Only statement 3 is correct; ECI is a 3-member body and ECI decides election schedules."
+"2022","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The Union Public Service Commission (UPSC) is responsible for:","Conducting examinations for appointment to the services of the Union.","Advising the President on matters relating to recruitment to civil services.","Protecting the merit system in the civil services.","All of the above.",3,"All of the above.","UPSC is responsible for all the mentioned functions."
+"2022","Polity","General","Hard","With reference to the Deputy Speaker of Lok Sabha, consider the following statements:
+1. As per the Rules of Procedure and Conduct of Business in Lok Sabha, the election of Deputy Speaker shall be held on such date as the Speaker may fix.
+2. There is a mandatory provision that the election of a candidate as Deputy Speaker of Lok Sabha shall be from either the principal opposition party or the ruling party.
+3. The Deputy Speaker has the same power as that of the Speaker when presiding over the sitting of the House and no appeal lies against his rulings.","1 and 3 only","1, 2 and 3","3 only","1 and 2 only",0,"1 and 3 only","Statement 2 is incorrect as it is a convention, not a mandatory provision, to offer the post to the opposition."
+"2021","Polity","Constitutional Bodies","Hard","Consider the following statements:
+1. In India, the National Human Rights Commission (NHRC) can inquire into complaints regarding violation of human rights only if the complaint is lodged within one year of the incident.
+2. The NHRC is not empowered to inquire into any matter if it is already being looked into by a State Human Rights Commission.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","The NHRC does not have a strict time limit of one year for lodging complaints. It can consider complaints even after one year, depending on the circumstances. The NHRC can inquire into matters already being looked into by a State Human Rights Commission, particularly if it deems the matter to be of significant national importance or if the State Commission is not handling it effectively. Therefore, both statements are incorrect."
+"2021","Polity","Parliament","Hard","Consider the following statements:
+1. The Speaker of the Legislative Assembly shall vacate his/her office if he/she ceases to be a member of the Assembly.
+2. Whenever the Legislative Assembly is dissolved, the Speaker shall not vacate his/her office until immediately before the first meeting of the Assembly after the dissolution.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct. The Speaker must vacate their office if they cease to be a member of the Assembly. Also, the Speaker does not vacate office upon dissolution of the Assembly but continues until immediately before the first meeting of the newly elected Assembly."
+"2021","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Which of the following provisions were made under the Montague-Chelmsford Reforms?
+1. Dyarchy in the provinces.
+2. Separate electorate for Muslims.
+3. Reservation of seats for women in legislatures.
+Select the correct answer using the code given below.","1 only","1 and 2 only","1 and 3 only","1, 2 and 3",0,"1 only","Dyarchy was introduced, but separate electorates for Muslims existed before."
+"2021","Polity","Making of the Constitution & Salient Features","Hard","Consider the following statements regarding the objectives of the Constitution of India:
+1. It secures social, economic and political justice.
+2. It guarantees freedom of thought, expression, belief, faith and worship.
+3. It promotes fraternity to assure the dignity of the individual and the unity and integrity of the nation.
+Which of the statements given above is/are correct?","1 only","2 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements accurately reflect the objectives of the Indian Constitution."
+"2021","Polity","Preamble: Keywords and Significance","Hard","The term 'Republic' in the Preamble indicates which of the following?","Absence of hereditary ruler","Supremacy of the Parliament","Rule of Law","Sovereignty of the people",0,"Absence of hereditary ruler","The term 'Republic' indicates the absence of a hereditary ruler."
+"2021","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Which of the following statements accurately reflects the provisions related to citizenship in the Indian Constitution?","The Constitution provides detailed provisions on how citizenship can be acquired and lost.","The Constitution only specifies who were citizens at the commencement of the Constitution.","The Constitution empowers the Supreme Court to decide on citizenship matters.","The Constitution allows for dual citizenship for all persons of Indian origin.",1,"The Constitution only specifies who were citizens at the commencement of the Constitution.","The Constitution mainly defines citizenship at commencement, leaving acquisition/loss to Parliament."
+"2021","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","With reference to the Constitution of India, consider the following statements: 1. No High Court shall have the jurisdiction to declare any central law to be constitutionally invalid. 2. An amendment to the Constitution of India cannot be called into question by any court of law. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","Both statements are incorrect as High Courts can declare central laws invalid, and constitutional amendments can be challenged."
+"2021","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which part of the Constitution of India promotes the idea of Welfare State?","Fundamental Rights","Directive Principles of State Policy","Preamble","Fundamental Duties",1,"Directive Principles of State Policy","Directive Principles aim to establish a Welfare State."
+"2021","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which amendment to the Constitution added Fundamental Duties to the Indian Constitution?","42nd Amendment","44th Amendment","73rd Amendment","86th Amendment",0,"42nd Amendment","The 42nd Amendment added Fundamental Duties."
+"2021","Polity","Parliamentary System vs Presidential System","Hard","Which of the following is NOT a characteristic of a parliamentary system?","Collective responsibility","Fusion of powers","Nominal head of state","Fixed term for the executive",3,"Fixed term for the executive","A fixed term for the executive is more characteristic of a presidential system."
+"2021","Polity","Emergency Provisions (National, State, Financial)","Hard","With reference to the proclamation of emergency, consider the following statements:
+1. A proclamation of emergency issued by the President must be approved by both Houses of Parliament within one month.
+2. The 44th Amendment Act of 1978 inserted 'armed rebellion' as a ground for the proclamation of emergency.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Emergency proclamation needs parliamentary approval within one month, and 'armed rebellion' was inserted by the 44th Amendment."
+"2021","Polity","President & Vice-President: Election, Powers, Impeachment","Hard","Consider the following statements:
+1. The President of India can nominate two members to the Lok Sabha.
+2. The Vice-President of India is the ex-officio Chairman of the Rajya Sabha.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The President's power to nominate members to the Lok Sabha has been removed."
+"2021","Polity","Parliament: Sessions, Motions, Bills, Committees, Budget","Hard","Consider the following statements:
+1. In India, Parliament can place a particular law in the Ninth Schedule of the Constitution.
+2. The validity of a law placed in the Ninth Schedule cannot be examined by any court and no judgment can be made on it.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Statement 1 is correct, but statement 2 is incorrect due to judicial review."
+"2021","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","The Governor of a State is a nominee of the Central Government. Which of the following statements accurately reflects the role of the Governor?
+","The Governor acts solely on the advice of the Central Government.","The Governor exercises independent judgment in certain matters.","The Governor is merely a ceremonial head with no real power.","The Governor's role is primarily to implement Central Government policies.",1,"The Governor exercises independent judgment in certain matters.","The Governor has discretionary powers and doesn't solely act on central advice."
+"2021","Polity","High Courts & Subordinate Courts","Hard","Consider the following statements:
+1. The High Court has the power to issue writs for the enforcement of fundamental rights only.
+2. The High Court has the power to issue writs for any other purpose.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","High Courts can issue writs for enforcement of fundamental rights and other purposes."
+"2021","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Consider the following statements regarding the State Election Commission:
+1. It conducts elections to the Panchayats and Municipalities.
+2. It is an independent body headed by a State Election Commissioner appointed by the Governor.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the State Election Commission."
+"2021","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The recommendations of the Finance Commission are:","Advisory in nature","Binding on the government","Binding on the government only when accepted by the Parliament","Binding on the government only when accepted by the President",0,"Advisory in nature","The Finance Commission's recommendations are advisory and not binding."
+"2021","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","Which of the following statements is correct regarding the State Public Service Commission (SPSC)?","The Governor appoints the Chairman and members of the SPSC.","The Chairman and members of the SPSC can be removed by the Governor.","The SPSC is responsible for conducting examinations for appointment to the services of the Union.","The SPSC is an advisory body and its advice is binding on the State Government.",0,"The Governor appoints the Chairman and members of the SPSC.","The Governor appoints the Chairman and members of the SPSC."
+"2021","Polity","General","Hard","‘Right to Privacy’ is protected under which Article of the Constitution of India?","Article 15","Article 19","Article 21","Article 29",2,"Article 21","The Supreme Court in the K.S. Puttaswamy case (2017) held that the Right to Privacy is a fundamental right protected under Article 21 (Right to Life and Personal Liberty)."
+"2020","Polity","Parliament","Hard","Consider the following statements:
+1. In the election of Lok Sabha or State Assembly, the winning candidate must get at least 50% of the votes polled to be declared elected.
+2. According to the provisions laid down in the Constitution of India, Lok Sabha Speaker should be a member of the ruling party only.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","In Indian elections, the candidate with the most votes wins, regardless of whether they secure 50% of the votes polled. The Lok Sabha Speaker does not necessarily have to be a member of the ruling party; they are chosen by a vote in the Lok Sabha."
+"2020","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Which of the following Acts introduced communal electorate in India?","Indian Councils Act, 1892","Indian Councils Act, 1909","Government of India Act, 1919","Government of India Act, 1935",1,"Indian Councils Act, 1909","The Indian Councils Act of 1909 introduced communal electorate."
+"2020","Polity","Making of the Constitution & Salient Features","Hard","Which part of the Constitution of India declares the ideal of Welfare State?","Directive Principles of State Policy","Fundamental Rights","Preamble","Seventh Schedule",0,"Directive Principles of State Policy","Directive Principles of State Policy embody the ideal of a Welfare State."
+"2020","Polity","Preamble: Keywords and Significance","Hard","Which of the following best defines the term 'Secularism' in the Indian context?","Equal respect for all religions","One religion is promoted by the State","Separation of religion from politics","Complete absence of religion in governance",0,"Equal respect for all religions","In the Indian context, secularism means equal respect for all religions."
+"2020","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Which of the following articles empowers the Parliament to make provisions with respect to citizenship?","Article 5","Article 9","Article 11","Article 13",2,"Article 11","Article 11 empowers the Parliament to make provisions with respect to citizenship."
+"2020","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following are Fundamental Duties under the Indian Constitution?
+1. To uphold and protect the sovereignty, unity and integrity of India.
+2. To promote harmony and the spirit of common brotherhood amongst all the people of India transcending religious, linguistic and regional or sectional diversities.
+3. To safeguard public property and to abjure violence.
+Select the correct answer using the code given below.","1 and 2 only","2 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements accurately reflect Fundamental Duties."
+"2020","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following statements is correct regarding the enforceability of Directive Principles of State Policy?","They are directly enforceable by the courts.","They are not enforceable by any court.","They are enforceable with the help of legislation.","They are enforceable only during a national emergency.",1,"They are not enforceable by any court.","Directive Principles are not enforceable by any court."
+"2020","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","The doctrine of basic structure was evolved by the Supreme Court in which of the following cases?","A.K. Gopalan v. State of Madras","Kesavananda Bharati v. State of Kerala","Maneka Gandhi v. Union of India","Indira Nehru Gandhi v. Raj Narain",1,"Kesavananda Bharati v. State of Kerala","Kesavananda Bharati case established the basic structure doctrine."
+"2020","Polity","Parliamentary System vs Presidential System","Hard","In a parliamentary system of government, which of the following is/are true?
+1. The executive is responsible to the legislature.
+2. The head of state is a nominal figurehead.
+3. The Prime Minister is the head of government.
+Select the correct answer using the code given below.","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements accurately describe a parliamentary system."
+"2020","Polity","Emergency Provisions (National, State, Financial)","Hard","Which of the following statements is/are correct regarding the effect of proclamation of National Emergency on the tenure of the State Legislative Assembly?
+1. The tenure of the State Legislative Assembly can be extended beyond its normal term.
+2. The extension of the tenure cannot exceed one year at a time.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The State Legislative Assembly's tenure can be extended, but not exceeding one year at a time."
+"2020","Polity","President & Vice-President: Election, Powers, Impeachment","Hard","Consider the following statements regarding the impeachment of the President of India:
+1. The impeachment charges can be initiated in either House of Parliament.
+2. The nominated members of either House of Parliament can participate in the impeachment of the President.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Impeachment can start in either house, and nominated members can participate."
+"2020","Polity","Prime Minister & Council of Ministers","Hard","With reference to the Union Government, consider the following statements:
+1. Departments are created by the Prime Minister on the advice of the Cabinet Secretary.
+2. Each of the Ministries is assigned to a Minister by the President on the advice of the Prime Minister.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Departments are created as per the Government of India (Allocation of Business) Rules, not by the PM."
+"2020","Polity","Parliament: Sessions, Motions, Bills, Committees, Budget","Hard","With reference to the funds under Members of Parliament Local Area Development Scheme (MPLADS), which of the following statements are correct?
+1. MPLADS funds must be used to create durable assets like physical infrastructure for health, education, etc.
+2. A specified portion of each MP’s fund must benefit Scheduled Castes/Scheduled Tribes populations.
+3. MPLADS funds are sanctioned on yearly basis and the unspent amount, if any, must be carried forward to the next year.
+4. The work done under MPLADS are audited by the Comptroller and Auditor General of India.
+Select the correct answer using the code given below:","1 and 2 only","3 and 4 only","1, 2 and 3","1, 2 and 4",2,"1, 2 and 3","CAG does not directly audit MPLADS; hence, 1, 2, and 3 are correct."
+"2020","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","The Supreme Court of India tenders advice to the President of India on a matter of law or fact","on its own initiative","only if he seeks such advice","only if the matter relates to the Fundamental Rights of the citizens","only if the Union Cabinet seeks such advice",1,"only if he seeks such advice","The Supreme Court advises the President only when the President seeks such advice."
+"2020","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","Which of the following is NOT a discretionary power of the Governor?
+","Reserving a bill for President's consideration","Appointing the Chief Minister when no party has a clear majority","Dissolving the Legislative Assembly on the advice of the Chief Minister","Seeking information from the Chief Minister regarding legislative proposals",2,"Dissolving the Legislative Assembly on the advice of the Chief Minister","Dissolving the assembly is usually done on the CM's advice, not discretion."
+"2020","Polity","State Legislature & Chief Minister","Hard","With reference to the Legislative Assembly of a State in India, consider the following statements:
+1. The Governor makes a customary address to the members of the House at the commencement of the first session after each general election and at the commencement of the first session of each year.
+2. When a State Legislature passes a bill, it is sent to the Governor who can declare that he withholds assent therefrom.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the Governor's role."
+"2020","Polity","High Courts & Subordinate Courts","Hard","Consider the following statements regarding the transfer of judges in High Courts:
+1. The President of India can transfer a judge from one High Court to another.
+2. The transfer can be initiated only on the recommendation of the Chief Justice of India.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The President transfers judges on the recommendation of the Chief Justice of India."
+"2020","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Which of the following are the salient features of the 73rd Constitutional Amendment Act?
+1. Provides for a three-tier system of Panchayati Raj for all States having a population of over 20 lakh.
+2. Mandates regular elections to Panchayats.
+3. Reserves one-third of seats for women in all Panchayats.
+Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All the mentioned features are salient to the 73rd Amendment."
+"2020","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","Other than the Fundamental Rights, which of the following parts of the Constitution of India reflect/reflects the principles and provisions of the Universal Declaration of Human Rights (1948)? 1. Preamble 2. Directive Principles of State Policy 3. Fundamental Duties Select the correct answer using the code given below:","1 and 2 only","2 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three reflect principles of the Universal Declaration of Human Rights."
+"2020","Polity","General","Hard","A Parliamentary System of Government is one in which","all political parties in the Parliament are represented in the Government","the Government is responsible to the Parliament and can be removed by it","the Government is elected by the people and can be removed by them","the Government is chosen by the Parliament but cannot be removed by it before completion of a fixed term",1,"the Government is responsible to the Parliament and can be removed by it","The core principle of a parliamentary system is the collective responsibility of the executive to the legislature (Parliament)."
+"2019","Polity","Constitutional Amendments","Hard","Which of the following is/are the exclusive power(s) of Lok Sabha?
+1. To ratify the declaration of emergency
+2. To pass a motion of no-confidence against the Council of Ministers
+3. To impeach the President of India
+Select the correct answer using the code given below:","1 and 2","Only 2","1 and 3","1, 2 and 3",1,"Only 2","Only the Lok Sabha can pass a motion of no-confidence against the Council of Ministers. The Rajya Sabha does not have this power. Ratification of emergency requires approval by both houses. Impeachment of the President can be initiated in either house."
+"2019","Polity","Parliament","Hard","Which one of the following categories of Fundamental Rights incorporates protection against untouchability as a form of discrimination?","Right against Exploitation","Right to Freedom","Right to Constitutional Remedies","Right to Equality",3,"Right to Equality","Article 17, which abolishes untouchability, falls under the Right to Equality."
+"2019","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","The Government of India Act of 1919 is also known as:","Morley-Minto Reforms","Montagu-Chelmsford Reforms","August Offer","Cripps Mission",1,"Montagu-Chelmsford Reforms","The Government of India Act of 1919 is also known as Montagu-Chelmsford Reforms."
+"2019","Polity","Making of the Constitution & Salient Features","Hard","Which of the following best defines the term 'Rule of Law'?","Equality before law","Supremacy of law","Fairness in legal procedures","All of the above",3,"All of the above","Rule of Law encompasses equality, supremacy, and fairness in legal procedures."
+"2019","Polity","Preamble: Keywords and Significance","Hard","The Preamble to the Constitution of India secures justice, liberty, equality and fraternity. Which of these are mentioned in the correct sequence?","Liberty, Equality, Fraternity, Justice","Justice, Liberty, Equality, Fraternity","Equality, Liberty, Justice, Fraternity","Justice, Fraternity, Liberty, Equality",1,"Justice, Liberty, Equality, Fraternity","The correct sequence as per the Preamble is Justice, Liberty, Equality, and Fraternity."
+"2019","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Consider the following statements:
+1. The Constitution of India defines the term 'minority'.
+2. The Constitution of India recognizes only religious minorities.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","The Constitution does not define 'minority' and recognizes linguistic minorities as well."
+"2019","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","The power of the Supreme Court of India to decide disputes between the Centre and the States falls under its","Advisory jurisdiction","Appellate jurisdiction","Original jurisdiction","Constitutional jurisdiction",2,"Original jurisdiction","Original jurisdiction allows the Supreme Court to hear disputes between the Centre and States."
+"2019","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following is/are among the Fundamental Duties of citizens laid down in the Indian Constitution?
+1. To preserve the rich heritage of our composite culture.
+2. To protect and improve the natural environment including forests, lakes, rivers and wildlife.
+3. To strive towards excellence in all spheres of individual and collective activity.
+Select the correct answer using the code given below.","Only 1","Only 2 and 3","Only 1 and 3","1, 2 and 3",3,"1, 2 and 3","All three are indeed fundamental duties."
+"2019","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following is NOT a Fundamental Duty as per the Indian Constitution?","To abide by the Constitution and respect its ideals.","To defend the country and render national service when called upon.","To promote and improve the natural environment.","To provide education to one's children between the age of 6 and 14 years.",3,"To provide education to one's children between the age of 6 and 14 years.","Providing education is a right, not a duty of parents."
+"2019","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","Which of the following are elements of the Basic Structure of the Constitution? 1. Judicial Review 2. Secularism 3. Federalism 4. Parliamentary System Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1, 2 and 3 only","1, 2, 3 and 4",3,"1, 2, 3 and 4","All listed options are considered part of the basic structure."
+"2019","Polity","Parliamentary System vs Presidential System","Hard","The concept of 'separation of powers' is a fundamental feature of which type of government?","Parliamentary","Presidential","Federal","Unitary",1,"Presidential","Separation of powers is most strongly associated with presidential systems."
+"2019","Polity","Federal System & Center-State Relations (Legislative, Admin, Financial)","Hard","Consider the following statements:
+1. The Legislative Council of a State in India can be larger in size than half of the Legislative Assembly of that particular State.
+2. The Governor of a State nominates the Chairman of the Legislative Council of that particular State.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","Neither statement is correct regarding the Legislative Council."
+"2019","Polity","Emergency Provisions (National, State, Financial)","Hard","The proclamation of Emergency under Article 352 on the ground of 'armed rebellion' requires the written advice of:","The Prime Minister","The Council of Ministers","The President","The Cabinet",3,"The Cabinet","The President requires written advice from the Cabinet for proclaiming emergency on the ground of armed rebellion."
+"2019","Polity","President & Vice-President: Election, Powers, Impeachment","Hard","Which of the following statements is/are correct regarding the ordinance-making power of the President of India?
+1. The President can promulgate an ordinance only when both Houses of Parliament are not in session.
+2. An ordinance promulgated by the President has the same force and effect as an Act of Parliament.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The President can promulgate an ordinance when either house is not in session, and it has the same force as an Act."
+"2019","Polity","Prime Minister & Council of Ministers","Hard","Which of the following statements is/are correct regarding the office of the Prime Minister?
+1. The Prime Minister is the head of the Council of Ministers.
+2. The Prime Minister is appointed by the President.
+3. The Prime Minister must be a member of either House of Parliament at the time of appointment.
+Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",0,"1 and 2 only","The PM can be appointed even if not a member, but must become one within six months."
+"2019","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Which of the following statements is/are correct regarding Judicial Review in India?
+1. It is explicitly mentioned in the Constitution.
+2. It is limited by the doctrine of 'procedure established by law'.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Judicial review is not explicitly mentioned, but implied; it is limited by 'procedure established by law'."
+"2019","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Which of the following is/are the grounds on which the Supreme Court can exercise judicial review?
+1. Violation of Fundamental Rights.
+2. Violation of the basic structure of the Constitution.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Supreme Court can exercise judicial review for violations of Fundamental Rights and basic structure."
+"2019","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","With reference to the powers of the Governor, consider the following statements:
+1. The Governor can reserve a bill passed by the State Legislature for the consideration of the President.
+2. The Governor can dissolve the State Legislative Assembly even without the advice of the Chief Minister.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The Governor can reserve a bill, but needs the CM's advice to dissolve the assembly."
+"2019","Polity","High Courts & Subordinate Courts","Hard","Which of the following are the functions of the High Court?
+1. To protect the fundamental rights of the citizens.
+2. To supervise the functioning of the subordinate courts.
+3. To act as the court of appeal from the lower courts.
+Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","High Courts protect fundamental rights, supervise subordinate courts, and act as appellate courts."
+"2019","Polity","High Courts & Subordinate Courts","Hard","Consider the following statements regarding the National Judicial Appointments Commission (NJAC):
+1. The NJAC was established to replace the collegium system for the appointment of judges.
+2. The NJAC was declared unconstitutional by the Supreme Court.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","NJAC was meant to replace the collegium but was declared unconstitutional."
+"2019","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Which of the following committees recommended constitutional status to Panchayati Raj Institutions?","Balwant Rai Mehta Committee","Ashok Mehta Committee","L.M. Singhvi Committee","G.V.K. Rao Committee",2,"L.M. Singhvi Committee","The L.M. Singhvi Committee recommended constitutional status."
+"2019","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","Which of the following bodies is/are responsible for conducting elections to the local bodies in India? 1. Election Commission of India 2. State Election Commissions 3. District Election Officers Select the correct answer using the code given below:","1 only","2 only","1 and 3 only","2 and 3 only",1,"2 only","State Election Commissions conduct local body elections."
+"2019","Polity","General","Hard","Consider the following statements:
+1. The 44th Amendment to the Constitution of India introduced an Article placing the election of the Prime Minister beyond judicial review.
+2. The Supreme Court of India struck down the 99th Amendment to the Constitution of India as being violative of the independence of the judiciary.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Statement 1 is incorrect as it was the 39th Amendment, not the 44th, that attempted this, and it was struck down; Statement 2 is correct regarding the NJAC Act."
+"2018","Polity","Parliament","Hard","With reference to the Parliament of India, consider the following statements:
+1. A private member’s bill is a bill presented by a Member of Parliament who is not a Minister.
+2. Recently, a private member’s bill has been passed in the Parliament for the first time in its history.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Statement 1 is correct. A private member's bill is indeed introduced by an MP who is not a minister. Statement 2 is incorrect. Several private member's bills have been passed, though rarely. The last one was in 1970."
+"2018","Polity","Fundamental Rights","Hard","Right to Privacy is protected as an intrinsic part of Right to Life and Personal Liberty. Which of the following in the Constitution of India correctly and appropriately imply the above statement?","Article 14 & Article 21","Article 15 & Article 19","Article 17 & Article 21","Article 21 & Article 21",3,"Article 21 & Article 21","The Supreme Court has declared Right to Privacy as a fundamental right under Article 21 (Right to Life and Personal Liberty)."
+"2018","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Consider the following statements regarding the Government of India Act, 1935:
+1. The Act provided for an All-India Federation.
+2. Provincial autonomy was granted under this Act.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both All-India Federation and Provincial Autonomy were features of the 1935 Act."
+"2018","Polity","Making of the Constitution & Salient Features","Hard","Consider the following statements:
+1. The Constitution of India defines its 'basic structure' in terms of federalism, secularism, fundamental rights and democracy.
+2. The Constitution of India provides for 'judicial review' to safeguard the 'citizens' liberties and to preserve the ideals on which the Constitution is based.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The Constitution does not explicitly define 'basic structure', but judicial review is indeed provided."
+"2018","Polity","Preamble: Keywords and Significance","Hard","Which of the following statements is correct regarding the Preamble of the Indian Constitution?","It is a part of the Constitution and can be amended.","It is not a part of the Constitution and cannot be amended.","It is a part of the Constitution but cannot be amended.","It is not a part of the Constitution but can be used for interpretation.",0,"It is a part of the Constitution and can be amended.","The Preamble is a part of the Constitution and can be amended, subject to basic structure doctrine."
+"2018","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Consider the following statements regarding the impact of Article 368 on Article 3:
+1. A law made under Article 3 can alter the boundaries of a state without being considered an amendment under Article 368.
+2. Such a law requires a special majority in Parliament.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Article 3 changes do not require a special majority or constitutional amendment under Article 368."
+"2018","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","Consider the following statements: 1. The Constitution of India defines 'State' in Article 12. 2. The term 'State' includes the Government and Parliament of India. 3. The term 'State' includes all local authorities within the territory of India. Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are correct regarding the definition of 'State' in Article 12."
+"2018","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which part of the Indian Constitution contains the Directive Principles of State Policy?","Part III","Part IV","Part IVA","Part V",1,"Part IV","Part IV contains the Directive Principles."
+"2018","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","Which of the following is NOT considered a part of the basic structure of the Constitution?","Judicial Review","Secularism","Parliamentary System","Directive Principles of State Policy",3,"Directive Principles of State Policy","Directive Principles are not explicitly part of the basic structure."
+"2018","Polity","Parliamentary System vs Presidential System","Hard","Which of the following are features of a presidential form of government?
+1. The President is the head of state and head of government.
+2. The President is elected directly by the people.
+3. The President is not responsible to the legislature.
+Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are characteristic of a presidential system."
+"2018","Polity","Federal System & Center-State Relations (Legislative, Admin, Financial)","Hard","Consider the following statements regarding the Finance Commission of India:
+1. It is a constitutional body.
+2. It encourages the states to improve their fiscal position.
+3. It advises the President on the distribution of tax revenues between the Union and the States.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All three statements are correct regarding the Finance Commission."
+"2018","Polity","Emergency Provisions (National, State, Financial)","Hard","Consider the following statements regarding the proclamation of Emergency:
+1. The President can proclaim a National Emergency only on the written advice of the Cabinet.
+2. Every proclamation of Emergency must be laid before each House of Parliament.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the proclamation of Emergency."
+"2018","Polity","Prime Minister & Council of Ministers","Hard","Consider the following statements regarding the powers of the Prime Minister:
+1. The Prime Minister communicates to the President all decisions of the Council of Ministers relating to the administration of the affairs of the Union and proposals for legislation.
+2. The Prime Minister advises the President with regard to the appointment of important officials like the Attorney General of India and the Comptroller and Auditor General of India.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements accurately describe the powers of the Prime Minister."
+"2018","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Consider the following statements:
+1. The Supreme Court of India can review its own judgment.
+2. The Supreme Court of India can review the judgment of High Courts.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Supreme Court can review its own judgments and judgments of High Courts under appeal."
+"2018","Polity","State Legislature & Chief Minister","Hard","The Legislative Assembly of a State in India can be dissolved before the expiry of its normal term by","The Speaker","The Governor","The Chief Minister","On the advice of the Chief Minister while the Governor is bound to accept it",1,"The Governor","The Governor can dissolve the assembly, usually on the advice of the CM."
+"2018","Polity","High Courts & Subordinate Courts","Hard","Which of the following statements is/are correct regarding the appointment of judges to the High Court?
+1. The Chief Justice of the High Court is appointed by the President after consultation with the Chief Justice of India and the Governor of the State concerned.
+2. Other judges are appointed by the President after consultation with the Chief Justice of India, the Chief Justice of the High Court, and the Governor of the State concerned.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements accurately describe the appointment process of High Court judges."
+"2018","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Consider the following statements:
+1. The 73rd Amendment mandates reservation of seats for women in Panchayati Raj Institutions.
+2. The 74th Amendment provides for the constitution of Wards Committees.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both amendments provide for women's reservation and ward committees."
+"2018","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The Finance Commission is constituted by the:","Prime Minister","President","Parliament","Finance Minister",1,"President","The President constitutes the Finance Commission."
+"2018","Polity","General","Hard","The 'Rule of Law' Index is released by which of the following?","Amnesty International","International Court of Justice","The Office of UN Commissioner for Human Rights","World Justice Project",3,"World Justice Project","The World Justice Project, an independent, multidisciplinary organization, releases the 'Rule of Law' Index annually."
+"2017","Polity","Parliament","Hard","With reference to the election of the President of India, consider the following statements:
+1. The value of the vote of each MLA varies from State to State.
+2. The value of the vote of MPs of the Lok Sabha is more than the value of the vote of MPs of the Rajya Sabha.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Statement 1 is correct. The value of each MLA's vote varies from state to state based on the population of the state and the number of elected members in the legislative assembly. Statement 2 is incorrect. The value of the vote of an MP is the same for both Lok Sabha and Rajya Sabha members. The total value of votes of all MLAs is divided by the total number of elected MPs to determine the value of each MP's vote."
+"2017","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","With reference to the colonial period in India, what was the purpose of the Ilbert Bill?","To impose restrictions upon native newspapers published in Indian languages.","To allow Indian judges to preside over cases involving British subjects.","To impose restrictions on import of cotton textiles.","To encourage the native people to learn European languages.",1,"To allow Indian judges to preside over cases involving British subjects.","The Ilbert Bill aimed to allow Indian judges to try Europeans."
+"2017","Polity","Making of the Constitution & Salient Features","Hard","With reference to the Constitution of India, consider the following statements:
+1. No High Court shall have the jurisdiction to question the validity of a Central Law.
+2. An amendment to the Constitution of India cannot be called into question by any court.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","Both statements are incorrect as High Courts can question Central Laws and constitutional amendments are subject to judicial review."
+"2017","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Consider the following statements regarding citizenship in India:
+1. The Constitution provides for single citizenship.
+2. Dual citizenship is permitted for NRIs.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","India follows the principle of single citizenship, and dual citizenship is not generally permitted."
+"2017","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","Which of the following writs can be issued only against judicial or quasi-judicial authorities?","Certiorari","Mandamus","Habeas Corpus","Quo Warranto",0,"Certiorari","Certiorari is issued to quash the order already passed by an inferior court, tribunal or quasi-judicial authority."
+"2017","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following is/are the fundamental duties of an Indian citizen?
+1. To abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem.
+2. To cherish and follow the noble ideals which inspired our national struggle for freedom.
+3. To protect and improve the natural environment including forests, lakes, rivers and wildlife.
+Select the correct answer using the code given below.","Only 1","Only 1 and 2","Only 2 and 3","1, 2 and 3",3,"1, 2 and 3","All the given statements are fundamental duties."
+"2017","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","The concept of Fundamental Duties was borrowed from the constitution of which country?","USA","Canada","USSR","Australia",2,"USSR","Fundamental Duties were borrowed from the USSR."
+"2017","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","The ‘basic structure’ theory of the Constitution of India implies that:
+(a) certain features of the Constitution are so essential that they cannot be abrogated through amendments.
+(b) the Constitution cannot be amended at all.
+(c) all provisions of the Constitution can be amended.
+(d) the Preamble of the Constitution cannot be amended.","certain features of the Constitution are so essential that they cannot be abrogated through amendments.","the Constitution cannot be amended at all.","all provisions of the Constitution can be amended.","the Preamble of the Constitution cannot be amended.",0,"certain features of the Constitution are so essential that they cannot be abrogated through amendments.","The basic structure doctrine limits the amending power of Parliament."
+"2017","Polity","Parliamentary System vs Presidential System","Hard","Which of the following features distinguish a parliamentary system from a presidential system of government?
+1. Separation of powers
+2. Fusion of powers
+3. Collective responsibility
+4. Judicial review
+Select the correct answer using the code given below.","1 and 3","2 and 3","1 and 4","2 and 4",1,"2 and 3","Parliamentary systems feature fusion of powers and collective responsibility."
+"2017","Polity","Federal System & Center-State Relations (Legislative, Admin, Financial)","Hard","The distribution of powers between the Centre and the States in the Indian Constitution is based on which of the following Acts?","Minto-Morley Reforms, 1909","Montagu-Chelmsford Act, 1919","Government of India Act, 1935","Indian Independence Act, 1947",2,"Government of India Act, 1935","The Government of India Act, 1935, formed the basis for the distribution of powers."
+"2017","Polity","Emergency Provisions (National, State, Financial)","Hard","Which of the following statements is/are correct regarding the revocation of a proclamation of Emergency?
+1. The President can revoke a proclamation of Emergency at any time.
+2. The Lok Sabha can revoke a proclamation of Emergency by passing a resolution to that effect.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both the President and the Lok Sabha can revoke a proclamation of Emergency."
+"2017","Polity","Prime Minister & Council of Ministers","Hard","The Prime Minister is the ex-officio Chairman of which of the following?
+1. National Development Council
+2. National Integration Council
+3. NITI Aayog
+Select the correct answer using the code given below.","1 and 2 only","1 and 3 only","2 and 3 only","1, 2 and 3",3,"1, 2 and 3","The Prime Minister is the ex-officio Chairman of all three bodies."
+"2017","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","With reference to the Supreme Court of India, consider the following statements:
+1. It has Original, Appellate and Advisory jurisdiction.
+2. It can hear appeals from High Courts involving constitutional questions.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Supreme Court has original, appellate, and advisory jurisdiction and hears appeals involving constitutional questions."
+"2017","Polity","State Legislature & Chief Minister","Hard","The Governor of a State has the power to issue ordinances:
+1. When the State Legislature is not in session.
+2. When the Governor is satisfied that circumstances exist which render it necessary for him to take immediate action.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both conditions must be met for the Governor to issue ordinances."
+"2017","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","The 73rd Amendment to the Constitution relates to which of the following?","Municipalities","Education","Panchayats","Cooperative Societies",2,"Panchayats","The 73rd Amendment is directly related to Panchayats."
+"2017","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","Consider the following statements: 1. The Election Commission of India is a constitutional authority. 2. The Election Commission of India is responsible for conducting elections to the Parliament and State Legislatures, but has no concern with elections to local bodies. Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Statement 1 is correct, but statement 2 is incorrect as ECI does not conduct local body elections."
+"2017","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The Finance Commission primarily recommends to the President on:","Principles governing the distribution of net tax proceeds between the Union and the States","Matters relating to financial emergency","Amendment of financial rules","Allotment of funds to various ministries",0,"Principles governing the distribution of net tax proceeds between the Union and the States","The Finance Commission's primary role is tax revenue distribution."
+"2017","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The Comptroller and Auditor General of India submits his report relating to the accounts of the Union to which of the following?","The President","The Prime Minister","The Speaker of the Lok Sabha","The Chairman of the Rajya Sabha",0,"The President","CAG submits reports to the President."
+"2017","Polity","General","Hard","In India, the right to vote is a:","Fundamental Right","Natural Right","Constitutional Right","Legal Right",3,"Legal Right","The right to vote in India is a legal right, conferred by the Representation of the People Act, 1951, though it is rooted in the constitutional principle of universal adult suffrage (Article 326)."
+"2016","Polity","Fundamental Rights","Hard","A legislation which confers on the executive or administrative authority an unguided and uncontrolled discretionary power in the matter of application of laws violates which one of the following Articles of the Constitution of India?","Article 14","Article 28","Article 32","Article 44",0,"Article 14","Article 14 guarantees equality before the law and equal protection of the laws. A legislation granting unguided discretionary power violates this principle by allowing arbitrary application of laws."
+"2016","Polity","Constitutional Amendments","Hard","The object of the 98th Amendment to the Constitution of India is to","provide reservation to the socially and educationally backward classes","establish a National Judicial Commission","list the languages recognized as official languages","establish a National Investment and Manufacturing Zones",0,"provide reservation to the socially and educationally backward classes","The 98th Amendment to the Constitution of India pertains to providing reservation to the socially and educationally backward classes."
+"2016","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Which of the following acts made the Governor of Bengal as the Governor-General of Bengal?","Regulating Act of 1773","Pitt's India Act of 1784","Charter Act of 1833","Government of India Act of 1858",0,"Regulating Act of 1773","The Regulating Act of 1773 designated the Governor of Bengal as Governor-General."
+"2016","Polity","Making of the Constitution & Salient Features","Hard","The term 'economic justice' as one of the objectives of the Indian Constitution is provided in","The Preamble and Fundamental Rights","The Preamble and Directive Principles of State Policy","Fundamental Rights and Directive Principles of State Policy","None of the above",1,"The Preamble and Directive Principles of State Policy","Economic justice is mentioned in the Preamble and DPSP."
+"2016","Polity","Preamble: Keywords and Significance","Hard","The term 'Socialist' was added to the Preamble by which amendment?","42nd Amendment","44th Amendment","73rd Amendment","86th Amendment",0,"42nd Amendment","The term 'Socialist' was added to the Preamble by the 42nd Amendment Act of 1976."
+"2016","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Which of the following is NOT a provision related to citizenship in the Indian Constitution?","Citizenship at the commencement of the Constitution","Acquisition of citizenship","Termination of citizenship","Fundamental Duties of citizens",3,"Fundamental Duties of citizens","Fundamental Duties are covered in Part IVA, not Part II (Citizenship)."
+"2016","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following articles directs the State to endeavour to secure for the citizens a uniform civil code throughout the territory of India?","Article 43","Article 44","Article 45","Article 46",1,"Article 44","Article 44 directs the State to secure a uniform civil code."
+"2016","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","Which of the following is/are implied limitations on the amending power of the Parliament under Article 368? 1. The amendment must not alter the basic structure of the Constitution. 2. The amendment must be passed by a special majority. Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both the basic structure doctrine and special majority are limitations."
+"2016","Polity","Parliamentary System vs Presidential System","Hard","Which of the following is a key feature of a parliamentary system that promotes accountability?","Fixed term for the executive","Separation of powers","Question Hour in the legislature","Direct election of the head of state",2,"Question Hour in the legislature","Question Hour in the legislature promotes accountability in a parliamentary system."
+"2016","Polity","Prime Minister & Council of Ministers","Hard","Which of the following statements is/are correct?
+1. A person who is not a member of either House of Parliament can be appointed as a minister for a maximum period of six months.
+2. The Constitution of India does not specify the minimum number of ministers in the Council of Ministers.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding ministerial appointments and size."
+"2016","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Consider the following statements regarding the collegium system in India:
+1. It is mentioned in the Constitution of India.
+2. It recommends the appointment of judges to the Supreme Court and High Courts.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","The collegium system is not in the Constitution, but it recommends judges' appointments."
+"2016","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","Which of the following statements is/are correct regarding the powers of the Governor?
+1. The Governor can reserve a bill for the consideration of the President even if it is not a money bill.
+2. The Governor can dissolve the State Legislative Assembly on his own discretion.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The Governor can reserve bills, but dissolving the assembly requires the CM's advice."
+"2016","Polity","State Legislature & Chief Minister","Hard","The Governor of a State is a nominal head. Who among the following exercises the real executive powers?","Chief Minister","Council of Ministers headed by the Chief Minister","Speaker of the Legislative Assembly","Chief Secretary of the State Government",1,"Council of Ministers headed by the Chief Minister","The Council of Ministers headed by the CM exercises real executive power."
+"2016","Polity","High Courts & Subordinate Courts","Hard","Which of the following statements is/are correct regarding the jurisdiction of the High Court?
+1. The High Court has original jurisdiction in matters of admiralty, probate, matrimonial cases, and company cases.
+2. The High Court has appellate jurisdiction over the subordinate courts in civil and criminal matters.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","High Courts have both original and appellate jurisdiction as described."
+"2016","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","The 74th Amendment to the Constitution deals with:","Rural Local Governments","Urban Local Governments","Centre-State Relations","Fundamental Rights",1,"Urban Local Governments","The 74th Amendment specifically addresses Urban Local Governments."
+"2016","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The Comptroller and Auditor General of India acts as a friend, philosopher and guide of the:","Select Committee of the Parliament","Estimates Committee","Public Accounts Committee","None of the above",2,"Public Accounts Committee","CAG assists the Public Accounts Committee in scrutinizing government accounts."
+"2016","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The National Commission for Scheduled Castes can investigate matters related to:","Deprivation of rights of Scheduled Castes","Violation of safeguards provided to Scheduled Castes","Socio-economic development of Scheduled Castes","All of the above",3,"All of the above","NCSC can investigate all matters related to SCs."
+"2016","Polity","General","Hard","With reference to the ‘Gram Nyayalaya Act’, which of the following statements is/are correct?
+1. As per the Act, Gram Nyayalayas can hear only civil cases and not criminal cases.
+2. The Act allows local social activists as mediators/reconciliators.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Statement 1 is incorrect as Gram Nyayalayas have jurisdiction over both civil and criminal cases as specified in the schedules of the Act."
+"2015","Polity","Parliament","Hard","With reference to the Parliament of India, which of the following statements is/are correct?
+1. A private member’s bill is a bill presented by a Member of Parliament who is not a Minister.
+2. Recently, a private member’s bill has been passed in the Parliament for the first time in its history.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","Statement 1 is correct. A private member's bill is indeed introduced by a member of parliament who is not a minister. Statement 2 is incorrect. Several private member's bills have been passed in the past, though it is rare."
+"2015","Polity","Historical Background (Regulating Act 1773 to Independence Act 1947)","Hard","Consider the following statements regarding the Charter Act of 1833:
+1. It ended the activities of the East India Company as a commercial body.
+2. It defined the powers of the Governor-General in Council.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","The Charter Act of 1833 ended commercial activities and defined powers."
+"2015","Polity","Making of the Constitution & Salient Features","Hard","Which of the following features of the Indian Constitution are indicative of the fact that the real executive power is vested in the Prime Minister?","Nominal head of the state","Council of Ministers headed by the Prime Minister","President's power to summon and prorogue the Parliament","All of the above",1,"Council of Ministers headed by the Prime Minister","The Council of Ministers headed by the Prime Minister signifies real executive power."
+"2015","Polity","Preamble: Keywords and Significance","Hard","Which of the following objectives is/are embodied in the Preamble to the Constitution of India?
+1. Liberty of thought and expression
+2. Economic justice
+3. Political justice
+Select the correct answer using the code given below.","1 only","1 and 2 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","The Preamble embodies liberty of thought, expression, belief, faith, and worship, and secures social, economic, and political justice."
+"2015","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Which of the following statements is/are correct?
+1. Citizenship is a Union Subject under the Constitution of India.
+2. Parliament has the power to make any provision with respect to the acquisition and termination of citizenship of India.
+Select the correct answer using the code given below.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding citizenship as a Union subject and Parliament's power."
+"2015","Polity","Union & Territory (Articles 1-4) & Citizenship (Articles 5-11)","Hard","Consider the following statements regarding the alteration of boundaries of states:
+1. A bill for this purpose can be introduced only with the prior recommendation of the President.
+2. The President must refer the bill to the concerned state legislature for expressing its views.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct regarding the procedure for altering state boundaries."
+"2015","Polity","Fundamental Rights (Articles 12-35) - Writs, Restrictions, Case Laws","Hard","Which of the following are the discretionary powers of the Governor? 1. Sending a report to the President of India for imposing President’s rule in the State. 2. Appointing the Ministers. 3. Reserving certain bills passed by the State Legislature for consideration of the President of India. 4. Making rules to regulate the procedure of the State Legislature. Select the correct answer using the code given below.","1 and 3 only","2 and 4 only","1, 2 and 3 only","1, 2, 3 and 4",0,"1 and 3 only","Sending a report for President's rule and reserving bills are discretionary powers."
+"2015","Polity","Directive Principles of State Policy (DPSP) & Fundamental Duties","Hard","Which of the following statements is true regarding the legal status of Fundamental Duties?","They are legally enforceable.","They are not legally enforceable.","They are enforceable only during emergencies.","They are enforceable only if the Parliament passes a law.",1,"They are not legally enforceable.","Fundamental Duties are not legally enforceable."
+"2015","Polity","Amendment of the Constitution (Basic Structure Doctrine)","Hard","The power to amend the Constitution of India is vested in:","The Parliament","The President","The Supreme Court","The People of India through referendum",0,"The Parliament","The Parliament has the power to amend the Constitution."
+"2015","Polity","Parliamentary System vs Presidential System","Hard","Consider the following statements:
+1. In a parliamentary democracy, the legislature is supreme.
+2. In a presidential democracy, the executive is supreme.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",3,"Neither 1 nor 2","Both statements are generally correct in their respective contexts."
+"2015","Polity","Federal System & Center-State Relations (Legislative, Admin, Financial)","Hard","Which of the following are the methods of parliamentary control over public finance in India?
+1. Placing demands for grants before the Parliament.
+2. Parliamentary Committees.
+3. Comptroller and Auditor General.
+Select the correct answer using the code given below.","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","All listed options are methods of parliamentary control over public finance."
+"2015","Polity","Emergency Provisions (National, State, Financial)","Hard","Consider the following statements regarding the effect of a proclamation of Emergency on the Fundamental Rights:
+1. Article 19 is automatically suspended when a proclamation of Emergency is made on the ground of war or external aggression.
+2. The President can suspend the enforcement of all Fundamental Rights during a National Emergency.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Article 19 is automatically suspended, and the President can suspend the enforcement of other Fundamental Rights."
+"2015","Polity","Prime Minister & Council of Ministers","Hard","Who among the following constitute the National Development Council?
+1. The Prime Minister
+2. The Chief Ministers of all States
+3. Members of the Planning Commission
+4. The Governors of all States
+Select the correct answer using the code given below.","1, 2 and 3 only","1 and 2 only","1, 3 and 4 only","1, 2, 3 and 4",0,"1, 2 and 3 only","Governors are not members of the National Development Council."
+"2015","Polity","Supreme Court: Jurisdiction, Judicial Review, judicial Activism","Hard","Consider the following statements regarding judicial activism:
+1. It is a tool to enforce accountability of the executive and legislature.
+2. It can lead to judicial overreach.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Judicial activism enforces accountability but can also lead to overreach."
+"2015","Polity","Governor: Powers, Discretionary Role, Center's Agent","Hard","The Governor of a State is empowered to promulgate ordinances under which Article of the Constitution of India?","Article 123","Article 213","Article 356","Article 360",1,"Article 213","Article 213 empowers the Governor to promulgate ordinances."
+"2015","Polity","High Courts & Subordinate Courts","Hard","Which one of the following statements is correct?
+(a) In India, the High Courts have the power to issue writs for the enforcement of Fundamental Rights only.
+(b) In India, the High Courts have the power to issue writs for the enforcement of Fundamental Rights as well as for any other purpose.
+(c) The Supreme Court has the power to issue writs for the enforcement of Fundamental Rights only.
+(d) The Supreme Court has the power to issue writs for the enforcement of Fundamental Rights as well as for any other purpose.","In India, the High Courts have the power to issue writs for the enforcement of Fundamental Rights only.","In India, the High Courts have the power to issue writs for the enforcement of Fundamental Rights as well as for any other purpose.","The Supreme Court has the power to issue writs for the enforcement of Fundamental Rights only.","The Supreme Court has the power to issue writs for the enforcement of Fundamental Rights as well as for any other purpose.",1,"In India, the High Courts have the power to issue writs for the enforcement of Fundamental Rights as well as for any other purpose.","High Courts can issue writs for fundamental rights and other purposes; Supreme Court only for fundamental rights."
+"2015","Polity","High Courts & Subordinate Courts","Hard","Which of the following statements is correct regarding the establishment of a common High Court for two or more states?","It can be established by an Act of Parliament.","It can be established by a resolution passed by the concerned State Legislatures.","It can be established by an order of the President of India.","It can be established by the Supreme Court.",0,"It can be established by an Act of Parliament.","A common High Court can be established by an Act of Parliament."
+"2015","Polity","Panchayati Raj Institutions (73rd Amendment) & Municipalities (74th Amendment)","Hard","Which of the following are the functions of the Finance Commission constituted under the 73rd Amendment?
+1. Review the financial position of the Panchayats.
+2. Suggest the principles which should govern the distribution of the net proceeds of taxes to be divided between the State and the Panchayats.
+3. Determine the taxes, duties, tolls and fees which may be assigned to the Panchayats.
+Select the correct answer using the code given below.","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",0,"1 and 2 only","The Finance Commission reviews Panchayat finances and suggests distribution principles."
+"2015","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","Which of the following is/are the function/functions of the Election Commission of India? 1. Superintendance, direction and control of the preparation of electoral rolls for all elections to the Parliament and State Legislatures. 2. Conducting elections to the offices of the President and the Vice-President. 3. Deciding on all doubts and disputes arising out of elections. Select the correct answer using the code given below:","1 only","2 only","1 and 2 only","1, 2 and 3",2,"1 and 2 only","ECI's functions include 1 and 2; election disputes are handled by courts."
+"2015","Polity","Constitutional Bodies: ECI, UPSC, SPSC, Finance Commission, CAG, NCSC, NCST","Hard","The National Commission for Scheduled Tribes was established under which Article of the Constitution?","Article 338","Article 338A","Article 330","Article 332",1,"Article 338A","NCST was established under Article 338A."
+"2015","Polity","General","Hard","What will follow if a Money Bill is substantially amended by the Rajya Sabha?","The Lok Sabha may still proceed with the Bill, accepting or not accepting the recommendations of the Rajya Sabha.","The Lok Sabha cannot consider the Bill further.","The Lok Sabha may send the Bill to the Rajya Sabha for reconsideration.","The President may call a joint sitting for passing the Bill.",0,"The Lok Sabha may still proceed with the Bill, accepting or not accepting the recommendations of the Rajya Sabha.","The Lok Sabha has the final say on a Money Bill and can choose to accept or reject any or all of the recommendations made by the Rajya Sabha."

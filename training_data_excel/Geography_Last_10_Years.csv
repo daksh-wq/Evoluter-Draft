@@ -1,0 +1,92 @@
+Year,Subject,Topic,Difficulty,Question Text,Option A,Option B,Option C,Option D,Correct Answer (0-3),Correct Answer Text,Explanation
+"2024","Geography","Climate Change","Hard","Which of the following greenhouse gases has the highest global warming potential (GWP)?","Carbon Dioxide","Methane","Nitrous Oxide","Sulphur Hexafluoride",3,"Sulphur Hexafluoride","Sulphur Hexafluoride (SF6) has the highest global warming potential among the given options. While Carbon Dioxide is the most abundant greenhouse gas, SF6 traps significantly more heat per molecule."
+"2024","Geography","Indian Geography","Hard","Which of the following rivers does NOT originate in the Himalayas?","Ganga","Yamuna","Brahmaputra","Narmada",3,"Narmada","The Narmada River originates in the Maikala range in Madhya Pradesh, which is not part of the Himalayan mountain range. The Ganga, Yamuna, and Brahmaputra all originate in the Himalayas."
+"2024","Geography","General","Hard","Consider the following statements regarding the Saurashtra region of Gujarat:
+1. It is a peninsular region with a significant coastline along the Arabian Sea.
+2. The Gir National Park, the only natural habitat of the Asiatic lion, is located in this region.
+3. It is predominantly an arid region with very low annual rainfall.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",0,"1 and 2 only","Saurashtra is a peninsula and home to Gir National Park, but while parts are semi-arid, it is not predominantly an arid region like the Rann of Kutch."
+"2023","Geography","Climate","Hard","Which one of the following best describes the term 'Greenwashing'?","Conveying a false impression that a company's products are eco-friendly","Non-inclusion of ecological/environmental costs in the Annual Financial Statements","Ignoring the disastrous ecological consequences while undertaking infrastructure development","Making mandatory provisions for environmental protection",0,"Conveying a false impression that a company's products are eco-friendly","Greenwashing refers to conveying a false impression or providing misleading information about how a company's products are more environmentally sound than they actually are."
+"2023","Geography","Geomorphology","Hard","Consider the following statements:
+1. Jet streams occur in the Northern Hemisphere only.
+2. Only some cyclones develop an eye.
+3. The temperature inside the eye of a cyclone is nearly 10°C lower than that of the surrounding.
+Which of the statements given above is/are correct?","1 only","2 only","1 and 3 only","2 and 3 only",1,"2 only","Statement 1 is incorrect as jet streams occur in both hemispheres. Statement 2 is correct. Statement 3 is incorrect; the temperature inside the eye is warmer, not colder."
+"2023","Geography","General","Hard","Consider the following statements:
+1. Jhelum River passes through Wular Lake.
+2. Krishna River directly feeds Kolleru Lake.
+3. Meandering of Gandak River formed Kanwar Lake.
+How many of the statements given above are correct?","Only one","Only two","All three","None",1,"Only two","Jhelum River flows through Wular Lake and Gandak's meandering formed Kanwar Lake, but Kolleru Lake is fed by Budameru and Tammileru streams, not directly by Krishna River."
+"2022","Geography","Climate","Hard","Jet streams are usually found in the:","Troposphere","Stratosphere","Ionosphere","Exosphere",0,"Troposphere","Jet streams are fast-flowing, narrow, meandering air currents in the atmosphere. They are found in the troposphere, at altitudes of about 7 to 12 kilometers."
+"2022","Geography","Geomorphology","Hard","Consider the following statements:
+1. The global distribution of coral reefs is largely confined to tropical waters.
+2. Coral reefs are formed by living organisms.
+3. Mangroves are found in the intertidal zones.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Statement 1 is correct. Coral reefs thrive in warm, shallow, clear, and sunny waters, primarily in tropical regions. Statement 2 is correct. Coral reefs are built by colonies of tiny animals called coral polyps. Statement 3 is correct. Mangroves are salt-tolerant trees and shrubs that grow in the intertidal zones of tropical and subtropical coastlines. Therefore, all three statements are correct."
+"2022","Geography","General","Hard","The term 'Levant' often heard in the news roughly corresponds to which of the following regions?","Region along the eastern Mediterranean shores","Region along North African shores stretching from Egypt to Morocco","Region along Persian Gulf and Horn of Africa","The entire coastal areas of Mediterranean Sea",0,"Region along the eastern Mediterranean shores","The Levant is a historical geographical term referring to a large area in the Eastern Mediterranean region of Western Asia."
+"2021","Geography","Climate","Hard","Consider the following statements:
+1. The global average temperature in January 2021 was significantly lower than that of January 2020.
+2. The global average sea level in January 2021 was significantly higher than that of January 2020.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Based on available data, the global average sea level in January 2021 was higher than in January 2020 due to ongoing thermal expansion and melting of ice. The global average temperature in January 2021 was not significantly lower than that of January 2020; it was within the range of recent years."
+"2021","Geography","Oceanography","Hard","Consider the following statements:
+1. The amount of solar radiation received by the Earth is higher in summer than in winter.
+2. The albedo of the Earth is higher in summer than in winter.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","The amount of solar radiation received by the Earth is generally higher in summer due to the Earth's tilt and its orbit around the sun. The albedo (reflectivity) of the Earth is generally lower in summer because there is less snow and ice cover compared to winter. Therefore, only statement 1 is correct."
+"2021","Geography","General","Hard","With reference to the 'black cotton soil' of India, consider the following statements:
+1. It is rich in humus.
+2. It is rich in potash.
+3. It is known for its moisture-retentive capacity.
+Which of the statements given above is/are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",1,"2 and 3 only","Black cotton soil (Regur soil) is rich in potash and lime but poor in humus and nitrogen, and it is well-known for its high moisture retention."
+"2020","Geography","Climate","Hard","Consider the following statements:
+1. Jet streams occur only in the Northern Hemisphere.
+2. Only some cyclones develop an eye.
+3. The temperature inside the eye of a cyclone is nearly 10°C lesser than that of the surroundings.
+Which of the statements given above is/are correct?","1 only","2 only","1 and 3 only","2 and 3 only",1,"2 only","Jet streams occur in both the Northern and Southern Hemispheres. Only strong tropical cyclones develop an eye. The temperature inside the eye of a cyclone is warmer than the surroundings due to descending air."
+"2020","Geography","General","Hard","Consider the following statements:
+1. Jet streams occur in the Northern Hemisphere only.
+2. Only some cyclones develop an eye.
+3. The temperature inside the eye of a cyclone is nearly 10°C lesser than that of the surroundings.
+Which of the statements given above is/are correct?","1 and 2 only","2 only","2 and 3 only","1 and 3 only",1,"2 only","Jet streams occur in both hemispheres, and the eye of a cyclone is a warm, calm area; only the statement that some cyclones develop an eye is correct."
+"2019","Geography","Climate","Hard","Consider the following statements:
+1. The global average temperature of January is higher than that of July.
+2. Oceans cover about seventy percent of the earth’s surface.
+3. Insolation is higher over continents than over oceans.
+Which of the statements given above are correct?","1 and 2","2 and 3","1 and 3","1, 2 and 3",1,"2 and 3","The global average temperature of July is higher than that of January. Oceans cover about seventy percent of the earth’s surface. Insolation is higher over continents than over oceans."
+"2019","Geography","Indian Geography","Hard","Consider the following statements:
+1. The Barren Island volcano is an active volcano located in the Indian territory.
+2. Barren Island is located about 140 km east of Great Nicobar.
+3. The last time the Barren Island volcano erupted was in 1991.
+Which of the statements given above is/are correct?","1 only","2 and 3","3 only","1 and 3",0,"1 only","The Barren Island volcano is an active volcano in the Andaman and Nicobar Islands. It is located about 140 km northeast of Port Blair, not Great Nicobar. It has erupted several times since 1991, including in recent years."
+"2019","Geography","General","Hard","Siachen Glacier is situated to the","East of Aksai Chin","East of Leh","North of Gilgit","North of Nubra Valley",3,"North of Nubra Valley","The Siachen Glacier lies immediately south of the great drainage divide that separates the Eurasian Plate from the Indian subcontinent in the extensively glaciated portion of the Karakoram, and it is located north of the Nubra Valley."
+"2018","Geography","Climate","Hard","The jet aircrafts fly very easily and smoothly in the lower stratosphere. What could be the appropriate explanation?
+1. There are no clouds or water vapour in the lower stratosphere.
+2. There are no vertical winds in the lower stratosphere.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct. The lower stratosphere is relatively stable with little turbulence, making it ideal for jet aircraft. It has very little cloud cover and minimal vertical wind movement."
+"2018","Geography","Physical Geography","Hard","With reference to the water on the planet, consider the following statements:
+1. The amount of water in the rivers and lakes is more than the amount of groundwater.
+2. The amount of water in the groundwater is more than the combined amount of water in the rivers and lakes.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",1,"2 only","Statement 1 is incorrect. Groundwater constitutes a significantly larger reservoir of freshwater than rivers and lakes. Statement 2 is correct."
+"2018","Geography","General","Hard","Consider the following statements:
+1. The Earth’s magnetic field has reversed every few hundred thousand years.
+2. When the Earth was created more than 4000 million years ago, there was 54% oxygen and no carbon dioxide.
+3. When living organisms originated, they modified the early atmosphere of the Earth.
+Which of the statements given above is/are correct?","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",2,"1 and 3 only","Geomagnetic reversals are a proven phenomenon, and early life forms like cyanobacteria produced oxygen, modifying the atmosphere; the early atmosphere was not oxygen-rich."
+"2017","Geography","Indian Geography","Hard","With reference to 'Asthenosphere', consider the following statements:
+1. It lies in the upper part of the mantle.
+2. It is highly viscous and mechanically weak and ductile.
+Which of the statements given above is/are correct?","1 only","2 only","Both 1 and 2","Neither 1 nor 2",2,"Both 1 and 2","Both statements are correct. The asthenosphere is located in the upper mantle, and it is characterized by its viscous, mechanically weak, and ductile nature. This allows for the movement of tectonic plates above it."
+"2017","Geography","General","Hard","At one of the places in India, if you stand on the seashore and watch the sea, you will find that the sea water recedes from the shore line a few kilometres and comes back to the shore, twice a day, and you can actually walk on the sea floor when the water recedes. This unique phenomenon is seen at","Bhavnagar","Bheemunipatnam","Chandipur","Nagapattinam",2,"Chandipur","Chandipur beach in Odisha is unique as the sea recedes up to 5 kilometers during low tide, allowing people to walk on the sea bed."
+"2016","Geography","Indian Geography","Hard","Which of the following is/are the characteristic/characteristics of Indian coal?
+1. High ash content
+2. Low sulphur content
+3. Low ash fusion temperature
+Select the correct answer using the code given below:","1 and 2 only","2 only","1 and 3 only","1, 2 and 3",0,"1 and 2 only","Indian coal is generally characterized by high ash content and low sulphur content. The ash fusion temperature can vary."
+"2016","Geography","General","Hard","Which of the following is/are the tributary/tributaries of Brahmaputra?
+1. Dibang
+2. Kameng
+3. Lohit
+Select the correct answer using the code given below.","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Dibang, Kameng, and Lohit are all major tributaries of the Brahmaputra River in its upper course in Arunachal Pradesh and Assam."
+"2015","Geography","Indian Geography","Hard","Which of the following is/are the most likely consequence/consequences of implementing the ‘Unified Payments Interface (UPI)’?
+1. Mobile wallets will not be necessary for online payments.
+2. Digital currency will totally replace physical currency in about two decades.","1 only","2 only","Both 1 and 2","Neither 1 nor 2",0,"1 only","UPI allows direct bank-to-bank transfers, reducing the need for mobile wallets. However, it's unlikely that digital currency will completely replace physical currency in two decades."
+"2015","Geography","General","Hard","What explains the eastward flow of the equatorial counter-current?","The Earth’s rotation on its axis","Convergence of the two equatorial currents","Difference in salinity of water","Occurrence of the belt of calm near the equator",1,"Convergence of the two equatorial currents","The piling up of water in the western part of the oceans due to trade winds leads to a pressure gradient, causing a narrow, eastward counter-current to flow."

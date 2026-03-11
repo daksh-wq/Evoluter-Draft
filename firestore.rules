@@ -1,0 +1,155 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // ─── Helper Functions ───────────────────────────────
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && 
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // ─── User Documents ─────────────────────────────────
+    match /users/{userId} {
+      // Only the owner can write their own data
+      // Allow read for authenticated users to support "Add by Email" lookup
+      allow read: if isAuthenticated(); 
+      allow create: if isOwner(userId);
+      allow delete: if isOwner(userId);
+      allow update: if isOwner(userId) || (
+        isAuthenticated() && 
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['enrolledBatches'])
+      );
+      
+      // User stats subcollection (readable for leaderboard)
+      match /stats/{document=**} {
+        allow read: if isAuthenticated();
+        allow write: if isOwner(userId);
+      }
+      
+      // User syllabus progress (private)
+      match /syllabus/{document=**} {
+        allow read, write: if isOwner(userId);
+      }
+      
+      // User documents/library (private)
+      match /docs/{docId} {
+        allow read, write: if isOwner(userId);
+      }
+      
+      // User test history (private)
+      match /tests/{testId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // User session history (private)
+      match /history/{historyId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // User test sessions for proctoring (private)
+      match /test_sessions/{sessionId} {
+        allow read, write: if isOwner(userId);
+
+        // Proctoring events (written by Cloud Functions, readable by owner)
+        match /events/{eventId} {
+          allow read: if isOwner(userId);
+          allow write: if isOwner(userId);
+        }
+      }
+
+      // User flashcards (private)
+      match /flashcards/{flashcardId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // Saved articles (private)
+      match /saved_articles/{articleId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // API usage tracking (private, writable for rate limiting)
+      match /api_usage/{date} {
+        allow read: if isOwner(userId);
+        // Allow create with initial count of 1
+        allow create: if isOwner(userId)
+          && request.resource.data.keys().hasAny(['test_generation', 'question_generation', 'flashcard_generation']);
+        // Allow update only if incrementing by 1
+        allow update: if isOwner(userId);
+      }
+    }
+
+    // ─── Server-Only Collections ────────────────────────
+    // Test questions with correct answers (Cloud Functions only)
+    match /_test_questions/{testId} {
+      allow read: if false;   // Never allow client read
+      allow write: if false;  // Only Cloud Functions can write
+    }
+
+    // Server-side cache (Cloud Functions only)
+    match /_cache/{key} {
+      allow read: if false;
+      allow write: if false;
+    }
+
+    // ─── Shared Test Pool (Scalability) ────────────────
+    match /cached_tests/{testId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated(); // Users contribute new AI generations
+      allow update, delete: if false;     // Immutable history
+    }
+
+    // ─── Public/Shared Collections ──────────────────────
+    // Contact form submissions (anyone authenticated can create)
+    match /contact_submissions/{docId} {
+      allow create: if isAuthenticated();
+      allow read: if isAdmin();
+      allow update, delete: if false;
+    }
+
+    // Admin collection (read-only for admin check)
+    match /admins/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if false; // Managed via Firebase Console only
+    }
+    // ─── Institution Tests ──────────────────────────────
+    match /institution_tests/{testId} {
+      // Allow any authenticated user to read/query institution tests.
+      // Access control for private tests is enforced at the app level
+      // (only students in assigned batches see the test in their classroom).
+      // Firestore does not support evaluating resource.data in list queries,
+      // so we keep the rule simple here.
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      // Students need to increment attemptCount/totalScoreSum on submission
+      allow update: if isAuthenticated();
+      allow delete: if isOwner(resource.data.creatorId);
+
+      // Student attempt submissions (immutable once created)
+      match /attempts/{attemptId} {
+        allow read: if isAuthenticated();
+        allow create: if isAuthenticated();
+        allow update, delete: if false;
+      }
+    }
+
+    // ─── Institution Batches ────────────────────────────
+    match /institution_batches/{batchId} {
+      allow read: if isAuthenticated(); // Students need to read to see their batches
+      allow create: if isAuthenticated();
+      allow update, delete: if isOwner(resource.data.creatorId);
+
+      match /members/{memberId} {
+        allow read: if isAuthenticated();
+        allow write: if isOwner(get(/databases/$(database)/documents/institution_batches/$(batchId)).data.creatorId);
+      }
+    }
+  }
+}

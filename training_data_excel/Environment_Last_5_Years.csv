@@ -1,0 +1,80 @@
+Year,Subject,Topic,Difficulty,Question Text,Option A,Option B,Option C,Option D,Correct Answer (0-3),Correct Answer Text,Explanation
+"2024","Environment","Biodiversity","Hard","Which of the following is/are examples of in-situ conservation?
+1. National Parks
+2. Botanical Gardens
+3. Wildlife Sanctuaries","Only 1","Only 2","Only 1 and 3","1, 2 and 3",2,"Only 1 and 3","In-situ conservation involves conserving species within their natural habitats. National Parks and Wildlife Sanctuaries are examples of this. Botanical Gardens are ex-situ conservation, as they involve conserving species outside their natural habitats."
+"2024","Environment","Environmental Pollution","Hard","Which of the following is a major source of microplastics in the environment?","Industrial waste","Agricultural runoff","Vehicle emissions","Washing synthetic clothes",3,"Washing synthetic clothes","Washing synthetic clothes releases microplastics into wastewater, which eventually enters the environment. This is a significant source of microplastic pollution."
+"2024","Environment","General","Hard","Consider the following statements:
+1. The Global Ocean Commission grants licences for seabed exploration and mining in international waters.
+2. India has received licences for seabed mineral exploration in international waters.
+3. 'Rare earth minerals' are present on the seafloor in international waters.
+Which of the statements given above are correct?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",1,"2 and 3 only","The International Seabed Authority (ISA) grants licenses, not the Global Ocean Commission; India has received such licenses, and rare earth minerals are found on the seafloor."
+"2023","Environment","Biodiversity","Hard","Consider the following:
+1. Birds
+2. Dust blowing
+3. Rain
+4. Wind blowing
+Which of the above spread plant seeds?","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 4",3,"1, 2 and 4","Birds, dust blowing, and wind blowing can all spread plant seeds. Rain helps in germination but doesn't directly spread seeds."
+"2023","Environment","Pollution","Hard","Which of the following organisms perform the function of decomposers?
+1. Virus
+2. Fungi
+3. Bacteria
+Select the correct answer using the code given below:","1 and 2 only","2 and 3 only","1 and 3 only","1, 2 and 3",1,"2 and 3 only","Fungi and bacteria are decomposers. Viruses are not decomposers; they are parasites."
+"2023","Environment","General","Hard","Consider the following statements:
+1. Some mushrooms have medicinal properties.
+2. Some mushrooms have psychoactive properties.
+3. Some mushrooms have insecticidal properties.
+4. Some mushrooms have bioluminescent properties.
+How many of the above statements are correct?","Only one","Only two","Only three","All four",3,"All four","Mushrooms exhibit a wide range of properties including medicinal, psychoactive, insecticidal, and bioluminescent characteristics."
+"2023","Environment","General","Hard","Consider the following statements regarding the Indian squirrels:
+1. They build nests by making burrows in the ground.
+2. They store their food materials like nuts and seeds in the ground.
+3. They are omnivorous.
+How many of the above statements are correct?","Only one","Only two","Only three","None",1,"Only two","Indian squirrels typically build nests in trees (not burrows), but they do store food in the ground and are omnivorous."
+"2023","Environment","General","Hard","Consider the following activities:
+1. Spreading finely ground basalt rock on farmlands extensively
+2. Increasing the alkalinity of oceans by adding lime
+3. Capturing carbon dioxide released by various industries and pumping it into abandoned subterranean mines in the form of carbonated waters
+How many of the above activities are often considered and discussed for carbon capture and sequestration?","Only one","Only two","All three","None",2,"All three","All three methods—enhanced weathering with basalt, ocean alkalinization, and direct carbon injection—are discussed as potential carbon capture and sequestration techniques."
+"2022","Environment","Ecology","Hard","Which of the following best describes the term 'ecosystem'?","A community of organisms together with the environment in which they live","The flora and fauna of a geographical area","A group of organisms of the same species","The interaction between organisms and their physical environment",0,"A community of organisms together with the environment in which they live","An ecosystem is a community of living organisms (plants, animals, and microbes) in conjunction with the nonliving components of their environment (things like air, water, and mineral soil), interacting as a system."
+"2022","Environment","Pollution","Hard","Which of the following is/are the cause/causes of chemical contamination of water?
+1. Excessive use of nitrogenous fertilizers
+2. Use of detergents
+3. Use of pesticides
+Select the correct answer using the code given below:","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Statement 1 is correct. Excessive use of nitrogenous fertilizers can lead to nitrate contamination of water. Statement 2 is correct. Detergents contain phosphates and other chemicals that can pollute water. Statement 3 is correct. Pesticides are designed to be toxic and can contaminate water sources. Therefore, all three are causes of chemical contamination."
+"2022","Environment","General","Hard","Which one of the following has been constituted under the Environment (Protection) Act, 1986?","Central Water Commission","Central Ground Water Board","Central Ground Water Authority","National Water Development Agency",2,"Central Ground Water Authority","The Central Ground Water Authority (CGWA) was constituted under Section 3(3) of the Environment (Protection) Act, 1986."
+"2022","Environment","General","Hard","""Climate Action Tracker"" which monitors the emission reduction pledges of different countries is a:","database created by coalition of research organisations","wing of Intergovernmental Panel on Climate Change","committee under United Nations Framework Convention on Climate Change","agency promoted and financed by United Nations Environment Programme and World Bank",0,"database created by coalition of research organisations","The Climate Action Tracker is an independent scientific analysis produced by two research organisations, Climate Analytics and NewClimate Institute."
+"2021","Environment","Biodiversity","Hard","Consider the following:
+1. Bats
+2. Bears
+3. Rodents
+The phenomenon of hibernation can be observed in which of the above?","1 and 2 only","2 only","1, 2 and 3","Hibernation cannot be observed in any of the above",1,"2 only","Hibernation is a state of inactivity characterized by a decrease in body temperature, breathing rate, heart rate, and metabolic rate. Bears are well-known hibernators. While some bats and rodents enter a state of torpor, it is not considered true hibernation in the same way as bears."
+"2021","Environment","Pollution","Hard","Which of the following is/are the example/examples of chemical pollution of water?
+1. Phosphates
+2. Nitrates
+3. Arsenic
+Select the correct answer using the code given below:","1 only","1 and 2 only","3 only","1, 2 and 3",3,"1, 2 and 3","Phosphates, nitrates, and arsenic are all examples of chemical pollutants in water. Phosphates and nitrates often come from fertilizers and detergents, while arsenic can be naturally occurring or from industrial sources. All three contribute to water pollution."
+"2021","Environment","General","Hard","What is blue carbon?","Carbon captured by oceans and coastal ecosystems","Carbon sequestered in forest biomass and agricultural soils","Carbon contained in petroleum and natural gas","Carbon present in atmosphere",0,"Carbon captured by oceans and coastal ecosystems","Blue carbon is the carbon stored in coastal and marine ecosystems like mangroves, tidal marshes, and seagrass meadows."
+"2021","Environment","General","Hard","In the context of India, which of the following is/are considered to be practice(s) of eco-friendly agriculture?
+1. Crop diversification
+2. Legume intensification
+3. Tensiometer use
+4. Vertical farming
+Select the correct answer using the code given below.","1, 2 and 3 only","3 only","4 only","1, 2, 3 and 4",3,"1, 2, 3 and 4","All listed practices—crop diversification, legume intensification, tensiometer use, and vertical farming—contribute to more sustainable and eco-friendly agriculture."
+"2020","Environment","Biodiversity","Hard","With reference to the ‘Global Alliance for Climate-Smart Agriculture’, which of the following statements is/are correct?
+1. GACSA is an outcome of the Climate Summit held in Paris in 2015.
+2. Membership of GACSA does not create any binding obligations.
+3. India was instrumental in the creation of GACSA.
+Select the correct answer using the code given below:","1 and 3 only","2 only","2 and 3 only","1, 2 and 3",1,"2 only","The Global Alliance for Climate-Smart Agriculture (GACSA) was launched at the UN Climate Summit in New York in September 2014, not in Paris in 2015. Membership is voluntary and does not create binding obligations. India is a member of GACSA but was not instrumental in its creation."
+"2020","Environment","Pollution","Hard","Consider the following statements:
+1. Coal ash contains arsenic, lead and mercury.
+2. Coal-fired power plants release sulphur dioxide and oxides of nitrogen into the environment.
+3. High ash content is observed in Indian coal.
+Which of the statements given above is/are correct?","1 only","2 and 3 only","1 and 3 only","1, 2 and 3",3,"1, 2 and 3","Coal ash does contain heavy metals like arsenic, lead, and mercury. Coal-fired power plants are a major source of sulphur dioxide and nitrogen oxides. Indian coal generally has a high ash content."
+"2020","Environment","General","Hard","Which of the following are the most likely places to find the musk deer in its natural habitat?
+1. Askot Wildlife Sanctuary
+2. Gangotri National Park
+3. Kishanpur Wildlife Sanctuary
+4. Manas National Park
+Select the correct answer using the code given below:","1 and 2 only","2 and 3 only","3 and 4 only","1 and 4 only",0,"1 and 2 only","Musk deer are found in the high alpine regions of the Himalayas, making Askot Wildlife Sanctuary and Gangotri National Park likely habitats."
+"2020","Environment","General","Hard","With reference to India's Biodiversity, Ceylon frogmouth, Coppersmith barbet, Gray-chinned minivet and White-throated redstart are:","Primates","Birds","Reptiles","Amphibians",1,"Birds","All the species mentioned—Ceylon frogmouth, Coppersmith barbet, Gray-chinned minivet, and White-throated redstart—are types of birds found in India."

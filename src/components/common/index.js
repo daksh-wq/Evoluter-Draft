@@ -1,0 +1,4 @@
+// Common components barrel export
+export { default as GlobalStyles } from './GlobalStyles';
+export { default as KnowledgeGraph } from './KnowledgeGraph';
+export { default as ErrorBoundary } from './ErrorBoundary';

@@ -1,0 +1,20 @@
+export { default as LoginView } from './LoginView';
+export { default as Dashboard } from './Dashboard';
+export { default as LibraryView } from './LibraryView';
+export { default as MainsEvaluatorView } from './MainsEvaluatorView';
+export { default as SyllabusView } from './SyllabusView';
+export { default as NewsView } from './NewsView';
+export { default as LeaderboardView } from './LeaderboardView';
+export { default as TestView } from './TestView';
+export { default as OnboardingView } from './OnboardingView';
+export { default as ProfileView } from './ProfileView';
+export { default as ResultView } from './ResultView';
+export { default as HomeView } from './HomeView';
+export { default as FlashcardsView } from './FlashcardsView';
+export { default as TestHistoryView } from './TestHistoryView';
+export { default as TestReviewView } from './TestReviewView';
+export { default as AboutView } from './AboutView';
+export { default as ContactView } from './ContactView';
+export { default as PrivacyView } from './PrivacyView';
+export { default as TermsView } from './TermsView';
+

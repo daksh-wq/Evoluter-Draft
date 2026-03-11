@@ -1,0 +1,320 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import {
+    User, Mail, Target, Calendar, Edit2, Save, X, Camera, LogOut, CheckCircle, Home
+} from 'lucide-react';
+import { doc, updateDoc, setDoc } from 'firebase/firestore';
+import { updateProfile } from 'firebase/auth';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { db, auth, storage } from '../../services/firebase';
+import logger from '../../utils/logger';
+
+/**
+ * ProfileView Component
+ * User profile management with editable fields
+ */
+const ProfileView = ({ user, userData, onLogout }) => {
+    const navigate = useNavigate();
+    const [isEditing, setIsEditing] = useState(false);
+    const [isSaving, setIsSaving] = useState(false);
+    const [uploadingPhoto, setUploadingPhoto] = useState(false);
+    const fileInputRef = useRef(null);
+    const [formData, setFormData] = useState({
+        displayName: '',
+        targetExam: '',
+        targetYear: '',
+        bio: ''
+    });
+
+    // Initialize form with user data
+    useEffect(() => {
+        if (userData) {
+            setFormData({
+                displayName: userData.displayName || user?.displayName || '',
+                targetExam: userData.targetExam || 'UPSC CSE',
+                targetYear: userData.targetYear || '2025',
+                bio: userData.bio || ''
+            });
+        }
+    }, [userData, user]);
+
+    // Handle File Selection and Upload
+    const handleFileSelect = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        if (!file.type.startsWith('image/')) {
+            alert('Please select an image file.');
+            return;
+        }
+
+        if (file.size > 2 * 1024 * 1024) {
+            alert('File size should be less than 2MB.');
+            return;
+        }
+
+        try {
+            setUploadingPhoto(true);
+            const storageRef = ref(storage, `users/${user.uid}/profile_photo`);
+            await uploadBytes(storageRef, file);
+            const photoURL = await getDownloadURL(storageRef);
+
+            // Update Auth Profile & Firestore
+            await updateProfile(auth.currentUser, { photoURL });
+            // Use setDoc to be safe
+            await setDoc(doc(db, 'users', user.uid), { photoURL }, { merge: true });
+
+            setFormData(prev => ({ ...prev, photoURL }));
+        } catch (error) {
+            logger.error("Error uploading photo:", error);
+
+            // Check for CORS-like network errors
+            if (error.code === 'storage/retry-limit-exceeded' || error.message?.includes('network') || !error.code) {
+                alert("Upload Failed: Network or CORS issue detected.\n\nSince you are on localhost, you likely need to configure CORS on your Firebase Storage bucket.");
+                logger.warn(`
+                 --------------------------------------------------------------------------------
+                 MISSING CORS CONFIGURATION?
+                 
+                 If you are seeing CORS errors in the console, you need to configure your Firebase Storage bucket.
+                 
+                 1. Create a file named 'cors.json' with this content:
+                    [
+                      {
+                        "origin": ["*"],
+                        "method": ["GET", "HEAD", "PUT", "POST", "DELETE", "PATCH", "OPTIONS"],
+                        "maxAgeSeconds": 3600
+                      }
+                    ]
+                 
+                 2. Run this legacy command (if you have gsutil):
+                    gsutil cors set cors.json gs://${storage.app.options.storageBucket}
+                    
+                 OR use the Google Cloud Console to add CORS allowed origins.
+                 --------------------------------------------------------------------------------
+                 `);
+            } else {
+                alert(`Failed to upload photo: ${error.message}`);
+            }
+        } finally {
+            setUploadingPhoto(false);
+        }
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleSave = async () => {
+        setIsSaving(true);
+        try {
+            const userRef = doc(db, 'users', user.uid);
+            // Use setDoc with merge: true to handle both update and create scenarios
+            await setDoc(userRef, {
+                displayName: formData.displayName,
+                targetExam: formData.targetExam,
+                targetYear: formData.targetYear,
+                bio: formData.bio
+            }, { merge: true });
+            setIsEditing(false);
+        } catch (error) {
+            logger.error("Error updating profile:", error);
+            alert("Failed to save changes.");
+        } finally {
+            setIsSaving(false);
+        }
+    };
+
+    return (
+        <div className="animate-in fade-in duration-500 pb-20 max-w-4xl mx-auto">
+            {/* Header */}
+            <header className="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight">My Profile</h1>
+                    <p className="text-slate-500 mt-1">Manage your account and learning preferences.</p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <button
+                        onClick={() => navigate('/dashboard')}
+                        className="w-full md:w-auto bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-50 hover:text-[#2278B0] hover:border-[#2278B0]/30 transition-all"
+                    >
+                        <Home size={18} /> Back to Home
+                    </button>
+                    <button
+                        onClick={onLogout}
+                        className="w-full md:w-auto bg-red-50 text-red-600 px-4 py-2 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"
+                    >
+                        <LogOut size={18} /> Logout
+                    </button>
+                </div>
+            </header>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                {/* Left Column: Avatar & Basic Info */}
+                <div className="md:col-span-1">
+                    <div className="bg-white border border-slate-200 rounded-3xl p-8 flex flex-col items-center shadow-sm text-center">
+                        <div
+                            className="relative mb-6 group cursor-pointer"
+                            onClick={() => !uploadingPhoto && fileInputRef.current?.click()}
+                        >
+                            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-50 shadow-inner bg-slate-100">
+                                <img
+                                    src={formData.photoURL || user?.photoURL || `https://api.dicebear.com/7.x/initials/svg?seed=${formData.displayName || "User"}`}
+                                    alt="Profile"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className={`absolute inset-0 bg-black/40 rounded-full flex items-center justify-center transition-opacity ${uploadingPhoto ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
+                                {uploadingPhoto ? (
+                                    <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                                ) : (
+                                    <Camera className="text-white" size={24} />
+                                )}
+                            </div>
+                            <input
+                                type="file"
+                                ref={fileInputRef}
+                                onChange={handleFileSelect}
+                                className="hidden"
+                                accept="image/*"
+                            />
+                        </div>
+
+                        <h2 className="text-xl font-black text-indigo-950 mb-1">
+                            {formData.displayName || "Scholar"}
+                        </h2>
+                        <p className="text-slate-500 text-sm font-medium mb-4">{user?.email}</p>
+
+                        <div className="w-full grid grid-cols-2 gap-2 text-center text-xs font-bold text-slate-500">
+                            <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div className="text-[#2278B0] text-lg mb-1">{userData?.stats?.level || 1}</div>
+                                LEVEL
+                            </div>
+                            <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div className="text-orange-500 text-lg mb-1">{userData?.stats?.streakDays || 0}</div>
+                                STREAK
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Right Column: Editable Details */}
+                <div className="md:col-span-2 space-y-6">
+                    <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm relative overflow-hidden">
+                        <div className="flex justify-between items-center mb-6">
+                            <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
+                                <User size={20} className="text-blue-500" /> Personal Details
+                            </h3>
+                            {!isEditing ? (
+                                <button
+                                    onClick={() => setIsEditing(true)}
+                                    className="text-[#2278B0] hover:bg-[#2278B0]/5 p-2 rounded-lg transition-colors"
+                                >
+                                    <Edit2 size={18} />
+                                </button>
+                            ) : (
+                                <div className="flex gap-2">
+                                    <button
+                                        onClick={() => setIsEditing(false)}
+                                        className="text-slate-400 hover:bg-slate-50 p-2 rounded-lg transition-colors"
+                                    >
+                                        <X size={18} />
+                                    </button>
+                                    <button
+                                        onClick={handleSave}
+                                        disabled={isSaving}
+                                        className="bg-[#2278B0] text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 hover:bg-[#1b5f8a] shadow-lg shadow-[#2278B0]/20"
+                                    >
+                                        {isSaving ? "Saving..." : <><Save size={16} /> Save Changes</>}
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+
+                        <div className="space-y-5">
+                            {/* Full Name */}
+                            <div className="space-y-2">
+                                <label className="text-xs font-bold text-slate-400 uppercase tracking-wide">Full Name</label>
+                                {isEditing ? (
+                                    <input
+                                        type="text"
+                                        name="displayName"
+                                        value={formData.displayName}
+                                        onChange={handleChange}
+                                        className="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#2278B0]/20 font-bold text-slate-700"
+                                    />
+                                ) : (
+                                    <div className="font-bold text-slate-800 text-lg">{formData.displayName}</div>
+                                )}
+                            </div>
+
+                            {/* Target Exam & Year */}
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="space-y-2">
+                                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
+                                        <Target size={12} /> Target Exam
+                                    </label>
+                                    {isEditing ? (
+                                        <select
+                                            name="targetExam"
+                                            value={formData.targetExam}
+                                            onChange={handleChange}
+                                            className="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-100 font-bold text-slate-700"
+                                        >
+                                            <option>UPSC CSE</option>
+                                            <option>State PSC</option>
+                                        </select>
+                                    ) : (
+                                        <div className="font-bold text-slate-800">{formData.targetExam}</div>
+                                    )}
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
+                                        <Calendar size={12} /> Target Year
+                                    </label>
+                                    {isEditing ? (
+                                        <select
+                                            name="targetYear"
+                                            value={formData.targetYear}
+                                            onChange={handleChange}
+                                            className="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-100 font-bold text-slate-700"
+                                        >
+                                            {[0, 1, 2, 3].map(offset => {
+                                                const year = new Date().getFullYear() + offset;
+                                                return <option key={year} value={year}>{year}</option>
+                                            })}
+                                        </select>
+                                    ) : (
+                                        <div className="font-bold text-slate-800">{formData.targetYear}</div>
+                                    )}
+                                </div>
+                            </div>
+
+                            {/* Bio */}
+                            <div className="space-y-2">
+                                <label className="text-xs font-bold text-slate-400 uppercase tracking-wide">Study Bio / Goals</label>
+                                {isEditing ? (
+                                    <textarea
+                                        name="bio"
+                                        value={formData.bio}
+                                        onChange={handleChange}
+                                        placeholder="e.g. Aiming for top 100 rank..."
+                                        rows={3}
+                                        className="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#2278B0]/20 font-medium text-slate-700 resize-none"
+                                    />
+                                ) : (
+                                    <p className="text-slate-600 leading-relaxed">
+                                        {formData.bio || "No bio added yet."}
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div >
+    );
+};
+
+export default ProfileView;
