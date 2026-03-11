@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Users, Plus, Trash2, UserPlus, Search, X, Download, BookOpen, FileText } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { collection, query, where, getDocs } from 'firebase/firestore';
-import { db, auth } from '../../services/firebase';
+import { db } from '../../services/firebase';
 import { batchService } from '../../features/exam-engine/services/batchService';
 import logger from '../../utils/logger';
 import { Skeleton } from '../ui/Skeleton';
@@ -21,11 +21,11 @@ const BatchManager = ({ userData }) => {
     // Member Management
     const [members, setMembers] = useState([]);
     const [loadingMembers, setLoadingMembers] = useState(false);
-    const [newStudentEmail, setNewStudentEmail] = useState('');
     const [inviteError, setInviteError] = useState('');
     const [inviteSuccess, setInviteSuccess] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         fetchBatches();
     }, [userData]);

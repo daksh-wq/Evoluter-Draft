@@ -4,6 +4,7 @@
  * Exports all Cloud Functions used by the Evoluter Engine.
  * Scalable Architecture with centralized utilities.
  */
+const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const RateLimiter = require('./src/utils/rateLimiter');
 const DistributedCounter = require('./src/utils/distributedCounter');

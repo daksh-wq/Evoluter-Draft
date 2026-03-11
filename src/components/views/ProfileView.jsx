@@ -56,8 +56,9 @@ const ProfileView = ({ user, userData, onLogout }) => {
 
         try {
             setUploadingPhoto(true);
-            const storageRef = ref(storage, `users/${user.uid}/profile_photo`);
-            await uploadBytes(storageRef, file);
+            // Match storage rules: match /users/{userId}/profile/{fileName}
+            const storageRef = ref(storage, `users/${user.uid}/profile/profile_photo`);
+            const snapshot = await uploadBytes(storageRef, file);
             const photoURL = await getDownloadURL(storageRef);
 
             // Update Auth Profile & Firestore

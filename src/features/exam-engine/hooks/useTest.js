@@ -38,7 +38,7 @@ export function useTest() {
     /**
      * Helper to initialize test state
      */
-    const setupTestSession = (questions, durationSeconds) => {
+    const setupTestSession = useCallback((questions, durationSeconds) => {
         // CRITICAL: Final dedup gate — strip any duplicate questions by ID + text
         const seenIds = new Set();
         const seenTexts = new Set();
@@ -60,7 +60,7 @@ export function useTest() {
         setTotalDuration(durationSeconds);
         setIsTestCompleted(false);
         setTestResults(null);
-    };
+    }, []);
 
     /**
      * Generate and start an AI-powered test on a topic

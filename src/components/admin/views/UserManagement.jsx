@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../../services/firebase';
-import { collection, getDocs, limit, query, orderBy, startAfter, doc, updateDoc, deleteDoc, serverTimestamp } from 'firebase/firestore';
-import { Search, MoreVertical, Shield, Trash2, Ban } from 'lucide-react';
+import { collection, getDocs, limit, query, orderBy, startAfter } from 'firebase/firestore';
+import { Search, Ban, Trash2 } from 'lucide-react';
 
 const UserManagement = () => {
     const [users, setUsers] = useState([]);
@@ -34,15 +34,10 @@ const UserManagement = () => {
         }
     };
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         fetchUsers();
     }, []);
-
-    const handleAction = (userId, action) => {
-        console.log(`Action ${action} on user ${userId}`);
-        // Implement Ban / Delete logic here
-        // alert(`Action ${action} coming soon`);
-    };
 
     return (
         <div className="space-y-6">

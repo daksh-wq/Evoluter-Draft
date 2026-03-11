@@ -87,7 +87,7 @@ JSON Format:
             const responseText = result.response.text();
             try {
                 questions = JSON.parse(responseText);
-            } catch (parseErr) {
+            } catch {
                 const arrayMatch = responseText.match(/\[[\s\S]*\]/);
                 if (arrayMatch) {
                     questions = JSON.parse(arrayMatch[0]);
@@ -277,7 +277,7 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
 
         try {
             suggestions = JSON.parse(responseText);
-        } catch (e) {
+        } catch {
             // Fallback parsing if JSON is markdown-wrapped
             const jsonMatch = responseText.match(/\{[\s\S]*\}/);
             if (jsonMatch) {

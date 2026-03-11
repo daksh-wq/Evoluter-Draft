@@ -16,19 +16,24 @@ export const LoadingState = ({ isGenerating, progress, topic }) => {
     const [fade, setFade] = useState(false);
 
     useEffect(() => {
-        if (isGenerating) {
+        if (!isGenerating) return;
+
+        const initTimeout = setTimeout(() => {
             setFact(getRandomFact(topic)); // Initial fact
+        }, 0);
 
-            const interval = setInterval(() => {
-                setFade(true);
-                setTimeout(() => {
-                    setFact(getRandomFact(topic));
-                    setFade(false);
-                }, 300); // Wait for fade out
-            }, 4000); // Change every 4s
+        const interval = setInterval(() => {
+            setFade(true);
+            setTimeout(() => {
+                setFact(getRandomFact(topic));
+                setFade(false);
+            }, 300); // Wait for fade out
+        }, 4000); // Change every 4s
 
-            return () => clearInterval(interval);
-        }
+        return () => {
+            clearTimeout(initTimeout);
+            clearInterval(interval);
+        };
     }, [isGenerating, topic]);
 
     if (!isGenerating) return null;

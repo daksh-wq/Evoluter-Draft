@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../../services/firebase';
-import { collection, query, where, getCountFromServer, orderBy, limit, getDocs } from 'firebase/firestore';
+import { collection, query, getCountFromServer, orderBy, limit, getDocs } from 'firebase/firestore';
 import { BarChart2, PieChart, Activity, TrendingUp } from 'lucide-react';
 
 const AnalyticsDashboard = () => {
@@ -19,7 +19,6 @@ const AnalyticsDashboard = () => {
                 // Note: For large scale, you should use a scheduled function to aggregate these daily.
                 // Here we do a lightweight estimation.
 
-                const sessionsColl = collection(db, 'test_sessions'); // Requires collectionGroup ideally
                 // Using cached_tests as a proxy for generated content popularity
                 const cachedColl = collection(db, 'cached_tests');
                 const cachedSnapshot = await getCountFromServer(cachedColl);

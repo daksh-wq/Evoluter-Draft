@@ -3,7 +3,6 @@
  * F-5: Server-side PDF text extraction + AI question generation
  */
 const functions = require('firebase-functions');
-const admin = require('firebase-admin');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const pdf = require('pdf-parse');
 const axios = require('axios');

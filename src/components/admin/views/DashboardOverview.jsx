@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../../services/firebase';
-import { collection, getCountFromServer, query, where, getDocs, limit, orderBy } from 'firebase/firestore';
-import { Users, FileText, Activity, AlertTriangle } from 'lucide-react';
+import { collection, getCountFromServer } from 'firebase/firestore';
+import { Users, Activity, AlertTriangle } from 'lucide-react';
 
 const StatCard = ({ title, value, icon: Icon, color }) => (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
@@ -35,8 +35,6 @@ const DashboardOverview = () => {
                 // 2. Tests Generated Today (Estimate via cached_tests or similar)
                 // For accurate daily stats we'd need a specific aggregation, 
                 // but for now let's just count recent tests or use a placeholder if costly.
-                // Let's use a simple query for "Active Sessions" instead.
-                const sessionsColl = collection(db, 'test_sessions'); // CollectionGroup is better but costly
                 // Note: querying collectionGroup 'test_sessions' requires an index we added.
 
                 // Let's keep it light:
