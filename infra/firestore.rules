@@ -25,10 +25,10 @@ service cloud.firestore {
       // Users can only read/write their own profile
       allow read: if isOwner(userId) || isAdmin();
       
-      // On creation, stricter validation could be applied here
-      allow create: if isOwner(userId);
+      // On creation, restrict what kind of role can be set
+      allow create: if isOwner(userId) && (!request.resource.data.keys().hasAny(['role']) || request.resource.data.role in ['student', 'institution']);
       allow delete: if isOwner(userId);
-      allow update: if isOwner(userId) || (
+      allow update: if (isOwner(userId) && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role', 'isVerified', 'stats'])) || (
         isAuthenticated() && 
         request.resource.data.diff(resource.data).affectedKeys().hasOnly(['enrolledBatches'])
       );
@@ -53,7 +53,8 @@ service cloud.firestore {
         allow read, write: if isOwner(userId);
       }
       match /test_sessions/{sessionId} {
-        allow read, write: if isOwner(userId);
+        allow read, create, delete: if isOwner(userId);
+        allow update: if isOwner(userId) && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['flaggedForReview', 'flagReason', 'flaggedAt', 'tabSwitchCount']);
         
         match /events/{eventId} {
           allow read, write: if isOwner(userId);
@@ -142,7 +143,7 @@ service cloud.firestore {
     // ─── Institution Batches ────────────────────────────
     match /institution_batches/{batchId} {
       allow read: if isAuthenticated();
-      allow create: if isAuthenticated();
+      allow create: if isAuthenticated() && request.resource.data.creatorId == request.auth.uid;
       allow update, delete: if isOwner(resource.data.creatorId);
 
       match /members/{memberId} {

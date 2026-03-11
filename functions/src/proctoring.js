@@ -31,20 +31,7 @@ exports.trackTabSwitch = functions.https.onCall(async (data, context) => {
         .collection('users').doc(userId)
         .collection('test_sessions').doc(testSessionId);
 
-    // We can skip the initial read if we trust the client ID, but for security validaton we keep it.
-    // Optimization: We could combine validation with the update if we accept potential failures, 
-    // but for now let's keep the check to ensure status is 'in_progress'.
-    const sessionDoc = await sessionRef.get();
-
-    if (!sessionDoc.exists) {
-        throw new functions.https.HttpsError('not-found', 'Test session not found');
-    }
-
-    if (sessionDoc.data().status !== 'in_progress') {
-        throw new functions.https.HttpsError('failed-precondition', 'Test session is not active');
-    }
-
-    // Log the proctoring event (Keep for audit trail)
+    // Log the proctoring event (Keep for audit trail) - done outside transaction
     await sessionRef.collection('events').add({
         type: eventType,
         timestamp: timestamp
@@ -54,44 +41,63 @@ exports.trackTabSwitch = functions.https.onCall(async (data, context) => {
         userAgent: context.rawRequest?.headers?.['user-agent'] || 'unknown',
     });
 
-    let violationCount = sessionDoc.data().tabSwitchCount || 0;
+    // Run a transaction to prevent race conditions during rapid tab switches
+    const result = await admin.firestore().runTransaction(async (transaction) => {
+        const doc = await transaction.get(sessionRef);
+        
+        if (!doc.exists) {
+            throw new functions.https.HttpsError('not-found', 'Test session not found');
+        }
 
-    // Optimized: Atomic increment instead of counting all documents
-    if (eventType === 'tab_switch') {
-        await sessionRef.update({
-            tabSwitchCount: admin.firestore.FieldValue.increment(1)
-        });
+        const data = doc.data();
+        if (data.status !== 'in_progress') {
+            throw new functions.https.HttpsError('failed-precondition', 'Test session is not active');
+        }
 
-        // Update local variable to reflect the new state (approximate is fine, but +1 is accurate)
-        violationCount += 1;
-    }
+        let violationCount = data.tabSwitchCount || 0;
+        let action = 'LOG';
+        let message = '';
+        
+        if (eventType === 'tab_switch') {
+            violationCount += 1;
+            const updates = { tabSwitchCount: violationCount };
+            
+            if (violationCount >= MAX_VIOLATIONS_FLAG) {
+                updates.flaggedForReview = true;
+                updates.flagReason = `Excessive tab switches (${violationCount})`;
+                updates.flaggedAt = admin.firestore.FieldValue.serverTimestamp();
+                action = 'FLAG_FOR_REVIEW';
+                message = 'Too many violations detected. Test may be auto-submitted.';
+            } else if (violationCount >= WARNING_THRESHOLD) {
+                action = 'WARNING';
+                message = `Warning: ${violationCount} tab switches detected. ${MAX_VIOLATIONS_FLAG - violationCount} remaining before flagging.`;
+            }
+            
+            transaction.update(sessionRef, updates);
+        } else {
+            if (violationCount >= MAX_VIOLATIONS_FLAG) {
+                action = 'FLAG_FOR_REVIEW';
+                message = 'Too many violations detected. Test may be auto-submitted.';
+            } else if (violationCount >= WARNING_THRESHOLD) {
+                action = 'WARNING';
+                message = `Warning: ${violationCount} tab switches detected. ${MAX_VIOLATIONS_FLAG - violationCount} remaining before flagging.`;
+            }
+        }
+        
+        return { action, violationCount, message };
+    });
 
-    // Auto-flag if too many violations
-    if (violationCount >= MAX_VIOLATIONS_FLAG) {
-        await sessionRef.update({
-            flaggedForReview: true,
-            flagReason: `Excessive tab switches (${violationCount})`,
-            flaggedAt: admin.firestore.FieldValue.serverTimestamp()
-        });
-
+    if (result.message) {
         return {
-            action: 'FLAG_FOR_REVIEW',
-            violationCount,
-            message: 'Too many violations detected. Test may be auto-submitted.'
-        };
-    }
-
-    if (violationCount >= WARNING_THRESHOLD) {
-        return {
-            action: 'WARNING',
-            violationCount,
-            message: `Warning: ${violationCount} tab switches detected. ${MAX_VIOLATIONS_FLAG - violationCount} remaining before flagging.`
+            action: result.action,
+            violationCount: result.violationCount,
+            message: result.message
         };
     }
 
     return {
-        action: 'LOG',
-        violationCount
+        action: result.action,
+        violationCount: result.violationCount
     };
 });
 
