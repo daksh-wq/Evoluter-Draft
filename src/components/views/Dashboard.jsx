@@ -12,7 +12,8 @@ import {
     AlertTriangle,
     Building2,
     Link as LinkIcon,
-    FileText as FileTextIcon
+    FileText as FileTextIcon,
+    Eye
 } from 'lucide-react';
 import { KnowledgeGraph } from '../common';
 import { SubjectSelector } from '../dashboard/SubjectSelector';

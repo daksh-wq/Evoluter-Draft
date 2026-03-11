@@ -64,8 +64,9 @@ const OnboardingView = ({ user, onComplete }) => {
                 let logoUrl = '';
                 if (logoFile) {
                     try {
-                        const storageRef = ref(storage, `institutions/${user.uid}/logo_${Date.now()}`);
-                        const snapshot = await uploadBytes(storageRef, logoFile);
+                        const extension = logoFile.name.split('.').pop() || 'png';
+                        const storageRef = ref(storage, `institutions/${user.uid}/logo_${Date.now()}.${extension}`);
+                        const snapshot = await uploadBytes(storageRef, logoFile, { contentType: logoFile.type });
                         logoUrl = await getDownloadURL(snapshot.ref);
                     } catch (uploadError) {
                         logger.error("Logo upload failed:", uploadError);

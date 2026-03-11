@@ -14,22 +14,9 @@ service cloud.firestore {
       return isAuthenticated() && request.auth.uid == userId;
     }
 
-    // Check if the user has a specific role claim (if using Custom Claims)
-    // Or check against a user profile field (less secure but common)
-    function hasRole(role) {
-      return isAuthenticated() && 
-        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == role;
-    }
-
     function isAdmin() {
       return isAuthenticated() && 
         exists(/databases/$(database)/documents/admins/$(request.auth.uid));
-    }
-
-    // Standard timestamp validation for "createdAt" and "updatedAt"
-    function isTimestampsValid() {
-      return (!request.resource.data.keys().hasAll(['createdAt']) || request.resource.data.createdAt == request.time)
-          && (!request.resource.data.keys().hasAll(['updatedAt']) || request.resource.data.updatedAt == request.time);
     }
 
     // ─── USER COLLECTIONS ─────────────────────────────────
@@ -127,6 +114,12 @@ service cloud.firestore {
       allow create: if isAuthenticated();
       allow read: if isAdmin();
       allow update, delete: if false;
+    }
+
+    // Content Collection (Global Configs, Banners)
+    match /content/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
     }
 
     // Admins
