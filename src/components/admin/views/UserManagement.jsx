@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../../../services/firebase';
 import { collection, getDocs, limit, query, orderBy, startAfter } from 'firebase/firestore';
 import { Search, Ban, Trash2 } from 'lucide-react';
+import { toast } from '../../../utils/toast';
 
 const UserManagement = () => {
     const [users, setUsers] = useState([]);
@@ -38,6 +39,12 @@ const UserManagement = () => {
     useEffect(() => {
         fetchUsers();
     }, []);
+
+    const handleAction = (userId, action) => {
+        console.log(`Action ${action} on user ${userId}`);
+        // Implement Ban / Delete logic here
+        toast.info(`Action ${action} coming soon`);
+    };
 
     return (
         <div className="space-y-6">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, FileText } from 'lucide-react';
 
@@ -7,6 +7,7 @@ import { ArrowLeft, FileText } from 'lucide-react';
  * Terms of Service page
  */
 const TermsView = () => {
+    useEffect(() => { window.scrollTo(0, 0); }, []);
     return (
         <div className="min-h-screen bg-white font-sans text-slate-800">
             <div className="max-w-3xl mx-auto px-6 py-6">

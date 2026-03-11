@@ -15,6 +15,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { evaluateAnswer } from '../../services/geminiService';
 import { UPSC_SYLLABUS } from '../../constants/syllabusData';
 import logger from '../../utils/logger';
+import { toast } from '../../utils/toast';
 import { CustomDropdown } from '../common';
 
 /**
@@ -76,7 +77,7 @@ const MainsEvaluatorView = () => {
             }
         } catch (error) {
             logger.error("Analysis failed", error);
-            alert("Failed to analyze answer. Please try again.");
+            toast.error("Failed to analyze answer. Please try again.");
         } finally {
             setAnalyzing(false);
         }

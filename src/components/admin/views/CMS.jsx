@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../../../services/firebase';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { Save, Loader } from 'lucide-react';
+import { toast } from '../../../utils/toast';
 
 const CMS = () => {
     const [content, setContent] = useState({
@@ -46,10 +47,10 @@ const CMS = () => {
                 ...content,
                 updatedAt: serverTimestamp()
             });
-            alert('Content updated successfully!');
+            toast.success('Content updated successfully!');
         } catch (error) {
             console.error('Error saving content:', error);
-            alert('Failed to save changes.');
+            toast.error('Failed to save changes.');
         } finally {
             setSaving(false);
         }

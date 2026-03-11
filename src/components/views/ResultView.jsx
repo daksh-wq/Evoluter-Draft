@@ -6,6 +6,7 @@ import {
 import { analyzeTestPerformance } from '../../services/geminiService';
 import { formatTime } from '../../utils/helpers';
 import logger from '../../utils/logger';
+import { toast } from '../../utils/toast';
 
 const ResultView = ({ test, answers, results, exitTest }) => {
     const [analysis, setAnalysis] = useState(null);
@@ -157,7 +158,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
             logger.info('PDF report downloaded');
         } catch (error) {
             logger.error('PDF generation error', error);
-            alert('Failed to generate PDF. Please try again.');
+            toast.error('Failed to generate PDF. Please try again.');
         } finally {
             setIsDownloading(false);
         }

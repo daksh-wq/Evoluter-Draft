@@ -7,6 +7,7 @@ import { batchService } from '../../features/exam-engine/services/batchService';
 import logger from '../../utils/logger';
 import { Skeleton } from '../ui/Skeleton';
 import StudentAnalyticsModal from './StudentAnalyticsModal';
+import { toast } from '../../utils/toast';
 
 const BatchManager = ({ userData }) => {
     const navigate = useNavigate();
@@ -71,7 +72,7 @@ const BatchManager = ({ userData }) => {
             fetchBatches(); // Refresh list
         } catch (error) {
             logger.error("Failed to create batch", error);
-            alert("Error creating batch: " + error.message);
+            toast.error("Error creating batch: " + error.message);
         }
     };
 

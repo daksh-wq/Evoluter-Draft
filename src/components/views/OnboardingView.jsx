@@ -5,6 +5,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, storage } from '../../services/firebase'; // Ensure storage is exported in firebase.js
 import { DEFAULT_USER_STATS } from '../../constants/data';
 import logger from '../../utils/logger';
+import { toast } from '../../utils/toast';
 import { CustomDropdown } from '../common';
 
 /**
@@ -72,7 +73,7 @@ const OnboardingView = ({ user, onComplete }) => {
                     } catch (uploadError) {
                         logger.error("Logo upload failed:", uploadError);
                         // Show warning but continue with signup
-                        alert("Warning: Logo upload failed due to network/permission issues. Account will be created without logo.");
+                        toast.warning("Warning: Logo upload failed. Account will be created without logo.");
                     }
                 }
 
@@ -118,7 +119,7 @@ const OnboardingView = ({ user, onComplete }) => {
             onComplete(role);
         } catch (error) {
             logger.error("Error creating profile:", error);
-            alert("Failed to create profile. Please try again.");
+            toast.error("Failed to create profile. Please try again.");
         } finally {
             setIsSubmitting(false);
         }

@@ -8,6 +8,7 @@ import { updateProfile } from 'firebase/auth';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, auth, storage } from '../../services/firebase';
 import logger from '../../utils/logger';
+import { toast } from '../../utils/toast';
 import { CustomDropdown } from '../common';
 
 /**
@@ -45,12 +46,12 @@ const ProfileView = ({ user, userData, onLogout }) => {
         if (!file) return;
 
         if (!file.type.startsWith('image/')) {
-            alert('Please select an image file.');
+            toast.warning('Please select an image file.');
             return;
         }
 
         if (file.size > 2 * 1024 * 1024) {
-            alert('File size should be less than 2MB.');
+            toast.warning('File size should be less than 2MB.');
             return;
         }
 
@@ -72,7 +73,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
 
             // Check for CORS-like network errors
             if (error.code === 'storage/retry-limit-exceeded' || error.message?.includes('network') || !error.code) {
-                alert("Upload Failed: Network or CORS issue detected.\n\nSince you are on localhost, you likely need to configure CORS on your Firebase Storage bucket.");
+                toast.error("Upload Failed: Network or CORS issue detected. Check console for details.");
                 logger.warn(`
                  --------------------------------------------------------------------------------
                  MISSING CORS CONFIGURATION?
@@ -95,7 +96,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
                  --------------------------------------------------------------------------------
                  `);
             } else {
-                alert(`Failed to upload photo: ${error.message}`);
+                toast.error(`Failed to upload photo: ${error.message}`);
             }
         } finally {
             setUploadingPhoto(false);
@@ -119,9 +120,10 @@ const ProfileView = ({ user, userData, onLogout }) => {
                 bio: formData.bio
             }, { merge: true });
             setIsEditing(false);
+            toast.success("Changes saved successfully!");
         } catch (error) {
             logger.error("Error updating profile:", error);
-            alert("Failed to save changes.");
+            toast.error("Failed to save changes.");
         } finally {
             setIsSaving(false);
         }
@@ -160,12 +162,16 @@ const ProfileView = ({ user, userData, onLogout }) => {
                             className="relative mb-6 group cursor-pointer"
                             onClick={() => !uploadingPhoto && fileInputRef.current?.click()}
                         >
-                            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-50 shadow-inner bg-slate-100">
-                                <img
-                                    src={formData.photoURL || user?.photoURL || `https://api.dicebear.com/7.x/initials/svg?seed=${formData.displayName || "User"}`}
-                                    alt="Profile"
-                                    className="w-full h-full object-cover"
-                                />
+                            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-50 shadow-inner bg-slate-100 flex items-center justify-center">
+                                {formData.photoURL || user?.photoURL ? (
+                                    <img
+                                        src={formData.photoURL || user?.photoURL}
+                                        alt="Profile"
+                                        className="w-full h-full object-cover"
+                                    />
+                                ) : (
+                                    <User className="text-slate-400 w-16 h-16" />
+                                )}
                             </div>
                             <div className={`absolute inset-0 bg-black/40 rounded-full flex items-center justify-center transition-opacity ${uploadingPhoto ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
                                 {uploadingPhoto ? (

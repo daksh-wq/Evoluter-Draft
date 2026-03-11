@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
+import ToastContainer from './components/ui/ToastContainer.jsx'
 import { ErrorBoundary } from './components/common'
 import { handleError, ErrorSeverity, ErrorCategory } from './utils/errorHandler'
 
@@ -35,6 +36,7 @@ window.addEventListener('error', (event) => {
 
 createRoot(document.getElementById('root')).render(
   <ErrorBoundary>
+    <ToastContainer />
     <BrowserRouter>
       <App />
     </BrowserRouter>

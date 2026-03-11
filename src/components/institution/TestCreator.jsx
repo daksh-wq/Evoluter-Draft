@@ -8,6 +8,7 @@ import { generateQuestions, generateQuestionsFromDocument, suggestTestTopics } f
 import { extractTextFromPDF } from '../../utils/pdfExtractor';
 import { batchService } from '../../features/exam-engine/services/batchService';
 import { CustomDropdown } from '../common';
+import { toast } from '../../utils/toast';
 
 const TestCreator = ({ userData }) => {
     const navigate = useNavigate();
@@ -149,7 +150,7 @@ const TestCreator = ({ userData }) => {
     };
 
     const handleTopicGeneration = async () => {
-        if (!genConfig.topic) return alert('Please enter a topic');
+        if (!genConfig.topic) return toast.warning('Please enter a topic');
         setIsGenerating(true);
         setGenProgress(10);
 
@@ -179,13 +180,13 @@ const TestCreator = ({ userData }) => {
                 if (!title) setTitle(`${genConfig.topic} Priority Test`);
                 if (!subject) setSubject(genConfig.topic);
                 setMode('manual');
-                alert(`Successfully generated ${formattedQuestions.length} questions!`);
+                toast.success(`Successfully generated ${formattedQuestions.length} questions!`);
             } else {
-                alert('Failed to generate questions. Please try again.');
+                toast.error('Failed to generate questions. Please try again.');
             }
         } catch (error) {
             logger.error('Topic Generation Error', error);
-            alert('Error generating questions: ' + error.message);
+            toast.error('Error generating questions: ' + error.message);
         } finally {
             setIsGenerating(false);
             setGenProgress(0);
@@ -199,7 +200,7 @@ const TestCreator = ({ userData }) => {
     };
 
     const handlePDFGeneration = async () => {
-        if (!genConfig.file) return alert('Please upload a PDF file');
+        if (!genConfig.file) return toast.warning('Please upload a PDF file');
         setIsGenerating(true);
         setGenProgress(10);
 
@@ -235,11 +236,11 @@ const TestCreator = ({ userData }) => {
 
                 if (!title) setTitle(`${genConfig.file.name.replace('.pdf', '')} Test`);
                 setMode('manual');
-                alert(`Successfully generated ${formattedQuestions.length} questions from PDF!`);
+                toast.success(`Successfully generated ${formattedQuestions.length} questions from PDF!`);
             }
         } catch (error) {
             logger.error('PDF Generation Error', error);
-            alert('Error processing PDF: ' + error.message);
+            toast.error('Error processing PDF: ' + error.message);
         } finally {
             setIsGenerating(false);
             setGenProgress(0);
@@ -256,19 +257,19 @@ const TestCreator = ({ userData }) => {
     };
 
     const handlePublish = async () => {
-        if (!title) return alert('Please enter a test title');
-        if (questions.length === 0) return alert('Test must have at least one question');
+        if (!title) return toast.warning('Please enter a test title');
+        if (questions.length === 0) return toast.warning('Test must have at least one question');
 
         const invalidQ = questions.find(q => !q.text || q.options.some(o => !o));
-        if (invalidQ) return alert(`Question "${invalidQ.text || 'Untitled'}" is incomplete.`);
+        if (invalidQ) return toast.warning(`Question "${invalidQ.text || 'Untitled'}" is incomplete.`);
 
         if (accessType === 'private' && selectedBatchIds.length === 0) {
-            return alert("Please select at least one batch for a private test.");
+            return toast.warning("Please select at least one batch for a private test.");
         }
 
         if (enableSchedule) {
-            if (!scheduledStart || !scheduledEnd) return alert('Please set both start and end times for the scheduled test.');
-            if (new Date(scheduledEnd) <= new Date(scheduledStart)) return alert('End time must be after start time.');
+            if (!scheduledStart || !scheduledEnd) return toast.warning('Please set both start and end times for the scheduled test.');
+            if (new Date(scheduledEnd) <= new Date(scheduledStart)) return toast.warning('End time must be after start time.');
         }
 
         setIsSubmitting(true);
@@ -307,7 +308,7 @@ const TestCreator = ({ userData }) => {
             logger.info('Test Published', { code });
         } catch (error) {
             logger.error('Error publishing test', error);
-            alert('Failed to publish test. Please try again.');
+            toast.error('Failed to publish test. Please try again.');
         } finally {
             setIsSubmitting(false);
         }

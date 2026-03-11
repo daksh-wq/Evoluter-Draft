@@ -13,6 +13,7 @@ import { DEFAULT_USER_STATS } from '../constants/data';
 import logger from '../utils/logger';
 import { showToast } from '../utils/errorHandler';
 import useUserStore from '../stores/userStore';
+import { toast } from '../utils/toast';
 
 /**
  * Required fields that must be present in Firestore user doc
@@ -80,7 +81,7 @@ export function useAuth() {
                             // Check for new batch additions to trigger real-time notification
                             const currentBatches = data.enrolledBatches || [];
                             if (prevBatchesLengthRef.current > 0 && currentBatches.length > prevBatchesLengthRef.current) {
-                                showToast('🎉 You have been added to a new institution batch!', 'success', 8000);
+                                showToast('You have been added to a new institution batch!', 'success', 8000);
                             }
                             prevBatchesLengthRef.current = currentBatches.length;
 
@@ -149,10 +150,13 @@ export function useAuth() {
         setLoginError('');
         setAuthLoading(true);
         try {
-            await signInWithPopup(auth, googleProvider);
+            const result = await signInWithPopup(auth, googleProvider);
+            const name = result.user.displayName?.split(' ')[0] || 'back';
+            toast.success(`Welcome back, ${name}!`);
         } catch (error) {
             logger.error("Google Sign In Error:", error);
             setLoginError('Failed to sign in with Google. Please try again.');
+            toast.error('Google sign-in failed. Please try again.');
         } finally {
             setAuthLoading(false);
         }
@@ -163,10 +167,13 @@ export function useAuth() {
         setLoginError('');
         setAuthLoading(true);
         try {
-            await signInWithEmailAndPassword(auth, email, password);
+            const result = await signInWithEmailAndPassword(auth, email, password);
+            const name = result.user.displayName?.split(' ')[0] || 'back';
+            toast.success(`Welcome back, ${name}!`);
         } catch (error) {
             logger.error("Login Error:", error);
             setLoginError('Invalid email or password.');
+            toast.error('Invalid email or password.');
         } finally {
             setAuthLoading(false);
         }
@@ -219,6 +226,8 @@ export function useAuth() {
             // Update Auth Profile
             await updateProfile(newUser, { displayName: name });
 
+            toast.success(`Account created! Welcome, ${name.split(' ')[0]}!`);
+
             // Note: We DO NOT create the Firestore doc here.
             // This ensures the App check (!userData) sends the user to OnboardingView
             // where they can select their Target Exam and Year.
@@ -227,12 +236,16 @@ export function useAuth() {
             logger.error("Signup Error:", error);
             if (error.code === 'auth/email-already-in-use') {
                 setLoginError('Account already exists. Please Sign In.');
+                toast.error('An account with this email already exists.');
             } else if (error.code === 'auth/weak-password') {
                 setLoginError('Password should be at least 6 characters.');
+                toast.error('Password should be at least 6 characters.');
             } else if (error.code === 'custom/invalid-email-dns') {
                 setLoginError(`Email validation failed: ${error.reason || 'Disposable or invalid domains are not allowed.'}`);
+                toast.error(error.reason || 'Please use a valid email address.');
             } else {
-                setLoginError(error.message || 'Failed to create account. Try again.');
+                setLoginError('Failed to create account. Try again.');
+                toast.error('Failed to create account. Please try again.');
             }
         } finally {
             setAuthLoading(false);
@@ -243,8 +256,10 @@ export function useAuth() {
     const handleLogout = useCallback(async () => {
         try {
             await signOut(auth);
+            toast.info('You have been signed out.');
         } catch (error) {
             logger.error("Logout Error:", error);
+            toast.error('Sign out failed. Please try again.');
         }
     }, []);
 

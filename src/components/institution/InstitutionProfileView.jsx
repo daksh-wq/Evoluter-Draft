@@ -8,6 +8,7 @@ import { updateProfile } from 'firebase/auth';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, auth, storage } from '../../services/firebase';
 import logger from '../../utils/logger';
+import { toast } from '../../utils/toast';
 
 /**
  * InstitutionProfileView Component
@@ -62,12 +63,12 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
         if (!file) return;
 
         if (!file.type.startsWith('image/')) {
-            alert('Please select an image file.');
+            toast.warning('Please select an image file.');
             return;
         }
 
         if (file.size > 2 * 1024 * 1024) {
-            alert('File size should be less than 2MB.');
+            toast.warning('File size should be less than 2MB.');
             return;
         }
 
@@ -88,9 +89,9 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
         } catch (error) {
             logger.error("Error uploading logo:", error);
             if (error.code === 'storage/retry-limit-exceeded' || error.message?.includes('network') || !error.code) {
-                alert("Upload Failed: Network or CORS issue detected.\\n\\nSince you are on localhost, you likely need to configure CORS on your Firebase Storage bucket.");
+                toast.error("Upload Failed: Network or CORS issue detected.\n\nSince you are on localhost, you likely need to configure CORS on your Firebase Storage bucket.");
             } else {
-                alert(`Failed to upload logo: ${error.message}`);
+                toast.error(`Failed to upload logo: ${error.message}`);
             }
         } finally {
             setUploadingPhoto(false);
@@ -119,9 +120,10 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                 }
             }, { merge: true });
             setIsEditing(false);
+            toast.success("Changes saved successfully!");
         } catch (error) {
             logger.error("Error updating profile:", error);
-            alert("Failed to save changes.");
+            toast.error("Failed to save changes.");
         } finally {
             setIsSaving(false);
         }

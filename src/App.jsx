@@ -32,6 +32,8 @@ const AdminCMS = lazy(() => import('./components/admin/views/CMS'));
 const AdminAnalytics = lazy(() => import('./components/admin/views/AnalyticsDashboard'));
 
 import NetworkStatus from './components/ui/NetworkStatus';
+import ToastContainer from './components/ui/ToastContainer';
+import { toast } from './utils/toast';
 
 import { useAuth, useTest } from './hooks';
 import { DEFAULT_USER_STATS, NAV_ITEMS, INSTITUTION_NAV_ITEMS } from './constants/data';
@@ -310,7 +312,7 @@ function App() {
 
   const handleExtractQuestions = async (docItem) => {
     if (!docItem.url) {
-      alert('PDF URL not available. Please re-upload the document.');
+      toast.error('PDF URL not available. Please re-upload the document.');
       return;
     }
     logger.info('Starting Extract Questions', { docTitle: docItem.title });
@@ -383,6 +385,7 @@ function App() {
 
   return (
     <Suspense fallback={<LoadingFallback />}>
+      <ToastContainer />
       <NetworkStatus />
       <Routes>
         {/* Public Routes */}
