@@ -12,6 +12,7 @@ import { auth, googleProvider, db } from '../services/firebase';
 import { DEFAULT_USER_STATS } from '../constants/data';
 import logger from '../utils/logger';
 import { showToast } from '../utils/errorHandler';
+import useUserStore from '../stores/userStore';
 
 /**
  * Required fields that must be present in Firestore user doc
@@ -96,6 +97,14 @@ export function useAuth() {
                             // Only set userData if onboarding is complete
                             if (isOnboardingComplete(data)) {
                                 setUserData(data);
+                                // Sync stats to global store for real-time dashboard updates
+                                if (data.stats) {
+                                    useUserStore.getState().setStats({
+                                        ...useUserStore.getState().stats,
+                                        ...data.stats,
+                                        streakDays: data.stats.streak || data.stats.streakDays || 0
+                                    });
+                                }
                             } else {
                                 logger.warn('User onboarding incomplete, missing fields', {
                                     uid: currentUser.uid,

@@ -322,6 +322,68 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
     // Clean up server-side questions (they're now in test results)
     await admin.firestore().collection('_test_questions').doc(testId).delete();
 
+    // ---------------------------------------------------------
+    // 5. Update User Stats & Streaks
+    // ---------------------------------------------------------
+    const userRef = admin.firestore().collection('users').doc(userId);
+    await admin.firestore().runTransaction(async (transaction) => {
+        const userDoc = await transaction.get(userRef);
+        if (!userDoc.exists) return; // Skip if user doc somehow missing
+
+        const userData = userDoc.data();
+        let stats = userData.stats || {
+            testsAttempted: 0,
+            totalQuestions: 0,
+            correctAnswers: 0,
+            xp: 0,
+            streak: 0,
+            longestStreak: 0,
+            lastActiveDate: null
+        };
+
+        const todayTimestamp = new Date();
+        todayTimestamp.setHours(0, 0, 0, 0); // Midnight local server time (or UTC depending on your standard)
+        
+        let newStreak = stats.streak || 0;
+        let lastActive = stats.lastActiveDate ? stats.lastActiveDate.toDate() : null;
+
+        if (lastActive) {
+            lastActive.setHours(0, 0, 0, 0);
+            const diffTime = Math.abs(todayTimestamp - lastActive);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+            if (diffDays === 1) {
+                // Next consecutive day
+                newStreak += 1;
+            } else if (diffDays > 1) {
+                // Streak broken
+                newStreak = 1;
+            } 
+            // If diffDays === 0, they already played today, maintain streak
+        } else {
+            // First time playing
+            newStreak = 1;
+        }
+
+        const longestStreak = Math.max(newStreak, stats.longestStreak || 0);
+
+        // Calculate XP (10 per correct answer, 2 per question attempted)
+        const earnedXp = (score * 10) + (totalQuestions * 2);
+
+        transaction.update(userRef, {
+            'stats.testsAttempted': admin.firestore.FieldValue.increment(1),
+            'stats.totalQuestions': admin.firestore.FieldValue.increment(totalQuestions),
+            'stats.correctAnswers': admin.firestore.FieldValue.increment(score),
+            'stats.xp': admin.firestore.FieldValue.increment(earnedXp),
+            'stats.streakDays': newStreak, // keeping frontend streakDays key consistent if needed, but in DB we'll update both for now
+            'stats.streak': newStreak, 
+            'stats.longestStreak': longestStreak,
+            'stats.lastActiveDate': admin.firestore.FieldValue.serverTimestamp()
+        });
+    }).catch(err => {
+        console.error("Failed to update user stats transaction:", err);
+    });
+
     return {
         score,
         totalQuestions,
