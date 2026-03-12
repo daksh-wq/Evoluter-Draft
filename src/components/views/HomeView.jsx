@@ -40,7 +40,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
     };
 
     useEffect(() => {
-        const sections = ['features', 'about', 'how-it-works', 'faq'];
+        const sections = ['features', 'about', 'how-it-works', 'analytics', 'faq'];
         const observerOptions = {
             root: null,
             rootMargin: '-20% 0px -70% 0px',
@@ -60,7 +60,18 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             if (el) observer.observe(el);
         });
 
-        return () => observer.disconnect();
+        const handleScroll = () => {
+            if (window.scrollY < 100) {
+                setActiveSection('');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            observer.disconnect();
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     const fadeInUp = {
@@ -96,19 +107,22 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         {/* Logo */}
-                        <div className="flex items-center space-x-3">
+                        <button
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            className="flex items-center space-x-3 focus:outline-none cursor-pointer"
+                        >
                             <div className="w-24 h-24 rounded-xl flex items-center justify-center overflow-hidden">
                                 <img src={logo} alt="Evoluter Logo" className="w-full h-full object-contain" />
                             </div>
-                        </div>
+                        </button>
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center space-x-6">
                             <NavLink href="/dashboard" onClick={handleNavClick}>Dashboard</NavLink>
-                            <NavLink href="#about" active={activeSection === 'about'} onClick={handleNavClick}>About Us</NavLink>
                             <NavLink href="#features" active={activeSection === 'features'} onClick={handleNavClick}>Why Us</NavLink>
-                            <NavLink href="#analytics" active={activeSection === 'analytics'} onClick={handleNavClick}>Analytics</NavLink>
+                            <NavLink href="#about" active={activeSection === 'about'} onClick={handleNavClick}>About Us</NavLink>
                             <NavLink href="#how-it-works" active={activeSection === 'how-it-works'} onClick={handleNavClick}>How It Works</NavLink>
+                            <NavLink href="#analytics" active={activeSection === 'analytics'} onClick={handleNavClick}>Analytics</NavLink>
                             <NavLink href="#faq" active={activeSection === 'faq'} onClick={handleNavClick}>FAQ</NavLink>
                             {user ? (
                                 <button
@@ -144,6 +158,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                             <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">About Us</a>
                             <a href="#features" onClick={(e) => handleNavClick(e, '#features')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">Why Us</a>
                             <a href="#analytics" onClick={(e) => handleNavClick(e, '#analytics')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">Analytics</a>
+                            <a href="#how-it-works" onClick={(e) => handleNavClick(e, '#how-it-works')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">How It Works</a>
                             <a href="#faq" onClick={(e) => handleNavClick(e, '#faq')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">FAQ</a>
                             {user ? (
                                 <button
@@ -167,7 +182,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             </nav>
 
             {/* Hero Section */}
-            <section className="min-h-screen flex items-center justify-center py-20 px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+            <section className="min-h-screen flex items-center justify-center py-12 md:py-20 px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
                 <div className="max-w-6xl mx-auto text-center">
                     <motion.div
                         initial="hidden"
@@ -186,7 +201,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                         {/* Headline */}
                         <motion.h1
                             variants={fadeInUp}
-                            className="text-4xl md:text-5xl lg:text-7xl font-black mb-6 text-indigo-950 leading-tight"
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 text-indigo-950 leading-tight"
                         >
                             India's First AI-Powered <br className="hidden md:block" />
                             Smart Test Engine
@@ -195,7 +210,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                         {/* Subheadline */}
                         <motion.p
                             variants={fadeInUp}
-                            className="text-lg md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed font-medium"
+                            className="text-base sm:text-lg md:text-2xl text-gray-600 mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed font-medium"
                         >
                             Practice smarter. Analyze deeper. Improve faster. <br className="hidden md:block" />
                             Tailored for UPSC and Indian competitive exam aspirants.
@@ -208,13 +223,14 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                         >
                             <button
                                 onClick={() => user ? navigate('/dashboard') : onGetStarted()}
-                                className="px-10 py-4 bg-[#2278B0] hover:bg-[#1b5f8a] rounded-xl text-white font-bold shadow-xl shadow-[#2278B0]/20 transition-all hover:-translate-y-1 flex items-center space-x-3 text-lg"
+                                className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-[#2278B0] hover:bg-[#1b5f8a] rounded-xl text-white font-bold shadow-xl shadow-[#2278B0]/20 transition-all hover:-translate-y-1 flex items-center justify-center space-x-3 text-lg"
                             >
                                 <span>{user ? "Go to Dashboard" : "Start Smart Practice"}</span>
                                 <Zap className="w-5 h-5 fill-white" />
                             </button>
                             <button
-                                className="px-10 py-4 bg-white hover:bg-gray-50 border-2 border-[#2278B0]/20 rounded-xl font-bold text-[#2278B0] transition-all flex items-center space-x-3 text-lg"
+                                onClick={(e) => handleNavClick(e, '#analytics')}
+                                className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-white hover:bg-gray-50 border-2 border-[#2278B0]/20 rounded-xl font-bold text-[#2278B0] transition-all flex items-center justify-center space-x-3 text-lg"
                             >
                                 <span>View Demo Analysis</span>
                                 <BarChart2 className="w-5 h-5" />
@@ -236,7 +252,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             </section>
 
             {/* What We Do Section */}
-            <section id="features" className="py-10 px-6 lg:px-8 bg-white overflow-hidden">
+            <section id="features" className="py-16 md:py-24 px-6 lg:px-8 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
                     initial="hidden"
@@ -280,7 +296,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             </section>
 
             {/* Who We Are Section */}
-            <section id="about" className="py-10 px-6 lg:px-8">
+            <section id="about" className="py-16 md:py-24 px-6 lg:px-8">
                 <motion.div
                     className="max-w-7xl mx-auto"
                     initial="hidden"
@@ -359,7 +375,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             </section>
 
             {/* How It Works Section */}
-            <section id="how-it-works" className="py-6 px-6 lg:px-8 bg-white overflow-hidden">
+            <section id="how-it-works" className="py-16 md:py-24 px-6 lg:px-8 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
                     initial="hidden"
@@ -401,7 +417,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             </section>
 
             {/* Performance Analytics Preview Section */}
-            <section id="analytics" className="py-12 px-6 lg:px-8 bg-white relative overflow-hidden">
+            <section id="analytics" className="py-16 md:py-24 px-6 lg:px-8 bg-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -705,7 +721,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             </section>
 
             {/* FAQ Section */}
-            <section id="faq" className="py-6 px-6 lg:px-8 bg-white overflow-hidden">
+            <section id="faq" className="py-16 md:py-24 px-6 lg:px-8 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-4xl mx-auto"
                     initial="hidden"
@@ -765,7 +781,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             </section>
 
             {/* Final CTA Section */}
-            <section className="py-6 px-6 lg:px-8 relative overflow-hidden">
+            <section className="py-16 md:py-24 px-6 lg:px-8 relative overflow-hidden">
                 <div className="max-w-6xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -825,23 +841,16 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                         </div>
                     </motion.div>
                 </div>
-            </section>
-
-            {/* Footer */}
-            <footer className="py-16 px-6 lg:px-8 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
+            </section>            {/* Footer */}
+            <footer className="pb-10 px-6 lg:px-8 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto relative z-10 pt-10 border-t border-gray-200">
+                    <div className="flex flex-col md:flex-row justify-between gap-12 mb-10">
                         {/* Brand Column */}
-                        <div className="lg:col-span-2">
+                        <div className="max-w-sm">
                             <div className="flex items-center space-x-3 mb-6">
-                                <div className="w-10 h-10 bg-indigo-950 rounded-xl flex items-center justify-center shadow-lg">
-                                    <Zap size={22} className="text-white fill-white" />
-                                </div>
-                                <span className="text-2xl font-black text-indigo-950 tracking-tighter">
-                                    Evoluter
-                                </span>
+                                <img src={logo} alt="Evoluter" className="h-10 w-auto object-contain" />
                             </div>
-                            <p className="text-gray-500 mb-8 leading-relaxed max-w-sm">
+                            <p className="text-gray-500 mb-8 leading-relaxed">
                                 Empowering the next generation of civil servants with cutting-edge AI technology and data-driven learning.
                             </p>
                             <div className="flex space-x-4">
@@ -852,29 +861,31 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                             </div>
                         </div>
 
-                        {/* Links Columns */}
-                        <div>
-                            <h4 className="font-bold text-indigo-950 mb-6 uppercase text-xs tracking-widest">Platform</h4>
-                            <ul className="space-y-4 text-gray-500 text-sm font-medium">
-                                <li><FooterLink href="#features">AI Test Engine</FooterLink></li>
-                                <li><FooterLink href="#">Smart Library</FooterLink></li>
-                                <li><FooterLink href="#">Mains Grading</FooterLink></li>
-                                <li><FooterLink href="#">Pricing</FooterLink></li>
-                            </ul>
+                        {/* Links Columns — shifted slightly left */}
+                        <div className="flex gap-16 ml-auto mr-16 md:mr-0">
+                            <div>
+                                <h4 className="font-bold text-indigo-950 mb-6 uppercase text-xs tracking-widest">Platform</h4>
+                                <ul className="space-y-4 text-gray-500 text-sm font-medium">
+                                    <li><FooterLink href="#features">AI Test Engine</FooterLink></li>
+                                    <li><FooterLink href="/dashboard">Smart Library</FooterLink></li>
+                                    {/* <li><FooterLink href="#">Mains Grading</FooterLink></li> */}
+                                    {/* <li><FooterLink href="#">Pricing</FooterLink></li> */}
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 className="font-bold text-indigo-950 mb-6 uppercase text-xs tracking-widest">Company</h4>
+                                <ul className="space-y-4 text-gray-500 text-sm font-medium">
+                                    <li><FooterLink href="/about">About Us</FooterLink></li>
+                                    {/* <li><FooterLink href="/contact">Contact</FooterLink></li> */}
+                                    <li><FooterLink href="/privacy">Privacy Policy</FooterLink></li>
+                                    <li><FooterLink href="/terms">Terms of Use</FooterLink></li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div>
-                            <h4 className="font-bold text-indigo-950 mb-6 uppercase text-xs tracking-widest">Company</h4>
-                            <ul className="space-y-4 text-gray-500 text-sm font-medium">
-                                <li><FooterLink href="/about">About Us</FooterLink></li>
-                                <li><FooterLink href="/contact">Contact</FooterLink></li>
-                                <li><FooterLink href="#">Resources</FooterLink></li>
-                                <li><FooterLink href="#">Careers</FooterLink></li>
-                            </ul>
-                        </div>
-
-                        {/* Newsletter Column */}
-                        <div className="lg:col-span-2">
+                        {/* Get Updates (commented out) */}
+                        {/* <div>
                             <h4 className="font-bold text-indigo-950 mb-6 uppercase text-xs tracking-widest">Get Updates</h4>
                             <p className="text-sm text-gray-500 mb-6">Stay informed about new features and exam strategies.</p>
                             <div className="flex gap-2">
@@ -887,16 +898,16 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                                     <Send size={18} />
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Bottom Bar */}
-                    <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-xs font-bold text-gray-400 uppercase tracking-widest">
+                    <div className="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-xs font-bold text-gray-400 uppercase tracking-widest">
                         <p>&copy; 2026 Evoluter Ecosystem. All rights reserved.</p>
-                        <div className="flex space-x-8 mt-6 md:mt-0">
+                        <div className="flex space-x-8 mt-4 md:mt-0">
                             <FooterLink href="/privacy" isSubtle>Privacy</FooterLink>
                             <FooterLink href="/terms" isSubtle>Terms</FooterLink>
-                            <FooterLink href="#" isSubtle>Cookies</FooterLink>
+                            {/* <FooterLink href="#" isSubtle>Cookies</FooterLink> */}
                         </div>
                     </div>
                 </div>
@@ -909,12 +920,12 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
 const StatCard = ({ icon, value, label }) => (
     <motion.div
         whileHover={{ y: -8, scale: 1.02 }}
-        className="bg-gradient-to-br from-white to-[#2278B0]/5 p-6 rounded-2xl border-2 border-[#2278B0]/10 shadow-md hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
+        className="bg-gradient-to-br from-white to-[#2278B0]/5 p-4 sm:p-6 rounded-2xl border-2 border-[#2278B0]/10 shadow-md hover:shadow-2xl transition-all duration-300 relative overflow-hidden group flex flex-col h-full justify-center items-center text-center"
     >
         <div className="absolute top-0 right-0 w-32 h-32 bg-[#2278B0]/10 blur-3xl -mr-8 -mt-8 rounded-full group-hover:bg-[#2278B0]/20 transition-colors" />
-        <div className="flex justify-center mb-3 relative z-10 scale-110">{icon}</div>
-        <div className="text-3xl font-black text-indigo-950 mb-1 relative z-10 tracking-tight">{value}</div>
-        <div className="text-xs font-bold text-[#2278B0] uppercase tracking-widest relative z-10">{label}</div>
+        <div className="flex justify-center mb-2 sm:mb-3 relative z-10 scale-110">{icon}</div>
+        <div className="text-2xl sm:text-3xl font-black text-indigo-950 mb-1 sm:mb-2 relative z-10 tracking-tight">{value}</div>
+        <div className="text-[10px] sm:text-xs font-bold text-[#2278B0] uppercase tracking-wider sm:tracking-widest relative z-10 leading-tight sm:leading-normal">{label}</div>
     </motion.div>
 );
 
@@ -963,7 +974,7 @@ const ProcessStep = ({ number, icon, title, description }) => (
 const TestimonialCard = ({ quote, name, achievement, rating }) => (
     <motion.div
         whileHover={{ y: -8 }}
-        className="bg-gradient-to-br from-white to-[#2278B0]/5 p-8 rounded-2xl border-2 border-[#2278B0]/5 shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden"
+        className="bg-gradient-to-br from-white to-[#2278B0]/5 p-8 rounded-2xl border-2 border-[#2278B0]/5 shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden flex flex-col h-full"
     >
         <div className="absolute top-0 right-0 w-40 h-40 bg-[#2278B0]/10 blur-3xl -mr-20 -mt-20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
         <div className="flex space-x-1 mb-6 relative z-10">
@@ -971,8 +982,8 @@ const TestimonialCard = ({ quote, name, achievement, rating }) => (
                 <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400 drop-shadow-sm" />
             ))}
         </div>
-        <p className="text-indigo-950 font-bold italic leading-relaxed relative z-10 mb-8 text-lg">"{quote}"</p>
-        <div className="border-t-2 border-[#2278B0]/5 pt-6 relative z-10 flex items-center justify-between">
+        <p className="text-indigo-950 font-bold italic leading-relaxed relative z-10 mb-8 text-lg grow">"{quote}"</p>
+        <div className="border-t-2 border-[#2278B0]/5 pt-6 relative z-10 flex items-center justify-between mt-auto w-full">
             <div>
                 <div className="font-black text-indigo-950 tracking-tight">{name}</div>
                 <div className="text-xs font-black text-[#2278B0] uppercase tracking-widest mt-1">{achievement}</div>
@@ -998,9 +1009,9 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => (
     <div className="bg-gradient-to-br from-white to-[#2278B0]/5 rounded-2xl border border-[#2278B0]/5 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
         <button
             onClick={onClick}
-            className="w-full px-6 py-5 flex justify-between items-center hover:bg-[#2278B0]/5 transition-colors text-left group"
+            className="w-full px-6 py-5 flex justify-between items-center hover:bg-[#2278B0]/5 transition-colors text-left group gap-4"
         >
-            <span className={`font-semibold text-lg transition-colors duration-300 ${isOpen ? 'text-[#2278B0]' : 'text-gray-900'}`}>{question}</span>
+            <span className={`font-semibold text-sm sm:text-base transition-colors duration-300 ${isOpen ? 'text-[#2278B0]' : 'text-gray-900'}`}>{question}</span>
             <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-[#2278B0] text-white rotate-90' : 'bg-[#2278B0]/5 text-[#2278B0]'}`}>
                 {isOpen ? <Minus size={18} /> : <Plus size={18} />}
             </div>

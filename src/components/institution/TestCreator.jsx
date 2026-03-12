@@ -367,30 +367,31 @@ const TestCreator = ({ userData }) => {
             {/* Header */}
             <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                        <button onClick={() => navigate(-1)} className="p-2 hover:bg-slate-100 rounded-full text-slate-500 transition-colors">
+                    <div className="flex items-center gap-1 sm:gap-4 shrink-0">
+                        <button onClick={() => navigate(-1)} className="p-2 hover:bg-slate-100 rounded-full text-slate-500 transition-colors -ml-2 sm:ml-0 shrink-0">
                             <ArrowLeft size={20} />
                         </button>
-                        <h1 className="text-xl font-bold text-slate-800 flex items-center gap-2">
-                            <span className="bg-indigo-100 text-indigo-700 p-1.5 rounded-lg"><FileText size={18} /></span>
+                        <h1 className="text-[17px] sm:text-xl font-bold text-slate-800 flex items-center gap-1.5 sm:gap-2 whitespace-nowrap min-w-max">
+                            <span className="bg-indigo-100 text-indigo-700 p-1.5 rounded-lg shrink-0"><FileText size={16} className="sm:w-[18px] sm:h-[18px]" /></span>
                             Test Creator
                         </h1>
                     </div>
-                    <div className="flex items-center gap-4">
-                        <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2 sm:gap-4">
+                        <div className="flex items-center gap-2 sm:gap-3">
                             <span className="hidden md:inline-block text-sm font-bold text-slate-400 mr-4">
                                 {questions.length} Question{questions.length !== 1 && 's'}
                             </span>
-                            <button onClick={() => navigate(-1)} className="px-4 py-2 font-bold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors text-sm">
+                            <button onClick={() => navigate(-1)} className="hidden sm:block px-4 py-2 font-bold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors text-sm">
                                 Cancel
                             </button>
                             <button
                                 onClick={handlePublish}
                                 disabled={isSubmitting || questions.length === 0}
-                                className="px-5 py-2 bg-[#2278B0] text-white font-bold rounded-lg shadow-sm hover:bg-[#1b5f8a] transition-all flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                                className="w-10 h-10 sm:w-auto sm:h-auto sm:px-5 sm:py-2 bg-[#2278B0] text-white font-bold rounded-lg shadow-sm hover:bg-[#1b5f8a] transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm shrink-0"
+                                title="Publish Test"
                             >
-                                {isSubmitting ? <RefreshCw className="animate-spin" size={16} /> : <Save size={16} />}
-                                Publish
+                                {isSubmitting ? <RefreshCw className="animate-spin shrink-0" size={16} /> : <Save className="shrink-0" size={16} />}
+                                <span className="hidden sm:inline">Publish</span>
                             </button>
                         </div>
                     </div>
@@ -420,7 +421,7 @@ const TestCreator = ({ userData }) => {
                                         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-semibold text-slate-800 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
                                     />
                                 </div>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
                                         <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Subject</label>
                                         <input
@@ -569,7 +570,7 @@ const TestCreator = ({ userData }) => {
 
                         {/* 2. Mode Selection & Input */}
                         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-                            <div className="p-1 bg-slate-50 m-2 rounded-xl flex">
+                            <div className="p-1 bg-slate-50 m-2 rounded-xl flex flex-col sm:flex-row gap-1">
                                 {[
                                     { id: 'manual', label: 'Manual', icon: <Plus size={16} /> },
                                     { id: 'topic', label: 'AI Topic', icon: <Sparkles size={16} /> },
@@ -578,7 +579,7 @@ const TestCreator = ({ userData }) => {
                                     <button
                                         key={m.id}
                                         onClick={() => setMode(m.id)}
-                                        className={`flex-1 py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-all ${mode === m.id
+                                        className={`flex-1 py-3 sm:py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-all ${mode === m.id
                                             ? 'bg-white text-indigo-600 shadow-sm border border-slate-100 ring-1 ring-slate-100'
                                             : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200/50'
                                             }`}
@@ -626,7 +627,7 @@ const TestCreator = ({ userData }) => {
                                                                 <RefreshCw size={12} className="animate-spin text-purple-500" /> AI is thinking...
                                                             </div>
                                                         ) : topicSuggestions.length > 0 ? (
-                                                            <div className="flex gap-2 overflow-x-auto pb-1 hide-scrollbar">
+                                                            <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
                                                                 {topicSuggestions.map((suggestion, idx) => (
                                                                     <button
                                                                         key={idx}
@@ -821,7 +822,7 @@ const TestCreator = ({ userData }) => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         {q.options.map((opt, oIdx) => (
                                             <div key={oIdx} className={`flex items-center gap-3 p-1 rounded-xl transition-all ${q.correctOption === oIdx ? 'bg-green-50/50' : ''}`}>
-                                                <div className="relative">
+                                                <div className="relative shrink-0">
                                                     <input
                                                         type="radio"
                                                         name={`q-${q.id}-correct`}
@@ -844,7 +845,7 @@ const TestCreator = ({ userData }) => {
                                                     placeholder={`Option ${String.fromCharCode(65 + oIdx)}`}
                                                     value={opt}
                                                     onChange={(e) => updateOption(qIdx, oIdx, e.target.value)}
-                                                    className={`flex-1 bg-white border rounded-xl px-4 py-3 text-sm font-medium focus:ring-0 outline-none transition-all ${q.correctOption === oIdx
+                                                    className={`flex-1 min-w-0 bg-white border rounded-xl px-4 py-3 text-sm font-medium focus:ring-0 outline-none transition-all ${q.correctOption === oIdx
                                                         ? 'border-green-500 ring-2 ring-green-100 text-green-700'
                                                         : 'border-slate-200 text-slate-700 focus:border-indigo-500'
                                                         }`}

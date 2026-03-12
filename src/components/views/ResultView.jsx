@@ -182,7 +182,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
             )}
 
             {/* Header / Score Card */}
-            <div className="bg-indigo-950 text-white p-8 pb-16 relative overflow-hidden">
+            <div className="bg-indigo-950 text-white p-6 sm:p-8 pb-12 sm:pb-16 relative overflow-hidden">
                 <div className="relative z-10 max-w-4xl mx-auto text-center">
                     <h1 className="text-xl font-medium text-blue-200 uppercase tracking-widest mb-4">Test Complete</h1>
                     <div className="flex flex-col items-center justify-center">
@@ -256,18 +256,18 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                 <div style={{ width: `${(results.incorrect / results.totalQuestions) * 100 || 0}%` }} className="bg-red-500 transition-all duration-1000" title="Incorrect"></div>
                                 <div style={{ width: `${(results.unanswered / results.totalQuestions) * 100 || 0}%` }} className="bg-slate-300 transition-all duration-1000" title="Skipped"></div>
                             </div>
-                            <div className="flex justify-between text-sm font-medium">
-                                <div className="flex items-center gap-2 text-green-700">
-                                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                                    {results.correct} Correct ({((results.correct / results.totalQuestions) * 100 || 0).toFixed(0)}%)
+                            <div className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs sm:text-sm font-medium mt-1">
+                                <div className="flex items-center gap-1.5 text-green-700">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></div>
+                                    <span>{results.correct} Correct ({((results.correct / results.totalQuestions) * 100 || 0).toFixed(0)}%)</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-red-700">
-                                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                                    {results.incorrect} Incorrect ({((results.incorrect / results.totalQuestions) * 100 || 0).toFixed(0)}%)
+                                <div className="flex items-center gap-1.5 text-red-700">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-red-500 shrink-0"></div>
+                                    <span>{results.incorrect} Incorrect ({((results.incorrect / results.totalQuestions) * 100 || 0).toFixed(0)}%)</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-slate-600">
-                                    <div className="w-3 h-3 rounded-full bg-slate-300"></div>
-                                    {results.unanswered} Skipped ({((results.unanswered / results.totalQuestions) * 100 || 0).toFixed(0)}%)
+                                <div className="flex items-center gap-1.5 text-slate-600">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-slate-300 shrink-0"></div>
+                                    <span>{results.unanswered} Skipped ({((results.unanswered / results.totalQuestions) * 100 || 0).toFixed(0)}%)</span>
                                 </div>
                             </div>
                         </div>
@@ -350,7 +350,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                     </p>
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                                     {/* Focus Areas (Priority) - NOW: Topics to Study */}
                                     <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100">
                                         <h4 className="font-bold text-orange-700 flex items-center gap-2 mb-4 uppercase text-xs tracking-wider">

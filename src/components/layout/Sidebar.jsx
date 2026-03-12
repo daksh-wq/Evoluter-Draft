@@ -53,23 +53,11 @@ const Sidebar = ({ onLogout, navItems, user, userData, isOpen, onClose }) => {
                     className="flex items-center justify-center w-full"
                     onClick={() => isOpen && onClose()}
                 >
-                    {userData?.institutionProfile?.logoUrl ? (
-                        <img
-                            src={userData.institutionProfile.logoUrl}
-                            alt={userData.institutionProfile.name || 'Institution'}
-                            className="h-10 md:h-10 lg:h-12 w-auto max-w-full object-contain rounded-lg"
-                            onError={(e) => {
-                                e.target.onerror = null;
-                                e.target.src = logo;
-                            }}
-                        />
-                    ) : (
-                        <img
-                            src={logo}
-                            alt="Evoluter"
-                            className="h-6 md:h-6 lg:h-8 w-full object-contain"
-                        />
-                    )}
+                    <img
+                        src={logo}
+                        alt="Evoluter"
+                        className="h-6 md:h-6 lg:h-8 w-full object-contain"
+                    />
                 </Link>
             </div>
             {/* Navigation Items */}
@@ -84,6 +72,8 @@ const Sidebar = ({ onLogout, navItems, user, userData, isOpen, onClose }) => {
                                 key={item.id}
                                 to={path}
                                 onClick={() => isOpen && onClose()}
+                                title={item.label}
+                                aria-label={item.label}
                                 className={({ isActive }) => `w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all group font-bold text-sm ${isActive
                                     ? 'bg-[#2278B0]/5 text-[#2278B0]'
                                     : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'
@@ -115,7 +105,7 @@ const Sidebar = ({ onLogout, navItems, user, userData, isOpen, onClose }) => {
                         <div className="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group">
                             <Link
                                 to="/profile"
-                                className="flex items-center gap-3 flex-1 overflow-hidden cursor-pointer"
+                                className="flex items-center gap-3 flex-1 overflow-hidden min-w-0 cursor-pointer"
                                 onClick={() => isOpen && onClose()}
                             >
                                 {/* Avatar */}
@@ -132,11 +122,11 @@ const Sidebar = ({ onLogout, navItems, user, userData, isOpen, onClose }) => {
                                 </div>
 
                                 {/* User Info (Hidden on tablet, visible on mobile/desktop) */}
-                                <div className="block md:hidden lg:block overflow-hidden">
-                                    <div className="text-sm font-bold text-slate-800 truncate">
+                                <div className="block md:hidden lg:block overflow-hidden min-w-0 flex-1">
+                                    <div className="text-sm font-bold text-slate-800 truncate" title={displayName}>
                                         {displayName.split(' ')[0]}
                                     </div>
-                                    <div className="text-xs text-slate-500 truncate">
+                                    <div className="text-xs text-slate-500 truncate" title={user.email}>
                                         {user.email}
                                     </div>
                                 </div>

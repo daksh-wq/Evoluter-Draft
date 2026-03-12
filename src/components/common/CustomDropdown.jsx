@@ -95,7 +95,7 @@ const CustomDropdown = ({
             </button>
 
             {open && !disabled && (
-                <div className={`absolute top-full mt-2 z-50 bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150 ${
+                <div className={`absolute top-full mt-2 z-50 bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150 max-h-[70vh] flex flex-col ${
                     fullWidth ? 'w-full left-0 origin-top' : 'left-0 min-w-[200px] max-w-[280px]'
                 }`}>
                     

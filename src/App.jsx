@@ -5,6 +5,7 @@ import GlobalBanner from './components/common/GlobalBanner';
 import { Sidebar } from './components/layout';
 import AIAssistant from './components/common/AIAssistant';
 import RouteErrorBoundary from './components/error/RouteErrorBoundary';
+import logo from './assets/logo1.png';
 
 // Lazy load route components for code splitting
 const LoginView = lazy(() => import('./components/views/LoginView'));
@@ -107,6 +108,11 @@ const ProtectedLayout = ({
               >
                 <Menu size={24} className="text-slate-700" />
               </button>
+              <img
+                  src={logo}
+                  alt="Evoluter"
+                  className="h-6 object-contain"
+              />
             </div>
           </div>
 
@@ -120,17 +126,15 @@ const ProtectedLayout = ({
           />
 
           {/* Mobile Overlay */}
-          {isSidebarOpen && (
-            <div
-              className="fixed inset-0 bg-black/50 z-30 md:hidden backdrop-blur-sm animate-in fade-in"
-              onClick={() => setIsSidebarOpen(false)}
-            />
-          )}
+          <div
+            className={`fixed inset-0 bg-black/50 z-30 md:hidden backdrop-blur-sm transition-opacity duration-300 ${isSidebarOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+            onClick={() => setIsSidebarOpen(false)}
+          />
         </>
       )}
 
       <main className={`transition-all duration-300 ${shouldHideNav ? 'pl-0' : 'md:pl-20 lg:pl-64'}`}>
-        <div className={`min-h-screen ${shouldHideNav ? '' : 'p-6 lg:p-10 max-w-7xl mx-auto'}`}>
+        <div className={`min-h-screen ${shouldHideNav ? '' : 'p-4 sm:p-6 lg:p-10 max-w-7xl mx-auto'}`}>
           <RouteErrorBoundary>
             {children}
           </RouteErrorBoundary>

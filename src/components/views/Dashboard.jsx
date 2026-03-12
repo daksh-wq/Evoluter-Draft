@@ -195,40 +195,35 @@ const Dashboard = ({
     return (
         <div className="space-y-8 animate-in fade-in duration-500 pb-20">
             {/* Header with Stats */}
-            <header className="flex flex-col xl:flex-row justify-between items-start xl:items-end gap-6">
-                <div>
-                    <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight mb-1">
+            <header className="relative flex items-start justify-between gap-4">
+                <div className="pr-24 sm:pr-32 min-w-0 flex-1">
+                    <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight mb-1 sm:mb-2">
                         Command Center
                     </h1>
-                    <p className="text-slate-500 text-base font-medium flex items-center gap-2">
-                        <span className="bg-[#2278B0]/10 text-[#2278B0] text-xs px-2 py-0.5 rounded-full font-bold">
+                    <p className="text-slate-500 text-sm sm:text-base font-medium flex items-center gap-1.5 flex-wrap">
+                        <span className="bg-[#2278B0]/10 text-[#2278B0] text-[10px] sm:text-xs px-2 py-0.5 rounded-full font-bold">
                             PRO
                         </span>
-                        Welcome back, Scholar.
+                        <span>Welcome back, Scholar.</span>
                     </p>
                 </div>
 
-                {/* Stats Cards */}
-                <div className="flex w-full xl:w-auto">
-                    {/* Streak Card */}
-                    <div className="bg-white px-5 py-3 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between gap-4">
-                        <div className="text-right flex-1">
-                            <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">
-                                Streak
-                            </div>
-                            <div className="text-xl font-black text-orange-500">
-                                {userStats.streakDays} Days
-                            </div>
-                        </div>
-                        <div className="p-2 bg-orange-50 rounded-xl shrink-0">
-                            <Flame size={20} className="text-orange-500" fill="currentColor" />
-                        </div>
+                {/* Streak Card — pinned top-right */}
+                <div className="absolute top-0 right-0 bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center gap-1 shrink-0">
+                    <div className="p-1.5 bg-orange-50 rounded-xl">
+                        <Flame size={18} className="text-orange-500" fill="currentColor" />
+                    </div>
+                    <div className="text-base sm:text-lg font-black text-orange-500 leading-none">
+                        {userStats.streakDays}
+                    </div>
+                    <div className="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider leading-none">
+                        Day Streak
                     </div>
                 </div>
             </header>
 
             {/* Target Exam & Quote Cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Target Exam Card */}
                 <div className="bg-indigo-950 text-white p-6 rounded-3xl shadow-lg relative overflow-hidden flex flex-col justify-between min-h-[180px]">
                     <div className="absolute top-2 right-2 p-4 opacity-10">
@@ -242,18 +237,18 @@ const Dashboard = ({
                             {userData?.targetExam || 'UPSC CSE'} {effectiveYear}
                         </h3>
                     </div>
-                    <div className="mt-4 z-10 relative">
+                    <div className="mt-4 z-10 relative flex items-baseline gap-2">
                         {dateLoading ? (
-                            <span className="text-lg text-blue-200 animate-pulse">Calculating...</span>
+                            <div className="w-24 h-10 bg-indigo-900/50 rounded-lg animate-pulse" />
                         ) : (
                             <>
-                                <span className="text-3xl md:text-4xl font-black text-white">
+                                <span className="text-3xl md:text-4xl font-black text-white leading-none">
                                     {daysRemaining}
                                 </span>
                                 <div className="flex flex-col">
-                                    <span className="text-xs md:text-sm text-blue-200 ml-2">Days Remaining</span>
+                                    <span className="text-xs md:text-sm text-blue-200">Days Remaining</span>
                                     {!isOfficial && (
-                                        <span className="text-[10px] text-blue-300 ml-2 italic">*AI Estimated</span>
+                                        <span className="text-[10px] text-blue-300 italic leading-tight">*AI Estimated</span>
                                     )}
                                 </div>
                             </>
@@ -267,9 +262,16 @@ const Dashboard = ({
                     <h4 className="text-[#2278B0] font-bold text-sm uppercase tracking-wide mb-2 flex items-center gap-2">
                         <Sparkles size={16} /> Daily Wisdom
                     </h4>
-                    <p className={`text-base md:text-xl font-serif text-slate-800 italic leading-relaxed transition-opacity duration-500 ${quoteLoading ? 'opacity-50' : 'opacity-100'}`}>
-                        {quote}
-                    </p>
+                    {quoteLoading ? (
+                        <div className="space-y-3 mt-2">
+                            <div className="h-4 bg-slate-200 rounded animate-pulse w-full"></div>
+                            <div className="h-4 bg-slate-200 rounded animate-pulse w-4/5"></div>
+                        </div>
+                    ) : (
+                        <p className={`text-base md:text-xl font-serif text-slate-800 italic leading-relaxed transition-opacity duration-500`}>
+                            {quote}
+                        </p>
+                    )}
                 </div>
             </div>
 
@@ -318,33 +320,35 @@ const Dashboard = ({
                         </div>
 
                         {/* AI Suggestions Tags Here Below the Grid */}
-                        {showSuggestions && aiTopic.length >= 2 && (
-                            <div className="w-full animate-in fade-in slide-in-from-top-1 -mt-2">
-                                {isSuggesting ? (
-                                    <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
-                                        <div className="animate-spin w-3 h-3 border-2 border-white/50 border-t-transparent rounded-full" />
-                                        Neural Engine analyzing...
-                                    </div>
-                                ) : topicSuggestions?.length > 0 ? (
-                                    <div className="flex flex-wrap gap-2">
-                                        {topicSuggestions.map((suggestion, idx) => (
-                                            <button
-                                                key={idx}
-                                                type="button"
-                                                onClick={() => {
-                                                    setAiTopic(suggestion);
-                                                    setShowSuggestions(false);
-                                                }}
-                                                className="px-3 py-1.5 text-xs font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all flex items-center gap-1.5 shadow-sm"
-                                            >
-                                                <Sparkles size={10} className="text-blue-300 opacity-70" />
-                                                {suggestion}
-                                            </button>
-                                        ))}
-                                    </div>
-                                ) : null}
-                            </div>
-                        )}
+                        <div className="min-h-[2.5rem] w-full mt-[-0.5rem]">
+                            {showSuggestions && aiTopic.length >= 2 && (
+                                <div className="w-full animate-in fade-in slide-in-from-top-1">
+                                    {isSuggesting ? (
+                                        <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
+                                            <div className="animate-spin w-3 h-3 border-2 border-white/50 border-t-transparent rounded-full" />
+                                            Neural Engine analyzing...
+                                        </div>
+                                    ) : topicSuggestions?.length > 0 ? (
+                                        <div className="flex flex-wrap gap-2">
+                                            {topicSuggestions.map((suggestion, idx) => (
+                                                <button
+                                                    key={idx}
+                                                    type="button"
+                                                    onClick={() => {
+                                                        setAiTopic(suggestion);
+                                                        setShowSuggestions(false);
+                                                    }}
+                                                    className="px-3 py-1.5 text-xs font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all flex items-center gap-1.5 shadow-sm"
+                                                >
+                                                    <Sparkles size={10} className="text-blue-300 opacity-70" />
+                                                    {suggestion}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    ) : null}
+                                </div>
+                            )}
+                        </div>
 
                         {/* Resource Upload Section */}
                         <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-4">
@@ -382,7 +386,7 @@ const Dashboard = ({
                                             className="w-full bg-indigo-900/50 border border-indigo-800/50 text-white rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-50"
                                         />
                                     </div>
-                                    <div className="flex items-center justify-center text-blue-300/50 text-xs font-bold px-2">OR</div>
+                                    <div className="flex items-center justify-center text-blue-300/50 text-[10px] md:text-xs font-bold px-2 md:px-4 py-2 md:py-0">OR</div>
                                     <button
                                         onClick={handleFileUploadClick}
                                         disabled={isPreviewLoading}
@@ -511,7 +515,7 @@ const Dashboard = ({
                                 .map(([t, s]) => (
                                     <div
                                         key={t}
-                                        className="px-3 py-1.5 md:px-4 md:py-2 bg-red-50 border border-red-100 rounded-lg flex items-center gap-2 justify-center text-center grow md:grow-0"
+                                        className="px-3 py-1.5 md:px-4 md:py-2 bg-red-50 border border-red-100 rounded-lg flex items-center gap-2 justify-start text-left w-auto max-w-full cursor-default"
                                     >
                                         <AlertTriangle size={14} className="text-red-500 flex-shrink-0" />
                                         <div className="overflow-hidden text-left">

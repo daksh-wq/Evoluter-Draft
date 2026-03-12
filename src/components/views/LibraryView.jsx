@@ -22,6 +22,14 @@ const LibraryView = () => {
         return matchesSearch && matchesTab;
     });
 
+    const [visibleCount, setVisibleCount] = React.useState(5);
+
+    React.useEffect(() => {
+        setVisibleCount(5);
+    }, [searchTerm, activeTab]);
+
+    const displayedDocs = filteredDocs.slice(0, visibleCount);
+
     return (
         <div className="space-y-8 animate-in fade-in duration-500 pb-20">
             {/* Header */}
@@ -88,7 +96,7 @@ const LibraryView = () => {
 
             {/* Document Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredDocs.map((doc) => (
+                {displayedDocs.map((doc) => (
                     <div
                         key={doc.id}
                         className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#2278B0] hover:shadow-lg transition-all group relative overflow-hidden flex flex-col h-full"
@@ -146,6 +154,18 @@ const LibraryView = () => {
                     </div>
                 ))}
             </div>
+
+            {/* Load More Button */}
+            {visibleCount < filteredDocs.length && (
+                <div className="flex justify-center mt-8">
+                    <button
+                        onClick={() => setVisibleCount(prev => prev + 5)}
+                        className="px-6 py-3 bg-indigo-50 text-indigo-700 font-bold rounded-full hover:bg-indigo-100 transition-colors border border-indigo-200 flex items-center gap-2 shadow-sm"
+                    >
+                        Load More Resources
+                    </button>
+                </div>
+            )}
         </div>
     );
 };

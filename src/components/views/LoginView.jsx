@@ -103,7 +103,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
     };
 
     return (
-        <div className="min-h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-100 via-slate-50 to-orange-50 flex items-center justify-center p-6 font-sans text-slate-800 relative overflow-hidden">
+        <div className="min-h-screen h-full w-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-100 via-slate-50 to-orange-50 flex items-center justify-center p-6 font-sans text-slate-800 relative overflow-y-auto">
             {/* Background Decor */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-[#2278B0]/10 rounded-full blur-3xl animate-pulse" />
@@ -111,12 +111,11 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
             </div>
 
             {/* Back to Home Button */}
-            <Link to="/" className="absolute top-6 left-6 md:top-10 md:left-10 flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-full text-slate-600 hover:text-[#2278B0] hover:border-[#2278B0]/30 transition-all shadow-sm hover:shadow-md z-20 group">
-                <Home size={18} className="group-hover:-translate-x-1 transition-transform" />
-                <span className="font-bold text-sm">Back Home</span>
+            <Link to="/" className="absolute top-6 right-6 md:top-10 md:right-10 p-3 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-full text-slate-600 hover:text-[#2278B0] hover:border-[#2278B0]/30 transition-all shadow-sm hover:shadow-md z-20 group" title="Back to Home">
+                <Home size={20} className="group-hover:scale-110 transition-transform" />
             </Link>
 
-            <div className="w-full max-w-md bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50 p-8 md:p-10 animate-in fade-in zoom-in duration-500 relative z-10">
+            <div className="w-full max-w-md bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50 p-8 md:p-10 animate-in fade-in zoom-in duration-500 relative z-10 mt-16 md:mt-0">
 
                 {/* Logo & Header */}
                 <div className="text-center mb-8">
@@ -136,7 +135,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                     {/* Sign In */}
                     <button
                         onClick={() => handleTabChange('signin')}
-                        className={`flex-1 py-2 rounded-lg text-[13px] font-bold transition-all z-10 ${authMode === 'signin' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                        className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 ${authMode === 'signin' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                     >
                         Sign In
                     </button>
@@ -144,7 +143,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                     {/* Student Signup */}
                     <button
                         onClick={() => handleTabChange('signup')}
-                        className={`flex-1 py-2 rounded-lg text-[13px] font-bold transition-all z-10 ${authMode === 'signup' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                        className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 ${authMode === 'signup' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                     >
                         Student
                     </button>
@@ -152,7 +151,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                     {/* Institution Signup - Highlighted */}
                     <button
                         onClick={() => handleTabChange('institution')}
-                        className={`flex-1 py-2 rounded-lg text-[13px] font-bold transition-all z-10 flex items-center justify-center gap-1 ${authMode === 'institution' ? 'bg-indigo-950 text-white shadow-sm' : 'text-indigo-900/60 hover:text-indigo-900'}`}
+                        className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 flex items-center justify-center gap-1 ${authMode === 'institution' ? 'bg-indigo-950 text-white shadow-sm' : 'text-indigo-900/60 hover:text-indigo-900'}`}
                     >
                         Institution
                     </button>
@@ -184,6 +183,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                             <input
                                 type="text"
                                 name="name"
+                                autoComplete="name"
                                 placeholder={authMode === 'institution' ? "Institution Name" : "Full Name"}
                                 value={formData.name}
                                 onChange={handleChange}
@@ -199,6 +199,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                             type="text"
                             inputMode="email"
                             name="email"
+                            autoComplete="email"
                             placeholder="Email Address"
                             value={formData.email}
                             onChange={handleChange}
@@ -212,6 +213,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                         <input
                             type="password"
                             name="password"
+                            autoComplete={authMode === 'signin' ? "current-password" : "new-password"}
                             placeholder="Password"
                             value={formData.password}
                             onChange={handleChange}
@@ -293,7 +295,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
             {/* Password Reset Modal */}
             {showResetModal && (
                 <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-in fade-in duration-200">
-                    <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative animate-in zoom-in-95 duration-300">
+                    <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 max-w-md w-full relative animate-in zoom-in-95 duration-300 max-h-[90vh] overflow-y-auto">
                         {/* Close Button */}
                         <button
                             onClick={closeResetModal}

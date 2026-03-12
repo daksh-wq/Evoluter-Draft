@@ -20,7 +20,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
     const [isSaving, setIsSaving] = useState(false);
     const [uploadingPhoto, setUploadingPhoto] = useState(false);
     const fileInputRef = useRef(null);
-    
+
     const [formData, setFormData] = useState({
         name: '',
         state: '',
@@ -45,7 +45,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
             });
         } else if (userData) {
             // Fallback
-             setFormData({
+            setFormData({
                 name: userData.displayName || user?.displayName || '',
                 state: '',
                 city: '',
@@ -80,7 +80,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
 
             // Update Auth Profile & Firestore
             await updateProfile(auth.currentUser, { photoURL });
-            await setDoc(doc(db, 'users', user.uid), { 
+            await setDoc(doc(db, 'users', user.uid), {
                 photoURL,
                 institutionProfile: { logoUrl: photoURL }
             }, { merge: true });
@@ -137,27 +137,13 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                     <h1 className="text-2xl md:text-3xl font-extrabold text-slate-800 tracking-tight">Institution Profile</h1>
                     <p className="text-slate-500 mt-1">Manage your institution details and preferences.</p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-                    <button
-                        onClick={() => navigate('/dashboard')}
-                        className="w-full md:w-auto bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-50 hover:text-orange-600 hover:border-orange-600/30 transition-all"
-                    >
-                        <Home size={18} /> Back to Dashboard
-                    </button>
-                    <button
-                        onClick={onLogout}
-                        className="w-full md:w-auto bg-red-50 text-red-600 px-4 py-2 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"
-                    >
-                        <LogOut size={18} /> Logout
-                    </button>
-                </div>
             </header>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 {/* Left Column: Avatar & Basic Info */}
                 <div className="md:col-span-1">
-                    <div className="bg-white border border-slate-200 rounded-3xl p-8 flex flex-col items-center shadow-sm text-center">
+                    <div className="bg-white border border-slate-200 rounded-3xl p-8 flex flex-col items-center shadow-sm text-center h-full">
                         <div
                             className="relative mb-6 group cursor-pointer"
                             onClick={() => !uploadingPhoto && fileInputRef.current?.click()}
@@ -193,11 +179,11 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                             {formData.name || "Institution Name"}
                         </h2>
                         <p className="text-slate-500 text-sm font-medium mb-4">{user?.email}</p>
-                        
+
                         {userData?.institutionProfile?.isVerified && (
-                             <div className="bg-green-50 text-green-600 font-bold text-xs px-3 py-1.5 rounded-full flex items-center gap-1">
-                                 Verified Institution
-                             </div>
+                            <div className="bg-green-50 text-green-600 font-bold text-xs px-3 py-1.5 rounded-full flex items-center gap-1">
+                                Verified Institution
+                            </div>
                         )}
                     </div>
                 </div>
@@ -259,7 +245,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                                         <MapPin size={12} /> State
                                     </label>
                                     {isEditing ? (
-                                         <input
+                                        <input
                                             type="text"
                                             name="state"
                                             value={formData.state}
@@ -275,7 +261,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                                         <MapPin size={12} /> City
                                     </label>
                                     {isEditing ? (
-                                         <input
+                                        <input
                                             type="text"
                                             name="city"
                                             value={formData.city}
@@ -289,13 +275,13 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                             </div>
 
                             {/* Contact & Student Count */}
-                             <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
                                         <Phone size={12} /> Contact Number
                                     </label>
                                     {isEditing ? (
-                                         <input
+                                        <input
                                             type="tel"
                                             name="contactNumber"
                                             value={formData.contactNumber}
@@ -311,7 +297,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                                         <Users size={12} /> Student Base Size
                                     </label>
                                     {isEditing ? (
-                                         <input
+                                        <input
                                             type="number"
                                             name="studentCount"
                                             value={formData.studentCount}
@@ -343,6 +329,14 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                                         {formData.bio || "No about added yet."}
                                     </p>
                                 )}
+                            </div>
+                            <div className="w-full mt-auto pt-6">
+                                <button
+                                    onClick={onLogout}
+                                    className="w-full bg-red-50 text-red-600 px-4 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"
+                                >
+                                    <LogOut size={18} /> Logout
+                                </button>
                             </div>
                         </div>
                     </div>

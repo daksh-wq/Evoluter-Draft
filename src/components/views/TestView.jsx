@@ -156,31 +156,33 @@ const TestView = ({
             </div>
 
             {/* Footer Nav */}
-            <footer className="border-t border-slate-200 bg-white p-4 flex justify-between items-center lg:px-10 shrink-0">
+            <footer className="border-t border-slate-200 bg-white px-3 sm:px-6 lg:px-10 py-3 sm:py-4 flex justify-between items-center shrink-0">
                 <button
                     onClick={goToPrev}
                     disabled={currentIndex === 0}
-                    className="px-6 py-3 rounded-xl border border-slate-200 font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-50 flex items-center gap-2"
+                    className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-50 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
                 >
-                    <ChevronDown className="rotate-90" size={18} /> Previous
+                    <ChevronDown className="rotate-90" size={16} />
+                    <span className="hidden xs:inline">Previous</span>
                 </button>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 sm:gap-4">
                     {/* Always show Submit button in Zen Mode for easy access, or when on the last question everywhere */}
                     {(isZenMode || isLastQuestion) && (
                         <button
                             onClick={() => endTest()}
-                            className="px-6 py-3 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 shadow-lg shadow-green-600/20 flex items-center gap-2"
+                            className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 shadow-lg shadow-green-600/20 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
                         >
-                            Submit Test
+                            <span className="hidden sm:inline">Submit Test</span>
+                            <span className="sm:hidden">Submit</span>
                         </button>
                     )}
 
                     {!isLastQuestion && (
                         <button
                             onClick={goToNext}
-                            className="px-6 py-3 rounded-xl bg-[#2278B0] text-white font-bold hover:bg-[#1b5f8a] shadow-lg shadow-[#2278B0]/20 flex items-center gap-2"
+                            className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-[#2278B0] text-white font-bold hover:bg-[#1b5f8a] shadow-lg shadow-[#2278B0]/20 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
                         >
-                            Next <ChevronRight size={18} />
+                            <span className="hidden xs:inline">Next</span> <ChevronRight size={16} />
                         </button>
                     )}
                 </div>
@@ -198,7 +200,7 @@ const TestView = ({
                         </p>
                         <div className="bg-red-50 p-4 rounded-xl mb-6 border border-red-100">
                             <span className="block text-xs font-bold text-red-600 uppercase tracking-wide mb-1">Warning Count</span>
-                            <span className="text-3xl font-black text-red-700">{warningCount} / 3</span>
+                            <span className="text-3xl font-black text-red-700">{warningCount} / 4</span>
                         </div>
                         <button
                             onClick={() => setShowWarningModal(false)}

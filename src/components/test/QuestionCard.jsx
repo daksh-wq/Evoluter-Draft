@@ -54,7 +54,7 @@ export const QuestionCard = ({
                                 </span>
                             )}
                             {topicTag?.label && (
-                                <span className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-slate-100 text-slate-600 border border-slate-200 tracking-wide line-clamp-1 max-w-[200px]" title={topicTag.label}>
+                                <span className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-slate-100 text-slate-600 border border-slate-200 tracking-wide line-clamp-1 max-w-[40vw] sm:max-w-[200px]" title={topicTag.label}>
                                     {topicTag.label}
                                 </span>
                             )}
@@ -73,12 +73,6 @@ export const QuestionCard = ({
                         >
                             <Flag size={16} fill={isMarked ? "currentColor" : "none"} />
                         </button>
-                        <button
-                            className="p-2.5 bg-white text-slate-400 border border-slate-200 hover:border-red-200 hover:text-red-500 rounded-xl transition-all"
-                            title="Report Issue"
-                        >
-                            <AlertTriangle size={16} />
-                        </button>
                     </div>
                 </div>
             </div>
@@ -94,7 +88,7 @@ export const QuestionCard = ({
                         if (!trimmed) return null;
 
                         return (
-                            <div key={i} className={`mb-3 ${isStatement ? 'pl-4 text-slate-700 font-medium bg-slate-50 p-2 rounded-lg border-l-4 border-blue-200' : 'text-xl md:text-2xl font-serif text-slate-900 leading-relaxed'}`}>
+                            <div key={i} className={`mb-3 ${isStatement ? 'pl-4 text-slate-700 font-medium bg-slate-50 p-2 rounded-lg border-l-4 border-blue-200' : 'text-base sm:text-xl md:text-2xl font-serif text-slate-900 leading-relaxed'}`}>
                                 {trimmed}
                             </div>
                         );

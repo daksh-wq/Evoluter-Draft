@@ -227,10 +227,10 @@ const TestHistoryView = () => {
                 />
             </div>
 
-            {/* Test Results List */}
+            {/* Empty State / Test List */}
             {filteredTests.length === 0 ? (
-                <div className="bg-white rounded-2xl border border-slate-200 p-12 text-center">
-                    <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-white rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 flex flex-col items-center">
+                    <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mb-6 border border-slate-100">
                         <Clock size={28} className="text-slate-400" />
                     </div>
                     <h3 className="text-lg font-bold text-slate-700 mb-2">

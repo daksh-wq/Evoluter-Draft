@@ -29,10 +29,10 @@ const YearRangeDropdown = ({ selected, onSelect }) => {
     const isActive = selected !== 'All Years';
 
     return (
-        <div className="relative" ref={ref}>
+        <div className="relative w-full sm:w-auto" ref={ref}>
             <button
                 onClick={() => setOpen(o => !o)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap ${
+                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full sm:w-auto ${
                     isActive
                         ? 'bg-[#2278B0] text-white border-[#2278B0]'
                         : 'bg-white text-slate-700 border-slate-200 hover:border-[#2278B0]/40 hover:bg-slate-50'
@@ -167,8 +167,8 @@ const PYQView = ({ startCustomTest }) => {
                 </div>
 
                 {/* Filter Chips Row */}
-                <div className="flex flex-wrap gap-2 items-center">
-                    {/* <span className="text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-1.5 mr-1">
+                <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 items-center">
+                    {/* <span className="text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-1.5 mr-1 hidden sm:flex">
                         <Filter size={11} /> Filters
                     </span> */}
 
@@ -184,6 +184,7 @@ const PYQView = ({ startCustomTest }) => {
                         onChange={(val) => { setSelectedSubject(val); setSelectedTopic('All'); }}
                         initialShowCount={8}
                         isFilter={true}
+                        className="w-full sm:w-auto"
                     />
 
                     <CustomDropdown
@@ -193,6 +194,7 @@ const PYQView = ({ startCustomTest }) => {
                         onChange={setSelectedTopic}
                         initialShowCount={6}
                         isFilter={true}
+                        className="w-full sm:w-auto"
                     />
 
                     {hasActiveFilters && (
@@ -293,9 +295,14 @@ const PYQView = ({ startCustomTest }) => {
                                         {q.topic}
                                     </span>
                                 </div>
+                                
+                                {/* Mobile Topic */}
+                                <div className="sm:hidden px-5 pt-3 pb-0 text-[10px] text-slate-400 font-medium truncate w-full">
+                                    {q.topic}
+                                </div>
 
                                 {/* Question Text */}
-                                <div className="px-5 pt-4 pb-3">
+                                <div className="px-5 pt-3 sm:pt-4 pb-3">
                                     <p className="text-slate-800 font-medium text-sm leading-relaxed line-clamp-3 group-hover:line-clamp-none transition-all">
                                         {q.text}
                                     </p>

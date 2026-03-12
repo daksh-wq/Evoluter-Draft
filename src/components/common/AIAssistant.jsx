@@ -503,6 +503,7 @@ const AIAssistant = ({ userData, userStats }) => {
                 onClick={() => setIsOpen(true)}
                 className="fixed bottom-6 right-6 z-50 bg-[#2278B0]/90 backdrop-blur-md hover:bg-indigo-600/90 text-white p-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 group border border-white/20"
                 aria-label="Open AI Assistant"
+                title="Open AI Assistant"
             >
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse border-2 border-white" />
                 <Bot size={28} className="group-hover:rotate-12 transition-transform" />
@@ -511,12 +512,12 @@ const AIAssistant = ({ userData, userStats }) => {
     }
 
     return (
-        <div id="ai-assistant-window" className="fixed bottom-6 right-6 z-50 w-[390px] h-[620px] bg-gradient-to-br from-[#1a365d]/95 via-[#2d3748]/95 to-[#4a5568]/95 backdrop-blur-3xl border border-white/20 rounded-3xl shadow-2xl flex flex-col animate-in slide-in-from-bottom-10 fade-in font-sans ring-1 ring-white/10">
+        <div id="ai-assistant-window" className="fixed bottom-0 sm:bottom-6 right-0 sm:right-6 z-50 w-full sm:w-[390px] h-[85dvh] sm:h-[620px] max-h-[800px] bg-gradient-to-br from-[#1a365d]/95 via-[#2d3748]/95 to-[#4a5568]/95 backdrop-blur-3xl border border-white/20 rounded-t-2xl sm:rounded-3xl shadow-2xl flex flex-col animate-in slide-in-from-bottom-10 fade-in font-sans ring-1 ring-white/10">
 
             {/* Header */}
-            <div className="bg-[#2278B0]/80 backdrop-blur-xl p-4 flex justify-between items-center text-white shrink-0 relative z-20 shadow-lg rounded-t-3xl border-b border-white/10">
-                <div className="flex items-center gap-3">
-                    <div className="bg-white/10 p-1.5 rounded-lg backdrop-blur-md shadow-inner border border-white/20">
+            <div className="bg-[#2278B0]/80 backdrop-blur-xl p-4 flex justify-between items-center text-white shrink-0 relative z-20 shadow-lg rounded-t-2xl sm:rounded-t-3xl border-b border-white/10">
+                <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="bg-white/10 p-1.5 rounded-lg backdrop-blur-md shadow-inner border border-white/20 hidden sm:block">
                         <GeminiLogo />
                     </div>
                     <div>
@@ -543,7 +544,7 @@ const AIAssistant = ({ userData, userStats }) => {
                         </button>
 
                         {showModelMenu && (
-                            <div className="absolute top-full right-0 mt-3 w-48 bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 origin-top-right text-slate-800 z-50">
+                            <div className="absolute top-full right-0 mt-3 w-48 bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 origin-top-right text-slate-800 z-[60]">
                                 <div className="p-1 space-y-1">
                                     <button
                                         onClick={() => { setModel('gemini-2.5-flash'); setShowModelMenu(false); }}
@@ -621,7 +622,7 @@ const AIAssistant = ({ userData, userStats }) => {
             </div>
 
             {/* Suggestions & Input */}
-            <div className="p-4 bg-white/10 backdrop-blur-xl border-t border-white/10 shrink-0 relative z-20 rounded-b-3xl">
+            <div className="p-4 bg-white/10 backdrop-blur-xl border-t border-white/10 shrink-0 relative z-20 rounded-b-2xl sm:rounded-b-3xl">
 
                 {/* Suggestions Carousel */}
                 {messages.length < 3 && !isTyping && (

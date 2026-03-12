@@ -137,27 +137,13 @@ const ProfileView = ({ user, userData, onLogout }) => {
                     <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight">My Profile</h1>
                     <p className="text-slate-500 mt-1">Manage your account and learning preferences.</p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-                    <button
-                        onClick={() => navigate('/dashboard')}
-                        className="w-full md:w-auto bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-50 hover:text-[#2278B0] hover:border-[#2278B0]/30 transition-all"
-                    >
-                        <Home size={18} /> Back to Home
-                    </button>
-                    <button
-                        onClick={onLogout}
-                        className="w-full md:w-auto bg-red-50 text-red-600 px-4 py-2 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"
-                    >
-                        <LogOut size={18} /> Logout
-                    </button>
-                </div>
             </header>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 {/* Left Column: Avatar & Basic Info */}
                 <div className="md:col-span-1">
-                    <div className="bg-white border border-slate-200 rounded-3xl p-8 flex flex-col items-center shadow-sm text-center">
+                    <div className="bg-white border border-slate-200 rounded-3xl p-8 flex flex-col items-center shadow-sm text-center h-full">
                         <div
                             className="relative mb-6 group cursor-pointer"
                             onClick={() => !uploadingPhoto && fileInputRef.current?.click()}
@@ -194,14 +180,10 @@ const ProfileView = ({ user, userData, onLogout }) => {
                         </h2>
                         <p className="text-slate-500 text-sm font-medium mb-4">{user?.email}</p>
 
-                        <div className="w-full grid grid-cols-2 gap-2 text-center text-xs font-bold text-slate-500">
-                            <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
-                                <div className="text-[#2278B0] text-lg mb-1">{userData?.stats?.level || 1}</div>
-                                LEVEL
-                            </div>
-                            <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div className="w-full text-center text-xs font-bold text-slate-500 mt-2">
+                            <div className="bg-slate-50 p-3 rounded-xl border border-slate-100 w-full">
                                 <div className="text-orange-500 text-lg mb-1">{userData?.stats?.streakDays || 0}</div>
-                                STREAK
+                                CURRENT STREAK
                             </div>
                         </div>
                     </div>
@@ -212,7 +194,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
                     <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm relative overflow-hidden">
                         <div className="flex justify-between items-center mb-6">
                             <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-                                <User size={20} className="text-blue-500" /> Personal Details
+                                <User size={20} className="text-[#2278B0]" /> Personal Details
                             </h3>
                             {!isEditing ? (
                                 <button
@@ -222,21 +204,12 @@ const ProfileView = ({ user, userData, onLogout }) => {
                                     <Edit2 size={18} />
                                 </button>
                             ) : (
-                                <div className="flex gap-2">
-                                    <button
-                                        onClick={() => setIsEditing(false)}
-                                        className="text-slate-400 hover:bg-slate-50 p-2 rounded-lg transition-colors"
-                                    >
-                                        <X size={18} />
-                                    </button>
-                                    <button
-                                        onClick={handleSave}
-                                        disabled={isSaving}
-                                        className="bg-[#2278B0] text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 hover:bg-[#1b5f8a] shadow-lg shadow-[#2278B0]/20"
-                                    >
-                                        {isSaving ? "Saving..." : <><Save size={16} /> Save Changes</>}
-                                    </button>
-                                </div>
+                                <button
+                                    onClick={() => setIsEditing(false)}
+                                    className="text-slate-400 hover:bg-slate-50 p-2 rounded-lg transition-colors border border-slate-200"
+                                >
+                                    <X size={18} />
+                                </button>
                             )}
                         </div>
 
@@ -258,42 +231,42 @@ const ProfileView = ({ user, userData, onLogout }) => {
                             </div>
 
                             {/* Target Exam & Year */}
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
                                         <Target size={12} /> Target Exam
                                     </label>
                                     {isEditing ? (
-                                    <CustomDropdown
-                                        options={[
-                                            { label: 'UPSC CSE', value: 'UPSC CSE' },
-                                            { label: 'State PSC', value: 'State PSC' }
-                                        ]}
-                                        value={formData.targetExam}
-                                        onChange={(val) => setFormData(prev => ({ ...prev, targetExam: val }))}
-                                        fullWidth={true}
-                                    />
-                                ) : (
-                                    <div className="font-bold text-slate-800">{formData.targetExam}</div>
-                                )}
-                            </div>
-                            <div className="space-y-2">
-                                <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
-                                    <Calendar size={12} /> Target Year
-                                </label>
-                                {isEditing ? (
-                                    <CustomDropdown
-                                        options={[0, 1, 2, 3].map(offset => {
-                                            const year = String(new Date().getFullYear() + offset);
-                                            return { label: year, value: year };
-                                        })}
-                                        value={String(formData.targetYear)}
-                                        onChange={(val) => setFormData(prev => ({ ...prev, targetYear: val }))}
-                                        fullWidth={true}
-                                    />
-                                ) : (
-                                    <div className="font-bold text-slate-800">{formData.targetYear}</div>
-                                )}
+                                        <CustomDropdown
+                                            options={[
+                                                { label: 'UPSC CSE', value: 'UPSC CSE' },
+                                                { label: 'State PSC', value: 'State PSC' }
+                                            ]}
+                                            value={formData.targetExam}
+                                            onChange={(val) => setFormData(prev => ({ ...prev, targetExam: val }))}
+                                            fullWidth={true}
+                                        />
+                                    ) : (
+                                        <div className="font-bold text-slate-800">{formData.targetExam}</div>
+                                    )}
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
+                                        <Calendar size={12} /> Target Year
+                                    </label>
+                                    {isEditing ? (
+                                        <CustomDropdown
+                                            options={[0, 1, 2, 3].map(offset => {
+                                                const year = String(new Date().getFullYear() + offset);
+                                                return { label: year, value: year };
+                                            })}
+                                            value={String(formData.targetYear)}
+                                            onChange={(val) => setFormData(prev => ({ ...prev, targetYear: val }))}
+                                            fullWidth={true}
+                                        />
+                                    ) : (
+                                        <div className="font-bold text-slate-800">{formData.targetYear}</div>
+                                    )}
                                 </div>
                             </div>
 
@@ -315,6 +288,26 @@ const ProfileView = ({ user, userData, onLogout }) => {
                                     </p>
                                 )}
                             </div>
+
+                            {isEditing && (
+                                <div className="w-full mt-6 pt-4 border-t border-slate-100">
+                                    <button
+                                        onClick={handleSave}
+                                        disabled={isSaving}
+                                        className="w-full bg-[#2278B0] text-white px-4 py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#1b5f8a] shadow-lg shadow-[#2278B0]/20 transition-all"
+                                    >
+                                        {isSaving ? "Saving..." : <><Save size={18} /> Save Changes</>}
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+                        <div className="w-full mt-auto pt-6">
+                            <button
+                                onClick={onLogout}
+                                className="w-full bg-red-50 text-red-600 px-4 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"
+                            >
+                                <LogOut size={18} /> Logout Account
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -27,7 +27,7 @@ const ToastContainer = () => {
     };
 
     return (
-        <div className="fixed top-4 right-4 z-[9999] flex flex-col gap-2 pointer-events-none">
+        <div className="fixed top-4 right-2 sm:right-4 left-2 sm:left-auto z-[9999] flex flex-col gap-2 pointer-events-none">
             <AnimatePresence>
                 {toasts.map(t => (
                     <motion.div
@@ -57,7 +57,7 @@ const Toast = ({ type, message, onClose }) => {
     const Icon = config.icon;
 
     return (
-        <div className={`flex items-start gap-3 p-4 pr-12 rounded-xl border shadow-lg relative min-w-[300px] max-w-sm ${config.className}`}>
+        <div className={`flex items-start gap-3 p-4 pr-12 rounded-xl border shadow-lg relative w-full sm:min-w-[300px] sm:max-w-sm max-w-[calc(100vw-1rem)] ${config.className}`}>
             <Icon className={`flex-shrink-0 mt-0.5 ${config.iconColor}`} size={20} />
             <p className="font-semibold text-sm leading-relaxed">{message}</p>
             <button onClick={onClose} className="absolute right-3 top-4 p-1 hover:bg-black/5 rounded-lg transition-colors">

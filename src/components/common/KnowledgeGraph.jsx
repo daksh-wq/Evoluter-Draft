@@ -70,7 +70,7 @@ const KnowledgeGraph = ({ mastery = {} }) => {
     return (
         <div className="w-full space-y-4">
             {/* Stats Row */}
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {[
                     { label: 'Topics', value: stats.total, color: 'text-slate-700' },
                     { label: 'Avg Mastery', value: `${stats.avg}%`, color: 'text-[#2278B0]' },
@@ -85,7 +85,7 @@ const KnowledgeGraph = ({ mastery = {} }) => {
             </div>
 
             {/* Graph */}
-            <div className="relative w-full aspect-square max-h-[420px] bg-gradient-to-br from-[#0c1222] via-[#111827] to-[#0f172a] rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg">
+            <div className="relative w-full aspect-square max-h-[280px] sm:max-h-[420px] bg-gradient-to-br from-[#0c1222] via-[#111827] to-[#0f172a] rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg">
                 {/* Dot grid */}
                 <div
                     className="absolute inset-0 opacity-[0.04]"

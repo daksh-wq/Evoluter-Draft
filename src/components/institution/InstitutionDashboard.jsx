@@ -146,11 +146,11 @@ const InstitutionDashboard = ({ userData }) => {
 
                 <div className="relative z-10 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-center text-center md:text-left">
                     {/* Logo */}
-                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-white border border-slate-200 p-2 shadow-sm flex-shrink-0">
+                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex-shrink-0">
                         {profile.logoUrl ? (
-                            <img src={profile.logoUrl} alt="Logo" className="w-full h-full object-contain rounded-xl" />
+                            <img src={profile.logoUrl} alt="Logo" className="w-full h-full object-cover" />
                         ) : (
-                            <div className="w-full h-full bg-slate-50 flex items-center justify-center rounded-xl text-slate-300">
+                            <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-300">
                                 <Building2 size={32} />
                             </div>
                         )}
@@ -225,7 +225,7 @@ const InstitutionDashboard = ({ userData }) => {
                     <h3 className="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
                         <Activity size={20} className="text-indigo-500" /> Live Submissions Feed
                     </h3>
-                    <div className="flex overflow-x-auto gap-4 pb-2 snap-x hidescrollbar">
+                    <div className="flex overflow-x-auto gap-4 pb-2 snap-x scrollbar-hide">
                         {liveFeed.map(sub => (
                             <div key={sub.id} className="min-w-[280px] md:min-w-[320px] bg-slate-50 border border-slate-100 rounded-2xl p-4 snap-start shrink-0 hover:border-indigo-200 transition-colors cursor-pointer" onClick={() => navigate(`/institution/test/${sub.testId}`)}>
                                 <div className="flex justify-between items-start mb-2">
@@ -306,8 +306,8 @@ const InstitutionDashboard = ({ userData }) => {
                         </Link>
                     </div>
                 ) : (
-                    <div className="overflow-x-auto -mx-6 md:mx-0">
-                        <table className="w-full text-left border-collapse min-w-[600px] md:min-w-0">
+                    <div className="overflow-x-auto -mx-4 sm:-mx-6 md:-mx-8 px-4 sm:px-6 md:px-8">
+                        <table className="w-full text-left border-collapse" style={{minWidth: '560px'}}>
                             <thead>
                                 <tr className="border-b border-slate-100">
                                     <th className="py-4 pl-6 md:pl-4 font-bold text-slate-400 text-xs uppercase tracking-wider">Test Name</th>

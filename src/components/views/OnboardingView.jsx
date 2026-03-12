@@ -49,8 +49,21 @@ const OnboardingView = ({ user, onComplete }) => {
     };
 
     const handleFileChange = (e) => {
-        if (e.target.files[0]) {
-            setLogoFile(e.target.files[0]);
+        const file = e.target.files[0];
+        if (file) {
+            if (!file.type.startsWith('image/')) {
+                toast.warning('Please select an image file.');
+                if (fileInputRef.current) fileInputRef.current.value = '';
+                return;
+            }
+
+            if (file.size > 2 * 1024 * 1024) {
+                toast.warning('File size should be less than 2MB.');
+                if (fileInputRef.current) fileInputRef.current.value = '';
+                return;
+            }
+
+            setLogoFile(file);
         }
     };
 
@@ -244,20 +257,17 @@ const OnboardingView = ({ user, onComplete }) => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-                <div>
-                    <label className="text-xs font-bold text-slate-500 uppercase mb-1 block">State</label>
-                    <div className="relative">
-                        <MapPin className="absolute left-4 top-3.5 text-slate-400" size={18} />
-                        <input
-                            name="state"
-                            value={instData.state}
-                            onChange={handleInstChange}
-                            required
-                            placeholder="State"
-                            className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none font-medium"
-                        />
-                    </div>
+            <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4">
+                <div className="relative">
+                    <MapPin className="absolute left-4 top-3.5 text-slate-400" size={18} />
+                    <input
+                        name="state"
+                        value={instData.state}
+                        onChange={handleInstChange}
+                        required
+                        placeholder="State"
+                        className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 outline-none font-medium"
+                    />
                 </div>
                 <div>
                     <label className="text-xs font-bold text-slate-500 uppercase mb-1 block">City</label>
@@ -272,11 +282,11 @@ const OnboardingView = ({ user, onComplete }) => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4">
                 <div>
                     <label className="text-xs font-bold text-slate-500 uppercase mb-1 block">Students</label>
                     <div className="relative">
-                        <User className="absolute left-4 top-3.5 text-slate-400" size={18} />
+                        <Users className="absolute left-4 top-3.5 text-slate-400" size={18} />
                         <input
                             name="studentCount"
                             type="number"
@@ -357,10 +367,10 @@ const OnboardingView = ({ user, onComplete }) => {
 
     return (
         <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6 font-sans">
-            <div className="w-full max-w-lg bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-12 transition-all">
+            <div className="w-full max-w-lg bg-white rounded-3xl shadow-xl border border-slate-100 p-6 sm:p-8 md:p-12 transition-all">
                 <div className="mb-8">
                     <h2 className="text-3xl font-black text-slate-900 mb-2">
-                        {step === 1 ? `Welcome, ${user.displayName?.split(' ')[0]}!` : (role === 'student' ? 'Student Setup' : 'Institution Setup')}
+                        {step === 1 ? `Welcome, ${user?.displayName?.split(' ')[0] || ''}!` : (role === 'student' ? 'Student Setup' : 'Institution Setup')}
                         {step === 1 && ' 👋'}
                     </h2>
                     <p className="text-slate-500">
