@@ -10,6 +10,7 @@ import {
 import { doc, getDoc, onSnapshot } from 'firebase/firestore';
 import { auth, googleProvider, db } from '../services/firebase';
 import { DEFAULT_USER_STATS } from '../constants/data';
+import { syncUserStreak } from '../services/userService';
 import logger from '../utils/logger';
 import { showToast } from '../utils/errorHandler';
 import useUserStore from '../stores/userStore';
@@ -52,6 +53,7 @@ export function useAuth() {
     }, []);
 
     const prevBatchesLengthRef = useRef(0);
+    const hasSyncedStreakRef = useRef(false);
 
     // Listen for auth state changes and real-time user document changes
     useEffect(() => {
@@ -105,6 +107,12 @@ export function useAuth() {
                                         ...data.stats,
                                         streakDays: data.stats.streak || data.stats.streakDays || 0
                                     });
+                                }
+
+                                // Sync Streak once per session when data is ready
+                                if (!hasSyncedStreakRef.current && data.role === 'student') {
+                                    hasSyncedStreakRef.current = true;
+                                    syncUserStreak(currentUser.uid);
                                 }
                             } else {
                                 logger.warn('User onboarding incomplete, missing fields', {

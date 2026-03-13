@@ -562,12 +562,6 @@ function App() {
           </ProtectedLayout>
         } />
 
-        <Route path={ROUTES.TEST_REVIEW} element={
-          <ProtectedLayout {...layoutProps}>
-            <TestReviewView />
-          </ProtectedLayout>
-        } />
-
         {/* Student Institution Join */}
         <Route path="/institution/join" element={
           <ProtectedLayout {...layoutProps}>

@@ -185,10 +185,7 @@ const Dashboard = ({
 
                 {/* Streak Card — pinned top-right */}
                 <div className="absolute top-0 right-0 bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center gap-1 shrink-0">
-                    <div className="p-1.5 bg-orange-50 rounded-xl">
-                        <Flame size={18} className="text-orange-500" fill="currentColor" />
-                    </div>
-                    <div className="text-base sm:text-lg font-black text-orange-500 leading-none">
+                    <div className={`text-base sm:text-lg font-black leading-none ${userStats.streakDays > 0 ? 'text-orange-500' : 'text-slate-300'}`}>
                         {userStats.streakDays}
                     </div>
                     <div className="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider leading-none">

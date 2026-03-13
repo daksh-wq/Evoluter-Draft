@@ -1,5 +1,20 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Target, Calendar, User, ArrowRight, RefreshCw, Building2, GraduationCap, MapPin, Phone, Upload, CheckCircle } from 'lucide-react';
+import { 
+    Users, 
+    Home, 
+    ArrowRight, 
+    GraduationCap, 
+    Building2, 
+    Mail, 
+    Lock, 
+    User, 
+    Sparkles, 
+    Rocket, 
+    Shield, 
+    CheckCircle2, 
+    Calendar, 
+    ArrowLeft
+} from 'lucide-react';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, storage } from '../../services/firebase'; // Ensure storage is exported in firebase.js
@@ -110,7 +125,7 @@ const OnboardingView = ({ user, onComplete }) => {
                     stats: {
                         ...DEFAULT_USER_STATS,
                         xp: 0,
-                        streakDays: 0,
+                        streakDays: 1,
                         level: 1
                     }
                 };

@@ -230,3 +230,53 @@ const calculateTopicMastery = (questions, userAnswers, currentMastery) => {
     return updatedMastery;
 };
 
+/**
+ * Sync and update user streak based on last active timestamp
+ * @param {string} uid - User ID
+ */
+export const syncUserStreak = async (uid) => {
+    const userRef = doc(db, 'users', uid);
+    
+    try {
+        await runTransaction(db, async (transaction) => {
+            const userDoc = await transaction.get(userRef);
+            if (!userDoc.exists()) return;
+
+            const userData = userDoc.data();
+            const stats = userData.stats || { ...DEFAULT_USER_STATS };
+            const lastActive = userData.lastActive?.toDate();
+            const now = new Date();
+            
+            // Normalize dates to midnight for comparison
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            
+            let newStreak = stats.streakDays || 0;
+            
+            if (!lastActive) {
+                // First time activity
+                newStreak = 1;
+            } else {
+                const lastActiveDate = new Date(lastActive.getFullYear(), lastActive.getMonth(), lastActive.getDate());
+                const diffTime = today - lastActiveDate;
+                const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+                if (diffDays === 1) {
+                    // Logged in exactly the next day
+                    newStreak += 1;
+                } else if (diffDays > 1) {
+                    // Missed one or more days, reset streak
+                    newStreak = 1;
+                } else if (diffDays === 0) {
+                    // Already logged in today, do nothing to streak
+                }
+            }
+
+            transaction.update(userRef, {
+                'stats.streakDays': newStreak,
+                'lastActive': serverTimestamp()
+            });
+        });
+    } catch (error) {
+        logger.error("Error syncing user streak:", error);
+    }
+};
