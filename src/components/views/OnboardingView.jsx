@@ -13,7 +13,13 @@ import {
     Shield, 
     CheckCircle2, 
     Calendar, 
-    ArrowLeft
+    ArrowLeft,
+    Target,
+    RefreshCw,
+    CheckCircle,
+    MapPin,
+    Phone,
+    Upload
 } from 'lucide-react';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
