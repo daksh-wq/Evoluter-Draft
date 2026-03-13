@@ -574,22 +574,28 @@ Return ONLY a JSON array of topic strings (max 5):
     }
 
     const docQCount = aiCount;
-    const questionsPerChunk = Math.ceil(docQCount / textChunks.length);
+    const BATCH_SIZE = AI_CONFIG?.BATCH_SIZE || 10;
+    const batches = Math.ceil(docQCount / BATCH_SIZE);
+    
     let allGeneratedQuestions = [];
     const seenTexts = new Set();
-    let completedChunks = 0;
+    let completedBatches = 0;
 
     onProgress(35);
 
-    // Run AI requests concurrently across the distinct chunks
-    const chunkPromises = textChunks.map(async (chunk, index) => {
+    // Run AI requests concurrently across batches, distributing chunks
+    const batchPromises = Array.from({ length: batches }).map(async (_, index) => {
         // Distribute the exact number of questions needed
-        const isLastChunk = index === textChunks.length - 1;
-        const targetQCount = isLastChunk 
-            ? docQCount - (questionsPerChunk * (textChunks.length - 1)) 
-            : questionsPerChunk;
+        const isLastBatch = index === batches - 1;
+        const targetQCount = isLastBatch 
+            ? docQCount - (BATCH_SIZE * (batches - 1)) 
+            : BATCH_SIZE;
 
         if (targetQCount <= 0) return [];
+
+        // Assign a chunk to this batch round-robin style
+        const chunkIndex = index % textChunks.length;
+        const chunk = textChunks[chunkIndex];
 
         const typeInstruction = buildTypeDistributionInstruction(targetQCount);
 
@@ -599,7 +605,7 @@ Based on the specific document chunk below, generate EXACTLY ${targetQCount} hig
 DOCUMENT TITLE: ${documentTitle}
 IDENTIFIED TOPICS: ${identifiedTopics.join(', ') || 'General'}
 
-DOCUMENT CHUNK (Part ${index + 1} of ${textChunks.length}):
+DOCUMENT CHUNK (Part ${chunkIndex + 1} of ${textChunks.length}):
 ${chunk}
 
 INSTRUCTIONS:
@@ -645,21 +651,21 @@ Generate EXACTLY ${targetQCount} unique questions. Return ONLY the JSON array.`;
                 if (arrayMatch) parsed = JSON.parse(arrayMatch[0]);
             }
 
-            completedChunks++;
-            const currentProgress = 35 + Math.round((completedChunks / textChunks.length) * 45);
+            completedBatches++;
+            const currentProgress = 35 + Math.round((completedBatches / batches) * 45);
             onProgress(currentProgress);
 
             return Array.isArray(parsed) ? parsed : [];
         } catch (err) {
-            logger.warn(`Chunk ${index + 1} generation failed:`, err);
+            logger.warn(`Batch ${index + 1} generation failed:`, err);
             return [];
         }
     });
 
-    const chunkResults = await Promise.all(chunkPromises);
+    const batchResults = await Promise.all(batchPromises);
     
     // Flatten and deduplicate
-    chunkResults.flat().forEach(q => {
+    batchResults.flat().forEach(q => {
         const key = (q.text || '').trim().toLowerCase();
         if (key && !seenTexts.has(key)) {
             seenTexts.add(key);

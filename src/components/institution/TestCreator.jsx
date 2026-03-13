@@ -122,6 +122,28 @@ const TestCreator = ({ userData }) => {
         };
     }, [genConfig.topic, showSuggestions]);
 
+    // Auto-resize textareas when questions change or window resizes
+    React.useEffect(() => {
+        const handleResize = () => {
+            document.querySelectorAll('.question-textarea').forEach(el => {
+                if (el) {
+                    el.style.height = '0px';
+                    el.style.height = (el.scrollHeight + 2) + 'px';
+                }
+            });
+        };
+
+        handleResize();
+        // Catch any delayed layouts (fonts loading, etc.)
+        const timeoutId = setTimeout(handleResize, 100);
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            clearTimeout(timeoutId);
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [questions]);
+
     // --- Handlers ---
     const addQuestion = () => {
         setQuestions([
@@ -569,7 +591,7 @@ const TestCreator = ({ userData }) => {
                         </div>
 
                         {/* 2. Mode Selection & Input */}
-                        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                        <div className="bg-white rounded-2xl shadow-sm border border-slate-200">
                             <div className="p-1 bg-slate-50 m-2 rounded-xl flex flex-col sm:flex-row gap-1">
                                 {[
                                     { id: 'manual', label: 'Manual', icon: <Plus size={16} /> },
@@ -655,7 +677,9 @@ const TestCreator = ({ userData }) => {
                                                     options={[
                                                         { label: '5 Qs', value: '5' },
                                                         { label: '10 Qs', value: '10' },
-                                                        { label: '20 Qs', value: '20' }
+                                                        { label: '25 Qs', value: '25' },
+                                                        { label: '50 Qs', value: '50' },
+                                                        { label: '100 Qs', value: '100' }
                                                     ]}
                                                     value={String(genConfig.count)}
                                                     onChange={(val) => setGenConfig({ ...genConfig, count: val })}
@@ -728,7 +752,9 @@ const TestCreator = ({ userData }) => {
                                                     options={[
                                                         { label: '5 Qs', value: '5' },
                                                         { label: '10 Qs', value: '10' },
-                                                        { label: '20 Qs', value: '20' }
+                                                        { label: '25 Qs', value: '25' },
+                                                        { label: '50 Qs', value: '50' },
+                                                        { label: '100 Qs', value: '100' }
                                                     ]}
                                                     value={String(genConfig.count)}
                                                     onChange={(val) => setGenConfig({ ...genConfig, count: val })}
@@ -812,10 +838,10 @@ const TestCreator = ({ userData }) => {
                                             value={q.text}
                                             onChange={(e) => {
                                                 updateQuestion(qIdx, 'text', e.target.value);
-                                                e.target.style.height = 'auto';
-                                                e.target.style.height = e.target.scrollHeight + 'px';
+                                                e.target.style.height = '0px';
+                                                e.target.style.height = (e.target.scrollHeight + 2) + 'px';
                                             }}
-                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl p-4 font-bold text-slate-800 min-h-[100px] focus:bg-white focus:border-indigo-500 focus:ring-0 outline-none resize-none transition-colors overflow-hidden placeholder:text-slate-400"
+                                            className="question-textarea w-full bg-slate-50 border border-slate-200 rounded-xl p-4 font-bold text-slate-800 min-h-[100px] focus:bg-white focus:border-indigo-500 focus:ring-0 outline-none resize-y transition-colors overflow-hidden placeholder:text-slate-400"
                                         />
                                     </div>
 
@@ -841,11 +867,16 @@ const TestCreator = ({ userData }) => {
                                                     </div>
                                                 </div>
 
-                                                <input
+                                                <textarea
+                                                    rows={1}
                                                     placeholder={`Option ${String.fromCharCode(65 + oIdx)}`}
                                                     value={opt}
-                                                    onChange={(e) => updateOption(qIdx, oIdx, e.target.value)}
-                                                    className={`flex-1 min-w-0 bg-white border rounded-xl px-4 py-3 text-sm font-medium focus:ring-0 outline-none transition-all ${q.correctOption === oIdx
+                                                    onChange={(e) => {
+                                                        updateOption(qIdx, oIdx, e.target.value);
+                                                        e.target.style.height = '0px';
+                                                        e.target.style.height = (e.target.scrollHeight + 2) + 'px';
+                                                    }}
+                                                    className={`question-textarea flex-1 min-w-0 bg-white border rounded-xl px-4 py-3 text-sm font-medium focus:ring-0 outline-none resize-none overflow-hidden transition-colors shadow-sm ${q.correctOption === oIdx
                                                         ? 'border-green-500 ring-2 ring-green-100 text-green-700'
                                                         : 'border-slate-200 text-slate-700 focus:border-indigo-500'
                                                         }`}

@@ -30,7 +30,10 @@ const TestView = ({
 }) => {
     const [warningCount, setWarningCount] = useState(0);
     const [showWarningModal, setShowWarningModal] = useState(false);
+    const [showExitModal, setShowExitModal] = useState(false);
+    const [showBlurBanner, setShowBlurBanner] = useState(false);
     const hasAutoSubmitted = useRef(false);
+    const blurBannerTimeout = useRef(null);
 
     // ─── Bug Fix: Auto-submit test when timer reaches 0 ─────────────
     useEffect(() => {
@@ -57,7 +60,7 @@ const TestView = ({
         lastZenToggleTime.current = Date.now();
     }, [isZenMode]);
 
-    // Proctoring: Trigger warning modal on tab switch
+    // Proctoring: Trigger warning modal on tab switch + pre-emptive blur warning
     useEffect(() => {
         const handleVisibilityChange = () => {
             // Ignore visibility changes within 1.5 seconds of toggling Zen Mode (fullscreen transition)
@@ -67,22 +70,80 @@ const TestView = ({
             }
 
             if (document.hidden) {
+                // Tab is now hidden — increment warning and show modal on return
                 setWarningCount(prev => prev + 1);
                 setShowWarningModal(true);
+                setShowBlurBanner(false); // clear blur banner once they've left
+            } else {
+                // They came back — hide blur banner
+                setShowBlurBanner(false);
             }
         };
 
+        // window blur: fires the INSTANT the window loses focus (before visibilitychange)
         const handleWindowBlur = () => {
-            // Optional: stricter blur check
-            // setWarningCount(prev => prev + 1);
+            if (Date.now() - lastZenToggleTime.current < 1500) return;
+            setShowBlurBanner(true);
+            if (blurBannerTimeout.current) clearTimeout(blurBannerTimeout.current);
+            blurBannerTimeout.current = setTimeout(() => setShowBlurBanner(false), 4000);
         };
 
-        document.addEventListener("visibilitychange", handleVisibilityChange);
-        window.addEventListener("blur", handleWindowBlur);
+        // window focus: fires when user returns to the window
+        const handleWindowFocus = () => {
+            setShowBlurBanner(false);
+            if (blurBannerTimeout.current) clearTimeout(blurBannerTimeout.current);
+        };
+
+        // Mouse leaving the viewport (heading for tab bar or another window)
+        const handleMouseLeave = (e) => {
+            if (e.clientY <= 0 || e.clientX <= 0 || e.clientX >= window.innerWidth || e.clientY >= window.innerHeight) {
+                if (Date.now() - lastZenToggleTime.current < 1500) return;
+                setShowBlurBanner(true);
+                if (blurBannerTimeout.current) clearTimeout(blurBannerTimeout.current);
+                blurBannerTimeout.current = setTimeout(() => setShowBlurBanner(false), 3000);
+            }
+        };
+
+        const handleMouseEnter = () => {
+            setShowBlurBanner(false);
+            if (blurBannerTimeout.current) clearTimeout(blurBannerTimeout.current);
+        };
+
+        // Keyboard shortcut detection — fires BEFORE the browser acts on the shortcut
+        const handleKeyDown = (e) => {
+            if (Date.now() - lastZenToggleTime.current < 1500) return;
+
+            const isSwitchShortcut =
+                (e.ctrlKey && e.key === 'Tab') ||        // Ctrl+Tab  (next browser tab)
+                (e.ctrlKey && e.shiftKey && e.key === 'Tab') || // Ctrl+Shift+Tab (prev tab)
+                (e.altKey && e.key === 'Tab') ||          // Alt+Tab   (switch app - Windows/Linux)
+                (e.metaKey && e.key === 'Tab') ||         // Cmd+Tab   (switch app - macOS)
+                (e.ctrlKey && e.key === 'w') ||           // Ctrl+W    (close tab)
+                (e.metaKey && e.key === 'w') ||           // Cmd+W     (close tab - macOS)
+                e.key === 'Meta' || e.key === 'Super';    // Windows/Super key pressed alone
+
+            if (isSwitchShortcut) {
+                setShowBlurBanner(true);
+                if (blurBannerTimeout.current) clearTimeout(blurBannerTimeout.current);
+                blurBannerTimeout.current = setTimeout(() => setShowBlurBanner(false), 4000);
+            }
+        };
+
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+        window.addEventListener('blur', handleWindowBlur);
+        window.addEventListener('focus', handleWindowFocus);
+        document.addEventListener('mouseleave', handleMouseLeave);
+        document.addEventListener('mouseenter', handleMouseEnter);
+        document.addEventListener('keydown', handleKeyDown);
 
         return () => {
-            document.removeEventListener("visibilitychange", handleVisibilityChange);
-            window.removeEventListener("blur", handleWindowBlur);
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+            window.removeEventListener('blur', handleWindowBlur);
+            window.removeEventListener('focus', handleWindowFocus);
+            document.removeEventListener('mouseleave', handleMouseLeave);
+            document.removeEventListener('mouseenter', handleMouseEnter);
+            document.removeEventListener('keydown', handleKeyDown);
+            if (blurBannerTimeout.current) clearTimeout(blurBannerTimeout.current);
         };
     }, []);
 
@@ -119,13 +180,40 @@ const TestView = ({
 
     return (
         <div className={`flex flex-col h-screen ${isZenMode ? 'p-0 bg-white' : ''}`}>
+
+            {/* Pre-emptive Tab Switch Warning Banner */}
+            {showBlurBanner && (
+                <div className="fixed inset-0 bg-black/80 z-[200] flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">
+                    <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl border-2 border-orange-400">
+                        <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span className="text-3xl animate-pulse">🚨</span>
+                        </div>
+                        <h3 className="text-2xl font-black text-slate-900 mb-2">Don't Leave the Test!</h3>
+                        <p className="text-slate-600 mb-4 font-medium">
+                            Switching tabs or windows is <span className="text-red-600 font-bold">strictly monitored</span>.
+                        </p>
+                        <div className="bg-orange-50 p-4 rounded-xl mb-6 border border-orange-100">
+                            <span className="block text-xs font-bold text-orange-600 uppercase tracking-wide mb-1">Warnings Used</span>
+                            <span className="text-3xl font-black text-orange-700">{warningCount} / 3</span>
+                            <p className="text-xs text-orange-500 mt-1 font-semibold">3 violations = Auto-termination</p>
+                        </div>
+                        <button
+                            onClick={() => setShowBlurBanner(false)}
+                            className="w-full bg-[#2278B0] hover:bg-[#1b5f8a] text-white font-bold py-4 rounded-xl transition-all active:scale-95 shadow-lg shadow-[#2278B0]/20"
+                        >
+                            Stay in Test
+                        </button>
+                    </div>
+                </div>
+            )}
+
             {/* Test Header */}
             <TestHeader
                 testLength={test.length}
                 timeLeft={timeLeft}
                 isZenMode={isZenMode}
                 toggleZenMode={toggleZenMode}
-                onExit={endTest}
+                onExit={() => setShowExitModal(true)}
                 onSubmit={endTest}
             />
 
@@ -187,6 +275,37 @@ const TestView = ({
                     )}
                 </div>
             </footer>
+            {/* Exit Confirmation Modal */}
+            {showExitModal && (
+                <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">
+                    <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl border-2 border-slate-200">
+                        <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span className="text-3xl">🚪</span>
+                        </div>
+                        <h3 className="text-2xl font-black text-slate-900 mb-2">Exit Test?</h3>
+                        <p className="text-slate-600 mb-2 font-medium">
+                            Are you sure you want to exit the test?
+                        </p>
+                        <p className="text-sm text-amber-600 font-semibold mb-6 bg-amber-50 px-4 py-2 rounded-xl border border-amber-100">
+                            ⚠️ Your progress will be submitted and you cannot resume.
+                        </p>
+                        <div className="flex gap-3">
+                            <button
+                                onClick={() => setShowExitModal(false)}
+                                className="flex-1 py-3 font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all active:scale-95"
+                            >
+                                Continue Test
+                            </button>
+                            <button
+                                onClick={() => { setShowExitModal(false); endTest(); }}
+                                className="flex-1 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-red-600/20"
+                            >
+                                Exit & Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
             {/* Warning Modal */}
             {showWarningModal && (
                 <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">
