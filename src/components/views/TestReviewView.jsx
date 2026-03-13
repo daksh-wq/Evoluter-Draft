@@ -201,12 +201,12 @@ const TestReviewView = () => {
                                 </div>
                                 <div className="mb-4">
                                     {q.text
-                                        .replace(/([a-z.?!])\s+(?=\d{1,2}\.\s)/gi, '$1\n')
+                                        .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
                                         .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                                        .split(/\n|(?=(?:^|\s)\d{1,2}\.\s)/g)
+                                        .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Fa-f])\.\s)/g)
                                         .map((part, i) => {
                                         const trimmed = part.trim();
-                                        const isStatement = /^\d{1,2}\./.test(trimmed);
+                                        const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(trimmed);
 
                                         if (!trimmed) return null;
 

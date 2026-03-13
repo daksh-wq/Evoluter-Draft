@@ -90,12 +90,12 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                         </div>
                         <div style="margin: 0 0 8px 0; font-weight: 500;">
                             ${q.text
-                        .replace(/([a-z.?!])\\s+(?=\\d{1,2}\\.\\s)/gi, '$1\\n')
+                        .replace(/([a-z.?!])\\s+(?=(?:\\d{1,2}|[A-Da-d])\\.\\s)/gi, '$1\\n')
                         .replace(/([a-z.?'")])\\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\\b)/gi, '$1\\n')
-                        .split(/\\n|(?=(?:^|\\s)\\d{1,2}\\.\\s)/g)
+                        .split(/\\n|(?=(?:^|\\s)(?:\\d{1,2}|[A-Da-d])\\.\\s)/g)
                         .map(part => {
                             const trimmed = part.trim();
-                            const isStatement = /^\\d{1,2}\\./.test(trimmed);
+                            const isStatement = /^(?:\\d{1,2}|[A-Da-d])\\./.test(trimmed);
                             if (!trimmed) return '';
                             return `<div style="margin-bottom: 4px; ${isStatement ? 'padding-left: 12px; border-left: 2px solid #cbd5e1; background: #f8fafc; padding-top: 4px; padding-bottom: 4px;' : ''}">${trimmed}</div>`;
                         }).join('')}
@@ -103,9 +103,9 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                         ${optionsHtml}
                         ${q.solution ? `
                             <div style="margin-top: 8px; border-top: 1px solid #f1f5f9; padding-top: 8px;">
-                                ${q.solution.correct_explanation ? `<p style="margin: 0 0 4px 0; color: #334155; font-size: 13px;"><strong>Explanation:</strong> ${q.solution.correct_explanation}</p>` : ''}
-                                ${q.solution.solving_approach ? `<p style="margin: 4px 0; padding: 6px; background: #eff6ff; border-radius: 4px; color: #1e40af; font-size: 12px;"><strong>💡 Approach:</strong> ${q.solution.solving_approach}</p>` : ''}
-                                ${q.solution.possible_source ? `<p style="margin: 4px 0 0 0; color: #64748b; font-size: 11px;"><strong>Source:</strong> ${q.solution.possible_source}</p>` : ''}
+                                ${(q.solution.correctAnswerReason || q.solution.correct_explanation) ? `<p style="margin: 0 0 4px 0; color: #334155; font-size: 13px;"><strong>✅ Answer:</strong> ${q.solution.correctAnswerReason || q.solution.correct_explanation}</p>` : ''}
+                                ${(q.solution.approachToSolve || q.solution.solving_approach) ? `<p style="margin: 4px 0; padding: 6px; background: #eff6ff; border-radius: 4px; color: #1e40af; font-size: 12px;"><strong>💡 Approach:</strong> ${q.solution.approachToSolve || q.solution.solving_approach}</p>` : ''}
+                                ${(q.solution.sourceOfQuestion || q.solution.possible_source) ? `<p style="margin: 4px 0 0 0; color: #64748b; font-size: 11px;"><strong>📖 Source:</strong> ${q.solution.sourceOfQuestion || q.solution.possible_source}</p>` : ''}
                             </div>
                         ` : q.explanation ? `<p style="margin-top: 8px; color: #64748b; font-size: 13px; border-top: 1px solid #f1f5f9; padding-top: 8px;"><strong>Explanation:</strong> ${q.explanation}</p>` : ''}
                     </div>
@@ -433,14 +433,19 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                             return (
                                 <div key={q.id} className={`p-6 rounded-2xl border ${statusColor}`}>
                                     <div className="flex justify-between items-start mb-3">
-                                        <div className="flex items-center gap-2">
+                                        <div className="flex items-center gap-2 flex-wrap">
                                             <span className="text-xs font-bold text-slate-500 uppercase">Question {idx + 1}</span>
                                             {q.difficulty && (
                                                 <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${q.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
-                                                        q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                                        q.difficulty.toLowerCase() === 'intermediate' || q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
                                                             'bg-green-50 text-green-600 border-green-100'
                                                     }`}>
                                                     {q.difficulty}
+                                                </span>
+                                            )}
+                                            {q.questionType && (
+                                                <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-indigo-50 text-indigo-600 border border-indigo-100">
+                                                    {q.questionType}
                                                 </span>
                                             )}
                                         </div>
@@ -450,12 +455,12 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                     </div>
                                     <div className="mb-4">
                                         {q.text
-                                            .replace(/([a-z.?!])\s+(?=\d{1,2}\.\s)/gi, '$1\n')
+                                            .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
                                             .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                                            .split(/\n|(?=(?:^|\s)\d{1,2}\.\s)/g)
+                                            .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Da-d])\.\s)/g)
                                             .map((part, i) => {
                                                 const trimmed = part.trim();
-                                                const isStatement = /^\d{1,2}\./.test(trimmed);
+                                                const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(trimmed);
 
                                                 if (!trimmed) return null;
 
@@ -467,35 +472,42 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                             })}
                                     </div>
                                     <div className="space-y-2">
-                                        {q.options.map((opt, i) => (
-                                            <div key={i} className={`flex items-center gap-3 p-3 rounded-lg text-sm border ${i === q.correctAnswer ? 'bg-green-100 border-green-200' : (i === userAnswer ? 'bg-red-100 border-red-200' : 'bg-white border-slate-100')
-                                                }`}>
-                                                <div className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${i === q.correctAnswer ? 'bg-green-500 text-white' : (i === userAnswer ? 'bg-red-500 text-white' : 'bg-slate-200 text-slate-500')
+                                        {q.options.map((rawOpt, i) => {
+                                            // Strip out any redundant A), B., 1), etc. from the start of the option
+                                            const opt = typeof rawOpt === 'string' ? rawOpt.replace(/^([a-dA-D]|\d+)[.)]\s*/, '').trim() : rawOpt;
+                                            return (
+                                                <div key={i} className={`flex items-center gap-3 p-3 rounded-lg text-sm border ${i === q.correctAnswer ? 'bg-green-100 border-green-200' : (i === userAnswer ? 'bg-red-100 border-red-200' : 'bg-white border-slate-100')
                                                     }`}>
-                                                    {String.fromCharCode(65 + i)}
+                                                    <div className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${i === q.correctAnswer ? 'bg-green-500 text-white' : (i === userAnswer ? 'bg-red-500 text-white' : 'bg-slate-200 text-slate-500')
+                                                        }`}>
+                                                        {String.fromCharCode(65 + i)}
+                                                    </div>
+                                                    <span className={i === q.correctAnswer ? 'font-bold text-green-900' : 'text-slate-600'}>{opt}</span>
                                                 </div>
-                                                <span className={i === q.correctAnswer ? 'font-bold text-green-900' : 'text-slate-600'}>{opt}</span>
-                                            </div>
-                                        ))}
+                                            );
+                                        })}
                                     </div>
                                     {q.solution ? (
                                         <div className="mt-4 pt-4 border-t border-slate-200/50 space-y-3">
-                                            {q.solution.correct_explanation && (
+                                            {/* Layer 1: Correct Answer Reason */}
+                                            {(q.solution.correctAnswerReason || q.solution.correct_explanation) && (
                                                 <div>
-                                                    <span className="font-bold text-slate-800 text-sm">Explanation:</span>
-                                                    <p className="text-sm text-slate-600 mt-1">{q.solution.correct_explanation}</p>
+                                                    <span className="font-bold text-slate-800 text-sm">✅ Correct Answer:</span>
+                                                    <p className="text-sm text-slate-600 mt-1">{q.solution.correctAnswerReason || q.solution.correct_explanation}</p>
                                                 </div>
                                             )}
-                                            {q.solution.solving_approach && (
+                                            {/* Layer 2: Source of Question */}
+                                            {(q.solution.sourceOfQuestion || q.solution.possible_source) && (
+                                                <div className="flex items-start gap-2 text-xs text-slate-500">
+                                                    <BookOpen size={14} className="mt-0.5 shrink-0 text-indigo-400" />
+                                                    <span><span className="font-semibold text-indigo-600">Source:</span> {q.solution.sourceOfQuestion || q.solution.possible_source}</span>
+                                                </div>
+                                            )}
+                                            {/* Layer 3: Approach to Solve */}
+                                            {(q.solution.approachToSolve || q.solution.solving_approach) && (
                                                 <div className="bg-blue-50/50 p-3 rounded-lg border border-blue-100">
-                                                    <span className="font-bold text-blue-800 text-xs uppercase tracking-wider">💡 Solving Approach:</span>
-                                                    <p className="text-sm text-blue-700 mt-1">{q.solution.solving_approach}</p>
-                                                </div>
-                                            )}
-                                            {q.solution.possible_source && (
-                                                <div className="flex items-start gap-2 text-xs text-slate-500 mt-2">
-                                                    <BookOpen size={14} className="mt-0.5 shrink-0" />
-                                                    <span><span className="font-semibold">Source:</span> {q.solution.possible_source}</span>
+                                                    <span className="font-bold text-blue-800 text-xs uppercase tracking-wider">💡 Approach to Solve:</span>
+                                                    <p className="text-sm text-blue-700 mt-1">{q.solution.approachToSolve || q.solution.solving_approach}</p>
                                                 </div>
                                             )}
                                         </div>

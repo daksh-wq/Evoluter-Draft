@@ -2,7 +2,8 @@ import { delay } from '../utils/helpers';
 import { getRandomSubtopic, UPSC_SYLLABUS } from '../constants/syllabusData';
 import { AI_CONFIG } from '../constants/appConstants';
 import logger from '../utils/logger';
-import { db, auth } from './firebase'; // Import auth
+import { db, auth } from './firebase';
+import { PYQ_DATABASE } from '../constants/pyqDatabase';
 import {
     collection, query, where, orderBy, limit, getDocs, addDoc, serverTimestamp,
     doc, getDoc, setDoc, updateDoc, increment
@@ -12,7 +13,7 @@ import {
 const DAILY_LIMIT = 20;
 
 async function checkAndIncrementRateLimit() {
-    if (!auth.currentUser) return; // Allow guests? Or block? Assuming strict auth for 10k scale
+    if (!auth.currentUser) return;
 
     const uid = auth.currentUser.uid;
     const today = new Date().toISOString().split('T')[0];
@@ -42,11 +43,6 @@ const BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models';
 
 /**
  * Make a request to Gemini API with retry logic and AbortController support
- * @param {string} prompt - The prompt to send to Gemini
- * @param {boolean} isJson - Whether to expect JSON response
- * @param {string} model - The model to use (default: 'gemini-2.5-flash')
- * @param {AbortSignal} [signal] - Optional AbortSignal for cancellation
- * @returns {Promise<string|null>} Response text or null on failure
  */
 export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-flash', signal = null) {
     if (!API_KEY) {
@@ -65,7 +61,6 @@ export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-fla
     }
 
     for (let attempt = 0; attempt < AI_CONFIG.MAX_RETRIES; attempt++) {
-        // Check if already aborted before making request
         if (signal?.aborted) {
             throw new DOMException('Request aborted', 'AbortError');
         }
@@ -75,7 +70,7 @@ export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-fla
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload),
-                signal, // Pass abort signal to fetch
+                signal,
             });
 
             if (!response.ok) {
@@ -86,7 +81,6 @@ export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-fla
             const data = await response.json();
             return data.candidates?.[0]?.content?.parts?.[0]?.text;
         } catch (error) {
-            // Don't retry if request was intentionally aborted
             if (error.name === 'AbortError') {
                 logger.info('Gemini API request aborted by user.');
                 throw error;
@@ -105,88 +99,148 @@ export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-fla
     return null;
 }
 
+// ─── Internal: Build the question-type distribution instruction ───
+function buildTypeDistributionInstruction(batchSize) {
+    const statement  = Math.round(batchSize * 0.45);
+    const ar         = Math.round(batchSize * 0.25);
+    const matching   = Math.round(batchSize * 0.20);
+    const direct     = batchSize - statement - ar - matching; // remainder = direct factual
+
+    return `
+QUESTION TYPE DISTRIBUTION (strictly follow):
+- ${statement} Statement-based questions (e.g., "Which of the following statements is/are correct?")
+- ${ar} Assertion-Reasoning questions (Format: "Assertion (A): ... Reason (R): ..." with options like "Both A and R are correct and R is the correct explanation of A")
+- ${matching} Matching/Pair-based questions. CRITICAL: The "text" field MUST contain both lists clearly formatted using newlines. STRICTLY limit List-I to exactly 4 items (1, 2, 3, 4) and List-II to exactly 4 items (A, B, C, D). Do NOT add extra items like E, F, etc.
+  Example format:
+  Match List-I with List-II:
+  List-I:
+  1. Item 1
+  2. Item 2
+  3. Item 3
+  4. Item 4
+  List-II:
+  A. Desc A
+  B. Desc B
+  C. Desc C
+  D. Desc D
+- ${direct} Direct Factual questions (e.g., "Which of the following is NOT correct regarding...")
+
+CRITICAL OPTION FORMATTING RULE:
+For the "options" JSON array ONLY: DO NOT prefix options with A), B), C), D), 1., 2., etc. The options array must contain ONLY the raw option text.
+BAD: ["A) 1-B, 2-A", "B) 1-A, 2-B"]
+GOOD: ["1-B, 2-A", "1-A, 2-B"]
+NOTE: You MAY use A., B., 1., 2. inside the question "text" field for List-I and List-II.`;
+}
+
+// ─── Internal: 3-layer solution schema instruction ───
+const THREE_LAYER_SOLUTION_INSTRUCTION = `
+SOLUTION FORMAT (mandatory for every question — 3 layers):
+"solution": {
+  "correctAnswerReason": "Concise explanation of WHY the correct option is correct (1-2 sentences)",
+  "sourceOfQuestion": "Reference source: e.g., 'NCERT Class 12 History Ch.4', 'Economic Survey 2023', 'Article 370 of Indian Constitution'",
+  "approachToSolve": "Strategy to eliminate wrong options and identify the correct answer (e.g., 'Use positive/negative elimination: options B and C are extreme statements...')"
+}`;
+
 /**
- * Generate MCQ questions on a specific topic with batch support
- * @param {string} topic - Topic for question generation
- * @param {number} count - Number of questions to generate
- * @param {string} difficulty - Difficulty level (Easy, Intermediate, Hard)
- * @param {function} onProgress - Callback for progress updates (0-100)
- * @returns {Promise<Array|null>} Array of questions or null
+ * Generate MCQ questions on a specific topic with batch support.
+ * Guarantees question-type diversity, 3-layer solutions, and exact count.
  */
 export async function generateQuestions(topic, count = 5, difficulty = 'Hard', targetExam = 'UPSC CSE', onProgress = () => { }) {
-    // ─── 1. Check Shared Test Pool (Cache) ───
-    try {
-        const cacheRef = collection(db, 'cached_tests');
-        const q = query(
-            cacheRef,
-            where('topic', '==', topic),
-            where('difficulty', '==', difficulty),
-            where('questionCount', '>=', count),
-            orderBy('questionCount', 'desc'), // Prefer larger tests
-            limit(1)
-        );
-        const snapshot = await getDocs(q);
+    // ─── 1. Check Shared Test Pool (Cache) — SKIP for large counts to avoid stale repetition ───
+    if (count <= 25) {
+        try {
+            const cacheRef = collection(db, 'cached_tests');
+            const q = query(
+                cacheRef,
+                where('topic', '==', topic),
+                where('difficulty', '==', difficulty),
+                where('questionCount', '>=', count),
+                orderBy('questionCount', 'desc'),
+                limit(5) // Fetch multiple to shuffle
+            );
+            const snapshot = await getDocs(q);
 
-        if (!snapshot.empty) {
-            const cachedTest = snapshot.docs[0].data();
-            logger.info(`Serving cached test for topic: ${topic}`);
-            onProgress(100);
-            // Return slice of questions (maybe shuffle in future)
-            return cachedTest.questions.slice(0, count);
+            if (!snapshot.empty) {
+                // Pick random cached test to avoid always serving same questions
+                const docs = snapshot.docs;
+                const randomDoc = docs[Math.floor(Math.random() * docs.length)];
+                const cachedTest = randomDoc.data();
+                logger.info(`Serving cached test for topic: ${topic}`);
+                onProgress(100);
+                // Shuffle cached questions before returning to reduce perceived repetition
+                const shuffled = [...cachedTest.questions].sort(() => Math.random() - 0.5);
+                return shuffled.slice(0, count);
+            }
+        } catch (error) {
+            logger.warn('Failed to check test cache:', error);
         }
-    } catch (error) {
-        logger.warn('Failed to check test cache:', error);
-        // Continue to generation on error
     }
 
     // ─── 2. Generate via AI (Cache Miss) ───
-
     try {
         await checkAndIncrementRateLimit();
     } catch (error) {
         logger.error('Rate limit exceeded:', error);
-        throw error; // Propagate to UI
+        throw error;
     }
 
-    const batches = Math.ceil(count / AI_CONFIG.BATCH_SIZE);
-    let allQuestions = [];
+    const availableTopics = Object.entries(UPSC_SYLLABUS).map(([subject, data]) => {
+        return `${subject}: ${data.subtopics.join(', ')}`;
+    }).join('\n');
 
-    // Helper to generate a single batch
-    const generateBatch = async (batchSize) => {
-        // Advanced Syllabus Context Injection
+    /**
+     * Generate ONE batch, using a unique subtopic seed to prevent cross-batch repetition.
+     */
+    const generateBatch = async (batchSize, batchIndex, usedSubtopics = []) => {
+        // Rotate subtopics to ensure each batch covers different ground
         const context = getRandomSubtopic(topic);
-        const subtopic = context ? context.subtopic : topic;
+        let subtopic = context ? context.subtopic : topic;
+        // Avoid reusing the same subtopic in consecutive batches
+        let attempts = 0;
+        while (usedSubtopics.includes(subtopic) && attempts < 5) {
+            const freshCtx = getRandomSubtopic(topic);
+            subtopic = freshCtx ? freshCtx.subtopic : topic;
+            attempts++;
+        }
+        usedSubtopics.push(subtopic);
 
-        const availableTopics = Object.entries(UPSC_SYLLABUS).map(([subject, data]) => {
-            return `${subject}: ${data.subtopics.join(', ')}`;
-        }).join('\n');
+        const typeInstruction = buildTypeDistributionInstruction(batchSize);
 
-        const prompt = `You are a strict Question Setter for ${targetExam}. Generate ${batchSize} ${difficulty} MCQs STRICTLY on the requested theme/topic: '${topic}'${context ? ` (incorporating '${subtopic}' if relevant)` : ''}.
- 
- Here is the strictly approved syllabus for the exam:
- ${availableTopics}
- 
- Rules:
- 1. **STRICT TEXT ADHERENCE**: The requested topic '${topic}' MUST fall under or relate to ONE OR MORE of the authorized subtopics in the approved syllabus above. Mixed subjects or "Full Mock Tests" covering multiple authorized subjects are ALLOWED and ENCOURAGED. If the topic is completely unrelated to the syllabus (e.g., 'Harry Potter' or 'Video Games'), you MUST return an empty array: []
- 2. **EXAM STYLE**: Questions MUST follow the pattern of ${targetExam} (e.g., if target Exam is UPSC CSE -> Conceptual/Statement-based, if State PSC -> Factual/Direct).
- 3. **Difficulty**: ${difficulty}. 
- 4. **Output**: Return ONLY a JSON Array. NO markdown. NO "json" prefix.
- 
- JSON Format (if valid):
- [
-   {
-     "text": "Question text...",
-     "options": ["A", "B", "C", "D"],
-     "correctAnswer": 0,
-     "explanation": "Brief verification (1 sentence)"
-   }
- ]`;
+        const prompt = `You are a strict Question Setter for ${targetExam}. Generate EXACTLY ${batchSize} ${difficulty} MCQs on the topic: '${topic}' (focus angle: '${subtopic}' for this batch).
+
+APPROVED SYLLABUS:
+${availableTopics}
+
+RULES:
+1. STRICT RELEVANCE: All questions MUST relate to '${topic}' within the approved syllabus.
+2. EXAM STYLE: Match ${targetExam} exam patterns. UPSC CSE = conceptual/statement-based; State PSC = factual/direct.
+3. UNIQUENESS: This is batch ${batchIndex + 1}. Do NOT repeat questions from other batches. Focus on '${subtopic}' angle.
+4. DIFFICULTY: Each question MUST carry a self-assessed 'difficultyLevel' field ('Easy', 'Intermediate', or 'Hard').
+${typeInstruction}
+${THREE_LAYER_SOLUTION_INSTRUCTION}
+
+OUTPUT: Return ONLY a valid JSON Array. No markdown. No extra text.
+
+JSON FORMAT:
+[
+  {
+    "text": "Full question text here?",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "correctAnswer": 0,
+    "difficultyLevel": "Hard",
+    "questionType": "Assertion-Reasoning",
+    "solution": {
+      "correctAnswerReason": "Why this answer is correct...",
+      "sourceOfQuestion": "NCERT / Article / Act reference...",
+      "approachToSolve": "How to narrow down to the right option..."
+    }
+  }
+]`;
 
         try {
             const result = await callGemini(prompt, true);
             if (!result) return [];
 
-            // Sanitize result: strip markdown code blocks
             let cleanResult = result.trim();
             if (cleanResult.startsWith('```')) {
                 cleanResult = cleanResult.replace(/^```(json)?\n?/, '').replace(/```$/, '');
@@ -196,14 +250,9 @@ export async function generateQuestions(topic, count = 5, difficulty = 'Hard', t
             try {
                 questions = JSON.parse(cleanResult);
             } catch (e) {
-                // Fallback: Try access the array part if surrounded by text
                 const arrayMatch = cleanResult.match(/\[[\s\S]*\]/);
                 if (arrayMatch) {
-                    try {
-                        questions = JSON.parse(arrayMatch[0]);
-                    } catch (e2) {
-                        return [];
-                    }
+                    try { questions = JSON.parse(arrayMatch[0]); } catch (e2) { return []; }
                 } else {
                     return [];
                 }
@@ -212,97 +261,136 @@ export async function generateQuestions(topic, count = 5, difficulty = 'Hard', t
             if (!Array.isArray(questions)) return [];
 
             return questions.map((q, i) => ({
-                id: Date.now() + i + Math.random().toString(36).substr(2, 9),
+                id: `ai-${Date.now()}-${batchIndex}-${i}`,
                 topic,
-                difficulty,
+                difficulty: q.difficultyLevel || difficulty,
+                questionType: q.questionType || 'Statement-based',
                 ...q,
-                correctAnswer: Number(q.correctAnswer) || 0
+                correctAnswer: Number(q.correctAnswer) || 0,
+                // Ensure solution is always present
+                solution: q.solution || {
+                    correctAnswerReason: q.explanation || '',
+                    sourceOfQuestion: 'General Knowledge',
+                    approachToSolve: 'Eliminate incorrect options systematically.'
+                },
+                // Keep legacy explanation field for backward compat
+                explanation: q.solution?.correctAnswerReason || q.explanation || ''
             }));
         } catch (error) {
-            logger.error('Batch generation error:', error);
+            logger.error(`Batch ${batchIndex} generation error:`, error);
             return [];
         }
     };
 
-    // Execute batches in parallel with partial success support
-    const batchPromises = [];
+    const batches = Math.ceil(count / AI_CONFIG.BATCH_SIZE);
+    const usedSubtopics = [];
+    let allQuestions = [];
     let completedBatches = 0;
 
+    // Execute batches in parallel
+    const batchPromises = [];
     for (let i = 0; i < batches; i++) {
-        const currentBatchSize = (i === batches - 1) ? (count - (i * AI_CONFIG.BATCH_SIZE)) : AI_CONFIG.BATCH_SIZE;
+        const currentBatchSize = (i === batches - 1)
+            ? (count - (i * AI_CONFIG.BATCH_SIZE))
+            : AI_CONFIG.BATCH_SIZE;
         if (currentBatchSize <= 0) continue;
 
         batchPromises.push((async () => {
             try {
-                const batchQuestions = await generateBatch(currentBatchSize);
-
-                // Update progress
+                const batchQuestions = await generateBatch(currentBatchSize, i, usedSubtopics);
                 completedBatches++;
-                const progress = Math.round((completedBatches / batches) * 100);
-                onProgress(progress);
-
-                if (!batchQuestions || batchQuestions.length === 0) return [];
-
-                // Map batch to add IDs
-                return batchQuestions.map((q, idx) => ({
-                    ...q,
-                    id: `ai-${Date.now()}-${i}-${idx}`,
-                    tags: q.tags || [
-                        { type: 'source', label: 'AI' },
-                        { type: 'subject', label: 'General' },
-                        { type: 'topic', label: topic },
-                        { type: 'difficulty', label: difficulty }
-                    ],
-                    masteryStrikes: 0,
-                }));
+                onProgress(Math.round((completedBatches / batches) * 85)); // Up to 85%; fill-up is last 15%
+                return batchQuestions || [];
             } catch (error) {
                 logger.error(`Batch ${i + 1} failed:`, error);
-                // Update progress even on failure
                 completedBatches++;
-                const progress = Math.round((completedBatches / batches) * 100);
-                onProgress(progress);
-                return []; // Return empty array instead of throwing
+                onProgress(Math.round((completedBatches / batches) * 85));
+                return [];
             }
         })());
     }
 
-    // Use allSettled to allow partial success
     const results = await Promise.allSettled(batchPromises);
+    allQuestions = results
+        .filter(r => r.status === 'fulfilled')
+        .flatMap(r => r.value);
 
-    // Extract successful results
-    const successfulBatches = results
-        .filter(result => result.status === 'fulfilled')
-        .map(result => result.value);
-
-    const failedBatches = results.filter(result => result.status === 'rejected').length;
-
-    if (failedBatches > 0) {
-        logger.warn(`${failedBatches} out of ${batches} batches failed. Proceeding with partial results.`);
-    }
-
-    allQuestions = successfulBatches.flat();
-
-    // Filter out nulls/empty
-    allQuestions = allQuestions.filter(q => q && q.text && q.options && q.options.length >= 2);
-
-    // Deduplicate AI-generated questions (cross-batch dupes happen often)
+    // ─── 3. Deduplicate (text-based) ───
     const seenTexts = new Set();
     allQuestions = allQuestions.filter(q => {
-        const key = (q.text || '').trim().toLowerCase().substring(0, 100);
-        if (key && seenTexts.has(key)) return false;
-        if (key) seenTexts.add(key);
+        const key = (q.text || '').trim().toLowerCase();
+        if (!key || seenTexts.has(key)) return false;
+        seenTexts.add(key);
         return true;
-    });
+    }).filter(q => q && q.text && q.options && q.options.length >= 2);
+
+    // ─── 4. Fill-up: If we're short, request the deficit in extra batches ───
+    let fillRetries = 0;
+    while (allQuestions.length < count && fillRetries < 2) {
+        fillRetries++;
+        const deficit = count - allQuestions.length;
+        logger.warn(`Fill-up needed: got ${allQuestions.length}/${count}. Requesting ${deficit} more.`);
+
+        const existingSummary = allQuestions.slice(0, 15).map(q =>
+            (q.text || '').substring(0, 60)
+        ).join(' | ');
+
+        const fillPrompt = `You are a Question Setter for ${targetExam}. Generate EXACTLY ${deficit} ${difficulty} MCQs on '${topic}'.
+
+These questions have ALREADY been generated (DO NOT REPEAT them):
+${existingSummary}
+
+${buildTypeDistributionInstruction(deficit)}
+${THREE_LAYER_SOLUTION_INSTRUCTION}
+
+RULES: Strictly unique questions. Return ONLY a valid JSON Array (same format as before).`;
+
+        try {
+            const fillResult = await callGemini(fillPrompt, true);
+            if (fillResult) {
+                let fillClean = fillResult.trim().replace(/^```(json)?\n?/, '').replace(/```$/, '');
+                let fillQuestions = [];
+                try { fillQuestions = JSON.parse(fillClean); } catch {
+                    const m = fillClean.match(/\[[\s\S]*\]/);
+                    if (m) try { fillQuestions = JSON.parse(m[0]); } catch { /* ignore */ }
+                }
+                if (Array.isArray(fillQuestions)) {
+                    fillQuestions.forEach((q, i) => {
+                        const key = (q.text || '').trim().toLowerCase();
+                        if (!key || seenTexts.has(key)) return;
+                        seenTexts.add(key);
+                        allQuestions.push({
+                            id: `ai-${Date.now()}-fillup-${fillRetries}-${i}`,
+                            topic,
+                            difficulty: q.difficultyLevel || difficulty,
+                            questionType: q.questionType || 'Direct Factual',
+                            ...q,
+                            correctAnswer: Number(q.correctAnswer) || 0,
+                            solution: q.solution || {
+                                correctAnswerReason: q.explanation || '',
+                                sourceOfQuestion: 'General Knowledge',
+                                approachToSolve: 'Eliminate incorrect options systematically.'
+                            },
+                            explanation: q.solution?.correctAnswerReason || q.explanation || ''
+                        });
+                    });
+                }
+            }
+        } catch (fillError) {
+            logger.warn('Fill-up batch failed:', fillError);
+            break;
+        }
+    }
+
+    onProgress(100);
 
     if (allQuestions.length === 0) return null;
-    return allQuestions;
+    return allQuestions.slice(0, count); // Never exceed requested count
 }
 
 
 /**
  * Evaluate a mains answer using AI
- * @param {string} answerText - The answer text to evaluate
- * @returns {Promise<object|null>} Evaluation result or null
  */
 export async function evaluateAnswer(answerText) {
     const prompt = `Act as a strict UPSC Mains Exam Evaluator. Evaluate the following answer for clarity, structure, and content depth.
@@ -320,14 +408,13 @@ JSON Schema:
   "score": "X.X/10",
   "keywords": ["Top 3 key concepts used"],
   "missing": ["Critical missing points (max 3)"],
-  "feedback": "### Strengths\n- Point 1\n- Point 2\n\n### Weaknesses\n- Point 1\n\n### Improvement\n- Actionable advice"
+  "feedback": "### Strengths\\n- Point 1\\n- Point 2\\n\\n### Weaknesses\\n- Point 1\\n\\n### Improvement\\n- Actionable advice"
 }`;
 
     try {
         const result = await callGemini(prompt, true);
 
         if (!result) {
-            // Return mock result for fallback
             return {
                 score: '6.5',
                 keywords: ['Structure', 'Flow'],
@@ -350,12 +437,8 @@ JSON Schema:
 
 /**
  * Analyze test performance using AI
- * @param {Array} questions - The test questions
- * @param {object} answers - User answers {questionId: optionIndex}
- * @returns {Promise<object>} Analysis result
  */
 export async function analyzeTestPerformance(questions, answers) {
-    // Prepare a summary for the AI (avoid huge token usage)
     const summary = questions.map((q, idx) => {
         const userVal = answers[q.id];
         const isCorrect = userVal === q.correctAnswer;
@@ -398,7 +481,6 @@ export async function analyzeTestPerformance(questions, answers) {
 
 /**
  * Check if Gemini API is configured
- * @returns {boolean} True if API key is available
  */
 export function isGeminiConfigured() {
     return Boolean(API_KEY);
@@ -406,7 +488,6 @@ export function isGeminiConfigured() {
 
 /**
  * Generate current affairs news feed
- * @returns {Promise<Array>} Array of news items
  */
 export async function generateNews() {
     const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -436,129 +517,304 @@ export async function generateNews() {
 }
 
 /**
- * Generate questions from extracted PDF/document content
- * @param {string} documentText - Extracted text from the document
- * @param {string} documentTitle - Title/name of the document
- * @param {number} count - Number of questions to generate
- * @param {string} difficulty - Difficulty level
- * @param {function} onProgress - Progress callback
- * @returns {Promise<Array>} Array of question objects
+ * Generate questions from extracted PDF/document content.
+ * Includes: topic identification, question-type diversity, 3-layer solution, PYQ blending.
  */
 export async function generateQuestionsFromDocument(documentText, documentTitle = 'Document', count = 10, difficulty = 'Hard', onProgress = () => { }) {
     if (!documentText || documentText.trim().length < 100) {
         throw new Error('Document text is too short or empty');
     }
 
-    onProgress(10);
+    onProgress(5);
 
-    // Truncate very long documents to avoid token limits
-    const maxChars = 10000;
+    // ─── Step 1: Topic Identification ───
+    // Quick pass to identify the primary topics in the document
+    const maxChars = 15000;
     const truncatedText = documentText.length > maxChars
         ? documentText.substring(0, maxChars) + '...'
         : documentText;
 
-    const prompt = `You are an expert question generator for exam preparation. Based on the following document content, generate exactly ${count} high-quality multiple-choice questions (MCQs).
+    let identifiedTopics = [];
+    try {
+        const topicPrompt = `Read this document excerpt and identify the top 3-5 primary academic topics/subjects it covers.
+These topics should match UPSC/competitive exam syllabus areas.
+
+DOCUMENT:
+${truncatedText.substring(0, 3000)}
+
+Return ONLY a JSON array of topic strings (max 5):
+["Topic 1", "Topic 2", "Topic 3"]`;
+
+        const topicResult = await callGemini(topicPrompt, true);
+        if (topicResult) {
+            let cleaned = topicResult.trim().replace(/^```(json)?\n?/, '').replace(/```$/, '');
+            const parsed = JSON.parse(cleaned);
+            if (Array.isArray(parsed)) identifiedTopics = parsed;
+        }
+    } catch (e) {
+        logger.warn('Topic identification failed, proceeding without it:', e);
+    }
+
+    onProgress(20);
+
+    // ─── Step 2: Ensure all questions are document-based (No PYQ blending) ───
+    const aiCount = count;
+    const pyqCount = 0;
+
+    const typeInstruction = buildTypeDistributionInstruction(aiCount);
+
+    // ─── Step 3: Chunk Document and Generate in Parallel ───
+    const CHUNK_SIZE = 15000;
+    const textChunks = [];
+    // Only take up to 10 chunks (150k chars max) to avoid out-of-memory/too many requests
+    const maxChunks = 10;
+    
+    for (let i = 0; i < documentText.length && textChunks.length < maxChunks; i += CHUNK_SIZE) {
+        textChunks.push(documentText.substring(i, i + CHUNK_SIZE));
+    }
+
+    const docQCount = aiCount;
+    const questionsPerChunk = Math.ceil(docQCount / textChunks.length);
+    let allGeneratedQuestions = [];
+    const seenTexts = new Set();
+    let completedChunks = 0;
+
+    onProgress(35);
+
+    // Run AI requests concurrently across the distinct chunks
+    const chunkPromises = textChunks.map(async (chunk, index) => {
+        // Distribute the exact number of questions needed
+        const isLastChunk = index === textChunks.length - 1;
+        const targetQCount = isLastChunk 
+            ? docQCount - (questionsPerChunk * (textChunks.length - 1)) 
+            : questionsPerChunk;
+
+        if (targetQCount <= 0) return [];
+
+        const typeInstruction = buildTypeDistributionInstruction(targetQCount);
+
+        const documentPrompt = `You are an expert question generator for competitive exam preparation.
+Based on the specific document chunk below, generate EXACTLY ${targetQCount} high-quality MCQs that test CONCEPTUAL UNDERSTANDING — NOT just literal content recall.
 
 DOCUMENT TITLE: ${documentTitle}
+IDENTIFIED TOPICS: ${identifiedTopics.join(', ') || 'General'}
 
-DOCUMENT CONTENT:
-${truncatedText}
+DOCUMENT CHUNK (Part ${index + 1} of ${textChunks.length}):
+${chunk}
 
 INSTRUCTIONS:
-1. Generate questions that test understanding of the KEY CONCEPTS from the document
-2. Questions should be factual and directly related to the content provided
-3. Difficulty level: ${difficulty}
-4. Each question must have exactly 4 options
-5. Include diverse question types: factual recall, conceptual understanding, and application
-6. Identify the main topics/subjects covered in the document for proper tagging
+1. Go BEYOND the text: use the document as a context clue to generate exam-relevant questions on the identified topics
+2. Difficulty: ${difficulty}
+3. Avoid questions that just ask "which statement matches the text" — test deeper understanding
+${typeInstruction}
+${THREE_LAYER_SOLUTION_INSTRUCTION}
 
-Return ONLY a valid JSON array with this exact structure:
+Return ONLY a valid JSON array:
 [
   {
-    "text": "Question text here?",
+    "text": "Question text?",
     "options": ["Option A", "Option B", "Option C", "Option D"],
     "correctAnswer": 0,
-    "explanation": "Brief explanation of why this answer is correct",
-    "topic": "Main topic from document (e.g., History, Science, Economics)",
-    "tags": [
-      { "type": "subject", "label": "Subject name" },
-      { "type": "topic", "label": "Topic from document" },
-      { "type": "difficulty", "label": "${difficulty}" },
-      { "type": "source", "label": "Document: ${documentTitle.substring(0, 30)}" },
-      { "type": "type", "label": "Conceptual or Factual" }
-    ]
+    "difficultyLevel": "${difficulty}",
+    "questionType": "Statement-based",
+    "topic": "Main topic",
+    "solution": {
+      "correctAnswerReason": "...",
+      "sourceOfQuestion": "Document / NCERT / Standard reference",
+      "approachToSolve": "..."
+    }
   }
 ]
 
-Generate EXACTLY ${count} questions. Return ONLY the JSON array, no additional text.`;
+Generate EXACTLY ${targetQCount} unique questions. Return ONLY the JSON array.`;
 
-    onProgress(30);
-
-    try {
-        const result = await callGemini(prompt, true);
-
-        if (!result) {
-            throw new Error('Failed to generate questions from document');
-        }
-
-        onProgress(70);
-
-        // Parse and validate response
-        let cleanResult = result.trim();
-        if (cleanResult.startsWith('```json')) {
-            cleanResult = cleanResult.replace(/```json\n?/g, '').replace(/```\n?/g, '');
-        }
-
-        let questions = [];
         try {
-            questions = JSON.parse(cleanResult);
-        } catch (parseError) {
-            // Try to extract array from response
-            const arrayMatch = cleanResult.match(/\[[\s\S]*\]/);
-            if (arrayMatch) {
-                questions = JSON.parse(arrayMatch[0]);
-            } else {
-                throw new Error('Invalid JSON response from AI');
+            const result = await callGemini(documentPrompt, true);
+            if (!result) return [];
+
+            let cleanResult = result.trim();
+            if (cleanResult.startsWith('```json')) {
+                cleanResult = cleanResult.replace(/```json\n?/g, '').replace(/```\n?/g, '');
             }
+
+            let parsed = [];
+            try {
+                parsed = JSON.parse(cleanResult);
+            } catch {
+                const arrayMatch = cleanResult.match(/\[[\s\S]*\]/);
+                if (arrayMatch) parsed = JSON.parse(arrayMatch[0]);
+            }
+
+            completedChunks++;
+            const currentProgress = 35 + Math.round((completedChunks / textChunks.length) * 45);
+            onProgress(currentProgress);
+
+            return Array.isArray(parsed) ? parsed : [];
+        } catch (err) {
+            logger.warn(`Chunk ${index + 1} generation failed:`, err);
+            return [];
         }
+    });
 
-        if (!Array.isArray(questions) || questions.length === 0) {
-            throw new Error('No questions generated from document');
+    const chunkResults = await Promise.all(chunkPromises);
+    
+    // Flatten and deduplicate
+    chunkResults.flat().forEach(q => {
+        const key = (q.text || '').trim().toLowerCase();
+        if (key && !seenTexts.has(key)) {
+            seenTexts.add(key);
+            allGeneratedQuestions.push(q);
         }
+    });
 
-        onProgress(90);
+    // ─── Step 4: Final Fill-up Sequence if short ───
+    let retryCount = 0;
+    while (allGeneratedQuestions.length < aiCount && retryCount < 2) {
+        retryCount++;
+        const deficit = aiCount - allGeneratedQuestions.length;
+        const currentBatchSize = Math.min(deficit, 15);
+        const existingSummary = allGeneratedQuestions.slice(-20).map(q => (q.text || '').substring(0, 60)).join(' | ');
 
-        // Add IDs and ensure proper structure
-        const processedQuestions = questions.map((q, idx) => ({
+        // Fallback to first chunk for fill-up
+        const fillPrompt = `Generate EXACTLY ${currentBatchSize} MORE unique ${difficulty} MCQs based on this document.
+DO NOT repeat these questions (already generated):
+${existingSummary}
+
+DOCUMENT CONTENT:
+${textChunks[0].substring(0, 8000)}
+
+${buildTypeDistributionInstruction(currentBatchSize)}
+${THREE_LAYER_SOLUTION_INSTRUCTION}
+
+Return ONLY a JSON Array (same format as before).`;
+
+        try {
+            const fillResult = await callGemini(fillPrompt, true);
+            if (!fillResult) continue;
+
+            let cleanResult = fillResult.trim();
+            if (cleanResult.startsWith('```json')) {
+                cleanResult = cleanResult.replace(/```json\n?/g, '').replace(/```\n?/g, '');
+            }
+
+            let parsed = [];
+            try {
+                parsed = JSON.parse(cleanResult);
+            } catch {
+                const arrayMatch = cleanResult.match(/\[[\s\S]*\]/);
+                if (arrayMatch) parsed = JSON.parse(arrayMatch[0]);
+            }
+
+            if (Array.isArray(parsed)) {
+                parsed.forEach(q => {
+                    const key = (q.text || '').trim().toLowerCase();
+                    if (key && !seenTexts.has(key)) {
+                        seenTexts.add(key);
+                        allGeneratedQuestions.push(q);
+                    }
+                });
+            }
+        } catch (err) {
+            logger.warn('Fill-up round failed:', err);
+        }
+    }
+
+    let aiQuestions = [];
+    try {
+        if (allGeneratedQuestions.length === 0) throw new Error('No questions generated');
+
+        aiQuestions = allGeneratedQuestions.slice(0, aiCount).map((q, idx) => ({
             ...q,
             id: `doc-${Date.now()}-${idx}`,
+            difficulty: q.difficultyLevel || difficulty,
+            questionType: q.questionType || 'Conceptual',
+            solution: q.solution || {
+                correctAnswerReason: q.explanation || '',
+                sourceOfQuestion: `Document: ${documentTitle}`,
+                approachToSolve: 'Identify key concepts from the document context.'
+            },
+            explanation: q.solution?.correctAnswerReason || q.explanation || '',
             tags: q.tags || [
-                { type: 'source', label: `Document: ${documentTitle}` },
+                { type: 'source', label: `Document: ${documentTitle.substring(0, 30)}` },
                 { type: 'difficulty', label: difficulty },
-                { type: 'topic', label: q.topic || 'General' }
+                { type: 'topic', label: q.topic || identifiedTopics[0] || 'General' }
             ],
             masteryStrikes: 0
         }));
-
-        onProgress(100);
-
-        return processedQuestions;
     } catch (error) {
-        throw error;
+        logger.error('Document question generation error:', error);
+        aiQuestions = [];
     }
+
+    onProgress(80);
+
+    // ─── Step 4: Blend topic-matched PYQs ───
+    let pyqQuestions = [];
+    if (pyqCount > 0 && identifiedTopics.length > 0) {
+        try {
+            // Match PYQs against identified topics
+            let matchedPYQs = PYQ_DATABASE.filter(q =>
+                identifiedTopics.some(t =>
+                    (q.subject || '').toLowerCase().includes(t.toLowerCase()) ||
+                    (q.topic || '').toLowerCase().includes(t.toLowerCase())
+                )
+            );
+
+            // Fallback: topic from document title
+            if (matchedPYQs.length < pyqCount) {
+                const titleWords = documentTitle.toLowerCase().split(/\s+/);
+                const titleMatched = PYQ_DATABASE.filter(q =>
+                    titleWords.some(w => w.length > 3 &&
+                        ((q.subject || '').toLowerCase().includes(w) ||
+                         (q.topic || '').toLowerCase().includes(w))
+                    )
+                );
+                // Merge without duplicates
+                const existingIds = new Set(matchedPYQs.map(q => q.id));
+                matchedPYQs = [...matchedPYQs, ...titleMatched.filter(q => !existingIds.has(q.id))];
+            }
+
+            if (matchedPYQs.length > 0) {
+                pyqQuestions = matchedPYQs
+                    .sort(() => Math.random() - 0.5)
+                    .slice(0, pyqCount)
+                    .map(q => ({
+                        ...q,
+                        solution: q.solution || {
+                            correctAnswerReason: q.explanation || '',
+                            sourceOfQuestion: q.year ? `PYQ ${q.year}` : 'Previous Year Question',
+                            approachToSolve: 'This is a previous year question — recognizing the pattern helps.'
+                        },
+                        explanation: q.solution?.correctAnswerReason || q.explanation || ''
+                    }));
+            }
+        } catch (e) {
+            logger.warn('PYQ blending failed:', e);
+        }
+    }
+
+    onProgress(95);
+
+    // ─── Step 5: Merge, deduplicate, and return ───
+    const combined = [...aiQuestions, ...pyqQuestions];
+    const finalSeenTexts = new Set();
+    const final = combined.filter(q => {
+        const key = (q.text || '').trim().toLowerCase().substring(0, 100);
+        if (!key || finalSeenTexts.has(key)) return false;
+        finalSeenTexts.add(key);
+        return true;
+    }).slice(0, count);
+
+    onProgress(100);
+    return final;
 }
 
 /**
  * Get real-time AI topic suggestions based on user input
- * @param {string} keyword - The partial topic the user is typing
- * @param {string} targetExam - The context exam (e.g., 'UPSC CSE')
- * @param {AbortSignal} [signal] - Optional AbortSignal for debouncing
- * @returns {Promise<Array<string>>} Array of suggested topics
  */
 export async function suggestTestTopics(keyword, targetExam = 'UPSC CSE', signal = null) {
     if (!keyword || keyword.trim().length < 2) return [];
 
-    // Serialize syllabus to feed to Gemini
     const availableTopics = Object.entries(UPSC_SYLLABUS).map(([subject, data]) => {
         return `${subject}: ${data.subtopics.join(', ')}`;
     }).join('\n');
@@ -579,7 +835,6 @@ export async function suggestTestTopics(keyword, targetExam = 'UPSC CSE', signal
         const result = await callGemini(prompt, true, 'gemini-2.5-flash', signal);
         if (!result) return [];
 
-        // Strip markdown if present
         let cleanResult = result.trim();
         if (cleanResult.startsWith('\`\`\`')) {
             cleanResult = cleanResult.replace(/^\`\`\`(json)?\n?/, '').replace(/\`\`\`$/, '');
@@ -594,5 +849,3 @@ export async function suggestTestTopics(keyword, targetExam = 'UPSC CSE', signal
         return [];
     }
 }
-
-

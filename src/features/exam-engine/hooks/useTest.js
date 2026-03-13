@@ -4,6 +4,7 @@ import logger from '@/utils/logger';
 import { testService } from '../services/testService';
 import { calculateResults } from '../utils/testLogic';
 import { generateMockQuestions } from '@/utils/helpers';
+import { TIME_PER_QUESTION } from '@/constants/appConstants';
 
 /**
  * Custom hook for test state management
@@ -73,7 +74,6 @@ export function useTest() {
         const progressInterval = setInterval(() => {
             setGenerationProgress(prev => {
                 if (prev >= 90) return prev; // Stall at 90% until done
-                // Slow down as it gets higher
                 const increment = prev < 50 ? 2 : prev < 80 ? 1 : 0.5;
                 return Math.min(prev + increment, 90);
             });
@@ -87,12 +87,13 @@ export function useTest() {
             setGenerationProgress(100);
             await new Promise(r => setTimeout(r, 500)); // Show 100% briefly
 
-            // Calculate test duration: 1.2 minutes per question
-            let durationSeconds = Math.round(count * 1.2 * 60);
+            // Difficulty-based duration: Hard=120s/Q, Intermediate=90s/Q, Easy=60s/Q
+            const secondsPerQuestion = TIME_PER_QUESTION[difficulty] || TIME_PER_QUESTION['Intermediate'];
+            const durationSeconds = (questions.length || count) * secondsPerQuestion;
 
             setupTestSession(questions, durationSeconds);
 
-            // 3. Initialize History in Backend (Fire & Forget)
+            // Initialize History in Backend (Fire & Forget)
             if (auth.currentUser) {
                 const testId = `test-${Date.now()}`;
                 setActiveTestId(testId);
@@ -103,7 +104,8 @@ export function useTest() {
         } catch (error) {
             logger.error('Error starting AI test:', error);
             clearInterval(progressInterval);
-            startMockTest(null, count, count * 1.5);
+            // Fallback: use Intermediate timing for mock
+            startMockTest(null, count, Math.round(count * (TIME_PER_QUESTION['Intermediate'] / 60)));
             return false;
         } finally {
             setIsGeneratingTest(false);
@@ -114,13 +116,14 @@ export function useTest() {
     /**
      * Start a custom local test immediately (Used for PYQs)
      */
-    const startCustomTest = useCallback((questions, testName = 'Custom Test') => {
+    const startCustomTest = useCallback((questions, testName = 'Custom Test', difficulty = 'Intermediate') => {
         setIsGeneratingTest(true);
         try {
             const count = questions.length;
-            // Calculate test duration: 1.2 minutes per question
-            let durationSeconds = Math.round(count * 1.2 * 60);
-            
+            // Difficulty-based duration for custom/PYQ tests
+            const secondsPerQuestion = TIME_PER_QUESTION[difficulty] || TIME_PER_QUESTION['Intermediate'];
+            const durationSeconds = count * secondsPerQuestion;
+
             setupTestSession(questions, durationSeconds);
             setActiveTestName(testName);
             setActiveTestId(`custom-${Date.now()}`);

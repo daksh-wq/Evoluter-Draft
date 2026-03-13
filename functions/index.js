@@ -6,11 +6,12 @@
  */
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+
+// Initialize Firebase Admin SDK first
+admin.initializeApp();
+
 const RateLimiter = require('./src/utils/rateLimiter');
 const DistributedCounter = require('./src/utils/distributedCounter');
-
-// Initialize Firebase Admin SDK
-admin.initializeApp();
 
 // ─── UTILITIES (High-Scale Tools) ────────────────────────
 // Exported for use in other functions, or as callable verification

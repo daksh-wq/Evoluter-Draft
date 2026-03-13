@@ -7,15 +7,62 @@ const admin = require('firebase-admin');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { checkAndIncrementRateLimit } = require('./rateLimit');
 
-// Initialize Gemini (uses Firebase Functions config)
 const genAI = new GoogleGenerativeAI(functions.config().gemini?.api_key || process.env.GEMINI_API_KEY || '');
+
+// ─── Shared helpers ───────────────────────────────────────────────────────────
+
+/**
+ * Build question-type distribution instruction for a given batch size.
+ * Mirrors UPSC/competitive exam paper patterns.
+ */
+function buildTypeDistributionInstruction(batchSize) {
+    const statement   = Math.round(batchSize * 0.45);
+    const ar          = Math.round(batchSize * 0.25);
+    const matching    = Math.round(batchSize * 0.20);
+    const direct      = batchSize - statement - ar - matching;
+
+    return `
+QUESTION TYPE DISTRIBUTION (strictly follow for this batch):
+- ${statement} Statement-based questions (e.g., "Which of the following statements is/are correct?")
+- ${ar} Assertion-Reasoning questions (Format: "Assertion (A): ... Reason (R): ..." with options like "Both A and R are correct and R is the correct explanation of A")
+- ${matching} Matching/Pair-based questions. CRITICAL: The "text" field MUST contain both lists clearly formatted using newlines. STRICTLY limit List-I to exactly 4 items (1, 2, 3, 4) and List-II to exactly 4 items (A, B, C, D). Do NOT add extra items like E, F, etc.
+  Example format:
+  Match List-I with List-II:
+  List-I:
+  1. Item 1
+  2. Item 2
+  3. Item 3
+  4. Item 4
+  List-II:
+  A. Desc A
+  B. Desc B
+  C. Desc C
+  D. Desc D
+- ${direct} Direct Factual questions (e.g., "Which of the following is NOT correct regarding...")
+
+CRITICAL OPTION FORMATTING RULE:
+For the "options" JSON array ONLY: DO NOT prefix options with A), B), C), D), 1., 2., etc. The options array must contain ONLY the raw option text.
+BAD: ["A) 1-B, 2-A", "B) 1-A, 2-B"]
+GOOD: ["1-B, 2-A", "1-A, 2-B"]
+NOTE: You MAY use A., B., 1., 2. inside the question "text" field for List-I and List-II.`;
+}
+
+/** 3-layer solution instruction injected into every prompt. */
+const THREE_LAYER_SOLUTION_INSTRUCTION = `
+SOLUTION FORMAT (mandatory for EVERY question):
+"solution": {
+  "correctAnswerReason": "Concise explanation of WHY the correct option is correct (1-2 sentences)",
+  "sourceOfQuestion": "Reference: e.g., 'NCERT Class 12 History Ch.4', 'Article 370', 'Economic Survey 2023'",
+  "approachToSolve": "Strategy to eliminate wrong options and identify the correct answer"
+}`;
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 /**
  * Generate a test — questions with answers stored server-side only.
  * Returns sanitized questions (no correct answers) to the client.
  */
 exports.generateTest = functions.https.onCall(async (data, context) => {
-    // Auth check
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -34,46 +81,60 @@ exports.generateTest = functions.https.onCall(async (data, context) => {
     let questions = null;
     let fromCache = false;
 
-    // 1. Try to fetch from cache first
-    try {
-        const cacheSnapshot = await admin.firestore().collection('cached_tests')
-            .where('topic', '==', topic)
-            .where('difficulty', '==', difficulty)
-            .where('questionCount', '==', questionCount)
-            .limit(10) // Fetch a pool to randomize
-            .get();
+    // 1. Try cache — only for small tests (≤25) to reduce stale repetition
+    if (questionCount <= 25) {
+        try {
+            const cacheSnapshot = await admin.firestore().collection('cached_tests')
+                .where('topic', '==', topic)
+                .where('difficulty', '==', difficulty)
+                .where('questionCount', '==', questionCount)
+                .limit(10) // Fetch a pool to randomize
+                .get();
 
-        if (!cacheSnapshot.empty) {
-            // Pick a random test from cache to avoid repetition
-            const randomDoc = cacheSnapshot.docs[Math.floor(Math.random() * cacheSnapshot.size)];
-            questions = randomDoc.data().questions;
-            fromCache = true;
-            console.log(`Serving cached test for topic: ${topic}`);
+            if (!cacheSnapshot.empty) {
+                // Pick a random test from cache to avoid repetition
+                const randomDoc = cacheSnapshot.docs[Math.floor(Math.random() * cacheSnapshot.size)];
+                questions = randomDoc.data().questions;
+                // Shuffle cached questions
+                questions = questions.sort(() => Math.random() - 0.5);
+                fromCache = true;
+                console.log(`Serving cached test for topic: ${topic}`);
+            }
+        } catch (error) {
+            console.error('Cache read error:', error);
         }
-    } catch (error) {
-        console.error('Cache read error:', error);
-        // Continue to generation if cache fails
     }
 
-    // 2. If not in cache, Generate via Gemini
+    // 2. Generate via Gemini if not cached
     if (!questions) {
-        // Rate limit check ONLY if generating fresh
         await checkAndIncrementRateLimit(userId, 'test_generation');
 
-        const prompt = `You are a strict Question Setter. Generate ${questionCount} ${difficulty} MCQs STRICTLY on the topic: '${topic}'.
+        const typeInstruction = buildTypeDistributionInstruction(questionCount);
 
-Rules:
+        const prompt = `You are a strict Question Setter for UPSC/Competitive Exams. Generate EXACTLY ${questionCount} ${difficulty} MCQs on the topic: '${topic}'.
+
+RULES:
 1. Questions MUST be 100% relevant to '${topic}'.
 2. Difficulty: ${difficulty}.
-3. Output: Return ONLY a JSON Array.
+3. Each question must include a self-assessed 'difficultyLevel' field ('Easy', 'Intermediate', or 'Hard').
+${typeInstruction}
+${THREE_LAYER_SOLUTION_INSTRUCTION}
 
-JSON Format:
+OUTPUT: Return ONLY a JSON Array. NO markdown. NO extra text.
+
+JSON FORMAT:
 [
   {
-    "text": "Question text...",
-    "options": ["A", "B", "C", "D"],
+    "text": "Question text?",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
     "correctAnswer": 0,
-    "explanation": "Detailed verification..."
+    "difficultyLevel": "Hard",
+    "questionType": "Assertion-Reasoning",
+    "solution": {
+      "correctAnswerReason": "...",
+      "sourceOfQuestion": "...",
+      "approachToSolve": "..."
+    }
   }
 ]`;
 
@@ -100,23 +161,80 @@ JSON Format:
                 throw new functions.https.HttpsError('internal', 'No questions generated');
             }
 
-            // Add IDs and tags
+            // Deduplicate first before fill-up check
+            const seenTexts = new Set();
+            questions = questions.filter(q => {
+                const key = (q.text || '').trim().toLowerCase();
+                if (!key || seenTexts.has(key)) return false;
+                seenTexts.add(key);
+                return true;
+            });
+
+            // 2a. Fill-up if AI returned fewer than requested
+            let fillRetries = 0;
+            while (questions.length < questionCount && fillRetries < 2) {
+                fillRetries++;
+                const deficit = questionCount - questions.length;
+                const existingSummary = questions.slice(0, 15).map(q => (q.text || '').substring(0, 60)).join(' | ');
+                const fillPrompt = `You are a Question Setter. Generate EXACTLY ${deficit} MORE unique ${difficulty} MCQs on '${topic}'.
+DO NOT repeat these questions (already generated):
+${existingSummary}
+
+${buildTypeDistributionInstruction(deficit)}
+${THREE_LAYER_SOLUTION_INSTRUCTION}
+
+Return ONLY a JSON Array (same format as before).`;
+
+                try {
+                    const fillResult = await model.generateContent({
+                        contents: [{ role: 'user', parts: [{ text: fillPrompt }] }],
+                        generationConfig: { responseMimeType: 'application/json' }
+                    });
+                    const fillText = fillResult.response.text();
+                    let fillQuestions = [];
+                    try { fillQuestions = JSON.parse(fillText); } catch {
+                        const m = fillText.match(/\[[\s\S]*\]/);
+                        if (m) fillQuestions = JSON.parse(m[0]);
+                    }
+                    if (Array.isArray(fillQuestions)) {
+                        fillQuestions.forEach(q => {
+                            const key = (q.text || '').trim().toLowerCase();
+                            if (!key || seenTexts.has(key)) return;
+                            seenTexts.add(key);
+                            questions.push(q);
+                        });
+                    }
+                } catch (fillErr) {
+                    console.warn('Fill-up batch failed:', fillErr);
+                    break;
+                }
+            }
+
+            // Add IDs, tags, normalise solution
             questions = questions.map((q, idx) => ({
                 ...q,
                 id: `ai-${Date.now()}-${idx}`,
+                difficulty: q.difficultyLevel || difficulty,
+                questionType: q.questionType || 'Statement-based',
+                solution: q.solution || {
+                    correctAnswerReason: q.explanation || '',
+                    sourceOfQuestion: 'General Knowledge',
+                    approachToSolve: 'Eliminate incorrect options systematically.'
+                },
+                explanation: q.solution?.correctAnswerReason || q.explanation || '',
                 tags: q.tags || [
                     { type: 'source', label: 'AI' },
                     { type: 'topic', label: topic },
-                    { type: 'difficulty', label: difficulty }
+                    { type: 'difficulty', label: q.difficultyLevel || difficulty }
                 ]
             }));
 
-            // Save to Cache for future users (Fire and Forget)
+            // Cache for future use (fire and forget)
             admin.firestore().collection('cached_tests').add({
                 questions,
                 topic,
                 difficulty,
-                questionCount,
+                questionCount: questions.length,
                 createdAt: admin.firestore.FieldValue.serverTimestamp()
             }).catch(err => console.error('Failed to cache test:', err));
 
@@ -127,10 +245,9 @@ JSON Format:
         }
     }
 
-    // 3. Create active session (reused for both Cache & New)
+    // 3. Create active session
     const testId = `test-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 
-    // Store FULL questions (with answers) SERVER-SIDE ONLY for this session
     await admin.firestore().collection('_test_questions').doc(testId).set({
         questions,
         createdBy: userId,
@@ -139,12 +256,11 @@ JSON Format:
         questionCount: questions.length,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
         expiresAt: admin.firestore.Timestamp.fromDate(
-            new Date(Date.now() + 24 * 60 * 60 * 1000) // 24 hours
+            new Date(Date.now() + 24 * 60 * 60 * 1000)
         ),
-        fromCache // Analytics flag
+        fromCache
     });
 
-    // Create test session for user
     await admin.firestore().collection('users').doc(userId)
         .collection('test_sessions').doc(testId).set({
             questionCount: questions.length,
@@ -152,28 +268,27 @@ JSON Format:
             difficulty,
             startedAt: admin.firestore.FieldValue.serverTimestamp(),
             status: 'in_progress',
-            tabSwitchCount: 0 // Initialize for optimized proctoring
+            tabSwitchCount: 0
         });
 
-    // Return sanitized questions (NO answers, NO explanations)
+    // Return sanitized questions (NO answers, NO explanations/solutions)
     const sanitizedQuestions = questions.map(q => ({
         id: q.id,
         text: q.text,
         options: q.options,
         tags: q.tags,
+        questionType: q.questionType,
+        difficulty: q.difficulty
         // ❌ NO correctAnswer
-        // ❌ NO explanation
+        // ❌ NO solution / explanation
     }));
 
-    return {
-        testId,
-        questions: sanitizedQuestions
-    };
+    return { testId, questions: sanitizedQuestions };
 });
 
 /**
  * Submit test answers — scoring happens server-side.
- * Correct answers and explanations are revealed ONLY after submission.
+ * Correct answers and 3-layer solutions are revealed ONLY after submission.
  */
 exports.submitTest = functions.https.onCall(async (data, context) => {
     if (!context.auth) {
@@ -187,7 +302,6 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
         throw new functions.https.HttpsError('invalid-argument', 'testId and answers are required');
     }
 
-    // Fetch correct answers from server-only collection
     const testDoc = await admin.firestore()
         .collection('_test_questions').doc(testId).get();
 
@@ -197,14 +311,12 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
 
     const testData = testDoc.data();
 
-    // Verify test belongs to user
     if (testData.createdBy !== userId) {
         throw new functions.https.HttpsError('permission-denied', 'Test does not belong to you');
     }
 
     const correctQuestions = testData.questions;
 
-    // Calculate score SERVER-SIDE
     let score = 0;
     const results = [];
 
@@ -221,7 +333,15 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
             userAnswer: userAnswer !== undefined ? userAnswer : null,
             isCorrect,
             correctAnswer: question.correctAnswer,
-            explanation: question.explanation,
+            // Return full 3-layer solution
+            solution: question.solution || {
+                correctAnswerReason: question.explanation || '',
+                sourceOfQuestion: 'General Knowledge',
+                approachToSolve: 'Review the concept related to this question.'
+            },
+            explanation: question.solution?.correctAnswerReason || question.explanation || '',
+            questionType: question.questionType,
+            difficulty: question.difficulty,
             tags: question.tags
         });
     });
@@ -229,13 +349,10 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
     const totalQuestions = correctQuestions.length;
     const accuracy = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
 
-    // ---------------------------------------------------------
-    // 4. Generate AI Study Suggestions (Personalized Feedback)
-    // ---------------------------------------------------------
+    // Generate AI Study Suggestions
     let suggestions = null;
 
     try {
-        // Construct a performance summary for the AI
         const performanceSummary = {
             topic: testData.topic,
             score,
@@ -245,7 +362,6 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
             strongAreas: results.filter(r => r.isCorrect).map(r => r.tags?.find(t => t.type === 'topic')?.label || 'General')
         };
 
-        // Aggregating unique topics for cleaner prompt
         const uniqueWeakAreas = [...new Set(performanceSummary.weakAreas)];
         const uniqueStrongAreas = [...new Set(performanceSummary.strongAreas)];
 
@@ -278,7 +394,6 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
         try {
             suggestions = JSON.parse(responseText);
         } catch {
-            // Fallback parsing if JSON is markdown-wrapped
             const jsonMatch = responseText.match(/\{[\s\S]*\}/);
             if (jsonMatch) {
                 suggestions = JSON.parse(jsonMatch[0]);
@@ -287,7 +402,6 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
 
     } catch (aiError) {
         console.error('Study suggestion generation failed:', aiError);
-        // Fail silently - do not block test submission for this
         suggestions = {
             focusOn: ['Review incorrect answers'],
             notFocusOn: [],
@@ -295,7 +409,7 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
         };
     }
 
-    // Save results to user's test history
+    // Save results
     await admin.firestore().collection('users').doc(userId)
         .collection('tests').doc(testId).set({
             score,
@@ -304,7 +418,7 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
             topic: testData.topic,
             difficulty: testData.difficulty,
             results,
-            suggestions, // New field
+            suggestions,
             timeLeft,
             totalDuration,
             timeTaken: totalDuration - timeLeft,
@@ -312,23 +426,19 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
             submittedAt: admin.firestore.FieldValue.serverTimestamp()
         });
 
-    // Update test session status
     await admin.firestore().collection('users').doc(userId)
         .collection('test_sessions').doc(testId).update({
             status: 'completed',
             completedAt: admin.firestore.FieldValue.serverTimestamp()
         });
 
-    // Clean up server-side questions (they're now in test results)
     await admin.firestore().collection('_test_questions').doc(testId).delete();
 
-    // ---------------------------------------------------------
-    // 5. Update User Stats & Streaks
-    // ---------------------------------------------------------
+    // Update User Stats & Streaks
     const userRef = admin.firestore().collection('users').doc(userId);
     await admin.firestore().runTransaction(async (transaction) => {
         const userDoc = await transaction.get(userRef);
-        if (!userDoc.exists) return; // Skip if user doc somehow missing
+        if (!userDoc.exists) return;
 
         const userData = userDoc.data();
         let stats = userData.stats || {
@@ -342,7 +452,7 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
         };
 
         const todayTimestamp = new Date();
-        todayTimestamp.setHours(0, 0, 0, 0); // Midnight local server time (or UTC depending on your standard)
+        todayTimestamp.setHours(0, 0, 0, 0);
         
         let newStreak = stats.streak || 0;
         let lastActive = stats.lastActiveDate ? stats.lastActiveDate.toDate() : null;
@@ -350,24 +460,18 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
         if (lastActive) {
             lastActive.setHours(0, 0, 0, 0);
             const diffTime = Math.abs(todayTimestamp - lastActive);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
             if (diffDays === 1) {
-                // Next consecutive day
                 newStreak += 1;
             } else if (diffDays > 1) {
-                // Streak broken
                 newStreak = 1;
-            } 
-            // If diffDays === 0, they already played today, maintain streak
+            }
         } else {
-            // First time playing
             newStreak = 1;
         }
 
         const longestStreak = Math.max(newStreak, stats.longestStreak || 0);
-
-        // Calculate XP (10 per correct answer, 2 per question attempted)
         const earnedXp = (score * 10) + (totalQuestions * 2);
 
         transaction.update(userRef, {
@@ -375,8 +479,8 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
             'stats.totalQuestions': admin.firestore.FieldValue.increment(totalQuestions),
             'stats.correctAnswers': admin.firestore.FieldValue.increment(score),
             'stats.xp': admin.firestore.FieldValue.increment(earnedXp),
-            'stats.streakDays': newStreak, // keeping frontend streakDays key consistent if needed, but in DB we'll update both for now
-            'stats.streak': newStreak, 
+            'stats.streakDays': newStreak,
+            'stats.streak': newStreak,
             'stats.longestStreak': longestStreak,
             'stats.lastActiveDate': admin.firestore.FieldValue.serverTimestamp()
         });
@@ -389,7 +493,7 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
         totalQuestions,
         accuracy,
         results,
-        suggestions, // Return to client
+        suggestions,
         timeTaken: totalDuration - timeLeft
     };
 });
