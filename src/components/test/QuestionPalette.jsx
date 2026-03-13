@@ -66,28 +66,40 @@ export const QuestionPalette = ({
     isZenMode
 }) => {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(false);
     const answeredCount = Object.keys(answers).length;
 
     return (
         <>
             {/* ─── Desktop Sidebar ─────────────────────────────── */}
-            <div className={`w-80 border-l border-slate-200 bg-slate-50/50 backdrop-blur-sm hidden lg:flex flex-col transition-all duration-300 ${isZenMode ? 'translate-x-full absolute right-0 h-full z-40' : ''}`}>
-                <div className="p-6 border-b border-slate-200/50 font-bold text-slate-800 flex justify-between items-center bg-white/50 shrink-0">
-                    <span className="flex items-center gap-2 text-sm">
-                        <Menu size={16} className="text-blue-500" />
-                        Question Palette
+            <div className={`border-l border-slate-200 bg-slate-50/50 backdrop-blur-sm hidden lg:flex flex-col transition-all duration-300 shrink-0 ${isZenMode ? 'translate-x-full absolute right-0 h-full z-40' : (isCollapsed ? 'w-16' : 'w-80')}`}>
+                {/* Header (Collapsed via conditional rendering of text) */}
+                <div className={`p-4 sm:p-6 border-b border-slate-200/50 font-bold text-slate-800 flex items-center bg-white/50 shrink-0 ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
+                    <span 
+                        className={`flex items-center gap-2 cursor-pointer hover:text-blue-600 transition-colors ${isCollapsed ? '' : 'text-sm'}`}
+                        onClick={() => setIsCollapsed(!isCollapsed)}
+                        title={isCollapsed ? "Open Question Palette" : "Collapse Palette"}
+                    >
+                        <Menu size={20} className="text-blue-500 hover:scale-110 transition-transform" />
+                        {!isCollapsed && <span>Question Palette</span>}
                     </span>
-                    <span className="text-[10px] font-extrabold bg-slate-200/50 text-slate-600 px-2 py-1 rounded-md uppercase tracking-wide">
-                        {answeredCount}/{test.length} Done
-                    </span>
+                    {!isCollapsed && (
+                        <span className="text-[10px] font-extrabold bg-slate-200/50 text-slate-600 px-2 py-1 rounded-md uppercase tracking-wide">
+                            {answeredCount}/{test.length} Done
+                        </span>
+                    )}
                 </div>
-                <PaletteGrid
-                    test={test}
-                    currentIndex={currentIndex}
-                    answers={answers}
-                    markedForReview={markedForReview}
-                    onNavigate={onNavigate}
-                />
+
+                {/* Grid Content - Fade out/hide when collapsed */}
+                <div className={`flex-1 flex flex-col min-h-0 transition-opacity duration-200 ${isCollapsed ? 'opacity-0 invisible overflow-hidden' : 'opacity-100'}`}>
+                    <PaletteGrid
+                        test={test}
+                        currentIndex={currentIndex}
+                        answers={answers}
+                        markedForReview={markedForReview}
+                        onNavigate={onNavigate}
+                    />
+                </div>
             </div>
 
             {/* ─── Mobile: Floating Trigger Button ─────────────── */}

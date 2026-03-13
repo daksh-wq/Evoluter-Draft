@@ -58,6 +58,15 @@ export const QuestionCard = ({
                                     {topicTag.label}
                                 </span>
                             )}
+                            {question.difficulty && (
+                                <span className={`text-[10px] font-bold uppercase px-2 py-1 rounded border tracking-wide ${
+                                    question.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
+                                    question.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                    'bg-green-50 text-green-600 border-green-100'
+                                }`}>
+                                    {question.difficulty}
+                                </span>
+                            )}
                         </div>
                     </div>
 
@@ -81,7 +90,12 @@ export const QuestionCard = ({
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100">
                 {/* Question Text with Statement Support */}
                 <div className="mb-6">
-                    {question.text.split(/(?=(?:^|\s)\d{1,2}\.\s)/g).map((part, i) => {
+                    {question.text
+                        .replace(/\s*\([a-eA-E]\)\s+[^()]+(?=\s*\([a-eA-E]\)|$)/g, '')
+                        .replace(/([a-z.?!])\s+(?=\d{1,2}\.\s)/gi, '$1\n')
+                        .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                        .split(/\n|(?=(?:^|\s)\d{1,2}\.\s)/g)
+                        .map((part, i) => {
                         const trimmed = part.trim();
                         const isStatement = /^\d{1,2}\./.test(trimmed);
 
@@ -96,7 +110,7 @@ export const QuestionCard = ({
                 </div>
 
                 {/* Options */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className={`grid ${question.options.some(opt => (opt?.split(' ').length || 0) > 8) ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'} gap-4`}>
                     {question.options.map((option, idx) => {
                         const isSelected = selectedAnswer === idx;
                         return (

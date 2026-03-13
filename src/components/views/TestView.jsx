@@ -200,7 +200,7 @@ const TestView = ({
                         </p>
                         <div className="bg-red-50 p-4 rounded-xl mb-6 border border-red-100">
                             <span className="block text-xs font-bold text-red-600 uppercase tracking-wide mb-1">Warning Count</span>
-                            <span className="text-3xl font-black text-red-700">{warningCount} / 4</span>
+                            <span className="text-3xl font-black text-red-700">{warningCount} / 3</span>
                         </div>
                         <button
                             onClick={() => setShowWarningModal(false)}

@@ -87,9 +87,10 @@ export function useTest() {
             setGenerationProgress(100);
             await new Promise(r => setTimeout(r, 500)); // Show 100% briefly
 
-            // 2. Setup Local State
-            const duration = count * 1.5 * 60; // 1.5 mins per question
-            setupTestSession(questions, duration);
+            // Calculate test duration: 1.2 minutes per question
+            let durationSeconds = Math.round(count * 1.2 * 60);
+
+            setupTestSession(questions, durationSeconds);
 
             // 3. Initialize History in Backend (Fire & Forget)
             if (auth.currentUser) {
@@ -116,8 +117,11 @@ export function useTest() {
     const startCustomTest = useCallback((questions, testName = 'Custom Test') => {
         setIsGeneratingTest(true);
         try {
-            const duration = questions.length * 1.5 * 60; // 1.5 mins per question
-            setupTestSession(questions, duration);
+            const count = questions.length;
+            // Calculate test duration: 1.2 minutes per question
+            let durationSeconds = Math.round(count * 1.2 * 60);
+            
+            setupTestSession(questions, durationSeconds);
             setActiveTestName(testName);
             setActiveTestId(`custom-${Date.now()}`);
 

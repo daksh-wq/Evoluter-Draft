@@ -5,7 +5,7 @@ import { db } from '../../services/firebase';
 import { useAuth } from '../../hooks';
 import {
     CheckCircle, XCircle, AlertCircle, ArrowLeft,
-    RefreshCw, Clock, Brain
+    RefreshCw, Clock, Brain, BookOpen
 } from 'lucide-react';
 import { formatTime } from '../../utils/helpers';
 import logger from '../../utils/logger';
@@ -178,7 +178,18 @@ const TestReviewView = () => {
                         return (
                             <div key={q.id || idx} className={`p-6 rounded-2xl border ${statusColor}`}>
                                 <div className="flex justify-between items-start mb-3">
-                                    <span className="text-xs font-bold text-slate-500 uppercase">Question {idx + 1}</span>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-xs font-bold text-slate-500 uppercase">Question {idx + 1}</span>
+                                        {q.difficulty && (
+                                            <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${
+                                                q.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
+                                                q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                                'bg-green-50 text-green-600 border-green-100'
+                                            }`}>
+                                                {q.difficulty}
+                                            </span>
+                                        )}
+                                    </div>
                                     <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${isCorrect
                                         ? 'bg-green-100 text-green-700'
                                         : isSkipped
@@ -188,7 +199,24 @@ const TestReviewView = () => {
                                         {isCorrect ? '✓ Correct' : isSkipped ? 'Skipped' : '✗ Incorrect'}
                                     </span>
                                 </div>
-                                <p className="font-medium text-slate-800 mb-4">{q.text}</p>
+                                <div className="mb-4">
+                                    {q.text
+                                        .replace(/([a-z.?!])\s+(?=\d{1,2}\.\s)/gi, '$1\n')
+                                        .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                        .split(/\n|(?=(?:^|\s)\d{1,2}\.\s)/g)
+                                        .map((part, i) => {
+                                        const trimmed = part.trim();
+                                        const isStatement = /^\d{1,2}\./.test(trimmed);
+
+                                        if (!trimmed) return null;
+
+                                        return (
+                                            <div key={i} className={`mb-2 ${isStatement ? 'pl-3 text-slate-700 font-medium bg-slate-50/50 p-2 rounded-lg border-l-2 border-slate-300 text-sm' : 'font-medium text-slate-800'}`}>
+                                                {trimmed}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                                 <div className="space-y-2">
                                     {q.options?.map((opt, i) => (
                                         <div
@@ -220,7 +248,28 @@ const TestReviewView = () => {
                                         </div>
                                     ))}
                                 </div>
-                                {q.explanation && (
+                                {q.solution ? (
+                                    <div className="mt-4 pt-4 border-t border-slate-200/50 space-y-3">
+                                        {q.solution.correct_explanation && (
+                                            <div>
+                                                <span className="font-bold text-slate-800 text-sm">Explanation:</span>
+                                                <p className="text-sm text-slate-600 mt-1">{q.solution.correct_explanation}</p>
+                                            </div>
+                                        )}
+                                        {q.solution.solving_approach && (
+                                            <div className="bg-blue-50/50 p-3 rounded-lg border border-blue-100">
+                                                <span className="font-bold text-blue-800 text-xs uppercase tracking-wider">💡 Solving Approach:</span>
+                                                <p className="text-sm text-blue-700 mt-1">{q.solution.solving_approach}</p>
+                                            </div>
+                                        )}
+                                        {q.solution.possible_source && (
+                                            <div className="flex items-start gap-2 text-xs text-slate-500 mt-2">
+                                                <BookOpen size={14} className="mt-0.5 shrink-0" />
+                                                <span><span className="font-semibold">Source:</span> {q.solution.possible_source}</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                ) : q.explanation && (
                                     <div className="mt-4 pt-4 border-t border-slate-200/50">
                                         <p className="text-sm text-slate-600">
                                             <span className="font-bold text-slate-800">Explanation: </span>

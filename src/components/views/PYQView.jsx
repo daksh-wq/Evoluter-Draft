@@ -2,14 +2,12 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { History, Search, Filter, PlayCircle, BookOpen, ChevronDown, X, Check } from 'lucide-react';
 import { PYQ_DATABASE } from '@/constants/pyqDatabase';
 
-// ── Year range buckets ────────────────────────────────────────────
+const currentYear = new Date().getFullYear();
 const YEAR_RANGES = [
-    { label: 'All Years', value: 'All' },
-    { label: '2022 – 2025', min: 2022, max: 2025 },
-    { label: '2019 – 2021', min: 2019, max: 2021 },
-    { label: '2016 – 2018', min: 2016, max: 2018 },
-    { label: '2013 – 2015', min: 2013, max: 2015 },
-    { label: '2010 – 2012', min: 2010, max: 2012 },
+    { label: 'All Years (2015+)', value: 'All', min: 2015, max: currentYear },
+    { label: 'Last 3 Years', min: currentYear - 2, max: currentYear },
+    { label: 'Last 5 Years', min: currentYear - 4, max: currentYear },
+    { label: 'Last 10 Years', min: Math.max(2015, currentYear - 9), max: currentYear }
 ];
 
 import { CustomDropdown } from '../common';
@@ -26,7 +24,7 @@ const YearRangeDropdown = ({ selected, onSelect }) => {
     }, []);
 
     const activeRange = YEAR_RANGES.find(r => r.label === selected) || YEAR_RANGES[0];
-    const isActive = selected !== 'All Years';
+    const isActive = selected !== 'All Years (2015+)';
 
     return (
         <div className="relative w-full sm:w-auto" ref={ref}>
@@ -42,7 +40,7 @@ const YearRangeDropdown = ({ selected, onSelect }) => {
                 <span>{activeRange.label}</span>
                 {isActive && (
                     <span
-                        onClick={(e) => { e.stopPropagation(); onSelect('All Years'); setOpen(false); }}
+                        onClick={(e) => { e.stopPropagation(); onSelect('All Years (2015+)'); setOpen(false); }}
                         className="ml-1 p-0.5 rounded-full bg-white/20 hover:bg-white/40 transition-colors"
                     >
                         <X size={10} />
@@ -79,7 +77,7 @@ const YearRangeDropdown = ({ selected, onSelect }) => {
 // ── Main Component ────────────────────────────────────────────────
 const PYQView = ({ startCustomTest }) => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedYearRange, setSelectedYearRange] = useState('All Years');
+    const [selectedYearRange, setSelectedYearRange] = useState('All Years (2015+)');
     const [selectedSubject, setSelectedSubject] = useState('All');
     const [selectedTopic, setSelectedTopic] = useState('All');
 
@@ -107,11 +105,11 @@ const PYQView = ({ startCustomTest }) => {
     }, [selectedYearRange, selectedSubject, selectedTopic, searchTerm]);
 
     const [visibleCount, setVisibleCount] = useState(10);
-    const hasActiveFilters = searchTerm || selectedYearRange !== 'All Years' || selectedSubject !== 'All' || selectedTopic !== 'All';
+    const hasActiveFilters = searchTerm || selectedYearRange !== 'All Years (2015+)' || selectedSubject !== 'All' || selectedTopic !== 'All';
 
     const clearAll = () => {
         setSearchTerm('');
-        setSelectedYearRange('All Years');
+        setSelectedYearRange('All Years (2015+)');
         setSelectedSubject('All');
         setSelectedTopic('All');
         setVisibleCount(10);
@@ -128,7 +126,7 @@ const PYQView = ({ startCustomTest }) => {
             if (textKey) seenTexts.add(textKey);
             return true;
         });
-        const testTitle = `UPSC PYQs - ${selectedSubject !== 'All' ? selectedSubject : 'Mixed'} (${selectedYearRange !== 'All Years' ? selectedYearRange : 'All Years'})`;
+        const testTitle = `UPSC PYQs - ${selectedSubject !== 'All' ? selectedSubject : 'Mixed'} (${selectedYearRange !== 'All Years (2015+)' ? selectedYearRange : 'All Years'})`;
         if (startCustomTest) startCustomTest(uniqueQuestions, testTitle);
     };
 
@@ -210,10 +208,10 @@ const PYQView = ({ startCustomTest }) => {
                 {/* Active filter tags */}
                 {hasActiveFilters && (
                     <div className="flex flex-wrap gap-2 pt-1 border-t border-slate-100">
-                        {selectedYearRange !== 'All Years' && (
+                        {selectedYearRange !== 'All Years (2015+)' && (
                             <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#2278B0]/5 text-[#2278B0] text-xs font-bold rounded-full border border-[#2278B0]/20">
                                 📅 {selectedYearRange}
-                                <button onClick={() => setSelectedYearRange('All Years')}><X size={10} /></button>
+                                <button onClick={() => setSelectedYearRange('All Years (2015+)')}><X size={10} /></button>
                             </span>
                         )}
                         {selectedSubject !== 'All' && (

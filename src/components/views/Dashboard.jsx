@@ -22,9 +22,8 @@ import { LoadingState } from '../dashboard/LoadingState';
 import { DEFAULT_QUESTION_COUNT, DEFAULT_DIFFICULTY } from '../../constants/appConstants';
 import { useDailyWisdom } from '../../hooks/useDailyWisdom';
 import { useExamDate } from '../../hooks/useExamDate';
-import { suggestTestTopics, previewQuestionsFromResource } from '../../services/geminiService';
+import { suggestTestTopics } from '../../services/geminiService';
 import { extractTextFromPDF } from '../../utils/pdfExtractor';
-
 /**
  * Dashboard Component
  * Main command center with stats, AI generator, and quick actions
@@ -93,31 +92,7 @@ const Dashboard = ({
         setUploadedResource(content);
         setResourceType(type);
         setResourceName(name);
-
-        try {
-            const preview = await previewQuestionsFromResource(content);
-            setPreviewQuestions(preview);
-        } catch (error) {
-            console.error('Preview error:', error);
-            if (error.message.includes("can't detect")) {
-                setPreviewError("The link can't detect any questions or resources.");
-            } else {
-                setPreviewError(error.message || 'Failed to generate preview from resource.');
-            }
-            setUploadedResource('');
-            setResourceType(null);
-            setResourceName('');
-        } finally {
-            setIsPreviewLoading(false);
-        }
-    };
-
-    const handleLinkPaste = (e) => {
-        const url = e.target.value.trim();
-        if (url && (url.startsWith('http://') || url.startsWith('https://'))) {
-            processResource(url, 'Link', url);
-            e.target.value = ''; // clear input
-        }
+        setIsPreviewLoading(false);
     };
 
     const handleFileUploadClick = () => {
@@ -373,24 +348,11 @@ const Dashboard = ({
                             </div>
 
                             {!resourceType ? (
-                                <div className="flex flex-col md:flex-row gap-3">
-                                    <div className="flex-1 relative">
-                                        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-300/50">
-                                            <LinkIcon size={16} />
-                                        </div>
-                                        <input
-                                            type="text"
-                                            placeholder="Paste a URL link to synthesize..."
-                                            onPaste={handleLinkPaste}
-                                            disabled={isPreviewLoading}
-                                            className="w-full bg-indigo-900/50 border border-indigo-800/50 text-white rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-50"
-                                        />
-                                    </div>
-                                    <div className="flex items-center justify-center text-blue-300/50 text-[10px] md:text-xs font-bold px-2 md:px-4 py-2 md:py-0">OR</div>
+                                <div className="flex flex-col gap-3">
                                     <button
                                         onClick={handleFileUploadClick}
                                         disabled={isPreviewLoading}
-                                        className="flex-1 bg-white/10 hover:bg-white/20 border border-white/10 text-white rounded-xl py-2.5 px-4 text-sm font-bold transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+                                        className="w-full bg-white/10 hover:bg-white/20 border border-white/10 text-white rounded-xl py-3 px-4 text-sm font-bold transition-all flex items-center justify-center gap-2 disabled:opacity-50"
                                     >
                                         <FileTextIcon size={16} />
                                         Upload PDF Document
@@ -399,7 +361,7 @@ const Dashboard = ({
                             ) : (
                                 <div className="flex items-center gap-3 bg-indigo-900/50 border border-indigo-800/50 rounded-xl p-3">
                                     <div className="p-2 bg-blue-500/20 rounded-lg text-blue-300">
-                                        {resourceType === 'Link' ? <LinkIcon size={20} /> : <FileTextIcon size={20} />}
+                                        <FileTextIcon size={20} />
                                     </div>
                                     <div className="flex-1 min-w-0">
                                         <div className="text-sm font-bold text-white truncate">{resourceName}</div>
@@ -411,11 +373,11 @@ const Dashboard = ({
                                 </div>
                             )}
 
-                            {/* Extract & Preview Loading */}
+                            {/* Extract Loading */}
                             {isPreviewLoading && (
                                 <div className="flex items-center gap-3 text-sm text-blue-200 mt-2 bg-blue-900/20 p-3 rounded-lg border border-blue-800/30">
                                     <RefreshCw className="animate-spin" size={16} />
-                                    Synthesizing Resource & Extracting AI Previews...
+                                    Synthesizing Resource...
                                 </div>
                             )}
 
@@ -424,26 +386,6 @@ const Dashboard = ({
                                 <div className="flex items-center gap-3 text-sm text-red-200 mt-2 bg-red-900/20 p-3 rounded-lg border border-red-800/30">
                                     <AlertTriangle size={16} className="text-red-400" />
                                     {previewError}
-                                </div>
-                            )}
-
-                            {/* Live Resource Preview Carousel */}
-                            {previewQuestions.length > 0 && !isPreviewLoading && (
-                                <div className="mt-2 flex flex-col gap-3">
-                                    <div className="text-xs font-bold text-blue-300 uppercase tracking-wider flex items-center gap-1.5">
-                                        <Eye size={12} /> Live Resource Preview Extraction
-                                    </div>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                        {previewQuestions.map((q, idx) => (
-                                            <div key={idx} className="bg-indigo-900/30 border border-indigo-800/50 rounded-xl p-4 relative flex flex-col gap-2">
-                                                <div className="absolute top-2 right-2 text-[10px] bg-blue-500/20 text-blue-300 px-1.5 py-0.5 rounded font-bold">Q{idx + 1}</div>
-                                                <p className="text-sm font-medium text-white line-clamp-2 pr-6">{q.text}</p>
-                                                <div className="text-xs text-blue-200/70 truncate">
-                                                    Options: {q.options.join(' • ')}
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
                                 </div>
                             )}
                         </div>
