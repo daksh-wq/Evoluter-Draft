@@ -13,6 +13,11 @@ import {
     X,
     Clock,
     Users,
+    UserCheck,
+    History,
+    BarChart2,
+    LayoutDashboard,
+    FileEdit,
 } from 'lucide-react';
 
 import logo from '../../assets/logo1.png';
@@ -27,6 +32,12 @@ const ICON_MAP = {
     Trophy,
     User,
     Users,
+    UserCheck,
+    History,
+    BarChart2,
+    LayoutDashboard,
+    FileEdit,
+    Zap,
     Clock,
 };
 

@@ -58,9 +58,17 @@ export const NAV_ITEMS = [
 
 export const INSTITUTION_NAV_ITEMS = [
     { id: 'institution/dashboard', label: 'Dashboard', icon: 'Target' },
+    { id: 'institution/students', label: 'Students', icon: 'UserCheck' },
     { id: 'institution/batches', label: 'Batches', icon: 'Users' },
     { id: 'institution/create-test', label: 'Create Test', icon: 'Zap' },
     { id: 'institution/tests', label: 'Test Management', icon: 'ListChecks' },
+];
+
+export const ADMIN_NAV_ITEMS = [
+    { id: 'admin', label: 'Dashboard', icon: 'LayoutDashboard' },
+    { id: 'admin/users', label: 'Users & Institutions', icon: 'Users' },
+    { id: 'admin/cms', label: 'Content (CMS)', icon: 'FileEdit' },
+    { id: 'admin/analytics', label: 'Analytics', icon: 'BarChart2' },
 ];
 
 // Topics for mock question generation

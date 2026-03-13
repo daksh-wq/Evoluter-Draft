@@ -63,6 +63,7 @@ const TestAnalytics = lazy(() => import('./components/institution/TestAnalytics'
 const InstitutionProfileView = lazy(() => import('./components/institution/InstitutionProfileView'));
 const ProfileView = lazy(() => import('./components/views/ProfileView'));
 const StudentClassroom = lazy(() => import('./components/student/StudentClassroom'));
+const InstitutionStudentManager = lazy(() => import('./components/institution/InstitutionStudentManager'));
 
 const ProtectedLayout = ({
   children,
@@ -375,7 +376,9 @@ function App() {
 
   const handleOnboardingComplete = (role) => {
     refreshUser();
-    if (role === 'institution') {
+    if (role === 'admin') {
+      navigate('/admin', { replace: true });
+    } else if (role === 'institution') {
       navigate('/institution/dashboard', { replace: true });
     } else {
       navigate(ROUTES.DASHBOARD, { replace: true });
@@ -431,6 +434,7 @@ function App() {
         } />
 
         <Route path={ROUTES.LOGIN} element={
+          isAuthenticated && userData?.role === 'admin' ? <Navigate to="/admin" replace /> :
           isAuthenticated ? <Navigate to={ROUTES.DASHBOARD} replace /> :
             <LoginView
               handleGoogleLogin={handleGoogleLogin}
@@ -452,7 +456,9 @@ function App() {
         {/* Protected Routes - Student */}
         <Route path={ROUTES.DASHBOARD} element={
           <ProtectedLayout {...layoutProps}>
-            {userData?.role === 'institution' ? (
+            {userData?.role === 'admin' ? (
+              <Navigate to="/admin" replace />
+            ) : userData?.role === 'institution' ? (
               <Navigate to="/institution/dashboard" replace />
             ) : (
               <Dashboard
@@ -579,6 +585,11 @@ function App() {
         <Route path="/institution/dashboard" element={
           <ProtectedLayout {...layoutProps}>
             <InstitutionDashboard userData={userData} />
+          </ProtectedLayout>
+        } />
+        <Route path="/institution/students" element={
+          <ProtectedLayout {...layoutProps}>
+            <InstitutionStudentManager userData={userData} />
           </ProtectedLayout>
         } />
         <Route path="/institution/batches" element={

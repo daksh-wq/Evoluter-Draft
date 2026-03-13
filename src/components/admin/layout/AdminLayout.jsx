@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../../constants/routes';
-import { useAuthContext } from '../../../contexts/AuthContext';
+import { useAuth } from '../../../hooks';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../services/firebase';
 import {
@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 
 const AdminLayout = ({ children }) => {
-    const { user, authLoading, handleLogout } = useAuthContext();
+    const { user, authLoading, handleLogout } = useAuth();
     const [isAdmin, setIsAdmin] = useState(null); // null = loading, false = unauthorized, true = authorized
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const location = useLocation();
@@ -30,12 +30,11 @@ const AdminLayout = ({ children }) => {
             }
 
             try {
-                // fast check: check if document exists in 'admins' collection
-                // This collection is read-only for authentication, writable only by master admin via console
-                const adminDocRef = doc(db, 'admins', user.uid);
-                const adminDoc = await getDoc(adminDocRef);
+                // Check role: 'admin' field on the user's own document in 'users' collection
+                const userDocRef = doc(db, 'users', user.uid);
+                const userDoc = await getDoc(userDocRef);
 
-                if (adminDoc.exists()) {
+                if (userDoc.exists() && userDoc.data().role === 'admin') {
                     setIsAdmin(true);
                 } else {
                     console.warn('User attempted to access admin area without privileges:', user.uid);
@@ -117,11 +116,11 @@ const AdminLayout = ({ children }) => {
                     <div className="p-4 border-t border-slate-800 bg-slate-950">
                         <div className="flex items-center gap-3 px-2 mb-4">
                             <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-white font-bold">
-                                {user.email?.[0].toUpperCase() || 'A'}
+                                {user?.email?.[0]?.toUpperCase() || 'A'}
                             </div>
                             <div className="flex-1 overflow-hidden">
-                                <p className="text-sm font-medium text-white truncate">{user.displayName || 'Admin User'}</p>
-                                <p className="text-xs text-slate-500 truncate">{user.email}</p>
+                                <p className="text-sm font-medium text-white truncate">{user?.displayName || 'Admin User'}</p>
+                                <p className="text-xs text-slate-500 truncate">{user?.email}</p>
                             </div>
                         </div>
                         <button

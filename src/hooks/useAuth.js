@@ -40,6 +40,9 @@ export function useAuth() {
     const isOnboardingComplete = useCallback((data) => {
         if (!data) return false;
 
+        // Admin always bypasses onboarding
+        if (data.role === 'admin') return true;
+
         // Institution Validation
         if (data.role === 'institution') {
             return !!(data.name && data.institutionProfile);
@@ -291,12 +294,15 @@ export function useAuth() {
         }
     }, [isOnboardingComplete]);
 
+    const isAdmin = userData?.role === 'admin';
+
     return {
         user,
         userData,
         isAuthenticated,
         authLoading,
         loginError,
+        isAdmin,
         isOnboardingComplete,
         handleGoogleLogin,
         handleEmailLogin,

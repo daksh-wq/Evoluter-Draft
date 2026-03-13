@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Users, Plus, Trash2, UserPlus, Search, X, Download, BookOpen, FileText } from 'lucide-react';
+import { Users, Plus, Trash2, UserPlus, Search, X, Download, BookOpen, FileText, ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../../services/firebase';
@@ -19,6 +19,12 @@ const BatchManager = ({ userData }) => {
     const [selectedStudent, setSelectedStudent] = useState(null);
     const emailInputRef = React.useRef(null);
 
+    // Institution Student Pool
+    const [studentPool, setStudentPool] = useState([]); // students from /institutions/{id}/students
+    const [selectedPoolStudents, setSelectedPoolStudents] = useState([]); // checked students to add
+    const [showStudentPicker, setShowStudentPicker] = useState(false);
+    const [poolSearch, setPoolSearch] = useState('');
+
     // Member Management
     const [members, setMembers] = useState([]);
     const [loadingMembers, setLoadingMembers] = useState(false);
@@ -29,7 +35,19 @@ const BatchManager = ({ userData }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         fetchBatches();
+        fetchStudentPool();
     }, [userData]);
+
+    const fetchStudentPool = async () => {
+        if (!userData?.uid) return;
+        try {
+            const q = query(collection(db, 'institutions', userData.uid, 'students'));
+            const snap = await getDocs(q);
+            setStudentPool(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+        } catch (error) {
+            logger.error('Failed to fetch student pool', error);
+        }
+    };
 
     const fetchBatches = async () => {
         if (!userData?.uid) return;
@@ -98,21 +116,24 @@ const BatchManager = ({ userData }) => {
         e.preventDefault();
         setInviteError('');
         setInviteSuccess('');
-        setLoadingMembers(true); // show loading state while processing
+        setLoadingMembers(true);
 
-        const emailInput = emailInputRef.current?.value?.trim();
-
-        if (!emailInput || !selectedBatch) {
-            setInviteError("Please enter valid email(s).");
-            setLoadingMembers(false);
-            return;
+        // Determine emails: prioritised from pool picker, fallback to email input
+        let emails = [];
+        if (selectedPoolStudents.length > 0) {
+            emails = selectedPoolStudents.map(s => s.studentEmail).filter(Boolean);
+        } else {
+            const emailInput = emailInputRef.current?.value?.trim();
+            if (!emailInput) {
+                setInviteError('Please select students or enter an email.');
+                setLoadingMembers(false);
+                return;
+            }
+            emails = emailInput.split(',').map(e => e.trim()).filter(e => e);
         }
 
-        // Parse comma-separated emails
-        const emails = emailInput.split(',').map(e => e.trim()).filter(e => e);
-
-        if (emails.length === 0) {
-            setInviteError("Please enter valid email(s).");
+        if (!selectedBatch) {
+            setInviteError('No batch selected.');
             setLoadingMembers(false);
             return;
         }
@@ -120,15 +141,12 @@ const BatchManager = ({ userData }) => {
         let successCount = 0;
         let errors = [];
 
-        // Process all invites
         for (const email of emails) {
             try {
-                // Check if already in members list visually first
                 if (members.some(m => m.studentEmail === email)) {
                     errors.push(`${email} (Already in batch)`);
                     continue;
                 }
-
                 await batchService.addStudentToBatch(selectedBatch.id, email);
                 successCount++;
             } catch (error) {
@@ -137,12 +155,11 @@ const BatchManager = ({ userData }) => {
             }
         }
 
-        // Construct final message
         if (successCount > 0) {
             setInviteSuccess(`Successfully added ${successCount} student(s).`);
             if (emailInputRef.current) emailInputRef.current.value = '';
-
-            // Refresh members & badges
+            setSelectedPoolStudents([]);
+            setShowStudentPicker(false);
             const memberData = await batchService.getBatchMembers(selectedBatch.id);
             setMembers(memberData);
             fetchBatches();
@@ -151,7 +168,7 @@ const BatchManager = ({ userData }) => {
         if (errors.length > 0) {
             setInviteError(`Failed to add:\n${errors.join('\n')}`);
         } else if (successCount === 0) {
-            setInviteError("No valid students were added.");
+            setInviteError('No valid students were added.');
         }
 
         setLoadingMembers(false);
@@ -278,16 +295,85 @@ const BatchManager = ({ userData }) => {
                                 <p className="text-xs text-slate-400 font-medium">Manage students in this batch</p>
                             </div>
 
-                            <form onSubmit={handleAddStudent} className="flex gap-2 w-full md:w-auto">
-                                <input
-                                    ref={emailInputRef}
-                                    type="text"
-                                    placeholder="Add emails (comma separated)..."
-                                    className="px-4 py-2 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 w-full md:w-64"
-                                />
-                                <button type="submit" className="bg-indigo-600 text-white px-4 py-2 rounded-xl font-bold text-sm hover:bg-indigo-700 transition-colors whitespace-nowrap flex items-center gap-1">
-                                    <UserPlus size={16} /> Add
-                                </button>
+                            <form onSubmit={handleAddStudent} className="flex flex-col gap-2 w-full md:w-auto">
+                                {studentPool.length > 0 ? (
+                                    <div className="relative">
+                                        <button
+                                            type="button"
+                                            onClick={() => { setShowStudentPicker(p => !p); setPoolSearch(''); }}
+                                            className="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-xl font-bold text-sm hover:bg-indigo-700 transition-colors"
+                                        >
+                                            <UserPlus size={16} />
+                                            Select Students ({selectedPoolStudents.length > 0 ? selectedPoolStudents.length + ' selected' : studentPool.length + ' in pool'})
+                                            <ChevronDown size={14} />
+                                        </button>
+
+                                        {showStudentPicker && (
+                                            <div className="absolute right-0 top-full mt-2 w-72 bg-white rounded-xl border border-slate-200 shadow-xl z-20">
+                                                <div className="p-3 border-b border-slate-100">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Search pool..."
+                                                        value={poolSearch}
+                                                        onChange={e => setPoolSearch(e.target.value)}
+                                                        className="w-full px-3 py-1.5 border border-slate-200 rounded-lg text-sm focus:outline-none"
+                                                    />
+                                                </div>
+                                                <div className="max-h-52 overflow-y-auto divide-y divide-slate-50">
+                                                    {studentPool
+                                                        .filter(s =>
+                                                            (s.studentName || '').toLowerCase().includes(poolSearch.toLowerCase()) ||
+                                                            (s.studentEmail || '').toLowerCase().includes(poolSearch.toLowerCase())
+                                                        )
+                                                        .filter(s => !members.some(m => m.studentEmail === s.studentEmail))
+                                                        .map(s => (
+                                                            <label key={s.id} className="flex items-center gap-3 px-3 py-2 hover:bg-slate-50 cursor-pointer">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    checked={selectedPoolStudents.some(p => p.id === s.id)}
+                                                                    onChange={e => {
+                                                                        if (e.target.checked) {
+                                                                            setSelectedPoolStudents(prev => [...prev, s]);
+                                                                        } else {
+                                                                            setSelectedPoolStudents(prev => prev.filter(p => p.id !== s.id));
+                                                                        }
+                                                                    }}
+                                                                    className="rounded accent-indigo-600"
+                                                                />
+                                                                <div>
+                                                                    <div className="text-sm font-semibold text-slate-800">{s.studentName}</div>
+                                                                    <div className="text-xs text-slate-400">{s.studentEmail}</div>
+                                                                </div>
+                                                            </label>
+                                                        ))
+                                                    }
+                                                </div>
+                                                {selectedPoolStudents.length > 0 && (
+                                                    <div className="p-3 border-t border-slate-100">
+                                                        <button
+                                                            type="submit"
+                                                            className="w-full py-2 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700"
+                                                        >
+                                                            Add {selectedPoolStudents.length} Student(s)
+                                                        </button>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <div className="flex gap-2">
+                                        <input
+                                            ref={emailInputRef}
+                                            type="text"
+                                            placeholder="Add emails (comma separated)..."
+                                            className="px-4 py-2 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 w-full md:w-64"
+                                        />
+                                        <button type="submit" className="bg-indigo-600 text-white px-4 py-2 rounded-xl font-bold text-sm hover:bg-indigo-700 transition-colors whitespace-nowrap flex items-center gap-1">
+                                            <UserPlus size={16} /> Add
+                                        </button>
+                                    </div>
+                                )}
                             </form>
                         </div>
 

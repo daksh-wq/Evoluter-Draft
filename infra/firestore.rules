@@ -14,35 +14,40 @@ service cloud.firestore {
       return isAuthenticated() && request.auth.uid == userId;
     }
 
+    // Check if the requester has role: "admin" on their user document
     function isAdmin() {
       return isAuthenticated() && 
-        exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
     }
 
     // ─── USER COLLECTIONS ─────────────────────────────────
     
     match /users/{userId} {
-      // Users can only read/write their own profile
-      allow read: if isOwner(userId) || isAdmin();
+      // Allow read for authenticated users to support "Add by Email" lookup
+      allow read: if isAuthenticated();
       
-      // On creation, restrict what kind of role can be set
+      // On creation, restrict what kind of role can be set (admin must be set manually in DB)
       allow create: if isOwner(userId) && (!request.resource.data.keys().hasAny(['role']) || request.resource.data.role in ['student', 'institution']);
-      allow delete: if isOwner(userId);
-      allow update: if (isOwner(userId) && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role', 'isVerified', 'stats'])) || (
+      allow delete: if isOwner(userId) || isAdmin();
+
+      // Users can update their own doc (except role/isVerified fields).
+      // Admin can update ANY user doc (e.g., maxStudentsAllowed, role).
+      allow update: if isAdmin() || (
+        isOwner(userId) && 
+        (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['role']) || !('role' in resource.data)) &&
+        (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['isVerified']) || !('isVerified' in resource.data))
+      ) || (
         isAuthenticated() && 
         request.resource.data.diff(resource.data).affectedKeys().hasOnly(['enrolledBatches'])
       );
 
       // ─── Subcollections ───
 
-      // Stats: Publicly readable for leaderboards? 
-      // For now, keep private or allow authenticated read if building a leaderboard
       match /stats/{document=**} {
         allow read: if isAuthenticated();
         allow write: if isOwner(userId);
       }
       
-      // Private Data (Syllabus, Docs, Tests)
       match /syllabus/{document=**} {
         allow read, write: if isOwner(userId);
       }
@@ -68,29 +73,28 @@ service cloud.firestore {
       }
       match /api_usage/{date} {
         allow read: if isOwner(userId);
-        allow write: if isOwner(userId); // Rate limiting logic should ideally be server-side
+        allow write: if isOwner(userId);
       }
     }
 
     // ─── INSTITUTION COLLECTIONS ──────────────────────────
 
     match /institutions/{instId} {
-      // Only the institution owner can write
-      allow write: if isOwner(instId);
-      
-      // Institution profile might need to be public for students to join?
+      // Institution owner or admin can write
+      allow write: if isOwner(instId) || isAdmin();
       allow read: if isAuthenticated(); 
       
+      // Students sub-collection: institution manages their own student pool
       match /students/{studentId} {
-        // Institution can read their students
-        allow read: if isOwner(instId) || request.auth.uid == studentId;
-        // Logic for joining uses Cloud Functions or specific requests usually
-        allow write: if isOwner(instId); 
+        // Institution owner, the student themselves, or admin can read
+        allow read: if isOwner(instId) || request.auth.uid == studentId || isAdmin();
+        // Institution owner or admin can write (add/remove students)
+        allow write: if isOwner(instId) || isAdmin();
       }
       
       match /tests/{testId} {
         allow read: if isAuthenticated(); // Students need to take tests
-        allow write: if isOwner(instId);
+        allow write: if isOwner(instId) || isAdmin();
       }
     }
 
@@ -105,7 +109,6 @@ service cloud.firestore {
     // Cached Tests (Performance/Scalability)
     match /cached_tests/{testId} {
       allow read: if isAuthenticated();
-      // Allow creation by authenticated users (AI generation)
       allow create: if isAuthenticated();
       allow update, delete: if false;
     }
@@ -123,7 +126,7 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // Admins
+    // Admins collection (legacy, kept for backward compat but not used for auth check)
     match /admins/{userId} {
       allow read: if isAuthenticated();
       allow write: if false;
@@ -133,22 +136,23 @@ service cloud.firestore {
     match /_test_questions/{testId} {
         allow read, write: if false;
     }
+
     // ─── Institution Tests ──────────────────────────────
     match /institution_tests/{testId} {
       allow read: if isAuthenticated();
       allow create: if isAuthenticated();
-      allow update, delete: if isOwner(resource.data.creatorId);
+      allow update, delete: if isOwner(resource.data.creatorId) || isAdmin();
     }
 
     // ─── Institution Batches ────────────────────────────
     match /institution_batches/{batchId} {
       allow read: if isAuthenticated();
       allow create: if isAuthenticated() && request.resource.data.creatorId == request.auth.uid;
-      allow update, delete: if isOwner(resource.data.creatorId);
+      allow update, delete: if isOwner(resource.data.creatorId) || isAdmin();
 
       match /members/{memberId} {
         allow read: if isAuthenticated();
-        allow write: if isOwner(get(/databases/$(database)/documents/institution_batches/$(batchId)).data.creatorId);
+        allow write: if isOwner(get(/databases/$(database)/documents/institution_batches/$(batchId)).data.creatorId) || isAdmin();
       }
     }
   }

@@ -13,7 +13,7 @@ service cloud.firestore {
 
     function isAdmin() {
       return isAuthenticated() && 
-        exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
     }
 
     // ─── User Documents ─────────────────────────────────
@@ -22,8 +22,9 @@ service cloud.firestore {
       // Allow read for authenticated users to support "Add by Email" lookup
       allow read: if isAuthenticated(); 
       allow create: if isOwner(userId);
-      allow delete: if isOwner(userId);
-      allow update: if isOwner(userId) || (
+      allow delete: if isOwner(userId) || isAdmin();
+      // Admin can update any user doc (e.g., to set maxStudentsAllowed, role changes via admin panel)
+      allow update: if isAdmin() || isOwner(userId) || (
         isAuthenticated() && 
         request.resource.data.diff(resource.data).affectedKeys().hasOnly(['enrolledBatches'])
       );
@@ -144,11 +145,29 @@ service cloud.firestore {
     match /institution_batches/{batchId} {
       allow read: if isAuthenticated(); // Students need to read to see their batches
       allow create: if isAuthenticated();
-      allow update, delete: if isOwner(resource.data.creatorId);
+      allow update, delete: if isOwner(resource.data.creatorId) || isAdmin();
 
       match /members/{memberId} {
         allow read: if isAuthenticated();
-        allow write: if isOwner(get(/databases/$(database)/documents/institution_batches/$(batchId)).data.creatorId);
+        allow write: if isOwner(get(/databases/$(database)/documents/institution_batches/$(batchId)).data.creatorId) || isAdmin();
+      }
+    }
+
+    // ─── Institution Student Pool ────────────────────────
+    match /institutions/{instId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(instId) || isAdmin();
+
+      match /students/{studentId} {
+        // Institution owner, the student themselves, or admin can read
+        allow read: if isOwner(instId) || request.auth.uid == studentId || isAdmin();
+        // Institution owner or admin can add/remove from their student pool
+        allow write: if isOwner(instId) || isAdmin();
+      }
+
+      match /tests/{testId} {
+        allow read: if isAuthenticated();
+        allow write: if isOwner(instId) || isAdmin();
       }
     }
   }
