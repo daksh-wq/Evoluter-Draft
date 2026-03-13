@@ -11,68 +11,20 @@ import {
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo1.png';
 
+import { PublicNavbar } from '../common';
+
 const HomeView = ({ onGetStarted, user, onLogout }) => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [faqOpen, setFaqOpen] = useState(null);
-    const [activeSection, setActiveSection] = useState('');
     const navigate = useNavigate();
 
-    // Smooth scroll handler for hash links
+    // Smooth scroll handler for buttons
     const scrollTo = (hash) => {
         const id = hash.replace('#', '');
         const el = document.getElementById(id);
         if (el) {
             el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-        setMobileMenuOpen(false);
     };
-
-    // Smart link handler: routes go through React Router, hashes scroll
-    const handleNavClick = (e, href) => {
-        e.preventDefault();
-        if (href.startsWith('#')) {
-            scrollTo(href);
-        } else if (href === '/dashboard' && !user) {
-            navigate('/login');
-        } else {
-            navigate(href);
-        }
-    };
-
-    useEffect(() => {
-        const sections = ['features', 'about', 'how-it-works', 'analytics', 'faq'];
-        const observerOptions = {
-            root: null,
-            rootMargin: '-20% 0px -70% 0px',
-            threshold: 0
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
-                }
-            });
-        }, observerOptions);
-
-        sections.forEach((id) => {
-            const el = document.getElementById(id);
-            if (el) observer.observe(el);
-        });
-
-        const handleScroll = () => {
-            if (window.scrollY < 100) {
-                setActiveSection('');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            observer.disconnect();
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
@@ -102,84 +54,11 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-0"
                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}
             />
-            {/* Navigation */}
-            <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-16">
-                        {/* Logo */}
-                        <button
-                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className="flex items-center space-x-3 focus:outline-none cursor-pointer"
-                        >
-                            <div className="w-24 h-24 rounded-xl flex items-center justify-center overflow-hidden">
-                                <img src={logo} alt="Evoluter Logo" className="w-full h-full object-contain" />
-                            </div>
-                        </button>
-
-                        {/* Desktop Navigation */}
-                        <div className="hidden md:flex items-center space-x-6">
-                            <NavLink href="/dashboard" onClick={handleNavClick}>Dashboard</NavLink>
-                            <NavLink href="#features" active={activeSection === 'features'} onClick={handleNavClick}>Why Us</NavLink>
-                            <NavLink href="#about" active={activeSection === 'about'} onClick={handleNavClick}>About Us</NavLink>
-                            <NavLink href="#how-it-works" active={activeSection === 'how-it-works'} onClick={handleNavClick}>How It Works</NavLink>
-                            <NavLink href="#analytics" active={activeSection === 'analytics'} onClick={handleNavClick}>Analytics</NavLink>
-                            <NavLink href="#faq" active={activeSection === 'faq'} onClick={handleNavClick}>FAQ</NavLink>
-                            {user ? (
-                                <button
-                                    onClick={onLogout}
-                                    className="ml-4 px-4 py-1.5 bg-red-50 hover:bg-red-100 text-red-600 border border-red-200 rounded-lg font-bold transition-all flex items-center space-x-2 text-xs"
-                                >
-                                    <LogOut size={14} />
-                                    <span>Logout</span>
-                                </button>
-                            ) : (
-                                <button
-                                    onClick={onGetStarted}
-                                    className="ml-4 px-5 py-2 bg-[#2278B0] hover:bg-[#1b5f8a] rounded-xl text-white font-bold transition-all shadow-lg shadow-[#2278B0]/20 hover:shadow-[#2278B0]/30 hover:-translate-y-0.5 text-sm"
-                                >
-                                    Get Started
-                                </button>
-                            )}
-                        </div>
-
-                        {/* Mobile Menu Button */}
-                        <button
-                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                        >
-                            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                        </button>
-                    </div>
-
-                    {/* Mobile Menu */}
-                    {mobileMenuOpen && (
-                        <div className="md:hidden pb-4 space-y-3 border-t border-gray-100 pt-4">
-                            <a href="/dashboard" onClick={(e) => handleNavClick(e, '/dashboard')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">Dashboard</a>
-                            <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">About Us</a>
-                            <a href="#features" onClick={(e) => handleNavClick(e, '#features')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">Why Us</a>
-                            <a href="#analytics" onClick={(e) => handleNavClick(e, '#analytics')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">Analytics</a>
-                            <a href="#how-it-works" onClick={(e) => handleNavClick(e, '#how-it-works')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">How It Works</a>
-                            <a href="#faq" onClick={(e) => handleNavClick(e, '#faq')} className="block text-gray-600 hover:text-gray-900 transition-colors text-sm">FAQ</a>
-                            {user ? (
-                                <button
-                                    onClick={onLogout}
-                                    className="w-full px-6 py-2 bg-red-50 hover:bg-red-100 text-red-600 border border-red-200 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 text-sm"
-                                >
-                                    <LogOut size={16} />
-                                    <span>Logout</span>
-                                </button>
-                            ) : (
-                                <button
-                                    onClick={onGetStarted}
-                                    className="w-full px-6 py-2 bg-[#2278B0] hover:bg-[#1b5f8a] rounded-lg text-white font-medium transition-colors shadow-lg shadow-[#2278B0]/20 text-sm"
-                                >
-                                    Get Started
-                                </button>
-                            )}
-                        </div>
-                    )}
-                </div>
-            </nav>
+            <PublicNavbar 
+                user={user} 
+                onLogout={onLogout} 
+                onGetStarted={onGetStarted} 
+            />
 
             {/* Hero Section */}
             <section className="min-h-screen flex items-center justify-center py-12 md:py-20 px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
@@ -228,13 +107,13 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                                 <span>{user ? "Go to Dashboard" : "Start Smart Practice"}</span>
                                 <Zap className="w-5 h-5 fill-white" />
                             </button>
-                            <button
-                                onClick={(e) => handleNavClick(e, '#analytics')}
-                                className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-white hover:bg-gray-50 border-2 border-[#2278B0]/20 rounded-xl font-bold text-[#2278B0] transition-all flex items-center justify-center space-x-3 text-lg"
-                            >
-                                <span>View Demo Analysis</span>
-                                <BarChart2 className="w-5 h-5" />
-                            </button>
+                             <button
+                                 onClick={() => scrollTo('#analytics')}
+                                 className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-white hover:bg-gray-50 border-2 border-[#2278B0]/20 rounded-xl font-bold text-[#2278B0] transition-all flex items-center justify-center space-x-3 text-lg"
+                             >
+                                 <span>View Demo Analysis</span>
+                                 <BarChart2 className="w-5 h-5" />
+                             </button>
                         </motion.div>
 
                         {/* Stats */}
@@ -869,7 +748,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                                     <li><FooterLink href="#features">AI Test Engine</FooterLink></li>
                                     <li><FooterLink href="/dashboard">Smart Library</FooterLink></li>
                                     {/* <li><FooterLink href="#">Mains Grading</FooterLink></li> */}
-                                    {/* <li><FooterLink href="#">Pricing</FooterLink></li> */}
+                                    <li><FooterLink href="/pricing">Pricing</FooterLink></li>
                                 </ul>
                             </div>
 

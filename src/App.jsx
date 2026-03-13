@@ -26,6 +26,8 @@ const AboutView = lazy(() => import('./components/views/AboutView'));
 const ContactView = lazy(() => import('./components/views/ContactView'));
 const PrivacyView = lazy(() => import('./components/views/PrivacyView'));
 const TermsView = lazy(() => import('./components/views/TermsView'));
+const PricingView = lazy(() => import('./components/views/PricingView'));
+const CheckoutView = lazy(() => import('./components/views/CheckoutView'));
 const AdminLayout = lazy(() => import('./components/admin/layout/AdminLayout'));
 const AdminDashboard = lazy(() => import('./components/admin/views/DashboardOverview'));
 const UserManagement = lazy(() => import('./components/admin/views/UserManagement'));
@@ -43,15 +45,10 @@ import { evaluateAnswer } from './services/geminiService';
 import { RefreshCw, Menu } from 'lucide-react';
 import logger from './utils/logger';
 import { handleError, ErrorSeverity, ErrorCategory } from './utils/errorHandler';
-import {
-  collection,
-  addDoc,
-  deleteDoc,
-  doc,
-  orderBy,
-  serverTimestamp,
-  onSnapshot,
-  query
+import { 
+  collection, query, orderBy, onSnapshot, 
+  addDoc, serverTimestamp, deleteDoc, doc, 
+  updateDoc, increment 
 } from 'firebase/firestore';
 import { db, storage } from './services/firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
@@ -332,8 +329,39 @@ function App() {
   };
 
   const handleGenerateAITest = async (topic, count, difficulty, resourceContent, pyqPercentage) => {
-    await startAITest(topic, count, difficulty, userData?.targetExam || 'UPSC CSE', resourceContent, pyqPercentage);
-    navigate(ROUTES.TEST);
+    if (!user) return;
+
+    const stats = userData?.stats || {};
+    const hasPremium = userData?.hasPremiumPlan || false;
+    const testsGenerated = stats.diagnosticTestsGenerated || 0;
+    const limit = hasPremium ? 20 : 3;
+
+    if (testsGenerated >= limit) {
+      if (!hasPremium) {
+        toast.error(
+          "You've reached the free limit of 3 tests. APPLY code 'EVOLUTER 2026' on the pricing page to get full access for 2 weeks!",
+          { duration: 6000 }
+        );
+        navigate(ROUTES.PRICING);
+      } else {
+        toast.error("You've reached your plan's limit of 20 diagnostic tests.");
+      }
+      return;
+    }
+
+    try {
+      await startAITest(topic, count, difficulty, userData?.targetExam || 'UPSC CSE', resourceContent, pyqPercentage);
+      
+      // Increment counter in Firestore
+      const userRef = doc(db, 'users', user.uid);
+      await updateDoc(userRef, {
+        'stats.diagnosticTestsGenerated': increment(1)
+      });
+      
+      navigate(ROUTES.TEST);
+    } catch (error) {
+      handleError(error, 'Failed to generate test. Please try again.', ErrorSeverity.USER_FACING);
+    }
   };
 
   const handleZenToggle = () => {
@@ -418,6 +446,8 @@ function App() {
         <Route path={ROUTES.CONTACT} element={<ContactView />} />
         <Route path={ROUTES.PRIVACY} element={<PrivacyView />} />
         <Route path={ROUTES.TERMS} element={<TermsView />} />
+        <Route path={ROUTES.PRICING} element={<PricingView />} />
+        <Route path={ROUTES.CHECKOUT} element={<CheckoutView />} />
 
         {/* Protected Routes - Student */}
         <Route path={ROUTES.DASHBOARD} element={

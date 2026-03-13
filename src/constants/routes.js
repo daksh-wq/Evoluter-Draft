@@ -15,6 +15,9 @@ export const ROUTES = {
     CONTACT: '/contact',
     PRIVACY: '/privacy',
     TERMS: '/terms',
+    PRICING: '/pricing',
+    CHECKOUT: '/checkout',
+
 
     // Protected Routes
     DASHBOARD: '/dashboard',
@@ -98,6 +101,16 @@ export const ROUTE_CONFIG = {
     //     icon: 'Trophy',
     //     requiresAuth: true,
     // },
+    [ROUTES.PRICING]: {
+        title: 'Pricing',
+        icon: 'CreditCard',
+        requiresAuth: false,
+    },
+    [ROUTES.CHECKOUT]: {
+        title: 'Checkout',
+        icon: 'ShoppingCart',
+        requiresAuth: false,
+    },
     [ROUTES.PROFILE]: {
         title: 'Profile',
         icon: 'User',

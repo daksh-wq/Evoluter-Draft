@@ -176,8 +176,8 @@ const Dashboard = ({
                         Command Center
                     </h1>
                     <p className="text-slate-500 text-sm sm:text-base font-medium flex items-center gap-1.5 flex-wrap">
-                        <span className="bg-[#2278B0]/10 text-[#2278B0] text-[10px] sm:text-xs px-2 py-0.5 rounded-full font-bold">
-                            PRO
+                        <span className={`text-[10px] sm:text-xs px-2 py-0.5 rounded-full font-bold ${userData?.hasPremiumPlan ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'bg-[#2278B0]/10 text-[#2278B0]'}`}>
+                            {userData?.hasPremiumPlan ? 'PREMIUM' : 'FREE PLAN'}
                         </span>
                         <span>Welcome back, Scholar.</span>
                     </p>

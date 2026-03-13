@@ -180,10 +180,39 @@ const ProfileView = ({ user, userData, onLogout }) => {
                         </h2>
                         <p className="text-slate-500 text-sm font-medium mb-4">{user?.email}</p>
 
-                        <div className="w-full text-center text-xs font-bold text-slate-500 mt-2">
+                        <div className="w-full text-center text-xs font-bold text-slate-500 mt-2 space-y-3">
                             <div className="bg-slate-50 p-3 rounded-xl border border-slate-100 w-full">
                                 <div className="text-orange-500 text-lg mb-1">{userData?.stats?.streakDays || 0}</div>
                                 CURRENT STREAK
+                            </div>
+
+                            <div className={`p-4 rounded-xl border w-full flex flex-col items-center gap-1 ${userData?.hasPremiumPlan ? 'bg-indigo-50 border-indigo-100' : 'bg-slate-50 border-slate-100'}`}>
+                                <div className="flex items-center gap-1.5 mb-1">
+                                    <div className={`w-2 h-2 rounded-full ${userData?.hasPremiumPlan ? 'bg-indigo-600 animate-pulse' : 'bg-slate-400'}`} />
+                                    <span className={`text-[10px] uppercase tracking-widest font-black ${userData?.hasPremiumPlan ? 'text-indigo-600' : 'text-slate-500'}`}>
+                                        {userData?.hasPremiumPlan ? 'Premium Active' : 'Free Tier'}
+                                    </span>
+                                </div>
+                                {userData?.hasPremiumPlan ? (
+                                    <>
+                                        <div className="bg-indigo-600 text-white text-[8px] font-black px-2 py-0.5 rounded-full mb-1">
+                                            2 WEEK FREE TRIAL
+                                        </div>
+                                        <div className="text-indigo-950 font-black text-xs">
+                                            {userData?.planType === '12mo' ? 'Full Marathon (12Mo)' : (userData?.planType === '6mo' ? 'Half Marathon (6Mo)' : 'Sprinter (3Mo)')}
+                                        </div>
+                                        <div className="text-[9px] text-indigo-400 font-bold mt-1">
+                                            Valid Until: {userData?.trialExpiresAt ? new Date(userData.trialExpiresAt).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : 'N/A'}
+                                        </div>
+                                    </>
+                                ) : (
+                                    <button 
+                                        onClick={() => navigate('/pricing')}
+                                        className="text-[9px] text-[#2278B0] underline font-black hover:text-[#1b5f8a] transition-colors"
+                                    >
+                                        UPGRADE FOR FULL ACCESS
+                                    </button>
+                                )}
                             </div>
                         </div>
                     </div>

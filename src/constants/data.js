@@ -40,6 +40,7 @@ export const DEFAULT_USER_STATS = {
         Science: 0,
         Geography: 0,
     },
+    diagnosticTestsGenerated: 0,
 };
 
 // Navigation menu items
