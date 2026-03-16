@@ -30,13 +30,15 @@ const TestAnalytics = () => {
 
                 // 2. Fetch Attempts
                 const attemptsRef = collection(db, 'institution_tests', testId, 'attempts');
-                const q = query(attemptsRef, orderBy('score', 'desc')); // Default sort by high score
-                const attemptsSnap = await getDocs(q);
+                const attemptsSnap = await getDocs(attemptsRef);
 
                 const attemptsList = [];
                 attemptsSnap.forEach(doc => {
                     attemptsList.push({ id: doc.id, ...doc.data() });
                 });
+
+                // Sort by high score
+                attemptsList.sort((a, b) => (b.score || 0) - (a.score || 0));
 
                 setAttempts(attemptsList);
 

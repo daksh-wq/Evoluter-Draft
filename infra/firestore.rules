@@ -141,7 +141,15 @@ service cloud.firestore {
     match /institution_tests/{testId} {
       allow read: if isAuthenticated();
       allow create: if isAuthenticated();
-      allow update, delete: if isOwner(resource.data.creatorId) || isAdmin();
+      allow update: if isAuthenticated(); // Students need to increment counts
+      allow delete: if isOwner(resource.data.creatorId) || isAdmin();
+
+      // Student attempt submissions
+      match /attempts/{attemptId} {
+        allow read: if isAuthenticated();
+        allow create: if isAuthenticated();
+        allow update, delete: if false;
+      }
     }
 
     // ─── Institution Batches ────────────────────────────
