@@ -40,16 +40,16 @@ const TestView = ({
         if (timeLeft <= 0 && !hasAutoSubmitted.current && test) {
             hasAutoSubmitted.current = true;
             logger.info('Test auto-submitted: timer expired');
-            endTest();
+            endTest(null, warningCount);
         }
-    }, [timeLeft, test, endTest]);
+    }, [timeLeft, test, endTest, warningCount]);
 
     // ─── Bug Fix: Auto-terminate at 4 proctoring warnings (3 warnings + 1 strike) ───────────
     useEffect(() => {
         if (warningCount >= 4 && !hasAutoSubmitted.current) {
             hasAutoSubmitted.current = true;
             logger.warn('Test auto-terminated: 4 proctoring violations');
-            endTest('Terminated due to multiple tab switches');
+            endTest('Terminated due to multiple tab switches', warningCount);
         }
     }, [warningCount, endTest]);
 
@@ -214,7 +214,7 @@ const TestView = ({
                 isZenMode={isZenMode}
                 toggleZenMode={toggleZenMode}
                 onExit={() => setShowExitModal(true)}
-                onSubmit={endTest}
+                onSubmit={() => endTest(null, warningCount)}
             />
 
             <div className="flex-1 flex overflow-hidden">
@@ -257,7 +257,7 @@ const TestView = ({
                     {/* Always show Submit button in Zen Mode for easy access, or when on the last question everywhere */}
                     {(isZenMode || isLastQuestion) && (
                         <button
-                            onClick={() => endTest()}
+                            onClick={() => endTest(null, warningCount)}
                             className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 shadow-lg shadow-green-600/20 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
                         >
                             <span className="hidden sm:inline">Submit Test</span>
@@ -297,7 +297,7 @@ const TestView = ({
                                 Continue Test
                             </button>
                             <button
-                                onClick={() => { setShowExitModal(false); endTest(); }}
+                                onClick={() => { setShowExitModal(false); endTest(null, warningCount); }}
                                 className="flex-1 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-red-600/20"
                             >
                                 Exit & Submit

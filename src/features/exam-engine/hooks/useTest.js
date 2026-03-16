@@ -191,7 +191,7 @@ export function useTest() {
     /**
      * Submit the test and calculate results
      */
-    const submitTest = useCallback(async (reasonInput = null) => {
+    const submitTest = useCallback(async (reasonInput = null, warningCount = 0) => {
         // Prevent React Event objects from leaking into Firestore when used directly in onClick
         const validReason = typeof reasonInput === 'string' ? reasonInput : null;
         if (!activeTest) return;
@@ -225,6 +225,7 @@ export function useTest() {
                         originalTestId: activeTestId,
                         terminationReason: validReason,
                         testName: isInstitutionTest ? activeTestName : undefined,
+                        warningCount: warningCount || 0,
                     }
                 );
 

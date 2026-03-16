@@ -123,7 +123,8 @@ export const testService = {
                     submittedAt: new Date(),
                     answers: answers || {},
                     status: options.terminationReason ? 'terminated' : 'completed',
-                    terminationReason: options.terminationReason || null
+                    terminationReason: options.terminationReason || null,
+                    warningCount: options.warningCount || 0,
                 }));
 
                 // B. Update Aggregates on Test Document
