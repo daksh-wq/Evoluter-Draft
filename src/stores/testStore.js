@@ -7,8 +7,8 @@ import { create } from 'zustand';
 const useTestStore = create((set) => ({
     // Test configuration
     selectedTopic: null,
-    selectedDifficulty: 'Hard',
-    selectedQuestionCount: 10,
+    selectedDifficulty: 'Intermediate',
+    selectedQuestionCount: 25,
 
     setTestConfig: (config) => set((state) => ({
         selectedTopic: config.topic ?? state.selectedTopic,
@@ -31,8 +31,8 @@ const useTestStore = create((set) => ({
     // Reset
     reset: () => set({
         selectedTopic: null,
-        selectedDifficulty: 'Hard',
-        selectedQuestionCount: 10,
+        selectedDifficulty: 'Intermediate',
+        selectedQuestionCount: 25,
         recentTests: [],
         isGenerating: false,
         generationProgress: 0,

@@ -33,8 +33,8 @@ const useUserStore = create((set, get) => ({
 
     // User preferences
     preferences: {
-        defaultDifficulty: 'Hard',
-        defaultQuestionCount: 10,
+        defaultDifficulty: 'Intermediate',
+        defaultQuestionCount: 25,
         notificationsEnabled: true,
         darkMode: false,
     },
@@ -68,8 +68,8 @@ const useUserStore = create((set, get) => ({
             },
         },
         preferences: {
-            defaultDifficulty: 'Hard',
-            defaultQuestionCount: 10,
+            defaultDifficulty: 'Intermediate',
+            defaultQuestionCount: 25,
             notificationsEnabled: true,
             darkMode: false,
         },

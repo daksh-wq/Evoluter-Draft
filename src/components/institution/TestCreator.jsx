@@ -35,8 +35,8 @@ const TestCreator = ({ userData }) => {
     const [genProgress, setGenProgress] = useState(0);
     const [genConfig, setGenConfig] = useState({
         topic: '',
-        count: 10,
-        difficulty: 'Hard',
+        count: 25,
+        difficulty: 'Intermediate',
         file: null
     });
 
@@ -691,7 +691,7 @@ const TestCreator = ({ userData }) => {
                                                 <CustomDropdown
                                                     options={[
                                                         { label: 'Easy', value: 'Easy' },
-                                                        { label: 'Medium', value: 'Medium' },
+                                                        { label: 'Medium', value: 'Intermediate' },
                                                         { label: 'Hard', value: 'Hard' }
                                                     ]}
                                                     value={genConfig.difficulty}
@@ -766,7 +766,7 @@ const TestCreator = ({ userData }) => {
                                                 <CustomDropdown
                                                     options={[
                                                         { label: 'Easy', value: 'Easy' },
-                                                        { label: 'Medium', value: 'Medium' },
+                                                        { label: 'Medium', value: 'Intermediate' },
                                                         { label: 'Hard', value: 'Hard' }
                                                     ]}
                                                     value={genConfig.difficulty}

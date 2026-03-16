@@ -17,7 +17,7 @@ export const TEST_CONFIG = {
         DEFAULT_QUESTION_COUNT: 25,
         MIN_QUESTION_COUNT: 5,
         MAX_QUESTION_COUNT: 100,
-        DEFAULT_DIFFICULTY: 'Hard',
+        DEFAULT_DIFFICULTY: 'Intermediate',
         TIME_PER_QUESTION_SECONDS: 90, // 1.5 minutes per question
     },
 

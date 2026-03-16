@@ -13,8 +13,8 @@ export const DIFFICULTY_LEVELS = ['Easy', 'Intermediate', 'Hard'];
 export const QUESTION_COUNTS = [10, 25, 50, 100];
 
 export const DEFAULT_AI_TOPIC = '';
-export const DEFAULT_QUESTION_COUNT = 10;
-export const DEFAULT_DIFFICULTY = 'Hard';
+export const DEFAULT_QUESTION_COUNT = 25;
+export const DEFAULT_DIFFICULTY = 'Intermediate';
 
 export const AI_CONFIG = {
     BATCH_SIZE: 10,

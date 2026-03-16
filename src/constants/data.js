@@ -43,14 +43,13 @@ export const DEFAULT_USER_STATS = {
     diagnosticTestsGenerated: 0,
 };
 
-// Navigation menu items
 export const NAV_ITEMS = [
     { id: 'dashboard', label: 'Dashboard', icon: 'Target' },
     { id: 'student/classroom', label: 'Classroom', icon: 'Users' },
     { id: 'library', label: 'Library', icon: 'BookOpen' },
     { id: 'pyqs', label: 'PYQs', icon: 'History' },
     { id: 'test-history', label: 'Test History', icon: 'Clock' },
-    { id: 'syllabus', label: 'Syllabus', icon: 'ListChecks' },
+    // { id: 'syllabus', label: 'Syllabus', icon: 'ListChecks' },
     // { id: 'news', label: 'Current Affairs', icon: 'Newspaper' },
     // { id: 'mains', label: 'Evaluator', icon: 'FileText' },
     // { id: 'leaderboard', label: 'Leaderboard', icon: 'Trophy' },
