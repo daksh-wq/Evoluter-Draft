@@ -1,11 +1,14 @@
 export const SUBJECTS = [
-    'Indian History',
     'Indian Polity',
+    'Ancient and Medieval History',
+    'Modern India',
+    'Indian Culture',
     'Geography',
-    'Economy',
+    'Economy of India',
     'Environment',
-    'Science & Tech',
-    'Current Affairs'
+    'Science and Technology',
+    'Current Affairs',
+    'Trivial'
 ];
 
 export const DIFFICULTY_LEVELS = ['Easy', 'Intermediate', 'Hard'];

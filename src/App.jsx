@@ -182,9 +182,20 @@ function App() {
     navigate(ROUTES.LOGIN);
   };
 
-  // Sanitize topicMastery: keep only the 5 canonical subjects.
-  // This instantly fixes any stale Firestore docs that accumulated >5 topics.
-  const CANONICAL_TOPICS = ['History', 'Economy', 'Polity', 'Science', 'Geography'];
+  // Sanitize topicMastery: keep only the 10 canonical subjects.
+  // This instantly fixes any stale Firestore docs that accumulated >10 topics.
+  const CANONICAL_TOPICS = [
+      'Indian Polity',
+      'Ancient and Medieval History',
+      'Modern India',
+      'Indian Culture',
+      'Geography',
+      'Economy of India',
+      'Environment',
+      'Science and Technology',
+      'Current Affairs',
+      'Trivial'
+  ];
   const rawStats = userData?.stats || DEFAULT_USER_STATS;
   const userStats = {
     ...rawStats,

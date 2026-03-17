@@ -110,29 +110,28 @@ const updateSyllabusProgress = async (uid, questions, userAnswers) => {
 };
 
 /**
- * The 5 canonical UPSC subjects that the Knowledge Graph tracks.
+ * The 10 canonical UPSC subjects that the Knowledge Graph tracks.
  * All raw AI-generated topic tags are normalized to one of these.
  */
-const CANONICAL_TOPICS = ['History', 'Economy', 'Polity', 'Science', 'Geography'];
+const CANONICAL_TOPICS = [
+    'Indian Polity',
+    'Ancient and Medieval History',
+    'Modern India',
+    'Indian Culture',
+    'Geography',
+    'Economy of India',
+    'Environment',
+    'Science and Technology',
+    'Current Affairs',
+    'Trivial'
+];
 
 /**
  * Keyword maps that map raw topic tags → canonical subjects.
  * Short-circuit order matters: more specific keys first.
  */
 const TOPIC_KEYWORD_MAP = {
-    History: [
-        'history', 'ancient', 'medieval', 'modern', 'revolt', 'mughal',
-        'vijayanagara', 'harappan', 'indus', 'colonial', 'freedom',
-        'gandhi', 'independence', 'british', 'maratha', 'sultanate',
-        'advent', 'european', 'social-religious', 'socio', 'reform',
-        'nationalism', '1857', 'historical', 'background'
-    ],
-    Economy: [
-        'economy', 'economic', 'fiscal', 'gdp', 'inflation', 'banking',
-        'finance', 'budget', 'monetary', 'rbi', 'market', 'planning',
-        'balance of payment', 'financial', 'financial markets'
-    ],
-    Polity: [
+    'Indian Polity': [
         'polity', 'constitution', 'constitutional', 'parliament', 'preamble',
         'fundamental', 'rights', 'directive', 'governor', 'president',
         'prime minister', 'judiciary', 'election', 'federal', 'union',
@@ -140,19 +139,40 @@ const TOPIC_KEYWORD_MAP = {
         'municipal', 'local', 'administrative', 'parliamentary', 'system',
         'public policy', 'governance'
     ],
-    Science: [
+    'Ancient and Medieval History': [
+        'ancient', 'medieval', 'harappan', 'indus', 'mughal', 'sultanate', 'vijayanagara', 'mauryan', 'gupta', 'chola'
+    ],
+    'Modern India': [
+        'modern', 'revolt', 'colonial', 'freedom', 'gandhi', 'independence', 'british', 'maratha', '1857', 'nationalism', 'history'
+    ],
+    'Indian Culture': [
+        'culture', 'art', 'architecture', 'heritage', 'dance', 'music', 'painting', 'literature', 'religion', 'philosophy'
+    ],
+    'Geography': [
+        'geography', 'geomorphology', 'climate', 'monsoon', 'river',
+        'mountain', 'plateau', 'ocean', 'earthquake', 'volcanic',
+        'indian geography', 'world geography'
+    ],
+    'Economy of India': [
+        'economy', 'economic', 'fiscal', 'gdp', 'inflation', 'banking',
+        'finance', 'budget', 'monetary', 'rbi', 'market', 'planning',
+        'balance of payment', 'financial'
+    ],
+    'Environment': [
+        'environment', 'ecology', 'biodiversity', 'ecosystem', 'pollution', 'food security', 'sustainable', 'climate change', 'conservation', 'wildlife'
+    ],
+    'Science and Technology': [
         'science', 'technology', 'biology', 'chemistry', 'physics',
         'space', 'health', 'disease', 'nutrition', 'material', 'energy',
         'nuclear', 'it', 'computer', 'biotech', 'nano', 'defence',
         'innovation', 'research', 'isro', 'ai', 'robots'
     ],
-    Geography: [
-        'geography', 'geomorphology', 'climate', 'monsoon', 'river',
-        'mountain', 'plateau', 'ocean', 'earthquake', 'volcanic',
-        'indian geography', 'world geography', 'environment', 'ecology',
-        'biodiversity', 'ecosystem', 'pollution', 'food security',
-        'sustainable', 'international', 'relations', 'foreign', 'border'
+    'Current Affairs': [
+        'current', 'affairs', 'international', 'relations', 'foreign', 'border', 'news', 'recent'
     ],
+    'Trivial': [
+        'trivia', 'general', 'miscellaneous', 'other'
+    ]
 };
 
 /**

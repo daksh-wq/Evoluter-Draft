@@ -95,6 +95,13 @@ const TestHistoryView = () => {
                 const accB = b.totalQuestions ? (b.correct || 0) / b.totalQuestions : 0;
                 return accB - accA;
             });
+        } else if (sortBy === 'date') {
+            // Explicitly sort by date (latest to oldest) to ensure correct order
+            result = [...result].sort((a, b) => {
+                const dateA = a.completedAt?.toDate ? a.completedAt.toDate().getTime() : new Date(a.completedAt || 0).getTime();
+                const dateB = b.completedAt?.toDate ? b.completedAt.toDate().getTime() : new Date(b.completedAt || 0).getTime();
+                return dateB - dateA; // Descending
+            });
         }
 
         return result;

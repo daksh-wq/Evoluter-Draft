@@ -13,7 +13,9 @@ import logo from '../../assets/logo1.png';
  */
 const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, authLoading, loginError }) => {
     // Modes: 'signin', 'signup', 'institution'
-    const [authMode, setAuthMode] = useState('signin');
+    const [displayMode, setDisplayMode] = useState('signin');
+    const [flipState, setFlipState] = useState('idle'); // 'idle' | 'out' | 'in'
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -28,16 +30,31 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
         const roleIntent = params.get('role');
 
         if (roleIntent === 'institution') {
-            setAuthMode('institution');
+            setDisplayMode('institution');
             sessionStorage.setItem('onboarding_role_intent', 'institution');
         } else {
             sessionStorage.removeItem('onboarding_role_intent');
         }
     }, [location]);
 
-    // Handle Tab Switching
-    const handleTabChange = (mode) => {
-        setAuthMode(mode);
+    // Handle Tab/Mode Switching
+    const handleModeChange = (mode) => {
+        if (mode === displayMode) return;
+
+        if ((displayMode === 'signin' && mode !== 'signin') || 
+            (displayMode !== 'signin' && mode === 'signin')) {
+            setFlipState('out');
+            setTimeout(() => {
+                setDisplayMode(mode);
+                setFlipState('in');
+                setTimeout(() => {
+                    setFlipState('idle');
+                }, 250);
+            }, 250);
+        } else {
+            setDisplayMode(mode);
+        }
+
         if (mode === 'institution') {
             sessionStorage.setItem('onboarding_role_intent', 'institution');
         } else if (mode === 'signup') {
@@ -60,7 +77,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (authMode === 'signin') {
+        if (displayMode === 'signin') {
             handleEmailLogin(formData.email, formData.password);
         } else {
             // Both signup and institution modes use email signup
@@ -104,6 +121,20 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
 
     return (
         <div className="min-h-screen h-full w-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-100 via-slate-50 to-orange-50 flex items-center justify-center p-6 font-sans text-slate-800 relative overflow-y-auto">
+            <style>
+                {`
+                @keyframes flipOut {
+                    from { transform: perspective(1000px) rotateY(0deg); opacity: 1; }
+                    to { transform: perspective(1000px) rotateY(90deg); opacity: 0; }
+                }
+                @keyframes flipIn {
+                    from { transform: perspective(1000px) rotateY(-90deg); opacity: 0; }
+                    to { transform: perspective(1000px) rotateY(0deg); opacity: 1; }
+                }
+                .flip-out { animation: flipOut 0.25s ease-in forwards; }
+                .flip-in { animation: flipIn 0.25s ease-out forwards; }
+                `}
+            </style>
             {/* Background Decor */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-[#2278B0]/10 rounded-full blur-3xl animate-pulse" />
@@ -115,7 +146,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                 <Home size={20} className="group-hover:scale-110 transition-transform" />
             </Link>
 
-            <div className="w-full max-w-md bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50 p-8 md:p-10 animate-in fade-in zoom-in duration-500 relative z-10 mt-16 md:mt-0">
+            <div className={`w-full max-w-md bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50 p-8 md:p-10 relative z-10 mt-16 md:mt-0 ${flipState === 'out' ? 'flip-out' : flipState === 'in' ? 'flip-in' : 'animate-in fade-in zoom-in duration-500'}`}>
 
                 {/* Logo & Header */}
                 <div className="text-center mb-8">
@@ -123,39 +154,35 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                         <img src={logo} alt="Evoluter" className="w-full h-full object-contain" />
                     </div>
                     <h1 className="text-2xl font-black text-slate-900 tracking-tight mb-1">
-                        {authMode === 'signin' ? "Welcome Back" : (authMode === 'institution' ? "Partner with Us" : "Join the Evolution")}
+                        {displayMode === 'signin' ? "Welcome Back" : (displayMode === 'institution' ? "Partner with Us" : "Join the Evolution")}
                     </h1>
                     <p className="text-slate-500 text-sm font-medium">
-                        {authMode === 'institution' ? "Institution Portal" : "Intelligent Exam Ecosystem"}
+                        {displayMode === 'institution' ? "Institution Portal" : "Intelligent Exam Ecosystem"}
                     </p>
                 </div>
 
-                {/* Tab Switcher */}
-                <div className="flex p-1 bg-slate-50 rounded-xl mb-6 border border-slate-100 relative">
-                    {/* Sign In */}
-                    <button
-                        onClick={() => handleTabChange('signin')}
-                        className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 ${authMode === 'signin' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
-                    >
-                        Login
-                    </button>
+                {/* Tab Switcher - Only display for signup modes */}
+                {displayMode !== 'signin' && (
+                    <div className="flex p-1 bg-slate-50 rounded-xl mb-6 border border-slate-100 relative">
+                        {/* Student Signup */}
+                        <button
+                            type="button"
+                            onClick={() => handleModeChange('signup')}
+                            className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 ${displayMode === 'signup' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                        >
+                            Student
+                        </button>
 
-                    {/* Student Signup */}
-                    <button
-                        onClick={() => handleTabChange('signup')}
-                        className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 ${authMode === 'signup' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
-                    >
-                        Student
-                    </button>
-
-                    {/* Institution Signup - Highlighted */}
-                    <button
-                        onClick={() => handleTabChange('institution')}
-                        className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 flex items-center justify-center gap-1 ${authMode === 'institution' ? 'bg-indigo-950 text-white shadow-sm' : 'text-indigo-900/60 hover:text-indigo-900'}`}
-                    >
-                        Institution
-                    </button>
-                </div>
+                        {/* Institution Signup */}
+                        <button
+                            type="button"
+                            onClick={() => handleModeChange('institution')}
+                            className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 flex items-center justify-center gap-1 ${displayMode === 'institution' ? 'bg-indigo-950 text-white shadow-sm' : 'text-indigo-900/60 hover:text-indigo-900'}`}
+                        >
+                            Institution
+                        </button>
+                    </div>
+                )}
 
                 {/* Error Message */}
                 {loginError && (
@@ -166,7 +193,8 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                         </div>
                         {loginError === 'Account already exists. Please Sign In.' && (
                             <button
-                                onClick={() => handleTabChange('signin')}
+                                type="button"
+                                onClick={() => handleModeChange('signin')}
                                 className="self-start text-xs text-white bg-red-500 hover:bg-red-600 px-3 py-1.5 rounded-lg transition-colors font-bold"
                             >
                                 Go to Login
@@ -177,14 +205,14 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
 
                 {/* Auth Form */}
                 <form onSubmit={handleSubmit} className="space-y-4">
-                    {authMode !== 'signin' && (
+                    {displayMode !== 'signin' && (
                         <div className="relative animate-in slide-in-from-top-2 duration-300">
-                            {authMode === 'institution' ? <Building2 size={18} className="absolute left-4 top-3.5 text-slate-400" /> : <User size={18} className="absolute left-4 top-3.5 text-slate-400" />}
+                            {displayMode === 'institution' ? <Building2 size={18} className="absolute left-4 top-3.5 text-slate-400" /> : <User size={18} className="absolute left-4 top-3.5 text-slate-400" />}
                             <input
                                 type="text"
                                 name="name"
                                 autoComplete="name"
-                                placeholder={authMode === 'institution' ? "Institution Name" : "Full Name"}
+                                placeholder={displayMode === 'institution' ? "Institution Name" : "Full Name"}
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
@@ -213,7 +241,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                         <input
                             type="password"
                             name="password"
-                            autoComplete={authMode === 'signin' ? "current-password" : "new-password"}
+                            autoComplete={displayMode === 'signin' ? "current-password" : "new-password"}
                             placeholder="Password"
                             value={formData.password}
                             onChange={handleChange}
@@ -224,7 +252,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                     </div>
 
                     {/* Forgot Password Link - Only for Sign In */}
-                    {authMode === 'signin' && (
+                    {displayMode === 'signin' && (
                         <div className="text-right">
                             <button
                                 type="button"
@@ -239,32 +267,43 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                     <button
                         type="submit"
                         disabled={authLoading}
-                        className={`w-full text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 mt-2 disabled:opacity-70 disabled:cursor-not-allowed ${authMode === 'institution' ? 'bg-indigo-950 hover:bg-indigo-900' : 'bg-[#2278B0] hover:bg-[#1b5f8a]'}`}
+                        className={`w-full text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 mt-2 disabled:opacity-70 disabled:cursor-not-allowed ${displayMode === 'institution' ? 'bg-indigo-950 hover:bg-indigo-900' : 'bg-[#2278B0] hover:bg-[#1b5f8a]'}`}
                     >
                         {authLoading ? (
                             <RefreshCw size={18} className="animate-spin" />
                         ) : (
                             <>
-                                {authMode === 'signin' ? 'Login' : (authMode === 'institution' ? 'Register Institution' : 'Create Student Account')} <ArrowRight size={18} />
+                                {displayMode === 'signin' ? 'Login' : (displayMode === 'institution' ? 'Register Institution' : 'Create Student Account')} <ArrowRight size={18} />
                             </>
                         )}
                     </button>
 
-                    {/* Already have an account? Link */}
-                    {authMode !== 'signin' && (
-                        <div className="text-center mt-4">
+                    {/* Toggle between Sign In / Sign Up */}
+                    <div className="text-center mt-4">
+                        {displayMode !== 'signin' ? (
                             <p className="text-sm text-slate-500 font-medium">
                                 Already have an account?{' '}
                                 <button
                                     type="button"
-                                    onClick={() => handleTabChange('signin')}
+                                    onClick={() => handleModeChange('signin')}
                                     className="text-[#2278B0] hover:text-[#1a5f8a] hover:underline font-bold transition-colors"
                                 >
                                     Login
                                 </button>
                             </p>
-                        </div>
-                    )}
+                        ) : (
+                            <p className="text-sm text-slate-500 font-medium">
+                                Don't have an account?{' '}
+                                <button
+                                    type="button"
+                                    onClick={() => handleModeChange('signup')}
+                                    className="text-[#2278B0] hover:text-[#1a5f8a] hover:underline font-bold transition-colors"
+                                >
+                                    Sign Up
+                                </button>
+                            </p>
+                        )}
+                    </div>
                 </form>
 
                 <div className="my-6 flex items-center gap-4">

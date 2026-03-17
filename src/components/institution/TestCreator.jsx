@@ -9,7 +9,7 @@ import { extractTextFromPDF } from '../../utils/pdfExtractor';
 import { batchService } from '../../features/exam-engine/services/batchService';
 import { CustomDropdown } from '../common';
 import { toast } from '../../utils/toast';
-
+import { SUBJECTS } from '../../constants/appConstants';
 const TestCreator = ({ userData }) => {
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();
@@ -23,7 +23,7 @@ const TestCreator = ({ userData }) => {
     // Test Metadata
     const [title, setTitle] = useState('');
     const [subject, setSubject] = useState('General');
-    const [duration, setDuration] = useState(60);
+    const [subTopic, setSubTopic] = useState('');
 
     // Questions State
     const [questions, setQuestions] = useState([
@@ -390,9 +390,9 @@ const TestCreator = ({ userData }) => {
             <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-1 sm:gap-4 shrink-0">
-                        <button onClick={() => navigate(-1)} className="p-2 hover:bg-slate-100 rounded-full text-slate-500 transition-colors -ml-2 sm:ml-0 shrink-0">
+                        {/* <button onClick={() => navigate(-1)} className="p-2 hover:bg-slate-100 rounded-full text-slate-500 transition-colors -ml-2 sm:ml-0 shrink-0">
                             <ArrowLeft size={20} />
-                        </button>
+                        </button> */}
                         <h1 className="text-[17px] sm:text-xl font-bold text-slate-800 flex items-center gap-1.5 sm:gap-2 whitespace-nowrap min-w-max">
                             <span className="bg-indigo-100 text-indigo-700 p-1.5 rounded-lg shrink-0"><FileText size={16} className="sm:w-[18px] sm:h-[18px]" /></span>
                             Test Creator
@@ -430,7 +430,7 @@ const TestCreator = ({ userData }) => {
                         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
                             <div className="flex items-center gap-2 text-slate-800 font-bold text-lg border-b border-slate-100 pb-3">
                                 <Settings size={20} className="text-slate-400" />
-                                Basic Details
+                                Test Details
                             </div>
 
                             <div className="space-y-4">
@@ -446,30 +446,56 @@ const TestCreator = ({ userData }) => {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
                                         <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Subject</label>
-                                        <input
-                                            placeholder="Subject"
+                                        <CustomDropdown
+                                            options={[
+                                                { label: 'General', value: 'General' },
+                                                ...SUBJECTS.map(s => ({ label: s, value: s }))
+                                            ]}
                                             value={subject}
-                                            onChange={(e) => setSubject(e.target.value)}
-                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium text-slate-700 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
+                                            onChange={(val) => setSubject(val)}
+                                            fullWidth={true}
                                         />
                                     </div>
                                     <div>
-                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Duration</label>
+                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Sub-Topic</label>
+                                        <input
+                                            placeholder="e.g. Indus Valley & Vedic Period"
+                                            value={subTopic}
+                                            onChange={(e) => setSubTopic(e.target.value)}
+                                            className="w-full text-sm bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-semibold text-slate-800 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="grid grid-cols-2 gap-3">
+                                    <div>
+                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Count</label>
                                         <CustomDropdown
                                             options={[
-                                                { label: '15 Mins', value: '15' },
-                                                { label: '30 Mins', value: '30' },
-                                                { label: '1 Hour', value: '60' },
-                                                { label: '1.5 Hours', value: '90' },
-                                                { label: '2 Hours', value: '120' },
-                                                { label: '3 Hours', value: '180' }
+                                                { label: '10 Qs', value: '10' },
+                                                { label: '25 Qs', value: '25' },
+                                                { label: '50 Qs', value: '50' },
+                                                { label: '100 Qs', value: '100' }
                                             ]}
-                                            value={String(duration)}
-                                            onChange={(val) => setDuration(val)}
+                                            value={String(genConfig.count)}
+                                            onChange={(val) => setGenConfig({ ...genConfig, count: val })}
+                                            fullWidth={true}
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Difficulty</label>
+                                        <CustomDropdown
+                                            options={[
+                                                { label: 'Easy', value: 'Easy' },
+                                                { label: 'Intermediate', value: 'Intermediate' },
+                                                { label: 'Hard', value: 'Hard' }
+                                            ]}
+                                            value={genConfig.difficulty}
+                                            onChange={(val) => setGenConfig({ ...genConfig, difficulty: val })}
                                             fullWidth={true}
                                         />
                                     </div>
                                 </div>
+
                             </div>
                         </div>
 
@@ -538,59 +564,7 @@ const TestCreator = ({ userData }) => {
                     {/* Row 2: Schedule & Generator */}
                     <div className="grid grid-cols-1 xl:grid-cols-2 items-start gap-6 lg:gap-8">
 
-                        {/* 1.75 Scheduling */}
-                        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
-                            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                                <div className="flex items-center gap-2 text-slate-800 font-bold text-lg">
-                                    <Calendar size={20} className="text-slate-400" />
-                                    Schedule
-                                </div>
-                                <button
-                                    type="button"
-                                    onClick={() => setEnableSchedule(!enableSchedule)}
-                                    className={`relative w-11 h-6 rounded-full transition-colors duration-200 ${enableSchedule ? 'bg-indigo-600' : 'bg-slate-200'
-                                        }`}
-                                >
-                                    <span className={`block w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${enableSchedule ? 'translate-x-[22px]' : 'translate-x-[2px]'
-                                        }`} />
-                                </button>
-                            </div>
-
-                            {!enableSchedule && (
-                                <p className="text-xs text-slate-400">Test will go live immediately after publishing.</p>
-                            )}
-
-                            {enableSchedule && (
-                                <div className="animate-in slide-in-from-top-2 duration-200 space-y-4">
-                                    <div>
-                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Starts At</label>
-                                        <input
-                                            type="datetime-local"
-                                            value={scheduledStart}
-                                            onChange={(e) => setScheduledStart(e.target.value)}
-                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium text-slate-700 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Ends At</label>
-                                        <input
-                                            type="datetime-local"
-                                            value={scheduledEnd}
-                                            onChange={(e) => setScheduledEnd(e.target.value)}
-                                            min={scheduledStart || undefined}
-                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium text-slate-700 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
-                                        />
-                                    </div>
-                                    {scheduledStart && scheduledEnd && new Date(scheduledEnd) > new Date(scheduledStart) && (
-                                        <div className="bg-indigo-50 text-indigo-700 text-xs font-bold p-3 rounded-xl">
-                                            Window: {new Date(scheduledStart).toLocaleString()} → {new Date(scheduledEnd).toLocaleString()}
-                                        </div>
-                                    )}
-                                </div>
-                            )}
-                        </div>
-
-                        {/* 2. Mode Selection & Input */}
+                        {/* 1. Mode Selection & Input */}
                         <div className="bg-white rounded-2xl shadow-sm border border-slate-200">
                             <div className="p-1 bg-slate-50 m-2 rounded-xl flex flex-col sm:flex-row gap-1">
                                 {[
@@ -670,36 +644,6 @@ const TestCreator = ({ userData }) => {
                                                 )}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-2 gap-3">
-                                            <div>
-                                                <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Count</label>
-                                                <CustomDropdown
-                                                    options={[
-                                                        { label: '5 Qs', value: '5' },
-                                                        { label: '10 Qs', value: '10' },
-                                                        { label: '25 Qs', value: '25' },
-                                                        { label: '50 Qs', value: '50' },
-                                                        { label: '100 Qs', value: '100' }
-                                                    ]}
-                                                    value={String(genConfig.count)}
-                                                    onChange={(val) => setGenConfig({ ...genConfig, count: val })}
-                                                    fullWidth={true}
-                                                />
-                                            </div>
-                                            <div>
-                                                <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Difficulty</label>
-                                                <CustomDropdown
-                                                    options={[
-                                                        { label: 'Easy', value: 'Easy' },
-                                                        { label: 'Medium', value: 'Intermediate' },
-                                                        { label: 'Hard', value: 'Hard' }
-                                                    ]}
-                                                    value={genConfig.difficulty}
-                                                    onChange={(val) => setGenConfig({ ...genConfig, difficulty: val })}
-                                                    fullWidth={true}
-                                                />
-                                            </div>
-                                        </div>
                                         <button
                                             onClick={handleTopicGeneration}
                                             disabled={isGenerating || !genConfig.topic}
@@ -744,38 +688,6 @@ const TestCreator = ({ userData }) => {
                                                 <p className="text-xs text-slate-400 mt-1">Max 20MB</p>
                                             </div>
                                         </div>
-
-                                        <div className="grid grid-cols-2 gap-3">
-                                            <div>
-                                                <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Count</label>
-                                                <CustomDropdown
-                                                    options={[
-                                                        { label: '5 Qs', value: '5' },
-                                                        { label: '10 Qs', value: '10' },
-                                                        { label: '25 Qs', value: '25' },
-                                                        { label: '50 Qs', value: '50' },
-                                                        { label: '100 Qs', value: '100' }
-                                                    ]}
-                                                    value={String(genConfig.count)}
-                                                    onChange={(val) => setGenConfig({ ...genConfig, count: val })}
-                                                    fullWidth={true}
-                                                />
-                                            </div>
-                                            <div>
-                                                <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Difficulty</label>
-                                                <CustomDropdown
-                                                    options={[
-                                                        { label: 'Easy', value: 'Easy' },
-                                                        { label: 'Medium', value: 'Intermediate' },
-                                                        { label: 'Hard', value: 'Hard' }
-                                                    ]}
-                                                    value={genConfig.difficulty}
-                                                    onChange={(val) => setGenConfig({ ...genConfig, difficulty: val })}
-                                                    fullWidth={true}
-                                                />
-                                            </div>
-                                        </div>
-
                                         <button
                                             onClick={handlePDFGeneration}
                                             disabled={isGenerating || !genConfig.file}
@@ -800,7 +712,60 @@ const TestCreator = ({ userData }) => {
                                 )}
                             </div>
                         </div>
-                    </div> {/* End Row 2 */}
+                        {/* 2.75 Scheduling */}
+                        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
+                            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                                <div className="flex items-center gap-2 text-slate-800 font-bold text-lg">
+                                    <Calendar size={20} className="text-slate-400" />
+                                    Schedule
+                                </div>
+                                <button
+                                    type="button"
+                                    onClick={() => setEnableSchedule(!enableSchedule)}
+                                    className={`relative w-11 h-6 rounded-full transition-colors duration-200 ${enableSchedule ? 'bg-indigo-600' : 'bg-slate-200'
+                                        }`}
+                                >
+                                    <span className={`block w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${enableSchedule ? 'translate-x-[22px]' : 'translate-x-[2px]'
+                                        }`} />
+                                </button>
+                            </div>
+
+                            {!enableSchedule && (
+                                <p className="text-xs text-slate-400">Test will go live immediately after publishing.</p>
+                            )}
+
+                            {enableSchedule && (
+                                <div className="animate-in slide-in-from-top-2 duration-200 space-y-4">
+                                    <div>
+                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Starts At</label>
+                                        <input
+                                            type="datetime-local"
+                                            value={scheduledStart}
+                                            onChange={(e) => setScheduledStart(e.target.value)}
+                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium text-slate-700 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Ends At</label>
+                                        <input
+                                            type="datetime-local"
+                                            value={scheduledEnd}
+                                            onChange={(e) => setScheduledEnd(e.target.value)}
+                                            min={scheduledStart || undefined}
+                                            className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-medium text-slate-700 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
+                                        />
+                                    </div>
+                                    {scheduledStart && scheduledEnd && new Date(scheduledEnd) > new Date(scheduledStart) && (
+                                        <div className="bg-indigo-50 text-indigo-700 text-xs font-bold p-3 rounded-xl">
+                                            Window: {new Date(scheduledStart).toLocaleString()} → {new Date(scheduledEnd).toLocaleString()}
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                        {/* End Row 2 */}
+                    </div>
+
 
                     {/* FULL WIDTH: QUESTION EDITOR */}
                     <div className="space-y-6 border-t border-slate-200 pt-8 mt-8">

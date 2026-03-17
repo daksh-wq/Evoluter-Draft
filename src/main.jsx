@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import ToastContainer from './components/ui/ToastContainer.jsx'
-import { ErrorBoundary } from './components/common'
+import { ErrorBoundary, ScrollToTop } from './components/common'
 import { handleError, ErrorSeverity, ErrorCategory } from './utils/errorHandler'
 
 // ─── Global Error Handlers ───────────────────────────────────────────────────
@@ -38,6 +38,7 @@ createRoot(document.getElementById('root')).render(
   <ErrorBoundary>
     <ToastContainer />
     <BrowserRouter>
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </ErrorBoundary>,
