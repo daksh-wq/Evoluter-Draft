@@ -137,7 +137,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                         onClick={() => handleTabChange('signin')}
                         className={`flex-1 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-[13px] font-bold transition-all z-10 ${authMode === 'signin' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                     >
-                        Sign In
+                        Login
                     </button>
 
                     {/* Student Signup */}
@@ -169,7 +169,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                                 onClick={() => handleTabChange('signin')}
                                 className="self-start text-xs text-white bg-red-500 hover:bg-red-600 px-3 py-1.5 rounded-lg transition-colors font-bold"
                             >
-                                Go to Sign In
+                                Go to Login
                             </button>
                         )}
                     </div>
@@ -245,7 +245,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                             <RefreshCw size={18} className="animate-spin" />
                         ) : (
                             <>
-                                {authMode === 'signin' ? 'Sign In' : (authMode === 'institution' ? 'Register Institution' : 'Create Student Account')} <ArrowRight size={18} />
+                                {authMode === 'signin' ? 'Login' : (authMode === 'institution' ? 'Register Institution' : 'Create Student Account')} <ArrowRight size={18} />
                             </>
                         )}
                     </button>
@@ -260,7 +260,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                                     onClick={() => handleTabChange('signin')}
                                     className="text-[#2278B0] hover:text-[#1a5f8a] hover:underline font-bold transition-colors"
                                 >
-                                    Sign In
+                                    Login
                                 </button>
                             </p>
                         </div>
@@ -356,7 +356,7 @@ const LoginView = ({ handleGoogleLogin, handleEmailLogin, handleEmailSignup, aut
                                     onClick={closeResetModal}
                                     className="w-full mt-3 text-slate-500 hover:text-slate-700 text-sm font-medium py-2 transition-colors"
                                 >
-                                    Back to Sign In
+                                    Back to Login
                                 </button>
                             </>
                         ) : (

@@ -54,10 +54,10 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
             <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-0"
                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}
             />
-            <PublicNavbar 
-                user={user} 
-                onLogout={onLogout} 
-                onGetStarted={onGetStarted} 
+            <PublicNavbar
+                user={user}
+                onLogout={onLogout}
+                onGetStarted={onGetStarted}
             />
 
             {/* Hero Section */}
@@ -107,13 +107,13 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                                 <span>{user ? "Go to Dashboard" : "Start Smart Practice"}</span>
                                 <Zap className="w-5 h-5 fill-white" />
                             </button>
-                             <button
-                                 onClick={() => scrollTo('#analytics')}
-                                 className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-white hover:bg-gray-50 border-2 border-[#2278B0]/20 rounded-xl font-bold text-[#2278B0] transition-all flex items-center justify-center space-x-3 text-lg"
-                             >
-                                 <span>View Demo Analysis</span>
-                                 <BarChart2 className="w-5 h-5" />
-                             </button>
+                            <button
+                                onClick={() => scrollTo('#analytics')}
+                                className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-white hover:bg-gray-50 border-2 border-[#2278B0]/20 rounded-xl font-bold text-[#2278B0] transition-all flex items-center justify-center space-x-3 text-lg"
+                            >
+                                <span>View Demo Analysis</span>
+                                <BarChart2 className="w-5 h-5" />
+                            </button>
                         </motion.div>
 
                         {/* Stats */}
@@ -745,8 +745,8 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                             <div>
                                 <h4 className="font-bold text-indigo-950 mb-6 uppercase text-xs tracking-widest">Platform</h4>
                                 <ul className="space-y-4 text-gray-500 text-sm font-medium">
-                                    <li><FooterLink href="#features">AI Test Engine</FooterLink></li>
-                                    <li><FooterLink href="/dashboard">Smart Library</FooterLink></li>
+                                    <li><FooterLink href="/dashboard">AI Test Engine</FooterLink></li>
+                                    {/* <li><FooterLink href="/dashboard">Smart Library</FooterLink></li> */}
                                     {/* <li><FooterLink href="#">Mains Grading</FooterLink></li> */}
                                     <li><FooterLink href="/pricing">Pricing</FooterLink></li>
                                 </ul>

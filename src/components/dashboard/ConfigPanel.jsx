@@ -7,7 +7,6 @@ import { DIFFICULTY_LEVELS, QUESTION_COUNTS } from '../../constants/appConstants
  * Configuration settings for test generation (Question Count, Difficulty, PYQ Blend).
  */
 export const ConfigPanel = ({
-    showConfig,
     questionCount,
     setQuestionCount,
     difficulty,
@@ -15,12 +14,10 @@ export const ConfigPanel = ({
     pyqPercentage,
     setPyqPercentage
 }) => {
-    if (!showConfig) return null;
-
     return (
-        <div className="p-4 md:p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl animate-in fade-in slide-in-from-top-2 space-y-6">
-            {/* Row 1: Question Count + Difficulty side by side */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="p-4 md:p-6 bg-[#1b1c31] border border-white/10 rounded-2xl shadow-xl space-y-6 h-full flex flex-col justify-center">
+            {/* Row 1: Question Count */}
+            <div className="flex flex-col gap-6">
                 <div>
                     <label className="text-xs font-bold text-blue-100 uppercase mb-3 flex items-center gap-2">
                         <Layers size={14} /> Question Count
@@ -38,6 +35,7 @@ export const ConfigPanel = ({
                     </div>
                 </div>
 
+                {/* Row 2: Difficulty */}
                 <div>
                     <label className="text-xs font-bold text-blue-100 uppercase mb-3 flex items-center gap-2">
                         <BarChart size={14} /> Difficulty
@@ -47,7 +45,7 @@ export const ConfigPanel = ({
                             <button
                                 key={level}
                                 onClick={() => setDifficulty(level)}
-                                className={`py-2 px-1 rounded-lg font-bold text-xs md:text-sm border transition-all truncate ${difficulty === level ? 'bg-white text-blue-600 border-white shadow-lg' : 'bg-transparent text-blue-100 border-white/30 hover:bg-white/10'}`}
+                                className={`py-1.5 xl:py-2 px-1 rounded-lg font-bold text-[10px] xl:text-xs 2xl:text-sm border transition-all truncate block w-full outline-none ${difficulty === level ? 'bg-white text-blue-600 border-white shadow-lg' : 'bg-transparent text-blue-100 border-white/30 hover:bg-white/10'}`}
                                 title={level}
                             >
                                 {level}
@@ -57,8 +55,8 @@ export const ConfigPanel = ({
                 </div>
             </div>
 
-            {/* Row 2: PYQ Blend Slider — full width, properly separated */}
-            <div className="pt-2 border-t border-white/10">
+            {/* Row 3: PYQ Blend Slider — full width, properly separated */}
+            <div className="pt-4 border-t border-white/10">
                 <label className="text-xs font-bold text-blue-100 uppercase mb-2 flex items-center gap-2">
                     <History size={14} /> Include PYQs ({pyqPercentage}%)
                 </label>

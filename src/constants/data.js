@@ -46,6 +46,7 @@ export const DEFAULT_USER_STATS = {
 export const NAV_ITEMS = [
     { id: 'dashboard', label: 'Dashboard', icon: 'Target' },
     { id: 'student/classroom', label: 'Classroom', icon: 'Users' },
+    { id: 'institution/join', label: 'Join Test', icon: 'UserCheck' },
     { id: 'library', label: 'Library', icon: 'BookOpen' },
     { id: 'pyqs', label: 'PYQs', icon: 'History' },
     { id: 'test-history', label: 'Test History', icon: 'Clock' },

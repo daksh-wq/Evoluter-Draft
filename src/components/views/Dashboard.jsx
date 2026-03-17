@@ -46,7 +46,6 @@ const Dashboard = ({
     const [questionCount, setQuestionCount] = useState(DEFAULT_QUESTION_COUNT);
     const [difficulty, setDifficulty] = useState(DEFAULT_DIFFICULTY);
     const [pyqPercentage, setPyqPercentage] = useState(0);
-    const [showConfig, setShowConfig] = useState(false);
 
     // Live Test Notifications State
     const [notifications, setNotifications] = useState([]);
@@ -98,7 +97,6 @@ const Dashboard = ({
             const finalTopic = aiTopic.trim() || `Test from ${resourceName}`;
             generateAITest(finalTopic, questionCount, difficulty, uploadedResource, pyqPercentage);
             setAiTopic('');
-            setShowConfig(false);
             setUploadedResource('');
             setPreviewQuestions([]);
             setResourceName('');
@@ -526,165 +524,193 @@ const Dashboard = ({
                     </p>
 
                     {/* Controls Container */}
-                    <div className="flex flex-col gap-6 max-w-3xl relative">
-                        {/* Hidden File Input */}
-                        <input
-                            type="file"
-                            ref={fileInputRef}
-                            onChange={handleFileUpload}
-                            accept=".pdf"
-                            className="hidden"
-                        />
-
-                        {/* Main Input Group */}
-                        <div className="grid grid-cols-1 md:grid-cols-12 gap-3">
-                            <SubjectSelector onSelect={setAiTopic} />
-
-                            <TopicInput
-                                value={aiTopic}
-                                onChange={(val) => {
-                                    setShowSuggestions(true);
-                                    setAiTopic(val);
-                                }}
-                                onEnter={handleGenerateTest}
-                                onToggleConfig={() => setShowConfig(!showConfig)}
-                                showConfig={showConfig}
-                                setShowSuggestions={setShowSuggestions}
+                    <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 xl:gap-8 max-w-6xl relative">
+                        {/* Left Side: Primary Inputs */}
+                        <div className="flex flex-col gap-5 md:gap-6">
+                            {/* Hidden File Input */}
+                            <input
+                                type="file"
+                                ref={fileInputRef}
+                                onChange={handleFileUpload}
+                                accept=".pdf"
+                                className="hidden"
                             />
-                        </div>
 
-                        {/* AI Suggestions Tags Here Below the Grid */}
-                        <div className="min-h-[2.5rem] w-full mt-[-0.5rem]">
-                            {showSuggestions && aiTopic.length >= 2 && (
-                                <div className="w-full animate-in fade-in slide-in-from-top-1">
-                                    {isSuggesting ? (
-                                        <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
-                                            <div className="animate-spin w-3 h-3 border-2 border-white/50 border-t-transparent rounded-full" />
-                                            Neural Engine analyzing...
-                                        </div>
-                                    ) : topicSuggestions?.length > 0 ? (
-                                        <div className="flex flex-wrap gap-2">
-                                            {topicSuggestions.map((suggestion, idx) => (
-                                                <button
-                                                    key={idx}
-                                                    type="button"
-                                                    onClick={() => {
-                                                        setAiTopic(suggestion);
-                                                        setShowSuggestions(false);
-                                                    }}
-                                                    className="px-3 py-1.5 text-xs font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all flex items-center gap-1.5 shadow-sm"
-                                                >
-                                                    <Sparkles size={10} className="text-blue-300 opacity-70" />
-                                                    {suggestion}
-                                                </button>
-                                            ))}
-                                        </div>
-                                    ) : null}
-                                </div>
-                            )}
-                        </div>
+                            {/* Main Input Group */}
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-3">
+                                <SubjectSelector onSelect={setAiTopic} />
 
-                        {/* Resource Upload Section */}
-                        <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-4">
-                            <div className="flex items-center justify-between">
-                                <span className="text-sm font-bold text-blue-200 uppercase tracking-wider">
-                                    Attach Resource (Optional)
-                                </span>
-                                {resourceType && (
-                                    <button
-                                        onClick={() => {
-                                            setUploadedResource('');
-                                            setResourceType(null);
-                                            setResourceName('');
-                                            setPreviewQuestions([]);
-                                            setPreviewError('');
-                                        }}
-                                        className="text-xs text-red-300 hover:text-red-400 font-bold"
-                                    >
-                                        Clear Resource
-                                    </button>
+                                <TopicInput
+                                    value={aiTopic}
+                                    onChange={(val) => {
+                                        setShowSuggestions(true);
+                                        setAiTopic(val);
+                                    }}
+                                    onEnter={handleGenerateTest}
+                                    setShowSuggestions={setShowSuggestions}
+                                />
+                            </div>
+
+                            {/* AI Suggestions Tags Here Below the Grid */}
+                            <div className="min-h-[2.5rem] w-full mt-[-0.5rem]">
+                                {showSuggestions && aiTopic.length >= 2 && (
+                                    <div className="w-full animate-in fade-in slide-in-from-top-1">
+                                        {isSuggesting ? (
+                                            <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
+                                                <div className="animate-spin w-3 h-3 border-2 border-white/50 border-t-transparent rounded-full" />
+                                                Neural Engine analyzing...
+                                            </div>
+                                        ) : topicSuggestions?.length > 0 ? (
+                                            <div className="flex flex-wrap gap-2">
+                                                {topicSuggestions.map((suggestion, idx) => (
+                                                    <button
+                                                        key={idx}
+                                                        type="button"
+                                                        onClick={() => {
+                                                            setAiTopic(suggestion);
+                                                            setShowSuggestions(false);
+                                                        }}
+                                                        className="px-3 py-1.5 text-xs font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all flex items-center gap-1.5 shadow-sm"
+                                                    >
+                                                        <Sparkles size={10} className="text-blue-300 opacity-70" />
+                                                        {suggestion}
+                                                    </button>
+                                                ))}
+                                            </div>
+                                        ) : null}
+                                    </div>
                                 )}
                             </div>
 
-                            {!resourceType ? (
-                                <div className="flex flex-col gap-3">
-                                    <button
-                                        onClick={handleFileUploadClick}
-                                        disabled={isPreviewLoading}
-                                        className="w-full bg-white/10 hover:bg-white/20 border border-white/10 text-white rounded-xl py-3 px-4 text-sm font-bold transition-all flex items-center justify-center gap-2 disabled:opacity-50"
-                                    >
-                                        <FileTextIcon size={16} />
-                                        Upload PDF Document
-                                    </button>
-                                </div>
-                            ) : (
-                                <div className="flex items-center gap-3 bg-indigo-900/50 border border-indigo-800/50 rounded-xl p-3">
-                                    <div className="p-2 bg-blue-500/20 rounded-lg text-blue-300">
-                                        <FileTextIcon size={20} />
-                                    </div>
-                                    <div className="flex-1 min-w-0">
-                                        <div className="text-sm font-bold text-white truncate">{resourceName}</div>
-                                        <div className="text-xs text-blue-300">Attached directly to Neural Engine</div>
-                                    </div>
-                                    <span className="text-[10px] font-bold uppercase tracking-widest bg-green-500/20 text-green-300 px-2 py-1 rounded border border-green-500/30">
-                                        Ready for Mixed Test
+                            {/* Resource Upload Section */}
+                            <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-4">
+                                <div className="flex items-center justify-between">
+                                    <span className="text-sm font-bold text-blue-200 uppercase tracking-wider">
+                                        Attach Resource (Optional)
                                     </span>
+                                    {resourceType && (
+                                        <button
+                                            onClick={() => {
+                                                setUploadedResource('');
+                                                setResourceType(null);
+                                                setResourceName('');
+                                                setPreviewQuestions([]);
+                                                setPreviewError('');
+                                            }}
+                                            className="text-xs text-red-300 hover:text-red-400 font-bold"
+                                        >
+                                            Clear Resource
+                                        </button>
+                                    )}
                                 </div>
-                            )}
 
-                            {/* Extract Loading */}
-                            {isPreviewLoading && (
-                                <div className="flex items-center gap-3 text-sm text-blue-200 mt-2 bg-blue-900/20 p-3 rounded-lg border border-blue-800/30">
-                                    <RefreshCw className="animate-spin" size={16} />
-                                    Synthesizing Resource...
-                                </div>
-                            )}
+                                {!resourceType ? (
+                                    <div className="flex flex-col gap-3">
+                                        <button
+                                            onClick={handleFileUploadClick}
+                                            disabled={isPreviewLoading}
+                                            className="w-full bg-white/10 hover:bg-white/20 border border-white/10 text-white rounded-xl py-3 px-4 text-sm font-bold transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+                                        >
+                                            <FileTextIcon size={16} />
+                                            Upload PDF Document
+                                        </button>
+                                    </div>
+                                ) : (
+                                    <div className="flex items-center gap-3 bg-indigo-900/50 border border-indigo-800/50 rounded-xl p-3">
+                                        <div className="p-2 bg-blue-500/20 rounded-lg text-blue-300">
+                                            <FileTextIcon size={20} />
+                                        </div>
+                                        <div className="flex-1 min-w-0">
+                                            <div className="text-sm font-bold text-white truncate">{resourceName}</div>
+                                            <div className="text-xs text-blue-300">Attached directly to Neural Engine</div>
+                                        </div>
+                                        <span className="text-[10px] font-bold uppercase tracking-widest bg-green-500/20 text-green-300 px-2 py-1 rounded border border-green-500/30">
+                                            Ready for Mixed Test
+                                        </span>
+                                    </div>
+                                )}
 
-                            {/* Preview Errors */}
-                            {previewError && (
-                                <div className="flex items-center gap-3 text-sm text-red-200 mt-2 bg-red-900/20 p-3 rounded-lg border border-red-800/30">
-                                    <AlertTriangle size={16} className="text-red-400" />
-                                    {previewError}
-                                </div>
-                            )}
+                                {/* Extract Loading */}
+                                {isPreviewLoading && (
+                                    <div className="flex items-center gap-3 text-sm text-blue-200 mt-2 bg-blue-900/20 p-3 rounded-lg border border-blue-800/30">
+                                        <RefreshCw className="animate-spin" size={16} />
+                                        Synthesizing Resource...
+                                    </div>
+                                )}
+
+                                {/* Preview Errors */}
+                                {previewError && (
+                                    <div className="flex items-center gap-3 text-sm text-red-200 mt-2 bg-red-900/20 p-3 rounded-lg border border-red-800/30">
+                                        <AlertTriangle size={16} className="text-red-400" />
+                                        {previewError}
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Desktop Generate Button */}
+                            <div className="hidden lg:block mt-2">
+                                <button
+                                    onClick={handleGenerateTest}
+                                    disabled={isGeneratingTest || (!aiTopic.trim() && !uploadedResource)}
+                                    className="w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none"
+                                >
+                                    {isGeneratingTest ? (
+                                        <>
+                                            <RefreshCw className="animate-spin" size={20} />
+                                            <span>Crafting your assessment...</span>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Sparkles size={20} />
+                                            <span>Generate Diagnostic Test</span>
+                                        </>
+                                    )}
+                                </button>
+                            </div>
+
                         </div>
 
-                        {/* Extended Config Panel */}
-                        <ConfigPanel
-                            showConfig={showConfig}
-                            questionCount={questionCount}
-                            setQuestionCount={setQuestionCount}
-                            difficulty={difficulty}
-                            setDifficulty={setDifficulty}
-                            pyqPercentage={pyqPercentage}
-                            setPyqPercentage={setPyqPercentage}
-                        />
+                        {/* Right Side: Config Panel */}
+                        <div className="flex flex-col gap-5 md:gap-6 lg:h-full justify-start">
+                            <ConfigPanel
+                                questionCount={questionCount}
+                                setQuestionCount={setQuestionCount}
+                                difficulty={difficulty}
+                                setDifficulty={setDifficulty}
+                                pyqPercentage={pyqPercentage}
+                                setPyqPercentage={setPyqPercentage}
+                            />
 
-                        {/* Generate Button */}
-                        <button
-                            onClick={handleGenerateTest}
-                            disabled={isGeneratingTest || (!aiTopic.trim() && !uploadedResource)}
-                            className="w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none"
-                        >
-                            {isGeneratingTest ? (
-                                <>
-                                    <RefreshCw className="animate-spin" size={20} />
-                                    <span>Crafting your assessment...</span>
-                                </>
-                            ) : (
-                                <>
-                                    <Sparkles size={20} />
-                                    <span>Generate Diagnostic Test</span>
-                                </>
-                            )}
-                        </button>
+                            {/* Mobile/Tablet Generate Button */}
+                            <div className="lg:hidden mt-2">
+                                <button
+                                    onClick={handleGenerateTest}
+                                    disabled={isGeneratingTest || (!aiTopic.trim() && !uploadedResource)}
+                                    className="w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none"
+                                >
+                                    {isGeneratingTest ? (
+                                        <>
+                                            <RefreshCw className="animate-spin" size={20} />
+                                            <span>Crafting your assessment...</span>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Sparkles size={20} />
+                                            <span>Generate Diagnostic Test</span>
+                                        </>
+                                    )}
+                                </button>
+                            </div>
+                        </div>
 
-                        {/* Enhanced Loading State */}
-                        <LoadingState
-                            isGenerating={isGeneratingTest}
-                            progress={generationProgress}
-                            topic={aiTopic}
-                        />
+                        {/* Enhanced Loading State - Fixed positioning */}
+                        <div className="col-span-1 lg:col-span-2">
+                            <LoadingState
+                                isGenerating={isGeneratingTest}
+                                progress={generationProgress}
+                                topic={aiTopic}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -752,22 +778,6 @@ const Dashboard = ({
                             </p>
                         </div>
 
-                        {/* Join Institution Test */}
-                        <div
-                            className="p-4 bg-indigo-50 rounded-xl border border-indigo-100 cursor-pointer hover:bg-indigo-100 transition-colors"
-                            onClick={() => setView('institution/join')}
-                        >
-                            <div className="flex justify-between items-center mb-1">
-                                <span className="font-bold text-indigo-800">Join Test</span>
-                                <span className="text-xs bg-white px-2 py-1 rounded text-indigo-600 font-bold">
-                                    <Building2 size={12} className="inline mr-1" />
-                                    School
-                                </span>
-                            </div>
-                            <p className="text-xs text-indigo-600/80">
-                                Enter code to join institution test.
-                            </p>
-                        </div>
 
                         {/* Full Mock Test */}
                         <div

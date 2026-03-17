@@ -703,7 +703,7 @@ const TestCreator = ({ userData }) => {
                                         <button
                                             onClick={handleTopicGeneration}
                                             disabled={isGenerating || !genConfig.topic}
-                                            className="w-full py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] disabled:opacity-50 disabled:scale-100 transition-all flex items-center justify-center gap-2 mt-2"
+                                            className="w-full py-4 bg-[#2278B0] text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] hover:bg-[#1b5f8a] disabled:opacity-50 disabled:scale-100 transition-all flex items-center justify-center gap-2 mt-2"
                                         >
                                             {isGenerating ? <RefreshCw className="animate-spin" size={20} /> : <Sparkles size={20} />}
                                             Generate with AI
@@ -779,7 +779,7 @@ const TestCreator = ({ userData }) => {
                                         <button
                                             onClick={handlePDFGeneration}
                                             disabled={isGenerating || !genConfig.file}
-                                            className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] disabled:opacity-50 disabled:scale-100 transition-all flex items-center justify-center gap-2 mt-2"
+                                            className="w-full py-4 bg-[#2278B0] text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] hover:bg-[#1b5f8a] disabled:opacity-50 disabled:scale-100 transition-all flex items-center justify-center gap-2 mt-2"
                                         >
                                             {isGenerating ? <RefreshCw className="animate-spin" size={20} /> : <BookOpen size={20} />}
                                             Analyze & Generate

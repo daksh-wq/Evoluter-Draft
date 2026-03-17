@@ -31,6 +31,7 @@ const TestView = ({
     const [warningCount, setWarningCount] = useState(0);
     const [showWarningModal, setShowWarningModal] = useState(false);
     const [showExitModal, setShowExitModal] = useState(false);
+    const [showSubmitModal, setShowSubmitModal] = useState(false);
     const [showBlurBanner, setShowBlurBanner] = useState(false);
     const hasAutoSubmitted = useRef(false);
     const blurBannerTimeout = useRef(null);
@@ -214,7 +215,7 @@ const TestView = ({
                 isZenMode={isZenMode}
                 toggleZenMode={toggleZenMode}
                 onExit={() => setShowExitModal(true)}
-                onSubmit={() => endTest(null, warningCount)}
+                onSubmit={() => setShowSubmitModal(true)}
             />
 
             <div className="flex-1 flex overflow-hidden">
@@ -257,7 +258,7 @@ const TestView = ({
                     {/* Always show Submit button in Zen Mode for easy access, or when on the last question everywhere */}
                     {(isZenMode || isLastQuestion) && (
                         <button
-                            onClick={() => endTest(null, warningCount)}
+                            onClick={() => setShowSubmitModal(true)}
                             className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 shadow-lg shadow-green-600/20 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
                         >
                             <span className="hidden sm:inline">Submit Test</span>
@@ -306,6 +307,73 @@ const TestView = ({
                     </div>
                 </div>
             )}
+            {/* Submit Confirmation Modal */}
+            {showSubmitModal && (() => {
+                const answeredCount = test ? test.filter(q => answers[q.id] !== undefined && !markedForReview.has(q.id)).length : 0;
+                const reviewCount = test ? test.filter(q => answers[q.id] === undefined && markedForReview.has(q.id)).length : 0;
+                const ansReviewCount = test ? test.filter(q => answers[q.id] !== undefined && markedForReview.has(q.id)).length : 0;
+                const skippedCount = test ? test.length - (answeredCount + reviewCount + ansReviewCount) : 0;
+
+                return (
+                    <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">
+                        <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl border-2 border-slate-200">
+                            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-3xl">✅</span>
+                            </div>
+                            <h3 className="text-2xl font-black text-slate-900 mb-2">Submit Test?</h3>
+                            <p className="text-slate-600 mb-6 font-medium">
+                                Are you sure you want to submit the test?
+                            </p>
+
+                            <div className="grid grid-cols-2 gap-3 mb-6 text-left">
+                                <div className="bg-slate-50 p-3 rounded-xl border border-slate-100 flex items-center gap-3">
+                                    <div className="w-4 h-4 rounded-full bg-white border border-slate-300 shadow-sm shrink-0" />
+                                    <div>
+                                        <div className="text-[10px] font-bold text-slate-500 uppercase">Skipped</div>
+                                        <div className="text-lg font-black text-slate-700 leading-none">{skippedCount}</div>
+                                    </div>
+                                </div>
+                                <div className="bg-blue-50 p-3 rounded-xl border border-blue-100 flex items-center gap-3">
+                                    <div className="w-4 h-4 rounded-full bg-blue-600 shadow-sm shrink-0" />
+                                    <div>
+                                        <div className="text-[10px] font-bold text-blue-500 uppercase">Answered</div>
+                                        <div className="text-lg font-black text-blue-700 leading-none">{answeredCount}</div>
+                                    </div>
+                                </div>
+                                <div className="bg-orange-50 p-3 rounded-xl border border-orange-100 flex items-center gap-3">
+                                    <div className="w-4 h-4 rounded-full bg-orange-100 border border-orange-200 shrink-0" />
+                                    <div>
+                                        <div className="text-[10px] font-bold text-orange-500 uppercase">Review</div>
+                                        <div className="text-lg font-black text-orange-700 leading-none">{reviewCount}</div>
+                                    </div>
+                                </div>
+                                <div className="bg-purple-50 p-3 rounded-xl border border-purple-100 flex items-center gap-3">
+                                    <div className="w-4 h-4 rounded-full bg-purple-600 shadow-sm shrink-0" />
+                                    <div>
+                                        <div className="text-[10px] font-bold text-purple-500 uppercase">Attempted & Review</div>
+                                        <div className="text-lg font-black text-purple-700 leading-none">{ansReviewCount}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-3">
+                                <button
+                                    onClick={() => setShowSubmitModal(false)}
+                                    className="flex-1 py-3 font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all active:scale-95"
+                                >
+                                    Continue Test
+                                </button>
+                                <button
+                                    onClick={() => { setShowSubmitModal(false); endTest(null, warningCount); }}
+                                    className="flex-1 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-green-600/20"
+                                >
+                                    Final Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                );
+            })()}
             {/* Warning Modal */}
             {showWarningModal && (
                 <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">
