@@ -10,6 +10,7 @@ import { db } from '../../services/firebase';
 import { Skeleton } from '../ui/Skeleton';
 import { toast } from '../../utils/toast';
 import logger from '../../utils/logger';
+import { arrayUnion } from 'firebase/firestore';
 
 /**
  * InstitutionStudentManager
@@ -100,11 +101,29 @@ const InstitutionStudentManager = ({ userData }) => {
                 const studentDoc = usersSnap.docs[0];
                 const studentData = studentDoc.data();
 
+                const instDocRef = doc(db, 'users', instId);
+                const instDocForName = await getDoc(instDocRef);
+                const instNameObj = instDocForName.exists() ? instDocForName.data() : {};
+                const instName = instNameObj.displayName || instNameObj.name || 'Institution';
+
                 await addDoc(collection(db, 'institutions', instId, 'students'), {
                     studentId: studentDoc.id,
                     studentEmail: email.toLowerCase(),
                     studentName: studentData.name || studentData.displayName || email.split('@')[0],
                     addedAt: serverTimestamp(),
+                });
+
+                // Add to student's user doc
+                const studentUserRef = doc(db, 'users', studentDoc.id);
+                const { updateDoc } = await import('firebase/firestore');
+                await updateDoc(studentUserRef, {
+                    joinedInstitutions: arrayUnion(instId)
+                }).catch(async (e) => {
+                    // if it fails because it doesn't exist, use setDoc with merge
+                    const { setDoc } = await import('firebase/firestore');
+                    await setDoc(studentUserRef, {
+                        joinedInstitutions: arrayUnion(instId)
+                    }, { merge: true });
                 });
 
                 successCount++;

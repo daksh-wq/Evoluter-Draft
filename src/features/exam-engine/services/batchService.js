@@ -203,13 +203,39 @@ export const batchService = {
             const enrolledBatchIds = userSnap.data().enrolledBatches || [];
             if (enrolledBatchIds.length === 0) return [];
 
-            // 2. Fetch each batch document
             const batchPromises = enrolledBatchIds.map(async (batchId) => {
                 const batchRef = doc(db, 'institution_batches', batchId);
                 const batchSnap = await getDoc(batchRef);
                 if (batchSnap.exists()) {
-                    // Attach joinedAt from the member sub-doc if needed later
-                    return { id: batchSnap.id, ...batchSnap.data() };
+                    const batchData = batchSnap.data();
+                    let institutionName = 'Institution';
+                    
+                    // Fetch the institution's name if we have the creatorId
+                    if (batchData.creatorId) {
+                        try {
+                            const creatorRef = doc(db, 'users', batchData.creatorId);
+                            const creatorSnap = await getDoc(creatorRef);
+                            if (creatorSnap.exists()) {
+                                institutionName = creatorSnap.data().displayName || creatorSnap.data().name || 'Institution';
+                            }
+                        } catch (e) {
+                            logger.error("Error fetching institution name for batch:", e);
+                        }
+                    }
+
+                    let joinedAt = null;
+                    try {
+                        const memberRef = doc(db, 'institution_batches', batchId, 'members', studentId);
+                        const memberSnap = await getDoc(memberRef);
+                        if (memberSnap.exists()) {
+                            joinedAt = memberSnap.data().joinedAt;
+                        }
+                    } catch (e) {
+                        logger.error("Error fetching member joinedAt timestamp:", e);
+                    }
+
+                    // Attach joinedAt from the member sub-doc
+                    return { id: batchSnap.id, institutionName, joinedAt, ...batchData };
                 }
                 return null;
             });

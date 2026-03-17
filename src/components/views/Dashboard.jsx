@@ -12,8 +12,11 @@ import {
     Building2,
     Link as LinkIcon,
     FileText as FileTextIcon,
-    Eye
+    Eye,
+    Bell
 } from 'lucide-react';
+import { collection, query, where, getDocs } from 'firebase/firestore';
+import { db } from '../../services/firebase';
 import { KnowledgeGraph } from '../common';
 import { SubjectSelector } from '../dashboard/SubjectSelector';
 import { TopicInput } from '../dashboard/TopicInput';
@@ -24,6 +27,8 @@ import { useDailyWisdom } from '../../hooks/useDailyWisdom';
 import { useExamDate } from '../../hooks/useExamDate';
 import { suggestTestTopics } from '../../services/geminiService';
 import { extractTextFromPDF } from '../../utils/pdfExtractor';
+import { batchService } from '../../features/exam-engine/services/batchService';
+import { UserCheck } from 'lucide-react';
 /**
  * Dashboard Component
  * Main command center with stats, AI generator, and quick actions
@@ -42,6 +47,22 @@ const Dashboard = ({
     const [difficulty, setDifficulty] = useState(DEFAULT_DIFFICULTY);
     const [pyqPercentage, setPyqPercentage] = useState(0);
     const [showConfig, setShowConfig] = useState(false);
+
+    // Live Test Notifications State
+    const [notifications, setNotifications] = useState([]);
+    const [showNotifications, setShowNotifications] = useState(false);
+    const notificationsRef = React.useRef(null);
+
+    // Handle click outside to close notifications
+    React.useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (notificationsRef.current && !notificationsRef.current.contains(event.target)) {
+                setShowNotifications(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
 
     // AI Auto-Suggest State
     const [topicSuggestions, setTopicSuggestions] = useState([]);
@@ -167,6 +188,127 @@ const Dashboard = ({
         };
     }, [aiTopic, showSuggestions, userData?.targetExam]);
 
+    // Fetch active institution tests and batches for notifications
+    React.useEffect(() => {
+        const fetchNotificationsData = async () => {
+            const hasBatches = userData?.enrolledBatches && userData.enrolledBatches.length > 0;
+            const hasInstitutions = userData?.joinedInstitutions && userData.joinedInstitutions.length > 0;
+
+            if (!hasBatches && !hasInstitutions) {
+                setNotifications([]);
+                return;
+            }
+
+            try {
+                const allTestDocs = [];
+                
+                if (hasBatches) {
+                    const batchIds = userData.enrolledBatches;
+                    const chunks = [];
+                    for (let i = 0; i < batchIds.length; i += 10) {
+                        chunks.push(batchIds.slice(i, i + 10));
+                    }
+
+                    for (const chunk of chunks) {
+                        const q = query(
+                            collection(db, 'institution_tests'),
+                            where('assignedBatchIds', 'array-contains-any', chunk)
+                        );
+                        const snap = await getDocs(q);
+                        snap.docs.forEach(d => {
+                            if (!allTestDocs.find(t => t.id === d.id)) {
+                                allTestDocs.push({ id: d.id, ...d.data() });
+                            }
+                        });
+                    }
+                }
+
+                const now = new Date();
+                const activeTests = allTestDocs.filter(t => {
+                    if (t.status === 'archived' || t.status === 'inactive') return false;
+                    
+                    if (!t.isScheduled || (!t.scheduledStart && !t.scheduledEnd)) return true;
+                    
+                    const start = t.scheduledStart?.toDate ? t.scheduledStart.toDate() : (t.scheduledStart ? new Date(t.scheduledStart) : null);
+                    const end = t.scheduledEnd?.toDate ? t.scheduledEnd.toDate() : (t.scheduledEnd ? new Date(t.scheduledEnd) : null);
+                    
+                    // Count if it's Live or Upcoming
+                    if (end && now > end) return false; // ended
+                    return true;
+                });
+
+                let fetchedBatches = [];
+                let fetchedInstitutions = [];
+
+                // Fetch batch details to show recent batches
+                try {
+                    const myBatches = await batchService.getStudentBatches(userData.uid);
+                    fetchedBatches = myBatches || [];
+                } catch (batchErr) {
+                    console.error("Failed to fetch batches for notifications", batchErr);
+                }
+
+                // Fetch recently joined institutions
+                if (userData.joinedInstitutions && userData.joinedInstitutions.length > 0) {
+                    try {
+                        const instPromises = userData.joinedInstitutions.map(async (instId) => {
+                            const instRef = doc(db, 'users', instId);
+                            const instSnap = await getDoc(instRef);
+                            if (instSnap.exists()) {
+                                return {
+                                    id: instId,
+                                    name: instSnap.data().displayName || instSnap.data().name || 'Institution'
+                                };
+                            }
+                            return null;
+                        });
+                        const results = await Promise.all(instPromises);
+                        fetchedInstitutions = results.filter(i => i !== null);
+                    } catch (instErr) {
+                        console.error("Failed to fetch institutions for notifications", instErr);
+                    }
+                }
+
+                // Combine and sort notifications
+                const combined = [
+                    ...activeTests.map(t => ({
+                        type: 'test',
+                        id: `test-${t.id}`,
+                        data: t,
+                        timestamp: t.createdAt?.seconds ? t.createdAt.seconds * 1000 : Date.now()
+                    })),
+                    ...fetchedBatches.map(b => ({
+                        type: 'batch',
+                        id: `batch-${b.id}`,
+                        data: b,
+                        // joinedAt is usually set in members collection, but if unavailable use a fallback or createdAt if present
+                        // For student batches, we might not have exact joinedAt unless explicitly fetched. We'll use Date.now() if missing to prioritize new joins.
+                        timestamp: b.joinedAt?.seconds ? b.joinedAt.seconds * 1000 : (b.createdAt?.seconds ? b.createdAt.seconds * 1000 : Date.now())
+                    })),
+                    ...fetchedInstitutions.map(inst => ({
+                        type: 'institution',
+                        id: `inst-${inst.id}`,
+                        data: inst,
+                        // We do not have a robust timestamp locally without querying the exact student subcollection within the institution
+                        // This timestamp will prioritize newly joined institutions since Date.now() is used if none exists.
+                        timestamp: Date.now()
+                    }))
+                ];
+
+                // Sort descending (newest first)
+                combined.sort((a, b) => b.timestamp - a.timestamp);
+                
+                setNotifications(combined);
+            } catch (error) {
+                console.error("Failed to fetch notifications data:", error);
+            }
+        };
+
+        if (userData?.uid) {
+            fetchNotificationsData();
+        }
+    }, [userData?.enrolledBatches, userData?.joinedInstitutions, userData?.uid]);
+
     return (
         <div className="space-y-8 animate-in fade-in duration-500 pb-20">
             {/* Header with Stats */}
@@ -183,13 +325,133 @@ const Dashboard = ({
                     </p>
                 </div>
 
-                {/* Streak Card — pinned top-right */}
-                <div className="absolute top-0 right-0 bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center gap-1 shrink-0">
-                    <div className={`text-base sm:text-lg font-black leading-none ${userStats.streakDays > 0 ? 'text-orange-500' : 'text-slate-300'}`}>
-                        {userStats.streakDays}
+                {/* Top Right Actions */}
+                <div className="absolute top-0 right-0 flex items-center gap-3">
+                    {/* Notification Bell with Dropdown */}
+                    <div className="relative" ref={notificationsRef}>
+                        <button 
+                            onClick={() => setShowNotifications(!showNotifications)}
+                            className={`bg-white w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border ${showNotifications ? 'border-indigo-300 ring-2 ring-indigo-100' : 'border-slate-100'} shadow-sm flex items-center justify-center hover:bg-slate-50 transition-all shrink-0`}
+                            title="Notifications"
+                        >
+                            <Bell size={24} className={showNotifications ? "text-indigo-600" : "text-slate-600"} />
+                            {/* Notification Badge */}
+                            {notifications.length > 0 && (
+                                <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white shadow-sm ring-2 ring-white animate-in zoom-in">
+                                    {notifications.length > 99 ? '99+' : notifications.length}
+                                </span>
+                            )}
+                        </button>
+
+                        {/* Dropdown Menu */}
+                        {showNotifications && (
+                            <div className="absolute right-0 mt-3 w-80 bg-white rounded-2xl shadow-xl border border-slate-100 z-50 overflow-hidden animate-in fade-in slide-in-from-top-2">
+                                <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                                    <h3 className="font-bold text-slate-800">Notifications</h3>
+                                    {notifications.length > 0 && (
+                                        <span className="text-xs bg-indigo-100 text-indigo-700 font-bold px-2 py-1 rounded-full">
+                                            {notifications.length} New
+                                        </span>
+                                    )}
+                                </div>
+                                <div className="max-h-80 overflow-y-auto p-2 scrollbar-hide">
+                                    {notifications.length === 0 ? (
+                                        <div className="p-6 text-center text-slate-500 flex flex-col items-center gap-2">
+                                            <Bell size={24} className="text-slate-300" />
+                                            <span className="text-sm">No new notifications</span>
+                                        </div>
+                                    ) : (
+                                        <div className="space-y-1">
+                                            {notifications.map(item => {
+                                                if (item.type === 'batch') {
+                                                    const batch = item.data;
+                                                    return (
+                                                        <div 
+                                                            key={item.id}
+                                                            onClick={() => {
+                                                                setShowNotifications(false);
+                                                                setView('student/classroom');
+                                                            }}
+                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50"
+                                                        >
+                                                            <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                                                                <Building2 size={14} />
+                                                            </div>
+                                                            <div>
+                                                                <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Batch {batch.name}</div>
+                                                                <div className="text-xs text-slate-500 mt-0.5 line-clamp-2">You have been added to the batch <span className="font-semibold">{batch.name}</span>.</div>
+                                                            </div>
+                                                        </div>
+                                                    );
+                                                } else if (item.type === 'test') {
+                                                    const test = item.data;
+                                                    return (
+                                                        <div 
+                                                            key={item.id} 
+                                                            onClick={() => {
+                                                                setShowNotifications(false);
+                                                                setView('student/classroom');
+                                                            }}
+                                                            className="p-3 hover:bg-indigo-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50"
+                                                        >
+                                                            <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                                                <FileTextIcon size={14} />
+                                                            </div>
+                                                            <div>
+                                                                <div className="text-sm font-bold text-slate-800 line-clamp-1">{test.title}</div>
+                                                                <div className="text-xs text-slate-500 mt-0.5 line-clamp-1">is Live!</div>
+                                                                <div className="text-[10px] text-indigo-600 font-bold mt-1.5 uppercase tracking-wide">
+                                                                    Tap to view in Classroom
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    );
+                                                } else if (item.type === 'institution') {
+                                                    const inst = item.data;
+                                                    return (
+                                                        <div 
+                                                            key={item.id}
+                                                            onClick={() => {
+                                                                setShowNotifications(false);
+                                                                setView('student/classroom');
+                                                            }}
+                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50"
+                                                        >
+                                                            <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                                                <UserCheck size={14} />
+                                                            </div>
+                                                            <div>
+                                                                <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Institution: {inst.name}</div>
+                                                                <div className="text-xs text-slate-500 mt-0.5 line-clamp-2">You have been exclusively invited and added to <span className="font-semibold">{inst.name}</span>.</div>
+                                                            </div>
+                                                        </div>
+                                                    );
+                                                }
+                                                return null;
+                                            })}
+                                        </div>
+                                    )}
+                                </div>
+                                {notifications.length > 0 && (
+                                    <div className="p-3 border-t border-slate-100 bg-slate-50 text-center hover:bg-slate-100 transition-colors cursor-pointer" onClick={() => {
+                                        setShowNotifications(false);
+                                        setView('student/classroom');
+                                    }}>
+                                        <span className="text-xs font-bold text-indigo-600">View All in Classroom</span>
+                                    </div>
+                                )}
+                            </div>
+                        )}
                     </div>
-                    <div className="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider leading-none">
-                        Day Streak
+
+                    {/* Streak Card */}
+                    <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center gap-1 shrink-0">
+                        <div className={`text-base sm:text-lg font-black leading-none ${userStats.streakDays > 0 ? 'text-orange-500' : 'text-slate-300'}`}>
+                            {userStats.streakDays}
+                        </div>
+                        <div className="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider leading-none">
+                            Day Streak
+                        </div>
                     </div>
                 </div>
             </header>
