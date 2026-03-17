@@ -199,7 +199,7 @@ const Dashboard = ({
 
             try {
                 const allTestDocs = [];
-                
+
                 if (hasBatches) {
                     const batchIds = userData.enrolledBatches;
                     const chunks = [];
@@ -224,12 +224,12 @@ const Dashboard = ({
                 const now = new Date();
                 const activeTests = allTestDocs.filter(t => {
                     if (t.status === 'archived' || t.status === 'inactive') return false;
-                    
+
                     if (!t.isScheduled || (!t.scheduledStart && !t.scheduledEnd)) return true;
-                    
+
                     const start = t.scheduledStart?.toDate ? t.scheduledStart.toDate() : (t.scheduledStart ? new Date(t.scheduledStart) : null);
                     const end = t.scheduledEnd?.toDate ? t.scheduledEnd.toDate() : (t.scheduledEnd ? new Date(t.scheduledEnd) : null);
-                    
+
                     // Count if it's Live or Upcoming
                     if (end && now > end) return false; // ended
                     return true;
@@ -295,7 +295,7 @@ const Dashboard = ({
 
                 // Sort descending (newest first)
                 combined.sort((a, b) => b.timestamp - a.timestamp);
-                
+
                 setNotifications(combined);
             } catch (error) {
                 console.error("Failed to fetch notifications data:", error);
@@ -308,42 +308,41 @@ const Dashboard = ({
     }, [userData?.enrolledBatches, userData?.joinedInstitutions, userData?.uid]);
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-500 pb-20">
-            {/* Header with Stats */}
-            <header className="relative flex items-start justify-between gap-4">
-                <div className="pr-24 sm:pr-32 min-w-0 flex-1">
-                    <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight mb-1 sm:mb-2">
-                        Command Center
-                    </h1>
-                    <p className="text-slate-500 text-sm sm:text-base font-medium flex items-center gap-1.5 flex-wrap">
-                        <span className={`text-[10px] sm:text-xs px-2 py-0.5 rounded-full font-bold ${userData?.hasPremiumPlan ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'bg-[#2278B0]/10 text-[#2278B0]'}`}>
-                            {userData?.hasPremiumPlan ? 'PREMIUM' : 'FREE PLAN'}
-                        </span>
-                        <span>Welcome back, Scholar.</span>
-                    </p>
+        <div className="space-y-4 px-4 pt-2 animate-in fade-in duration-500 pb-20">
+            {/* Target Exam Card - Full Width */}
+            <div className="w-full bg-indigo-950 text-white rounded-3xl shadow-lg relative overflow-visible flex flex-row items-center justify-between p-6 sm:p-8 min-h-[140px] gap-4">
+
+                {/* Left: Exam Info */}
+                <div className="z-10 flex-1 min-w-0">
+                    <div className="text-blue-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">
+                        Target Exam
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-none">
+                        {userData?.targetExam || 'UPSC CSE'} {effectiveYear}
+                    </h3>
                 </div>
 
-                {/* Top Right Actions */}
-                <div className="absolute top-0 right-0 flex items-center gap-3">
-                    {/* Notification Bell with Dropdown */}
+                {/* Right: Stat Cards aligned to the right edge */}
+                <div className="z-20 flex items-center gap-3 shrink-0">
+                    {/* Notification Bell */}
                     <div className="relative" ref={notificationsRef}>
-                        <button 
+                        <button
                             onClick={() => setShowNotifications(!showNotifications)}
-                            className={`bg-white w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border ${showNotifications ? 'border-indigo-300 ring-2 ring-indigo-100' : 'border-slate-100'} shadow-sm flex items-center justify-center hover:bg-slate-50 transition-all shrink-0`}
+                            className={`h-[68px] w-[68px] sm:h-20 sm:w-20 rounded-2xl flex flex-col items-center justify-center gap-1.5 transition-all outline-none bg-white/10 border border-white/15 hover:bg-white/20 ${showNotifications ? 'ring-2 ring-white/30' : ''}`}
                             title="Notifications"
                         >
-                            <Bell size={24} className={showNotifications ? "text-indigo-600" : "text-slate-600"} />
-                            {/* Notification Badge */}
+                            <Bell size={20} className="text-white/80" />
+                            <span className="text-[9px] text-white/50 font-bold uppercase tracking-widest">Alerts</span>
                             {notifications.length > 0 && (
-                                <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white shadow-sm ring-2 ring-white animate-in zoom-in">
-                                    {notifications.length > 99 ? '99+' : notifications.length}
+                                <span className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white shadow-md ring-2 ring-indigo-950">
+                                    {notifications.length > 9 ? '9+' : notifications.length}
                                 </span>
                             )}
                         </button>
 
-                        {/* Dropdown Menu */}
+                        {/* Dropdown */}
                         {showNotifications && (
-                            <div className="absolute right-0 mt-3 w-80 bg-white rounded-2xl shadow-xl border border-slate-100 z-50 overflow-hidden animate-in fade-in slide-in-from-top-2">
+                            <div className="absolute right-0 mt-3 w-80 bg-white rounded-2xl shadow-2xl border border-slate-100 z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 text-slate-800">
                                 <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                                     <h3 className="font-bold text-slate-800">Notifications</h3>
                                     {notifications.length > 0 && (
@@ -364,17 +363,9 @@ const Dashboard = ({
                                                 if (item.type === 'batch') {
                                                     const batch = item.data;
                                                     return (
-                                                        <div 
-                                                            key={item.id}
-                                                            onClick={() => {
-                                                                setShowNotifications(false);
-                                                                setView('student/classroom');
-                                                            }}
-                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50"
-                                                        >
-                                                            <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                                                                <Building2 size={14} />
-                                                            </div>
+                                                        <div key={item.id} onClick={() => { setShowNotifications(false); setView('student/classroom'); }}
+                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50">
+                                                            <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-emerald-600 group-hover:text-white transition-colors"><Building2 size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Batch {batch.name}</div>
                                                                 <div className="text-xs text-slate-500 mt-0.5 line-clamp-2">You have been added to the batch <span className="font-semibold">{batch.name}</span>.</div>
@@ -384,40 +375,22 @@ const Dashboard = ({
                                                 } else if (item.type === 'test') {
                                                     const test = item.data;
                                                     return (
-                                                        <div 
-                                                            key={item.id} 
-                                                            onClick={() => {
-                                                                setShowNotifications(false);
-                                                                setView('student/classroom');
-                                                            }}
-                                                            className="p-3 hover:bg-indigo-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50"
-                                                        >
-                                                            <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                                                                <FileTextIcon size={14} />
-                                                            </div>
+                                                        <div key={item.id} onClick={() => { setShowNotifications(false); setView('student/classroom'); }}
+                                                            className="p-3 hover:bg-indigo-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50">
+                                                            <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-indigo-600 group-hover:text-white transition-colors"><FileTextIcon size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">{test.title}</div>
                                                                 <div className="text-xs text-slate-500 mt-0.5 line-clamp-1">is Live!</div>
-                                                                <div className="text-[10px] text-indigo-600 font-bold mt-1.5 uppercase tracking-wide">
-                                                                    Tap to view in Classroom
-                                                                </div>
+                                                                <div className="text-[10px] text-indigo-600 font-bold mt-1.5 uppercase tracking-wide">Tap to view in Classroom</div>
                                                             </div>
                                                         </div>
                                                     );
                                                 } else if (item.type === 'institution') {
                                                     const inst = item.data;
                                                     return (
-                                                        <div 
-                                                            key={item.id}
-                                                            onClick={() => {
-                                                                setShowNotifications(false);
-                                                                setView('student/classroom');
-                                                            }}
-                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50"
-                                                        >
-                                                            <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                                                                <UserCheck size={14} />
-                                                            </div>
+                                                        <div key={item.id} onClick={() => { setShowNotifications(false); setView('student/classroom'); }}
+                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50">
+                                                            <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-blue-600 group-hover:text-white transition-colors"><UserCheck size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Institution: {inst.name}</div>
                                                                 <div className="text-xs text-slate-500 mt-0.5 line-clamp-2">You have been exclusively invited and added to <span className="font-semibold">{inst.name}</span>.</div>
@@ -431,10 +404,8 @@ const Dashboard = ({
                                     )}
                                 </div>
                                 {notifications.length > 0 && (
-                                    <div className="p-3 border-t border-slate-100 bg-slate-50 text-center hover:bg-slate-100 transition-colors cursor-pointer" onClick={() => {
-                                        setShowNotifications(false);
-                                        setView('student/classroom');
-                                    }}>
+                                    <div className="p-3 border-t border-slate-100 bg-slate-50 text-center hover:bg-slate-100 transition-colors cursor-pointer"
+                                        onClick={() => { setShowNotifications(false); setView('student/classroom'); }}>
                                         <span className="text-xs font-bold text-indigo-600">View All in Classroom</span>
                                     </div>
                                 )}
@@ -442,91 +413,57 @@ const Dashboard = ({
                         )}
                     </div>
 
-                    {/* Streak Card */}
-                    <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center gap-1 shrink-0">
-                        <div className={`text-base sm:text-lg font-black leading-none ${userStats.streakDays > 0 ? 'text-orange-500' : 'text-slate-300'}`}>
+                    {/* Streak */}
+                    <div className="h-[68px] w-[68px] sm:h-20 sm:w-20 rounded-2xl bg-white/10 border border-white/15 flex flex-col items-center justify-center gap-1.5 hover:bg-white/20 transition-all cursor-default">
+                        <div className={`text-xl sm:text-2xl font-black leading-none ${userStats.streakDays > 0 ? 'text-orange-400' : 'text-white/30'}`}>
                             {userStats.streakDays}
                         </div>
-                        <div className="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider leading-none">
-                            Day Streak
-                        </div>
+                        <span className="text-[9px] text-white/50 font-bold uppercase tracking-widest">Streak</span>
                     </div>
-                </div>
-            </header>
 
-            {/* Target Exam & Quote Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {/* Target Exam Card */}
-                <div className="bg-indigo-950 text-white p-6 rounded-3xl shadow-lg relative overflow-hidden flex flex-col justify-between min-h-[180px]">
-                    <div className="absolute top-2 right-2 p-4 opacity-10">
-                        <CalendarDays size={64} />
-                    </div>
-                    <div>
-                        <div className="text-blue-200 text-xs font-bold uppercase tracking-wider mb-1">
-                            Target Exam
-                        </div>
-                        <h3 className="text-lg md:text-xl font-bold z-10 relative">
-                            {userData?.targetExam || 'UPSC CSE'} {effectiveYear}
-                        </h3>
-                    </div>
-                    <div className="mt-4 z-10 relative flex items-baseline gap-2">
+                    {/* Days Remaining */}
+                    <div className="h-[68px] w-[84px] sm:h-20 sm:w-24 rounded-2xl bg-white/10 border border-white/15 flex flex-col items-center justify-center gap-1.5 hover:bg-white/20 transition-all cursor-default">
                         {dateLoading ? (
-                            <div className="w-24 h-10 bg-indigo-900/50 rounded-lg animate-pulse" />
+                            <div className="w-10 h-6 bg-white/10 rounded animate-pulse" />
                         ) : (
-                            <>
-                                <span className="text-3xl md:text-4xl font-black text-white leading-none">
-                                    {daysRemaining}
-                                </span>
-                                <div className="flex flex-col">
-                                    <span className="text-xs md:text-sm text-blue-200">Days Remaining</span>
-                                    {!isOfficial && (
-                                        <span className="text-[10px] text-blue-300 italic leading-tight">*AI Estimated</span>
-                                    )}
-                                </div>
-                            </>
+                            <div className="text-xl sm:text-2xl font-black leading-none text-blue-300">
+                                {daysRemaining}
+                            </div>
                         )}
+                        <span className="text-[9px] text-white/50 font-bold uppercase tracking-widest">Days Left</span>
                     </div>
-                </div>
-
-                {/* Daily Quote Card */}
-                <div className="lg:col-span-2 bg-white border border-slate-200 p-6 rounded-3xl shadow-sm flex flex-col justify-center relative overflow-hidden min-h-[180px]">
-                    <div className="absolute -right-4 -top-4 w-24 h-24 bg-[#2278B0]/5 rounded-full blur-xl" />
-                    <h4 className="text-[#2278B0] font-bold text-sm uppercase tracking-wide mb-2 flex items-center gap-2">
-                        <Sparkles size={16} /> Daily Wisdom
-                    </h4>
-                    {quoteLoading ? (
-                        <div className="space-y-3 mt-2">
-                            <div className="h-4 bg-slate-200 rounded animate-pulse w-full"></div>
-                            <div className="h-4 bg-slate-200 rounded animate-pulse w-4/5"></div>
-                        </div>
-                    ) : (
-                        <p className={`text-base md:text-xl font-serif text-slate-800 italic leading-relaxed transition-opacity duration-500`}>
-                            {quote}
-                        </p>
-                    )}
                 </div>
             </div>
 
+            {/* Daily Quote Card */}
+            <div className="bg-white border border-slate-100 p-6 md:p-8 rounded-3xl shadow-sm flex flex-col justify-center relative overflow-hidden">
+                <div className="absolute -right-4 -top-4 w-32 h-32 bg-[#2278B0]/5 rounded-full blur-2xl pointer-events-none" />
+                <h4 className="text-[#2278B0] font-bold text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
+                    <Sparkles size={16} /> Today's Quote
+                </h4>
+                {quoteLoading ? (
+                    <div className="space-y-3 mt-2">
+                        <div className="h-4 bg-slate-200 rounded animate-pulse w-full"></div>
+                        <div className="h-4 bg-slate-200 rounded animate-pulse w-4/5"></div>
+                    </div>
+                ) : (
+                    <p className="text-base md:text-xl font-serif text-slate-800 italic leading-relaxed transition-opacity duration-500 max-w-4xl">
+                        {quote}
+                    </p>
+                )}
+            </div>
             {/* AI Neural Engine Section */}
             <div className="rounded-3xl bg-indigo-950 p-6 md:p-8 text-white relative overflow-hidden shadow-xl shadow-indigo-900/20">
                 <div className="relative z-10">
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="p-2 bg-white/20 backdrop-blur rounded-lg">
-                            <Zap size={20} fill="white" />
-                        </div>
-                        <span className="font-bold text-blue-100 tracking-wide uppercase text-xs">
-                            AI Neural Engine
-                        </span>
-                    </div>
-                    <h2 className="text-xl md:text-2xl font-bold mb-2">Generate Custom Drill</h2>
-                    <p className="text-blue-100 max-w-xl text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                    <h2 className="text-xl md:text-2xl font-bold mb-1">Generate Custom  Test</h2>
+                    <p className="text-blue-100 max-w-xl text-sm leading-relaxed mb-4">
                         Select a subject or type a specific topic. The AI will generate a unique diagnostic test tailored to your needs.
                     </p>
 
                     {/* Controls Container */}
-                    <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 xl:gap-8 max-w-6xl relative">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-4 xl:gap-6 max-w-6xl relative">
                         {/* Left Side: Primary Inputs */}
-                        <div className="flex flex-col gap-5 md:gap-6">
+                        <div className="flex flex-col gap-3">
                             {/* Hidden File Input */}
                             <input
                                 type="file"
@@ -552,35 +489,33 @@ const Dashboard = ({
                             </div>
 
                             {/* AI Suggestions Tags Here Below the Grid */}
-                            <div className="min-h-[2.5rem] w-full mt-[-0.5rem]">
-                                {showSuggestions && aiTopic.length >= 2 && (
-                                    <div className="w-full animate-in fade-in slide-in-from-top-1">
-                                        {isSuggesting ? (
-                                            <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
-                                                <div className="animate-spin w-3 h-3 border-2 border-white/50 border-t-transparent rounded-full" />
-                                                Neural Engine analyzing...
-                                            </div>
-                                        ) : topicSuggestions?.length > 0 ? (
-                                            <div className="flex flex-wrap gap-2">
-                                                {topicSuggestions.map((suggestion, idx) => (
-                                                    <button
-                                                        key={idx}
-                                                        type="button"
-                                                        onClick={() => {
-                                                            setAiTopic(suggestion);
-                                                            setShowSuggestions(false);
-                                                        }}
-                                                        className="px-3 py-1.5 text-xs font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all flex items-center gap-1.5 shadow-sm"
-                                                    >
-                                                        <Sparkles size={10} className="text-blue-300 opacity-70" />
-                                                        {suggestion}
-                                                    </button>
-                                                ))}
-                                            </div>
-                                        ) : null}
-                                    </div>
-                                )}
-                            </div>
+                            {showSuggestions && aiTopic.length >= 2 && (
+                                <div className="w-full animate-in fade-in slide-in-from-top-1">
+                                    {isSuggesting ? (
+                                        <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
+                                            <div className="animate-spin w-3 h-3 border-2 border-white/50 border-t-transparent rounded-full" />
+                                            Neural Engine analyzing...
+                                        </div>
+                                    ) : topicSuggestions?.length > 0 ? (
+                                        <div className="flex flex-wrap gap-2">
+                                            {topicSuggestions.map((suggestion, idx) => (
+                                                <button
+                                                    key={idx}
+                                                    type="button"
+                                                    onClick={() => {
+                                                        setAiTopic(suggestion);
+                                                        setShowSuggestions(false);
+                                                    }}
+                                                    className="px-3 py-1.5 text-xs font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all flex items-center gap-1.5 shadow-sm"
+                                                >
+                                                    <Sparkles size={10} className="text-blue-300 opacity-70" />
+                                                    {suggestion}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    ) : null}
+                                </div>
+                            )}
 
                             {/* Resource Upload Section */}
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-4">
@@ -662,7 +597,7 @@ const Dashboard = ({
                                     ) : (
                                         <>
                                             <Sparkles size={20} />
-                                            <span>Generate Diagnostic Test</span>
+                                            <span>Generate Test</span>
                                         </>
                                     )}
                                 </button>
@@ -671,7 +606,7 @@ const Dashboard = ({
                         </div>
 
                         {/* Right Side: Config Panel */}
-                        <div className="flex flex-col gap-5 md:gap-6 lg:h-full justify-start">
+                        <div className="flex flex-col h-full">
                             <ConfigPanel
                                 questionCount={questionCount}
                                 setQuestionCount={setQuestionCount}

@@ -30,11 +30,10 @@ const YearRangeDropdown = ({ selected, onSelect }) => {
         <div className="relative w-full sm:w-auto" ref={ref}>
             <button
                 onClick={() => setOpen(o => !o)}
-                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full sm:w-auto ${
-                    isActive
+                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full sm:w-auto ${isActive
                         ? 'bg-[#2278B0] text-white border-[#2278B0]'
                         : 'bg-white text-slate-700 border-slate-200 hover:border-[#2278B0]/40 hover:bg-slate-50'
-                }`}
+                    }`}
             >
                 <History size={14} className="opacity-70" />
                 <span>{activeRange.label}</span>
@@ -58,11 +57,10 @@ const YearRangeDropdown = ({ selected, onSelect }) => {
                         <button
                             key={range.label}
                             onClick={() => { onSelect(range.label); setOpen(false); }}
-                            className={`w-full flex items-center justify-between px-4 py-3 text-sm transition-colors ${
-                                activeRange.label === range.label
+                            className={`w-full flex items-center justify-between px-4 py-3 text-sm transition-colors ${activeRange.label === range.label
                                     ? 'bg-[#2278B0]/5 text-[#2278B0] font-bold'
                                     : 'text-slate-700 hover:bg-slate-50 font-medium'
-                            }`}
+                                }`}
                         >
                             <span>{range.label}</span>
                             {activeRange.label === range.label && <Check size={14} className="text-[#2278B0]" />}
@@ -131,7 +129,7 @@ const PYQView = ({ startCustomTest }) => {
     };
 
     return (
-        <div className="space-y-6 animate-in fade-in duration-500 pb-20">
+        <div className="space-y-6 px-4 animate-in fade-in duration-500 pb-20">
             {/* Header */}
             <div className="bg-white p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm">
                 <h1 className="text-2xl font-black text-slate-800 flex items-center gap-3 mb-2">

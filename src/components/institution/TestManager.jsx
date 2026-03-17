@@ -123,7 +123,7 @@ const TestManager = ({ userData }) => {
     const scheduledTests = tests.filter(t => getTestTimeState(t) === 'scheduled').length;
 
     return (
-        <div className="pb-20">
+        <div className="pb-20 px-4">
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
                 <div>

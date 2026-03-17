@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { doc, getDoc, collection, query, getDocs, orderBy } from 'firebase/firestore';
 import { db } from '../../services/firebase';
-import { ArrowLeft, Users, Clock, Search, Zap, Trophy, Medal, Award, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, Users, Clock, Search, Zap, Trophy, Medal, Award, AlertTriangle, ListChecks, BookOpen } from 'lucide-react';
 import logger from '../../utils/logger';
 import { Skeleton } from '../ui/Skeleton';
 
@@ -14,6 +14,7 @@ const TestAnalytics = () => {
     const [attempts, setAttempts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
+    const [selectedAttempt, setSelectedAttempt] = useState(null);
 
     useEffect(() => {
         const fetchTestDetails = async () => {
@@ -32,15 +33,36 @@ const TestAnalytics = () => {
                 const attemptsRef = collection(db, 'institution_tests', testId, 'attempts');
                 const attemptsSnap = await getDocs(attemptsRef);
 
-                const attemptsList = [];
+                const rawAttemptsList = [];
                 attemptsSnap.forEach(doc => {
-                    attemptsList.push({ id: doc.id, ...doc.data() });
+                    rawAttemptsList.push({ id: doc.id, ...doc.data() });
                 });
 
-                // Sort by high score
-                attemptsList.sort((a, b) => (b.score || 0) - (a.score || 0));
+                // Deduplicate attempts: keep only the latest attempt per student
+                const latestAttemptsMap = new Map();
+                rawAttemptsList.forEach(attempt => {
+                    const identifier = attempt.studentEmail || attempt.studentName;
+                    if (!identifier) return; // Skip invalid entries
 
-                setAttempts(attemptsList);
+                    if (!latestAttemptsMap.has(identifier)) {
+                        latestAttemptsMap.set(identifier, attempt);
+                    } else {
+                        const existing = latestAttemptsMap.get(identifier);
+                        const existingTime = existing.submittedAt?.toMillis ? existing.submittedAt.toMillis() : 0;
+                        const currTime = attempt.submittedAt?.toMillis ? attempt.submittedAt.toMillis() : 0;
+                        
+                        if (currTime > existingTime) {
+                            latestAttemptsMap.set(identifier, attempt);
+                        }
+                    }
+                });
+
+                const finalAttemptsList = Array.from(latestAttemptsMap.values());
+
+                // Sort by high score
+                finalAttemptsList.sort((a, b) => (b.score || 0) - (a.score || 0));
+
+                setAttempts(finalAttemptsList);
 
             } catch (error) {
                 logger.error('Error fetching analytics:', error);
@@ -94,8 +116,175 @@ const TestAnalytics = () => {
         ? Math.max(...attempts.map(a => a.score || 0))
         : 0;
 
-    // Top 3 for Podium
-    const top3 = attempts.slice(0, 3);
+    if (selectedAttempt) {
+        const formattedQuestions = testData.questions.map((q, idx) => {
+            const options = q.options || [];
+            const correctAnswerIndex = options.indexOf(q.correctAnswer);
+            const qId = q.id || `inst-${idx}`;
+            const actualCorrect = correctAnswerIndex >= 0 ? correctAnswerIndex : 0;
+
+            return {
+                id: qId,
+                text: q.text,
+                questionType: q.questionType,
+                difficulty: q.difficulty,
+                options,
+                correctAnswer: actualCorrect,
+                explanation: q.explanation,
+                solution: q.solution
+            };
+        });
+
+        const answers = selectedAttempt.answers || {};
+
+        return (
+            <div className="min-h-screen bg-slate-50 pb-20">
+                <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+                    <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+                        <div className="flex items-center gap-4">
+                            <button onClick={() => setSelectedAttempt(null)} className="p-2 hover:bg-slate-100 rounded-full text-slate-500 transition-colors">
+                                <ArrowLeft size={20} />
+                            </button>
+                            <h1 className="text-xl font-bold text-slate-800 truncate max-w-md">
+                                {selectedAttempt.studentName}'s Attempt
+                            </h1>
+                        </div>
+                        <div className="flex items-center gap-3">
+                             <span className="font-black text-slate-700 text-lg">
+                                 Score: {selectedAttempt.score} <span className="text-xs font-medium text-slate-400">/ {testData.questions.length * 4}</span>
+                             </span>
+                        </div>
+                    </div>
+                </header>
+
+                <main className="max-w-4xl mx-auto px-4 md:px-6 py-8">
+                    <div className="flex gap-4 border-b border-slate-200 mb-6 overflow-x-auto no-scrollbar">
+                        <div className="pb-3 text-sm font-bold flex items-center gap-2 whitespace-nowrap text-[#2278B0] border-b-2 border-[#2278B0]">
+                            <ListChecks size={16} /> Question Review
+                        </div>
+                    </div>
+
+                    <div className="space-y-4 animate-in fade-in">
+                        {formattedQuestions.map((q, idx) => {
+                            const userAnswer = answers[q.id];
+                            const isCorrect = userAnswer === q.correctAnswer;
+                            const isSkipped = userAnswer === undefined || userAnswer === null;
+
+                            let statusColor = isCorrect ? 'border-green-200 bg-green-50' : (isSkipped ? 'border-slate-200 bg-slate-50' : 'border-red-200 bg-red-50');
+
+                            return (
+                                <div key={q.id} className={`p-6 rounded-2xl border ${statusColor}`}>
+                                    <div className="flex justify-between items-start mb-3">
+                                        <div className="flex items-center gap-2 flex-wrap">
+                                            <span className="text-xs font-bold text-slate-500 uppercase">Question {idx + 1}</span>
+                                            {q.difficulty && (
+                                                <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${q.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
+                                                    q.difficulty.toLowerCase() === 'intermediate' || q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                                        'bg-green-50 text-green-600 border-green-100'
+                                                    }`}>
+                                                    {q.difficulty}
+                                                </span>
+                                            )}
+                                            {q.questionType && (
+                                                <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-indigo-50 text-indigo-600 border border-indigo-100">
+                                                    {q.questionType}
+                                                </span>
+                                            )}
+                                        </div>
+                                        <span className={`text-xs font-bold px-2 py-1 rounded ${isCorrect ? 'bg-green-100 text-green-700' : (isSkipped ? 'bg-slate-200 text-slate-600' : 'bg-red-100 text-red-700')}`}>
+                                            {isCorrect ? 'Correct' : (isSkipped ? 'Skipped' : 'Incorrect')}
+                                        </span>
+                                    </div>
+                                    <div className="mb-4">
+                                        {q.text
+                                            .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
+                                            .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                            .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Da-d])\.\s)/g)
+                                            .map((part, i) => {
+                                                const trimmed = part.trim();
+                                                const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(trimmed);
+
+                                                if (!trimmed) return null;
+
+                                                return (
+                                                    <div key={i} className={`mb-2 ${isStatement ? 'pl-3 text-slate-700 font-medium bg-slate-50/50 p-2 rounded-lg border-l-2 border-slate-300 text-sm' : 'font-medium text-slate-800'}`}>
+                                                        {trimmed}
+                                                    </div>
+                                                );
+                                            })}
+                                    </div>
+                                    <div className="space-y-2">
+                                        {q.options.map((rawOpt, i) => {
+                                            const opt = typeof rawOpt === 'string' ? rawOpt.replace(/^([a-dA-D]|\d+)[.)]\s*/, '').trim() : rawOpt;
+                                            const isSelected = i === userAnswer;
+                                            const isCorrectOption = i === q.correctAnswer;
+                                            
+                                            return (
+                                                <div key={i} className={`flex items-center gap-3 p-3 rounded-lg text-sm border ${isCorrectOption ? 'bg-green-100 border-green-200' : (isSelected ? 'bg-red-100 border-red-200' : 'bg-white border-slate-100')
+                                                    }`}>
+                                                    <div className={`w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-xs font-bold ${isCorrectOption ? 'bg-green-500 text-white' : (isSelected ? 'bg-red-500 text-white' : 'bg-slate-200 text-slate-500')
+                                                        }`}>
+                                                        {String.fromCharCode(65 + i)}
+                                                    </div>
+                                                    <span className={isCorrectOption ? 'font-bold text-green-900' : (isSelected ? 'font-bold text-red-900' : 'text-slate-600')}>{opt}</span>
+                                                    
+                                                    <div className="ml-auto flex items-center gap-1.5 shrink-0 pl-2">
+                                                        {isSelected && (
+                                                            <span className={`text-[10px] font-bold uppercase px-2 py-1 rounded border hidden sm:inline-block ${isCorrectOption ? 'bg-green-200/50 text-green-800 border-green-300' : 'bg-red-200/50 text-red-800 border-red-300'}`}>
+                                                                Your Answer
+                                                            </span>
+                                                        )}
+                                                        {isCorrectOption && !isSelected && (
+                                                            <span className="text-[10px] font-bold uppercase px-2 py-1 rounded border bg-green-200/50 text-green-800 border-green-300 hidden sm:inline-block">
+                                                                Correct Answer
+                                                            </span>
+                                                        )}
+                                                        {isCorrectOption && isSelected && (
+                                                            <span className="text-[10px] font-bold uppercase px-2 py-1 rounded border bg-green-200/50 text-green-800 border-green-300 hidden sm:inline-block">
+                                                                Correct Answer
+                                                            </span>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                    {q.solution ? (
+                                        <div className="mt-4 pt-4 border-t border-slate-200/50 space-y-3">
+                                            {(q.solution.correctAnswerReason || q.solution.correct_explanation) && (
+                                                <div>
+                                                    <span className="font-bold text-slate-800 text-sm">✅ Correct Answer:</span>
+                                                    <p className="text-sm text-slate-600 mt-1">{q.solution.correctAnswerReason || q.solution.correct_explanation}</p>
+                                                </div>
+                                            )}
+                                            {(q.solution.sourceOfQuestion || q.solution.possible_source) && (
+                                                <div className="flex items-start gap-2 text-xs text-slate-500">
+                                                    <BookOpen size={14} className="mt-0.5 shrink-0 text-indigo-400" />
+                                                    <span><span className="font-semibold text-indigo-600">Source:</span> {q.solution.sourceOfQuestion || q.solution.possible_source}</span>
+                                                </div>
+                                            )}
+                                            {(q.solution.approachToSolve || q.solution.solving_approach) && (
+                                                <div className="bg-blue-50/50 p-3 rounded-lg border border-blue-100">
+                                                    <span className="font-bold text-blue-800 text-xs uppercase tracking-wider">💡 Approach to Solve:</span>
+                                                    <p className="text-sm text-blue-700 mt-1">{q.solution.approachToSolve || q.solution.solving_approach}</p>
+                                                </div>
+                                            )}
+                                        </div>
+                                    ) : q.explanation && (
+                                        <div className="mt-4 pt-4 border-t border-slate-200/50">
+                                            <p className="text-sm text-slate-600">
+                                                <span className="font-bold text-slate-800">Explanation:</span> {q.explanation}
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
+                </main>
+            </div>
+        );
+    }
 
     return (
         <div className="min-h-screen bg-slate-50 pb-20">
@@ -145,65 +334,6 @@ const TestAnalytics = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Top 3 Podium */}
-                {top3.length > 0 && !searchTerm && (
-                    <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-                        <h3 className="text-lg font-black text-slate-800 mb-8 md:mb-12 text-center uppercase tracking-widest flex items-center justify-center gap-2 relative z-10">
-                            <Trophy size={20} className="text-yellow-500" /> Top Performers
-                        </h3>
-
-                        <div className="flex flex-row items-end justify-center gap-2 md:gap-8 max-w-3xl mx-auto pb-0">
-                            {/* 2nd Place */}
-                            {top3[1] && (
-                                <div className="flex flex-col items-center flex-1 w-full max-w-[100px] md:max-w-[180px] z-10 animate-in slide-in-from-bottom-8 duration-700 delay-100">
-                                    <div className="w-10 md:w-12 h-10 md:h-12 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center font-black text-lg md:text-xl mb-2 shadow-sm border-2 border-white">
-                                        {top3[1].studentName?.charAt(0) || 'S'}
-                                    </div>
-                                    <div className="text-center mb-2 md:mb-3">
-                                        <div className="font-bold text-xs md:text-sm text-slate-700 truncate w-20 md:w-32 mx-auto">{top3[1].studentName}</div>
-                                        <div className="text-[10px] md:text-xs text-slate-500 font-medium">{top3[1].score} pts</div>
-                                    </div>
-                                    <div className="w-full bg-slate-50 rounded-t-xl md:rounded-t-2xl h-16 md:h-24 border-t border-x border-slate-200 flex items-start justify-center pt-2 md:pt-3">
-                                        <Medal size={20} className="text-slate-400 drop-shadow-sm md:w-6 md:h-6" />
-                                    </div>
-                                </div>
-                            )}
-
-                            {/* 1st Place */}
-                            <div className="flex flex-col items-center flex-1 w-full max-w-[120px] md:max-w-[200px] z-20 -translate-y-2 md:-translate-y-4 animate-in slide-in-from-bottom-12 duration-500">
-                                <div className="w-14 md:w-16 h-14 md:h-16 bg-gradient-to-br from-yellow-300 to-yellow-500 text-yellow-900 rounded-full flex items-center justify-center font-black text-xl md:text-2xl mb-2 shadow-md border-2 md:border-4 border-white">
-                                    {top3[0].studentName?.charAt(0) || 'S'}
-                                </div>
-                                <div className="text-center mb-2 md:mb-3">
-                                    <div className="font-black text-sm md:text-base text-slate-800 truncate w-24 md:w-40 mx-auto">{top3[0].studentName}</div>
-                                    <div className="text-xs md:text-sm text-yellow-600 font-bold">{top3[0].score} pts</div>
-                                </div>
-                                <div className="w-full bg-gradient-to-t from-yellow-50/50 to-yellow-100/50 rounded-t-xl md:rounded-t-2xl h-24 md:h-32 border-t border-x border-yellow-200/50 flex items-start justify-center pt-2 md:pt-3 shadow-sm">
-                                    <Trophy size={24} className="text-yellow-500 drop-shadow-sm md:w-8 md:h-8" />
-                                </div>
-                            </div>
-
-                            {/* 3rd Place */}
-                            {top3[2] && (
-                                <div className="flex flex-col items-center flex-1 w-full max-w-[100px] md:max-w-[180px] z-10 animate-in slide-in-from-bottom-8 duration-700 delay-200">
-                                    <div className="w-10 md:w-12 h-10 md:h-12 bg-orange-100 text-orange-800 rounded-full flex items-center justify-center font-black text-lg md:text-xl mb-2 shadow-sm border-2 border-white">
-                                        {top3[2].studentName?.charAt(0) || 'S'}
-                                    </div>
-                                    <div className="text-center mb-2 md:mb-3">
-                                        <div className="font-bold text-xs md:text-sm text-slate-700 truncate w-20 md:w-32 mx-auto">{top3[2].studentName}</div>
-                                        <div className="text-[10px] md:text-xs text-slate-500 font-medium">{top3[2].score} pts</div>
-                                    </div>
-                                    <div className="w-full bg-orange-50/30 rounded-t-xl md:rounded-t-2xl h-12 md:h-16 border-t border-x border-orange-100 flex items-start justify-center pt-2 md:pt-3">
-                                        <Award size={20} className="text-orange-400 drop-shadow-sm md:w-6 md:h-6" />
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                )}
-
                 {/* Students List */}
                 <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm">
                     <div className="p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -243,6 +373,7 @@ const TestAnalytics = () => {
                                         <th className="py-4 font-bold text-slate-400 text-xs uppercase tracking-wider">Warnings</th>
                                         <th className="py-4 font-bold text-slate-400 text-xs uppercase tracking-wider">Status</th>
                                         <th className="py-4 font-bold text-slate-400 text-xs uppercase tracking-wider">Submitted</th>
+                                        <th className="py-4 font-bold text-slate-400 text-xs uppercase tracking-wider">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-slate-50">
@@ -263,9 +394,6 @@ const TestAnalytics = () => {
                                             <td className="py-4">
                                                 <div className="font-black text-slate-700 text-lg">
                                                     {attempt.score} <span className="text-xs font-medium text-slate-400">/ {testData.questions.length * 4}</span>
-                                                </div>
-                                                <div className="text-xs font-bold text-green-600">
-                                                    {attempt.percentage}%
                                                 </div>
                                             </td>
                                             <td className="py-4 text-sm font-medium text-slate-600">
@@ -303,6 +431,14 @@ const TestAnalytics = () => {
                                                 {attempt.submittedAt?.toDate
                                                     ? attempt.submittedAt.toDate().toLocaleDateString()
                                                     : 'Unknown'}
+                                            </td>
+                                            <td className="py-4">
+                                                <button
+                                                    onClick={() => setSelectedAttempt(attempt)}
+                                                    className="bg-indigo-50 text-indigo-600 hover:bg-indigo-100 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors whitespace-nowrap"
+                                                >
+                                                    View Report
+                                                </button>
                                             </td>
                                         </tr>
                                     ))}

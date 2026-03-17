@@ -56,7 +56,7 @@ export const ConfigPanel = ({
             </div>
 
             {/* Row 3: PYQ Blend Slider — full width, properly separated */}
-            <div className="pt-4 border-t border-white/10">
+            {/* <div className="pt-4 border-t border-white/10">
                 <label className="text-xs font-bold text-blue-100 uppercase mb-2 flex items-center gap-2">
                     <History size={14} /> Include PYQs ({pyqPercentage}%)
                 </label>
@@ -76,7 +76,7 @@ export const ConfigPanel = ({
                         <span>100% (PYQs Only)</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

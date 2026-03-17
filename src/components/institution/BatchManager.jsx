@@ -221,7 +221,7 @@ const BatchManager = ({ userData }) => {
     );
 
     return (
-        <div className="bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col md:flex-row overflow-hidden">
+        <div className="bg-white px-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col md:flex-row overflow-hidden">
             {/* Sidebar: Batches List */}
             <div className="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-slate-100 bg-slate-50 flex flex-col md:max-h-none">
                 <div className="p-4 md:p-6 border-b border-slate-100 flex justify-between items-center bg-white sticky top-0 z-10">

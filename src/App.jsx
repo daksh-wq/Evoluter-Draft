@@ -45,10 +45,10 @@ import { evaluateAnswer } from './services/geminiService';
 import { RefreshCw, Menu } from 'lucide-react';
 import logger from './utils/logger';
 import { handleError, ErrorSeverity, ErrorCategory } from './utils/errorHandler';
-import { 
-  collection, query, orderBy, onSnapshot, 
-  addDoc, serverTimestamp, deleteDoc, doc, 
-  updateDoc, increment 
+import {
+  collection, query, orderBy, onSnapshot,
+  addDoc, serverTimestamp, deleteDoc, doc,
+  updateDoc, increment
 } from 'firebase/firestore';
 import { db, storage } from './services/firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
@@ -107,9 +107,9 @@ const ProtectedLayout = ({
                 <Menu size={24} className="text-slate-700" />
               </button>
               <img
-                  src={logo}
-                  alt="Evoluter"
-                  className="h-6 object-contain"
+                src={logo}
+                alt="Evoluter"
+                className="h-6 object-contain"
               />
             </div>
           </div>
@@ -132,7 +132,7 @@ const ProtectedLayout = ({
       )}
 
       <main className={`transition-all duration-300 ${shouldHideNav ? 'pl-0' : 'md:pl-20 lg:pl-64'}`}>
-        <div className={`min-h-screen ${shouldHideNav ? '' : 'p-4 sm:p-6 lg:p-10 max-w-7xl mx-auto'}`}>
+        <div className={`min-h-screen ${shouldHideNav ? '' : 'py-2 sm:py-4 lg:py-6 max-w-7xl mx-auto'}`}>
           <RouteErrorBoundary>
             {children}
           </RouteErrorBoundary>
@@ -185,16 +185,16 @@ function App() {
   // Sanitize topicMastery: keep only the 10 canonical subjects.
   // This instantly fixes any stale Firestore docs that accumulated >10 topics.
   const CANONICAL_TOPICS = [
-      'Indian Polity',
-      'Ancient and Medieval History',
-      'Modern India',
-      'Indian Culture',
-      'Geography',
-      'Economy of India',
-      'Environment',
-      'Science and Technology',
-      'Current Affairs',
-      'Trivial'
+    'Indian Polity',
+    'Ancient and Medieval History',
+    'Modern India',
+    'Indian Culture',
+    'Geography',
+    'Economy of India',
+    'Environment',
+    'Science and Technology',
+    'Current Affairs',
+    'Trivial'
   ];
   const rawStats = userData?.stats || DEFAULT_USER_STATS;
   const userStats = {
@@ -363,13 +363,13 @@ function App() {
 
     try {
       await startAITest(topic, count, difficulty, userData?.targetExam || 'UPSC CSE', resourceContent, pyqPercentage);
-      
+
       // Increment counter in Firestore
       const userRef = doc(db, 'users', user.uid);
       await updateDoc(userRef, {
         'stats.diagnosticTestsGenerated': increment(1)
       });
-      
+
       navigate(ROUTES.TEST);
     } catch (error) {
       handleError(error, 'Failed to generate test. Please try again.', ErrorSeverity.USER_FACING);
@@ -446,14 +446,14 @@ function App() {
 
         <Route path={ROUTES.LOGIN} element={
           isAuthenticated && userData?.role === 'admin' ? <Navigate to="/admin" replace /> :
-          isAuthenticated ? <Navigate to={ROUTES.DASHBOARD} replace /> :
-            <LoginView
-              handleGoogleLogin={handleGoogleLogin}
-              handleEmailLogin={handleEmailLogin}
-              handleEmailSignup={handleEmailSignup}
-              authLoading={authLoading}
-              loginError={loginError}
-            />
+            isAuthenticated ? <Navigate to={ROUTES.DASHBOARD} replace /> :
+              <LoginView
+                handleGoogleLogin={handleGoogleLogin}
+                handleEmailLogin={handleEmailLogin}
+                handleEmailSignup={handleEmailSignup}
+                authLoading={authLoading}
+                loginError={loginError}
+              />
         } />
 
         {/* Public Pages */}
@@ -605,7 +605,7 @@ function App() {
         } />
         <Route path="/institution/batches" element={
           <ProtectedLayout {...layoutProps}>
-            <div className="pb-20 space-y-6">
+            <div className="pb-20 space-y-6 px-4">
               <h1 className="text-2xl md:text-3xl font-black text-slate-800 mb-2">Batch & Student Management</h1>
               <p className="text-slate-500 mb-6">Organize your students into classrooms and manage their access to private tests.</p>
               <BatchManager userData={userData} />

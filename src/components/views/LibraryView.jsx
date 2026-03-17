@@ -31,7 +31,7 @@ const LibraryView = () => {
     const displayedDocs = filteredDocs.slice(0, visibleCount);
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-500 pb-20">
+        <div className="space-y-8 px-4 animate-in fade-in duration-500 pb-20">
             {/* Header */}
             <header className="border-b border-slate-200 pb-6">
                 <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-950 tracking-tight">

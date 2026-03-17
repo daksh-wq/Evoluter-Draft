@@ -139,7 +139,7 @@ const InstitutionDashboard = ({ userData }) => {
     }, [userData]);
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-500 pb-20">
+        <div className="space-y-8 px-4 animate-in fade-in duration-500 pb-20">
             {/* Header / Profile Card */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-slate-50 rounded-full translate-x-1/3 -translate-y-1/3" />
@@ -307,7 +307,7 @@ const InstitutionDashboard = ({ userData }) => {
                     </div>
                 ) : (
                     <div className="overflow-x-auto -mx-4 sm:-mx-6 md:-mx-8 px-4 sm:px-6 md:px-8">
-                        <table className="w-full text-left border-collapse" style={{minWidth: '560px'}}>
+                        <table className="w-full text-left border-collapse" style={{ minWidth: '560px' }}>
                             <thead>
                                 <tr className="border-b border-slate-100">
                                     <th className="py-4 pl-6 md:pl-4 font-bold text-slate-400 text-xs uppercase tracking-wider">Test Name</th>

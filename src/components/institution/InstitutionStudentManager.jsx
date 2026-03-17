@@ -174,7 +174,7 @@ const InstitutionStudentManager = ({ userData }) => {
     const atLimit = students.length >= maxAllowed;
 
     return (
-        <div className="space-y-6 pb-20">
+        <div className="space-y-6 px-4 pb-20">
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
@@ -189,11 +189,10 @@ const InstitutionStudentManager = ({ userData }) => {
                 <button
                     onClick={() => { setShowAddModal(true); setAddError(''); setEmailInput(''); }}
                     disabled={atLimit}
-                    className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm transition-all shadow-sm ${
-                        atLimit
+                    className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm transition-all shadow-sm ${atLimit
                             ? 'bg-slate-100 text-slate-400 cursor-not-allowed'
                             : 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-indigo-200'
-                    }`}
+                        }`}
                 >
                     <UserPlus size={16} /> Add Student
                 </button>
@@ -209,9 +208,8 @@ const InstitutionStudentManager = ({ userData }) => {
                 </div>
                 <div className="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
                     <div
-                        className={`h-full rounded-full transition-all duration-500 ${
-                            atLimit ? 'bg-red-500' : limitUsedPercent > 75 ? 'bg-amber-400' : 'bg-indigo-500'
-                        }`}
+                        className={`h-full rounded-full transition-all duration-500 ${atLimit ? 'bg-red-500' : limitUsedPercent > 75 ? 'bg-amber-400' : 'bg-indigo-500'
+                            }`}
                         style={{ width: `${limitUsedPercent}%` }}
                     />
                 </div>

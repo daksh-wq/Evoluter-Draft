@@ -437,8 +437,8 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                             <span className="text-xs font-bold text-slate-500 uppercase">Question {idx + 1}</span>
                                             {q.difficulty && (
                                                 <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${q.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
-                                                        q.difficulty.toLowerCase() === 'intermediate' || q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
-                                                            'bg-green-50 text-green-600 border-green-100'
+                                                    q.difficulty.toLowerCase() === 'intermediate' || q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                                        'bg-green-50 text-green-600 border-green-100'
                                                     }`}>
                                                     {q.difficulty}
                                                 </span>
