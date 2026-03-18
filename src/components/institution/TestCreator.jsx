@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Save, Plus, Trash2, ArrowLeft, RefreshCw, CheckCircle, FileText, Sparkles, Upload, BookOpen, Settings, Users, Calendar } from 'lucide-react';
+import { Save, Plus, Trash2, ArrowLeft, RefreshCw, CheckCircle, FileText, Sparkles, Upload, BookOpen, Settings, Users, Calendar, AlertCircle } from 'lucide-react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { collection, addDoc, serverTimestamp, Timestamp } from 'firebase/firestore';
 import { httpsCallable } from 'firebase/functions';
@@ -19,6 +19,7 @@ const TestCreator = ({ userData }) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isPublished, setIsPublished] = useState(false);
     const [testCode, setTestCode] = useState(null);
+    const [showLimitPopup, setShowLimitPopup] = useState(false);
 
     // Modes: 'manual' | 'topic' | 'pdf'
     const [mode, setMode] = useLocalStorage('tc_mode', 'manual');
@@ -31,7 +32,7 @@ const TestCreator = ({ userData }) => {
 
     // Questions State
     const [questions, setQuestions] = useLocalStorage('tc_questions', [
-        { id: 1, text: '', options: ['', '', '', ''], correctOption: 0 }
+        { id: 1, text: '', options: ['', '', '', ''], correctOption: 0, explanation: '' }
     ]);
 
     // AI Generation State
@@ -161,7 +162,7 @@ const TestCreator = ({ userData }) => {
     const addQuestion = () => {
         setQuestions([
             ...questions,
-            { id: Date.now(), text: '', options: ['', '', '', ''], correctOption: 0 }
+            { id: Date.now(), text: '', options: ['', '', '', ''], correctOption: 0, explanation: '' }
         ]);
     };
 
@@ -353,8 +354,10 @@ const TestCreator = ({ userData }) => {
 
     const handlePublish = async () => {
         if (!title) return toast.warning('Please enter a test title');
+        
         if (questions.length !== parseInt(genConfig.count)) {
-            return toast.warning(`You must create exactly ${genConfig.count} questions. Currently you have ${questions.length}.`);
+            setShowLimitPopup(true);
+            return;
         }
 
         const invalidQ = questions.find(q => !q.text || q.options.some(o => !o));
@@ -419,7 +422,7 @@ const TestCreator = ({ userData }) => {
             setSubject('General');
             setSubTopic('');
             setDuration(30);
-            setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0 }]);
+            setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0, explanation: '' }]);
             setMode('manual');
 
             // Fire and forget sync to global Question Bank
@@ -499,7 +502,7 @@ const TestCreator = ({ userData }) => {
                             setSubject('General');
                             setSubTopic('');
                             setDuration(30);
-                            setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0 }]);
+                            setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0, explanation: '' }]);
                             setIsSubmitting(false);
                             setMode('manual');
                         }} className="w-full py-3.5 bg-indigo-950 text-white font-bold rounded-xl shadow-lg hover:bg-indigo-900 transition-all hover:shadow-xl hover:-translate-y-0.5">
@@ -535,7 +538,7 @@ const TestCreator = ({ userData }) => {
                             </button>
                             <button
                                 onClick={handlePublish}
-                                disabled={isSubmitting || questions.length !== parseInt(genConfig.count)}
+                                disabled={isSubmitting}
                                 className="w-10 h-10 sm:w-auto sm:h-auto sm:px-5 sm:py-2 bg-[#2278B0] text-white font-bold rounded-lg shadow-sm hover:bg-[#1b5f8a] transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm shrink-0"
                                 title="Publish Test"
                             >
@@ -1010,12 +1013,36 @@ const TestCreator = ({ userData }) => {
                                         ))}
                                     </div>
 
-                                    {q.explanation && (
-                                        <div className="mt-4 pt-4 border-t border-slate-100">
-                                            <p className="text-xs font-bold text-slate-400 uppercase mb-1">Explanation</p>
-                                            <p className="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
-                                                {q.explanation}
-                                            </p>
+                                    {(q.explanation !== undefined && q.explanation !== null) ? (
+                                        <div className="mt-4 pt-4 border-t border-slate-100 animate-in fade-in slide-in-from-top-1 duration-200">
+                                            <div className="flex justify-between items-center mb-2">
+                                                <p className="text-xs font-bold text-slate-400 uppercase">Explanation (Optional)</p>
+                                                <button 
+                                                    onClick={() => updateQuestion(qIdx, 'explanation', undefined)} 
+                                                    className="text-[10px] font-bold text-red-400 hover:text-red-500 hover:bg-red-50 px-2 py-1 rounded transition-colors"
+                                                >
+                                                    Remove
+                                                </button>
+                                            </div>
+                                            <textarea
+                                                placeholder="Explain why the correct answer is right..."
+                                                value={q.explanation}
+                                                onChange={(e) => {
+                                                    updateQuestion(qIdx, 'explanation', e.target.value);
+                                                    e.target.style.height = '0px';
+                                                    e.target.style.height = (e.target.scrollHeight + 2) + 'px';
+                                                }}
+                                                className="question-textarea w-full text-sm font-medium text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-200 focus:bg-white focus:border-indigo-400 focus:ring-0 outline-none resize-none overflow-hidden transition-colors placeholder:text-slate-400 min-h-[80px]"
+                                            />
+                                        </div>
+                                    ) : (
+                                        <div className="mt-4 pt-4 border-t border-slate-100 flex justify-start">
+                                            <button 
+                                                onClick={() => updateQuestion(qIdx, 'explanation', '')}
+                                                className="text-xs font-bold text-[#2278B0] bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1.5"
+                                            >
+                                                <Plus size={14} /> Add Explanation
+                                            </button>
                                         </div>
                                     )}
                                 </div>
@@ -1041,7 +1068,7 @@ const TestCreator = ({ userData }) => {
                             )}
 
                             {/* Floating "Add Question" Button mimicking Google Forms */}
-                            {questions.length > 0 && questions.length < parseInt(genConfig.count) && (
+                            {questions.length > 0 && (
                                 <div className="flex justify-center mt-8">
                                     <button
                                         onClick={addQuestion}
@@ -1052,18 +1079,38 @@ const TestCreator = ({ userData }) => {
                                     </button>
                                 </div>
                             )}
-
-                            {questions.length >= parseInt(genConfig.count) && (
-                                <div className="text-center mt-8 p-4 bg-green-50 rounded-xl border border-green-200 font-bold text-green-700 animate-in fade-in zoom-in duration-300">
-                                    ✅ Target question count reached! You can now publish the test.
-                                </div>
-                            )}
                         </div>
                     </div>
                 </div>
             </main>
 
             {/* Footer actions moved to header to completely prevent overlap on scrolling */}
+
+            {/* Limit Popup Modal */}
+            {showLimitPopup && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                    <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm" onClick={() => setShowLimitPopup(false)} />
+                    <div className="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full relative z-10 shadow-2xl animate-in fade-in zoom-in duration-200">
+                        <div className="w-16 h-16 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <AlertCircle size={32} />
+                        </div>
+                        <h3 className="text-xl font-bold text-slate-800 text-center mb-2">Question Count Mismatch</h3>
+                        <p className="text-slate-600 text-center mb-8">
+                            You selected a limit of <strong className="text-slate-800">{genConfig.count} questions</strong>, but you currently have <strong className="text-slate-800">{questions.length} questions</strong>. 
+                            <br/><br/>
+                            Please ensure your constructed test matches exactly the limit you defined before publishing.
+                        </p>
+                        <div className="flex gap-3">
+                            <button
+                                onClick={() => setShowLimitPopup(false)}
+                                className="w-full py-3 bg-[#2278B0] hover:bg-[#1b5f8a] text-white font-bold rounded-xl transition-colors"
+                            >
+                                Got It
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

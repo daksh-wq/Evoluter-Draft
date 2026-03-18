@@ -9,7 +9,7 @@ import { SUBJECTS } from '../../constants/appConstants';
  * @param {Object} props
  * @param {function} props.onSelect - Callback function when subjects are selected
  */
-export const SubjectSelector = ({ onSelect }) => {
+export const SubjectSelector = ({ onSelect, onSubjectsChange }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState([]);
     const dropdownRef = useRef(null);
@@ -32,7 +32,10 @@ export const SubjectSelector = ({ onSelect }) => {
             newSelected = [...selected, subject];
         }
         setSelected(newSelected);
-        onSelect(newSelected.join(', '));
+        // Never write into the topic text field — subject selection is independent.
+        onSelect('');
+        // Notify parent of the full selection for subtopic suggestions
+        if (onSubjectsChange) onSubjectsChange(newSelected);
     };
 
     const displayValue = selected.length === 0
@@ -63,18 +66,20 @@ export const SubjectSelector = ({ onSelect }) => {
                         return (
                             <div
                                 key={subject}
-                                className="flex items-center gap-3 px-4 py-2.5 hover:bg-slate-50 cursor-pointer transition-colors"
+                                className="flex items-start gap-3 px-4 py-2.5 hover:bg-slate-50 cursor-pointer transition-colors"
                                 onClick={(e) => {
                                     e.stopPropagation();
                                     toggleSubject(subject);
                                 }}
                             >
-                                {isSelected ? (
-                                    <CheckSquare size={18} className="text-[#2278B0]" />
-                                ) : (
-                                    <Square size={18} className="text-slate-300" />
-                                )}
-                                <span className={`text-sm ${isSelected ? 'font-bold text-slate-800' : 'font-medium text-slate-600'}`}>
+                                <div className="mt-0.5 flex-shrink-0">
+                                    {isSelected ? (
+                                        <CheckSquare size={17} className="text-[#2278B0]" />
+                                    ) : (
+                                        <Square size={17} className="text-slate-300" />
+                                    )}
+                                </div>
+                                <span className={`text-sm leading-snug ${isSelected ? 'font-bold text-slate-800' : 'font-medium text-slate-600'}`}>
                                     {subject}
                                 </span>
                             </div>

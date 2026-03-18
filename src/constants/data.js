@@ -55,6 +55,7 @@ export const NAV_ITEMS = [
     // { id: 'library', label: 'Library', icon: 'BookOpen' },
     { id: 'pyqs', label: 'PYQs', icon: 'History' },
     { id: 'test-history', label: 'Test History', icon: 'Clock' },
+    { id: 'performance-report', label: 'Performance Report', icon: 'BarChart2' },
     // { id: 'syllabus', label: 'Syllabus', icon: 'ListChecks' },
     // { id: 'news', label: 'Current Affairs', icon: 'Newspaper' },
     // { id: 'mains', label: 'Evaluator', icon: 'FileText' },

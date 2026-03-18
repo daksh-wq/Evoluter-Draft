@@ -46,6 +46,7 @@ const Dashboard = ({
     const [questionCount, setQuestionCount] = useState(DEFAULT_QUESTION_COUNT);
     const [difficulty, setDifficulty] = useState(DEFAULT_DIFFICULTY);
     const [pyqPercentage, setPyqPercentage] = useState(0);
+    const [selectedSubjects, setSelectedSubjects] = useState([]); // Track subject picker state
 
     // Live Test Notifications State
     const [notifications, setNotifications] = useState([]);
@@ -146,30 +147,39 @@ const Dashboard = ({
         e.target.value = ''; // clear input
     };
 
+    // Auto-show suggestions when subjects are selected (no typing or focus needed)
+    React.useEffect(() => {
+        if (selectedSubjects.length > 0) {
+            setShowSuggestions(true);
+        } else if (!aiTopic.trim()) {
+            // Clear suggestions if no subjects selected and no typed topic
+            setTopicSuggestions([]);
+            setShowSuggestions(false);
+        }
+    }, [selectedSubjects]);
+
     // AI Auto-Suggest Effect
     React.useEffect(() => {
         if (suggestionTimeoutRef.current) clearTimeout(suggestionTimeoutRef.current);
         if (abortControllerRef.current) abortControllerRef.current.abort();
 
         const keyword = aiTopic.trim();
+        // Use typed keyword OR selected subjects as the seed (subjects work even without focus)
+        const effectiveKeyword = keyword || (selectedSubjects.length > 0 ? selectedSubjects.join(' ') : '');
 
-        if (!keyword || keyword.length < 2) {
+        if (!effectiveKeyword || effectiveKeyword.length < 2) {
             setTopicSuggestions([]);
             setIsSuggesting(false);
             return;
         }
 
-        if (showSuggestions) {
-            setIsSuggesting(true);
-        }
+        setIsSuggesting(true);
 
         suggestionTimeoutRef.current = setTimeout(async () => {
-            if (!showSuggestions) return;
-
             abortControllerRef.current = new AbortController();
 
             try {
-                const results = await suggestTestTopics(keyword, userData?.targetExam || 'UPSC CSE', abortControllerRef.current.signal);
+                const results = await suggestTestTopics(effectiveKeyword, userData?.targetExam || 'UPSC CSE', abortControllerRef.current.signal);
                 setTopicSuggestions(results);
             } catch (error) {
                 if (error.name !== 'AbortError') {
@@ -178,13 +188,13 @@ const Dashboard = ({
             } finally {
                 setIsSuggesting(false);
             }
-        }, 600);
+        }, keyword ? 600 : 150); // Fast when subject-seeded, debounced when typing
 
         return () => {
             if (suggestionTimeoutRef.current) clearTimeout(suggestionTimeoutRef.current);
             if (abortControllerRef.current) abortControllerRef.current.abort();
         };
-    }, [aiTopic, showSuggestions, userData?.targetExam]);
+    }, [aiTopic, selectedSubjects, userData?.targetExam]);
 
     // Fetch active institution tests and batches for notifications
     React.useEffect(() => {
@@ -461,7 +471,7 @@ const Dashboard = ({
                     </p>
 
                     {/* Controls Container */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-4 xl:gap-6 max-w-6xl relative">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-4 xl:gap-6 max-w-6xl relative pt-4">
                         {/* Left Side: Primary Inputs */}
                         <div className="flex flex-col gap-3">
                             {/* Hidden File Input */}
@@ -475,7 +485,10 @@ const Dashboard = ({
 
                             {/* Main Input Group */}
                             <div className="grid grid-cols-1 md:grid-cols-12 gap-3">
-                                <SubjectSelector onSelect={setAiTopic} />
+                                <SubjectSelector
+                                    onSelect={setAiTopic}
+                                    onSubjectsChange={setSelectedSubjects}
+                                />
 
                                 <TopicInput
                                     value={aiTopic}

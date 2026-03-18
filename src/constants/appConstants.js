@@ -36,6 +36,36 @@ export const TIME_PER_QUESTION = {
 };
 
 /**
+ * Fixed test duration (in seconds) enforced by question count.
+ * These are the official, non-negotiable time limits:
+ *   10 Q → 15 min | 25 Q → 30 min | 50 Q → 60 min | 100 Q → 120 min
+ */
+export const DURATION_BY_COUNT = {
+    10:  15 * 60,   //  900 seconds
+    25:  30 * 60,   // 1800 seconds
+    50:  60 * 60,   // 3600 seconds
+    100: 120 * 60,  // 7200 seconds
+};
+
+/**
+ * Returns the enforced duration in seconds for a given question count.
+ * Snaps to the nearest bracket (10/25/50/100).
+ * Falls back to 90 s/Q for any non-standard counts.
+ */
+export function getDurationForCount(count) {
+    // Exact match first
+    if (DURATION_BY_COUNT[count] !== undefined) return DURATION_BY_COUNT[count];
+
+    // Snap to the nearest defined bracket
+    const brackets = Object.keys(DURATION_BY_COUNT).map(Number).sort((a, b) => a - b);
+    for (const bracket of brackets) {
+        if (count <= bracket) return DURATION_BY_COUNT[bracket];
+    }
+    // Above 100 — scale linearly from the 100-question rate (72 s/Q)
+    return Math.round(count * 72);
+}
+
+/**
  * Question type distribution targets per batch.
  * Mirrors UPSC/competitive exam real paper patterns.
  */

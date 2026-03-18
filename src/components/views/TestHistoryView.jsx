@@ -98,9 +98,19 @@ const TestHistoryView = () => {
         } else if (sortBy === 'date') {
             // Explicitly sort by date (latest to oldest) to ensure correct order
             result = [...result].sort((a, b) => {
-                const dateA = a.completedAt?.toDate ? a.completedAt.toDate().getTime() : new Date(a.completedAt || 0).getTime();
-                const dateB = b.completedAt?.toDate ? b.completedAt.toDate().getTime() : new Date(b.completedAt || 0).getTime();
-                return dateB - dateA; // Descending
+                const getTime = (val) => {
+                    if (!val) return 0;
+                    try {
+                        if (val.toDate && typeof val.toDate === 'function') return val.toDate().getTime();
+                        if (val.seconds !== undefined) return val.seconds * 1000;
+                        if (val._seconds !== undefined) return val._seconds * 1000;
+                        const parsed = new Date(val).getTime();
+                        return isNaN(parsed) ? 0 : parsed;
+                    } catch (e) {
+                        return 0;
+                    }
+                };
+                return getTime(b.completedAt) - getTime(a.completedAt); // Descending
             });
         }
 
@@ -119,14 +129,36 @@ const TestHistoryView = () => {
 
     const formatDate = (timestamp) => {
         if (!timestamp) return 'Unknown';
-        const date = timestamp.toDate ? timestamp.toDate() : new Date(timestamp);
-        return date.toLocaleDateString('en-IN', {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        });
+        
+        try {
+            let date;
+            if (timestamp.toDate && typeof timestamp.toDate === 'function') {
+                date = timestamp.toDate();
+            } else if (timestamp.seconds !== undefined) {
+                date = new Date(timestamp.seconds * 1000);
+            } else if (timestamp._seconds !== undefined) {
+                date = new Date(timestamp._seconds * 1000);
+            } else {
+                date = new Date(timestamp);
+                // Fallback for weird strings that evaluate to numbers
+                if (isNaN(date.getTime()) && !isNaN(Number(timestamp))) {
+                    date = new Date(Number(timestamp));
+                }
+            }
+
+            // Final safety check against objects like {} generating an Invalid Date
+            if (isNaN(date.getTime())) return 'Unknown Date';
+
+            return date.toLocaleDateString('en-IN', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        } catch (e) {
+            return 'Unknown Date';
+        }
     };
 
     if (loading) {

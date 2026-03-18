@@ -96,7 +96,6 @@ export const testService = {
 
             const payload = {
                 ...results,
-                completedAt: results.timestamp || new Date(),
                 topic: topic || 'Mixed',
                 testName: options.testName || null,           // institution test title
                 questions: optimizedQuestions,
@@ -106,7 +105,13 @@ export const testService = {
                 terminationReason: options.terminationReason || null
             };
 
-            await setDoc(userHistoryRef, sanitizeForFirestore(payload), { merge: true });
+            const cleanPayload = sanitizeForFirestore(payload);
+            
+            // Re-apply un-mangled timestamp explicitly after sanitization
+            cleanPayload.completedAt = new Date();
+            cleanPayload.timestamp = new Date();
+
+            await setDoc(userHistoryRef, cleanPayload, { merge: true });
 
             // 2. If Institution Test, Save to Institution's Records
             if (options.isInstitutionTest && options.originalTestId) {

@@ -22,6 +22,7 @@ export const ROUTES = {
     // Protected Routes
     DASHBOARD: '/dashboard',
     ONBOARDING: '/onboarding',
+    PERFORMANCE_REPORT: '/performance-report',
 
     // Test Routes
     TEST: '/test',
@@ -60,6 +61,11 @@ export const ROUTE_CONFIG = {
     [ROUTES.DASHBOARD]: {
         title: 'Dashboard',
         icon: 'LayoutDashboard',
+        requiresAuth: true,
+    },
+    [ROUTES.PERFORMANCE_REPORT]: {
+        title: 'Performance Report',
+        icon: 'BarChart2',
         requiresAuth: true,
     },
     [ROUTES.TEST]: {

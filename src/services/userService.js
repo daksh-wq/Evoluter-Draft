@@ -61,6 +61,7 @@ export const updateUserStats = async (uid, testResult, questions = [], userAnswe
             const newTotalXP = currentXP + xpGained;
             const newLevel = Math.floor(newTotalXP / 1000) + 1;
             const topicMastery = calculateTopicMastery(questions, userAnswers, currentStats.topicMastery || {});
+            const performance = calculatePerformanceMetrics(questions, userAnswers, currentStats.performance || {});
 
             // 3. Write updates
             transaction.update(userRef, {
@@ -68,6 +69,7 @@ export const updateUserStats = async (uid, testResult, questions = [], userAnswe
                 'stats.xp': newTotalXP,
                 'stats.level': newLevel,
                 'stats.topicMastery': topicMastery,
+                'stats.performance': performance,
                 'lastActive': serverTimestamp()
             });
         });
@@ -195,6 +197,101 @@ const normalizeToCanonicalTopic = (rawTopic) => {
     }
 
     return null; // Unknown topic — skip entirely
+};
+
+/**
+ * Smartly parse questions and answers to extract E-M-D, Subject, Resource, and Type analytics.
+ */
+const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
+    // Boilerplate defaults
+    const perf = {
+        emd: currentPerf.emd || {
+            Easy: { total: 0, attempted: 0, correct: 0 },
+            Medium: { total: 0, attempted: 0, correct: 0 },
+            Difficult: { total: 0, attempted: 0, correct: 0 }
+        },
+        subjects: currentPerf.subjects || {},
+        resources: currentPerf.resources || {
+            'NCERT (Fundamental)': { total: 0, attempted: 0, correct: 0 },
+            'Standard Books': { total: 0, attempted: 0, correct: 0 },
+            'Advanced Sources': { total: 0, attempted: 0, correct: 0 }
+        },
+        questionTypes: currentPerf.questionTypes || {
+            'One-liner': { total: 0, attempted: 0, correct: 0 },
+            'Statement (How many)': { total: 0, attempted: 0, correct: 0 },
+            'Statement (Which of)': { total: 0, attempted: 0, correct: 0 },
+            'Match the pairs': { total: 0, attempted: 0, correct: 0 },
+            'Assertion-Reason': { total: 0, attempted: 0, correct: 0 }
+        }
+    };
+
+    questions.forEach(q => {
+        const isAttempted = userAnswers[q.id] !== undefined;
+        const isCorrect = isAttempted && userAnswers[q.id] === q.correctAnswer;
+
+        // --- 1. E-M-D ---
+        let diff = q.difficulty || 'Medium';
+        if (diff === 'Intermediate') diff = 'Medium';
+        if (diff === 'Hard') diff = 'Difficult';
+        if (!perf.emd[diff]) diff = 'Medium'; // safe fallback
+        
+        perf.emd[diff].total += 1;
+        if (isAttempted) perf.emd[diff].attempted += 1;
+        if (isCorrect) perf.emd[diff].correct += 1;
+
+        // --- 2. Subjects ---
+        const topicTag = q.tags?.find(t => t.type === 'subject')?.label || q.subject || q.topic;
+        const canonical = normalizeToCanonicalTopic(topicTag) || 'General';
+        
+        if (!perf.subjects[canonical]) {
+            perf.subjects[canonical] = { total: 0, attempted: 0, correct: 0, subtopics: {} };
+        }
+        if (!perf.subjects[canonical].subtopics) {
+            perf.subjects[canonical].subtopics = {};
+        }
+
+        perf.subjects[canonical].total += 1;
+        if (isAttempted) perf.subjects[canonical].attempted += 1;
+        if (isCorrect) perf.subjects[canonical].correct += 1;
+
+        // --- SUBTOPICS ---
+        // Try to find a more specific topic or subtopic
+        let specificTopicTag = q.tags?.find(t => t.type === 'topic' || t.type === 'subtopic')?.label || q.topic || q.subtopic;
+        if (!specificTopicTag || specificTopicTag === canonical) {
+            specificTopicTag = 'Core Concepts'; 
+        }
+        
+        if (!perf.subjects[canonical].subtopics[specificTopicTag]) {
+            perf.subjects[canonical].subtopics[specificTopicTag] = { total: 0, attempted: 0, correct: 0 };
+        }
+        perf.subjects[canonical].subtopics[specificTopicTag].total += 1;
+        if (isAttempted) perf.subjects[canonical].subtopics[specificTopicTag].attempted += 1;
+        if (isCorrect) perf.subjects[canonical].subtopics[specificTopicTag].correct += 1;
+
+        // --- 3. Resources --- // Smart infer strategy since exact DB tagging might not exist natively
+        let resource = 'Standard Books';
+        const qText = (q.text || '').toLowerCase();
+        if (q.resource === 'NCERT' || qText.includes('ncert') || diff === 'Easy') resource = 'NCERT (Fundamental)';
+        else if (q.resource === 'Advanced' || diff === 'Difficult' || canonical === 'Current Affairs') resource = 'Advanced Sources';
+        
+        perf.resources[resource].total += 1;
+        if (isAttempted) perf.resources[resource].attempted += 1;
+        if (isCorrect) perf.resources[resource].correct += 1;
+
+        // --- 4. Question Types --- // Smart regex mapping
+        let qType = 'One-liner';
+        if (qText.includes('how many of the above') || qText.includes('how many of the given')) qType = 'Statement (How many)';
+        else if (qText.includes('which of the following statement') || qText.includes('which of the above statement') || /1\s*(and|only|&)/i.test(qText)) qType = 'Statement (Which of)';
+        else if (qText.includes('match the following') || qText.includes('correctly matched') || qText.includes('list i') || qText.includes('list ii')) qType = 'Match the pairs';
+        else if (qText.includes('assertion') && qText.includes('reason')) qType = 'Assertion-Reason';
+        
+        if (!perf.questionTypes[qType]) qType = 'One-liner'; 
+        perf.questionTypes[qType].total += 1;
+        if (isAttempted) perf.questionTypes[qType].attempted += 1;
+        if (isCorrect) perf.questionTypes[qType].correct += 1;
+    });
+
+    return perf;
 };
 
 /**

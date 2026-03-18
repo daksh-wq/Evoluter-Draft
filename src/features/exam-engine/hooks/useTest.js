@@ -5,7 +5,7 @@ import logger from '@/utils/logger';
 import { testService } from '../services/testService';
 import { calculateResults } from '../utils/testLogic';
 import { generateMockQuestions } from '@/utils/helpers';
-import { TIME_PER_QUESTION } from '@/constants/appConstants';
+import { TIME_PER_QUESTION, getDurationForCount } from '@/constants/appConstants';
 
 /**
  * Custom hook for test state management
@@ -71,12 +71,25 @@ export function useTest() {
         setIsGeneratingTest(true);
         setGenerationProgress(0);
 
-        // Simulate Progress (Smooth Loading)
+        // Simulate Progress (Consistent & Slower Loading without decimals)
+        let ticks = 0;
         const progressInterval = setInterval(() => {
+            ticks++;
             setGenerationProgress(prev => {
-                if (prev >= 90) return prev; // Stall at 90% until done
-                const increment = prev < 50 ? 2 : prev < 80 ? 1 : 0.5;
-                return Math.min(prev + increment, 90);
+                if (prev >= 92) return prev; // Stall at 92% until done
+                
+                // Gradually slow down as it gets higher, using ONLY integers
+                // 0-40: fast (1 per 150ms -> 6s)
+                // 40-70: medium (1 per 300ms -> 9s)
+                // 70-85: slow (1 per 600ms -> 9s)
+                // 85-92: very slow (1 per 1200ms -> 8.4s)
+                let shouldIncrement = false;
+                if (prev < 40) shouldIncrement = true;
+                else if (prev < 70) shouldIncrement = ticks % 2 === 0;
+                else if (prev < 85) shouldIncrement = ticks % 4 === 0;
+                else shouldIncrement = ticks % 8 === 0;
+
+                return shouldIncrement ? prev + 1 : prev;
             });
         }, 150);
 
@@ -88,9 +101,8 @@ export function useTest() {
             setGenerationProgress(100);
             await new Promise(r => setTimeout(r, 500)); // Show 100% briefly
 
-            // Difficulty-based duration: Hard=120s/Q, Intermediate=90s/Q, Easy=60s/Q
-            const secondsPerQuestion = TIME_PER_QUESTION[difficulty] || TIME_PER_QUESTION['Intermediate'];
-            const durationSeconds = (questions.length || count) * secondsPerQuestion;
+            // Enforce fixed duration based on question count
+            const durationSeconds = getDurationForCount(questions.length || count);
 
             setupTestSession(questions, durationSeconds);
 
@@ -120,8 +132,8 @@ export function useTest() {
         } catch (error) {
             logger.error('Error starting AI test:', error);
             clearInterval(progressInterval);
-            // Fallback: use Intermediate timing for mock
-            startMockTest(null, count, Math.round(count * (TIME_PER_QUESTION['Intermediate'] / 60)));
+            // Fallback: use fixed count-based duration
+            startMockTest(null, count, Math.round(getDurationForCount(count) / 60));
             return false;
         } finally {
             setIsGeneratingTest(false);
@@ -136,9 +148,8 @@ export function useTest() {
         setIsGeneratingTest(true);
         try {
             const count = questions.length;
-            // Difficulty-based duration for custom/PYQ tests
-            const secondsPerQuestion = TIME_PER_QUESTION[difficulty] || TIME_PER_QUESTION['Intermediate'];
-            const durationSeconds = count * secondsPerQuestion;
+            // Enforce fixed duration based on question count
+            const durationSeconds = getDurationForCount(count);
 
             setupTestSession(questions, durationSeconds);
             setActiveTestName(testName);

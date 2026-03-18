@@ -42,7 +42,7 @@ export const LoadingState = ({ isGenerating, progress, topic }) => {
         <div className="mt-6 bg-black/20 backdrop-blur-md rounded-xl p-4 border border-white/10 animate-in fade-in slide-in-from-top-2">
             <div className="flex justify-between items-center mb-2">
                 <span className="text-xs font-bold text-blue-200 uppercase tracking-wider flex items-center gap-2">
-                    <Zap size={12} className="text-yellow-400" /> AI Fact
+                    <Zap size={12} className="text-yellow-400" /> Prep Insight
                 </span>
                 <span className="text-xs font-bold text-white font-mono">{progress}%</span>
             </div>
