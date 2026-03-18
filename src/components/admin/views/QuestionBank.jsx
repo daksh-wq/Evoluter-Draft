@@ -446,6 +446,8 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
 };
 
 // ─── Main Component ───────────────────────────────────────────────────────────
+const PAGE_SIZE_OPTIONS = [10, 25, 50, 100];
+
 const QuestionBank = () => {
     const [questions, setQuestions] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -457,6 +459,10 @@ const QuestionBank = () => {
     const [filterTypeCode, setFilterTypeCode] = useState('');
     const [filterSource, setFilterSource] = useState(''); // '', 'institution', 'student-dashboard'
     const [searchText, setSearchText] = useState('');
+
+    // Pagination
+    const [currentPage, setCurrentPage] = useState(1);
+    const [pageSize, setPageSize] = useState(25);
 
     const fetchQuestions = useCallback(async () => {
         setLoading(true);
@@ -481,9 +487,16 @@ const QuestionBank = () => {
 
     useEffect(() => { fetchQuestions(); }, [fetchQuestions]);
 
-    const displayed = searchText
+    // Reset to page 1 when filters / search change
+    useEffect(() => { setCurrentPage(1); }, [filterSubjectCode, filterDiffCode, filterTypeCode, filterSource, searchText]);
+
+    const filtered = searchText
         ? questions.filter(q => q.text?.toLowerCase().includes(searchText.toLowerCase()))
         : questions;
+
+    const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    const safeCurrentPage = Math.min(currentPage, totalPages);
+    const displayed = filtered.slice((safeCurrentPage - 1) * pageSize, safeCurrentPage * pageSize);
 
     return (
         <div className="max-w-5xl mx-auto space-y-6">
@@ -493,7 +506,10 @@ const QuestionBank = () => {
                     <h1 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
                         <BookOpen size={24} className="text-indigo-600" /> Question Bank
                     </h1>
-                    <p className="text-sm text-slate-500 mt-0.5">{displayed.length} questions {filterSubjectCode || filterDiffCode ? '(filtered)' : ''}</p>
+                    <p className="text-sm text-slate-500 mt-0.5">
+                        {filtered.length} question{filtered.length !== 1 ? 's' : ''}
+                        {(filterSubjectCode || filterDiffCode || filterTypeCode || filterSource || searchText) ? ' (filtered)' : ''}
+                    </p>
                 </div>
                 <button onClick={() => setShowAddForm(true)}
                     className="flex items-center gap-2 px-5 py-2.5 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700 transition-colors shadow-sm">
@@ -575,6 +591,79 @@ const QuestionBank = () => {
             ) : (
                 <div className="space-y-3">
                     {displayed.map(q => <QuestionRow key={q.id} q={q} />)}
+                </div>
+            )}
+
+            {/* Pagination Controls */}
+            {!loading && filtered.length > 0 && (
+                <div className="flex flex-wrap items-center justify-between gap-3 bg-white border border-slate-200 rounded-2xl px-5 py-3">
+                    {/* Left — page info + size selector */}
+                    <div className="flex items-center gap-3 text-sm text-slate-600">
+                        <span className="font-medium">
+                            {((safeCurrentPage - 1) * pageSize) + 1}–{Math.min(safeCurrentPage * pageSize, filtered.length)} of {filtered.length}
+                        </span>
+                        <span className="text-slate-300">|</span>
+                        <label className="flex items-center gap-1.5 text-xs text-slate-500">
+                            Per page:
+                            <select
+                                value={pageSize}
+                                onChange={e => { setPageSize(Number(e.target.value)); setCurrentPage(1); }}
+                                className="border border-slate-200 rounded-lg px-2 py-1 text-xs text-slate-700 focus:ring-2 focus:ring-indigo-400 outline-none"
+                            >
+                                {PAGE_SIZE_OPTIONS.map(n => <option key={n} value={n}>{n}</option>)}
+                            </select>
+                        </label>
+                    </div>
+
+                    {/* Right — page buttons */}
+                    <div className="flex items-center gap-1.5">
+                        <button
+                            onClick={() => setCurrentPage(1)}
+                            disabled={safeCurrentPage === 1}
+                            className="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                        >«</button>
+                        <button
+                            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                            disabled={safeCurrentPage === 1}
+                            className="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                        >‹ Prev</button>
+
+                        {/* Page number pills */}
+                        {Array.from({ length: totalPages }, (_, i) => i + 1)
+                            .filter(p => p === 1 || p === totalPages || Math.abs(p - safeCurrentPage) <= 1)
+                            .reduce((acc, p, idx, arr) => {
+                                if (idx > 0 && p - arr[idx - 1] > 1) acc.push('...');
+                                acc.push(p);
+                                return acc;
+                            }, [])
+                            .map((p, idx) =>
+                                p === '...' ? (
+                                    <span key={`ellipsis-${idx}`} className="px-1.5 text-slate-400 text-xs select-none">…</span>
+                                ) : (
+                                    <button
+                                        key={p}
+                                        onClick={() => setCurrentPage(p)}
+                                        className={`w-8 h-8 rounded-lg text-xs font-bold transition-colors ${
+                                            p === safeCurrentPage
+                                                ? 'bg-indigo-600 text-white shadow-sm'
+                                                : 'border border-slate-200 text-slate-600 hover:bg-slate-50'
+                                        }`}
+                                    >{p}</button>
+                                )
+                            )
+                        }
+
+                        <button
+                            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                            disabled={safeCurrentPage === totalPages}
+                            className="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                        >Next ›</button>
+                        <button
+                            onClick={() => setCurrentPage(totalPages)}
+                            disabled={safeCurrentPage === totalPages}
+                            className="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                        >»</button>
+                    </div>
                 </div>
             )}
 
