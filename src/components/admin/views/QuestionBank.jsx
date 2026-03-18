@@ -68,7 +68,7 @@ const QuestionIdDisplay = ({ questionId }) => {
                 { code: src, label: src, color: 'bg-blue-50 text-blue-600' },
                 { code: type, label: type, color: 'bg-purple-50 text-purple-600' },
                 { code: diff, label: diff, color: DIFF_COLORS[diff] || 'bg-slate-100 text-slate-600' },
-                { code: pyq, label: pyq, color: 'bg-indigo-50 text-indigo-600' },
+                { code: pyq, label: pyq, color: 'bg-indigo-50 text-[#2278B0]' },
                 { code: serial, label: `#${serial}`, color: 'bg-slate-50 text-slate-500' },
             ].map((seg, i) => (
                 <React.Fragment key={i}>
@@ -100,7 +100,7 @@ const ApproachBriefPanel = ({ brief, decoded }) => {
 
     return (
         <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-4 space-y-3 text-sm">
-            <h4 className="font-bold text-indigo-800 text-xs uppercase tracking-wider flex items-center gap-2">
+            <h4 className="font-bold text-[#124263] text-xs uppercase tracking-wider flex items-center gap-2">
                 <Sparkles size={13} /> Approach Brief
             </h4>
             <div className="space-y-2">
@@ -121,7 +121,7 @@ const ApproachBriefPanel = ({ brief, decoded }) => {
                 )}
                 {brief?.relatedQuestions?.length > 0 && (
                     <div>
-                        <p className="text-[11px] font-bold text-indigo-700 uppercase tracking-wider mb-1">Related Questions</p>
+                        <p className="text-[11px] font-bold text-[#1b5f8a] uppercase tracking-wider mb-1">Related Questions</p>
                         <ul className="space-y-1">
                             {brief.relatedQuestions.map((q, i) => (
                                 <li key={i} className="text-xs text-slate-600 flex gap-1.5"><span className="text-indigo-300">›</span>{q}</li>
@@ -131,7 +131,7 @@ const ApproachBriefPanel = ({ brief, decoded }) => {
                 )}
                 {brief?.furtherReading?.length > 0 && (
                     <div>
-                        <p className="text-[11px] font-bold text-indigo-700 uppercase tracking-wider mb-1">Further Reading</p>
+                        <p className="text-[11px] font-bold text-[#1b5f8a] uppercase tracking-wider mb-1">Further Reading</p>
                         <ul className="space-y-1">
                             {brief.furtherReading.map((r, i) => (
                                 <li key={i} className="text-xs text-slate-600 flex gap-1.5"><span className="text-indigo-300">›</span>{r}</li>
@@ -242,7 +242,7 @@ const QuestionRow = ({ q }) => {
                         <button
                             onClick={handleGenerateBrief}
                             disabled={generatingBrief}
-                            className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm font-bold hover:bg-indigo-700 transition-colors disabled:opacity-50"
+                            className="flex items-center gap-2 px-4 py-2 bg-[#2278B0] text-white rounded-lg text-sm font-bold hover:bg-[#1b5f8a] transition-colors disabled:opacity-50"
                         >
                             {generatingBrief ? <Loader size={14} className="animate-spin" /> : <Sparkles size={14} />}
                             {generatingBrief ? 'Generating...' : 'Generate Approach Brief'}
@@ -252,7 +252,7 @@ const QuestionRow = ({ q }) => {
                         <button
                             onClick={handleGenerateBrief}
                             disabled={generatingBrief}
-                            className="flex items-center gap-2 px-3 py-1.5 text-indigo-600 border border-indigo-200 rounded-lg text-xs font-bold hover:bg-indigo-50 transition-colors disabled:opacity-50"
+                            className="flex items-center gap-2 px-3 py-1.5 text-[#2278B0] border border-[#2278B0]/20 rounded-lg text-xs font-bold hover:bg-indigo-50 transition-colors disabled:opacity-50"
                         >
                             <RefreshCw size={12} className={generatingBrief ? 'animate-spin' : ''} />
                             Regenerate Brief
@@ -330,7 +330,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
             <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl">
                 <div className="flex items-center justify-between p-5 border-b border-slate-100">
                     <h3 className="font-bold text-slate-800 text-lg flex items-center gap-2">
-                        <Plus size={18} className="text-indigo-600" /> Add Question to Bank
+                        <Plus size={18} className="text-[#2278B0]" /> Add Question to Bank
                     </h3>
                     <button onClick={onClose} className="text-slate-400 hover:text-slate-700 p-1 rounded-lg hover:bg-slate-100 transition-colors">
                         <X size={20} />
@@ -344,7 +344,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                         <div>
                             <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Subject</label>
                             <select value={form.subject} onChange={e => { setField('subject', e.target.value); setField('topicCode', '01'); }}
-                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
                                 {SUBJECTS.map(s => <option key={s}>{s}</option>)}
                             </select>
                         </div>
@@ -352,7 +352,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                         <div>
                             <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Topic</label>
                             <select value={form.topicCode} onChange={e => setField('topicCode', e.target.value)}
-                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
                                 {Object.entries(topicMap).map(([code, name]) => (
                                     <option key={code} value={code}>{code} — {name}</option>
                                 ))}
@@ -362,7 +362,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                         <div>
                             <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Source</label>
                             <select value={form.sourceCode} onChange={e => setField('sourceCode', e.target.value)}
-                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
                                 {Object.entries(SOURCE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
                             </select>
                         </div>
@@ -370,7 +370,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                         <div>
                             <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Type</label>
                             <select value={form.typeCode} onChange={e => setField('typeCode', e.target.value)}
-                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
                                 {Object.entries(QUESTION_TYPE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
                             </select>
                         </div>
@@ -378,7 +378,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                         <div>
                             <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Difficulty</label>
                             <select value={form.difficultyCode} onChange={e => setField('difficultyCode', e.target.value)}
-                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
                                 {Object.entries(DIFFICULTY_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
                             </select>
                         </div>
@@ -386,7 +386,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                         <div>
                             <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">PYQ Exam</label>
                             <select value={form.pyqCode} onChange={e => setField('pyqCode', e.target.value)}
-                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+                                className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
                                 {Object.entries(PYQ_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
                             </select>
                         </div>
@@ -402,7 +402,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                     <div>
                         <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Question Text *</label>
                         <textarea value={form.text} onChange={e => setField('text', e.target.value)} rows={4}
-                            className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none resize-none"
+                            className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:ring-2 focus:ring-[#2278B0] outline-none resize-none"
                             placeholder="Enter question text..." />
                     </div>
 
@@ -416,7 +416,7 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                                         onChange={() => setField('correctAnswer', i)} className="accent-green-600 w-4 h-4 shrink-0" />
                                     <span className="text-sm font-bold text-slate-500 w-5">{String.fromCharCode(65 + i)}.</span>
                                     <input type="text" value={opt} onChange={e => setOption(i, e.target.value)}
-                                        className="flex-1 border border-slate-200 rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-indigo-500 outline-none"
+                                        className="flex-1 border border-slate-200 rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none"
                                         placeholder={`Option ${String.fromCharCode(65 + i)}`} />
                                 </div>
                             ))}
@@ -427,16 +427,16 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                     <div className="space-y-3">
                         <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block">Solution</label>
                         <input type="text" value={form.sourceOfQuestion} onChange={e => setField('sourceOfQuestion', e.target.value)}
-                            placeholder="Source (e.g. NCERT Class 11 Ch.2)" className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none" />
+                            placeholder="Source (e.g. NCERT Class 11 Ch.2)" className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
                         <input type="text" value={form.correctAnswerReason} onChange={e => setField('correctAnswerReason', e.target.value)}
-                            placeholder="Why is the correct answer right?" className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none" />
+                            placeholder="Why is the correct answer right?" className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
                         <input type="text" value={form.approachToSolve} onChange={e => setField('approachToSolve', e.target.value)}
-                            placeholder="Approach / strategy to solve" className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none" />
+                            placeholder="Approach / strategy to solve" className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
                     </div>
 
                     {/* Save */}
                     <button onClick={handleSave} disabled={saving}
-                        className="w-full py-3 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2">
+                        className="w-full py-3 bg-[#2278B0] text-white rounded-xl font-bold text-sm hover:bg-[#1b5f8a] transition-colors disabled:opacity-50 flex items-center justify-center gap-2">
                         {saving ? <><Loader size={16} className="animate-spin" /> Saving...</> : <><Plus size={16} /> Add to Question Bank</>}
                     </button>
                 </div>
@@ -504,7 +504,7 @@ const QuestionBank = () => {
             <div className="flex items-center justify-between">
                 <div>
                     <h1 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
-                        <BookOpen size={24} className="text-indigo-600" /> Question Bank
+                        <BookOpen size={24} className="text-[#2278B0]" /> Question Bank
                     </h1>
                     <p className="text-sm text-slate-500 mt-0.5">
                         {filtered.length} question{filtered.length !== 1 ? 's' : ''}
@@ -512,7 +512,7 @@ const QuestionBank = () => {
                     </p>
                 </div>
                 <button onClick={() => setShowAddForm(true)}
-                    className="flex items-center gap-2 px-5 py-2.5 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700 transition-colors shadow-sm">
+                    className="flex items-center gap-2 px-5 py-2.5 bg-[#2278B0] text-white rounded-xl font-bold text-sm hover:bg-[#1b5f8a] transition-colors shadow-sm">
                     <Plus size={16} /> Add Question
                 </button>
             </div>
@@ -529,12 +529,12 @@ const QuestionBank = () => {
                         <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                         <input type="text" value={searchText} onChange={e => setSearchText(e.target.value)}
                             placeholder="Search question text..."
-                            className="pl-9 pr-3 py-2 border border-slate-200 rounded-lg text-sm w-full focus:ring-2 focus:ring-indigo-500 outline-none" />
+                            className="pl-9 pr-3 py-2 border border-slate-200 rounded-lg text-sm w-full focus:ring-2 focus:ring-[#2278B0] outline-none" />
                     </div>
 
                     {/* Subject filter */}
                     <select value={filterSubjectCode} onChange={e => setFilterSubjectCode(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
                         <option value="">All Subjects</option>
                         {Object.entries(SUBJECT_CODES).map(([name, code]) => (
                             <option key={code} value={code}>{code} — {name}</option>
@@ -543,7 +543,7 @@ const QuestionBank = () => {
 
                     {/* Difficulty filter */}
                     <select value={filterDiffCode} onChange={e => setFilterDiffCode(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
                         <option value="">All Difficulties</option>
                         {Object.entries(DIFFICULTY_CODES).map(([name, code]) => (
                             <option key={code} value={code}>{code} — {name}</option>
@@ -552,7 +552,7 @@ const QuestionBank = () => {
 
                     {/* Type filter */}
                     <select value={filterTypeCode} onChange={e => setFilterTypeCode(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
                         <option value="">All Types</option>
                         {Object.entries(QUESTION_TYPE_CODES).map(([name, code]) => (
                             <option key={code} value={code}>{code} — {name}</option>
@@ -561,7 +561,7 @@ const QuestionBank = () => {
 
                     {/* Source filter */}
                     <select value={filterSource} onChange={e => setFilterSource(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
                         <option value="">All Sources</option>
                         <option value="institution">Institution Only</option>
                         <option value="student-dashboard">Student Dashboard AI</option>
@@ -608,7 +608,7 @@ const QuestionBank = () => {
                             <select
                                 value={pageSize}
                                 onChange={e => { setPageSize(Number(e.target.value)); setCurrentPage(1); }}
-                                className="border border-slate-200 rounded-lg px-2 py-1 text-xs text-slate-700 focus:ring-2 focus:ring-indigo-400 outline-none"
+                                className="border border-slate-200 rounded-lg px-2 py-1 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0]/80 outline-none"
                             >
                                 {PAGE_SIZE_OPTIONS.map(n => <option key={n} value={n}>{n}</option>)}
                             </select>
@@ -645,7 +645,7 @@ const QuestionBank = () => {
                                         onClick={() => setCurrentPage(p)}
                                         className={`w-8 h-8 rounded-lg text-xs font-bold transition-colors ${
                                             p === safeCurrentPage
-                                                ? 'bg-indigo-600 text-white shadow-sm'
+                                                ? 'bg-[#2278B0] text-white shadow-sm'
                                                 : 'border border-slate-200 text-slate-600 hover:bg-slate-50'
                                         }`}
                                     >{p}</button>

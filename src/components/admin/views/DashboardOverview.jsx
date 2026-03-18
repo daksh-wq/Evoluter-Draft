@@ -72,7 +72,7 @@ const DashboardOverview = () => {
                     value="Good"
                     subtitle="All services operational"
                     icon={Activity}
-                    color="bg-indigo-500"
+                    color="bg-[#2278B0]"
                 />
             </div>
 

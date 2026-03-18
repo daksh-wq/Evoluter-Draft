@@ -73,6 +73,7 @@ export const INSTITUTION_NAV_ITEMS = [
 export const ADMIN_NAV_ITEMS = [
     { id: 'admin', label: 'Dashboard', icon: 'LayoutDashboard' },
     { id: 'admin/users', label: 'Users & Institutions', icon: 'Users' },
+    { id: 'admin/question-bank', label: 'Question Bank', icon: 'BookOpen' },
     { id: 'admin/cms', label: 'Content (CMS)', icon: 'FileEdit' },
     { id: 'admin/analytics', label: 'Analytics', icon: 'BarChart2' },
 ];
