@@ -554,6 +554,9 @@ exports.syncInstitutionQuestions = functions.https.onCall(async (data, context) 
             textHash:        q.textHash,
             isAIGenerated:   q.isAIGenerated,
             addedBy:         q.addedBy,
+            // Used by Admin Question Bank filters
+            source:          'institution',
+            accessType:      accessType || null,
             updatedAt:       admin.firestore.FieldValue.serverTimestamp(),
         };
 

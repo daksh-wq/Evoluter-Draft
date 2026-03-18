@@ -185,7 +185,10 @@ const TestCreator = ({ userData }) => {
     };
 
     const handleTopicGeneration = async () => {
-        if (!genConfig.topic) return toast.warning('Please enter a topic');
+        // Allow generation from Subject/Sub-topic when "Topic" input is empty
+        const topicFromMeta = [subject, subTopic].map(s => (s || '').trim()).filter(Boolean).join(' - ');
+        const effectiveTopic = (genConfig.topic || '').trim() || topicFromMeta;
+        if (!effectiveTopic) return toast.warning('Please enter a topic (or select Subject/Sub-topic)');
         
         // Calculate deficit
         const currentCount = questions.length === 1 && !questions[0].text ? 0 : questions.length;
@@ -203,7 +206,7 @@ const TestCreator = ({ userData }) => {
                 .map(q => q.text);
 
             const newQuestions = await generateQuestions(
-                genConfig.topic,
+                effectiveTopic,
                 deficit,
                 genConfig.difficulty,
                 'UPSC CSE',
@@ -225,8 +228,8 @@ const TestCreator = ({ userData }) => {
                     return [...prev, ...formattedQuestions];
                 });
 
-                if (!title) setTitle(`${genConfig.topic} Priority Test`);
-                if (!subject) setSubject(genConfig.topic);
+                if (!title) setTitle(`${effectiveTopic} Priority Test`);
+                // Keep subject/subTopic as user-selected metadata; don't overwrite automatically.
                 setMode('manual');
                 toast.success(`Successfully generated ${formattedQuestions.length} questions!`);
             } else {
@@ -377,9 +380,18 @@ const TestCreator = ({ userData }) => {
                     questions: testData.questions,
                     testTitle: title,
                     accessType: accessType
-                }).catch(err => console.warn('Background sync to Question Bank failed:', err));
+                })
+                    .then((res) => {
+                        const count = res?.data?.count ?? 0;
+                        if (count > 0) toast.success(`Synced ${count} questions to Question Bank`);
+                    })
+                    .catch(err => {
+                        console.warn('Background sync to Question Bank failed:', err);
+                        toast.error('Question Bank sync failed. Check Functions/emulator or deployment.');
+                    });
             } catch (syncErr) {
                 console.warn('Could not initiate background sync:', syncErr);
+                toast.error('Could not start Question Bank sync.');
             }
             
         } catch (error) {
@@ -844,9 +856,19 @@ const TestCreator = ({ userData }) => {
                                 {questions.length < parseInt(genConfig.count) && (
                                     <button
                                         onClick={() => {
+                                            // "Fill with AI" should only require a PDF if a PDF is actually selected.
+                                            if (mode === 'pdf') {
+                                                if (genConfig.file) {
+                                                    handlePDFGeneration();
+                                                } else {
+                                                    setMode('topic');
+                                                    handleTopicGeneration();
+                                                }
+                                                return;
+                                            }
+
                                             if (mode === 'manual') setMode('topic');
-                                            const target = mode === 'pdf' ? handlePDFGeneration : handleTopicGeneration;
-                                            target();
+                                            handleTopicGeneration();
                                         }}
                                         disabled={isGenerating}
                                         className="flex items-center gap-1.5 px-3 py-1.5 bg-purple-50 text-purple-700 text-xs font-bold rounded-lg hover:bg-purple-100 transition-all border border-purple-100"
