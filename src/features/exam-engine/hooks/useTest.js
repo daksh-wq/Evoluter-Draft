@@ -174,8 +174,8 @@ export function useTest() {
     const startInstitutionTest = useCallback(async (testData) => {
         setIsGeneratingTest(true);
         try {
-            // 1. Setup Local State
-            const durationSeconds = (testData.duration || 60) * 60;
+            // 1. Setup Local State — enforce fixed count-based timing
+            const durationSeconds = getDurationForCount(testData.questions?.length || 0);
 
             // Format questions — ensure both `text` and `question` fields exist for
             // rendering compatibility. Convert string correctAnswer → option index so
