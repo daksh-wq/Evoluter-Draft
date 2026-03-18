@@ -145,7 +145,7 @@ SOLUTION FORMAT (mandatory for every question — 3 layers):
  * Generate MCQ questions on a specific topic with batch support.
  * Guarantees question-type diversity, 3-layer solutions, and exact count.
  */
-export async function generateQuestions(topic, count = 5, difficulty = 'Hard', targetExam = 'UPSC CSE', onProgress = () => { }) {
+export async function generateQuestions(topic, count = 5, difficulty = 'Hard', targetExam = 'UPSC CSE', onProgress = () => { }, existingQuestions = []) {
     // ─── 1. Check Shared Test Pool (Cache) — SKIP for large counts to avoid stale repetition ───
     if (count <= 25) {
         try {
@@ -218,6 +218,8 @@ RULES:
 4. DIFFICULTY: Each question MUST carry a self-assessed 'difficultyLevel' field ('Easy', 'Intermediate', or 'Hard').
 ${typeInstruction}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+
+${existingQuestions.length > 0 ? `DO NOT duplicate or overlap with these existing questions:\n${existingQuestions.join('\n')}` : ''}
 
 OUTPUT: Return ONLY a valid JSON Array. No markdown. No extra text.
 
@@ -316,7 +318,7 @@ JSON FORMAT:
         .flatMap(r => r.value);
 
     // ─── 3. Deduplicate (text-based) ───
-    const seenTexts = new Set();
+    const seenTexts = new Set(existingQuestions.map(t => t.trim().toLowerCase()));
     allQuestions = allQuestions.filter(q => {
         const key = (q.text || '').trim().toLowerCase();
         if (!key || seenTexts.has(key)) return false;
@@ -520,7 +522,7 @@ export async function generateNews() {
  * Generate questions from extracted PDF/document content.
  * Includes: topic identification, question-type diversity, 3-layer solution, PYQ blending.
  */
-export async function generateQuestionsFromDocument(documentText, documentTitle = 'Document', count = 10, difficulty = 'Hard', onProgress = () => { }) {
+export async function generateQuestionsFromDocument(documentText, documentTitle = 'Document', count = 10, difficulty = 'Hard', onProgress = () => { }, existingQuestions = []) {
     if (!documentText || documentText.trim().length < 100) {
         throw new Error('Document text is too short or empty');
     }
@@ -614,6 +616,8 @@ INSTRUCTIONS:
 3. Avoid questions that just ask "which statement matches the text" — test deeper understanding
 ${typeInstruction}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+
+${existingQuestions.length > 0 ? `DO NOT duplicate or overlap with these existing questions:\n${existingQuestions.join('\n')}` : ''}
 
 Return ONLY a valid JSON array:
 [

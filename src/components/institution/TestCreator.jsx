@@ -10,6 +10,8 @@ import { batchService } from '../../features/exam-engine/services/batchService';
 import { CustomDropdown } from '../common';
 import { toast } from '../../utils/toast';
 import { SUBJECTS } from '../../constants/appConstants';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
+
 const TestCreator = ({ userData }) => {
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();
@@ -18,15 +20,16 @@ const TestCreator = ({ userData }) => {
     const [testCode, setTestCode] = useState(null);
 
     // Modes: 'manual' | 'topic' | 'pdf'
-    const [mode, setMode] = useState('manual');
+    const [mode, setMode] = useLocalStorage('tc_mode', 'manual');
 
     // Test Metadata
-    const [title, setTitle] = useState('');
-    const [subject, setSubject] = useState('General');
-    const [subTopic, setSubTopic] = useState('');
+    const [title, setTitle] = useLocalStorage('tc_title', '');
+    const [subject, setSubject] = useLocalStorage('tc_subject', 'General');
+    const [subTopic, setSubTopic] = useLocalStorage('tc_subTopic', '');
+    const [duration, setDuration] = useLocalStorage('tc_duration', 30);
 
     // Questions State
-    const [questions, setQuestions] = useState([
+    const [questions, setQuestions] = useLocalStorage('tc_questions', [
         { id: 1, text: '', options: ['', '', '', ''], correctOption: 0 }
     ]);
 
@@ -145,6 +148,15 @@ const TestCreator = ({ userData }) => {
     }, [questions]);
 
     // --- Handlers ---
+    const handleCountChange = (val) => {
+        setGenConfig({ ...genConfig, count: val });
+        const c = parseInt(val);
+        if (c <= 10) setDuration(15);
+        else if (c <= 25) setDuration(30);
+        else if (c <= 50) setDuration(60);
+        else setDuration(120);
+    };
+
     const addQuestion = () => {
         setQuestions([
             ...questions,
@@ -173,16 +185,29 @@ const TestCreator = ({ userData }) => {
 
     const handleTopicGeneration = async () => {
         if (!genConfig.topic) return toast.warning('Please enter a topic');
+        
+        // Calculate deficit
+        const currentCount = questions.length === 1 && !questions[0].text ? 0 : questions.length;
+        const targetCount = parseInt(genConfig.count);
+        const deficit = targetCount - currentCount;
+
+        if (deficit <= 0) return toast.info(`Already reached the limit of ${targetCount} questions.`);
+
         setIsGenerating(true);
         setGenProgress(10);
 
         try {
+            const existingTexts = questions
+                .filter(q => q.text)
+                .map(q => q.text);
+
             const newQuestions = await generateQuestions(
                 genConfig.topic,
-                parseInt(genConfig.count),
+                deficit,
                 genConfig.difficulty,
                 'UPSC CSE',
-                (progress) => setGenProgress(progress)
+                (progress) => setGenProgress(progress),
+                existingTexts
             );
 
             if (newQuestions && newQuestions.length > 0) {
@@ -223,6 +248,14 @@ const TestCreator = ({ userData }) => {
 
     const handlePDFGeneration = async () => {
         if (!genConfig.file) return toast.warning('Please upload a PDF file');
+        
+        // Calculate deficit
+        const currentCount = questions.length === 1 && !questions[0].text ? 0 : questions.length;
+        const targetCount = parseInt(genConfig.count);
+        const deficit = targetCount - currentCount;
+
+        if (deficit <= 0) return toast.info(`Already reached the limit of ${targetCount} questions.`);
+
         setIsGenerating(true);
         setGenProgress(10);
 
@@ -234,12 +267,17 @@ const TestCreator = ({ userData }) => {
             if (!text || text.length < 100) throw new Error('Could not extract enough text from PDF. The document may be image-based or too short.');
 
             setGenProgress(40);
+            const existingTexts = questions
+                .filter(q => q.text)
+                .map(q => q.text);
+
             const newQuestions = await generateQuestionsFromDocument(
                 text,
                 genConfig.file.name,
-                parseInt(genConfig.count),
+                deficit,
                 genConfig.difficulty,
-                (p) => setGenProgress(40 + (p * 0.6))
+                (p) => setGenProgress(40 + (p * 0.6)),
+                existingTexts
             );
 
             if (newQuestions && newQuestions.length > 0) {
@@ -372,6 +410,9 @@ const TestCreator = ({ userData }) => {
                             setTestCode(null);
                             setIsPublished(false);
                             setTitle('');
+                            setSubject('General');
+                            setSubTopic('');
+                            setDuration(30);
                             setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0 }]);
                             setIsSubmitting(false);
                             setMode('manual');
@@ -477,7 +518,7 @@ const TestCreator = ({ userData }) => {
                                                 { label: '100 Qs', value: '100' }
                                             ]}
                                             value={String(genConfig.count)}
-                                            onChange={(val) => setGenConfig({ ...genConfig, count: val })}
+                                            onChange={handleCountChange}
                                             fullWidth={true}
                                         />
                                     </div>
@@ -770,12 +811,28 @@ const TestCreator = ({ userData }) => {
                     {/* FULL WIDTH: QUESTION EDITOR */}
                     <div className="space-y-6 border-t border-slate-200 pt-8 mt-8">
                         <div className="flex items-center justify-between">
-                            <h3 className="font-bold text-lg text-slate-800 flex items-center gap-2">
-                                <span className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center text-slate-500 text-sm font-black border border-slate-200">
-                                    {questions.length}
-                                </span>
-                                Questions Added
-                            </h3>
+                            <div className="flex items-center gap-4">
+                                <h3 className="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                    <span className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center text-slate-500 text-sm font-black border border-slate-200">
+                                        {questions.length}
+                                    </span>
+                                    Questions Added
+                                </h3>
+                                {questions.length < parseInt(genConfig.count) && (
+                                    <button
+                                        onClick={() => {
+                                            if (mode === 'manual') setMode('topic');
+                                            const target = mode === 'pdf' ? handlePDFGeneration : handleTopicGeneration;
+                                            target();
+                                        }}
+                                        disabled={isGenerating}
+                                        className="flex items-center gap-1.5 px-3 py-1.5 bg-purple-50 text-purple-700 text-xs font-bold rounded-lg hover:bg-purple-100 transition-all border border-purple-100"
+                                    >
+                                        <Sparkles size={14} />
+                                        Fill to {genConfig.count} with AI
+                                    </button>
+                                )}
+                            </div>
                             {questions.length > 0 && (
                                 <button onClick={() => setQuestions([])} className="text-red-500 text-xs font-bold hover:bg-red-50 px-3 py-1.5 rounded-lg transition-colors">
                                     Clear All

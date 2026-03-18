@@ -56,6 +56,7 @@ export function useAuth() {
     }, []);
 
     const prevBatchesLengthRef = useRef(0);
+    const prevInstitutionsLengthRef = useRef(0);
     const hasSyncedStreakRef = useRef(false);
 
     // Listen for auth state changes and real-time user document changes
@@ -89,6 +90,13 @@ export function useAuth() {
                                 showToast('You have been added to a new institution batch!', 'success', 8000);
                             }
                             prevBatchesLengthRef.current = currentBatches.length;
+
+                            // Check for new institution additions
+                            const currentInstitutions = data.joinedInstitutions || [];
+                            if (prevInstitutionsLengthRef.current > 0 && currentInstitutions.length > prevInstitutionsLengthRef.current) {
+                                showToast('You have been formally added to a new institution!', 'success', 8000);
+                            }
+                            prevInstitutionsLengthRef.current = currentInstitutions.length;
 
                             // Auto-migrate unsupported exams (like SSC CGL or Banking) to UPSC CSE
                             const validExams = ['UPSC CSE', 'State PSC'];
