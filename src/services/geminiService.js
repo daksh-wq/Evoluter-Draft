@@ -141,6 +141,17 @@ SOLUTION FORMAT (mandatory for every question — 3 layers):
   "approachToSolve": "Strategy to eliminate wrong options and identify the correct answer (e.g., 'Use positive/negative elimination: options B and C are extreme statements...')"
 }`;
 
+// ─── Internal: Tagging instruction — mirrors the server-side version in testGeneration.js ───
+const TAGGING_INSTRUCTION = `
+TAGGING FIELDS (mandatory for EVERY question — use the exact codes below):
+"subjectCode": one of [IP=Indian-Polity, AM=Ancient-&-Medieval-History, MI=Modern-India, IC=Indian-Culture, GE=Geography, EI=Economy-of-India, EN=Environment, ST=Science-&-Technology, CA=Current-Affairs, TR=Trivial/General]
+"topicCode":   2-digit string e.g. "02" (best matching sub-topic number within the subject)
+"sourceCode":  one of [SN=Standard/NCERT, AD=Advanced/official-docs, CI=Current-Issue, RN=Random, NA=Not-Applicable]
+"typeCode":    one of [FA=Factual, CO=Conceptual, AB=Application-Based, DE=Definition, IN=Informative]
+"difficultyCode": one of [ET=Extreme-Tough, TO=Tough, ME=Medium, ES=Easy, FO=Foundational]
+"pyqCode":     one of [CS=CSE, CD=CDSE, ND=NDA, CI=CISF, CP=CAPF, NA=Not-Applicable]
+`;
+
 /**
  * Generate MCQ questions on a specific topic with batch support.
  * Guarantees question-type diversity, 3-layer solutions, and exact count.
@@ -218,6 +229,7 @@ RULES:
 4. DIFFICULTY: Each question MUST carry a self-assessed 'difficultyLevel' field ('Easy', 'Intermediate', or 'Hard').
 ${typeInstruction}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+${TAGGING_INSTRUCTION}
 
 ${existingQuestions.length > 0 ? `DO NOT duplicate or overlap with these existing questions:\n${existingQuestions.join('\n')}` : ''}
 
@@ -235,7 +247,13 @@ JSON FORMAT:
       "correctAnswerReason": "Why this answer is correct...",
       "sourceOfQuestion": "NCERT / Article / Act reference...",
       "approachToSolve": "How to narrow down to the right option..."
-    }
+    },
+    "subjectCode": "IP",
+    "topicCode": "03",
+    "sourceCode": "SN",
+    "typeCode": "CO",
+    "difficultyCode": "TO",
+    "pyqCode": "NA"
   }
 ]`;
 
@@ -276,7 +294,14 @@ JSON FORMAT:
                     approachToSolve: 'Eliminate incorrect options systematically.'
                 },
                 // Keep legacy explanation field for backward compat
-                explanation: q.solution?.correctAnswerReason || q.explanation || ''
+                explanation: q.solution?.correctAnswerReason || q.explanation || '',
+                // Preserve AI-assigned tagging codes (may be undefined if AI didn't return them)
+                subjectCode: q.subjectCode || undefined,
+                topicCode: q.topicCode || undefined,
+                sourceCode: q.sourceCode || undefined,
+                typeCode: q.typeCode || undefined,
+                difficultyCode: q.difficultyCode || undefined,
+                pyqCode: q.pyqCode || undefined,
             }));
         } catch (error) {
             logger.error(`Batch ${batchIndex} generation error:`, error);
@@ -344,8 +369,9 @@ ${existingSummary}
 
 ${buildTypeDistributionInstruction(deficit)}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+${TAGGING_INSTRUCTION}
 
-RULES: Strictly unique questions. Return ONLY a valid JSON Array (same format as before).`;
+RULES: Strictly unique questions. Return ONLY a valid JSON Array (same format as before, including all tagging fields).`;
 
         try {
             const fillResult = await callGemini(fillPrompt, true);
@@ -373,7 +399,13 @@ RULES: Strictly unique questions. Return ONLY a valid JSON Array (same format as
                                 sourceOfQuestion: 'General Knowledge',
                                 approachToSolve: 'Eliminate incorrect options systematically.'
                             },
-                            explanation: q.solution?.correctAnswerReason || q.explanation || ''
+                            explanation: q.solution?.correctAnswerReason || q.explanation || '',
+                            subjectCode: q.subjectCode || undefined,
+                            topicCode: q.topicCode || undefined,
+                            sourceCode: q.sourceCode || undefined,
+                            typeCode: q.typeCode || undefined,
+                            difficultyCode: q.difficultyCode || undefined,
+                            pyqCode: q.pyqCode || undefined,
                         });
                     });
                 }
@@ -441,42 +473,96 @@ JSON Schema:
  * Analyze test performance using AI
  */
 export async function analyzeTestPerformance(questions, answers) {
-    const summary = questions.map((q, idx) => {
+    // Build a rich per-question summary with text, result, and source context
+    const incorrect = [];
+    const correct = [];
+    const skipped = [];
+
+    questions.forEach((q, idx) => {
         const userVal = answers[q.id];
-        const isCorrect = userVal === q.correctAnswer;
-        const skipped = userVal === undefined;
-        return {
-            id: idx + 1,
-            tags: q.tags || [],
-            result: skipped ? 'Skipped' : (isCorrect ? 'Correct' : 'Incorrect')
+        const isSkipped = userVal === undefined || userVal === null;
+        const isCorrect = !isSkipped && userVal === q.correctAnswer;
+
+        const sol = q.solution || {};
+        const entry = {
+            n: idx + 1,
+            text: (q.text || '').substring(0, 120),   // first 120 chars to keep prompt tight
+            topic: q.topic || q.tags?.find(t => t.type === 'subTopic')?.label || q.tags?.find(t => t.type === 'subject')?.label || 'General',
+            source: sol.sourceOfQuestion || sol.possible_source || '',
+            reason: sol.correctAnswerReason || '',     // what the correct answer is about
         };
+
+        if (isSkipped) skipped.push(entry);
+        else if (isCorrect) correct.push(entry);
+        else incorrect.push(entry);
     });
 
-    const prompt = `Analyze this test performance for a UPSC aspirant.
-    
-    Data: ${JSON.stringify(summary)}
-    
-    Provide a strategic analysis in JSON format:
-    {
-      "strengths": ["Strong area 1", "Strong area 2"],
-      "weaknesses": ["Weak area 1", "Weak area 2"],
-      "focusOn": ["High priority topic to study 1", "High priority topic to study 2"],
-      "notFocusOn": ["Topic already mastered / Low priority 1", "Topic not needed right now 2"],
-      "overallFeedback": "2-3 sentences of encouraging but critical feedback."
-    }`;
+    const total = questions.length;
+    const scorePercent = Math.round((correct.length / total) * 100);
+
+    const prompt = `You are an expert UPSC coaching mentor. A student just completed a practice test. Analyze their performance and give specific, actionable feedback.
+
+TEST SUMMARY:
+- Total: ${total} | Correct: ${correct.length} | Incorrect: ${incorrect.length} | Skipped: ${skipped.length} | Score: ${scorePercent}%
+
+QUESTIONS ANSWERED INCORRECTLY (${incorrect.length}):
+${incorrect.map(q => `Q${q.n}: "${q.text}"
+  Topic: ${q.topic} | Source: ${q.source || 'N/A'}
+  Correct answer concept: ${q.reason || 'N/A'}`).join('\n\n') || 'None'}
+
+QUESTIONS ANSWERED CORRECTLY (${correct.length}):
+${correct.map(q => `Q${q.n}: Topic: ${q.topic}`).join(' | ') || 'None'}
+
+SKIPPED (${skipped.length}):
+${skipped.map(q => `Q${q.n}: Topic: ${q.topic}`).join(' | ') || 'None'}
+
+Based on this, provide a SPECIFIC JSON analysis. Rules:
+- personalizedFeedback: 2-4 items. Each must cite a SPECIFIC incorrect question by topic/concept and say WHY the student likely struggled (e.g., "You got Q3 wrong on Constitutional Amendments — this suggests confusion between Article 368 procedure and ordinary legislation. Focus on distinguishing amendment types.")
+- topicsToStudy: 3-5 high-priority topics where student made errors, with brief why
+- keyStrengths: 2-3 topics/concepts they clearly understand (from correct answers)
+- overallFeedback: 2-3 sentences of honest, personalised, encouraging feedback referencing their actual score
+
+Return ONLY this JSON (no markdown):
+{
+  "overallFeedback": "...",
+  "personalizedFeedback": [
+    { "concept": "Topic/concept name", "detail": "You struggled with X because... Focus on Y." }
+  ],
+  "topicsToStudy": [
+    { "topic": "Topic name", "reason": "Why to study this" }
+  ],
+  "keyStrengths": ["Strength 1", "Strength 2"]
+}`;
 
     try {
         const result = await callGemini(prompt, true);
-        if (!result) throw new Error("No AI response");
-        return JSON.parse(result);
-    } catch (error) {
-        logger.error("Analysis Error:", error);
+        if (!result) throw new Error('No AI response');
+
+        let cleaned = result.trim();
+        if (cleaned.startsWith('```')) {
+            cleaned = cleaned.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+        }
+        const parsed = JSON.parse(cleaned);
+
+        // Normalise to always have arrays
         return {
-            strengths: ["Consistency"],
-            weaknesses: ["Analysis failed"],
-            focusOn: ["Review incorrect answers manually"],
-            notFocusOn: ["N/A"],
-            overallFeedback: "AI analysis unavailable at the moment. Please review the detailed question breakdown below."
+            overallFeedback: parsed.overallFeedback || '',
+            personalizedFeedback: Array.isArray(parsed.personalizedFeedback) ? parsed.personalizedFeedback : [],
+            topicsToStudy: Array.isArray(parsed.topicsToStudy) ? parsed.topicsToStudy : [],
+            keyStrengths: Array.isArray(parsed.keyStrengths) ? parsed.keyStrengths : [],
+            // Legacy compat fields (used elsewhere)
+            focusOn: (parsed.topicsToStudy || []).map(t => typeof t === 'string' ? t : `${t.topic} — ${t.reason}`),
+            strengths: parsed.keyStrengths || [],
+        };
+    } catch (error) {
+        logger.error('Analysis Error:', error);
+        return {
+            overallFeedback: 'AI analysis unavailable at the moment. Please review the detailed question breakdown below.',
+            personalizedFeedback: [],
+            topicsToStudy: [],
+            keyStrengths: [],
+            focusOn: ['Review your incorrect answers in the Question Review tab'],
+            strengths: ['Attempting the test'],
         };
     }
 }
@@ -616,6 +702,7 @@ INSTRUCTIONS:
 3. Avoid questions that just ask "which statement matches the text" — test deeper understanding
 ${typeInstruction}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+${TAGGING_INSTRUCTION}
 
 ${existingQuestions.length > 0 ? `DO NOT duplicate or overlap with these existing questions:\n${existingQuestions.join('\n')}` : ''}
 
@@ -632,7 +719,13 @@ Return ONLY a valid JSON array:
       "correctAnswerReason": "...",
       "sourceOfQuestion": "Document / NCERT / Standard reference",
       "approachToSolve": "..."
-    }
+    },
+    "subjectCode": "GE",
+    "topicCode": "02",
+    "sourceCode": "AD",
+    "typeCode": "CO",
+    "difficultyCode": "ME",
+    "pyqCode": "NA"
   }
 ]
 
@@ -695,8 +788,9 @@ ${textChunks[0].substring(0, 8000)}
 
 ${buildTypeDistributionInstruction(currentBatchSize)}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+${TAGGING_INSTRUCTION}
 
-Return ONLY a JSON Array (same format as before).`;
+Return ONLY a JSON Array (same format as before, including all tagging fields).`;
 
         try {
             const fillResult = await callGemini(fillPrompt, true);

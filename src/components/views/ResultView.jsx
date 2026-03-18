@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import {
     CheckCircle, XCircle, AlertCircle, Clock,
-    Brain, Target, ListChecks, ArrowRight, RefreshCw, ChevronDown, Download, BarChart2, BookOpen, Activity
+    Brain, Target, ListChecks, ArrowRight, RefreshCw, ChevronDown, Download, BarChart2, BookOpen, Activity,
+    Lightbulb
 } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip as RechartsTooltip, Cell } from 'recharts';
 import { analyzeTestPerformance } from '../../services/geminiService';
@@ -18,22 +19,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
         let cancelled = false;
 
         const runAnalysis = async () => {
-            if (test && results) {
-                // Check if server-side suggestions are already present (from submitTest)
-                if (results.suggestions) {
-                    const s = results.suggestions;
-                    const precomputedAnalysis = {
-                        overallFeedback: Array.isArray(s.tips) ? s.tips.join(' ') : (s.tips || "Great effort! Review the focus areas below."),
-                        strengths: s.strengths || [], // Use explicit strengths if available
-                        focusOn: s.focusOn || [],
-                        notFocusOn: s.notFocusOn || [],
-                    };
-                    setAnalysis(precomputedAnalysis);
-                    setLoadingAnalysis(false);
-                    return;
-                }
-
-                // Fallback: Client-side analysis if server didn't provide it
+            if (test && answers) {
                 try {
                     const aiResult = await analyzeTestPerformance(test, answers);
                     if (!cancelled) {
@@ -51,7 +37,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
         runAnalysis();
 
         return () => { cancelled = true; };
-    }, [test, results, answers]);
+    }, [test, answers]);
 
     // PDF Export via html2pdf.js
     const [isDownloading, setIsDownloading] = useState(false);
@@ -378,73 +364,87 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                 {activeTab === 'insights' && (
                     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-5">
                         {loadingAnalysis ? (
-                            <div className="bg-white p-8 rounded-2xl border border-slate-200 text-center">
-                                <RefreshCw className="animate-spin mx-auto text-blue-500 mb-4" size={32} />
-                                <h3 className="text-lg font-bold text-slate-700">Analyzing Performance...</h3>
-                                <p className="text-slate-400 text-sm">Our AI is identifying your logic gaps.</p>
+                            <div className="bg-white p-10 rounded-2xl border border-slate-200 text-center">
+                                <div className="w-12 h-12 border-4 border-[#2278B0] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+                                <h3 className="text-lg font-bold text-slate-700 mb-1">Analyzing Your Performance...</h3>
+                                <p className="text-slate-400 text-sm">Reading your answers and finding patterns in your mistakes.</p>
                             </div>
-                        ) : (
+                        ) : analysis ? (
                             <>
-                                {/* Feedback Card */}
+                                {/* Overall Feedback */}
                                 <div className="bg-gradient-to-br from-indigo-50 to-[#2278B0]/5 p-6 rounded-2xl border border-[#2278B0]/20">
                                     <h3 className="font-bold text-indigo-950 flex items-center gap-2 mb-3">
-                                        <Brain className="text-[#2278B0]" size={20} /> Curator's Feedback
+                                        <Brain className="text-[#2278B0]" size={20} /> Mentor's Feedback
                                     </h3>
-                                    <p className="text-slate-700 leading-relaxed font-serif text-lg">
+                                    <p className="text-slate-700 leading-relaxed text-base">
                                         {analysis.overallFeedback}
                                     </p>
                                 </div>
 
-                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                                    {/* Focus Areas (Priority) - NOW: Topics to Study */}
-                                    <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100">
-                                        <h4 className="font-bold text-orange-700 flex items-center gap-2 mb-4 uppercase text-xs tracking-wider">
-                                            <Target size={16} /> Topics to Study
-                                        </h4>
-                                        <ul className="space-y-3">
-                                            {(analysis.focusOn || analysis.focusChecklist || []).map((item, i) => (
-                                                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                                                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-1.5 shrink-0" />
-                                                    {item}
-                                                </li>
+                                {/* Personalized Concept Feedback */}
+                                {analysis.personalizedFeedback?.length > 0 && (
+                                    <div>
+                                        <h3 className="font-bold text-slate-800 flex items-center gap-2 mb-3 text-sm uppercase tracking-wider">
+                                            <AlertCircle size={16} className="text-red-400" /> Where You Struggled — and Why
+                                        </h3>
+                                        <div className="space-y-3">
+                                            {analysis.personalizedFeedback.map((item, i) => (
+                                                <div key={i} className="bg-red-50 border border-red-100 rounded-xl p-4">
+                                                    <p className="font-bold text-red-700 text-sm mb-1">{item.concept}</p>
+                                                    <p className="text-sm text-red-800 leading-relaxed">{item.detail}</p>
+                                                </div>
                                             ))}
-                                        </ul>
+                                        </div>
                                     </div>
+                                )}
 
-                                    {/* Not Focus On (Low Priority) - NEW */}
-                                    <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                                        <h4 className="font-bold text-slate-500 flex items-center gap-2 mb-4 uppercase text-xs tracking-wider">
-                                            <XCircle size={16} /> Not Focus On
-                                        </h4>
-                                        <ul className="space-y-3">
-                                            {(analysis.notFocusOn || []).map((item, i) => (
-                                                <li key={i} className="flex items-start gap-2 text-sm text-slate-500">
-                                                    <div className="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 shrink-0" />
-                                                    {item}
-                                                </li>
-                                            ))}
-                                            {(!analysis.notFocusOn || analysis.notFocusOn.length === 0) && (
-                                                <li className="text-xs text-slate-400 italic">No specific topics to ignore.</li>
-                                            )}
-                                        </ul>
-                                    </div>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    {/* Topics to Study */}
+                                    {analysis.topicsToStudy?.length > 0 && (
+                                        <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100">
+                                            <h4 className="font-bold text-orange-700 flex items-center gap-2 mb-4 uppercase text-xs tracking-wider">
+                                                <Target size={15} /> Priority Topics to Study
+                                            </h4>
+                                            <ul className="space-y-3">
+                                                {analysis.topicsToStudy.map((item, i) => {
+                                                    const topic = typeof item === 'string' ? item : item.topic;
+                                                    const reason = typeof item === 'string' ? '' : item.reason;
+                                                    return (
+                                                        <li key={i} className="flex items-start gap-2.5">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-[7px] shrink-0" />
+                                                            <div>
+                                                                <p className="text-sm font-semibold text-slate-800">{topic}</p>
+                                                                {reason && <p className="text-xs text-slate-500 mt-0.5">{reason}</p>}
+                                                            </div>
+                                                        </li>
+                                                    );
+                                                })}
+                                            </ul>
+                                        </div>
+                                    )}
 
-                                    {/* Strengths */}
-                                    <div className="bg-green-50 p-6 rounded-2xl border border-green-100">
-                                        <h4 className="font-bold text-green-700 flex items-center gap-2 mb-4 uppercase text-xs tracking-wider">
-                                            <CheckCircle size={16} /> Key Strengths
-                                        </h4>
-                                        <ul className="space-y-3">
-                                            {analysis.strengths.map((str, i) => (
-                                                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                                                    <CheckCircle size={16} className="text-green-500 mt-0.5 shrink-0" />
-                                                    {str}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
+                                    {/* Key Strengths */}
+                                    {analysis.keyStrengths?.length > 0 && (
+                                        <div className="bg-green-50 p-6 rounded-2xl border border-green-100">
+                                            <h4 className="font-bold text-green-700 flex items-center gap-2 mb-4 uppercase text-xs tracking-wider">
+                                                <CheckCircle size={15} /> Key Strengths
+                                            </h4>
+                                            <ul className="space-y-3">
+                                                {analysis.keyStrengths.map((str, i) => (
+                                                    <li key={i} className="flex items-start gap-2.5 text-sm text-slate-700">
+                                                        <CheckCircle size={15} className="text-green-500 mt-0.5 shrink-0" />
+                                                        {str}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
                                 </div>
                             </>
+                        ) : (
+                            <div className="bg-white p-8 rounded-2xl border border-slate-200 text-center">
+                                <p className="text-slate-500">Could not generate insights. Please check the Question Review tab for a detailed breakdown.</p>
+                            </div>
                         )}
                     </div>
                 )}
@@ -454,96 +454,181 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                         {test.map((q, idx) => {
                             const userAnswer = answers[q.id];
                             const isCorrect = userAnswer === q.correctAnswer;
-                            const isSkipped = userAnswer === undefined;
+                            const isSkipped = userAnswer === undefined || userAnswer === null;
 
-                            let statusColor = isCorrect ? 'border-green-200 bg-green-50' : (isSkipped ? 'border-slate-200 bg-slate-50' : 'border-red-200 bg-red-50');
+                            const borderStyle = isCorrect ? 'border-green-200' : isSkipped ? 'border-slate-200' : 'border-red-200';
+
+                            // Resolve solution fields — supports both 3-layer schema and legacy names
+                            const sol = q.solution || {};
+                            const correctReason   = sol.correctAnswerReason || sol.correct_explanation || q.explanation || '';
+                            const approachToSolve = sol.approachToSolve    || sol.solving_approach    || '';
+                            const sourceRef       = sol.sourceOfQuestion   || sol.possible_source     || '';
+
+                            const correctOptionLabel = q.options?.[q.correctAnswer];
+                            const userOptionLabel = (!isCorrect && !isSkipped && userAnswer !== undefined && userAnswer !== null)
+                                ? q.options?.[userAnswer] : null;
+
+                            // Split text into bullet points
+                            const parseToBullets = (text) => {
+                                if (!text) return [];
+                                return text
+                                    .split(/\n/)
+                                    .flatMap(line => line.split(/(?<=\.)\s+(?=[A-Z])/))
+                                    .map(s => s.replace(/^[-•*\d]+[.)]\s*/, '').trim())
+                                    .filter(Boolean);
+                            };
 
                             return (
-                                <div key={q.id} className={`p-6 rounded-2xl border ${statusColor}`}>
-                                    <div className="flex justify-between items-start mb-3">
-                                        <div className="flex items-center gap-2 flex-wrap">
-                                            <span className="text-xs font-bold text-slate-500 uppercase">Question {idx + 1}</span>
-                                            {q.difficulty && (
-                                                <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${q.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
-                                                    q.difficulty.toLowerCase() === 'intermediate' || q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                <div key={q.id} className={`rounded-2xl border ${borderStyle} overflow-hidden shadow-sm`}>
+
+                                    {/* Question top section */}
+                                    <div className="p-5 bg-white">
+                                        <div className="flex justify-between items-start mb-3">
+                                            <div className="flex items-center gap-2 flex-wrap">
+                                                <span className="text-xs font-bold text-slate-400 uppercase">Q{idx + 1}</span>
+                                                {q.difficulty && (
+                                                    <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${
+                                                        /hard/i.test(q.difficulty) ? 'bg-red-50 text-red-600 border-red-100' :
+                                                        /inter|medium/i.test(q.difficulty) ? 'bg-orange-50 text-orange-600 border-orange-100' :
                                                         'bg-green-50 text-green-600 border-green-100'
-                                                    }`}>
-                                                    {q.difficulty}
-                                                </span>
-                                            )}
-                                            {q.questionType && (
-                                                <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-indigo-50 text-indigo-600 border border-indigo-100">
-                                                    {q.questionType}
-                                                </span>
-                                            )}
+                                                    }`}>{q.difficulty}</span>
+                                                )}
+                                                {q.questionType && (
+                                                    <span className="px-1.5 py-0.5 rounded text-[10px] font-bold border bg-indigo-50 text-indigo-600 border-indigo-100">
+                                                        {q.questionType}
+                                                    </span>
+                                                )}
+                                            </div>
+                                            <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${
+                                                isCorrect ? 'bg-green-100 text-green-700' :
+                                                isSkipped ? 'bg-slate-200 text-slate-600' :
+                                                'bg-red-100 text-red-700'
+                                            }`}>
+                                                {isCorrect ? '✓ Correct' : isSkipped ? 'Skipped' : '✗ Incorrect'}
+                                            </span>
                                         </div>
-                                        <span className={`text-xs font-bold px-2 py-1 rounded ${isCorrect ? 'bg-green-100 text-green-700' : (isSkipped ? 'bg-slate-200 text-slate-600' : 'bg-red-100 text-red-700')}`}>
-                                            {isCorrect ? 'Correct' : (isSkipped ? 'Skipped' : 'Incorrect')}
-                                        </span>
-                                    </div>
-                                    <div className="mb-4">
-                                        {q.text
-                                            .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
-                                            .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                                            .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Da-d])\.\s)/g)
-                                            .map((part, i) => {
-                                                const trimmed = part.trim();
-                                                const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(trimmed);
 
-                                                if (!trimmed) return null;
+                                        {/* Question text */}
+                                        <div className="mb-4 space-y-1">
+                                            {q.text
+                                                .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
+                                                .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                                .split(/\n/g)
+                                                .map((part, i) => {
+                                                    const t = part.trim();
+                                                    if (!t) return null;
+                                                    const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(t);
+                                                    return (
+                                                        <div key={i} className={isStatement
+                                                            ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 rounded-lg border-l-2 border-slate-300 text-sm'
+                                                            : 'font-semibold text-slate-800'}>
+                                                            {t}
+                                                        </div>
+                                                    );
+                                                })}
+                                        </div>
 
+                                        {/* Options */}
+                                        <div className="space-y-2">
+                                            {q.options.map((rawOpt, i) => {
+                                                const opt = typeof rawOpt === 'string' ? rawOpt.replace(/^([a-dA-D]|\d+)[.)]\s*/, '').trim() : rawOpt;
                                                 return (
-                                                    <div key={i} className={`mb-2 ${isStatement ? 'pl-3 text-slate-700 font-medium bg-slate-50/50 p-2 rounded-lg border-l-2 border-slate-300 text-sm' : 'font-medium text-slate-800'}`}>
-                                                        {trimmed}
+                                                    <div key={i} className={`flex items-center gap-3 p-3 rounded-lg text-sm border ${
+                                                        i === q.correctAnswer ? 'bg-green-100 border-green-200' :
+                                                        i === userAnswer && !isCorrect ? 'bg-red-100 border-red-200' :
+                                                        'bg-slate-50 border-slate-100'
+                                                    }`}>
+                                                        <div className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
+                                                            i === q.correctAnswer ? 'bg-green-500 text-white' :
+                                                            i === userAnswer ? 'bg-red-500 text-white' :
+                                                            'bg-slate-200 text-slate-500'
+                                                        }`}>
+                                                            {String.fromCharCode(65 + i)}
+                                                        </div>
+                                                        <span className={i === q.correctAnswer ? 'font-bold text-green-900' : 'text-slate-600'}>{opt}</span>
+                                                        {i === q.correctAnswer && <CheckCircle size={14} className="text-green-500 ml-auto shrink-0" />}
+                                                        {i === userAnswer && !isCorrect && <XCircle size={14} className="text-red-500 ml-auto shrink-0" />}
                                                     </div>
                                                 );
                                             })}
-                                    </div>
-                                    <div className="space-y-2">
-                                        {q.options.map((rawOpt, i) => {
-                                            // Strip out any redundant A), B., 1), etc. from the start of the option
-                                            const opt = typeof rawOpt === 'string' ? rawOpt.replace(/^([a-dA-D]|\d+)[.)]\s*/, '').trim() : rawOpt;
-                                            return (
-                                                <div key={i} className={`flex items-center gap-3 p-3 rounded-lg text-sm border ${i === q.correctAnswer ? 'bg-green-100 border-green-200' : (i === userAnswer ? 'bg-red-100 border-red-200' : 'bg-white border-slate-100')
-                                                    }`}>
-                                                    <div className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${i === q.correctAnswer ? 'bg-green-500 text-white' : (i === userAnswer ? 'bg-red-500 text-white' : 'bg-slate-200 text-slate-500')
-                                                        }`}>
-                                                        {String.fromCharCode(65 + i)}
-                                                    </div>
-                                                    <span className={i === q.correctAnswer ? 'font-bold text-green-900' : 'text-slate-600'}>{opt}</span>
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
-                                    {q.solution ? (
-                                        <div className="mt-4 pt-4 border-t border-slate-200/50 space-y-3">
-                                            {/* Layer 1: Correct Answer Reason */}
-                                            {(q.solution.correctAnswerReason || q.solution.correct_explanation) && (
-                                                <div>
-                                                    <span className="font-bold text-slate-800 text-sm">✅ Correct Answer:</span>
-                                                    <p className="text-sm text-slate-600 mt-1">{q.solution.correctAnswerReason || q.solution.correct_explanation}</p>
-                                                </div>
-                                            )}
-                                            {/* Layer 2: Source of Question */}
-                                            {(q.solution.sourceOfQuestion || q.solution.possible_source) && (
-                                                <div className="flex items-start gap-2 text-xs text-slate-500">
-                                                    <BookOpen size={14} className="mt-0.5 shrink-0 text-indigo-400" />
-                                                    <span><span className="font-semibold text-indigo-600">Source:</span> {q.solution.sourceOfQuestion || q.solution.possible_source}</span>
-                                                </div>
-                                            )}
-                                            {/* Layer 3: Approach to Solve */}
-                                            {(q.solution.approachToSolve || q.solution.solving_approach) && (
-                                                <div className="bg-blue-50/50 p-3 rounded-lg border border-blue-100">
-                                                    <span className="font-bold text-blue-800 text-xs uppercase tracking-wider">💡 Approach to Solve:</span>
-                                                    <p className="text-sm text-blue-700 mt-1">{q.solution.approachToSolve || q.solution.solving_approach}</p>
-                                                </div>
-                                            )}
                                         </div>
-                                    ) : q.explanation && (
-                                        <div className="mt-4 pt-4 border-t border-slate-200/50">
-                                            <p className="text-sm text-slate-600">
-                                                <span className="font-bold text-slate-800">Explanation:</span> {q.explanation}
-                                            </p>
+                                    </div>
+
+                                    {/* Explanation Panel */}
+                                    {(correctReason || approachToSolve || sourceRef) && (
+                                        <div className="border-t border-slate-100 bg-slate-50/60 p-5 space-y-3">
+
+                                            {/* 1. How to Approach */}
+                                            {approachToSolve && (
+                                                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4">
+                                                    <div className="flex items-center gap-2 mb-2.5">
+                                                        <Lightbulb size={14} className="text-blue-600 shrink-0" />
+                                                        <span className="text-[11px] font-bold text-blue-700 uppercase tracking-wider">How to Approach this Question</span>
+                                                    </div>
+                                                    <ul className="space-y-2">
+                                                        {parseToBullets(approachToSolve).map((bullet, i) => (
+                                                            <li key={i} className="flex items-start gap-2.5 text-sm text-blue-800">
+                                                                <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                                                <span>{bullet}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
+
+                                            {/* 2. Why Correct Answer is Correct */}
+                                            {correctReason && (
+                                                <div className="bg-green-50 border border-green-100 rounded-xl p-4">
+                                                    <div className="flex items-center gap-2 mb-2.5">
+                                                        <CheckCircle size={14} className="text-green-600 shrink-0" />
+                                                        <span className="text-[11px] font-bold text-green-700 uppercase tracking-wider">
+                                                            Explanation — Why &ldquo;{correctOptionLabel}&rdquo; is Correct
+                                                        </span>
+                                                    </div>
+                                                    <ul className="space-y-2">
+                                                        {parseToBullets(correctReason).map((bullet, i) => (
+                                                            <li key={i} className="flex items-start gap-2.5 text-sm text-green-800">
+                                                                <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />
+                                                                <span>{bullet}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
+
+                                            {/* 3. Why User's Answer Was Wrong */}
+                                            {userOptionLabel && (
+                                                <div className="bg-red-50 border border-red-100 rounded-xl p-4">
+                                                    <div className="flex items-center gap-2 mb-2.5">
+                                                        <XCircle size={14} className="text-red-500 shrink-0" />
+                                                        <span className="text-[11px] font-bold text-red-600 uppercase tracking-wider">
+                                                            Why Your Answer &ldquo;{userOptionLabel}&rdquo; is Incorrect
+                                                        </span>
+                                                    </div>
+                                                    <ul className="space-y-2">
+                                                        <li className="flex items-start gap-2.5 text-sm text-red-800">
+                                                            <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
+                                                            <span>The correct answer is <strong>&ldquo;{correctOptionLabel}&rdquo;</strong>.{' '}
+                                                                {parseToBullets(correctReason)[0] || ''}
+                                                            </span>
+                                                        </li>
+                                                        {parseToBullets(approachToSolve).slice(0, 2).map((bullet, i) => (
+                                                            <li key={i} className="flex items-start gap-2.5 text-sm text-red-700">
+                                                                <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-red-300 shrink-0" />
+                                                                <span>{bullet}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
+
+                                            {/* 4. Source */}
+                                            {sourceRef && (
+                                                <div className="flex items-start gap-2 text-xs text-slate-500 pt-1 pl-1">
+                                                    <BookOpen size={13} className="mt-0.5 shrink-0 text-slate-400" />
+                                                    <span><span className="font-semibold text-slate-600">Source: </span>{sourceRef}</span>
+                                                </div>
+                                            )}
                                         </div>
                                     )}
                                 </div>

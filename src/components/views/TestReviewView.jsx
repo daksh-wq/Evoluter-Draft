@@ -5,14 +5,15 @@ import { db } from '../../services/firebase';
 import { useAuth } from '../../hooks';
 import {
     CheckCircle, XCircle, AlertCircle, ArrowLeft,
-    RefreshCw, Clock, Brain, BookOpen
+    RefreshCw, Clock, Brain, BookOpen, Lightbulb, ChevronDown, ChevronUp
 } from 'lucide-react';
 import { formatTime } from '../../utils/helpers';
 import logger from '../../utils/logger';
 
 /**
  * TestReviewView Component
- * Displays detailed review of a specific past test with question-by-question breakdown
+ * Displays detailed review of a specific past test with question-by-question breakdown.
+ * Reads from testData.results (from submitTest) with 3-layer solution schema.
  */
 const TestReviewView = () => {
     const { testId } = useParams();
@@ -21,6 +22,8 @@ const TestReviewView = () => {
     const [testData, setTestData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    // All cards expanded by default; toggling collapses them
+    const [collapsedIds, setCollapsedIds] = useState({});
 
     useEffect(() => {
         const fetchTest = async () => {
@@ -42,9 +45,11 @@ const TestReviewView = () => {
                 setLoading(false);
             }
         };
-
         fetchTest();
     }, [user?.uid, testId]);
+
+    const toggleCollapse = (id) =>
+        setCollapsedIds(prev => ({ ...prev, [id]: !prev[id] }));
 
     if (loading) {
         return (
@@ -75,27 +80,78 @@ const TestReviewView = () => {
         );
     }
 
-    const questions = testData.questions || [];
-    const answers = testData.answers || {};
-    const accuracy = testData.totalQuestions
-        ? Math.round(((testData.correct || 0) / testData.totalQuestions) * 100)
-        : testData.score || 0;
+    // ── Data normalisation ──────────────────────────────────────────────────────
+    // NEW shape: testData.results (array from submitTest Cloud Function)
+    // OLD shape: testData.questions + testData.answers (legacy)
+    const rawResults = testData.results || [];
+    const legacyQuestions = testData.questions || [];
+    const legacyAnswers = testData.answers || {};
 
-    const formatDate = (timestamp) => {
-        if (!timestamp) return 'Unknown';
-        const date = timestamp.toDate ? timestamp.toDate() : new Date(timestamp);
-        return date.toLocaleDateString('en-IN', {
-            day: 'numeric',
-            month: 'long',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
+    const reviewItems = rawResults.length > 0
+        ? rawResults.map((r, idx) => ({
+            id: r.questionId || idx,
+            text: r.text || '',
+            options: r.options || [],
+            userAnswer: r.userAnswer,
+            correctAnswer: r.correctAnswer,
+            isCorrect: r.isCorrect,
+            isSkipped: r.userAnswer === null || r.userAnswer === undefined,
+            difficulty: r.difficulty,
+            questionType: r.questionType,
+            solution: r.solution,
+            explanation: r.explanation,
+        }))
+        : legacyQuestions.map((q, idx) => {
+            const userAnswer = legacyAnswers[q.id];
+            const isCorrect = userAnswer !== undefined && userAnswer !== null && userAnswer === q.correctAnswer;
+            return {
+                id: q.id || idx,
+                text: q.text || '',
+                options: q.options || [],
+                userAnswer,
+                correctAnswer: q.correctAnswer,
+                isCorrect,
+                isSkipped: userAnswer === undefined || userAnswer === null,
+                difficulty: q.difficulty,
+                questionType: q.questionType,
+                solution: q.solution,
+                explanation: q.explanation,
+            };
+        });
+
+    const accuracy = testData.accuracy
+        ?? (testData.totalQuestions
+            ? Math.round(((testData.score || 0) / testData.totalQuestions) * 100)
+            : 0);
+
+    const formatDate = (ts) => {
+        if (!ts) return 'Unknown';
+        const d = ts.toDate ? ts.toDate() : new Date(ts);
+        return d.toLocaleDateString('en-IN', {
+            day: 'numeric', month: 'long', year: 'numeric',
+            hour: '2-digit', minute: '2-digit',
         });
     };
 
+    /**
+     * Splits a solution text string into clean bullet-point lines.
+     * Handles plain text, "- bullet" lists, and numbered lists.
+     */
+    const parseToBullets = (text) => {
+        if (!text) return [];
+        // Split on newlines, sentence boundaries between capitals, or semicolons
+        return text
+            .split(/\n/)
+            .flatMap(line => line.split(/(?<=\.)\s+(?=[A-Z])/))
+            .map(s => s.replace(/^[-•*\d]+[.)]\s*/, '').trim())
+            .filter(Boolean);
+    };
+
+    // ── Render ─────────────────────────────────────────────────────────────────
     return (
         <div className="max-w-4xl mx-auto">
-            {/* Back Navigation */}
+
+            {/* Back */}
             <button
                 onClick={() => navigate('/test-history')}
                 className="flex items-center gap-2 text-slate-500 hover:text-slate-700 font-medium text-sm mb-6 transition-colors"
@@ -103,178 +159,240 @@ const TestReviewView = () => {
                 <ArrowLeft size={16} /> Back to Test History
             </button>
 
-            {/* Header Card */}
+            {/* Header */}
             <div className="bg-indigo-950 text-white rounded-2xl p-8 mb-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-[#2278B0]/20 rounded-full -translate-y-1/2 translate-x-1/2" />
-                <div className="relative z-10">
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                        <div>
-                            <p className="text-blue-200 text-xs font-bold uppercase tracking-widest mb-2">Test Review</p>
-                            <h1 className="text-2xl font-black mb-1">
-                                {testData.topic || testData.testName || 'Practice Test'}
-                            </h1>
-                            <p className="text-blue-200 text-sm">{formatDate(testData.completedAt)}</p>
-                        </div>
-                        <div className="text-center md:text-right">
-                            <p className="text-5xl font-black">{accuracy}%</p>
-                            <p className={`text-xs font-bold mt-1 px-3 py-1 rounded-full inline-block ${accuracy >= 50 ? 'bg-green-500/20 text-green-300' : 'bg-red-500/20 text-red-300'
-                                }`}>
-                                {accuracy >= 50 ? 'Passed' : 'Needs Improvement'}
-                            </p>
-                        </div>
+                <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <p className="text-blue-200 text-xs font-bold uppercase tracking-widest mb-2">Test Review</p>
+                        <h1 className="text-2xl font-black mb-1">
+                            {testData.topic || testData.testName || 'Practice Test'}
+                        </h1>
+                        <p className="text-blue-200 text-sm">{formatDate(testData.completedAt)}</p>
+                    </div>
+                    <div className="text-center md:text-right">
+                        <p className="text-5xl font-black">{accuracy}%</p>
+                        <p className={`text-xs font-bold mt-1 px-3 py-1 rounded-full inline-block ${accuracy >= 50 ? 'bg-green-500/20 text-green-300' : 'bg-red-500/20 text-red-300'}`}>
+                            {accuracy >= 50 ? 'Passed' : 'Needs Improvement'}
+                        </p>
                     </div>
                 </div>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <CheckCircle className="text-green-500 mx-auto mb-2" size={22} />
-                    <p className="text-2xl font-bold text-slate-900">{testData.correct || 0}</p>
-                    <p className="text-xs text-slate-500 font-bold uppercase">Correct</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <XCircle className="text-red-500 mx-auto mb-2" size={22} />
-                    <p className="text-2xl font-bold text-slate-900">{testData.incorrect || 0}</p>
-                    <p className="text-xs text-slate-500 font-bold uppercase">Incorrect</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <AlertCircle className="text-slate-400 mx-auto mb-2" size={22} />
-                    <p className="text-2xl font-bold text-slate-900">{testData.unanswered || 0}</p>
-                    <p className="text-xs text-slate-500 font-bold uppercase">Skipped</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <Clock className="text-[#2278B0] mx-auto mb-2" size={22} />
-                    <p className="text-2xl font-bold text-slate-900">
-                        {testData.timeTaken ? formatTime(testData.timeTaken) : '--'}
-                    </p>
-                    <p className="text-xs text-slate-500 font-bold uppercase">Time</p>
-                </div>
+                {[
+                    { icon: <CheckCircle className="text-green-500 mx-auto mb-2" size={22} />, val: testData.score ?? testData.correct ?? 0, label: 'Correct' },
+                    { icon: <XCircle className="text-red-500 mx-auto mb-2" size={22} />, val: testData.incorrect ?? reviewItems.filter(r => !r.isCorrect && !r.isSkipped).length, label: 'Incorrect' },
+                    { icon: <AlertCircle className="text-slate-400 mx-auto mb-2" size={22} />, val: testData.unanswered ?? reviewItems.filter(r => r.isSkipped).length, label: 'Skipped' },
+                    { icon: <Clock className="text-[#2278B0] mx-auto mb-2" size={22} />, val: testData.timeTaken ? formatTime(testData.timeTaken) : '--', label: 'Time' },
+                ].map(({ icon, val, label }) => (
+                    <div key={label} className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
+                        {icon}
+                        <p className="text-2xl font-bold text-slate-900">{val}</p>
+                        <p className="text-xs text-slate-500 font-bold uppercase">{label}</p>
+                    </div>
+                ))}
             </div>
 
             {/* Question Review */}
             <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2 mb-4">
-                <Brain size={22} className="text-[#2278B0]" />
-                Question Review
+                <Brain size={22} className="text-[#2278B0]" /> Question Review
             </h2>
 
-            {questions.length === 0 ? (
+            {reviewItems.length === 0 ? (
                 <div className="bg-white rounded-2xl border border-slate-200 p-8 text-center">
                     <p className="text-slate-500">Question details are not available for this test.</p>
                 </div>
             ) : (
                 <div className="space-y-4 mb-12">
-                    {questions.map((q, idx) => {
-                        const userAnswer = answers[q.id];
-                        const isCorrect = userAnswer === q.correctAnswer;
-                        const isSkipped = userAnswer === undefined || userAnswer === null;
+                    {reviewItems.map((q, idx) => {
+                        const isCollapsed = collapsedIds[q.id];
 
-                        const statusColor = isCorrect
-                            ? 'border-green-200 bg-green-50/50'
-                            : isSkipped
-                                ? 'border-slate-200 bg-slate-50/50'
-                                : 'border-red-200 bg-red-50/50';
+                        const borderStyle = q.isCorrect
+                            ? 'border-green-200'
+                            : q.isSkipped ? 'border-slate-200' : 'border-red-200';
+
+                        // Resolve solution fields — support both the 3-layer schema and old field names
+                        const sol = q.solution || {};
+                        const correctReason    = sol.correctAnswerReason || sol.correct_explanation || q.explanation || '';
+                        const approachToSolve  = sol.approachToSolve    || sol.solving_approach    || '';
+                        const sourceRef        = sol.sourceOfQuestion    || sol.possible_source     || '';
+
+                        const correctOptionLabel  = q.options?.[q.correctAnswer];
+                        const userOptionLabel     = (!q.isCorrect && !q.isSkipped && q.userAnswer !== undefined && q.userAnswer !== null)
+                            ? q.options?.[q.userAnswer]
+                            : null;
+
+                        const hasSolution = correctReason || approachToSolve || sourceRef;
 
                         return (
-                            <div key={q.id || idx} className={`p-6 rounded-2xl border ${statusColor}`}>
-                                <div className="flex justify-between items-start mb-3">
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-xs font-bold text-slate-500 uppercase">Question {idx + 1}</span>
-                                        {q.difficulty && (
-                                            <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${
-                                                q.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
-                                                q.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
-                                                'bg-green-50 text-green-600 border-green-100'
-                                            }`}>
-                                                {q.difficulty}
-                                            </span>
-                                        )}
-                                    </div>
-                                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${isCorrect
-                                        ? 'bg-green-100 text-green-700'
-                                        : isSkipped
-                                            ? 'bg-slate-200 text-slate-600'
-                                            : 'bg-red-100 text-red-700'
-                                        }`}>
-                                        {isCorrect ? '✓ Correct' : isSkipped ? 'Skipped' : '✗ Incorrect'}
-                                    </span>
-                                </div>
-                                <div className="mb-4">
-                                    {q.text
-                                        .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
-                                        .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                                        .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Fa-f])\.\s)/g)
-                                        .map((part, i) => {
-                                        const trimmed = part.trim();
-                                        const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(trimmed);
+                            <div key={q.id} className={`rounded-2xl border ${borderStyle} overflow-hidden shadow-sm`}>
 
-                                        if (!trimmed) return null;
-
-                                        return (
-                                            <div key={i} className={`mb-2 ${isStatement ? 'pl-3 text-slate-700 font-medium bg-slate-50/50 p-2 rounded-lg border-l-2 border-slate-300 text-sm' : 'font-medium text-slate-800'}`}>
-                                                {trimmed}
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                                <div className="space-y-2">
-                                    {q.options?.map((opt, i) => (
-                                        <div
-                                            key={i}
-                                            className={`flex items-center gap-3 p-3 rounded-lg text-sm border ${i === q.correctAnswer
-                                                ? 'bg-green-100 border-green-200'
-                                                : i === userAnswer && !isCorrect
-                                                    ? 'bg-red-100 border-red-200'
-                                                    : 'bg-white border-slate-100'
-                                                }`}
-                                        >
-                                            <div className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${i === q.correctAnswer
-                                                ? 'bg-green-500 text-white'
-                                                : i === userAnswer
-                                                    ? 'bg-red-500 text-white'
-                                                    : 'bg-slate-200 text-slate-500'
-                                                }`}>
-                                                {String.fromCharCode(65 + i)}
-                                            </div>
-                                            <span className={i === q.correctAnswer ? 'font-bold text-green-900' : 'text-slate-600'}>
-                                                {opt}
-                                            </span>
-                                            {i === q.correctAnswer && (
-                                                <CheckCircle size={14} className="text-green-500 ml-auto" />
+                                {/* ── Question Card Top ── */}
+                                <div className="p-5 bg-white">
+                                    <div className="flex justify-between items-start mb-3">
+                                        <div className="flex items-center gap-2 flex-wrap">
+                                            <span className="text-xs font-bold text-slate-400 uppercase">Q{idx + 1}</span>
+                                            {q.difficulty && (
+                                                <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider border ${
+                                                    /hard/i.test(q.difficulty)         ? 'bg-red-50 text-red-600 border-red-100' :
+                                                    /inter|medium/i.test(q.difficulty) ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                                                                         'bg-green-50 text-green-600 border-green-100'
+                                                }`}>{q.difficulty}</span>
                                             )}
-                                            {i === userAnswer && !isCorrect && (
-                                                <XCircle size={14} className="text-red-500 ml-auto" />
+                                            {q.questionType && (
+                                                <span className="px-1.5 py-0.5 rounded text-[10px] font-bold border bg-slate-50 text-slate-500 border-slate-200 uppercase">
+                                                    {q.questionType}
+                                                </span>
                                             )}
                                         </div>
-                                    ))}
-                                </div>
-                                {q.solution ? (
-                                    <div className="mt-4 pt-4 border-t border-slate-200/50 space-y-3">
-                                        {q.solution.correct_explanation && (
-                                            <div>
-                                                <span className="font-bold text-slate-800 text-sm">Explanation:</span>
-                                                <p className="text-sm text-slate-600 mt-1">{q.solution.correct_explanation}</p>
-                                            </div>
-                                        )}
-                                        {q.solution.solving_approach && (
-                                            <div className="bg-blue-50/50 p-3 rounded-lg border border-blue-100">
-                                                <span className="font-bold text-blue-800 text-xs uppercase tracking-wider">💡 Solving Approach:</span>
-                                                <p className="text-sm text-blue-700 mt-1">{q.solution.solving_approach}</p>
-                                            </div>
-                                        )}
-                                        {q.solution.possible_source && (
-                                            <div className="flex items-start gap-2 text-xs text-slate-500 mt-2">
-                                                <BookOpen size={14} className="mt-0.5 shrink-0" />
-                                                <span><span className="font-semibold">Source:</span> {q.solution.possible_source}</span>
-                                            </div>
-                                        )}
+                                        <div className="flex items-center gap-2 shrink-0">
+                                            <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${
+                                                q.isCorrect  ? 'bg-green-100 text-green-700'  :
+                                                q.isSkipped  ? 'bg-slate-200 text-slate-600'  :
+                                                               'bg-red-100 text-red-700'
+                                            }`}>
+                                                {q.isCorrect ? '✓ Correct' : q.isSkipped ? 'Skipped' : '✗ Incorrect'}
+                                            </span>
+                                            {hasSolution && (
+                                                <button
+                                                    onClick={() => toggleCollapse(q.id)}
+                                                    className="text-slate-400 hover:text-slate-600 transition-colors p-1"
+                                                    title={isCollapsed ? 'Show explanation' : 'Hide explanation'}
+                                                >
+                                                    {isCollapsed ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+                                                </button>
+                                            )}
+                                        </div>
                                     </div>
-                                ) : q.explanation && (
-                                    <div className="mt-4 pt-4 border-t border-slate-200/50">
-                                        <p className="text-sm text-slate-600">
-                                            <span className="font-bold text-slate-800">Explanation: </span>
-                                            {q.explanation}
-                                        </p>
+
+                                    {/* Question text */}
+                                    <div className="mb-4 space-y-1">
+                                        {q.text
+                                            .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
+                                            .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                            .split(/\n/g)
+                                            .map((part, i) => {
+                                                const t = part.trim();
+                                                if (!t) return null;
+                                                const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(t);
+                                                return (
+                                                    <div key={i} className={isStatement
+                                                        ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 rounded-lg border-l-2 border-slate-300 text-sm'
+                                                        : 'font-semibold text-slate-800'}>
+                                                        {t}
+                                                    </div>
+                                                );
+                                            })}
+                                    </div>
+
+                                    {/* Options */}
+                                    <div className="space-y-2">
+                                        {q.options.map((opt, i) => (
+                                            <div key={i} className={`flex items-center gap-3 p-3 rounded-lg text-sm border ${
+                                                i === q.correctAnswer                       ? 'bg-green-100 border-green-200' :
+                                                i === q.userAnswer && !q.isCorrect          ? 'bg-red-100 border-red-200'   :
+                                                                                              'bg-slate-50 border-slate-100'
+                                            }`}>
+                                                <div className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
+                                                    i === q.correctAnswer           ? 'bg-green-500 text-white' :
+                                                    i === q.userAnswer              ? 'bg-red-500 text-white'   :
+                                                                                      'bg-slate-200 text-slate-500'
+                                                }`}>
+                                                    {String.fromCharCode(65 + i)}
+                                                </div>
+                                                <span className={i === q.correctAnswer ? 'font-bold text-green-900' : 'text-slate-600'}>
+                                                    {opt}
+                                                </span>
+                                                {i === q.correctAnswer && <CheckCircle size={14} className="text-green-500 ml-auto shrink-0" />}
+                                                {i === q.userAnswer && !q.isCorrect && <XCircle size={14} className="text-red-500 ml-auto shrink-0" />}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* ── Explanation Panel (visible by default, collapsible) ── */}
+                                {!isCollapsed && hasSolution && (
+                                    <div className="border-t border-slate-100 bg-slate-50/60 p-5 space-y-3">
+
+                                        {/* 1. How to Approach */}
+                                        {approachToSolve && (
+                                            <div className="bg-blue-50 border border-blue-100 rounded-xl p-4">
+                                                <div className="flex items-center gap-2 mb-2.5">
+                                                    <Lightbulb size={14} className="text-blue-600 shrink-0" />
+                                                    <span className="text-[11px] font-bold text-blue-700 uppercase tracking-wider">
+                                                        How to Approach this Question
+                                                    </span>
+                                                </div>
+                                                <ul className="space-y-2">
+                                                    {parseToBullets(approachToSolve).map((bullet, i) => (
+                                                        <li key={i} className="flex items-start gap-2.5 text-sm text-blue-800">
+                                                            <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                                            <span>{bullet}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+
+                                        {/* 2. Why Correct Answer is Correct */}
+                                        {correctReason && (
+                                            <div className="bg-green-50 border border-green-100 rounded-xl p-4">
+                                                <div className="flex items-center gap-2 mb-2.5">
+                                                    <CheckCircle size={14} className="text-green-600 shrink-0" />
+                                                    <span className="text-[11px] font-bold text-green-700 uppercase tracking-wider">
+                                                        Explanation — Why &ldquo;{correctOptionLabel}&rdquo; is Correct
+                                                    </span>
+                                                </div>
+                                                <ul className="space-y-2">
+                                                    {parseToBullets(correctReason).map((bullet, i) => (
+                                                        <li key={i} className="flex items-start gap-2.5 text-sm text-green-800">
+                                                            <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />
+                                                            <span>{bullet}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+
+                                        {/* 3. Why the User's Answer Was Wrong (only on incorrect answers) */}
+                                        {userOptionLabel && (
+                                            <div className="bg-red-50 border border-red-100 rounded-xl p-4">
+                                                <div className="flex items-center gap-2 mb-2.5">
+                                                    <XCircle size={14} className="text-red-500 shrink-0" />
+                                                    <span className="text-[11px] font-bold text-red-600 uppercase tracking-wider">
+                                                        Why Your Answer &ldquo;{userOptionLabel}&rdquo; is Incorrect
+                                                    </span>
+                                                </div>
+                                                <ul className="space-y-2">
+                                                    <li className="flex items-start gap-2.5 text-sm text-red-800">
+                                                        <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
+                                                        <span>
+                                                            The correct answer is <strong>&ldquo;{correctOptionLabel}&rdquo;</strong>.{' '}
+                                                            {parseToBullets(correctReason)[0] || ''}
+                                                        </span>
+                                                    </li>
+                                                    {parseToBullets(approachToSolve).slice(0, 2).map((bullet, i) => (
+                                                        <li key={i} className="flex items-start gap-2.5 text-sm text-red-700">
+                                                            <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-red-300 shrink-0" />
+                                                            <span>{bullet}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+
+                                        {/* 4. Source Reference */}
+                                        {sourceRef && (
+                                            <div className="flex items-start gap-2 text-xs text-slate-500 pt-1 pl-1">
+                                                <BookOpen size={13} className="mt-0.5 shrink-0 text-slate-400" />
+                                                <span>
+                                                    <span className="font-semibold text-slate-600">Source: </span>
+                                                    {sourceRef}
+                                                </span>
+                                            </div>
+                                        )}
                                     </div>
                                 )}
                             </div>

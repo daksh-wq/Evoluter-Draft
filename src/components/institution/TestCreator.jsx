@@ -217,7 +217,7 @@ const TestCreator = ({ userData }) => {
                 .map(q => q.text);
 
             const newQuestions = await generateQuestions(
-                effectiveTopic,
+                topicToUse,
                 deficit,
                 genConfig.difficulty,
                 'UPSC CSE',
@@ -231,7 +231,17 @@ const TestCreator = ({ userData }) => {
                     text: q.text,
                     options: q.options,
                     correctOption: q.correctAnswer || 0,
-                    explanation: q.explanation
+                    explanation: q.explanation || q.solution?.correctAnswerReason || '',
+                    // Preserve AI-generated tagging metadata for question_bank storage
+                    subjectCode: q.subjectCode,
+                    topicCode: q.topicCode,
+                    sourceCode: q.sourceCode,
+                    typeCode: q.typeCode,
+                    difficultyCode: q.difficultyCode,
+                    pyqCode: q.pyqCode,
+                    questionType: q.questionType,
+                    solution: q.solution,
+                    tags: q.tags,
                 }));
 
                 setQuestions(prev => {
@@ -239,7 +249,7 @@ const TestCreator = ({ userData }) => {
                     return [...prev, ...formattedQuestions];
                 });
 
-                if (!title) setTitle(`${effectiveTopic} Priority Test`);
+                if (!title) setTitle(`${topicToUse} Priority Test`);
                 // Keep subject/subTopic as user-selected metadata; don't overwrite automatically.
                 setMode('manual');
                 toast.success(`Successfully generated ${formattedQuestions.length} questions!`);
@@ -301,7 +311,17 @@ const TestCreator = ({ userData }) => {
                     text: q.text,
                     options: q.options,
                     correctOption: q.correctAnswer || 0,
-                    explanation: q.explanation
+                    explanation: q.explanation || q.solution?.correctAnswerReason || '',
+                    // Preserve AI-generated tagging metadata for question_bank storage
+                    subjectCode: q.subjectCode,
+                    topicCode: q.topicCode,
+                    sourceCode: q.sourceCode,
+                    typeCode: q.typeCode,
+                    difficultyCode: q.difficultyCode,
+                    pyqCode: q.pyqCode,
+                    questionType: q.questionType,
+                    solution: q.solution,
+                    tags: q.tags,
                 }));
 
                 setQuestions(prev => {
@@ -360,7 +380,17 @@ const TestCreator = ({ userData }) => {
                     text: q.text,
                     options: q.options,
                     correctAnswer: q.options[q.correctOption],
-                    explanation: q.explanation || ''
+                    explanation: q.explanation || '',
+                    // Pass-through AI tagging metadata so question_bank gets real codes
+                    subjectCode: q.subjectCode,
+                    topicCode: q.topicCode,
+                    sourceCode: q.sourceCode,
+                    typeCode: q.typeCode,
+                    difficultyCode: q.difficultyCode,
+                    pyqCode: q.pyqCode,
+                    questionType: q.questionType,
+                    solution: q.solution,
+                    tags: q.tags,
                 })),
                 creatorId: userData.uid,
                 creatorName: userData.institutionProfile?.name || 'Institution',
@@ -395,8 +425,17 @@ const TestCreator = ({ userData }) => {
             // Fire and forget sync to global Question Bank
             try {
                 const syncFn = httpsCallable(functions, 'syncInstitutionQuestions');
+                // Enrich each question with test-level subject/subTopic tags, preserving any AI-assigned codes
+                const questionsForSync = testData.questions.map(q => ({
+                    ...q,
+                    // Fallback tags using test-level metadata if AI didn't supply any
+                    tags: q.tags || [
+                        { type: 'subject', label: subject },
+                        ...(subTopic ? [{ type: 'subTopic', label: subTopic }] : []),
+                    ],
+                }));
                 syncFn({
-                    questions: testData.questions,
+                    questions: questionsForSync,
                     testTitle: title,
                     accessType: accessType
                 })
