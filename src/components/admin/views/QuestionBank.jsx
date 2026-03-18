@@ -13,8 +13,8 @@ import {
     collection, getDocs, query, where,
     orderBy, limit, addDoc, serverTimestamp
 } from 'firebase/firestore';
-import { getFunctions, httpsCallable } from 'firebase/functions';
-import { db } from '../../../services/firebase';
+import { httpsCallable } from 'firebase/functions';
+import { db, functions } from '../../../services/firebase';
 import {
     SUBJECT_CODES, TOPIC_CODES, SOURCE_CODES, QUESTION_TYPE_CODES,
     DIFFICULTY_CODES, PYQ_CODES, SUBJECTS
@@ -154,8 +154,7 @@ const QuestionRow = ({ q }) => {
     const handleGenerateBrief = async () => {
         setGeneratingBrief(true);
         try {
-            const fns = getFunctions();
-            const generateBrief = httpsCallable(fns, 'generateApproachBrief');
+            const generateBrief = httpsCallable(functions, 'generateApproachBrief');
             const result = await generateBrief({ questionId: q.questionId, questionText: q.text });
             setBrief(result.data.approachBrief);
             toast.success('Approach Brief generated!');
@@ -456,6 +455,7 @@ const QuestionBank = () => {
     const [filterSubjectCode, setFilterSubjectCode] = useState('');
     const [filterDiffCode, setFilterDiffCode] = useState('');
     const [filterTypeCode, setFilterTypeCode] = useState('');
+    const [filterSource, setFilterSource] = useState(''); // '', 'institution', 'student-dashboard'
     const [searchText, setSearchText] = useState('');
 
     const fetchQuestions = useCallback(async () => {
@@ -466,6 +466,8 @@ const QuestionBank = () => {
             if (filterSubjectCode) constraints.unshift(where('subjectCode', '==', filterSubjectCode));
             if (filterDiffCode)    constraints.unshift(where('difficultyCode', '==', filterDiffCode));
             if (filterTypeCode)    constraints.unshift(where('typeCode', '==', filterTypeCode));
+            if (filterSource === 'institution') constraints.unshift(where('source', '==', 'institution'));
+            if (filterSource === 'student-dashboard') constraints.unshift(where('source', '==', 'student-dashboard'));
 
             const snap = await getDocs(query(q, ...constraints));
             setQuestions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
@@ -475,7 +477,7 @@ const QuestionBank = () => {
         } finally {
             setLoading(false);
         }
-    }, [filterSubjectCode, filterDiffCode, filterTypeCode]);
+    }, [filterSubjectCode, filterDiffCode, filterTypeCode, filterSource]);
 
     useEffect(() => { fetchQuestions(); }, [fetchQuestions]);
 
@@ -541,8 +543,16 @@ const QuestionBank = () => {
                         ))}
                     </select>
 
-                    {(filterSubjectCode || filterDiffCode || filterTypeCode || searchText) && (
-                        <button onClick={() => { setFilterSubjectCode(''); setFilterDiffCode(''); setFilterTypeCode(''); setSearchText(''); }}
+                    {/* Source filter */}
+                    <select value={filterSource} onChange={e => setFilterSource(e.target.value)}
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <option value="">All Sources</option>
+                        <option value="institution">Institution Only</option>
+                        <option value="student-dashboard">Student Dashboard AI</option>
+                    </select>
+
+                    {(filterSubjectCode || filterDiffCode || filterTypeCode || filterSource || searchText) && (
+                        <button onClick={() => { setFilterSubjectCode(''); setFilterDiffCode(''); setFilterTypeCode(''); setFilterSource(''); setSearchText(''); }}
                             className="text-xs text-slate-500 hover:text-slate-800 flex items-center gap-1 font-bold">
                             <X size={12} /> Clear
                         </button>

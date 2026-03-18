@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
-import { auth } from '@/services/firebase';
+import { auth, functions } from '@/services/firebase';
+import { httpsCallable } from 'firebase/functions';
 import logger from '@/utils/logger';
 import { testService } from '../services/testService';
 import { calculateResults } from '../utils/testLogic';
@@ -98,6 +99,21 @@ export function useTest() {
                 const testId = `test-${Date.now()}`;
                 setActiveTestId(testId);
                 testService.initTestSession(auth.currentUser.uid, testId, topic, questions);
+
+                // Fire-and-forget sync of generated questions to global Question Bank
+                try {
+                    const syncStudentQuestions = httpsCallable(functions, 'syncStudentGeneratedQuestions');
+                    syncStudentQuestions({
+                        questions,
+                        topic: topic || 'Mixed',
+                        targetExam
+                    }).catch(() => {
+                        // Non-blocking: ignore errors here, still allow test to run
+                        return;
+                    });
+                } catch {
+                    // Swallow function client errors; they should not block test start
+                }
             }
 
             return true;

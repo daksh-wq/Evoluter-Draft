@@ -1,6 +1,15 @@
 {
     "indexes": [
         {
+            "collectionGroup": "cached_tests",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "difficulty", "order": "ASCENDING" },
+                { "fieldPath": "topic", "order": "ASCENDING" },
+                { "fieldPath": "questionCount", "order": "DESCENDING" }
+            ]
+        },
+        {
             "collectionGroup": "tests",
             "queryScope": "COLLECTION",
             "fields": [

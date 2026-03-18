@@ -57,6 +57,9 @@ service cloud.firestore {
       match /tests/{testId} {
         allow read, write: if isOwner(userId);
       }
+      match /history/{historyId} {
+        allow read, write: if isOwner(userId);
+      }
       match /test_sessions/{sessionId} {
         allow read, create, delete: if isOwner(userId);
         allow update: if isOwner(userId) && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['flaggedForReview', 'flagReason', 'flaggedAt', 'tabSwitchCount']);

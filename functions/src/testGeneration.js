@@ -786,3 +786,142 @@ exports.submitTest = functions.https.onCall(async (data, context) => {
         timeTaken: totalDuration - timeLeft
     };
 });
+
+/**
+ * Sync AI questions generated from the student dashboard into the global question bank.
+ * Mirrors syncInstitutionQuestions but tags source as 'student-dashboard' and addedBy as the student.
+ */
+exports.syncStudentGeneratedQuestions = functions.https.onCall(async (data, context) => {
+    if (!context.auth) {
+        throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
+    }
+
+    const { questions, topic, targetExam } = data || {};
+    const userId = context.auth.uid;
+
+    if (!questions || !Array.isArray(questions) || questions.length === 0) {
+        return { success: true, count: 0, message: 'No questions to sync' };
+    }
+
+    const db = admin.firestore();
+
+    // Default codes for student-generated tests when tags are missing
+    const subjectCodeFromTopic = resolveSubjectCode(topic || '');
+    const defaultSubjectCode = subjectCodeFromTopic || 'TR';
+    const defaultTopicCode = '01';
+    const defaultSourceCode = 'SN';
+    const defaultTypeCode = 'FA';
+    const defaultDifficultyCode = 'ME';
+    const defaultPyqCode = 'NA';
+
+    // 1. Hash and format incoming questions
+    const formattedQuestions = [];
+    for (let i = 0; i < questions.length; i++) {
+        const q = questions[i];
+        if (!q || !q.text) continue;
+
+        const textHash = hashText(q.text);
+
+        const sCode = q.subjectCode || defaultSubjectCode;
+        const tCode = q.topicCode || defaultTopicCode;
+        const srcCode = q.sourceCode || defaultSourceCode;
+        const typeCode = q.typeCode || QTYPE_CODES[q.questionType] || defaultTypeCode;
+        const diffCode = q.difficultyCode || DIFFICULTY_MAP[q.difficulty] || defaultDifficultyCode;
+        const pyqCode = q.pyqCode || defaultPyqCode;
+
+        const serial = Math.floor(Math.random() * 9000) + 1000;
+        const fallbackId = makeQuestionId(sCode, tCode, srcCode, typeCode, diffCode, pyqCode, serial);
+
+        formattedQuestions.push({
+            ...q,
+            questionId: q.questionId || fallbackId,
+            subjectCode: sCode,
+            topicCode: tCode,
+            sourceCode: srcCode,
+            typeCode,
+            difficultyCode: diffCode,
+            pyqCode,
+            textHash,
+            isAIGenerated: true,
+            addedBy: userId,
+            source: 'student-dashboard',
+            targetExam: targetExam || null
+        });
+    }
+
+    if (formattedQuestions.length === 0) {
+        return { success: true, count: 0, message: 'No valid questions after formatting' };
+    }
+
+    // 2. Find existing hashes in question_bank
+    const hashesToSearch = [...new Set(formattedQuestions.map(q => q.textHash))];
+    const existingHashes = new Map();
+
+    const chunkSize = 30;
+    for (let i = 0; i < hashesToSearch.length; i += chunkSize) {
+        const chunk = hashesToSearch.slice(i, i + chunkSize);
+        try {
+            const snapshot = await db.collection('question_bank')
+                .where('textHash', 'in', chunk)
+                .get();
+
+            snapshot.docs.forEach(doc => {
+                const docData = doc.data();
+                if (docData.textHash && docData.questionId) {
+                    existingHashes.set(docData.textHash, docData.questionId);
+                }
+            });
+        } catch (err) {
+            console.error('Error fetching existing hashes in syncStudentGeneratedQuestions:', err);
+        }
+    }
+
+    // 3. Batch write new or merged questions
+    const batch = db.batch();
+    let updatedCount = 0;
+
+    formattedQuestions.forEach(q => {
+        const finalId = existingHashes.get(q.textHash) || q.questionId;
+        const docRef = db.collection('question_bank').doc(finalId);
+
+        const bankData = {
+            questionId: finalId,
+            subjectCode: q.subjectCode,
+            topicCode: q.topicCode,
+            sourceCode: q.sourceCode,
+            typeCode: q.typeCode,
+            difficultyCode: q.difficultyCode,
+            pyqCode: q.pyqCode,
+            text: q.text,
+            options: q.options || [],
+            correctAnswer: q.correctAnswer !== undefined ? q.correctAnswer : q.options?.[q.correctOption],
+            solution: q.solution || {
+                correctAnswerReason: q.explanation || '',
+                sourceOfQuestion: topic || 'Student Dashboard Test',
+                approachToSolve: 'Review related notes and concepts from the test topic.'
+            },
+            tags: q.tags || [],
+            questionType: q.questionType || 'Statement-based',
+            textHash: q.textHash,
+            isAIGenerated: true,
+            addedBy: q.addedBy || userId,
+            source: q.source || 'student-dashboard',
+            updatedAt: admin.firestore.FieldValue.serverTimestamp()
+        };
+
+        batch.set(docRef, {
+            ...bankData,
+            createdAt: admin.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+
+        updatedCount++;
+    });
+
+    try {
+        await batch.commit();
+        return { success: true, count: updatedCount, synced: true };
+    } catch (err) {
+        console.error('Student question bank sync failed:', err);
+        throw new functions.https.HttpsError('internal', 'Failed to sync student-generated questions to bank');
+    }
+});

@@ -28,6 +28,7 @@ const testGeneration = require('./src/testGeneration');
 exports.generateTest = testGeneration.generateTest;
 exports.submitTest = testGeneration.submitTest;
 exports.syncInstitutionQuestions = testGeneration.syncInstitutionQuestions;
+exports.syncStudentGeneratedQuestions = testGeneration.syncStudentGeneratedQuestions;
 
 // ─── Proctoring (SEC-2) ─────────────────────────────────
 const proctoring = require('./src/proctoring');
