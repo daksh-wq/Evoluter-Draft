@@ -185,11 +185,22 @@ const TestCreator = ({ userData }) => {
     };
 
     const handleTopicGeneration = async () => {
-        // Allow generation from Subject/Sub-topic when "Topic" input is empty
-        const topicFromMeta = [subject, subTopic].map(s => (s || '').trim()).filter(Boolean).join(' - ');
-        const effectiveTopic = (genConfig.topic || '').trim() || topicFromMeta;
-        if (!effectiveTopic) return toast.warning('Please enter a topic (or select Subject/Sub-topic)');
+        let topicToUse = genConfig.topic?.trim();
         
+        if (!topicToUse) {
+            if (subTopic) {
+                topicToUse = subject !== 'General' ? `${subject} - ${subTopic}` : subTopic;
+            } else if (subject && subject !== 'General') {
+                topicToUse = subject;
+            }
+        }
+        
+        if (!topicToUse) return toast.warning('Please enter a Target Topic, Subject, or Sub-Topic');
+        
+        if (!genConfig.topic) {
+             setGenConfig(prev => ({ ...prev, topic: topicToUse }));
+        }
+
         // Calculate deficit
         const currentCount = questions.length === 1 && !questions[0].text ? 0 : questions.length;
         const targetCount = parseInt(genConfig.count);
@@ -372,6 +383,14 @@ const TestCreator = ({ userData }) => {
             setTestCode(code);
             setIsPublished(true);
             logger.info('Test Published', { code, id: testRef.id });
+
+            // Clear the local session after publishing successfully
+            setTitle('');
+            setSubject('General');
+            setSubTopic('');
+            setDuration(30);
+            setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0 }]);
+            setMode('manual');
 
             // Fire and forget sync to global Question Bank
             try {
