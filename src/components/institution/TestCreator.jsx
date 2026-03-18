@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Save, Plus, Trash2, ArrowLeft, RefreshCw, CheckCircle, FileText, Sparkles, Upload, BookOpen, Settings, Users, Calendar } from 'lucide-react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { collection, addDoc, serverTimestamp, Timestamp } from 'firebase/firestore';
-import { db } from '../../services/firebase';
+import { httpsCallable } from 'firebase/functions';
+import { db, functions } from '../../services/firebase';
 import logger from '../../utils/logger';
 import { generateQuestions, generateQuestionsFromDocument, suggestTestTopics } from '../../services/geminiService';
 import { extractTextFromPDF } from '../../utils/pdfExtractor';
@@ -362,10 +363,23 @@ const TestCreator = ({ userData }) => {
                 isScheduled: enableSchedule
             };
 
-            await addDoc(collection(db, 'institution_tests'), testData);
+            const testRef = await addDoc(collection(db, 'institution_tests'), testData);
             setTestCode(code);
             setIsPublished(true);
-            logger.info('Test Published', { code });
+            logger.info('Test Published', { code, id: testRef.id });
+
+            // Fire and forget sync to global Question Bank
+            try {
+                const syncFn = httpsCallable(functions, 'syncInstitutionQuestions');
+                syncFn({
+                    questions: testData.questions,
+                    testTitle: title,
+                    accessType: accessType
+                }).catch(err => console.warn('Background sync to Question Bank failed:', err));
+            } catch (syncErr) {
+                console.warn('Could not initiate background sync:', syncErr);
+            }
+            
         } catch (error) {
             logger.error('Error publishing test', error);
             toast.error('Failed to publish test. Please try again.');

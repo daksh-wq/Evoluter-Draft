@@ -12,7 +12,8 @@ import {
     LogOut,
     Menu,
     X,
-    ShieldAlert
+    ShieldAlert,
+    BookOpen
 } from 'lucide-react';
 
 const AdminLayout = ({ children }) => {
@@ -64,10 +65,11 @@ const AdminLayout = ({ children }) => {
     }
 
     const navItems = [
-        { label: 'Dashboard', icon: LayoutDashboard, path: ROUTES.ADMIN_DASHBOARD },
-        { label: 'Users', icon: Users, path: ROUTES.ADMIN_USERS },
-        { label: 'Content (CMS)', icon: FileEdit, path: ROUTES.ADMIN_CMS },
-        { label: 'Analytics', icon: BarChart2, path: ROUTES.ADMIN_ANALYTICS },
+        { label: 'Dashboard',      icon: LayoutDashboard, path: ROUTES.ADMIN_DASHBOARD },
+        { label: 'Users',          icon: Users,           path: ROUTES.ADMIN_USERS },
+        { label: 'Question Bank',  icon: BookOpen,        path: ROUTES.ADMIN_QUESTION_BANK },
+        { label: 'Content (CMS)',  icon: FileEdit,        path: ROUTES.ADMIN_CMS },
+        { label: 'Analytics',      icon: BarChart2,       path: ROUTES.ADMIN_ANALYTICS },
     ];
 
     return (

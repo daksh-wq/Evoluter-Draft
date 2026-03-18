@@ -113,6 +113,19 @@ service cloud.firestore {
       allow update, delete: if false;
     }
     
+    // ─── Question Bank & Tagging ───────────────────────
+    match /question_bank/{questionId} {
+      allow read: if isAuthenticated();
+      allow create, update: if isAuthenticated();
+      allow delete: if isAdmin();
+    }
+
+    match /tag_counters/{counterId} {
+      allow read, update: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow delete: if isAdmin();
+    }
+    
     // Contact Form
     match /contact_submissions/{docId} {
       allow create: if isAuthenticated();

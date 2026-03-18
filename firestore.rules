@@ -107,6 +107,22 @@ service cloud.firestore {
       allow update, delete: if false;     // Immutable history
     }
 
+    // ─── Question Bank & Tagging ───────────────────────
+    match /question_bank/{questionId} {
+      // Anyone can read questions
+      allow read: if isAuthenticated();
+      // Anyone can add questions via AI generation or manual (if admin, UI enforced)
+      // Anyone can update (e.g., adding approachBrief)
+      allow create, update: if isAuthenticated();
+      allow delete: if isAdmin();
+    }
+
+    match /tag_counters/{counterId} {
+      allow read, update: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow delete: if isAdmin();
+    }
+
     // ─── Public/Shared Collections ──────────────────────
     // Contact form submissions (anyone authenticated can create)
     match /contact_submissions/{docId} {

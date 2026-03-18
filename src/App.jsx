@@ -33,6 +33,7 @@ const AdminDashboard = lazy(() => import('./components/admin/views/DashboardOver
 const UserManagement = lazy(() => import('./components/admin/views/UserManagement'));
 const AdminCMS = lazy(() => import('./components/admin/views/CMS'));
 const AdminAnalytics = lazy(() => import('./components/admin/views/AnalyticsDashboard'));
+const AdminQuestionBank = lazy(() => import('./components/admin/views/QuestionBank'));
 
 import NetworkStatus from './components/ui/NetworkStatus';
 import ToastContainer from './components/ui/ToastContainer';
@@ -634,6 +635,7 @@ function App() {
             <Routes>
               <Route index element={<AdminDashboard />} />
               <Route path="users" element={<UserManagement />} />
+              <Route path="question-bank" element={<AdminQuestionBank />} />
               <Route path="cms" element={<AdminCMS />} />
               <Route path="analytics" element={<AdminAnalytics />} />
               <Route path="*" element={<Navigate to="/admin" replace />} />

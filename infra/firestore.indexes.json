@@ -5,32 +5,12 @@
             "queryScope": "COLLECTION",
             "fields": [
                 {
-                    "fieldPath": "completedAt",
-                    "order": "DESCENDING"
-                }
-            ]
-        },
-        {
-            "collectionGroup": "tests",
-            "queryScope": "COLLECTION",
-            "fields": [
-                {
                     "fieldPath": "topic",
                     "order": "ASCENDING"
                 },
                 {
                     "fieldPath": "completedAt",
                     "order": "DESCENDING"
-                }
-            ]
-        },
-        {
-            "collectionGroup": "flashcards",
-            "queryScope": "COLLECTION",
-            "fields": [
-                {
-                    "fieldPath": "nextReview",
-                    "order": "ASCENDING"
                 }
             ]
         },
@@ -74,6 +54,67 @@
                     "fieldPath": "timestamp",
                     "order": "ASCENDING"
                 }
+            ]
+        },
+        {
+            "collectionGroup": "question_bank",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "subjectCode", "order": "ASCENDING" },
+                { "fieldPath": "createdAt", "order": "DESCENDING" }
+            ]
+        },
+        {
+            "collectionGroup": "question_bank",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "difficultyCode", "order": "ASCENDING" },
+                { "fieldPath": "createdAt", "order": "DESCENDING" }
+            ]
+        },
+        {
+            "collectionGroup": "question_bank",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "typeCode", "order": "ASCENDING" },
+                { "fieldPath": "createdAt", "order": "DESCENDING" }
+            ]
+        },
+        {
+            "collectionGroup": "question_bank",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "subjectCode", "order": "ASCENDING" },
+                { "fieldPath": "difficultyCode", "order": "ASCENDING" },
+                { "fieldPath": "createdAt", "order": "DESCENDING" }
+            ]
+        },
+        {
+            "collectionGroup": "question_bank",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "subjectCode", "order": "ASCENDING" },
+                { "fieldPath": "typeCode", "order": "ASCENDING" },
+                { "fieldPath": "createdAt", "order": "DESCENDING" }
+            ]
+        },
+        {
+            "collectionGroup": "question_bank",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "difficultyCode", "order": "ASCENDING" },
+                { "fieldPath": "typeCode", "order": "ASCENDING" },
+                { "fieldPath": "createdAt", "order": "DESCENDING" }
+            ]
+        },
+        {
+            "collectionGroup": "question_bank",
+            "queryScope": "COLLECTION",
+            "fields": [
+                { "fieldPath": "subjectCode", "order": "ASCENDING" },
+                { "fieldPath": "difficultyCode", "order": "ASCENDING" },
+                { "fieldPath": "typeCode", "order": "ASCENDING" },
+                { "fieldPath": "createdAt", "order": "DESCENDING" }
             ]
         }
     ],

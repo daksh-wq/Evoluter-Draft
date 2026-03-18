@@ -27,6 +27,7 @@ exports.checkRateLimit = async (data, context) => {
 const testGeneration = require('./src/testGeneration');
 exports.generateTest = testGeneration.generateTest;
 exports.submitTest = testGeneration.submitTest;
+exports.syncInstitutionQuestions = testGeneration.syncInstitutionQuestions;
 
 // ─── Proctoring (SEC-2) ─────────────────────────────────
 const proctoring = require('./src/proctoring');
@@ -54,3 +55,6 @@ const pdfProcessing = require('./src/pdfProcessing');
 exports.extractTextFromPDF = pdfProcessing.extractTextFromPDF;
 exports.generateQuestionsFromPDF = pdfProcessing.generateQuestionsFromPDF;
 
+// ─── Question Bank — Approach Brief (QB-1) ──────────────────
+const questionBrief = require('./src/questionBrief');
+exports.generateApproachBrief = questionBrief.generateApproachBrief;

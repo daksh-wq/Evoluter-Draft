@@ -46,10 +46,11 @@ export const ROUTES = {
     PROFILE: '/profile',
 
     // Admin Routes
-    ADMIN_DASHBOARD: '/admin',
-    ADMIN_USERS: '/admin/users',
-    ADMIN_CMS: '/admin/cms',
-    ADMIN_ANALYTICS: '/admin/analytics',
+    ADMIN_DASHBOARD:      '/admin',
+    ADMIN_USERS:          '/admin/users',
+    ADMIN_CMS:            '/admin/cms',
+    ADMIN_ANALYTICS:      '/admin/analytics',
+    ADMIN_QUESTION_BANK:  '/admin/question-bank',
 };
 
 /**

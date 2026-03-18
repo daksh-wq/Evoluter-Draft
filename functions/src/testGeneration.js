@@ -6,8 +6,57 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { checkAndIncrementRateLimit } = require('./rateLimit');
+const crypto = require('crypto');
 
 const genAI = new GoogleGenerativeAI(functions.config().gemini?.api_key || process.env.GEMINI_API_KEY || '');
+
+function hashText(text) {
+    if (!text) return '';
+    return crypto.createHash('sha256').update(text.trim().toLowerCase()).digest('hex');
+}
+
+// ─── Question Bank Tagging Helpers (texr spec) ────────────────────────────────
+
+const SUBJECT_CODES = {
+    'Indian Polity': 'IP', 'Ancient and Medieval History': 'AM', 'Modern India': 'MI',
+    'Indian Culture': 'IC', 'Geography': 'GE', 'Economy of India': 'EI',
+    'Environment': 'EN', 'Science and Technology': 'ST', 'Current Affairs': 'CA', 'Trivial': 'TR',
+};
+
+const SOURCE_CODES     = { Standard: 'SN', Advanced: 'AD', Random: 'RN', 'Current Issue': 'CI', 'Not Applicable': 'NA' };
+const QTYPE_CODES      = { Factual: 'FA', Conceptual: 'CO', 'Application Based': 'AB', Definition: 'DE', Informative: 'IN' };
+const DIFFICULTY_MAP   = { Hard: 'TO', Intermediate: 'ME', Easy: 'ES' };
+const PYQ_CODES        = { CSE: 'CS', CDSE: 'CD', NDA: 'ND', CISF: 'CI', CAPF: 'CP', 'Not Applicable': 'NA' };
+
+function resolveSubjectCode(topic) {
+    const lower = (topic || '').toLowerCase();
+    const found = Object.entries(SUBJECT_CODES).find(([name]) =>
+        lower.includes(name.toLowerCase()) || name.toLowerCase().includes(lower)
+    );
+    return found ? found[1] : 'TR';
+}
+
+/** Build 16-char question ID: AA-00-BB-CC-DD-EE-0000 */
+function makeQuestionId(subCode, topicCode, srcCode, typeCode, diffCode, pyqCode, serial) {
+    return `${subCode}-${String(topicCode).padStart(2,'0')}-${srcCode}-${typeCode}-${diffCode}-${pyqCode}-${String(serial).padStart(4,'0')}`;
+}
+
+/** Increment Firestore serial counter for a subject-topic block, return next value */
+async function getNextSerial(subjectCode, topicCode) {
+    const counterId = `${subjectCode}-${String(topicCode).padStart(2,'0')}`;
+    const ref = admin.firestore().collection('tag_counters').doc(counterId);
+    try {
+        const result = await admin.firestore().runTransaction(async (tx) => {
+            const doc = await tx.get(ref);
+            const next = doc.exists ? (doc.data().count || 0) + 1 : 1;
+            tx.set(ref, { count: next }, { merge: true });
+            return next;
+        });
+        return result;
+    } catch {
+        return Math.floor(Math.random() * 9000) + 1000; // fallback: random 4-digit
+    }
+}
 
 // ─── Shared helpers ───────────────────────────────────────────────────────────
 
@@ -54,7 +103,19 @@ SOLUTION FORMAT (mandatory for EVERY question):
   "correctAnswerReason": "Concise explanation of WHY the correct option is correct (1-2 sentences)",
   "sourceOfQuestion": "Reference: e.g., 'NCERT Class 12 History Ch.4', 'Article 370', 'Economic Survey 2023'",
   "approachToSolve": "Strategy to eliminate wrong options and identify the correct answer"
-}`;
+}
+`;
+
+/** Tagging instruction injected into every prompt so AI self-classifies each question. */
+const TAGGING_INSTRUCTION = `
+TAGGING FIELDS (mandatory for EVERY question — use the exact codes below):
+"subjectCode": one of [IP, AM, MI, IC, GE, EI, EN, ST, CA, TR]
+"topicCode":   2-digit string e.g. "02" (best matching sub-topic number within the subject)
+"sourceCode":  one of [SN=Standard/NCERT, AD=Advanced/official-docs, CI=Current-Issue, RN=Random, NA=Not-Applicable]
+"typeCode":    one of [FA=Factual, CO=Conceptual, AB=Application-Based, DE=Definition, IN=Informative]
+"difficultyCode": one of [ET=Extreme-Tough, TO=Tough, ME=Medium, ES=Easy, FO=Foundational]
+"pyqCode":     one of [CS=CSE, CD=CDSE, ND=NDA, CI=CISF, CP=CAPF, NA=Not-Applicable]
+`;
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -119,6 +180,7 @@ RULES:
 3. Each question must include a self-assessed 'difficultyLevel' field ('Easy', 'Intermediate', or 'Hard').
 ${typeInstruction}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+${TAGGING_INSTRUCTION}
 
 OUTPUT: Return ONLY a JSON Array. NO markdown. NO extra text.
 
@@ -134,7 +196,13 @@ JSON FORMAT:
       "correctAnswerReason": "...",
       "sourceOfQuestion": "...",
       "approachToSolve": "..."
-    }
+    },
+    "subjectCode": "IP",
+    "topicCode": "02",
+    "sourceCode": "SN",
+    "typeCode": "FA",
+    "difficultyCode": "ME",
+    "pyqCode": "NA"
   }
 ]`;
 
@@ -210,24 +278,108 @@ Return ONLY a JSON Array (same format as before).`;
                 }
             }
 
-            // Add IDs, tags, normalise solution
-            questions = questions.map((q, idx) => ({
-                ...q,
-                id: `ai-${Date.now()}-${idx}`,
-                difficulty: q.difficultyLevel || difficulty,
-                questionType: q.questionType || 'Statement-based',
-                solution: q.solution || {
-                    correctAnswerReason: q.explanation || '',
-                    sourceOfQuestion: 'General Knowledge',
-                    approachToSolve: 'Eliminate incorrect options systematically.'
-                },
-                explanation: q.solution?.correctAnswerReason || q.explanation || '',
-                tags: q.tags || [
-                    { type: 'source', label: 'AI' },
-                    { type: 'topic', label: topic },
-                    { type: 'difficulty', label: q.difficultyLevel || difficulty }
-                ]
+            // Add IDs, tags, normalise solution — and assign structured question IDs
+            const subjectCode = resolveSubjectCode(topic);
+            const taggedQuestions = await Promise.all(questions.map(async (q, idx) => {
+                // Use AI-provided codes if present and valid, else derive from topic
+                const topicCodeRaw  = q.topicCode  || '01';
+                const sourceCode    = SOURCE_CODES[q.sourceCode]  ? q.sourceCode  : (SOURCE_CODES['Standard']);
+                const typeCode      = QTYPE_CODES[q.typeCode]     ? q.typeCode    : 'FA';
+                const diffCode      = q.difficultyCode || DIFFICULTY_MAP[q.difficultyLevel || difficulty] || 'ME';
+                const pyqCode       = PYQ_CODES[q.pyqCode]        ? q.pyqCode     : 'NA';
+
+                const serial = await getNextSerial(subjectCode, topicCodeRaw);
+                const questionId = makeQuestionId(subjectCode, topicCodeRaw, sourceCode, typeCode, diffCode, pyqCode, serial);
+
+                return {
+                    ...q,
+                    id: questionId,          // Use structured ID as primary ID
+                    questionId,
+                    subjectCode,
+                    topicCode: topicCodeRaw,
+                    sourceCode,
+                    typeCode,
+                    difficultyCode: diffCode,
+                    pyqCode,
+                    difficulty: q.difficultyLevel || difficulty,
+                    questionType: q.questionType || 'Statement-based',
+                    solution: q.solution || {
+                        correctAnswerReason: q.explanation || '',
+                        sourceOfQuestion: 'General Knowledge',
+                        approachToSolve: 'Eliminate incorrect options systematically.'
+                    },
+                    explanation: q.solution?.correctAnswerReason || q.explanation || '',
+                    tags: [
+                        { type: 'subject',    label: topic },
+                        { type: 'source',     label: q.sourceCode || 'AI' },
+                        { type: 'qtype',      label: q.typeCode   || 'FA' },
+                        { type: 'difficulty', label: diffCode },
+                        { type: 'pyq',        label: pyqCode },
+                    ]
+                };
             }));
+            questions = taggedQuestions;
+
+            // Deduplicate against database and save to question_bank (fire-and-forget — does not block test delivery)
+            const db = admin.firestore();
+            
+            // 1. Hash all incoming texts
+            questions = questions.map(q => ({
+                ...q,
+                textHash: hashText(q.text)
+            }));
+
+            const hashesToSearch = [...new Set(questions.map(q => q.textHash))];
+            const existingHashes = new Map();
+
+            // Firestore 'in' query has a max of 30 items
+            const chunkSize = 30;
+            for (let i = 0; i < hashesToSearch.length; i += chunkSize) {
+                const chunk = hashesToSearch.slice(i, i + chunkSize);
+                try {
+                    const snapshot = await db.collection('question_bank')
+                        .where('textHash', 'in', chunk)
+                        .get();
+                    
+                    snapshot.docs.forEach(doc => {
+                        const data = doc.data();
+                        existingHashes.set(data.textHash, data.questionId);
+                    });
+                } catch (err) {
+                    console.error('Error fetching existing hashes:', err);
+                }
+            }
+
+            const batch = db.batch();
+            questions.forEach(q => {
+                // If question exists, reuse its ID to avoid duplicates in DB, but keep the current object intact for test delivery
+                const finalId = existingHashes.get(q.textHash) || q.questionId;
+                q.id = finalId;
+                q.questionId = finalId;
+
+                const docRef = db.collection('question_bank').doc(finalId);
+                batch.set(docRef, {
+                    questionId:      finalId,
+                    subjectCode:     q.subjectCode,
+                    topicCode:       q.topicCode,
+                    sourceCode:      q.sourceCode,
+                    typeCode:        q.typeCode,
+                    difficultyCode:  q.difficultyCode,
+                    pyqCode:         q.pyqCode,
+                    text:            q.text,
+                    options:         q.options,
+                    correctAnswer:   q.correctAnswer,
+                    solution:        q.solution,
+                    tags:            q.tags,
+                    questionType:    q.questionType,
+                    textHash:        q.textHash,
+                    isAIGenerated:   true,
+                    addedBy:         'ai-generation',
+                    createdAt:       admin.firestore.FieldValue.serverTimestamp(),
+                    updatedAt:       admin.firestore.FieldValue.serverTimestamp(),
+                }, { merge: true }); // merge: existing manual entries are not overwritten
+            });
+            batch.commit().catch(err => console.error('question_bank batch write failed:', err));
 
             // Cache for future use (fire and forget)
             admin.firestore().collection('cached_tests').add({
@@ -284,6 +436,143 @@ Return ONLY a JSON Array (same format as before).`;
     }));
 
     return { testId, questions: sanitizedQuestions };
+});
+
+/**
+ * Callable function for institutions to sync their manually created or PDF/Topic generated
+ * questions to the global question bank, avoiding duplicates via text hashing.
+ */
+exports.syncInstitutionQuestions = functions.https.onCall(async (data, context) => {
+    if (!context.auth) {
+        throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
+    }
+
+    const { questions, testTitle, accessType } = data;
+    const userId = context.auth.uid;
+
+    if (!questions || !Array.isArray(questions) || questions.length === 0) {
+        return { success: true, count: 0, message: 'No questions to sync' };
+    }
+
+    // Default values for institution generated tests if they miss structured tags
+    const defaultSubjectCode = 'TR'; // Trivial/General
+    const defaultTopicCode = '01';
+    const defaultSourceCode = 'SN'; // Standard
+    const defaultTypeCode = 'FA'; // Factual
+    const defaultDifficultyCode = 'ME'; // Medium
+    const defaultPyqCode = 'NA';
+
+    const db = admin.firestore();
+
+    // 1. Hash and format incoming questions
+    const formattedQuestions = [];
+    for (let i = 0; i < questions.length; i++) {
+        const q = questions[i];
+        if (!q.text) continue;
+
+        const textHash = hashText(q.text);
+
+        // Map tags if available from TestCreator, otherwise use defaults
+        const sCode = q.subjectCode || defaultSubjectCode;
+        const tCode = q.topicCode || defaultTopicCode;
+        
+        let pyqCode = defaultPyqCode;
+        let diffCode = q.difficultyCode || DIFFICULTY_MAP[q.difficulty] || defaultDifficultyCode;
+        let typeCode = q.typeCode || QTYPE_CODES[q.questionType] || defaultTypeCode;
+        let srcCode = q.sourceCode || defaultSourceCode;
+
+        // Note: For institutions, we typically just generate random/sequential IDs if they are new
+        const serial = Math.floor(Math.random() * 9000) + 1000;
+        const fallbackId = makeQuestionId(sCode, tCode, srcCode, typeCode, diffCode, pyqCode, serial);
+
+        formattedQuestions.push({
+            ...q,
+            questionId: q.questionId || fallbackId,
+            subjectCode: sCode,
+            topicCode: tCode,
+            sourceCode: srcCode,
+            typeCode: typeCode,
+            difficultyCode: diffCode,
+            pyqCode: pyqCode,
+            textHash,
+            isAIGenerated: q.isAIGenerated !== undefined ? q.isAIGenerated : true, // most inst tests are AI gen now
+            addedBy: q.addedBy || userId
+        });
+    }
+
+    if (formattedQuestions.length === 0) return { success: true, count: 0 };
+
+    // 2. Find existing hashes
+    const hashesToSearch = [...new Set(formattedQuestions.map(q => q.textHash))];
+    const existingHashes = new Map();
+
+    const chunkSize = 30;
+    for (let i = 0; i < hashesToSearch.length; i += chunkSize) {
+        const chunk = hashesToSearch.slice(i, i + chunkSize);
+        try {
+            const snapshot = await db.collection('question_bank')
+                .where('textHash', 'in', chunk)
+                .get();
+            
+            snapshot.docs.forEach(doc => {
+                const docData = doc.data();
+                existingHashes.set(docData.textHash, docData.questionId);
+            });
+        } catch (err) {
+            console.error('Error fetching existing hashes in syncInstitution:', err);
+        }
+    }
+
+    // 3. Batch write new or merged questions
+    const batch = db.batch();
+    let updatedCount = 0;
+
+    formattedQuestions.forEach(q => {
+        const finalId = existingHashes.get(q.textHash) || q.questionId;
+        
+        const docRef = db.collection('question_bank').doc(finalId);
+        
+        // Base structure expected by question_bank
+        const bankData = {
+            questionId:      finalId,
+            subjectCode:     q.subjectCode,
+            topicCode:       q.topicCode,
+            sourceCode:      q.sourceCode,
+            typeCode:        q.typeCode,
+            difficultyCode:  q.difficultyCode,
+            pyqCode:         q.pyqCode,
+            text:            q.text,
+            options:         q.options || [],
+            correctAnswer:   q.correctAnswer !== undefined ? q.correctAnswer : q.options?.[q.correctOption],
+            solution:        q.solution || {
+                correctAnswerReason: q.explanation || '',
+                sourceOfQuestion: testTitle || 'Institution Assessment',
+                approachToSolve: 'Review class notes or test materials.'
+            },
+            tags:            q.tags || [],
+            questionType:    q.questionType || 'Statement-based',
+            textHash:        q.textHash,
+            isAIGenerated:   q.isAIGenerated,
+            addedBy:         q.addedBy,
+            updatedAt:       admin.firestore.FieldValue.serverTimestamp(),
+        };
+
+        // Standard merge write
+        batch.set(docRef, {
+            ...bankData,
+            createdAt: admin.firestore.FieldValue.serverTimestamp() // only sets on create due to merge
+        }, { merge: true });
+        
+        updatedCount++;
+    });
+
+    try {
+        await batch.commit();
+        return { success: true, count: updatedCount, synced: true };
+    } catch (err) {
+        console.error('Institution question bank sync failed:', err);
+        throw new functions.https.HttpsError('internal', 'Failed to sync questions to bank');
+    }
 });
 
 /**
