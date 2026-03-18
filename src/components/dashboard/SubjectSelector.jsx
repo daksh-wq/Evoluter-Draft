@@ -9,7 +9,7 @@ import { SUBJECTS } from '../../constants/appConstants';
  * @param {Object} props
  * @param {function} props.onSelect - Callback function when subjects are selected
  */
-export const SubjectSelector = ({ onSelect, onSubjectsChange }) => {
+export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState([]);
     const dropdownRef = useRef(null);
@@ -47,8 +47,8 @@ export const SubjectSelector = ({ onSelect, onSubjectsChange }) => {
     return (
         <div className="md:col-span-4 relative group" ref={dropdownRef}>
             <div
-                className="w-full pl-10 pr-10 py-3 md:py-3.5 rounded-xl text-slate-900 font-medium focus:outline-none ring-1 ring-slate-200 focus:ring-4 focus:ring-blue-400/50 bg-white cursor-pointer flex items-center justify-between"
-                onClick={() => setIsOpen(!isOpen)}
+                className={`w-full pl-10 pr-10 py-3 md:py-3.5 rounded-xl text-slate-900 font-medium focus:outline-none ring-1 ring-slate-200 bg-white flex items-center justify-between transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer focus:ring-4 focus:ring-blue-400/50'}`}
+                onClick={() => !disabled && setIsOpen(!isOpen)}
             >
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <BookOpen size={18} className="text-slate-400 group-focus-within:text-blue-500 transition-colors" />
@@ -69,7 +69,7 @@ export const SubjectSelector = ({ onSelect, onSubjectsChange }) => {
                                 className="flex items-start gap-3 px-4 py-2.5 hover:bg-slate-50 cursor-pointer transition-colors"
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    toggleSubject(subject);
+                                    if (!disabled) toggleSubject(subject);
                                 }}
                             >
                                 <div className="mt-0.5 flex-shrink-0">

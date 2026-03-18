@@ -488,6 +488,7 @@ const Dashboard = ({
                                 <SubjectSelector
                                     onSelect={setAiTopic}
                                     onSubjectsChange={setSelectedSubjects}
+                                    disabled={isGeneratingTest}
                                 />
 
                                 <TopicInput
@@ -498,6 +499,7 @@ const Dashboard = ({
                                     }}
                                     onEnter={handleGenerateTest}
                                     setShowSuggestions={setShowSuggestions}
+                                    disabled={isGeneratingTest}
                                 />
                             </div>
 
@@ -556,8 +558,8 @@ const Dashboard = ({
                                     <div className="flex flex-col gap-3">
                                         <button
                                             onClick={handleFileUploadClick}
-                                            disabled={isPreviewLoading}
-                                            className="w-full bg-white/10 hover:bg-white/20 border border-white/10 text-white rounded-xl py-3 px-4 text-sm font-bold transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+                                            disabled={isPreviewLoading || isGeneratingTest}
+                                            className="w-full bg-white/10 hover:bg-white/20 border border-white/10 text-white rounded-xl py-3 px-4 text-sm font-bold transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                                         >
                                             <FileTextIcon size={16} />
                                             Upload PDF Document
@@ -626,6 +628,7 @@ const Dashboard = ({
                                 setDifficulty={setDifficulty}
                                 pyqPercentage={pyqPercentage}
                                 setPyqPercentage={setPyqPercentage}
+                                disabled={isGeneratingTest}
                             />
 
                             {/* Mobile/Tablet Generate Button */}

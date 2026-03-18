@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { collection, query, where, getDocs, orderBy } from 'firebase/firestore';
+import { collection, query, where, getDocs, orderBy, deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../../services/firebase';
 import {
     RefreshCw, ListChecks, Calendar, Clock, Copy, Timer,
     CheckCircle, BarChart2, Users, Lock, Globe, ChevronRight,
-    Check, ClipboardList, TrendingUp, AlertCircle
+    Check, ClipboardList, TrendingUp, AlertCircle, Trash2
 } from 'lucide-react';
 import logger from '../../utils/logger';
 import { useNavigate } from 'react-router-dom';
@@ -66,7 +66,28 @@ const StatPill = ({ icon, value, label, color = 'slate' }) => {
 const TestManager = ({ userData }) => {
     const [tests, setTests] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [deleteModal, setDeleteModal] = useState(null); // { id, title }
+    const [deletingId, setDeletingId] = useState(null);
     const navigate = useNavigate();
+
+    const handleDeleteClick = (e, test) => {
+        e.stopPropagation(); // Don't navigate to analytics
+        setDeleteModal({ id: test.id, title: test.title });
+    };
+
+    const confirmDelete = async () => {
+        if (!deleteModal) return;
+        setDeletingId(deleteModal.id);
+        try {
+            await deleteDoc(doc(db, 'institution_tests', deleteModal.id));
+            setTests(prev => prev.filter(t => t.id !== deleteModal.id));
+        } catch (err) {
+            logger.error('Failed to delete test', err);
+        } finally {
+            setDeletingId(null);
+            setDeleteModal(null);
+        }
+    };
 
     useEffect(() => {
         const fetchTests = async () => {
@@ -302,14 +323,59 @@ const TestManager = ({ userData }) => {
                                             </div>
                                         )}
                                     </div>
-                                    <div className="flex items-center gap-1 text-xs font-bold text-[#2278B0] opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <BarChart2 size={13} />
-                                        Analytics
+                                    <div className="flex items-center gap-2">
+                                        <div className="flex items-center gap-1 text-xs font-bold text-[#2278B0] opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <BarChart2 size={13} />
+                                            Analytics
+                                        </div>
+                                        <button
+                                            onClick={(e) => handleDeleteClick(e, test)}
+                                            title="Delete test"
+                                            className="p-1.5 rounded-lg text-slate-300 hover:text-red-500 hover:bg-red-50 transition-all opacity-0 group-hover:opacity-100"
+                                        >
+                                            <Trash2 size={14} />
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         );
                     })}
+                </div>
+            )}
+
+            {/* ── Delete Confirmation Modal ── */}
+            {deleteModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
+                    <div className="bg-white rounded-2xl shadow-2xl border border-slate-100 w-full max-w-sm p-6 animate-in fade-in zoom-in-95 duration-200">
+                        <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <Trash2 size={22} className="text-red-500" />
+                        </div>
+                        <h3 className="text-lg font-bold text-slate-800 text-center mb-1">Delete Test?</h3>
+                        <p className="text-sm text-slate-500 text-center mb-1 line-clamp-2">
+                            <span className="font-semibold text-slate-700">{deleteModal.title}</span>
+                        </p>
+                        <p className="text-xs text-red-500 text-center mb-6">This action cannot be undone. All student attempts will remain but the test will no longer be accessible.</p>
+                        <div className="flex gap-3">
+                            <button
+                                onClick={() => setDeleteModal(null)}
+                                disabled={!!deletingId}
+                                className="flex-1 py-2.5 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all disabled:opacity-50"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                onClick={confirmDelete}
+                                disabled={!!deletingId}
+                                className="flex-1 py-2.5 rounded-xl bg-red-500 text-white font-bold text-sm hover:bg-red-600 transition-all disabled:opacity-70 flex items-center justify-center gap-2"
+                            >
+                                {deletingId ? (
+                                    <><RefreshCw size={14} className="animate-spin" /> Deleting...</>
+                                ) : (
+                                    <><Trash2 size={14} /> Delete</>                                
+                                )}
+                            </button>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>

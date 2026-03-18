@@ -16,6 +16,7 @@ export const TopicInput = ({
     onChange,
     onEnter,
     setShowSuggestions,
+    disabled = false,
 }) => {
     return (
         <div className="md:col-span-8 relative">
@@ -23,14 +24,14 @@ export const TopicInput = ({
                 type="text"
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && onEnter()}
-                onFocus={() => setShowSuggestions && setShowSuggestions(true)}
+                onKeyDown={(e) => e.key === 'Enter' && !disabled && onEnter()}
+                onFocus={() => !disabled && setShowSuggestions && setShowSuggestions(true)}
                 onBlur={() => {
-                    // Delay hiding so clicks register
                     setTimeout(() => setShowSuggestions && setShowSuggestions(false), 200);
                 }}
+                disabled={disabled}
                 placeholder="Or type specific topic (e.g., 'G20 Summit')..."
-                className="w-full px-4 py-3 md:py-3.5 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-4 focus:ring-blue-400/50 placeholder:text-slate-400"
+                className={`w-full px-4 py-3 md:py-3.5 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-4 focus:ring-blue-400/50 placeholder:text-slate-400 transition-all ${disabled ? 'opacity-50 cursor-not-allowed bg-slate-100' : 'bg-white'}`}
             />
         </div>
     );

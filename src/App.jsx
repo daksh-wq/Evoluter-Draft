@@ -44,7 +44,7 @@ import { useAuth, useTest } from './hooks';
 import { DEFAULT_USER_STATS, NAV_ITEMS, INSTITUTION_NAV_ITEMS } from './constants/data';
 import { ROUTES } from './constants/routes';
 import { evaluateAnswer } from './services/geminiService';
-import { RefreshCw, Menu } from 'lucide-react';
+import { RefreshCw, Menu, LogOut } from 'lucide-react';
 import logger from './utils/logger';
 import { handleError, ErrorSeverity, ErrorCategory } from './utils/errorHandler';
 import {
@@ -77,7 +77,9 @@ const ProtectedLayout = ({
   isSidebarOpen,
   setIsSidebarOpen,
   handleLogout,
-  onOnboardingComplete
+  onOnboardingComplete,
+  showLogoutModal,
+  setShowLogoutModal
 }) => {
   const location = useLocation();
   const isTestPage = location.pathname === '/test';
@@ -91,12 +93,46 @@ const ProtectedLayout = ({
   }
 
   // Determine Nav Items based on Role
-  const navItems = userData?.role === 'institution' ? INSTITUTION_NAV_ITEMS : NAV_ITEMS;
+  // For students: only show Classroom if they are enrolled in at least one batch
+  const isInBatch = Array.isArray(userData?.enrolledBatches) && userData.enrolledBatches.length > 0;
+  const baseNavItems = userData?.role === 'institution' ? INSTITUTION_NAV_ITEMS : NAV_ITEMS;
+  const navItems = baseNavItems.filter(item =>
+      item.id !== 'student/classroom' || isInBatch
+  );
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-[#2278B0]/20 selection:text-indigo-950">
       <GlobalStyles />
       <GlobalBanner />
+      {/* ── App-level Logout Confirmation Modal ── */}
+      {showLogoutModal && (
+        <div className="fixed inset-0 z-[999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <div className="bg-white rounded-2xl shadow-2xl border border-slate-100 w-full max-w-sm p-6">
+            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-5">
+              <LogOut size={26} className="text-red-500" />
+            </div>
+            <h3 className="text-xl font-black text-slate-800 text-center mb-1">Logout?</h3>
+            <p className="text-sm text-slate-500 text-center mb-6">
+              You'll be signed out of your account. Any unsaved progress will be lost.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowLogoutModal(false)}
+                className="flex-1 py-3 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => { setShowLogoutModal(false); handleLogout(); }}
+                className="flex-1 py-3 rounded-xl bg-red-500 text-white font-bold text-sm hover:bg-red-600 transition-all flex items-center justify-center gap-2"
+              >
+                <LogOut size={15} /> Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {!shouldHideNav && (
         <>
           {/* Mobile Header */}
@@ -117,7 +153,7 @@ const ProtectedLayout = ({
           </div>
 
           <Sidebar
-            onLogout={handleLogout}
+            onLogout={() => setShowLogoutModal(true)}
             navItems={navItems}
             user={user}
             userData={userData}
@@ -177,6 +213,8 @@ function App() {
       setIsZenMode(false);
     }
   };
+
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
 
   const handleLogout = async () => {
     exitZenMode();
@@ -418,7 +456,9 @@ function App() {
     isSidebarOpen,
     setIsSidebarOpen,
     handleLogout,
-    onOnboardingComplete: handleOnboardingComplete
+    onOnboardingComplete: handleOnboardingComplete,
+    showLogoutModal,
+    setShowLogoutModal
   };
 
   // Loading fallback for lazy-loaded components

@@ -20,6 +20,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [isSaving, setIsSaving] = useState(false);
     const [uploadingPhoto, setUploadingPhoto] = useState(false);
+    const [showLogoutModal, setShowLogoutModal] = useState(false);
     const fileInputRef = useRef(null);
     const [formData, setFormData] = useState({
         displayName: '',
@@ -130,6 +131,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
     };
 
     return (
+        <>
         <div className="animate-in fade-in duration-500 pb-20 max-w-4xl mx-auto">
             {/* Header */}
             <header className="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
@@ -332,7 +334,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
                         </div>
                         <div className="w-full mt-auto pt-6">
                             <button
-                                onClick={onLogout}
+                                onClick={() => setShowLogoutModal(true)}
                                 className="w-full bg-red-50 text-red-600 px-4 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"
                             >
                                 <LogOut size={18} /> Logout Account
@@ -342,7 +344,36 @@ const ProfileView = ({ user, userData, onLogout }) => {
                 </div>
             </div>
         </div >
-    );
+
+        {/* Logout Confirmation Modal */}
+        {showLogoutModal && (
+            <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+                <div className="bg-white rounded-2xl shadow-2xl border border-slate-100 w-full max-w-sm p-6">
+                    <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <LogOut size={26} className="text-red-500" />
+                    </div>
+                    <h3 className="text-xl font-black text-slate-800 text-center mb-1">Logout?</h3>
+                    <p className="text-sm text-slate-500 text-center mb-6">
+                        You'll be signed out of your account. Any unsaved progress will be lost.
+                    </p>
+                    <div className="flex gap-3">
+                        <button
+                            onClick={() => setShowLogoutModal(false)}
+                            className="flex-1 py-3 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            onClick={() => { setShowLogoutModal(false); onLogout(); }}
+                            className="flex-1 py-3 rounded-xl bg-red-500 text-white font-bold text-sm hover:bg-red-600 transition-all flex items-center justify-center gap-2"
+                        >
+                            <LogOut size={15} /> Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        )}
+    </>
 };
 
 export default ProfileView;

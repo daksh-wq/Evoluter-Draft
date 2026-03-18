@@ -12,7 +12,8 @@ export const ConfigPanel = ({
     difficulty,
     setDifficulty,
     pyqPercentage,
-    setPyqPercentage
+    setPyqPercentage,
+    disabled = false,
 }) => {
     return (
         <div className="p-4 md:p-6 bg-[#1b1c31] border border-white/10 rounded-2xl shadow-xl space-y-6 h-full flex flex-col justify-center">
@@ -26,8 +27,9 @@ export const ConfigPanel = ({
                         {QUESTION_COUNTS.map(count => (
                             <button
                                 key={count}
-                                onClick={() => setQuestionCount(count)}
-                                className={`py-2 rounded-lg font-bold text-sm border transition-all ${questionCount === count ? 'bg-white text-blue-600 border-white shadow-lg' : 'bg-transparent text-blue-100 border-white/30 hover:bg-white/10'}`}
+                                onClick={() => !disabled && setQuestionCount(count)}
+                                disabled={disabled}
+                                className={`py-2 rounded-lg font-bold text-sm border transition-all ${questionCount === count ? 'bg-white text-blue-600 border-white shadow-lg' : 'bg-transparent text-blue-100 border-white/30 hover:bg-white/10'} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
                             >
                                 {count}
                             </button>
@@ -44,8 +46,9 @@ export const ConfigPanel = ({
                         {DIFFICULTY_LEVELS.map(level => (
                             <button
                                 key={level}
-                                onClick={() => setDifficulty(level)}
-                                className={`py-1.5 xl:py-2 px-1 rounded-lg font-bold text-[10px] xl:text-xs 2xl:text-sm border transition-all truncate block w-full outline-none ${difficulty === level ? 'bg-white text-blue-600 border-white shadow-lg' : 'bg-transparent text-blue-100 border-white/30 hover:bg-white/10'}`}
+                                onClick={() => !disabled && setDifficulty(level)}
+                                disabled={disabled}
+                                className={`py-1.5 xl:py-2 px-1 rounded-lg font-bold text-[10px] xl:text-xs 2xl:text-sm border transition-all truncate block w-full outline-none ${difficulty === level ? 'bg-white text-blue-600 border-white shadow-lg' : 'bg-transparent text-blue-100 border-white/30 hover:bg-white/10'} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
                                 title={level}
                             >
                                 {level}
