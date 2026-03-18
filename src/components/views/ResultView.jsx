@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import {
     CheckCircle, XCircle, AlertCircle, Clock,
-    Brain, Target, ListChecks, ArrowRight, RefreshCw, ChevronDown, Download, BarChart2, BookOpen
+    Brain, Target, ListChecks, ArrowRight, RefreshCw, ChevronDown, Download, BarChart2, BookOpen, Activity
 } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip as RechartsTooltip, Cell } from 'recharts';
 import { analyzeTestPerformance } from '../../services/geminiService';
 import { formatTime } from '../../utils/helpers';
 import logger from '../../utils/logger';
@@ -290,24 +291,51 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {/* Scoring Ledger */}
-                            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                                <h3 className="font-bold text-slate-800 mb-4 flex items-center gap-2">
-                                    <BarChart2 size={18} className="text-purple-600" /> UPSC Scoring Ledger
+                            {/* Simple Correct vs Incorrect Graph */}
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative group">
+                                <h3 className="font-bold text-slate-800 mb-6 flex items-center gap-2 relative z-10">
+                                    <Activity size={18} className="text-indigo-600" /> Accuracy Overview
                                 </h3>
-                                <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-green-50 rounded-xl border border-green-100">
-                                        <span className="text-green-800 font-medium">Positive Marks (+2/q)</span>
-                                        <span className="font-black text-green-600">+{results.correct * 2}</span>
-                                    </div>
-                                    <div className="flex justify-between items-center p-3 bg-red-50 rounded-xl border border-red-100">
-                                        <span className="text-red-800 font-medium">Negative Marks (-0.66/q)</span>
-                                        <span className="font-black text-red-600">-{parseFloat((results.incorrect * 0.66).toFixed(2))}</span>
-                                    </div>
-                                    <div className="flex justify-between items-center p-3 bg-indigo-50 rounded-xl border border-indigo-100 border-t-2 border-t-indigo-200 border-dashed">
-                                        <span className="text-indigo-950 font-black">Final Raw Score</span>
-                                        <span className="font-black text-indigo-700 text-xl">{results.score} / {results.totalQuestions * 2}</span>
-                                    </div>
+                                <div className="h-[260px] w-full relative z-10">
+                                    {(() => {
+                                        const barData = [
+                                            { name: 'Correct', count: results.correct, color: '#16a34a' },     // text-green-600
+                                            { name: 'Incorrect', count: results.incorrect, color: '#dc2626' }, // text-red-600
+                                            { name: 'Skipped', count: results.unanswered, color: '#94a3b8' }   // text-slate-400
+                                        ];
+
+                                        return (
+                                            <ResponsiveContainer width="100%" height="100%">
+                                                <BarChart data={barData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                                                    <XAxis 
+                                                        dataKey="name" 
+                                                        axisLine={false} 
+                                                        tickLine={false} 
+                                                        tick={{ fill: '#64748b', fontSize: 13, fontWeight: 'bold' }} 
+                                                        dy={10} 
+                                                    />
+                                                    <YAxis 
+                                                        axisLine={false} 
+                                                        tickLine={false} 
+                                                        tick={{ fill: '#64748b', fontSize: 12 }} 
+                                                        allowDecimals={false}
+                                                    />
+                                                    <RechartsTooltip 
+                                                        cursor={{ fill: 'transparent' }}
+                                                        contentStyle={{ backgroundColor: '#ffffff', borderColor: '#e2e8f0', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
+                                                        itemStyle={{ color: '#0f172a', fontWeight: 'bold' }}
+                                                        formatter={(value) => [`${value} Questions`, 'Count']}
+                                                    />
+                                                    <Bar dataKey="count" radius={[8, 8, 0, 0]} maxBarSize={40}>
+                                                        {barData.map((entry, index) => (
+                                                            <Cell key={`cell-${index}`} fill={entry.color} />
+                                                        ))}
+                                                    </Bar>
+                                                </BarChart>
+                                            </ResponsiveContainer>
+                                        );
+                                    })()}
                                 </div>
                             </div>
 

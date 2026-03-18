@@ -20,6 +20,7 @@
     "react-firebase-hooks": "^5.1.1",
     "react-force-graph-2d": "^1.29.1",
     "react-router-dom": "^7.13.0",
+    "recharts": "^3.8.0",
     "zustand": "^5.0.11"
   },
   "devDependencies": {

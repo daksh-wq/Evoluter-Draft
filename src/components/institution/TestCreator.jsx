@@ -319,7 +319,9 @@ const TestCreator = ({ userData }) => {
 
     const handlePublish = async () => {
         if (!title) return toast.warning('Please enter a test title');
-        if (questions.length === 0) return toast.warning('Test must have at least one question');
+        if (questions.length !== parseInt(genConfig.count)) {
+            return toast.warning(`You must create exactly ${genConfig.count} questions. Currently you have ${questions.length}.`);
+        }
 
         const invalidQ = questions.find(q => !q.text || q.options.some(o => !o));
         if (invalidQ) return toast.warning(`Question "${invalidQ.text || 'Untitled'}" is incomplete.`);
@@ -455,15 +457,15 @@ const TestCreator = ({ userData }) => {
                     </div>
                     <div className="flex items-center gap-2 sm:gap-4">
                         <div className="flex items-center gap-2 sm:gap-3">
-                            <span className="hidden md:inline-block text-sm font-bold text-slate-400 mr-4">
-                                {questions.length} Question{questions.length !== 1 && 's'}
+                            <span className={`hidden md:inline-block text-sm font-bold mr-4 ${questions.length === parseInt(genConfig.count) ? 'text-green-600' : 'text-orange-500'}`}>
+                                {questions.length} / {genConfig.count} Questions Created
                             </span>
                             <button onClick={() => navigate(-1)} className="hidden sm:block px-4 py-2 font-bold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors text-sm">
                                 Cancel
                             </button>
                             <button
                                 onClick={handlePublish}
-                                disabled={isSubmitting || questions.length === 0}
+                                disabled={isSubmitting || questions.length !== parseInt(genConfig.count)}
                                 className="w-10 h-10 sm:w-auto sm:h-auto sm:px-5 sm:py-2 bg-[#2278B0] text-white font-bold rounded-lg shadow-sm hover:bg-[#1b5f8a] transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm shrink-0"
                                 title="Publish Test"
                             >
@@ -629,7 +631,14 @@ const TestCreator = ({ userData }) => {
                                 ].map((m) => (
                                     <button
                                         key={m.id}
-                                        onClick={() => setMode(m.id)}
+                                        onClick={() => {
+                                            setMode(m.id);
+                                            if (m.id === 'manual') {
+                                                setTimeout(() => {
+                                                    document.getElementById('manual-questions-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                }, 100);
+                                            }
+                                        }}
                                         className={`flex-1 py-3 sm:py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-all ${mode === m.id
                                             ? 'bg-white text-indigo-600 shadow-sm border border-slate-100 ring-1 ring-slate-100'
                                             : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200/50'
@@ -952,7 +961,7 @@ const TestCreator = ({ userData }) => {
                             )}
 
                             {/* Floating "Add Question" Button mimicking Google Forms */}
-                            {questions.length > 0 && (
+                            {questions.length > 0 && questions.length < parseInt(genConfig.count) && (
                                 <div className="flex justify-center mt-8">
                                     <button
                                         onClick={addQuestion}
@@ -961,6 +970,12 @@ const TestCreator = ({ userData }) => {
                                         <Plus size={20} />
                                         Add Another Question
                                     </button>
+                                </div>
+                            )}
+
+                            {questions.length >= parseInt(genConfig.count) && (
+                                <div className="text-center mt-8 p-4 bg-green-50 rounded-xl border border-green-200 font-bold text-green-700 animate-in fade-in zoom-in duration-300">
+                                    ✅ Target question count reached! You can now publish the test.
                                 </div>
                             )}
                         </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from 'react';
 import {
     ChevronRight,
     ChevronDown,
+    Flag,
 } from 'lucide-react';
 import { TestHeader } from '../test/TestHeader';
 import { QuestionCard } from '../test/QuestionCard';
@@ -220,17 +221,107 @@ const TestView = ({
 
             <div className="flex-1 flex overflow-hidden">
                 {/* Question Area */}
-                <div className="flex-1 overflow-y-auto px-4 py-4 lg:px-10 lg:py-6 relative">
+                <div className="flex-1 overflow-y-auto px-4 py-4 lg:py-4 relative">
+                    <div className="max-w-5xl mx-auto">
+                        {/* Question Header & Tags */}
+                        {(() => {
+                            const pyqTag = safeQuestion.tags?.find(t => t.type === 'pyq');
+                            const subjectTag = safeQuestion.tags?.find(t => t.type === 'subject') || { type: 'subject', label: safeQuestion.subject };
+                            const topicTag = safeQuestion.tags?.find(t => t.type === 'topic') || { type: 'topic', label: safeQuestion.topic };
+
+                            return (
+                                <div className={`flex flex-col gap-3  transition-all duration-300 ${isZenMode ? 'mt-16 sticky top-20 z-40 backdrop-blur p-4 rounded-2xl shadow-sm border border-slate-100' : ''}`}>
+                                    <div className="flex justify-between items-start">
+                                        <div className="flex flex-col gap-2">
+                                            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                                                Question {currentIndex + 1} <span className="text-slate-300">/</span> {test.length}
+                                            </span>
+
+                                            {/* Dynamic Tags Container */}
+                                            <div className="flex flex-wrap items-center gap-2 mt-1">
+                                                {pyqTag && (
+                                                    <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded bg-amber-100 text-amber-700 border border-amber-200 tracking-wider shadow-sm flex items-center gap-1">
+                                                        🏆 {pyqTag.label}
+                                                    </span>
+                                                )}
+                                                {subjectTag?.label && (
+                                                    <span className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-blue-50 text-blue-600 border border-blue-100 tracking-wide">
+                                                        {subjectTag.label}
+                                                    </span>
+                                                )}
+                                                {topicTag?.label && (
+                                                    <span className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-slate-100 text-slate-600 border border-slate-200 tracking-wide line-clamp-1 max-w-[40vw] sm:max-w-[200px]" title={topicTag.label}>
+                                                        {topicTag.label}
+                                                    </span>
+                                                )}
+                                                {safeQuestion.difficulty && (
+                                                    <span className={`text-[10px] font-bold uppercase px-2 py-1 rounded border tracking-wide ${safeQuestion.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
+                                                        safeQuestion.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
+                                                            'bg-green-50 text-green-600 border-green-100'
+                                                        }`}>
+                                                        {safeQuestion.difficulty}
+                                                    </span>
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        {/* Actions */}
+                                        <div className="flex gap-2">
+                                            <button
+                                                onClick={() => toggleMarkForReview(safeQuestion.id)}
+                                                className={`p-2.5 rounded-xl transition-all border ${markedForReview.has(safeQuestion.id)
+                                                    ? 'bg-orange-50 text-orange-600 border-orange-200 shadow-sm'
+                                                    : 'bg-white text-slate-400 border-slate-200 hover:border-blue-300 hover:text-blue-500'
+                                                    }`}
+                                                title={markedForReview.has(safeQuestion.id) ? "Unmark" : "Mark for Review"}
+                                            >
+                                                <Flag size={16} fill={markedForReview.has(safeQuestion.id) ? "currentColor" : "none"} />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })()}
+                    </div>
+
                     <QuestionCard
                         question={safeQuestion}
-                        currentIndex={currentIndex}
-                        totalQuestions={test.length}
                         selectedAnswer={answers[safeQuestion.id]}
-                        isMarked={markedForReview.has(safeQuestion.id)}
                         onSelectAnswer={selectAnswer}
-                        onToggleMark={toggleMarkForReview}
-                        isZenMode={isZenMode}
                     />
+
+                    {/* Previous/Next Navigator aligned below QuestionCard */}
+                    <div className="max-w-6xl mx-auto mt-4 flex justify-between items-center px-1">
+                        <button
+                            onClick={goToPrev}
+                            disabled={currentIndex === 0}
+                            className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl border border-slate-200 font-bold text-slate-500 bg-white hover:bg-slate-50 disabled:opacity-50 flex items-center gap-2 shadow-sm transition-all active:scale-95"
+                        >
+                            <ChevronDown className="rotate-90" size={18} />
+                        </button>
+
+                        <div className="flex items-center gap-3">
+                            {(isZenMode || isLastQuestion) && (
+                                <button
+                                    onClick={() => setShowSubmitModal(true)}
+                                    className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 shadow-sm shadow-green-600/20 flex items-center gap-2 active:scale-95 transition-all"
+                                >
+                                    <span className="hidden sm:inline">Submit Test</span>
+                                    <span className="sm:hidden">Submit</span>
+                                </button>
+                            )}
+
+                            {!isLastQuestion && (
+                                <button
+                                    onClick={goToNext}
+                                    className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-[#2278B0] text-white font-bold hover:bg-[#1b5f8a] shadow-sm shadow-[#2278B0]/20 flex items-center gap-2 active:scale-95 transition-all"
+                                >
+                                    <ChevronRight size={18} />
+                                </button>
+                            )}
+                        </div>
+                    </div>
                 </div>
 
                 {/* Sidebar Nav (Desktop) */}
@@ -244,38 +335,6 @@ const TestView = ({
                 />
             </div>
 
-            {/* Footer Nav */}
-            <footer className="border-t border-slate-200 bg-white px-3 sm:px-6 lg:px-10 py-3 sm:py-4 flex justify-between items-center shrink-0">
-                <button
-                    onClick={goToPrev}
-                    disabled={currentIndex === 0}
-                    className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-50 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
-                >
-                    <ChevronDown className="rotate-90" size={16} />
-                    <span className="hidden xs:inline">Previous</span>
-                </button>
-                <div className="flex items-center gap-2 sm:gap-4">
-                    {/* Always show Submit button in Zen Mode for easy access, or when on the last question everywhere */}
-                    {(isZenMode || isLastQuestion) && (
-                        <button
-                            onClick={() => setShowSubmitModal(true)}
-                            className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 shadow-lg shadow-green-600/20 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
-                        >
-                            <span className="hidden sm:inline">Submit Test</span>
-                            <span className="sm:hidden">Submit</span>
-                        </button>
-                    )}
-
-                    {!isLastQuestion && (
-                        <button
-                            onClick={goToNext}
-                            className="px-3 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-[#2278B0] text-white font-bold hover:bg-[#1b5f8a] shadow-lg shadow-[#2278B0]/20 flex items-center gap-1.5 sm:gap-2 text-sm active:scale-95 transition-all"
-                        >
-                            <span className="hidden xs:inline">Next</span> <ChevronRight size={16} />
-                        </button>
-                    )}
-                </div>
-            </footer>
             {/* Exit Confirmation Modal */}
             {showExitModal && (
                 <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">

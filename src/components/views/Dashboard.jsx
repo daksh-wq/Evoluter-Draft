@@ -456,8 +456,8 @@ const Dashboard = ({
             <div className="rounded-3xl bg-indigo-950 p-6 md:p-8 text-white relative overflow-hidden shadow-xl shadow-indigo-900/20">
                 <div className="relative z-10">
                     <h2 className="text-xl md:text-2xl font-bold mb-1">Generate Custom  Test</h2>
-                    <p className="text-blue-100 max-w-xl text-sm leading-relaxed mb-4">
-                        Select a subject or type a specific topic. The AI will generate a unique diagnostic test tailored to your needs.
+                    <p className="text-blue-100 max-w-6xl text-sm leading-relaxed mb-4">
+                        Choose your subject or define a focused topic to create a comprehensive test experience that helps you assess your strengths, identify gaps, and refine your exam strategy.
                     </p>
 
                     {/* Controls Container */}
@@ -596,7 +596,6 @@ const Dashboard = ({
                                         </>
                                     ) : (
                                         <>
-                                            <Sparkles size={20} />
                                             <span>Generate Test</span>
                                         </>
                                     )}
