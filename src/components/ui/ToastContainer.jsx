@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { CheckCircle, AlertCircle, Info, AlertTriangle, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const ToastContainer = () => {
     const [toasts, setToasts] = useState([]);
+    const timerIds = useRef([]);
 
     useEffect(() => {
         const handleAddToast = (e) => {
@@ -12,14 +13,20 @@ const ToastContainer = () => {
             
             setToasts(prev => [...prev, { id, type, message }]);
             
-            // Auto close after 3.5s
-            setTimeout(() => {
+            // Auto close after 3.5s — track the timer so it can be cancelled on unmount
+            const timer = setTimeout(() => {
                 removeToast(id);
             }, 3500);
+            timerIds.current.push(timer);
         };
 
         window.addEventListener('add-toast', handleAddToast);
-        return () => window.removeEventListener('add-toast', handleAddToast);
+        return () => {
+            window.removeEventListener('add-toast', handleAddToast);
+            // Clear any pending timers to prevent state updates on unmounted component
+            timerIds.current.forEach(clearTimeout);
+            timerIds.current = [];
+        };
     }, []);
 
     const removeToast = (id) => {

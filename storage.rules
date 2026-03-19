@@ -12,28 +12,26 @@ service firebase.storage {
       return isAuthenticated() && request.auth.uid == userId;
     }
 
-    // User document uploads
+    // User document uploads — PDF only, owner-only, no listing
     match /users/{userId}/docs/{fileName} {
-      // Owner can read their own files
-      allow read: if isOwner(userId);
-      
-      // Owner can upload with restrictions
-      allow write: if isOwner(userId)
-        // Max file size: 20MB
+      allow get: if isOwner(userId);
+      allow list: if false;
+      // Max file size: 20MB, PDFs only
+      allow create, update: if isOwner(userId)
         && request.resource.size < 20 * 1024 * 1024
-        // Only allowed file types
-        && request.resource.contentType.matches('application/pdf|image/.*|text/.*');
-      
-      // Owner can delete their own files
+        && request.resource.contentType.matches('application/pdf');
       allow delete: if isOwner(userId);
     }
 
-    // User profile images
+    // User profile images — any authenticated user can fetch (get only, not list)
     match /users/{userId}/profile/{fileName} {
-      allow read: if isAuthenticated(); // Any user can view profile pics
-      allow write: if isOwner(userId)
-        && request.resource.size < 5 * 1024 * 1024 // 5MB max
-        && request.resource.contentType.matches('image/.*');
+      allow get: if isAuthenticated();
+      allow list: if false;
+      // Restricted to safe types — image/svg+xml excluded (XSS risk)
+      allow create, update: if isOwner(userId)
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/(png|jpeg|webp)');
+      allow delete: if isOwner(userId);
     }
 
     // Deny all other paths by default
@@ -42,3 +40,4 @@ service firebase.storage {
     }
   }
 }
+

@@ -110,9 +110,16 @@ export function clearQueue() {
 }
 
 /**
- * Initialize online/offline listeners for auto-sync
+ * Initialize online/offline listeners for auto-sync.
+ * Guard ensures listeners are only ever registered once — prevents
+ * duplicate syncQueue() runs on hot reload / multiple mounts.
  */
+let _offlineSyncInitialized = false;
+
 export function initOfflineSync() {
+    if (_offlineSyncInitialized) return;
+    _offlineSyncInitialized = true;
+
     window.addEventListener('online', async () => {
         logger.info('Network online — syncing offline queue...');
         const result = await syncQueue();

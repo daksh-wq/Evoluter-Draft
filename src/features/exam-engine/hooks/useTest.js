@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { auth, functions } from '@/services/firebase';
 import { httpsCallable } from 'firebase/functions';
 import logger from '@/utils/logger';
@@ -67,13 +67,16 @@ export function useTest() {
     /**
      * Generate and start an AI-powered test on a topic
      */
+    // Bug #4 fix: store interval reference so it can always be cleared, even on unmount
+    const progressIntervalRef = useRef(null);
+
     const startAITest = useCallback(async (topic, count = 10, difficulty = 'Hard', targetExam = 'UPSC CSE', resourceContent = null, pyqPercentage = 0) => {
         setIsGeneratingTest(true);
         setGenerationProgress(0);
 
         // Simulate Progress (Consistent & Slower Loading without decimals)
         let ticks = 0;
-        const progressInterval = setInterval(() => {
+        progressIntervalRef.current = setInterval(() => {
             ticks++;
             setGenerationProgress(prev => {
                 if (prev >= 92) return prev; // Stall at 92% until done
@@ -97,7 +100,7 @@ export function useTest() {
             // 1. Generate Content (Delegate to Service)
             const questions = await testService.generateTestContent(topic, count, difficulty, targetExam, () => { }, resourceContent, pyqPercentage);
 
-            clearInterval(progressInterval);
+            clearInterval(progressIntervalRef.current);
             setGenerationProgress(100);
             await new Promise(r => setTimeout(r, 500)); // Show 100% briefly
 
@@ -106,11 +109,17 @@ export function useTest() {
 
             setupTestSession(questions, durationSeconds);
 
-            // Initialize History in Backend (Fire & Forget)
+            // Initialize History in Backend
             if (auth.currentUser) {
                 const testId = `test-${Date.now()}`;
                 setActiveTestId(testId);
-                testService.initTestSession(auth.currentUser.uid, testId, topic, questions);
+
+                // Bug #5 fix: await initTestSession so failures are caught, not silently lost
+                try {
+                    await testService.initTestSession(auth.currentUser.uid, testId, topic, questions);
+                } catch (sessionErr) {
+                    logger.warn('initTestSession failed (non-blocking):', sessionErr);
+                }
 
                 // Fire-and-forget sync of generated questions to global Question Bank
                 try {
@@ -131,7 +140,7 @@ export function useTest() {
             return true;
         } catch (error) {
             logger.error('Error starting AI test:', error);
-            clearInterval(progressInterval);
+            clearInterval(progressIntervalRef.current);
             // Fallback: use fixed count-based duration
             startMockTest(null, count, Math.round(getDurationForCount(count) / 60));
             return false;
@@ -144,7 +153,7 @@ export function useTest() {
     /**
      * Start a custom local test immediately (Used for PYQs)
      */
-    const startCustomTest = useCallback((questions, testName = 'Custom Test', difficulty = 'Intermediate') => {
+    const startCustomTest = useCallback(async (questions, testName = 'Custom Test', difficulty = 'Intermediate') => {
         setIsGeneratingTest(true);
         try {
             const count = questions.length;
@@ -153,11 +162,18 @@ export function useTest() {
 
             setupTestSession(questions, durationSeconds);
             setActiveTestName(testName);
-            setActiveTestId(`custom-${Date.now()}`);
 
-            // Initialize History in Backend
+            // Bug #3 fix: compute ID once so state and Firestore share the exact same value
+            const customTestId = `custom-${Date.now()}`;
+            setActiveTestId(customTestId);
+
+            // Bug #5 fix: await initTestSession so failures are surfaced, not silently lost
             if (auth.currentUser) {
-                testService.initTestSession(auth.currentUser.uid, `custom-${Date.now()}`, testName, questions);
+                try {
+                    await testService.initTestSession(auth.currentUser.uid, customTestId, testName, questions);
+                } catch (sessionErr) {
+                    logger.warn('initTestSession failed (non-blocking):', sessionErr);
+                }
             }
             return true;
         } catch (error) {
@@ -185,12 +201,17 @@ export function useTest() {
                 // correctAnswer from Firestore is a string (the correct option text).
                 // selectAnswer() records the selected *index*, so we must convert.
                 const correctAnswerIndex = options.indexOf(q.correctAnswer);
+                // Bug #6 fix: warn and use null instead of silently defaulting to index 0,
+                // which would incorrectly mark the first option as correct.
+                if (correctAnswerIndex < 0) {
+                    logger.warn(`Institution question "${q.id}" has correctAnswer "${q.correctAnswer}" not found in options`, options);
+                }
                 return {
                     id: q.id || `inst-${idx}`,
                     text: q.text,                   // used by storage / formatters
                     question: q.text,               // used by QuestionCard renderer
                     options,
-                    correctAnswer: correctAnswerIndex >= 0 ? correctAnswerIndex : 0,
+                    correctAnswer: correctAnswerIndex >= 0 ? correctAnswerIndex : null,
                     explanation: q.explanation || 'No explanation provided.',
                     tags: [{ type: 'subject', label: testData.subject || 'General' }]
                 };

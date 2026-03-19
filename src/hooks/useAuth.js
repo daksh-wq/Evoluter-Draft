@@ -206,6 +206,15 @@ export function useAuth() {
             const emailLower = email.toLowerCase();
             const domain = emailLower.split('@')[1];
 
+            // Bug #7 fix: guard against malformed emails with no @ symbol
+            // Without this, domain is undefined and the DNS call becomes ?name=undefined
+            if (!domain) {
+                throw {
+                    code: 'custom/invalid-email-dns',
+                    reason: 'Please enter a valid email address.'
+                };
+            }
+
             // 1. Block known dummy domains quickly
             const blockedDomains = [
                 'example.com', 'test.com', 'tempmail.com',

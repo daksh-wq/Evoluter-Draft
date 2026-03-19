@@ -12,8 +12,9 @@ service firebase.storage {
       return isAuthenticated() && request.auth.uid == userId;
     }
 
+    // Restricted to safe image types — excludes image/svg+xml (XSS risk)
     function isImage() {
-      return request.resource.contentType.matches('image/.*');
+      return request.resource.contentType.matches('image/(png|jpeg|webp)');
     }
 
     function isPDF() {
@@ -26,32 +27,37 @@ service firebase.storage {
 
     // ─── USER FILES ─────────────────────────────────────
     
-    // Documents (PDFs only, Max 20MB)
+    // Documents (PDFs only, Max 20MB) — owner-only, no listing
     match /users/{userId}/docs/{fileName} {
-      allow read: if isOwner(userId);
-      allow write: if isOwner(userId) 
+      allow get: if isOwner(userId);
+      allow list: if false;
+      allow create, update: if isOwner(userId) 
                    && isPDF() 
                    && isSizeBelow(20);
       allow delete: if isOwner(userId);
     }
 
-    // Profile Pictures (Images only, Max 5MB)
+    // Profile Pictures (Images only, Max 5MB) — any authenticated user can fetch, no listing
+    // instId == user.uid verified in OnboardingView.jsx and InstitutionProfileView.jsx
     match /users/{userId}/profile/{fileName} {
-      allow read: if isAuthenticated(); // Public to authenticated users
-      allow write: if isOwner(userId) 
+      allow get: if isAuthenticated();
+      allow list: if false;
+      allow create, update: if isOwner(userId) 
                    && isImage()
                    && isSizeBelow(5);
+      allow delete: if isOwner(userId);
     }
 
     // ─── INSTITUTION FILES ──────────────────────────────
     
-    // Institution Logos (Images only, Max 5MB)
-    // Note: This matches the path used in OnboardingView.jsx: `institutions/${user.uid}/logo_${Date.now()}`
+    // Institution Logos — instId IS the user's UID (confirmed in app code), so isOwner(instId) is correct
     match /institutions/{instId}/{fileName} {
-      allow read: if isAuthenticated();
-      allow write: if isOwner(instId)
+      allow get: if isAuthenticated();
+      allow list: if false;
+      allow create, update: if isOwner(instId)
                    && isImage()
                    && isSizeBelow(5);
+      allow delete: if isOwner(instId);
     }
 
     // ─── DEFAULT DENY ───────────────────────────────────
@@ -60,3 +66,4 @@ service firebase.storage {
     }
   }
 }
+
