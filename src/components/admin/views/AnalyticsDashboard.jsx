@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../../../services/firebase';
 import { collection, query, getCountFromServer, orderBy, limit, getDocs } from 'firebase/firestore';
 import { BarChart2, PieChart, Activity, TrendingUp } from 'lucide-react';
+import logger from '../../../utils/logger';
 
 const AnalyticsDashboard = () => {
     const [stats, setStats] = useState({
@@ -42,7 +43,7 @@ const AnalyticsDashboard = () => {
                 });
 
             } catch (error) {
-                console.error("Analytics error:", error);
+                logger.error("Analytics error:", error);
             } finally {
                 setLoading(false);
             }

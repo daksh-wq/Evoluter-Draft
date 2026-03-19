@@ -106,10 +106,10 @@ const PerformanceReportView = ({ userStats }) => {
                     Difficulty-wise Performance (E-M-D)
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {emdData.map((item, idx) => {
+                    {emdData.map((item) => {
                         const accuracy = item.attempted > 0 ? Math.round((item.correct * 100) / item.attempted) : 0;
                         return (
-                            <div key={idx} className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                            <div key={item.level} className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
                                 <div className="flex justify-between items-start mb-6">
                                     <div className={`flex items-center gap-2 px-3 py-1.5 rounded-lg ${item.bg} ${item.text} font-bold text-sm border border-slate-100 shadow-sm`}>
                                         {item.icon} {item.level}
@@ -160,8 +160,8 @@ const PerformanceReportView = ({ userStats }) => {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-slate-100">
-                                {subjectData.length > 0 ? subjectData.map((s, idx) => (
-                                    <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                                {subjectData.length > 0 ? subjectData.map((s) => (
+                                    <tr key={s.subject} className="hover:bg-slate-50/50 transition-colors">
                                         <td className="px-6 py-4 font-bold text-slate-800">
                                             {s.subject}
                                         </td>
@@ -209,8 +209,8 @@ const PerformanceReportView = ({ userStats }) => {
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-slate-200">
-                                        {subjectData.map((s, idx) => (
-                                            <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                                        {subjectData.map((s) => (
+                                            <tr key={s.subject} className="hover:bg-slate-50/50 transition-colors">
                                                 <td className="p-4 font-bold text-slate-800 border-r border-slate-200 align-top">
                                                     {s.subject}
                                                 </td>
@@ -268,8 +268,8 @@ const PerformanceReportView = ({ userStats }) => {
                         Resource Proficiency
                     </h2>
                     <div className="space-y-4">
-                        {resourceData.map((r, idx) => (
-                            <div key={idx} className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        {resourceData.map((r) => (
+                            <div key={r.source} className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
                                 <div className="flex justify-between items-center mb-3">
                                     <div className={`flex items-center gap-2 px-3 py-1.5 rounded-lg ${r.bgClass} ${r.colorClass} font-bold text-sm`}>
                                         {r.icon} {r.source}
@@ -300,7 +300,7 @@ const PerformanceReportView = ({ userStats }) => {
                         Question Type Proficiency
                     </h2>
                     <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-2">
-                        {qTypeData.map((q, idx) => {
+                        {qTypeData.map((q) => {
                             let barColor = 'bg-[#2278B0]';
                             let textColor = 'text-[#2278B0]';
                             if (q.accuracy < 40) { barColor = 'bg-red-500'; textColor = 'text-red-600'; }
@@ -308,7 +308,7 @@ const PerformanceReportView = ({ userStats }) => {
                             else { barColor = 'bg-green-500'; textColor = 'text-green-600'; }
 
                             return (
-                                <div key={idx} className="p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors rounded-xl">
+                                <div key={q.type} className="p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors rounded-xl">
                                     <div className="flex justify-between items-end mb-2">
                                         <div>
                                             <h4 className="font-bold text-slate-700 text-sm mb-1">{q.type}</h4>

@@ -1,7 +1,7 @@
 import { doc, setDoc, updateDoc, increment } from 'firebase/firestore';
 import { db, auth } from '@/services/firebase';
 import logger from '@/utils/logger';
-import { generateQuestions } from '@/services/geminiService';
+import { generateQuestions, generateQuestionsFromDocument } from '@/services/geminiService';
 import { generateMockQuestions } from '@/utils/helpers';
 import { optimizeQuestionsForStorage } from '../utils/testLogic'; // We'll need to export this or just inline it if circular dep concerns arise, but util -> service is fine.
 import { PYQ_DATABASE } from '@/constants/pyqDatabase';
@@ -208,8 +208,7 @@ export const testService = {
             if (aiCount > 0) {
                 let aiQuestions = [];
                 if (resourceContent) {
-                    // IMPORTANT: We dynamically import to avoid circular deps if needed
-                    const { generateQuestionsFromDocument } = await import('@/services/geminiService');
+                    // Use document-based generation when resource content is provided
                     logger.info('Generating mixed test from resource content...');
                     aiQuestions = await generateQuestionsFromDocument(resourceContent, topic || 'Attached Document', aiCount, difficulty, onProgress);
                 } else {

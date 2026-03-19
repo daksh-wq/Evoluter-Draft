@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Building2, Users, MapPin, CheckCircle, Zap, ListChecks, Plus, ArrowRight, Clock, MoreVertical, Activity } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { collection, query, where, orderBy, getDocs } from 'firebase/firestore';
@@ -26,9 +26,8 @@ const InstitutionDashboard = ({ userData }) => {
     const [topPerformers, setTopPerformers] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchDashboardData = async () => {
-            if (!userData?.uid) return;
+    const fetchDashboardData = useCallback(async () => {
+        if (!userData?.uid) return;
 
             try {
                 // Fetch batches for stats
@@ -133,10 +132,11 @@ const InstitutionDashboard = ({ userData }) => {
             } finally {
                 setLoading(false);
             }
-        };
+        }, [userData?.uid]);
 
+    useEffect(() => {
         fetchDashboardData();
-    }, [userData]);
+    }, [fetchDashboardData]);
 
     return (
         <div className="space-y-8 px-4 animate-in fade-in duration-500 pb-20">
@@ -227,7 +227,13 @@ const InstitutionDashboard = ({ userData }) => {
                     </h3>
                     <div className="flex overflow-x-auto gap-4 pb-2 snap-x scrollbar-hide">
                         {liveFeed.map(sub => (
-                            <div key={sub.id} className="min-w-[280px] md:min-w-[320px] bg-slate-50 border border-slate-100 rounded-2xl p-4 snap-start shrink-0 hover:border-indigo-200 transition-colors cursor-pointer" onClick={() => navigate(`/institution/test/${sub.testId}`)}>
+                            <button
+                                key={sub.id}
+                                type="button"
+                                aria-label={`View report for ${sub.studentName}`}
+                                className="min-w-[280px] md:min-w-[320px] bg-slate-50 border border-slate-100 rounded-2xl p-4 snap-start shrink-0 hover:border-indigo-200 transition-colors text-left"
+                                onClick={() => navigate(`/institution/test/${sub.testId}`)}
+                            >
                                 <div className="flex justify-between items-start mb-2">
                                     <h4 className="font-bold text-slate-800 truncate pr-2">{sub.studentName}</h4>
                                     <span className={`text-xs font-bold px-2 py-1 rounded ${sub.percentage >= 50 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
@@ -241,7 +247,7 @@ const InstitutionDashboard = ({ userData }) => {
                                     <span className="flex items-center gap-1"><Clock size={12} /> {Math.floor(sub.timeTaken / 60)}m {sub.timeTaken % 60}s</span>
                                     <span>{sub.submittedAt?.toDate ? sub.submittedAt.toDate().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Just now'}</span>
                                 </div>
-                            </div>
+                            </button>
                         ))}
                     </div>
                 </div>

@@ -27,6 +27,12 @@ export const useExamDate = (examName = 'UPSC CSE', targetYear) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        const calculateDays = (dateStr) => {
+            const date = new Date(dateStr);
+            const diff = date - new Date();
+            setDaysRemaining(Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24))));
+        };
+
         const fetchDate = async () => {
             const year = targetYear || new Date().getFullYear();
 
@@ -91,12 +97,6 @@ export const useExamDate = (examName = 'UPSC CSE', targetYear) => {
             } finally {
                 setLoading(false);
             }
-        };
-
-        const calculateDays = (dateStr) => {
-            const date = new Date(dateStr);
-            const diff = date - new Date();
-            setDaysRemaining(Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24))));
         };
 
         fetchDate();

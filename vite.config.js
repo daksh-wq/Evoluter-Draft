@@ -17,6 +17,34 @@ export default defineConfig({
       'Cross-Origin-Embedder-Policy': 'unsafe-none',
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => {
+          // Firebase SDK → one long-cached vendor chunk
+          if (id.includes('node_modules/firebase')) {
+            return 'vendor-firebase';
+          }
+          // Recharts + D3 → charting chunk
+          if (id.includes('node_modules/recharts') || id.includes('node_modules/d3') || id.includes('node_modules/victory')) {
+            return 'vendor-charts';
+          }
+          // html2pdf and its dependencies (jspdf, html2canvas)
+          if (id.includes('node_modules/html2pdf') || id.includes('node_modules/jspdf') || id.includes('node_modules/html2canvas')) {
+            return 'vendor-pdf';
+          }
+          // pdfjs (PDF text extraction worker)
+          if (id.includes('node_modules/pdfjs-dist')) {
+            return 'vendor-pdfjs';
+          }
+          // All other node_modules → shared vendor chunk
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        },
+      },
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',
@@ -24,3 +52,4 @@ export default defineConfig({
     css: true,
   },
 })
+

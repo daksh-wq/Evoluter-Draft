@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Users, Plus, Trash2, UserPlus, Search, X, Download, BookOpen, FileText, ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { collection, query, where, getDocs } from 'firebase/firestore';
@@ -18,6 +18,8 @@ const BatchManager = ({ userData }) => {
     const [newBatchName, setNewBatchName] = useState('');
     const [selectedStudent, setSelectedStudent] = useState(null);
     const emailInputRef = React.useRef(null);
+    // confirmModal: { action: fn, message: string } | null
+    const [confirmModal, setConfirmModal] = useState(null);
 
     // Institution Student Pool
     const [studentPool, setStudentPool] = useState([]); // students from /institutions/{id}/students
@@ -32,13 +34,7 @@ const BatchManager = ({ userData }) => {
     const [inviteSuccess, setInviteSuccess] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    useEffect(() => {
-        fetchBatches();
-        fetchStudentPool();
-    }, [userData]);
-
-    const fetchStudentPool = async () => {
+    const fetchStudentPool = useCallback(async () => {
         if (!userData?.uid) return;
         try {
             const q = query(collection(db, 'institutions', userData.uid, 'students'));
@@ -47,9 +43,9 @@ const BatchManager = ({ userData }) => {
         } catch (error) {
             logger.error('Failed to fetch student pool', error);
         }
-    };
+    }, [userData?.uid]);
 
-    const fetchBatches = async () => {
+    const fetchBatches = useCallback(async () => {
         if (!userData?.uid) return;
         try {
             const data = await batchService.getInstitutionBatches(userData.uid);
@@ -77,7 +73,12 @@ const BatchManager = ({ userData }) => {
         } finally {
             setLoading(false);
         }
-    };
+    }, [userData?.uid]);
+
+    useEffect(() => {
+        fetchBatches();
+        fetchStudentPool();
+    }, [fetchBatches, fetchStudentPool]);
 
     const handleCreateBatch = async (e) => {
         e.preventDefault();
@@ -174,26 +175,34 @@ const BatchManager = ({ userData }) => {
         setLoadingMembers(false);
     };
 
-    const handleDeleteBatch = async (batchId) => {
-        if (!window.confirm("Are you sure? This will remove the batch and student access.")) return;
-        try {
-            await batchService.deleteBatch(batchId);
-            if (selectedBatch?.id === batchId) setSelectedBatch(null);
-            fetchBatches();
-        } catch (error) {
-            logger.error("Failed to delete", error);
-        }
+    const handleDeleteBatch = (batchId) => {
+        setConfirmModal({
+            message: "Remove this batch? This will remove student access.",
+            action: async () => {
+                try {
+                    await batchService.deleteBatch(batchId);
+                    if (selectedBatch?.id === batchId) setSelectedBatch(null);
+                    fetchBatches();
+                } catch (error) {
+                    logger.error("Failed to delete", error);
+                }
+            }
+        });
     };
 
-    const handleRemoveStudent = async (studentId) => {
-        if (!window.confirm("Remove this student?")) return;
-        try {
-            await batchService.removeStudentFromBatch(selectedBatch.id, studentId);
-            setMembers(prev => prev.filter(m => m.id !== studentId));
-            fetchBatches(); // Update counts
-        } catch (error) {
-            logger.error("Failed to remove student", error);
-        }
+    const handleRemoveStudent = (studentId) => {
+        setConfirmModal({
+            message: "Remove this student from the batch?",
+            action: async () => {
+                try {
+                    await batchService.removeStudentFromBatch(selectedBatch.id, studentId);
+                    setMembers(prev => prev.filter(m => m.id !== studentId));
+                    fetchBatches();
+                } catch (error) {
+                    logger.error("Failed to remove student", error);
+                }
+            }
+        });
     };
 
     const handleExportCSV = () => {
@@ -511,6 +520,29 @@ const BatchManager = ({ userData }) => {
                     institutionId={userData?.uid}
                     onClose={() => setSelectedStudent(null)}
                 />
+            )}
+
+            {/* Confirm Action Modal */}
+            {confirmModal && (
+                <div className="fixed inset-0 z-[300] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+                    <div className="bg-white rounded-2xl shadow-2xl border border-slate-100 w-full max-w-sm p-6 animate-in fade-in zoom-in-95 duration-200">
+                        <p className="text-slate-700 font-bold text-center mb-6">{confirmModal.message}</p>
+                        <div className="flex gap-3">
+                            <button
+                                onClick={() => setConfirmModal(null)}
+                                className="flex-1 py-2.5 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                onClick={async () => { await confirmModal.action(); setConfirmModal(null); }}
+                                className="flex-1 py-2.5 rounded-xl bg-red-500 text-white font-bold text-sm hover:bg-red-600 transition-all"
+                            >
+                                Confirm
+                            </button>
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     );

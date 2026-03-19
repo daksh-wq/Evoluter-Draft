@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { CheckCircle, AlertCircle, Info, AlertTriangle, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -14,8 +14,10 @@ const ToastContainer = () => {
             setToasts(prev => [...prev, { id, type, message }]);
             
             // Auto close after 3.5s — track the timer so it can be cancelled on unmount
+            // Fix #4: remove each timer from the ref once it fires to prevent unbounded growth
             const timer = setTimeout(() => {
                 removeToast(id);
+                timerIds.current = timerIds.current.filter(t => t !== timer);
             }, 3500);
             timerIds.current.push(timer);
         };
@@ -29,9 +31,10 @@ const ToastContainer = () => {
         };
     }, []);
 
-    const removeToast = (id) => {
+    // Fix #5: stable reference so closures never capture a stale version
+    const removeToast = useCallback((id) => {
         setToasts(prev => prev.filter(t => t.id !== id));
-    };
+    }, []);
 
     return (
         <div className="fixed top-4 right-2 sm:right-4 left-2 sm:left-auto z-[9999] flex flex-col gap-2 pointer-events-none">
@@ -67,7 +70,7 @@ const Toast = ({ type, message, onClose }) => {
         <div className={`flex items-start gap-3 p-4 pr-12 rounded-xl border shadow-lg relative w-full sm:min-w-[300px] sm:max-w-sm max-w-[calc(100vw-1rem)] ${config.className}`}>
             <Icon className={`flex-shrink-0 mt-0.5 ${config.iconColor}`} size={20} />
             <p className="font-semibold text-sm leading-relaxed">{message}</p>
-            <button onClick={onClose} className="absolute right-3 top-4 p-1 hover:bg-black/5 rounded-lg transition-colors">
+            <button onClick={onClose} aria-label="Close notification" className="absolute right-3 top-4 p-1 hover:bg-black/5 rounded-lg transition-colors">
                 <X size={16} className="opacity-50 hover:opacity-100" />
             </button>
         </div>

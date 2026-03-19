@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Building2, MapPin, Phone, Edit2, Save, X, Camera, LogOut, Home, Users, Info
@@ -59,7 +59,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
     }, [userData, user]);
 
     // Handle File Selection and Upload
-    const handleFileSelect = async (e) => {
+    const handleFileSelect = useCallback(async (e) => {
         const file = e.target.files[0];
         if (!file) return;
 
@@ -97,14 +97,14 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
         } finally {
             setUploadingPhoto(false);
         }
-    };
+    }, [user?.uid]);
 
-    const handleChange = (e) => {
+    const handleChange = useCallback((e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
-    };
+    }, []);
 
-    const handleSave = async () => {
+    const handleSave = useCallback(async () => {
         setIsSaving(true);
         try {
             const userRef = doc(db, 'users', user.uid);
@@ -128,7 +128,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
         } finally {
             setIsSaving(false);
         }
-    };
+    }, [user?.uid, formData]);
 
     return (
         <>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../services/firebase';
@@ -9,6 +9,26 @@ import {
 } from 'lucide-react';
 import { formatTime } from '../../utils/helpers';
 import logger from '../../utils/logger';
+
+// Fix: module-level utilities — not re-created on every render
+const formatDate = (ts) => {
+    if (!ts) return 'Unknown';
+    const d = ts.toDate ? ts.toDate() : new Date(ts);
+    return d.toLocaleDateString('en-IN', {
+        day: 'numeric', month: 'long', year: 'numeric',
+        hour: '2-digit', minute: '2-digit',
+    });
+};
+
+const parseToBullets = (text) => {
+    if (!text) return [];
+    return text
+        .split(/\n/)
+        .flatMap(line => line.split(/(?<=\.)\s+(?=[A-Z])/))
+        .map(s => s.replace(/^[-•*\d]+[.)]\s*/, '').trim())
+        .filter(Boolean);
+};
+
 
 /**
  * TestReviewView Component
@@ -22,7 +42,6 @@ const TestReviewView = () => {
     const [testData, setTestData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    // All cards expanded by default; toggling collapses them
     const [collapsedIds, setCollapsedIds] = useState({});
 
     useEffect(() => {
@@ -48,8 +67,8 @@ const TestReviewView = () => {
         fetchTest();
     }, [user?.uid, testId]);
 
-    const toggleCollapse = (id) =>
-        setCollapsedIds(prev => ({ ...prev, [id]: !prev[id] }));
+    const toggleCollapse = useCallback((id) =>
+        setCollapsedIds(prev => ({ ...prev, [id]: !prev[id] })), []);
 
     if (loading) {
         return (
@@ -124,30 +143,7 @@ const TestReviewView = () => {
             ? Math.round(((testData.score || 0) / testData.totalQuestions) * 100)
             : 0);
 
-    const formatDate = (ts) => {
-        if (!ts) return 'Unknown';
-        const d = ts.toDate ? ts.toDate() : new Date(ts);
-        return d.toLocaleDateString('en-IN', {
-            day: 'numeric', month: 'long', year: 'numeric',
-            hour: '2-digit', minute: '2-digit',
-        });
-    };
-
-    /**
-     * Splits a solution text string into clean bullet-point lines.
-     * Handles plain text, "- bullet" lists, and numbered lists.
-     */
-    const parseToBullets = (text) => {
-        if (!text) return [];
-        // Split on newlines, sentence boundaries between capitals, or semicolons
-        return text
-            .split(/\n/)
-            .flatMap(line => line.split(/(?<=\.)\s+(?=[A-Z])/))
-            .map(s => s.replace(/^[-•*\d]+[.)]\s*/, '').trim())
-            .filter(Boolean);
-    };
-
-    // ── Render ─────────────────────────────────────────────────────────────────
+    // ── Data normalisation ──────────────────────────────────────────────────────
     return (
         <div className="max-w-4xl mx-auto">
 

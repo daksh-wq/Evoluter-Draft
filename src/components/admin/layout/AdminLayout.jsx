@@ -5,6 +5,7 @@ import { useAuth } from '../../../hooks';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../services/firebase';
 import { Menu, LogOut } from 'lucide-react';
+import logger from '../../../utils/logger';
 import { Sidebar } from '../../layout';
 import { ADMIN_NAV_ITEMS } from '../../../constants/data';
 import logo from '../../../assets/logo1.png';
@@ -31,11 +32,11 @@ const AdminLayout = ({ children }) => {
                     setIsAdmin(true);
                     setAdminUserData(userDoc.data());
                 } else {
-                    console.warn('User attempted to access admin area without privileges:', user.uid);
+                    logger.warn('User attempted to access admin area without privileges:', user.uid);
                     setIsAdmin(false);
                 }
             } catch (error) {
-                console.error('Admin verification failed:', error);
+                logger.error('Admin verification failed:', error);
                 setIsAdmin(false);
             }
         };

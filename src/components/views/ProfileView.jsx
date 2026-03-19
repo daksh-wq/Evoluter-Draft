@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     User, Mail, Target, Calendar, Edit2, Save, X, Camera, LogOut, CheckCircle, Home
@@ -10,6 +10,8 @@ import { db, auth, storage } from '../../services/firebase';
 import logger from '../../utils/logger';
 import { toast } from '../../utils/toast';
 import { CustomDropdown } from '../common';
+
+const PROFILE_CURRENT_YEAR = new Date().getFullYear();
 
 /**
  * ProfileView Component
@@ -42,7 +44,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
     }, [userData, user]);
 
     // Handle File Selection and Upload
-    const handleFileSelect = async (e) => {
+    const handleFileSelect = useCallback(async (e) => {
         const file = e.target.files[0];
         if (!file) return;
 
@@ -102,14 +104,14 @@ const ProfileView = ({ user, userData, onLogout }) => {
         } finally {
             setUploadingPhoto(false);
         }
-    };
+    }, [user?.uid]);
 
-    const handleChange = (e) => {
+    const handleChange = useCallback((e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
-    };
+    }, []);
 
-    const handleSave = async () => {
+    const handleSave = useCallback(async () => {
         setIsSaving(true);
         try {
             const userRef = doc(db, 'users', user.uid);
@@ -128,7 +130,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
         } finally {
             setIsSaving(false);
         }
-    };
+    }, [user?.uid, formData]);
 
     return (
         <>
@@ -288,7 +290,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
                                     {isEditing ? (
                                         <CustomDropdown
                                             options={[0, 1, 2, 3].map(offset => {
-                                                const year = String(new Date().getFullYear() + offset);
+                                                const year = String(PROFILE_CURRENT_YEAR + offset);
                                                 return { label: year, value: year };
                                             })}
                                             value={String(formData.targetYear)}
@@ -374,6 +376,7 @@ const ProfileView = ({ user, userData, onLogout }) => {
             </div>
         )}
     </>
+    );
 };
 
 export default ProfileView;

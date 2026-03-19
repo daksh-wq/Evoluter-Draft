@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, lazy, Suspense } from 'react';
 import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
 import { GlobalStyles } from './components/common';
 import GlobalBanner from './components/common/GlobalBanner';
@@ -66,6 +66,30 @@ const InstitutionProfileView = lazy(() => import('./components/institution/Insti
 const ProfileView = lazy(() => import('./components/views/ProfileView'));
 const StudentClassroom = lazy(() => import('./components/student/StudentClassroom'));
 const InstitutionStudentManager = lazy(() => import('./components/institution/InstitutionStudentManager'));
+
+// Fix: module-level constant — never re-allocated on render
+const CANONICAL_TOPICS = [
+  'Indian Polity',
+  'Ancient and Medieval History',
+  'Modern India',
+  'Indian Culture',
+  'Geography',
+  'Economy of India',
+  'Environment',
+  'Science and Technology',
+  'Current Affairs',
+  'Trivial'
+];
+
+// Fix: defined outside App so it is never re-created on every render cycle
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-screen bg-slate-50">
+    <div className="text-center">
+      <div className="inline-block w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4"></div>
+      <p className="text-slate-600 font-medium">Loading...</p>
+    </div>
+  </div>
+);
 
 const ProtectedLayout = ({
   children,
@@ -205,45 +229,36 @@ function App() {
 
   const [isZenMode, setIsZenMode] = useState(false);
 
-  const exitZenMode = () => {
+  const exitZenMode = useCallback(() => {
     if (isZenMode) {
       if (document.fullscreenElement) {
         document.exitFullscreen().catch(err => logger.warn("Exit fullscreen failed", err));
       }
       setIsZenMode(false);
     }
-  };
+  }, [isZenMode]);
 
   const [showLogoutModal, setShowLogoutModal] = useState(false);
 
-  const handleLogout = async () => {
+  const handleLogout = useCallback(async () => {
     exitZenMode();
     await authLogout();
     navigate(ROUTES.LOGIN);
-  };
+  }, [exitZenMode, authLogout, navigate]);
 
   // Sanitize topicMastery: keep only the 10 canonical subjects.
-  // This instantly fixes any stale Firestore docs that accumulated >10 topics.
-  const CANONICAL_TOPICS = [
-    'Indian Polity',
-    'Ancient and Medieval History',
-    'Modern India',
-    'Indian Culture',
-    'Geography',
-    'Economy of India',
-    'Environment',
-    'Science and Technology',
-    'Current Affairs',
-    'Trivial'
-  ];
-  const rawStats = userData?.stats || DEFAULT_USER_STATS;
-  const userStats = {
-    ...rawStats,
-    topicMastery: CANONICAL_TOPICS.reduce((acc, topic) => {
-      acc[topic] = rawStats.topicMastery?.[topic] ?? 0;
-      return acc;
-    }, {}),
-  };
+  // Fix: memoized — only recomputed when userData.stats changes
+  const userStats = useMemo(() => {
+    const rawStats = userData?.stats || DEFAULT_USER_STATS;
+    return {
+      ...rawStats,
+      topicMastery: CANONICAL_TOPICS.reduce((acc, topic) => {
+        acc[topic] = rawStats.topicMastery?.[topic] ?? 0;
+        return acc;
+      }, {}),
+    };
+  }, [userData?.stats]);
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // --- Test State ---
@@ -298,7 +313,9 @@ function App() {
         logger.error("Error setting up doc listener:", error);
       }
     }
-    return () => unsubscribe();
+    return () => {
+      unsubscribe();
+    };
   }, [user]);
 
   // Timer Effect
@@ -309,7 +326,9 @@ function App() {
         setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
       }, 1000);
     }
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, [activeTest, timeLeft, setTimeLeft]);
 
 
@@ -352,16 +371,25 @@ function App() {
     }
   };
 
-  const handleDeleteDoc = async (docId) => {
-    if (!user || !confirm('Are you sure you want to delete this document?')) return;
+  const [docToDelete, setDocToDelete] = useState(null);
+
+  const handleDeleteDoc = useCallback(async (docId) => {
+    if (!user) return;
+    setDocToDelete(docId);
+  }, [user]);
+
+  const confirmDeleteDoc = useCallback(async () => {
+    if (!user || !docToDelete) return;
     try {
-      await deleteDoc(doc(db, 'users', user.uid, 'docs', docId));
-      setDocs(prev => prev.filter(d => d.id !== docId));
-      logger.info('Document deleted', { docId });
+      await deleteDoc(doc(db, 'users', user.uid, 'docs', docToDelete));
+      setDocs(prev => prev.filter(d => d.id !== docToDelete));
+      logger.info('Document deleted', { docId: docToDelete });
     } catch (error) {
       handleError(error, 'Failed to delete document.', ErrorSeverity.USER_FACING, ErrorCategory.DATABASE);
+    } finally {
+      setDocToDelete(null);
     }
-  };
+  }, [user, docToDelete]);
 
   const handleExtractQuestions = async (docItem) => {
     if (!docItem.url) {
@@ -375,12 +403,12 @@ function App() {
   };
 
   // Mains logic moved to MainsEvaluatorView.jsx
-  const startMission = () => {
+  const startMission = useCallback(() => {
     startMockTest();
     navigate(ROUTES.TEST);
-  };
+  }, [startMockTest, navigate]);
 
-  const handleGenerateAITest = async (topic, count, difficulty, resourceContent, pyqPercentage) => {
+  const handleGenerateAITest = useCallback(async (topic, count, difficulty, resourceContent, pyqPercentage) => {
     if (!user) return;
 
     const stats = userData?.stats || {};
@@ -414,16 +442,16 @@ function App() {
     } catch (error) {
       handleError(error, 'Failed to generate test. Please try again.', ErrorSeverity.USER_FACING);
     }
-  };
+  }, [user, userData, startAITest, navigate]);
 
-  const handleZenToggle = () => {
+  const handleZenToggle = useCallback(() => {
     if (!isZenMode) {
       document.documentElement.requestFullscreen().catch(logger.warn);
       setIsZenMode(true);
     } else {
       exitZenMode();
     }
-  };
+  }, [isZenMode, exitZenMode]);
 
   const handleOnboardingComplete = (role) => {
     refreshUser();
@@ -461,20 +489,35 @@ function App() {
     setShowLogoutModal
   };
 
-  // Loading fallback for lazy-loaded components
-  const LoadingFallback = () => (
-    <div className="flex items-center justify-center min-h-screen bg-slate-50">
-      <div className="text-center">
-        <div className="inline-block w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4"></div>
-        <p className="text-slate-600 font-medium">Loading...</p>
-      </div>
-    </div>
-  );
+  // Loading fallback is defined at module level above (outside App)
 
   return (
     <Suspense fallback={<LoadingFallback />}>
       <ToastContainer />
       <NetworkStatus />
+      {/* ── Delete Document Confirmation Modal ── */}
+      {docToDelete && (
+        <div className="fixed inset-0 z-[999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <div className="bg-white rounded-2xl shadow-2xl border border-slate-100 w-full max-w-sm p-6">
+            <h3 className="text-xl font-black text-slate-800 text-center mb-2">Delete Document?</h3>
+            <p className="text-sm text-slate-500 text-center mb-6">This action cannot be undone.</p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setDocToDelete(null)}
+                className="flex-1 py-3 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={confirmDeleteDoc}
+                className="flex-1 py-3 rounded-xl bg-red-500 text-white font-bold text-sm hover:bg-red-600 transition-all"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <Routes>
         {/* Public Routes */}
         <Route path={ROUTES.HOME} element={

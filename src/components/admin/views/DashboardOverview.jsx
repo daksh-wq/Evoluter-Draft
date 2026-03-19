@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../../../services/firebase';
 import { collection, getCountFromServer, query, where } from 'firebase/firestore';
 import { Users, Building2, Activity, AlertTriangle } from 'lucide-react';
+import logger from '../../../utils/logger';
 
 const StatCard = ({ title, value, subtitle, icon: Icon, color }) => (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
@@ -37,7 +38,7 @@ const DashboardOverview = () => {
                     totalInstitutions: instSnap.data().count,
                 });
             } catch (error) {
-                console.error('Error fetching admin stats:', error);
+                logger.error('Error fetching admin stats:', error);
             } finally {
                 setLoading(false);
             }

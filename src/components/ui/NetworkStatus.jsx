@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Wifi, WifiOff } from 'lucide-react';
 
 /**
@@ -10,6 +10,7 @@ const NetworkStatus = () => {
     const [isOnline, setIsOnline] = useState(navigator.onLine);
     const [showBanner, setShowBanner] = useState(false);
     const [wasOffline, setWasOffline] = useState(false);
+    const hideTimerRef = useRef(null);
 
     useEffect(() => {
         const handleOnline = () => {
@@ -17,11 +18,13 @@ const NetworkStatus = () => {
             if (wasOffline) {
                 // Show "back online" briefly then hide
                 setShowBanner(true);
-                setTimeout(() => setShowBanner(false), 3000);
+                hideTimerRef.current = setTimeout(() => setShowBanner(false), 3000);
             }
         };
 
         const handleOffline = () => {
+            // Cancel any pending hide timer when going offline again
+            clearTimeout(hideTimerRef.current);
             setIsOnline(false);
             setWasOffline(true);
             setShowBanner(true);
@@ -31,6 +34,7 @@ const NetworkStatus = () => {
         window.addEventListener('offline', handleOffline);
 
         return () => {
+            clearTimeout(hideTimerRef.current);
             window.removeEventListener('online', handleOnline);
             window.removeEventListener('offline', handleOffline);
         };

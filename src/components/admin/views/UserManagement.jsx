@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import { db } from '../../../services/firebase';
 import {
     collection, getDocs, limit, query, where, orderBy,
@@ -6,6 +6,7 @@ import {
 } from 'firebase/firestore';
 import { Search, Building2, Users, Edit2, Check, X } from 'lucide-react';
 import { toast } from '../../../utils/toast';
+import logger from '../../../utils/logger';
 
 const UserManagement = () => {
     const [tab, setTab] = useState('students'); // 'students' | 'institutions'
@@ -16,7 +17,7 @@ const UserManagement = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [editingLimit, setEditingLimit] = useState(null); // { id, value }
 
-    const fetchUsers = async (isNext = false) => {
+    const fetchUsers = useCallback(async (isNext = false) => {
         setLoading(true);
         try {
             let q = query(
@@ -31,13 +32,13 @@ const UserManagement = () => {
             setUsers(prev => isNext ? [...prev, ...userList] : userList);
             setLastDoc(snapshot.docs[snapshot.docs.length - 1]);
         } catch (error) {
-            console.error('Error fetching users:', error);
+            logger.error('Error fetching users:', error);
         } finally {
             setLoading(false);
         }
-    };
+    }, [lastDoc]);
 
-    const fetchInstitutions = async (isNext = false) => {
+    const fetchInstitutions = useCallback(async (isNext = false) => {
         setLoading(true);
         try {
             let q = query(
@@ -52,17 +53,18 @@ const UserManagement = () => {
             setInstitutions(prev => isNext ? [...prev, ...instList] : instList);
             setLastDoc(snapshot.docs[snapshot.docs.length - 1]);
         } catch (error) {
-            console.error('Error fetching institutions:', error);
+            logger.error('Error fetching institutions:', error);
         } finally {
             setLoading(false);
         }
-    };
+    }, [lastDoc]);
 
     useEffect(() => {
         setLastDoc(null);
         if (tab === 'students') fetchUsers();
         else fetchInstitutions();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+    // fetchUsers/fetchInstitutions deps on lastDoc which we just reset to null intentionally
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [tab]);
 
     const handleSaveLimit = async (instId) => {
@@ -79,17 +81,20 @@ const UserManagement = () => {
             toast.success('Student limit updated successfully!');
             setEditingLimit(null);
         } catch (error) {
-            console.error('Failed to update limit:', error);
+            logger.error('Failed to update limit:', error);
             toast.error('Failed to update limit. Check Firestore rules.');
         }
     };
 
-    const filteredUsers = users.filter(u =>
-        (u.name || u.displayName || u.username || u.email || '').toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    const filteredInstitutions = institutions.filter(inst =>
-        (inst.institutionProfile?.name || inst.name || inst.username || inst.email || '').toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    const filteredUsers = useMemo(() =>
+        users.filter(u =>
+            (u.name || u.displayName || u.username || u.email || '').toLowerCase().includes(searchTerm.toLowerCase())
+        ), [users, searchTerm]);
+
+    const filteredInstitutions = useMemo(() =>
+        institutions.filter(inst =>
+            (inst.institutionProfile?.name || inst.name || inst.username || inst.email || '').toLowerCase().includes(searchTerm.toLowerCase())
+        ), [institutions, searchTerm]);
 
     return (
         <div className="space-y-6">

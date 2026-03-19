@@ -12,7 +12,9 @@ import {
     serverTimestamp,
     writeBatch,
     arrayUnion,
-    arrayRemove
+    arrayRemove,
+    increment,
+    updateDoc
 } from 'firebase/firestore';
 import { db } from '../../../services/firebase';
 import logger from '../../../utils/logger';
@@ -103,7 +105,7 @@ export const batchService = {
             batch.set(memberRef, {
                 studentId,
                 studentEmail: studentData.email,
-                studentName: studentData.displayName || 'Unnamed Student',
+                studentName: studentData.displayName || studentData.name || 'Unnamed Student',
                 joinedAt: serverTimestamp(),
                 status: 'active'
             });
@@ -125,9 +127,7 @@ export const batchService = {
 
             await batch.commit();
 
-            // Separate increment call to avoid batch complexity with FieldValue imports inside this file scope (if not imported)
-            // But we can import it.
-            const { increment, updateDoc } = await import('firebase/firestore');
+            // Update the batch student count
             await updateDoc(batchDocRef, { studentCount: increment(1) });
 
             return { studentId, ...studentData };
@@ -160,7 +160,6 @@ export const batchService = {
 
             await batch.commit();
 
-            const { increment, updateDoc } = await import('firebase/firestore');
             await updateDoc(batchDocRef, { studentCount: increment(-1) });
 
             return true;

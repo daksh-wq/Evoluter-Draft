@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import {
     Brain,
     Zap,
@@ -13,9 +13,10 @@ import {
     Link as LinkIcon,
     FileText as FileTextIcon,
     Eye,
-    Bell
+    Bell,
+    UserCheck
 } from 'lucide-react';
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
 import { db } from '../../services/firebase';
 import { KnowledgeGraph } from '../common';
 import { SubjectSelector } from '../dashboard/SubjectSelector';
@@ -28,7 +29,10 @@ import { useExamDate } from '../../hooks/useExamDate';
 import { suggestTestTopics } from '../../services/geminiService';
 import { extractTextFromPDF } from '../../utils/pdfExtractor';
 import { batchService } from '../../features/exam-engine/services/batchService';
-import { UserCheck } from 'lucide-react';
+
+// Fix #9: computed once at module load, not on every render
+const CURRENT_YEAR = new Date().getFullYear();
+
 /**
  * Dashboard Component
  * Main command center with stats, AI generator, and quick actions
@@ -83,15 +87,14 @@ const Dashboard = ({
     // Smart Features Hooks
     const { quote, loading: quoteLoading } = useDailyWisdom();
 
-    // Ensure we don't show past years
-    const currentYear = new Date().getFullYear();
-    const effectiveYear = (userData?.targetYear && userData.targetYear >= currentYear)
+    // Fix #9: module-level constant avoids re-computing on every render
+    const effectiveYear = (userData?.targetYear && userData.targetYear >= CURRENT_YEAR)
         ? userData.targetYear
-        : currentYear;
+        : CURRENT_YEAR;
 
     const { examDate, daysRemaining, isOfficial, loading: dateLoading } = useExamDate(userData?.targetExam, effectiveYear);
 
-    const handleGenerateTest = () => {
+    const handleGenerateTest = useCallback(() => {
         if (aiTopic.trim() || uploadedResource) {
             // Note: generateAITest in Context needs to accept resource context if provided
             // For now, if there's no aiTopic but there is a resource, we'll use the resource name as a 'topic'
@@ -103,7 +106,19 @@ const Dashboard = ({
             setResourceName('');
             setPyqPercentage(0);
         }
-    };
+    }, [aiTopic, uploadedResource, resourceName, questionCount, difficulty, pyqPercentage, generateAITest]);
+
+    // Fix #6: stable handler shared by all three notification item types
+    const handleGoToClassroom = useCallback(() => {
+        setShowNotifications(false);
+        setView('student/classroom');
+    }, [setView]);
+
+    // Fix #8: only recomputed when topicMastery reference changes
+    const weakTopics = useMemo(
+        () => Object.entries(userStats.topicMastery).filter(([, s]) => s < 50),
+        [userStats.topicMastery]
+    );
 
     const processResource = async (content, type, name) => {
         setIsPreviewLoading(true);
@@ -148,6 +163,7 @@ const Dashboard = ({
     };
 
     // Auto-show suggestions when subjects are selected (no typing or focus needed)
+    // Fix #7: aiTopic is read inside so it must be in the dependency array
     React.useEffect(() => {
         if (selectedSubjects.length > 0) {
             setShowSuggestions(true);
@@ -156,7 +172,7 @@ const Dashboard = ({
             setTopicSuggestions([]);
             setShowSuggestions(false);
         }
-    }, [selectedSubjects]);
+    }, [selectedSubjects, aiTopic]);
 
     // AI Auto-Suggest Effect
     React.useEffect(() => {
@@ -176,10 +192,12 @@ const Dashboard = ({
         setIsSuggesting(true);
 
         suggestionTimeoutRef.current = setTimeout(async () => {
-            abortControllerRef.current = new AbortController();
+            // Fix #11: assign controller before call to eliminate race between abort and new signal
+            const controller = new AbortController();
+            abortControllerRef.current = controller;
 
             try {
-                const results = await suggestTestTopics(effectiveKeyword, userData?.targetExam || 'UPSC CSE', abortControllerRef.current.signal);
+                const results = await suggestTestTopics(effectiveKeyword, userData?.targetExam || 'UPSC CSE', controller.signal);
                 setTopicSuggestions(results);
             } catch (error) {
                 if (error.name !== 'AbortError') {
@@ -338,8 +356,10 @@ const Dashboard = ({
                     <div className="relative" ref={notificationsRef}>
                         <button
                             onClick={() => setShowNotifications(!showNotifications)}
+                            aria-label={`Notifications${notifications.length > 0 ? ` (${notifications.length} new)` : ''}`}
+                            aria-expanded={showNotifications}
+                            aria-haspopup="listbox"
                             className={`h-[68px] w-[68px] sm:h-20 sm:w-20 rounded-2xl flex flex-col items-center justify-center gap-1.5 transition-all outline-none bg-white/10 border border-white/15 hover:bg-white/20 ${showNotifications ? 'ring-2 ring-white/30' : ''}`}
-                            title="Notifications"
                         >
                             <Bell size={20} className="text-white/80" />
                             <span className="text-[9px] text-white/50 font-bold uppercase tracking-widest">Alerts</span>
@@ -369,43 +389,44 @@ const Dashboard = ({
                                         </div>
                                     ) : (
                                         <div className="space-y-1">
+                                            {/* Fix #13: replaced <div onClick> with <button> for keyboard + screen reader accessibility */}
                                             {notifications.map(item => {
                                                 if (item.type === 'batch') {
                                                     const batch = item.data;
                                                     return (
-                                                        <div key={item.id} onClick={() => { setShowNotifications(false); setView('student/classroom'); }}
-                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50">
+                                                        <button key={item.id} type="button" onClick={handleGoToClassroom}
+                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50 w-full text-left">
                                                             <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-emerald-600 group-hover:text-white transition-colors"><Building2 size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Batch {batch.name}</div>
                                                                 <div className="text-xs text-slate-500 mt-0.5 line-clamp-2">You have been added to the batch <span className="font-semibold">{batch.name}</span>.</div>
                                                             </div>
-                                                        </div>
+                                                        </button>
                                                     );
                                                 } else if (item.type === 'test') {
                                                     const test = item.data;
                                                     return (
-                                                        <div key={item.id} onClick={() => { setShowNotifications(false); setView('student/classroom'); }}
-                                                            className="p-3 hover:bg-indigo-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50">
+                                                        <button key={item.id} type="button" onClick={handleGoToClassroom}
+                                                            className="p-3 hover:bg-indigo-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50 w-full text-left">
                                                             <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-indigo-600 group-hover:text-white transition-colors"><FileTextIcon size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">{test.title}</div>
                                                                 <div className="text-xs text-slate-500 mt-0.5 line-clamp-1">is Live!</div>
                                                                 <div className="text-[10px] text-indigo-600 font-bold mt-1.5 uppercase tracking-wide">Tap to view in Classroom</div>
                                                             </div>
-                                                        </div>
+                                                        </button>
                                                     );
                                                 } else if (item.type === 'institution') {
                                                     const inst = item.data;
                                                     return (
-                                                        <div key={item.id} onClick={() => { setShowNotifications(false); setView('student/classroom'); }}
-                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50">
+                                                        <button key={item.id} type="button" onClick={handleGoToClassroom}
+                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50 w-full text-left">
                                                             <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-blue-600 group-hover:text-white transition-colors"><UserCheck size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Institution: {inst.name}</div>
                                                                 <div className="text-xs text-slate-500 mt-0.5 line-clamp-2">You have been exclusively invited and added to <span className="font-semibold">{inst.name}</span>.</div>
                                                             </div>
-                                                        </div>
+                                                        </button>
                                                     );
                                                 }
                                                 return null;
@@ -414,10 +435,10 @@ const Dashboard = ({
                                     )}
                                 </div>
                                 {notifications.length > 0 && (
-                                    <div className="p-3 border-t border-slate-100 bg-slate-50 text-center hover:bg-slate-100 transition-colors cursor-pointer"
-                                        onClick={() => { setShowNotifications(false); setView('student/classroom'); }}>
+                                    <button type="button" className="p-3 border-t border-slate-100 bg-slate-50 text-center hover:bg-slate-100 transition-colors cursor-pointer w-full"
+                                        onClick={handleGoToClassroom}>
                                         <span className="text-xs font-bold text-indigo-600">View All in Classroom</span>
-                                    </div>
+                                    </button>
                                 )}
                             </div>
                         )}
@@ -513,9 +534,10 @@ const Dashboard = ({
                                         </div>
                                     ) : topicSuggestions?.length > 0 ? (
                                         <div className="flex flex-wrap gap-2">
-                                            {topicSuggestions.map((suggestion, idx) => (
+                                            {/* Fix #10: use suggestion text as stable key instead of index */}
+                                        {topicSuggestions.map((suggestion) => (
                                                 <button
-                                                    key={idx}
+                                                    key={suggestion}
                                                     type="button"
                                                     onClick={() => {
                                                         setAiTopic(suggestion);
@@ -540,6 +562,7 @@ const Dashboard = ({
                                     </span>
                                     {resourceType && (
                                         <button
+                                            aria-label="Clear attached resource"
                                             onClick={() => {
                                                 setUploadedResource('');
                                                 setResourceType(null);
@@ -686,10 +709,9 @@ const Dashboard = ({
                         <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
                             Weakness Spotlight
                         </h4>
+                        {/* Fix #8: memoized — only recomputed when topicMastery changes */}
                         <div className="flex flex-wrap gap-2">
-                            {Object.entries(userStats.topicMastery)
-                                .filter((item) => item[1] < 50)
-                                .map(([t, s]) => (
+                            {weakTopics.map(([t, s]) => (
                                     <div
                                         key={t}
                                         className="px-3 py-1.5 md:px-4 md:py-2 bg-red-50 border border-red-100 rounded-lg flex items-center gap-2 justify-start text-left w-auto max-w-full cursor-default"

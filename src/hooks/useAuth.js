@@ -7,7 +7,7 @@ import {
     createUserWithEmailAndPassword,
     updateProfile
 } from 'firebase/auth';
-import { doc, getDoc, onSnapshot } from 'firebase/firestore';
+import { doc, getDoc, onSnapshot, updateDoc } from 'firebase/firestore';
 import { auth, googleProvider, db } from '../services/firebase';
 import { DEFAULT_USER_STATS } from '../constants/data';
 import { syncUserStreak } from '../services/userService';
@@ -102,9 +102,7 @@ export function useAuth() {
                             const validExams = ['UPSC CSE', 'State PSC'];
                             if (data.role === 'student' && data.targetExam && !validExams.includes(data.targetExam)) {
                                 logger.info(`Auto-migrating user ${currentUser.uid} exam from ${data.targetExam} to UPSC CSE`);
-                                import('firebase/firestore').then(({ updateDoc }) => {
-                                    updateDoc(userDocRef, { targetExam: 'UPSC CSE' }).catch(e => logger.error("Failed to migrate exam:", e));
-                                });
+                                updateDoc(userDocRef, { targetExam: 'UPSC CSE' }).catch(e => logger.error("Failed to migrate exam:", e));
                                 data.targetExam = 'UPSC CSE'; // Update local immediately
                             }
 

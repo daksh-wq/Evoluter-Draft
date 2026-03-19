@@ -4,13 +4,13 @@ import {
 } from 'lucide-react';
 import {
     collection, query, where, getDocs, addDoc, deleteDoc,
-    doc, serverTimestamp, getDoc
+    doc, serverTimestamp, getDoc, updateDoc, setDoc, arrayUnion
 } from 'firebase/firestore';
 import { db } from '../../services/firebase';
 import { Skeleton } from '../ui/Skeleton';
 import { toast } from '../../utils/toast';
 import logger from '../../utils/logger';
-import { arrayUnion } from 'firebase/firestore';
+
 
 /**
  * InstitutionStudentManager
@@ -113,14 +113,10 @@ const InstitutionStudentManager = ({ userData }) => {
                     addedAt: serverTimestamp(),
                 });
 
-                // Add to student's user doc
-                const studentUserRef = doc(db, 'users', studentDoc.id);
-                const { updateDoc } = await import('firebase/firestore');
                 await updateDoc(studentUserRef, {
                     joinedInstitutions: arrayUnion(instId)
-                }).catch(async (e) => {
+                }).catch(async () => {
                     // if it fails because it doesn't exist, use setDoc with merge
-                    const { setDoc } = await import('firebase/firestore');
                     await setDoc(studentUserRef, {
                         joinedInstitutions: arrayUnion(instId)
                     }, { merge: true });

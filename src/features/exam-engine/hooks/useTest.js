@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import { auth, functions } from '@/services/firebase';
 import { httpsCallable } from 'firebase/functions';
 import logger from '@/utils/logger';
@@ -6,6 +6,8 @@ import { testService } from '../services/testService';
 import { calculateResults } from '../utils/testLogic';
 import { generateMockQuestions } from '@/utils/helpers';
 import { TIME_PER_QUESTION, getDurationForCount } from '@/constants/appConstants';
+import { updateUserStats } from '../../../services/userService';
+import { removeFromCache } from '../../../services/cacheService';
 
 /**
  * Custom hook for test state management
@@ -28,14 +30,6 @@ export function useTest() {
     const [testResults, setTestResults] = useState(null);
     const [isInstitutionTest, setIsInstitutionTest] = useState(false);
     const [activeTestName, setActiveTestName] = useState(null); // Title for institution tests
-
-    /**
-     * Start a mock test with generated questions (Fallback/Practice)
-     */
-    const startMockTest = useCallback((sourceDoc = null, questionCount = 100, durationMinutes = 120) => {
-        const newQuestions = generateMockQuestions(questionCount, sourceDoc);
-        setupTestSession(newQuestions, durationMinutes * 60);
-    }, []);
 
     /**
      * Helper to initialize test state
@@ -65,10 +59,27 @@ export function useTest() {
     }, []);
 
     /**
+     * Start a mock test with generated questions (Fallback/Practice)
+     */
+    const startMockTest = useCallback((sourceDoc = null, questionCount = 100, durationMinutes = 120) => {
+        const newQuestions = generateMockQuestions(questionCount, sourceDoc);
+        setupTestSession(newQuestions, durationMinutes * 60);
+    }, [setupTestSession]);
+
+    /**
      * Generate and start an AI-powered test on a topic
      */
     // Bug #4 fix: store interval reference so it can always be cleared, even on unmount
     const progressIntervalRef = useRef(null);
+
+    // Fix #2: clear any running progress interval when the hook's owner unmounts
+    useEffect(() => {
+        return () => {
+            if (progressIntervalRef.current) {
+                clearInterval(progressIntervalRef.current);
+            }
+        };
+    }, []);
 
     const startAITest = useCallback(async (topic, count = 10, difficulty = 'Hard', targetExam = 'UPSC CSE', resourceContent = null, pyqPercentage = 0) => {
         setIsGeneratingTest(true);
@@ -153,7 +164,7 @@ export function useTest() {
     /**
      * Start a custom local test immediately (Used for PYQs)
      */
-    const startCustomTest = useCallback(async (questions, testName = 'Custom Test', difficulty = 'Intermediate') => {
+    const startCustomTest = useCallback(async (questions, testName = 'Custom Test', _difficulty = 'Intermediate') => {
         setIsGeneratingTest(true);
         try {
             const count = questions.length;
@@ -225,7 +236,11 @@ export function useTest() {
             // 2. Initialize History in Backend
             if (auth.currentUser) {
                 // We use the original test ID to link results back to it
-                testService.initTestSession(auth.currentUser.uid, testData.id, testData.title, questions);
+                try {
+                    await testService.initTestSession(auth.currentUser.uid, testData.id, testData.title, questions);
+                } catch (sessionErr) {
+                    logger.warn('initTestSession failed (non-blocking):', sessionErr);
+                }
             }
             return true;
         } catch (error) {
@@ -234,7 +249,7 @@ export function useTest() {
         } finally {
             setIsGeneratingTest(false);
         }
-    }, []);
+    }, [setupTestSession]);
 
     /**
      * Submit the test and calculate results
@@ -278,14 +293,12 @@ export function useTest() {
                 );
 
                 // Update User Stats (Side Effect)
-                const { updateUserStats } = await import('../../../services/userService');
                 const xpGained = await updateUserStats(auth.currentUser.uid, results, activeTest, answers);
 
                 // Update XP history
                 await testService.updateTestXP(auth.currentUser.uid, testId, xpGained);
 
                 // Invalidate Cache
-                const { removeFromCache } = await import('../../../services/cacheService');
                 removeFromCache(`test_history_${auth.currentUser.uid}`);
 
             } catch (err) {
