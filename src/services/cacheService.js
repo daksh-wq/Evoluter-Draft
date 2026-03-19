@@ -14,11 +14,14 @@ const CACHE_PREFIX = 'evoluter_cache_';
  * Default TTL values in seconds for different cache types
  */
 export const CACHE_TTL = {
-    NEWS: 6 * 60 * 60,          // 6 hours
+    NEWS: 12 * 60 * 60,         // 12 hours (was 6h — news doesn't change that fast)
     LEADERBOARD: 5 * 60,        // 5 minutes
-    SYLLABUS: 24 * 60 * 60,     // 24 hours
+    SYLLABUS: 7 * 24 * 60 * 60, // 7 days (was 24h — syllabus is nearly static)
     USER_DOCS: 10 * 60,         // 10 minutes
     GENERAL: 5 * 60,            // 5 minutes
+    QUESTION_BANK: 30 * 60,     // 30 minutes
+    FLASHCARDS: 15 * 60,        // 15 minutes
+    TEST_HISTORY: 10 * 60,      // 10 minutes
 };
 
 /**

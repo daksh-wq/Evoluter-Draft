@@ -60,7 +60,10 @@ const InstitutionStudentManager = ({ userData }) => {
     const handleAddStudent = async (e) => {
         e.preventDefault();
         setAddError('');
-        const emails = emailInput.split(',').map(em => em.trim()).filter(Boolean);
+        
+        // Split by comma, trim, lowercase, filter empty, and deduplicate with Set
+        const rawEmails = emailInput.split(',').map(em => em.trim().toLowerCase()).filter(Boolean);
+        const emails = [...new Set(rawEmails)];
 
         if (emails.length === 0) {
             setAddError('Please enter at least one email address.');
@@ -113,11 +116,11 @@ const InstitutionStudentManager = ({ userData }) => {
                     addedAt: serverTimestamp(),
                 });
 
-                await updateDoc(studentUserRef, {
+                await updateDoc(studentDoc.ref, {
                     joinedInstitutions: arrayUnion(instId)
                 }).catch(async () => {
                     // if it fails because it doesn't exist, use setDoc with merge
-                    await setDoc(studentUserRef, {
+                    await setDoc(studentDoc.ref, {
                         joinedInstitutions: arrayUnion(instId)
                     }, { merge: true });
                 });

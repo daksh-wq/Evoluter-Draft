@@ -30,32 +30,26 @@ async function checkAndIncrementRateLimit(userId, limitType = 'test_generation')
 
     const maxLimit = RATE_LIMITS[limitType] || 10;
 
-    await admin.firestore().runTransaction(async (transaction) => {
-        const usageDoc = await transaction.get(usageRef);
+    // Read current usage (no transaction needed)
+    const usageDoc = await usageRef.get();
+    const currentCount = usageDoc.exists ? (usageDoc.data()[limitType] || 0) : 0;
 
-        if (!usageDoc.exists) {
-            // First usage today
-            transaction.set(usageRef, {
-                [limitType]: 1,
-                date: today,
-                createdAt: admin.firestore.FieldValue.serverTimestamp()
-            });
-        } else {
-            const currentCount = usageDoc.data()[limitType] || 0;
+    if (currentCount >= maxLimit) {
+        throw new functions.https.HttpsError(
+            'resource-exhausted',
+            `Daily limit reached (${maxLimit}/${limitType}). Try again tomorrow.`
+        );
+    }
 
-            if (currentCount >= maxLimit) {
-                throw new functions.https.HttpsError(
-                    'resource-exhausted',
-                    `Daily limit reached (${maxLimit}/${limitType}). Try again tomorrow.`
-                );
-            }
-
-            transaction.update(usageRef, {
-                [limitType]: admin.firestore.FieldValue.increment(1),
-                lastUsed: admin.firestore.FieldValue.serverTimestamp()
-            });
-        }
-    });
+    // Atomic increment — no transaction overhead
+    await usageRef.set(
+        {
+            [limitType]: admin.firestore.FieldValue.increment(1),
+            date: today,
+            lastUsed: admin.firestore.FieldValue.serverTimestamp()
+        },
+        { merge: true }
+    );
 }
 
 module.exports = {

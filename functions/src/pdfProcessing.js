@@ -1,66 +1,33 @@
 /**
  * PDF Processing Cloud Functions
- * Upgraded: topic identification, question-type diversity, 3-layer solution, PYQ blending
+ * Upgraded: topic identification, question-type diversity, 3-layer solution
+ *
+ * Production hardening:
+ * - SSRF-safe URL validation (CRIT-3 fix)
+ * - Shared prompt helpers (eliminates duplication)
+ * - Shared AI client
  */
 const functions = require('firebase-functions');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
-const pdf = require('pdf-parse');
+const admin = require('firebase-admin');
 const axios = require('axios');
+const pdf = require('pdf-parse');
 const { checkAndIncrementRateLimit } = require('./rateLimit');
-
-const genAI = new GoogleGenerativeAI(functions.config().gemini?.api_key || process.env.GEMINI_API_KEY || '');
+const { generateJSON } = require('./utils/geminiClient');
+const {
+    buildTypeDistributionInstruction,
+    THREE_LAYER_SOLUTION_INSTRUCTION,
+    parseAIJsonResponse,
+} = require('./utils/promptHelpers');
+const { validateUrl } = require('./utils/validators');
 
 /** Maximum PDF file size (20MB) */
 const MAX_FILE_SIZE = 20 * 1024 * 1024;
 
-// ─── Shared helpers (duplicated from testGeneration for cloud function isolation) ───
-
-function buildTypeDistributionInstruction(count) {
-    const statement = Math.round(count * 0.45);
-    const ar        = Math.round(count * 0.25);
-    const matching  = Math.round(count * 0.20);
-    const direct    = count - statement - ar - matching;
-
-    return `
-QUESTION TYPE DISTRIBUTION (strictly follow):
-- ${statement} Statement-based questions (e.g., "Which of the following statements is/are correct?")
-- ${ar} Assertion-Reasoning questions (Format: "Assertion (A): ... Reason (R): ..." with 4 standard A-R options)
-- ${matching} Matching/Pair-based questions. CRITICAL: The "text" field MUST contain both lists clearly formatted using newlines. STRICTLY limit List-I to exactly 4 items (1, 2, 3, 4) and List-II to exactly 4 items (A, B, C, D). Do NOT add extra items like E, F, etc.
-  Example format:
-  Match List-I with List-II:
-  List-I:
-  1. Item 1
-  2. Item 2
-  3. Item 3
-  4. Item 4
-  List-II:
-  A. Desc A
-  B. Desc B
-  C. Desc C
-  D. Desc D
-- ${direct} Direct Factual questions (e.g., "Which of the following is NOT correct regarding...")
-
-CRITICAL OPTION FORMATTING RULE:
-For the "options" JSON array ONLY: DO NOT prefix options with A), B), C), D), 1., 2., etc. The options array must contain ONLY the raw option text.
-BAD: ["A) 1-B, 2-A", "B) 1-A, 2-B"]
-GOOD: ["1-B, 2-A", "1-A, 2-B"]
-NOTE: You MAY use A., B., 1., 2. inside the question "text" field for List-I and List-II.`;
-}
-
-const THREE_LAYER_SOLUTION_INSTRUCTION = `
-SOLUTION FORMAT (mandatory for every question — 3 layers):
-"solution": {
-  "correctAnswerReason": "Concise explanation of WHY the correct option is correct (1-2 sentences)",
-  "sourceOfQuestion": "Reference source: NCERT / Article / Act / Standard text",
-  "approachToSolve": "Strategy to eliminate wrong options and identify the correct answer"
-}`;
-
 /**
- * Chunk text into segments for AI processing (improved: respects paragraph boundaries)
+ * Chunk text into segments for AI processing (respects paragraph boundaries)
  */
 function chunkText(text, maxLength = 6000) {
     const chunks = [];
-    // Split on double newlines (paragraphs) first
     const paragraphs = text.split(/\n\n+/);
     let currentChunk = '';
 
@@ -90,9 +57,8 @@ exports.extractTextFromPDF = functions
         const { pdfUrl } = data;
         const userId = context.auth.uid;
 
-        if (!pdfUrl) {
-            throw new functions.https.HttpsError('invalid-argument', 'pdfUrl is required');
-        }
+        // SSRF-safe URL validation (CRIT-3 fix)
+        validateUrl(pdfUrl);
 
         await checkAndIncrementRateLimit(userId, 'pdf_extraction');
 
@@ -109,11 +75,10 @@ exports.extractTextFromPDF = functions
 
             const pdfResponse = await axios.get(pdfUrl, {
                 responseType: 'arraybuffer',
-                timeout: 30000
+                timeout: 30000,
             });
             const pdfBuffer = Buffer.from(pdfResponse.data);
             const pdfData = await pdf(pdfBuffer);
-
             const chunks = chunkText(pdfData.text);
 
             return {
@@ -121,22 +86,17 @@ exports.extractTextFromPDF = functions
                 pages: pdfData.numpages,
                 wordCount: pdfData.text.split(/\s+/).length,
                 chunks,
-                chunkCount: chunks.length
+                chunkCount: chunks.length,
             };
-
         } catch (error) {
             if (error instanceof functions.https.HttpsError) throw error;
-            console.error('PDF extraction error:', error);
+            console.error('PDF extraction error:', error.message);
             throw new functions.https.HttpsError('internal', 'Failed to extract PDF text');
         }
     });
 
 /**
  * Generate questions from extracted PDF text.
- * Step 1: Identify topics from PDF.
- * Step 2: Generate diverse questions (A-R, Matching, Statement, Direct).
- * Step 3: Enrich each with 3-layer solution + self-assessed difficulty.
- * Step 4: Add model-generated PYQ-style questions on identified topic.
  */
 exports.generateQuestionsFromPDF = functions
     .runWith({ timeoutSeconds: 300, memory: '1GB' })
@@ -149,7 +109,7 @@ exports.generateQuestionsFromPDF = functions
             textChunks,
             documentTitle = 'Document',
             questionCount = 10,
-            difficulty = 'Hard'
+            difficulty = 'Hard',
         } = data;
         const userId = context.auth.uid;
 
@@ -159,9 +119,7 @@ exports.generateQuestionsFromPDF = functions
 
         await checkAndIncrementRateLimit(userId, 'question_generation');
 
-        const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
-
-        // ─── Step 1: Topic Identification ───────────────────────────────────────
+        // Step 1: Topic Identification
         let identifiedTopics = [];
         const combinedPreview = textChunks.slice(0, 2).join('\n\n').substring(0, 3000);
 
@@ -175,45 +133,31 @@ ${combinedPreview}
 Return ONLY a JSON array of topic strings (max 5):
 ["Topic 1", "Topic 2", "Topic 3"]`;
 
-            const topicResult = await model.generateContent({
-                contents: [{ role: 'user', parts: [{ text: topicPrompt }] }],
-                generationConfig: { responseMimeType: 'application/json' }
-            });
-
-            const topicText = topicResult.response.text();
-            let parsed = [];
-            try { parsed = JSON.parse(topicText); } catch {
-                const m = topicText.match(/\[[\s\S]*\]/);
-                if (m) parsed = JSON.parse(m[0]);
-            }
+            const topicText = await generateJSON(topicPrompt);
+            const parsed = parseAIJsonResponse(topicText, 'array');
             if (Array.isArray(parsed)) identifiedTopics = parsed;
             console.log(`Identified topics: ${identifiedTopics.join(', ')}`);
         } catch (e) {
-            console.warn('Topic identification failed:', e);
+            console.warn('Topic identification failed:', e.message);
         }
 
-        // ─── Step 2: Decide split — 100% document-based AI Qs (No PYQ blending) ───
-        const pyqStyleCount = 0;
-        const docQCount     = questionCount;
-
-        // ─── Step 3: Generate document-based questions from chunks (Batched) ───
-        const BATCH_SIZE = 15;
+        // Step 2: Generate document-based questions from chunks
+        const docQCount = questionCount;
         const allDocQuestions = [];
         const seenTexts = new Set();
         let retryCount = 0;
 
         const questionsPerChunk = Math.ceil(docQCount / textChunks.length);
-        
+
         const chunkPromises = textChunks.map(async (chunk, index) => {
             const isLastChunk = index === textChunks.length - 1;
-            const targetQCount = isLastChunk 
-                ? docQCount - (questionsPerChunk * (textChunks.length - 1)) 
+            const targetQCount = isLastChunk
+                ? docQCount - (questionsPerChunk * (textChunks.length - 1))
                 : questionsPerChunk;
 
             if (targetQCount <= 0) return [];
-            
+
             const typeInstruction = buildTypeDistributionInstruction(targetQCount);
-            
             const prompt = `You are an expert question generator for competitive exam preparation.
 Based on the specific document chunk below, generate EXACTLY ${targetQCount} high-quality MCQs.
 Go BEYOND surface-level recall — test conceptual understanding using the document as context.
@@ -248,24 +192,11 @@ Return ONLY a valid JSON array:
 Generate EXACTLY ${targetQCount} unique questions. Return ONLY the JSON array.`;
 
             try {
-                const result = await model.generateContent({
-                    contents: [{ role: 'user', parts: [{ text: prompt }] }],
-                    generationConfig: { responseMimeType: 'application/json' }
-                });
-
-                const responseText = result.response.text();
-                let questions = [];
-
-                try {
-                    questions = JSON.parse(responseText);
-                } catch {
-                    const arrayMatch = responseText.match(/\[[\s\S]*\]/);
-                    if (arrayMatch) questions = JSON.parse(arrayMatch[0]);
-                }
-
+                const responseText = await generateJSON(prompt);
+                const questions = parseAIJsonResponse(responseText, 'array');
                 return Array.isArray(questions) ? questions : [];
             } catch (error) {
-                console.error('Chunk question generation error:', error);
+                console.error('Chunk question generation error:', error.message);
                 return [];
             }
         });
@@ -279,11 +210,11 @@ Generate EXACTLY ${targetQCount} unique questions. Return ONLY the JSON array.`;
             }
         });
 
-        // --- Step 3.5: Fill-up loop if we are short across all chunks ---
+        // Fill-up loop if we are short
         while (allDocQuestions.length < docQCount && retryCount < 2) {
             retryCount++;
             const deficit = docQCount - allDocQuestions.length;
-            const currentBatchSize = Math.min(deficit, BATCH_SIZE);
+            const currentBatchSize = Math.min(deficit, 15);
             const existingSummary = allDocQuestions.slice(-20).map(q => (q.text || '').substring(0, 60)).join(' | ');
 
             const fillPrompt = `You are a Question Setter. Generate EXACTLY ${currentBatchSize} MORE unique ${difficulty} MCQs based on this document.
@@ -299,88 +230,24 @@ ${THREE_LAYER_SOLUTION_INSTRUCTION}
 Return ONLY a JSON Array (same format as before).`;
 
             try {
-                const fillResult = await model.generateContent({
-                    contents: [{ role: 'user', parts: [{ text: fillPrompt }] }],
-                    generationConfig: { responseMimeType: 'application/json' }
-                });
-
-                const fillText = fillResult.response.text();
-                let fillParsed = [];
-                try {
-                    fillParsed = JSON.parse(fillText);
-                } catch {
-                    const arrayMatch = fillText.match(/\[[\s\S]*\]/);
-                    if (arrayMatch) fillParsed = JSON.parse(arrayMatch[0]);
-                }
-
+                const fillText = await generateJSON(fillPrompt);
+                const fillParsed = parseAIJsonResponse(fillText, 'array');
                 if (Array.isArray(fillParsed)) {
-                    const uniqueFills = fillParsed.filter(q => {
+                    fillParsed.filter(q => {
                         const key = (q.text || '').trim().toLowerCase();
                         if (!key || seenTexts.has(key)) return false;
                         seenTexts.add(key);
                         return true;
-                    });
-                    allDocQuestions.push(...uniqueFills);
+                    }).forEach(q => allDocQuestions.push(q));
                 }
             } catch (err) {
-                console.warn('Fill-up round failed:', err);
+                console.warn('Fill-up round failed:', err.message);
             }
         }
 
-        // ─── Step 4: Generate PYQ-style questions on identified topics ───────────
-        const allPyqQuestions = [];
-        if (pyqStyleCount > 0 && identifiedTopics.length > 0) {
-            const topicsStr = identifiedTopics.slice(0, 3).join(', ');
-            const typeInstruction = buildTypeDistributionInstruction(pyqStyleCount);
-
-            const pyqPrompt = `You are a UPSC/competitive exam expert. The student is studying about: "${topicsStr}" (identified from their PDF document).
-Generate EXACTLY ${pyqStyleCount} Previous Year Question (PYQ) style MCQs on these topics.
-These should be classic UPSC-style questions connected to the topics — NOT directly from the document text.
-
-${typeInstruction}
-${THREE_LAYER_SOLUTION_INSTRUCTION}
-
-Difficulty: ${difficulty}
-
-Return ONLY a valid JSON array (same format):
-[
-  {
-    "text": "Question?",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "difficultyLevel": "${difficulty}",
-    "questionType": "Statement-based",
-    "topic": "${identifiedTopics[0] || 'General'}",
-    "solution": {
-      "correctAnswerReason": "...",
-      "sourceOfQuestion": "PYQ-style / ${topicsStr}",
-      "approachToSolve": "..."
-    }
-  }
-]`;
-
-            try {
-                const pyqResult = await model.generateContent({
-                    contents: [{ role: 'user', parts: [{ text: pyqPrompt }] }],
-                    generationConfig: { responseMimeType: 'application/json' }
-                });
-
-                const pyqText = pyqResult.response.text();
-                let pyqParsed;
-                try { pyqParsed = JSON.parse(pyqText); } catch {
-                    const m = pyqText.match(/\[[\s\S]*\]/);
-                    if (m) pyqParsed = JSON.parse(m[0]);
-                }
-                if (Array.isArray(pyqParsed)) allPyqQuestions.push(...pyqParsed);
-            } catch (e) {
-                console.warn('PYQ-style generation failed:', e);
-            }
-        }
-
-        // ─── Step 5: Merge, deduplicate, tag, and return ─────────────────────────
-        const combined = [...allDocQuestions, ...allPyqQuestions];
-
-        const finalQuestions = combined
+        // Step 3: Merge, deduplicate, tag, and return
+        const safeTitle = (documentTitle || 'Document').substring(0, 30);
+        const finalQuestions = allDocQuestions
             .slice(0, questionCount)
             .map((q, idx) => ({
                 ...q,
@@ -389,21 +256,21 @@ Return ONLY a valid JSON array (same format):
                 questionType: q.questionType || 'Statement-based',
                 solution: q.solution || {
                     correctAnswerReason: q.explanation || '',
-                    sourceOfQuestion: `Document: ${documentTitle.substring(0, 30)}`,
-                    approachToSolve: 'Review the relevant section of the document.'
+                    sourceOfQuestion: `Document: ${safeTitle}`,
+                    approachToSolve: 'Review the relevant section of the document.',
                 },
                 explanation: q.solution?.correctAnswerReason || q.explanation || '',
                 tags: [
-                    { type: 'source', label: `Document: ${documentTitle.substring(0, 30)}` },
+                    { type: 'source', label: `Document: ${safeTitle}` },
                     { type: 'topic', label: q.topic || identifiedTopics[0] || 'General' },
-                    { type: 'difficulty', label: q.difficultyLevel || difficulty }
-                ]
+                    { type: 'difficulty', label: q.difficultyLevel || difficulty },
+                ],
             }));
 
         return {
             questions: finalQuestions,
-            totalGenerated: combined.length,
+            totalGenerated: allDocQuestions.length,
             requested: questionCount,
-            identifiedTopics
+            identifiedTopics,
         };
     });

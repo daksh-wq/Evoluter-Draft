@@ -37,6 +37,14 @@ export default defineConfig({
           if (id.includes('node_modules/pdfjs-dist')) {
             return 'vendor-pdfjs';
           }
+          // Admin panel — separate chunk (not needed for regular users)
+          if (id.includes('src/components/admin')) {
+            return 'admin-panel';
+          }
+          // Institution panel — separate chunk
+          if (id.includes('src/components/institution')) {
+            return 'institution-panel';
+          }
           // All other node_modules → shared vendor chunk
           if (id.includes('node_modules')) {
             return 'vendor';

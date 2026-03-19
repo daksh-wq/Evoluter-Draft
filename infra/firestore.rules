@@ -38,7 +38,7 @@ service cloud.firestore {
         (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['isVerified']) || !('isVerified' in resource.data))
       ) || (
         isAuthenticated() && 
-        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['enrolledBatches'])
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['enrolledBatches', 'joinedInstitutions'])
       );
 
       // ─── Subcollections ───

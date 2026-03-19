@@ -43,17 +43,12 @@ import { toast } from './utils/toast';
 import { useAuth, useTest } from './hooks';
 import { DEFAULT_USER_STATS, NAV_ITEMS, INSTITUTION_NAV_ITEMS } from './constants/data';
 import { ROUTES } from './constants/routes';
-import { evaluateAnswer } from './services/geminiService';
-import { RefreshCw, Menu, LogOut } from 'lucide-react';
+import { DocumentProvider } from './contexts/DocumentContext';
+import { doc, updateDoc, increment } from 'firebase/firestore';
+import { db } from './services/firebase';
 import logger from './utils/logger';
-import { handleError, ErrorSeverity, ErrorCategory } from './utils/errorHandler';
-import {
-  collection, query, orderBy, onSnapshot,
-  addDoc, serverTimestamp, deleteDoc, doc,
-  updateDoc, increment
-} from 'firebase/firestore';
-import { db, storage } from './services/firebase';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { handleError, ErrorSeverity } from './utils/errorHandler';
+import { RefreshCw, Menu, LogOut } from 'lucide-react';
 
 // Institution Components (Lazy Load)
 const InstitutionDashboard = lazy(() => import('./components/institution/InstitutionDashboard'));
@@ -288,48 +283,9 @@ function App() {
   } = useTest();
 
   // --- Feature States ---
-  const [docs, setDocs] = useState([]);
-  const [uploadingDoc, setUploadingDoc] = useState(false);
+  // Docs state moved to DocumentContext
 
-  // --- Effects ---
-
-  // Fetch Docs when User ID available (Real-time)
-  useEffect(() => {
-    let unsubscribe = () => { };
-
-    if (user?.uid) {
-      try {
-        const q = query(
-          collection(db, 'users', user.uid, 'docs'),
-          orderBy('uploadDate', 'desc')
-        );
-        unsubscribe = onSnapshot(q, (snapshot) => {
-          const fetchedDocs = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-          setDocs(fetchedDocs);
-        }, (error) => {
-          logger.error("Error fetching docs real-time:", error);
-        });
-      } catch (error) {
-        logger.error("Error setting up doc listener:", error);
-      }
-    }
-    return () => {
-      unsubscribe();
-    };
-  }, [user]);
-
-  // Timer Effect
-  useEffect(() => {
-    let interval;
-    if (activeTest && timeLeft > 0) {
-      interval = setInterval(() => {
-        setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
-      }, 1000);
-    }
-    return () => {
-      clearInterval(interval);
-    };
-  }, [activeTest, timeLeft, setTimeLeft]);
+  // Timer Effect moved to TestContext (already running there)
 
 
   // --- Logic Handlers ---
@@ -339,58 +295,7 @@ function App() {
     navigate(ROUTES.TEST);
   };
 
-  const handleFileUpload = async (file) => {
-    if (!user) return;
-    setUploadingDoc(true);
-
-    try {
-      const storageRef = ref(storage, `users/${user.uid}/docs/${Date.now()}_${file.name}`);
-      const snapshot = await uploadBytes(storageRef, file);
-      const downloadURL = await getDownloadURL(snapshot.ref);
-
-      const newDocData = {
-        title: file.name,
-        type: file.name.split('.').pop().toUpperCase(),
-        size: (file.size / (1024 * 1024)).toFixed(2) + ' MB',
-        uploadDate: serverTimestamp(),
-        category: 'Uploads',
-        tags: ['User', 'PDF'],
-        url: downloadURL,
-        storagePath: snapshot.metadata.fullPath,
-        processed: true
-      };
-
-      const docRef = await addDoc(collection(db, 'users', user.uid, 'docs'), newDocData);
-      const optimisticDoc = { id: docRef.id, ...newDocData, uploadDate: { toDate: () => new Date() } };
-      setDocs(prev => [optimisticDoc, ...prev]);
-      logger.info('Document uploaded', { docId: docRef.id });
-    } catch (error) {
-      handleError(error, 'Upload failed. Please try again.', ErrorSeverity.USER_FACING, ErrorCategory.STORAGE);
-    } finally {
-      setUploadingDoc(false);
-    }
-  };
-
-  const [docToDelete, setDocToDelete] = useState(null);
-
-  const handleDeleteDoc = useCallback(async (docId) => {
-    if (!user) return;
-    setDocToDelete(docId);
-  }, [user]);
-
-  const confirmDeleteDoc = useCallback(async () => {
-    if (!user || !docToDelete) return;
-    try {
-      await deleteDoc(doc(db, 'users', user.uid, 'docs', docToDelete));
-      setDocs(prev => prev.filter(d => d.id !== docToDelete));
-      logger.info('Document deleted', { docId: docToDelete });
-    } catch (error) {
-      handleError(error, 'Failed to delete document.', ErrorSeverity.USER_FACING, ErrorCategory.DATABASE);
-    } finally {
-      setDocToDelete(null);
-    }
-  }, [user, docToDelete]);
-
+  // Upload and Delete logic moved to DocumentContext
   const handleExtractQuestions = async (docItem) => {
     if (!docItem.url) {
       toast.error('PDF URL not available. Please re-upload the document.');
@@ -432,7 +337,6 @@ function App() {
     try {
       await startAITest(topic, count, difficulty, userData?.targetExam || 'UPSC CSE', resourceContent, pyqPercentage);
 
-      // Increment counter in Firestore
       const userRef = doc(db, 'users', user.uid);
       await updateDoc(userRef, {
         'stats.diagnosticTestsGenerated': increment(1)
@@ -495,29 +399,7 @@ function App() {
     <Suspense fallback={<LoadingFallback />}>
       <ToastContainer />
       <NetworkStatus />
-      {/* ── Delete Document Confirmation Modal ── */}
-      {docToDelete && (
-        <div className="fixed inset-0 z-[999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-          <div className="bg-white rounded-2xl shadow-2xl border border-slate-100 w-full max-w-sm p-6">
-            <h3 className="text-xl font-black text-slate-800 text-center mb-2">Delete Document?</h3>
-            <p className="text-sm text-slate-500 text-center mb-6">This action cannot be undone.</p>
-            <div className="flex gap-3">
-              <button
-                onClick={() => setDocToDelete(null)}
-                className="flex-1 py-3 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={confirmDeleteDoc}
-                className="flex-1 py-3 rounded-xl bg-red-500 text-white font-bold text-sm hover:bg-red-600 transition-all"
-              >
-                Delete
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <DocumentProvider>
       <Routes>
         {/* Public Routes */}
         <Route path={ROUTES.HOME} element={
@@ -736,6 +618,7 @@ function App() {
         {/* Fallback Route */}
         <Route path="*" element={<Navigate to={ROUTES.HOME} replace />} />
       </Routes>
+      </DocumentProvider>
     </Suspense>
   );
 }

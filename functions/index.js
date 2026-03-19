@@ -1,27 +1,13 @@
 /**
  * Evoluter Cloud Functions — Entry Point
- * 
+ *
  * Exports all Cloud Functions used by the Evoluter Engine.
  * Scalable Architecture with centralized utilities.
  */
-const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 
 // Initialize Firebase Admin SDK first
 admin.initializeApp();
-
-const RateLimiter = require('./src/utils/rateLimiter');
-const DistributedCounter = require('./src/utils/distributedCounter');
-
-// ─── UTILITIES (High-Scale Tools) ────────────────────────
-// Exported for use in other functions, or as callable verification
-exports.checkRateLimit = async (data, context) => {
-    // Example callable to test rate limiting from client
-    if (!context.auth) throw new functions.https.HttpsError('unauthenticated', 'User must be logged in.');
-    await RateLimiter.check(context.auth.uid, 'test_action', 5, 60);
-    return { success: true };
-};
-
 
 // ─── Test Generation & Submission (SEC-1) ────────────────
 const testGeneration = require('./src/testGeneration');
@@ -56,6 +42,10 @@ const pdfProcessing = require('./src/pdfProcessing');
 exports.extractTextFromPDF = pdfProcessing.extractTextFromPDF;
 exports.generateQuestionsFromPDF = pdfProcessing.generateQuestionsFromPDF;
 
-// ─── Question Bank — Approach Brief (QB-1) ──────────────────
+// ─── Question Bank — Approach Brief (QB-1) ──────────────
 const questionBrief = require('./src/questionBrief');
 exports.generateApproachBrief = questionBrief.generateApproachBrief;
+
+// ─── Scheduled Cleanup (SCALE-5) ────────────────────────
+const scheduledCleanup = require('./src/scheduledCleanup');
+exports.cleanupExpiredData = scheduledCleanup.cleanupExpiredData;
