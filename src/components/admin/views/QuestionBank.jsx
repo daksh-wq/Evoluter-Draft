@@ -38,9 +38,9 @@ const EMPTY_FORM = {
 const TAG_COLORS = {
     IP: 'bg-violet-100 text-violet-700', AM: 'bg-amber-100 text-amber-700',
     MI: 'bg-orange-100 text-orange-700', IC: 'bg-pink-100 text-pink-700',
-    GE: 'bg-teal-100 text-teal-700',    EI: 'bg-green-100 text-green-700',
+    GE: 'bg-teal-100 text-teal-700', EI: 'bg-green-100 text-green-700',
     EN: 'bg-emerald-100 text-emerald-700', ST: 'bg-cyan-100 text-cyan-700',
-    CA: 'bg-blue-100 text-blue-700',    TR: 'bg-slate-100 text-slate-700',
+    CA: 'bg-blue-100 text-blue-700', TR: 'bg-slate-100 text-slate-700',
 };
 const DIFF_COLORS = {
     ET: 'bg-red-100 text-red-700 border-red-200',
@@ -92,8 +92,8 @@ const ApproachBriefPanel = ({ brief, decoded }) => {
             FO: 'Foundational — must be attempted; tests basic concepts.',
         };
         return {
-            typeStatement:    `This is a ${decoded?.typeName || '—'} type question.`,
-            sourceStatement:  `It is from a ${decoded?.sourceName || '—'} source.`,
+            typeStatement: `This is a ${decoded?.typeName || '—'} type question.`,
+            sourceStatement: `It is from a ${decoded?.sourceName || '—'} source.`,
             difficultyAdvice: DIFF_ADV[decoded?.difficultyCode] || '—',
         };
     })();
@@ -470,8 +470,8 @@ const QuestionBank = () => {
             let q = collection(db, 'question_bank');
             const constraints = [orderBy('createdAt', 'desc'), limit(200)];
             if (filterSubjectCode) constraints.unshift(where('subjectCode', '==', filterSubjectCode));
-            if (filterDiffCode)    constraints.unshift(where('difficultyCode', '==', filterDiffCode));
-            if (filterTypeCode)    constraints.unshift(where('typeCode', '==', filterTypeCode));
+            if (filterDiffCode) constraints.unshift(where('difficultyCode', '==', filterDiffCode));
+            if (filterTypeCode) constraints.unshift(where('typeCode', '==', filterTypeCode));
             if (filterSource === 'institution') constraints.unshift(where('source', '==', 'institution'));
             if (filterSource === 'student-dashboard') constraints.unshift(where('source', '==', 'student-dashboard'));
 
@@ -501,7 +501,7 @@ const QuestionBank = () => {
     return (
         <div className="max-w-5xl mx-auto space-y-6">
             {/* Header */}
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
                     <h1 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
                         <BookOpen size={24} className="text-[#2278B0]" /> Question Bank
@@ -518,61 +518,64 @@ const QuestionBank = () => {
             </div>
 
             {/* Filters */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-4">
-                <div className="flex flex-wrap gap-3 items-center">
-                    <div className="flex items-center gap-2 text-slate-500 font-bold text-xs uppercase tracking-wider">
-                        <Filter size={14} /> Filters
+            <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-4">
+                {/* Top Row: Search & Clear */}
+                <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-2 text-slate-500 font-bold text-xs uppercase tracking-wider">
+                            <Filter size={14} /> Filters
+                        </div>
+                        {(filterSubjectCode || filterDiffCode || filterTypeCode || filterSource || searchText) && (
+                            <button onClick={() => { setFilterSubjectCode(''); setFilterDiffCode(''); setFilterTypeCode(''); setFilterSource(''); setSearchText(''); }}
+                                className="text-xs text-slate-500 hover:text-slate-800 flex items-center gap-1 font-bold bg-slate-100 px-2 py-1 rounded-md transition-colors">
+                                <X size={12} /> Clear
+                            </button>
+                        )}
                     </div>
-
-                    {/* Search */}
-                    <div className="relative flex-1 min-w-[200px]">
+                    <div className="relative w-full sm:w-80">
                         <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                         <input type="text" value={searchText} onChange={e => setSearchText(e.target.value)}
                             placeholder="Search question text..."
-                            className="pl-9 pr-3 py-2 border border-slate-200 rounded-lg text-sm w-full focus:ring-2 focus:ring-[#2278B0] outline-none" />
+                            className="pl-9 pr-3 py-2 border border-slate-200 rounded-lg text-sm w-full focus:ring-2 focus:ring-[#2278B0] outline-none shadow-sm" />
                     </div>
+                </div>
 
+                {/* Dropdowns Row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                     {/* Subject filter */}
                     <select value={filterSubjectCode} onChange={e => setFilterSubjectCode(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
-                        <option value="">All Subjects</option>
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none w-full shadow-sm">
+                        <option value="">Subject: All</option>
                         {Object.entries(SUBJECT_CODES).map(([name, code]) => (
-                            <option key={code} value={code}>{code} — {name}</option>
+                            <option key={code} value={code}>Subject: {name}</option>
                         ))}
                     </select>
 
                     {/* Difficulty filter */}
                     <select value={filterDiffCode} onChange={e => setFilterDiffCode(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
-                        <option value="">All Difficulties</option>
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none w-full shadow-sm">
+                        <option value="">Difficulty: All</option>
                         {Object.entries(DIFFICULTY_CODES).map(([name, code]) => (
-                            <option key={code} value={code}>{code} — {name}</option>
+                            <option key={code} value={code}>Difficulty: {name}</option>
                         ))}
                     </select>
 
                     {/* Type filter */}
                     <select value={filterTypeCode} onChange={e => setFilterTypeCode(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
-                        <option value="">All Types</option>
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none w-full shadow-sm">
+                        <option value="">Type: All</option>
                         {Object.entries(QUESTION_TYPE_CODES).map(([name, code]) => (
-                            <option key={code} value={code}>{code} — {name}</option>
+                            <option key={code} value={code}>Type: {name}</option>
                         ))}
                     </select>
 
                     {/* Source filter */}
                     <select value={filterSource} onChange={e => setFilterSource(e.target.value)}
-                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none">
-                        <option value="">All Sources</option>
-                        <option value="institution">Institution Only</option>
-                        <option value="student-dashboard">Student Dashboard AI</option>
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none w-full shadow-sm">
+                        <option value="">Source: All</option>
+                        <option value="institution">Source: Institution</option>
+                        <option value="student-dashboard">Source: Student AI</option>
                     </select>
-
-                    {(filterSubjectCode || filterDiffCode || filterTypeCode || filterSource || searchText) && (
-                        <button onClick={() => { setFilterSubjectCode(''); setFilterDiffCode(''); setFilterTypeCode(''); setFilterSource(''); setSearchText(''); }}
-                            className="text-xs text-slate-500 hover:text-slate-800 flex items-center gap-1 font-bold">
-                            <X size={12} /> Clear
-                        </button>
-                    )}
                 </div>
             </div>
 
@@ -643,11 +646,10 @@ const QuestionBank = () => {
                                     <button
                                         key={p}
                                         onClick={() => setCurrentPage(p)}
-                                        className={`w-8 h-8 rounded-lg text-xs font-bold transition-colors ${
-                                            p === safeCurrentPage
-                                                ? 'bg-[#2278B0] text-white shadow-sm'
-                                                : 'border border-slate-200 text-slate-600 hover:bg-slate-50'
-                                        }`}
+                                        className={`w-8 h-8 rounded-lg text-xs font-bold transition-colors ${p === safeCurrentPage
+                                            ? 'bg-[#2278B0] text-white shadow-sm'
+                                            : 'border border-slate-200 text-slate-600 hover:bg-slate-50'
+                                            }`}
                                     >{p}</button>
                                 )
                             )
@@ -679,3 +681,4 @@ const QuestionBank = () => {
 };
 
 export default QuestionBank;
+

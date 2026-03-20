@@ -82,6 +82,7 @@ const Sidebar = ({ onLogout, navItems, user, userData, isOpen, onClose }) => {
                             <NavLink
                                 key={item.id}
                                 to={path}
+                                end={path === '/admin' || path === '/dashboard' || path === '/institution/dashboard'}
                                 onClick={() => isOpen && onClose()}
                                 title={item.label}
                                 aria-label={item.label}

@@ -125,7 +125,7 @@ const AdminLayout = ({ children }) => {
             />
 
             <main className="transition-all duration-300 md:pl-20 lg:pl-64">
-                <div className="py-2 sm:py-4 lg:py-6 max-w-7xl mx-auto px-4 md:px-8">
+                <div className="py-2 sm:py-4 lg:py-6 max-w-7xl mx-auto px-4 md:px-8 pt-4 md:pt-6">
                     {children}
                 </div>
             </main>

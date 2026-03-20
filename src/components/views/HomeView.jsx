@@ -91,24 +91,23 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                             variants={fadeInUp}
                             className="text-base sm:text-lg md:text-2xl text-gray-600 mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed font-medium"
                         >
-                            Practice smarter. Analyze deeper. Improve faster. <br className="hidden md:block" />
-                            Tailored for UPSC and Indian competitive exam aspirants.
+                            Practice smarter. Analyze deeper. Improve faster. Tailored for UPSC aspirants.
                         </motion.p>
 
                         {/* CTA Buttons */}
                         <motion.div
                             variants={fadeInUp}
-                            className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20"
+                            className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-14"
                         >
                             <button
                                 onClick={() => user ? navigate('/dashboard') : onGetStarted()}
-                                className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-[#2278B0] hover:bg-[#1b5f8a] rounded-xl text-white font-bold shadow-xl shadow-[#2278B0]/20 transition-all hover:-translate-y-1 flex items-center justify-center space-x-3 text-lg"
+                                className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-indigo-950 hover:bg-[#0d3d5a] rounded-xl text-white font-bold shadow-xl shadow-[#2278B0]/20 transition-all hover:-translate-y-1 flex items-center justify-center space-x-3 text-lg"
                             >
                                 <span>{user ? "Go to Dashboard" : "Start Smart Practice"}</span>
                                 <Zap className="w-5 h-5 fill-white" />
                             </button>
                             <button
-                                onClick={() => scrollTo('#analytics')}
+                                onClick={() => navigate('/performance-report')}
                                 className="w-full sm:w-auto min-w-[220px] px-6 sm:px-10 py-4 bg-white hover:bg-gray-50 border-2 border-[#2278B0]/20 rounded-xl font-bold text-[#2278B0] transition-all flex items-center justify-center space-x-3 text-lg"
                             >
                                 <span>View Demo Analysis</span>
@@ -121,10 +120,10 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                             variants={fadeInUp}
                             className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto"
                         >
-                            <StatCard icon={<Zap className="w-6 h-6 text-[#2278B0]" />} value="2.5M+" label="Questions Practiced" />
-                            <StatCard icon={<Brain className="w-6 h-6 text-[#2278B0]" />} value="180K+" label="AI Analyses Delivered" />
-                            <StatCard icon={<TrendingUp className="w-6 h-6 text-[#2278B0]" />} value="27%" label="Avg Score Improvement" />
-                            <StatCard icon={<Users className="w-6 h-6 text-[#2278B0]" />} value="35K+" label="Active Aspirants" />
+                            <StatCard icon={<Zap className="w-6 h-6 text-[#2278B0]" />} value="40K" label="Question Practiced" />
+                            <StatCard icon={<Brain className="w-6 h-6 text-[#2278B0]" />} value="10K" label="AI Analyses Delivered" />
+                            <StatCard icon={<TrendingUp className="w-6 h-6 text-[#2278B0]" />} value="20%-40%" label="Average improvement" />
+                            <StatCard icon={<Users className="w-6 h-6 text-[#2278B0]" />} value="10K" label="active Participant" />
                         </motion.div>
                     </motion.div>
                 </div>
@@ -149,16 +148,11 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                         </p>
                     </motion.div>
 
-                    <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                    <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto">
                         <FeatureCard
                             icon={<BarChart2 className="w-7 h-7 text-[#2278B0]" />}
                             title="AI Performance Breakdown"
                             description="Detailed analysis of your strengths and weaknesses across every subject and topic."
-                        />
-                        <FeatureCard
-                            icon={<Brain className="w-7 h-7 text-[#2278B0]" />}
-                            title="Smart Difficulty Adaptation"
-                            description="Questions and tests that evolve with your learning level for maximum efficiency."
                         />
                         <FeatureCard
                             icon={<Clock className="w-7 h-7 text-[#2278B0]" />}
@@ -219,7 +213,7 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                                     whileHover={{ y: -5 }}
                                     className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all"
                                 >
-                                    <div className="text-3xl font-bold text-[#2278B0] mb-1">15k+</div>
+                                    <div className="text-3xl font-bold text-[#2278B0] mb-1">10k+</div>
                                     <div className="text-gray-600 text-sm">Happy Students</div>
                                 </motion.div>
                                 <motion.div
@@ -369,17 +363,17 @@ const HomeView = ({ onGetStarted, user, onLogout }) => {
                                         <div className="absolute inset-0 bg-gradient-to-br from-[#2278B0]/20 to-transparent opacity-50" />
 
                                         {/* Header */}
-                                        <div className="flex items-center justify-between mb-8 relative z-10">
-                                            <div className="flex items-center space-x-3">
-                                                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                                                    <BarChart2 className="text-[#2278B0]" size={20} />
+                                        <div className="flex items-center justify-between gap-2 mb-8 relative z-10">
+                                            <div className="flex items-center gap-2 min-w-0">
+                                                <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
+                                                    <BarChart2 className="text-[#2278B0]" size={16} />
                                                 </div>
-                                                <div>
-                                                    <div className="text-white font-bold">Analytics Dashboard</div>
-                                                    <div className="text-white/40 text-xs">Updated 2m ago</div>
+                                                <div className="min-w-0 overflow-hidden">
+                                                    <div className="text-white font-bold text-sm md:text-base truncate">Analytics Dashboard</div>
+                                                    <div className="text-white/40 text-[10px] truncate">Updated 2m ago</div>
                                                 </div>
                                             </div>
-                                            <div className="px-3 py-1 bg-[#2278B0]/20 rounded-lg text-[#2278B0] text-[10px] font-black uppercase tracking-widest border border-[#2278B0]/30">Live</div>
+                                            <div className="px-2 py-0.5 md:px-3 md:py-1 bg-[#2278B0]/20 rounded-lg text-[#2278B0] text-[9px] md:text-[10px] font-black uppercase tracking-widest border border-[#2278B0]/30 shrink-0">Live</div>
                                         </div>
 
                                         {/* Main Stats */}

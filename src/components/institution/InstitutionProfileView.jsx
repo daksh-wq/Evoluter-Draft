@@ -132,7 +132,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
 
     return (
         <>
-        <div className="animate-in fade-in duration-500 pb-20 max-w-4xl mx-auto">
+        <div className="animate-in fade-in duration-500 pb-20 pt-6 px-4 sm:px-6 max-w-4xl mx-auto">
             {/* Header */}
             <header className="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
@@ -193,7 +193,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                 {/* Right Column: Editable Details */}
                 <div className="md:col-span-2 space-y-6">
                     <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm relative overflow-hidden">
-                        <div className="flex justify-between items-center mb-6">
+                        <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-4 mb-6">
                             <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
                                 <Building2 size={20} className="text-orange-500" /> Institution Details
                             </h3>
@@ -241,7 +241,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                             </div>
 
                             {/* Location Details */}
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
                                         <MapPin size={12} /> State
@@ -277,7 +277,7 @@ const InstitutionProfileView = ({ user, userData, onLogout }) => {
                             </div>
 
                             {/* Contact & Student Count */}
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
                                         <Phone size={12} /> Contact Number

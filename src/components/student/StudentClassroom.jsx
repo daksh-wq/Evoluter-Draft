@@ -139,7 +139,7 @@ const StudentClassroom = ({ userData, startInstitutionTest }) => {
         return (
             <div className="space-y-6 animate-in fade-in duration-500">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+                <div className="bg-indigo-950 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
                     <div className="relative z-10">
                         <h1 className="text-3xl font-black mb-2 flex items-center gap-3">
@@ -162,7 +162,7 @@ const StudentClassroom = ({ userData, startInstitutionTest }) => {
     return (
         <div className="space-y-8 px-4 animate-in fade-in duration-500">
             {/* Header / Stats Banner */}
-            <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+            <div className="bg-indigo-950 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
                 <div className="relative z-10">
                     <div className="flex items-start justify-between">

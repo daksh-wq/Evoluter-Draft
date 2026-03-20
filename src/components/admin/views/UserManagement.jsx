@@ -139,8 +139,8 @@ const UserManagement = () => {
             {/* Students Table */}
             {tab === 'students' && (
                 <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <div className="overflow-x-auto">
-                        <table className="w-full text-left text-sm text-slate-600">
+                    <div className="overflow-x-auto pb-2">
+                        <table className="w-full text-left text-sm text-slate-600 min-w-[500px]">
                             <thead className="bg-slate-50 text-xs uppercase font-semibold text-slate-500">
                                 <tr>
                                     <th className="px-6 py-4">Student</th>
@@ -165,7 +165,7 @@ const UserManagement = () => {
                                             </div>
                                         </td>
                                         <td className="px-6 py-4">
-                                            <span className="text-xs bg-blue-50 text-blue-700 font-medium px-2 py-1 rounded-full">
+                                            <span className="text-xs bg-blue-50 text-blue-700 font-medium px-2 py-1 rounded-full whitespace-nowrap">
                                                 {user.targetExam || '—'}
                                             </span>
                                         </td>
@@ -201,8 +201,8 @@ const UserManagement = () => {
             {/* Institutions Table */}
             {tab === 'institutions' && (
                 <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <div className="overflow-x-auto">
-                        <table className="w-full text-left text-sm text-slate-600">
+                    <div className="overflow-x-auto pb-2">
+                        <table className="w-full text-left text-sm text-slate-600 min-w-[500px]">
                             <thead className="bg-slate-50 text-xs uppercase font-semibold text-slate-500">
                                 <tr>
                                     <th className="px-6 py-4">Institution</th>

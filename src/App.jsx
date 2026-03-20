@@ -23,6 +23,7 @@ const FlashcardsView = lazy(() => import('./components/views/FlashcardsView'));
 const TestHistoryView = lazy(() => import('./components/views/TestHistoryView'));
 const TestReviewView = lazy(() => import('./components/views/TestReviewView'));
 const PerformanceReportView = lazy(() => import('./components/views/PerformanceReportView'));
+const NotificationsView = lazy(() => import('./components/views/NotificationsView'));
 const AboutView = lazy(() => import('./components/views/AboutView'));
 const ContactView = lazy(() => import('./components/views/ContactView'));
 const PrivacyView = lazy(() => import('./components/views/PrivacyView'));
@@ -455,6 +456,12 @@ function App() {
         <Route path={ROUTES.PERFORMANCE_REPORT} element={
           <ProtectedLayout {...layoutProps}>
             <PerformanceReportView userStats={userStats} />
+          </ProtectedLayout>
+        } />
+
+        <Route path={ROUTES.NOTIFICATIONS} element={
+          <ProtectedLayout {...layoutProps}>
+            <NotificationsView userData={userData} setView={(v) => navigate(`/${v}`)} />
           </ProtectedLayout>
         } />
 

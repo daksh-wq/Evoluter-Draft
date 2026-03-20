@@ -132,7 +132,26 @@ GOOD: ["1-B, 2-A", "1-A, 2-B"]
 NOTE: You MAY use A., B., 1., 2. inside the question "text" field for List-I and List-II.`;
 }
 
-// ─── Internal: 3-layer solution schema instruction ───
+// ─── Internal: Build the difficulty distribution instruction ───
+// Matrix: rows = selected difficulty, cols = Easy/Intermediate/Hard share
+const DIFFICULTY_DISTRIBUTION = {
+    Easy:         { Easy: 0.70, Intermediate: 0.20, Hard: 0.10 },
+    Intermediate: { Easy: 0.20, Intermediate: 0.60, Hard: 0.20 },
+    Hard:         { Easy: 0.10, Intermediate: 0.30, Hard: 0.60 },
+};
+
+function buildDifficultyDistributionInstruction(batchSize, difficulty) {
+    const dist = DIFFICULTY_DISTRIBUTION[difficulty] || DIFFICULTY_DISTRIBUTION['Hard'];
+    const easyCount  = Math.round(batchSize * dist.Easy);
+    const midCount   = Math.round(batchSize * dist.Intermediate);
+    const hardCount  = batchSize - easyCount - midCount; // remainder ensures exact total
+    return `DIFFICULTY DISTRIBUTION (strictly follow for this batch of ${batchSize} questions):
+- ${easyCount} Easy questions (straightforward recall/recognition)
+- ${midCount} Intermediate questions (application/moderate reasoning)
+- ${hardCount} Hard questions (deep conceptual/analytical)
+Each question MUST carry a self-assessed 'difficultyLevel' field: one of 'Easy', 'Intermediate', or 'Hard'.`;
+}
+
 const THREE_LAYER_SOLUTION_INSTRUCTION = `
 SOLUTION FORMAT (mandatory for every question — 3 layers):
 "solution": {
@@ -215,9 +234,10 @@ export async function generateQuestions(topic, count = 5, difficulty = 'Hard', t
         }
         usedSubtopics.push(subtopic);
 
-        const typeInstruction = buildTypeDistributionInstruction(batchSize);
+        const typeInstruction       = buildTypeDistributionInstruction(batchSize);
+        const diffInstruction       = buildDifficultyDistributionInstruction(batchSize, difficulty);
 
-        const prompt = `You are a strict Question Setter for ${targetExam}. Generate EXACTLY ${batchSize} ${difficulty} MCQs on the topic: '${topic}' (focus angle: '${subtopic}' for this batch).
+        const prompt = `You are a strict Question Setter for ${targetExam}. Generate EXACTLY ${batchSize} MCQs on the topic: '${topic}' (focus angle: '${subtopic}' for this batch).
 
 APPROVED SYLLABUS:
 ${availableTopics}
@@ -226,7 +246,7 @@ RULES:
 1. STRICT RELEVANCE: All questions MUST relate to '${topic}' within the approved syllabus.
 2. EXAM STYLE: Match ${targetExam} exam patterns. UPSC CSE = conceptual/statement-based; State PSC = factual/direct.
 3. UNIQUENESS: This is batch ${batchIndex + 1}. Do NOT repeat questions from other batches. Focus on '${subtopic}' angle.
-4. DIFFICULTY: Each question MUST carry a self-assessed 'difficultyLevel' field ('Easy', 'Intermediate', or 'Hard').
+${diffInstruction}
 ${typeInstruction}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
 ${TAGGING_INSTRUCTION}
@@ -362,11 +382,12 @@ JSON FORMAT:
             (q.text || '').substring(0, 60)
         ).join(' | ');
 
-        const fillPrompt = `You are a Question Setter for ${targetExam}. Generate EXACTLY ${deficit} ${difficulty} MCQs on '${topic}'.
+        const fillPrompt = `You are a Question Setter for ${targetExam}. Generate EXACTLY ${deficit} MCQs on '${topic}'.
 
 These questions have ALREADY been generated (DO NOT REPEAT them):
 ${existingSummary}
 
+${buildDifficultyDistributionInstruction(deficit, difficulty)}
 ${buildTypeDistributionInstruction(deficit)}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
 ${TAGGING_INSTRUCTION}

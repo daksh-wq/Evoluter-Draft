@@ -6,13 +6,13 @@ import logger from '../../../utils/logger';
 
 const StatCard = ({ title, value, subtitle, icon: Icon, color }) => (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-        <div className="flex items-center justify-between">
-            <div>
-                <p className="text-sm font-medium text-slate-500">{title}</p>
+        <div className="flex items-center justify-between gap-3">
+            <div className="min-w-0">
+                <p className="text-sm font-medium text-slate-500 truncate">{title}</p>
                 <p className="text-3xl font-black text-slate-900 mt-1">{value}</p>
                 {subtitle && <p className="text-xs text-slate-400 mt-1">{subtitle}</p>}
             </div>
-            <div className={`p-3 rounded-xl ${color}`}>
+            <div className={`p-3 rounded-xl shrink-0 ${color}`}>
                 <Icon className="text-white" size={24} />
             </div>
         </div>

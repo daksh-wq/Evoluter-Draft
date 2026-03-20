@@ -142,7 +142,6 @@ const InstitutionDashboard = ({ userData }) => {
         <div className="space-y-8 px-4 animate-in fade-in duration-500 pb-20">
             {/* Header / Profile Card */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-slate-50 rounded-full translate-x-1/3 -translate-y-1/3" />
 
                 <div className="relative z-10 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-center text-center md:text-left">
                     {/* Logo */}
@@ -184,7 +183,7 @@ const InstitutionDashboard = ({ userData }) => {
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {/* New Stats */}
                 <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
                     <div className="flex items-center gap-3 mb-2">
@@ -265,8 +264,8 @@ const InstitutionDashboard = ({ userData }) => {
                         {topPerformers.map((student, idx) => (
                             <div key={student.studentId} className="bg-slate-50 border border-slate-100 rounded-2xl p-4 flex items-center gap-4">
                                 <div className="font-black text-xl text-slate-300 w-6">#{idx + 1}</div>
-                                <div>
-                                    <div className="font-bold text-slate-800 truncate max-w-[120px]">{student.studentName}</div>
+                                <div className="min-w-0 flex-1">
+                                    <div className="font-bold text-slate-800 truncate">{student.studentName}</div>
                                     <div className="text-xs text-slate-500 font-medium">{student.avgPercent}% Avg Score</div>
                                 </div>
                             </div>
@@ -312,7 +311,7 @@ const InstitutionDashboard = ({ userData }) => {
                         </Link>
                     </div>
                 ) : (
-                    <div className="overflow-x-auto -mx-4 sm:-mx-6 md:-mx-8 px-4 sm:px-6 md:px-8">
+                    <div className="overflow-x-auto w-full">
                         <table className="w-full text-left border-collapse" style={{ minWidth: '560px' }}>
                             <thead>
                                 <tr className="border-b border-slate-100">

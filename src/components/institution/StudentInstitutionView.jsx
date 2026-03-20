@@ -83,21 +83,23 @@ const StudentInstitutionView = ({ startInstitutionTest }) => {
             </div>
 
             {/* Search Box */}
-            <div className="bg-white p-2 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2 mb-8 transform transition-all focus-within:ring-4 focus-within:ring-indigo-500/10">
-                <div className="pl-4 text-slate-400">
-                    <Search size={24} />
+            <div className="bg-white p-2 sm:p-3 rounded-2xl shadow-lg border border-slate-100 flex flex-col sm:flex-row items-stretch sm:items-center gap-2 mb-8 transform transition-all focus-within:ring-4 focus-within:ring-indigo-500/10">
+                <div className="flex items-center flex-1 min-w-0 bg-slate-50 sm:bg-transparent rounded-xl px-2 sm:px-4">
+                    <div className="text-slate-400 shrink-0 pl-2 sm:pl-0">
+                        <Search size={20} />
+                    </div>
+                    <input
+                        value={code}
+                        onChange={(e) => setCode(e.target.value.toUpperCase())}
+                        placeholder="Enter Code (e.g. X7K9P2)"
+                        className="flex-1 min-w-0 py-3 sm:py-4 px-3 text-base sm:text-lg font-bold text-slate-800 outline-none placeholder:font-medium placeholder:text-slate-300 uppercase tracking-widest bg-transparent"
+                        maxLength={6}
+                    />
                 </div>
-                <input
-                    value={code}
-                    onChange={(e) => setCode(e.target.value.toUpperCase())}
-                    placeholder="Enter Code (e.g. X7K9P2)"
-                    className="flex-1 py-4 text-lg font-bold text-slate-800 outline-none placeholder:font-medium placeholder:text-slate-300 uppercase tracking-widest"
-                    maxLength={6}
-                />
                 <button
                     onClick={handleSearch}
                     disabled={loading || !code}
-                    className="bg-indigo-950 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-900 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                    className="w-full sm:w-auto bg-indigo-950 text-white px-6 sm:px-8 py-3.5 sm:py-3 rounded-xl font-bold hover:bg-indigo-900 disabled:opacity-50 disabled:cursor-not-allowed transition-all whitespace-nowrap"
                 >
                     {loading ? 'Searching...' : 'Find Test'}
                 </button>

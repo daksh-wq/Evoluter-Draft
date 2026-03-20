@@ -1,4 +1,5 @@
 export const SUBJECTS = [
+    'All',
     'Indian Polity',
     'Ancient and Medieval History',
     'Modern India',
@@ -41,9 +42,9 @@ export const TIME_PER_QUESTION = {
  *   10 Q → 15 min | 25 Q → 30 min | 50 Q → 60 min | 100 Q → 120 min
  */
 export const DURATION_BY_COUNT = {
-    10:  15 * 60,   //  900 seconds
-    25:  30 * 60,   // 1800 seconds
-    50:  60 * 60,   // 3600 seconds
+    10: 15 * 60,   //  900 seconds
+    25: 30 * 60,   // 1800 seconds
+    50: 60 * 60,   // 3600 seconds
     100: 120 * 60,  // 7200 seconds
 };
 
@@ -70,10 +71,10 @@ export function getDurationForCount(count) {
  * Mirrors UPSC/competitive exam real paper patterns.
  */
 export const QUESTION_TYPE_DISTRIBUTION = {
-    statement:         { label: 'Statement-based',      share: 0.45 },
-    assertionReasoning:{ label: 'Assertion-Reasoning',  share: 0.25 },
-    matching:          { label: 'Matching/Pair-based',  share: 0.20 },
-    direct:            { label: 'Direct Factual',       share: 0.10 }
+    statement: { label: 'Statement-based', share: 0.45 },
+    assertionReasoning: { label: 'Assertion-Reasoning', share: 0.25 },
+    matching: { label: 'Matching/Pair-based', share: 0.20 },
+    direct: { label: 'Direct Factual', share: 0.10 }
 };
 
 // ─── Question Bank Tagging System (texr spec) ────────────────────────────────
@@ -83,16 +84,17 @@ export const QUESTION_TYPE_DISTRIBUTION = {
  * Segment 1 of the 16-char Question ID.
  */
 export const SUBJECT_CODES = {
-    'Indian Polity':                  'IP',
-    'Ancient and Medieval History':   'AM',
-    'Modern India':                   'MI',
-    'Indian Culture':                 'IC',
-    'Geography':                      'GE',
-    'Economy of India':               'EI',
-    'Environment':                    'EN',
-    'Science and Technology':         'ST',
-    'Current Affairs':                'CA',
-    'Trivial':                        'TR',
+    'All': 'MX',
+    'Indian Polity': 'IP',
+    'Ancient and Medieval History': 'AM',
+    'Modern India': 'MI',
+    'Indian Culture': 'IC',
+    'Geography': 'GE',
+    'Economy of India': 'EI',
+    'Environment': 'EN',
+    'Science and Technology': 'ST',
+    'Current Affairs': 'CA',
+    'Trivial': 'TR',
 };
 
 /** Reverse map: code → subject name */
@@ -197,11 +199,11 @@ export const TOPIC_CODES = {
  * Segment 3 of the 16-char Question ID.
  */
 export const SOURCE_CODES = {
-    Standard:          'SN',   // NCERT / standard textbooks
-    Advanced:          'AD',   // Economic Survey, official docs, D.D. Basu
-    Random:            'RN',   // Cannot be categorized
-    'Current Issue':   'CI',   // Well-covered in current affairs
-    'Not Applicable':  'NA',   // Cannot be identified
+    Standard: 'SN',   // NCERT / standard textbooks
+    Advanced: 'AD',   // Economic Survey, official docs, D.D. Basu
+    Random: 'RN',   // Cannot be categorized
+    'Current Issue': 'CI',   // Well-covered in current affairs
+    'Not Applicable': 'NA',   // Cannot be identified
 };
 
 export const SOURCE_CODE_TO_NAME = Object.fromEntries(
@@ -213,47 +215,47 @@ export const SOURCE_CODE_TO_NAME = Object.fromEntries(
  */
 export const SUBJECT_SOURCE_MAP = {
     'Indian Polity': {
-        core:     ['NCERT Class 11 — Indian Constitution at Work', 'NCERT Political Theory'],
+        core: ['NCERT Class 11 — Indian Constitution at Work', 'NCERT Political Theory'],
         standard: ['Indian Polity by M. Laxmikanth'],
         advanced: ['Constitution of India by D.D. Basu', 'Constitution Bare Act', '2nd ARC Report'],
     },
     'Ancient and Medieval History': {
-        core:     ['NCERT Class XII — Themes in Indian History Part I & II'],
+        core: ['NCERT Class XII — Themes in Indian History Part I & II'],
         standard: ['Old NCERT — Ancient India by R.S. Sharma', 'Medieval India by Satish Chandra'],
         advanced: [],
     },
     'Modern India': {
-        core:     ['Modern India by Bipin Chandra (Old NCERT)'],
+        core: ['Modern India by Bipin Chandra (Old NCERT)'],
         standard: ['Spectrum — History of Modern India'],
         advanced: ["India's Struggle for Independence by Bipin Chandra"],
     },
     'Indian Culture': {
-        core:     ['NCERT Class XI — An Introduction to Indian Art'],
+        core: ['NCERT Class XI — An Introduction to Indian Art'],
         standard: ['Indian Art and Culture by Nitin Singhania'],
         advanced: ['CCRT (Centre for Cultural Resources and Training) material'],
     },
     'Geography': {
-        core:     ['NCERT Class 11 — Fundamental of Physical Geography', 'India Physical Environment'],
+        core: ['NCERT Class 11 — Fundamental of Physical Geography', 'India Physical Environment'],
         standard: ['Certificate in Physical and Human Geography by G.C. Leong'],
         advanced: ['Geography by Majid Hussain'],
     },
     'Economy of India': {
-        core:     ['NCERT Class X, XI (Indian Economic Development)', 'NCERT Class XII (Introductory Macroeconomics)'],
+        core: ['NCERT Class X, XI (Indian Economic Development)', 'NCERT Class XII (Introductory Macroeconomics)'],
         standard: ['Indian Economy by Ramesh Singh', 'Indian Economy by Sanjeev Verma'],
         advanced: ['Economic Survey', 'Union Budget Document'],
     },
     'Environment': {
-        core:     ['NCERT Class XII Biology — Ch 13 to 16'],
+        core: ['NCERT Class XII Biology — Ch 13 to 16'],
         standard: ['PMF IAS Environment Material'],
         advanced: ['Ministry of Environment Reports', 'Down to Earth', 'Yojana'],
     },
     'Science and Technology': {
-        core:     ['NCERT Class VI–X'],
+        core: ['NCERT Class VI–X'],
         standard: ['TMH Science and Technology Book'],
         advanced: ['Newspapers & Current Science Publications'],
     },
     'Current Affairs': {
-        core:     [],
+        core: [],
         standard: [],
         advanced: [],
     },
@@ -264,11 +266,11 @@ export const SUBJECT_SOURCE_MAP = {
  * Segment 4 of the 16-char Question ID.
  */
 export const QUESTION_TYPE_CODES = {
-    Factual:             'FA',
-    Conceptual:          'CO',
+    Factual: 'FA',
+    Conceptual: 'CO',
     'Application Based': 'AB',
-    Definition:          'DE',
-    Informative:         'IN',
+    Definition: 'DE',
+    Informative: 'IN',
 };
 
 export const QUESTION_TYPE_CODE_TO_NAME = Object.fromEntries(
@@ -281,11 +283,11 @@ export const QUESTION_TYPE_CODE_TO_NAME = Object.fromEntries(
  * Note: These are finer-grained than the existing Easy/Intermediate/Hard AI difficulty.
  */
 export const DIFFICULTY_CODES = {
-    'Extreme Tough':  'ET',
-    'Tough':          'TO',
-    'Medium':         'ME',
-    'Easy':           'ES',
-    'Foundational':   'FO',
+    'Extreme Tough': 'ET',
+    'Tough': 'TO',
+    'Medium': 'ME',
+    'Easy': 'ES',
+    'Foundational': 'FO',
 };
 
 export const DIFFICULTY_CODE_TO_NAME = Object.fromEntries(
@@ -294,9 +296,9 @@ export const DIFFICULTY_CODE_TO_NAME = Object.fromEntries(
 
 /** Map AI difficulty labels → tag difficulty codes */
 export const AI_DIFFICULTY_TO_CODE = {
-    Hard:          'TO',
-    Intermediate:  'ME',
-    Easy:          'ES',
+    Hard: 'TO',
+    Intermediate: 'ME',
+    Easy: 'ES',
 };
 
 /**
@@ -304,11 +306,11 @@ export const AI_DIFFICULTY_TO_CODE = {
  * Segment 6 of the 16-char Question ID.
  */
 export const PYQ_CODES = {
-    'CSE':            'CS',   // UPSC Civil Services Exam
-    'CDSE':           'CD',   // Combined Defence Services Exam
-    'NDA':            'ND',   // National Defence Academy
-    'CISF':           'CI',   // CISF AC (EXE) LDCE
-    'CAPF':           'CP',   // Central Armed Police Forces
+    'CSE': 'CS',   // UPSC Civil Services Exam
+    'CDSE': 'CD',   // Combined Defence Services Exam
+    'NDA': 'ND',   // National Defence Academy
+    'CISF': 'CI',   // CISF AC (EXE) LDCE
+    'CAPF': 'CP',   // Central Armed Police Forces
     'Not Applicable': 'NA',   // Not a PYQ
 };
 

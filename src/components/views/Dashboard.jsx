@@ -20,13 +20,14 @@ import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firesto
 import { db } from '../../services/firebase';
 import { KnowledgeGraph } from '../common';
 import { SubjectSelector } from '../dashboard/SubjectSelector';
-import { TopicInput } from '../dashboard/TopicInput';
+import { ChapterSelector } from '../dashboard/ChapterSelector';
 import { ConfigPanel } from '../dashboard/ConfigPanel';
 import { LoadingState } from '../dashboard/LoadingState';
 import { DEFAULT_QUESTION_COUNT, DEFAULT_DIFFICULTY } from '../../constants/appConstants';
 import { useDailyWisdom } from '../../hooks/useDailyWisdom';
 import { useExamDate } from '../../hooks/useExamDate';
-import { suggestTestTopics } from '../../services/geminiService';
+import { useNotifications } from '../../hooks/useNotifications';
+import { CHAPTERS_LIST, SUBTOPICS_LIST } from '../../constants/subjectChapterData';
 import { extractTextFromPDF } from '../../utils/pdfExtractor';
 import { batchService } from '../../features/exam-engine/services/batchService';
 
@@ -53,9 +54,10 @@ const Dashboard = ({
     const [selectedSubjects, setSelectedSubjects] = useState([]); // Track subject picker state
 
     // Live Test Notifications State
-    const [notifications, setNotifications] = useState([]);
+    const { notifications, markAsViewed } = useNotifications(userData);
     const [showNotifications, setShowNotifications] = useState(false);
     const notificationsRef = React.useRef(null);
+    const unreadCount = notifications.filter(n => !n.isViewed).length;
 
     // Handle click outside to close notifications
     React.useEffect(() => {
@@ -113,6 +115,12 @@ const Dashboard = ({
         setShowNotifications(false);
         setView('student/classroom');
     }, [setView]);
+
+    const handleNotificationClick = useCallback((itemId) => {
+        markAsViewed(itemId);
+        setShowNotifications(false);
+        setView('student/classroom');
+    }, [setView, markAsViewed]);
 
     // Fix #8: only recomputed when topicMastery reference changes
     const weakTopics = useMemo(
@@ -174,210 +182,73 @@ const Dashboard = ({
         }
     }, [selectedSubjects, aiTopic]);
 
-    // AI Auto-Suggest Effect
+    // Manual Subtopic Mapping Effect
     React.useEffect(() => {
-        if (suggestionTimeoutRef.current) clearTimeout(suggestionTimeoutRef.current);
-        if (abortControllerRef.current) abortControllerRef.current.abort();
-
         const keyword = aiTopic.trim();
-        // Use typed keyword OR selected subjects as the seed (subjects work even without focus)
+        // Use typed keyword OR selected subjects as the seed
         const effectiveKeyword = keyword || (selectedSubjects.length > 0 ? selectedSubjects.join(' ') : '');
 
         if (!effectiveKeyword || effectiveKeyword.length < 2) {
             setTopicSuggestions([]);
-            setIsSuggesting(false);
             return;
         }
 
-        setIsSuggesting(true);
-
-        suggestionTimeoutRef.current = setTimeout(async () => {
-            // Fix #11: assign controller before call to eliminate race between abort and new signal
-            const controller = new AbortController();
-            abortControllerRef.current = controller;
-
-            try {
-                const results = await suggestTestTopics(effectiveKeyword, userData?.targetExam || 'UPSC CSE', controller.signal);
-                setTopicSuggestions(results);
-            } catch (error) {
-                if (error.name !== 'AbortError') {
-                    setTopicSuggestions([]);
-                }
-            } finally {
-                setIsSuggesting(false);
-            }
-        }, keyword ? 600 : 150); // Fast when subject-seeded, debounced when typing
-
-        return () => {
-            if (suggestionTimeoutRef.current) clearTimeout(suggestionTimeoutRef.current);
-            if (abortControllerRef.current) abortControllerRef.current.abort();
-        };
-    }, [aiTopic, selectedSubjects, userData?.targetExam]);
-
-    // Fetch active institution tests and batches for notifications
-    React.useEffect(() => {
-        const fetchNotificationsData = async () => {
-            const hasBatches = userData?.enrolledBatches && userData.enrolledBatches.length > 0;
-            const hasInstitutions = userData?.joinedInstitutions && userData.joinedInstitutions.length > 0;
-
-            if (!hasBatches && !hasInstitutions) {
-                setNotifications([]);
-                return;
-            }
-
-            try {
-                const allTestDocs = [];
-
-                if (hasBatches) {
-                    const batchIds = userData.enrolledBatches;
-                    const chunks = [];
-                    for (let i = 0; i < batchIds.length; i += 10) {
-                        chunks.push(batchIds.slice(i, i + 10));
-                    }
-
-                    for (const chunk of chunks) {
-                        const q = query(
-                            collection(db, 'institution_tests'),
-                            where('assignedBatchIds', 'array-contains-any', chunk)
-                        );
-                        const snap = await getDocs(q);
-                        snap.docs.forEach(d => {
-                            if (!allTestDocs.find(t => t.id === d.id)) {
-                                allTestDocs.push({ id: d.id, ...d.data() });
-                            }
-                        });
-                    }
-                }
-
-                const now = new Date();
-                const activeTests = allTestDocs.filter(t => {
-                    if (t.status === 'archived' || t.status === 'inactive') return false;
-
-                    if (!t.isScheduled || (!t.scheduledStart && !t.scheduledEnd)) return true;
-
-                    const start = t.scheduledStart?.toDate ? t.scheduledStart.toDate() : (t.scheduledStart ? new Date(t.scheduledStart) : null);
-                    const end = t.scheduledEnd?.toDate ? t.scheduledEnd.toDate() : (t.scheduledEnd ? new Date(t.scheduledEnd) : null);
-
-                    // Count if it's Live or Upcoming
-                    if (end && now > end) return false; // ended
-                    return true;
-                });
-
-                let fetchedBatches = [];
-                let fetchedInstitutions = [];
-
-                // Fetch batch details to show recent batches
-                try {
-                    const myBatches = await batchService.getStudentBatches(userData.uid);
-                    fetchedBatches = myBatches || [];
-                } catch (batchErr) {
-                    console.error("Failed to fetch batches for notifications", batchErr);
-                }
-
-                // Fetch recently joined institutions
-                if (userData.joinedInstitutions && userData.joinedInstitutions.length > 0) {
-                    try {
-                        const instPromises = userData.joinedInstitutions.map(async (instId) => {
-                            const instRef = doc(db, 'users', instId);
-                            const instSnap = await getDoc(instRef);
-                            if (instSnap.exists()) {
-                                return {
-                                    id: instId,
-                                    name: instSnap.data().displayName || instSnap.data().name || 'Institution'
-                                };
-                            }
-                            return null;
-                        });
-                        const results = await Promise.all(instPromises);
-                        fetchedInstitutions = results.filter(i => i !== null);
-                    } catch (instErr) {
-                        console.error("Failed to fetch institutions for notifications", instErr);
-                    }
-                }
-
-                // Combine and sort notifications
-                const combined = [
-                    ...activeTests.map(t => ({
-                        type: 'test',
-                        id: `test-${t.id}`,
-                        data: t,
-                        timestamp: t.createdAt?.seconds ? t.createdAt.seconds * 1000 : Date.now()
-                    })),
-                    ...fetchedBatches.map(b => ({
-                        type: 'batch',
-                        id: `batch-${b.id}`,
-                        data: b,
-                        // joinedAt is usually set in members collection, but if unavailable use a fallback or createdAt if present
-                        // For student batches, we might not have exact joinedAt unless explicitly fetched. We'll use Date.now() if missing to prioritize new joins.
-                        timestamp: b.joinedAt?.seconds ? b.joinedAt.seconds * 1000 : (b.createdAt?.seconds ? b.createdAt.seconds * 1000 : Date.now())
-                    })),
-                    ...fetchedInstitutions.map(inst => ({
-                        type: 'institution',
-                        id: `inst-${inst.id}`,
-                        data: inst,
-                        // We do not have a robust timestamp locally without querying the exact student subcollection within the institution
-                        // This timestamp will prioritize newly joined institutions since Date.now() is used if none exists.
-                        timestamp: Date.now()
-                    }))
-                ];
-
-                // Sort descending (newest first)
-                combined.sort((a, b) => b.timestamp - a.timestamp);
-
-                setNotifications(combined);
-            } catch (error) {
-                console.error("Failed to fetch notifications data:", error);
-            }
-        };
-
-        if (userData?.uid) {
-            fetchNotificationsData();
+        // Fetch from manual mapping
+        // effectiveKeyword will normally be the chapter string right out of ChapterSelector
+        const chapterObj = CHAPTERS_LIST.find(c => c.name.toLowerCase() === effectiveKeyword.toLowerCase());
+        if (chapterObj) {
+            const subs = SUBTOPICS_LIST.filter(s => s.chapterId === chapterObj.id).map(s => s.name);
+            setTopicSuggestions(subs);
+        } else {
+            setTopicSuggestions([]);
         }
-    }, [userData?.enrolledBatches, userData?.joinedInstitutions, userData?.uid]);
+    }, [aiTopic, selectedSubjects]);
+
+
 
     return (
         <div className="space-y-4 px-4 pt-2 animate-in fade-in duration-500 pb-20">
             {/* Target Exam Card - Full Width */}
-            <div className="w-full bg-indigo-950 text-white rounded-3xl shadow-lg relative overflow-visible flex flex-row items-center justify-between p-6 sm:p-8 min-h-[140px] gap-4">
+            <div className="w-full bg-indigo-950 text-white rounded-3xl shadow-lg relative overflow-visible flex flex-col sm:flex-row items-start sm:items-center justify-between p-5 sm:p-8 min-h-[140px] gap-2 sm:gap-4">
 
                 {/* Left: Exam Info */}
-                <div className="z-10 flex-1 min-w-0">
-                    <div className="text-blue-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">
+                <div className="z-10 flex-1 min-w-0 mb-4 sm:mb-0">
+                    <div className="text-blue-300 text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-1.5">
                         Target Exam
                     </div>
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-none">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-loose sm:leading-none break-words">
                         {userData?.targetExam || 'UPSC CSE'} {effectiveYear}
                     </h3>
                 </div>
 
                 {/* Right: Stat Cards aligned to the right edge */}
-                <div className="z-20 flex items-center gap-3 shrink-0">
+                <div className="z-20 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3 shrink-0 justify-start sm:justify-end">
                     {/* Notification Bell */}
                     <div className="relative" ref={notificationsRef}>
                         <button
                             onClick={() => setShowNotifications(!showNotifications)}
-                            aria-label={`Notifications${notifications.length > 0 ? ` (${notifications.length} new)` : ''}`}
+                            aria-label={`Notifications${unreadCount > 0 ? ` (${unreadCount} new)` : ''}`}
                             aria-expanded={showNotifications}
                             aria-haspopup="listbox"
                             className={`h-[68px] w-[68px] sm:h-20 sm:w-20 rounded-2xl flex flex-col items-center justify-center gap-1.5 transition-all outline-none bg-white/10 border border-white/15 hover:bg-white/20 ${showNotifications ? 'ring-2 ring-white/30' : ''}`}
                         >
                             <Bell size={20} className="text-white/80" />
                             <span className="text-[9px] text-white/50 font-bold uppercase tracking-widest">Alerts</span>
-                            {notifications.length > 0 && (
+                            {unreadCount > 0 && (
                                 <span className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white shadow-md ring-2 ring-indigo-950">
-                                    {notifications.length > 9 ? '9+' : notifications.length}
+                                    {unreadCount > 9 ? '9+' : unreadCount}
                                 </span>
                             )}
                         </button>
 
                         {/* Dropdown */}
                         {showNotifications && (
-                            <div className="absolute right-0 mt-3 w-80 bg-white rounded-2xl shadow-2xl border border-slate-100 z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 text-slate-800">
+                            <div className="absolute -left-12 sm:left-auto sm:right-0 mt-3 w-[300px] sm:w-80 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-slate-100 z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 text-slate-800">
                                 <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                                     <h3 className="font-bold text-slate-800">Notifications</h3>
-                                    {notifications.length > 0 && (
+                                    {unreadCount > 0 && (
                                         <span className="text-xs bg-indigo-100 text-indigo-700 font-bold px-2 py-1 rounded-full">
-                                            {notifications.length} New
+                                            {unreadCount} New
                                         </span>
                                     )}
                                 </div>
@@ -394,8 +265,8 @@ const Dashboard = ({
                                                 if (item.type === 'batch') {
                                                     const batch = item.data;
                                                     return (
-                                                        <button key={item.id} type="button" onClick={handleGoToClassroom}
-                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50 w-full text-left">
+                                                        <button key={item.id} type="button" onClick={() => handleNotificationClick(item.id)}
+                                                            className={`p-3 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b w-full text-left ${item.isViewed ? 'hover:bg-slate-50 border-slate-50 opacity-60' : 'bg-slate-50/50 hover:bg-slate-50 border-slate-100'}`}>
                                                             <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-emerald-600 group-hover:text-white transition-colors"><Building2 size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Batch {batch.name}</div>
@@ -406,8 +277,8 @@ const Dashboard = ({
                                                 } else if (item.type === 'test') {
                                                     const test = item.data;
                                                     return (
-                                                        <button key={item.id} type="button" onClick={handleGoToClassroom}
-                                                            className="p-3 hover:bg-indigo-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50 w-full text-left">
+                                                        <button key={item.id} type="button" onClick={() => handleNotificationClick(item.id)}
+                                                            className={`p-3 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b w-full text-left ${item.isViewed ? 'hover:bg-slate-50 border-slate-50 opacity-60' : 'bg-indigo-50/50 hover:bg-indigo-50 border-indigo-50'}`}>
                                                             <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-indigo-600 group-hover:text-white transition-colors"><FileTextIcon size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">{test.title}</div>
@@ -419,8 +290,8 @@ const Dashboard = ({
                                                 } else if (item.type === 'institution') {
                                                     const inst = item.data;
                                                     return (
-                                                        <button key={item.id} type="button" onClick={handleGoToClassroom}
-                                                            className="p-3 hover:bg-slate-50 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b border-slate-50 w-full text-left">
+                                                        <button key={item.id} type="button" onClick={() => handleNotificationClick(item.id)}
+                                                            className={`p-3 rounded-xl cursor-pointer transition-colors group flex gap-3 items-start border-b w-full text-left ${item.isViewed ? 'hover:bg-slate-50 border-slate-50 opacity-60' : 'bg-blue-50/50 hover:bg-blue-50 border-blue-50'}`}>
                                                             <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-blue-600 group-hover:text-white transition-colors"><UserCheck size={14} /></div>
                                                             <div>
                                                                 <div className="text-sm font-bold text-slate-800 line-clamp-1">Joined Institution: {inst.name}</div>
@@ -436,8 +307,8 @@ const Dashboard = ({
                                 </div>
                                 {notifications.length > 0 && (
                                     <button type="button" className="p-3 border-t border-slate-100 bg-slate-50 text-center hover:bg-slate-100 transition-colors cursor-pointer w-full"
-                                        onClick={handleGoToClassroom}>
-                                        <span className="text-xs font-bold text-indigo-600">View All in Classroom</span>
+                                        onClick={() => { setShowNotifications(false); setView('notifications'); }}>
+                                        <span className="text-xs font-bold text-indigo-600">Show More</span>
                                     </button>
                                 )}
                             </div>
@@ -512,14 +383,13 @@ const Dashboard = ({
                                     disabled={isGeneratingTest}
                                 />
 
-                                <TopicInput
+                                <ChapterSelector
+                                    selectedSubjects={selectedSubjects}
                                     value={aiTopic}
                                     onChange={(val) => {
                                         setShowSuggestions(true);
                                         setAiTopic(val);
                                     }}
-                                    onEnter={handleGenerateTest}
-                                    setShowSuggestions={setShowSuggestions}
                                     disabled={isGeneratingTest}
                                 />
                             </div>

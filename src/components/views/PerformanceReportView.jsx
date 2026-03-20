@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Target, TrendingUp, AlertTriangle, BookOpen, Layers, BarChart3, CheckCircle, PieChart, Activity, HelpCircle } from 'lucide-react';
+import CustomDropdown from '../common/CustomDropdown';
 
 // Reusable Circular Progress Component
 const CircularProgress = ({ percentage, colorClass, size = 'w-24 h-24', radius = 36, cx = 48, cy = 48, strokeWidth = 8, textClass = 'text-xl' }) => {
@@ -38,7 +39,13 @@ const PerformanceReportView = ({ userStats }) => {
     ];
 
     // 2. Subject-wise Proficiency Data
-    const rawSubjects = perfData?.subjects ? Object.entries(perfData.subjects).map(([k, v]) => ({ subject: k, ...v })) : [];
+    // Filter out the catch-all "General" group that accumulates full-length test data
+    const rawSubjects = perfData?.subjects
+        ? Object.entries(perfData.subjects)
+            .filter(([k]) => k.toLowerCase() !== 'general')
+            .map(([k, v]) => ({ subject: k, ...v }))
+        : [];
+
     const subjectData = rawSubjects.length > 0 ? rawSubjects.map(s => {
         const accuracy = s.attempted > 0 ? Math.round((s.correct * 100) / s.attempted) : 0;
         let status = 'Critical';
@@ -53,6 +60,8 @@ const PerformanceReportView = ({ userStats }) => {
         
         if (s.subtopics) {
             Object.entries(s.subtopics).forEach(([subName, subStats]) => {
+                // skip any nested "General" sub-entries
+                if (subName.toLowerCase() === 'general') return;
                 const subAcc = subStats.attempted > 0 ? Math.round((subStats.correct * 100) / subStats.attempted) : 0;
                 if (subAcc >= 70) strongSub.push(subName);
                 else if (subAcc >= 40) manageSub.push(subName);
@@ -80,6 +89,18 @@ const PerformanceReportView = ({ userStats }) => {
         { type: 'Match the pairs', ...(qtRaw['Match the pairs'] || { total: 0, attempted: 0, correct: 0 }) },
         { type: 'Assertion-Reason', ...(qtRaw['Assertion-Reason'] || { total: 0, attempted: 0, correct: 0 }) },
     ].map(q => ({ ...q, accuracy: q.attempted > 0 ? Math.round((q.correct * 100) / q.attempted) : 0 }));
+
+    const [subtopicFilters, setSubtopicFilters] = useState({});
+    const getSubtopicFilter = (subjectName) => subtopicFilters[subjectName] || 'All';
+    const setSubtopicFilter = (subjectName, val) =>
+        setSubtopicFilters(prev => ({ ...prev, [subjectName]: val }));
+
+    const TOPIC_FILTER_OPTIONS = [
+        { label: 'All Topics',  value: 'All' },
+        { label: 'Strong',      value: 'Strong' },
+        { label: 'Manageable',  value: 'Manageable' },
+        { label: 'Critical',    value: 'Critical' },
+    ];
 
     return (
         <div className="pt-4 pb-20 space-y-8 animate-in fade-in duration-500 max-w-7xl mx-auto px-4 sm:px-6">
@@ -146,116 +167,82 @@ const PerformanceReportView = ({ userStats }) => {
                     <BookOpen className="text-[#2278B0]" size={22} />
                     Subject-wise Proficiency
                 </h2>
-                
-                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden text-sm">
-                    <div className="overflow-x-auto">
-                        <table className="w-full text-left border-collapse">
-                            <thead>
-                                <tr className="bg-slate-50 border-b border-slate-200 text-slate-500">
-                                    <th className="px-6 py-4 font-bold uppercase tracking-wider text-xs">Subject</th>
-                                    <th className="px-6 py-4 font-bold uppercase tracking-wider text-xs text-center">Total</th>
-                                    <th className="px-6 py-4 font-bold uppercase tracking-wider text-xs text-center">Attempted</th>
-                                    <th className="px-6 py-4 font-bold uppercase tracking-wider text-xs text-center">Correct</th>
-                                    <th className="px-6 py-4 font-bold uppercase tracking-wider text-xs text-right">Accuracy</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-slate-100">
-                                {subjectData.length > 0 ? subjectData.map((s) => (
-                                    <tr key={s.subject} className="hover:bg-slate-50/50 transition-colors">
-                                        <td className="px-6 py-4 font-bold text-slate-800">
-                                            {s.subject}
-                                        </td>
-                                        <td className="px-6 py-4 text-center text-slate-600 font-medium">{s.total}</td>
-                                        <td className="px-6 py-4 text-center text-slate-600 font-medium">{s.attempted}</td>
-                                        <td className="px-6 py-4 text-center font-bold text-slate-700">{s.correct}</td>
-                                        <td className="px-6 py-4 text-right">
-                                            <span className={`inline-flex items-center justify-center px-2.5 py-1 rounded-full font-bold text-xs border ${s.badgeColor}`}>
+
+                {subjectData.length > 0 ? (
+                    <div className="space-y-4">
+                        {subjectData.map((s) => {
+                            const activeFilter = getSubtopicFilter(s.subject);
+                            const allSubs = [
+                                ...s.strongSub.map(n => ({ name: n, cat: 'Strong' })),
+                                ...s.manageSub.map(n => ({ name: n, cat: 'Manageable' })),
+                                ...s.critSub.map(n => ({ name: n, cat: 'Critical' })),
+                            ];
+                            const visibleSubs = activeFilter === 'All'
+                                ? allSubs
+                                : allSubs.filter(sub => sub.cat === activeFilter);
+
+                            const catStyle = {
+                                Strong:     { chip: 'bg-green-100 text-green-700 border-green-200',  dot: 'bg-green-500' },
+                                Manageable: { chip: 'bg-yellow-100 text-yellow-700 border-yellow-200', dot: 'bg-yellow-500' },
+                                Critical:   { chip: 'bg-red-100 text-red-700 border-red-200',   dot: 'bg-red-500' },
+                            };
+
+                            return (
+                                <div key={s.subject} className="relative bg-white rounded-2xl border border-slate-200 shadow-sm">
+                                    {/* Subject header row */}
+                                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-5 py-4 border-b border-slate-100 bg-slate-50/60">
+                                        <div className="flex items-center gap-4 flex-wrap">
+                                            <span className="font-black text-slate-800 text-sm">{s.subject}</span>
+                                            <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+                                                <span>Total: <strong className="text-slate-700">{s.total}</strong></span>
+                                                <span className="text-slate-300">|</span>
+                                                <span>Attempted: <strong className="text-slate-700">{s.attempted}</strong></span>
+                                                <span className="text-slate-300">|</span>
+                                                <span>Correct: <strong className="text-slate-700">{s.correct}</strong></span>
+                                            </div>
+                                            <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full font-bold text-[10px] border ${s.badgeColor}`}>
                                                 {s.accuracy}%
                                             </span>
-                                        </td>
-                                    </tr>
-                                )) : (
-                                    <tr>
-                                        <td colSpan="5" className="px-6 py-8 text-center text-slate-400 font-medium">
-                                            No subject data available yet. Take a test to see your proficiency!
-                                        </td>
-                                    </tr>
-                                )}
-                            </tbody>
-                        </table>
+                                        </div>
+                                        {/* Per-subject filter */}
+                                        <CustomDropdown
+                                            label="All Topics"
+                                            options={TOPIC_FILTER_OPTIONS}
+                                            value={activeFilter}
+                                            onChange={(val) => setSubtopicFilter(s.subject, val)}
+                                            isFilter
+                                        />
+                                    </div>
+
+                                    {/* Subtopics */}
+                                    <div className="px-5 py-4">
+                                        {allSubs.length === 0 ? (
+                                            <p className="text-xs text-slate-400 italic">No subtopic data available for this subject yet.</p>
+                                        ) : visibleSubs.length === 0 ? (
+                                            <p className="text-xs text-slate-400 italic">No subtopics under "{activeFilter}" for this subject.</p>
+                                        ) : (
+                                            <div className="flex flex-wrap gap-2">
+                                                {visibleSubs.map((sub, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold border ${catStyle[sub.cat].chip}`}
+                                                    >
+                                                        <span className={`w-1.5 h-1.5 rounded-full ${catStyle[sub.cat].dot}`} />
+                                                        {sub.name}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
-                    
-                    {/* Subtopics Table Layout (New Format) */}
-                    <div className="p-6 bg-slate-50 border-t border-slate-200">
-                        <h3 className="font-bold text-slate-800 mb-4 flex items-center gap-2">
-                            <Layers className="text-[#2278B0]" size={18} />
-                            Sub-Topic Analysis
-                        </h3>
-                        {subjectData.length > 0 ? (
-                            <div className="overflow-hidden border border-slate-200 rounded-xl bg-white shadow-sm">
-                                <table className="w-full text-left border-collapse text-sm">
-                                    <thead>
-                                        <tr className="bg-slate-50 border-b border-slate-200">
-                                            <th className="p-4 font-bold text-slate-700 border-r border-slate-200 w-1/4">Subject</th>
-                                            <th className="p-4 font-bold text-green-700 border-r border-slate-200 bg-green-50/50 w-1/4">
-                                                Strong Areas (70%+)
-                                            </th>
-                                            <th className="p-4 font-bold text-yellow-700 border-r border-slate-200 bg-yellow-50/50 w-1/4">
-                                                Manageable (40-69%)
-                                            </th>
-                                            <th className="p-4 font-bold text-red-700 bg-red-50/50 w-1/4">
-                                                Critical Gaps (&lt;40%)
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="divide-y divide-slate-200">
-                                        {subjectData.map((s) => (
-                                            <tr key={s.subject} className="hover:bg-slate-50/50 transition-colors">
-                                                <td className="p-4 font-bold text-slate-800 border-r border-slate-200 align-top">
-                                                    {s.subject}
-                                                </td>
-                                                {/* Strong */}
-                                                <td className="p-4 border-r border-slate-200 align-top">
-                                                    <div className="flex flex-col gap-1.5 hover:opacity-100 transition-opacity">
-                                                        {s.strongSub.length > 0 ? s.strongSub.map((sub, i) => (
-                                                            <span key={i} className="inline-block px-1.5 py-0.5 bg-green-50 text-green-700 text-xs font-semibold rounded border border-green-200">
-                                                                • {sub}
-                                                            </span>
-                                                        )) : <span className="text-xs text-slate-400 italic">None</span>}
-                                                    </div>
-                                                </td>
-                                                {/* Manageable */}
-                                                <td className="p-4 border-r border-slate-200 align-top">
-                                                    <div className="flex flex-col gap-1.5">
-                                                        {s.manageSub.length > 0 ? s.manageSub.map((sub, i) => (
-                                                            <span key={i} className="inline-block px-1.5 py-0.5 bg-yellow-50 text-yellow-700 text-xs font-semibold rounded border border-yellow-200">
-                                                                • {sub}
-                                                            </span>
-                                                        )) : <span className="text-xs text-slate-400 italic">None</span>}
-                                                    </div>
-                                                </td>
-                                                {/* Critical */}
-                                                <td className="p-4 align-top">
-                                                    <div className="flex flex-col gap-1.5">
-                                                        {s.critSub.length > 0 ? s.critSub.map((sub, i) => (
-                                                            <span key={i} className="inline-block px-1.5 py-0.5 bg-red-50 text-red-700 text-xs font-semibold rounded border border-red-200">
-                                                                • {sub}
-                                                            </span>
-                                                        )) : <span className="text-xs text-slate-400 italic">None</span>}
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
-                        ) : (
-                            <div className="p-8 text-center text-slate-400 font-medium border border-dashed border-slate-200 rounded-xl">
-                                Take tests to generate your Sub-Topic Analysis table.
-                            </div>
-                        )}
+                ) : (
+                    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-10 text-center text-slate-400 font-medium">
+                        No subject data available yet. Take a test to see your proficiency!
                     </div>
-                </div>
+                )}
             </section>
 
             {/* SUB-SECTION ROW: Resource & Question Type */}

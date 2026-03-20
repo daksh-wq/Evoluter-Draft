@@ -23,6 +23,7 @@ export const ROUTES = {
     DASHBOARD: '/dashboard',
     ONBOARDING: '/onboarding',
     PERFORMANCE_REPORT: '/performance-report',
+    NOTIFICATIONS: '/notifications',
 
     // Test Routes
     TEST: '/test',

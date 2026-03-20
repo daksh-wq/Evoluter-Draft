@@ -33,8 +33,8 @@ const KnowledgeGraph = ({ mastery = {} }) => {
 
         return sorted.map(([topic, score], index) => {
             const angle = (index / count) * 2 * Math.PI - Math.PI / 2;
-            const baseRadius = count <= 4 ? 28 : count <= 8 ? 30 : count <= 12 ? 32 : 34;
-            const radius = baseRadius + (index % 2 === 0 ? 0 : 6);
+            const baseRadius = count <= 4 ? 22 : count <= 8 ? 25 : count <= 12 ? 28 : 30;
+            const radius = baseRadius + (index % 2 === 0 ? 0 : 7);
             // Use percentage-based positions relative to center (50%, 50%)
             const cx = 50 + Math.cos(angle) * radius;
             const cy = 50 + Math.sin(angle) * radius;
@@ -163,8 +163,8 @@ const KnowledgeGraph = ({ mastery = {} }) => {
                             </div>
 
                             {/* Label */}
-                            <div className="absolute top-11 left-1/2 -translate-x-1/2 flex flex-col items-center pointer-events-none">
-                                <span className="text-[8px] font-medium text-slate-400 bg-[#111827]/90 px-1.5 py-0.5 rounded whitespace-nowrap max-w-[90px] truncate leading-tight">
+                            <div className="absolute top-11 left-1/2 -translate-x-1/2 flex flex-col items-center pointer-events-none z-30">
+                                <span className="text-[8px] sm:text-[9px] font-medium text-slate-400 bg-[#111827]/90 px-1.5 py-0.5 rounded whitespace-nowrap max-w-[70px] sm:max-w-[100px] truncate leading-tight border border-[#2278b0]/20 shadow-sm backdrop-blur-sm">
                                     {node.label}
                                 </span>
                                 <span className="text-[9px] font-bold mt-0.5" style={{ color: node.color }}>
