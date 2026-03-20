@@ -22,6 +22,7 @@ export function useTest() {
     const [markedForReview, setMarkedForReview] = useState(new Set());
     const [timeLeft, setTimeLeft] = useState(0);
     const [totalDuration, setTotalDuration] = useState(0);
+    const startTimeRef = useRef(null); // wall-clock test start time
 
     // Status flags
     const [isGeneratingTest, setIsGeneratingTest] = useState(false);
@@ -56,6 +57,7 @@ export function useTest() {
         setTotalDuration(durationSeconds);
         setIsTestCompleted(false);
         setTestResults(null);
+        startTimeRef.current = Date.now(); // record wall-clock start
     }, []);
 
     /**
@@ -259,8 +261,11 @@ export function useTest() {
         const validReason = typeof reasonInput === 'string' ? reasonInput : null;
         if (!activeTest) return;
 
-        // 1. Calculate Results (Pure Logic)
-        const results = calculateResults(activeTest, answers, timeLeft, totalDuration);
+        // 1. Calculate Results using wall-clock elapsed time (reliable vs timer-based)
+        const elapsedSeconds = startTimeRef.current
+            ? Math.round((Date.now() - startTimeRef.current) / 1000)
+            : (totalDuration - timeLeft); // fallback
+        const results = calculateResults(activeTest, answers, totalDuration - elapsedSeconds, totalDuration);
         if (!results) return;
 
         setTestResults(results);

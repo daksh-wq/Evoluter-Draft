@@ -10,7 +10,7 @@ import {
 } from 'firebase/firestore';
 
 // ─── Rate Limiting Helper ───
-const DAILY_LIMIT = 20;
+const DAILY_LIMIT = 100;
 
 async function checkAndIncrementRateLimit() {
     if (!auth.currentUser) return;
@@ -329,7 +329,9 @@ JSON FORMAT:
         }
     };
 
-    const batches = Math.ceil(count / AI_CONFIG.BATCH_SIZE);
+    // ─── Generate with 20% overshoot to absorb dedup losses ───
+    const targetCount = Math.ceil(count * 1.2); // Generate 20% extra upfront
+    const batches = Math.ceil(targetCount / AI_CONFIG.BATCH_SIZE);
     const usedSubtopics = [];
     let allQuestions = [];
     let completedBatches = 0;
@@ -338,7 +340,7 @@ JSON FORMAT:
     const batchPromises = [];
     for (let i = 0; i < batches; i++) {
         const currentBatchSize = (i === batches - 1)
-            ? (count - (i * AI_CONFIG.BATCH_SIZE))
+            ? (targetCount - (i * AI_CONFIG.BATCH_SIZE))
             : AI_CONFIG.BATCH_SIZE;
         if (currentBatchSize <= 0) continue;
 
@@ -346,7 +348,7 @@ JSON FORMAT:
             try {
                 const batchQuestions = await generateBatch(currentBatchSize, i, usedSubtopics);
                 completedBatches++;
-                onProgress(Math.round((completedBatches / batches) * 85)); // Up to 85%; fill-up is last 15%
+                onProgress(Math.round((completedBatches / batches) * 85));
                 return batchQuestions || [];
             } catch (error) {
                 logger.error(`Batch ${i + 1} failed:`, error);
@@ -371,28 +373,32 @@ JSON FORMAT:
         return true;
     }).filter(q => q && q.text && q.options && q.options.length >= 2);
 
-    // ─── 4. Fill-up: If we're short, request the deficit in extra batches ───
+    // ─── 4. Fill-up: if overshoot wasn't enough, request more unique questions ───
     let fillRetries = 0;
-    while (allQuestions.length < count && fillRetries < 2) {
+    const MAX_FILL_RETRIES = 5;
+
+    while (allQuestions.length < count && fillRetries < MAX_FILL_RETRIES) {
         fillRetries++;
         const deficit = count - allQuestions.length;
-        logger.warn(`Fill-up needed: got ${allQuestions.length}/${count}. Requesting ${deficit} more.`);
+        // Ask for deficit + 20% buffer each fill round
+        const fillSize = Math.min(Math.ceil(deficit * 1.2), 15);
+        logger.warn(`Fill-up attempt ${fillRetries}/${MAX_FILL_RETRIES}: got ${allQuestions.length}/${count}. Requesting ${fillSize} unique.`);
 
-        const existingSummary = allQuestions.slice(0, 15).map(q =>
+        const existingSummary = allQuestions.slice(0, 20).map(q =>
             (q.text || '').substring(0, 60)
         ).join(' | ');
 
-        const fillPrompt = `You are a Question Setter for ${targetExam}. Generate EXACTLY ${deficit} MCQs on '${topic}'.
+        const fillPrompt = `You are a Question Setter for ${targetExam}. Generate EXACTLY ${fillSize} NEW MCQs on '${topic}'.
 
 These questions have ALREADY been generated (DO NOT REPEAT them):
 ${existingSummary}
 
-${buildDifficultyDistributionInstruction(deficit, difficulty)}
-${buildTypeDistributionInstruction(deficit)}
+${buildDifficultyDistributionInstruction(fillSize, difficulty)}
+${buildTypeDistributionInstruction(fillSize)}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
 ${TAGGING_INSTRUCTION}
 
-RULES: Strictly unique questions. Return ONLY a valid JSON Array (same format as before, including all tagging fields).`;
+CRITICAL: All questions must be completely unique and not covered above. Return ONLY a valid JSON Array.`;
 
         try {
             const fillResult = await callGemini(fillPrompt, true);
@@ -405,6 +411,7 @@ RULES: Strictly unique questions. Return ONLY a valid JSON Array (same format as
                 }
                 if (Array.isArray(fillQuestions)) {
                     fillQuestions.forEach((q, i) => {
+                        if (allQuestions.length >= count) return;
                         const key = (q.text || '').trim().toLowerCase();
                         if (!key || seenTexts.has(key)) return;
                         seenTexts.add(key);
@@ -432,15 +439,14 @@ RULES: Strictly unique questions. Return ONLY a valid JSON Array (same format as
                 }
             }
         } catch (fillError) {
-            logger.warn('Fill-up batch failed:', fillError);
-            break;
+            logger.warn(`Fill-up attempt ${fillRetries} failed:`, fillError);
         }
     }
 
     onProgress(100);
 
     if (allQuestions.length === 0) return null;
-    return allQuestions.slice(0, count); // Never exceed requested count
+    return allQuestions.slice(0, count); // Trim any overshoot to exact requested count
 }
 
 

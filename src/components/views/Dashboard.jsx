@@ -48,6 +48,7 @@ const Dashboard = ({
     startMission,
 }) => {
     const [aiTopic, setAiTopic] = useState('');
+    const [selectedSubtopic, setSelectedSubtopic] = useState(''); // separate from chapter
     const [questionCount, setQuestionCount] = useState(DEFAULT_QUESTION_COUNT);
     const [difficulty, setDifficulty] = useState(DEFAULT_DIFFICULTY);
     const [pyqPercentage, setPyqPercentage] = useState(0);
@@ -98,17 +99,21 @@ const Dashboard = ({
 
     const handleGenerateTest = useCallback(() => {
         if (aiTopic.trim() || uploadedResource) {
-            // Note: generateAITest in Context needs to accept resource context if provided
-            // For now, if there's no aiTopic but there is a resource, we'll use the resource name as a 'topic'
-            const finalTopic = aiTopic.trim() || `Test from ${resourceName}`;
+            // Build topic: "Chapter > Subtopic" if a subtopic is selected, else just chapter
+            const baseChapter = aiTopic.trim();
+            const finalTopic = uploadedResource
+                ? `Test from ${resourceName}`
+                : selectedSubtopic
+                    ? `${baseChapter} > ${selectedSubtopic}`
+                    : baseChapter;
             generateAITest(finalTopic, questionCount, difficulty, uploadedResource, pyqPercentage);
-            setAiTopic('');
+            // Only reset resource / upload fields — keep chapter + subtopic selection intact
             setUploadedResource('');
             setPreviewQuestions([]);
             setResourceName('');
             setPyqPercentage(0);
         }
-    }, [aiTopic, uploadedResource, resourceName, questionCount, difficulty, pyqPercentage, generateAITest]);
+    }, [aiTopic, selectedSubtopic, uploadedResource, resourceName, questionCount, difficulty, pyqPercentage, generateAITest]);
 
     // Fix #6: stable handler shared by all three notification item types
     const handleGoToClassroom = useCallback(() => {
@@ -404,21 +409,30 @@ const Dashboard = ({
                                         </div>
                                     ) : topicSuggestions?.length > 0 ? (
                                         <div className="flex flex-wrap gap-2">
-                                            {/* Fix #10: use suggestion text as stable key instead of index */}
-                                        {topicSuggestions.map((suggestion) => (
+                                        {topicSuggestions.map((suggestion) => {
+                                                const isActiveSub = selectedSubtopic === suggestion;
+                                                return (
                                                 <button
                                                     key={suggestion}
                                                     type="button"
+                                                    disabled={isGeneratingTest}
                                                     onClick={() => {
-                                                        setAiTopic(suggestion);
-                                                        setShowSuggestions(false);
+                                                        if (isGeneratingTest) return;
+                                                        setSelectedSubtopic(prev => prev === suggestion ? '' : suggestion);
                                                     }}
-                                                    className="px-3 py-1.5 text-xs font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all flex items-center gap-1.5 shadow-sm"
+                                                    className={`px-3 py-1.5 text-xs font-bold rounded-full transition-all flex items-center gap-1.5 shadow-sm border ${
+                                                        isGeneratingTest
+                                                            ? 'opacity-50 cursor-not-allowed pointer-events-none ' + (isActiveSub ? 'bg-blue-500 border-blue-400 text-white' : 'text-white bg-white/10 border-white/20')
+                                                            : isActiveSub
+                                                                ? 'bg-blue-500 border-blue-400 text-white cursor-pointer'
+                                                                : 'text-white bg-white/10 border-white/20 hover:bg-white/20 hover:border-white/30 cursor-pointer'
+                                                    }`}
                                                 >
-                                                    <Sparkles size={10} className="text-blue-300 opacity-70" />
+                                                    <Sparkles size={10} className={isActiveSub ? 'text-white' : 'text-blue-300 opacity-70'} />
                                                     {suggestion}
                                                 </button>
-                                            ))}
+                                                );
+                                            })}
                                         </div>
                                     ) : null}
                                 </div>
@@ -552,6 +566,9 @@ const Dashboard = ({
                                 isGenerating={isGeneratingTest}
                                 progress={generationProgress}
                                 topic={aiTopic}
+                                subtopic={selectedSubtopic}
+                                difficulty={difficulty}
+                                questionCount={questionCount}
                             />
                         </div>
                     </div>
