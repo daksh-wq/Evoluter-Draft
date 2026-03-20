@@ -19,6 +19,7 @@ const {
     buildTypeDistributionInstruction,
     THREE_LAYER_SOLUTION_INSTRUCTION,
     TAGGING_INSTRUCTION,
+    QUESTION_TYPE_LABELS,
     parseAIJsonResponse,
     sanitizeForPrompt,
 } = require('./utils/promptHelpers');
@@ -286,7 +287,7 @@ Return ONLY a JSON Array (same format as before).`;
                         difficultyCode: diffCode,
                         pyqCode,
                         difficulty: q.difficultyLevel || difficulty,
-                        questionType: q.questionType || 'Statement-based',
+                        questionType: QUESTION_TYPE_LABELS[q.questionType] || q.questionType || 'Statement-based',
                         solution: q.solution || {
                             correctAnswerReason: q.explanation || '',
                             sourceOfQuestion: 'General Knowledge',

@@ -1,4 +1,4 @@
-import { doc, updateDoc, increment, getDoc, setDoc, serverTimestamp, runTransaction } from 'firebase/firestore';
+import { doc, updateDoc, increment, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from './firebase';
 import { DEFAULT_USER_STATS } from '../constants/data';
 import { getDefaultSyllabusProgress, calculateSyllabusProgress } from '../constants/syllabusMapping';
@@ -353,45 +353,48 @@ const calculateTopicMastery = (questions, userAnswers, currentMastery) => {
  */
 export const syncUserStreak = async (uid) => {
     const userRef = doc(db, 'users', uid);
-    
+
     try {
-        await runTransaction(db, async (transaction) => {
-            const userDoc = await transaction.get(userRef);
-            if (!userDoc.exists()) return;
+        // Plain read — no transaction lock, so concurrent Cloud Function / onSnapshot
+        // writes won't cause a failed-precondition error.
+        const userDoc = await getDoc(userRef);
+        if (!userDoc.exists()) return;
 
-            const userData = userDoc.data();
-            const stats = userData.stats || { ...DEFAULT_USER_STATS };
-            const lastActive = userData.lastActive?.toDate();
-            const now = new Date();
-            
-            // Normalize dates to midnight for comparison
-            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-            
-            let newStreak = stats.streakDays || 0;
-            
-            if (!lastActive) {
-                // First time activity
+        const userData = userDoc.data();
+        const stats = userData.stats || { ...DEFAULT_USER_STATS };
+        const lastActive = userData.lastActive?.toDate();
+        const now = new Date();
+
+        // Normalize dates to midnight for comparison
+        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+        let newStreak = stats.streakDays || 0;
+
+        if (!lastActive) {
+            // First time activity
+            newStreak = 1;
+        } else {
+            const lastActiveDate = new Date(lastActive.getFullYear(), lastActive.getMonth(), lastActive.getDate());
+            const diffTime = today - lastActiveDate;
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+            if (diffDays === 1) {
+                // Logged in exactly the next day
+                newStreak += 1;
+            } else if (diffDays > 1) {
+                // Missed one or more days, reset streak
                 newStreak = 1;
-            } else {
-                const lastActiveDate = new Date(lastActive.getFullYear(), lastActive.getMonth(), lastActive.getDate());
-                const diffTime = today - lastActiveDate;
-                const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-                if (diffDays === 1) {
-                    // Logged in exactly the next day
-                    newStreak += 1;
-                } else if (diffDays > 1) {
-                    // Missed one or more days, reset streak
-                    newStreak = 1;
-                } else if (diffDays === 0) {
-                    // Already logged in today, do nothing to streak
-                }
             }
+            // diffDays === 0: already logged in today — no change needed
+            else {
+                return; // streak already up-to-date for today, skip write
+            }
+        }
 
-            transaction.update(userRef, {
-                'stats.streakDays': newStreak,
-                'lastActive': serverTimestamp()
-            });
+        // Simple updateDoc — no precondition, safe to race with Cloud Function writes
+        await updateDoc(userRef, {
+            'stats.streakDays': newStreak,
+            'lastActive': serverTimestamp()
         });
     } catch (error) {
         logger.error("Error syncing user streak:", error);

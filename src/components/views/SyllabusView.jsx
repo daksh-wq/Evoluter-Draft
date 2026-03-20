@@ -99,7 +99,6 @@ const SyllabusView = () => {
                         ) : (
                             activeChapters.map((chapter) => {
                                 const matchedSubtopics = SUBTOPICS_LIST.filter(s => String(s.chapterId).trim().toLowerCase() === String(chapter.id).trim().toLowerCase());
-                                console.log("Chapter:", chapter.id, "| Matched Subtopics:", matchedSubtopics);
                                 const subtopicsCount = matchedSubtopics.length;
                                 return (
                                     <div

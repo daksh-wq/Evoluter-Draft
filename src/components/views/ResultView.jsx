@@ -465,19 +465,6 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                             const sourceRef       = sol.sourceOfQuestion   || sol.possible_source     || '';
 
                             const correctOptionLabel = q.options?.[q.correctAnswer];
-                            const userOptionLabel = (!isCorrect && !isSkipped && userAnswer !== undefined && userAnswer !== null)
-                                ? q.options?.[userAnswer] : null;
-
-                            // Split text into bullet points
-                            const parseToBullets = (text) => {
-                                if (!text) return [];
-                                return text
-                                    .split(/\n/)
-                                    .flatMap(line => line.split(/(?<=\.)\s+(?=[A-Z])/))
-                                    .map(s => s.replace(/^[-•*\d]+[.)]\s*/, '').trim())
-                                    .filter(Boolean);
-                            };
-
                             return (
                                 <div key={q.id} className={`rounded-2xl border ${borderStyle} overflow-hidden shadow-sm`}>
 
@@ -512,7 +499,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                         <div className="mb-4 space-y-1">
                                             {q.text
                                                 .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
-                                                .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                                .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
                                                 .split(/\n/g)
                                                 .map((part, i) => {
                                                     const t = part.trim();
@@ -554,83 +541,43 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                         </div>
                                     </div>
 
-                                    {/* Explanation Panel */}
-                                    {(correctReason || approachToSolve || sourceRef) && (
-                                        <div className="border-t border-slate-100 bg-slate-50/60 p-5 space-y-3">
+                                    {/* Compact Solution Panel — 3 rows only */}
+                                    <div className="border-t border-slate-100 bg-slate-50/80 px-5 py-4 space-y-2.5">
 
-                                            {/* 1. How to Approach */}
-                                            {approachToSolve && (
-                                                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4">
-                                                    <div className="flex items-center gap-2 mb-2.5">
-                                                        <Lightbulb size={14} className="text-blue-600 shrink-0" />
-                                                        <span className="text-[11px] font-bold text-blue-700 uppercase tracking-wider">How to Approach this Question</span>
-                                                    </div>
-                                                    <ul className="space-y-2">
-                                                        {parseToBullets(approachToSolve).map((bullet, i) => (
-                                                            <li key={i} className="flex items-start gap-2.5 text-sm text-blue-800">
-                                                                <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                                                <span>{bullet}</span>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
-                                            )}
-
-                                            {/* 2. Why Correct Answer is Correct */}
-                                            {correctReason && (
-                                                <div className="bg-green-50 border border-green-100 rounded-xl p-4">
-                                                    <div className="flex items-center gap-2 mb-2.5">
-                                                        <CheckCircle size={14} className="text-green-600 shrink-0" />
-                                                        <span className="text-[11px] font-bold text-green-700 uppercase tracking-wider">
-                                                            Explanation — Why &ldquo;{correctOptionLabel}&rdquo; is Correct
-                                                        </span>
-                                                    </div>
-                                                    <ul className="space-y-2">
-                                                        {parseToBullets(correctReason).map((bullet, i) => (
-                                                            <li key={i} className="flex items-start gap-2.5 text-sm text-green-800">
-                                                                <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />
-                                                                <span>{bullet}</span>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
-                                            )}
-
-                                            {/* 3. Why User's Answer Was Wrong */}
-                                            {userOptionLabel && (
-                                                <div className="bg-red-50 border border-red-100 rounded-xl p-4">
-                                                    <div className="flex items-center gap-2 mb-2.5">
-                                                        <XCircle size={14} className="text-red-500 shrink-0" />
-                                                        <span className="text-[11px] font-bold text-red-600 uppercase tracking-wider">
-                                                            Why Your Answer &ldquo;{userOptionLabel}&rdquo; is Incorrect
-                                                        </span>
-                                                    </div>
-                                                    <ul className="space-y-2">
-                                                        <li className="flex items-start gap-2.5 text-sm text-red-800">
-                                                            <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
-                                                            <span>The correct answer is <strong>&ldquo;{correctOptionLabel}&rdquo;</strong>.{' '}
-                                                                {parseToBullets(correctReason)[0] || ''}
-                                                            </span>
-                                                        </li>
-                                                        {parseToBullets(approachToSolve).slice(0, 2).map((bullet, i) => (
-                                                            <li key={i} className="flex items-start gap-2.5 text-sm text-red-700">
-                                                                <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-red-300 shrink-0" />
-                                                                <span>{bullet}</span>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
-                                            )}
-
-                                            {/* 4. Source */}
-                                            {sourceRef && (
-                                                <div className="flex items-start gap-2 text-xs text-slate-500 pt-1 pl-1">
-                                                    <BookOpen size={13} className="mt-0.5 shrink-0 text-slate-400" />
-                                                    <span><span className="font-semibold text-slate-600">Source: </span>{sourceRef}</span>
-                                                </div>
-                                            )}
+                                        {/* Row 1: Correct Answer */}
+                                        <div className="flex items-start gap-2.5">
+                                            <CheckCircle size={14} className="text-green-600 mt-0.5 shrink-0" />
+                                            <div className="text-sm leading-snug">
+                                                <span className="font-bold text-green-700 mr-1.5">Correct Answer:</span>
+                                                <span className="text-slate-700">{correctOptionLabel}</span>
+                                                {correctReason && (
+                                                    <span className="text-slate-500"> — {correctReason}</span>
+                                                )}
+                                            </div>
                                         </div>
-                                    )}
+
+                                        {/* Row 2: Source */}
+                                        {sourceRef && (
+                                            <div className="flex items-start gap-2.5">
+                                                <BookOpen size={14} className="text-indigo-500 mt-0.5 shrink-0" />
+                                                <div className="text-sm leading-snug">
+                                                    <span className="font-bold text-indigo-700 mr-1.5">Source:</span>
+                                                    <span className="text-slate-600">{sourceRef}</span>
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {/* Row 3: Key / Approach */}
+                                        {approachToSolve && (
+                                            <div className="flex items-start gap-2.5">
+                                                <Lightbulb size={14} className="text-amber-500 mt-0.5 shrink-0" />
+                                                <div className="text-sm leading-snug">
+                                                    <span className="font-bold text-amber-700 mr-1.5">Key:</span>
+                                                    <span className="text-slate-600">{approachToSolve.replace(/^Key:\s*/i, '')}</span>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
                             );
                         })}
