@@ -239,24 +239,30 @@ const TestView = ({
                                             </span>
 
                                             {/* Dynamic Tags Container */}
-                                            <div className="flex flex-wrap items-center gap-2 mt-1">
+                                            <div className="flex flex-wrap items-center gap-3 mt-2 mb-3">
                                                 {pyqTag && (
-                                                    <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded bg-amber-100 text-amber-700 border border-amber-200 tracking-wider shadow-sm flex items-center gap-1">
+                                                    <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded bg-amber-100 text-amber-700 border border-amber-200 tracking-wider shadow-sm flex items-center gap-1 shrink-0">
                                                         🏆 {pyqTag.label}
                                                     </span>
                                                 )}
                                                 {subjectTag?.label && (
-                                                    <span className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-blue-50 text-blue-600 border border-blue-100 tracking-wide">
+                                                    <span
+                                                        title={subjectTag.label}
+                                                        className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-blue-50 text-blue-600 border border-blue-100 tracking-wide max-w-[160px] sm:max-w-[220px] truncate overflow-hidden block"
+                                                    >
                                                         {subjectTag.label}
                                                     </span>
                                                 )}
                                                 {topicTag?.label && (
-                                                    <span className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-slate-100 text-slate-600 border border-slate-200 tracking-wide line-clamp-1 max-w-[40vw] sm:max-w-[200px]" title={topicTag.label}>
+                                                    <span
+                                                        title={topicTag.label}
+                                                        className="text-[10px] font-bold uppercase px-2 py-1 rounded bg-slate-100 text-slate-600 border border-slate-200 tracking-wide max-w-[160px] sm:max-w-[220px] truncate overflow-hidden block"
+                                                    >
                                                         {topicTag.label}
                                                     </span>
                                                 )}
                                                 {safeQuestion.difficulty && (
-                                                    <span className={`text-[10px] font-bold uppercase px-2 py-1 rounded border tracking-wide ${safeQuestion.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
+                                                    <span className={`text-[10px] font-bold uppercase px-2 py-1 rounded border tracking-wide shrink-0 ${safeQuestion.difficulty.toLowerCase() === 'hard' ? 'bg-red-50 text-red-600 border-red-100' :
                                                         safeQuestion.difficulty.toLowerCase() === 'medium' ? 'bg-orange-50 text-orange-600 border-orange-100' :
                                                             'bg-green-50 text-green-600 border-green-100'
                                                         }`}>
@@ -285,11 +291,13 @@ const TestView = ({
                         })()}
                     </div>
 
+                    <div className="mt-4">
                     <QuestionCard
                         question={safeQuestion}
                         selectedAnswer={answers[safeQuestion.id]}
                         onSelectAnswer={selectAnswer}
                     />
+                    </div>
 
                     {/* Previous/Next Navigator aligned below QuestionCard */}
                     <div className="max-w-6xl mx-auto mt-4 flex justify-between items-center px-1">

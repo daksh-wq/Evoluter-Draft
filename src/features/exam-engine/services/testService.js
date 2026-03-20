@@ -223,6 +223,8 @@ export const testService = {
             // 3. DEDUPLICATE then Output Validated Mixed Batch
             finalQuestions = deduplicateQuestions(finalQuestions);
             if (finalQuestions && finalQuestions.length > 0) {
+                // Trim to exactly the requested count after dedup
+                finalQuestions = finalQuestions.slice(0, count);
                 // Return shuffled array if we mixed PYQs and AI, otherwise normal
                 return pyqPercentage > 0 ? shuffleArray(finalQuestions) : finalQuestions;
             }

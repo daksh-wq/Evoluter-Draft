@@ -320,7 +320,7 @@ function App() {
     const stats = userData?.stats || {};
     const hasPremium = userData?.hasPremiumPlan || false;
     const testsGenerated = stats.diagnosticTestsGenerated || 0;
-    const limit = hasPremium ? 20 : 3;
+    const limit = hasPremium ? 100 : 3;
 
     if (testsGenerated >= limit) {
       if (!hasPremium) {
@@ -330,7 +330,7 @@ function App() {
         );
         navigate(ROUTES.PRICING);
       } else {
-        toast.error("You've reached your plan's limit of 20 diagnostic tests.");
+        toast.error("You've reached your plan's limit of 500 diagnostic tests.");
       }
       return;
     }

@@ -48,7 +48,7 @@ const Dashboard = ({
     startMission,
 }) => {
     const [aiTopic, setAiTopic] = useState('');
-    const [selectedSubtopic, setSelectedSubtopic] = useState(''); // separate from chapter
+    const [selectedSubtopics, setSelectedSubtopics] = useState(new Set()); // multi-select subtopics
     const [questionCount, setQuestionCount] = useState(DEFAULT_QUESTION_COUNT);
     const [difficulty, setDifficulty] = useState(DEFAULT_DIFFICULTY);
     const [pyqPercentage, setPyqPercentage] = useState(0);
@@ -98,13 +98,17 @@ const Dashboard = ({
     const { examDate, daysRemaining, isOfficial, loading: dateLoading } = useExamDate(userData?.targetExam, effectiveYear);
 
     const handleGenerateTest = useCallback(() => {
+        // Subject is compulsory
+        if (selectedSubjects.length === 0 && !uploadedResource) {
+            return; // button will be disabled, but guard here too
+        }
         if (aiTopic.trim() || uploadedResource) {
-            // Build topic: "Chapter > Subtopic" if a subtopic is selected, else just chapter
             const baseChapter = aiTopic.trim();
+            const subtopicsArr = Array.from(selectedSubtopics);
             const finalTopic = uploadedResource
                 ? `Test from ${resourceName}`
-                : selectedSubtopic
-                    ? `${baseChapter} > ${selectedSubtopic}`
+                : subtopicsArr.length > 0
+                    ? `${baseChapter} > ${subtopicsArr.join(', ')}`
                     : baseChapter;
             generateAITest(finalTopic, questionCount, difficulty, uploadedResource, pyqPercentage);
             // Only reset resource / upload fields — keep chapter + subtopic selection intact
@@ -113,7 +117,7 @@ const Dashboard = ({
             setResourceName('');
             setPyqPercentage(0);
         }
-    }, [aiTopic, selectedSubtopic, uploadedResource, resourceName, questionCount, difficulty, pyqPercentage, generateAITest]);
+    }, [aiTopic, selectedSubtopics, selectedSubjects, uploadedResource, resourceName, questionCount, difficulty, pyqPercentage, generateAITest]);
 
     // Fix #6: stable handler shared by all three notification item types
     const handleGoToClassroom = useCallback(() => {
@@ -176,8 +180,8 @@ const Dashboard = ({
     };
 
     // Auto-show suggestions when subjects are selected (no typing or focus needed)
-    // Fix #7: aiTopic is read inside so it must be in the dependency array
     React.useEffect(() => {
+        if (isGeneratingTest) return; // don't touch visibility during generation
         if (selectedSubjects.length > 0) {
             setShowSuggestions(true);
         } else if (!aiTopic.trim()) {
@@ -185,7 +189,12 @@ const Dashboard = ({
             setTopicSuggestions([]);
             setShowSuggestions(false);
         }
-    }, [selectedSubjects, aiTopic]);
+    }, [selectedSubjects, aiTopic, isGeneratingTest]);
+
+    // Clear subtopics when chapter changes (stale subtopics don't apply to new chapter)
+    React.useEffect(() => {
+        setSelectedSubtopics(new Set());
+    }, [aiTopic]);
 
     // Manual Subtopic Mapping Effect
     React.useEffect(() => {
@@ -410,7 +419,7 @@ const Dashboard = ({
                                     ) : topicSuggestions?.length > 0 ? (
                                         <div className="flex flex-wrap gap-2">
                                         {topicSuggestions.map((suggestion) => {
-                                                const isActiveSub = selectedSubtopic === suggestion;
+                                                const isActiveSub = selectedSubtopics.has(suggestion);
                                                 return (
                                                 <button
                                                     key={suggestion}
@@ -418,7 +427,11 @@ const Dashboard = ({
                                                     disabled={isGeneratingTest}
                                                     onClick={() => {
                                                         if (isGeneratingTest) return;
-                                                        setSelectedSubtopic(prev => prev === suggestion ? '' : suggestion);
+                                                        setSelectedSubtopics(prev => {
+                                                            const next = new Set(prev);
+                                                            next.has(suggestion) ? next.delete(suggestion) : next.add(suggestion);
+                                                            return next;
+                                                        });
                                                     }}
                                                     className={`px-3 py-1.5 text-xs font-bold rounded-full transition-all flex items-center gap-1.5 shadow-sm border ${
                                                         isGeneratingTest
@@ -508,8 +521,10 @@ const Dashboard = ({
                             <div className="hidden lg:block mt-2">
                                 <button
                                     onClick={handleGenerateTest}
-                                    disabled={isGeneratingTest || (!aiTopic.trim() && !uploadedResource)}
-                                    className="w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none"
+                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (!aiTopic.trim() && !uploadedResource)}
+                                    className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${
+                                        selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
+                                    }`}
                                 >
                                     {isGeneratingTest ? (
                                         <>
@@ -542,8 +557,10 @@ const Dashboard = ({
                             <div className="lg:hidden mt-2">
                                 <button
                                     onClick={handleGenerateTest}
-                                    disabled={isGeneratingTest || (!aiTopic.trim() && !uploadedResource)}
-                                    className="w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none"
+                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (!aiTopic.trim() && !uploadedResource)}
+                                    className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${
+                                        selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
+                                    }`}
                                 >
                                     {isGeneratingTest ? (
                                         <>
@@ -566,7 +583,7 @@ const Dashboard = ({
                                 isGenerating={isGeneratingTest}
                                 progress={generationProgress}
                                 topic={aiTopic}
-                                subtopic={selectedSubtopic}
+                                subtopic={Array.from(selectedSubtopics).join(', ')}
                                 difficulty={difficulty}
                                 questionCount={questionCount}
                             />

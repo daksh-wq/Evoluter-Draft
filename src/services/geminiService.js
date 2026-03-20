@@ -329,8 +329,8 @@ JSON FORMAT:
         }
     };
 
-    // ─── Generate with 20% overshoot to absorb dedup losses ───
-    const targetCount = Math.ceil(count * 1.2); // Generate 20% extra upfront
+    // ─── Generate with 50% overshoot to absorb multi-layer dedup losses ───
+    const targetCount = Math.ceil(count * 1.5); // Generate 50% extra so downstream dedups don't starve us
     const batches = Math.ceil(targetCount / AI_CONFIG.BATCH_SIZE);
     const usedSubtopics = [];
     let allQuestions = [];
@@ -446,7 +446,9 @@ CRITICAL: All questions must be completely unique and not covered above. Return 
     onProgress(100);
 
     if (allQuestions.length === 0) return null;
-    return allQuestions.slice(0, count); // Trim any overshoot to exact requested count
+    // Return the full surplus — downstream layers (testService, useTest) will slice to exact count
+    // after their own dedup passes, guaranteeing the final active test has exactly `count` questions.
+    return allQuestions;
 }
 
 

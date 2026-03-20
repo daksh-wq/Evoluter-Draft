@@ -1,17 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { BookOpen, ChevronDown, CheckSquare, Square } from 'lucide-react';
+import { BookOpen, ChevronDown, Circle, CheckCircle } from 'lucide-react';
 import { SUBJECTS } from '../../constants/appConstants';
 
 /**
  * SubjectSelector Component
- * Dropdown to select multiple subjects for AI test generation.
- * 
- * @param {Object} props
- * @param {function} props.onSelect - Callback function when subjects are selected
+ * Single-select dropdown for subject selection.
  */
 export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState([]);
+    const [selected, setSelected] = useState(''); // single string, not array
     const dropdownRef = useRef(null);
 
     useEffect(() => {
@@ -24,36 +21,28 @@ export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false }
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-    const toggleSubject = (subject) => {
-        let newSelected;
-        if (selected.includes(subject)) {
-            newSelected = selected.filter(s => s !== subject);
-        } else {
-            newSelected = [...selected, subject];
-        }
+    const selectSubject = (subject) => {
+        const newSelected = selected === subject ? '' : subject; // toggle off if same
         setSelected(newSelected);
-        // Never write into the topic text field — subject selection is independent.
-        onSelect('');
-        // Notify parent of the full selection for subtopic suggestions
-        if (onSubjectsChange) onSubjectsChange(newSelected);
+        onSelect(''); // clear chapter when subject changes
+        if (onSubjectsChange) onSubjectsChange(newSelected ? [newSelected] : []);
+        setIsOpen(false); // close dropdown after selection
     };
 
-    const displayValue = selected.length === 0
-        ? "Mix Subjects..."
-        : selected.length === 1
-            ? selected[0]
-            : `${selected.length} Subjects Mixed`;
+    const displayValue = selected || 'Select Subject...';
 
     return (
         <div className="md:col-span-4 relative group" ref={dropdownRef}>
             <div
-                className={`w-full pl-10 pr-10 py-3 md:py-3.5 rounded-xl text-slate-900 font-medium focus:outline-none ring-1 ring-slate-200 bg-white flex items-center justify-between transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer focus:ring-4 focus:ring-blue-400/50'}`}
+                className={`w-full pl-10 pr-10 py-3 md:py-3.5 rounded-xl text-slate-900 font-medium focus:outline-none ring-1 ${selected ? 'ring-[#2278B0]' : 'ring-slate-200'} bg-white flex items-center justify-between transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer focus:ring-4 focus:ring-blue-400/50'}`}
                 onClick={() => !disabled && setIsOpen(!isOpen)}
             >
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <BookOpen size={18} className="text-slate-400 group-focus-within:text-blue-500 transition-colors" />
+                    <BookOpen size={18} className={`${selected ? 'text-[#2278B0]' : 'text-slate-400'} group-focus-within:text-blue-500 transition-colors`} />
                 </div>
-                <span className={`truncate ${selected.length === 0 ? 'text-slate-500' : 'text-slate-900'}`}>{displayValue}</span>
+                <span className={`truncate ${selected ? 'text-slate-900 font-semibold' : 'text-slate-500'}`}>
+                    {displayValue}
+                </span>
                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                     <ChevronDown size={16} className={`text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                 </div>
@@ -62,24 +51,24 @@ export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false }
             {isOpen && (
                 <div className="absolute z-50 w-full mt-2 bg-white rounded-xl shadow-xl border border-slate-100 py-2 max-h-60 overflow-y-auto">
                     {SUBJECTS.map((subject) => {
-                        const isSelected = selected.includes(subject);
+                        const isSelected = selected === subject;
                         return (
                             <div
                                 key={subject}
-                                className="flex items-start gap-3 px-4 py-2.5 hover:bg-slate-50 cursor-pointer transition-colors"
+                                className={`flex items-center gap-3 px-4 py-2.5 cursor-pointer transition-colors ${isSelected ? 'bg-blue-50' : 'hover:bg-slate-50'}`}
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    if (!disabled) toggleSubject(subject);
+                                    if (!disabled) selectSubject(subject);
                                 }}
                             >
-                                <div className="mt-0.5 flex-shrink-0">
+                                <div className="flex-shrink-0">
                                     {isSelected ? (
-                                        <CheckSquare size={17} className="text-[#2278B0]" />
+                                        <CheckCircle size={17} className="text-[#2278B0]" />
                                     ) : (
-                                        <Square size={17} className="text-slate-300" />
+                                        <Circle size={17} className="text-slate-300" />
                                     )}
                                 </div>
-                                <span className={`text-sm leading-snug ${isSelected ? 'font-bold text-slate-800' : 'font-medium text-slate-600'}`}>
+                                <span className={`text-sm leading-snug ${isSelected ? 'font-bold text-[#2278B0]' : 'font-medium text-slate-600'}`}>
                                     {subject}
                                 </span>
                             </div>

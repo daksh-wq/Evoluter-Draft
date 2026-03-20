@@ -117,8 +117,8 @@ export function useTest() {
             setGenerationProgress(100);
             await new Promise(r => setTimeout(r, 500)); // Show 100% briefly
 
-            // Enforce fixed duration based on question count
-            const durationSeconds = getDurationForCount(questions.length || count);
+            // Enforce fixed duration based on the originally requested count (not post-dedup length)
+            const durationSeconds = getDurationForCount(count);
 
             setupTestSession(questions, durationSeconds);
 
