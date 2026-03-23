@@ -2,8 +2,10 @@
  * Gemini AI Proxy — Cloud Functions
  *
  * All Gemini API calls are routed through here.
- * The API key is stored server-side only (functions.config().gemini.api_key).
- * No VITE_GEMINI_API_KEY is needed in the frontend bundle.
+ * Key management:
+ *   Local dev:   set GEMINI_API_KEY in functions/.env  (auto-loaded by emulator)
+ *   Production:  firebase functions:secrets:set GEMINI_API_KEY
+ *                (stored in Google Cloud Secret Manager, injected as process.env)
  *
  * Functions exported:
  *   geminiGenerateQuestions       — topic-based MCQ generation
@@ -15,6 +17,7 @@
  */
 
 const functions = require('firebase-functions');
+const { defineSecret } = require('firebase-functions/params');
 const { checkAndIncrementRateLimit } = require('./rateLimit');
 const { generateJSON } = require('./utils/geminiClient');
 const {
@@ -24,6 +27,10 @@ const {
     parseAIJsonResponse,
     sanitizeForPrompt,
 } = require('./utils/promptHelpers');
+
+// Declare the secret — Firebase injects it as process.env.GEMINI_API_KEY at runtime
+const geminiApiKey = defineSecret('GEMINI_API_KEY');
+
 
 // ─── Shared prompt helpers (mirrored from client geminiService.js) ────────────
 
@@ -73,7 +80,7 @@ function normalizeQuestion(q, idx, defaults = {}) {
 // ─── 1. Generate MCQ Questions (topic-based) ─────────────────────────────────
 
 exports.geminiGenerateQuestions = functions
-    .runWith({ timeoutSeconds: 540, memory: '1GB' })
+    .runWith({ timeoutSeconds: 540, memory: '1GB', secrets: ['GEMINI_API_KEY'] })
     .https.onCall(async (data, context) => {
         if (!context.auth) {
             throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -211,7 +218,7 @@ CRITICAL: Return ONLY a valid JSON Array.`;
 // ─── 2. Generate Questions from Document (PDF) ────────────────────────────────
 
 exports.geminiGenerateFromDocument = functions
-    .runWith({ timeoutSeconds: 540, memory: '1GB' })
+    .runWith({ timeoutSeconds: 540, memory: '1GB', secrets: ['GEMINI_API_KEY'] })
     .https.onCall(async (data, context) => {
         if (!context.auth) {
             throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -366,7 +373,7 @@ Return ONLY a JSON Array.`;
 // ─── 3. Evaluate Mains Answer ─────────────────────────────────────────────────
 
 exports.geminiEvaluateAnswer = functions
-    .runWith({ timeoutSeconds: 120, memory: '512MB' })
+    .runWith({ timeoutSeconds: 120, memory: '512MB', secrets: ['GEMINI_API_KEY'] })
     .https.onCall(async (data, context) => {
         if (!context.auth) {
             throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -419,7 +426,7 @@ JSON Schema:
 // ─── 4. Analyze Test Performance ─────────────────────────────────────────────
 
 exports.geminiAnalyzePerformance = functions
-    .runWith({ timeoutSeconds: 180, memory: '512MB' })
+    .runWith({ timeoutSeconds: 180, memory: '512MB', secrets: ['GEMINI_API_KEY'] })
     .https.onCall(async (data, context) => {
         if (!context.auth) {
             throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -505,7 +512,7 @@ Return ONLY this JSON (no markdown):
 // ─── 5. Suggest Topics (autocomplete) ────────────────────────────────────────
 
 exports.geminiSuggestTopics = functions
-    .runWith({ timeoutSeconds: 30, memory: '256MB' })
+    .runWith({ timeoutSeconds: 30, memory: '256MB', secrets: ['GEMINI_API_KEY'] })
     .https.onCall(async (data, context) => {
         if (!context.auth) {
             throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -540,7 +547,7 @@ Output strictly as a JSON array of strings:
 // ─── 6. Generate News Feed ────────────────────────────────────────────────────
 
 exports.geminiGenerateNews = functions
-    .runWith({ timeoutSeconds: 60, memory: '256MB' })
+    .runWith({ timeoutSeconds: 60, memory: '256MB', secrets: ['GEMINI_API_KEY'] })
     .https.onCall(async (data, context) => {
         if (!context.auth) {
             throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');

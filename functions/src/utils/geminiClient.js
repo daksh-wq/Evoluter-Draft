@@ -1,31 +1,31 @@
 /**
  * Centralized Gemini AI Client
- * 
- * Single source of truth for AI client initialization.
- * - Lazy-initializes on first call (improves cold start for non-AI functions)
- * - Throws early if API key is missing (HIGH-3 fix)
- * - Avoids 4x duplicate initialization across modules
+ *
+ * Uses process.env.GEMINI_API_KEY (modern Firebase Functions approach).
+ *
+ * Local dev:  set GEMINI_API_KEY in functions/.env  (auto-loaded by the emulator)
+ * Production: firebase functions:secrets:set GEMINI_API_KEY
+ *             then add `secrets: ['GEMINI_API_KEY']` to runWith() on each function.
  */
-const functions = require('firebase-functions');
 
 let _genAIInstance = null;
 
 /**
- * Get or create the GoogleGenerativeAI instance.
- * Lazy-loaded to avoid pulling in the SDK when non-AI functions are invoked.
- * @returns {import('@google/generative-ai').GoogleGenerativeAI}
+ * Get or create the GoogleGenerativeAI instance (lazy singleton).
+ * Re-creates if the instance was previously null (cold start safety).
  */
 function getGenAI() {
     if (_genAIInstance) return _genAIInstance;
 
-    const apiKey = functions.config().gemini?.api_key
-        || process.env.GEMINI_API_KEY
-        || '';
+    const apiKey = process.env.GEMINI_API_KEY || '';
 
     if (!apiKey) {
-        throw new functions.https.HttpsError(
+        const { HttpsError } = require('firebase-functions/v2/https');
+        throw new HttpsError(
             'failed-precondition',
-            'Gemini API key is not configured. Set it via firebase functions:config:set gemini.api_key="YOUR_KEY"'
+            'Gemini API key is not configured. ' +
+            'Local dev: add GEMINI_API_KEY=your_key to functions/.env\n' +
+            'Production: run  firebase functions:secrets:set GEMINI_API_KEY'
         );
     }
 
@@ -37,7 +37,6 @@ function getGenAI() {
 /**
  * Get a pre-configured Gemini model instance.
  * @param {string} model - Model name (default: 'gemini-2.0-flash')
- * @returns {import('@google/generative-ai').GenerativeModel}
  */
 function getModel(model = 'gemini-2.0-flash') {
     return getGenAI().getGenerativeModel({ model });
@@ -45,13 +44,10 @@ function getModel(model = 'gemini-2.0-flash') {
 
 /**
  * Check if an error is transient and worth retrying.
- * @param {Error} err
- * @returns {boolean}
  */
 function isTransientError(err) {
     const msg = (err.message || '').toLowerCase();
     const status = err.status || err.code || 0;
-    // Retry on rate limits (429), server errors (500-503), and network issues
     if ([429, 500, 502, 503].includes(status)) return true;
     if (msg.includes('rate limit') || msg.includes('quota')) return true;
     if (msg.includes('internal') || msg.includes('unavailable')) return true;
@@ -60,11 +56,10 @@ function isTransientError(err) {
 }
 
 /**
- * Generate content with standard JSON response config.
- * Includes retry with exponential backoff for transient errors.
- * @param {string} prompt - The prompt text
- * @param {string} model - Model name
- * @param {number} maxRetries - Max retry attempts (default: 3)
+ * Generate content with JSON response config and exponential-backoff retry.
+ * @param {string} prompt
+ * @param {string} model
+ * @param {number} maxRetries
  * @returns {Promise<string>} Raw response text
  */
 async function generateJSON(prompt, model = 'gemini-2.0-flash', maxRetries = 3) {
@@ -80,9 +75,8 @@ async function generateJSON(prompt, model = 'gemini-2.0-flash', maxRetries = 3) 
             const isLast = attempt === maxRetries - 1;
             if (isLast || !isTransientError(err)) throw err;
 
-            // Exponential backoff: 1s, 2s, 4s + random jitter (0-500ms)
             const delay = Math.pow(2, attempt) * 1000 + Math.random() * 500;
-            console.warn(`Gemini API attempt ${attempt + 1} failed (${err.message}), retrying in ${Math.round(delay)}ms...`);
+            console.warn(`Gemini attempt ${attempt + 1} failed (${err.message}), retrying in ${Math.round(delay)}ms...`);
             await new Promise(r => setTimeout(r, delay));
         }
     }
