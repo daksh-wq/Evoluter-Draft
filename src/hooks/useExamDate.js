@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { callGemini } from '../services/geminiService';
 import logger from '../utils/logger';
 
-const GEN_AI_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const CACHE_KEY = 'exam_date_prediction';
+
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
 
 const STATIC_EXAM_DATES = {
@@ -60,8 +60,6 @@ export const useExamDate = (examName = 'UPSC CSE', targetYear) => {
                         return;
                     }
                 }
-
-                if (!GEN_AI_KEY) throw new Error("No API Key");
 
                 // 3. Ask AI for best estimate
                 const prompt = `What is the official or expected date for the ${examName} Preliminary Exam in ${year}? 

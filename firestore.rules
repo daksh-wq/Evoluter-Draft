@@ -16,11 +16,6 @@ service cloud.firestore {
         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
     }
 
-    function isInstitution() {
-      return isAuthenticated() && 
-        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'institution';
-    }
-
     // ─── User Documents ─────────────────────────────────
     match /users/{userId} {
       // Only the owner can write their own data
@@ -114,11 +109,16 @@ service cloud.firestore {
 
     // ─── Question Bank & Tagging ───────────────────────
     match /question_bank/{questionId} {
-      // Anyone can read questions
+      // Anyone authenticated can read questions
       allow read: if isAuthenticated();
-      // Anyone can add questions via AI generation or manual (if admin, UI enforced)
+      // Any authenticated user/Cloud Function can CREATE new questions
       allow create: if isAuthenticated();
-      allow update: if isAdmin();
+      // Only admin can UPDATE arbitrary fields.
+      // Any auth user may update ONLY the `approachBrief` field (AI brief feature).
+      allow update: if isAdmin() || (
+        isAuthenticated() &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['approachBrief'])
+      );
       allow delete: if isAdmin();
     }
 
@@ -144,16 +144,20 @@ service cloud.firestore {
     // ─── Institution Tests ──────────────────────────────
     match /institution_tests/{testId} {
       // Allow any authenticated user to read/query institution tests.
-      // Access control for private tests is enforced at the app level
-      // (only students in assigned batches see the test in their classroom).
-      // Firestore does not support evaluating resource.data in list queries,
-      // so we keep the rule simple here.
+      // Access control for private tests is enforced at the app level.
       allow read: if isAuthenticated();
-      allow create: if isInstitution();
-      // Students need to increment attemptCount/totalScoreSum on submission
-      allow update: if isInstitution() || isOwner(resource.data.creatorId) || (
-        isAuthenticated() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['attemptCount', 'totalScoreSum'])
+
+      // Only institution-role accounts can create tests
+      allow create: if isAuthenticated() &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'institution';
+
+      // Institution owner or admin can update test metadata fully.
+      // Students are allowed to increment ONLY attemptCount/totalScoreSum on submission.
+      allow update: if isOwner(resource.data.creatorId) || isAdmin() || (
+        isAuthenticated() &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['attemptCount', 'totalScoreSum'])
       );
+
       allow delete: if isOwner(resource.data.creatorId) || isAdmin();
 
       // Student attempt submissions (immutable once created)

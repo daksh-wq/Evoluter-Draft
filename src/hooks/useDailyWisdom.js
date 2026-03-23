@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { callGemini } from '../services/geminiService';
 import logger from '../utils/logger';
 
-const GEN_AI_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const CACHE_KEY = 'daily_wisdom';
+
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
 
 const FALLBACK_QUOTES = [
@@ -31,8 +31,6 @@ export const useDailyWisdom = () => {
                         return;
                     }
                 }
-
-                if (!GEN_AI_KEY) throw new Error("No API Key");
 
                 // Fetch new from AI
                 const prompt = "Generate a short, powerful motivational quote for a student preparing for a tough exam (like UPSC). Return ONLY the quote and author, no extra text.";

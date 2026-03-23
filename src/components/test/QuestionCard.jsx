@@ -19,6 +19,7 @@ export const QuestionCard = ({
     canGoPrev,
     isLastQuestion,
     isZenMode,
+    scrollRef,
 }) => {
     return (
         <div className="w-full max-w-6xl mx-auto h-full px-1 sm:px-2">
@@ -71,7 +72,7 @@ export const QuestionCard = ({
                 </div>
 
                 {/* ── Question Text + Options ── */}
-                <div className="px-4 sm:px-6 md:px-8 py-2 flex-1 overflow-y-auto">
+                <div ref={scrollRef} className="px-4 sm:px-6 md:px-8 py-2 flex-1 overflow-y-auto">
                     <div className="mb-4 sm:mb-6 md:mb-8">
                         {question.text
                             .replace(/\s*\([a-eA-E]\)\s+[^()]+(?=\s*\([a-eA-E]\)|$)/g, '')

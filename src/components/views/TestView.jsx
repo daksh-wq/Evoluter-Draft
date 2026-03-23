@@ -31,6 +31,14 @@ const TestView = ({
     const [showBlurBanner, setShowBlurBanner] = useState(false);
     const hasAutoSubmitted = useRef(false);
     const blurBannerTimeout = useRef(null);
+    const questionScrollRef = useRef(null);
+
+    // Scroll to top of question content when question changes
+    useEffect(() => {
+        if (questionScrollRef.current) {
+            questionScrollRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [currentIndex]);
 
     // ─── Bug Fix: Auto-submit test when timer reaches 0 ─────────────
     useEffect(() => {
@@ -216,7 +224,9 @@ const TestView = ({
 
             <div className="flex-1 flex overflow-hidden">
                 {/* Question Area — fully self-contained card */}
-                <div className={`flex-1 overflow-y-auto w-full px-2 sm:px-4 md:px-6 ${isZenMode ? 'pt-16 sm:pt-18 lg:pt-20 pb-4' : 'py-2 sm:py-4 lg:py-6'}`}>
+                <div 
+                    className={`flex-1 overflow-y-auto w-full px-2 sm:px-4 md:px-6 ${isZenMode ? 'pt-16 sm:pt-18 lg:pt-20 pb-4' : 'py-2 sm:py-4 lg:py-6'}`}
+                >
                     <QuestionCard
                         question={safeQuestion}
                         selectedAnswer={answers[safeQuestion.id]}
@@ -231,6 +241,7 @@ const TestView = ({
                         canGoPrev={currentIndex > 0}
                         isLastQuestion={isLastQuestion}
                         isZenMode={isZenMode}
+                        scrollRef={questionScrollRef}
                     />
                 </div>
 
@@ -343,7 +354,7 @@ const TestView = ({
                 );
             })()}
             {/* Warning Modal */}
-            {/* {showWarningModal && (
+            {showWarningModal && (
                 <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in">
                     <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl border-2 border-red-500">
                         <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -365,7 +376,7 @@ const TestView = ({
                         </button>
                     </div>
                 </div>
-            )}   */}
+            )}
         </div>
     );
 };

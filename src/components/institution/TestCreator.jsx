@@ -26,7 +26,7 @@ const TestCreator = ({ userData }) => {
 
     // Test Metadata
     const [title, setTitle] = useLocalStorage('tc_title', '');
-    const [subject, setSubject] = useLocalStorage('tc_subject', 'General');
+    const [subject, setSubject] = useLocalStorage('tc_subject', '');
     const [subTopic, setSubTopic] = useLocalStorage('tc_subTopic', '');
     const [duration, setDuration] = useLocalStorage('tc_duration', 30);
 
@@ -227,7 +227,9 @@ const TestCreator = ({ userData }) => {
             );
 
             if (newQuestions && newQuestions.length > 0) {
-                const formattedQuestions = newQuestions.map((q, idx) => ({
+                // Slice to exact deficit — AI may return more than requested
+                const trimmedQuestions = newQuestions.slice(0, deficit);
+                const formattedQuestions = trimmedQuestions.map((q, idx) => ({
                     id: Date.now() + idx,
                     text: q.text,
                     options: q.options,
@@ -307,7 +309,9 @@ const TestCreator = ({ userData }) => {
             );
 
             if (newQuestions && newQuestions.length > 0) {
-                const formattedQuestions = newQuestions.map((q, idx) => ({
+                // Slice to exact deficit — AI may return more than requested
+                const trimmedQuestions = newQuestions.slice(0, deficit);
+                const formattedQuestions = trimmedQuestions.map((q, idx) => ({
                     id: Date.now() + idx,
                     text: q.text,
                     options: q.options,
@@ -578,7 +582,6 @@ const TestCreator = ({ userData }) => {
                                         <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Subject</label>
                                         <CustomDropdown
                                             options={[
-                                                { label: 'General', value: 'General' },
                                                 ...SUBJECTS.map(s => ({ label: s, value: s }))
                                             ]}
                                             value={subject}

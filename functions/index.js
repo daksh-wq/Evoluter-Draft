@@ -16,10 +16,6 @@ exports.submitTest = testGeneration.submitTest;
 exports.syncInstitutionQuestions = testGeneration.syncInstitutionQuestions;
 exports.syncStudentGeneratedQuestions = testGeneration.syncStudentGeneratedQuestions;
 
-// ─── Gemini Proxy (SEC-1 fix) ───────────────────────────
-const geminiProxy = require('./src/geminiProxy');
-exports.callGemini = geminiProxy.callGemini;
-
 // ─── Proctoring (SEC-2) ─────────────────────────────────
 const proctoring = require('./src/proctoring');
 exports.trackTabSwitch = proctoring.trackTabSwitch;
@@ -53,3 +49,12 @@ exports.generateApproachBrief = questionBrief.generateApproachBrief;
 // ─── Scheduled Cleanup (SCALE-5) ────────────────────────
 const scheduledCleanup = require('./src/scheduledCleanup');
 exports.cleanupExpiredData = scheduledCleanup.cleanupExpiredData;
+
+// --- Gemini AI Proxy (SEC-1) --- all AI calls server-side, key never in client
+const geminiProxy = require('./src/geminiProxy');
+exports.geminiGenerateQuestions    = geminiProxy.geminiGenerateQuestions;
+exports.geminiGenerateFromDocument = geminiProxy.geminiGenerateFromDocument;
+exports.geminiEvaluateAnswer       = geminiProxy.geminiEvaluateAnswer;
+exports.geminiAnalyzePerformance   = geminiProxy.geminiAnalyzePerformance;
+exports.geminiSuggestTopics        = geminiProxy.geminiSuggestTopics;
+exports.geminiGenerateNews         = geminiProxy.geminiGenerateNews;
