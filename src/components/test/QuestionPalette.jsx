@@ -15,19 +15,20 @@ const PaletteGrid = ({ test, currentIndex, answers, markedForReview, onNavigate,
 
     return (
         <>
-            <div className="flex-1 overflow-y-auto p-4 sm:p-6 scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300">
+            <div className="flex-1 overflow-y-auto p-3 sm:p-6 scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300">
                 {filter !== 'ALL' && (
-                    <div className="mb-3 flex justify-end">
+                    <div className="mb-2 sm:mb-3 flex justify-end">
                         <button
                             onClick={() => setFilter('ALL')}
-                            className="text-white hover:text-red-500 bg-red-500 hover:bg-red-50 p-1.5 rounded-full transition-colors border border-slate-200"
+                            className="text-white hover:text-red-500 bg-red-500 hover:bg-red-50 p-1 sm:p-1.5 rounded-full transition-colors border border-slate-200"
                             title="Clear filter"
                         >
-                            <X size={16} strokeWidth={3} />
+                            <X size={14} strokeWidth={3} />
                         </button>
                     </div>
                 )}
-                <div className="grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-5 gap-2 sm:gap-3">
+                {/* More columns on mobile (e.g. 7 or 8) so the buttons become smaller squares */}
+                <div className="grid grid-cols-7 sm:grid-cols-8 lg:grid-cols-5 gap-1.5 sm:gap-2 lg:gap-3">
                     {test.map((q, idx) => {
                         const isCurrent = idx === currentIndex;
                         const isAns = answers[q.id] !== undefined;
@@ -38,7 +39,7 @@ const PaletteGrid = ({ test, currentIndex, answers, markedForReview, onNavigate,
                         if (filter === 'REVIEW' && (isAns || !isMarked)) return null;
                         if (filter === 'ANS_REVIEW' && (!isAns || !isMarked)) return null;
 
-                        let baseClass = "w-full aspect-square rounded-xl text-xs font-bold border flex items-center justify-center relative transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer";
+                        let baseClass = "w-full aspect-square rounded-lg text-[10px] sm:text-xs font-bold border flex items-center justify-center relative transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer";
                         let colorClass = "bg-white border-slate-200 text-slate-500 hover:border-blue-200 hover:text-blue-500";
 
                         if (isCurrent) colorClass = 'ring-2 ring-blue-500 border-blue-500 z-10 bg-blue-50 text-blue-700';
@@ -61,31 +62,35 @@ const PaletteGrid = ({ test, currentIndex, answers, markedForReview, onNavigate,
                     })}
                 </div>
             </div>
-            <div className="p-4 sm:p-5 border-t border-slate-200 bg-white shrink-0">
-                <div className="grid grid-cols-2 gap-2 sm:gap-3 text-[10px] font-bold uppercase tracking-wide text-slate-600">
+            <div className="p-3 sm:p-5 border-t border-slate-200 bg-white shrink-0">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] font-bold uppercase tracking-wide text-slate-600">
                     <button
                         onClick={() => toggleFilter('NOT_VISITED')}
-                        className={`flex items-center gap-2 p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'NOT_VISITED' ? 'bg-slate-100 border-slate-300 ring-2 ring-slate-200 text-slate-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-slate-300'}`}
+                        className={`flex items-center gap-1.5 p-1.5 sm:p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'NOT_VISITED' ? 'bg-slate-100 border-slate-300 ring-1 sm:ring-2 ring-slate-200 text-slate-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-slate-300'}`}
                     >
-                        <div className="w-3 h-3 rounded-full bg-white border border-slate-300 shadow-sm shrink-0" /> <span className="flex-1 text-left">Not Visited</span>
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-white border border-slate-300 shadow-sm shrink-0" /> 
+                        <span className="flex-1 text-left line-clamp-1">Not Visited</span>
                     </button>
                     <button
                         onClick={() => toggleFilter('ANSWERED')}
-                        className={`flex items-center gap-2 p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'ANSWERED' ? 'bg-blue-50 border-blue-300 ring-2 ring-blue-100 text-blue-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-blue-200'}`}
+                        className={`flex items-center gap-1.5 p-1.5 sm:p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'ANSWERED' ? 'bg-blue-50 border-blue-300 ring-1 sm:ring-2 ring-blue-100 text-blue-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-blue-200'}`}
                     >
-                        <div className="w-3 h-3 rounded-full bg-blue-600 shadow-sm shrink-0" /> <span className="flex-1 text-left">Answered</span>
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-blue-600 shadow-sm shrink-0" /> 
+                        <span className="flex-1 text-left line-clamp-1">Answered</span>
                     </button>
                     <button
                         onClick={() => toggleFilter('REVIEW')}
-                        className={`flex items-center gap-2 p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'REVIEW' ? 'bg-orange-50 border-orange-300 ring-2 ring-orange-100 text-orange-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-orange-200'}`}
+                        className={`flex items-center gap-1.5 p-1.5 sm:p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'REVIEW' ? 'bg-orange-50 border-orange-300 ring-1 sm:ring-2 ring-orange-100 text-orange-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-orange-200'}`}
                     >
-                        <div className="w-3 h-3 rounded-full bg-orange-100 border border-orange-200 shrink-0" /> <span className="flex-1 text-left">Review</span>
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-orange-100 border border-orange-200 shrink-0" /> 
+                        <span className="flex-1 text-left line-clamp-1">Review</span>
                     </button>
                     <button
                         onClick={() => toggleFilter('ANS_REVIEW')}
-                        className={`flex items-center gap-2 p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'ANS_REVIEW' ? 'bg-purple-50 border-purple-300 ring-2 ring-purple-100 text-purple-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-purple-200'}`}
+                        className={`flex items-center gap-1.5 p-1.5 sm:p-2 relative rounded-lg border shadow-sm transition-all active:scale-95 ${filter === 'ANS_REVIEW' ? 'bg-purple-50 border-purple-300 ring-1 sm:ring-2 ring-purple-100 text-purple-900' : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-purple-200'}`}
                     >
-                        <div className="w-3 h-3 rounded-full bg-purple-600 shadow-sm shrink-0" /> <span className="flex-1 text-left line-clamp-1">Ans+Review</span>
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-purple-600 shadow-sm shrink-0" /> 
+                        <span className="flex-1 text-left line-clamp-1">Ans+Review</span>
                     </button>
                 </div>
             </div>

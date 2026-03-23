@@ -39,12 +39,53 @@ const PerformanceReportView = ({ userStats }) => {
     ];
 
     // 2. Subject-wise Proficiency Data
-    // Filter out the catch-all "General" group that accumulates full-length test data
-    const rawSubjects = perfData?.subjects
-        ? Object.entries(perfData.subjects)
-            .filter(([k]) => k.toLowerCase() !== 'general')
-            .map(([k, v]) => ({ subject: k, ...v }))
-        : [];
+    // Filter out 'General' and merge legacy subjects into their new canonical counterparts
+    const processedSubjects = {};
+    if (perfData?.subjects) {
+        const canonicalMappings = {
+            'indian polity': 'Polity',
+            'history and ancient medieval': 'History',
+            'ancient and medieval history': 'History',
+            'modern india': 'History',
+            'indian culture': 'Art and Culture',
+            'economy of india': 'Economy'
+        };
+        
+        Object.entries(perfData.subjects).forEach(([k, v]) => {
+            if (k.toLowerCase() === 'general') return;
+            
+            // Map legacy subjects to canonical subjects
+            let subjectKey = canonicalMappings[k.toLowerCase()] || k;
+
+            if (!processedSubjects[subjectKey]) {
+                processedSubjects[subjectKey] = {
+                    total: 0,
+                    attempted: 0,
+                    correct: 0,
+                    subtopics: {}
+                };
+            }
+            
+            // Merge core stats
+            processedSubjects[subjectKey].total += v.total || 0;
+            processedSubjects[subjectKey].attempted += v.attempted || 0;
+            processedSubjects[subjectKey].correct += v.correct || 0;
+            
+            // Merge subtopics
+            if (v.subtopics) {
+                Object.entries(v.subtopics).forEach(([subName, subStats]) => {
+                    if (!processedSubjects[subjectKey].subtopics[subName]) {
+                        processedSubjects[subjectKey].subtopics[subName] = { total: 0, attempted: 0, correct: 0 };
+                    }
+                    processedSubjects[subjectKey].subtopics[subName].total += subStats.total || 0;
+                    processedSubjects[subjectKey].subtopics[subName].attempted += subStats.attempted || 0;
+                    processedSubjects[subjectKey].subtopics[subName].correct += subStats.correct || 0;
+                });
+            }
+        });
+    }
+
+    const rawSubjects = Object.entries(processedSubjects).map(([k, v]) => ({ subject: k, ...v }));
 
     const subjectData = rawSubjects.length > 0 ? rawSubjects.map(s => {
         const accuracy = s.attempted > 0 ? Math.round((s.correct * 100) / s.attempted) : 0;

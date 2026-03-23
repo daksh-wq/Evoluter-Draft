@@ -35,13 +35,13 @@ export const TestProvider = ({ children }) => {
     // Timer effect
     useEffect(() => {
         let interval;
-        if (activeTest && timeLeft > 0) {
+        if (activeTest) {
             interval = setInterval(() => {
                 setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
             }, 1000);
         }
         return () => clearInterval(interval);
-    }, [activeTest, timeLeft, setTimeLeft]);
+    }, [activeTest, setTimeLeft]);
 
     // Navigation-aware test starters
     const startMission = useCallback(() => {

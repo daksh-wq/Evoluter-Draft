@@ -2,7 +2,8 @@ import { delay } from '../utils/helpers';
 import { getRandomSubtopic, UPSC_SYLLABUS } from '../constants/syllabusData';
 import { AI_CONFIG } from '../constants/appConstants';
 import logger from '../utils/logger';
-import { db, auth } from './firebase';
+import { db, auth, functions } from './firebase';
+import { httpsCallable } from 'firebase/functions';
 import { PYQ_DATABASE } from '../constants/pyqDatabase';
 import {
     collection, query, where, orderBy, limit, getDocs, addDoc, serverTimestamp,
@@ -37,28 +38,12 @@ async function checkAndIncrementRateLimit() {
     }
 }
 
-// API Configuration
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
-const BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models';
-
 /**
  * Make a request to Gemini API with retry logic and AbortController support
+ * Now proxied through Cloud Functions to hide API Key
  */
 export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-flash', signal = null) {
-    if (!API_KEY) {
-        logger.warn("Gemini API Key missing. Returning null.");
-        await delay(1000);
-        return null;
-    }
-
-    const url = `${BASE_URL}/${model}:generateContent?key=${API_KEY}`;
-    const payload = {
-        contents: [{ parts: [{ text: prompt }] }],
-    };
-
-    if (isJson) {
-        payload.generationConfig = { responseMimeType: 'application/json' };
-    }
+    const callGeminiFn = httpsCallable(functions, 'callGemini');
 
     for (let attempt = 0; attempt < AI_CONFIG.MAX_RETRIES; attempt++) {
         if (signal?.aborted) {
@@ -66,27 +51,15 @@ export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-fla
         }
 
         try {
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload),
-                signal,
-            });
-
-            if (!response.ok) {
-                const errorBody = await response.text();
-                throw new Error(`HTTP error! Status: ${response.status}, Body: ${errorBody.substring(0, 200)}`);
-            }
-
-            const data = await response.json();
-            return data.candidates?.[0]?.content?.parts?.[0]?.text;
+            const response = await callGeminiFn({ prompt, isJson, model });
+            return response.data.text;
         } catch (error) {
             if (error.name === 'AbortError') {
                 logger.info('Gemini API request aborted by user.');
                 throw error;
             }
 
-            logger.error(`Gemini API attempt ${attempt + 1}/${AI_CONFIG.MAX_RETRIES} failed:`, error);
+            logger.error(`Gemini Cloud Function attempt ${attempt + 1}/${AI_CONFIG.MAX_RETRIES} failed:`, error);
 
             if (attempt === AI_CONFIG.MAX_RETRIES - 1) {
                 throw error;

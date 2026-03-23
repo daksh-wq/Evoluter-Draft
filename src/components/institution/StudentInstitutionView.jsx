@@ -5,7 +5,7 @@ import { db } from '../../services/firebase';
 import { useNavigate } from 'react-router-dom';
 import logger from '../../utils/logger';
 
-const StudentInstitutionView = ({ startInstitutionTest }) => {
+const StudentInstitutionView = ({ startInstitutionTest, startMission }) => {
     const navigate = useNavigate();
     const [code, setCode] = useState('');
     const [loading, setLoading] = useState(false);
@@ -110,6 +110,26 @@ const StudentInstitutionView = ({ startInstitutionTest }) => {
                 <div className="bg-red-50 text-red-600 p-4 rounded-xl flex items-center gap-3 mb-8 animate-in fade-in slide-in-from-top-2">
                     <AlertCircle size={20} />
                     <span className="font-bold">{error}</span>
+                </div>
+            )}
+            
+            {/* Quick Actions (Full Mock Test) */}
+            {!foundTest && !loading && (
+                <div className="grid grid-cols-1 gap-4 mb-8">
+                    <div
+                        className="p-4 bg-orange-50 rounded-xl border border-orange-100 cursor-pointer hover:bg-orange-100 transition-colors shadow-sm"
+                        onClick={() => startMission && startMission()}
+                    >
+                        <div className="flex justify-between items-center mb-1">
+                            <span className="font-bold text-orange-800 text-lg">Full Mock Test</span>
+                            <span className="text-sm bg-white px-3 py-1 rounded shadow-sm text-orange-600 font-bold">
+                                100 Qs
+                            </span>
+                        </div>
+                        <p className="text-sm text-orange-600/80">
+                            Standard comprehensive diagnostic over the complete syllabus.
+                        </p>
+                    </div>
                 </div>
             )}
 

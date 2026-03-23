@@ -112,20 +112,17 @@ const updateSyllabusProgress = async (uid, questions, userAnswers) => {
 };
 
 /**
- * The 10 canonical UPSC subjects that the Knowledge Graph tracks.
+ * The canonical UPSC subjects that the Knowledge Graph tracks.
  * All raw AI-generated topic tags are normalized to one of these.
  */
 const CANONICAL_TOPICS = [
-    'Indian Polity',
-    'Ancient and Medieval History',
-    'Modern India',
-    'Indian Culture',
+    'Polity',
+    'History',
+    'Art and Culture',
     'Geography',
-    'Economy of India',
+    'Economy',
     'Environment',
-    'Science and Technology',
-    'Current Affairs',
-    'Trivial'
+    'Science and Technology'
 ];
 
 /**
@@ -133,47 +130,41 @@ const CANONICAL_TOPICS = [
  * Short-circuit order matters: more specific keys first.
  */
 const TOPIC_KEYWORD_MAP = {
-    'Indian Polity': [
-        'polity', 'constitution', 'constitutional', 'parliament', 'preamble',
+    'Polity': [
+        'polity', 'indian polity', 'constitution', 'constitutional', 'parliament', 'preamble',
         'fundamental', 'rights', 'directive', 'governor', 'president',
         'prime minister', 'judiciary', 'election', 'federal', 'union',
         'territory', 'amendment', 'article', 'schedule', 'panchayati',
-        'municipal', 'local', 'administrative', 'parliamentary', 'system',
-        'public policy', 'governance'
+        'municipal', 'local governance', 'parliamentary', 'governance'
     ],
-    'Ancient and Medieval History': [
-        'ancient', 'medieval', 'harappan', 'indus', 'mughal', 'sultanate', 'vijayanagara', 'mauryan', 'gupta', 'chola'
+    'History': [
+        'history', 'ancient', 'medieval', 'harappan', 'indus', 'mughal', 'sultanate',
+        'vijayanagara', 'mauryan', 'gupta', 'chola', 'modern', 'revolt', 'colonial',
+        'freedom', 'gandhi', 'independence', 'british', 'maratha', '1857', 'nationalism'
     ],
-    'Modern India': [
-        'modern', 'revolt', 'colonial', 'freedom', 'gandhi', 'independence', 'british', 'maratha', '1857', 'nationalism', 'history'
-    ],
-    'Indian Culture': [
-        'culture', 'art', 'architecture', 'heritage', 'dance', 'music', 'painting', 'literature', 'religion', 'philosophy'
+    'Art and Culture': [
+        'art and culture', 'culture', 'art', 'architecture', 'heritage', 'dance', 'music',
+        'painting', 'literature', 'religion', 'philosophy', 'indian culture'
     ],
     'Geography': [
         'geography', 'geomorphology', 'climate', 'monsoon', 'river',
         'mountain', 'plateau', 'ocean', 'earthquake', 'volcanic',
         'indian geography', 'world geography'
     ],
-    'Economy of India': [
-        'economy', 'economic', 'fiscal', 'gdp', 'inflation', 'banking',
+    'Economy': [
+        'economy', 'economy of india', 'economic', 'fiscal', 'gdp', 'inflation', 'banking',
         'finance', 'budget', 'monetary', 'rbi', 'market', 'planning',
         'balance of payment', 'financial'
     ],
     'Environment': [
-        'environment', 'ecology', 'biodiversity', 'ecosystem', 'pollution', 'food security', 'sustainable', 'climate change', 'conservation', 'wildlife'
+        'environment', 'ecology', 'biodiversity', 'ecosystem', 'pollution',
+        'food security', 'sustainable', 'climate change', 'conservation', 'wildlife'
     ],
     'Science and Technology': [
-        'science', 'technology', 'biology', 'chemistry', 'physics',
+        'science and technology', 'science', 'technology', 'biology', 'chemistry', 'physics',
         'space', 'health', 'disease', 'nutrition', 'material', 'energy',
         'nuclear', 'it', 'computer', 'biotech', 'nano', 'defence',
         'innovation', 'research', 'isro', 'ai', 'robots'
-    ],
-    'Current Affairs': [
-        'current', 'affairs', 'international', 'relations', 'foreign', 'border', 'news', 'recent'
-    ],
-    'Trivial': [
-        'trivia', 'general', 'miscellaneous', 'other'
     ]
 };
 
@@ -234,7 +225,7 @@ const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
         if (diff === 'Intermediate') diff = 'Medium';
         if (diff === 'Hard') diff = 'Difficult';
         if (!perf.emd[diff]) diff = 'Medium'; // safe fallback
-        
+
         perf.emd[diff].total += 1;
         if (isAttempted) perf.emd[diff].attempted += 1;
         if (isCorrect) perf.emd[diff].correct += 1;
@@ -242,7 +233,7 @@ const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
         // --- 2. Subjects ---
         const topicTag = q.tags?.find(t => t.type === 'subject')?.label || q.subject || q.topic;
         const canonical = normalizeToCanonicalTopic(topicTag) || 'General';
-        
+
         if (!perf.subjects[canonical]) {
             perf.subjects[canonical] = { total: 0, attempted: 0, correct: 0, subtopics: {} };
         }
@@ -258,9 +249,9 @@ const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
         // Try to find a more specific topic or subtopic
         let specificTopicTag = q.tags?.find(t => t.type === 'topic' || t.type === 'subtopic')?.label || q.topic || q.subtopic;
         if (!specificTopicTag || specificTopicTag === canonical) {
-            specificTopicTag = 'Core Concepts'; 
+            specificTopicTag = 'Core Concepts';
         }
-        
+
         if (!perf.subjects[canonical].subtopics[specificTopicTag]) {
             perf.subjects[canonical].subtopics[specificTopicTag] = { total: 0, attempted: 0, correct: 0 };
         }
@@ -273,7 +264,7 @@ const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
         const qText = (q.text || '').toLowerCase();
         if (q.resource === 'NCERT' || qText.includes('ncert') || diff === 'Easy') resource = 'NCERT (Fundamental)';
         else if (q.resource === 'Advanced' || diff === 'Difficult' || canonical === 'Current Affairs') resource = 'Advanced Sources';
-        
+
         perf.resources[resource].total += 1;
         if (isAttempted) perf.resources[resource].attempted += 1;
         if (isCorrect) perf.resources[resource].correct += 1;
@@ -284,8 +275,8 @@ const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
         else if (qText.includes('which of the following statement') || qText.includes('which of the above statement') || /1\s*(and|only|&)/i.test(qText)) qType = 'Statement (Which of)';
         else if (qText.includes('match the following') || qText.includes('correctly matched') || qText.includes('list i') || qText.includes('list ii')) qType = 'Match the pairs';
         else if (qText.includes('assertion') && qText.includes('reason')) qType = 'Assertion-Reason';
-        
-        if (!perf.questionTypes[qType]) qType = 'One-liner'; 
+
+        if (!perf.questionTypes[qType]) qType = 'One-liner';
         perf.questionTypes[qType].total += 1;
         if (isAttempted) perf.questionTypes[qType].attempted += 1;
         if (isCorrect) perf.questionTypes[qType].correct += 1;
@@ -309,11 +300,12 @@ const calculateTopicMastery = (questions, userAnswers, currentMastery) => {
     const topicStats = {};
 
     questions.forEach((question) => {
-        // Extract raw topic from question tags or fallback fields
-        const topicTag = question.tags?.find(tag => tag.type === 'topic');
-        const rawTopic = topicTag?.label || question.topic || null;
+        // Extract raw topic from question tags — check subject, topic, and subtopic tags
+        const subjectTag = question.tags?.find(tag => tag.type === 'subject');
+        const topicTag = question.tags?.find(tag => tag.type === 'topic' || tag.type === 'subtopic');
+        const rawTopic = subjectTag?.label || topicTag?.label || question.subject || question.topic || null;
 
-        // Normalize to one of the 5 canonical subjects
+        // Normalize to one of the canonical subjects
         const canonical = normalizeToCanonicalTopic(rawTopic);
         if (!canonical) return; // skip unrecognized topics
 

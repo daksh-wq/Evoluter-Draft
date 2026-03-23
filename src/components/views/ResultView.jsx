@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import {
-    CheckCircle, XCircle, AlertCircle, Clock,
+    CheckCircle, XCircle, AlertCircle, Clock, ArrowLeft,
     Brain, Target, ListChecks, ArrowRight, RefreshCw, ChevronDown, Download, BarChart2, BookOpen, Activity,
     Lightbulb
 } from 'lucide-react';
@@ -14,6 +14,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
     const [analysis, setAnalysis] = useState(null);
     const [loadingAnalysis, setLoadingAnalysis] = useState(true);
     const [activeTab, setActiveTab] = useState('stats'); // 'stats' | 'insights' | 'review'
+    const [reviewFilter, setReviewFilter] = useState('all'); // 'all' | 'correct' | 'incorrect' | 'skipped'
 
     useEffect(() => {
         let cancelled = false;
@@ -175,7 +176,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
             {/* Termination Alert */}
             {results.status === 'terminated' && (
                 <div className="bg-red-600 text-white p-4 text-center animate-in slide-in-from-top">
-                    <div className="max-w-4xl mx-auto flex items-center justify-center gap-3">
+                    <div className="max-w-7xl mx-auto flex items-center justify-center gap-3">
                         <AlertCircle size={24} className="animate-pulse" />
                         <div>
                             <span className="font-bold text-lg block">Test Terminated</span>
@@ -187,7 +188,15 @@ const ResultView = ({ test, answers, results, exitTest }) => {
 
             {/* Header / Score Card */}
             <div className="bg-indigo-950 text-white p-6 sm:p-8 pb-12 sm:pb-16 relative overflow-hidden">
-                <div className="relative z-10 max-w-4xl mx-auto text-center">
+                <div className="absolute top-4 left-4 sm:top-6 sm:left-8 z-20">
+                    <button
+                        onClick={exitTest}
+                        className="flex items-center gap-2 text-indigo-200 hover:text-white transition-colors text-sm font-bold bg-indigo-900/50 hover:bg-indigo-800/80 px-3 py-1.5 rounded-lg"
+                    >
+                        <ArrowLeft size={16} /> Back
+                    </button>
+                </div>
+                <div className="relative z-10 max-w-7xl mx-auto text-center">
                     <h1 className="text-xl font-medium text-blue-200 uppercase tracking-widest mb-4">Test Complete</h1>
                     <div className="flex flex-col items-center justify-center">
                         <div className="text-6xl font-black mb-2 animate-in zoom-in duration-500">
@@ -200,7 +209,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                 </div>
             </div>
 
-            <div className="max-w-4xl mx-auto px-6 -mt-10 relative z-20">
+            <div className="max-w-7xl mx-auto px-6 -mt-10 relative z-20">
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                     <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center">
@@ -451,10 +460,21 @@ const ResultView = ({ test, answers, results, exitTest }) => {
 
                 {activeTab === 'review' && (
                     <div className="space-y-4 animate-in fade-in">
+                        {/* Filter Nav */}
+                        <div className="flex gap-2 mb-6 flex-wrap">
+                            <button onClick={() => setReviewFilter('all')} className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${reviewFilter === 'all' ? 'bg-[#2278B0] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>All Questions</button>
+                            <button onClick={() => setReviewFilter('correct')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'correct' ? 'bg-green-100 text-green-700 ring-2 ring-green-500/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><CheckCircle size={14} /> Correct</button>
+                            <button onClick={() => setReviewFilter('incorrect')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'incorrect' ? 'bg-red-100 text-red-700 ring-2 ring-red-500/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><XCircle size={14} /> Incorrect</button>
+                            <button onClick={() => setReviewFilter('skipped')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'skipped' ? 'bg-slate-200 text-slate-700 ring-2 ring-slate-400/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><AlertCircle size={14} /> Skipped</button>
+                        </div>
                         {test.map((q, idx) => {
                             const userAnswer = answers[q.id];
                             const isCorrect = userAnswer === q.correctAnswer;
                             const isSkipped = userAnswer === undefined || userAnswer === null;
+
+                            if (reviewFilter === 'correct' && !isCorrect) return null;
+                            if (reviewFilter === 'incorrect' && (isCorrect || isSkipped)) return null;
+                            if (reviewFilter === 'skipped' && !isSkipped) return null;
 
                             const borderStyle = isCorrect ? 'border-green-200' : isSkipped ? 'border-slate-200' : 'border-red-200';
 
@@ -507,9 +527,16 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                                     const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(t);
                                                     return (
                                                         <div key={i} className={isStatement
-                                                            ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 rounded-lg border-l-2 border-slate-300 text-sm'
+                                                            ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 sm:p-3 rounded-lg border-l-2 border-slate-300 text-sm flex gap-2 items-start'
                                                             : 'font-semibold text-slate-800'}>
-                                                            {t}
+                                                            {isStatement ? (
+                                                                <>
+                                                                    <span className="shrink-0 font-bold text-slate-500">{t.match(/^(?:\d{1,2}|[A-Da-d])\./)[0]}</span>
+                                                                    <span className="flex-1">{t.replace(/^(?:\d{1,2}|[A-Da-d])\.\s*/, '')}</span>
+                                                                </>
+                                                            ) : (
+                                                                t
+                                                            )}
                                                         </div>
                                                     );
                                                 })}

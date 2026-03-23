@@ -43,6 +43,7 @@ const TestReviewView = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [collapsedIds, setCollapsedIds] = useState({});
+    const [reviewFilter, setReviewFilter] = useState('all');
 
     useEffect(() => {
         const fetchTest = async () => {
@@ -145,7 +146,7 @@ const TestReviewView = () => {
 
     // ── Data normalisation ──────────────────────────────────────────────────────
     return (
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6">
 
             {/* Back */}
             <button
@@ -202,7 +203,18 @@ const TestReviewView = () => {
                 </div>
             ) : (
                 <div className="space-y-4 mb-12">
+                    {/* Filter Nav */}
+                    <div className="flex gap-2 mb-6 flex-wrap">
+                        <button onClick={() => setReviewFilter('all')} className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${reviewFilter === 'all' ? 'bg-[#2278B0] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>All Questions</button>
+                        <button onClick={() => setReviewFilter('correct')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'correct' ? 'bg-green-100 text-green-700 ring-2 ring-green-500/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><CheckCircle size={14} /> Correct</button>
+                        <button onClick={() => setReviewFilter('incorrect')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'incorrect' ? 'bg-red-100 text-red-700 ring-2 ring-red-500/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><XCircle size={14} /> Incorrect</button>
+                        <button onClick={() => setReviewFilter('skipped')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'skipped' ? 'bg-slate-200 text-slate-700 ring-2 ring-slate-400/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><AlertCircle size={14} /> Skipped</button>
+                    </div>
                     {reviewItems.map((q, idx) => {
+                        if (reviewFilter === 'correct' && !q.isCorrect) return null;
+                        if (reviewFilter === 'incorrect' && (q.isCorrect || q.isSkipped)) return null;
+                        if (reviewFilter === 'skipped' && !q.isSkipped) return null;
+
                         const isCollapsed = collapsedIds[q.id];
 
                         const borderStyle = q.isCorrect
@@ -275,9 +287,16 @@ const TestReviewView = () => {
                                                 const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(t);
                                                 return (
                                                     <div key={i} className={isStatement
-                                                        ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 rounded-lg border-l-2 border-slate-300 text-sm'
+                                                        ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 sm:p-3 rounded-lg border-l-2 border-slate-300 text-sm flex gap-2 items-start'
                                                         : 'font-semibold text-slate-800'}>
-                                                        {t}
+                                                        {isStatement ? (
+                                                            <>
+                                                                <span className="shrink-0 font-bold text-slate-500">{t.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                <span className="flex-1">{t.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                            </>
+                                                        ) : (
+                                                            t
+                                                        )}
                                                     </div>
                                                 );
                                             })}

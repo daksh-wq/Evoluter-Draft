@@ -1,15 +1,12 @@
 export const SUBJECTS = [
     'All',
-    'Indian Polity',
-    'Ancient and Medieval History',
-    'Modern India',
-    'Indian Culture',
+    'Polity',
+    'History',
+    'Art and Culture',
     'Geography',
-    'Economy of India',
+    'Economy',
     'Environment',
-    'Science and Technology',
-    'Current Affairs',
-    'Trivial'
+    'Science and Technology'
 ];
 
 export const DIFFICULTY_LEVELS = ['Easy', 'Intermediate', 'Hard'];
@@ -85,16 +82,13 @@ export const QUESTION_TYPE_DISTRIBUTION = {
  */
 export const SUBJECT_CODES = {
     'All': 'MX',
-    'Indian Polity': 'IP',
-    'Ancient and Medieval History': 'AM',
-    'Modern India': 'MI',
-    'Indian Culture': 'IC',
+    'Polity': 'PO',
+    'History': 'HI',
+    'Art and Culture': 'AC',
     'Geography': 'GE',
-    'Economy of India': 'EI',
+    'Economy': 'EC',
     'Environment': 'EN',
-    'Science and Technology': 'ST',
-    'Current Affairs': 'CA',
-    'Trivial': 'TR',
+    'Science and Technology': 'ST'
 };
 
 /** Reverse map: code → subject name */
@@ -108,7 +102,7 @@ export const SUBJECT_CODE_TO_NAME = Object.fromEntries(
  * Format: { subjectCode: { topicCode: topicName } }
  */
 export const TOPIC_CODES = {
-    IP: {
+    PO: {
         '01': 'Constitutional Fundamentals',
         '02': 'Core Rights (FR, DPSP, FD)',
         '03': 'Union Executive',
@@ -119,7 +113,7 @@ export const TOPIC_CODES = {
         '08': 'Constitutional Bodies',
         '09': 'Governance & Rights',
     },
-    AM: {
+    HI: {
         '01': 'Indus Valley & Vedic Period',
         '02': 'Mahajanapadas & Magadhan Ascendancy',
         '03': 'Heterodox Sects (Buddhism & Jainism)',
@@ -127,18 +121,16 @@ export const TOPIC_CODES = {
         '05': 'Gupta & Post-Gupta Period',
         '06': 'Delhi Sultanate (1206-1526)',
         '07': 'Mughal Empire (1526-1707)',
+        '08': 'Colonial Expansion',
+        '09': 'Administrative & Social Changes',
+        '10': 'Early Resistance (Pre-1857)',
+        '11': 'Rise of Nationalism (1885-1905)',
+        '12': 'Extremist & Revolutionary Phase',
+        '13': 'The Gandhian Era (1919-1947)',
+        '14': 'Constitutional Developments',
+        '15': 'Towards Independence & Partition',
     },
-    MI: {
-        '01': 'Colonial Expansion',
-        '02': 'Administrative & Social Changes',
-        '03': 'Early Resistance (Pre-1857)',
-        '04': 'Rise of Nationalism (1885-1905)',
-        '05': 'Extremist & Revolutionary Phase',
-        '06': 'The Gandhian Era (1919-1947)',
-        '07': 'Constitutional Developments',
-        '08': 'Towards Independence & Partition',
-    },
-    IC: {
+    AC: {
         '01': 'Ancient Architecture & Sculpture',
         '02': 'Rock-Cut & Cave Architecture',
         '03': 'Temple Architecture',
@@ -157,7 +149,7 @@ export const TOPIC_CODES = {
         '06': 'Indian Resources & Agriculture',
         '07': 'Human & Economic Geography',
     },
-    EI: {
+    EC: {
         '01': 'Basic Concepts & National Income',
         '02': 'Inflation & Monetary Policy',
         '03': 'Public Finance & Taxation',
@@ -182,16 +174,6 @@ export const TOPIC_CODES = {
         '04': 'Defence & Nuclear',
         '05': 'Basic Science',
     },
-    CA: {
-        '01': 'Governance & Bills/Acts',
-        '02': 'International Relations',
-        '03': 'Economic & Social Reports',
-        '04': 'Environment & S&T Updates',
-        '05': 'Culture & Miscellaneous',
-    },
-    TR: {
-        '01': 'General Trivia',
-    },
 };
 
 /**
@@ -214,22 +196,17 @@ export const SOURCE_CODE_TO_NAME = Object.fromEntries(
  * Books per subject (Core / Standard / Advanced) — for source classification.
  */
 export const SUBJECT_SOURCE_MAP = {
-    'Indian Polity': {
+    'Polity': {
         core: ['NCERT Class 11 — Indian Constitution at Work', 'NCERT Political Theory'],
         standard: ['Indian Polity by M. Laxmikanth'],
         advanced: ['Constitution of India by D.D. Basu', 'Constitution Bare Act', '2nd ARC Report'],
     },
-    'Ancient and Medieval History': {
-        core: ['NCERT Class XII — Themes in Indian History Part I & II'],
-        standard: ['Old NCERT — Ancient India by R.S. Sharma', 'Medieval India by Satish Chandra'],
-        advanced: [],
-    },
-    'Modern India': {
-        core: ['Modern India by Bipin Chandra (Old NCERT)'],
-        standard: ['Spectrum — History of Modern India'],
+    'History': {
+        core: ['NCERT Class XII — Themes in Indian History Part I & II', 'Modern India by Bipin Chandra (Old NCERT)'],
+        standard: ['Old NCERT — Ancient India by R.S. Sharma', 'Medieval India by Satish Chandra', 'Spectrum — History of Modern India'],
         advanced: ["India's Struggle for Independence by Bipin Chandra"],
     },
-    'Indian Culture': {
+    'Art and Culture': {
         core: ['NCERT Class XI — An Introduction to Indian Art'],
         standard: ['Indian Art and Culture by Nitin Singhania'],
         advanced: ['CCRT (Centre for Cultural Resources and Training) material'],
@@ -239,7 +216,7 @@ export const SUBJECT_SOURCE_MAP = {
         standard: ['Certificate in Physical and Human Geography by G.C. Leong'],
         advanced: ['Geography by Majid Hussain'],
     },
-    'Economy of India': {
+    'Economy': {
         core: ['NCERT Class X, XI (Indian Economic Development)', 'NCERT Class XII (Introductory Macroeconomics)'],
         standard: ['Indian Economy by Ramesh Singh', 'Indian Economy by Sanjeev Verma'],
         advanced: ['Economic Survey', 'Union Budget Document'],
@@ -253,11 +230,6 @@ export const SUBJECT_SOURCE_MAP = {
         core: ['NCERT Class VI–X'],
         standard: ['TMH Science and Technology Book'],
         advanced: ['Newspapers & Current Science Publications'],
-    },
-    'Current Affairs': {
-        core: [],
-        standard: [],
-        advanced: [],
     },
 };
 

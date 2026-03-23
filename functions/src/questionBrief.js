@@ -19,7 +19,7 @@ const { parseAIJsonResponse, sanitizeForPrompt } = require('./utils/promptHelper
 
 // ─── Tag lookup maps ──────────────────────────────────────────────────────────
 const SUBJECT_CODE_TO_NAME = {
-    IP: 'Indian Polity', AM: 'Ancient and Medieval History', MI: 'Modern India',
+    IP: 'Indian Polity', AM: 'History and Ancient Medieval', MI: 'Modern India',
     IC: 'Indian Culture', GE: 'Geography', EI: 'Economy of India',
     EN: 'Environment', ST: 'Science and Technology', CA: 'Current Affairs', TR: 'Trivial',
 };
@@ -36,13 +36,13 @@ const TOPIC_CODES = {
     TR: { '01': 'General Trivia' },
 };
 const SOURCE_CODE_TO_NAME = { SN: 'Standard', AD: 'Advanced', RN: 'Random', CI: 'Current Issue', NA: 'Not Applicable' };
-const TYPE_CODE_TO_NAME   = { FA: 'Factual', CO: 'Conceptual', AB: 'Application Based', DE: 'Definition', IN: 'Informative' };
-const DIFF_CODE_TO_NAME   = { ET: 'Extreme Tough', TO: 'Tough', ME: 'Medium', ES: 'Easy', FO: 'Foundational' };
-const PYQ_CODE_TO_NAME    = { CS: 'CSE', CD: 'CDSE', ND: 'NDA', CI: 'CISF', CP: 'CAPF', NA: 'Not Applicable' };
+const TYPE_CODE_TO_NAME = { FA: 'Factual', CO: 'Conceptual', AB: 'Application Based', DE: 'Definition', IN: 'Informative' };
+const DIFF_CODE_TO_NAME = { ET: 'Extreme Tough', TO: 'Tough', ME: 'Medium', ES: 'Easy', FO: 'Foundational' };
+const PYQ_CODE_TO_NAME = { CS: 'CSE', CD: 'CDSE', ND: 'NDA', CI: 'CISF', CP: 'CAPF', NA: 'Not Applicable' };
 
 const SUBJECT_SOURCE_MAP = {
     'Indian Polity': { core: ['NCERT Class 11 — Indian Constitution at Work'], standard: ['Indian Polity by M. Laxmikanth'], advanced: ['Constitution of India by D.D. Basu'] },
-    'Ancient and Medieval History': { core: ['NCERT Class XII — Themes in Indian History Part I & II'], standard: ['Old NCERT — Ancient India by R.S. Sharma'], advanced: [] },
+    'History and Ancient Medieval': { core: ['NCERT Class XII — Themes in Indian History Part I & II'], standard: ['Old NCERT — Ancient India by R.S. Sharma'], advanced: [] },
     'Modern India': { core: ['Modern India by Bipin Chandra (Old NCERT)'], standard: ['Spectrum — History of Modern India'], advanced: [] },
     'Indian Culture': { core: ['NCERT Class XI — An Introduction to Indian Art'], standard: ['Indian Art and Culture by Nitin Singhania'], advanced: [] },
     'Geography': { core: ['NCERT Class 11 — Fundamental of Physical Geography'], standard: ['Certificate in Physical and Human Geography by G.C. Leong'], advanced: [] },

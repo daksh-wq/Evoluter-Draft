@@ -35,7 +35,7 @@ function hashText(text) {
 // ─── Question Bank Tagging Helpers ────────────────────────────────────────────
 
 const SUBJECT_CODES = {
-    'Indian Polity': 'IP', 'Ancient and Medieval History': 'AM', 'Modern India': 'MI',
+    'Indian Polity': 'IP', 'History and Ancient Medieval': 'AM', 'Modern India': 'MI',
     'Indian Culture': 'IC', 'Geography': 'GE', 'Economy of India': 'EI',
     'Environment': 'EN', 'Science and Technology': 'ST', 'Current Affairs': 'CA', 'Trivial': 'TR',
 };

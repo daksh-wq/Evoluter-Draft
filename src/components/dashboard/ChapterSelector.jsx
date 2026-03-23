@@ -39,16 +39,13 @@ export const ChapterSelector = ({
 
         const subjectMapping = {
             'All': ['polity', 'history', 'culture', 'geography', 'economy', 'environment', 'science_tech', 'biology'],
-            'Indian Polity': ['polity'],
-            'Ancient and Medieval History': ['history'],
-            'Modern India': ['history'],
-            'Indian Culture': ['culture'],
+            'Polity': ['polity'],
+            'History': ['history'],
+            'Art and Culture': ['culture'],
             'Geography': ['geography'],
-            'Economy of India': ['economy'],
+            'Economy': ['economy'],
             'Environment': ['environment'],
             'Science and Technology': ['science_tech', 'biology'],
-            'Current Affairs': [],
-            'Trivial': []
         };
 
         let chapters = [];
@@ -64,7 +61,7 @@ export const ChapterSelector = ({
         return chapters;
     }, [selectedSubjects]);
 
-    const displayValue = value || (availableChapters.length > 0 ? "Select Chapter..." : "Select Subject First...");
+    const displayValue = value || (selectedSubjects.length > 1 ? "Not required for comprehensive tests" : availableChapters.length > 0 ? "Select Chapter..." : "Select Subject First...");
 
     return (
         <div className="md:col-span-8 relative group" ref={dropdownRef}>

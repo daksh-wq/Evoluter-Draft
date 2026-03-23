@@ -16,6 +16,11 @@ service cloud.firestore {
         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
     }
 
+    function isInstitution() {
+      return isAuthenticated() && 
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'institution';
+    }
+
     // ─── User Documents ─────────────────────────────────
     match /users/{userId} {
       // Only the owner can write their own data
@@ -112,8 +117,8 @@ service cloud.firestore {
       // Anyone can read questions
       allow read: if isAuthenticated();
       // Anyone can add questions via AI generation or manual (if admin, UI enforced)
-      // Anyone can update (e.g., adding approachBrief)
-      allow create, update: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isAdmin();
       allow delete: if isAdmin();
     }
 
@@ -144,10 +149,12 @@ service cloud.firestore {
       // Firestore does not support evaluating resource.data in list queries,
       // so we keep the rule simple here.
       allow read: if isAuthenticated();
-      allow create: if isAuthenticated();
+      allow create: if isInstitution();
       // Students need to increment attemptCount/totalScoreSum on submission
-      allow update: if isAuthenticated();
-      allow delete: if isOwner(resource.data.creatorId);
+      allow update: if isInstitution() || isOwner(resource.data.creatorId) || (
+        isAuthenticated() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['attemptCount', 'totalScoreSum'])
+      );
+      allow delete: if isOwner(resource.data.creatorId) || isAdmin();
 
       // Student attempt submissions (immutable once created)
       match /attempts/{attemptId} {

@@ -14,23 +14,58 @@ import { removeFromCache } from '../../../services/cacheService';
  * @returns {object} Test state and handlers
  */
 export function useTest() {
+    // Initializer function for state persistence
+    const loadSavedState = (key) => {
+        if (typeof window !== 'undefined') {
+            const saved = sessionStorage.getItem('evoluter_test_state');
+            if (saved) {
+                try {
+                    const parsed = JSON.parse(saved);
+                    return parsed[key];
+                } catch { return undefined; }
+            }
+        }
+        return undefined;
+    };
+
     // -- State --
-    const [activeTest, setActiveTest] = useState(null);
-    const [activeTestId, setActiveTestId] = useState(null);
-    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-    const [answers, setAnswers] = useState({});
-    const [markedForReview, setMarkedForReview] = useState(new Set());
-    const [timeLeft, setTimeLeft] = useState(0);
-    const [totalDuration, setTotalDuration] = useState(0);
-    const startTimeRef = useRef(null); // wall-clock test start time
+    const [activeTest, setActiveTest] = useState(() => loadSavedState('activeTest') ?? null);
+    const [activeTestId, setActiveTestId] = useState(() => loadSavedState('activeTestId') ?? null);
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(() => loadSavedState('currentQuestionIndex') ?? 0);
+    const [answers, setAnswers] = useState(() => loadSavedState('answers') ?? {});
+    const [markedForReview, setMarkedForReview] = useState(() => new Set(loadSavedState('markedForReview') || []));
+    const [timeLeft, setTimeLeft] = useState(() => loadSavedState('timeLeft') ?? 0);
+    const [totalDuration, setTotalDuration] = useState(() => loadSavedState('totalDuration') ?? 0);
+    const startTimeRef = useRef(loadSavedState('startTime') ?? null);
 
     // Status flags
     const [isGeneratingTest, setIsGeneratingTest] = useState(false);
     const [generationProgress, setGenerationProgress] = useState(0);
     const [isTestCompleted, setIsTestCompleted] = useState(false);
     const [testResults, setTestResults] = useState(null);
-    const [isInstitutionTest, setIsInstitutionTest] = useState(false);
-    const [activeTestName, setActiveTestName] = useState(null); // Title for institution tests
+    const [isInstitutionTest, setIsInstitutionTest] = useState(() => loadSavedState('isInstitutionTest') ?? false);
+    const [activeTestName, setActiveTestName] = useState(() => loadSavedState('activeTestName') ?? null); // Title for institution tests
+
+    // Persist test state to prevent data loss on refresh
+    useEffect(() => {
+        if (activeTest) {
+            const stateToSave = {
+                activeTest,
+                activeTestId,
+                activeTestName,
+                currentQuestionIndex,
+                answers,
+                markedForReview: Array.from(markedForReview),
+                timeLeft,
+                totalDuration,
+                isInstitutionTest,
+                startTime: startTimeRef.current
+            };
+            sessionStorage.setItem('evoluter_test_state', JSON.stringify(stateToSave));
+        } else {
+            sessionStorage.removeItem('evoluter_test_state');
+        }
+    }, [activeTest, activeTestId, activeTestName, currentQuestionIndex, answers, markedForReview, timeLeft, totalDuration, isInstitutionTest]);
 
     /**
      * Helper to initialize test state

@@ -16,6 +16,10 @@ exports.submitTest = testGeneration.submitTest;
 exports.syncInstitutionQuestions = testGeneration.syncInstitutionQuestions;
 exports.syncStudentGeneratedQuestions = testGeneration.syncStudentGeneratedQuestions;
 
+// ─── Gemini Proxy (SEC-1 fix) ───────────────────────────
+const geminiProxy = require('./src/geminiProxy');
+exports.callGemini = geminiProxy.callGemini;
+
 // ─── Proctoring (SEC-2) ─────────────────────────────────
 const proctoring = require('./src/proctoring');
 exports.trackTabSwitch = proctoring.trackTabSwitch;

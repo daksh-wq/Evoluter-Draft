@@ -65,16 +65,13 @@ const InstitutionStudentManager = lazy(() => import('./components/institution/In
 
 // Fix: module-level constant — never re-allocated on render
 const CANONICAL_TOPICS = [
-  'Indian Polity',
-  'Ancient and Medieval History',
-  'Modern India',
-  'Indian Culture',
+  'Polity',
+  'History',
+  'Art and Culture',
   'Geography',
-  'Economy of India',
+  'Economy',
   'Environment',
-  'Science and Technology',
-  'Current Affairs',
-  'Trivial'
+  'Science and Technology'
 ];
 
 // Fix: defined outside App so it is never re-created on every render cycle
@@ -286,8 +283,16 @@ function App() {
   // --- Feature States ---
   // Docs state moved to DocumentContext
 
-  // Timer Effect moved to TestContext (already running there)
-
+  // Timer Effect (Restored since TestContext is not wrapped around App)
+  useEffect(() => {
+    let interval;
+    if (activeTest) {
+      interval = setInterval(() => {
+        setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [activeTest, setTimeLeft]);
 
   // --- Logic Handlers ---
 
@@ -562,7 +567,7 @@ function App() {
         {/* Student Institution Join */}
         <Route path="/institution/join" element={
           <ProtectedLayout {...layoutProps}>
-            <StudentInstitutionView startInstitutionTest={startInstitutionTest} />
+            <StudentInstitutionView startInstitutionTest={startInstitutionTest} startMission={startMission} />
           </ProtectedLayout>
         } />
 

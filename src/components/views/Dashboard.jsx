@@ -102,14 +102,21 @@ const Dashboard = ({
         if (selectedSubjects.length === 0 && !uploadedResource) {
             return; // button will be disabled, but guard here too
         }
-        if (aiTopic.trim() || uploadedResource) {
+        if (selectedSubjects.length > 1 || selectedSubjects.includes('All') || aiTopic.trim() || uploadedResource) {
             const baseChapter = aiTopic.trim();
             const subtopicsArr = Array.from(selectedSubtopics);
-            const finalTopic = uploadedResource
-                ? `Test from ${resourceName}`
-                : subtopicsArr.length > 0
-                    ? `${baseChapter} > ${subtopicsArr.join(', ')}`
-                    : baseChapter;
+
+            let finalTopic;
+            if (uploadedResource) {
+                finalTopic = `Test from ${resourceName}`;
+            } else if (selectedSubjects.length > 1 || selectedSubjects.includes('All')) {
+                finalTopic = `Comprehensive Test: ${selectedSubjects.join(', ')}`;
+            } else if (subtopicsArr.length > 0) {
+                finalTopic = `${baseChapter} > ${subtopicsArr.join(', ')}`;
+            } else {
+                finalTopic = baseChapter;
+            }
+
             generateAITest(finalTopic, questionCount, difficulty, uploadedResource, pyqPercentage);
             // Only reset resource / upload fields — keep chapter + subtopic selection intact
             setUploadedResource('');
@@ -236,7 +243,7 @@ const Dashboard = ({
                 </div>
 
                 {/* Right: Stat Cards aligned to the right edge */}
-                <div className="z-20 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3 shrink-0 justify-start sm:justify-end">
+                <div className="z-20 flex w-full sm:w-auto flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3 shrink-0 justify-end">
                     {/* Notification Bell */}
                     <div className="relative" ref={notificationsRef}>
                         <button
@@ -395,21 +402,24 @@ const Dashboard = ({
                                     onSelect={setAiTopic}
                                     onSubjectsChange={setSelectedSubjects}
                                     disabled={isGeneratingTest}
+                                    className="md:col-span-4"
                                 />
 
-                                <ChapterSelector
-                                    selectedSubjects={selectedSubjects}
-                                    value={aiTopic}
-                                    onChange={(val) => {
-                                        setShowSuggestions(true);
-                                        setAiTopic(val);
-                                    }}
-                                    disabled={isGeneratingTest}
-                                />
+                                <div className="md:col-span-8">
+                                    <ChapterSelector
+                                        selectedSubjects={selectedSubjects}
+                                        value={aiTopic}
+                                        onChange={(val) => {
+                                            setShowSuggestions(true);
+                                            setAiTopic(val);
+                                        }}
+                                        disabled={isGeneratingTest || selectedSubjects.length > 1 || selectedSubjects.includes('All')}
+                                    />
+                                </div>
                             </div>
 
                             {/* AI Suggestions Tags Here Below the Grid */}
-                            {showSuggestions && aiTopic.length >= 2 && (
+                            {selectedSubjects.length === 1 && !selectedSubjects.includes('All') && showSuggestions && aiTopic.length >= 2 && (
                                 <div className="w-full animate-in fade-in slide-in-from-top-1">
                                     {isSuggesting ? (
                                         <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
@@ -417,33 +427,33 @@ const Dashboard = ({
                                             Neural Engine analyzing...
                                         </div>
                                     ) : topicSuggestions?.length > 0 ? (
-                                        <div className="flex flex-wrap gap-2">
-                                        {topicSuggestions.map((suggestion) => {
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mt-2">
+                                            {topicSuggestions.map((suggestion) => {
                                                 const isActiveSub = selectedSubtopics.has(suggestion);
                                                 return (
-                                                <button
-                                                    key={suggestion}
-                                                    type="button"
-                                                    disabled={isGeneratingTest}
-                                                    onClick={() => {
-                                                        if (isGeneratingTest) return;
-                                                        setSelectedSubtopics(prev => {
-                                                            const next = new Set(prev);
-                                                            next.has(suggestion) ? next.delete(suggestion) : next.add(suggestion);
-                                                            return next;
-                                                        });
-                                                    }}
-                                                    className={`px-3 py-1.5 text-xs font-bold rounded-full transition-all flex items-center gap-1.5 shadow-sm border ${
-                                                        isGeneratingTest
-                                                            ? 'opacity-50 cursor-not-allowed pointer-events-none ' + (isActiveSub ? 'bg-blue-500 border-blue-400 text-white' : 'text-white bg-white/10 border-white/20')
+                                                    <button
+                                                        key={suggestion}
+                                                        title={suggestion}
+                                                        type="button"
+                                                        disabled={isGeneratingTest}
+                                                        onClick={() => {
+                                                            if (isGeneratingTest) return;
+                                                            setSelectedSubtopics(prev => {
+                                                                const next = new Set(prev);
+                                                                next.has(suggestion) ? next.delete(suggestion) : next.add(suggestion);
+                                                                return next;
+                                                            });
+                                                        }}
+                                                        className={`w-full px-3.5 py-2.5 text-xs font-bold rounded-xl transition-all flex items-center gap-2 shadow-sm border text-left ${isGeneratingTest
+                                                            ? 'opacity-50 cursor-not-allowed pointer-events-none ' + (isActiveSub ? 'bg-blue-500 border-blue-400 text-white' : 'text-blue-100 bg-white/20 border-white/30')
                                                             : isActiveSub
-                                                                ? 'bg-blue-500 border-blue-400 text-white cursor-pointer'
-                                                                : 'text-white bg-white/10 border-white/20 hover:bg-white/20 hover:border-white/30 cursor-pointer'
-                                                    }`}
-                                                >
-                                                    <Sparkles size={10} className={isActiveSub ? 'text-white' : 'text-blue-300 opacity-70'} />
-                                                    {suggestion}
-                                                </button>
+                                                                ? 'bg-blue-500 border-blue-400 text-white cursor-pointer shadow-md'
+                                                                : 'text-blue-50 bg-white/10 border-white/20 hover:bg-white/20 hover:border-white/30 cursor-pointer hover:shadow-md'
+                                                            }`}
+                                                    >
+                                                        <Sparkles size={12} className={`flex-shrink-0 ${isActiveSub ? 'text-white' : 'text-blue-300 opacity-80'}`} />
+                                                        <span className="truncate leading-tight">{suggestion}</span>
+                                                    </button>
                                                 );
                                             })}
                                         </div>
@@ -521,10 +531,9 @@ const Dashboard = ({
                             <div className="hidden lg:block mt-2">
                                 <button
                                     onClick={handleGenerateTest}
-                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (!aiTopic.trim() && !uploadedResource)}
-                                    className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${
-                                        selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
-                                    }`}
+                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (selectedSubjects.length === 1 && !selectedSubjects.includes('All') && !aiTopic.trim() && !uploadedResource)}
+                                    className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
+                                        }`}
                                 >
                                     {isGeneratingTest ? (
                                         <>
@@ -557,10 +566,9 @@ const Dashboard = ({
                             <div className="lg:hidden mt-2">
                                 <button
                                     onClick={handleGenerateTest}
-                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (!aiTopic.trim() && !uploadedResource)}
-                                    className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${
-                                        selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
-                                    }`}
+                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (selectedSubjects.length === 1 && !selectedSubjects.includes('All') && !aiTopic.trim() && !uploadedResource)}
+                                    className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
+                                        }`}
                                 >
                                     {isGeneratingTest ? (
                                         <>
@@ -616,17 +624,17 @@ const Dashboard = ({
                         {/* Fix #8: memoized — only recomputed when topicMastery changes */}
                         <div className="flex flex-wrap gap-2">
                             {weakTopics.map(([t, s]) => (
-                                    <div
-                                        key={t}
-                                        className="px-3 py-1.5 md:px-4 md:py-2 bg-red-50 border border-red-100 rounded-lg flex items-center gap-2 justify-start text-left w-auto max-w-full cursor-default"
-                                    >
-                                        <AlertTriangle size={14} className="text-red-500 flex-shrink-0" />
-                                        <div className="overflow-hidden text-left">
-                                            <div className="text-xs md:text-sm font-bold text-slate-800 truncate max-w-[120px]">{t}</div>
-                                            <div className="text-[10px] md:text-xs text-red-500 whitespace-nowrap">{s}% Mastery</div>
-                                        </div>
+                                <div
+                                    key={t}
+                                    className="px-3 py-1.5 md:px-4 md:py-2 bg-red-50 border border-red-100 rounded-lg flex items-center gap-2 justify-start text-left w-auto max-w-full cursor-default"
+                                >
+                                    <AlertTriangle size={14} className="text-red-500 flex-shrink-0" />
+                                    <div className="overflow-hidden text-left">
+                                        <div className="text-xs md:text-sm font-bold text-slate-800 truncate max-w-[120px]">{t}</div>
+                                        <div className="text-[10px] md:text-xs text-red-500 whitespace-nowrap">{s}% Mastery</div>
                                     </div>
-                                ))}
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -638,8 +646,9 @@ const Dashboard = ({
                     </h3>
                     <div className="flex-1 flex flex-col gap-4">
                         {/* My Classroom - NEW */}
-                        <div
-                            className="p-4 bg-purple-50 rounded-xl border border-purple-100 cursor-pointer hover:bg-purple-100 transition-colors"
+                        <button
+                            type="button"
+                            className="w-full text-left p-4 bg-purple-50 rounded-xl border border-purple-100 cursor-pointer hover:bg-purple-100 transition-colors"
                             onClick={() => setView('student/classroom')}
                         >
                             <div className="flex justify-between items-center mb-1">
@@ -652,27 +661,12 @@ const Dashboard = ({
                             <p className="text-xs text-purple-600/80">
                                 View assigned tests from your institution.
                             </p>
-                        </div>
+                        </button>
 
 
-                        {/* Full Mock Test */}
-                        <div
-                            className="p-4 bg-orange-50 rounded-xl border border-orange-100 cursor-pointer hover:bg-orange-100 transition-colors"
-                            onClick={() => startMission()}
-                        >
-                            <div className="flex justify-between items-center mb-1">
-                                <span className="font-bold text-orange-800">Full Mock Test</span>
-                                <span className="text-xs bg-white px-2 py-1 rounded text-orange-600 font-bold">
-                                    100 Qs
-                                </span>
-                            </div>
-                            <p className="text-xs text-orange-600/80">
-                                Standard comprehensive diagnostic.
-                            </p>
-                        </div>
 
                         {/* Flashcard Blitz */}
-                        <div
+                        {/* <div
                             className="p-4 bg-blue-50 rounded-xl border border-blue-100 cursor-pointer hover:bg-blue-100 transition-colors"
                             onClick={() => setView('flashcards')}
                         >
@@ -683,7 +677,7 @@ const Dashboard = ({
                                 </span>
                             </div>
                             <p className="text-xs text-blue-600/80">Quick recall session.</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

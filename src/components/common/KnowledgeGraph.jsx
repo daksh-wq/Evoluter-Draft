@@ -1,15 +1,12 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getMasteryColor } from '../../utils/helpers';
-import { Brain, Sparkles, BookOpen, AlertCircle, Trophy, TrendingUp, X } from 'lucide-react';
+import { Brain, Sparkles } from 'lucide-react';
 
 /**
  * KnowledgeGraph Component
- * Clean, professional mastery visualization — properly centered constellation layout.
+ * The "Hex-Grid" Honeycomb design. Interlocking hexagon blocks showing subject mastery.
  */
 const KnowledgeGraph = ({ mastery = {} }) => {
-    const [selectedNode, setSelectedNode] = useState(null);
-
     // Summary stats
     const stats = useMemo(() => {
         const scores = Object.values(mastery);
@@ -23,212 +20,179 @@ const KnowledgeGraph = ({ mastery = {} }) => {
         };
     }, [mastery]);
 
-    // Transform mastery into positioned nodes
-    const nodes = useMemo(() => {
-        const topics = Object.entries(mastery);
+    // Format data and calculate chunks for Honeycomb
+    const chunks = useMemo(() => {
+        const topics = Object.entries(mastery).map(([topic, score]) => ({
+            subject: topic,
+            score: Math.round(score),
+        }));
+        
         if (topics.length === 0) return [];
+        
+        // Sort alphabetically or however you prefer. Here we do highest score to middle roughly.
+        topics.sort((a, b) => b.score - a.score);
 
-        const sorted = topics.sort(([, a], [, b]) => b - a);
-        const count = sorted.length;
-
-        return sorted.map(([topic, score], index) => {
-            const angle = (index / count) * 2 * Math.PI - Math.PI / 2;
-            const baseRadius = count <= 4 ? 22 : count <= 8 ? 25 : count <= 12 ? 28 : 30;
-            const radius = baseRadius + (index % 2 === 0 ? 0 : 7);
-            // Use percentage-based positions relative to center (50%, 50%)
-            const cx = 50 + Math.cos(angle) * radius;
-            const cy = 50 + Math.sin(angle) * radius;
-            return {
-                id: topic,
-                label: topic,
-                score,
-                cx, // percentage from left
-                cy, // percentage from top
-                color: getMasteryColor(score),
-            };
-        });
+        // Group into interlocking rows
+        const len = topics.length;
+        if (len === 7) return [[topics[0], topics[1]], [topics[2], topics[3], topics[4]], [topics[5], topics[6]]];
+        if (len === 6) return [[topics[0], topics[1], topics[2]], [topics[3], topics[4], topics[5]]];
+        if (len === 5) return [[topics[0], topics[1]], [topics[2], topics[3], topics[4]]];
+        if (len === 4) return [[topics[0], topics[1]], [topics[2], topics[3]]];
+        if (len === 3) return [[topics[0], topics[1], topics[2]]];
+        return [topics];
     }, [mastery]);
 
-    const getStatusLabel = (score) => {
-        if (score >= 80) return { text: 'Mastered', icon: Trophy };
-        if (score >= 50) return { text: 'Learning', icon: BookOpen };
-        return { text: 'Needs Work', icon: AlertCircle };
-    };
-
-    if (nodes.length === 0) {
+    if (chunks.length === 0) {
         return (
-            <div className="h-64 w-full bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl flex flex-col items-center justify-center text-slate-400 border border-slate-200/60">
-                <div className="w-14 h-14 bg-slate-200/60 rounded-2xl flex items-center justify-center mb-3">
+            <div className="h-64 w-full bg-slate-50 rounded-2xl flex flex-col items-center justify-center text-slate-400 border border-slate-200">
+                <div className="w-14 h-14 bg-slate-200/50 rounded-2xl flex items-center justify-center mb-3">
                     <Brain size={24} className="text-slate-400" />
                 </div>
-                <p className="font-semibold text-slate-500 text-sm">No knowledge data yet</p>
-                <p className="text-xs mt-1 text-slate-400">Take a test to generate your mastery graph</p>
+                <p className="font-semibold text-slate-500 text-sm">No analysis available</p>
+                <p className="text-xs mt-1 text-slate-400">Take a diagnostic test to initialize your hex-grid</p>
             </div>
         );
     }
 
     return (
-        <div className="w-full space-y-4">
+        <div className="w-full space-y-6">
             {/* Stats Row */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
                     { label: 'Topics', value: stats.total, color: 'text-slate-700' },
                     { label: 'Avg Mastery', value: `${stats.avg}%`, color: 'text-[#2278B0]' },
                     { label: 'Strong', value: stats.strong, color: 'text-emerald-600' },
                     { label: 'Weak', value: stats.weak, color: 'text-amber-600' },
                 ].map((s) => (
-                    <div key={s.label} className="bg-white rounded-xl p-2.5 border border-slate-100 text-center">
-                        <div className="text-[9px] uppercase tracking-wider text-slate-400 font-semibold">{s.label}</div>
-                        <div className={`text-lg font-bold ${s.color} mt-0.5`}>{s.value}</div>
+                    <div key={s.label} className="bg-slate-50 rounded-2xl p-3 border border-slate-100 text-center shadow-sm">
+                        <div className="text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-1">{s.label}</div>
+                        <div className={`text-xl font-black ${s.color}`}>{s.value}</div>
                     </div>
                 ))}
             </div>
 
-            {/* Graph */}
-            <div className="relative w-full aspect-square max-h-[280px] sm:max-h-[420px] bg-gradient-to-br from-[#0c1222] via-[#111827] to-[#0f172a] rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg">
-                {/* Dot grid */}
+            {/* Honeycomb Grid Container */}
+            <div className="relative w-full overflow-hidden bg-[#0B1121] rounded-3xl shadow-[inset_0_0_120px_rgba(0,0,0,1)] flex items-center justify-center py-10 sm:py-16 border border-slate-800/80">
+                
+                {/* Tactical grid background */}
                 <div
-                    className="absolute inset-0 opacity-[0.04]"
-                    style={{ backgroundImage: 'radial-gradient(circle, #94a3b8 0.5px, transparent 0.5px)', backgroundSize: '20px 20px' }}
+                    className="absolute inset-0 opacity-10 pointer-events-none"
+                    style={{ backgroundImage: 'radial-gradient(circle, #94a3b8 1px, transparent 1px)', backgroundSize: '24px 24px' }}
                 />
 
-                {/* Center glow */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-[#2278B0]/5 blur-3xl pointer-events-none" />
-
-                {/* Connection Lines — SVG covers the full container */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-                    {nodes.map((node, i) => (
-                        <motion.line
-                            key={`line-${node.id}`}
-                            x1="50" y1="50"
-                            x2={node.cx} y2={node.cy}
-                            stroke={selectedNode?.id === node.id ? node.color : '#334155'}
-                            strokeWidth={selectedNode?.id === node.id ? '0.4' : '0.2'}
-                            strokeDasharray={selectedNode?.id === node.id ? 'none' : '0.8 0.8'}
-                            initial={{ pathLength: 0, opacity: 0 }}
-                            animate={{ pathLength: 1, opacity: selectedNode?.id === node.id ? 0.7 : 0.25 }}
-                            transition={{ duration: 0.6, delay: i * 0.04 }}
-                        />
-                    ))}
-                </svg>
-
-                {/* Center Node */}
-                <motion.div
-                    className="absolute z-20"
-                    style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ type: "spring", stiffness: 200, damping: 20 }}
-                >
-                    <div className="w-12 h-12 rounded-full bg-[#111827] border-2 border-[#2278B0]/50 flex items-center justify-center shadow-[0_0_16px_rgba(34,120,176,0.12)]">
-                        <TrendingUp size={20} className="text-[#2278B0]" />
-                    </div>
-                    <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                        <span className="text-[8px] font-semibold text-slate-500 uppercase tracking-wider">You</span>
-                    </div>
-                </motion.div>
-
-                {/* Topic Nodes — positioned by percentage */}
-                {nodes.map((node, index) => {
-                    const status = getStatusLabel(node.score);
-                    const StatusIcon = status.icon;
-                    const isSelected = selectedNode?.id === node.id;
-
-                    return (
-                        <motion.div
-                            key={node.id}
-                            className="absolute z-20 cursor-pointer"
-                            style={{
-                                left: `${node.cx}%`,
-                                top: `${node.cy}%`,
-                                transform: 'translate(-50%, -50%)',
+                <div className="flex flex-col items-center justify-center relative z-10 w-full max-w-2xl px-2">
+                    {chunks.map((row, rIdx) => (
+                        <div 
+                            key={`row-${rIdx}`} 
+                            className="flex justify-center" 
+                            style={{ 
+                                marginTop: rIdx > 0 ? '-24px' : '0', // Stagger negative margin to interlock hexes. Adjust as needed.
+                                zIndex: chunks.length - rIdx // prevent overlap clipping from bottom items
                             }}
-                            initial={{ scale: 0, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            transition={{ delay: index * 0.05, type: 'spring', stiffness: 260, damping: 20 }}
-                            onClick={() => setSelectedNode(isSelected ? null : node)}
-                            whileHover={{ scale: 1.15 }}
                         >
-                            {/* Node circle */}
-                            <div
-                                className={`w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 ${isSelected ? 'ring-2 ring-offset-2 ring-offset-[#111827]' : ''}`}
-                                style={{
-                                    backgroundColor: `${node.color}15`,
-                                    border: `1.5px solid ${node.color}${isSelected ? 'bb' : '44'}`,
-                                    boxShadow: isSelected ? `0 0 16px ${node.color}25` : 'none',
-                                    '--tw-ring-color': node.color,
-                                }}
-                            >
-                                <StatusIcon size={14} style={{ color: node.color }} />
-                            </div>
-
-                            {/* Label */}
-                            <div className="absolute top-11 left-1/2 -translate-x-1/2 flex flex-col items-center pointer-events-none z-30">
-                                <span className="text-[8px] sm:text-[9px] font-medium text-slate-400 bg-[#111827]/90 px-1.5 py-0.5 rounded whitespace-nowrap max-w-[70px] sm:max-w-[100px] truncate leading-tight border border-[#2278b0]/20 shadow-sm backdrop-blur-sm">
-                                    {node.label}
-                                </span>
-                                <span className="text-[9px] font-bold mt-0.5" style={{ color: node.color }}>
-                                    {Math.round(node.score)}%
-                                </span>
-                            </div>
-                        </motion.div>
-                    );
-                })}
-
-                {/* Detail Panel */}
-                <AnimatePresence>
-                    {selectedNode && (
-                        <motion.div
-                            initial={{ opacity: 0, y: 8 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 8 }}
-                            transition={{ duration: 0.2 }}
-                            className="absolute bottom-3 left-3 right-3 bg-[#0f172a]/95 backdrop-blur-xl border border-slate-700/50 rounded-xl p-4 z-30 shadow-2xl"
-                        >
-                            <div className="flex justify-between items-start">
-                                <div>
-                                    <h3 className="font-bold text-white text-sm leading-tight">{selectedNode.label}</h3>
-                                    <span className="text-[9px] font-medium uppercase tracking-wider" style={{ color: selectedNode.color }}>
-                                        {getStatusLabel(selectedNode.score).text}
-                                    </span>
-                                </div>
-                                <button
-                                    onClick={(e) => { e.stopPropagation(); setSelectedNode(null); }}
-                                    className="p-1 hover:bg-white/10 rounded-lg text-slate-500 hover:text-white transition-colors"
-                                >
-                                    <X size={12} />
-                                </button>
-                            </div>
-
-                            <div className="flex items-center gap-4 mt-3">
-                                <span className="text-2xl font-black" style={{ color: selectedNode.color }}>
-                                    {Math.round(selectedNode.score)}%
-                                </span>
-                                <div className="flex-1">
-                                    <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
-                                        <motion.div
-                                            initial={{ width: 0 }}
-                                            animate={{ width: `${selectedNode.score}%` }}
-                                            transition={{ duration: 0.5 }}
-                                            className="h-full rounded-full"
-                                            style={{ backgroundColor: selectedNode.color }}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p className="text-[11px] text-slate-400 leading-relaxed mt-2">
-                                {selectedNode.score < 50
-                                    ? "Needs focused attention. Consider targeted practice sessions."
-                                    : selectedNode.score < 80
-                                        ? "Good progress — consistent revision will solidify this."
-                                        : "Strong mastery. Periodic reviews will maintain your edge."}
-                            </p>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
+                            {row.map((item, iIdx) => {
+                                const delay = (rIdx * 3 + iIdx) * 0.1;
+                                return (
+                                    <Hexagon 
+                                        key={item.subject} 
+                                        subject={item.subject} 
+                                        score={item.score} 
+                                        delay={delay} 
+                                    />
+                                );
+                            })}
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
+    );
+};
+
+// Extracted Hexagon Component
+const Hexagon = ({ subject, score, delay }) => {
+    // Dynamic styling based on score
+    let borderColor = 'rgba(59, 130, 246, 0.4)'; // Blue (Learning)
+    let glowingLiquid = 'rgba(59, 130, 246, 0.8)'; 
+    let baseDark = '#172554'; // indigo-950
+    // let textStatus = 'text-blue-300';
+
+    if (score >= 80) {
+        borderColor = 'rgba(16, 185, 129, 0.4)'; // Emerald Mastered
+        glowingLiquid = 'rgba(16, 185, 129, 0.85)';
+        baseDark = '#064e3b'; // emerald-950
+    } else if (score < 50) {
+        borderColor = 'rgba(239, 68, 68, 0.4)'; // Red Weak
+        glowingLiquid = 'rgba(239, 68, 68, 0.85)';
+        baseDark = '#450a0a'; // red-950
+    }
+
+    const hexClipPath = 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)';
+
+    return (
+        <motion.div
+            initial={{ scale: 0, opacity: 0, rotate: -20 }}
+            animate={{ scale: 1, opacity: 1, rotate: 0 }}
+            transition={{ delay, type: 'spring', stiffness: 200, damping: 20 }}
+            className="group relative cursor-pointer"
+            style={{ 
+                width: '100px', 
+                height: '114px', 
+                margin: '0 4px', // Space horizontally between hexes
+            }}
+            whileHover={{ scale: 1.08, zIndex: 50 }}
+        >
+            {/* Outer Box serving as the colored Border */}
+            <div 
+                className="absolute inset-0 transition-transform duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                style={{
+                    clipPath: hexClipPath,
+                    backgroundColor: borderColor,
+                }}
+            >
+                {/* Inner Dark Hex */}
+                <div
+                    className="absolute top-[2px] left-[2px] right-[2px] bottom-[2px]"
+                    style={{
+                        clipPath: hexClipPath,
+                        backgroundColor: '#0f172a', // Very dark slate inside
+                    }}
+                >
+                    {/* Underlying Base Glow (Empty space) */}
+                    <div className="absolute inset-0" style={{ backgroundColor: baseDark, opacity: 0.3 }} />
+
+                    {/* Animated Liquid Fill tracking the score % */}
+                    <motion.div 
+                        initial={{ height: '0%' }}
+                        animate={{ height: `${score}%` }}
+                        transition={{ delay: delay + 0.3, duration: 1.5, ease: "easeOut" }}
+                        className="absolute bottom-0 left-0 right-0 w-full"
+                        style={{ 
+                            backgroundColor: glowingLiquid,
+                            boxShadow: `0 -5px 15px ${glowingLiquid}`
+                        }}
+                    >
+                        {/* Shimmer effect inside the liquid */}
+                        <div className="absolute inset-0 opacity-30 bg-gradient-to-t from-transparent to-white pointer-events-none mix-blend-overlay" />
+                    </motion.div>
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-2 text-center pointer-events-none z-10 transition-transform duration-300 group-hover:scale-110">
+                        <span className="text-xl sm:text-2xl font-black text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                            {score}%
+                        </span>
+                        <span className="text-[8px] sm:text-[9px] uppercase font-bold mt-0.5 text-slate-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] leading-tight max-w-[90%] break-words">
+                            {subject}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            {/* Hover overlay highlight ring */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-screen pointer-events-none"
+                 style={{ clipPath: hexClipPath, boxShadow: `inset 0 0 20px ${glowingLiquid}` }} 
+            />
+        </motion.div>
     );
 };
 

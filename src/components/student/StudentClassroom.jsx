@@ -219,7 +219,13 @@ const StudentClassroom = ({ userData, startInstitutionTest }) => {
                                 const endDate = test.scheduledEnd?.toDate ? test.scheduledEnd.toDate() : null;
 
                                 return (
-                                    <div key={test.id} className={`bg-white p-6 rounded-2xl border shadow-sm hover:shadow-md transition-all group ${timeState === 'ended' ? 'border-red-100 bg-red-50/30' : timeState === 'upcoming' ? 'border-amber-100 bg-amber-50/30' : 'border-slate-100'
+                                    <div 
+                                        key={test.id} 
+                                        onClick={() => timeState === 'live' && handleStartTest(test)}
+                                        className={`bg-white p-6 rounded-2xl border shadow-sm hover:shadow-md transition-all group ${
+                                            timeState === 'ended' ? 'border-red-100 bg-red-50/30' : 
+                                            timeState === 'upcoming' ? 'border-amber-100 bg-amber-50/30' : 
+                                            'border-slate-100 cursor-pointer hover:border-indigo-200'
                                         }`}>
                                         <div className="flex justify-between items-start gap-4">
                                             <div className="flex-1 min-w-0">

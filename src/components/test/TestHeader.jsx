@@ -39,15 +39,13 @@ export const TestHeader = ({
             {/* Right: Timer + Controls */}
             <div className="flex items-center gap-1 sm:gap-2 shrink-0">
 
-                {/* Timer — always visible except Zen Mode */}
-                {!isZenMode && (
-                    <div className={`flex items-center gap-1 sm:gap-2 font-bold bg-slate-50 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-slate-100 ${isLowTime ? 'border-red-200 bg-red-50' : ''}`}>
-                        <Clock size={13} className={isLowTime ? 'text-red-500 animate-pulse' : 'text-[#2278B0]'} />
-                        <span className={`text-xs sm:text-xs tabular-nums ${isLowTime ? 'text-red-600' : 'text-slate-700'}`}>
-                            {formatTime(timeLeft)}
-                        </span>
-                    </div>
-                )}
+                {/* Timer — visible in Zen Mode as well */}
+                <div className={`flex items-center gap-1 sm:gap-2 font-bold bg-slate-50 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-slate-100 ${isLowTime ? 'border-red-200 bg-red-50' : ''}`}>
+                    <Clock size={13} className={isLowTime ? 'text-red-500 animate-pulse' : 'text-[#2278B0]'} />
+                    <span className={`text-xs sm:text-xs tabular-nums ${isLowTime ? 'text-red-600' : 'text-slate-700'}`}>
+                        {formatTime(timeLeft)}
+                    </span>
+                </div>
 
                 {/* Zen Mode Toggle */}
                 <button
@@ -64,16 +62,14 @@ export const TestHeader = ({
                     <span className="hidden sm:inline">{isZenMode ? 'Exit Zen' : 'Zen Mode'}</span>
                 </button>
 
-                {/* Submit — only outside Zen Mode */}
-                {!isZenMode && (
-                    <button
-                        onClick={onSubmit}
-                        className="bg-[#2278B0] text-white px-2.5 sm:px-5 py-2 rounded-lg text-xs font-bold hover:bg-[#1b5f8a] shadow-md shadow-[#2278B0]/20 transition-all hover:shadow-lg active:scale-95 whitespace-nowrap"
-                    >
-                        <span className="hidden sm:inline">Submit Test</span>
-                        <span className="sm:hidden">Submit</span>
-                    </button>
-                )}
+                {/* Submit button — now available in Zen Mode too */}
+                <button
+                    onClick={onSubmit}
+                    className="bg-[#2278B0] text-white px-2.5 sm:px-5 py-2 rounded-lg text-xs font-bold hover:bg-[#1b5f8a] shadow-md shadow-[#2278B0]/20 transition-all hover:shadow-lg active:scale-95 whitespace-nowrap"
+                >
+                    <span className="hidden sm:inline">Submit Test</span>
+                    <span className="sm:hidden">Submit</span>
+                </button>
             </div>
         </header>
     );
