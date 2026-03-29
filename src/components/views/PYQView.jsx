@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { History, Search, PlayCircle, X, Check, ChevronDown, CheckCircle2, Circle } from 'lucide-react';
-import { PYQ_DATABASE } from '@/constants/pyqDatabase';
-import { SUBJECTS, SUBJECT_CODES, TOPIC_CODES } from '@/constants/appConstants';
+import { ALL_PYQ_QUESTIONS, getPYQSubjects, getPYQTopics } from '@/services/pyqService';
 
 const currentYear = new Date().getFullYear();
 
@@ -12,8 +11,11 @@ const DURATION_OPTIONS = [
 ];
 
 const SOURCE_OPTIONS = [
-    { label: 'Only UPSC CSE', value: 'cse' },
-    { label: 'All UPSC Exams', value: 'all' },
+    { label: 'Only UPSC CSE', value: 'Only UPSC CSE' },
+    { label: 'NDA', value: 'NDA' },
+    { label: 'CDSE', value: 'CDSE' },
+    { label: 'CAPF', value: 'CAPF' },
+    { label: 'CISF', value: 'CISF' },
 ];
 
 // ── Reusable single-select dropdown ──────────────────────────────────────────
@@ -148,59 +150,46 @@ const PYQView = ({ startCustomTest }) => {
     const [selectedDuration, setSelectedDuration] = useState('All');
     const [selectedSource, setSelectedSource] = useState('All');
 
-    // Use SUBJECTS from constants, excluding 'All Subjects' for the list
-    const subjects = useMemo(() => SUBJECTS.filter(s => s !== 'All Subjects'), []);
+    // Derive subjects directly from the loaded PYQ data
+    const subjects = useMemo(() => getPYQSubjects(), []);
 
-    // Logic for subtopics
+    // Derive subtopics from selected subjects using real data
     const subtopics = useMemo(() => {
-        let codes = [];
         if (selectedSubjects.has('All Subjects') || selectedSubjects.size === 0) {
-            // Get all subtopics from all subjects
-            subjects.forEach(sub => {
-                const code = SUBJECT_CODES[sub];
-                if (code && TOPIC_CODES[code]) {
-                    codes = [...codes, ...Object.values(TOPIC_CODES[code])];
-                }
-            });
-        } else {
-            // Get subtopics from only selected subjects
-            [...selectedSubjects].forEach(sub => {
-                const code = SUBJECT_CODES[sub];
-                if (code && TOPIC_CODES[code]) {
-                    codes = [...codes, ...Object.values(TOPIC_CODES[code])];
-                }
-            });
+            return getPYQTopics([]);
         }
-        return [...new Set(codes)].sort();
-    }, [selectedSubjects, subjects]);
+        return getPYQTopics([...selectedSubjects]);
+    }, [selectedSubjects]);
 
     const activeDuration = DURATION_OPTIONS.find(o => o.label === selectedDuration) || null;
 
     const filteredQuestions = useMemo(() => {
-        return PYQ_DATABASE.filter(q => {
+        return ALL_PYQ_QUESTIONS.filter(q => {
+            // Duration filter
             if (activeDuration && (q.year < activeDuration.min || q.year > activeDuration.max)) return false;
-            
-            // Check subject filtering
-            if (!selectedSubjects.has('All Subjects')) {
-                // If specific subjects are selected and question doesn't match
-                if (selectedSubjects.size > 0 && !selectedSubjects.has(q.subject)) return false;
+
+            // Subject filter
+            if (!selectedSubjects.has('All Subjects') && selectedSubjects.size > 0) {
+                if (!selectedSubjects.has(q.subject)) return false;
             }
 
-            // Check subtopic filtering
-            if (!selectedSubtopics.has('All Subtopics')) {
-                if (selectedSubtopics.size > 0 && !selectedSubtopics.has(q.topic)) return false;
+            // Sub-topic filter
+            if (!selectedSubtopics.has('All Subtopics') && selectedSubtopics.size > 0) {
+                if (!selectedSubtopics.has(q.topic)) return false;
             }
-            if (selectedSource === 'Only UPSC CSE') {
-                const examTag = q.tags?.find(t => t.type === 'pyq');
-                if (examTag) {
-                    const lbl = examTag.label.toUpperCase();
-                    if (['NDA', 'CDSE', 'CAPF', 'CISF'].some(e => lbl.includes(e))) return false;
-                }
+
+            // Source filter
+            if (selectedSource !== 'All') {
+                if (selectedSource === 'Only UPSC CSE' && !q._isCSE) return false;
+                else if (selectedSource !== 'Only UPSC CSE' && q._source !== selectedSource) return false;
             }
+
+            // Search filter
             if (searchTerm) {
                 const s = searchTerm.toLowerCase();
-                if (!q.text.toLowerCase().includes(s) && !q.topic.toLowerCase().includes(s)) return false;
+                if (!q.text?.toLowerCase().includes(s) && !q.topic?.toLowerCase().includes(s)) return false;
             }
+
             return true;
         });
     }, [selectedSubjects, selectedSubtopics, activeDuration, selectedSource, searchTerm]);

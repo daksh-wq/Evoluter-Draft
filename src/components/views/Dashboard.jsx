@@ -342,18 +342,28 @@ const Dashboard = ({
             {/* Daily Quote Card */}
             <div className="bg-white border border-slate-100 p-6 md:p-8 rounded-3xl shadow-sm flex flex-col justify-center relative overflow-hidden">
                 <div className="absolute -right-4 -top-4 w-32 h-32 bg-[#2278B0]/5 rounded-full blur-2xl pointer-events-none" />
-                <h4 className="text-[#2278B0] font-bold text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
-                    <Sparkles size={16} /> Today's Quote
+                <div className="absolute left-4 bottom-4 text-[120px] font-serif text-[#2278B0]/5 leading-none pointer-events-none select-none">"</div>
+                <h4 className="text-[#2278B0] font-bold text-xs uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <Sparkles size={16} /> Today's Inspiration
                 </h4>
                 {quoteLoading ? (
                     <div className="space-y-3 mt-2">
-                        <div className="h-4 bg-slate-200 rounded animate-pulse w-full"></div>
-                        <div className="h-4 bg-slate-200 rounded animate-pulse w-4/5"></div>
+                        <div className="h-5 bg-slate-100 rounded-full animate-pulse w-full" />
+                        <div className="h-5 bg-slate-100 rounded-full animate-pulse w-4/5" />
+                        <div className="h-4 bg-slate-100 rounded-full animate-pulse w-1/3 mt-4" />
                     </div>
                 ) : (
-                    <p className="text-base md:text-xl font-serif text-slate-800 italic leading-relaxed transition-opacity duration-500 max-w-4xl">
-                        {quote}
-                    </p>
+                    <div className="relative z-10">
+                        <p className="text-lg md:text-2xl font-serif text-slate-800 italic leading-relaxed transition-opacity duration-500 max-w-3xl">
+                            {typeof quote === 'object' ? `"${quote.text}"` : quote}
+                        </p>
+                        {typeof quote === 'object' && quote.author && (
+                            <p className="mt-3 text-sm font-semibold text-[#2278B0] not-italic flex items-center gap-2">
+                                <span className="inline-block w-8 h-px bg-[#2278B0]/40" />
+                                {quote.author}
+                            </p>
+                        )}
+                    </div>
                 )}
             </div>
             {/* AI Neural Engine Section */}

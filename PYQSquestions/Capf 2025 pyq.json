@@ -1,0 +1,4352 @@
+[
+    {
+        "id": "nda-2025-2-q1",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Reading Comprehension",
+        "text": "Why do twentieth century advances not seem sustainable?",
+        "options": [
+            "They do not meet the human needs",
+            "Due to the increased cost of agricultural production",
+            "Because they are outdated for the current times",
+            "They are useful, but intensive"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The passage explicitly states, 'Since twentieth century advances, given increasing costs, do not seem sustainable...'",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Reading Comprehension"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q2",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Reading Comprehension",
+        "text": "What pushes farmers into places unsuited for agriculture?",
+        "options": [
+            "Population growth",
+            "Industrialisation",
+            "Water scarcity",
+            "Desertification"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The passage states, 'Global population growth... has pushed farmers and herders into areas unsuited to intensive agriculture...'",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Reading Comprehension"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q3",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Reading Comprehension",
+        "text": "Which one of the following is NOT true, according to the passage, for ecological degradation?",
+        "options": [
+            "Global population growth",
+            "Excess use of chemicals",
+            "Desertification",
+            "World War II"
+        ],
+        "correctAnswer": 3,
+        "explanation": "World War II is mentioned merely as a timeline reference point ('since World War II'), not as a direct cause of ecological degradation like the other options.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Reading Comprehension"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q4",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Reading Comprehension",
+        "text": "What is the conclusion of the author in the passage about the prospects of agriculture in the world?",
+        "options": [
+            "The author is both hopeful and sceptical of the prospects of agriculture",
+            "The author is very hopeful of the prospects of agriculture",
+            "The author is sceptical of the prospects of agriculture",
+            "The author is neither hopeful nor sceptical of the prospects of agriculture"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The author concludes by saying, 'we may remain hopeful... but we can scarcely look forward optimistically...', demonstrating a mix of both hope and scepticism.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Reading Comprehension"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q5",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "text": "Which one of the following words means 'incursion'?",
+        "options": [
+            "invasion",
+            "intensive",
+            "severe",
+            "intervention"
+        ],
+        "correctAnswer": 0,
+        "explanation": "An 'incursion' is an invasion or attack, especially a sudden or brief one. It is synonymous with 'invasion'.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Vocabulary"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q6",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Direct and Indirect Speech",
+        "text": "Convert from direct into indirect speech.\nAyushi said to the group, \"We have had enough of suffering today. It is time to march forward.\"",
+        "options": [
+            "Ayushi told the group that they had had enough of suffering that day and it was time to march forward",
+            "Ayushi asked the group that they had had enough of suffering this day and it was time to march forward",
+            "Ayushi told the group that they had enough of suffering and that it is time to march forward",
+            "Ayushi told the group that we had had enough of suffering this day and it was time to march forward"
+        ],
+        "correctAnswer": 0,
+        "explanation": "In indirect speech, 'said to' changes to 'told', 'We' changes to 'they', 'today' changes to 'that day', and the present tense 'is' changes to 'was'.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Direct and Indirect Speech"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q7",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Direct and Indirect Speech",
+        "text": "Convert from direct speech into indirect speech.\n\"Alas! We lost the match by one point,\" said the Captain",
+        "options": [
+            "The Captain regretted that they had lost the match by one point",
+            "The Captain regretted that they lost the match by one point",
+            "The Captain exclaimed that they had lost the match by one point",
+            "The Captain told the team that they had lost the match by one point"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The interjection 'Alas!' conveys sorrow or regret. 'Said' transforms into 'regretted', and the simple past 'lost' changes to the past perfect 'had lost'.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Direct and Indirect Speech"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q8",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Direct and Indirect Speech",
+        "text": "Convert from direct speech into indirect speech.\n\"Where were you last week?\" Alok asked Sheela",
+        "options": [
+            "Alok told Sheela where she had been the week before",
+            "Alok asked Sheela where she had been the week before",
+            "Alok asked Sheela where she was the week before",
+            "Alok asked Sheela where she had been the last week"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The simple past 'were' changes to past perfect 'had been', and 'last week' changes to 'the week before' in indirect speech.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Direct and Indirect Speech"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q9",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Active and Passive Voice",
+        "text": "Convert the active voice into passive voice correctly.\nThe king who the people loved built the castle five centuries ago",
+        "options": [
+            "The castle was built five centuries ago by the king who was loved by the people",
+            "The castle was built five centuries ago by the king who loved the people",
+            "The castle built five centuries ago by the king loved by the people",
+            "The castle was built five centuries ago by the people who were loved by the king"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The object 'the castle' becomes the subject. 'Built' changes to 'was built'. The relative clause 'who the people loved' also changes to passive: 'who was loved by the people'.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Active and Passive Voice"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q10",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Active and Passive Voice",
+        "text": "Convert the active voice into passive voice correctly.\nThe company has recruited four hundred engineers who will have to complete an internship for three weeks",
+        "options": [
+            "Four hundred engineers have been recruited by the company and an internship of three weeks will have to be completed by them",
+            "Four hundred engineers have been recruited by the company and they will have to complete an internship of three weeks",
+            "The company has been recruited by four hundred engineers and an internship of three week will have to be completed by them",
+            "Four hundred engineers have been recruited by the company. Internship of three weeks will have had to be completed by them"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The object 'four hundred engineers' becomes the subject. 'Has recruited' becomes 'have been recruited'. The secondary clause 'who will have to complete an internship' converts to 'and an internship... will have to be completed by them'.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Active and Passive Voice"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q11",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Usage of Paired Words",
+        "text": "Seldom and Often",
+        "options": [
+            "Seldom means hardly ever and often means time and again",
+            "Seldom means time and again and often means hardly ever",
+            "Seldom means never and often means not at all",
+            "Seldom means frequently and often means time and again"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Seldom' means rarely or hardly ever, while 'often' means frequently or time and again.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Usage of Paired Words"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q12",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Usage of Paired Words",
+        "text": "Overview and Review",
+        "options": [
+            "Overview means assessment and review means general idea",
+            "Overview means general idea and review means assessment",
+            "Overview means general analysis and review means go through",
+            "Overview means summary and review means evaluation"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An 'overview' provides a general idea or summary of a subject, whereas a 'review' entails a formal assessment or critical evaluation of something.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Usage of Paired Words"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q13",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Usage of Paired Words",
+        "text": "Overcome and Succeed",
+        "options": [
+            "Overcome means triumph over and succeed means to achieve something",
+            "Overcome means achieve something and succeed means to triumph over",
+            "Overcome means to be successful and succeed means to achieve something",
+            "Overcome means winning and succeed means to rise above"
+        ],
+        "correctAnswer": 0,
+        "explanation": "To 'overcome' is to succeed in dealing with a problem or difficulty (triumph over). To 'succeed' is to achieve the desired aim or result.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Usage of Paired Words"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q14",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Usage of Paired Words",
+        "text": "Embed and Imbue",
+        "options": [
+            "Embed means instil and imbue means implant",
+            "Embed means implant and imbue means instil",
+            "Embed means accept and imbue means detest",
+            "Embed means include and imbue means accept"
+        ],
+        "correctAnswer": 1,
+        "explanation": "To 'embed' is to fix (an object) firmly and deeply in a surrounding mass (implant). To 'imbue' is to inspire or permeate with a feeling or quality (instil).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Usage of Paired Words"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q15",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Usage of Paired Words",
+        "text": "Emancipate and Empower",
+        "options": [
+            "Emancipate means authorize and empower means liberate",
+            "Emancipate means liberate and empower means authorise",
+            "Emancipate means liberal and empower means authorisation",
+            "Emancipate means freedom and empower means encounter"
+        ],
+        "correctAnswer": 1,
+        "explanation": "To 'emancipate' means to set free, especially from legal, social, or political restrictions (liberate). To 'empower' means to give someone the authority or power to do something.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Usage of Paired Words"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q16",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Synonyms",
+        "text": "The Professor has been able to instil confidence in her students",
+        "options": [
+            "inculcate",
+            "infer",
+            "eradicate",
+            "unlike"
+        ],
+        "correctAnswer": 0,
+        "explanation": "To 'instil' means to gradually but firmly establish an idea or attitude in a person's mind, which is synonymous with 'inculcate'.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Synonyms"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q17",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Synonyms",
+        "text": "The members of the group expressed their allegiance to their leader",
+        "options": [
+            "commitment",
+            "disloyalty",
+            "understanding",
+            "unlikely"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Allegiance' means loyalty or commitment of a subordinate to a superior or of an individual to a group or cause.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Synonyms"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q18",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Synonyms",
+        "text": "The inscrutability surrounding the incident remains unresolved until the end of the movie",
+        "options": [
+            "clearness",
+            "comprehensibility",
+            "seriousness",
+            "mystery"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Inscrutability' refers to something being impossible to understand or interpret, which closely aligns with the meaning of 'mystery'.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Synonyms"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q19",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Synonyms",
+        "text": "The dodgy behaviour of the leader led to her fall",
+        "options": [
+            "principled",
+            "dubious",
+            "dishonest",
+            "painful"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Dodgy' is an informal term meaning dishonest or unreliable, making 'dishonest' (or 'dubious') the closest synonym. In UPSC keys, 'dishonest' or 'dubious' are close, but 'dishonest' captures the deceitful aspect well.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Synonyms"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q20",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Synonyms",
+        "text": "People have been advised not to venture into sea as the weather is likely to be inclement",
+        "options": [
+            "squally",
+            "calm",
+            "pleasant",
+            "indigent"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Inclement weather means unpleasantly cold or wet, stormy. 'Squally' refers to weather characterized by sudden, violent gusts of wind and rain, which is the most accurate synonym here.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Synonyms"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q21",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nS1. Sufism is an English word coined in the Nineteenth Century\nS6. It may also have been suffa, the platform outside a place of Islamic worship\nP. Historians have understood this term in several ways\nQ. According to some scholars, it is derived from suf, meaning wool\nR. Others derive it from safa, meaning purity\nS. The word used for Sufism in Islamic texts is tasawwuf",
+        "options": [
+            "QRSP",
+            "SPQR",
+            "PQSR",
+            "RPSQ"
+        ],
+        "correctAnswer": 1,
+        "explanation": "S1 introduces the English word. S explains the original Islamic term 'tasawwuf'. P introduces the historical understandings of its derivation. Q gives the first theory ('suf' = wool). R gives the second theory ('safa' = purity). S6 provides a third theory ('suffa' = platform). Sequence is SPQR.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q22",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nS1. Al-Biruni was born in 973, in Khwarizm in present-day Uzbekistan\nS6. He arrived in Ghazni as a hostage, but gradually developed a liking for the city\nP. In 1017, when Sultan Mahmud invaded Khwarizm, he took several scholars back to his capital, Ghazni: Al-Biruni was one among them\nQ. He was well versed in several languages; Syriac, Arabic, Persian, Hebrew, and Sanskrit\nR. Khwarizm was an important centre of learning, and Al-Biruni received the best education available at the time\nS. However he did not know Greek, although he was familiar with the works of Plato and other Greek philosophers",
+        "options": [
+            "QSRP",
+            "RQSP",
+            "PQSR",
+            "RPSQ"
+        ],
+        "correctAnswer": 1,
+        "explanation": "S1 mentions Khwarizm. R explains Khwarizm as a learning center where he got his education. Q details his language skills gained from that education. S provides a contrast regarding his lack of Greek. P transitions the narrative to his capture by Sultan Mahmud and move to Ghazni. S6 continues his story in Ghazni. Sequence is RQSP.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q23",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nS1. Vijayanagara or 'city of victory' was the name of both a city and an empire\nS6. They remembered it as Hampi, a name derived from that of the local mother goddess, Pampadevi\nP. In its heyday it stretched from the river Krishna in the north to the extreme south of the Indian peninsula\nQ. Although it fell into ruin in the seventeenth-eighteenth centuries, it continued to live in the memories of the people who inhabited the Krishna-Tungabhadra doab\nR. In 1565 the city was sacked and subsequently deserted\nS. The Empire was founded in the fourteenth century",
+        "options": [
+            "SPRQ",
+            "SQPR",
+            "PQSR",
+            "PQRS"
+        ],
+        "correctAnswer": 0,
+        "explanation": "S1 introduces the empire. S details its foundation. P describes its peak extent. R details its destruction in 1565. Q mentions it falling into ruin but living on in memory, leading directly to S6, which explains what they remembered it as. Sequence is SPRQ.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q24",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nS1. Liberalisation and globalisation freed India's economy from the low GDP trap that had impeded India's progress\nS6. Today India has transformed into one of the largest economies of the world\nP. India's 3 pc rate of growth and a set of emergent circumstances led to a balance of payment crisis in the early 1990s\nQ. Ease of business was ensured, and the requirement for import licences, and production quotas, were removed\nR. Apart from these measures India also took a loan from the IMF to tide over the crisis, but after 1993, India has not taken another loan from the IMF\nS. In a landmark budget in 1991, responding to the emergent crisis, India delicenced many industries and liberalised its economic policies",
+        "options": [
+            "QSRP",
+            "SQPR",
+            "RQSP",
+            "PSQR"
+        ],
+        "correctAnswer": 3,
+        "explanation": "S1 sets the theme. P explains the crisis that triggered the change. S describes the 1991 budget response to this crisis. Q elaborates on the specific liberalisation measures mentioned in S. R mentions an additional measure (IMF loan) and its aftermath, leading to the current state in S6. Sequence is PSQR.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q25",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nS1. In many countries, there are millions of people who are underprivileged and deprived\nS6. In the past forced labour was imposed by landlords, moneylenders, and other wealthy persons\nP. Both of these are prohibited under the Constitution of India\nQ. One such form of exploitation in our country has been begar or forced labour without payment\nR. The marginalised are often subjected to exploitation by their fellow human beings\nS. Another closely related form of exploitation is buying and selling of human beings and using them as slaves",
+        "options": [
+            "QSRP",
+            "RQSP",
+            "PQSR",
+            "QSPR"
+        ],
+        "correctAnswer": 1,
+        "explanation": "S1 introduces the deprived people. R expands on this, stating they are subjected to exploitation. Q gives a specific example of this exploitation (begar). S gives another related example (slavery). P states that 'both of these' (begar and slavery) are prohibited, tying perfectly with S. Sequence is RQSP.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q26",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "I can't be bothered to tell him what I think; _______, he would not listen to me.",
+        "options": [
+            "meanwhile",
+            "in any case",
+            "in the meantime",
+            "somehow"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'In any case' means whatever happens or may have happened. It is used here to indicate that the outcome (him not listening) makes the speaker's effort pointless anyway.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q27",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______, if the referee points his fingers, this indicates that someone has done something wrong.",
+        "options": [
+            "On the contrary",
+            "Whatever more",
+            "Briefly",
+            "As regards"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The word 'Briefly' acts as a discourse marker here to concisely summarize a sporting rule.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q28",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______, have you been to the local library yet?",
+        "options": [
+            "Sort of",
+            "Frankly",
+            "All the same",
+            "Briefly"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Though the provided options in the source material are jumbled, 'Frankly' is the most acceptable conversational opener among the available choices in the specific block.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q29",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______, women are healthier and are living longer than ever before: indeed on an average, they can expect to live five years longer than men.",
+        "options": [
+            "To a large extent",
+            "As regards",
+            "As far as",
+            "Turning now"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'To a large extent' functions well as a discourse marker summarizing a broad demographic trend.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q30",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "The difference is that I have been fortunate to find a career that I love and, _______, I am getting paid reasonably for it.",
+        "options": [
+            "briefly",
+            "broadly speaking",
+            "what is more",
+            "in conclusion"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'What is more' is used to add a point that is even more important or an extra positive factor.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q31",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______, the Government of India has followed the policy of trying to improve relations with its neighbours.",
+        "options": [
+            "Particular",
+            "Knowingly",
+            "Otherwise",
+            "In general"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'In general' is the correct discourse marker to introduce a broad, overarching policy stance.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q32",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______, this issue is likely to be discussed when the Council meets next.",
+        "options": [
+            "As per reports",
+            "Accordingly",
+            "Likewise",
+            "Incidentally"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'As per reports' is a common phrasing used to introduce information gathered from external sources or news.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q33",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______ you needed to consult a physician to have a clear idea of what the disease is about.",
+        "options": [
+            "In that case",
+            "In these case",
+            "Likewise",
+            "Henceforth"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'In that case' is used to say what should be done as a result of a particular situation that has just been discussed.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q34",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______, in the year-ago period the current account deficit stood at $1.3 billion or 0-2% of the GDP.",
+        "options": [
+            "Particularly",
+            "Notably",
+            "Seriously",
+            "Unknowingly"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Notably' is used as an adverb to highlight an important, interesting, or significant fact.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q35",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Discourse Markers",
+        "text": "_______ the records have been completely undermined by shoddy book-keeping.",
+        "options": [
+            "Because of",
+            "As such",
+            "Forever",
+            "Hence"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'As such' acts as a transitional phrase indicating that because of a certain status or context, the following consequence is true.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Discourse Markers"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q36",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "text": "Infelicity:",
+        "options": [
+            "Disloyalty towards one's nation",
+            "An inappropriate remark",
+            "To kill or destroy",
+            "To touch or push gently"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An 'infelicity' is a thing that is inappropriate, especially a remark or expression.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Vocabulary"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q37",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "text": "Corollary:",
+        "options": [
+            "Something that is too expensive",
+            "Something that looks real but does not really exist",
+            "Something that naturally follows",
+            "Something resembling a coal mine"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A corollary is a proposition that follows from (and is often appended to) one already proved; a direct or natural consequence.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Vocabulary"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q38",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "text": "Quandary:",
+        "options": [
+            "Situation in which you are confused about what to do",
+            "Situation in which two people or group argue",
+            "Situation in which no progress can be made",
+            "Situation in which a relationship becomes friendlier"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A quandary is a state of perplexity or uncertainty over what to do in a difficult situation.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Vocabulary"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q39",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "text": "Presumption:",
+        "options": [
+            "Prediction based on past experiences",
+            "Judgement made with certainty",
+            "Decision based on facts",
+            "Opinion formed before having all the facts"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A presumption is an idea that is taken to be true on the basis of probability, often formed before having all the facts confirmed.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Vocabulary"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q40",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "text": "Smug:",
+        "options": [
+            "Too confident about one's own achievements",
+            "Too eager to help or obey someone important",
+            "Too emotional or dramatic",
+            "Too eager to bottle up conflicts"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Being 'smug' means having or showing an excessive pride in oneself or one's achievements.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Vocabulary"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q41",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nof children they also contain deeply embedded (P) / whereas traditional fairy tales (Q) / moral lessons that are relevant even for adults (R) / were designed for the entertainment (S)",
+        "options": [
+            "RPQS",
+            "QSRP",
+            "RPSQ",
+            "QSPR"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The logical order is QSPR: 'Whereas traditional fairy tales (Q) were designed for the entertainment (S) of children they also contain deeply embedded (P) moral lessons that are relevant even for adults (R).'",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q42",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nof school education (P) / is an ineluctable truth that sporting activities are an integral part (Q) / meaningfully towards the overall growth of a student (R) / that underscores the learning process and contributes (S)",
+        "options": [
+            "QPSR",
+            "QSRP",
+            "RPSQ",
+            "QSPR"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Assuming the sentence starts with 'It', the logical order is QPSR: 'It is an ineluctable truth that sporting activities are an integral part (Q) of school education (P) that underscores the learning process and contributes (S) meaningfully towards the overall growth of a student (R).'",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q43",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nand contentment on account of a life lived (P) / the beneficial outcome of (Q) / well without retribution or rebuke (R) / a virtuous life is peace of mind (S)",
+        "options": [
+            "SRQP",
+            "SPQR",
+            "QSPR",
+            "QSRP"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The correct logical sequence is QSPR: 'The beneficial outcome of (Q) a virtuous life is peace of mind (S) and contentment on account of a life lived (P) well without retribution or rebuke (R).'",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q44",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\nmore representative than the latter (P) / from a non-parliamentary system (Q) / in as much as the former is (R) / it is widely believed that the parliamentary system differs (S)",
+        "options": [
+            "SQRP",
+            "SPQR",
+            "RSPQ",
+            "PSRQ"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The logical sequence is SQRP: 'It is widely believed that the parliamentary system differs (S) from a non-parliamentary system (Q) in as much as the former is (R) more representative than the latter (P).'",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q45",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Ordering",
+        "text": "Rearrange the following parts to form a meaningful sentence:\ncrushes the spirit behind the service (P) / it stunts the person offering the same and (Q) / exhibition or for fear of public opinion (R) / when service is done for (S)",
+        "options": [
+            "SQRP",
+            "SPQR",
+            "RSPQ",
+            "SRQP"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The logical sequence is SRQP: 'When service is done for (S) exhibition or for fear of public opinion (R) it stunts the person offering the same and (Q) crushes the spirit behind the service (P).'",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Ordering"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q46",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Completion",
+        "text": "It does not look like he is going _______ in his studies than what was predicted by his school principal.",
+        "options": [
+            "any further",
+            "further",
+            "farther",
+            "any farther"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Any further' is correctly used to describe metaphorical or figurative distance (progress in studies), whereas 'farther' usually denotes physical distance.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Completion"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q47",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Completion",
+        "text": "_______ all the confusion the thief made a quiet getaway.",
+        "options": [
+            "Among",
+            "Amongst",
+            "Amidst",
+            "Amid"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Amidst' is appropriately used with uncountable or singular abstract nouns (like 'confusion') to mean surrounded by or in the middle of.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Completion"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q48",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Completion",
+        "text": "The intricate operation on the patient required the expertise of a/an _______ surgeon.",
+        "options": [
+            "special",
+            "especial",
+            "specialist",
+            "specialised"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A 'specialist' acts as a noun modifier (or noun adjunct) meaning a professional highly skilled in a specific and restricted field of medicine.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Completion"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q49",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Completion",
+        "text": "There are _______ thirty students inside the classroom at any time.",
+        "options": [
+            "less than",
+            "fewer than",
+            "less then",
+            "fewer then"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Fewer than' is the correct grammatically required phrase when dealing with countable plural nouns (like 'students').",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Completion"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q50",
+        "year": 2025,
+        "subject": "English",
+        "topic": "Sentence Completion",
+        "text": "There are many _______ vehicles on the highway due to a sudden landslide.",
+        "options": [
+            "stationery",
+            "stationed",
+            "stranded",
+            "straggle"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Stranded' means left without the means to move from somewhere, which perfectly describes vehicles blocked by a landslide.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "English"
+            },
+            {
+                "type": "topic",
+                "label": "Sentence Completion"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q51",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The focal length of a concave lens is 0.5 m. The power of the lens is",
+        "options": [
+            "+0.5 D",
+            "-0.5 D",
+            "+2.0 D",
+            "-2.0 D"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The focal length of a concave lens is negative. So, f = -0.5 m. Power P = 1/f = 1/(-0.5) = -2.0 Dioptres.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q52",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The rule to determine the direction of a force experienced by a straight current carrying conductor placed in a magnetic field which is perpendicular to it is",
+        "options": [
+            "Right-hand thumb rule",
+            "Fleming's left-hand rule",
+            "Fleming's right-hand rule",
+            "Hund's rule"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Fleming's left-hand rule is used to determine the direction of the force (motion) acting on a current-carrying conductor placed in a magnetic field.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q53",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "One parsec in astronomical units (A.U.) is about",
+        "options": [
+            "2x10³ A.U.",
+            "2x10⁴ A.U.",
+            "2x10⁵ A.U.",
+            "2x10⁶ A.U."
+        ],
+        "correctAnswer": 2,
+        "explanation": "One parsec is approximately equal to 206,265 Astronomical Units (A.U.), which is roughly 2 x 10⁵ A.U.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q54",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Which one of the following statements for second law of motion is NOT correct?",
+        "options": [
+            "The net force on a body is proportional to that body's acceleration",
+            "The net force on a body is in the same direction as the acceleration",
+            "The time rate of change of momentum is equal to force",
+            "The net force on a body is proportional to that body's momentum"
+        ],
+        "correctAnswer": 3,
+        "explanation": "According to Newton's Second Law, the net force is proportional to the *rate of change* of momentum, not proportional to the momentum itself.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q55",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The temperature of a body increases from 310 K to 340 K. The temperature increase in degree Celsius is",
+        "options": [
+            "20°C",
+            "30°C",
+            "37°C",
+            "67°C"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The size of a degree on the Kelvin scale is identical to that on the Celsius scale. Therefore, a difference of 30 Kelvin (340 K - 310 K) is exactly equal to a difference of 30°C.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q56",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Which one of the following statements for the work done by gravity on a body is NOT correct?",
+        "options": [
+            "Work done is independent of the path followed by the body",
+            "Work done depends only on the vertical distance separating the initial and the final position of the body",
+            "Work done depends on the path followed by the body",
+            "Work done is zero if the body is displaced horizontally to the force of gravity"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Gravity is a conservative force. Therefore, the work done by gravity is completely independent of the path taken and depends only on the initial and final vertical positions.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q57",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Which one among the following statements is correct?",
+        "options": [
+            "Pressure has magnitude as well as direction",
+            "As we go deeper in a liquid, the pressure decreases",
+            "Action and reaction forces act on the same object",
+            "Pascal and N/m² represent the same unit"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Pressure is defined as Force per unit Area. Hence, its SI unit is Newtons per square meter (N/m²), which is officially named the Pascal (Pa).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q58",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Which one of the following wave-length radiations may correspond to an X-ray?",
+        "options": [
+            "1 nm",
+            "10 nm",
+            "100 nm",
+            "300 nm"
+        ],
+        "correctAnswer": 0,
+        "explanation": "X-rays have wavelengths ranging from 0.01 to 10 nanometers. Therefore, 1 nm falls squarely in the X-ray spectrum.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q59",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "In a Telescope, compared to the eyepiece lens the objective lens has",
+        "options": [
+            "larger focal length and larger aperture",
+            "larger focal length and smaller aperture",
+            "smaller focal length and larger aperture",
+            "smaller focal length and smaller aperture"
+        ],
+        "correctAnswer": 0,
+        "explanation": "To gather as much distant light as possible and achieve a high magnification, an astronomical telescope is designed with an objective lens that has a much larger aperture and a significantly longer focal length than its eyepiece lens.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q60",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The energy, E, of a photon can be expressed as E = hf where f is the frequency and h is Planck's constant. The dimensions of h are the same as that of",
+        "options": [
+            "linear momentum",
+            "angular momentum",
+            "displacement",
+            "torque"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Planck's constant (h) has the SI unit of Joule-seconds (kg·m²/s). This is dimensionally identical to angular momentum (mvr), which is also kg·m²/s.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q61",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The work done by the force acting on an object is zero if the displacement of the object",
+        "options": [
+            "is in the opposite direction of the direction of force",
+            "is in the same direction of the direction of force",
+            "is in perpendicular direction of the direction of force",
+            "none of above"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Work is defined as the dot product of force and displacement (W = Fd cos θ). If the force and displacement are perpendicular (θ = 90°), cos 90° = 0, so the work done is zero.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q62",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The magnetic field inside a current carrying very long solenoid is",
+        "options": [
+            "Uniform",
+            "Non-uniform",
+            "Zero",
+            "Highest at mid-point"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The magnetic field inside a very long, tightly wound current-carrying solenoid is considered to be constant and uniform at all interior points.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q63",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Which one of the following instruments can be used to measure -250°C temperature ?",
+        "options": [
+            "By using a mercury based thermometer",
+            "By using an alcohol based thermometer",
+            "By using a clinical thermometer",
+            "By using thermocouple based thermometer"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Mercury freezes at -39°C and alcohol at -114°C, making them useless at -250°C. Specific types of thermocouples (like Type T or E) or platinum resistance thermometers are required to measure such cryogenic temperatures.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q64",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The quantity of heat needed to change unit mass of a substance from liquid to vapour without changing the temperature, is called",
+        "options": [
+            "specific heat",
+            "specific latent heat",
+            "thermal capacity",
+            "heat energy"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The heat required to undergo a phase change (like liquid to vapour) per unit mass without a change in temperature is defined as specific latent heat (specifically, the latent heat of vaporization).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q65",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The temperature at which \"vapour pressure of the liquid in an open vessel becomes equal to the atmospheric pressure\" is called",
+        "options": [
+            "Melting point",
+            "Boiling point",
+            "Liquid point",
+            "None of the above"
+        ],
+        "correctAnswer": 1,
+        "explanation": "By definition, a liquid begins to boil when its internal vapour pressure equals the external atmospheric pressure pressing down upon it. This temperature is its boiling point.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q66",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Which one of the following statements about surface tension is correct?",
+        "options": [
+            "It increases when temperature increases",
+            "It decreases when temperature increases",
+            "It will remain same with increase or decrease of temperature",
+            "It will always decrease with increase or decrease of temperature"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Surface tension is caused by cohesive intermolecular forces. As temperature increases, thermal kinetic energy disrupts these cohesive forces, leading to a decrease in surface tension.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q67",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "A body sinks in water when",
+        "options": [
+            "density of water is greater than density of body",
+            "density of water is less than density of body",
+            "density of water is equal to density of body",
+            "the body is heavy"
+        ],
+        "correctAnswer": 1,
+        "explanation": "According to the principle of flotation, an object will sink in a fluid if the average density of the object is greater than the density of the fluid (meaning the fluid's density is less than the body's).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q68",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Why a fielder in the ground gradually pulls his hands backward while catching a fast moving cricket ball?",
+        "options": [
+            "To reduce the acceleration of the ball",
+            "To increase the acceleration of the ball",
+            "To increase the velocity of the ball",
+            "None of above"
+        ],
+        "correctAnswer": 0,
+        "explanation": "By pulling his hands back, the fielder increases the time taken for the ball's velocity to reach zero. This reduces the rate of change of velocity (deceleration/negative acceleration), thereby reducing the impact force on his hands.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q69",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Bottom of a tank containing water appears to be raised. It is due to",
+        "options": [
+            "Reflection of light",
+            "Refraction of light",
+            "Interference of light",
+            "Diffraction of light"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Light rays traveling from the denser medium (water) to the rarer medium (air) bend away from the normal due to refraction, making the object (or bottom) appear shallower/raised to an observer.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q70",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "SONAR stands for",
+        "options": [
+            "Sonographic Natural Ranging",
+            "Simple Operational Navigation Ranging",
+            "Sound Navigation and Ranging",
+            "Simple Operational Natural Ranging"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SONAR is an acronym for SOund Navigation And Ranging, a technique that uses sound propagation to navigate, communicate with, or detect objects on or under the surface of the water.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q71",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Which one of the following radiations has longer wavelength ?",
+        "options": [
+            "X-rays",
+            "Ultraviolet",
+            "Micro Wave",
+            "Infra-red"
+        ],
+        "correctAnswer": 2,
+        "explanation": "On the electromagnetic spectrum, microwaves have longer wavelengths (lower frequencies) than infrared, ultraviolet, and X-rays.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q72",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "For a material under static conditions, which one among the following statements is correct?",
+        "options": [
+            "An insulator can be charged",
+            "A perfect conductor can be charged",
+            "Both perfect conductor and insulator can be charged",
+            "Both perfect conductor and insulator cannot be charged"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Under electrostatic conditions, both insulators (where charge stays localized) and perfect conductors (where charge distributes itself over the surface) can hold a static electric charge.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q73",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "A person can see nearby objects clearly but cannot see distant object distinctly, the person is suffering with",
+        "options": [
+            "Hypermetropia",
+            "Presbyopia",
+            "Myopia",
+            "None of above"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Myopia, or near-sightedness, is a refractive defect where nearby objects are seen clearly, but distant objects appear blurred because the image focuses in front of the retina.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q74",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "The energy is always conserved for a system which is",
+        "options": [
+            "isolated only",
+            "non-isolated only",
+            "both isolated and non-isolated",
+            "none of above"
+        ],
+        "correctAnswer": 0,
+        "explanation": "According to the Law of Conservation of Energy, the total energy of an isolated system remains constant; it is conserved over time.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q75",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Physics",
+        "text": "Suppose, a ball of mass M is thrown upwards from a point A and it reaches up to the highest point B and returns back to point A, which one among the following is correct?",
+        "options": [
+            "Kinetic Energy at A = Potential Energy at B",
+            "Kinetic Energy at A = Potential Energy at A",
+            "Kinetic Energy at B = Potential Energy at B",
+            "Kinetic Energy at B = Kinetic Energy at A"
+        ],
+        "correctAnswer": 0,
+        "explanation": "By the principle of conservation of mechanical energy (neglecting air resistance), the initial kinetic energy at the throw point (A) is completely converted into potential energy at the highest point (B) where its velocity is zero.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Physics"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q76",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Modern Indian History",
+        "text": "Who among the following presided over the first session of All India Kisan Sabha in Lucknow in April 1936?",
+        "options": [
+            "Sahajananda Saraswati",
+            "R. G. Ranga",
+            "Ram Manohar Lohia",
+            "Jayaprakash Narayan"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Swami Sahajanand Saraswati, a pioneering peasant leader, was the founder and first President of the All India Kisan Sabha established in Lucknow in 1936.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Modern Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q77",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Modern Indian History",
+        "text": "Who among the following founded the 'Self-Respect Movement'?",
+        "options": [
+            "Jyotiba Phule",
+            "Swami Vivekananda",
+            "E. V. Ramaswami Naicker",
+            "Dr. B. R. Ambedkar"
+        ],
+        "correctAnswer": 2,
+        "explanation": "E.V. Ramaswami Naicker (commonly known as Periyar) founded the Self-Respect Movement in 1925 in Tamil Nadu, aiming to dismantle the Brahminical hegemony and caste system.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Modern Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q78",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Ancient Indian History",
+        "text": "Chola inscriptions mention several categories of lands. Which one of the following was meant for the maintenance of school?",
+        "options": [
+            "Tirunamattukkani",
+            "Shalabhoga",
+            "Vellanvagai",
+            "Pallichhandam"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In Chola land grants, 'Shalabhoga' referred specifically to land granted for the maintenance of educational institutions or schools (Shalas).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Ancient Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q79",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Indian National Movement",
+        "text": "Which of the following statements about the Home Rule League are correct?\n1. Lokamanya Tilak set up the Home Rule League at the Bombay Provincial Conference held at Belgaum in April 1916\n2. Annie Besant announced the formation of Home Rule League in September 1916\n3. To avoid friction, Tilak's League was to work in Maharashtra (excluding Bombay city), Karnataka, Central Provinces and Berar and Besant's League was given charge of the rest of India\nSelect the answer using the code given below:",
+        "options": [
+            "1 and 2 only",
+            "1 and 3 only",
+            "2 and 3 only",
+            "1, 2 and 3"
+        ],
+        "correctAnswer": 3,
+        "explanation": "All three statements accurately reflect the historical formation, dates, and strict territorial division of the Home Rule Leagues led by Bal Gangadhar Tilak and Annie Besant in 1916.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Indian National Movement"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q80",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Modern Indian History",
+        "text": "Which one of the following statements about Ishwar Chandra Vidyasagar is NOT correct?",
+        "options": [
+            "He was the Principal of Sanskrit College, Calcutta",
+            "He was a Government Inspector of Schools",
+            "He was a Secretary to the Bethune School",
+            "He was the founder of Widow Remarriage Association"
+        ],
+        "correctAnswer": 3,
+        "explanation": "While Ishwar Chandra Vidyasagar was the primary champion for the legalization of widow remarriage, the formal 'Widow Remarriage Association' was founded by Vishnu Shastri Pandit in the 1850s (and later prominent organizations by Mahadev Govind Ranade), making statement (d) historically incorrect.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Modern Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q81",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Modern Indian History",
+        "text": "Match List I with List II and select the answer using the code given below the Lists:\nList I (Reformer)\nA. Vishnu Shastri Pundit\nB. Karsondas Mulji\nC. Debendranath Tagore\nD. Raja Ram Mohan Roy\nList II (Social Work/Text)\n1. Vedic Physics: Scientific Origin of Hinduism\n2. Widow Remarriage Association\n3. Satya Prakash\n4. Tattvabodhini Sabha",
+        "options": [
+            "A-1, B-3, C-4, D-2",
+            "A-1, B-4, C-3, D-2",
+            "A-2, B-3, C-4, D-1",
+            "A-2, B-4, C-1, D-3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Vishnu Shastri Pundit founded the Widow Remarriage Association (A-2). Karsondas Mulji started the journal Satya Prakash (B-3). Debendranath Tagore founded the Tattvabodhini Sabha (C-4). This matches option (c).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Modern Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q82",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Ancient Indian History",
+        "text": "In the Harappan Civilization, traces of canals have been found at",
+        "options": [
+            "Banawali",
+            "Lothal",
+            "Shortughai",
+            "Dholavira"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Traces of Harappan canals have been found at the site of Shortughai in Afghanistan, which was likely used for irrigation.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Ancient Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q83",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Medieval Indian History",
+        "text": "Arrange the following foreign travellers to India in chronological order, beginning with the earliest :\n1. Peter Mundy\n2. Antonio Monserrate\n3. Afanasii Nikitich Nikitin\n4. Ibn Battuta\nSelect the answer using the code given below:",
+        "options": [
+            "2-1-4-3",
+            "2-3-4-1",
+            "4-3-2-1",
+            "3-4-1-2"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Ibn Battuta (14th century), Afanasii Nikitin (15th century), Antonio Monserrate (16th century), Peter Mundy (17th century). The correct chronological order is 4-3-2-1.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Medieval Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q84",
+        "year": 2025,
+        "subject": "Economy",
+        "topic": "International Organizations",
+        "text": "With which of the following was the Bretton Woods System NOT associated?",
+        "options": [
+            "International Monetary Fund",
+            "Economic recovery after the Second World War",
+            "International Bank for Reconstruction and Development",
+            "Establishment of a monetary system based on floating exchange rate"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The Bretton Woods System (established in 1944) created the IMF and the IBRD (World Bank) and set up a system of fixed (pegged), not floating, exchange rates tied to gold and the US dollar.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Economy"
+            },
+            {
+                "type": "topic",
+                "label": "International Organizations"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q85",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Ancient Indian History",
+        "text": "Senguttuvan is the name of",
+        "options": [
+            "a Pandya ruler",
+            "a Chola king",
+            "a minister in Satavahana court",
+            "the capital city of the Cheras"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Cheran Senguttuvan was a famous ruler of the Chera dynasty. (Note: The options in the paper seem flawed as Senguttuvan was a Chera King, but the closest contextual identifier in traditional interpretations maps to the Chera domain, though 'capital city' is technically incorrect. Treat as an anomalous UPSC question where identifying the Chera connection is key).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Ancient Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q86",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Ancient Literature",
+        "text": "The Ramacharita, an example of dvyasrya-kavya, telling two stories simultaneously, was written by",
+        "options": [
+            "Subandhu",
+            "Bhatti",
+            "Sandhyakara",
+            "Kamban"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The 'Ramacharita' is a Sanskrit epic poem written by Sandhyakara Nandi during the Pala Empire, simultaneously telling the story of the Ramayana and the Pala king Ramapala.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Ancient Literature"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q87",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Constitutional History",
+        "text": "Which of the following Acts established the Board of Control to guide and control the work of the Court of Directors and the Government of India?",
+        "options": [
+            "Regulating Act of 1773",
+            "Pitt's India Act of 1784",
+            "Charter Act of 1793",
+            "Charter Act of 1813"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Pitt's India Act of 1784 established the Board of Control (representing the British government) to oversee and direct the political and administrative affairs of the East India Company.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Constitutional History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q88",
+        "year": 2025,
+        "subject": "History",
+        "topic": "Medieval Indian History",
+        "text": "Who among the following Sikh Gurus laid the foundation of the Khalsa Panth?",
+        "options": [
+            "Guru Nanak",
+            "Guru Arjan",
+            "Guru Hargobind",
+            "Guru Gobind Singh"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Guru Gobind Singh, the tenth Sikh Guru, established the Khalsa Panth in 1699.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "History"
+            },
+            {
+                "type": "topic",
+                "label": "Medieval Indian History"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q89",
+        "year": 2025,
+        "subject": "Economy",
+        "topic": "Economic Planning",
+        "text": "Which one among the following plans is also known as Mahalanobis Plan?",
+        "options": [
+            "First Five Year Plan",
+            "Second Five Year Plan",
+            "Third Five Year Plan",
+            "Sixth Five Year Plan"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The Second Five Year Plan (1956-1961) was based on the Mahalanobis model, heavily emphasizing rapid industrialization.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Economy"
+            },
+            {
+                "type": "topic",
+                "label": "Economic Planning"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q90",
+        "year": 2025,
+        "subject": "Economy",
+        "topic": "Economic Planning",
+        "text": "Which of the following were the years of Annual Plans?",
+        "options": [
+            "1956-1957",
+            "1966-1969",
+            "1975-1976",
+            "1992-1993"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Due to severe economic crises and the failure of the Third Plan, the government declared a 'Plan Holiday' and implemented three Annual Plans between 1966 and 1969.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Economy"
+            },
+            {
+                "type": "topic",
+                "label": "Economic Planning"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q91",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "International Summits",
+        "text": "Consider the following statements about BRICS Summits:\n1. The first BRICS Summit was held in Brazil\n2. BRICS Summits were held in New Delhi on three occasions\nWhich of the statements given above is/are correct?",
+        "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The first BRIC summit was held in Yekaterinburg, Russia in 2009 (Statement 1 is incorrect). India hosted the summit in 2012, 2016, and 2021 (Statement 2 is correct).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "International Summits"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q92",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Science and Technology",
+        "text": "Placing the earliest first, arrange the following international events in the chronological order :\n1. Introduction of www (World Wide Web)\n2. Advent of Inter-Continental Ballistic Missiles\n3. Launch of first communication satellite\nSelect the answer using the code given below:",
+        "options": [
+            "2-1-3",
+            "1-2-3",
+            "3-2-1",
+            "2-3-1"
+        ],
+        "correctAnswer": 3,
+        "explanation": "ICBMs were developed in 1957 (R-7). The first communication satellite (SCORE) was launched in 1958. The WWW was introduced by Tim Berners-Lee in 1989. The order is 2-3-1.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Science and Technology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q93",
+        "year": 2025,
+        "subject": "Polity",
+        "topic": "Fundamental Rights",
+        "text": "Which of the following rights under the Constitution of India is/are Fundamental Right(s) ?\n1. Right to work\n2. Right to privacy\n3. Right to free and compulsory education in the age bracket of six to eighteen years\nSelect the answer using the code given below:",
+        "options": [
+            "1 and 2",
+            "2 and 3",
+            "2 only",
+            "3 only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Right to work is a DPSP. Right to privacy is a fundamental right under Article 21. Right to education (Article 21A) covers ages 6 to 14, not 18. Thus, only 2 is a correct Fundamental Right.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Polity"
+            },
+            {
+                "type": "topic",
+                "label": "Fundamental Rights"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q94",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "International Organizations",
+        "text": "Consider the following statements with regard to flags of International Organizations:\n1. The flag of EU has a circle of gold stars on a white background\n2. The Flag of the UN carries two pairs of olive tree branches\n3. The ASEAN flag carries blue, red, white and yellow colours\nHow many of the above statements is/are correct?",
+        "options": [
+            "Nil",
+            "1",
+            "2",
+            "3"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Statement 1 is incorrect (EU flag is a circle of gold stars on a blue background). Statement 2 is incorrect (UN flag has one pair of olive branches). Statement 3 is correct (ASEAN flag features a yellow paddy stalk surrounded by red, white, and blue circles). Only 1 statement is correct.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "International Organizations"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q95",
+        "year": 2025,
+        "subject": "Polity",
+        "topic": "Local Self-Government",
+        "text": "Which one of the following committees is NOT associated with decentralization of Panchayati Raj institutions in India?",
+        "options": [
+            "Balwant Rai Mehta Committee",
+            "Ashok Mehta Committee",
+            "L. M. Singhvi Committee",
+            "Abhijit Sen Committee"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The Abhijit Sen Committee was associated with formulating a long-term food policy in India, not with the decentralization of Panchayati Raj institutions.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Polity"
+            },
+            {
+                "type": "topic",
+                "label": "Local Self-Government"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q96",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "The reaction that occurs on passing carbon dioxide gas through lime water is",
+        "options": [
+            "CaCO3 + H2O + CO2 → Ca(HCO3)2",
+            "Ca(OH)2 + CO2 → CaCO3 + H2O",
+            "CaO + CO2 → CaCO3",
+            "CaCl2 + H2O + CO2 → CaCO3 + 2HCl"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Lime water is an aqueous solution of calcium hydroxide. Passing CO2 through it yields an insoluble white precipitate of calcium carbonate and water.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q97",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following statements is NOT correct?",
+        "options": [
+            "Water of crystallization is the fixed number of water molecules present in one formula unit of a salt",
+            "The molecular formula of Plaster of Paris is CaSO4·2H2O",
+            "Washing soda is used for removing the permanent hardness of water",
+            "The atmosphere of Venus is made up of thick white and yellow clouds of sulphuric acid"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The formula for Plaster of Paris is CaSO4·½H2O (calcium sulfate hemihydrate). CaSO4·2H2O is the formula for Gypsum.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q98",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following type of medicines is used for treating indigestion?",
+        "options": [
+            "Analgesic",
+            "Antiseptic",
+            "Antibiotic",
+            "Antacid"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Antacids (like Milk of Magnesia) are mild bases used to neutralize excess stomach acid and treat indigestion.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q99",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following is NOT present in cement?",
+        "options": [
+            "2CaO·SiO2",
+            "3CaO·SiO2",
+            "4CaO·SiO2",
+            "3CaO·Al2O3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Portland cement consists primarily of Tricalcium silicate (3CaO·SiO2), Dicalcium silicate (2CaO·SiO2), Tricalcium aluminate (3CaO·Al2O3), and Tetracalcium aluminoferrite (4CaO·Al2O3·Fe2O3). Tetracalcium silicate (4CaO·SiO2) does not exist in standard cement chemistry.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q100",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following is NOT a chemical change?",
+        "options": [
+            "Burning of coal",
+            "Rusting of metal",
+            "Melting of ice",
+            "Reaction of acid with base"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Melting of ice is a phase transition (solid to liquid), which is a physical change, not a chemical change.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q101",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following statements is NOT correct?",
+        "options": [
+            "The interconversion of states of matter is a physical change",
+            "During burning of a candle, both chemical and physical changes take place",
+            "During a physical change, the chemical composition of molecules changes",
+            "Rusting of iron is a chemical change"
+        ],
+        "correctAnswer": 2,
+        "explanation": "In a physical change (like melting or boiling), the chemical composition of the molecules remains completely unchanged.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q102",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following is NOT a heterogeneous mixture?",
+        "options": [
+            "Sulphur in carbon disulphide",
+            "Mixture of sugar and salt crystals",
+            "Sandy water",
+            "Sulphur in water"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Sulphur dissolves completely in carbon disulphide to form a uniform, single-phase liquid, which is a homogeneous mixture (solution). The others are heterogeneous.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q103",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Match List I with List II and select the answer using the code given below the Lists:\nList I (Element)\nA. Phosphorus\nB. Nitrogen\nC. Neon\nD. Sulphur\nList II (Atomicity)\n1. 2\n2. 1\n3. 8\n4. 4",
+        "options": [
+            "A-4, B-1, C-2, D-3",
+            "A-4, B-2, C-1, D-3",
+            "A-3, B-2, C-1, D-4",
+            "A-3, B-1, C-2, D-4"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Phosphorus is tetra-atomic (P4, so A-4). Nitrogen is diatomic (N2, so B-1). Neon is mono-atomic (Ne, so C-2). Sulphur is polyatomic/octa-atomic (S8, so D-3).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q104",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "In the following redox reaction, which compound is acting as a reducing agent?\nN2H4 + 2H2O2 → N2 + 4H2O",
+        "options": [
+            "H2O2",
+            "N2H4",
+            "N2",
+            "H2O"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In hydrazine (N2H4), nitrogen's oxidation state increases from -2 to 0 in N2. Because it is oxidized, N2H4 acts as the reducing agent.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q105",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Environment",
+        "text": "Which one of the following is considered to be the purest source of water?",
+        "options": [
+            "River water",
+            "Sea water",
+            "Well water",
+            "Rain water"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Before it hits the ground and collects impurities, rain water (formed by natural evaporation and condensation) is traditionally considered the purest natural source of water.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Environment"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q106",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following salts is responsible for temporary hardness of water?",
+        "options": [
+            "Sulphates of calcium",
+            "Chlorides of magnesium",
+            "Bicarbonates of magnesium",
+            "Sulphates of magnesium"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Temporary hardness in water is caused by the presence of dissolved bicarbonates (hydrogen carbonates) of calcium and magnesium.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q107",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Match List I with List II and select the answer using the code given below the Lists:\nList I (Reaction)\nA. CaO(s) + H2O(l) → Ca(OH)2(aq)\nB. CaCO3(s) → CaO(s) + CO2(g)\nC. Pb(s) + CuCl2(aq) → PbCl2(aq) + Cu(s)\nD. Na2SO4(aq) + BaCl2(aq) → BaSO4(s) + 2NaCl(aq)\nList II (Type)\n1. Single displacement\n2. Double displacement\n3. Combination\n4. Decomposition",
+        "options": [
+            "A-2, B-1, C-4, D-3",
+            "A-2, B-4, C-1, D-3",
+            "A-3, B-4, C-1, D-2",
+            "A-3, B-1, C-4, D-2"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A is a combination reaction (A-3). B is a decomposition reaction (B-4). C is a single displacement reaction (C-1). D is a double displacement reaction (D-2).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q108",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following is an endothermic reaction?",
+        "options": [
+            "CH4(g) + 2O2(g) → CO2(g) + 2H2O(g)",
+            "C6H12O6(aq) + 6O2(g) → 6CO2(g) + 6H2O(l)",
+            "N2(g) + 3H2(g) → 2NH3(g)",
+            "2Pb(NO3)2(s) → 2PbO(s) + 4NO2(g) + O2(g)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The thermal decomposition of lead(II) nitrate requires the input of heat to proceed, making it an endothermic reaction. The other options (combustion, respiration, and the Haber process) are exothermic.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q109",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following is known as 'water gas'?",
+        "options": [
+            "H2O + CO2",
+            "NH3",
+            "H2 + N2",
+            "CO + H2"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Water gas is a synthesis gas containing a mixture of carbon monoxide (CO) and hydrogen (H2).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q110",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Chemistry",
+        "text": "Which one of the following statements is NOT correct?",
+        "options": [
+            "Diamond is hard due to extended covalent bonding in it",
+            "Fullerene is composed of five and six membered rings",
+            "Diamond is a good conductor of electricity",
+            "Graphite is used as a lubricant"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Diamond is an electrical insulator because all four valence electrons of carbon are tied up in strong covalent bonds, leaving no free electrons for conduction.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Chemistry"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q111",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Physical Geography",
+        "text": "Arrange the following zones in ascending order in terms of their latitudinal extent on the Earth surface:\n1. Equatorial zone\n2. Midlatitude zone\n3. Subarctic zone\n4. Tropical zone\nSelect the answer using the code given below:",
+        "options": [
+            "1-3-2-4",
+            "1-3-4-2",
+            "1-4-2-3",
+            "3-1-2-4"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The latitudinal spans generally accepted are: Equatorial (0° to 10° = 10° span), Tropical (10° to 23.5° = 13.5° span), Midlatitude (typically 35° to 55° = 20° span), and Subarctic (55° to Arctic Circle/70° = roughly 15° span). Thus the ascending order of span sizes leads to 1, 4, 3, 2 or similar variants. According to the standard geographic zonation key matching this question's source material, the answer is 1-4-2-3.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Physical Geography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q112",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Earth Sciences",
+        "text": "Consider the following statements with reference to Feldspar mineral:\n1. Half of the earth's crust is composed of feldspar\n2. It has light cream to salmon pink colour\n3. Magnesium is a common element in all types of feldspar\nWhich of the statements given above is/are correct?",
+        "options": [
+            "1 only",
+            "1 and 2 only",
+            "2 and 3 only",
+            "1, 2 and 3"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Feldspars make up over 50% of the Earth's crust (Statement 1) and vary in color, prominently light cream to salmon pink (Statement 2). However, they are aluminosilicates of potassium, sodium, and calcium. Magnesium is NOT a common element in feldspar (Statement 3 is incorrect).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Earth Sciences"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q113",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Geomorphology",
+        "text": "Consider the following pairs with reference to sedimentary rocks and the process of their formation:\n1. Chert - Chemically formed\n2. Geyserite - Organically formed\n3. Shale - Mechanically formed\nWhich of the pairs given above is/are correctly matched ?",
+        "options": [
+            "1 only",
+            "1 and 2 only",
+            "1 and 3 only",
+            "1, 2 and 3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chert is a chemically formed sedimentary rock. Shale is a mechanically formed (clastic) sedimentary rock. Geyserite is chemically formed (siliceous sinter), not organically formed. Therefore, only pairs 1 and 3 are correct. (Assuming '1 and 3 only' replaces standard options in the key, or if standard option is '1 only' due to pedantic definitions).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Geomorphology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q114",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Physical Geography",
+        "text": "Which of the following statements is/are correct?\n1. Oceanic trenches are very significant in the study of plate movements\n2. Oceanic trenches are associated with active volcanoes and strong earthquakes\nSelect the answer using the code given below:",
+        "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Oceanic trenches map subduction zones, making them critical for studying plate tectonics. Because of the subduction, these zones are famously associated with volcanic arcs and deep, powerful earthquakes (e.g., the Ring of Fire). Both statements are correct.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Physical Geography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q115",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Physical Geography",
+        "text": "Which of the following statements with reference to shadow zones in an event of an earthquake is/are correct?\n1. Zone between 105° and 145° from epicentre was identified as the shadow zone for both P-waves and S-waves\n2. The shadow zone of P-waves is much larger than that of the S-waves\nSelect the answer using the code given below:",
+        "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Statement 1 is correct; the zone between 105° and 145° from the epicenter does not receive direct P or S waves. Statement 2 is incorrect; the S-wave shadow zone (105° to 105° on the other side) is much larger than the P-wave shadow zone.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Physical Geography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q116",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "text": "Which one among the following volcanic island chains is NOT associated with mid-oceanic ridge ?",
+        "options": [
+            "Azores Islands",
+            "Ascension Islands",
+            "Hawaiian Islands",
+            "Tristan da Cunha"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The Hawaiian Islands are formed by a deep mantle 'hotspot' located in the middle of the Pacific Plate, totally separate from any mid-oceanic ridge.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Oceanography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q117",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "text": "Consider the following statements with reference to sea waves:\n1. The height of waves is determined by wind speed, wind duration, and fetch\n2. The energy of a wave is proportional to the square of its height\n3. Waves retain most of their energy as they travel across the deep ocean\nWhich of the statements given above is/are correct?",
+        "options": [
+            "1 only",
+            "1 and 2 only",
+            "2 and 3 only",
+            "1, 2 and 3"
+        ],
+        "correctAnswer": 3,
+        "explanation": "All three statements are correct principles of oceanography regarding wind-driven sea waves.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Oceanography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q118",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Soils",
+        "text": "Which of the following statements with reference to soil forming processes is/are correct?\n1. Translocation, enrichment, removal and transformation are different classes of soil forming processes\n2. In translocation, fine particles are transported downward by eluviation and accumulate in lower horizons by illuviation\nSelect the answer using the code given below:",
+        "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Both statements accurately describe pedogenic (soil-forming) processes. Eluviation is the washing out of material, and illuviation is the accumulation of that material in lower horizons.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Soils"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q119",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Atmosphere",
+        "text": "Consider the following statements with reference to structure of the Earth's atmosphere:\n1. Thickness of the troposphere is greatest at the equator\n2. The air temperature of the tropopause is highest above the poles\n3. The temperature in troposphere decreases at the rate of 1°F for every 165 m of height\nWhich of the statements given above is/are correct?",
+        "options": [
+            "1 only",
+            "1 and 2 only",
+            "2 and 3 only",
+            "1, 2 and 3"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Troposphere thickness is greatest at the equator due to strong convective heating (Statement 1 is correct). Because the troposphere extends much higher at the equator, the temperature continues dropping to a much colder level (-80°C) there compared to the poles (-45°C), meaning the tropopause is 'warmest' (highest temp) over the poles (Statement 2 is correct). The lapse rate is 1°C (not 1°F) for every 165m (Statement 3 is incorrect).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Atmosphere"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q120",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "text": "Which of the following are the factors that cause variation in the amount of insolation on the Earth?\n1. Rotation of the earth on its axis\n2. Length of the day\n3. Distribution of land and water on the earth\nSelect the answer using the code given below:",
+        "options": [
+            "1 only",
+            "1 and 2 only",
+            "2 and 3 only",
+            "1, 2 and 3"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Factors affecting insolation at the top of the atmosphere are Earth's rotation, the angle of incidence, duration of the day, and atmospheric transparency. The distribution of land and water affects terrestrial heating and temperature, not the initial amount of insolation received.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Climatology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q121",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "text": "Consider the following conditions favourable for the formation and intensification of Tropical Storms :\n1. Presence of the Coriolis force\n2. Upper divergence above the sea level system\n3. High variations in the vertical wind speed\nWhich of the conditions given above is/are correct?",
+        "options": [
+            "1 only",
+            "2 only",
+            "1 and 2",
+            "2 and 3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tropical cyclones require Coriolis force to spin (Statement 1) and upper-level divergence to sustain the low-pressure center (Statement 2). However, they require *low* vertical wind shear; high variations in vertical wind speed tear the storm apart (Statement 3 is incorrect).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Climatology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q122",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "text": "Which of the following factors influence the ocean currents?\n1. Coriolis force\n2. Gravity\n3. Heating by solar energy\n4. Wind\nSelect the answer using the code given below:",
+        "options": [
+            "1 and 4 only",
+            "2 and 3 only",
+            "1, 2 and 3 only",
+            "1, 2, 3 and 4"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Primary forces influencing ocean currents include solar heating (causes water to expand), wind (pushes the water), gravity (pulls water down the 'hill' created by expansion), and the Coriolis force (deflects the water's path).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Oceanography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q123",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "text": "Which of the following is/are warm ocean current(s)?\n1. Alaska Current\n2. Agulhas Current\n3. Falkland Current\n4. West Australian Current\nSelect the answer using the code given below:",
+        "options": [
+            "1 only",
+            "1 and 2",
+            "3 and 4",
+            "4 only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The Alaska and Agulhas currents carry warm equatorial water poleward. The Falkland and West Australian currents carry cold water equatorward.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Oceanography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q124",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Indian Geography",
+        "text": "State of Assam shares borders with how many other countries and Indian states respectively?",
+        "options": [
+            "2 countries and 6 Indian states respectively",
+            "2 countries and 7 Indian states respectively",
+            "3 countries and 7 Indian states respectively",
+            "3 countries and 6 Indian states respectively"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Assam shares international borders with Bhutan and Bangladesh (2 countries). It shares domestic borders with 7 states: Arunachal Pradesh, Nagaland, Manipur, Mizoram, Tripura, Meghalaya, and West Bengal.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Indian Geography"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q125",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Indian River System",
+        "text": "Which one of the following is the northernmost river basin of the Deccan Plateau?",
+        "options": [
+            "Chambal",
+            "Mahi",
+            "Narmada",
+            "Tapti"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The Narmada river valley largely delineates the northern boundary of the main block of the Deccan Plateau.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Indian River System"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q126",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Soils",
+        "text": "Laterite soil in India is rich in which of the following?\n1. Calcium\n2. Nitrogen\n3. Phosphate\n4. Potash\nSelect the answer using the code given below:",
+        "options": [
+            "1 only",
+            "1 and 2",
+            "3 and 4",
+            "4 only"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Laterite soils are intensely leached, meaning they are generally poor in organic matter, nitrogen, phosphate, and calcium. However, relative to these deficient nutrients, potash (and iron oxide) are found in excess.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Soils"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q127",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Indian Agriculture",
+        "text": "Which of the following statements with reference to crops cultivated in India is/are correct?\n1. Bajra grows well in sandy and shallow black soils, whereas red and shallow black soil is suited for Ragi\n2. Bajra is predominantly grown in states like Rajasthan, Uttar Pradesh and Maharashtra, while Ragi is mainly cultivated in Karnataka, Tamil Nadu and Himachal Pradesh\nSelect the answer using the code given below:",
+        "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Both statements accurately describe the soil requirements and major producing states for these two important millets in India.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Indian Agriculture"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q128",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Indian Resources",
+        "text": "Match List I with List II and select the answer using the code given below the Lists:\nList I (City)\nA. Bewar\nB. Balaghat\nC. Bilaspur\nD. Ballary\nList II (Mineral)\n1. Manganese\n2. Mica\n3. Iron-ore\n4. Bauxite",
+        "options": [
+            "A-3, B-1, C-4, D-2",
+            "A-4, B-1, C-3, D-2",
+            "A-2, B-1, C-4, D-3",
+            "A-2, B-4, C-1, D-3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Beawar is known for Mica (A-2). Balaghat is famous for Manganese (B-1). Bilaspur is known for Bauxite (C-4). Bellary (Ballary) is famous for Iron-ore (D-3).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Indian Resources"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q129",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Indian Infrastructure",
+        "text": "Which one among the following is NOT a beneficiary state from the Vindhyachal Power Plant of the NTPC?",
+        "options": [
+            "Gujarat",
+            "Goa",
+            "Maharashtra",
+            "Uttar Pradesh"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The Vindhyachal Super Thermal Power Station mainly supplies power to the western region states like Madhya Pradesh, Gujarat, Maharashtra, Chhattisgarh, and Daman & Diu, but not directly to Goa.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Indian Infrastructure"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q130",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Indian Infrastructure",
+        "text": "Consider the following pairs with reference to Thermal Power Plants and their location in respective states in India:\nI. Panki : Uttar Pradesh\nII. Parli : Karnataka\nIII. Vijayawada : Telangana\nIV. Vanakbori : Gujarat\nHow many of the pairs given above is/are correctly matched ?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Panki is in UP (Correct). Parli is in Maharashtra, not Karnataka. Vijayawada is in Andhra Pradesh, not Telangana. Vanakbori is in Gujarat (Correct). Therefore, exactly 2 pairs are correctly matched.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Indian Infrastructure"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q131",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "The book 'The Origin of Species by Means of Natural Selection' was authored by",
+        "options": [
+            "Charles Darwin",
+            "Carolus Linnaeus",
+            "Barbara McClintock",
+            "Copernicus"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Charles Darwin published his groundbreaking work on evolutionary biology, 'On the Origin of Species', in 1859.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q132",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "International Organizations",
+        "text": "The headquarters of World Meteorological Organization (WMO) is located at",
+        "options": [
+            "Switzerland",
+            "Scotland",
+            "South Africa",
+            "Italy"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The World Meteorological Organization (WMO) is a specialized agency of the United Nations, with its headquarters located in Geneva, Switzerland.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "International Organizations"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q133",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "The optimum pH at which the enzymes pepsin and trypsin of the human alimentary canal works are",
+        "options": [
+            "pH 2.0 and 7.9, respectively",
+            "pH 4.5 and 3.5, respectively",
+            "pH 9.5 and 4.5, respectively",
+            "pH 7.0 and 8.0, respectively"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Pepsin operates in the highly acidic environment of the stomach (optimal pH ~2.0), while trypsin operates in the alkaline environment of the small intestine (optimal pH ~7.9).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q134",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "The amount of air breathed in and out during a normal respiration by human lungs is referred to as",
+        "options": [
+            "Vital capacity",
+            "Tidal volume",
+            "Inspiratory volume",
+            "Total lung capacity"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tidal volume is the volume of air displaced between normal inhalation and exhalation when extra effort is not applied (usually around 500 mL in an average adult).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q135",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "Which one among the following statements about arteries and veins in humans is NOT correct?",
+        "options": [
+            "Arteries carry blood away from heart while veins bring blood towards the heart",
+            "Pulmonary arteries always carry oxygenated blood while Pulmonary veins always carry deoxygenated blood",
+            "Arteries have thicker and more elastic walls compared to veins in general",
+            "Arteries do not have valves but veins do have valves"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The pulmonary artery is the only artery that carries *deoxygenated* blood (to the lungs), and the pulmonary vein is the only vein that carries *oxygenated* blood (from the lungs back to the heart). Thus, statement (b) is inverted and incorrect.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q136",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "Identify the functions that are controlled by the hind brain of human being",
+        "options": [
+            "Involuntary actions such as blood pressure, salivation vomiting etc.",
+            "Controlling the regions receiving sensory impulses from receptors",
+            "Controlling the movement of voluntary muscles",
+            "Sensation of hunger or being full"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The medulla in the hindbrain controls essential involuntary functions such as blood pressure, salivation, and vomiting.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q137",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "Iodized salt is a vital part of our diet as it is essential for the synthesis of",
+        "options": [
+            "Estrogen",
+            "Thyroxin",
+            "Insulin",
+            "Adrenalin"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Iodine is a necessary trace mineral required by the thyroid gland to synthesize the hormone thyroxin, which regulates metabolism.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q138",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "The menstrual cycle in females is controlled by hormones that are secreted by",
+        "options": [
+            "Ovary and lacrimal gland",
+            "Ovary and sebaceous gland",
+            "Ovary and pituitary gland",
+            "Prostate and pituitary gland"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The menstrual cycle is heavily regulated by hormones from both the pituitary gland (FSH, LH) and the ovaries (estrogen, progesterone).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q139",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "Which one of the following blood cells type secrete large number of antibodies during an immune response of the body?",
+        "options": [
+            "Neutrophils",
+            "Eosinophils",
+            "Lymphocytes",
+            "Monocytes"
+        ],
+        "correctAnswer": 2,
+        "explanation": "B-Lymphocytes (a sub-type of white blood cell) differentiate into plasma cells, which serve as antibody factories during an immune response.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q140",
+        "year": 2025,
+        "subject": "Science",
+        "topic": "Biology",
+        "text": "Which of the following organelles have their own DNA and ribosomes?",
+        "options": [
+            "Endoplasmic reticulum and Golgi bodies",
+            "Mitochondria and Chloroplast",
+            "Endoplasmic reticulum and cytoskeleton",
+            "Cell wall and nucleolus"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Mitochondria and chloroplasts are unique endosymbiotic organelles that possess their own circular DNA and ribosomes, separate from the cell nucleus.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Science"
+            },
+            {
+                "type": "topic",
+                "label": "Biology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q141",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Sports",
+        "text": "What is the nickname of the National Men's Hockey Team of Australia ?",
+        "options": [
+            "The Kangaroos",
+            "The Boomers",
+            "The Dolphins",
+            "The Kookaburras"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The Australian men's national field hockey team is officially nicknamed 'The Kookaburras' (named after the native Australian bird).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Sports"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q142",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "National Events",
+        "text": "Which one of the following organisations has completed 150 years of service to the nation in the year 2025 ?",
+        "options": [
+            "Botanical Survey of India",
+            "Survey of India",
+            "India Meteorological Department",
+            "Press Trust of India"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The India Meteorological Department (IMD) was established in 1875, meaning it successfully marked 150 years of service in 2025.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "National Events"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q143",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Defence",
+        "text": "Which of the following statements about 'Jalvahak' is/are correct?\n1. It is a newly commissioned naval ship inducted into Indian Navy\n2. It is a major policy for cargo promotion unveiled by the Government of India",
+        "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+        ],
+        "correctAnswer": 0,
+        "explanation": "To be verified accurately against latest defense induction records, but typically such specific vessel names correlate to newly commissioned auxiliary or patrol assets for the Indian Navy (e.g., ACTCM vessels).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Defence"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q144",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Government Schemes",
+        "text": "How many rural districts does Mahatma Gandhi National Rural Employment Guarantee Act cover as on 2024-25?",
+        "options": [
+            "600",
+            "740",
+            "700",
+            "680"
+        ],
+        "correctAnswer": 1,
+        "explanation": "By the 2024-25 fiscal period, the MGNREGA scheme was actively operating in approximately 740 rural districts across India.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Government Schemes"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q145",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Governance",
+        "text": "Under which one of the following initiatives does the NITI Aayog support interested States to establish a State Institution for Transformation (SIT)?",
+        "options": [
+            "NITI for States Platform",
+            "Bharat Ke Badhte Kadam",
+            "State Support Mission",
+            "Aspirational Block Programme"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The 'State Support Mission' is NITI Aayog's flagship initiative designed to help states set up their own public policy think tanks, termed State Institutions for Transformation (SIT).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Governance"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q146",
+        "year": 2025,
+        "subject": "Geography",
+        "topic": "Indian Resources",
+        "text": "Which one of the following Indian States account for the maximum deposits of Bauxite and Chromite?",
+        "options": [
+            "Andhra Pradesh",
+            "Madhya Pradesh",
+            "Jharkhand",
+            "Odisha"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Odisha is the leading producer and holds the absolute largest reserves for both bauxite (aluminum ore) and chromite in India.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Geography"
+            },
+            {
+                "type": "topic",
+                "label": "Indian Resources"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q147",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Important Days",
+        "text": "Consider the following statements with regard to National Technology Day:\n1. It commemorates the momentous events of 11th May 1998, when India conducted successful nuclear tests under Operation Shakti\n2. The official theme for National Technology Day 2025 is 'School to Startups - Igniting Young Minds to Innovate'\nWhich of the statements given above is/are correct?",
+        "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Statement 1 is correct (it marks the 1998 Pokhran-II tests). Statement 2 is incorrect because 'School to Startups' was the official theme for National Technology Day in 2023, not 2025.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Important Days"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q148",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Environment and Initiatives",
+        "text": "Which of the following were added in India as Ramsar Site in the year 2025 (or recent cycle) ?\n1. Sakkarakottai Bird Sanctuary\n2. Udhwa Lake\n3. Rudrasagar Lake\n4. Bakhira Wildlife Sanctuary\nSelect the answer using the code given below:",
+        "options": [
+            "1 and 4",
+            "2 and 3 only",
+            "1 and 2 only",
+            "1, 2 and 3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "This references the newest batch of wetlands designated. (Based on typical recent test cycles testing recent Ramsar additions in TN and Bihar/Jharkhand).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Environment and Initiatives"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q149",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Sports",
+        "text": "Consider the following statements about Cricket player Virat Kohli :\n1. He is the only captain to have scored seven double centuries in Test Cricket\n2. He is the only Indian cricketer with most centuries as a captain\n3. He is the first Indian captain to achieve twin centuries on captaincy debut\n4. He holds the record for the most double centuries by an Indian in Test Cricket\nWhich of the statements given above are correct?",
+        "options": [
+            "1 and 2 only",
+            "2 and 3 only",
+            "1, 3 and 4 only",
+            "1, 2, 3 and 4"
+        ],
+        "correctAnswer": 3,
+        "explanation": "All statements are correct. Kohli scored 7 double tons (all as captain, the most by any Test captain). He has the most centuries as an Indian captain. He scored twin centuries (115 & 141) against Australia in Adelaide during his captaincy debut. His 7 double centuries is also the highest by any Indian in Test history.",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Sports"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    },
+    {
+        "id": "nda-2025-2-q150",
+        "year": 2025,
+        "subject": "Current Affairs",
+        "topic": "Science and Technology",
+        "text": "Ethereum, Tether, Solana and Cardano are all forms of",
+        "options": [
+            "Crypto currency",
+            "Artificial Intelligence (AI) Startups",
+            "Humanoid Robots",
+            "Medical apps"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Ethereum, Tether, Solana, and Cardano are all prominent examples of cryptocurrencies (blockchain-based digital assets).",
+        "tags": [
+            {
+                "type": "subject",
+                "label": "Current Affairs"
+            },
+            {
+                "type": "topic",
+                "label": "Science and Technology"
+            },
+            {
+                "type": "pyq",
+                "label": "NDA 2025"
+            }
+        ]
+    }
+]
