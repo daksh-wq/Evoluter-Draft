@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "nda-2023-2-q1",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "As the Southwest monsoon ________ through most of July, flash floods caused by the waters of the Narmada hit Jabalpur town.",
+    "options": [
+      "lashed",
+      "flourished",
+      "occupied",
+      "dried"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The word 'lashed' is appropriately used to describe heavy rainfall or severe storms beating against a place, which fits the context of flash floods.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q2",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "Given the scale of the challenges that ________ us today, our company proposes more viable plans for sustainability.",
+    "options": [
+      "supports",
+      "conflict",
+      "confronts",
+      "convince"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The word 'confronts' means to face up to and deal with a problem or difficult situation. Challenges 'confront' us.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q3",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "It is a really tough course, I am just worried that I won't be able to go the ________",
+    "options": [
+      "way",
+      "distance",
+      "far",
+      "route"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The idiom 'go the distance' means to continue doing something until it is successfully completed, especially something difficult.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q4",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The ________ of the advancement made in agricultural productivity in India has been remarkable.",
+    "options": [
+      "extent",
+      "context",
+      "distance",
+      "syntax"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The word 'extent' properly refers to the degree, size, or magnitude of the advancement made.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q5",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "This essay ________ and examines various systems for water appropriation and agricultural practices adapted by society in the arid conditions of Rajasthan.",
+    "options": [
+      "confuses",
+      "enhances",
+      "controls",
+      "explores"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The word 'explores' logically pairs with 'examines' to describe the analytical nature of the essay.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q6",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "India has been able to successfully ________ its population through family planning programmes.",
+    "options": [
+      "sterilise",
+      "stabilise",
+      "stratify",
+      "establish"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Family planning programs are designed to control population growth, thus helping to 'stabilise' the population.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q7",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "Adolescence is the ________ wherein a child enters adulthood.",
+    "options": [
+      "threshold",
+      "position",
+      "condition",
+      "period"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Adolescence is the transitional 'period' of physical and psychological development between childhood and adulthood.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q8",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The British who ruled India for 200 years were here to ________ India's natural resources.",
+    "options": [
+      "spoil",
+      "implore",
+      "exploit",
+      "drill"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'exploit' means to make full use of and derive benefit from a resource, which fits the historical context of colonial extraction.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q9",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "Endangered species have a fifty per cent or greater probability of ________ within five years or two generations whichever is longer.",
+    "options": [
+      "distinction",
+      "extinction",
+      "complication",
+      "completion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Endangered species face the risk of 'extinction' (dying out entirely).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q10",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The first law of thermodynamics states that whereas energy can be ________ from one form into another, it cannot be created or destroyed.",
+    "options": [
+      "reduced",
+      "induced",
+      "performed",
+      "transformed"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Energy is 'transformed' or converted from one form to another according to the first law of thermodynamics.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q11",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Bread, butter and jam common breakfast items (a) / that are consumed (b) / by many households. (c) / No error (d)",
+    "options": [
+      "Bread, butter and jam common breakfast items",
+      "that are consumed",
+      "by many households.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The error is in part (a). The sentence lacks a main verb. It should be: 'Bread, butter and jam ARE common breakfast items'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q12",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Ten thousand dollars is the prize money being offered (a) / by the game show hosts. (b) / (c) / No error (d)",
+    "options": [
+      "Ten thousand dollars is the prize money being offered",
+      "by the game show hosts.",
+      "(c)",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "There is no grammatical error. A specific amount of money ('Ten thousand dollars') takes a singular verb ('is').",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q13",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Three hundred and sixty five (a) / create up the number of days (b) / in a calendar year. (c) / No error (d)",
+    "options": [
+      "Three hundred and sixty five",
+      "create up the number of days",
+      "in a calendar year.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The phrase 'create up' is incorrect. The correct phrasal verb is 'make up'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q14",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The process of removing (a) / wool from the body of (b) / an animal is called sharing. (c) / No error (d)",
+    "options": [
+      "The process of removing",
+      "wool from the body of",
+      "an animal is called sharing.",
+      "No error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The error is a spelling/vocabulary mistake in part (c). The process is called 'shearing', not 'sharing'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q15",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Many people came from faraway places to prayed (a) / at the temple on the auspicious day. (b) / (c) / No error (d)",
+    "options": [
+      "Many people came from faraway places to prayed",
+      "at the temple on the auspicious day.",
+      "(c)",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The error is in part (a). The infinitive form must be used after 'to', making it 'to pray', not 'to prayed'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q16",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "After reading foreword of the book on environmental issues in India, (a) / I decided to meet its author. (b) / (c) / No error (d)",
+    "options": [
+      "After reading foreword of the book on environmental issues in India,",
+      "I decided to meet its author.",
+      "(c)",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The error is in part (a). The definite article is missing before 'foreword'. It should be 'After reading the foreword of the book'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q17",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The guidance from the mentors (a) / and teachers facilitated the (b) / smooth conduct of elections to the Students' council. (c) / No error (d)",
+    "options": [
+      "The guidance from the mentors",
+      "and teachers facilitated the",
+      "smooth conduct of elections to the Students' council.",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sentence is grammatically sound and there is no error.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q18",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The Principal of our school (a) / felicitated the students in (b) / the prize distribution ceremony. (c) / No error (d)",
+    "options": [
+      "The Principal of our school",
+      "felicitated the students in",
+      "the prize distribution ceremony.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The preposition 'in' is incorrect here. It should be 'at the prize distribution ceremony'. So the error is in part (b).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q19",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "If you were to come to Chennai to settle down (a) / it will be the best possible decision. (b) / (c) / No error (d)",
+    "options": [
+      "If you were to come to Chennai to settle down",
+      "it will be the best possible decision.",
+      "(c)",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The sentence follows a conditional structure. Since the 'if' clause is in the past subjunctive ('were to come'), the main clause should use 'would be' instead of 'will be'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q20",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "They had promised to delivered the bags before mid-March (a) / to enable us to inaugurate the shop. (b) / (c) / No error (d)",
+    "options": [
+      "They had promised to delivered the bags before mid-March",
+      "to enable us to inaugurate the shop.",
+      "(c)",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The error is in part (a). The infinitive form should be used after 'to', so it must be 'to deliver', not 'to delivered'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q21",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "He is always captious.",
+    "options": [
+      "worried",
+      "passionate",
+      "faultfinding",
+      "jovial"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Captious' means tending to find fault or raise petty objections, which is synonymous with 'faultfinding'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q22",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Geomorphologists ascertain several wonderful facts about our earth.",
+    "options": [
+      "verify",
+      "invert",
+      "increase",
+      "omit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'ascertain' means to find something out for certain or make sure of, which is closest in meaning to 'verify'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q23",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The Colonel ordered the Soldiers to meet him in the commissary.",
+    "options": [
+      "office",
+      "field",
+      "playground",
+      "canteen"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A 'commissary' in a military context is a store or a canteen where food and supplies are sold or provided to personnel.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q24",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The doctor dismembered the patient's finger first and then cured the ailment.",
+    "options": [
+      "stitched",
+      "dissected",
+      "plastered",
+      "splintered"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Though a bit morbid, 'dismember' means to cut off the limbs of (a person or animal), which is most akin to 'dissected' or amputated in this context.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q25",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Mr. Kumar works as a bursar in the sports academy.",
+    "options": [
+      "secretary",
+      "accountant",
+      "coach",
+      "trainer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A 'bursar' is a person who manages the financial affairs of an institution, effectively serving as an 'accountant' or treasurer.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q26",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "His intentions are insidious.",
+    "options": [
+      "pious",
+      "inadvertent",
+      "deceitful",
+      "naive"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Insidious' implies proceeding in a gradual, subtle way, but with harmful effects, often characterized by treachery or deceitfulness.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q27",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Respect for other human beings is intrinsic to the teachings of all religions.",
+    "options": [
+      "inconsistent",
+      "peripheral",
+      "inherent",
+      "existential"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The word 'intrinsic' means belonging naturally or being an essential part of something, which is synonymous with 'inherent'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q28",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "He completed the onerous task with relative ease.",
+    "options": [
+      "smooth",
+      "complex",
+      "risky",
+      "wearying"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An 'onerous' task is one that involves an amount of effort and difficulty that is oppressively burdensome or 'wearying'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q29",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Alfred was a potentate during the Middle Ages.",
+    "options": [
+      "Monarch",
+      "lenient",
+      "liberal",
+      "democrat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A 'potentate' is a monarch or ruler, especially an autocratic one.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q30",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "I abandoned the task due to indolence.",
+    "options": [
+      "difficulty",
+      "laziness",
+      "ugliness",
+      "helplessness"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Indolence' means avoidance of activity or exertion, which is synonymous with 'laziness'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q31",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Principal' and 'Principle'",
+    "options": [
+      "'Principal' means belief system, and 'principle' means head of an educational institution",
+      "'Principal' means head of an educational institution, and 'principle' means original sum on which interest is charged",
+      "'Principle' means moral rule, and 'principal' means head of an educational institution.",
+      "'Principal' means original sum on which interest is charged, and 'principle' means head of an educational institution."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The word 'Principle' refers to a moral rule or fundamental truth, whereas 'Principal' refers to the head of an educational institution or the original sum of money invested.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q32",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Plane' and 'Plain'",
+    "options": [
+      "'Plane' means a flat surface, and 'plain' means something that flies.",
+      "'Plane' means the flat surface, and 'plain' means not elaborate.",
+      "'Plane' means something that flies, and 'plain' means flat surface.",
+      "'Plane' means not elaborate, and 'plain' means flat surface."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A 'Plane' is a flat surface (or an airplane), while 'Plain' means simple, not elaborate, or a large area of flat land. Option (b) offers a correct definition for both.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q33",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Pail' and 'Pale'",
+    "options": [
+      "'Pale' means inferior or unimpressive, and 'pail' means faded.",
+      "'Pale' means faded or light in shade, and 'pail' means inferior or unimpressive.",
+      "'Pale' means faded or light in shade, and 'pail' means a bucket.",
+      "'Pale' means a bucket, and 'pail' means inferior or unimpressive."
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Pale' means light in color or washed out, whereas 'Pail' is a term for a bucket.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q34",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Metal' and 'Mettle'",
+    "options": [
+      "'Metal' is a hard shiny material that is a good conductor, and 'mettle' means malleable metal.",
+      "'Metal' is a hard shiny material that is a good conductor, and 'mettle' means metallic substance.",
+      "'Metal' means mental resilience, and 'mettle' is a hard shiny material that is a good conductor.",
+      "'Metal' is a hard shiny material that is a good conductor, and 'mettle' means mental resilience."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A 'Metal' is a solid material typically hard, shiny, and conductive, whereas 'Mettle' refers to a person's ability to cope well with difficulties or their mental resilience.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q35",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Hail' and 'Hale'",
+    "options": [
+      "'Hail' means pellets of frozen rain, and 'hale' means wind storm",
+      "'Hail' means pellets of frozen rain, and 'hale' means strong and healthy",
+      "'Hail' means pellets of frozen rain, and 'hale' means to greet with enthusiastic approval",
+      "'Hail' means strong and healthy, and 'hale' means pellets of frozen rain"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Hail' refers to pellets of frozen rain falling in showers. 'Hale' means strong and healthy (often used in the phrase 'hale and hearty').",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q36",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Conscious' and 'Conscience'",
+    "options": [
+      "'Conscious' means sense of right and wrong, and 'conscience' means awareness about something",
+      "'Conscious' means alert, and 'conscience' means presence of mind",
+      "'Conscious' means intent, and 'conscience' means unprincipled action",
+      "'Conscious' means aware, and 'conscience' means sense of right and wrong"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To be 'Conscious' means to be awake and aware of one's surroundings. 'Conscience' is a person's moral sense of right and wrong.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q37",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Dissent' and 'Descent'",
+    "options": [
+      "'Dissent' means having ideas different from general beliefs or official position, and 'descent' means movement towards a lower place",
+      "'Dissent' means having ideas different from general beliefs or official position, and 'descent' means being of acceptable standard",
+      "'Dissent' means being of acceptable standard, and 'descent' means movement towards a lower place",
+      "'Dissent' means being of acceptable standard, and 'descent' means ideas different from general beliefs or official position"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Dissent' means the holding or expression of opinions at variance with those commonly held. 'Descent' is the action of moving downward.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q38",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Devise' and 'Device'",
+    "options": [
+      "'Device' means to determine, and 'devise' means a piece of equipment meant for accomplishing a specific task.",
+      "'Device' means finding a new way to do something, and 'devise' means to determine",
+      "'Device' means a piece of equipment meant for accomplishing a specific task, and 'devise' means finding a new way to do something",
+      "'Device' means finding a new way to do something, and 'devise' means a piece of equipment meant for accomplishing a specific task."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 'Device' is a tool or piece of equipment. To 'Devise' is a verb meaning to plan or invent a new way of doing something.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q39",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Discrete' and 'Discreet'",
+    "options": [
+      "'Discrete' means separate and distinct categories of objects, and 'discreet' means misuse of authority",
+      "'Discrete' means separate and distinct categories of objects, and 'discreet' means maintaining confidentiality",
+      "'Discrete' means being careful in what one says or does, and 'discreet' means separate and distinct categories of objects",
+      "'Discrete' means misuse of authority and 'discreet' means being careful in what one says or does"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Discrete' means individually separate and distinct. 'Discreet' means being careful and prudent in one's speech or actions, especially to maintain confidentiality.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q40",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Usage of Paired Words",
+    "text": "Select the option that most appropriately describes the meaning of both the words: 'Eminent' and 'Imminent'",
+    "options": [
+      "'Eminent' means important and famous, and 'imminent' means something about to happen",
+      "'Eminent' means something unpleasant about to happen, and 'imminent' means important and famous person",
+      "'Eminent' means important and famous person, and 'imminent' means inherent or existing within",
+      "'Eminent' means inherent or existing within, and 'imminent' means something about to happen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Eminent' is used to describe a person who is famous and respected within a particular sphere. 'Imminent' describes an event that is about to happen very soon.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Usage of Paired Words" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q41",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Many metals are malleable in nature and property.",
+    "options": [
+      "hard",
+      "strong",
+      "tender",
+      "weak"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Malleable means easily bent or shaped without breaking. The opposite in this context is 'hard' or rigid.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q42",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "To neglect a warning is to invite danger.",
+    "options": [
+      "disregard",
+      "ignore",
+      "regard",
+      "overlook"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'neglect' means to fail to care for or pay attention to something. The antonym is to 'regard' or pay attention to.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q43",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "His ostentatious behaviour surprised everyone.",
+    "options": [
+      "tawdry",
+      "modest",
+      "gaudy",
+      "apparent"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ostentatious means characterized by vulgar or pretentious display. Its opposite is 'modest'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q44",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The experience of Covid Pandemic was excruciating for much of the population.",
+    "options": [
+      "gnawing",
+      "gruelling",
+      "harrowing",
+      "mild"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Excruciating means intensely painful or distressing. The opposite is 'mild'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q45",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "A trip to the hills was refreshing.",
+    "options": [
+      "conniving",
+      "wearying",
+      "revivifying",
+      "rejuvenating"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Refreshing means giving fresh strength or energy. The opposite is 'wearying' (causing fatigue).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q46",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Why, according to the writer can't people be motivated to use a resource prudently?\n1. They feel that others may overuse the resource\n2. It is possible to substitute the resource\n3. Abundance of the resource availability\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage outlines three conditions that un-motivate sustainable use: vast catchments (abundance), possibilities of substitution, and tenuous control leading to the fear that others may deplete it. Thus, all three points correctly reflect the passage.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q47",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "When do people use resources exhaustively?",
+    "options": [
+      "When the substitution of resource is felicitated by NGOs",
+      "When the resource is about to expand",
+      "When the resources use has little impact",
+      "When they desire desperately for sustainable development"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage states that people are unmotivated to be prudent 'if their resource catchments are vast, so that degradation of any particular portion affects them very little'. This equates to their use having 'little impact'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q48",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "The self-interest of people affects the use of renewable resources",
+    "options": [
+      "positively",
+      "erratically",
+      "affirmatively",
+      "indifferently"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The author notes that people 'pursue self-interest' and are 'unlikely to be motivated to use renewable resources in a prudent... fashion'. They essentially use resources indifferently unless certain strict conditions are met.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q49",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "People rooted in a locality",
+    "options": [
+      "cause harm to available resources",
+      "generate resources",
+      "believe in conservation and reproduction of resources",
+      "consume resources freely"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage explicitly states that people rooted in a locality are 'most likely to fulfil all three prerequisites for sustainable resource use; and therefore to behave in ways conducive to the conservation of biodiversity'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q50",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Which among the following is closest in meaning with the word 'deplete'?",
+    "options": [
+      "exhaust",
+      "complete",
+      "replete",
+      "desperate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'deplete' a resource means to use up the supply or resources of it, making 'exhaust' the closest synonym.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q51",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The streaming of light beams coming from the Sun through trees is said to have suggested that light travels in straight line. The particles on the path of light beams are visible to us because",
+    "options": [
+      "dust particles in the air reflect light into our eyes",
+      "dust particles in the air scatter light into our eyes",
+      "dust particles in the air refract light into our eyes",
+      "dust particles in the air polarize light into our eyes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This phenomenon, known as the Tyndall effect, makes the path of a light beam visible because particles (like dust or smoke) suspended in the air scatter the light into our eyes.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q52",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The flash of lightning is seen before the thunderstorm is heard. It verifies that",
+    "options": [
+      "sound travels much faster than light",
+      "light travels much faster than sound",
+      "light and sound both travel with same speed",
+      "intensity of flash of lightning is very high during thunderstorm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Light travels at roughly 3 × 10^8 m/s, while sound travels at only about 343 m/s in air. The vast difference in speed causes the visual flash to reach the observer much sooner than the sound.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q53",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The potential difference between the two end terminals of an electric heater is 220 V and the current through it is 0.5 A. What would be the current through the heater if the potential difference across the terminals of the heater is reduced to 120 V?",
+    "options": [
+      "1.0 A",
+      "0.5 A",
+      "0.27 A",
+      "0.7 A"
+    ],
+    "correctAnswer": 2,
+    "explanation": "First, calculate resistance: R = V/I = 220/0.5 = 440 Ohms. If V is reduced to 120 V, the new current I = V/R = 120/440 = 12/44 = 3/11 = 0.27 A.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q54",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The heating element in an electric iron is usually made of",
+    "options": [
+      "Constantan",
+      "Tungsten",
+      "Nichrome",
+      "Copper"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nichrome (an alloy of nickel and chromium) is used for heating elements because it has a high resistance and does not oxidize easily at high temperatures.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q55",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Sita, 1.5 m high, stands before a plane mirror fixed on a wall to view her full image. What should be the minimum height of the plane mirror so that Sita can view her image fully?",
+    "options": [
+      "0.50 m",
+      "0.35 m",
+      "0.75 m",
+      "0.25 m"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To see one's full image in a plane mirror, the minimum height of the mirror must be exactly half of the person's height. 1.5 m / 2 = 0.75 m.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q56",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Galvanization is a method of protecting iron from rusting by coating with a thin layer of",
+    "options": [
+      "Gallium",
+      "Aluminum",
+      "Zinc",
+      "Silver"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Galvanization specifically refers to the process of applying a protective zinc coating to steel or iron, preventing rust by acting as a sacrificial anode.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q57",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following alloys contains a non-metal as one of its constituent?",
+    "options": [
+      "Brass",
+      "Bronze",
+      "Amalgam",
+      "Steel"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Steel is an alloy of iron and carbon. Carbon is a non-metal. (Brass is Cu+Zn, Bronze is Cu+Sn, Amalgam is an alloy of Mercury).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q58",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Buckminster fullerene, which looks like a football, is an allotropic form of",
+    "options": [
+      "Phosphorus",
+      "Sulfur",
+      "Carbon",
+      "Tin"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Buckminsterfullerene (C60) is a molecule composed entirely of carbon, forming a hollow, cage-like sphere, making it a distinct allotrope of carbon.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q59",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following graphs correctly represents the current (I) - voltage (V) variation for a rectangular piece of a semiconductor wafer?",
+    "options": [
+      "I vs V curving upwards exponentially",
+      "I vs V curving downwards",
+      "I vs V straight line through origin",
+      "I vs V straight line with negative slope"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As the voltage across a pure semiconductor wafer increases, it heats up. This heat breaks more covalent bonds, freeing more charge carriers (electrons and holes), which decreases resistance and causes the current to curve upwards exponentially.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q60",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The green plants in a terrestrial eco-system absorbs sunlight that falls on their leaves and convert it into food energy. The percentage of solar radiation absorbed by all green plants for the process of photosynthesis is about",
+    "options": [
+      "1%",
+      "5%",
+      "8%",
+      "10%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Of all the solar energy that falls on the leaves of terrestrial plants, only about 1% to 2% is actually captured and converted into food energy during photosynthesis.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q61",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Consider the following reaction:\nFe2O3(s) + 2Al(s) → 2Fe(s) + Al2O3(s)\nWhich of the following statements about the given reaction is NOT correct?",
+    "options": [
+      "It is an example of displacement reaction",
+      "It is highly endothermic reaction",
+      "Fe2O3 acts as oxidizing agent",
+      "This reaction is applicable to joining of railway tracks"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This reaction is the famous 'thermite reaction'. It is highly exothermic, releasing so much heat that the iron formed is molten. Thus, stating it is 'endothermic' is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q62",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\nList I (Chemical process)\nA. Electrolysis of water\nB. Burning of coal\nC. Iron nail immersed in copper sulphate solution\nD. Addition of barium chloride solution to aluminium sulphate solution\nList II (Reaction)\n1. Double displacement reaction\n2. Combination reaction\n3. Decomposition reaction\n4. Displacement reaction",
+    "options": [
+      "A-3, B-4, C-2, D-1",
+      "A-4, B-1, C-2, D-3",
+      "A-3, B-2, C-4, D-1",
+      "A-4, B-2, C-1, D-3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Electrolysis splits water (Decomposition: A-3). Burning coal combines C + O2 (Combination: B-2). Iron displaces Copper (Displacement: C-4). Barium chloride reacting with aluminium sulphate swaps ions (Double Displacement: D-1).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q63",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following processes involves chemical reaction?",
+    "options": [
+      "Evaporation of petrol",
+      "Dissolution of salt in water",
+      "Storing of oxygen gas under pressure in a gas cylinder",
+      "Burning of magnesium ribbon in air"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Burning of magnesium ribbon involves a chemical change (reaction with oxygen to form magnesium oxide). The other options describe physical changes.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q64",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following metals does NOT react with cold water to liberate hydrogen gas?",
+    "options": [
+      "Potassium",
+      "Iron",
+      "Calcium",
+      "Sodium"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Potassium, Sodium, and Calcium are highly reactive metals that react violently with cold water. Iron is less reactive and only reacts with steam when it is red-hot.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q65",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Consider the following reaction:\n2HgO → 2Hg + O2\nThe respective state of HgO, Hg and O2 in the above reaction is",
+    "options": [
+      "Liquid, solid, gas",
+      "Solid, solid, gas",
+      "Liquid, solid, liquid",
+      "Solid, liquid, gas"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mercury(II) oxide (HgO) is a solid powder at room temperature. It decomposes into elemental mercury (Hg), which is a liquid, and oxygen (O2), which is a gas.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q66",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The two important features of sexual reproduction in higher organisms that create genetic diversity in offspring are",
+    "options": [
+      "Mitosis and fertilization",
+      "Meiosis and fertilization",
+      "Mitosis and binary fission",
+      "Meiosis and conjugation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Meiosis generates gametes with half the genetic material and introduces variation through crossing over and independent assortment. Fertilization restores the full chromosome number by combining genetically unique gametes from two parents.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q67",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Eukaryotic cells are much more complex as compared to prokaryotes. Which one of the following structures is exclusively present in a eukaryotic cell?",
+    "options": [
+      "Cell wall",
+      "Plasma membrane",
+      "Nucleic acid",
+      "Mitochondria"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Prokaryotes lack membrane-bound organelles. Therefore, mitochondria (the powerhouse of the cell) are found exclusively in eukaryotic cells.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q68",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "An important cause of tooth decay by the bacterium Streptococcus mutans is because of their ability to attach to teeth surface by producing slime layer from",
+    "options": [
+      "Sugar",
+      "Alcohol",
+      "Saliva",
+      "Teichoic acid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "S. mutans metabolizes dietary sucrose (sugar) to synthesize a sticky, extracellular, dextran-based slime layer that allows them to adhere strongly to tooth enamel and form plaque.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q69",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In angiosperms, pollen grain germinates to produce two male gametes. Which one of the following functions is carried out by these gametes?",
+    "options": [
+      "Both the gametes fuse with a single egg cell",
+      "Both the gametes fuse with two different egg cells",
+      "One gamete fuses with the egg cell and the other one eventually degenerate",
+      "One gamete fuses with the egg cell and the other one fuses with a diploid secondary nucleus"
+    ],
+    "correctAnswer": 3,
+    "explanation": "This describes 'double fertilization' unique to angiosperms. One male gamete fertilizes the egg cell forming a diploid zygote, and the other fuses with the two polar nuclei (secondary nucleus) to form the triploid endosperm.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q70",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In a sexually reproducing organism, which one of the following statements is appropriate both for the parent and offspring?",
+    "options": [
+      "Chromosome number increases but DNA content remains constant",
+      "Both chromosome number and DNA content remains constant",
+      "Chromosome number decreases but DNA content remains constant",
+      "Both chromosome number and DNA content decreases"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To maintain species stability, both the chromosome number and DNA content must remain constant across generations (parents and offspring) in a sexually reproducing organism, achieved through the alternating processes of meiosis and fertilization.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q71",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Relationship between a flower and honey-bee will help the flower for/in",
+    "options": [
+      "Faster development",
+      "Pollination",
+      "Quick germination of pollen",
+      "Increase in size"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The primary benefit a flower derives from its mutualistic relationship with a honey-bee is the transfer of pollen grains from the anther to the stigma, facilitating reproduction (pollination).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q72",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one of the following was NOT a way in which kings in ancient India attempted to claim a higher status?",
+    "options": [
+      "Identifying with a variety of deities",
+      "Assuming pompous titles",
+      "Imposing high taxes",
+      "Conquests and annexation of territories"
+    ],
+    "correctAnswer": 2,
+    "explanation": "While kings sought legitimacy and high status through divine associations, grand titles (like Maharajadhiraja), and military conquests, imposing high taxes was a mechanism for state revenue and often a source of unpopularity, not a direct strategy for claiming divine or higher social status.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q73",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which one of the following statements about the Bhakti movement is NOT correct?",
+    "options": [
+      "The Bhakti movement avoided traditions that promoted diversity",
+      "In northern India, the Bhakti movement revolved around the worship of Rama and Krishna",
+      "The Bhakti movement relied on the devotion of God, both with and without attributes",
+      "While Tulsidas represented the tradition of devotion with attributes, Sant Kabir followed the path of devotion without attributes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Bhakti movement actively embraced and promoted diversity, accommodating various regional languages, rejecting rigid caste boundaries, and incorporating diverse practices and communities. Therefore, saying it 'avoided traditions that promoted diversity' is factually incorrect.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q74",
+    "year": 2023,
+    "subject": "History",
+    "topic": "World History",
+    "text": "The 'Reign of Terror' in revolutionary France referred to",
+    "options": [
+      "Bands of revolutionaries moving around to terrorise people who did not participate in the revolution",
+      "The royal forces punishing people who participated in the revolution",
+      "Trial and beheading persons considered enemies of the republic by the revolutionary tribunal",
+      "The general atmosphere of insecurity perceived by people after the beheading of the king"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 'Reign of Terror' refers to the period during the French Revolution (1793-1794) characterized by brutal repression and mass executions via the guillotine of anyone deemed an 'enemy of the revolution' by the Revolutionary Tribunal, largely led by Maximilien Robespierre.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q75",
+    "year": 2023,
+    "subject": "History",
+    "topic": "World History",
+    "text": "In which one of the following ways did the First World War Not impact Europe?",
+    "options": [
+      "From a continent of creditors it turned into a continent of debtors",
+      "Soldiers came to be placed higher in social status than civilians",
+      "Popular support decreased for conservative dictatorship which had come into being recently",
+      "National honour occupied centre stage in the public sphere"
+    ],
+    "correctAnswer": 2,
+    "explanation": "After WWI, rather than decreasing, popular support actually *increased* for conservative and extreme right-wing dictatorships (like Fascism in Italy and later Nazism in Germany) due to the economic instability and political disillusionment that plagued nascent democracies.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q76",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Indian National Movement",
+    "text": "\"...the immediate ending of British rule in India is an urgent necessity...\" was a resolution of",
+    "options": [
+      "Non Co-operation Movement",
+      "Quit India Movement",
+      "Individual Movement",
+      "Civil Disobedience Movement"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This text is from the famous 'Quit India Resolution' passed by the All-India Congress Committee in Bombay on August 8, 1942, demanding the immediate end of British rule.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Indian National Movement" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q77",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Resources",
+    "text": "Which one among the following pairs of mine and mineral is NOT correctly matched?",
+    "options": [
+      "Bailadila : Iron Ore",
+      "Zawar : Zinc",
+      "Ghatsila : Copper",
+      "Kudremukh : Bauxite"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Kudremukh in Karnataka is famous for one of the largest iron ore deposits in the world, not Bauxite.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Resources" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q78",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which one of the following is the usual unit of measurement for Air Pressure used in India?",
+    "options": [
+      "Centimeter",
+      "Millibar",
+      "Milligram",
+      "Milliliter"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Meteorological departments worldwide, including the India Meteorological Department (IMD), conventionally use millibars (mb) or hectopascals (hPa) to measure atmospheric air pressure.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q79",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geological History",
+    "text": "Which one of the following is the oldest era in Geological History determining the age of various rock types?",
+    "options": [
+      "Precambrian",
+      "Mesozoic",
+      "Cenozoic",
+      "Paleozoic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Precambrian is the earliest and longest part of Earth's history, spanning from the formation of Earth about 4.6 billion years ago to the beginning of the Paleozoic Era.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geological History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q80",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "A geographical grid has:\n1. Lines that run east to west around the globe to mark latitude\n2. Lines that run north to south from north pole to south pole indicate longitude\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements perfectly define the standard geographical coordinate system grid. Latitudes run east-west measuring distance north/south of the equator, while longitudes run north-south measuring distance east/west of the Prime Meridian.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q81",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "In which one of the following layers of the atmosphere all weather phenomenon occur?",
+    "options": [
+      "Mesosphere",
+      "Troposphere",
+      "Thermosphere",
+      "Stratosphere"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The troposphere is the lowest layer of Earth's atmosphere, and it is where nearly all weather phenomena occur.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q82",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Lakes",
+    "text": "In which one of the following states 'Roopkund' lake is located?",
+    "options": [
+      "Kerala",
+      "Manipur",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Roopkund, locally known as Mystery Lake or Skeletons Lake, is a high altitude glacial lake in the state of Uttarakhand.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Lakes" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q83",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Ram records the odometer readings of his car for the distance covered from 2000 km at the start of his journey and 2400 km at the end of the journey after 8 hours. What is the average speed of the car?",
+    "options": [
+      "50 km/h",
+      "60 km/h",
+      "70 km/h",
+      "80 km/h"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Total distance covered = 2400 - 2000 = 400 km. Total time = 8 hours. Average speed = Distance / Time = 400 / 8 = 50 km/h.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q84",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Ms. Rani decides to convert her AC generator into a DC generator. Which one of the following she would need to use?",
+    "options": [
+      "A split-ring type commutator",
+      "Slip rings and brushes",
+      "A stronger magnetic field",
+      "A rectangular wire loop"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To convert an AC generator into a DC generator, the slip rings must be replaced with a split-ring type commutator, which reverses the current direction to keep it flowing in one direction in the external circuit.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q85",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Ramesh cannot see distinctly objects kept beyond 2 m. This defect can be corrected by using a lens of power",
+    "options": [
+      "+ 0.5 D",
+      "- 0.5 D",
+      "+ 0.2 D",
+      "- 0.2 D"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ramesh suffers from myopia. The focal length required to correct this is f = -2 m. Power P = 1/f = 1/(-2) = -0.5 Dioptres.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q86",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which of the following statements are correct about the electrical resistance and resistivity of a wire ?\n1. Both quantities depend on the area of cross-section of the wire\n2. Both depend on the temperature\n3. Resistance of the wire is directly proportional to the resistivity of the wire\n4. Resistivity of the wire is directly proportional to the length of the wire\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 3",
+      "2 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Resistance depends on length and area, but resistivity is an intrinsic property that depends only on the material and temperature. Both depend on temperature (statement 2 is correct). Resistance is directly proportional to resistivity (R = ρL/A) (statement 3 is correct).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q87",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A liquid is heated up to a certain temperature. Which one of the following situation would correspond to the boiling of the liquid?",
+    "options": [
+      "When atmospheric pressure becomes equal to the vapour pressure",
+      "When atmospheric pressure becomes less than vapour pressure",
+      "When atmospheric pressure becomes higher than the vapour pressure",
+      "When vapour pressure becomes equal to the air pressure"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Boiling occurs when the vapour pressure of a liquid equals the external atmospheric pressure surrounding it.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q88",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following is NOT an example of organic compound?",
+    "options": [
+      "Ammonium cyanate",
+      "Marsh gas",
+      "Urea",
+      "Cane sugar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ammonium cyanate is an inorganic compound. Friedrich Wöhler famously synthesized urea (an organic compound) from ammonium cyanate in 1828.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q89",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following acid is used by goldsmith for cleaning of gold and silver articles ?",
+    "options": [
+      "Sulphuric acid",
+      "Nitric acid",
+      "Hydrochloric acid",
+      "Phosphoric acid"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nitric acid is frequently used by goldsmiths to clean gold and silver articles as it dissolves impurities and other base metals without dissolving the gold itself.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q90",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What is the action of litmus on ethanol?",
+    "options": [
+      "Litmus is neutral towards ethanol",
+      "Ethanol turns blue litmus to red; confirming acidic nature of ethanol",
+      "Ethanol turns red litmus to blue; confirming basic nature of ethanol",
+      "Ethanol decolorizes litmus through bleaching action"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ethanol is a neutral compound and does not affect the color of litmus paper.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q91",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following metal is NOT an essential component in stainless steel?",
+    "options": [
+      "Iron",
+      "Nickel",
+      "Chromium",
+      "Tin"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Stainless steel is primarily an alloy of Iron, Chromium, and Nickel. Tin is not an essential component of stainless steel.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q92",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\nList I (Process)\nA. Separation of acetone and water from their mixture\nB. Separation of water and kerosene oil from their mixture\nC. Separation of cream from milk\nD. Separation of pigments from plant extract\nList II (Separation method)\n1. Chromatography\n2. Centrifugation\n3. Distillation\n4. Separating Funnel",
+    "options": [
+      "A-3, B-4, C-2, D-1",
+      "A-4, B-2, C-1, D-3",
+      "A-3, B-2, C-4, D-1",
+      "A-4, B-1, C-2, D-3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Acetone and water are miscible liquids separated by Distillation (A-3). Water and kerosene are immiscible and separated by a Separating Funnel (B-4). Cream is separated from milk via Centrifugation (C-2). Plant pigments are separated via Chromatography (D-1).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q93",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following is NOT a requirement for photosynthesis ?",
+    "options": [
+      "Chlorophyll",
+      "CO2",
+      "Water",
+      "O2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Oxygen (O2) is a byproduct of photosynthesis, not a requirement for the process to occur.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q94",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In flowering plants, DNA content of the parent plant gets halved during",
+    "options": [
+      "Seed germination",
+      "Fruit formation",
+      "Flower bud formation",
+      "Pollen formation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pollen formation involves meiosis (reduction division), during which the DNA content and chromosome number are halved to form haploid male gametes.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q95",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following is the correct sequence during sexual reproduction in Angiosperms?",
+    "options": [
+      "Egg -> zygote -> embryo -> seed",
+      "Embryo -> egg -> zygote -> seed",
+      "Egg -> embryo -> zygote -> seed",
+      "Egg -> seed -> zygote -> embryo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In angiosperms, the haploid egg is fertilized to become a diploid zygote, which then develops into an embryo, which is ultimately enclosed within a seed.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q96",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following combinations of events represents the correct sequence during reproduction in flowering plants ?",
+    "options": [
+      "Ovule -> fruit; egg -> embryo; zygote -> seed; ovary -> egg",
+      "Embryo -> egg; ovary -> fruit; ovule -> zygote; zygote -> seed",
+      "Ovary -> fruit; egg -> zygote; ovule -> seed; zygote -> embryo",
+      "Egg -> zygote; zygote -> embryo; ovule -> seed; ovary -> fruit"
+    ],
+    "correctAnswer": 3,
+    "explanation": "During plant reproduction, the egg forms a zygote, the zygote develops into an embryo, the ovule matures into a seed, and the ovary matures into a fruit.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q97",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Books and Authors",
+    "text": "The book 'Nation First: The Golden Saga of 82 Years' is the history of which one of the following organizations ?",
+    "options": [
+      "Indo-Tibetan Border Police",
+      "Border Security Force",
+      "Central Reserve Police Force",
+      "Central Industrial Security Force"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The book chronicles the 82-year history of the Central Reserve Police Force (CRPF), which was raised as the Crown Representative's Police in 1939.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Books and Authors" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q98",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Consider the following statements regarding Sanchi and its archaeological findings :\n1. When Sanchi was discovered in 1818, three of its four gateways were still standing, the fourth was lying on the spot where it had fallen\n2. Animals depicted at Sanchi include elephants, horses, monkeys and cattle\nWhich of the statements given above is/are correct?",
+    "options": [
+      "Only 1",
+      "Only 2",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Sanchi's discovery in 1818 found three gateways standing, and its intricate carvings prominently feature various animals such as elephants, horses, monkeys, and cattle as part of Jataka tales and motifs.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q99",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Economic Planning",
+    "text": "Which Five Year Plan of India focused on rapid industrialization based growth process?",
+    "options": [
+      "First Five Year Plan",
+      "Second Five Year Plan",
+      "Fifth Five Year Plan",
+      "Seventh Five Year Plan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Second Five Year Plan (1956-1961), based on the Mahalanobis model, focused heavily on rapid industrialization and the development of heavy and basic industries.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Economic Planning" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q100",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval Literature",
+    "text": "Chandimangala, a sixteenth century text, was composed by",
+    "options": [
+      "Hema Saraswati",
+      "Madhav Kandali",
+      "Tukaram",
+      "Mukundaram Chakrabarti"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Chandimangala is an important Bengali epic poem belonging to the Mangalkavya genre, composed by Mukundaram Chakrabarti in the 16th century.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Literature" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q101",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Consider the following statements regarding the royal center in Vijayanagara Empire:\n1. The royal center was located in the south-western part of the settlement\n2. It included over 60 temples\n3. About 30 building complexes at the site have been identified as palaces\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "1, 2 and 3",
+      "1 and 2 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three statements are correct as per archaeological findings at Hampi (Vijayanagara). The royal center was in the south-west, had over 60 temples, and about 30 large building complexes identified as palaces.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q102",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "Area wise Madhya Pradesh is the fourth largest state in India",
+      "Hornbill festival is celebrated in Nagaland",
+      "Gujarat state contribute 7-9 per cent share to the National GDP",
+      "Telangana is situated in the Deccan plateau in the central stretch of Indian peninsula"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Madhya Pradesh is the second-largest state in India by area (after Rajasthan), not the fourth largest.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q103",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Soils",
+    "text": "Which one of the following soils is ideal for growing cotton?",
+    "options": [
+      "Regur soil",
+      "Laterite soil",
+      "Desert soil",
+      "Mountainous soil"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Regur soil, commonly known as black cotton soil, is highly argillaceous and exceptionally suited for the cultivation of cotton.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Soils" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q104",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Institutions",
+    "text": "Where is Central Institute of Buddhist Studies situated ?",
+    "options": [
+      "Leh",
+      "Kullu",
+      "Almora",
+      "Gangtok"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Central Institute of Buddhist Studies (CIBS) is a deemed university located in Choglamsar, Leh, Ladakh.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Institutions" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q105",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Consider the following statements about physical features of India:\n1. The southern point of the Peninsular Plateau is formed by the Nilgiri Hills where the Eastern and the Western Ghats meet\n2. The Cardamom Hills may be regarded as a continuation of the Eastern Ghats\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct. Statement 2 is incorrect because the Cardamom Hills are a southern continuation of the Western Ghats, not the Eastern Ghats.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q106",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following is the narrow belt parallel to the Shiwalik foothills where streams and rivers coming from the mountains deposit heavy materials of rocks and boulders?",
+    "options": [
+      "Tarai",
+      "Bhangar",
+      "Bhabar",
+      "Khadar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Bhabar is a narrow porous belt of pebble and boulder deposits running parallel to the Shiwalik foothills where streams disappear underground.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q107",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Which of the following statements about Suez Canal is/are correct?\n1. Suez is a man-made navigation canal\n2. Suez links Mediterranean Sea and the Red Sea\n3. The economic significance of Suez Canal is less than that of Panama Canal\nSelect the correct answer using the code given below :",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect as the Suez Canal handles a significantly larger volume of global trade and is economically more or equally significant compared to the Panama Canal.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q108",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "An iron nail sinks in water whereas an iron ship floats. Which of the following statements is correct in this regard?\n1. Average density of ship is greater than that of the water\n2. Average density of iron nail is greater than that of the water\n3. Average density of the ship is less than that of the water\n4. Average density of the ship is equal to that of the water\nSelect the correct answer using the code given below :",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "2 and 4",
+      "1 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An object sinks if its average density is greater than the fluid, and floats if it is less. The solid iron nail has a greater density than water. The ship, being hollow, has an average density less than that of water.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q109",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which of the following arrangement of resistors offers minimum effective resistance between points X and Y ?",
+    "options": [
+      "Three 3-ohm resistors connected in parallel",
+      "Two 3-ohm resistors connected in parallel",
+      "Two 1-ohm resistors connected in series",
+      "Three 1-ohm resistors connected in parallel"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Parallel combinations reduce resistance. Three 1-ohm resistors in parallel yield an equivalent resistance of 1/3 ohm (0.33 ohms), which is the minimum among the given typical configurations.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q110",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "What will happen if a collection of positive and negative charges are passed at a high speed through a magnetic field which is perpendicular to the direction of motion of the charges? (Assume that both kind of charges are NOT going to recombine)",
+    "options": [
+      "Both kind of charges will stop moving",
+      "Positive charges and negative charges will separate out",
+      "Positive charges will stop but negative charges will continue moving uninterrupted",
+      "Both kind of charges will keep moving uninterrupted"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Due to the Lorentz force (F = qv × B), positive and negative charges will experience forces in mutually opposite directions, causing them to separate and curve in opposite paths.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q111",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The motion of a particle of mass m is described by the relation, y=ut-1/2gt^2 where u is the initial velocity of the particle. The force acting on the particle is",
+    "options": [
+      "F=m(du/dt)",
+      "F=mg",
+      "F=m(dy/dt)",
+      "F=-mg"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Differentiating y with respect to t twice gives acceleration a = -g. According to Newton's second law, Force F = ma = -mg.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q112",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A block of wood (dimensions: 40 cm x 20 cm x 10 cm) is kept on a tabletop in three different positions : (a) with its side of dimensions 20 cm x 10 cm; (b) with its side of dimensions 10 cm x 40 cm; and (c) with its side of dimensions 40 cm x 20 cm. The pressure exerted by the wooden block on the tabletop in these positions is represented by PA, PB and PC respectively. The pressure follows the trend",
+    "options": [
+      "PA > PB > PC",
+      "PA < PB < PC",
+      "PA = PB = PC",
+      "PA < PB = PC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pressure is inversely proportional to area (P = F/A). Area A = 200 cm², Area B = 400 cm², Area C = 800 cm². Since Area A < Area B < Area C, the pressure is PA > PB > PC.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q113",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following metals can be extracted using carbon as reducing agent?",
+    "options": [
+      "Zinc",
+      "Silver",
+      "Gold",
+      "Aluminum"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Zinc oxide is reduced to zinc metal using carbon (coke) in a smelting process. Aluminum requires electrolytic reduction, and Gold/Silver are found largely in native states or extracted via cyanidation.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q114",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which among the following is NOT true with respect to colloidal solution ?",
+    "options": [
+      "Particles are uniformly distributed throughout the solution",
+      "Colloidal solution is homogenous in nature",
+      "They show Tyndal effect",
+      "They do not settle down when kept undisturbed"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Colloidal solutions appear homogenous to the naked eye but are actually heterogeneous mixtures when viewed under a microscope.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q115",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Kerosene and petrol mixture can be best separated by",
+    "options": [
+      "Sublimation",
+      "Separating funnel",
+      "Fractional distillation",
+      "Compressing and cooling"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kerosene and petrol are miscible liquids with different but relatively close boiling points. Fractional distillation is the best method to separate them.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q116",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "As proposed by Dalton, which of the following symbol represents phosphorus ?",
+    "options": [
+      "A circle with a dot in the center",
+      "A circle with an 'I' inside",
+      "A circle with a cross",
+      "A circle containing a three-pointed star inside"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In John Dalton's early atomic notation, Phosphorus was represented by a circle enclosing a three-pointed star or a Y-shape inside.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q117",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which among the following statements with respect to carbon is/are correct?\n1. Carbon forms the basis for all living organisms and many things we use\n2. Carbon shows tetra-valency and the property of catenation\n3. Carbon forms covalent bonds with itself and other elements\n4. Carbon forms compounds containing triple and tetra bonds between carbon atoms\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1, 2 and 3",
+      "2 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statements 1, 2, and 3 are correct. Statement 4 is incorrect because carbon cannot form a 'tetra bond' (quadruple bond) with another carbon atom due to geometric and energetic constraints.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q118",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Consider the following statements:\n1. Terracotta models of the plough have been found at sites in Cholistan and at Banawali (Haryana).\n2. There is evidence of a ploughed field at Kalibangan associated with the mature phase of the Harappan civilization.\n3. The ploughed field at Kalibangan had two sets of furrows crossing at right angles to each other suggesting two different crops were grown together in it.\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 3 only",
+      "None of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statements 1 and 3 are correct. Statement 2 is incorrect because the evidence of the ploughed field at Kalibangan is associated with the Early Harappan phase, not the mature phase.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q119",
+    "year": 2023,
+    "subject": "History",
+    "topic": "World History",
+    "text": "Which of the following statements about the technological innovations during the Industrial Revolutions are correct?\n1. Mule was the nickname for a machine invented in 1779, that allowed the spinning of strong and fine yarn.\n2. Water Frame, invented in 1769 by Richard Arkwright, made it possible to weave pure cotton clothes.\n3. Power loom, invented by Edmund Cartwright in 1787, could be used to weave any kind of materials.\nSelect the correct answer using the code given below :",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3",
+      "2 and 3 only",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "All three statements represent defining inventions of the early Industrial Revolution in textile manufacturing in Britain.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q120",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Economic Planning",
+    "text": "Who among the following is known as the architect of Indian planning?",
+    "options": [
+      "V.K.R.V. Rao",
+      "Sukhamoy Chakravarty",
+      "P.C. Mahalanobis",
+      "John Mathai"
+    ],
+    "correctAnswer": 2,
+    "explanation": "P.C. Mahalanobis is considered the chief architect of Indian planning, heavily influencing the Second Five Year Plan and establishing the Indian Statistical Institute.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Economic Planning" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q121",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one of the following Ashokan Minor Rock Edicts, contains the personal name of the king - Ashoka ?",
+    "options": [
+      "Maski",
+      "Bahapur",
+      "Bairat",
+      "Sahasram"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Minor Rock Edict at Maski in Karnataka is historically famous for containing the explicit personal name 'Ashoka' instead of solely his title 'Devanampiya Piyadasi'.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q122",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient Literature",
+    "text": "Arrange the following in correct chronological order\n1. Charak Samhita\n2. Bharat's Natyashastra\n3. Sangam Literature\n4. Ashtadhyayi\nSelect the correct answer using the code given below :",
+    "options": [
+      "1-3-4-2",
+      "2-4-1-3",
+      "4-3-1-2",
+      "3-1-2-4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Panini's Ashtadhyayi (~4th century BCE) is the oldest. Sangam Literature mostly spans 3rd BCE to 3rd CE. Bharat's Natyashastra is dated roughly 200 BCE to 200 CE. Charak Samhita is roughly 1st to 2nd century CE. Thus, the order is 4-3-1-2.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Literature" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q123",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one of the following is NOT an example of Fold Mountain ?",
+    "options": [
+      "Mt. Fuji",
+      "Alps",
+      "Andes",
+      "Rockies"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mt. Fuji is an active stratovolcano formed by volcanic eruptions, whereas the Alps, Andes, and Rockies are fold mountains formed by tectonic plate collisions.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q124",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Soils",
+    "text": "Which one of the following is an organic soil?",
+    "options": [
+      "Aridisols",
+      "Histosols",
+      "Oxisols",
+      "Vertisols"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Histosols are a soil order defined as soils consisting primarily of organic materials (peats and mucks).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Soils" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q125",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Transport",
+    "text": "The North-south and East-west Road Corridors of India cross each other at which of the following cities?",
+    "options": [
+      "Bhopal",
+      "Itarsi",
+      "Gwalior",
+      "Jhansi"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The North-South corridor (Srinagar to Kanyakumari) and the East-West corridor (Silchar to Porbandar) of the Golden Quadrilateral highway project intersect at Jhansi in Uttar Pradesh.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Transport" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q126",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "World Climate",
+    "text": "Which one of the following climatic regions of the world have a typical characteristic of seasonal reversal of wind?",
+    "options": [
+      "British type Climate",
+      "Mediterranean Climate",
+      "China type Climate",
+      "Monsoon Climate"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A complete seasonal reversal of wind direction is the defining, classical characteristic of a Monsoon climate.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Climate" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q127",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Industry",
+    "text": "Which one of the following statement is NOT correct?",
+    "options": [
+      "Bokaro steel plant is located in Damodar river basin",
+      "Jamshedpur steel plant is located on the confluence of Damodar and Barakar",
+      "Salem steel plant is located on the bank of Kaveri River",
+      "Bhilai steel plant obtains water from Tandula reservoir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jamshedpur steel plant (TISCO) is located at the confluence of the Subarnarekha and Kharkai rivers in Jharkhand, not the Damodar and Barakar.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Industry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q128",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "How many of the following pairs of specialized agriculture and its products are correctly matched ?\n1. Apiculture: Honey\n2. Sericulture: Silk\n3. Silviculture: Forestry\n4. Viticulture: Grapes\nSelect the correct answer using the code given below:",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All four pairs are correctly matched. Apiculture is beekeeping (honey), Sericulture is silk farming, Silviculture is forest management, and Viticulture is grape cultivation.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q129",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Climate",
+    "text": "Which one of the following crops is generally benefitted by the rain caused by western disturbances in India?",
+    "options": [
+      "Rice",
+      "Wheat",
+      "Bajra",
+      "Cotton"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Western disturbances bring winter rainfall to North and Northwest India, which is highly beneficial for the development of Rabi crops, particularly wheat.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Climate" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q130",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Industry",
+    "text": "Which one of the following pairs of city and industry is NOT correctly matched ?",
+    "options": [
+      "Saharanpur: Paper industry",
+      "Chanderi : Cotton textile industry",
+      "Bhadohi : Carpet industry",
+      "Raniganj : Iron and steel industry"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Raniganj is famous for being the birthplace of coal mining in India. The major iron and steel industries in that belt are located in nearby Burnpur/Asansol/Durgapur.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Industry" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q131",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following graphs represents the equation of motion v=u+at; where all quantities are non-zero and symbols carry their usual meanings?",
+    "options": [
+      "A straight line with a positive slope starting from the origin",
+      "A straight line with a positive slope starting from a non-zero y-intercept",
+      "A downward sloping straight line",
+      "An upward curving parabola starting from a non-zero y-intercept on a distance-time graph"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In the original paper, the options displayed were distance-time graphs. For constant acceleration where v=u+at, the distance s = ut + 1/2at^2. This plots as a parabola curving upwards on a distance-time graph.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q132",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following statements is true for sound waves propagating in air?",
+    "options": [
+      "Sound is an electromagnetic wave and transverse in nature",
+      "Sound is a mechanical wave and longitudinal in nature",
+      "Sound is a mechanical wave and transverse in nature",
+      "Sound is an electromagnetic wave and longitudinal in nature"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sound waves in air are mechanical (requiring a medium) and longitudinal (particles vibrate parallel to the direction of wave propagation).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q133",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A 100 g sphere is moving at a speed of 20 m/s and collides with another sphere of mass 50 g. If the second sphere was at rest prior to the collision and the first sphere comes at rest immediately after the collision, considering the collision to be elastic, the speed of the second sphere would be",
+    "options": [
+      "10 m/s",
+      "20 m/s",
+      "30 m/s",
+      "40 m/s"
+    ],
+    "correctAnswer": 3,
+    "explanation": "By conservation of momentum: m1u1 + m2u2 = m1v1 + m2v2. (100)(20) + 0 = 0 + (50)v2. 2000 = 50v2. v2 = 40 m/s.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q134",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following optical phenomena supports that the light is a transverse wave?",
+    "options": [
+      "Refraction",
+      "Diffraction",
+      "Interference",
+      "Polarization"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Polarization is the phenomenon where waves oscillate in a single plane. Only transverse waves can be polarized, proving that light is a transverse wave.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q135",
+    "year": 2023,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "How many of the following materials can be attracted by a magnet?\n1. Plastic\n2. Carbon\n3. Aluminium\n4. Stainless Steel\nSelect the correct answer using the code given below :",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Plastic, Carbon, and Aluminium are non-magnetic. Standard austenitic stainless steel (most common household type) is also generally considered non-magnetic in elementary physics contexts, meaning none of them are attracted.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q136",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Post-Independence India",
+    "text": "Consider the following statements with reference to the Bhoodan Movement:\n1. Vinoba Bhave organized 'The Sarvodaya Samaj' to take up the work of non-violent transformation in India\n2. Jayaprakash Narayan withdrew from active politics to join the Bhoodan Movement in 1953\n3. In the wake of the Bhoodan Movement the first donation of land was made in the village of Pochampalli in Telangana\nHow many of the statements given above is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three statements are historically accurate. Vinoba Bhave launched the Bhoodan movement at Pochampally in 1951, established the Sarvodaya Samaj, and JP Narayan actively joined it, withdrawing from electoral politics.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Post-Independence India" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q137",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "International Organizations",
+    "text": "Which among the following statements regarding the election of non-permanent members to the United Nations Security Council is/are correct?\n1. Five members coming from Africa and Asia, one from Eastern Europe, two from Latin America and two from Western Europe and other states\n2. Six members are elected each year by the General Assembly for two year term\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 correctly outlines the regional distribution of the 10 non-permanent seats. Statement 2 is incorrect because exactly 5 members are elected each year for a two-year term, not 6.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q138",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Local Self-Government",
+    "text": "Which one of the following provisions of the Constitution of India deals with District Planning Committee ?",
+    "options": [
+      "243ZD",
+      "243ZB",
+      "243ZE",
+      "243ZC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 243ZD of the Indian Constitution mandates the constitution of a District Planning Committee to consolidate the plans prepared by the Panchayats and the Municipalities in the district.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Local Self-Government" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q139",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "Consider the following statements about Attorney-General in India :\n1. She/he is the first law officer of the Government of India\n2. She/he has a right to speak in any House of Parliament without any right to vote\n3. She/he is appointed by the President of India\n4. She/he is a whole-time counsel for the Government in the court of law\nHow many of the statements given above is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statements 1, 2, and 3 are correct. Statement 4 is incorrect because the Attorney General is not a whole-time government servant and is allowed to engage in private legal practice.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q140",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "Which one among the following states was NOT impacted by the Land Boundary Agreement Treaty between India and Bangladesh (2015)?",
+    "options": [
+      "West Bengal",
+      "Assam",
+      "Tripura",
+      "Arunachal Pradesh"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 2015 Land Boundary Agreement settled borders along West Bengal, Meghalaya, Tripura, and Assam. Arunachal Pradesh does not share a border with Bangladesh.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q141",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Infrastructure",
+    "text": "The 480 MW Phukot Karnali Hydro Electric Project is situated in",
+    "options": [
+      "Thailand",
+      "Indonesia",
+      "Nepal",
+      "Bhutan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Phukot Karnali Hydro Electric Project is located in the Kalikot district of Nepal and is being developed with Indian assistance.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Infrastructure" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q142",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Consider the following statements about a river:\nThis river originates in the Hindu Kush mountain range and flows into Hamoun wetlands after covering a long stretch of about 1,100 km. There has been serious conflicts between two neighbouring nations regarding the sharing of water from this river.\nIdentify the river from the following:",
+    "options": [
+      "Mekong",
+      "Tarim",
+      "Indus",
+      "Helmand"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Helmand River originates in Afghanistan and flows into the Hamoun wetlands on the Iran-Afghan border, causing significant water-sharing disputes between Iran and Afghanistan.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q143",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Defence Exercises",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\nList I (Bilateral Exercise)\nA. Garuda Shakti\nB. Nomadic Elephant\nC. Mitra Shakti\nD. Dharma Guardian\nList II (Participating Country)\n1. India and Japan\n2. India and Sri Lanka\n3. India and Mongolia\n4. India and Indonesia",
+    "options": [
+      "A-4, B-2, C-1, D-3",
+      "A-4, B-3, C-2, D-1",
+      "A-1, B-3, C-4, D-2",
+      "A-1, B-2, C-4, D-3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Garuda Shakti is with Indonesia (A-4). Nomadic Elephant is with Mongolia (B-3). Mitra Shakti is with Sri Lanka (C-2). Dharma Guardian is with Japan (D-1).",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence Exercises" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q144",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "Consider the following statements about gallantry awards in India:\n1. Post-independence, first three gallantry awards were instituted on 26th January, 1950\n2. The first three gallantry awards were Ashoka Chakra Class-I, Ashoka Chakra Class-II and Ashoka Chakra Class-III\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statement 1 is incorrect; while the Param Vir Chakra, Maha Vir Chakra, and Vir Chakra were instituted on 26 Jan 1950, Statement 2 claims the Ashoka Chakra series were the first three, which were actually instituted later in 1952. Thus, both statements as phrased in the context are incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q145",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Science and Technology",
+    "text": "Consider the following statements about Centralized Laboratory Network (CLN):\n1. CLN works to test vaccines which can be used during pandemic\n2. India is a member of CLN\n3. CLN is a part of the Coalition for Epidemic Preparedness Innovations (CEPI)\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All statements are correct. India (via ICMR-NIV) joined the CEPI-backed Centralized Laboratory Network (CLN) to test and standardize epidemic and pandemic vaccine candidates.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q146",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Infrastructure",
+    "text": "Consider the following statements about Kavach, the automatic train protection system:\n1. It is designed and developed by Research Design and Standard Organisation (RDSO) in collaboration with Railway Technical Research Institute (RTRI), Japan\n2. The trials of Kavach were facilitated by the Southern Railway\n3. Kavach is a state-of-the-art electronic system with Safety Integrity Level-4 (SIL-4)\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "3 only",
+      "1 and 2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kavach is entirely indigenously developed (without Japan's RTRI), and its initial trials were held in the South Central Railway zone, not Southern Railway. It does possess SIL-4 certification. Therefore, only statement 3 is correct.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Infrastructure" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q147",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "The Nova Kakhovka dam, which was in news recently, is situated in",
+    "options": [
+      "Belarus",
+      "Turkey",
+      "Ukraine",
+      "Poland"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Nova Kakhovka dam is located on the Dnieper River in southern Ukraine, and it made global news when it was breached during the 2023 Russia-Ukraine conflict.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q148",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Aaron Finch, who recently retired from international cricket, was captain of men's cricket team of which one of the following countries?",
+    "options": [
+      "South Africa",
+      "Australia",
+      "England",
+      "New Zealand"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Aaron Finch is a former Australian international cricketer who captained the Australian limited-overs teams to significant success.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q149",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Economy",
+    "text": "Which one of the following is the name of the dashboard launched recently by the Reserve Bank of India to assess and monitor the progress of financial inclusion by capturing relevant parameters ?",
+    "options": [
+      "Pragya",
+      "Antardrishti",
+      "Divyachakshu",
+      "Antahgyan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In 2023, RBI Governor Shaktikanta Das launched a financial inclusion dashboard named 'Antardrishti' to assess local-level financial inclusion progress.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Economy" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  },
+  {
+    "id": "nda-2023-2-q150",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Art and Culture",
+    "text": "'Sengol', installed in the new Parliament building of India, was seen as a symbol of the path of service, duty and nation in which Empire of the past?",
+    "options": [
+      "Gupta Empire",
+      "Shunga Empire",
+      "Pandyan Empire",
+      "Chola Empire"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 'Sengol' is a historical sceptre that originates from the Chola Empire tradition in Tamil Nadu, where it was used as a symbol of the transfer of power and righteous rule.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "NDA 2023" }
+    ]
+  }
+]

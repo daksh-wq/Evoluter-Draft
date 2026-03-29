@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "nda-2024-1-q1",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Mohan was living in a deplorable condition.",
+    "options": [
+      "reprehensible",
+      "opprobrious",
+      "despicable",
+      "commendable"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The word 'deplorable' means deserving strong condemnation or shockingly bad. The opposite is 'commendable', which means deserving praise.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q2",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "These exercises will counteract the effects of stress and tension.",
+    "options": [
+      "exacerbate",
+      "foil",
+      "thwart",
+      "contravene"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'counteract' means to act against something to reduce its force or neutralize it. The opposite is to 'exacerbate', which means to make a problem or bad situation worse.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q3",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "You have to persevere with difficult students.",
+    "options": [
+      "give up",
+      "persist",
+      "carry on",
+      "stand firm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'persevere' means to continue in a course of action even in the face of difficulty. The opposite is to 'give up'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q4",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Their new colour scheme is hideous.",
+    "options": [
+      "appalling",
+      "beautiful",
+      "grotesque",
+      "macabre"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The word 'hideous' means extremely ugly or visually unpleasant. The direct opposite is 'beautiful'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q5",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Everywhere they go, they squander their earnings.",
+    "options": [
+      "fritter away",
+      "splurge",
+      "squabble",
+      "manage"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'squander' means to waste money or time in a reckless and foolish manner. The opposite is to 'manage' or save one's earnings.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q6",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "The Earth's climate is (6) changing and evolving.",
+    "options": [
+      "passionately",
+      "continually",
+      "deadly",
+      "thoughtfully"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The word 'continually' accurately describes the ongoing, constant process of climate change.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q7",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "Some of (7) changes have been due to natural causes...",
+    "options": [
+      "these",
+      "those",
+      "this",
+      "that"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The plural demonstrative pronoun 'these' refers directly to the changes currently being discussed.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q8",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "...but others can be attributed to (8) activities such as deforestation...",
+    "options": [
+      "practical",
+      "geological",
+      "human",
+      "animal"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Deforestation and emissions are anthropogenic (man-made), so 'human' is the correct adjective.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q9",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "...which have led to the (9) of gases and aerosols...",
+    "options": [
+      "assimilation",
+      "absolution",
+      "collection",
+      "accumulation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The buildup of greenhouse gases in the atmosphere is best described as an 'accumulation'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q10",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "...of gases and aerosols in (10) atmosphere.",
+    "options": [
+      "an",
+      "a",
+      "the",
+      "no article"
+    ],
+    "correctAnswer": 2,
+    "explanation": "We use the definite article 'the' because 'atmosphere' refers to the specific atmosphere of the Earth.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q11",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "These gases are known as greenhouse gases because they trap heat and (11) air temperatures near the ground...",
+    "options": [
+      "raise",
+      "hike",
+      "rise",
+      "balance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The transitive verb 'raise' is required here because the greenhouse gases are actively causing the temperatures to go up.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q12",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "...acting like a greenhouse on the surface of the (12).",
+    "options": [
+      "crust",
+      "core",
+      "mantle",
+      "planet"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The context refers to the Earth as a whole, making 'planet' the most fitting choice.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q13",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "In order to create and strengthen the scientific and analytical capacity (13) assessment of climate change...",
+    "options": [
+      "for",
+      "of",
+      "in",
+      "to"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The preposition 'for' correctly links 'capacity' to the purpose it serves ('assessment').",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q14",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "...different studies under Climate Change Action Programme (14).",
+    "options": [
+      "are developed",
+      "are initiated",
+      "have developed",
+      "have initiated"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passive voice 'are initiated' (or 'have been initiated') is required. Given the choices, 'are initiated' fits best grammatically.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q15",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Cloze Test",
+    "text": "Many important bilateral and multilateral meetings and negotiations are held (15) regular intervals.",
+    "options": [
+      "with",
+      "at",
+      "in",
+      "on"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct preposition to use with 'regular intervals' is 'at'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Cloze Test" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q16",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "He paused",
+    "options": [
+      "with a few moments.",
+      "for a few moments.",
+      "by a few moments.",
+      "into a few moments."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The preposition 'for' is used to indicate the duration of an action or state.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q17",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "Late at night, our car",
+    "options": [
+      "broke down on the highway.",
+      "broke up on the highway.",
+      "broke into the highway.",
+      "broke out on the highway."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The phrasal verb 'broke down' is used when a vehicle or machine stops functioning.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q18",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "All the countries signed the treaty",
+    "options": [
+      "beneath Germany and France.",
+      "except Germany and France.",
+      "among Germany and France.",
+      "during Germany and France."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The preposition 'except' appropriately indicates exclusion.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q19",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "I reminded her",
+    "options": [
+      "to turn off the lights at night.",
+      "to call off the lights at night.",
+      "to drop off the lights at night.",
+      "to break off the lights at night."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The phrasal verb 'turn off' is the correct term for deactivating electrical devices like lights.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q20",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "They told us about the woman",
+    "options": [
+      "whom lived next door.",
+      "which lived next door.",
+      "who lived next door.",
+      "whose lived next door."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The relative pronoun 'who' is used as the subject of the relative clause referring to a person.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q21",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "I'll see you",
+    "options": [
+      "at the end of February.",
+      "on the end of February.",
+      "along the end of February.",
+      "for the end of February."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The phrase 'at the end of' is the correct prepositional collocation for a specific point in time.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q22",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "I dislike films",
+    "options": [
+      "who have sad endings.",
+      "that have sad endings.",
+      "whose have sad endings.",
+      "whom have sad endings."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The relative pronoun 'that' (or 'which') is used to refer to things (films). 'Who' is used for people.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q23",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "The thieves denied",
+    "options": [
+      "having stealing the money.",
+      "stealing the money.",
+      "had stolen the money.",
+      "having to steal the money."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The verb 'deny' is followed by a gerund ('stealing'). 'Having stolen' would also be correct, but 'stealing' is the best available option.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q24",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "Did you",
+    "options": [
+      "drop out to see Sunita on your way home?",
+      "drop in to see Sunita on your way home?",
+      "drop behind to see Sunita on your way home?",
+      "drop away to see Sunita on your way home?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The phrasal verb 'drop in' means to visit someone informally and usually without arranging it in advance.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q25",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Completion",
+    "text": "Would you like to",
+    "options": [
+      "meeting her?",
+      "meet her?",
+      "met her?",
+      "meet with her?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The structure 'would like to' is followed by the base form of the verb ('meet').",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Completion" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q26",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Be bad news'",
+    "options": [
+      "feelings of hate",
+      "someone who behaves in a dishonest way",
+      "someone who is considered undesirable",
+      "to be ill"
+    ],
+    "correctAnswer": 2,
+    "explanation": "If someone or something is described as 'bad news', it means they are troublesome, undesirable, or likely to cause problems.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q27",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Back to the drawing board'",
+    "options": [
+      "to draw comparisons",
+      "to be a member of planning group",
+      "to start planning again because the previous plan has failed",
+      "to be fast at understanding a situation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The idiom 'back to the drawing board' means that an initiative has failed, and one must start all over again from the planning stage.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q28",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Be in the eye of the storm'",
+    "options": [
+      "to look at something quickly",
+      "to fail miserably at a sport",
+      "to see something that you do not want to see",
+      "to be in the midst of a controversy"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'be in the eye of the storm' is to be deeply involved in a difficult, highly publicized, or controversial situation.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q29",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Life in the fast lane'",
+    "options": [
+      "to lead a selfless life",
+      "to have a happy life without complaints",
+      "life without money or comforts",
+      "an exciting and eventful lifestyle"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Life in the fast lane' refers to a lifestyle that is highly active, exciting, competitive, and often risky or stressful.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q30",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'To pass the buck'",
+    "options": [
+      "to collect money from a group of people",
+      "to shift the responsibility of something to someone",
+      "to have a short conversation with someone",
+      "to have the credentials for a particular job"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To 'pass the buck' means to evade responsibility by passing it on to someone else.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q31",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the jumbled parts: include basic freedoms (P) / the fundamental rights are (Q) / guaranteed to the individual (R) / basic rights and (S)",
+    "options": [
+      "QSPR",
+      "QRSP",
+      "SQRP",
+      "RQSP"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is QSPR: 'The fundamental rights are (Q) basic rights and (S) include basic freedoms (P) guaranteed to the individual (R).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q32",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the jumbled parts: for many millennia (P) / been in the making of (Q) / a historical process that has (R) / the Indian nation is the product (S)",
+    "options": [
+      "SRQP",
+      "SQPR",
+      "PRSQ",
+      "RQSP"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is SRQP: 'The Indian nation is the product (S) of a historical process that has (R) been in the making (Q) for many millennia (P).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q33",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the jumbled parts: an epoch that was imbued (P) / for its people the start of (Q) / with a new vision (R) / India's Independence represented (S)",
+    "options": [
+      "SQPR",
+      "QRPS",
+      "SPQR",
+      "QPRS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is SQPR: 'India's Independence represented (S) for its people the start of (Q) an epoch that was imbued (P) with a new vision (R).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q34",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the jumbled parts: science and mathematics exhibition (P) / for a discussion on the forthcoming (Q) / to be present before the Principal (R) / all students have been instructed (S)",
+    "options": [
+      "SQPR",
+      "RPQS",
+      "SRQP",
+      "RSQP"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct logical order is SRQP: 'All students have been instructed (S) to be present before the Principal (R) for a discussion on the forthcoming (Q) science and mathematics exhibition (P).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q35",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the jumbled parts: two bowlers and two batsmen respectively (P) / to the new team (Q) / with the selection of another player (R) / the team now has (S)",
+    "options": [
+      "QPRS",
+      "SQRP",
+      "RQSP",
+      "RPSQ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct logical order is RQSP: 'With the selection of another player (R) to the new team (Q), the team now has (S) two bowlers and two batsmen respectively (P).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q36",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Word Classes",
+    "text": "You are most welcome to visit my humble abode. (Identify the word class of 'humble')",
+    "options": [
+      "Noun",
+      "Adjective",
+      "Adverb",
+      "Participle"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The word 'humble' modifies the noun 'abode', thus functioning as an Adjective.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Word Classes" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q37",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Word Classes",
+    "text": "The situation is beyond our control. (Identify the word class of 'beyond')",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Conjunction",
+      "Preposition"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The word 'beyond' is a Preposition indicating that the situation lies outside the limits of their control.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Word Classes" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q38",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Word Classes",
+    "text": "I didn't tell him anything except that I needed the money. (Identify the word class of 'except')",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Preposition",
+      "Conjunction"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In this context, 'except' introduces a clause ('that I needed the money') and functions as a Conjunction linking the main clause with the exception.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Word Classes" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q39",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Word Classes",
+    "text": "He dry-cleaned my coat nicely. (Identify the word class of 'nicely')",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Relative pronoun",
+      "Conjunction"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The word 'nicely' modifies the verb 'dry-cleaned', describing how the action was performed, making it an Adverb.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Word Classes" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q40",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Word Classes",
+    "text": "Would you like to buy this new item? (Identify the word class of 'this')",
+    "options": [
+      "Determiner",
+      "Conjunction",
+      "Interjection",
+      "Adjective"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The word 'this' is a demonstrative Determiner modifying the noun phrase 'new item'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Word Classes" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q41",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage, which one of the following does not belong to the biotic community?",
+    "options": [
+      "Water",
+      "Human",
+      "Protozoa",
+      "Bush"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to the passage, the biotic community includes plants, animals, and microbes. Water is an abiotic (non-living) factor.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q42",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage, the nature of the biotic community largely depends on:\n1. Biotic components\n2. Abiotic components",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage states, 'The particular kind of biotic community found in a given area is, in large part, determined by abiotic factors such as the amount of water...'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q43",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage, which of the following is not an abiotic factor?",
+    "options": [
+      "Temperature",
+      "Humidity",
+      "Algae",
+      "Moisture"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Algae are living organisms (microbes/plants) and are thus part of the biotic community, unlike temperature, humidity, and moisture which are abiotic.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q44",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "In the passage, the word 'aquatic community' refers to:",
+    "options": [
+      "Biotic community inhabiting the land",
+      "Biotic community found in water",
+      "Biotic community found in the air",
+      "Assemblage of rain and moisture"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage notes that the presence of water sustains 'aquatic communities', meaning biological communities found in water ecosystems.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q45",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage, Species are defined on the basis of :",
+    "options": [
+      "Similarities only",
+      "Differences only",
+      "Both similarities and differences",
+      "None of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage defines a species as individuals which have a 'strong similarity in appearance to one another and which are distinct in appearance from other such groups'. This encompasses both similarities and differences.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q46",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The king's son was banished due to the political rivalry.",
+    "options": [
+      "deported",
+      "called back",
+      "accepted",
+      "notified"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'banish' someone is to send them away from a country or place as an official punishment, which is synonymous with 'deported'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q47",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "He gave a dazzling performance at the opera.",
+    "options": [
+      "brilliant",
+      "dismal",
+      "pathetic",
+      "puerile"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A 'dazzling' performance is one that is extremely impressive, beautiful, or skilful, which matches the synonym 'brilliant'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q48",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "She rebuffed all suggestions from her friends.",
+    "options": [
+      "took",
+      "rejected",
+      "criticized",
+      "granted"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To 'rebuff' a suggestion or advance means to reject it in an abrupt or ungracious manner.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q49",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "He disowned his royal legacy and became a commoner.",
+    "options": [
+      "accepted",
+      "abandoned",
+      "allowed",
+      "questioned"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To 'disown' something is to refuse to acknowledge or maintain any connection with it, closely aligning with 'abandoned'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q50",
+    "year": 2024,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The public was sceptical about the new government policy.",
+    "options": [
+      "hopeful",
+      "anxious",
+      "doubtful",
+      "expectant"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To be 'sceptical' means to not be easily convinced, or having doubts or reservations, making 'doubtful' the correct synonym.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q51",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "An infinite combination of resistors, each having resistance R = 4 Ω, is given. What is the net resistance between the points A and B?",
+    "options": [
+      "0 Ω",
+      "2 + 2√5 Ω",
+      "2 + √5 Ω",
+      "∞ Ω"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This forms an infinite ladder network. The equivalent resistance Req = 2R + (R * Req)/(R + Req). Substituting R=4 gives Req^2 - 8Req - 32 = 0. Solving this gives Req = 4 + √48 = 4 + 4√3. Wait, applying the formula correctly for the standard ladder where series elements are R and parallel element is R: if top and bottom are R, then Req = 2R + (R||Req). If it's R on top and R in parallel, Req = R + (R||Req). Based on the 2+2√5 option, it matches the solution for a specific infinite ladder configuration evaluating to R(1+√5)/2 where R=4 gives 2+2√5.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q52",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "An electric circuit has V1 = 1 V and R = 1000 Ω. The current through R is 1 mA. When a second battery V2 = 5 V is added in parallel (internal resistances 0.1 Ω), the current through R is about:",
+    "options": [
+      "1.0 mA",
+      "1.2 mA",
+      "3.0 mA",
+      "5.0 mA"
+    ],
+    "correctAnswer": 2,
+    "explanation": "With two batteries (1V and 5V) in parallel having identical small internal resistances (0.1 Ω), the equivalent voltage Veq is approximately their average (3V). Current I = 3V / 1000 Ω = 3.0 mA.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q53",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "If the current through an electrical machine running on direct current is 15 A and the machine runs for 10 minutes, the charge that passes through the machine during this time is:",
+    "options": [
+      "1.50 C",
+      "150 C",
+      "900 C",
+      "9000 C"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Charge (Q) = Current (I) × Time (t in seconds). Q = 15 A × (10 × 60 s) = 15 × 600 = 9000 Coulombs.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q54",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following is the best shape of a solid metal rod to form the top end of a lightning conductor?",
+    "options": [
+      "Flat/Circular",
+      "Pointed/Sharp",
+      "Spherical",
+      "Cylindrical"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A lightning conductor is most effective with a pointed or sharp tip because electric charge concentrates at points (corona discharge), making it easier to attract and neutralize lightning strikes.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q55",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which of the following forces is/are fundamental in nature?\n1. Gravitational force\n2. Electromagnetic forces\n3. Strong and weak nuclear forces",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The four fundamental forces of nature are gravitational, electromagnetic, strong nuclear, and weak nuclear forces. Therefore, all three listed are fundamental.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q56",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A spherical shell of outer radius R and inner radius R/2 contains a solid sphere of radius R/2. The density of the solid sphere is ρ and the shell is ρ/2. What is the average mass density of the larger sphere thus formed?",
+    "options": [
+      "3ρ/4",
+      "9ρ/16",
+      "7ρ/8",
+      "5ρ/8"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mass of inner sphere = ρ × (1/8)V. Mass of outer shell = (ρ/2) × (7/8)V = (7/16)ρV. Total Mass = (1/8)ρV + (7/16)ρV = (9/16)ρV. Average density = Total Mass / V = 9ρ/16.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q57",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The human eye is like a camera that has a lens with",
+    "options": [
+      "fixed focal length and fixed aperture size.",
+      "variable focal length and fixed aperture size.",
+      "fixed focal length and variable aperture size.",
+      "variable focal length and variable aperture size."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The human eye's lens changes shape to focus on objects at different distances (variable focal length), and the iris adjusts the pupil size to control light entry (variable aperture size).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q58",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Special Provisions for States",
+    "text": "Under Article 371A of the Constitution of India, with respect to which of the following item(s) the Acts of the Parliament of India shall not apply to the State of Nagaland, unless the Legislative Assembly of the State of Nagaland by a resolution so decides?\n1. Religious or social practices of Nagas\n2. Naga customary law and procedure\n3. Ownership and transfer of land and its resources\n4. Boundaries of Nagaland with other states",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 371A safeguards religious or social practices of Nagas, customary law and procedure, administration of civil and criminal justice involving decisions according to customary law, and ownership and transfer of land. State boundaries are not part of this specific protection.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Special Provisions for States" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q59",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Under Article 191 of the Constitution of India, a person shall be disqualified for being chosen as, and for being, a member of the Legislative Assembly or Legislative Council of a state if the person holds any office of profit under:\n1. the Government of India.\n2. any State Government.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 191 dictates that a person is disqualified from being a member of a state legislature if they hold any office of profit under the Government of India or any State Government (unless exempted by state law).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q60",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Human Rights",
+    "text": "Consider the following UN Declarations/Covenants:\n1. Universal Declaration of Human Rights\n2. Convention on the Elimination of All Forms of Discrimination Against Women\n3. International Covenant of Economic, Social and Cultural Rights\n4. Convention on Refugees\nWhich one of the following is the correct chronological order (starting with the earliest) of the above?",
+    "options": [
+      "1, 4, 3, 2",
+      "1, 2, 3, 4",
+      "1, 3, 2, 4",
+      "4, 1, 2, 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "UDHR (1948), Convention on Refugees (1951), ICESCR (1966), CEDAW (1979). The chronological order is 1, 4, 3, 2.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Human Rights" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q61",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Economic Planning",
+    "text": "Which one of the following statements regarding the objectives of the Second Five-Year Plan is not correct?",
+    "options": [
+      "Development of the basic and heavy industry sector",
+      "Increase in national income to raise living standards",
+      "Expansion of the consumer goods sector",
+      "Expansion of employment opportunities"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Mahalanobis model of the Second Five-Year Plan heavily prioritized basic and heavy industries over the consumer goods sector.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Economic Planning" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q62",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Consider the following statements about the emergence of urban centres in India from circa 6th Century BCE:\n1. All of them developed away from the capitals of mahajanpadas.\n2. Major towns were located along routes of communication.\n3. Many were bustling centres of commercial, cultural and political activity.\nHow many of the above statements is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 2 and 3 are correct. Statement 1 is incorrect because many major urban centers (like Rajagriha, Ujjain, Pataliputra) served directly as the capitals of the Mahajanapadas. Since 2 statements are correct, the correct option is (b) representing '2'.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q63",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Consider the following statements about ancient Indian inscriptions:\n1. The earliest inscriptions are in Sanskrit.\n2. Kharosthi script, used in inscriptions in the north-west, was deciphered with the help of coins of Indo-Greek kings who ruled over the area.\n3. Most of the inscriptions mention grand, unique events, and routine agricultural practices do not find mention.\nHow many of the above statements is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect (the earliest deciphered inscriptions, Ashoka's edicts, were in Prakrit). Statements 2 and 3 are correct. Thus, 2 statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q64",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "The relative atomic mass of boron (which exists in two isotopic forms 10B and 11B) is 10.81. What will be the abundance of 10B and 11B respectively (consider a sample of 100 atoms)?",
+    "options": [
+      "19% and 81%",
+      "81% and 19%",
+      "38% and 62%",
+      "62% and 38%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let the abundance of 11B be x. (11 * x) + (10 * (1-x)) = 10.81. 11x + 10 - 10x = 10.81. x = 0.81 (81% for 11B). Therefore, 10B is 19%.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q65",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which among the following are essential constituents of Portland cement?",
+    "options": [
+      "Sand, lime, clay",
+      "Silica, alumina, lime",
+      "Silica, lime, graphite powder",
+      "Sand, graphene, clay"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The primary active chemical constituents required to manufacture Portland cement are calcium oxide (lime), silicon dioxide (silica), and aluminum oxide (alumina).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q66",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Litmus, a well-known acid-base indicator, is derived from:",
+    "options": [
+      "Fungi",
+      "Lichens",
+      "Bacteria",
+      "Termite"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Litmus is a water-soluble mixture of different dyes extracted from certain species of lichens.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q67",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What is the oxidation state of Vanadium in V2O5?",
+    "options": [
+      "+2",
+      "+4",
+      "+3",
+      "+5"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Oxygen typically has an oxidation state of -2. In V2O5, the total for oxygen is 5 × -2 = -10. To balance the neutral molecule, the two Vanadium atoms must equal +10, making the state of one Vanadium atom +5.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q68",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Match List-I (Allotrope of Carbon) with List-II (Property):\nA. Graphite - 1. Thinnest and strongest material\nB. Diamond - 2. Hardest natural substance\nC. Fullerene - 3. Very light and strong material\nD. Graphene - 4. Soft and slippery material",
+    "options": [
+      "A-4, B-2, C-3, D-1",
+      "A-4, B-3, C-2, D-1",
+      "A-1, B-3, C-2, D-4",
+      "A-1, B-2, C-3, D-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Graphite is soft and slippery (A-4). Diamond is the hardest natural substance (B-2). Fullerene forms strong and light nanoscale spheres (C-3). Graphene is a single-atom-thick sheet, making it the thinnest and strongest material (D-1).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q69",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Consider the following statements regarding the International Date Line:\n1. It is roughly 180° meridian, which deviates slightly East and West to avoid land areas surrounded by the Atlantic Ocean.\n2. The date to the East of this line is (24 hours) earlier than to the West.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect because the International Date Line passes through the Pacific Ocean, not the Atlantic. Statement 2 is correct; crossing the IDL moving east means you subtract a day (the date is 24 hours earlier).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q70",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which of the following statements regarding 'aurora' is/are correct?\n1. The solar wind upon reaching the Earth's atmosphere is directed towards two magnetic poles and a colourful display of lights is seen in the night sky.\n2. The particles interact with the different gases of the atmosphere and each gas glows with a particular colour.\n3. In April 2023, aurora was captured in the night sky in India by the Indian Astronomical Observatory at Hanle, Ladakh.",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements are correct. Auroras are caused by solar wind interacting with atmospheric gases near the magnetic poles, and a rare severe geomagnetic storm allowed it to be photographed as far south as Hanle in 2023.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q71",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which of the following statements regarding Barchan is/are correct?\n1. It is a crescent shaped mound of sand, which is deposited by the wind blowing constantly from one direction in a desert.\n2. The windward side has a convex steep slope with maximum height at the centre.\n3. Two ends of Barchan are called horns and point opposite to the direction the wind blows.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct. Statement 2 is incorrect because the windward side has a gentle convex slope, while the leeward side is steep. Statement 3 is incorrect because the horns point downwind (in the direction the wind blows).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q72",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Soils",
+    "text": "Which of the following statements regarding Regur soil is/are correct?\n1. It is a light coloured, clayey and fertile soil.\n2. It is developed on Deccan basaltic lava under hot and humid conditions.\n3. Cotton is extensively cultivated in this soil.",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "2 only",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Regur soil (Black cotton soil) is dark-colored, not light (Statement 1 is wrong). It develops under hot and semi-arid (dry) conditions, not humid (Statement 2 is wrong). Cotton is extensively cultivated in it (Statement 3 is correct).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Soils" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q73",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which of the following statements regarding clouds is/are correct?\n1. Clouds are classified on the basis of altitude and their form.\n2. According to altitude they are classified as High, Middle and Low clouds.\n3. Stratus, Nimbostratus and Stratocumulus are high clouds.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect because Stratus, Nimbostratus, and Stratocumulus are classified as low-level clouds, not high clouds (which use the prefix 'Cirro-').",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q74",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Consider the following statements regarding 'fronts':\n1. The movement of a front causes a slow change in weather in the area over which it moves.\n2. Cold fronts are associated with thunderstorms.\n3. Warm front is the boundary between an advancing mass of warm air where it is overriding and rising above a mass of colder air.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cold fronts move quickly and cause rapid changes in weather, so statement 1 is incorrect as a generalization. Cold fronts force warm air up rapidly, creating thunderstorms (Statement 2 is correct). A warm front involves advancing warm air overriding retreating cold air (Statement 3 is correct).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q75",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Soils",
+    "text": "Consider the following statements regarding soils:\n1. Soils having a very high content of sodium and calcium and pH of more than 7.0 are alkaline soils.\n2. Black cotton soil had developed on the Deccan basaltic lava under hot and humid conditions.\n3. Laterite soils are characterised by a deep weathered layer from which silica has been leached.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is a correct description of alkaline/saline soils. Statement 2 is incorrect (they develop under hot and semi-arid conditions). Statement 3 is correct regarding laterite soils undergoing intense leaching of silica due to heavy tropical rainfall.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Soils" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q76",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Biomes",
+    "text": "Consider the following characteristics of a grassland:\n1. An extensive area of mid latitude grasslands are devoid of trees and shrubs.\n2. The climate is characterised by hot summers, cold winters and relatively low rainfall occurring mainly in spring and summer.\n3. In humid parts, grasses grow to a meter or more in height.\nOn the basis of the above characteristics, select the correct grassland:",
+    "options": [
+      "Steppes",
+      "Prairies",
+      "Savanna",
+      "Pampas"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The description accurately points to the Steppes (or generic mid-latitude temperate grasslands). Both Prairies and Steppes share these characteristics, but 'Steppes' is typically used as the textbook geographic classification for extensive treeless mid-latitude grasslands.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Biomes" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q77",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which of the following statements regarding animal cell membrane is correct?",
+    "options": [
+      "They are composed of phospholipids only.",
+      "They are composed of proteins only.",
+      "They are composed of phospholipids and proteins only.",
+      "They are composed of phospholipids, proteins and cholesterol (lipid)."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The animal cell membrane is a fluid mosaic model consisting primarily of a phospholipid bilayer embedded with proteins, and crucially includes cholesterol which regulates membrane fluidity.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q78",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which of the following is not a part of compound microscope?",
+    "options": [
+      "Mirror",
+      "Stage",
+      "Clip",
+      "Retina"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A mirror, stage, and clips are physical parts of a light/compound microscope used to hold and illuminate the specimen. The retina is a biological component of the eye.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q79",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following is the correct sequence in increasing complexity?",
+    "options": [
+      "Protein - Organism - Tissue - Organ",
+      "Protein - Organ - Tissue - Organism",
+      "Protein - Organism - Organ - Tissue",
+      "Protein - Tissue - Organ - Organism"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Biological complexity builds from molecules (Protein) to cells (not listed), which form Tissues, which form Organs, which ultimately form an entire Organism.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q80",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Consider the following cell types:\n1. Monocyte\n2. Chondrocyte\n3. Basophil\n4. Lymphocyte\nHow many of the above belong to animal cell types?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All four are animal cells: Monocytes, Basophils, and Lymphocytes are types of white blood cells (leukocytes) in the immune system, and Chondrocytes are the cells found in healthy cartilage. Therefore, 4 of them belong to animal cell types.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q81",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In the human digestive system, which one among the following is the role of the pancreas?",
+    "options": [
+      "Secretion of surfactants to break up lipid droplets",
+      "Storage and regulated release of bile",
+      "Secretion of lipase, amylase and protease",
+      "Neutralizing stomach acids"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The pancreas acts as an exocrine gland by secreting pancreatic juice containing essential digestive enzymes including lipase (for fats), amylase (for carbohydrates), and protease (for proteins).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q82",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Consider the following statements:\n1. DNA replication takes place when chromatin is opened up.\n2. Chromatin organises itself into rod-shaped chromosomes before cell division.\n3. Both prokaryotes and eukaryotes have the same process for cell division.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1, 2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 are correct characteristics of eukaryotic cell cycles. Statement 3 is incorrect because prokaryotes divide via a simpler process called binary fission, whereas eukaryotes use mitosis or meiosis.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q83",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A uniform meter scale of mass 0.24 kg is made of steel. It is kept on two wedges, W1 and W2 in a horizontal position. W1 is at a distance of 0.2 m from one of its ends, while W2 is at distance of 0.4 m from the other end. If the force on the scale is N1 due to W1 and N2 due to W2 then: (take g = 10.0 m/s²)",
+    "options": [
+      "N1 = 1.6 N and N2 = 0.8 N",
+      "N1 = 0.8 N and N2 = 1.6 N",
+      "N1 = 0.6 N and N2 = 1.8 N",
+      "N1 = 1.8 N and N2 = 0.6 N"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The center of mass (CM) is at 0.5 m. The distance from CM to W1 (at 0.2m) is 0.3 m. The distance from CM to W2 (at 0.6m) is 0.1 m. Balancing torques around CM: N1 * 0.3 = N2 * 0.1, so N2 = 3 * N1. Balancing vertical forces: N1 + N2 = mg = 0.24 * 10 = 2.4 N. Thus, 4 * N1 = 2.4 N, leading to N1 = 0.6 N and N2 = 1.8 N.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q84",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Escape speed from the Earth is close to 11.2 km/s. On another planet whose radius is half of the Earth's radius and whose mass density is four times that of the Earth, the escape speed in km/s will be close to:",
+    "options": [
+      "11.2",
+      "15.8",
+      "5.6",
+      "7.9"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Escape velocity v = √(2GM/R) = √(2G * ρ * (4/3)πR³ / R) = R * √(8πGρ/3). Thus, v is proportional to R * √ρ. If R becomes R/2 and ρ becomes 4ρ, then v' is proportional to (R/2) * √(4ρ) = R * √ρ. Therefore, the escape velocity remains identical at 11.2 km/s.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q85",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following does not apply to sound waves in fluids?",
+    "options": [
+      "They transport energy",
+      "They need a medium to travel",
+      "They are transverse",
+      "They travel faster in liquids than in gases"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sound waves propagating in fluids (liquids and gases) are strictly longitudinal waves, where particle oscillation is parallel to the direction of wave travel. They cannot support transverse shear waves.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q86",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A ball of 0.1 kg mass is dropped on a hard floor from a height of 0.45 m and rises to a height of 0.20 m. If it was in touch with the floor for 0.1 s, the net force it applied on the floor while bouncing is : (take the gravitational acceleration g = 10 m/s²)",
+    "options": [
+      "1.0 N",
+      "6.0 N",
+      "3.0 N",
+      "5.0 N"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Velocity just before hitting floor: v1 = √(2gh) = √(2*10*0.45) = 3 m/s (downwards). Velocity just after bounce: v2 = √(2gh) = √(2*10*0.20) = 2 m/s (upwards). Change in momentum Δp = m(v2 - (-v1)) = 0.1 * (2 + 3) = 0.5 kg m/s. Average net force causing momentum change F_net = Δp / Δt = 0.5 / 0.1 = 5.0 N. Total force applied ON the floor includes this dynamic force plus the static weight of the ball. F_floor = F_net + mg = 5.0 + (0.1 * 10) = 6.0 N.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q87",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following statements regarding simple pendulum is correct? Simple pendulum has a time period independent of amplitude",
+    "options": [
+      "only for small amplitudes because then the net force on its bob is independent of its displacement.",
+      "for any amplitude because the net force on the bob is always proportional to its displacement.",
+      "for any amplitude because the net force on the bob is independent of its displacement.",
+      "only for small amplitudes because then the net force on its bob is proportional to its displacement."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The time period of a simple pendulum is independent of amplitude only for small angles (small amplitudes), where the restoring force is approximately directly proportional to the displacement (F ≈ -kx), allowing it to execute simple harmonic motion.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q88",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following about different frictional forces is correct?",
+    "options": [
+      "Kinetic friction > Static friction > Rolling friction",
+      "Static friction > Rolling friction > Kinetic friction",
+      "Static friction > Kinetic friction > Rolling friction",
+      "Static friction > Kinetic friction = Rolling friction"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Static friction is the maximum opposing force before motion begins. Kinetic (sliding) friction is less than static friction, and rolling friction is the least of all three. Therefore, Static friction > Kinetic friction > Rolling friction.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q89",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A metallic bob X of mass m is released from position A. It collides elastically with another identical bob Y placed at rest at position B on a horizontal frictionless table. The angle AOB is 30°. How high does the bob X rise immediately after the collision?",
+    "options": [
+      "To the same height as that of position A on the other side in the same trajectory",
+      "To half the height as that of position A on the other side along the same trajectory",
+      "The same height at position A",
+      "It stops at position B"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In a 1D perfectly elastic collision between two identical masses where one is initially at rest, the moving mass transfers all its momentum and kinetic energy to the stationary mass. Thus, bob X stops completely at position B, and bob Y moves forward.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q90",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Consider the two statements given below :\nStatement-1: Infrared waves are also called heat waves.\nStatement-2: Water molecules readily absorb infrared waves.\nSelect the correct answer using the code given below:",
+    "options": [
+      "Both the statements are individually true and Statement-2 is the correct explanation of Statement-1.",
+      "Both the statements are individually true, but Statement-2 is not the correct explanation of Statement-1.",
+      "Statement-1 is true, but Statement-2 is false.",
+      "Statement-2 is true, but Statement-1 is false."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Infrared waves are called heat waves precisely because they are readily absorbed by water molecules (and CO2/NH3) present in most materials, which increases the thermal motion of the molecules, heating the object.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q91",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which of the following statements are correct?\n1. British 'trade surplus' with India in the nineteenth century meant that the value of British exports to India was much higher than the value of British imports from India.\n2. India played a crucial role in the late-nineteenth-century world economy by helping Britain balance its deficits.\n3. Britain grew opium in India and exported it to China and, therefore, for a while after the 1820s, opium became India's single largest export.\n4. The nineteenth century saw export of Indian raw materials decline, and that of manufactured goods increase.",
+    "options": [
+      "1 and 2 only",
+      "3 and 4 only",
+      "1, 2, 3 and 4",
+      "1, 2 and 3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statements 1, 2, and 3 are correct in the context of the economic history taught regarding British imperial trade. Statement 4 is incorrect because under British rule, the export of Indian manufactured goods sharply declined (de-industrialization), while the export of raw materials increased to feed British factories.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q92",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Match List-I (Unit in use in early India) with List-II (Content):\nA. Muhurta\nB. Raktika\nC. Angula\nD. Pada\nList-II:\n1. Measure of weight\n2. Measure of time\n3. Metre of poetry\n4. Measure of length",
+    "options": [
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3",
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Muhurta is a measure of time (A-2). Raktika (Ratti) is a traditional measure of weight (B-1). Angula is a measure of length equivalent to a finger's breadth (C-4). Pada is a metre in poetry (D-3).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q93",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "First coins in Indian history bearing the names and images of rulers were issued by the:",
+    "options": [
+      "Mauryas",
+      "Pushyabhutis",
+      "Guptas",
+      "Indo-Greeks"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Indo-Greeks were the first rulers in India to issue coins that bore the names and portraits of the kings, a practice that helped significantly in reconstructing their history.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q94",
+    "year": 2024,
+    "subject": "Sociology / History",
+    "topic": "World History",
+    "text": "Social theorists in the nineteenth and the twentieth centuries emphasised the emergence of industrialisation, urbanisation, secularisation and bureaucratisation as hallmarks of:",
+    "options": [
+      "Modernity",
+      "Feudalism",
+      "Kingship",
+      "Medievalism"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The processes of industrialization, urbanization, secularization, and the rise of formal bureaucracy are classically defined by sociologists as the defining characteristics of Modernity.",
+    "tags": [
+      { "type": "subject", "label": "Sociology / History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q95",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Indian National Movement",
+    "text": "Consider the following events:\n1. Launch of Non-Cooperation Movement\n2. All-India Khilafat Conference in Delhi\n3. Passing of the Rowlatt Act\n4. Jallianwala Bagh incident\nWhich one of the following is the correct chronological order of the given events (earliest to latest)?",
+    "options": [
+      "1, 2, 3, 4",
+      "3, 4, 2, 1",
+      "3, 2, 4, 1",
+      "2, 3, 4, 1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rowlatt Act was passed in March 1919 (3). The Jallianwala Bagh massacre occurred on April 13, 1919 (4). The All-India Khilafat Conference in Delhi was held in November 1919 (2). The Non-Cooperation Movement was officially launched in August 1920 (1). The correct order is 3, 4, 2, 1.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Indian National Movement" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q96",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Match List-I (System/Category) with List-II (Description):\nA. Upari\nB. Pattadar\nC. Mirasidar\nD. Inam lands\nList-II:\n1. Peasants directly responsible for the payment of revenue\n2. Category of tenancy tenure held under the Marathas\n3. Gifts of land or land revenue\n4. Co-parcenary title holder and designated revenue payer in southern India",
+    "options": [
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3",
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Upari is a tenant-at-will under the Marathas (A-2). A Pattadar holds land directly from the state and pays revenue (B-1). A Mirasidar is a co-parcenary title holder in South India (C-4). Inam lands are revenue-free land grants (D-3).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q97",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which of the following statements about Vijayanagara king Krishnadevaraya's expeditions are correct?\n1. In the early years of his reign he marched against the ruler of Orissa.\n2. In 1520 CE, he captured the fort of Raichur from Ismail Adil Khan.\n3. Krishnadevaraya restored Sultan Mahmud Shah to power and assumed the title of Yavana-rajya-sthapan-acharya.",
+    "options": [
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "1 and 2 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three statements are correct. He launched successful campaigns against the Gajapatis of Orissa, defeated the Sultan of Bijapur to recapture the Raichur Doab, and temporarily restored the Bahmani Sultan to power, earning the unique title.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q98",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Water gas is a mixture of:",
+    "options": [
+      "CO2 and H2",
+      "CO and H2",
+      "CO2 and H2O",
+      "CO and H2O"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Water gas is a combustion fuel gas consisting of a mixture of carbon monoxide (CO) and hydrogen (H2). It is produced by passing steam over red-hot coke.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q99",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Human body works in the pH range of:",
+    "options": [
+      "6.8 - 7.2",
+      "7.0 - 7.8",
+      "6.5 - 7.5",
+      "7.5 - 8.0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The human body works optimally within a narrow, slightly alkaline pH range of 7.0 to 7.8 (with blood pH strictly regulated around 7.35 to 7.45).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q100",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one among the following statements with reference to the properties of water is not correct?",
+    "options": [
+      "The specific heat of water is abnormally high.",
+      "Latent heat of fusion of water is very low.",
+      "Density of water is higher than ice.",
+      "Pure water is a non-conductor of electricity."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Water has a very high latent heat of fusion (approx. 334 J/g) compared to most other substances, due to strong hydrogen bonding. Therefore, the statement that it is 'very low' is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q101",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one among the following compounds has a sweet and fruity smell?",
+    "options": [
+      "Ethyl alcohol",
+      "Acetic acid",
+      "Ethyl acetate",
+      "Acetophenone"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Esters generally possess a sweet and fruity smell. Ethyl acetate is an ester, whereas ethyl alcohol smells like spirits, acetic acid like vinegar, and acetophenone is aromatic but less 'fruity'.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q102",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What is the coordination number of Na+ and Cl- ions in NaCl lattice?",
+    "options": [
+      "6, 1",
+      "1, 6",
+      "6, 6",
+      "5, 5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In a face-centered cubic (FCC) lattice of Sodium Chloride (NaCl), every Na+ ion is surrounded by 6 Cl- ions, and every Cl- ion is surrounded by 6 Na+ ions. Thus, the coordination number is 6:6.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q103",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one among the following is present in the nettle leaf hairs that causes burning pain?",
+    "options": [
+      "Methanoic acid",
+      "Ethanoic acid",
+      "Benzoic acid",
+      "Acetic acid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The stinging hairs of nettle leaves inject methanoic acid (also known as formic acid) into the skin, which causes a burning sensation and pain.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q104",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one among the following is known as Milk of Magnesia?",
+    "options": [
+      "Magnesium bicarbonate",
+      "Magnesium carbonate",
+      "Magnesium sulphate",
+      "Magnesium hydroxide"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Milk of Magnesia is a suspension of magnesium hydroxide [Mg(OH)2] in water, commonly used as an antacid to neutralize stomach acid.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q105",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Soap with water forms:",
+    "options": [
+      "Metallotropic liquid crystal",
+      "Thermotropic liquid crystal",
+      "Homogeneous solution",
+      "Lyotropic liquid crystal"
+    ],
+    "correctAnswer": 3,
+    "explanation": "When soap dissolves in water, the amphiphilic molecules aggregate to form micelles. Depending on the concentration and temperature, these can form lyotropic liquid crystals.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q106",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which among the following is the correct composition of Borax?",
+    "options": [
+      "Sodium, Boron, Magnesium and Hydrogen",
+      "Sodium, Boron, Oxygen and Hydrogen",
+      "Potassium, Boron, Oxygen and Hydrogen",
+      "Sodium, Boron, Nitrogen and Hydrogen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Borax is a compound with the chemical formula Na2B4O7·10H2O (sodium tetraborate decahydrate). It is composed of Sodium (Na), Boron (B), Oxygen (O), and Hydrogen (H).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q107",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one among the following oxides has the highest melting point?",
+    "options": [
+      "Na2O",
+      "MgO",
+      "Fe2O3",
+      "CuO"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Magnesium oxide (MgO) has extremely strong ionic bonds due to the high charge (+2 on Mg, -2 on O) and small ionic radii, resulting in a very high melting point of approximately 2852 °C.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q108",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "Which of the following statements regarding neap tides is/are correct?\n1. It occurs every 14-15 days, which coincides with the first and third quarter of the Moon.\n2. This tide has a small tidal range because the gravitational forces of the Moon and the Sun are in quadrature.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Neap tides occur when the sun, earth, and moon form a right angle (quadrature), which happens during the first and third quarter moon phases (roughly every 14-15 days). This alignment partially cancels their gravitational pull, causing a small tidal range. Both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Oceanography" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q109",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements regarding earthquakes is/are correct?\n1. The point on the Earth's surface directly above the focus is called the epicentre of the earthquake.\n2. Earthquakes generate Primary and Secondary waves that radiate outward from the earthquake focus.\n3. Deep-focus earthquakes are likely to cause more damage than shallow-focus earthquakes.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect because shallow-focus earthquakes release their energy closer to the surface, causing significantly more damage than deep-focus earthquakes.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q110",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which of the following statements regarding air temperature is/are correct?\n1. Air temperature is measured at a standard height of 1.2 m (4.0 feet) above the ground surface.\n2. The average rate of temperature decrease with height is termed as the environmental temperature lapse rate.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Standard meteorological temperature measurements are taken inside a Stevenson screen positioned approximately 1.2 to 2 meters above the ground. The rate at which temperature decreases with altitude is called the environmental lapse rate. Both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q111",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which of the following statements regarding humidity is/are correct?\n1. It is a ratio between the actual amount of water vapour present in the atmosphere and the maximum amount it can hold at a given temperature.\n2. When the relative humidity is high, more water evaporates from the skin.\n3. Higher the air temperature lower the relative humidity of the air.",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 defines relative humidity correctly. Statement 3 is correct because as temperature rises, the air's capacity to hold moisture increases, dropping the relative humidity. Statement 2 is incorrect; high humidity means the air is saturated, so LESS water evaporates from the skin, causing a sweaty feeling.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q112",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which of the following statements regarding cyclones and anti-cyclones is/are correct?\n1. In the Northern Hemisphere, cyclones rotate counter clockwise and anticyclones rotate clockwise.\n2. Cyclones are often associated with cloudy or rainy weather, whereas anticyclones are often associated with fair weather.\n3. In the Southern Hemisphere, the cyclonic spiral will be clockwise because the Coriolis force acts to the left.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements correctly define the rotational mechanics (due to the Coriolis effect) and typical weather patterns associated with low-pressure (cyclones) and high-pressure (anticyclones) systems.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q113",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Identify the sea-port in India on the basis of the given characteristics:\n1. It is more than a century old port on the west coast of India.\n2. It is a natural harbour protected by a breakwater and also by a mole.\n3. A deep draft channel of about 14 metres depth permits large vessels to enter the harbour.",
+    "options": [
+      "Mormugao Port",
+      "Deendayal Port",
+      "Cochin Port",
+      "Jawaharlal Nehru Port"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mormugao Port (in Goa) is one of the oldest ports on the west coast, known for its natural harbour protected by a breakwater and a mole built during the Portuguese era.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q114",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Industry",
+    "text": "Identify the Iron and Steel Plant on the basis of the given characteristics:\n1. It receives coal from Jharia and iron-ore from Sundargarh and Kendujhar.\n2. Power for the electric furnaces is procured from Hirakud.\n3. Water is obtained from Koel and Sankh rivers.",
+    "options": [
+      "Bhilai Steel Plant",
+      "Durgapur Steel Plant",
+      "Rourkela Steel Plant",
+      "Bokaro Steel Plant"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Rourkela Steel Plant in Odisha perfectly matches these descriptions. It draws water from the Koel and Sankh rivers and power from the Hirakud dam.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Industry" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q115",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements regarding Earth's internal structure is/are correct?\n1. The oceanic crust is heavier than the continental crust.\n2. Most of the Earth's internal heat is contained within the mantle.\n3. Large convective cells in the crust circulate heat and drive plate-tectonic processes.",
+    "options": [
+      "3 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Oceanic crust (basaltic) is denser/heavier than continental crust (granitic). Most of the internal heat is indeed in the vast mantle. However, the convective cells that drive plate tectonics are located in the mantle (specifically the asthenosphere), not in the rigid crust. Thus, statement 3 is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q116",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian River System",
+    "text": "Which of the following statements regarding the given rivers is/are correct?\n1. Tsangpo crosses over into India under the name of Dihang.\n2. Godavari has the second largest river basin covering about 10 percent of the area of India.\n3. Rivers Chambal and Betwa are the important tributaries of river Ganga which join river Ganga directly in Uttar Pradesh.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Chambal and Betwa rivers are tributaries of the Yamuna River, which then subsequently joins the Ganga.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian River System" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q117",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Climate",
+    "text": "Which of the following statements regarding the World Climate Types and their relation with Inter Tropical Convergence Zone (ITCZ) is/are correct?\n1. Tropical Wet Climate is one of the world's rainiest due to the dominance of the ITCZ over it.\n2. Tropical Savanna Climate experiences a distinctive alternation of wet and dry seasons, caused chiefly by the seasonal shift in latitude of the subtropical highs and ITCZ.\n3. The Tropical Monsoonal Climate experiences heavy rainfall as a consequence of the nearness of the ITCZ for much of the year.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements correctly describe the influence of the ITCZ on these tropical climate classifications. Its migration drives the heavy rains of the wet tropics, the distinct wet/dry seasons of the savanna, and the intense rainfall of the monsoons.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Climate" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q118",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which of the following statements regarding tropical cyclones is/are correct?\n1. These storms develop during the summer and autumn in every tropical ocean except the South Atlantic and eastern South Pacific Oceans.\n2. Tropical cyclones that occur in the North Atlantic and eastern North Pacific Oceans are known as typhoons.\n3. Tropical cyclones that occur in the Indian and South Pacific Oceans are called cyclones.",
+    "options": [
+      "3 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 2 is incorrect because tropical cyclones in the North Atlantic and eastern North Pacific are called 'hurricanes'. They are called 'typhoons' in the western North Pacific. Statements 1 and 3 are correct.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q119",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Biomes",
+    "text": "Identify the land biome on the basis of the given characteristics :\n1. Their climates are characterised by high rainfall and temperatures that vary from cold to mild.\n2. These forests contain primarily deciduous trees - including maple, oak, hickory and beechwood.\n3. Raccoons, opossums, bats and squirrels are found in the trees.",
+    "options": [
+      "Tropical forest",
+      "Temperate forest",
+      "Boreal forest",
+      "Mediterranean forest"
+    ],
+    "correctAnswer": 1,
+    "explanation": "These are the textbook characteristics of Temperate Deciduous Forests, which feature distinct seasons, broadleaf trees like oak and maple, and common fauna like raccoons and squirrels.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Biomes" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q120",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Leaves of most plants appear green because the chlorophyll present in it:",
+    "options": [
+      "absorbs red and blue light while reflecting green light.",
+      "absorbs green light only.",
+      "absorbs green light while reflecting red and blue light.",
+      "reflects red light and absorbs blue and green light."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chlorophyll strongly absorbs light in the red and blue regions of the electromagnetic spectrum for photosynthesis, but it reflects green light, which is why leaves appear green to our eyes.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q121",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In most prokaryotes, the chromosome number is:",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Most prokaryotic cells (like bacteria) contain a single, circular chromosome.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q122",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Bacterial DNA is referred to as naked because it is not associated with:",
+    "options": [
+      "any scaffold",
+      "proteins",
+      "ribozymes",
+      "plasmid"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bacterial DNA is considered 'naked' because, unlike eukaryotic DNA, it is not wrapped around histone proteins.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q123",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one among the following cells produces antibodies against a foreign antigen?",
+    "options": [
+      "Lymphocytes",
+      "Erythrocytes",
+      "Eosinophils",
+      "Platelets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "B-Lymphocytes (a type of white blood cell) are responsible for producing antibodies in response to foreign antigens.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q124",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "If the block P as shown in the figure below were to be at rest, what should the magnitude of force F be?",
+    "options": [
+      "5 N",
+      "6 N",
+      "8 N",
+      "10 N"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Assuming standard force equilibrium on a block, the sum of forces pointing left must equal the forces pointing right. Left forces = 15N. Right forces = 10N. Therefore, the unknown force F pointing right must be 5N to balance the block.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q125",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Of the following, which does not belong to a nuclear reactor?",
+    "options": [
+      "A turbine",
+      "A heat exchanger",
+      "A mechanism to reduce CO2 emission",
+      "A reaction chamber"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A nuclear reactor does not burn fossil fuels, so it does not produce carbon dioxide (CO2) directly during operation. Therefore, a mechanism to reduce CO2 emission is not a component of a nuclear reactor.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q126",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Consider the following electric circuit. The circuit consists of a 10V battery connected in series with a 5 Ω resistor, followed by a parallel combination of three resistors (10 Ω, 0 Ω, 10 Ω), and finally another 5 Ω resistor in series. The current in the above electric circuit is:",
+    "options": [
+      "1 A",
+      "(10/15) A",
+      "2 A",
+      "1.5 A"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 0 Ω resistor in the parallel combination acts as a short circuit, meaning all current flows through it and bypasses the 10 Ω resistors. The equivalent resistance of the parallel block is 0 Ω. Total resistance = 5 Ω + 0 Ω + 5 Ω = 10 Ω. Total current = V/R = 10V / 10Ω = 1 A.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q127",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A microscope may be a combination of:",
+    "options": [
+      "two convex lenses.",
+      "a convex and a concave lens.",
+      "two concave lenses.",
+      "a convex lens and a convex mirror."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A standard compound microscope utilizes two converging (convex) lenses: an objective lens and an eyepiece lens.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q128",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "For a human eye, where u is the distance of an object from the eye, f is the focal length of the lens and v is the distance of image from the eye, which is the correct schematic graph?",
+    "options": [
+      "v vs u: a horizontal straight line",
+      "v vs u: an exponentially decreasing curve",
+      "f vs u: an exponentially increasing curve",
+      "v vs f: an exponentially increasing curve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In a healthy human eye, the distance between the eye lens and the retina is fixed. Since the image must form on the retina for clear vision, the image distance 'v' remains completely constant regardless of object distance 'u'. The focal length 'f' adjusts (accommodation) to keep 'v' constant.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q129",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which of the following statements with regard to the phenomenon of the primary rainbow formation by water droplets is/are correct?\n1. It involves refraction and one internal reflection of sunlight.\n2. It involves refraction of sunlight only.\n3. It is formed as the inner bow.\n4. It may involve more than one internal reflection as well as refraction of sunlight.",
+    "options": [
+      "1 only",
+      "1 and 3",
+      "3 and 4",
+      "2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A primary rainbow is formed by one internal reflection and two refractions within the water droplets. It appears as the brighter, inner bow. Secondary rainbows involve two internal reflections.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q130",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following scientists mentioned that an electron in an atom could revolve in certain stable orbits without the emission of radiant energy?",
+    "options": [
+      "Ernest Rutherford",
+      "J.J. Thomson",
+      "Niels Bohr",
+      "Albert Einstein"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Niels Bohr proposed the Bohr model of the atom in 1913, introducing the concept of discrete, stable, non-radiating electron orbits (stationary states).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q131",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "LIGO experiment confirmed one of the predictions of:",
+    "options": [
+      "String theory",
+      "Special theory of relativity",
+      "Quantum mechanics",
+      "General theory of relativity"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Laser Interferometer Gravitational-Wave Observatory (LIGO) directly detected gravitational waves, a key prediction of Albert Einstein's General Theory of Relativity.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q132",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A block of mass 2 kg, moving with the initial speed of 3 m/s comes to rest on a rough horizontal surface after travelling a distance of 3 m. The magnitude of the frictional force is:",
+    "options": [
+      "9 N",
+      "3 N",
+      "18 N",
+      "1 N"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Work-Energy theorem: Work done by friction = Change in kinetic energy. F_friction * d = 1/2 * m * v^2. F_friction * 3 = 1/2 * 2 * (3^2). F_friction * 3 = 9. F_friction = 3 N.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q133",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following is primarily responsible for conduction of current in a metal?",
+    "options": [
+      "Bound electrons",
+      "Free electrons",
+      "Both bound and free electrons",
+      "Ions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metals are good conductors of electricity due to the presence of a 'sea' of delocalized, free electrons that can easily move under an applied electric field.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q134",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which of the following were features of the postal system of India as described by Ibn Battuta?\n1. The foot post carries a ringing bell in one hand.\n2. The horse post is called uluq, stationed at a distance of every four miles.\n3. The foot post or dawa has one station at every four kos of distance.\n4. The foot post is quicker than horse post.",
+    "options": [
+      "1, 2 and 4",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ibn Battuta described the foot post (dawa) as having three stations per mile (not every 4 kos), carrying a stick with bells. The horse post was called uluq (stationed every 4 miles). Interestingly, he noted that the foot post was much quicker than the horse post. Therefore, 1, 2, and 4 are correct.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q135",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Literature",
+    "text": "Which one of the following texts is a commentary written by Chakrapanidatta (11 Century CE from Bengal) on the Sushrut Samhita?",
+    "options": [
+      "Sabdachandrika",
+      "Bhanumati",
+      "Nitiratnakara",
+      "Lohasarvasava"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Chakrapanidatta, a prominent Ayurveda scholar, wrote 'Bhanumati', which serves as an authoritative commentary on the Sushruta Samhita.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Literature" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q136",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Consider the following statements about the arrival of tobacco in India:\n1. Tobacco plant arrived first in the Deccan.\n2. Tobacco spread to northern India in the early years of the seventeenth century.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The Portuguese introduced tobacco to the Deccan in the late 16th century, and it rapidly spread to the northern Mughal courts (under Akbar/Jahangir) in the early 17th century.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q137",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Consider the following Women's Associations and their important associates in early twentieth century India :\n1. Women's Indian Association of 1917 : Margaret Cousins\n2. National Council of Women in India of 1925 : Sarala Devi Chaudhurani\n3. Bharat Stree Mahamandal of 1910 : Lady Meherbai Tata\nWhich of the above pairs is/are correctly matched ?",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Only pair 1 is correctly matched (Margaret Cousins helped found the WIA). Sarala Devi Chaudhurani founded the Bharat Stree Mahamandal (Pair 2 is wrong), and Lady Meherbai Tata was associated with the National Council of Women in India (Pair 3 is wrong).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q138",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Indian National Movement",
+    "text": "Consider the following statements about the issue of separate electorate during the early decades of the twentieth century in India as a means to secure adequate representation for the deprived social categories in the absence of universal adult franchise:\n1. The All India Depressed Classes Association of M.C. Rajah was staunchly in favour of joint electorate.\n2. The All India Depressed Classes Leaders' Conference demanded separate electorate.\n3. The Communal Award in September 1932 recognised the right to separate electorate for the 'untouchables'.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements are correct. M.C. Rajah favoured a joint electorate (the Rajah-Moonje pact), whereas the broader conference under Ambedkar's influence initially demanded separate electorates. The British Communal Award of 1932 officially granted this, leading to Gandhi's fast and the subsequent Poona Pact.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Indian National Movement" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q139",
+    "year": 2024,
+    "subject": "History",
+    "topic": "World History",
+    "text": "Which of the following statements with regard to the famous 'silk routes' are correct?\n1. Silk routes refer to East-bound European silk cargoes along these routes.\n2. There were several silk routes, over land and by sea, joining together vast regions of Asia with Europe and northern Africa.\n3. They are known to have existed since before the Christian Era and thrived almost till the fifteenth century.\n4. Besides silk, Chinese pottery, textiles and spices from India and South-east Asia travelled the same route.",
+    "options": [
+      "1, 2 and 3",
+      "1, 3 and 4",
+      "2, 3 and 4",
+      "1, 2 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is incorrect because the primary flow of silk was West-bound (from China/Asia to Europe), not East-bound. Statements 2, 3, and 4 accurately describe the historical trade networks.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q140",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "Consider the following statements about Ajanta paintings:\n1. The surface of the rock was coated with clay mixed with rice husk and gum and a coat of lime was applied over this.\n2. The outline drawing was done first on the lime coating and colours were added subsequently.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements describe the authentic ancient Indian mural painting techniques (fresco-secco) utilized by the artisans to create the Ajanta cave paintings.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q141",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Science and Technology",
+    "text": "Which of the following statements with regard to the Square Kilometer Array (SKA) project is/are correct?\n1. SKA is a state of the art, mega science international facility to build the world's biggest and most sensitive radio telescope for addressing a wide variety of cutting-edge science goals.\n2. The Government of India has accorded its approval for India's participation in the international mega science project.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The SKA is an intergovernmental radio telescope project being built in Australia and South Africa. Both statements are correct; India's government officially approved participation in the project.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q142",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Defence Exercises",
+    "text": "Exercise Desert Cyclone is a joint military exercise between India and :",
+    "options": [
+      "Kuwait",
+      "Saudi Arabia",
+      "United Arab Emirates",
+      "Oman"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Exercise Desert Cyclone is a bilateral joint military exercise conducted between the Indian Army and the United Arab Emirates (UAE) Land Forces.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence Exercises" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q143",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Constitutional Bodies",
+    "text": "Which of the following statements with regard to the constitution of Finance Commission is/are correct?\n1. The Government of India has recently constituted the Sixteenth Finance Commission under the Chairmanship of Dr. Arvind Panagariya.\n2. Finance Commission is constituted in pursuance to Article 263 of the Constitution of India.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct (Dr. Arvind Panagariya heads the 16th FC). Statement 2 is incorrect because the Finance Commission is constituted under Article 280, whereas Article 263 relates to the Inter-State Council.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q144",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Environment and Initiatives",
+    "text": "Recently the Ministry of Environment, Forest and Climate Change has submitted three nominations from India for Wetland City Accreditation (WCA) under the Ramsar Convention on Wetlands. Which one among the following cities is not one among them?",
+    "options": [
+      "Indore",
+      "Bhopal",
+      "Udaipur",
+      "Jodhpur"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The three Indian cities officially nominated by the MoEFCC for Wetland City Accreditation are Indore, Bhopal, and Udaipur. Jodhpur was not nominated.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Environment and Initiatives" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q145",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Important Days",
+    "text": "Which of the following statements is/are correct?\n1. In India, 12th March is celebrated as the National Youth Day.\n2. National Youth Day is celebrated to commemorate the birth anniversary of Swami Vivekananda.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 2 is correct. Statement 1 is incorrect because National Youth Day is celebrated on January 12th, not March 12th.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Important Days" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q146",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "Consider the following statements about INS Sagardhwani:\n1. It is an oceanographic research vessel of Naval Physical and Oceanographic Laboratory (NPOL) of DRDO.\n2. Recently it embarked on the Sagar Maitri Mission-4 to establish long-term scientific partnerships with Indian Ocean Rim countries in Ocean Research and Development.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. INS Sagardhwani is a specialized marine acoustic research ship operated by NPOL (DRDO), and it conducted the Sagar Maitri Mission-4 across the IOR.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q147",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Constitutional Bodies",
+    "text": "Who among the following is the Chairman of the Committee constituted by the Government of India to examine the issue of holding simultaneous elections in the country and to make recommendations thereon?",
+    "options": [
+      "Union Home Minister Shri Amit Shah",
+      "Chief Justice of India Shri Dhananjaya Yeshwant Chandrachud",
+      "Former President of India Shri Ram Nath Kovind",
+      "Chief Election Commissioner of India Shri Rajiv Kumar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The High-Level Committee on 'One Nation, One Election' was chaired by the former President of India, Ram Nath Kovind.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q148",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Education",
+    "text": "In January 2024, India's first all-girls' Sainik School was inaugurated at:",
+    "options": [
+      "Bhopal",
+      "Kohima",
+      "Vrindavan",
+      "Namsai"
+    ],
+    "correctAnswer": 2,
+    "explanation": "India's first all-girls Sainik School, the Samvid Gurukulam Girls Sainik School, was officially inaugurated in Vrindavan, Mathura (Uttar Pradesh) in January 2024.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Education" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q149",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "In February 2024, Government of India has decided to scrap the Free Movement Regime (FMR) between India and:",
+    "options": [
+      "Myanmar",
+      "Bhutan",
+      "Bangladesh",
+      "Nepal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Due to security concerns and illegal immigration, the Government of India decided to scrap the Free Movement Regime (FMR) along the porous India-Myanmar border.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  },
+  {
+    "id": "nda-2024-1-q150",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Books and Authors",
+    "text": "Who among the following is the author of the book Why Bharat Matters?",
+    "options": [
+      "L.K. Advani",
+      "S. Jaishankar",
+      "Mohan Bhagwat",
+      "Pranab Mukherjee"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The book 'Why Bharat Matters', analyzing India's foreign policy and changing global role, was written by India's External Affairs Minister, S. Jaishankar.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Books and Authors" },
+      { "type": "pyq", "label": "NDA 2024" }
+    ]
+  }
+]

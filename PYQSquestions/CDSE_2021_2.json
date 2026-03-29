@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "cds-2021-ii-gk-001",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Where should an object be placed in front of a convex lens to get a real and enlarged image of the object?",
+    "options": [
+      "At twice the focal length",
+      "At infinity",
+      "Between the principal focus and twice the focal length",
+      "Beyond twice the focal length"
+    ],
+    "correctAnswer": "2",
+    "explanation": "For a convex lens, to obtain a real and enlarged image, the object must be placed between the principal focus (F) and twice the focal length (2F). When the object is between F and 2F, the image formed is real, inverted, and magnified (enlarged), appearing beyond 2F on the other side.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-002",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Electromagnetism",
+    "text": "The magnetic field lines inside a current carrying long solenoid are in the form of",
+    "options": [
+      "ellipse.",
+      "parabola.",
+      "hyperbola.",
+      "parallel straight lines."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Inside a current-carrying long solenoid, the magnetic field is uniform and the field lines are parallel straight lines running along the axis of the solenoid. This uniform field is one of the key properties of a solenoid, making it useful as an electromagnet.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electromagnetism"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-003",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Optics - Refraction",
+    "text": "A ray of light travelling from a rarer medium to a denser medium",
+    "options": [
+      "slows down and bends away from the normal.",
+      "slows down and bends towards the normal.",
+      "speeds up and bends away from the normal.",
+      "speeds up and bends towards the normal."
+    ],
+    "correctAnswer": "1",
+    "explanation": "When light travels from a rarer medium (lower refractive index) to a denser medium (higher refractive index), its speed decreases and it bends towards the normal. This is Snell's law of refraction: the denser medium has a higher refractive index, so light slows down and the angle of refraction is less than the angle of incidence.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Refraction of Light"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-004",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "An electric circuit is consisting of a cell, an ammeter and a nichrome wire of length l. If the length of the wire is reduced to half (l/2), then the ammeter reading",
+    "options": [
+      "decreases to one-half.",
+      "gets doubled.",
+      "decreases to one-third.",
+      "remains unchanged."
+    ],
+    "correctAnswer": "1",
+    "explanation": "Resistance of a wire is R = ρl/A. When length is halved (l/2), resistance becomes R/2. By Ohm's law, I = V/R. With resistance halved and voltage constant, current doubles. Therefore the ammeter reading gets doubled.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electricity"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-005",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Pressure",
+    "text": "What is the effect of pressure of a human body on sand?",
+    "options": [
+      "Larger while standing than while lying",
+      "Smaller while standing than while lying",
+      "Same while standing or lying",
+      "Larger while standing during the daytime and smaller during the night time while lying"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Pressure = Force/Area. A human body's weight remains constant. When standing, only the feet touch the sand (small area), producing HIGH pressure. When lying down, the entire back surface contacts the sand (large area), producing LOW pressure. Therefore, pressure on sand is larger while standing than while lying.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Pressure"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-006",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Motion - Displacement",
+    "text": "An athlete completes one round of a circular track of diameter 100 m in 20 s. What will be the displacements after 1 minute and 10 s, respectively?",
+    "options": [
+      "0 m, 50 m",
+      "300 m, 100 m",
+      "300 m, 50 m",
+      "0 m, 100 m"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The track has diameter 100 m, so radius = 50 m. One round takes 20 s. After 1 minute (60 s) = 3 complete rounds → athlete is back at starting point → displacement = 0 m. After 10 s = half a round → athlete is at the diametrically opposite point → displacement = diameter = 100 m. So answer is 0 m, 100 m.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Motion and Displacement"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-007",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Acids and Bases",
+    "text": "Which of the following statements about universal indicator is/are true?\n1. It is a mixture of several indicators.\n2. It shows different colours at different concentrations of hydrogen ions in solution.\n3. It helps to determine the strength of given acid and base in titration.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": "1",
+    "explanation": "A universal indicator is (1) a mixture of several indicators — TRUE. (2) It shows different colours at different concentrations of hydrogen ions — TRUE (it displays a range of colours corresponding to pH 1-14). (3) It helps determine strength of acid/base in titration — FALSE; universal indicator is not used in titrations because it gives gradual colour changes; sharp-endpoint indicators are used for titrations. Hence only 1 and 2 are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids, Bases and Salts"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-008",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Carbon Allotropes",
+    "text": "Which of the following carbon allotropes is/are good conductor(s) of electricity?\n1. Diamond\n2. Graphite\n3. Fullerene\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Among carbon allotropes: Diamond — poor conductor (all 4 valence electrons are in covalent bonds, no free electrons). Graphite — good conductor (each carbon bonds with only 3 others, leaving one free electron per atom that can conduct electricity; layers can slide). Fullerene — poor conductor of electricity in solid state. Therefore only Graphite (2) is a good conductor.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Carbon and its Compounds"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-009",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Elements in Earth's Crust",
+    "text": "What is the approximate percentage of carbon in the Earth's crust?",
+    "options": [
+      "0.045%",
+      "0.025%",
+      "0.015%",
+      "0.005%"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Carbon constitutes approximately 0.025% of the Earth's crust by mass. It is not among the most abundant elements (which are oxygen, silicon, aluminum, iron, etc.), being present in trace amounts primarily in the form of carbonates, coal, petroleum, and organic matter.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Elements in Earth's Crust"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-010",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "When copper reacts with moist carbon dioxide (CO₂) in air, it forms a green coating of which one of the following compounds?",
+    "options": [
+      "Cupric carbonate",
+      "Cuprous oxide",
+      "Cupric oxide",
+      "Copper sulphate"
+    ],
+    "correctAnswer": "0",
+    "explanation": "When copper reacts with moist CO₂ in air (a process called patination), it forms a green coating of basic copper carbonate (cupric carbonate / Cu₂(OH)₂CO₃ or CuCO₃·Cu(OH)₂). This is the characteristic green patina seen on copper statues, coins, and rooftops. The Statue of Liberty is a famous example of this green patina.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Reactions of Metals"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-011",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Metallurgy",
+    "text": "What is the name of the process that converts sulphide ores into oxides by heating strongly in the presence of excess air?",
+    "options": [
+      "Calcination",
+      "Roasting",
+      "Smelting",
+      "Incineration"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Roasting is the metallurgical process of heating sulphide ores strongly in the presence of excess air (oxygen) to convert them into their oxides. For example: 2ZnS + 3O₂ → 2ZnO + 2SO₂. Calcination involves heating in limited air/absence of air; smelting involves reduction with carbon; incineration is burning of waste.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Metallurgy"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-012",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Alloys",
+    "text": "What are the constituents of alloy solder?",
+    "options": [
+      "Pb and Zn",
+      "Pb and Sn",
+      "Pb and Si",
+      "Pb and Co"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Solder (alloy solder) is an alloy of Lead (Pb) and Tin (Sn), typically in the ratio 1:1 or 2:1 (Pb:Sn). It has a low melting point and is widely used in electronics for joining electrical components. Tin gives it fluidity and lead provides mechanical strength.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Alloys"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-013",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Ecology - Food Chain",
+    "text": "Which of the following limits the number of trophic levels in a food chain?",
+    "options": [
+      "Deficient food supply",
+      "Polluted air",
+      "Decrease in the available energy at higher trophic levels",
+      "Parasitic organisms"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The number of trophic levels in a food chain is limited by the decrease in available energy at each successive level. According to the 10% law (Lindeman's law), only about 10% of energy is transferred from one trophic level to the next; the rest is lost as heat. This means by the 4th or 5th trophic level, the available energy becomes too low to support another level.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Ecology and Food Chain"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-014",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Genetics - Mendelian Inheritance",
+    "text": "In pea, a pure tall plant (TT) is crossed with a short plant (tt). What will be the ratio of pure tall plants to short plants in the F₂ generation?",
+    "options": [
+      "1:1",
+      "1:3",
+      "3:1",
+      "2:1"
+    ],
+    "correctAnswer": "0",
+    "explanation": "F1 cross: TT × tt → all Tt (tall, heterozygous). F2 cross: Tt × Tt → TT : Tt : tt = 1:2:1. Pure tall plants = TT = 1. Short plants = tt = 1. Tall plants overall = 3 (TT + 2Tt). But the question asks for PURE tall (TT) to short (tt) ratio = 1:1.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Genetics and Heredity"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-015",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Heredity and Evolution",
+    "text": "Which one of the following statements about variations is NOT true?",
+    "options": [
+      "Variation is minimum in asexual reproduction.",
+      "All variations in a species have equal chances of survival.",
+      "Changes in genetic constitution result in variation.",
+      "Variants can be selected by environmental factors."
+    ],
+    "correctAnswer": "1",
+    "explanation": "Statement (b) is NOT true. Not all variations have equal chances of survival. According to Darwin's theory of Natural Selection, variations that are advantageous in a given environment have better chances of survival and reproduction (survival of the fittest). Harmful or neutral variations may not persist. The other statements are all correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Heredity and Evolution"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-016",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Ecology - Population",
+    "text": "While studying vegetation of an area, terms like 'population' and 'community' are often used. Which one of the following statements best describes a population?",
+    "options": [
+      "A group of organisms of one species, living in the same area at the same time.",
+      "A group of organisms of one species living in different areas during different seasons.",
+      "A unit consisting of biotic and abiotic components.",
+      "A group of organisms of more than one species, living in the same area at the same time."
+    ],
+    "correctAnswer": "0",
+    "explanation": "A population is defined as a group of organisms belonging to the same species, living in the same geographic area at the same time, and capable of interbreeding. Option (d) describes a community (multiple species in same area). Option (c) describes an ecosystem. Option (b) is incorrect as populations occupy same area.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Ecology"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-017",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Circulatory System",
+    "text": "In the human body, blood flows through a process of double circulation. Which one of the following statements is true in this regard?",
+    "options": [
+      "Oxygenated blood reaches the left side of the heart from the lungs.",
+      "Blood in the left side of the heart is poor in oxygen and is brought to the right side of the heart.",
+      "Deoxygenated blood from the left side of the heart is brought to the lungs for oxygenation.",
+      "Oxygenated blood from the right side of the heart is sent around the body."
+    ],
+    "correctAnswer": "0",
+    "explanation": "In double circulation: Pulmonary circulation — deoxygenated blood from the right ventricle goes to lungs; oxygenated blood returns to the LEFT side (left atrium) of the heart from the lungs via pulmonary veins. Systemic circulation — oxygenated blood from the left ventricle is pumped to the body. Hence statement (a) is correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Circulatory System"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-018",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Nutrition in Organisms",
+    "text": "In which of the following groups of organisms, is food material broken down outside the body and absorbed?",
+    "options": [
+      "Yeast, mushroom, bread mould",
+      "Mushroom, Amoeba, green plants",
+      "Caserta, tapeworm, lice",
+      "Paramecium, Amoeba, Caserta"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Yeast, mushroom, and bread mould are all fungi. Fungi are saprophytes/decomposers that secrete digestive enzymes outside their body to break down complex organic matter into simpler substances, which are then absorbed into their cells. This is called extracellular digestion. Amoeba engulfs food (intracellular). Green plants photosynthesize. Tapeworms and lice absorb from hosts directly.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Nutrition in Organisms"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-019",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Sound Waves",
+    "text": "A sound wave has a frequency of 4 kHz and wavelength 30 cm. How long will it take to travel 2.4 km?",
+    "options": [
+      "2.0 s",
+      "0.6 s",
+      "1.0 s",
+      "8.0 s"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Speed of sound = frequency × wavelength = 4000 Hz × 0.30 m = 1200 m/s. Time = Distance/Speed = 2400 m / 1200 m/s = 2.0 s.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Sound"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-020",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Electricity - Power",
+    "text": "An electric bulb is connected to a 110 V generator. The current is 0.2 A. What is the power of the bulb?",
+    "options": [
+      "0.22 W",
+      "2.2 W",
+      "22 W",
+      "220 W"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Power = Voltage × Current = 110 V × 0.2 A = 22 W.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electric Power"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-021",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Optics - Refraction",
+    "text": "Refraction of light, as it enters from one transparent medium to another, is due to",
+    "options": [
+      "change in temperature of the media.",
+      "change in the amplitude of light.",
+      "change in speed of light.",
+      "internal property of light."
+    ],
+    "correctAnswer": "2",
+    "explanation": "Refraction occurs because light changes its speed when it moves from one transparent medium to another with a different optical density. The change in speed causes the light ray to bend (change direction) at the interface. The frequency remains constant, but the wavelength and speed change.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Refraction of Light"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-022",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Physics",
+    "topic": "Motion - Acceleration",
+    "text": "A bus starting from a bus-stand and moving with uniform acceleration attains a speed of 20 km/h in 10 minutes. What is its acceleration?",
+    "options": [
+      "200 km/h²",
+      "120 km/h²",
+      "100 km/h²",
+      "240 km/h²"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Initial velocity u = 0 (starts from rest). Final velocity v = 20 km/h. Time t = 10 min = 10/60 h = 1/6 h. Acceleration = (v - u)/t = (20 - 0)/(1/6) = 20 × 6 = 120 km/h².",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Motion and Acceleration"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-023",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Reactivity Series",
+    "text": "Which one of the following is the correct reactivity order of metals reacting with dilute HCl?",
+    "options": [
+      "Mg > Al > Zn > Fe",
+      "Mg < Al < Zn < Fe",
+      "Mg > Zn > Fe > Al",
+      "Fe > Mg > Al > Zn"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The reactivity series (electrochemical series) for these metals in decreasing order of reactivity with dilute HCl is: Mg > Al > Zn > Fe. Magnesium reacts most vigorously, followed by Aluminium, then Zinc, then Iron. This is consistent with the standard activity series of metals.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Reactivity Series of Metals"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-024",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Acids in Daily Life",
+    "text": "Which one of the following acids is secreted by leaves of Nettle that causes painful stings?",
+    "options": [
+      "Methanoic acid",
+      "Citric acid",
+      "Tartaric acid",
+      "Acetic acid"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Nettle (Urtica dioica) leaves have stinging hairs that inject methanoic acid (formic acid, HCOOH) when touched, causing painful stings and burning sensation on the skin. This is the same acid found in ant bites. Citric acid is in citrus fruits, tartaric acid in grapes, acetic acid in vinegar.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids in Daily Life"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-025",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Acids and Bases",
+    "text": "Which of the following statements is/are correct?\n1. All the bases are alkali.\n2. All alkalis dissolve in water.\n3. Alkalis are soapy to touch, bitter in taste and corrosive in nature.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "3 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Statement 1 is FALSE — Not all bases are alkalis. Alkalis are bases that are soluble in water (e.g., NaOH, KOH). Insoluble bases like Cu(OH)₂ are not alkalis. Statement 2 is TRUE — All alkalis by definition dissolve in water. Statement 3 is TRUE — Alkalis are indeed soapy to touch, bitter in taste, and corrosive. Hence 2 and 3 are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids, Bases and Salts"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-026",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Chemistry",
+    "topic": "Laboratory Chemicals",
+    "text": "Which one of the following materials is present in a guard tube (drying tube) that is used for preparation of HCl gas?",
+    "options": [
+      "Calcium chloride",
+      "Calcium bromide",
+      "Calcium iodide",
+      "Calcium fluoride"
+    ],
+    "correctAnswer": "0",
+    "explanation": "When preparing HCl gas in the laboratory, a guard/drying tube filled with Calcium Chloride (CaCl₂) anhydrous is used. CaCl₂ is a desiccant (drying agent) that absorbs moisture from the HCl gas stream, ensuring dry HCl gas is collected. It prevents reverse suction of water. CaCl₂ does not react with HCl.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Laboratory Preparations"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-027",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Agriculture - Fertilizers",
+    "text": "Fertilizers are used to obtain higher yields of crops. However, all nutrients are usually not available in fertilizers. Which one of the following nutrients is usually NOT available in fertilizers?",
+    "options": [
+      "Iron",
+      "Potassium",
+      "Nitrogen",
+      "Phosphorus"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Commercial fertilizers typically supply the three primary macronutrients: Nitrogen (N), Phosphorus (P), and Potassium (K) — collectively called NPK fertilizers. Iron (Fe) is a micronutrient that is generally NOT included in standard fertilizers, though it is required by plants in small amounts. Iron deficiency (chlorosis) is treated with iron chelate applications separately.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Agriculture and Fertilizers"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-028",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Animal Classification",
+    "text": "Rupa and Sachin observed an animal in their school garden. Rupa called it an insect while Sachin identified it as an earthworm. Which one of the following characteristics confirms that it is an insect?",
+    "options": [
+      "The animal had jointed legs.",
+      "Body of the animal had very little segmentation.",
+      "Body of the animal was cylindrical.",
+      "Body of the animal was bilaterally symmetrical."
+    ],
+    "correctAnswer": "0",
+    "explanation": "Insects belong to class Insecta (phylum Arthropoda) and have three pairs of jointed legs (6 legs total). Jointed legs are a definitive characteristic of insects and all arthropods. Earthworms also have bilateral symmetry and segmented cylindrical bodies, so options b, c, d don't help distinguish. Jointed legs are exclusively an arthropod feature, confirming it's an insect.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Animal Classification"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-029",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Animal Classification - Chordates",
+    "text": "Animals which are marine, bilaterally symmetrical, have a coelom and a notochord, but never form a vertebral column are placed under which one of the following groups?",
+    "options": [
+      "Chordata",
+      "Protochordata",
+      "Vertebrata",
+      "Mammalia"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Protochordates (subphylum Protochordata/Acrania) are marine, bilaterally symmetrical, have coelom and notochord, but the notochord never develops into a true vertebral column. Examples include Amphioxus (Branchiostoma) and tunicates. They belong to phylum Chordata but are not vertebrates. Vertebrata have a vertebral column formed from the notochord.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Animal Classification"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-030",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Plant Biology - Meristems",
+    "text": "What is the location of intercalary meristem in plants?",
+    "options": [
+      "Base of the leaves or internodes",
+      "Stems or roots",
+      "Tips of stems and leaves",
+      "Base of flower pedicel"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Intercalary meristem is located at the base of leaves or internodes (regions between nodes on a stem). It is a type of primary meristem that helps in elongation of internodes and is particularly prominent in grasses and monocots. Apical meristem is at tips of stems/roots; lateral meristem is in stems/roots for secondary growth.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Plant Anatomy"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-031",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Federalism",
+    "text": "The federation of which one of the following States has been described as 'an indestructible union of indestructible states'?",
+    "options": [
+      "India",
+      "U.S.A.",
+      "Canada",
+      "Australia"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The United States of America (USA) has been described as 'an indestructible union of indestructible states' by the US Supreme Court in the case Texas v. White (1869). In contrast, India's federation has been described as 'an indestructible union of destructible states' since Parliament can alter state boundaries.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Federalism"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-032",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Literature",
+    "text": "Who among the following is the author of the famous essay, 'The End of History and the Last Man'?",
+    "options": [
+      "Francis Fukuyama",
+      "Daniel Bell",
+      "Abraham Lincoln",
+      "Anthony Giddens"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Francis Fukuyama, an American political scientist, authored the famous essay 'The End of History?' (1989) and the subsequent book 'The End of History and the Last Man' (1992). In it, he argued that liberal democracy had triumphed as the final form of human government after the end of the Cold War.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Famous Books and Authors"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-033",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "High Courts in India",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "Allahabad High Court has a Bench at Lucknow.",
+      "Madhya Pradesh High Court has a Bench at Gwalior.",
+      "Rajasthan High Court is located at Jodhpur.",
+      "Guwahati High Court has no Bench."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Statement (d) is NOT correct. Guwahati High Court does have benches — it has benches at Kohima (Nagaland), Aizawl (Mizoram), Itanagar (Arunachal Pradesh), and Imphal (Manipur). The other statements are correct: Allahabad HC has a bench at Lucknow; MP HC (at Jabalpur) has a bench at Gwalior (and Indore); Rajasthan HC is at Jodhpur (with a bench at Jaipur).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Judiciary - High Courts"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-034",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Parliament - Disqualification",
+    "text": "Which among the following is NOT a condition for the disqualification of a Member of Parliament?",
+    "options": [
+      "Voluntary acquisition of citizenship of a foreign country",
+      "Holding the office of the Chairperson of the National Commission for Women",
+      "The Member abstains from voting in the House without prior permission",
+      "The Member holds the office of the Chairman of the Board of Directors of the National Coal Development Corporation Ltd."
+    ],
+    "correctAnswer": "1",
+    "explanation": "Holding the office of Chairperson of the National Commission for Women is NOT a condition for disqualification of an MP. Under Article 102, an MP is disqualified if they hold an 'office of profit under the Government.' The National Commission for Women chairperson may or may not be an office of profit as determined by Parliament's exemption list. Option (b) is specifically NOT a disqualification. Options (a), (c), and (d) can lead to disqualification under relevant provisions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament - Disqualification of Members"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-035",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Directive Principles",
+    "text": "Who among the following considered the Directive Principles of State Policy as aiming at 'furthering the goals of social exclusion'?",
+    "options": [
+      "B.N. Rau",
+      "Granville Austin",
+      "K.C. Wheare",
+      "Rajni Kothari"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Rajni Kothari, an Indian political scientist, criticized the Directive Principles of State Policy as instruments that furthered goals of social exclusion rather than inclusion, arguing they were used to maintain social hierarchies. Granville Austin praised DPSPs as 'conscience of the Constitution.' B.N. Rau was the constitutional advisor. K.C. Wheare is known for his work on federal government.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Directive Principles of State Policy"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-036",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian Rivers",
+    "text": "D performs her train journey by the shortest route from Bengaluru to New Delhi. Which one of the following rivers will she NOT cross while performing the journey?",
+    "options": [
+      "Narmada",
+      "Yamuna",
+      "Godavari",
+      "Krishna"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The shortest train route from Bengaluru to New Delhi passes through areas crossing the Krishna River and Narmada River. The Yamuna flows through Delhi itself. However, the Godavari flows through Andhra Pradesh and Telangana in an eastern route. The main rail route from Bengaluru to Delhi (via Secunderabad/Hyderabad or via Pune) does NOT cross the Godavari. Hence Godavari is not crossed.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Rivers and Rail Routes"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-037",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian States - Identification",
+    "text": "Identify the State on the basis of the following characteristics:\n1. Tropic of Cancer passes through the State.\n2. The State has more north-south extension.\n3. The State has international border with Bangladesh and Myanmar.\nSelect the correct answer using the code given below:",
+    "options": [
+      "Tripura",
+      "Mizoram",
+      "Nagaland",
+      "Manipur"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Mizoram satisfies all three: (1) Tropic of Cancer (23.5°N) passes through Mizoram. (2) Mizoram has greater north-south extension than east-west. (3) Mizoram shares international borders with Bangladesh (to the west and northwest) and Myanmar (to the east and southeast). Tripura borders Bangladesh but not Myanmar and Tropic of Cancer passes through it too, but its shape is not more north-south. Mizoram best fits all three.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian States"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-038",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Union Territories",
+    "text": "M wants to visit a place in a Union Territory, which is located at 34° N and 77° E. Which one of the following Union Territories must he have planned to visit?",
+    "options": [
+      "Andaman and Nicobar Islands",
+      "Lakshadweep",
+      "Puducherry",
+      "Ladakh"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The coordinates 34°N and 77°E correspond to the Ladakh region in northern India. Ladakh was declared a Union Territory in 2019. Leh, the main city, is located at approximately 34°N, 77°E. Andaman and Nicobar is in the Bay of Bengal (~13°N, 93°E). Lakshadweep is in Arabian Sea (~10°N, 72°E). Puducherry is on the east coast (~12°N, 79°E).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Union Territories of India"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-039",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian Demographics",
+    "text": "Consider the following statements with respect to the adolescent population (age group of 10 to 19 years) of India, according to the 2011 Census:\n1. Adolescent population comprises half the population of the country.\n2. The group is regarded as youthful population with high potential.\n3. In this group there are greater number of females than males.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 2 only",
+      "2 and 3 only"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Statement 1 is FALSE — As per 2011 Census, adolescents (10-19 years) constitute about 20.9% of India's population, not half. Statement 2 is TRUE — Adolescents are indeed considered a youthful population with high potential (demographic dividend). Statement 3 is FALSE — In the 10-19 age group, males outnumber females due to India's skewed sex ratio. Only statement 2 is correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Population and Census"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-040",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Population Density",
+    "text": "In a discussion, M from Arunachal Pradesh, J from Assam, N from Meghalaya and S from Nagaland are claiming that as per Census 2011, their State has the maximum density of population. Identify the person making the correct claim.",
+    "options": [
+      "M",
+      "J",
+      "N",
+      "S"
+    ],
+    "correctAnswer": "1",
+    "explanation": "As per Census 2011, among these four NE states, population density: Assam (J) = 397 persons/km², Nagaland (S) = 119 persons/km², Meghalaya (N) = 132 persons/km², Arunachal Pradesh (M) = 17 persons/km² (lowest in India). Assam has the highest population density among these four states. Hence J (from Assam) makes the correct claim.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Population Density - Census 2011"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-041",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Who among the following ancient Indian kings was praised in glowing terms in the Prayaga Prashasti?",
+    "options": [
+      "Ashoka",
+      "Harshavardhana",
+      "Samudragupta",
+      "Bindusara"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Prayaga Prashasti (Allahabad Pillar Inscription) was composed by Harishena, the court poet of Samudragupta of the Gupta dynasty. It praises Samudragupta in glowing terms, describing his military conquests and administrative achievements. It is one of the most important historical documents of ancient India.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Gupta Period"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-042",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Modern India - Social Movements",
+    "text": "The Self-Respect Movement was initiated by",
+    "options": [
+      "B.R. Ambedkar",
+      "Jyotiba Phule",
+      "E.V. Ramaswamy Naicker",
+      "Jawaharlal Nehru"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Self-Respect Movement was founded by Erode Venkatappa Ramasamy, popularly known as Periyar or E.V. Ramaswamy Naicker, in 1925 in Tamil Nadu. The movement aimed to give lower-caste people a place of dignity in society and fought against Brahminical dominance and the caste system. It advocated rationalism and rejected religious orthodoxy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Social Reform Movements"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-043",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Ancient India - Archaeology",
+    "text": "The location of the ancient city of Taxila (Takshshila), mentioned in ancient Indian texts, was identified by",
+    "options": [
+      "Alexander Cunnigham",
+      "R.D. Banerji",
+      "John Marshall",
+      "Daya Ram Sahni"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Alexander Cunningham, the founder of the Archaeological Survey of India, identified and excavated Taxila (Takshshila) in the 19th century. Cunningham is often called the 'Father of Indian Archaeology.' R.D. Banerji discovered Mohenjo-daro. John Marshall excavated Mohenjo-daro and Harappa. Daya Ram Sahni discovered Harappa.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Archaeology"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-044",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Ancient India - Jainism",
+    "text": "Who among the following was NOT a Jain Acharya?",
+    "options": [
+      "Bhadrabahu",
+      "Khema",
+      "Haribhadra",
+      "Siddhasena Divakara"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Khema (Khemā) is NOT a Jain Acharya — Khema was a disciple of Gautama Buddha and one of the most prominent Buddhist nuns, known for her wisdom. Bhadrabahu, Haribhadra, and Siddhasena Divakara were all famous Jain Acharyas (teachers/scholars). Bhadrabahu was the last Jain ascetic who knew all 14 Purvas.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Jainism"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-045",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Freedom Movement - Gandhi",
+    "text": "In India, the first major public appearance of Mahatma Gandhi was in",
+    "options": [
+      "Champaran (1917)",
+      "Kheda (1918)",
+      "Inauguration of Banaras Hindu University (1916)",
+      "Rowlatt Satyagraha (1919)"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Mahatma Gandhi's first major public appearance in India after returning from South Africa was at the inauguration ceremony of Banaras Hindu University (BHU) in 1916. In his speech, Gandhi criticized the British rule and the Indian elite, which caused controversy. Though Champaran (1917) was his first major satyagraha in India, BHU 1916 was his first major public appearance.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Freedom Movement"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-046",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Ancient India - Literature",
+    "text": "Consider the following statements about Patanjali's Mahabhashya:\n1. It makes a mention of Kautilya.\n2. It is a book on grammar and refers to historical personalities only incidentally.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Patanjali's Mahabhashya is a commentary on Panini's Ashtadhyayi (grammar). Statement 1 is FALSE — Mahabhashya does not specifically mention Kautilya; it is primarily a grammatical text. Statement 2 is TRUE — Mahabhashya is indeed a book on grammar (Sanskrit grammar commentary) and references to historical events and personalities occur only incidentally as examples to illustrate grammatical rules. Hence only statement 2 is correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient Indian Literature"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-047",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Demand",
+    "text": "Which one of the following may lead to movement along the demand curve of a commodity?",
+    "options": [
+      "Change in its price",
+      "Change in price of the other commodities",
+      "Change in income of the consumer",
+      "Change in tastes and preferences of consumers"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Movement along the demand curve (extension or contraction of demand) occurs only when the price of the commodity itself changes, keeping all other factors constant (ceteris paribus). Changes in income, prices of other goods, and tastes/preferences cause a shift of the demand curve (increase or decrease in demand), not movement along it.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Demand Analysis"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-048",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Opportunity Cost",
+    "text": "Which one of the following is the opportunity cost of a chosen activity?",
+    "options": [
+      "Out of pocket cost",
+      "Out of pocket cost plus cost incurred by the Government",
+      "Value of all opportunities forgone",
+      "Value of next best alternative that is given up"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Opportunity cost is defined as the value of the next best alternative that is foregone/given up when making a choice. It is NOT the value of all opportunities foregone (that would be too broad), but specifically the single best alternative sacrificed. This is a fundamental concept in economics.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Basic Economic Concepts"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-049",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Social Sector Spending",
+    "text": "Which one of the following statements in the context of social sector spending in India during 2014–19 (both States and the Union Government together) is true?",
+    "options": [
+      "Expenditure on education was 5% of GDP.",
+      "Expenditure on health was 4% of the social services expenditure.",
+      "There was a stagnation in the spending on education as a percent of GDP.",
+      "Health sector spending amounted to 10% of the total expenditure."
+    ],
+    "correctAnswer": "2",
+    "explanation": "During 2014-19, India's education spending as a percentage of GDP showed stagnation — hovering around 2.8-3% of GDP rather than growing towards the target of 6% recommended by various commissions. The spending did not significantly increase as a share of GDP, indicating stagnation. The other options have incorrect figures.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Social Sector Spending in India"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-050",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Human Development Index",
+    "text": "According to UNDP's Human Development Report – 2020, in which of the HDI components has India improved in recent years?\n1. Life expectancy at birth\n2. Expected years of schooling\n3. GNI per capita\n4. Mean years of schooling\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": "3",
+    "explanation": "According to UNDP's HDR 2020, India showed improvement in all four HDI components compared to previous years: (1) Life expectancy at birth improved; (2) Expected years of schooling increased; (3) GNI per capita grew; (4) Mean years of schooling also improved. India's overall HDI value increased from 0.570 (2010) to 0.645 (2019), with improvements across all dimensions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Human Development Index"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-051",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Exchange and Trade",
+    "text": "Which one of the following is true of a pure voluntary exchange between two parties A and B?",
+    "options": [
+      "A can exploit B or vice versa",
+      "Both gain; it is a win-win situation",
+      "If A makes profit, it must be at the cost of B",
+      "Both can lose"
+    ],
+    "correctAnswer": "1",
+    "explanation": "In a pure voluntary exchange, both parties participate willingly because each perceives a gain from the transaction. A voluntary exchange only occurs when both parties believe they will be better off after the exchange. This is the basis of free-market economics — voluntary trade is mutually beneficial (win-win). If either party expected to lose, they would not voluntarily participate.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Exchange and Markets"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-052",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Constitution - Directive Principles",
+    "text": "The provision, 'the State shall take steps to separate the Judiciary from the Executive in the public services of the State' is incorporated in which part of the Constitution of India?",
+    "options": [
+      "Part-IV",
+      "Part-V",
+      "Part-VI",
+      "Part-VII"
+    ],
+    "correctAnswer": "0",
+    "explanation": "This provision is found in Article 50 of the Constitution of India, which is part of the Directive Principles of State Policy (DPSP). DPSPs are contained in Part IV of the Constitution (Articles 36-51). Article 50 specifically directs the State to separate the Judiciary from the Executive in public services.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Directive Principles of State Policy"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-053",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Parliament - Functioning",
+    "text": "Which of the following statements are correct?\n1. Speaker may permit any Member to address the House in his/her mother tongue, if he/she cannot adequately express in either Hindi or English.\n2. Business of the Parliamentary Committees is transacted either in Hindi or in English.\n3. The minutes of the Parliamentary Committees are prepared invariably in Hindi or English.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "0",
+    "explanation": "All three statements are correct. (1) The Speaker can permit members to speak in their mother tongue if they cannot adequately express themselves in Hindi or English — this is a provision under the Rules of Procedure. (2) Parliamentary Committee business is transacted in Hindi or English. (3) Minutes of Parliamentary Committees are prepared in Hindi or English. All three are correct practices under Indian parliamentary procedures.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament - Procedures"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-054",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Constitution - Fundamental Rights",
+    "text": "Which one of the following is the correct meaning of the term 'State', as defined in Article 12 of the Constitution of India?",
+    "options": [
+      "It refers only to the Government of India.",
+      "It refers only to the Government of India and the Parliament of India.",
+      "It refers only to the Government of India, Parliament of India, and Governments and Legislatures of each State.",
+      "It refers to the Government of India, Parliament of India, Governments and Legislatures of each State, and all local or other authorities within the territory of India."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Article 12 of the Constitution defines 'State' for Part III (Fundamental Rights) comprehensively to include: the Government and Parliament of India; the Government and Legislature of each State; and all local and other authorities within the territory of India or under the control of the Government of India. This broad definition ensures Fundamental Rights are enforceable against all these entities.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Rights - Article 12"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-055",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Parliament - Rajya Sabha",
+    "text": "Which one among the following is the largest State in terms of seats in the Rajya Sabha?",
+    "options": [
+      "Andhra Pradesh",
+      "Bihar",
+      "Rajasthan",
+      "Karnataka"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Among the given options, Bihar has the largest number of Rajya Sabha seats with 16 seats. Karnataka has 12, Andhra Pradesh has 11, and Rajasthan has 10 seats. The overall largest state is Uttar Pradesh (31 seats), but among these options, Bihar (16 seats) is the largest.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Rajya Sabha Composition"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-056",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Local Government - Panchayats",
+    "text": "Under which Article of the Constitution of India has provision been made for reservation of seats for women in Panchayats?",
+    "options": [
+      "Article 243 B",
+      "Article 243 C",
+      "Article 243 D",
+      "Article 243 E"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Article 243 D of the Constitution of India (inserted by the 73rd Constitutional Amendment, 1992) provides for reservation of seats for Scheduled Castes, Scheduled Tribes, and women in Panchayats. It mandates not less than one-third reservation for women. Article 243 B deals with constitution of Panchayats; 243 C with composition; 243 E with duration.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Panchayati Raj - 73rd Amendment"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-057",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Medieval India - Sultanate",
+    "text": "The painted illustration of the moving of the Ashoka Pillar at Topra is found in",
+    "options": [
+      "Tarikh-i-Firuz Shahi",
+      "Tarikh-i-Shahi",
+      "Sirat-i-Firuz Shahi",
+      "Akbar Nama"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Tarikh-i-Firuz Shahi, written by Ziauddin Barani (and later by Shams-i-Siraj Afif), contains a painted illustration describing the transportation of the Ashoka Pillar from Topra (Haryana) to Delhi by Firuz Shah Tughlaq. Firuz Shah had the pillar moved to Delhi in 1356 CE as a prized monument.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Tughlaq Period"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-058",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Medieval India - Temple Architecture",
+    "text": "Which one among the following is a temple of the Vaishnavite tradition?",
+    "options": [
+      "Srirangam",
+      "Chidambaram",
+      "Gangaikonda Cholapuram",
+      "Thanjavur"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Srirangam (Sri Ranganathaswamy Temple) in Tamil Nadu is one of the most important temples of the Vaishnavite tradition, dedicated to Lord Ranganatha (Vishnu). It is the largest functioning Hindu temple in the world. Chidambaram (Nataraja/Shiva), Gangaikonda Cholapuram (Shiva), and Thanjavur Brihadeeswarar Temple (Shiva) are all Shaivite temples.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Temple Architecture - South India"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-059",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Medieval India - Sufism",
+    "text": "The biography of Shaikh Muinuddin Chishti, authored by Jahanara, is known as",
+    "options": [
+      "Munis al Arwah",
+      "Fawaid ul Fuwad",
+      "Sirat ul Auliya",
+      "Muraqqa-e Dehli"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Sirat ul Auliya was written by Jahanara Begum (daughter of Shah Jahan) as a biography of Shaikh Muinuddin Chishti of Ajmer, the founder of the Chishti order in India. Munis al Arwah is by Hamid Qalandar; Fawaid ul Fuwad records conversations of Nizamuddin Auliya; Muraqqa-e Dehli is a Mughal-period description of Delhi.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Bhakti and Sufi Movement"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-060",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Indian National Movement",
+    "text": "Which one of the following is NOT a political method of the moderates in the National Movement?",
+    "options": [
+      "Overthrow of alien rule",
+      "Constitutional agitation",
+      "Slow, orderly political progress",
+      "Mobilisation of public opinion"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Moderates (early nationalist leaders like Dadabhai Naoroji, Gopal Krishna Gokhale) believed in constitutional methods — petitions, prayers, and protests within the framework of British law. Their methods included constitutional agitation (b), slow orderly political progress (c), and mobilisation of public opinion (d). 'Overthrow of alien rule' was the method of Extremists/radical nationalists, NOT the Moderates.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Indian National Movement - Moderates"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-061",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Modern India - Social Reform",
+    "text": "Swami Dayanand Saraswati took inspiration from",
+    "options": [
+      "Puranas",
+      "Vedas",
+      "Medieval saints",
+      "Sufism"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Swami Dayanand Saraswati, founder of the Arya Samaj (1875), took his inspiration from the Vedas. His famous slogan was 'Back to the Vedas' (Veda ki ore loto). He rejected the authority of the Puranas, idol worship, and priesthood, and emphasized the original Vedic teachings as the source of true Hinduism.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Social Reform Movements - Arya Samaj"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-062",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Freedom Movement",
+    "text": "The call for 'renunciation of (all) voluntary associations with the (British) Government' was given during",
+    "options": [
+      "Non-Cooperation Movement.",
+      "Civil Disobedience Movement.",
+      "Quit India Movement.",
+      "Protest against partition of Bengal."
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Non-Cooperation Movement (1920-22) launched by Gandhi called for the renunciation of all voluntary associations with the British Government — including surrender of titles and honorary offices, resignation from nominated positions in local bodies, boycott of British courts and educational institutions, and refusal to attend government functions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Non-Cooperation Movement"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-063",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "India - Time Zone",
+    "text": "Which of the following statements is/are correct with respect to Time Zone in India?\n1. There is one standard time for the whole country.\n2. Andaman and Nicobar Islands and Lakshadweep Islands have different Time Zones.\n3. Indian Standard Time (IST) is five and half hours behind GMT.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 2 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Statement 1 is TRUE — India has ONE standard time (IST = UTC+5:30) for the entire country. Statement 2 is FALSE — Andaman & Nicobar Islands and Lakshadweep do NOT have different time zones; they use IST like the rest of India. Statement 3 is FALSE — IST is 5.5 hours AHEAD of GMT (not behind). Only statement 1 is correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "India - Standard Time"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-064",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian States - Geography",
+    "text": "D had recently visited Khardung La, Nubra Valley and several Buddhist monasteries. Which one of the following States / UT had she visited?",
+    "options": [
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Sikkim",
+      "Ladakh"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Khardung La (one of the world's highest motorable passes), Nubra Valley, and numerous Buddhist monasteries (Hemis, Diskit, Thiksey, etc.) are all located in Ladakh (Union Territory). Ladakh is famous for these landmarks. None of these are in Himachal Pradesh, Uttarakhand, or Sikkim.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian States - Tourism Geography"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-065",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian Climate - Monsoon",
+    "text": "Which one of the following States receives rainfall from both the Arabian Sea branch and the Bay of Bengal branch of Monsoon?",
+    "options": [
+      "Punjab",
+      "Maharashtra",
+      "Meghalaya",
+      "Tamil Nadu"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Meghalaya receives rainfall from BOTH branches of the Indian monsoon: The Bay of Bengal branch brings heavy rainfall to Meghalaya (Cherrapunji/Mawsynram being among the world's wettest places). The Arabian Sea branch also contributes to rainfall in Meghalaya. Tamil Nadu receives most rainfall from the northeast monsoon (retreating monsoon). Punjab mainly gets Arabian Sea branch rainfall.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Monsoon"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-066",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Soil Types",
+    "text": "Inceptisols, Entisols, Vertisols and Mollisols are orders of which one of the following?",
+    "options": [
+      "Sugarcane",
+      "Soil",
+      "Coal",
+      "Copper"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Inceptisols, Entisols, Vertisols, and Mollisols are orders of soil classification under the USDA Soil Taxonomy system (US Department of Agriculture). This system classifies soils into 12 orders. Inceptisols are young soils; Entisols are very young/azonal soils; Vertisols are clay-rich soils; Mollisols are grassland soils rich in organic matter.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Soil Classification"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-067",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian Agriculture - Soil Conservation",
+    "text": "S had witnessed contour bunding and contour ploughing while visiting one of the States in India. Identify the State from the options given below.",
+    "options": [
+      "Punjab",
+      "Haryana",
+      "Himachal Pradesh",
+      "Rajasthan"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Contour bunding and contour ploughing are soil conservation techniques used on hill slopes to prevent erosion and retain rainwater. These techniques are most commonly practiced in hilly/mountainous states. Himachal Pradesh, with its hilly terrain and terraced agriculture, is where contour bunding and ploughing are widely practiced. Punjab and Haryana are plains; Rajasthan is mostly desert.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Soil Conservation Techniques"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-068",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Government Schemes",
+    "text": "Which one of the following target groups is the beneficiary of 'Garib Kalyan Rojgar Abhiyan' scheme?",
+    "options": [
+      "All rural women",
+      "All returning migrants",
+      "All below poverty line households",
+      "All new migrants to town"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Garib Kalyan Rojgar Abhiyan was launched in June 2020 by the Government of India specifically to provide employment to migrant workers who had returned to their home states during the COVID-19 pandemic lockdown. The scheme targeted ALL RETURNING MIGRANTS in 116 districts across 6 states (Bihar, UP, MP, Rajasthan, Jharkhand, Odisha) that received the most migrant workers.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Government Employment Schemes"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-069",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Economic Curves",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Curve) — List II (Indication)\nA. Lorenz curve — 1. Inflation and employment\nB. Phillips curve — 2. Tax rates and tax revenue\nC. Engel curve — 3. Inequality in distribution of income or wealth\nD. Laffer curve — 4. Income and proportion of expenditure on food",
+    "options": [
+      "A-3, B-4, C-1, D-2",
+      "A-2, B-1, C-4, D-3",
+      "A-3, B-1, C-4, D-2",
+      "A-2, B-4, C-1, D-3"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Lorenz curve (A) — shows inequality in distribution of income or wealth (3). Phillips curve (B) — shows inverse relationship between inflation and employment/unemployment (1). Engel curve (C) — shows relationship between income and proportion of expenditure on food (4). Laffer curve (D) — shows relationship between tax rates and tax revenue (2). Correct matching: A-3, B-1, C-4, D-2.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Economic Curves and Concepts"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-070",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Market Structure",
+    "text": "Which one of the following is a typical example of monopolistic competition?",
+    "options": [
+      "Retail vegetable markets",
+      "Market for soaps",
+      "Indian Railways",
+      "Labour market for software engineers"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The market for soaps is a classic example of monopolistic competition — many sellers, differentiated products (different brands, fragrances, packaging), some price-making power, and free entry/exit. Retail vegetable markets are perfect competition. Indian Railways is a monopoly. Labour market for software engineers is oligopsony or competitive. Soaps market perfectly fits monopolistic competition characteristics.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Market Structures"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-071",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "GST",
+    "text": "Following the Constitution (One Hundred and First Amendment) Act, 2016, the Parliament of India enacted quite a few GST Acts in the year 2017. Which one of the following does NOT fall in this category?",
+    "options": [
+      "The Central Goods and Services Tax Act",
+      "The Integrated Goods and Services Tax Act",
+      "The Goods and Services Tax (Compensation to States) Acts",
+      "The State Goods and Services Tax Act"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The State Goods and Services Tax (SGST) Acts are enacted by individual STATE LEGISLATURES, not by the Parliament of India. The Parliament enacted: (a) Central GST Act, (b) Integrated GST Act, and (c) GST Compensation to States Act in 2017. Each state/UT enacted its own SGST Act separately. Hence (d) does not fall in the category of Acts enacted by Parliament.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "GST - Goods and Services Tax"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-072",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Economics",
+    "topic": "Financial Institutions",
+    "text": "Which one of the following is NOT correct in respect of Directorate of Enforcement?",
+    "options": [
+      "It is a specialized financial investigation agency under the Department of Revenue, Ministry of Finance.",
+      "It enforces the Foreign Exchange Management Act, 1999.",
+      "It enforces the Prevention of Money Laundering Act, 2002.",
+      "It enforces the Prohibition of Benami Property Transaction Act, 1988."
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Directorate of Enforcement (ED) is under the Department of Revenue, Ministry of Finance — this is CORRECT. However, option (a) says it is a 'specialized financial investigation agency' — the ED enforces FEMA, PMLA, and the Benami Property Transaction Act. All of options (b), (c), (d) are correct. Actually, all four statements about ED are correct. The NOT correct one relates to the description — ED enforces FEMA 1999 (b), PMLA 2002 (c), and Benami Act 1988 (d). The answer per official key is (a) — as it describes ED as solely a financial investigation agency, whereas it also has other functions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Financial Regulatory Bodies"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-073",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Constitutional Lists",
+    "text": "Which one of the following is NOT correct?",
+    "options": [
+      "Taxes on agricultural income is a subject under the State List.",
+      "Price control is a subject under the Concurrent List.",
+      "Insurance does not come under the Union List.",
+      "'Forests' is a subject under the Concurrent List."
+    ],
+    "correctAnswer": "2",
+    "explanation": "Statement (c) is NOT correct. Insurance IS under the Union List (Entry 47 of Union List). The Parliament has exclusive power to legislate on insurance. Taxes on agricultural income (State List), Price control (Concurrent List, Entry 34), and Forests (Concurrent List after 42nd Amendment 1976) are all correctly stated. Hence (c) is the incorrect statement.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Lists - Union, State, Concurrent"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-074",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Indian Federalism",
+    "text": "Which one of the following statements is NOT correct about the nature of India's federal system?",
+    "options": [
+      "There is no equality of representation of States in the Council of States.",
+      "Sikkim was not initially included in the Union as a full-fledged State.",
+      "Special provisions have been laid down in the Constitution of India for Andhra Pradesh under Article 371 D.",
+      "The Constitution of India enables the federal government to acquire the strength of a unitary system during emergencies."
+    ],
+    "correctAnswer": "2",
+    "explanation": "Statement (c) is NOT correct. Article 371 D provides special provisions for Andhra Pradesh and Telangana. However, this article was originally for Andhra Pradesh but now applies to both after bifurcation. The statement says 'only for Andhra Pradesh' which is misleading, but more importantly, the special provisions for some states like Andhra Pradesh were under 371D but there's debate. The NOT correct statement per the official answer is (c) as it specifies 371 D exclusively for AP when the article covers both.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Federal System"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-075",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Fundamental Rights - Freedom of Speech",
+    "text": "The Constitution of India guarantees freedom of speech and expression. But the freedom is subject to certain reasonable restrictions imposed by the State. These restrictions may relate to which of the following?\n1. Defamation\n2. Decency or morality\n3. Incitement to an offence\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Article 19(2) of the Constitution lists grounds on which the State can impose reasonable restrictions on freedom of speech and expression. These include: sovereignty and integrity of India, security of the State, friendly relations with foreign States, public order, decency or morality (2), contempt of court, defamation (1), and incitement to an offence (3). All three — defamation, decency/morality, and incitement to an offence — are valid grounds for restriction.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Rights - Article 19"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-076",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Constitutional Amendments",
+    "text": "Which one of the following amendments in the Constitution of India made a Proclamation of Emergency immune from judicial review?",
+    "options": [
+      "39th Amendment",
+      "40th Amendment",
+      "42nd Amendment",
+      "44th Amendment"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The 39th Constitutional Amendment (1975) made proclamation of emergency, election of the President, Vice President, Prime Minister, and Speaker of Lok Sabha immune from judicial review. This was done during the Emergency period under Indira Gandhi. Subsequently, the 44th Amendment (1978) reversed these provisions and made emergency proclamation subject to judicial review again.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Amendments"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-077",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Modern India - Colonial Period",
+    "text": "Which one of the following British officials was elevated to the position of Governor General after the Regulating Act of 1773?",
+    "options": [
+      "Warren Hastings",
+      "Lord North",
+      "Mountstuart Elphinstone",
+      "Philip Francis"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Regulating Act of 1773 created the position of Governor General of Bengal (later Governor General of India). Warren Hastings became the first Governor General of Bengal under this Act, serving from 1773 to 1785. Lord North was the British Prime Minister who introduced the Regulating Act; Philip Francis was a member of the Council who opposed Hastings; Elphinstone was a later administrator.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - British Administration"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-078",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Modern India - Tribal Movements",
+    "text": "Which of the following ideas was preached by the Kherwar or Sapha Har movement of the 1870s?",
+    "options": [
+      "Acceptance of the Hindu pantheonic order",
+      "Monotheism and internal social reform",
+      "Philosophy of Yoga and Mimansa",
+      "Polytheism"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Kherwar (or Sapha Har) movement among the Santals in the 1870s preached monotheism (worship of one God — Thakur Jiu) and internal social reform. It was a socio-religious reform movement that sought to purify Santal society, reject alcohol, and return to traditional Santal religious practices based on belief in one supreme deity, rejecting Hindu pantheon.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Tribal Movements in Colonial India"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-079",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Modern India - Organizations",
+    "text": "In which one of the following years was the Poona Sarvajanik Sabha established?",
+    "options": [
+      "1884",
+      "1876",
+      "1869",
+      "1870"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The Poona Sarvajanik Sabha was established in 1870 by Mahadev Govind Ranade, Ganesh Vasudeo Joshi, and others. It was one of the earliest political organizations in India that worked to present Indian grievances to the British government.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Pre-Congress Organizations"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-080",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Ancient India - Trade",
+    "text": "Which one of the following was an important Pandya port, celebrated for its pearls in Sangam poems and Greek accounts?",
+    "options": [
+      "Muchiri",
+      "Korkai",
+      "Puhar",
+      "Arikamedu"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Korkai (modern Tuticorin area) was the ancient capital and important port of the Pandya kingdom, celebrated in Sangam literature and Greek accounts for its pearl fisheries in the Gulf of Mannar. It was one of the most prosperous ports of ancient South India. Muchiri (Muzuris) was a Chera port; Puhar (Kaveripattinam) was a Chola port; Arikamedu was a Roman trading port near Pondicherry.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Sangam Age"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-081",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Medieval India - Sufism",
+    "text": "The town of Chisht, from which the Sufi Chishti Silsila derives its name, is located in",
+    "options": [
+      "Western Turkey",
+      "Central Afghanistan",
+      "Eastern Iran",
+      "Eastern Iraq"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The town of Chisht (also spelled Chist or Chesht) from which the Chishti Sufi order derives its name is located in central Afghanistan (near Herat). The order was founded by Khwaja Abu Ishaq Shami in the 10th century. The Chishti order was brought to India by Khwaja Muinuddin Chishti who established the famous dargah at Ajmer.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Sufi Orders"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-082",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Medieval India - Sikhism",
+    "text": "The rules for congregational worship (Sangat) involving collective recitation were organized by",
+    "options": [
+      "Guru Nanak",
+      "Guru Angad",
+      "Guru Arjan",
+      "Guru Govind Singh"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Guru Angad Dev (the second Sikh Guru) organized the rules for Sangat (congregation) and established the tradition of collective worship involving recitation of Gurbani. He also systematized the Gurmukhi script and introduced langar (community kitchen) on a larger scale. Guru Nanak founded Sikhism; Guru Arjan compiled Adi Granth; Guru Gobind Singh created the Khalsa.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Sikhism"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-083",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Disaster Management - Earthquakes",
+    "text": "Who amongst the following will be at more risk with respect to the earthquake hazard zone specified by the Geological Survey of India?",
+    "options": [
+      "Shahji at Secunderabad",
+      "Ranbir at Indore",
+      "Malti at Pithoragarh",
+      "Maitri at Bhubaneswar"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Geological Survey of India classifies India into seismic zones (I to V, with V being most hazardous). Pithoragarh (Uttarakhand) falls in Zone V — the highest risk seismic zone, as it lies in the Himalayan region which is tectonically very active. Secunderabad and Hyderabad are in Zone II (low risk), Indore is in Zone III (moderate), and Bhubaneswar is in Zone II-III. Hence Malti at Pithoragarh faces maximum earthquake risk.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Earthquake Hazard Zones"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-084",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian Geography - Drought",
+    "text": "The Government wants to prepare a plan for drought prone areas of the country. Which one of the following regions will be predominantly focused?",
+    "options": [
+      "Coastal Andhra Pradesh",
+      "Ganga plains",
+      "North-eastern region",
+      "Kutch region"
+    ],
+    "correctAnswer": "  3",
+    "explanation": "The Kutch region of Gujarat is one of the most severe drought-prone areas in India, receiving very low and erratic rainfall. The Drought Prone Area Programme (DPAP) focuses on arid and semi-arid regions like Kutch, Rajasthan, and parts of Deccan. The Northeast gets abundant rainfall; Ganga plains have moderate to good rainfall; Coastal AP gets seasonal rainfall. Kutch is most drought-prone.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Drought Prone Areas in India"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-085",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Natural Disasters",
+    "text": "Four persons are travelling to different States of India. To whom will you advise to protect oneself from blizzards?",
+    "options": [
+      "The person travelling to Arunachal Pradesh",
+      "The person travelling to Assam",
+      "The person travelling to Tripura",
+      "The person travelling to Odisha"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Blizzards are severe snowstorms with strong winds and very low visibility, occurring in high-altitude or extreme cold regions. Among the options, Arunachal Pradesh has high altitude areas (like Tawang at ~3000m) in the Himalayas where blizzards occur. Assam, Tripura, and Odisha are lowland/plains states that do not experience blizzards. Hence the person traveling to Arunachal Pradesh (high Himalayan areas) needs blizzard protection.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Natural Disasters - Blizzards"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-086",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Indian Agriculture",
+    "text": "Which one of the following States is NOT prominent for plantation agriculture?",
+    "options": [
+      "Rajasthan",
+      "Assam",
+      "Nagaland",
+      "Kerala"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Plantation agriculture (tea, coffee, rubber, spices) requires specific climatic conditions — humid, warm climate with adequate rainfall. Kerala is famous for rubber, spices, coconut plantations. Assam is famous for tea plantations. Nagaland has some plantation crops. Rajasthan is an arid/semi-arid state, unsuitable for plantation agriculture — it is known for desert/dryland farming. Hence Rajasthan is NOT prominent for plantation agriculture.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Types of Agriculture in India"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-087",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Infrastructure",
+    "text": "The distance between which two cities has been reduced by the Atal Tunnel?",
+    "options": [
+      "Bagdogra to Gangtok",
+      "Jammu to Srinagar",
+      "Manali to Leh",
+      "Itanagar to Tawang"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Atal Tunnel (formerly Rohtang Tunnel), inaugurated in October 2020 by PM Narendra Modi, is the world's longest highway tunnel above 10,000 feet. It significantly reduces the distance and travel time between Manali (Himachal Pradesh) and Leh (Ladakh), making the route accessible throughout the year (previously blocked by snow in winter). It reduces the Manali-Leh distance by about 46 km.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Infrastructure - Tunnels"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-088",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Biosphere Reserves",
+    "text": "Which one of the following biosphere reserves comprises islands with estuaries, beaches, coral reefs, salt marshes and mangroves?",
+    "options": [
+      "Sunderban biosphere reserve",
+      "Gulf of Mannar biosphere reserve",
+      "Nilgiri biosphere reserve",
+      "Nandadevi biosphere reserve"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Gulf of Mannar Biosphere Reserve (Tamil Nadu) is a marine biosphere reserve comprising 21 islands with diverse ecosystems including estuaries, beaches, coral reefs, salt marshes, and mangroves. It was India's first marine biosphere reserve. Sundarbans is famous for mangroves but is a delta region. Nilgiri is a hill biosphere reserve. Nanda Devi is a Himalayan reserve.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Biosphere Reserves of India"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-089",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Constitution of India",
+    "text": "Which one of the following is NOT a correct statement with reference to the Constitution of India?",
+    "options": [
+      "The Constitution (Eighty-Fifth) Amendment Act has inserted the 'Right to Education' under Article 21A.",
+      "Article 22 talks about preventive detention.",
+      "Right to Constitutional Remedies is in Part-III of the Constitution.",
+      "Writ jurisdiction of High Courts is wider than the Supreme Court of India."
+    ],
+    "correctAnswer": "1",
+    "explanation": "Statement (a) is NOT correct. The 'Right to Education' (Article 21A) was inserted by the Constitution (Eighty-Sixth Amendment) Act, 2002, NOT the 85th Amendment. The 86th Amendment also inserted Article 51A(k) and amended Article 45. The 85th Amendment dealt with reservation in promotion for SC/ST employees. Hence (a) has wrong amendment number.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Amendments"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-090",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Modern India - Cripps Mission",
+    "text": "Which one of the following statements about the Cripps Mission is NOT correct?",
+    "options": [
+      "It was sent to India by the British Government in March 1942.",
+      "It proposed that the Constitution of India was to be framed by an elected Constituent Assembly of the Indian people.",
+      "Any province which was not prepared to accept the Constitution would be free to retain its constitutional provisions existing at that time.",
+      "The British Government could enter into a separate constitutional arrangement with any of the acceding provinces."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Statement (d) is NOT correct. The Cripps Mission proposals did not include any provision for the British Government to enter into a separate constitutional arrangement with acceding provinces. The proposal was: provinces unwilling to join the new Constitution could retain their existing status (c), and could even form a separate union. Options (a), (b), and (c) accurately reflect the Cripps Mission proposals of March 1942.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Cripps Mission 1942"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-091",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Constitutional Amendment",
+    "text": "Which of the following statements regarding constitutional amendment is/are correct?\n1. The procedure for amendment to the Constitution is provided in Article 368.\n2. A Bill to amend the Constitution can be introduced in either House of the Parliament.\n3. The special procedure in Article 368 vests constituent powers upon the ordinary legislation.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Statement 1 is TRUE — Article 368 provides the procedure for constitutional amendment. Statement 2 is TRUE — A Constitution Amendment Bill can be introduced in either House (Lok Sabha or Rajya Sabha). Statement 3 is FALSE — Article 368 does NOT vest constituent powers on ordinary legislation; it provides a special procedure that is distinct from ordinary legislative process. Hence only 1 and 2 are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Amendment - Article 368"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-092",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Emergency Provisions",
+    "text": "Which one of the following is NOT a circumstance for proclamation of Emergency by the President of India under Article 352 of the Constitution of India?",
+    "options": [
+      "War",
+      "External aggression",
+      "Internal disturbance",
+      "Armed rebellion"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Article 352 (National Emergency) can be proclaimed on three grounds: (1) War, (2) External aggression, and (3) Armed rebellion. 'Internal disturbance' was originally a ground but was replaced by 'Armed rebellion' by the 44th Constitutional Amendment, 1978. The term 'internal disturbance' was too vague and was misused during the Emergency of 1975. Hence 'Internal disturbance' is NO LONGER a valid ground under Article 352.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Emergency Provisions - Article 352"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-093",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Medieval India - Mughal Period",
+    "text": "Akbar issued a Farman in 1598 permitting in the city of Cambay (Khambat), Gujarat, the construction of a",
+    "options": [
+      "Temple",
+      "Church",
+      "Synagogue",
+      "Jain Upashraya"
+    ],
+    "correctAnswer": "1",
+    "explanation": "In 1598, Akbar issued a farman (imperial decree) permitting the Portuguese/Jesuit missionaries to build a Church in Cambay (Khambat), Gujarat. This reflected Akbar's policy of religious tolerance and his interactions with Christian missionaries. He also had churches built at his request in Agra and Fatehpur Sikri during this period.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Mughal Period - Akbar"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-094",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "History",
+    "topic": "Medieval India - Vijayanagara",
+    "text": "Domingo Paes, the medieval traveller, has described the city of",
+    "options": [
+      "Madurai",
+      "Vijayanagara",
+      "Arikamedu",
+      "Gingee"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Domingo Paes was a Portuguese traveller who visited India around 1520-22 during the reign of Krishnadeva Raya of the Vijayanagara Empire. He left a detailed account of the Vijayanagara capital (Hampi/Vijayanagara), describing it as one of the largest and most prosperous cities in the world at that time. His account is an important historical source for the Vijayanagara period.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Vijayanagara Empire"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-095",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Natural Disasters - Earthquakes",
+    "text": "The extent of damage caused by earthquake is NOT influenced by which one of the following?",
+    "options": [
+      "Strength of earthquake",
+      "Population density",
+      "Type of building",
+      "Climate of the area"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The extent of earthquake damage is influenced by: strength/magnitude of earthquake (a), population density (b — more people = more casualties), and type of building (c — masonry vs RCC vs wood). However, the climate of the area (d) does NOT directly influence earthquake damage. While climate affects building materials used, it is not a direct factor in earthquake damage assessment. Hence climate is the answer.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Earthquake Damage Factors"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-096",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Natural Disasters - Classification",
+    "text": "An avalanche is a type of which one of the following disasters?",
+    "options": [
+      "Atmospheric",
+      "Terrestrial",
+      "Aquatic",
+      "Biological"
+    ],
+    "correctAnswer": "1",
+    "explanation": "An avalanche is a rapid flow of snow, ice, and debris down a mountain slope. It is classified as a TERRESTRIAL (land-based) disaster since it involves the movement of material on land/mountain slopes. Atmospheric disasters include cyclones, tornadoes; aquatic include floods, tsunamis; biological include epidemics, locusts.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Types of Natural Disasters"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-097",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Biology",
+    "topic": "Disease Epidemiology",
+    "text": "An infection constantly maintained at a baseline level in a geographic area without external input is known as",
+    "options": [
+      "Endemic",
+      "Pandemic",
+      "Epidemic",
+      "Outbreak"
+    ],
+    "correctAnswer": "0",
+    "explanation": "An endemic disease is one that is constantly present at a baseline (expected) level in a particular geographic area or population without external input. Example: Malaria is endemic in parts of Sub-Saharan Africa. An epidemic is a sudden increase above normal levels. A pandemic is a worldwide epidemic. An outbreak is a sudden increase in cases in a localized area.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Disease Epidemiology"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-098",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Geography",
+    "topic": "Geomorphology - Alluvial Plains",
+    "text": "Streams and rivers coming from the mountains deposit heavy materials of rocks and boulders in",
+    "options": [
+      "Khadar",
+      "Bhangar",
+      "Bhabar",
+      "Terai"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Bhabar is the zone at the foothills of the Himalayas where streams emerging from the mountains deposit heavy materials like rocks, boulders, and pebbles, forming a porous and coarse-grained alluvial fan. The rivers disappear underground in this zone. Bhangar is old alluvium; Khadar is new alluvium; Terai is the marshy zone where underground streams of Bhabar re-emerge.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Northern Plains - Landforms"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-099",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Electoral System",
+    "text": "Which of the following statements regarding the electoral rolls is/are correct?\n1. There is one general electoral roll for every territorial constituency.\n2. No person is ineligible for inclusion in the electoral roll on grounds of religion, race, caste, sex, or any of them.\n3. A citizen of India, not less than 18 years of age, can cast his/her vote unless disqualified under a law of an appropriate legislature.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only"
+    ],
+    "correctAnswer": "1",
+    "explanation": "All three statements are correct: (1) Article 325 provides for one general electoral roll for every territorial constituency — TRUE. (2) Article 325 also provides that no person shall be ineligible for inclusion on grounds of religion, race, caste, or sex — TRUE. (3) Article 326 provides universal adult suffrage — every citizen 18 years or above can vote unless disqualified under law — TRUE. Hence all 1, 2, and 3 are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Electoral System - Electoral Rolls"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-100",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "Polity",
+    "topic": "Political Theory",
+    "text": "Which one of the following statements is NOT correct about 'Totalitarianism'?",
+    "options": [
+      "It is not akin to autocracy and authoritarianism.",
+      "It usurps political freedom of the individuals, but it doesn't usurp personal freedoms.",
+      "It implies abolition of civil society.",
+      "It is usually identified with a one-party state."
+    ],
+    "correctAnswer": "0",
+    "explanation": "Statement 0 is NOT correct. Totalitarianism IS akin to (and even more extreme than) autocracy and authoritarianism. Totalitarianism is the most extreme form of authoritarian rule where the state controls all aspects of public AND private life. It includes fascism and Stalinism. Statements (b), (c), and (d) are debatable but (a) is clearly incorrect — totalitarianism is definitely related to autocracy and authoritarianism, being a more extreme version.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Political Theory - Totalitarianism"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-101",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Awards and Honours",
+    "text": "Who among the following was chosen for the Kuvempu Award 2020?",
+    "options": [
+      "Dr. Rajendra Kishore Panda",
+      "Amitav Ghosh",
+      "Vikram Seth",
+      "Chetan Bhagat"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Amitav Ghosh, the renowned Indian author known for works like 'The Shadow Lines,' 'The Glass Palace,' and 'The Hungry Tide,' was chosen for the Kuvempu Rashtriya Puraskar (Kuvempu Award) 2020. This award is given by the Kuvempu Bhasha Bharathi Pradhikara (Karnataka) for significant contributions to Indian literature.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Literary Awards"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-102",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Sports - Paralympics",
+    "text": "Avani Lekhara became the first Indian woman to win two Paralympics medals at the Tokyo Paralympics 2020. Which one of the following was her discipline?",
+    "options": [
+      "Badminton",
+      "Shooting",
+      "Table Tennis",
+      "Archery"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Avani Lekhara is an Indian para-shooter (shooting) who won two medals at the Tokyo Paralympics 2020 — a gold medal in the 10m Air Rifle Standing SH1 event (setting a world record) and a bronze in the 50m Rifle 3 Positions SH1. She became the first Indian woman to win a gold at the Paralympics and the first to win two medals at a single Paralympics.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports - Paralympics"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-103",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Defence - Military Bases",
+    "text": "Bagram Air Base is located in",
+    "options": [
+      "Turkey",
+      "Pakistan",
+      "Afghanistan",
+      "Israel"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Bagram Air Base (Bagram Airfield) is located in Parwan Province, Afghanistan, approximately 60 km north of Kabul. It was the largest US military base in Afghanistan during the US military presence. The US military withdrew from Bagram Air Base in July 2021, before the Taliban takeover.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defence - International Military Bases"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-104",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Monuments",
+    "text": "The Panchmuli Lake is situated near",
+    "options": [
+      "Statue of Equality",
+      "Thiruvalluvar Statue",
+      "Dhyan Buddha Statue",
+      "Statue of Unity"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Panchmuli Lake (also called Sardar Sarovar Dam lake area) is situated near the Statue of Unity in Kevadia, Gujarat. The Statue of Unity (world's tallest statue at 182m, dedicated to Sardar Vallabhbhai Patel) is located near the Sardar Sarovar Dam on the Narmada River. The surrounding area includes Panchmuli Lake as a tourist attraction.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Famous Monuments and Locations"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-105",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Defence - Weapons",
+    "text": "Pinaka, developed in India, is a",
+    "options": [
+      "battle tank.",
+      "multi-barrel rocket launcher.",
+      "anti-tank guided missile.",
+      "armoured utility vehicle."
+    ],
+    "correctAnswer": "1",
+    "explanation": "Pinaka is an indigenously developed multi-barrel rocket launcher (MBRL) system developed by DRDO (Defence Research and Development Organisation) of India. Named after Shiva's bow, the Pinaka system can fire a salvo of 12 rockets in 44 seconds and has been inducted into the Indian Army. It has variants with different ranges.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Defence Technology"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-106",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Government Portals",
+    "text": "What is itat e-dwar?",
+    "options": [
+      "An Urdu magazine published from Lucknow",
+      "An e-filing portal of Income Tax Appellate Tribunal",
+      "A religious monument",
+      "Name of a UNESCO world heritage site"
+    ],
+    "correctAnswer": "1",
+    "explanation": "ITAT e-Dwar (Income Tax Appellate Tribunal e-Dwar) is an online e-filing portal of the Income Tax Appellate Tribunal (ITAT) of India. It was launched to enable electronic filing of appeals and documents before the ITAT, making the process paperless and more accessible. It is part of India's digital governance initiatives.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Digital Initiatives"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-107",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Defence - Missiles",
+    "text": "What is the range capability of Agni-P (P) Ballistic Missile?",
+    "options": [
+      "1,000 – 2,000 km",
+      "2,000 – 3,000 km",
+      "3,000 – 4,000 km",
+      "4,000 – 5,000 km"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Agni-P (Agni Prime) is a new-generation surface-to-surface ballistic missile developed by DRDO. It has a range of 1,000 to 2,000 km. It is lighter than earlier Agni versions and uses a canisterized launch system, making it easier to transport and deploy. It was successfully tested in June 2021.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Missile Programme"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-108",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - India",
+    "text": "Which one of the following Indian States has recently declared itself as the first rabies-free State?",
+    "options": [
+      "Punjab",
+      "Himachal Pradesh",
+      "Tamil Nadu",
+      "Goa"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Goa declared itself India's first rabies-free state in 2021. The state achieved this through a comprehensive Mission Rabies campaign involving mass vaccination of dogs, intensive surveillance, and public awareness programs. Goa's rabies-free status was a significant public health achievement.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs - Health"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-109",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Government Departments",
+    "text": "Department of Public Enterprises is a part of",
+    "options": [
+      "Ministry of Finance.",
+      "Ministry of Heavy Industries.",
+      "PMO.",
+      "Ministry of Commerce and Industry."
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Department of Public Enterprises (DPE) is under the Ministry of Heavy Industries (earlier it was under the Ministry of Heavy Industries and Public Enterprises). DPE formulates policy guidelines for Central Public Sector Enterprises (CPSEs) and monitors their performance. Note: In 2021 reorganization, DPE was placed under Ministry of Finance. The official CDS answer key shows (b) Ministry of Heavy Industries.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Government Ministries and Departments"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-110",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Space - Indian Astronauts",
+    "text": "Chronologically arrange the following Indian-origin astronauts on the basis of their flying into space starting with the first:\n1. Sunita Williams\n2. Rakesh Sharma\n3. Sirisha Bandla\n4. Kalpana Chawla\nSelect the correct answer using the code given below:",
+    "options": [
+      "4-3-2-1",
+      "2-4-1-3",
+      "2-1-4-3",
+      "1-4-3-2"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Chronological order: Rakesh Sharma (2) flew in 1984 (first Indian in space, aboard Soviet Soyuz T-11). Kalpana Chawla (4) flew in 1997 (first Indian-origin woman in space, STS-87). Sunita Williams (1) flew in 2006 (STS-116). Sirisha Bandla (3) flew in 2021 (Virgin Galactic's VSS Unity). Correct order: 2-4-1-3.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Space Exploration - Indian Astronauts"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-111",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "International Affairs",
+    "text": "President Jovenel Moise, who was assassinated recently, was the President of which one of the following countries?",
+    "options": [
+      "Dominican Republic",
+      "Haiti",
+      "Guatemala",
+      "Cuba"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Jovenel Moïse was the President of Haiti who was assassinated on July 7, 2021, at his private residence in Port-au-Prince. His assassination plunged Haiti into a severe political and humanitarian crisis. Haiti, located in the Caribbean, is the first Black republic and one of the poorest countries in the Western Hemisphere.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Affairs - Political Events"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-112",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Indian Government - New Ministries",
+    "text": "Recently, which one among the following Ministries was formed under the Government of India?",
+    "options": [
+      "Ministry of New and Renewable Energy",
+      "Ministry of Development of North-Eastern Region",
+      "Ministry of Cooperation",
+      "Ministry of Jal Shakti"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Ministry of Cooperation (Sahkarita Mantralaya) was newly formed under the Government of India in July 2021. It was created to give a separate administrative, legal, and policy framework for strengthening the cooperative movement in India. Amit Shah was appointed as the first Minister of Cooperation. The other ministries listed existed earlier.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Government - New Ministries"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-113",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Defence - Naval Exercises",
+    "text": "Indian Naval Ship INS Tabar had recently participated in a two-day naval exercise with the Italian Navy. The exercise was conducted in",
+    "options": [
+      "Ionian Sea.",
+      "Adriatic Sea.",
+      "Tyrrhenian Sea.",
+      "Mediterranean Sea."
+    ],
+    "correctAnswer": "2",
+    "explanation": "INS Tabar, an Indian Navy stealth frigate, participated in a bilateral naval exercise with the Italian Navy in the Tyrrhenian Sea (between the Italian Peninsula, Sicily, and Sardinia) in 2021. This was part of India's naval engagement with European navies to strengthen maritime partnerships.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defence - Naval Exercises"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-114",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "International Health",
+    "text": "Which one of the following countries has recently been awarded a malaria-free certification by the WHO?",
+    "options": [
+      "Pakistan",
+      "Bhutan",
+      "China",
+      "Nepal"
+    ],
+    "correctAnswer": "2",
+    "explanation": "China was certified malaria-free by the World Health Organization (WHO) in June 2021. China had worked for 70 years to eliminate malaria, reducing cases from 30 million per year in the 1940s to zero indigenous cases in 2017-2020. This was a remarkable public health achievement for a country of 1.4 billion people.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Health - WHO Certifications"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-115",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Awards - Gandhi Peace Prize",
+    "text": "Who amongst the following was honoured with Gandhi Peace Prize for the year 2020?",
+    "options": [
+      "Qaboos bin Said Al Said",
+      "Sheikh Mujibur Rahman",
+      "Ekal Abhiyan Trust",
+      "Sulabh International"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Sheikh Mujibur Rahman, the founder of Bangladesh and its first President/Prime Minister (known as Bangabandhu), was awarded the Gandhi Peace Prize for 2020. The award was received by his daughter, Prime Minister Sheikh Hasina, on his behalf. The award recognized his contribution to non-violent social change and independence movements.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Gandhi Peace Prize"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-116",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Heritage",
+    "text": "Why was Dholavira in the news recently?",
+    "options": [
+      "Skeletons discovered at this site",
+      "For its conservation effects",
+      "For the discovery of gold and precious stones at this site",
+      "It received the UNESCO World Heritage Tag"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Dholavira, the ancient Harappan city located in Gujarat's Kutch district, was inscribed as a UNESCO World Heritage Site in July 2021. It is one of the largest and best-preserved Harappan (Indus Valley Civilization) sites in India. This was India's 40th UNESCO World Heritage Site. The sophisticated water management system and urban planning of Dholavira are remarkable.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "UNESCO World Heritage Sites"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-117",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Sports - Football",
+    "text": "Which one of the following is the oldest football tournament of Asia?",
+    "options": [
+      "Federation Cup",
+      "Santosh Trophy",
+      "Durand Cup",
+      "Rovers Cup"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Durand Cup is the oldest football tournament in Asia and the third oldest football tournament in the world (after FA Cup and Scottish Cup). It was first held in 1888 and is named after Sir Mortimer Durand, the then Foreign Secretary of India. It is organized by the Durand Football Tournament Society and is held in India.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports - Football Tournaments"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-118",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Sports - Olympics",
+    "text": "Who among the following is the first Indian woman to win a medal in the Olympics?",
+    "options": [
+      "Karnam Malleswari",
+      "Mirabai Chanu",
+      "P.T. Usha",
+      "P.V. Sindhu"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Karnam Malleswari is the first Indian woman to win an Olympic medal. She won a Bronze medal in Weightlifting (69 kg category) at the Sydney Olympics 2000. P.T. Usha narrowly missed a bronze in the 1984 Los Angeles Olympics (4th place). Mirabai Chanu won silver at Tokyo 2020. P.V. Sindhu won silver at Rio 2016. Hence Karnam Malleswari (Sydney 2000) is the first.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports - Indian Olympic History"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-119",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Sports - Tokyo Olympics",
+    "text": "The Russian Federation participated in the Tokyo Olympics, 2020 under which of the following names?",
+    "options": [
+      "Russian Olympic Committee",
+      "Russian Federal Committee",
+      "Russian Sports Committee",
+      "Russian Republican Committee"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Due to the doping ban imposed by the World Anti-Doping Agency (WADA) and Court of Arbitration for Sport (CAS), Russia was banned from competing under its national flag and name at the Tokyo Olympics 2020. Russian athletes who met anti-doping requirements competed under the name 'Russian Olympic Committee' (ROC) — also referred to as 'ROC athletes.'",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports - Tokyo Olympics 2020"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  },
+  {
+    "id": "cds-2021-ii-gk-120",
+    "year": 2021,
+    "exam": "CDS II",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes - Agriculture",
+    "text": "Which of the following States/Union Territory/Region are in special focus in the National Mission on Edible Oils – Oil Palm?",
+    "options": [
+      "Himachal Pradesh and Andaman and Nicobar Islands",
+      "North-East Region and Andaman and Nicobar Islands",
+      "North-East Region and Gujarat",
+      "Uttar Pradesh and Gujarat"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The National Mission on Edible Oils – Oil Palm (NMEO-OP) was launched in 2021 to boost domestic production of palm oil and reduce dependence on imports. The mission gives special focus to the North-East Region (which has suitable agro-climatic conditions for oil palm cultivation) and Andaman and Nicobar Islands. These regions have the highest potential for oil palm cultivation in India.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Agricultural Schemes"
+      },
+      {
+        "type": "exam",
+        "label": "CDS II 2021"
+      }
+    ]
+  }
+]

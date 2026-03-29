@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "cisf-2025-q1",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following elements is higher in concentration in a human body?",
+    "options": [
+      "Hydrogen",
+      "Carbon",
+      "Nitrogen",
+      "Oxygen"
+    ],
+    "correctAnswer": 3,
+    "explanation": "By mass, oxygen is the most abundant element in the human body, making up about 65% of body weight (mostly as part of water).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q2",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following category of plants has naked seeds that are not enclosed by ovary walls?",
+    "options": [
+      "Angiosperms",
+      "Gymnosperms",
+      "Pteridophytes",
+      "Bryophytes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gymnosperms are a group of seed-producing plants that have 'naked seeds', meaning their seeds are not enclosed within an ovary (fruit), unlike angiosperms.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q3",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one among the following animal groups can regulate their body temperatures regardless of their environment?",
+    "options": [
+      "Reptiles and mammals",
+      "Mammals and birds",
+      "Amphibians and reptiles",
+      "Birds and amphibians"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mammals and birds are endothermic (warm-blooded), meaning they can maintain a constant internal body temperature regardless of the external environmental temperature.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q4",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which of the following are the major constituents of dry air in the lower atmosphere?",
+    "options": [
+      "Water vapour and oxygen",
+      "Nitrogen and oxygen",
+      "Nitrogen, oxygen and methane",
+      "Nitrogen, oxygen, water vapour and methane"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The major constituents of dry air in the Earth's lower atmosphere are Nitrogen (approx. 78%) and Oxygen (approx. 21%).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q5",
+    "year": 2025,
+    "subject": "Environment",
+    "topic": "Wildlife Conservation",
+    "text": "Which one of the following is the habitat for the Great Indian Bustard?",
+    "options": [
+      "Freshwater ecosystem",
+      "Arid ecosystem",
+      "Coastal ecosystem",
+      "Himalayan ecosystem"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Great Indian Bustard primarily inhabits arid and semi-arid grasslands, short-grass plains, and scrublands, mostly found in Rajasthan and Gujarat.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Wildlife Conservation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q6",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "If for some positive integer k, 5^43 + 5^k is divisible by 7, then which one of the following could be the value of k?",
+    "options": [
+      "42",
+      "44",
+      "46",
+      "48"
+    ],
+    "correctAnswer": 2,
+    "explanation": "5^43 mod 7 leaves a remainder of 5. For the sum to be divisible by 7, 5^k must leave a remainder of 2 (since 5+2=7). The powers of 5 mod 7 follow a cycle of 6: 5^1=5, 5^2=4, 5^3=6, 5^4=2, 5^5=3, 5^6=1. Since 5^4 leaves a remainder of 2, k must be in the form 6n + 4. Among the options, only 46 satisfies this condition (46 = 6*7 + 4).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q7",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "If operation * on the set of integers is defined as x*y = 2x + y - xy, then (3*2)*(2*1) is:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "First find (3*2): 2(3) + 2 - (3)(2) = 6 + 2 - 6 = 2. Next find (2*1): 2(2) + 1 - (2)(1) = 4 + 1 - 2 = 3. Now compute 2*3: 2(2) + 3 - (2)(3) = 4 + 3 - 6 = 1.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q8",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "The number of four-digit even numbers formed by the digits 0, 2, 4, 6, 8 without repetition is :",
+    "options": [
+      "12",
+      "24",
+      "48",
+      "96"
+    ],
+    "correctAnswer": 3,
+    "explanation": "We need a 4-digit number using digits 0, 2, 4, 6, 8. All given digits are even, so any number formed will be even. The thousands digit cannot be 0, so there are 4 choices (2, 4, 6, 8). The hundreds digit has 4 remaining choices (including 0). The tens digit has 3 choices. The units digit has 2 choices. Total = 4 * 4 * 3 * 2 = 96.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q9",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "The marked price (x) of an item is increased by 10% and subsequently decreased by 15%. If the final price is y, then:",
+    "options": [
+      "x=y",
+      "x<y",
+      "x>y",
+      "Cannot be determined"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let initial price be x = 100. Increased by 10% = 110. Decreased by 15% = 110 - (0.15 * 110) = 110 - 16.5 = 93.5. So y = 0.935x. Thus, x > y.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q10",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Profit and Loss",
+    "text": "Ten (10) items of a product are sold for 100 at 10% profit. If 12 items of the same product are sold for 100, then the gain/loss (in %) would be:",
+    "options": [
+      "8 1/3% gain",
+      "10% gain",
+      "8 1/3% loss",
+      "10% loss"
+    ],
+    "correctAnswer": 2,
+    "explanation": "SP of 10 items = 100. Profit = 10%. CP of 10 items = 100 / 1.10 = 1000/11. CP of 1 item = 100/11. CP of 12 items = 12 * (100/11) = 1200/11 (approx 109.09). SP of 12 items = 100. Loss = (1200/11) - 100 = 100/11. Loss % = (Loss / CP) * 100 = ((100/11) / (1200/11)) * 100 = 100/12 = 8.33%, which is 8 1/3% loss.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Profit and Loss" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q11",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Fundamental Duties",
+    "text": "Consider the following:\n1. Respect the National Song of India\n2. Renounce practices derogatory to the dignity of women\n3. Abjure violence\n4. Render military service when called upon to do so\nWhich of the above is/are Fundamental Duties under the Constitution of India?",
+    "options": [
+      "1 only",
+      "2 and 3",
+      "3 and 4",
+      "2 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 51A explicitly states to 'renounce practices derogatory to the dignity of women' and to 'abjure violence'. It mentions respecting the National Flag and National Anthem (but not explicitly the National Song). It also states to 'render national service' (not exclusively framed as military service). Therefore, 2 and 3 are explicitly exact fundamental duties.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Duties" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q12",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Statutory Bodies",
+    "text": "Which of the following statements is/are correct about the National Human Rights Commission, India (NHRC)?\n1. It is a constitutional body.\n2. Chairperson of NHRC has to be a former Chief Justice of India.\n3. There shall be at least one woman member of NHRC.",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "2 only",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statement 1 is incorrect; NHRC is a statutory body. Statement 2 is incorrect; post the 2019 amendment, the Chairperson can be a former CJI or a former judge of the Supreme Court. Statement 3 is correct; the 2019 amendment mandated that out of three members with human rights knowledge, at least one must be a woman.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Statutory Bodies" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q13",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Tribunals",
+    "text": "Which of the following statements about the Central Administrative Tribunal (CAT) is/are correct?\n1. Its orders can be challenged before a High Court.\n2. It has the same power like a High Court in respect of contempt of itself.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Following the L. Chandra Kumar case, CAT orders are subject to judicial review by High Courts. Furthermore, Section 17 of the Administrative Tribunals Act, 1985 confers on the Tribunal the same power to punish for contempt as a High Court.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Tribunals" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q14",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which of the following statements with reference to the Constitution of India is/are correct?\n1. It is obligatory on the part of every foreigner who is in India to observe Fundamental Duties given in the Constitution of India.\n2. Some Fundamental Rights, given in the Constitution of India, are available to foreign nationals who are in India.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect because Fundamental Duties (Article 51A) apply exclusively to citizens of India. Statement 2 is correct as certain Fundamental Rights (like Articles 14, 20, 21) are available to both citizens and foreigners.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q15",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Directive Principles of State Policy",
+    "text": "Which of the following statements about the Directive Principles of State Policy (DPSPs) under the Constitution of India is/are correct?\n1. DPSPs strive to minimise inequalities of income amongst individuals and groups.\n2. They strive to minimise inequalities of status amongst individuals and groups.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Article 38(2) explicitly directs the State to strive to minimize the inequalities in income, and endeavor to eliminate inequalities in status, facilities, and opportunities amongst individuals and groups.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Directive Principles of State Policy" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q16",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Tribal Uprisings",
+    "text": "In the Revolt of 1857, the Kol tribals of Chotanagpur were led by:",
+    "options": [
+      "Gonoo",
+      "Birjis",
+      "Shah Mal",
+      "Maulvi Ahmadullah Shah"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Gonoo was a key leader of the Kol tribals in the Singhbhum region who actively participated against the British during the 1857 uprising.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Tribal Uprisings" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q17",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "In the ancient Sanskrit literature, the name 'Pragjyotisha' was used as a designation for:",
+    "options": [
+      "Assam",
+      "Odisha",
+      "Manipur",
+      "Bihar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pragjyotisha was an ancient mythological and historical kingdom that is largely identified with modern-day Assam.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q18",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following was the capital of Travancore in the 18th century?",
+    "options": [
+      "Calicut",
+      "Chirakkal",
+      "Trivandrum",
+      "Cochin"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In 1795, the capital of the Kingdom of Travancore was officially moved from Padmanabhapuram to Trivandrum (Thiruvananthapuram).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q19",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one among the following is not included among the mahajanapadas in the early Buddhist literature?",
+    "options": [
+      "Vajji",
+      "Kalinga",
+      "Gandhara",
+      "Avanti"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to the early Buddhist text Anguttara Nikaya, there were 16 Mahajanapadas. Vajji, Gandhara, and Avanti are included in this list, but Kalinga is typically not considered one of the 16 primary Mahajanapadas.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q20",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Literature",
+    "text": "The Dhammapada is a part of:",
+    "options": [
+      "Majjhima Nikaya",
+      "Vinaya Pitaka",
+      "Khuddaka Nikaya",
+      "Jatakas"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Dhammapada is a collection of sayings of the Buddha in verse form and is one of the most widely read Buddhist scriptures. It is a part of the Khuddaka Nikaya of the Sutta Pitaka.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Literature" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q21",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements with reference to the evolution of the Lithosphere is/are correct?\n1. Due to the gradual increase in density, the temperature inside the Earth had increased.\n2. In the process of evolution, the material inside the Earth started getting separated depending upon their densities.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. During the Earth's formation, an increase in density and internal heat caused the materials inside the Earth to melt and separate according to their density (a process known as differentiation), creating the core, mantle, and crust.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q22",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements with reference to ocean crust is/are correct?\n1. The ocean crust rocks are much younger than the continental rocks.\n2. The ocean crust rocks equidistant on either side of the crest of mid-oceanic ridges show similarities in terms of magnetic properties.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The oceanic crust is continuously being created at mid-ocean ridges and destroyed at subduction zones, making it much younger than continental crust. The symmetrical magnetic striping on either side of mid-ocean ridges is a key proof of sea-floor spreading.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q23",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements with reference to the Indian Tectonic Plate is/are correct?\n1. The subduction zone along the Himalayas, forms its northern boundary.\n2. The eastern margin is a spreading site, lying to the west of Australia in the form of an oceanic ridge in Southwest Pacific Ocean.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct; the northern boundary of the Indian Plate is a convergent (subduction) zone with the Eurasian Plate. Statement 2 is incorrect; the eastern margin involves a subduction zone (Myanmar/Sunda trench), while spreading sites are located on the southern/south-western boundary in the Indian Ocean.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q24",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements with reference to mantle is/are correct?\n1. Moho's discontinuity is at the uppermost part of the mantle.\n2. The lower portion of the mantle is called the asthenosphere.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct; the Mohorovičić (Moho) discontinuity separates the crust from the uppermost mantle. Statement 2 is incorrect; the asthenosphere represents the upper, ductile portion of the mantle, not the lower portion.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q25",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements with reference to tides is/are correct?\n1. The time between the low tide and high tide, when the tide is rising, is called the flow or flood.\n2. Tides are helpful in desilting the sediments.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The incoming or rising tide is called the flood tide. The strong currents created by tidal ebbs and flows also help in flushing out and desilting estuaries and ports.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q26",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian River System",
+    "text": "Which one of the following rivers marks the western boundary of the Ganga Plains?",
+    "options": [
+      "Chambal",
+      "Ghaggar",
+      "Luni",
+      "Yamuna"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Yamuna river generally marks the western boundary of the Ganga Plains, acting as a physical divide between the Indus and Ganga river systems.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian River System" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q27",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which one of the following radiations is absorbed by the greenhouse gases?",
+    "options": [
+      "Ultraviolet rays of Sun",
+      "Radio waves",
+      "Infrared radiation",
+      "Sound radiation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Greenhouse gases in the Earth's atmosphere primarily absorb and re-emit long-wave infrared radiation radiating from the Earth's surface.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q28",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "One horsepower is equal to:",
+    "options": [
+      "100 W",
+      "1000 W",
+      "746 W",
+      "786 W"
+    ],
+    "correctAnswer": 2,
+    "explanation": "One mechanical horsepower is universally equivalent to exactly 746 watts.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q29",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "If the volume of a fixed mass of an ideal gas is halved at a constant temperature, the pressure inside the container would:",
+    "options": [
+      "be doubled",
+      "be halved",
+      "remain the same",
+      "be one-fourth"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to Boyle's Law, at a constant temperature, the pressure of a fixed mass of gas is inversely proportional to its volume (P1V1 = P2V2). Halving the volume doubles the pressure.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q30",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Dioptre is the unit of:",
+    "options": [
+      "diffusion rate",
+      "power of lens",
+      "dipole moment",
+      "intensity of light"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A dioptre is the standard unit of measurement for the optical power of a lens or curved mirror, equal to the reciprocal of the focal length measured in metres.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q31",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements is correct for carbon chains?",
+    "options": [
+      "Vegetable oils generally have long unsaturated carbon chains.",
+      "Vegetable oils generally have long saturated carbon chains.",
+      "Animal fats generally have long unsaturated carbon chains.",
+      "Vegetable oils generally have short saturated carbon chains."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vegetable oils naturally contain mostly long, unsaturated carbon chains (which have double bonds), making them liquid at room temperature. Animal fats generally contain saturated carbon chains.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q32",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Problems on Ages",
+    "text": "The present age of A is the square of the present age of B. One year back, the sum of squares of their ages is two years more than the product of their present ages. The present ages of A and B (in years) are, respectively:",
+    "options": [
+      "1,1",
+      "4,2",
+      "9,3",
+      "16,4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let A and B be the present ages. A = B^2. We are given: (A-1)^2 + (B-1)^2 = (A*B) + 2. Checking the options: For (4,2): A=4, B=2. One year back, ages were 3 and 1. Sum of squares = 3^2 + 1^2 = 9 + 1 = 10. Product of present ages = 4 * 2 = 8. Two more than the product is 8 + 2 = 10. This matches perfectly.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Problems on Ages" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q33",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "What is next in the series?\nFD, HE, KF, PG, _",
+    "options": [
+      "UG",
+      "VG",
+      "XH",
+      "YH"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Look at the pattern of the first letters: F (6), H (8), K (11), P (16). The differences are +2, +3, +5, so the next difference is likely +8 (Fibonacci pattern: 2, 3, 5, 8). 16 + 8 = 24, which is X. Look at the second letters: D (4), E (5), F (6), G (7). The next is H (8). Thus, the next term is XH.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q34",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "The rate of change of 1/x with respect to x, where x varies from x1 to x2 is:",
+    "options": [
+      "1/x1x2",
+      "-1/x1x2",
+      "1/x2 - 1/x1",
+      "x2 - x1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The average rate of change of a function f(x) from x1 to x2 is (f(x2) - f(x1)) / (x2 - x1). For f(x) = 1/x, this becomes ((1/x2) - (1/x1)) / (x2 - x1) = ((x1 - x2) / (x1*x2)) / (x2 - x1) = -1 / (x1*x2).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q35",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "In which year is the sales proportion from the immediate previous year for Company A the highest ?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For Company A, the proportions (current year / previous year) are: 2020: 2050/2050 = 1.0; 2021: 2200/2050 ≈ 1.073; 2022: 1850/2200 ≈ 0.841; 2023: 2100/1850 ≈ 1.135. The highest proportion is in 2023.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q36",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "In which year does the sales of these companies differ the most?",
+    "options": [
+      "2019",
+      "2020",
+      "2022",
+      "2023"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Absolute differences between A and B's sales: 2019: |2050 - 2150| = 100. 2020: |2050 - 1850| = 200. 2021: |2200 - 2200| = 0. 2022: |1850 - 1850| = 0. 2023: |2100 - 2250| = 150. The largest difference is 200 in the year 2020.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q37",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Which company has the lower average sales during 2019-2023?",
+    "options": [
+      "Company A",
+      "Company B",
+      "Equal average for both the companies",
+      "Data is insufficient"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sum of Company A's sales = 2050 + 2050 + 2200 + 1850 + 2100 = 10250. Sum of Company B's sales = 2150 + 1850 + 2200 + 1850 + 2250 = 10300. Since 10250 < 10300, Company A has the lower average sales.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q38",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "The Committee to recommend the appointment of the Chief Information Commissioner consists of whom of the following?\n1. Prime Minister of India\n2. Chief Justice of India\n3. Leader of the Opposition in Lok Sabha\n4. A Union Cabinet Minister nominated by the Prime Minister\n5. Cabinet Secretary",
+    "options": [
+      "1, 2 and 3",
+      "1, 2 and 5",
+      "1, 3 and 4",
+      "3, 4 and 5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "As per the Right to Information Act, the Chief Information Commissioner is appointed by the President on the recommendation of a committee consisting of the Prime Minister (Chairperson), the Leader of Opposition in the Lok Sabha, and a Union Cabinet Minister nominated by the PM.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q39",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Directive Principles of State Policy",
+    "text": "Which one among the following Articles of the Constitution of India, directs the State to organise village panchayats?",
+    "options": [
+      "Article 40",
+      "Article 44",
+      "Article 243D",
+      "Article 329"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 40 of the Constitution lays down that the State shall take steps to organize village panchayats and endow them with such powers and authority as may be necessary to enable them to function as units of self-government.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Directive Principles of State Policy" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q40",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which of the following statements regarding a Government Bill in the Parliament is/are correct?\n1. A Minister has to give seven days notice to introduce the Bill.\n2. The Bill cannot be included in the list of business, if it is not circulated at least three days before its introduction.\n3. The Speaker has the discretion to allow introduction without prior circulation.\n4. A Bill undergoes three readings in each House.",
+    "options": [
+      "1 and 2 only",
+      "1 and 4 only",
+      "2 and 3 only",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Generally, a Minister gives a 7-day notice to introduce a bill (unlike Private Members who need 1 month). The Speaker has the discretion to allow a bill to be introduced without prior circulation in exceptional cases. Every bill mandatorily undergoes three readings in each House.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q41",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Economy",
+    "text": "In India, non-government organisations can raise funds from the public through:",
+    "options": [
+      "Reserve Bank of India",
+      "Ministry of Home Affairs",
+      "Self-Help Groups",
+      "Social Stock Exchange"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Social Stock Exchange (SSE) is a novel concept in India that functions as a platform to allow non-profit organizations and social enterprises to raise funds from the public.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Economy" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q42",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "Which one of the following is a programme launched for the holistic development of the adolescent population?",
+    "options": [
+      "Rashtriya Kishor Swasthya Karyakram",
+      "SABLA",
+      "Manodarpan",
+      "The Ayushman Bharat School Health & Wellness Programme"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Rashtriya Kishor Swasthya Karyakram (RKSK) is a comprehensive health program launched by the Ministry of Health and Family Welfare dedicated to the holistic development of adolescents.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q43",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Who among the following Rigvedic Gods was considered to be the guardian of roads, herdsmen, and straying cattle ?",
+    "options": [
+      "Vayu",
+      "Rudra",
+      "Varuna",
+      "Pushan"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In Vedic mythology, Pushan is a solar deity tasked with protecting travelers, guarding roads, and ensuring that cattle and herds do not stray.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q44",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "Which one among the following is popularly known as the Black Pagoda?",
+    "options": [
+      "Shore Temple at Mamallapuram",
+      "Sun Temple at Konark",
+      "Martand Sun Temple in Kashmir",
+      "Nalanda Mahavihara"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Sun Temple at Konark was called the 'Black Pagoda' by European sailors because its great tower appeared dark from the sea and served as a prominent navigational landmark.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q45",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Literature",
+    "text": "Arrange the following in chronological order, beginning from the earliest :\n1. Shudraka\n2. Varahamihira\n3. Panini\n4. Patanjali the Grammarian",
+    "options": [
+      "4-1-2-3",
+      "3-4-1-2",
+      "2-3-4-1",
+      "3-1-2-4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Panini lived around the 5th-4th century BCE. Patanjali (the grammarian) lived around the 2nd century BCE. Shudraka is generally placed around the 3rd or 4th century CE. Varahamihira lived in the 6th century CE. Therefore, the order is 3-4-1-2.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Literature" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q46",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "In the Harappan Civilization, terracotta models of the plough have been discovered at:",
+    "options": [
+      "Harappa",
+      "Kalibangan",
+      "Banawali",
+      "Lothal"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Terracotta models of ploughs have been found at sites in Cholistan and at Banawali (Haryana). (Note: Kalibangan showed evidence of a ploughed field, not the terracotta models themselves).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q47",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "In which year were the first modern universities set up in Calcutta, Madras, and Bombay during the colonial rule ?",
+    "options": [
+      "1829",
+      "1835",
+      "1854",
+      "1857"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Following Wood's Despatch (1854), the first modern universities in India were established in Calcutta, Bombay, and Madras in the year 1857.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q48",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Calendar",
+    "text": "Which one of the following months of the Gregorian calendar corresponds with Asvina-Kartika months of the Indian calendar?",
+    "options": [
+      "July-August",
+      "August-September",
+      "September-October",
+      "October-November"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Hindu month of Asvina roughly spans from late September to October, and Kartika spans from late October to November. The combined period best maps to September-October in standard multiple-choice representations.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Calendar" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q49",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian River System",
+    "text": "Which of the following states is/are not a part of the Narmada basin ?\n1. Chhattisgarh\n2. Gujarat\n3. Maharashtra\n4. Rajasthan",
+    "options": [
+      "1 only",
+      "1 and 2",
+      "3 and 4",
+      "4 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Narmada basin primarily covers parts of Madhya Pradesh, Gujarat, Maharashtra, and a tiny fraction of Chhattisgarh. Rajasthan is not a part of the Narmada river basin.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian River System" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q50",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Soils",
+    "text": "Consider the following statements:\nI. Black soil helps the rain-fed crops to sustain during the dry season.\nII. Black soil can retain moisture for a very long time.\nWhich one of the following is true about the statements given above?",
+    "options": [
+      "Both the statements are true and statement II is the correct explanation of statement I.",
+      "Both the statements are true, but statement II is not the correct explanation of statement I.",
+      "Statement I is true, but statement II is false.",
+      "Statement I is false, but statement II is true."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Black soil is highly argillaceous (clayey) and expands when wet, retaining moisture for long periods. This high moisture retention capacity is exactly what allows rain-fed crops to survive during the dry season.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Soils" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q51",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Agriculture",
+    "text": "Which of the following is/are Kharif crop/crops in India?\n1. Cotton\n2. Gram\n3. Mustard\n4. Rapeseed\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2",
+      "3 and 4",
+      "4 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cotton is a Kharif crop, sown during the monsoon season. Gram, mustard, and rapeseed are Rabi crops, sown in winter.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Agriculture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q52",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Space and Technology",
+    "text": "Which of the following statements with regard to the International Space Station (ISS) is/are correct?\n1. It is orbiting around the Earth at a speed of approximately 1,00,000 km per hour.\n2. It revolves the complete Earth orbit every 90 minutes.\n3. Astronauts stationed at the ISS witness a sunrise (or sunset) approximately every 45 minutes.\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2",
+      "2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is incorrect; the ISS orbits at an average speed of about 28,000 km/h (not 1,00,000 km/h). Statements 2 and 3 are correct; it completes an orbit roughly every 90 minutes, meaning astronauts experience 16 sunrises and sunsets a day (roughly one every 45 minutes).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Space and Technology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q53",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honours",
+    "text": "Who among the following has been selected for the Nobel Prize in Literature for the year 2024?",
+    "options": [
+      "Jon Fosse",
+      "Han Kang",
+      "Louise Glück",
+      "Abdulrazak Gurnah"
+    ],
+    "correctAnswer": 1,
+    "explanation": "South Korean author Han Kang was awarded the 2024 Nobel Prize in Literature for her intense poetic prose that confronts historical traumas and exposes the fragility of human life.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Awards and Honours" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q54",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Defence Exercises",
+    "text": "Which one of the following statements about SIMBEX-2024 (Singapore India Maritime Bilateral Exercise) is not correct?",
+    "options": [
+      "SIMBEX began as Exercise 'Lion King' in the year 1994.",
+      "The recent exercise, held in October-2024, is its 31st edition.",
+      "INS Shivalik was the site for its opening ceremony.",
+      "Its Harbour Phase was held in the Bay of Bengal and the Sea Phase at Visakhapatnam."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Option (d) is incorrect because the phases are swapped. The Harbour Phase is traditionally held at a port (Visakhapatnam in this case), and the Sea Phase is conducted in the open waters of the Bay of Bengal.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence Exercises" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q55",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "International Summits",
+    "text": "Which one among the following statements about the 21st Edition of ASEAN-India Summit is not correct?",
+    "options": [
+      "It was held in Lao PDR.",
+      "The Chair's theme for this summit was 'Enhancing Creativity and Resilience'.",
+      "India announced the year 2025 as the ASEAN-India Year of Tourism.",
+      "India invited ASEAN leaders to join 'Plant a tree for Mother' campaign."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The official theme for the ASEAN Summit in 2024 chaired by Lao PDR was 'ASEAN: Enhancing Connectivity and Resilience', not 'Creativity and Resilience'.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Summits" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q56",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Science and Technology",
+    "text": "At which one of the following places was India's first analog space mission launched recently?",
+    "options": [
+      "Bangalore",
+      "Hyderabad",
+      "Leh",
+      "Amritsar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ISRO launched India's first analog space mission in Leh, Ladakh, chosen for its rugged terrain and extreme conditions mimicking extraterrestrial environments.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q57",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following acids has the highest pH value ?",
+    "options": [
+      "Acetic acid (1 M)",
+      "Nitric acid (1 M)",
+      "Sulphuric acid (1 M)",
+      "Hydrochloric acid (1 M)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The highest pH among acids means the weakest acid (closest to 7). Acetic acid is a weak organic acid and therefore has a higher pH value compared to the strong mineral acids (Nitric, Sulphuric, and Hydrochloric).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q58",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which of the following statements about detergents is/are correct?\n1. Detergents are generally sodium salts of long-chain carboxylic acids.\n2. Detergents are generally calcium salts of long-chain carboxylic acids.\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Both statements are incorrect. Soaps are sodium or potassium salts of long-chain carboxylic acids. Detergents are generally sodium salts of long-chain benzene sulphonic acids or alkyl sulphates.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q59",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Why are the food cans coated with tin instead of zinc ?",
+    "options": [
+      "Tin is cheaper than zinc",
+      "Tin has lower melting point than zinc",
+      "Tin is less reactive than zinc",
+      "Tin is more reactive than zinc"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Food cans are coated with tin instead of zinc because tin is less reactive than zinc. Zinc could react with the organic acids present in the food and cause food poisoning.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q60",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one among the following statements about graphite is correct?",
+    "options": [
+      "Graphite is harder than diamond",
+      "Graphite contains a higher percentage of carbon than diamond",
+      "Graphite is a better conductor of electricity than diamond",
+      "Graphite and diamond both have equal interatomic distances"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Graphite is an excellent conductor of electricity because each carbon atom is bonded to only three others, leaving a delocalized (free) electron. Diamond is an insulator.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q61",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "In which one of the following conditions is a real gas expected to behave like an ideal gas ?",
+    "options": [
+      "Pressure is lower",
+      "Pressure is high",
+      "Moderate temperature",
+      "Both high pressure and low temperature"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A real gas behaves most like an ideal gas at low pressures and high temperatures, where the gas molecules are far apart and intermolecular forces are negligible.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q62",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "PM-PRANAM initiative aims to complement the efforts of States/UTs to save the health of Mother Earth. PM-PRANAM is an abbreviation of:",
+    "options": [
+      "PM Programme for Restitution, Awareness Generation, Nourishment, and Amelioration of Mother-Earth",
+      "PM Programme for Restoration, Awareness Generation, Nourishment, and Amelioration of Mother-Earth",
+      "PM Programme for Replenishment, Awareness Generation, Nutrition, and Augmentation of Mother-Earth",
+      "PM Programme for Restoration, Awareness Generation, Nurturing, and Advancement of Mother-Earth"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PM-PRANAM stands for PM Programme for Restoration, Awareness, Nourishment and Amelioration of Mother Earth, aimed at reducing the use of chemical fertilizers.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q63",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Which country hosted the 45th edition of FIDE Chess Olympiad?",
+    "options": [
+      "India",
+      "Russia",
+      "Hungary",
+      "Netherlands"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 45th FIDE Chess Olympiad was held in Budapest, Hungary in September 2024.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q64",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Which of the following statements with regard to the Women's T20 World Cup is/are correct?\n1. India has never won the Cup.\n2. New Zealand won the Cup in the year 2024.\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "India's women's cricket team has never won the ICC Women's T20 World Cup. In 2024, New Zealand won the tournament.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q65",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Economy",
+    "text": "Which one of the following 'Maharatnas' stepped into its 50th year of inception on 1st November, 2024?",
+    "options": [
+      "Coal India Limited",
+      "Power Finance Corporation Limited",
+      "Indian Oil Corporation Limited",
+      "Bharat Heavy Electricals Limited"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coal India Limited (CIL) was formally established on November 1, 1975. Therefore, on November 1, 2024, it completed 49 years and stepped into its 50th year.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Economy" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q66",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Defence Exercises",
+    "text": "The Indian Army's VAJRA PRAHAR is a joint military exercise conducted between the armies of India and:",
+    "options": [
+      "Russia",
+      "Ukraine",
+      "China",
+      "USA"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Exercise VAJRA PRAHAR is a joint Special Forces exercise conducted alternately in India and the United States to enhance interoperability between the Special Forces of both nations.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence Exercises" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q67",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Mensuration",
+    "text": "Two plots of land are equal in area. The first one is square shaped and the second one is circular. If p1 and p2 are the lengths of the boundaries of the square shaped plot and the circular plot respectively, then :",
+    "options": [
+      "p1 < p2",
+      "p1 = p2",
+      "p1 > p2",
+      "p1 / p2 is not a constant and it depends on the area"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let area = A. For square, A = a^2 => a = √A, so perimeter p1 = 4√A. For circle, A = πr^2 => r = √(A/π), so circumference p2 = 2πr = 2π√(A/π) = 2√(Aπ). Ratio p1/p2 = 4√A / 2√(Aπ) = 2/√π ≈ 2/1.772 > 1. Therefore, p1 > p2.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Mensuration" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q68",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Clocks",
+    "text": "In a clock, what is the time between 4:00:00 PM and 5:00:00 PM, when both the hour hand and the minute hand come together?",
+    "options": [
+      "4:20:00 PM",
+      "4:21:49 PM",
+      "4:22:01 PM",
+      "4:19:59 PM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "At 4:00, the minute hand is 20 minute-spaces behind the hour hand. They gain 55 minute spaces in 60 minutes. Time to gain 20 spaces = (60/55) * 20 = 240/11 minutes = 21 minutes and 9/11 seconds ≈ 21 min 49 seconds. Time is 4:21:49 PM.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Clocks" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q69",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Cubes and Cuboids",
+    "text": "A log of wood of dimension 7 ft x 3 ft x 1 ft is painted all over its surfaces. Then the log is cut into 21 cubes of equal sizes. The ratio of the number of cubes that are painted on 4 surfaces to that of cubes painted on 3 surfaces is:",
+    "options": [
+      "3:1",
+      "2:1",
+      "1:2",
+      "1:3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cutting a 7x3x1 block into 1x1x1 cubes yields 21 cubes. The 4 corner cubes of this single-layer grid have 4 exposed faces (top, bottom, and 2 sides). The remaining cubes on the perimeter (10 along the long edges, 2 along the short edges = 12 cubes) have 3 exposed faces. The ratio of 4-surface painted to 3-surface painted is 4:12, which simplifies to 1:3.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Cubes and Cuboids" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q70",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "An insignia of football team consists of a metal frame in the shape of an equilateral triangle. A circle is inscribed in the triangular frame. What is the ratio of the side of the triangle to that of the diameter of the circle?",
+    "options": [
+      "√3:π",
+      "π:√3",
+      "1:√3",
+      "√3:1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For an equilateral triangle of side 'a', the radius of the inscribed circle 'r' is a/(2√3). The diameter 'D' = 2r = a/√3. Therefore, the ratio of the side 'a' to the diameter 'D' is a / (a/√3) = √3 / 1 = √3:1.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q71",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "Consider the following statements with reference to INS Tushil :\n1. It is developed in collaboration with Russia.\n2. The ship's name Tushil means Abhedya Kavach.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "INS Tushil is a Talwar-class stealth frigate built in Russia for the Indian Navy. The name 'Tushil' is a Sanskrit word meaning 'Protector Shield' (Abhedya Kavach). Both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q72",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Environment and Initiatives",
+    "text": "The 16th Conference of the Parties to the UN Convention on Biological Diversity was held in which one of the following cities?",
+    "options": [
+      "Washington D.C.",
+      "Cali",
+      "Paris",
+      "New York"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 16th meeting of the Conference of the Parties (COP 16) to the Convention on Biological Diversity (CBD) was held in Cali, Colombia in 2024.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Environment and Initiatives" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q73",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Economy",
+    "text": "Which one of the following is the 14th Central Public Sector Enterprise to obtain the status of Maharatna?",
+    "options": [
+      "SAIL",
+      "GAIL",
+      "HAL",
+      "DMRC"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hindustan Aeronautics Limited (HAL) was upgraded to the 14th 'Maharatna' Central Public Sector Enterprise (CPSE) by the Government of India in 2024.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Economy" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q74",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "AGNI-4, the launch of which was conducted under the aegis of the Strategic Forces Command (India) in September 2024, is a :",
+    "options": [
+      "Intermediate-Range Ballistic Missile",
+      "Short-Range Ballistic Missile",
+      "Very Long-Range Ballistic Missile",
+      "Long-Range Ballistic Missile"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Agni-IV is an Intermediate-Range Ballistic Missile (IRBM) with a strike range of around 4,000 km, developed by DRDO.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q75",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Important Days",
+    "text": "International Day of the Girl Child is observed on:",
+    "options": [
+      "10th October",
+      "11th October",
+      "1st November",
+      "2nd November"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The United Nations marks the International Day of the Girl Child annually on October 11 to promote girls' empowerment and fulfillment of their human rights.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Important Days" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q76",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "CISF Act",
+    "text": "The word \"imminent\" was omitted from Section 11 (1) (iii), by which of the following amendments of the Central Industrial Security Force (CISF) Act?",
+    "options": [
+      "By Act 40 of 1999, Section 7",
+      "By Act 22 of 2009, Section 6(ii)",
+      "By Act 14 of 1983, Section 9",
+      "By Act 20 of 1989, Section 5"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 1999 amendment (Act 40 of 1999) substantially modified the arrest powers under Section 11, omitting the word 'imminent' regarding the danger to life or property to broaden operational authority.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q77",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "CISF Act",
+    "text": "CISF is providing security cover to the Embassy of India in Kathmandu. Under which one among the following provisions of the CISF Act is it being done?",
+    "options": [
+      "Section 10(c)",
+      "Section 10(h)",
+      "Section 10(e)",
+      "Section 10(g)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 10(h), introduced by the CISF Amendment Act of 2009, mandates the force to perform such other duties as may be entrusted to it by the Central Government, enabling overseas deployment.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q78",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "CISF Deployments",
+    "text": "Which of the following is/are the unique features of the CISF ?\n1. CISF is a need based force.\n2. Unlike other Central Armed Police Forces (CAPFs), it is organised on unit pattern rather than on battalion pattern.\n3. It is the sole revenue earning CAPF.\nSelect the answer using the code given below :",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three statements represent unique characteristics of the CISF. It provides customized, need-based security on a unit pattern (unlike the standard battalion deployments of BSF/CRPF) and charges clients for its services, generating revenue.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF Deployments" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q79",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "CISF Administration",
+    "text": "Which one of the following statements does not hold good, as regards to the CISF Consultancy job?",
+    "options": [
+      "To suggest a need based customised integrated security system",
+      "To design a solution, based on critical analysis of the existing security infrastructure",
+      "To prepare a system so as to counter and neutralise the threats",
+      "To propose an integrated security solution, having optimum mix of CISF manpower and security gadgets"
+    ],
+    "correctAnswer": 3,
+    "explanation": "CISF consultancy provides expert security advice and designs to any organization (public or private). This consultancy does not obligate or aim to propose the deployment of 'CISF manpower'; it focuses purely on technical and systemic security advice.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF Administration" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q80",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "CISF Rules",
+    "text": "As per the recruitment rules changed in the year 2009, the percentage of direct recruitment of Assistant Commandants in CISF, was enhanced to:",
+    "options": [
+      "30%",
+      "50%",
+      "40%",
+      "48%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "By the 2009 amendment in recruitment rules, the direct recruitment quota for Assistant Commandants in the CISF was increased to 50% to maintain a younger officer profile.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q81",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "CISF Deployments",
+    "text": "Which of the following is not one of the mandates for deployment of CISF in the private sector?",
+    "options": [
+      "It is mostly in the nature of securing the industry from anti-national or terrorist activities.",
+      "CISF is the first responder in the event of an attack.",
+      "The emphasis is on static posts at gates only.",
+      "The CISF is deployed as Quick Reaction Team (QRT)."
+    ],
+    "correctAnswer": 2,
+    "explanation": "CISF deployment in the private sector focuses on dynamic, anti-terrorist protection (QRTs, patrols) rather than just traditional static guarding at gates.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF Deployments" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q82",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "In the definition of Public Servant under Section 2(28) of the Bharatiya Nyaya Sanhita, 2023, which one of the following is not included as a public servant?",
+    "options": [
+      "Assessor",
+      "Juryman",
+      "Member of Panchayat",
+      "Liquidator"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The BNS 2023 modernized the IPC's definition of 'Public Servant'. Because the jury system has long been abolished in India, the term 'Juryman' was deliberately removed from the new code.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q83",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "When does the right of private defence of property extend to causing death under Section 41 of the Bharatiya Nyaya Sanhita, 2023?\n1. Housebreaking after sunset and before sunrise\n2. Mischief by fire in a residential building\n3. Snatching\n4. Robbery\nSelect the answer using the code given below :",
+    "options": [
+      "1, 2 and 3",
+      "2, 3 and 4",
+      "1, 2 and 4",
+      "3 and 4 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 41 of BNS covers Robbery, House-breaking after sunset and before sunrise, Mischief by fire, and Theft/mischief/house-trespass under circumstances causing apprehension of death. It does not explicitly list 'Snatching'.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q84",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "What is the punishment prescribed for petty organised crime under Section 112 of the Bharatiya Nyaya Sanhita, 2023?",
+    "options": [
+      "Imprisonment up to one year",
+      "Imprisonment, which shall not be less than one year but may extend up to three years",
+      "Imprisonment, which shall not be less than one year but may extend up to five years",
+      "Imprisonment, which shall not be less than one year but may extend up to seven years"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Section 112 of the BNS prescribes that whoever commits or attempts to commit any petty organised crime shall be punished with imprisonment for a term which shall not be less than one year but which may extend to seven years, and shall also be liable to fine.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q85",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "Which one of the following police officers has the power to decide whether to register the case under Section 113 Bharatiya Nyaya Sanhita, 2023 or under Unlawful Activities (Prevention) Act, 1967?",
+    "options": [
+      "Officer-in-charge of the concerned police station",
+      "Officer not below the rank of Inspector",
+      "Officer not below the rank of Deputy Superintendent of Police",
+      "Officer not below the rank of Superintendent of Police"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To prevent misuse of the stringent terrorism provisions under Section 113 of the BNS, the code stipulates that an officer not below the rank of Superintendent of Police shall decide whether to register the case under BNS or UAPA.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q86",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "Which one among the following is not punishable under Section 152 of the Bharatiya Nyaya Sanhita, 2023 ?",
+    "options": [
+      "Comments exciting secession",
+      "Comments attempting to excite armed rebellion",
+      "Encouraging separatist activities",
+      "Aiding escape of prisoner of war"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Section 152 of BNS replaces the sedition law, dealing with acts endangering the sovereignty, unity, and integrity of India (secession, armed rebellion, separatist activities). 'Aiding escape of a prisoner of war' is a separate offence covered elsewhere in the code.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q87",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Hardware Architecture",
+    "text": "Which one of the following manages the transfer of data and address among various components?",
+    "options": [
+      "Data Bus",
+      "Address Bus",
+      "Control Bus",
+      "None of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Control Bus carries control signals from the CPU to manage and coordinate the transfer of data and addresses between the CPU, memory, and peripherals.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Hardware Architecture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q88",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Hardware Peripherals",
+    "text": "Which one of the following is a combination of input and output device?",
+    "options": [
+      "Monitor",
+      "Inkjet Printer",
+      "Webcam",
+      "Bar code Reader"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In standard computing terminology, a touchscreen monitor functions as both an input device (touch interface) and an output device (visual display). The other options are strictly one or the other.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Hardware Peripherals" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q89",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Data Representation",
+    "text": "What is the representation of the hexadecimal number A63 in decimal form?",
+    "options": [
+      "2658",
+      "2659",
+      "2660",
+      "2643"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A63 in hex = (10 * 16^2) + (6 * 16^1) + (3 * 16^0) = 2560 + 96 + 3 = 2659 in decimal.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Data Representation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q90",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Databases",
+    "text": "In which one of the following models are the records arranged in the form of a tree ?",
+    "options": [
+      "Relational",
+      "Network",
+      "Hierarchical",
+      "None of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A hierarchical database model is a data model in which the data is organized into a tree-like structure, with a single root, to which all other data is linked.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Databases" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q91",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Software Concepts",
+    "text": "What is the main purpose of a linker?",
+    "options": [
+      "To detect the errors and bugs present in the program",
+      "To convert the program code written in one language to another language",
+      "To arrange the object code of all the modules that have been generated by the language translator into a single program",
+      "To edit the information related to the audio components of a multimedia application"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A linker is a utility program that takes one or more object files generated by a compiler and combines them into a single executable file, library file, or another 'object' file.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Software Concepts" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q92",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Law and Order",
+    "text": "In Delhi Metro, in case male commuters are found in the ladies' compartments, they can be fined as per:",
+    "options": [
+      "CISF Act and Rules",
+      "Visakha Guidelines given by the Supreme Court",
+      "Relevant Acts and Rules pertaining to DMRC",
+      "Railways Act, 1989"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Offences committed within the Delhi Metro system, such as male passengers entering women-only coaches, are fined under the Delhi Metro Railway (Operation and Maintenance) Act, 2002.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Law and Order" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q93",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "VIP Security",
+    "text": "Which of the following statements with regard to VIP Security mandate of CISF is not correct?",
+    "options": [
+      "CISF can be deployed in New Delhi and other places in the country.",
+      "VIP security training is given to enhance strength, stamina, flexibility and speed.",
+      "The specialised unit for VIP Security in CISF was accorded sanction in 2006.",
+      "The specialised unit of CISF for VIP security duties was born out of 5th Reserve Battalion, Ghaziabad."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The CISF's Special Security Group (SSG) was formed in 2006 specifically for VIP protection. However, it was not born out of the 5th Reserve Battalion in Ghaziabad.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "VIP Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q94",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Maritime Security",
+    "text": "What was the major development with regard to security of ports in India in the year 2004?",
+    "options": [
+      "Amendment in marine laws, with regard to security of ports",
+      "Amendment in CISF Act and Rules, with regard to security of ports",
+      "All major ports became ISPS Code compliant",
+      "Major Ports Trust Act was implemented strictly"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In July 2004, the comprehensive International Ship and Port Facility Security (ISPS) Code came into effect globally. India's major ports upgraded their physical and procedural security to become ISPS compliant.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Maritime Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q95",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Security Equipment",
+    "text": "Which one of the following statements with regard to security lighting in a plant is not correct?",
+    "options": [
+      "Lighting poles should be robust and have anti-tamper covers fitted at the base.",
+      "Colour rendition should support video surveillance systems operation.",
+      "Approaches should be in the dark.",
+      "There should be high brightness contrast between the intruder and the background."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Approaches to a secured facility should be well-illuminated to deter intruders and allow for early detection, making the statement 'Approaches should be in the dark' incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Equipment" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q96",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Industrial Security",
+    "text": "Which one of the following statements with regard to objectives of proper access control system in a plant security is not correct?",
+    "options": [
+      "To permit authorised persons and materials to controlled areas",
+      "To provide information to assess manpower required for the vital installations inside the plant",
+      "To provide a data audit of controlled areas to which access has been granted",
+      "To detect, minimise and prevent the unauthorised entries or exits"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An access control system manages entry/exit, logs audits, and blocks unauthorized access. It is not designed to assess or dictate the physical guard manpower requirements for a vital installation.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Industrial Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q97",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "'A' for the purpose of inducing 'B' to resist from prosecuting a civil suit, threatens to burn 'B's house. What offence is committed by 'A' under the Bharatiya Nyaya Sanhita, 2023 ?",
+    "options": [
+      "Criminal Inducement",
+      "Wrongful Restraint",
+      "Criminal Intimidation",
+      "Public Mischief"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Threatening to cause injury to the person, reputation, or property of someone with intent to cause alarm, or to force them to omit an act they are legally entitled to do, constitutes 'Criminal Intimidation'.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q98",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "When two or more persons, by fighting in a public place, disturb the public peace, what is the offence constituted under the Bharatiya Nyaya Sanhita, 2023?",
+    "options": [
+      "Criminal Force",
+      "Riot",
+      "Affray",
+      "Assault"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under the law, fighting in a public place that disturbs the public peace explicitly defines the offence of 'Affray'.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q99",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "By application of principle of joint liability, every member of unlawful assembly is held guilty for offences that are committed by such unlawful assembly. What should be established on the part of the members of unlawful assembly to hold them liable for offences committed by such an assembly under the Bharatiya Nyaya Sanhita, 2023?",
+    "options": [
+      "Common intention",
+      "Similar intention",
+      "Shared motive",
+      "Common object"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To invoke joint liability for an unlawful assembly under the law (formerly Sec 149 IPC, now BNS), it must be established that the offence was committed in prosecution of the 'Common object' of that assembly.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q100",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "Imputations, assertions prejudicial to national integration are punishable under the Bharatiya Nyaya Sanhita, 2023. The offence assumes graver proportions and carries higher punishment when it is committed in which of the following places?",
+    "options": [
+      "School assembly",
+      "Community get-together",
+      "Place of worship",
+      "Sports field"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under the law, making imputations or assertions prejudicial to national integration carries an enhanced, graver punishment if committed in a place of worship or in any assembly engaged in the performance of religious worship.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q101",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "What is the offence committed under the Bharatiya Nyaya Sanhita, 2023, if in order to commit theft the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession, any movable property?",
+    "options": [
+      "Trick theft",
+      "Snatching",
+      "Robbery",
+      "Extortion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Under the new Bharatiya Nyaya Sanhita (BNS) 2023, 'Snatching' has been introduced as a specific offence under Section 304. It is defined precisely by these terms of suddenly or quickly seizing or grabbing movable property.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q102",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Industrial Security",
+    "text": "For a cost effective and viable physical security staffing strategy, which one of the following would you recommend as the best option so that security is not compromised?",
+    "options": [
+      "Proprietary security",
+      "Contract security",
+      "Hybrid security",
+      "Total systems security outsourcing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 'Hybrid security' model combines the control, loyalty, and specialization of a proprietary (in-house) security team with the cost-effectiveness and flexibility of contract security personnel, making it the most viable balanced strategy.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Industrial Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q103",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Risk Management",
+    "text": "\"A process designed to systematically identify and evaluate an organisation's assets based on the importance of its mission or function, the group of people at risk, or the significance of a disruption on the continuity of the organization\" refers to which one of the following terms?",
+    "options": [
+      "Critical activity",
+      "Internal audit",
+      "Criticality analysis",
+      "Corrective action"
+    ],
+    "correctAnswer": 2,
+    "explanation": "This is the standard definition of a 'Criticality analysis', which is the first step in risk management to identify which assets and functions are absolutely critical to an organization's survival.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Risk Management" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q104",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "CISF Deployments",
+    "text": "Which one of the following can not be termed as a security incident with regard to the mandate given to CISF?",
+    "options": [
+      "An assault against an employee",
+      "An assault against a customer",
+      "An assault against a person delivering the postal dak",
+      "An assault against a supplier on company property"
+    ],
+    "correctAnswer": 2,
+    "explanation": "While CISF protects property, employees, authorized suppliers, and authorized visitors/customers inside the protected installation, an assault against a public postal worker delivering normal dak outside the core secure parameters usually falls strictly under local police jurisdiction rather than a designated CISF security incident.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF Deployments" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q105",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Security Operations",
+    "text": "Which one of the following statements with regard to Dog Squad for airport security is correct?",
+    "options": [
+      "The plastic explosives are not easily detected by the dogs.",
+      "Dogs are reported to sniff around 300 times a minute.",
+      "Female dogs have less hassles in their upkeep.",
+      "Explosive detecting dogs are trained to seize the object discovered."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Trained sniffer dogs have incredibly rapid respiratory patterns when actively scenting, sniffing up to 300 times a minute. Explosive dogs are trained to sit/point passively (not seize, which is dangerous), and they easily detect plastic explosives.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Operations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q106",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Aviation Security",
+    "text": "Whenever any aircraft is suspected of having a sabotage device, it should be isolated at a special parking bay. In this regard which one of the following is not correct?",
+    "options": [
+      "It should be ensured that no gas pipes or electrical lines are passing beneath this position.",
+      "It should be at least 100 metres away from the other parking positions.",
+      "The parking bay should not have any lighting.",
+      "Parking position at this location should be such that the take-off or landing of aircraft is not visible from inside the affected aircraft."
+    ],
+    "correctAnswer": 2,
+    "explanation": "An isolated parking bay for an aircraft suspected of carrying explosives MUST be well illuminated to aid the Bomb Detection and Disposal Squad (BDDS) during nighttime operations.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Aviation Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q107",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "In cases of theft, where value of property stolen is less than ₹5000, then what is the punishment prescribed under the Bharatiya Nyaya Sanhita, 2023, for a first time convict who returns the value of the property or restores the stolen property?",
+    "options": [
+      "Simple imprisonment for six months",
+      "Simple imprisonment for three months",
+      "Simple imprisonment for one month",
+      "Community service"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Under Section 303(2) of the BNS 2023, a groundbreaking provision was introduced where first-time offenders committing theft of property valued under ₹5000 who return the property/value shall be punished with community service.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q108",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nyaya Sanhita",
+    "text": "Mischief with intent to destroy a rail, decked vessel or a vessel of burden is punishable under Section 327 of the Bharatiya Nyaya Sanhita, 2023 only when the capacity is beyond some specified limits. What is the capacity mentioned under the law?",
+    "options": [
+      "Ten tons or upwards",
+      "Twenty tons or upwards",
+      "Twenty-five tons or upwards",
+      "Fifty tons or upwards"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 327 of the BNS penalizes mischief to decked vessels or vessels of a burden of 'twenty tons or upwards'.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nyaya Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q109",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "When can an arrest be made by a private person under the Bharatiya Nagarik Suraksha Sanhita, 2023?",
+    "options": [
+      "When some person commits a bailable and non-cognizable offence in his presence",
+      "When a person commits a bailable offence in his presence",
+      "When a person commits a non-cognizable offence in his presence",
+      "When a person commits a non-bailable and cognizable offence in his presence"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Under Section 43 of the BNSS 2023 (formerly Section 43 CrPC), any private person may arrest any person who in his presence commits a non-bailable and cognizable offence, or any proclaimed offender.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q110",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "Under which one among the following Sections of Bharatiya Nagarik Suraksha Sanhita, 2023, can a registered medical practitioner examine a person accused of rape ?",
+    "options": [
+      "Section 52",
+      "Section 53",
+      "Section 54",
+      "Section 49"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 53 of the BNSS 2023 (equivalent to the old Section 53A of CrPC) deals specifically with the medical examination of a person accused of rape by a registered medical practitioner.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q111",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "Which one of the following under the Bharatiya Nagarik Suraksha Sanhita, 2023, may command any unlawful assembly to disperse, if any Executive Magistrate or officer-in-charge of a police station is absent?",
+    "options": [
+      "Any police officer not below the rank of a Sub-Inspector",
+      "Commissioner of Police",
+      "Any police officer not below the rank of an Inspector",
+      "Judicial Magistrate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 149(2) of the BNSS 2023 clearly empowers any police officer, not below the rank of a Sub-Inspector, to command an unlawful assembly to disperse in the absence of an Executive Magistrate or SHO.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q112",
+    "year": 2025,
+    "subject": "Disaster Management",
+    "topic": "Terms and Abbreviations",
+    "text": "Which one of the following abbreviations is not correctly matched with regard to Disaster Management?",
+    "options": [
+      "CSSR: Constructed Structure Search and Rescue",
+      "PEER: Programme for Enhancement of Emergency Response",
+      "MFR: Medical First Responder",
+      "CBRN: Chemical, Biological, Radiological and Nuclear"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In Disaster Management terminology, CSSR stands for 'Collapsed Structure Search and Rescue' (not Constructed), referring to urban search and rescue operations after earthquakes or building failures.",
+    "tags": [
+      { "type": "subject", "label": "Disaster Management" },
+      { "type": "topic", "label": "Terms and Abbreviations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q113",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Security Intelligence",
+    "text": "Which one of the following is least likely to be an information source for determining loss risk events in an undertaking?",
+    "options": [
+      "Local police crime statistics",
+      "General economic conditions of the area",
+      "Presence of a crime magnet (e.g. proximity of a popular night club)",
+      "Exhibiting of the crime thriller movies"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Crime statistics, economic conditions, and nearby crime magnets directly impact the local threat environment. The exhibition of crime thriller movies is an abstract cultural element and is least likely to be used for formal risk assessment.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Intelligence" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q114",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Aviation Security",
+    "text": "The internationally accepted ingredients of the offence of \"aircraft hijacking\" are found in which one among the following International Conventions on Aviation Security?",
+    "options": [
+      "Hague Convention of 1970",
+      "Montreal Convention 1987",
+      "Tokyo Convention 1963",
+      "Chicago Convention 1944"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Convention for the Suppression of Unlawful Seizure of Aircraft (known as the Hague Convention of 1970) officially defined and set the international legal framework for the offence of aircraft hijacking.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Aviation Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q115",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Aviation Security",
+    "text": "To curb hijacking, which one among the following security measures have not been recommended by the International Air Transport Association (IATA)?",
+    "options": [
+      "Direct communication link be set up between screening points to the Airport Police/Security control room",
+      "Identification badges should be worn by all individuals having access to the airport",
+      "All passengers should be screened before entering sterile departure area",
+      "All observation viewpoints overlooking the airside should be well protected"
+    ],
+    "correctAnswer": 3,
+    "explanation": "While protecting viewpoints is a good general security measure, standard anti-hijacking guidelines specifically focus on passenger screening, secure sterile areas, access control badges, and communication links. Protecting observation points is geared more towards preventing sabotage or intelligence gathering, not direct hijacking.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Aviation Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q116",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Tactics and Fieldcraft",
+    "text": "In a method of patrolling, the patrols radiate outward from the patrol base on a specific bearing for a specific distance, all turn in the same direction at right angles to the outward route and move for a specific distance, then turn again at right angles in the direction of the point of origin and return to the point of origin. Which is this method of patrolling?",
+    "options": [
+      "Baseline method",
+      "River line method",
+      "Area method",
+      "Fan method"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 'Fan method' is a standard search and patrolling pattern where units radiate outwards from a central point like the spokes of a fan, conduct their sweep, and return to the base.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Tactics and Fieldcraft" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q117",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "Which court has the power to impound documents under Section 109 of the Bharatiya Nagarik Suraksha Sanhita, 2023?",
+    "options": [
+      "Any court before which those documents are produced",
+      "Any court of the District",
+      "Any court of that State",
+      "Only the concerned High Court"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to Section 109 of the BNSS 2023 (formerly Sec 104 of CrPC), any court may, if it thinks fit, impound any document or thing produced before it under this Sanhita.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q118",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "Section 163 of the Bharatiya Nagarik Suraksha Sanhita, 2023 is related to which one among the following?",
+    "options": [
+      "Injunction pending inquiry",
+      "Conditional order for removal of nuisance",
+      "Dispute concerning right of use of land or water",
+      "Power to issue order in urgent cases of nuisance or apprehended danger"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Section 163 of the BNSS 2023 directly replaces the infamous Section 144 of the CrPC, dealing with the power to issue orders in urgent cases of nuisance or apprehended danger (e.g., unlawful assemblies).",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q119",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "Under the Bharatiya Nagarik Suraksha Sanhita, 2023, an ex-parte order can be passed by a competent Executive Magistrate in the case of nuisance or apprehended danger:",
+    "options": [
+      "at any time",
+      "under any situation",
+      "in case of emergency",
+      "depending upon the discretion of the Magistrate"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 163(2) of the BNSS specifies that an order under this section may, in cases of emergency or in cases where the circumstances do not admit of the serving in due time of a notice upon the person, be passed ex-parte.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q120",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "Under the Bharatiya Nagarik Suraksha Sanhita, 2023, when can an arrest be made in order to prevent the commission of a cognizable offence?",
+    "options": [
+      "When the commission of that offence cannot be otherwise prevented",
+      "When the commission of that offence can be easily prevented",
+      "When any person can prevent the commission of that offence",
+      "When only a police employee can prevent the commission of that offence"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Section 170 of the BNSS 2023 (formerly Sec 151 CrPC), a police officer knowing of a design to commit any cognizable offence may arrest without orders from a Magistrate, if it appears to such officer that the commission of the offence cannot be otherwise prevented.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q121",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Nagarik Suraksha Sanhita",
+    "text": "Section 172(1) of the Bharatiya Nagarik Suraksha Sanhita, 2023 for the first time incorporates the duty of all persons to:",
+    "options": [
+      "conform to the lawful directions of a police officer.",
+      "conform to all directions of police personnel.",
+      "prevent commission of cognizable offences.",
+      "prevent commission of non-cognizable offences."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 172 of the BNSS adds a new statutory duty, mandating that all persons are bound to conform to the lawful directions of a police officer given in fulfillment of their duties.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Nagarik Suraksha Sanhita" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q122",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Tactics and Fieldcraft",
+    "text": "It is a surprise brief encounter by a force lying in wait upon a moving or temporarily halted enemy. It does not require the capture of ground. What is this terminology in field craft?",
+    "options": [
+      "Raid",
+      "Ambush",
+      "Cordon",
+      "Attack"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An 'Ambush' is a classic military tactic where a concealed force lies in wait to launch a surprise attack against a moving or temporarily halted target, without the objective of holding the ground.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Tactics and Fieldcraft" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q123",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Security Operations",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Group in field operation)\nA. Perimeter group\nB. Cover group\nC. Raid group\nD. Support group\nList II (Role)\n1. To assist the raid group\n2. Responsible for controlling the public\n3. To achieve and maintain containment\n4. To search and arrest the criminals",
+    "options": [
+      "A-2, B-4, C-3, D-1",
+      "A-1, B-3, C-4, D-2",
+      "A-2, B-3, C-4, D-1",
+      "A-1, B-4, C-3, D-2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In field operations: The Perimeter group isolates the area and controls the public (A-2). The Cover group achieves and maintains containment (B-3). The Raid group executes the search and arrest (C-4). The Support group assists the raid group (D-1).",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Operations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q124",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Tactics and Fieldcraft",
+    "text": "While judging distance in Field Craft, some factors are responsible for overestimating the distance. Which of the following is not a relevant factor for overestimating?",
+    "options": [
+      "The sun is not in the observer's eye",
+      "Light is bad",
+      "While lying down",
+      "Object is small in relation to its surroundings"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When the sun is behind the observer (i.e., not in the observer's eye), the target is brightly lit, making it appear closer than it actually is (underestimating). If the sun is IN the eye, glare makes the object seem further away (overestimating).",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Tactics and Fieldcraft" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q125",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Weapons and Firearms",
+    "text": "Which one among the following statements with respect to INSAS Rifle is not correct?",
+    "options": [
+      "Cyclic rate is 800 rounds/minute.",
+      "Range for grenade is 200 metres.",
+      "Length with bayonet is 1110 mm.",
+      "Type of fire is single, 3 round burst."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The cyclic rate of fire for the standard INSAS 5.56mm rifle is 600 to 650 rounds per minute, not 800.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Weapons and Firearms" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q126",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Weapons and Firearms",
+    "text": "Which one of the following statements with reference to weaponry is not correct?",
+    "options": [
+      "Automatic rifle utilises its recoil or a portion of the gas propelling the projectile to eject the spent cartridge case, load a new cartridge, and cock the weapon to fire again.",
+      "AK 47 is a weapon consisting essentially of a metal tube from which a missile is shot by the force of exploding some propellant.",
+      "An automatic rifle fires repeatedly as long as the trigger is held down until the magazine is exhausted.",
+      "AK 47 rifle can be used in automatic as well as semi-automatic mode."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement (b) is the generic, textbook definition of a standard 'firearm' or 'gun', rather than a definition specific to the complex gas-operated, rotating bolt mechanism of the AK-47 assault rifle.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Weapons and Firearms" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q127",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Special Laws",
+    "text": "Under the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013, who can be the presiding officer of the Internal Committee constituted under Section 4?",
+    "options": [
+      "A woman employed at senior level at workplace",
+      "The employer",
+      "Any senior employee of the organisation",
+      "The executive authority"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 4 of the POSH Act strictly mandates that the Presiding Officer of the Internal Complaints Committee (ICC) shall be a woman employed at a senior level at the workplace.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Special Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q128",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Special Laws",
+    "text": "Whoever persuades or induces, entices or coerces a child to administer any drug or hormone or chemical substance with intent that such child shall attain early sexual maturity is to be held liable for which of the following offences under the Protection of Children from Sexual Offences Act, 2012?",
+    "options": [
+      "Sexual harassment",
+      "Sexual assault",
+      "Aggravated sexual assault",
+      "Use of child for pornographic purposes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under Section 9 of the POCSO Act, 2012, inducing or administering any drug or hormone to a child for the purpose of early sexual maturity is specifically classified and punished as 'Aggravated sexual assault'.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Special Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q129",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Important Judgements",
+    "text": "In which of the following cases did the Supreme Court declare Section 66A of the Information Technology Act, 2000 unconstitutional ?",
+    "options": [
+      "Dinesh Babulal Thakkar v. State of Gujarat, 2011 CrLR76(SC)",
+      "Director of Enforcement v. MCTM Corp. (P) Ltd. AIR, 1996 SC 1100",
+      "Shreya Singhal v. Union of India WP(Cr)No. 167 of 2012",
+      "State Rep. by CBI v. Anil Sharma, 1997 CrLJ 4414"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the landmark Shreya Singhal v. Union of India (2015) judgment, the Supreme Court struck down Section 66A of the IT Act, deeming it violative of Article 19(1)(a) (freedom of speech and expression).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Important Judgements" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q130",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Special Laws",
+    "text": "Which Section of the Prevention of Corruption Act, 1988 defines 'Public Servant'?",
+    "options": [
+      "Section 2(a)",
+      "Section 2(c)",
+      "Section 2(d)",
+      "Section 2(e)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 2(c) of the Prevention of Corruption Act, 1988 provides an exhaustive definition of a 'Public Servant'.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Special Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q131",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which one of the following is the correct composition of Board of Conciliation under the Industrial Disputes Act, 1947?",
+    "options": [
+      "A chairman and one or two other members",
+      "A chairman and one or three other members",
+      "A chairman and two or four other members",
+      "A chairman and three or five other members"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under Section 5 of the Industrial Disputes Act, a Board of Conciliation shall consist of an independent chairman and two or four other members, appointed in equal numbers to represent the parties to the dispute.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q132",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Scientific Institutions",
+    "text": "Which one of the following abbreviations pertaining to Department of Atomic Energy, Government of India is not correctly matched?",
+    "options": [
+      "IAEA : International Atomic Energy Association",
+      "AERB : Atomic Energy Regulatory Board",
+      "IGCAR: Indira Gandhi Centre for Atomic Research",
+      "BARC : Bhabha Atomic Research Centre"
+    ],
+    "correctAnswer": 0,
+    "explanation": "IAEA stands for the International Atomic Energy Agency, not 'Association'.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Scientific Institutions" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q133",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "The duties and responsibilities of a controlling officer in respect of funds placed at his disposal are to ensure that:\nI. Expenditure does not exceed the budget allocation\nII. Expenditure is incurred in public interest\nIII. Expenditure is incurred for which funds have been provided\nWhere do these provisions find place in GFR?",
+    "options": [
+      "GFR rule 27",
+      "GFR rule 26",
+      "GFR rule 30",
+      "GFR rule 29"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rule 26 of the General Financial Rules (GFR) explicitly outlines the responsibilities of a Controlling Officer regarding the expenditure of funds placed at their disposal.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q134",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "During suspension period, on what basis is Dearness Allowance drawn?",
+    "options": [
+      "Special compensatory allowance",
+      "Dearness pay",
+      "Subsistence allowance",
+      "Half pay"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A suspended government servant is not entitled to salary but receives a 'Subsistence Allowance'. Dearness allowance during this period is calculated based on the subsistence allowance.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q135",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "As per CCS CCA rule 10(7), suspension is supposed to be reviewed on completion of 90 days of suspension except which one of the following conditions?",
+    "options": [
+      "Deemed suspension",
+      "Under detention",
+      "If it is not validated",
+      "If involved in other misdemeanour"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to the CCS (CCA) Rules, an order of suspension requires review before the expiry of 90 days, provided that no such review is necessary in the case of 'deemed suspension' until the individual is released from detention.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q136",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "If a Government servant, who is governed by the CCS (Leave) Rules 1972, joins an industrial establishment on absorption basis, then:",
+    "options": [
+      "the leave at his credit shall be carried over to new establishment.",
+      "only earned leave will be encashed.",
+      "the leave at his credit shall be fully lapsed.",
+      "Earned leave and half pay leave will be encashed, subject to maximum of 300 days."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Upon absorption into an industrial establishment or PSU, a Central Government servant is entitled to encashment of both Earned Leave (EL) and Half Pay Leave (HPL) at their credit, combined subject to a maximum limit of 300 days.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q137",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which one of the following is the conclusive evidence that a Trade Union has been duly registered under the Trade Unions Act, 1926?",
+    "options": [
+      "Name of the Trade Union",
+      "Minimum 100 members",
+      "Common seal of the Union",
+      "Certificate of Registration"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Section 9 of the Trade Unions Act, 1926 explicitly states that the Certificate of Registration issued by the Registrar shall be conclusive evidence that the trade union has been duly registered.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q138",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "What does Section 17 A of The Employee's Compensation Act, 1923 deal with?",
+    "options": [
+      "Proof of age",
+      "Returns as to compensation",
+      "Duty of employer to inform the employee of his rights",
+      "Reference to Commissioners"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 17A of the Employees' Compensation Act mandates the 'Duty of employer to inform employee of his rights' regarding compensation at the time of employment.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q139",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Sakshya Adhiniyam",
+    "text": "Which one among the following does not come within the purview of definition of 'Evidence' under the Bharatiya Sakshya Adhiniyam, 2023?",
+    "options": [
+      "All statements in relation to matters of fact under enquiry",
+      "Statements not related to matters of fact under enquiry",
+      "Electronic records",
+      "Digital records"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Evidence includes all statements which the Court permits or requires to be made before it by witnesses, in relation to 'matters of fact under inquiry'. Statements not related to matters under inquiry are irrelevant and do not constitute evidence.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Sakshya Adhiniyam" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q140",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Bharatiya Sakshya Adhiniyam",
+    "text": "Evidence of a person who has examined a document, the original of which consists of numerous accounts or other documents which cannot conveniently be examined in Court, and who is skilled in the examination of such documents, shall come within which one of the following categories under the Bharatiya Sakshya Adhiniyam, 2023?",
+    "options": [
+      "Primary evidence",
+      "Secondary evidence",
+      "Hearsay evidence",
+      "Circumstantial evidence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When originals consist of numerous accounts that cannot be conveniently examined, evidence may be given as to the general result by a skilled person. This falls under the legal classification of 'Secondary evidence'.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Bharatiya Sakshya Adhiniyam" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q141",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Human Rights",
+    "text": "Article 6 of the Universal Declaration of Human Rights, 1948 provides for which of the following human rights?",
+    "options": [
+      "Right of every human to be born free",
+      "Right of every human against slavery or servitude",
+      "Right to be free from cruel, inhuman or degrading treatment",
+      "Right to recognition everywhere as a person before the law"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Article 6 of the UDHR explicitly states: 'Everyone has the right to recognition everywhere as a person before the law.'",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Human Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q142",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Cyber Security",
+    "text": "Consider the following malicious computer programs:\n1. Virus\n2. Trojan Horse\n3. Worm\nWhich of the above replicate automatically?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Viruses and Worms have the ability to self-replicate and spread. Trojan Horses, by definition, disguise themselves as legitimate software and do not self-replicate.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Cyber Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q143",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Binary Math",
+    "text": "What is the representation of -59 in the 2's complement form?",
+    "options": [
+      "11000100",
+      "00111011",
+      "11000000",
+      "11000101"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Positive 59 in binary is 00111011. To get -59 in 2's complement, flip all the bits (1's complement = 11000100) and then add 1. 11000100 + 1 = 11000101.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Binary Math" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q144",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Space and Technology",
+    "text": "Consider the following:\n1. Sensor payloads\n2. Ground control system\n3. Air strip for landing\nWhich of the above are the components of Unmanned Aerial Vehicles?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 3",
+      "1 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A complete UAV system (UAS) comprises the aerial vehicle (equipped with sensor payloads) and the ground control system. An air strip is external infrastructure, not a component of the vehicle system itself.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Space and Technology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q145",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Machine Learning",
+    "text": "Which type of learning technique is 'reinforcement'?",
+    "options": [
+      "Feedback-based learning technique",
+      "History-based learning technique",
+      "Prediction-based learning technique",
+      "Classification-based learning technique"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reinforcement learning is a machine learning training method based on rewarding desired behaviors and/or punishing undesired ones. It is fundamentally a feedback-based learning technique.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Machine Learning" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q146",
+    "year": 2025,
+    "subject": "Computers",
+    "topic": "Cyber Security",
+    "text": "Consider the following:\n1. Stealing computer hardware\n2. Cyber bullying\n3. Cyber stalking\n4. Phishing\nWhich of the above are examples of cybercrime?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+      "2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cyber bullying, cyber stalking, and phishing are explicit cybercrimes where a computer network is the tool or target. Stealing physical computer hardware is traditional physical theft, not cybercrime.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Cyber Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q147",
+    "year": 2025,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "As per the CCS (Pension) Rules, 2021, which one of the following will not be considered as qualifying service ?",
+    "options": [
+      "Service as an apprentice",
+      "Military service in case of re-employed personnel",
+      "Extraordinary leave taken to pursue higher scientific study in public interest",
+      "Probation period followed by confirmation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under the CCS (Pension) Rules, service rendered strictly in the capacity of an apprentice is not counted as qualifying service for the purpose of computing pension.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q148",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Security Operations",
+    "text": "There are no set of rules of conduct that a hostage can follow which will assure his/her release. However, based on the experiences, which of the following should not be done?",
+    "options": [
+      "It is generally best to do what your captors say",
+      "Point out to your captors that you are worth more to them alive than dead",
+      "Not to leave your fingerprints around the room in which you are held",
+      "Never remind your captors that you may be able to identify them later"
+    ],
+    "correctAnswer": 2,
+    "explanation": "During a hostage situation, you SHOULD secretly leave fingerprints and DNA traces (like hair) in the room where you are held to aid rescuers and investigators. Therefore, actively avoiding leaving fingerprints is something that 'should not be done'.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Operations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q149",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "Security Operations",
+    "text": "Which of the following is/are the responsibilities of an efficient crime watcher?\n1. To report vehicles moving slowly, without lights, or with no apparent destination\n2. To report offers of merchandise at ridiculously low prices\n3. To report someone going door to door in the neighbourhood looking into windows and parked cars\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An efficient crime watcher or neighborhood watch member is trained to report all these indicators: suspicious vehicles casing an area, the sale of potential stolen goods at low prices, and suspicious individuals 'casing' homes or cars.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Operations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q150",
+    "year": 2025,
+    "subject": "Professional Skill",
+    "topic": "CISF Deployments",
+    "text": "CISF provides security to which of the following Samadhis/Memorials of departed national leaders in India?\n1. Ekta Sthal, New Delhi\n2. Kisan Ghat, New Delhi\n3. Rajiv Gandhi Memorial Park, Sriperumbudur\nSelect the answer using the code given below :",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "CISF has been mandated to provide security cover to major national memorials, including Ekta Sthal (Giani Zail Singh), Kisan Ghat (Charan Singh), and the Rajiv Gandhi Memorial at Sriperumbudur.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF Deployments" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  }
+]

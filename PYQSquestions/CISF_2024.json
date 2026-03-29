@@ -1,0 +1,3003 @@
+[
+  {
+    "id": "cisf-2024-q1",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one among the following metals is not a ferromagnetic material?",
+    "options": [
+      "Cobalt",
+      "Silver",
+      "Iron",
+      "Nickel"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ferromagnetic materials are strongly attracted to magnets. Iron, Cobalt, and Nickel are classic examples. Silver is a diamagnetic material and is not attracted to magnets.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q2",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "What is the length of a simple pendulum, which has a frequency of 0.5 Hz (take g = 10 m/s²)?",
+    "options": [
+      "1 m",
+      "2 m",
+      "1.5 m",
+      "3 m"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Frequency f = 0.5 Hz, so Time period T = 1/f = 2 seconds. Using the formula T = 2π√(L/g), we have 2 = 2π√(L/10). Squaring both sides gives 4 = 4π²(L/10). This simplifies to 1 = π²(L/10). Therefore, L = 10/π². Since π² is approximately 9.86, L is approximately 1 m.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q3",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Ecology",
+    "text": "Ecotone is a",
+    "options": [
+      "diversified ecosystem",
+      "transitional ecosystem",
+      "transparent ecosystem",
+      "stagnation ecosystem"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An ecotone is a transition area between two biological communities, where two communities meet and integrate (e.g., a marshland between a river and a riverbank).",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Ecology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q4",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Consider the following statements about stem cells:\n1. Stem cells have the potential for self-renewal via mitotic cell division.\n2. In 1908, James Thomas and his colleagues first derived human embryonic stem cells from donated blastocysts through in vitro fertilization.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct. Statement 2 is incorrect because human embryonic stem cells were first isolated and cultured by James Thomson and his team much later, in 1998, not 1908.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q5",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Ecology",
+    "text": "Which of the following are the major contaminants from industries and households that cause cultural eutrophication?",
+    "options": [
+      "Chlorine and aldrin",
+      "Mercury and nitrates",
+      "Nitrates and phosphates",
+      "Phosphates and ammonium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cultural eutrophication is largely driven by excess nutrient runoff into water bodies. The primary culprits from agricultural fertilizers, industrial waste, and household detergents are nitrates and phosphates.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Ecology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q6",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The arrangement and distribution of flowers over a plant is called",
+    "options": [
+      "flowering",
+      "inflorescence",
+      "thalamus",
+      "aestivation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Inflorescence refers to the specific arrangement and distribution of flowers on the floral axis of a plant.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q7",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Lichens represent the symbiotic relationships between algae and fungi. The algae component present in lichen is best known as",
+    "options": [
+      "mycobiont",
+      "phycobiont",
+      "prion",
+      "symbiont"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In a lichen, the algal component is called the phycobiont (which photosynthesizes), and the fungal component is called the mycobiont.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q8",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Fruit formation from the thalamus instead of ovary is known as false fruit. The most common examples are",
+    "options": [
+      "orange and mango",
+      "mango and banana",
+      "apple and strawberry",
+      "guava and cherry"
+    ],
+    "correctAnswer": 2,
+    "explanation": "True fruits develop solely from the ovary. False fruits (pseudocarps) develop from other floral parts like the thalamus. Apple, pear, and strawberry are common examples of false fruits.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q9",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The process of degradation of humus by some microorganisms and release of inorganic nutrients is known as",
+    "options": [
+      "eutrophication",
+      "mineralization",
+      "humification",
+      "stratification"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mineralization is the process by which microorganisms degrade organic matter (humus) to release simple inorganic nutrients back into the soil.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q10",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following human cells is devoid of a nucleus?",
+    "options": [
+      "Nerve cell",
+      "Bone cell",
+      "Red blood cell",
+      "White blood cell"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mature mammalian red blood cells (erythrocytes) lose their nucleus during maturation to maximize space for carrying hemoglobin and oxygen.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q11",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "The chemical formula of washing soda is",
+    "options": [
+      "NaHCO3",
+      "Na2CO3",
+      "Na2CO3·10H2O",
+      "NaOCl"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Washing soda is chemically sodium carbonate decahydrate, represented by the formula Na2CO3·10H2O.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q12",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following is an example of a physical change?",
+    "options": [
+      "Ripening of banana",
+      "Souring of milk",
+      "Melting of ice",
+      "Passing CO2 gas into water"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Melting of ice is a physical change because it involves a change in the state of matter (solid to liquid) without altering the chemical composition of water (H2O).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q13",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Rhizobium is a",
+    "options": [
+      "biopesticide",
+      "biofertilizer",
+      "bioherbicide",
+      "mycoherbicide"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rhizobium is a soil bacterium that fixes atmospheric nitrogen in the root nodules of leguminous plants, acting as a natural biofertilizer.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q14",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "A solution has a pH value around 13.0. The solution may be called",
+    "options": [
+      "a strong acid",
+      "a strong base",
+      "neutral",
+      "a weak acid"
+    ],
+    "correctAnswer": 1,
+    "explanation": "On the pH scale (0 to 14), values closer to 14 indicate high alkalinity. Therefore, a pH of 13.0 represents a strong base.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q15",
+    "year": 2024,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one among the following elements has the highest catenation property?",
+    "options": [
+      "Silicon",
+      "Carbon",
+      "Nitrogen",
+      "Oxygen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Catenation is the ability of an element to form covalent bonds with itself to form long chains or rings. Carbon exhibits the highest catenation property among all elements.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q16",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Consider the following statements regarding landscape:\n1. Bhabar is a narrow belt ranging between 8 km-10 km parallel to the Shiwalik foothills at the break-up of the slope.\n2. Bhabar is a belt consisting of old and new alluvial deposited by rivers.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct. Statement 2 is incorrect because the Bhabar belt consists of porous, pebble-studded rocks. The old and new alluvial deposits are known as Bhangar and Khadar, respectively.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q17",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Disasters",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Natural disaster)\nA. Blizzards\nB. Soil erosion\nC. Tsunami\nD. Locusts\nList-II (Category)\n1. Terrestrial\n2. Atmospheric\n3. Biological\n4. Aquatic",
+    "options": [
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2",
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Blizzards are Atmospheric (A-2). Soil erosion is Terrestrial (B-1). Tsunamis are Aquatic (C-4). Locust swarms are Biological (D-3).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Disasters" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q18",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian River System",
+    "text": "Which one among the following is not a west-flowing river?",
+    "options": [
+      "Mahi",
+      "Banas",
+      "Luni",
+      "Sabarmati"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Banas river originates in the Aravalli Range and flows eastward into the Chambal River (which eventually joins the Yamuna). Mahi, Luni, and Sabarmati all flow westwards towards the Arabian Sea/Rann of Kutch.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian River System" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q19",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one among the following cities in India is located at the Northernmost latitude?",
+    "options": [
+      "Sri Ganganagar",
+      "Nainital",
+      "Gangtok",
+      "Itanagar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sri Ganganagar in Rajasthan is located at a latitude of approximately 29.9°N, which is further north than Nainital (29.3°N), Itanagar (27.1°N), and Gangtok (27.3°N).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q20",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Agriculture",
+    "text": "Consider the following geographical conditions:\nWell-drained, rich friable loams containing good deal of minerals, temperature between 15°C-28°C and rainfall between 150 cm-250 cm and altitude variations from 600m-1600 m.\nWhich one among the following crops is suitable under the above conditions?",
+    "options": [
+      "Tea",
+      "Coffee",
+      "Coconut",
+      "Cashew nut"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The stated geographical conditions (15-28°C, 150-250 cm rainfall, 600-1600m altitude, rich friable loams) are the ideal requirements for the cultivation of Coffee.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Agriculture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q21",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Resources",
+    "text": "Manikaran in Himachal Pradesh is better known for",
+    "options": [
+      "bioenergy",
+      "paper industry",
+      "food processing industry",
+      "geothermal energy"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Manikaran in the Parvati Valley of Himachal Pradesh is famous for its natural hot springs, making it a prominent site for geothermal energy.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Resources" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q22",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian States and Territories",
+    "text": "Which one among the following States in India shares a boundary with the most number of States?",
+    "options": [
+      "Uttar Pradesh",
+      "Telangana",
+      "Chhattisgarh",
+      "Assam"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Uttar Pradesh shares its boundary with 8 States (Uttarakhand, Himachal Pradesh, Haryana, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, Bihar) and 1 Union Territory (Delhi), the most of any Indian state.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian States and Territories" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q23",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Industry",
+    "text": "Which one among the following places in India is known for its association with the pharmaceutical industry?",
+    "options": [
+      "Ballarpur",
+      "Pimpri",
+      "Sindri",
+      "Mettur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pimpri (near Pune) is well known for the pharmaceutical industry, specifically housing the Hindustan Antibiotics Limited plant.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Industry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q24",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Indian Demographics",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Tribe)\nA. Gaddi\nB. Munda\nC. Bhil\nD. Jarawa\nList-II (Dominating region)\n1. Rajasthan\n2. Andaman and Nicobar Islands\n3. Jharkhand\n4. Himachal Pradesh",
+    "options": [
+      "A-2, B-3, C-1, D-4",
+      "A-2, B-1, C-3, D-4",
+      "A-4, B-3, C-1, D-2",
+      "A-4, B-1, C-3, D-2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Gaddi tribe belongs to Himachal Pradesh (A-4). Munda tribe is found predominantly in Jharkhand (B-3). Bhils are widespread in Rajasthan/Gujarat (C-1). Jarawas are indigenous to the Andaman and Nicobar Islands (D-2).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Demographics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q25",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Climate",
+    "text": "Which one among the following is not an area of Marine West Coast Climate?",
+    "options": [
+      "South-Eastern Australia",
+      "North-West Europe",
+      "New Zealand",
+      "North-West Africa"
+    ],
+    "correctAnswer": 3,
+    "explanation": "North-West Africa primarily experiences a Mediterranean climate and desert climate, not the Marine West Coast climate characteristic of NW Europe, New Zealand, and SE Australia.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Climate" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q26",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one among the following statements with reference to the Harappan burial ritual is not correct?",
+    "options": [
+      "At these burials, the dead were generally laid in pits.",
+      "The burial pits were made in several different ways.",
+      "Ornaments have sometimes been found placed in these burials.",
+      "Harappans did not bury mirrors with the dead."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The statement 'Harappans did not bury mirrors with the dead' is incorrect. Archaeological excavations have revealed that Harappans often buried copper mirrors along with the dead.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q27",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Consider the following statements with reference to Rudramadevi:\n1. Rudramadevi is also known as Raya-gaja-kesari\n2. The inscriptions largely project her as a heroic king not queen.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Rudramadevi of the Kakatiya dynasty was accorded the title 'Raya-gaja-kesari' and was frequently projected in inscriptions as a male king (Maharaja) rather than a queen to legitimize her rule.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q28",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Who among the following was involved in the formation of the Bombay Presidency Association in 1885?",
+    "options": [
+      "Pherozeshah Mehta",
+      "Dadabhai Naoroji",
+      "Allan Octavian Hume",
+      "M. G. Ranade"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Bombay Presidency Association was founded in 1885 by Pherozeshah Mehta, K.T. Telang, and Badruddin Tyabji.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q29",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which among the following was not a member of the Adhishthana Adhikarana of Kotivarsha in the Gupta period?",
+    "options": [
+      "Sarthavaha",
+      "Mahattara",
+      "Prathama-kayastha",
+      "Prathama-kulika"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Adhishthana Adhikarana (City Council) during the Gupta period generally consisted of Nagarasreshthi (guild president), Sarthavaha (chief merchant), Prathama-kulika (chief artisan), and Prathama-kayastha (chief scribe). A 'Mahattara' was a village elder and not part of this specific city council.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q30",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Consider the following statements about the emergence of national consciousness in India between the 18th and 19th centuries:\n1. The spread of printing press and education, and inflow of modern ideas helped Indian regeneration.\n2. The reform movements helped develop a sense of national unity among the people.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The printing press, modern education, and socio-religious reform movements were foundational elements in sparking political regeneration and a unified national consciousness in India.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q31",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "What is Hallisalasya as depicted in Bagh cave paintings?",
+    "options": [
+      "A classical dance form",
+      "A folk dance form",
+      "A folk form of theatre",
+      "A percussion music instrument"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hallisaka or Hallisalasya is an ancient group dance (often described as a folk dance form performed by women forming a circle), famously depicted in the murals of the Bagh Caves (Cave 4).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q32",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "One of the frequent representations of Shri Lakshmi in sculpture is in her Gaja-Lakshmi form. Consider the following statements about such Gaja-Lakshmi form:\n1. The goddess sits or stands on a lotus.\n2. She is flanked by two swans.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct. Statement 2 is incorrect because in the 'Gaja-Lakshmi' form, she is flanked by two elephants (Gaja) pouring water over her, not swans.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q33",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Consider the following statements about the historical evidence of inscriptions in India:\n1. The oldest deciphered inscriptions are in Brahmi and Kharoshthi.\n2. The earliest inscriptions in the Tamil language are copper plate grants.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct; the edicts of Ashoka in Brahmi and Kharoshthi are the oldest deciphered scripts. Statement 2 is incorrect; the earliest Tamil inscriptions are Tamil-Brahmi rock/cave inscriptions and potsherds, not copper plates (which came much later).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q34",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "The Dakshinamurti (South-facing) form of Shiva represents",
+    "options": [
+      "cosmic dancer",
+      "ferocious warrior",
+      "universal teacher",
+      "lord of beasts"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dakshinamurti is a representation of Lord Shiva as the supreme cosmic teacher (Guru) of knowledge, music, yoga, and enlightenment.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q35",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Indian National Movement",
+    "text": "Consider the following statements about the 'Quit India' Resolution of 1942:\n1. Its text was carefully drafted to make it clear that it put India among the countries at war with the Axis Powers and fully aligned with the Allied Powers (United Nations).\n2. It called upon Britain to immediately hand over power to an Indian Provisional Government composed of representatives of all sections of the population.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The Quit India Resolution explicitly maintained an anti-fascist stance (against the Axis) and demanded the immediate end of British rule to form a provisional government that would voluntarily align with the Allied forces.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Indian National Movement" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q36",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Emergency Provisions",
+    "text": "In India, on which one of the following grounds can the salaries and allowances of persons serving in connection with affairs of the State be reduced?",
+    "options": [
+      "Financial emergency",
+      "Internal disturbance",
+      "Failure of the constitutional machinery in a State",
+      "Degradation of public morality"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Article 360 (Financial Emergency), the President can issue directions for the reduction of salaries and allowances of all or any class of persons serving in connection with the affairs of the Union or a State.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Emergency Provisions" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q37",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which of the following is/are exclusive power/powers of the Rajya Sabha?\n1. The power to initiate a Money Bill\n2. To declare a subject in the State List as a subject of national importance\n3. To impeach the President of India\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 3",
+      "2 only",
+      "2 and 3 only",
+      "1 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 2 is correct (Article 249 is an exclusive power of RS). Statement 1 is incorrect (Money bills can only be initiated in Lok Sabha). Statement 3 is incorrect (Impeachment can be initiated in either house).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q38",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "If any question arises as to whether a Member of the Parliament has become subject to any of the disqualifications mentioned in Article 102(1), who among the following is empowered to take the final decision?",
+    "options": [
+      "The President of India",
+      "The Prime Minister of India",
+      "The Speaker of the Lok Sabha",
+      "The Chief Justice of India"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to Article 103, if any question arises regarding disqualifications under Article 102(1), it is referred to the President of India, whose decision is final (acting upon the advice of the Election Commission).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q39",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Parliamentary Committees",
+    "text": "What is the quorum for a meeting of the Committee on Petitions of the Rajya Sabha?",
+    "options": [
+      "Three",
+      "Five",
+      "Seven",
+      "Ten"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For most Parliamentary Committees, the quorum is generally one-third of the total members. However, specific committees often have strict numeric definitions in the rules. For the Committee on Petitions in the Rajya Sabha (which has 10 members), 5 is often cited in conjunction with the Lok Sabha counterpart's standard, though Rule 139 generally dictates a quorum of 5 for select committees unless otherwise specified.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliamentary Committees" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q40",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "In which year was a Cabinet resolution passed to replace the Planning Commission with NITI Aayog?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2018"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The NITI Aayog was formed via a resolution of the Union Cabinet on January 1, 2015, replacing the erstwhile Planning Commission.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q41",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Constitutional Remedies",
+    "text": "Which one among the following legal maxims means 'we command'?",
+    "options": [
+      "Habeas corpus",
+      "Mandamus",
+      "Audi alteram partem",
+      "Non bis in idem"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mandamus is a prerogative writ issued by a court that translates literally from Latin as 'we command'. It commands a public official or body to perform a public duty.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Constitutional Remedies" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q42",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "State Legislature",
+    "text": "Which one of the following States of India does not have a Legislative Council?",
+    "options": [
+      "Bihar",
+      "West Bengal",
+      "Uttar Pradesh",
+      "Karnataka"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Currently, only 6 states have a bicameral legislature (Legislative Council/Vidhan Parishad): Andhra Pradesh, Telangana, Uttar Pradesh, Bihar, Maharashtra, and Karnataka. West Bengal does not have one.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "State Legislature" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q43",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which one among the following is not correct as per Article 14 of the Constitution of India?",
+    "options": [
+      "Equality before law is guaranteed to citizens of India only.",
+      "It secures for any person equal protection of laws within the territory of India.",
+      "The State shall not deny to any person equality before law within the territory of India.",
+      "The State shall not deny to non-citizens equality before law within the territory of India."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 14 guarantees equality before the law and equal protection of laws to 'any person' within the territory of India. This includes both citizens and non-citizens, making statement (a) incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q44",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Human Rights",
+    "text": "Which one of the following provisions of the Universal Declaration of Human Rights states, \"Everyone has the right to life, liberty and security of person\"?",
+    "options": [
+      "Article 1",
+      "Article 2",
+      "Article 3",
+      "Article 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 3 of the Universal Declaration of Human Rights explicitly states: 'Everyone has the right to life, liberty and security of person.'",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Human Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q45",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Eighth Schedule",
+    "text": "Which one of the following languages is not included in the Eighth Schedule of the Constitution of India?",
+    "options": [
+      "Bodo",
+      "Maithili",
+      "Santhali",
+      "Ladakhi"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bodo, Maithili, and Santhali (along with Dogri) were added to the Eighth Schedule by the 92nd Amendment Act in 2003. Ladakhi is not one of the 22 recognized languages in the Eighth Schedule.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Eighth Schedule" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q46",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Profit and Loss",
+    "text": "A company calculates its profit or loss quarterly. The company makes 25% profit, 20% loss and 20% loss in three consecutive quarters. What minimum profit or loss should the company make in fourth quarter to have no loss overall?",
+    "options": [
+      "20% profit",
+      "20% loss",
+      "25% profit",
+      "25% loss"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the initial capital be 100. Q1: 25% profit = 125. Q2: 20% loss = 125 * 0.8 = 100. Q3: 20% loss = 100 * 0.8 = 80. To reach the initial capital of 100 (no loss overall), the company must gain 20 on a base of 80. This requires a (20/80)*100 = 25% profit in the 4th quarter.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Profit and Loss" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q47",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Surds and Indices",
+    "text": "What is the value of the following sum?\n1/(√2+√1) + 1/(√3+√2) + 1/(√4+√3) + ... + 1/(√100+√99)",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "6"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rationalize each term: 1/(√2+√1) = (√2-√1). 1/(√3+√2) = (√3-√2), and so on. The sum becomes a telescoping series: (√2-√1) + (√3-√2) + ... + (√100-√99). All intermediate terms cancel out, leaving √100 - √1 = 10 - 1 = 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Surds and Indices" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q48",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Consider the following sum:\n(@37 + 46@) + 5@3 = 1@@@\nIn the above sum, @ stands for which one among the following?",
+    "options": [
+      "For all digits",
+      "For even digits only",
+      "For odd digits only",
+      "For no digits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Looking at the units place: 7 + @ + 3 = 10 + @. This leaves '@' in the units place and carries over 1 to the tens place. Tens place: 1 (carry) + 3 + 6 + @ = 10 + @. This leaves '@' and carries 1. Hundreds place: 1 (carry) + @ + 4 + 5 = 10 + @. This leaves '@' and carries 1 to the thousands place, matching the 1 in '1@@@'. This mathematical property holds true regardless of the value of @, so it works for all digits.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q49",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "If 625 / 0.625 = 62.5 / x, then the value of x is",
+    "options": [
+      "0.0625",
+      "0.00625",
+      "6-25",
+      "0.000625"
+    ],
+    "correctAnswer": 0,
+    "explanation": "625 / 0.625 = 1000. So, 1000 = 62.5 / x. Solving for x gives x = 62.5 / 1000 = 0.0625.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q50",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Time and Work",
+    "text": "An amount is adequate to pay salaries to R for 20 days or to S for 30 days. For how many days is the money enough to cover salaries of both of them together?",
+    "options": [
+      "12 days",
+      "15 days",
+      "11 days",
+      "20 days"
+    ],
+    "correctAnswer": 0,
+    "explanation": "R's 1-day salary is 1/20 of the total amount. S's 1-day salary is 1/30 of the total amount. Together, their 1-day salary is 1/20 + 1/30 = (3+2)/60 = 5/60 = 1/12 of the total amount. Therefore, the money is adequate to pay them both for 12 days.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time and Work" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  
+  {
+    "id": "cisf-2024-q51",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Profit and Loss",
+    "text": "The ratio between the sale price and the cost price of an article is 7:4. What is the ratio between the profit and the cost price of that article?",
+    "options": [
+      "3:4",
+      "4:3",
+      "5:4",
+      "7:3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let the Selling Price (SP) be 7x and the Cost Price (CP) be 4x. Profit = SP - CP = 7x - 4x = 3x. The ratio of Profit to Cost Price is 3x:4x, which simplifies to 3:4.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Profit and Loss" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q52",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "A train with a length of 335 m is travelling at a speed of 90 km/h. What is the time taken by the train to pass a 290 m long platform?",
+    "options": [
+      "25 s",
+      "23 s",
+      "20 s",
+      "30 s"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Total distance to cover = length of train + length of platform = 335 m + 290 m = 625 m. Speed of the train in m/s = 90 * (5/18) = 25 m/s. Time taken = Distance / Speed = 625 / 25 = 25 seconds.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time, Speed and Distance" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q53",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Time and Work",
+    "text": "Assume there to be some foodstuff that is sufficient for a team for x number of days. After 20 days, 25% of team members happen to quit. It is observed that the remaining foodstuff is sufficient to feed the remaining members for another x number of days. What is the value of x?",
+    "options": [
+      "80",
+      "72",
+      "60",
+      "40"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let the original team size be M. Total food = M * x. After 20 days, food consumed is M * 20. Remaining food = M * (x - 20). The remaining members = 75% of M = 0.75M. They eat this food in x days. So, 0.75M * x = M * (x - 20). Simplifying: 0.75x = x - 20 => 0.25x = 20 => x = 80.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time and Work" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q54",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "If x:y = 3:7 then (6x² - 2xy + y²) / xy is equal to",
+    "options": [
+      "62/21",
+      "61/21",
+      "63/21",
+      "64/21"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let x = 3k and y = 7k. Substitute these values into the expression: [6(3k)² - 2(3k)(7k) + (7k)²] / [(3k)(7k)] = [54k² - 42k² + 49k²] / 21k² = 61k² / 21k² = 61/21.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q55",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "If √x% of x is 80, then what is x?",
+    "options": [
+      "100",
+      "200",
+      "400",
+      "800"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The equation is (√x / 100) * x = 80. This simplifies to x * x^(1/2) = 8000, which is x^(3/2) = 8000. Taking the 2/3 power of both sides: x = (8000)^(2/3) = (20³)^(2/3) = 20² = 400.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q56",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Average",
+    "text": "The average of seven consecutive natural numbers is 13. If the next three consecutive natural numbers are also included, the new average will be",
+    "options": [
+      "15.0",
+      "14.5",
+      "13.5",
+      "13.0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If the average of 7 consecutive natural numbers is 13, the middle (4th) number is 13. The numbers are 10, 11, 12, 13, 14, 15, 16. Adding the next three (17, 18, 19) gives 10 numbers total. The new average is the middle value between the 5th and 6th numbers (14 and 15), which is 14.5.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Average" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q57",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Direction Sense",
+    "text": "A man walks 7 km in the North direction. He then walks 4 km Eastward, and then 4 km Southward. How far and in which direction is he now from his original position?",
+    "options": [
+      "5 km in South-East direction",
+      "5 km in North-East direction",
+      "15 km towards East direction",
+      "7 km towards North direction"
+    ],
+    "correctAnswer": 1,
+    "explanation": "He moves 7 km North, then 4 km South, leaving him 3 km North of his start. He also moved 4 km East. His final displacement forms a right triangle with sides 3 km (North) and 4 km (East). The hypotenuse is √(3² + 4²) = 5 km. The direction is North-East.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Direction Sense" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q58",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Which one among the following digits can never be at the units place in (273)^n, where n is a positive integer?",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The units digit of (273)^n depends entirely on the powers of 3 (3^1=3, 3^2=9, 3^3=27, 3^4=81). The repeating pattern for the last digit is 3, 9, 7, 1. The digit 5 never appears.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q59",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Surds and Indices",
+    "text": "4 / (1 + √2 + √3) is equal to",
+    "options": [
+      "√2 - √3 + 2",
+      "√2 + √3 + 2",
+      "√2 + √6 + 2",
+      "√2 - √6 + 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To rationalize, multiply the numerator and denominator by ((1 + √2) - √3). Denominator becomes (1 + √2)² - (√3)² = 1 + 2 + 2√2 - 3 = 2√2. Numerator is 4(1 + √2 - √3). The fraction simplifies to 2(1 + √2 - √3) / √2 = √2(1 + √2 - √3) = √2 + 2 - √6.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Surds and Indices" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q60",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "Consider the following statements and conclusions:\nStatement I : Some P are Q.\nStatement II : Every R is Q.\nConclusion I: Some P are R.\nConclusion II: Every R is P.\nWhich of the above conclusions can be certainly drawn?",
+    "options": [
+      "Conclusion I only",
+      "Conclusion II only",
+      "Both conclusions I and II",
+      "Neither conclusion I nor II"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Since some P are Q and all R are Q, the sets P and R might overlap inside Q, but they don't have to. There is no definite relationship established between P and R. Thus, neither conclusion can be drawn with certainty.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q61",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honours",
+    "text": "Narges Mohammadi received the Nobel Prize (2023) in which one of the following fields?",
+    "options": [
+      "Peace",
+      "Physiology",
+      "Medicine",
+      "Chemistry"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Narges Mohammadi, an Iranian human rights activist, was awarded the 2023 Nobel Peace Prize for her fight against the oppression of women in Iran and her fight to promote human rights and freedom for all.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Awards and Honours" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q62",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which of the following is/are correct about G20?\n1. It has no permanent secretariat.\n2. It was founded on a legally binding international agreement between 20 top industrialized countries.\n3. Each country is led by a Sherpa.\n4. Spain is one of the two 'Permanent Invitees' to G20.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "4 only",
+      "3 and 4",
+      "1 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The G20 does not have a permanent secretariat (Statement 1 is correct). It is not based on a legally binding treaty (Statement 2 is incorrect). High-level guidance is prepared by 'Sherpas' representing the leaders of each country (Statement 3 is correct). Spain is the *only* permanent invitee, not one of two (Statement 4 is incorrect).",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q63",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Important Days",
+    "text": "Which of the following statements about the National Sports Day is/are correct?\n1. It is observed on 28th February.\n2. It coincides with the birth anniversary of Major Dhyan Chand.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "National Sports Day in India is celebrated on August 29th (not February 28th, which is National Science Day). It is celebrated to commemorate the birth anniversary of hockey legend Major Dhyan Chand.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Important Days" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q64",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Which one of the following represents the correct sequence of countries in ascending order of Gold Medals won in the Asian Games, 2023?",
+    "options": [
+      "Japan, India, Republic of Korea",
+      "Japan, Republic of Korea, India",
+      "Republic of Korea, India, Japan",
+      "India, Republic of Korea, Japan"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In the 2023 Asian Games (Hangzhou), the gold medal tally was: Japan (52), Republic of Korea (42), and India (28). Thus, the ascending order (lowest to highest) is India, Republic of Korea, Japan.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q65",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Art and Culture",
+    "text": "Which among the following was/were declared UNESCO's World Heritage Site/Sites in 2023?\n1. Dholavira, Gujarat\n2. Hoysala Temple of Belur\n3. Santiniketan, West Bengal\n4. Ramappa Temple\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "3 only",
+      "2, 3 and 4",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In 2023, UNESCO added Santiniketan and the Sacred Ensembles of the Hoysalas (which includes the Belur temple) to the World Heritage List. Dholavira and Ramappa Temple were added earlier, in 2021.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q66",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "Consider the following statements about Sandhayak, a Survey Vessel Ship, which was delivered to the Indian Navy in December 2023:\n1. One of the primary roles of the Ship is to make a full-scale coastal and deep-water hydrographic survey of ports.\n2. The Ship is made to collect oceanographic and geophysical data for defence and civil applications.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements accurately describe INS Sandhayak, the first of the four Survey Vessel (Large) ships built by GRSE, designed to conduct full-scale coastal and deep-water hydrographic surveys and collect oceanographic data.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q67",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honours",
+    "text": "Which one among the following books is the winner of the Booker Prize, 2023?",
+    "options": [
+      "The Bee Sting",
+      "The House of Doors",
+      "A Spell of Good Things",
+      "Prophet Song"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 2023 Booker Prize was awarded to Paul Lynch for his dystopian novel 'Prophet Song'.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Awards and Honours" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q68",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "Which of the following is/are the measure/measures undertaken by the Government of India to promote the production of Compressed Bio-Gas (CBG)?\n1. Central financial assistance for setting up of plants for generation of Bio-CNG\n2. Inclusion of CBG projects under Priority Sector Lending\n3. Concession on customs duty for the import of machinery required for setting up of projects\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "1 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Government of India promotes CBG through initiatives like SATAT, which includes providing financial assistance, categorizing CBG projects under Priority Sector Lending for easier credit, and offering customs duty concessions for importing necessary plant machinery.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q69",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Infrastructure",
+    "text": "Which one of the following statements about 'Silkyara Bend-Barkot Tunnel' is not correct?",
+    "options": [
+      "It is in the State of Uttarakhand.",
+      "It is a part of 'Chardham Mahamarg Pariyojana'.",
+      "It falls along NH-134.",
+      "It is being built by the National Highways Authority of India."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Silkyara Bend-Barkot Tunnel (famous for the 2023 collapse and rescue operation) is being constructed by the National Highways and Infrastructure Development Corporation Limited (NHIDCL), not the National Highways Authority of India (NHAI).",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Infrastructure" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q70",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Defence Exercises",
+    "text": "Which one among the following statements about VINBAX is not correct?",
+    "options": [
+      "It is a Joint Military Exercise between India, Vietnam and Bangladesh.",
+      "It was instituted in 2018.",
+      "Its first edition was conducted at Jabalpur.",
+      "In 2023, Indian contingent comprised the Engineer Regiment of the Bengal Engineer Group."
+    ],
+    "correctAnswer": 0,
+    "explanation": "VINBAX (Vietnam-India Bilateral Army Exercise) is a bilateral joint military exercise exclusively between India and Vietnam. Bangladesh is not a participant.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence Exercises" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q71",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Health and Society",
+    "text": "Which one among the following statements about Universal Health Coverage (UHC) is not correct?",
+    "options": [
+      "The United Nations is observing 12th December as the 'International Universal Health Coverage Day' since 2012.",
+      "UHC's motto is that everyone should have access to quality and affordable healthcare.",
+      "It is a central aspect of Sustainable Development Goals.",
+      "Population coverage, service coverage and financial protection are dimensions of UHC."
+    ],
+    "correctAnswer": 0,
+    "explanation": "While the UN unanimously endorsed a historic resolution urging countries to accelerate progress toward UHC in December 2012, it was in 2017 that the UN officially designated December 12 as International Universal Health Coverage Day.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Health and Society" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q72",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Environment and Initiatives",
+    "text": "Consider the following statements about the Global River Cities Alliance (GRCA):\n1. It is an alliance of global river cities led by the National Mission for Clean Ganga under the Ministry of Jal Shakti, Government of India.\n2. GRCA is a unique alliance covering more than 275 global river cities in 11 countries.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Launched at COP28, the GRCA is an India-led initiative by the National Mission for Clean Ganga (NMCG) that brings together over 275 river cities from 11 countries to share practices for sustainable river management.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Environment and Initiatives" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q73",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Law and Governance",
+    "text": "Which one among the following statements with regard to the legal facilities in India is not correct?",
+    "options": [
+      "Tele-Law is a pre-litigation advice mechanism.",
+      "The President of India is Patron-in-Chief of National Legal Services Authority (NALSA).",
+      "There are dedicated Commercial Courts at various places in India to handle commercial cases.",
+      "Some courts in India are paperless Digital Commercial Courts."
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to the Legal Services Authorities Act, 1987, the Chief Justice of India acts as the Patron-in-Chief of the National Legal Services Authority (NALSA), not the President of India.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Law and Governance" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q74",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Agriculture",
+    "text": "Which one among the following States in India has received maximum funds under Sub-Mission on Agriculture Mechanization from 2014-2015 to 2023-2024?",
+    "options": [
+      "Andhra Pradesh",
+      "Karnataka",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Uttar Pradesh has been recorded as the top recipient of funds under the Sub-Mission on Agricultural Mechanization (SMAM) during this period to boost farm mechanization in the state.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q75",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Summits",
+    "text": "UNFCCC-COP28 was held in which one of the following cities?",
+    "options": [
+      "Sharm el-Sheikh",
+      "Dubai",
+      "Glasgow",
+      "Baku"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 28th Conference of the Parties to the UN Framework Convention on Climate Change (COP28) was held in Dubai, United Arab Emirates, in late 2023.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Summits" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q76",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Web Technologies",
+    "text": "In HTML, which one of the following is used to open the linked document in a new browser window?",
+    "options": [
+      "_self",
+      "_link",
+      "_blank",
+      "_open"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In HTML, setting the 'target' attribute of an anchor tag (<a>) to '_blank' (target=\"_blank\") instructs the browser to open the linked document in a new window or tab.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Web Technologies" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q77",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Data Representation",
+    "text": "In the context of universal character encoding standard, UTF stands for",
+    "options": [
+      "Unicode Transformation Format",
+      "Unicode Transformation Form",
+      "Unique Transformation Format",
+      "Unique Transformation Form"
+    ],
+    "correctAnswer": 0,
+    "explanation": "UTF stands for Unicode Transformation Format. It is a character encoding format which is able to encode all of the possible character code points in Unicode.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Data Representation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q78",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Memory",
+    "text": "The smallest addressable unit of memory is",
+    "options": [
+      "bit",
+      "byte",
+      "word",
+      "nibble"
+    ],
+    "correctAnswer": 1,
+    "explanation": "While a bit is the smallest unit of data, memory architectures conventionally assign addresses at the byte level. Thus, the byte is the smallest addressable unit of memory.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Memory" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q79",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Hardware Peripherals",
+    "text": "Which of the following is/are pointing device/devices?\n1. Trackball\n2. Touchscreen\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both a trackball and a touchscreen act as pointing devices, allowing users to move a cursor or interact directly with objects on a graphical user interface.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Hardware Peripherals" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q80",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Data Representation",
+    "text": "In a computer system, the signed numbers cannot be represented by",
+    "options": [
+      "signed magnitude",
+      "one's complement",
+      "two's complement",
+      "float magnitude"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Standard methods for representing signed binary integers in computers include signed magnitude, one's complement, and two's complement. 'Float magnitude' is not a standard integer representation method.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Data Representation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q81",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Data Visualization",
+    "text": "Histogram is a type of",
+    "options": [
+      "line chart",
+      "pie chart",
+      "bar chart",
+      "donut chart"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A histogram is a specific type of bar chart that represents the frequency distribution of continuous data, where adjacent bars have no gaps between them.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Data Visualization" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q82",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Storage Devices",
+    "text": "Which one of the following is the medium in optical storage system for reading and recording data?",
+    "options": [
+      "Ultraviolet light",
+      "Laser light",
+      "Black light",
+      "High-energy visible light"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Optical storage systems (like CDs, DVDs, and Blu-rays) use laser light to read and write data encoded in the microscopic pits and lands on the disc surface.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Storage Devices" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q83",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Databases",
+    "text": "MS Access is a/an",
+    "options": [
+      "relational DBMS",
+      "network DBMS",
+      "object-oriented DBMS",
+      "hierarchical DBMS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Microsoft Access is a Database Management System (DBMS) that stores data in a relational format, utilizing linked tables.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Databases" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q84",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Networking",
+    "text": "On which layer of the OSI model does a 'repeater' operate?",
+    "options": [
+      "Physical",
+      "Data link",
+      "Network",
+      "Presentation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A repeater is a networking device that simply regenerates and boosts the electrical/optical signal over a cable. It operates purely at the Physical layer (Layer 1) of the OSI model without reading MAC or IP addresses.",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Networking" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q85",
+    "year": 2024,
+    "subject": "Computers",
+    "topic": "Data Representation",
+    "text": "The decimal value of 4A9.2B is",
+    "options": [
+      "1193.1679",
+      "119.31679",
+      "11.931679",
+      "1.1931679"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Convert from base 16 (hexadecimal) to base 10 (decimal). Integer part: (4 * 16²) + (10 * 16¹) + (9 * 16⁰) = 1024 + 160 + 9 = 1193. Fractional part: (2 * 16⁻¹) + (11 * 16⁻²) = 2/16 + 11/256 ≈ 0.125 + 0.04296875 = 0.16796875. So, the value is 1193.1679...",
+    "tags": [
+      { "type": "subject", "label": "Computers" },
+      { "type": "topic", "label": "Data Representation" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q86",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Industrial Security",
+    "text": "While maintaining the employer's rights in respect of trespass and damage, an impartial, courteous and friendly attitude can yield dividends in taking the heat out of an immediate situation and yield long-term dividends in the form of goodwill.\nIn which one among the following references will this statement be most appropriate for industrial security?",
+    "options": [
+      "Counter-intelligence",
+      "Action during strike",
+      "Action during patrolling",
+      "Enhanced housekeeping"
+    ],
+    "correctAnswer": 1,
+    "explanation": "During an industrial strike, emotions run high. While a security force must prevent trespass and damage, acting impartially and courteously prevents the situation from escalating and fosters long-term goodwill after the strike ends.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Industrial Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q87",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Security Operations",
+    "text": "Which one of the following documents is not required in the control room of the main gate of a plant?",
+    "options": [
+      "Attendance register",
+      "Vehicle register",
+      "Standing order",
+      "Crime register"
+    ],
+    "correctAnswer": 3,
+    "explanation": "While an attendance register, vehicle movement register, and facility standing orders are vital for gate control operations, a Crime register is an investigative document typically maintained at the central security office or police station, not the access control gate.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Operations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q88",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Security Operations",
+    "text": "The drivers of the cash vans, while carrying heavy cash, should pay special attention to which of the following?\n1. Staged accidents\n2. Fake police officers\n3. Expected traffic diversions\n4. Normal speed breakers\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "3 and 4",
+      "1 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cash-in-transit drivers are trained to be highly vigilant against common ambush tactics, such as staged accidents (designed to make the driver stop and exit the vehicle) and fake police officers setting up bogus checkpoints.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Operations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q89",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Physical Security",
+    "text": "A perimeter wall of standard height should have further reinforcement with which of the following?\n1. Barbed wire on top\n2. Setting spikes\n3. Concertina wire\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To prevent scaling and intrusion, standard perimeter walls are physically reinforced using anti-climb measures which include barbed wire, metal spikes, and concertina wire toppings.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Physical Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q90",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "CISF Act",
+    "text": "‘Industrial undertaking’ means any undertaking pertaining to a scheduled industry, and includes an undertaking engaged in any other industry, or in any trade, business or service which may be regulated by the Parliament by law.\nWhich one among the following Sections of the CISF Act, 1968 defines this?",
+    "options": [
+      "Section 2(1)(a)",
+      "Section 2(1)(b)",
+      "Section 2(1)(c)",
+      "Section 2(1)(d)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In the Central Industrial Security Force Act, 1968, the definition for 'Industrial undertaking' is provided under Section 2(1)(b).",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q91",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "CISF Administration",
+    "text": "In case you had joined the armed forces at the upper age limit of 21 years under the 'Agneepath' Scheme in the first batch and you had served 4 years, you can be recruited by CISF until the age of",
+    "options": [
+      "27 years",
+      "28 years",
+      "29 years",
+      "30 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The maximum age for general recruitment is 23. Agniveers are granted a 3-year age relaxation (making it 26). However, the first batch of Agniveers gets a 5-year relaxation, extending the upper age limit to 28 years.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF Administration" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q92",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Aviation Security",
+    "text": "As per the BCAS guidelines, what is the maximum permissible length of a Kirpan allowed to be carried by a Sikh passenger on a domestic flight within India?",
+    "options": [
+      "7 inches total length with a blade of 4 inches",
+      "9 inches total length with a blade not exceeding 6 inches",
+      "10 inches total length with a blade not exceeding 6 inches",
+      "9 inches total length with a blade not exceeding 4 inches"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Under the Bureau of Civil Aviation Security (BCAS) rules, a Sikh passenger is allowed to carry a Kirpan on domestic flights provided the total maximum length does not exceed 9 inches and the blade length does not exceed 6 inches.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Aviation Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q93",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "CISF Act",
+    "text": "In which year did the amendment to the CISF Act, 1968 enhance the territorial purview of the force by enabling the Central Government to deploy it outside the geographical jurisdiction of India?",
+    "options": [
+      "1983",
+      "1989",
+      "1999",
+      "2009"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The CISF (Amendment) Act of 2009 expanded the force's mandate significantly, including the provision (Section 15A) to deploy CISF personnel outside India for the protection of Indian missions or UN peacekeeping.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q94",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Fire Safety",
+    "text": "Which of the following are the types of fire sprinkler systems?\n1. Wet pipe\n2. Pre-action\n3. Dry pipe\n4. Deluge\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All four mentioned are standard types of automatic fire sprinkler systems used in different environments based on temperature control and response requirements.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Fire Safety" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q95",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Fire Safety",
+    "text": "CISF has a highly specialized, trained and fully equipped fire wing. It provides fire coverage to industrial establishments, except",
+    "options": [
+      "power plants",
+      "coal mines",
+      "oil refineries",
+      "fertilizer plants"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The CISF Fire Wing covers various sensitive installations like power plants, refineries, and petrochemicals. However, specialized subterranean fire rescue in coal mines is typically managed by dedicated mining rescue teams under the Directorate General of Mines Safety (DGMS).",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Fire Safety" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q96",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "CISF History",
+    "text": "CISF was first inducted in which one among the following airports?",
+    "options": [
+      "New Delhi",
+      "Jaipur",
+      "Amritsar",
+      "Mumbai"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Following the hijacking of Indian Airlines flight IC-814 in 1999, the Government assigned airport security to the CISF. The first airport to be taken over by the CISF was Jaipur Airport in February 2000.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q97",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Security Equipment",
+    "text": "CRT in the context of security equipment stands for",
+    "options": [
+      "Cathode Ray Tube",
+      "Central Research Transponder",
+      "Common Repeater Timing",
+      "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In earlier generations of CCTV monitors and X-BIS imaging displays, CRT stands for Cathode Ray Tube.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Equipment" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q98",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Tactics and Fieldcraft",
+    "text": "Which one among the following is not a natural cover from fire in fieldcraft and tactics?",
+    "options": [
+      "Ravine",
+      "Hollow",
+      "Bush",
+      "Reverse slope"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In military tactics, a bush provides 'cover from view' (concealment) but it does not provide 'cover from fire' (protection against bullets), unlike a ravine, hollow, or reverse slope.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Tactics and Fieldcraft" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q99",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Tactics and Fieldcraft",
+    "text": "Fire control order in fieldcraft and tactics is defined by which of the following?\n1. Group\n2. Range\n3. Indication of target\n4. Type of fire\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 3 only",
+      "2 and 4 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A Fire Control Order is passed using the standard military mnemonic 'GRIT', which stands for Group, Range, Indication of target, and Type of fire.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Tactics and Fieldcraft" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q100",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Tactics and Fieldcraft",
+    "text": "Which among the following are the main factors that affect the formation of platoon and section?\n1. Terrain\n2. Command and control\n3. Direction of fire\n4. Maximum firepower within minimum time\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 3 only",
+      "2 and 4 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The tactical formation of a unit is dictated by the terrain, the necessity to maintain command and control, the anticipated direction of enemy fire, and the ability to bring maximum firepower to bear quickly.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Tactics and Fieldcraft" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q101",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "CISF Act",
+    "text": "With reference to the CISF Act, 1968, which of the following statements is/are correct?\n1. Section 10 of the CISF Act deals with the duties of the members of the force.\n2. Section 11 of the CISF Act deals with the powers of arrest without warrant.\n3. Section 12 of the CISF Act deals with the procedure to be followed after arrest.\n4. Section 13 of the CISF Act deals with the powers of search without warrant.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 4",
+      "2 and 3",
+      "1 and 2",
+      "2 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sections 10 and 11 deal with duties of members and powers to arrest without warrant, respectively. Statements 3 and 4 are swapped: Section 12 deals with powers of search without warrant, and Section 13 deals with the procedure to be followed after arrest.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q102",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "As per the CCS (CCA) Rules, 1965, which one among the following is not the competent authority to place a government servant under suspension?",
+    "options": [
+      "Appointing authority",
+      "Any authority, to which the appointing authority is subordinate",
+      "Disciplinary authority",
+      "Inquiry authority"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An Inquiry Authority is appointed solely to inquire into the truth of the imputations of misconduct. It does not possess the administrative power to place a government servant under suspension.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q103",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "As per the CCS (Conduct) Rules, 1964, which one among the following activities does not require sanction/permission of the prescribed authority?",
+    "options": [
+      "To join as volunteers in civil defence service",
+      "To accept gifts from near relatives, when value exceeds prescribed limits",
+      "To accept fee for work done for any private or public body, or person",
+      "To participate in Shramdaan organized by Bharat Sevak Samaj during spare time"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Participation in Shramdaan (voluntary labor) organized by government-recognized bodies like the Bharat Sevak Samaj during spare time does not require prior sanction, provided it does not interfere with official duties.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q104",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "Earned leave can be combined with which of the following?",
+    "options": [
+      "Casual leave, half pay leave, maternity leave",
+      "Casual leave, maternity leave, study leave",
+      "Half pay leave, maternity leave, sick leave",
+      "Casual leave, paternity leave, sick leave, study leave"
+    ],
+    "correctAnswer": 2,
+    "explanation": "As a general rule under Central Civil Services Leave Rules, Casual Leave cannot be combined with any other kind of regular leave (like Earned Leave, Half Pay Leave, etc.). Thus, options containing Casual Leave are incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q105",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Service Rules",
+    "text": "For an encashment of earned leave of up to 10 days at the time of availing LTC, a balance of at least how many days should be available to a government servant's credit after taking into account the period of encashment as well as leave being availed of?",
+    "options": [
+      "180 days",
+      "30 days",
+      "90 days",
+      "300 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Under the LTC rules, a government servant is permitted to encash up to 10 days of earned leave, provided that a balance of at least 30 days of earned leave remains at their credit after deducting the period of encashment and the leave availed.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Service Rules" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q106",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Security Operations",
+    "text": "The dog squad of CISF is trained to sniff and identify which of the following?\n1. Metallic weapons\n2. Narcotics\n3. Pickle and smuggled food items\n4. IEDs\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "2 only",
+      "1 and 3",
+      "2 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Security force dog squads are primarily trained for explosive detection (IEDs) and narcotics/tracker duties. They do not sniff out metallic weapons (which lack distinct odors) or generic food items.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Operations" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q107",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "VIP Security",
+    "text": "In 2006, CISF raised a special unit called the Special Security Group (SSG) to provide security cover to protectees. Which of the following is not a part of its duty?",
+    "options": [
+      "Providing physical protection",
+      "Evacuation of the protectees in case of an emergency",
+      "Providing mobile and static security cover to nominated persons",
+      "Providing protection to the relatives and guests of the protectees"
+    ],
+    "correctAnswer": 3,
+    "explanation": "SSG provides tight, nominated physical, static, and mobile protection to the designated protectee. Extending blanket security cover to relatives and guests is not part of their standard mandate unless specifically designated by the government.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "VIP Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q108",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Law and Order",
+    "text": "What do we call an occasion when people show that they disagree with something by standing around a person in authority and not letting the person leave until the person agrees to do what the people want?",
+    "options": [
+      "Confinement",
+      "Wrongful restraint",
+      "Blockade",
+      "Gherao"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Gherao' is an Indian term denoting an organized tactic where protesters physically encircle a politician, manager, or authority figure, preventing them from leaving until demands are met.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Law and Order" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q109",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Security Intelligence",
+    "text": "Intelligence can be collected from various sources. Which one among the following is not a reliable source for collection of intelligence?",
+    "options": [
+      "Images obtained by satellites",
+      "Grapevine communication",
+      "Intercepted communication",
+      "Information obtained through espionage"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Grapevine communication' refers to informal, unofficial, and often unverified gossip or rumors. While it might provide leads, it is fundamentally an unreliable source of actionable intelligence compared to satellites or intercepts.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Intelligence" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q110",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Security Equipment",
+    "text": "Which one among the following is not a part of Bomb Detection and Disposal Squad (BDDS) equipment?",
+    "options": [
+      "Telescopic manipulator",
+      "Bomb blanket",
+      "Deep search metal detector",
+      "Smoke bomb"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A smoke bomb is a tactical or riot-control munition used for concealment or signaling. It is not an investigative or protective tool used by BDDS for the disposal of explosives.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Security Equipment" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q111",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Industrial Security",
+    "text": "The illegal and unethical theft of business secrets for use by a competitor to achieve a competitive advantage is known as",
+    "options": [
+      "sabotage",
+      "subversion",
+      "industrial espionage",
+      "counter-intelligence"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Industrial espionage involves the covert, illegal gathering of proprietary business data, trade secrets, or intellectual property by a rival company.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Industrial Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q112",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Aviation Security",
+    "text": "Sky Marshals are deployed to prevent hijacking. In India, they are recruited from",
+    "options": [
+      "Delhi Police",
+      "NSG",
+      "SPG",
+      "CISF"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In India, Sky Marshals are elite, armed undercover law enforcement officers deployed on commercial flights to counter hijackings. They are drawn specifically from the National Security Guard (NSG).",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Aviation Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q113",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Aviation Security",
+    "text": "Which one of the following statements with regard to carrying power banks for mobile phones and dry cells in flight is correct?",
+    "options": [
+      "Both are allowed in cabin baggage.",
+      "Dry cell is allowed in cabin baggage.",
+      "Power bank is allowed in cabin baggage.",
+      "Both are allowed in registered baggage."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Aviation security guidelines explicitly prohibit power banks (lithium-ion batteries) in checked/registered baggage due to fire risk; they must be carried in cabin baggage. Standard dry cells are also permitted in cabin baggage.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Aviation Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q114",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "CISF Act",
+    "text": "The Police (Incitement to Disaffection) Act, 1922 shall apply to members of the CISF as it applies to members of a Police Force. Which Section of the CISF Act, 1968 says this?",
+    "options": [
+      "Section 18",
+      "Section 19",
+      "Section 20",
+      "Section 21"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 19 of the CISF Act, 1968 explicitly states that the Police (Incitement to Disaffection) Act, 1922 applies to the enrolled members of the force as it does to members of a police force.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q115",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Information Security",
+    "text": "Vitally confidential documents passing through the post should be enclosed in an envelope addressed to the intended recipient, and they should be\n1. marked as strictly personal (by name)\n2. marked as strictly private\n3. marked as restricted\n4. put into another envelope\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 4",
+      "2, 3 and 4",
+      "1, 2 and 3",
+      "1 and 4 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Highly confidential documents transmitted via postal service follow a 'double-envelope' system. The inner envelope bears the name and is marked strictly personal/confidential, while the outer envelope bears only the official address to avoid drawing attention to its contents.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Information Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q116",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Central Armed Police Forces",
+    "text": "As per the MHA notification, which one among the following is not a CAPF?",
+    "options": [
+      "SSB",
+      "NSG",
+      "Assam Rifles",
+      "SPG"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Special Protection Group (SPG) is an elite protective agency reporting directly to the Cabinet Secretariat under the Prime Minister's Office, not categorized under the Central Armed Police Forces (CAPF) administered by the MHA.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Central Armed Police Forces" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q117",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "CISF Deployments",
+    "text": "In the National Capital Region, on which one of the following metro rail lines is CISF cover not provided?",
+    "options": [
+      "Blue Line",
+      "Aqua Line",
+      "Magenta Line",
+      "Airport Express Line"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Aqua Line is operated by the Noida Metro Rail Corporation (NMRC) and is independently secured by the Uttar Pradesh Provincial Armed Constabulary (PAC), whereas DMRC lines (Blue, Magenta, Airport) are secured by the CISF.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "CISF Deployments" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q118",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "CISF Act",
+    "text": "With reference to the CISF Act, 1968, which of the following statements is/are not correct?\n1. Section 8 deals with the superintendence and administration of the Force.\n2. The superintendence of the Force shall vest in the Central Government.\n3. The command and supervision of the Force shall vest in the Director General.\n4. The administration of the Force shall vest in the Inspector General.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 4",
+      "2 and 4",
+      "2 and 3",
+      "1 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 4 (not Section 8) deals with the superintendence and administration of the force. Furthermore, the administration of the Force vests in the Director General, not the Inspector General. Therefore, statements 1 and 4 are incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "CISF Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q119",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Industrial Security",
+    "text": "Which of the following are included in total risk management?\n1. Safety\n2. Fire prevention\n3. Damage control\n4. Insurance functions\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "1, 2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Total Risk Management in an industrial context involves a holistic approach covering physical safety, fire prevention strategies, immediate damage control protocols, and financial mitigation through insurance functions.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Industrial Security" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q120",
+    "year": 2024,
+    "subject": "Professional Skill",
+    "topic": "Tactics and Fieldcraft",
+    "text": "In fieldcraft, distance is underestimated when\n1. the light is bright\n2. the object is large in relation to its surroundings\n3. there is compressed/low-lying ground between the observer and the object\n4. looking uphill\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "1, 2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Distance is typically underestimated (i.e., things appear closer than they actually are) when light is extremely bright, the object is unusually large, dead ground lies between the observer and the target, or the observer is looking uphill.",
+    "tags": [
+      { "type": "subject", "label": "Professional Skill" },
+      { "type": "topic", "label": "Tactics and Fieldcraft" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q121",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "An employer of an establishment deducts an employee's contribution from his wages for crediting the same to the Family Pension Fund as per law but does not credit the same as required by law. The employer",
+    "options": [
+      "would be guilty of committing no offence under any law on his promise to deposit the amount",
+      "would be guilty of having violated the law and would be punishable only under the relevant labour legislation",
+      "would be guilty of having committed the offence of criminal breach of trust under the Indian Penal Code, 1860",
+      "would not be guilty of having committed the offence of criminal breach of trust under the Indian Penal Code, 1860"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under the Employees' Provident Funds Act, deducting an employee's contribution but failing to deposit it is statutorily defined as Criminal Breach of Trust and attracts prosecution under Section 405/406 of the Indian Penal Code.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q122",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Indian Penal Code (IPC)",
+    "text": "The punishment of imprisonment for life can be awarded for which of the following offences?\n1. Mischief by fire to destroy a building used as a place of worship\n2. Mischief by explosive substance to destroy a human dwelling house\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under Section 436 of the IPC, mischief by fire or explosive substance with intent to destroy a house, place of worship, or human dwelling is punishable with imprisonment for life, or imprisonment of up to ten years, and fine.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Indian Penal Code (IPC)" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q123",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Criminal Procedure",
+    "text": "With regard to seizure of property under the Code of Criminal Procedure, 1973, consider the following statements:\n1. A police officer not below the rank of Sub-Inspector of Police conducting an investigation for identifying unlawfully acquired property can make an order for seizing the property under investigation if he has reason to believe that the property in question may be concealed or transferred in any manner.\n2. An order made as above shall have no effect unless the same is confirmed by an order of the court within thirty days of its being made.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Section 105E of the CrPC, a Sub-Inspector can seize such property. However, the seizure order must be confirmed by the designated administrative 'Competent Authority' within thirty days, not by a 'court'. Thus, statement 2 is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Criminal Procedure" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q124",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Criminal Procedure",
+    "text": "A District Magistrate may by warrant authorize a police officer above the rank of a constable to take possession of an objectionable article deposited in any place. These articles include\n1. forged documents\n2. false seals\n3. obscene objects\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Section 94 of the CrPC empowers District Magistrates, Sub-Divisional Magistrates, or Magistrates of the First Class to issue search warrants for places suspected to contain stolen property, forged documents, false seals, counterfeit coins, or obscene objects.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Criminal Procedure" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q125",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Criminal Procedure",
+    "text": "Consider the following statements with regard to search under the Code of Criminal Procedure, 1973:\n1. A search warrant remains in force until cancelled by the court issuing it or the same is executed.\n2. A search warrant cannot be executed at any place if the place concerned falls outside the jurisdiction of the court issuing it.\n3. A search warrant may be issued by the District Magistrate for search of a person who has been confined where such confinement amounts to an offence.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "2 and 3",
+      "1 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statement 1 is true under Section 70 (applicable to warrants). Statement 3 is true under Section 97 (Search for persons wrongfully confined). Statement 2 is false because Section 79 allows a search warrant to be executed outside the issuing court's local jurisdiction.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Criminal Procedure" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q126",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Criminal Procedure",
+    "text": "Consider the following statements with regard to seizure of property under the Code of Criminal Procedure, 1973:\n1. Any police officer may seize any property which may be suspected to be stolen.\n2. Any police officer may seize any property which may be found under circumstances which create suspicion of the commission of any offence.\n3. If the value of the property seized is less than one thousand rupees and the person entitled to its possession is absent, the court may direct its sale by auction forthwith.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1, 2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 are true as per Section 102 of the CrPC. Statement 3 is false because Section 459 specifies the threshold for summary sale of perishable/unclaimed property as less than five hundred rupees, not one thousand.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Criminal Procedure" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q127",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Criminal Procedure",
+    "text": "Which one among the following statements is not correct?",
+    "options": [
+      "A Magistrate may issue a warrant to search a document or parcel in the custody of Postal or Telegraph authority.",
+      "A search warrant may be issued when it is not known to the court that a particular document or thing necessary for the purpose of any investigation or trial is in the possession of any person.",
+      "A search warrant may be issued when the court has reason to believe that the person who has been issued summons to produce a document necessary for any investigation or trial will not produce the same.",
+      "A search warrant may be issued for general search of a particular place."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Section 92 of the CrPC, only a District Magistrate (DM) or a Chief Judicial Magistrate (CJM) is empowered to issue a search warrant for items in postal or telegraph custody. An ordinary Magistrate cannot issue this warrant.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Criminal Procedure" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q128",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Indian Penal Code (IPC)",
+    "text": "Bribery, under the Indian Penal Code, 1860, includes which of the following?\n1. Giving a gratification to any person with the object of inducing him to exercise any electoral right or rewarding any person for having exercised any such right\n2. Making of a declaration of public policy or making of a promise of public action\n3. Giving or accepting a treat in the form of food, drink or entertainment\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "3 only",
+      "2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Under Section 171B of the IPC (Bribery during elections), giving gratification and treating (food, drink) are included. It explicitly excludes the declaration of public policy or promises of public action.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Indian Penal Code (IPC)" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q129",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "Which one of the following is a constitutional body?",
+    "options": [
+      "The National Commission for Backward Classes",
+      "The National Commission for Scheduled Tribes",
+      "The National Commission for Protection of Child Rights",
+      "The National Commission for Minorities"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The National Commission for Scheduled Tribes (NCST) is explicitly established under Article 338A of the Constitution. (Note: NCBC is also now a constitutional body under Article 338B post the 102nd Amendment, but NCST is the classic, universally recognized constitutional body in historical polity questions).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q130",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Human Rights",
+    "text": "Which one of the following statements with regard to the Protection of Human Rights Act, 1993 is correct?",
+    "options": [
+      "The Chairman and Members of a State Human Rights Commission hold office for a term of five years only.",
+      "The Chairman and Members of a State Human Rights Commission hold office for a term of six years only.",
+      "The Chairman and Members of a State Human Rights Commission hold office for a term of three years and are eligible for reappointment.",
+      "The Chairman and Members of a State Human Rights Commission can be reappointed for one more term of five years."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Following the 2019 amendment to the Protection of Human Rights Act, the term of office for the Chairperson and Members of the NHRC and SHRC was reduced from five years to three years, and they were made eligible for reappointment.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Human Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q131",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Human Rights",
+    "text": "Consider the following statements with regard to the Protection of Human Rights Act, 1993:\n1. It is mandatory to have at least one woman Member in the National Human Rights Commission having the knowledge of, or practical experience in, matters relating to human rights.\n2. It is mandatory to have at least three Members in the National Human Rights Commission having the knowledge of, or practical experience in, matters relating to human rights.\n3. The Chief Commissioner for Persons with Disabilities is deemed to be a Member of the National Human Rights Commission for certain purposes only.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 2019 amendment increased the members to be appointed from among persons having human rights knowledge from two to three, out of which at least one shall be a woman. The Chief Commissioner for Persons with Disabilities is a deemed member. All statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Human Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q132",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which one among the following provisions of the Constitution of India relates to preventive detention?",
+    "options": [
+      "Article 19",
+      "Article 20",
+      "Article 21",
+      "Article 22"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Article 22 of the Indian Constitution provides safeguards against arbitrary arrest and detention, including detailed provisions governing the legality, procedure, and limits of preventive detention.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q133",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Constitutional Amendments",
+    "text": "Amendments to which one among the following Articles to the Constitution of India have not been enforced till now?",
+    "options": [
+      "Article 20(1)",
+      "Article 20(2)",
+      "Article 21",
+      "Article 22(4)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 44th Constitutional Amendment Act, 1978 amended Article 22(4) to reduce the maximum period of preventive detention without obtaining the Advisory Board's opinion from three months to two months. However, this specific provision has never been brought into force.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Amendments" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q134",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which one among the following rights is not expressly provided under Article 22 of the Constitution of India to a person who has been arrested and detained?",
+    "options": [
+      "Right to get bail",
+      "Right to know the grounds of arrest",
+      "Right not to remain detained beyond twenty-four hours of arrest without the authority of a Magistrate",
+      "Right to be defended by a legal practitioner of his choice"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While Article 22 guarantees the right to be informed of the grounds of arrest, the right to a lawyer, and the right to be produced before a magistrate within 24 hours, the 'right to get bail' is governed by the CrPC, not expressly by Article 22.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q135",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Criminal Procedure",
+    "text": "Consider the following statements relating to identification of arrested person under the Code of Criminal Procedure, 1973:\n1. An arrested person can be directed to subject himself to identification in the manner prescribed by the court.\n2. If the person identifying the person arrested is mentally or physically disabled, the identification process must be videographed in all cases.\n3. The supervision of a Magistrate is not mandatory if the person identifying is mentally or physically disabled.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 54A of the CrPC states that an arrested person can be directed for identification, and videography is mandatory if the identifier is disabled. However, it explicitly states that the process MUST be under the supervision of a Judicial Magistrate. Thus, statement 3 is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Criminal Procedure" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q136",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which one among the following provisions of the Constitution of India prohibits forced labour such as traffic in human beings, Begar and such other similar forms of labour, but does not prevent the State from imposing compulsory service for public purposes without discrimination?",
+    "options": [
+      "Article 23",
+      "Article 24",
+      "Article 25",
+      "Article 26"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 23 of the Constitution prohibits human trafficking and forced labor (begar). Clause 2 of the same Article allows the State to impose compulsory service for public purposes.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q137",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Indian Evidence Act",
+    "text": "What does 'evidence', under the Indian Evidence Act, 1872, mean?\n1. Statements in relation to matters of fact under inquiry which the court permits or requires to be made before it by witnesses\n2. Documents produced for the inspection of the court including electronic records\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under Section 3 of the Indian Evidence Act, 'Evidence' means and includes all statements which the Court permits or requires to be made before it by witnesses (oral evidence), and all documents including electronic records produced for the inspection of the Court (documentary evidence).",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Indian Evidence Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q138",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Indian Evidence Act",
+    "text": "Which one among the following legal propositions is not correct with regard to the Indian Evidence Act, 1872?",
+    "options": [
+      "When there is a provision that the court may presume a fact, it may either regard such fact as proved unless it is disproved or may call for proof of it",
+      "When there is a provision that the court shall presume a fact, it shall regard such fact as proved unless it is disproved",
+      "When there is a provision that the court shall presume a fact, it may call for proof",
+      "When one fact is declared to be conclusive proof of another, the court shall, on proof of one fact, regard the other as proved and shall not allow evidence to be given for the purpose of disproving it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When the Act states 'shall presume', the Court has no discretion; it MUST regard the fact as proved unless and until it is disproved. It cannot call for proof. Therefore, option (c) is an incorrect legal proposition.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Indian Evidence Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q139",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Indian Evidence Act",
+    "text": "'Court', under the Indian Evidence Act, 1872, does not include which of the following?",
+    "options": [
+      "Magistrates",
+      "Arbitrators",
+      "Civil Judges",
+      "Persons legally authorized to take evidence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 3 of the Indian Evidence Act explicitly states that 'Court' includes all Judges and Magistrates, and all persons, except arbitrators, legally authorized to take evidence.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Indian Evidence Act" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q140",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Important Judgements",
+    "text": "In which one among the following cases, the Supreme Court issued detailed directions for the protection of the rights of the arrested person?",
+    "options": [
+      "D. K. Basu vs State of West Bengal",
+      "Lalita Kumari vs State of UP",
+      "Rudul Sah vs State of Bihar",
+      "Parmanand Katara vs Union of India"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the landmark judgment of D.K. Basu vs. State of West Bengal (1997), the Supreme Court laid down detailed 11-point guidelines (D.K. Basu Guidelines) regarding the arrest and detention of individuals to prevent custodial violence.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Important Judgements" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q141",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Right to Information",
+    "text": "Under which one among the following Sections of the Right to Information Act, 2005 is information pertaining to violation of human rights not exempted from disclosure by intelligence and security organizations established by the government?",
+    "options": [
+      "Section 18",
+      "Section 20",
+      "Section 24",
+      "Section 26"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 24 of the RTI Act exempts certain intelligence and security agencies from the Act's purview. However, its proviso explicitly states that information pertaining to allegations of corruption and human rights violations shall not be excluded under this sub-section.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Right to Information" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q142",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which of the following is not correct?\nA voluntary reference of dispute to arbitration under Section 10A of the Industrial Disputes Act, 1947 can be made",
+    "options": [
+      "where the industrial dispute exists or is apprehended",
+      "when the employer and the workmen agree to refer the dispute to arbitration",
+      "at any time before or after the dispute has been referred under Section 10",
+      "to such person or persons as may be specified in the arbitration agreement"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 10A of the Industrial Disputes Act mandates that the agreement to refer a dispute to voluntary arbitration must be made at any time BEFORE the dispute has been referred under Section 10 to a Labour Court, Tribunal, or National Tribunal.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q143",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which one among the following statements in respect of publication and commencement of an award under the Industrial Disputes Act, 1947 is not correct?",
+    "options": [
+      "Every arbitration award or award of the Labour Court, Tribunal or National Tribunal shall be published by the appropriate government within a period of 30 days from the date of receipt of any such award.",
+      "An award is enforceable on the expiration of 30 days from the date of its publication by the appropriate government.",
+      "The appropriate government can declare that such award is not enforceable even after the expiration of 30 days, in case it is of the opinion that it is inexpedient on public grounds affecting the national economy to give effect to the award.",
+      "The powers vested on the appropriate government with regard to making an award unenforceable are absolute and it is not required to refer the matter any further to any other authority."
+    ],
+    "correctAnswer": 3,
+    "explanation": "If the government declares an award unenforceable due to public grounds, the action is not absolute/final. Under Section 17A, the appropriate government must lay the award along with the order before the Legislature (Parliament or State Legislature) for scrutiny.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q144",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which of the following categories of persons is/are 'workmen' under the Industrial Disputes Act, 1947?\n1. Persons employed to look after the administrative functions in an industry\n2. Persons employed to do technical work in an industry\n3. Persons employed as officer or employee of a prison\n4. Persons employed to do operational work in an industry\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 and 4 only",
+      "2, 3 and 4",
+      "1, 2 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Under Section 2(s) of the ID Act, a 'workman' includes those doing manual, unskilled, skilled, technical, operational, or clerical work. It specifically excludes those employed mainly in a managerial/administrative capacity (Statement 1) and officers/employees of a prison (Statement 3).",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q145",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which one among the following amounts to retrenchment?",
+    "options": [
+      "X retires from his services on reaching the age of superannuation",
+      "X is terminated from his services due to non-renewal of his employment contract",
+      "X is terminated by his employer for any reasons whatsoever",
+      "X is terminated from his employment by way of punishment inflicted by way of disciplinary action"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under Section 2(oo) of the ID Act, 'retrenchment' means the termination by the employer of the service of a workman for any reason whatsoever, otherwise than as a punishment inflicted by disciplinary action, and excluding voluntary retirement, superannuation, or non-renewal of a contract.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q146",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which of the following can be said to be classified as partial disablement?\n1. In case the disablement is temporary, it reduces the earning capacity of the employee in any employment in which he was engaged at the time of the accident\n2. In case the disablement is temporary, it disables the person from performing all works that he was capable of performing at the time of the accident\n3. In case the disablement is permanent, it reduces his earning capacity in every employment he was capable of undertaking at the time of the accident\nSelect the correct answer using the code given below.",
+    "options": [
+      "2 and 3",
+      "1 and 3",
+      "3 only",
+      "1 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 2 describes 'total disablement' (incapacitates the workman for all work). Statements 1 and 3 correctly describe the statutory definitions of temporary and permanent 'partial disablement' under the Employees' Compensation Act.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q147",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "In which of the following cases will an employer be held liable to pay compensation under the Employees' Compensation Act, 1923?\n1. Where a personal injury is caused to an employee by an accident arising out of his employment\n2. Where the injury caused results in total disablement for two days\n3. Where the personal injury to the employee is caused in the course of his employment\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Under Section 3(1), an employer is liable for injury arising 'out of and in the course of' employment (Statements 1 and 3). However, the injury must result in disablement for a period EXCEEDING three days, making Statement 2 incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q148",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Which one of the following statements in the context of the Employees' Compensation Act, 1923 is correct?",
+    "options": [
+      "The lump-sum or half-monthly payment payable under the Act may be assigned or charged or liable to pass on to any person other than the employee.",
+      "A notice of compensation may be entertained by the Commissioner, even if the notice of the accident was not provided when the accident occurred.",
+      "Any right to receive half-monthly payment can under no circumstances be redeemed by payment of a lump-sum of such amount.",
+      "The half-monthly payment payable under the Act may be reviewed by the Commissioner in case there is a change in the condition of the employee."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Section 6 of the Employees' Compensation Act explicitly allows half-monthly payments to be reviewed by the Commissioner on the application of the employer or employee, accompanied by a medical certificate indicating a change in the employee's condition.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q149",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "Consider the following statements in respect of granting exemption from the operation of the provisions of the Employees' Provident Fund Scheme under the Employees' Provident Funds and Miscellaneous Provisions Act, 1952:\n1. In case the appropriate government is of the opinion that the rules of provident fund as to the rate of contributions of an establishment are not less favourable than those specified in the Act, exemption may be granted.\n2. In case the employees in an establishment are in enjoyment of benefits in nature of provident fund, pension or gratuity, which are not less favourable to the employees than the benefits provided under the Act, exemption may be granted.\n3. Where such exemptions have been granted, the provisions regarding contributions (Section 6), and determination of money due from employers (Section 7A) under the Act, will not apply.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "1 and 2 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statements 1 and 2 accurately reflect Section 17 regarding exemption conditions. Statement 3 is incorrect because even exempted establishments remain subject to statutory obligations like Section 7A (determination of money due) to ensure compliance.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  },
+  {
+    "id": "cisf-2024-q150",
+    "year": 2024,
+    "subject": "Law",
+    "topic": "Labour Laws",
+    "text": "During the pendency of any proceeding before a Board of Conciliation, Labour Court, Tribunal or National Tribunal, which of the following actions cannot be taken by an employer under the Industrial Disputes Act, 1947?\n1. Altering in regard to any matter not connected with the dispute, the service conditions applicable to a workman immediately before the commencement of such proceedings\n2. Discharging or punishing a workman for a misconduct that is not connected with the pending dispute\n3. Discharging or punishing a protected workman after instituting a Disciplinary Committee against him\nSelect the correct answer using the code given below.",
+    "options": [
+      "2 only",
+      "3 only",
+      "1 and 2",
+      "1 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Under Section 33, an employer CAN take actions 1 and 2 (for matters unconnected to the dispute) provided they seek approval and pay one month's wages. However, action 3 (punishing a 'protected workman') CANNOT be taken without the express prior, written permission of the authority.",
+    "tags": [
+      { "type": "subject", "label": "Law" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2024" }
+    ]
+  }
+]

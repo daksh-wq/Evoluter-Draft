@@ -1,0 +1,2522 @@
+[
+  {
+    "id": "cds-2022-1-gk-001",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "If the magnification produced by a lens is +2, then the image is:",
+    "options": [
+      " erect, virtual and smaller than the object",
+      "inverted, real and smaller than the object",
+      "erect, virtual and larger than the object",
+      "inverted, real and larger than the object"
+    ],
+    "correctAnswer": "2",
+    "explanation": "A magnification of +2 means the image is erect (positive sign indicates erect image) and larger than the object (magnitude 2 means twice the size). An erect image formed by a lens is always virtual. Hence the image is erect, virtual and larger than the object.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Optics - Lenses" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-002",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "What is the correct sequence of resistivity of silver, nichrome and glass at room temperature?",
+    "options": [
+      "Silver < Nichrome < Glass",
+      "Glass < Nichrome < Silver",
+      "Silver < Glass < Nichrome",
+      "Nichrome < Silver < Glass"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Silver is a very good conductor with very low resistivity (~1.6×10⁻⁸ Ωm). Nichrome is an alloy with much higher resistivity (~1.1×10⁻⁶ Ωm). Glass is an insulator with extremely high resistivity (~10¹⁰ to 10¹⁴ Ωm). So the correct order is Silver < Nichrome < Glass.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Electricity - Resistivity" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-003",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "At the time of short-circuit, the current in the circuit:",
+    "options": [
+      "reduces substantially",
+      "does not change",
+      "increases heavily",
+      "keeps on fluctuating"
+    ],
+    "correctAnswer": "2",
+    "explanation": "During a short-circuit, the resistance in the circuit drops to near zero. According to Ohm's law (I = V/R), when resistance approaches zero, the current becomes extremely large. Hence the current increases heavily during a short-circuit.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Electricity - Short Circuit" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-004",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Electricity and Magnetism",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "An electric motor converts electrical energy into mechanical energy",
+      "An electric generator works on the principle of electromagnetic induction",
+      "The magnetic field at the centre of a long circular coil carrying current will be parallel straight lines",
+      "A wire with a green insulation is usually the live wire of an electric supply"
+    ],
+    "correctAnswer": "3",
+    "explanation": "In standard electrical wiring, the live wire has red (or brown) insulation, the neutral wire has black (or blue) insulation, and the earth wire has green (or green-yellow) insulation. So option (d) is incorrect — green insulation denotes the earth wire, not the live wire.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Electricity - Wiring" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-005",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Motion",
+    "text": "A boy completes one round of a circular track of diameter 200 m in 30 s. What will be the displacement at the end of 3 minutes and 45 seconds?",
+    "options": [
+      "50 m",
+      "100 m",
+      "200 m",
+      "236 m"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Time = 3 min 45 sec = 225 seconds. Time for one round = 30 s. Number of rounds = 225/30 = 7.5 rounds. After 7 complete rounds the boy is back at the start, and then completes half a round (0.5 round). After half a round on a circular track of diameter 200 m, the boy is at the diametrically opposite point. Displacement = diameter = 200 m.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Motion - Circular Motion" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-006",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "text": "What happens to the gravitational force between two objects if the mass of one object is doubled and the distance between them is also doubled?",
+    "options": [
+      "The force would remain the same",
+      "The force would be doubled",
+      "The force would be halved",
+      "The force would increase by a factor of 4"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Gravitational force F = Gm₁m₂/r². If m₁ is doubled (2m₁) and r is doubled (2r): New F = G(2m₁)m₂/(2r)² = 2Gm₁m₂/4r² = Gm₁m₂/2r² = F/2. Hence the force would be halved.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Gravitation" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-007",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "The number of moles of oxygen gas used in the complete combustion of 1 mole of glucose is:",
+    "options": [
+      "1",
+      "3",
+      "6",
+      "12"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The balanced equation for complete combustion of glucose is: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. From the equation, 1 mole of glucose requires 6 moles of oxygen gas.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Chemical Reactions - Combustion" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-008",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Which one of the following is NOT an example of an oxidation reaction?",
+    "options": [
+      "The taste of butter changes if left for a longer period",
+      "A white substance is formed when an aqueous solution of barium chloride is mixed with sodium sulphate solution",
+      "A reddish-brown powder gets coated on articles made of iron",
+      "Wine gets sour with time"
+    ],
+    "correctAnswer": "1",
+    "explanation": "When barium chloride (BaCl₂) reacts with sodium sulphate (Na₂SO₄), it forms barium sulphate (BaSO₄) as a white precipitate and sodium chloride. This is a double displacement (precipitation) reaction, not an oxidation reaction. The other options — rancidity of butter (a), rusting of iron (c), and souring of wine (d) — all involve oxidation.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Chemical Reactions - Oxidation" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-009",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Acids",
+    "text": "Methanoic acid is normally found in:",
+    "options": [
+      "muscles",
+      "urine",
+      "ant stings",
+      "human brain"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Methanoic acid (formic acid, HCOOH) is naturally found in ant stings. It is what causes the burning pain of an ant bite. Lactic acid is found in muscles, uric acid in urine.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Acids - Natural Sources" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-010",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Mole Concept",
+    "text": "What is the number of moles of 'He' in 104 g of helium gas?",
+    "options": [
+      "52",
+      "26",
+      "13",
+      "6.5"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The atomic mass of helium (He) is 4 g/mol. Number of moles = mass / molar mass = 104 / 4 = 26 moles.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Mole Concept" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-011",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Hydrocarbons",
+    "text": "While burning hydrocarbon fuels, if we see a yellow flame with lots of black smoke, it means that the fuel is:",
+    "options": [
+      "made of saturated hydrocarbons",
+      "made of unsaturated hydrocarbons",
+      "burning completely",
+      "wet"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Unsaturated hydrocarbons have a higher carbon-to-hydrogen ratio. When they burn, they produce a yellow, sooty flame with black smoke due to incomplete combustion and release of carbon particles. Saturated hydrocarbons generally burn with a cleaner, blue flame.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Hydrocarbons - Combustion" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-012",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "text": "The number of saturated and unsaturated bonds in cyclohexane are:",
+    "options": [
+      "9 and 0 respectively",
+      "18 and 3 respectively",
+      "18 and 0 respectively",
+      "9 and 3 respectively"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Cyclohexane (C₆H₁₂) is a fully saturated cyclic hydrocarbon. Its structural formula has 6 C-C bonds and 12 C-H bonds = 18 total single (saturated) bonds and 0 double/triple (unsaturated) bonds.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Organic Chemistry - Cyclohexane" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-013",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Non-metals",
+    "text": "Which one of the following statements is true when non-metals are dissolved in water?",
+    "options": [
+      "They produce basic oxides",
+      "They produce acidic oxides",
+      "They produce neutral oxides",
+      "They provide hydroxides"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Non-metals react with water (or dissolve in water) to form acidic oxides (also called acid anhydrides). For example, SO₃ + H₂O → H₂SO₄ (sulphuric acid) and CO₂ + H₂O → H₂CO₃ (carbonic acid). Metals form basic oxides.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Non-metals" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-014",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Biotechnology",
+    "text": "Which one of the following statements is NOT correct with regard to genetically modified organisms?",
+    "options": [
+      "In this technique a gene from one organism is isolated and transferred to the cell of another organism",
+      "This technique has applications only in plants",
+      "Genes for insect resistance may spread from crop plants to wild plants",
+      "To produce a transgenic animal the novel genes are inserted at a very early stage of development"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Genetic modification (GM) technology has widespread applications not only in plants but also in animals (transgenic animals), bacteria, fungi, and other organisms. It is used in medicine (insulin production), agriculture, and research. Therefore, the statement that 'this technique has applications only in plants' is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Biotechnology - GMO" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-015",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Tissues",
+    "text": "Suppose, due to an accident, the delicate lining of the mouth and the oesophagus of a person is injured. In this case, which one of the following tissues will be affected?",
+    "options": [
+      "Smooth muscle",
+      "Cuboidal epithelium",
+      "Squamous epithelium",
+      "Striated muscle"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The inner lining (mucosa) of the mouth and oesophagus is lined by stratified squamous epithelium. This type of epithelium is well-suited for surfaces subject to wear and abrasion. Cuboidal epithelium lines kidney tubules and glands; smooth muscle lines the walls of hollow organs; striated muscle is skeletal muscle.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Tissues - Epithelium" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-016",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following statements is correct about the cell membrane?",
+    "options": [
+      "It is made up of cellulose",
+      "It is a permeable structure for all substances",
+      "It is flexible and enables the cell to engulf many materials",
+      "It does not allow diffusion of gases like oxygen and carbon dioxide"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The cell membrane (plasma membrane) is made of a phospholipid bilayer with proteins (not cellulose — that is the cell wall in plants). It is selectively permeable (not permeable to all substances). It is flexible, allowing cells to change shape and engulf materials through endocytosis. Gases like O₂ and CO₂ freely diffuse across the cell membrane.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Cell Biology - Cell Membrane" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-017",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "text": "Plants prepare glucose in the process of:",
+    "options": [
+      "respiration",
+      "photosynthesis",
+      "degradation",
+      "mineral absorption"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Plants prepare glucose through the process of photosynthesis, in which they use sunlight, carbon dioxide, and water to synthesize glucose (C₆H₁₂O₆) and release oxygen. The equation is: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Plant Physiology - Photosynthesis" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-018",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Nutrition and Deficiency Diseases",
+    "text": "The disease rickets develops in children due to the deficiency of:",
+    "options": [
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin A",
+      "Vitamin B"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Rickets is a skeletal disorder caused by deficiency of Vitamin D (and/or calcium and phosphorus). Vitamin D is essential for calcium absorption, and its deficiency leads to soft, weak, and deformed bones — especially bow-legs and knock-knees in children.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Nutrition - Deficiency Diseases" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-019",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Circulatory System",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Blood Vessel) — List II (Function)\nA. Pulmonary artery — 1. Carries blood from lungs to heart\nB. Capillaries — 2. Carries blood to heart muscle\nC. Coronary artery — 3. Connection between arteries and veins\nD. Pulmonary vein — 4. Carries blood from heart to lungs",
+    "options": [
+      "A-4, B-3, C-2, D-1",
+      "A-4, B-2, C-3, D-1",
+      "A-1, B-2, C-3, D-4",
+      "A-1, B-3, C-2, D-4"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Pulmonary artery carries deoxygenated blood from heart to lungs (function 4). Capillaries form a connection/network between arteries and veins (function 3). Coronary artery carries blood to the heart muscle (function 2). Pulmonary vein carries oxygenated blood from lungs to heart (function 1). So: A-4, B-3, C-2, D-1.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Circulatory System - Blood Vessels" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-020",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Environment - Greenhouse Effect",
+    "text": "Which one of the following statements is true with regard to a greenhouse?",
+    "options": [
+      "The shorter wavelength infrared radiations from the Sun can enter into the greenhouse while longer wavelength infrared radiations from the ground and the plants inside the greenhouse cannot pass back out through the glass",
+      "The shorter wavelength infrared radiations from the Sun can enter into the greenhouse and the longer wavelength infrared radiations from the ground and the plants inside the greenhouse can also pass back out through the glass",
+      "The shorter wavelength infrared radiations from the Sun cannot enter into the greenhouse while longer wavelength infrared radiations from the ground and the plants inside the greenhouse can pass back out through the glass",
+      "No infrared radiation can pass through the glass of the greenhouse"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The greenhouse effect works because glass allows shorter wavelength solar radiation (visible light and near-infrared from the Sun) to pass through and enter the greenhouse. Once absorbed, the ground and plants re-emit longer wavelength infrared radiation, which cannot pass back through the glass and is trapped inside, warming the greenhouse.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Greenhouse Effect" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-021",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "text": "An object weighs 9 N on the surface of the Earth. What would be its weight, when measured on the surface of a planet where the acceleration due to gravity is 9 times that on the surface of the Earth?",
+    "options": [
+      "The weight would remain the same",
+      "The weight would be equal to 1 N",
+      "The weight would become 9 times",
+      "The weight will be reduced to 1/9 N"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Weight = mass × g. On Earth, W = mg = 9 N. On the planet, g' = 9g, so W' = m × 9g = 9 × (mg) = 9 × 9 = 81 N. This is 9 times the original weight. So the weight would become 9 times (81 N).",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Gravitation - Weight" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-022",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "The twinkling of a star is due to:",
+    "options": [
+      "atmospheric reflection of starlight",
+      "atmospheric refraction of starlight",
+      "continuous change in the position of the star",
+      "oscillation of starlight"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Stars twinkle because of atmospheric refraction. As starlight passes through the Earth's atmosphere (which has layers of varying densities and temperatures), it is continuously refracted. The atmosphere is not stationary, so the path of light changes continuously, causing the apparent position and brightness of the star to fluctuate — this is seen as twinkling.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Optics - Refraction" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-023",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Physics",
+    "topic": "Optics - Lenses",
+    "text": "A convex lens has a focal length of 15 cm. At what distance should an object be placed in front of the lens to get a real image of the same size of the object?",
+    "options": [
+      "15 cm",
+      "10 cm",
+      "30 cm",
+      "40 cm"
+    ],
+    "correctAnswer": "2",
+    "explanation": "For a convex lens, a real image of the same size as the object is formed when the object is placed at the centre of curvature, which is at 2f from the lens. Given f = 15 cm, the object should be placed at 2 × 15 = 30 cm from the lens.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Optics - Convex Lens" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-024",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Energy Sources",
+    "text": "Which one of the following statements about biogas is NOT correct?",
+    "options": [
+      "It is mainly composed of methane gas",
+      "It is a non-renewable source of energy",
+      "It is formed by the decomposition of cow dung in the absence of oxygen",
+      "It burns without smoke and leaves no residue"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Biogas is produced by anaerobic decomposition of organic matter (like cow dung, agricultural waste). Since it is produced from biological and organic waste which is continuously replenished, it is a renewable source of energy — not a non-renewable one. All other options are correct about biogas.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Energy Sources - Biogas" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-025",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "Which of the following mineral acids is found in human stomach?",
+    "options": [
+      "Hydrochloric acid",
+      "Lactic acid",
+      "Uric acid",
+      "Methanoic acid"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The human stomach secretes hydrochloric acid (HCl) as part of gastric juice. It helps in digestion, activates pepsinogen to pepsin, and kills harmful bacteria. Lactic acid is produced in muscles, uric acid is a waste product of purine metabolism, and methanoic acid is found in ant stings.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Human Physiology - Digestion" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-026",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Microorganisms",
+    "text": "Which one of the following living organisms gives litmus?",
+    "options": [
+      "Protozoa",
+      "Virus",
+      "Lichen",
+      "Saccharomyces"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Litmus is a natural dye obtained from lichens, particularly from the lichen Roccella tinctoria. Lichens are symbiotic associations between fungi and algae. Litmus is widely used as a pH indicator.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Microorganisms - Lichens" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-027",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Chemistry",
+    "topic": "Environmental Chemistry",
+    "text": "Which one of the following is the main reason of acid rains?",
+    "options": [
+      "Dissolution of sulphur and nitrogen oxides in rain",
+      "Dissolution of minerals in rain",
+      "Dissolution of dust particles in rain",
+      "Dissolution of soil solution in rain"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Acid rain is primarily caused by the emission of sulphur dioxide (SO₂) and nitrogen oxides (NOₓ) into the atmosphere, mainly from burning fossil fuels and industrial processes. These gases dissolve in rainwater to form sulphuric acid and nitric acid, lowering the pH of rain below 5.6.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Environmental Chemistry - Acid Rain" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-028",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Virology",
+    "text": "Mutation in a virus is caused due to a change in its:",
+    "options": [
+      "cell size",
+      "genetic material",
+      "shape",
+      "colour"
+    ],
+    "correctAnswer": "1",
+    "explanation": "A mutation is defined as a change in the DNA or RNA sequence (genetic material) of an organism or virus. Viral mutations occur due to errors in replication of their genetic material (DNA or RNA). Changes in cell size, shape, or colour are consequences or characteristics — not the cause of mutation.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Virology - Mutation" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-029",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Classification of Organisms",
+    "text": "Yeast, which is used to make bread, belongs to the group:",
+    "options": [
+      "Protista",
+      "Fungi",
+      "Monera",
+      "Protozoa"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Yeast (Saccharomyces cerevisiae) is a unicellular fungus belonging to the kingdom Fungi. It ferments sugars to produce carbon dioxide and alcohol. The CO₂ produced during fermentation causes bread to rise.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Classification - Fungi" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-030",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Biology",
+    "topic": "Fungi",
+    "text": "Hyphae are:",
+    "options": [
+      "produced by yeast",
+      "thin threads formed by many fungi",
+      "reproductive cells",
+      "responsible for preventing the cell from losing water in wet conditions"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Hyphae (singular: hypha) are the long, branching, thread-like filamentous structures that make up the body (mycelium) of most fungi. They are not produced by yeast (which reproduces by budding) and are not reproductive cells (spores are the reproductive structures of fungi).",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Fungi - Hyphae" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-031",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Urban Settlements",
+    "text": "Which one of the following is the first urban settlement in the world to reach a population size of one million (million-plus city)?",
+    "options": [
+      "London",
+      "Paris",
+      "New York",
+      "Washington D.C."
+    ],
+    "correctAnswer": "0",
+    "explanation": "London was the first city in the world to reach a population of one million, achieving this milestone around 1800 during the Industrial Revolution. It remained the world's largest city for much of the 19th century.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Urban Settlements" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-032",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which one of the following climatic types (Köppen's Scheme) is best suited to describe the climate of the western fringe of Rajasthan?",
+    "options": [
+      "Amw",
+      "Aw",
+      "Bwhw",
+      "Cwg"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The western fringe of Rajasthan is a hot desert region (Thar Desert). In the Köppen climate classification, 'Bwh' denotes a hot desert climate (B = arid/dry, w = desert, h = hot). The 'Bwhw' classification is used for this arid, hot desert climate of western Rajasthan.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology - Koppen Classification" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-033",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Where are the Bermuda Islands located?",
+    "options": [
+      "Caribbean Sea",
+      "North Atlantic Ocean",
+      "Gulf of Mexico",
+      "Mediterranean Sea"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Bermuda Islands (also known as Bermuda) are a British Overseas Territory located in the North Atlantic Ocean, about 1,070 km east-southeast of Cape Hatteras, North Carolina, USA. They are famous for the Bermuda Triangle.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography - Islands" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-034",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Geography - Forests",
+    "text": "Which one of the following States/Union Territories has the highest percentage of forest area to the total geographical area?",
+    "options": [
+      "Arunachal Pradesh",
+      "Lakshadweep",
+      "Nagaland",
+      "Mizoram"
+    ],
+    "correctAnswer": "3",
+    "explanation": "According to the India State of Forest Report, Mizoram has the highest percentage of forest cover relative to its total geographical area among States/UTs in India (approximately 85-90%). While Lakshadweep also has a high percentage, Mizoram consistently ranks at the top among states.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography - Forest Cover" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-035",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Demography",
+    "text": "In India, the period of steady population growth refers to the decade(s) of:",
+    "options": [
+      "1981 – 2011",
+      "1951 – 1981",
+      "1921 – 1951",
+      "1911 – 1921"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The period 1921–1951 is referred to as the period of steady (or slow and steady) population growth in India. The year 1921 is called the 'Year of Great Divide' as population growth became consistent after that, with gradual improvement in health and food conditions but still relatively modest growth rates.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Demography - Population Growth" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-036",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Geography - Energy",
+    "text": "Manikaran in Himachal Pradesh is known for:",
+    "options": [
+      "Solar energy",
+      "Geothermal energy",
+      "Bioenergy",
+      "Wind energy"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Manikaran, located in the Kullu district of Himachal Pradesh, is well known for its hot springs and geothermal energy. It is one of India's most significant geothermal sites, with high-temperature geothermal resources used for heating and cooking.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography - Geothermal Energy" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-037",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Economic Thought",
+    "text": "Who among the following, first mooted the idea of deficit financing?",
+    "options": [
+      "Adam Smith",
+      "Alfred Marshall",
+      "John Maynard Keynes",
+      "Milton Friedman"
+    ],
+    "correctAnswer": "2",
+    "explanation": "John Maynard Keynes was the first to formally propound and advocate the idea of deficit financing (government spending more than its revenue) as a tool to stimulate economic demand during recessions. This was elaborated in his landmark work 'The General Theory of Employment, Interest and Money' (1936).",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Economic Thought - Deficit Financing" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-038",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Environment",
+    "text": "Which of the following is/are the function(s) of environment?\n1. Supplying resources\n2. Sustaining life\n3. Providing aesthetic services\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The environment performs multiple functions: (1) It supplies resources — both renewable and non-renewable for economic activities; (2) It sustains life by providing air, water, and other necessities; (3) It provides aesthetic services — natural landscapes, biodiversity, recreational value. All three are recognised functions of the environment.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Environment - Functions" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-039",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Indian Economic Thought",
+    "text": "Who among the following formulated the concept of poverty as a measurable development indicator in the Indian subcontinent?",
+    "options": [
+      "Dadabhai Naoroji",
+      "Romesh Chandra Dutt",
+      "V.K.R.V. Rao",
+      "M. Ranade"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Dadabhai Naoroji (known as the 'Grand Old Man of India') first formulated the concept of poverty as a measurable development indicator. In his seminal work 'Poverty and Un-British Rule in India' (1901), he developed the concept of the 'poverty line' for the Indian context and quantified the drain of wealth from India to Britain.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Indian Economic Thought - Poverty" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-040",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Basic Economic Concepts",
+    "text": "Which one of the following terms denotes the inputs in terms of tools, machines, buildings, raw materials and money in hand required at any stage of production?",
+    "options": [
+      "Fixed capital",
+      "Working capital",
+      "Physical capital",
+      "Human capital"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Working capital refers to the funds used for day-to-day operations of a business, including raw materials, money in hand, and other short-term assets. Fixed capital refers to durable assets like machinery and buildings used over multiple production cycles. Physical capital encompasses both tools and machines. Human capital refers to the skills, knowledge, and health of workers.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Basic Economic Concepts - Capital" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-041",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Factors of Production",
+    "text": "Which one of the following inputs is required in less quantity in case of non-farming activities?",
+    "options": [
+      "Land",
+      "Labour",
+      "Capital",
+      "Raw material"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Non-farming (non-agricultural) activities such as manufacturing, trade, and services generally require less land compared to farming activities. Farming is heavily land-dependent as it needs large tracts for cultivation, whereas non-farming activities can often be conducted in compact factory or office spaces.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Factors of Production" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-042",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Government Schemes",
+    "text": "Which one of the following statements with regard to the National Rural Employment Guarantee Act, 2005 is correct?",
+    "options": [
+      "It ensures 175 days of employment to needy persons in rural areas",
+      "It gives higher wages to women workers",
+      "People are generally given both skilled and unskilled jobs",
+      "This is implemented only in rural areas of India"
+    ],
+    "correctAnswer": "3",
+    "explanation": "MGNREGA (Mahatma Gandhi National Rural Employment Guarantee Act) 2005 is implemented only in rural areas of India — this is correct. It guarantees 100 days (not 175) of employment. It mandates equal wages for men and women (not higher wages for women). It provides mainly unskilled manual work, not skilled jobs.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Government Schemes - MGNREGA" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-043",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Constitutional Provisions - Emergency",
+    "text": "Which one of the following is NOT mentioned as a form of Emergency in the Constitution of India?",
+    "options": [
+      "National Emergency",
+      "State Emergency in terms of Proclamation of President's Rule in a State",
+      "Financial Emergency",
+      "Health Emergency"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The Constitution of India provides for three types of emergencies: (1) National Emergency under Article 352, (2) State Emergency (President's Rule) under Article 356, and (3) Financial Emergency under Article 360. 'Health Emergency' is not a constitutionally mentioned form of emergency in India.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Provisions - Emergency" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-044",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Parliament - Money Bill",
+    "text": "Which one of the following is NOT a provision related to a Money Bill?",
+    "options": [
+      "Imposition, abolition, remission, alteration or regulation of any tax",
+      "Appropriation of moneys out of the Consolidated Fund of India",
+      "Imposition of fines by local authority for local purpose",
+      "Custody of the Consolidated Fund of India or the Contingency Fund of India"
+    ],
+    "correctAnswer": "2",
+    "explanation": "According to Article 110 of the Indian Constitution, a Money Bill deals with matters such as taxation, appropriation from the Consolidated Fund, borrowing, and custody of Consolidated/Contingency funds. However, imposition of fines or penalties by local authorities for local purposes is specifically excluded from the definition of a Money Bill under Article 110(1)(g).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament - Money Bill" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-045",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Taxation - GST",
+    "text": "Which one of the following items is NOT covered under GST?",
+    "options": [
+      "Cosmetics",
+      "Medical grade oxygen",
+      "Jewellery",
+      "Petrol"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Petrol (and other petroleum products like diesel, ATF, natural gas, and crude oil) is currently kept outside the GST framework in India. These products continue to be taxed under the older system of central excise duty and state VAT. Cosmetics, medical grade oxygen, and jewellery are all covered under GST.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Taxation - GST" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-046",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Parliament - Committees",
+    "text": "Which of the following statements is/are correct?\n1. Committee on Estimates is an ad hoc committee of the Parliament.\n2. Committee on Railway Convention is a standing committee of the Parliament.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Committee on Estimates is a Standing Committee (not ad hoc) of Parliament — it is a permanent committee that examines estimates of expenditure. The Committee on Railway Convention is a Joint Parliamentary Committee (standing committee). Statement 1 is wrong; Statement 2 is correct.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament - Parliamentary Committees" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-047",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Political Concepts",
+    "text": "Which one of the following is NOT an Indian form of Socialism?",
+    "options": [
+      "Democratic Socialism",
+      "Radical Socialism",
+      "Communitarian Socialism",
+      "Nehruvian Socialism"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Indian forms of socialism include Democratic Socialism (blending democracy and socialist principles), Gandhian Socialism, Nehruvian Socialism (mixed economy model), and Communitarian Socialism. Radical Socialism, which advocates revolutionary overthrow of existing systems, is not considered a distinctly Indian form of socialism.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Political Concepts - Socialism" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-048",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which one of the following best describes BRICS?",
+    "options": [
+      "A group of five nuclear powers",
+      "A group of five industrialized nations",
+      "A group of five major emerging economies",
+      "A group of five potentially strong UN Security Council members from the Countries of the Global South"
+    ],
+    "correctAnswer": "2",
+    "explanation": "BRICS stands for Brazil, Russia, India, China, and South Africa. It is best described as a grouping of five major emerging economies that together represent a significant share of global GDP, population, and trade. They are not all nuclear powers and not all traditionally classified as 'industrialized nations.'",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Organizations - BRICS" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-049",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Indian Federalism",
+    "text": "Which one of the following is NOT a characteristic feature of Indian Federalism?",
+    "options": [
+      "The federating units consented to form a union",
+      "Residuary powers vest with the Centre",
+      "Single citizenship",
+      "An extensive Union and Concurrent list"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Unlike classical federalism (e.g., the USA), in India the federating units (states) did NOT consent to form the union — the Indian federation was created by reorganizing a previously unified colonial territory. States were created by the Constitution itself. India's federation is therefore 'holding together' rather than 'coming together.' Options (b), (c), and (d) are all genuine features of Indian federalism.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Indian Federalism" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-050",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Art and Architecture - Ancient India",
+    "text": "Which of the following statements about sculptures at Sanchi is/are correct?\n1. In some sculptures there is representation of Shalabhanjika.\n2. The figure of Shalabhanjika is represented by a woman surrounded by lotuses and elephants.\n3. The Shalabhanjika motif was not directly inspired by Buddhist ideas.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "2 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "3",
+    "explanation": "At Sanchi, Shalabhanjika (a woman touching or holding a tree branch) figures are indeed represented in the sculptures — Statement 1 is correct. The Shalabhanjika motif was a pre-Buddhist fertility symbol from folk religion, not directly inspired by Buddhist ideas — Statement 3 is correct. However, Shalabhanjika is not typically depicted surrounded by lotuses and elephants (that description more accurately fits Gajalakshmi) — Statement 2 is incorrect. Hence, only 1 and 3 are correct.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Architecture - Sanchi" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-051",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "In which one of the following years was the first telegraphic connection established between Europe and India?",
+    "options": [
+      "1851",
+      "1854",
+      "1865",
+      "1871"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The first telegraphic connection between Europe and India was established in 1865 through the Red Sea and India Telegraph Company's cable. The first telegraph line in India was laid in 1851 (Calcutta to Diamond Harbour), but the trans-continental link to Europe was completed in 1865.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History - Technology" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-052",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Who among the following was the founder of the Virashaiva Movement in Karnataka?",
+    "options": [
+      "Basavanna",
+      "Appar",
+      "Sambandar",
+      "Sundarar"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Basavanna (also known as Basaveshwara), a 12th-century philosopher and statesman, was the founder of the Virashaiva (Lingayat) movement in Karnataka. He advocated equality, rejected caste distinctions, and promoted devotion to Lord Shiva. Appar, Sambandar, and Sundarar were Tamil Nayanmars (Shaivite saints).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History - Bhakti Movement" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-053",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "The ruins of Hampi were brought to light by which of the following British officers of the East India Company?",
+    "options": [
+      "Colonel Colin Mackenzie",
+      "James Prinsep",
+      "William Jones",
+      "James Rennell"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Colonel Colin Mackenzie, the first Surveyor General of India, brought the ruins of Hampi (the capital of the Vijayanagara Empire) to light in 1800. He commissioned detailed surveys of the ruins and collected manuscripts, inscriptions, and other historical materials.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval History - Vijayanagara Empire" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-054",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Medieval Indian History - Literature",
+    "text": "Which one of the following works was composed by Krishnadevaraya on statecraft in Telugu?",
+    "options": [
+      "Amuktamalyada",
+      "Jambavati Kalyanam",
+      "Rayavachakamu",
+      "Satyavadu Parinaya"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Amuktamalyada (Amuktamalyada or 'Giver of the worn garland') is a celebrated Telugu epic poem written by Krishnadevaraya, the most famous ruler of the Vijayanagara Empire. It contains advice on statecraft and governance, as well as the story of the god Vishnu and the princess Andal. It is considered one of the five great epics of Telugu literature.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval History - Vijayanagara Literature" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-055",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Soil Types",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Soil Type) — List II (Salient Characteristic)\nA. Entisols — 1. Soils having weakly or quickly developed horizons\nB. Inceptisols — 2. Weakly developed soils with no horizons\nC. Histosols — 3. These soils are very old and highly weathered\nD. Oxisols — 4. These soils have very high quantity of organic matter in the upper layers",
+    "options": [
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3",
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Entisols are weakly developed soils with no distinct horizons (2). Inceptisols have weakly or quickly developed horizons (1). Histosols are characterised by very high organic matter content in upper layers (4). Oxisols are very old, highly weathered soils, typically found in tropical regions (3). So: A-2, B-1, C-4, D-3.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Soil Types" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-056",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Desert Geomorphology",
+    "text": "A peripediment in a desert or semi-desert region is also known as:",
+    "options": [
+      "Inselberg",
+      "Zeugen",
+      "Bajada",
+      "Playa"
+    ],
+    "correctAnswer": "2",
+    "explanation": "A peripediment (also called bajada or bahada) is a broad, gently sloping alluvial fan or coalescent apron of debris formed at the base of a mountain front in arid and semi-arid regions. Inselbergs are isolated rocky hills; Zeugen are tabletop rock formations from differential erosion; Playa is a dry lake bed.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology - Desert Landforms" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-057",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Volcanology",
+    "text": "Individual lava flows are normally only a few feet thick, but over a long period of time, repeated flows may build up a volcano. Such volcanoes are termed as:",
+    "options": [
+      "Shield volcano",
+      "Composite volcano",
+      "Strato-volcano",
+      "Cinder-cone volcano"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Shield volcanoes are formed by repeated eruptions of low-viscosity basaltic lava that flows over great distances. Individual lava flows are thin but build up over time to form broad, dome-shaped (shield-like) structures. Mauna Loa in Hawaii is a classic example. Composite/strato-volcanoes are built from alternating layers of lava and pyroclastic material and have steeper sides.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Volcanology - Types of Volcanoes" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-058",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Cartography",
+    "text": "Isohalines are lines joining equal:",
+    "options": [
+      "temperature",
+      "pressure",
+      "rainfall",
+      "salinity"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Isohalines are lines on a map or chart connecting points of equal salinity in a body of water. Isotherms join points of equal temperature, isobars join points of equal pressure, and isohyets join points of equal rainfall.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Cartography - Isolines" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-059",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "International Finance",
+    "text": "Which one of the following would be considered as Foreign Direct Investment?",
+    "options": [
+      "A foreign company buying shares in stock exchanges in India",
+      "A foreign country pension fund investing in Indian stock markets",
+      "A foreign merchant banker buying shares from Indian stock markets",
+      "A foreign entity setting up an educational institution in India"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Foreign Direct Investment (FDI) involves a foreign entity making a physical investment or establishing business operations in a country — creating lasting interest and control. Setting up an educational institution is a direct investment as it involves creating real assets and operations. Options (a), (b), and (c) involve portfolio investment through stock markets, which is Foreign Portfolio Investment (FPI), not FDI.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "International Finance - FDI" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-060",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Microeconomics - Demand",
+    "text": "Which one of the following does NOT influence quantity demanded for a good?",
+    "options": [
+      "Good's own price",
+      "Price of a complementary good",
+      "Price of a substitute good",
+      "Prices of inputs into production of the good"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The quantity demanded of a good is influenced by: its own price, prices of related goods (substitutes and complements), consumer income, tastes, and expectations. Prices of inputs into production affect the supply of a good, not the demand. Hence option (d) does not influence quantity demanded.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Microeconomics - Demand" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-061",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Development Indicators",
+    "text": "Infant mortality ratio of which one of the following countries is comparable to that of India?",
+    "options": [
+      "China",
+      "United States of America",
+      "Sri Lanka",
+      "None of the above"
+    ],
+    "correctAnswer": "3",
+    "explanation": "India's infant mortality rate (IMR) has been around 28-35 per 1000 live births in recent years. China has an IMR of around 6-7, the USA around 5-6, and Sri Lanka around 7-8. None of these are comparable to India's higher IMR, making 'None of the above' the correct answer.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Development Indicators - Infant Mortality" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-062",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Economics",
+    "topic": "Microeconomics - Market Structures",
+    "text": "Which of the following factors signify monopolistic competition?\n1. Differentiated products\n2. Large number of buyers and sellers\n3. Barriers to entry\n4. Homogeneous products\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "2 and 4 only"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Monopolistic competition is characterised by: (1) Differentiated products — each seller offers slightly different products; (2) Large number of buyers and sellers; (3) Free entry and exit (no significant barriers to entry — so Barrier to entry in option 3 is NOT a feature); and (4) Products are differentiated, not homogeneous (so option 4 is wrong). Hence 1 and 2 are correct features.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Microeconomics - Monopolistic Competition" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-063",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Article 19(1) of the Constitution of India, as it stands amended, includes which of the following?\n1. Freedom of speech and expression\n2. Assemble peaceably and without arms\n3. To acquire and dispose property\n4. To move freely throughout the territory of India\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1, 2, 3 and 4",
+      "4 only",
+      "1, 2 and 4 only"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Article 19(1) originally included the right to acquire, hold, and dispose of property, but this was deleted by the 44th Constitutional Amendment Act, 1978. Currently, Article 19(1) includes: (a) freedom of speech and expression, (b) to assemble peaceably and without arms, (c) to form associations or unions, (d) to move freely throughout the territory of India, (e) to reside and settle in any part of India, and (g) to practise any profession or to carry on any occupation, trade or business. So 1, 2, and 4 are included; 3 is not.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights - Article 19" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-064",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Election Commission",
+    "text": "Which one of the following statements with regard to the Election Commission is NOT correct?",
+    "options": [
+      "It conducts elections to the office of the Vice President of India",
+      "An Election Commissioner can be removed from his office without the recommendation of the Chief Election Commissioner",
+      "Election Commissioners are appointed by the President of India",
+      "Governor of a State is constitutionally bound to provide support staff to the Election Commission, if required"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Under Article 324, an Election Commissioner cannot be removed from office except on the recommendation of the Chief Election Commissioner. Option (b) states removal WITHOUT the CEC's recommendation is possible, which is incorrect. The Election Commission conducts elections to the offices of President and Vice President (a is correct). Election Commissioners are appointed by the President (c is correct). Governors are constitutionally bound to provide staff to the Election Commission (d is correct).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Election Commission" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-065",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Preamble",
+    "text": "Which of the following statements with regard to the Preamble to the Constitution of India is/are correct?\n1. Equality of status and equality of opportunity find mention in the Preamble.\n2. The expression 'unity and integrity of the Nation' was not there in the Preamble since the beginning.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Statement 1 is correct — The Preamble mentions 'EQUALITY of status and of opportunity.' Statement 2 is also correct — The phrase 'unity and integrity of the Nation' was added to the Preamble by the 42nd Constitutional Amendment Act, 1976; it was not part of the original Preamble adopted in 1949. Hence both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Preamble to the Constitution" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-066",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Fundamental Duties",
+    "text": "In Part-IVA of the Constitution of India, which one of the following is NOT mentioned as a duty of every citizen of India?",
+    "options": [
+      "To render national service when called upon to do so",
+      "To renounce practices derogatory to the dignity of women",
+      "To value and preserve a unitary national culture",
+      "To develop the spirit of inquiry and reform"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Article 51A (Fundamental Duties) includes duties such as to render national service (a), to renounce practices derogatory to women's dignity (b), and to develop scientific temper and spirit of inquiry and reform (d). However, 'to value and preserve a unitary national culture' is not a fundamental duty. Article 51A(f) says to value and preserve the rich heritage of our composite culture — not a 'unitary' national culture.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Duties - Article 51A" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-067",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Medieval Indian History - Mughal Period",
+    "text": "Which of the following terms were used in the Indo-Persian sources of the Mughal period to denote a peasant?\n1. Raiyat\n2. Asami\n3. Muzarian\n4. Majur\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3 only",
+      "1, 3 and 4 only"
+    ],
+    "correctAnswer": "3",
+    "explanation": "In Mughal Indo-Persian sources: Raiyat (or Ryot) referred to peasants or cultivators; Muzarian (Muzara) referred to peasant cultivators/tenants; Majur referred to agricultural labourers. Asami referred more specifically to tenants or occupants of land, not specifically peasants in the same sense. Hence 1, 3, and 4 are the terms used for peasants.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Mughal History - Agrarian System" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-068",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Women",
+    "text": "Who among the following pioneering Bengali women serialised her autobiography Amar Katha between 1910 and 1913?",
+    "options": [
+      "Binodini Dasi",
+      "Rashsundari Debi",
+      "Begum Rokeya Sakhawat Hossain",
+      "Kailashbashini Debi"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Binodini Dasi (1863–1941), the renowned Bengali actress, serialised her autobiography 'Amar Katha' (My Story) in the journal Manorama between 1910 and 1913. She was one of the first professional actresses of the Bengali stage and her autobiography gave a vivid account of her life and the theatre world.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Women Writers" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-069",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - National Movement",
+    "text": "Arrange the following events chronologically starting from the earliest:\n1. Ahmedabad Mill Strike\n2. Champaran Satyagraha\n3. Foundation of the Satyagraha Sabha\n4. Jallianwala Bagh Massacre\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2, 3, 4",
+      "2, 1, 3, 4",
+      "2, 4, 1, 3",
+      "4, 2, 1, 3"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Champaran Satyagraha: 1917; Ahmedabad Mill Strike: 1918; Foundation of Satyagraha Sabha: February 1919; Jallianwala Bagh Massacre: April 1919. So the chronological order is: Champaran Satyagraha (1917) → Ahmedabad Mill Strike (1918) → Satyagraha Sabha (1919) → Jallianwala Bagh (1919) = 2, 1, 3, 4.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Gandhian Movements" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-070",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "The year 1916 is important in Indian history for:\n1. Lucknow Session of the Congress\n2. Congress – League Pact\n3. Formation of Home Rule League\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": "3",
+    "explanation": "All three events occurred in 1916: (1) The Lucknow Session of the Indian National Congress (December 1916); (2) The Congress-League Pact (Lucknow Pact) — an agreement between INC and Muslim League at the Lucknow Session; (3) The Home Rule League was established — Bal Gangadhar Tilak founded the Indian Home Rule League in April 1916, and Annie Besant founded the All India Home Rule League in September 1916. All three are correct for 1916.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - 1916 Events" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-071",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Railways",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Railway Zone) — List II (Headquarters)\nA. South-Eastern — 1. Secunderabad\nB. South-Central — 2. Kolkata\nC. South-Western — 3. Bilaspur\nD. South-East-Central — 4. Hubli",
+    "options": [
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3",
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2"
+    ],
+    "correctAnswer": "0",
+    "explanation": "South-Eastern Railway: Headquarters at Kolkata (2). South-Central Railway: Headquarters at Secunderabad (1). South-Western Railway: Headquarters at Hubli (4). South-East-Central Railway: Headquarters at Bilaspur (3). So: A-2, B-1, C-4, D-3.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Railways - Zones" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-072",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Geography - Islands",
+    "text": "Ten Degree Channel is found between:",
+    "options": [
+      "North Andaman and Middle Andaman",
+      "South Andaman and Little Andaman",
+      "Little Andaman and Car Nicobar",
+      "Car Nicobar and Great Nicobar"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Ten Degree Channel is a body of water separating the Andaman Islands from the Nicobar Islands. It lies between Little Andaman (the southernmost of the main Andaman Islands) and Car Nicobar (the northernmost of the Nicobar Islands), at approximately 10°N latitude — hence the name.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography - Straits and Channels" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-073",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Waterfalls",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Waterfall) — List II (State)\nA. Barkana — 1. Tamil Nadu\nB. Dudhsagar — 2. Odisha\nC. Duduma — 3. Karnataka\nD. Kiliyur — 4. Goa",
+    "options": [
+      "A-3, B-2, C-4, D-1",
+      "A-3, B-4, C-2, D-1",
+      "A-1, B-4, C-2, D-3",
+      "A-1, B-2, C-4, D-3"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Barkana Falls: Karnataka (3). Dudhsagar Falls: Goa (4) — on the Mandovi river on the Goa-Karnataka border, primarily in Goa. Duduma Falls: Odisha (2) — on the Machkund river in Koraput district. Kiliyur Falls: Tamil Nadu (1) — in Yercaud. So: A-3, B-4, C-2, D-1.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography - Waterfalls" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-074",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Oceanography - El Nino",
+    "text": "Which one of the following is NOT a resultant of the El Nino effect?",
+    "options": [
+      "Distortion of equatorial atmospheric circulation",
+      "Flow of the South-East Trade Winds towards the Indian Ocean",
+      "Irregularities in the evaporation of sea water",
+      "Reduction in the amount of planktons which reduces the number of fish in the sea"
+    ],
+    "correctAnswer": "1",
+    "explanation": "El Niño causes the weakening or reversal of the South-East Trade Winds in the Pacific Ocean (they weaken or blow eastward, not flow towards the Indian Ocean). El Niño does cause distortion of equatorial atmospheric circulation (a), irregularities in sea water evaporation (c), and reduction of nutrient-rich upwelling leading to fewer planktons and fish off Peru (d). Option (b) incorrectly describes an El Niño effect.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Oceanography - El Nino" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-075",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "President of India",
+    "text": "According to the Constitution of India, which one of the following statements is NOT correct?",
+    "options": [
+      "The executive powers of the Union shall be vested in the President of India",
+      "Parliament, by law, can confer functions on authorities other than the President of India",
+      "The President of India is elected by an electoral college consisting of all Members of Parliament and all Members of all State Legislatures",
+      "A person, having held office as the President, shall be eligible for election to that office for the second term"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Under Article 54, the President is elected by an electoral college consisting of the elected members of both Houses of Parliament AND the elected members of the Legislative Assemblies of the States (and Union Territories with legislatures). Nominated members and members of the Legislative Councils are excluded. The statement in (c) says 'all Members of Parliament' (including nominated) and 'all Members of all State Legislatures' (including MLCs), which is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "President of India - Election" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-076",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Constitutional Articles",
+    "text": "Which one of the following Articles of the Constitution of India requires the Prime Minister of India to furnish information related to decisions of the Council of Ministers to the President of India?",
+    "options": [
+      "Article 78",
+      "Article 74",
+      "Article 75",
+      "Article 81"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Article 78 of the Indian Constitution lays down the duties of the Prime Minister with respect to furnishing information to the President. It states that it is the PM's duty to communicate to the President all decisions of the Council of Ministers relating to administration of the Union and proposals for legislation. Article 74 deals with the Council of Ministers to aid and advise the President.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Articles - Prime Minister's Duties" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-077",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "President and Council of Ministers",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "All executive actions of the Government of India are taken in the name of the President of India",
+      "The President of India appoints a person as Attorney General of India provided she/he is qualified to be a Judge of the Supreme Court or a High Court",
+      "The total number of Ministers in the Council of Ministers cannot exceed ten percent of the total number of members of the House of People",
+      "The President of India is bound to act as per the advice tendered by the Council of Ministers"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Attorney General of India must be a person qualified to be appointed as a Judge of the Supreme Court (not a High Court) — as per Article 76. Also, option (c) contains an error: the 91st Constitutional Amendment (2003) limits the total number of Ministers (including PM) to not more than 15% (not 10%) of the total membership of the Lok Sabha. So option (c) is also wrong, but option (b) is more clearly incorrect as per Article 76.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Provisions - Attorney General" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-078",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Landmark Judgements",
+    "text": "The issue, 'whether Section 377 of the Indian Penal Code is violative of Articles 21, 14 and 15 of the Constitution of India' was decided in which one of the following cases?",
+    "options": [
+      "Shreya Singhal vs Union of India",
+      "Vishakha vs State of Rajasthan",
+      "Shayara Bano vs Union of India",
+      "Naz Foundation vs Government of NCT of Delhi and others"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The Naz Foundation vs Government of NCT of Delhi (2009) case was the landmark judgment by the Delhi High Court that first ruled that Section 377 of the IPC (which criminalised consensual same-sex acts) violated Articles 21, 14, and 15 of the Constitution. This was later overruled by the Supreme Court in Suresh Kumar Koushal case (2013) and finally the Supreme Court in Navtej Singh Johar vs Union of India (2018) struck down Section 377.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Landmark Judgements" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-079",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Writs",
+    "text": "Which one of the following writs means 'you may have the body'?",
+    "options": [
+      "Habeas Corpus",
+      "Mandamus",
+      "Certiorari",
+      "Quo Warranto"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Habeas Corpus is a Latin term meaning 'you may have the body' or 'to have the body of.' It is a writ that directs a person or authority detaining another person to produce the detainee before the court to examine the legality of the detention. It is a crucial protection against unlawful imprisonment.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Writs - Habeas Corpus" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-080",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Missionaries",
+    "text": "Who among the following belonged to Serampore Mission?\n1. William Carey\n2. Joshua Marshman\n3. William Ward\n4. David Hare\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Serampore Mission (Serampore Trio) was founded in 1800 by William Carey, Joshua Marshman, and William Ward — these three are the core members of the Serampore Mission. David Hare was a Scottish watchmaker and philanthropist who co-founded the Hindu College in Calcutta but was not associated with the Serampore Mission.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Serampore Mission" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-081",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Peasant Revolts",
+    "text": "Consider the following statements:\n1. In the 19th century, peasants in various parts of India rose in revolt against moneylenders and grain dealers.\n2. In May 1875, at village Supa in Poona District in the Bombay Deccan, peasants attacked shopkeepers, burnt the bahi khatas (account books), looted grain shops and set fire to the houses of Sahukars.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Both statements are historically accurate. Statement 1 is correct — 19th century India witnessed several peasant revolts against moneylenders and grain dealers. Statement 2 is also correct — the Deccan Riots (1875) began in village Supa in the Poona (Pune) district of Bombay Deccan, where peasants attacked money lenders (Sahukars), burnt account books (bahi khatas), and looted grain shops in protest against their exploitation.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Peasant Revolts" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-082",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one of the following was NOT a part of Kautilya's Saptanga Theory of the State?",
+    "options": [
+      "Amatya",
+      "Janapada",
+      "Durga",
+      "Dhamma"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Kautilya's Saptanga (seven limbs) theory of the state, described in the Arthashastra, comprises: (1) Swami (king), (2) Amatya (ministers), (3) Janapada (territory and people), (4) Durga (fort/capital), (5) Kosha (treasury), (6) Danda (army/force), and (7) Mitra (ally). Dhamma (Dharma) was a concept in Ashoka's edicts related to ethical conduct and is not part of Kautilya's Saptanga.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History - Kautilya" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-083",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Ancient Indian History - Ashoka",
+    "text": "Consider the following statements about Ashoka's faith in Buddhism:\n1. Rummindei Pillar Inscription and Nigali Sagar Pillar Inscription provide clear evidence of Ashoka's faith in Buddhism.\n2. Minor Rock Edict-I gives evidence of a sudden change in Ashoka's faith in Buddhism.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Both statements are correct. Statement 1: The Rummindei Pillar Inscription records Ashoka's visit to the birthplace of Buddha and his devotion; the Nigali Sagar inscription records his enlargement of a stupa — both clearly evidence his Buddhist faith. Statement 2: Minor Rock Edict I explicitly mentions Ashoka becoming an upasaka (lay Buddhist follower) and states that for more than two and a half years he was not very zealous, but then became more ardent — indicating a 'sudden' deepening of his faith.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient History - Ashoka and Buddhism" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-084",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Population Geography",
+    "text": "Which of the following variable(s) is/are displayed in population pyramids?\n1. Age-groups\n2. Sex indicators (male and female)\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Population pyramids (also called age-sex pyramids) graphically display two key variables: (1) Age-groups — typically shown in 5-year cohorts along the vertical axis; and (2) Sex indicators (male and female) — shown on opposite sides (males on left, females on right) along the horizontal axis showing population size. Both variables are fundamental to population pyramids.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Population Geography - Population Pyramids" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-085",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Lakes",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Lake) — List II (State)\nA. Kaliveli — 1. Sikkim\nB. Khajjiar — 2. Kerala\nC. Khecheopalri — 3. Himachal Pradesh\nD. Vembanad — 4. Tamil Nadu",
+    "options": [
+      "A-2, B-1, C-3, D-4",
+      "A-2, B-3, C-1, D-4",
+      "A-4, B-1, C-3, D-2",
+      "A-4, B-3, C-1, D-2"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Kaliveli Lake: Tamil Nadu (4). Khajjiar Lake: Himachal Pradesh (3) — known as the 'Mini Switzerland of India.' Khecheopalri Lake: Sikkim (1) — a sacred lake in West Sikkim. Vembanad Lake: Kerala (2) — the longest lake in India. So: A-4, B-3, C-1, D-2.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography - Lakes" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-086",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Atmosphere - Smog",
+    "text": "Which one of following is the most important factor for the formulation of smog?",
+    "options": [
+      "Long winter nights",
+      "Formation of an 'inversion lid'",
+      "Presence of many air pollutant resources",
+      "Rapid fall in temperature with increasing height above the sea level"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The most critical factor for smog formation is the formation of a temperature inversion (inversion lid), where a layer of warm air traps cooler air and pollutants near the ground. This prevents the normal dispersion of pollutants upward, causing them to concentrate near the surface and form smog. While the presence of pollutants (c) is also necessary, the inversion lid is the key meteorological factor that creates the conditions for smog accumulation.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere - Smog" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-087",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Indian Geography - Islands",
+    "text": "Mount Thullier (642 m) is an important mountain peak of Andaman and Nicobar Islands. It is located in:",
+    "options": [
+      "North Andaman",
+      "Middle Andaman",
+      "South Andaman",
+      "Great Nicobar"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Mount Thullier (642 m) is the highest peak in the Andaman and Nicobar Islands and is located in Great Nicobar Island — the southernmost and largest of the Nicobar Islands. It is named after a French naturalist.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography - Andaman and Nicobar Islands" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-088",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Physical Geography - Albedo",
+    "text": "Which one of the following land surfaces has the highest albedo?",
+    "options": [
+      "A snow covered mountain",
+      "A barren rocky piedmont surface",
+      "A sandy desert",
+      "A mangrove forest"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Albedo is the measure of the reflectivity of a surface. Fresh snow has the highest albedo of any natural surface, reflecting 80–90% of incoming solar radiation. Sandy deserts reflect about 30–40%, barren rocky surfaces about 20–30%, and vegetation/forests reflect much less (10–20%). Hence, a snow-covered mountain has the highest albedo.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography - Albedo" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-089",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Legal Maxims",
+    "text": "Which one of the following terms represents the maxim, 'no man/person shall be condemned unheard'?",
+    "options": [
+      "Autrefois acquit",
+      "Non bis in idem",
+      "Autrefois convict",
+      "Audi Alteram Partem"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Audi Alteram Partem is a Latin maxim meaning 'hear the other side' or 'no person shall be condemned unheard.' It is a fundamental principle of natural justice that requires both sides to be heard before a decision is made. Autrefois acquit and Autrefois convict relate to double jeopardy (previous acquittal and conviction), and Non bis in idem also means no one should be tried twice for the same offence.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Legal Maxims - Natural Justice" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-090",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Parliament - Speaker of Lok Sabha",
+    "text": "Which one of the following statements about the Speaker of Lok Sabha is NOT correct?",
+    "options": [
+      "He shall vacate his office if he ceases to be a member of the House of the People",
+      "He may, at any time, resign by writing his resignation to the President of India",
+      "He may be removed from his office by a resolution of the House of the People passed by majority of all the then members of the House",
+      "While the office of the Speaker is vacant, the duties of the office shall be performed by the Deputy Speaker"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Under Article 94, the Speaker resigns by writing to the Deputy Speaker (not to the President of India). The Speaker vacates office if not a member of Lok Sabha (a is correct). The Speaker can be removed by a resolution passed by an effective majority (majority of all then members) of Lok Sabha (c is correct). The Deputy Speaker performs duties when the Speaker's office is vacant (d is correct). Option (b) is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament - Speaker of Lok Sabha" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-091",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "Constitutional Amendment",
+    "text": "Which one of the following statements about a Bill for Amendment of the Constitution of India is NOT correct?",
+    "options": [
+      "It is governed by Article 368(2) of the Constitution of India",
+      "Joint sitting can be resorted to for passing a Bill amending the Constitution of India",
+      "The State Legislatures cannot initiate any Bill or proposal for amendment of the Constitution of India",
+      "The previous sanction of the President of India is not required for introducing any Bill in the Parliament for amendment of the Constitution of India"
+    ],
+    "correctAnswer": "1",
+    "explanation": "A Constitutional Amendment Bill cannot be passed through a joint sitting of both Houses of Parliament. In case of a deadlock between the two Houses, a joint sitting is a provision for ordinary bills (Article 108), but it does not apply to Constitutional Amendment Bills under Article 368. Each House must separately pass the amendment by the required special majority.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Amendment - Article 368" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-092",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Polity",
+    "topic": "President of India - Election Method",
+    "text": "Which one of the following methods is followed in electing the President of India?",
+    "options": [
+      "Proportional Representation only",
+      "First-Past-the-Post System only",
+      "Proportional Representation and the Single Transferable Vote System",
+      "Proportional Representation and the First-Past-the-Post System"
+    ],
+    "correctAnswer": "2",
+    "explanation": "As per Article 55 of the Indian Constitution, the President is elected by a system of Proportional Representation by means of the Single Transferable Vote (STV). Proportional representation ensures that the President represents all electors equitably, and the STV mechanism (preference voting) is used to determine the winner. First-Past-the-Post is used for general elections to Lok Sabha and State Assemblies.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "President of India - Election Method" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-093",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Ancient Indian History - Mahajanapadas",
+    "text": "From among the following Mahajanapadas, identify the gana/sangha (oligarchy):",
+    "options": [
+      "Magadha",
+      "Vajji",
+      "Avanti",
+      "Kosala"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Vajji (also known as Vriji) was a confederacy (gana/sangha or oligarchic republic) of clans including the Licchavis, Videhas, and others, with Vaishali as its capital. It was one of the most prominent republics of ancient India. Magadha, Avanti, and Kosala were monarchies (ruled by kings), not republics.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient History - Mahajanapadas" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-094",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Constitutional Reforms",
+    "text": "The provision for separate electorate for Muslims was given in:",
+    "options": [
+      "Morley-Minto Reforms, 1909",
+      "Montagu-Chelmsford Reforms, 1919",
+      "Communal Award, 1932",
+      "Government of India Act, 1935"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Morley-Minto Reforms (Indian Councils Act, 1909) introduced the concept of separate electorates for Muslims for the first time in India. This meant that Muslim voters could only vote for Muslim candidates in constituencies reserved for them. This was a significant step that later fuelled communal politics in India.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Constitutional Reforms" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-095",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Revolutionary Movements",
+    "text": "Which of the following was/were the founder member(s) of Hindustan Socialist Republican Army established in September, 1928?\n1. Bhagat Singh\n2. Jatindranath\n3. Ajoy Ghosh\n4. Phanindranath Ghosh\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Hindustan Socialist Republican Army (HSRA) was reorganised in September 1928. Its key founders and members included Bhagat Singh, Chandrashekhar Azad, Sukhdev, Jatindranath (Jatin Das), Ajoy Ghosh, and others. Phanindranath Ghosh was associated with the organisation but was known as an approver (turned informer) in the Lahore Conspiracy Case, not a founder. Hence 1, 2, and 3 are founder members.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - HSRA" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-096",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Congress Factions",
+    "text": "Who among the following did NOT belong to the group of 'No-Changers'?",
+    "options": [
+      "M.A. Ansari",
+      "Vithalbhai Patel",
+      "Chakravarti Rajagopalachari",
+      "Kasturi Ranga Iyengar"
+    ],
+    "correctAnswer": "1",
+    "explanation": "After the suspension of the Non-Cooperation Movement (1922), the Congress split into 'No-Changers' (who wanted to continue boycott of legislatures) and 'Pro-Changers' (Swarajists, who wanted to enter legislatures). Vithalbhai Patel was a Pro-Changer/Swarajist who actively participated in legislative councils. M.A. Ansari, Rajagopalachari, and Kasturi Ranga Iyengar were No-Changers who opposed council entry.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Congress Factions" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-097",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Revolutionary Movements",
+    "text": "The headquarters of Ghadar Movement/Party were at:",
+    "options": [
+      "San Francisco",
+      "Stanford University",
+      "Portland",
+      "Florida"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Ghadar Party (founded 1913) was an organisation of Indian immigrants (mainly Sikhs and Punjabis) established in the United States. Its headquarters were at San Francisco, California. The party was headquartered at the Yugantar Ashram in San Francisco and published a newspaper called 'Ghadar' aimed at inciting revolution against British rule in India.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Ghadar Movement" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-098",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - Press",
+    "text": "Which one of the following pairs of Newspaper and Editor is NOT correctly matched?",
+    "options": [
+      "Navjivan — Mahatma Gandhi",
+      "Mahratta — Bal Gangadhar Tilak",
+      "Bengalee — Surendranath Banerjea",
+      "Voice of India — Gopal Krishna Gokhale"
+    ],
+    "correctAnswer": "3",
+    "explanation": "'Voice of India' was founded and edited by Dadabhai Naoroji, not Gopal Krishna Gokhale. Gokhale founded the Servants of India Society. Navjivan was edited by Mahatma Gandhi (correct). Mahratta was founded and edited by Bal Gangadhar Tilak (correct). The Bengalee was founded and edited by Surendranath Banerjea (correct). So option (d) is incorrectly matched.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Indian Press" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-099",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "History",
+    "topic": "Modern Indian History - British Policies",
+    "text": "Which one of the following was NOT included in the terms and conditions of Subsidiary Alliance System of Lord Wellesley?",
+    "options": [
+      "The British would protect their ally",
+      "The ally was free to enter into agreements with other rulers or engage in warfare",
+      "In the territory of the ally, a British armed contingent would be stationed",
+      "The ally would have to provide resources for the maintenance of the British armed contingent"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Under the Subsidiary Alliance System introduced by Lord Wellesley, the Indian ruler (ally) had to surrender their foreign policy to the British — they could NOT enter into agreements with other rulers or engage in warfare without British consent. This was a key condition that subordinated the ally's external sovereignty. Options (a), (c), and (d) are genuine conditions of the Subsidiary Alliance System.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History - Subsidiary Alliance" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-100",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Geography",
+    "topic": "Natural Resources",
+    "text": "Which one of the following is an exhaustible but renewable natural resource?",
+    "options": [
+      "Solar energy",
+      "Water in usable condition",
+      "Soil",
+      "Landscape in its natural condition"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Water in usable condition is a renewable resource because it is replenished through the water cycle (evaporation, condensation, precipitation). However, it is exhaustible because freshwater availability can be depleted through overuse, pollution, and climate change. Solar energy is renewable and practically inexhaustible. Soil is renewable over very long periods but is considered practically non-renewable on human timescales. So water in usable condition best fits the 'exhaustible but renewable' category.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Natural Resources" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-101",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "Recently, the term 'two-pillar solution/two-pillar package' often seen in the news, refers to:",
+    "options": [
+      "Global energy security in near future",
+      "International cyber crime reporting",
+      "Minimum global corporate tax",
+      "Prevention of international money laundering"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The 'two-pillar solution' refers to the OECD/G20 framework for international tax reform. Pillar One deals with reallocation of taxing rights on large multinational corporations, and Pillar Two introduces a global minimum corporate tax rate of 15%. This was a major international tax initiative of 2021 involving over 130 countries.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs - Global Taxation" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-102",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Science and Technology - Vaccines",
+    "text": "Consider the following pairs of vaccine and category/type:\n1. Covaxin : Inactivated pathogen-based vaccine\n2. Covishield : mRNA vaccine\n3. Sputnik V : Viral vector-based vaccine\nWhich of the pairs given above is/are correctly matched?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Covaxin (by Bharat Biotech) is an inactivated pathogen-based (whole virion inactivated) COVID-19 vaccine — Pair 1 is CORRECT. Covishield (AstraZeneca/SII) is a viral vector-based vaccine, NOT an mRNA vaccine — Pair 2 is INCORRECT. Sputnik V (Gamaleya, Russia) is a viral vector-based vaccine — Pair 3 is CORRECT. So only pairs 1 and 3 are correctly matched.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology - COVID Vaccines" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-103",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Business and Economy",
+    "text": "What is 'Unicorn Company' often mentioned in Indian news?",
+    "options": [
+      "Any privately held startup company with a value of over $ 1 billion",
+      "Any public sector company to be merged with another public sector company",
+      "Privatization of any loss-making State-owned company",
+      "Any foreign multinational company doing business in India in collaboration with an Indian company"
+    ],
+    "correctAnswer": "0",
+    "explanation": "A 'Unicorn' in the business world refers to a privately held startup company that has achieved a valuation of over US $1 billion. The term was coined by venture capitalist Aileen Lee in 2013. India has seen a rapid rise in unicorn startups in recent years, making it one of the top countries in terms of unicorn count globally.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Business - Unicorn Companies" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-104",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Environment and Conservation",
+    "text": "A global initiative popularly known as '30 × 30 target' is often seen in the news. Which one of the following statements best reflects this initiative?",
+    "options": [
+      "At least 30% of the planet should be protected by 2030",
+      "At least 30% of the cultivated area should be brought under organic farming by 2030",
+      "At least 30% of the energy requirements should be met by renewable sources by 2030",
+      "At least 30% of the people below poverty line should be brought out of their poverty by 2030"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The '30×30' target is a global conservation goal to protect at least 30% of the Earth's land and ocean area by the year 2030. It was endorsed at the Convention on Biological Diversity (CBD) COP15 in Montreal (2022) as part of the Kunming-Montreal Global Biodiversity Framework, aimed at halting and reversing biodiversity loss.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Environment - Biodiversity Conservation" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-105",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Science and Technology",
+    "text": "Which one of the following statements is correct regarding LOFAR (Low Frequency Array)?",
+    "options": [
+      "It is the world's most powerful radio antenna",
+      "It is a space technology launched by NASA to discover exoplanets",
+      "It is an arrangement of satellites in space for the purpose of creating Satellite Navigation System",
+      "It is a wireless communication technology for 5G services"
+    ],
+    "correctAnswer": "0",
+    "explanation": "LOFAR (Low Frequency Array) is a large radio telescope network that was, when completed, one of the world's most powerful and largest radio telescope arrays. It consists of a large network of radio antennas spread across Europe, with its core in the Netherlands. It is used for radio astronomy to study the universe at low radio frequencies, not for space navigation or 5G communication.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology - Radio Telescope" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-106",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "In the recently formed grouping of countries generally known as 'Middle-East Quad', in addition to India, which of the following are other members?",
+    "options": [
+      "Egypt, Saudi Arabia and USA",
+      "Israel, UAE and USA",
+      "Egypt, UAE and UK",
+      "Israel, Saudi Arabia and UK"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The 'Middle East Quad' (also called I2U2) is a grouping of India, Israel, UAE (United Arab Emirates), and USA. It was established to promote economic cooperation and collaborative projects in areas like water, energy, transportation, space, health, and food security. So in addition to India, the other members are Israel, UAE, and USA.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs - Middle East Quad" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-107",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "The terms 'Pinaka and Smerch' mentioned in news recently refer to:",
+    "options": [
+      "Cruise missiles",
+      "Nuclear-powered submarines",
+      "Rocket launcher systems",
+      "Weaponised drones"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Pinaka is India's indigenously developed multi-barrel rocket launcher (MBRL) system. Smerch is a Russian-made long-range multiple rocket launcher system (also an MBRL). Both are artillery rocket launcher systems used for saturation fire over large areas. They are neither cruise missiles, submarines, nor drones.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence - Rocket Launcher Systems" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-108",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "India-Bangladesh Relations",
+    "text": "Which of the following statements is/are correct?\n1. India had accorded recognition to Bangladesh even before the liberation of Bangladesh in 1971.\n2. In March 2021, both India and Bangladesh had decided to celebrate 6 December as Maitri Diwas.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Statement 1 is incorrect — India recognised Bangladesh only on 6 December 1971, after the Indian Army intervened and Bangladesh's liberation was imminent. India did not recognize Bangladesh before its liberation. Statement 2 is correct — During PM Modi's visit to Bangladesh in March 2021, both countries agreed to celebrate 6 December as 'Maitri Diwas' (Friendship Day) to commemorate India's recognition of Bangladesh.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "India-Bangladesh Relations" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-109",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Defence - India",
+    "text": "Recently India signed a contract for the manufacture of nearly 6 lakh AK-203 rifles with which one of the following countries?",
+    "options": [
+      "Canada",
+      "Russia",
+      "France",
+      "Israel"
+    ],
+    "correctAnswer": "1",
+    "explanation": "India signed an agreement with Russia for the manufacture of approximately 6 lakh (600,000) AK-203 assault rifles in India under the 'Make in India' initiative. These rifles are to be manufactured at the Indo-Russian Rifles Private Limited (IRRPL) plant in Amethi, Uttar Pradesh, as part of a joint venture between India and Russia.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence - India-Russia" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-110",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "In December 2021, who among the following succeeded Angela Merkel as the Chancellor of Germany?",
+    "options": [
+      "Olaf Scholz",
+      "Annalena Baerbock",
+      "Armin Laschet",
+      "Jana Puglierin"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Olaf Scholz (SPD — Social Democratic Party) was sworn in as the Chancellor of Germany in December 2021, succeeding Angela Merkel who had served as Chancellor since 2005. Scholz had previously served as Finance Minister and Vice Chancellor under Merkel. Annalena Baerbock became the Foreign Minister in Scholz's coalition government.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs - Germany" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-111",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Awards and Honours",
+    "text": "Which of the following statements is/are correct?\n1. Nilamoni Phukan Jr. is the 56th Jnanpith Award winner.\n2. Damodar Mauzo is the 57th Jnanpith Award winner.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Both statements are correct. Nilamoni Phukan Jr. (Assamese poet) received the 56th Jnanpith Award (for 2021). Damodar Mauzo (Konkani writer) received the 57th Jnanpith Award (for 2022). Both awards were announced around the same time in 2023 as the selections had been delayed.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Awards - Jnanpith Award" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-112",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Personalities",
+    "text": "Which one of the following statements about Anil Menon is correct?",
+    "options": [
+      "He is an engineer who revolutionised organic farming",
+      "He is a diplomat selected in a UN Peace-Keeping mission",
+      "He is a physician selected by NASA to be an astronaut",
+      "He is a star football player"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Anil Menon is an Indian-American physician and flight surgeon who was selected by NASA as an astronaut in December 2021. He was part of NASA's Astronaut Class of 2021 (Group 23). He served as SpaceX's first flight surgeon and was involved in the Crew Dragon missions before being selected as an astronaut candidate.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Personalities - Anil Menon" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-113",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Science and Technology - Space",
+    "text": "India's maiden human space mission will be launched in 2023. What is its name?",
+    "options": [
+      "Vayumitra",
+      "Vikram",
+      "Chandrayaan-3",
+      "Gaganyaan"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Gaganyaan is India's first crewed (human) space mission being developed by ISRO (Indian Space Research Organisation). The mission aims to send Indian astronauts (Gaganauts) into low Earth orbit. Vayumitra is a female humanoid robot developed by ISRO to be sent on an unmanned test flight before the crewed Gaganyaan mission. Vikram is the name of the Chandrayaan-2 lunar lander.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology - Space - Gaganyaan" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-114",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Which one of the following teams won the Senior Women's National Football Championship, 2021?",
+    "options": [
+      "Manipur",
+      "Railways",
+      "West Bengal",
+      "Odisha"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Manipur won the Senior Women's National Football Championship 2021. Manipur has traditionally been one of the strongest football teams in women's football in India and has won the championship multiple times.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports - Football" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-115",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Environment - Wetlands",
+    "text": "Which of the following about Khijadiya Bird Sanctuary is/are correct?\n1. It is recently declared as a Ramsar Site (wetlands of international importance)\n2. It is located in Uttar Pradesh\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Statement 1 is correct — Khijadiya Bird Sanctuary (Wildlife Sanctuary) was designated as a Ramsar Site (wetland of international importance) in 2021. Statement 2 is incorrect — Khijadiya Bird Sanctuary is located in Jamnagar district, Gujarat, NOT in Uttar Pradesh. So only statement 1 is correct.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Environment - Ramsar Sites" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-116",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "International Affairs - Health",
+    "text": "Which one among the following countries has announced a plan that sets a goal of having fewer than 5% of its populace smoking by 2025?",
+    "options": [
+      "England",
+      "Germany",
+      "New Zealand",
+      "Russia"
+    ],
+    "correctAnswer": "2",
+    "explanation": "New Zealand announced an ambitious plan to make the country virtually smoke-free by 2025 by reducing the percentage of smokers to below 5% of the population. New Zealand introduced world-first legislation including a 'tobacco-free generation' law that would prevent anyone born after 2008 from ever legally buying cigarettes.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs - Public Health" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-117",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Sports - Chess",
+    "text": "Who among the following won the FIDE World Chess Championship, 2021?",
+    "options": [
+      "Nepomniachtchi",
+      "Magnus Carlsen",
+      "Ding Liren",
+      "Anish Giri"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Magnus Carlsen (Norway) successfully defended his World Chess Championship title in 2021 by defeating Ian Nepomniachtchi (Russia) by 7.5 to 3.5 points in Dubai. Carlsen had been the World Chess Champion since 2013. Ding Liren later became World Champion in 2023 after Carlsen declined to defend his title.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports - Chess" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-118",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Environment - Wetlands",
+    "text": "With reference to Bhindawas Wildlife Sanctuary, Sultanpur National Park, Thol Lake Wildlife Sanctuary and Wadhwana Wetland, which of the following statements is/are correct?\n1. All of them are Ramsar sites.\n2. All of them are naturally formed wetlands.\n3. All of them are birding sites.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": "1",
+    "explanation": "All four — Bhindawas Wildlife Sanctuary, Sultanpur National Park, Thol Lake Wildlife Sanctuary, and Wadhwana Wetland — were designated as Ramsar Sites in 2021. So Statement 1 is correct. All four are well-known birding sites (important for migratory and resident birds). So Statement 3 is correct. However, not all are naturally formed wetlands — Bhindawas and Wadhwana are man-made/artificial wetlands, so Statement 2 is incorrect. Hence, only 1 and 3 are correct.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Environment - Ramsar Sites" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-119",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Science and Technology - Space Missions",
+    "text": "To study which one of the following was a spacecraft launched that would be farthest from the Sun and would run exclusively on solar power?",
+    "options": [
+      "Jupiter's Trojan asteroids",
+      "Saturn's rings and moons",
+      "Mars' atmosphere",
+      "Kuiper Belt and Oort Cloud"
+    ],
+    "correctAnswer": "0",
+    "explanation": "NASA's Lucy spacecraft was launched in October 2021 to study Jupiter's Trojan asteroids — primitive asteroids that share Jupiter's orbit around the Sun. Lucy is designed to study these asteroids (which are at about 5 AU from the Sun) using solar panels exclusively. At this distance from the Sun, Lucy represents the farthest solar-powered spacecraft ever launched, demonstrating that solar power can work at Jupiter's distance.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology - Space - Lucy Mission" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  },
+  {
+    "id": "cds-2022-1-gk-120",
+    "year": 2022,
+    "exam": "CDS Exam (I) 2022",
+    "subject": "Current Affairs",
+    "topic": "Archaeology - India",
+    "text": "Recently, archaeological studies at which one among the following revealed that by 1200 BCE there was a flourishing agrarian civilization and the cultivation of rice was well-established at this place?",
+    "options": [
+      "Raichur Doab",
+      "Krishna Delta",
+      "Vicinity of Vamsadhara river",
+      "Vicinity of Thamirabarani river"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Recent archaeological studies near the Thamirabarani river in Tamil Nadu revealed evidence of a flourishing agrarian civilisation dating back to around 1200 BCE, with well-established rice cultivation. This discovery pushed back the date of settled agricultural communities and rice cultivation in South India, with similarities to the Indus Valley civilisation.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Archaeology - South India" },
+      { "type": "exam", "label": "CDS 2022 I" }
+    ]
+  }
+]

@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "nda-2022-2-q1",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Human craving for comfort leads to anxiety.",
+    "options": [
+      "like",
+      "dislike",
+      "discomfort",
+      "complacency"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The opposite of 'anxiety' in this context is 'complacency'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q2",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "His writings on the subject are obscure.",
+    "options": [
+      "murky",
+      "vague",
+      "obvious",
+      "uncertain"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Obscure' means not discovered or known about; uncertain. The opposite is 'obvious'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q3",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The achievements of the team have been monumental in the last ten years.",
+    "options": [
+      "enormous",
+      "memorable",
+      "striking",
+      "unimpressive"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Monumental' means great in importance, extent, or size. The opposite is 'unimpressive'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q4",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "His frail appearance was considered a merit.",
+    "options": [
+      "weak",
+      "delicate",
+      "sturdy",
+      "big"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Frail' means weak and delicate. The opposite is 'sturdy'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q5",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The novel depicts the hapless status of certain sections of society.",
+    "options": [
+      "wretched",
+      "miserable",
+      "rural",
+      "fortunate"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Hapless' means unfortunate. The opposite is 'fortunate'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q6",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Her ideas have always been eccentric.",
+    "options": [
+      "special",
+      "strange",
+      "normal",
+      "local"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Eccentric' means unconventional and slightly strange. The opposite is 'normal'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q7",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The land appears to be parched.",
+    "options": [
+      "dry",
+      "desiccated",
+      "wet",
+      "scorched"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Parched' means dried out with heat. The opposite is 'wet'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q8",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The newly made road was smooth.",
+    "options": [
+      "rutted",
+      "dangerous",
+      "winding",
+      "silken"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Smooth' means having an even and regular surface. The opposite is 'rutted' (having long deep tracks).",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q9",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Plenitude is one major cause for environmental degradation.",
+    "options": [
+      "abundance",
+      "insufficiency",
+      "ample",
+      "plethora"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Plenitude' means an abundance. The opposite is 'insufficiency'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q10",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The scholar quoted irrefutable evidence for her thesis.",
+    "options": [
+      "overwhelming",
+      "certain",
+      "undeniable",
+      "questionable"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Irrefutable' means impossible to deny or disprove. The opposite is 'questionable'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q11",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Ravi told his friend that he had no intention to malign him.",
+    "options": [
+      "benign",
+      "slander",
+      "praise",
+      "greet"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Malign' means to speak about someone in a spitefully critical manner. A synonym is 'slander'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q12",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Sheela appeared to be vexed.",
+    "options": [
+      "clear",
+      "calm",
+      "displeased",
+      "uncomplicated"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Vexed' means annoyed, frustrated, or worried. A synonym is 'displeased'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q13",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Do not hold any preconception about people.",
+    "options": [
+      "notion",
+      "experiment",
+      "great idea",
+      "conceit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Preconception' is a preconceived idea or prejudice. A synonym is 'notion'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q14",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "All mortal elements are impermanent.",
+    "options": [
+      "temporal",
+      "immortal",
+      "never-ending",
+      "divinely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Impermanent' means not lasting forever. A synonym is 'temporal'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q15",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The itinerary of the group's visit to the hills was given to everyone.",
+    "options": [
+      "invitation",
+      "information",
+      "schedule",
+      "names"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Itinerary' is a planned route or journey. A synonym is 'schedule'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q16",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The effort was to harness the power of nature.",
+    "options": [
+      "abuse",
+      "benefit",
+      "apply",
+      "control"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'harness' means to control and make use of (natural resources). A synonym is 'control'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q17",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The fickle nature of humans is at times the cause of great innovations.",
+    "options": [
+      "vacillating",
+      "consistent",
+      "strong",
+      "wily"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Fickle' means changing frequently. A synonym is 'vacillating'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q18",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The flood situation during the monsoon this year was calamitous.",
+    "options": [
+      "abundance",
+      "catastrophic",
+      "encouraging",
+      "welcome"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Calamitous' means involving calamity; disastrous. A synonym is 'catastrophic'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q19",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "He was appointed as the honorary member of the team.",
+    "options": [
+      "paid",
+      "invited",
+      "accepted",
+      "unpaid"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Honorary' means conferred as an honour, without the usual requirements or functions, typically unpaid.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q20",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The church decided to excommunicate him for his actions.",
+    "options": [
+      "admit",
+      "reward",
+      "expel",
+      "promote"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Excommunicate' means to officially exclude someone from participation in the sacraments and services of the Christian Church. A synonym is 'expel'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2022-2-q21",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: to be successful / Q: what it is / R: as a human being / S: have you ever considered",
+    "options": [
+      "SQPR",
+      "RQPS",
+      "QRSP",
+      "PRSQ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The logical sequence is: 'Have you ever considered (S) what it is (Q) to be successful (P) as a human being (R).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q22",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: there is in all instance a single, / Q: surrender to the idea that / R: authoritative truth to be discovered and defended / S: many people today are willing to",
+    "options": [
+      "RPSQ",
+      "SPRQ",
+      "RPQS",
+      "SQPR"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The logical sequence is: 'Many people today are willing to (S) surrender to the idea that (Q) there is in all instance a single, (P) authoritative truth to be discovered and defended (R).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q23",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: for yourself the implications of death, / Q: if you do not reflect and understand / R: from one preacher to another you will go endlessly / S: [assumed segment connection]",
+    "options": [
+      "SRPQ",
+      "QPSR",
+      "RSPQ",
+      "QRSP"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The logical sequence begins with the conditional: 'If you do not reflect and understand (Q) for yourself the implications of death, (P)...'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q24",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: a way of understanding the world, a language represents / Q: [assumed segment connection] / R: and relating them to one another / S: differentiating between things",
+    "options": [
+      "PSRQ",
+      "SRPQ",
+      "RSPQ",
+      "QPSR"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The sequence is: 'A language represents a way of understanding the world, (P) differentiating between things (S) and relating them to one another (R).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q25",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: for India's future / Q: mathematics and mathematical thinking / R: will be very important / S: it is recognized that",
+    "options": [
+      "QRPS",
+      "RPSQ",
+      "QRSP",
+      "SQRP"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sequence is: 'It is recognized that (S) mathematics and mathematical thinking (Q) will be very important (R) for India's future (P).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q26",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: will be enhanced sharply / Q: in agriculture and veterinary sciences through / R: programmes integrated with general education / S: the preparation of professionals",
+    "options": [
+      "SRPQ",
+      "RQPS",
+      "SPRQ",
+      "PQRS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The sequence is: 'The preparation of professionals (S) in agriculture and veterinary sciences through (Q) programmes integrated with general education (R) will be enhanced sharply (P).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q27",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: and should shift the way / Q: are certainly very important, / R: we think about politics / S: the issues raised by feminists and multiculturalists",
+    "options": [
+      "RPQS",
+      "RSPQ",
+      "SPQR",
+      "SQPR"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sequence is: 'The issues raised by feminists and multiculturalists (S) are certainly very important, (Q) and should shift the way (P) we think about politics (R).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q28",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: by which the genetic material of a plant is altered, / Q: pests and enhance its nutritional value / R: perhaps to make it more resistant to / S: genetic modification (GM) is the science",
+    "options": [
+      "QRPS",
+      "SPRQ",
+      "RSPQ",
+      "RPQS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The sequence is: 'Genetic modification (GM) is the science (S) by which the genetic material of a plant is altered, (P) perhaps to make it more resistant to (R) pests and enhance its nutritional value (Q).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q29",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: a much wider array of perspectives / Q: the editors of the present work / R: the history of social reforms from / S: argue the need to understand",
+    "options": [
+      "QSRP",
+      "QPRS",
+      "RSQP",
+      "SQRP"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The sequence is: 'The editors of the present work (Q) argue the need to understand (S) the history of social reforms from (R) a much wider array of perspectives (P).'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q30",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: for which she fought till the end as a champion of women's rights, / Q: Pandita Ramabai was truly remarkable / R: as a pioneer in women's education and / S: [assumed segment]",
+    "options": [
+      "SRQP",
+      "QPRS",
+      "RSQP",
+      "PQRS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Proper syntactical structure places the subject and main clause first.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q31",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Our greatest glory is not in never falling but in raising every time we fall.",
+    "options": [
+      "Our greatest glory is",
+      "not in never falling but in",
+      "raising every time we fall.",
+      "No error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The word 'raising' is incorrectly used here; it should be 'rising'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Grammar" } ]
+  },
+  {
+    "id": "nda-2022-2-q32",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Rahim was one of that selected for the award.",
+    "options": [
+      "Rahim was one of that",
+      "selected for",
+      "the award.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The phrase should be 'one of those' instead of 'one of that'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Grammar" } ]
+  },
+  {
+    "id": "nda-2022-2-q33",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Sujini has met her old friend Guru before she shifted to Hyderabad two years ago.",
+    "options": [
+      "Sujini has met her old friend",
+      "Guru before she shifted",
+      "to Hyderabad two years ago.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "For an action completed in the past before another past action, past perfect tense ('had met') should be used.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Tenses" } ]
+  },
+  {
+    "id": "nda-2022-2-q34",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "This monument happens to be one of the old monument in the city.",
+    "options": [
+      "This monument happens",
+      "to be one of the old monument",
+      "in the city.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The phrase 'one of the' must be followed by a plural noun ('monuments').",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Nouns" } ]
+  },
+  {
+    "id": "nda-2022-2-q35",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Amit told to Divya that he would come with a reward for her.",
+    "options": [
+      "Amit told to Divya",
+      "that he would come",
+      "with a reward for her.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The verb 'told' takes a direct object without the preposition 'to'. It should be 'Amit told Divya'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Verbs" } ]
+  },
+  {
+    "id": "nda-2022-2-q36",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "If you have asked me for the truth I would have told you at that time.",
+    "options": [
+      "If you have asked me",
+      "for the truth I would have told",
+      "you at that time.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In a type 3 conditional sentence, the 'if' clause should be in past perfect tense ('If you had asked me').",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Conditionals" } ]
+  },
+  {
+    "id": "nda-2022-2-q37",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "If I will be the millionaire I would eradicate poverty from the country.",
+    "options": [
+      "If I will be the millionaire",
+      "I would eradicate",
+      "poverty from the country.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In hypothetical conditionals, the 'if' clause uses the subjunctive mood ('If I were a millionaire').",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Conditionals" } ]
+  },
+  {
+    "id": "nda-2022-2-q38",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "A bird in hand is better than two in the bush.",
+    "options": [
+      "A bird in hand",
+      "is better than",
+      "two in the bush.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct idiom is 'A bird in the hand'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q39",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The opportunity to attain foundational literacy and pursue a honest livelihood must be viewed as basic right of every citizen.",
+    "options": [
+      "The opportunity to attain foundational literacy",
+      "and pursue a honest livelihood",
+      "must be viewed as basic right of every citizen.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The word 'honest' begins with a vowel sound, so the article should be 'an' instead of 'a'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Articles" } ]
+  },
+  {
+    "id": "nda-2022-2-q40",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Though there is progress for different directions, why is there no brotherhood?",
+    "options": [
+      "Though there is progress",
+      "for different directions,",
+      "why is there no brotherhood?",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct preposition is 'in'. It should be 'in different directions'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Prepositions" } ]
+  },
+  {
+    "id": "nda-2022-2-q41",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "A queer fish",
+    "options": [
+      "A strange person",
+      "A good person",
+      "An unlucky person",
+      "A lucky person"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The idiom 'a queer fish' refers to a strange or eccentric person.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q42",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Eat like a bird",
+    "options": [
+      "Eat very quickly",
+      "Eat a lot",
+      "Eat continuously",
+      "Eat very little"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'eat like a bird' means to eat very little.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q43",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Lock horns",
+    "options": [
+      "Be like a bull",
+      "Argue about something",
+      "Agree with someone",
+      "Think about the horns"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To 'lock horns' means to engage in conflict or argue about something.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q44",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Early bird",
+    "options": [
+      "Low flying",
+      "Latest",
+      "Ancient avian",
+      "First arrival"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An 'early bird' is a person who arrives first or gets up early.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q45",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Be in the pink",
+    "options": [
+      "To be very healthy",
+      "To be very colourful",
+      "To be very sad",
+      "To be very rich"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'be in the pink' means to be in optimal health or condition.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q46",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Be in the running",
+    "options": [
+      "In a very bad state to speak",
+      "In a powerful position",
+      "In a good position to win",
+      "In a losing position"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'be in the running' means having a reasonable chance of winning or succeeding.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q47",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "A sea change",
+    "options": [
+      "Change in the sea tides",
+      "A complete change",
+      "Change like sea",
+      "Changed sea with pollution"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A 'sea change' implies a profound or complete transformation.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q48",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "A pearl of wisdom",
+    "options": [
+      "An important event in one's life",
+      "An important person of wisdom",
+      "An important piece of advice",
+      "An important thing in one's life"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 'pearl of wisdom' refers to an important or insightful piece of advice.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q49",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Be in seventh heaven",
+    "options": [
+      "To be extremely sorry",
+      "To be extremely wise",
+      "To be extremely sad",
+      "To be extremely happy"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'be in seventh heaven' means to be extremely happy.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q50",
+    "year": 2022,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Be in the red",
+    "options": [
+      "To owe money to a bank",
+      "To get money from one's family",
+      "To be in danger of being caught",
+      "To be in favour of needy people"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'be in the red' means to be in debt or owe money.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2022-2-q51",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one of the following was composed by Harishena?",
+    "options": [
+      "Nashik Inscription of Gautami Balashri",
+      "Prayaga Prashasti of Samudragupta",
+      "Deopara Prashasti of Vijayasena",
+      "Hathigumpha Inscription of Kharavela"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Prayaga Prashasti (Allahabad Pillar Inscription) of Samudragupta was composed by his court poet Harishena.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Ancient History" } ]
+  },
+  {
+    "id": "nda-2022-2-q52",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Consider the following events: 1. Establishment of the Planning Commission 2. Formation of the National Development Council (NDC) 3. Approval of the First Five-Year Plan by the NDC 4. Constitution of the National Planning Committee. Which one of the following is the correct sequence of the above events?",
+    "options": [
+      "1-2-3-4",
+      "2-1-3-4",
+      "4-1-2-3",
+      "1-4-2-3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "National Planning Committee (1938), Planning Commission (1950), NDC (Aug 1952), First FYP approval (Dec 1952). The correct sequence is 4-1-2-3.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Post-Independence" } ]
+  },
+  {
+    "id": "nda-2022-2-q53",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Which one of the following battles could be seen as laying the formal foundation of the British Raj in India?",
+    "options": [
+      "Third Battle of Panipat",
+      "Battle of Plassey",
+      "Battle of Buxar",
+      "Revolt of 1857"
+    ],
+    "correctAnswer": 2,
+    "explanation": "While Plassey initiated British control, the Battle of Buxar (1764) laid the formal foundation of the British Raj by granting them the Diwani rights of Bengal, Bihar, and Orissa.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "British Expansion" } ]
+  },
+  {
+    "id": "nda-2022-2-q54",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Where in South India did the British East India Company construct a trading post in 1639?",
+    "options": [
+      "Cuddalore",
+      "Madraspatam",
+      "Kalahasti",
+      "Karwar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In 1639, the British East India Company acquired land in Madraspatam (Madras/Chennai) and built Fort St. George.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "European Arrival" } ]
+  },
+  {
+    "id": "nda-2022-2-q55",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Which of the following statements is/are correct? 1. The Dutch East India Company was formed after the formation of the British East India Company. 2. Vasco da Gama reached Calicut in 1498.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The British EIC was formed in 1600, while the Dutch EIC was formed in 1602. Vasco da Gama reached Calicut in 1498. Both statements are correct.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "European Arrival" } ]
+  },
+  {
+    "id": "nda-2022-2-q56",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "In India, a cultivable land which is left uncultivated for more than a year but less than five years is labelled as",
+    "options": [
+      "cultivable wasteland",
+      "current fallow",
+      "fallow other than current fallow",
+      "barren and wasteland"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Land left uncultivated for 1 to 5 agricultural years is termed 'fallow other than current fallow'.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Land Use" } ]
+  },
+  {
+    "id": "nda-2022-2-q57",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "The major portion of the Great Artesian Basin in Australia is located in",
+    "options": [
+      "Western Australia",
+      "Victoria",
+      "Queensland",
+      "Northern Territory"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Great Artesian Basin predominantly lies within the state of Queensland in Australia.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "World Geography" } ]
+  },
+  {
+    "id": "nda-2022-2-q58",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Transport",
+    "text": "Which of the following statements is/are correct? 1. India has one of the longest navigable inland water networks in the world. 2. Inland waterways presently help in transporting about 25 percent of the total cargo movement. 3. About 111 inland waterways have been declared as National Waterways under the National Waterways Act, 2016.",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "3 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statement 2 is incorrect as inland waterways carry only about 2% of total cargo in India. Statements 1 and 3 are correct.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Infrastructure" } ]
+  },
+  {
+    "id": "nda-2022-2-q59",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Transport",
+    "text": "Match List-I (Railway Zone) with List-II (Headquarters): A. East Central, B. North Eastern, C. Northeast Frontier, D. North Western. Headquarters: 1. Gorakhpur, 2. Jaipur, 3. Hajipur, 4. Maligaon.",
+    "options": [
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2",
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "East Central: Hajipur (3); North Eastern: Gorakhpur (1); Northeast Frontier: Maligaon (4); North Western: Jaipur (2).",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Indian Railways" } ]
+  },
+  {
+    "id": "nda-2022-2-q60",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one of the following statements about earthquake waves is not correct?",
+    "options": [
+      "P waves move faster and are the first to arrive at the surface.",
+      "P waves can travel through gaseous, liquid and solid materials.",
+      "Seismographs located beyond 145° from epicentre can record the arrival of P waves.",
+      "P waves have maximum area covered under its shadow zone."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The shadow zone of S-waves is much larger than that of P-waves. Hence, option (d) is incorrect.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Earthquakes" } ]
+  },
+  {
+    "id": "nda-2022-2-q61",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Work and Energy",
+    "text": "The commercial unit of electrical energy is kilowatt-hour (kWh), which is equal to",
+    "options": [
+      "3.6 x 10^6 J",
+      "3.6 x 10^3 J",
+      "10^3 J",
+      "1 J"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1 kWh = 1000 W x 3600 s = 3,600,000 Joules = 3.6 x 10^6 J.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Energy" } ]
+  },
+  {
+    "id": "nda-2022-2-q62",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "text": "Which one of the following statements regarding a current-carrying solenoid is not correct?",
+    "options": [
+      "The magnetic field inside the solenoid is uniform.",
+      "The current-carrying solenoid behaves like a bar magnet.",
+      "The magnetic field inside the solenoid increases with increase in current.",
+      "If a soft iron bar is inserted inside the solenoid, the magnetic field remains the same."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Inserting a soft iron core inside a solenoid highly amplifies the magnetic field. Thus, option (d) is false.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Electromagnetism" } ]
+  },
+  {
+    "id": "nda-2022-2-q63",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Fluids",
+    "text": "An object is made of two equal parts by volume; one part has density p0 and the other part has density 2p0. What is the average density of the object?",
+    "options": [
+      "3p0",
+      "(3/2)p0",
+      "p0",
+      "(1/2)p0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Average density = Total Mass / Total Volume = (p0*V + 2p0*V) / 2V = 3p0/2.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Density" } ]
+  },
+  {
+    "id": "nda-2022-2-q64",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "text": "A pressure cooker cooks food faster by",
+    "options": [
+      "increasing the boiling point of water",
+      "decreasing the boiling point of water",
+      "increasing the melting point of water",
+      "decreasing the melting point of water"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Increased pressure inside the cooker raises the boiling point of water, allowing food to cook at a higher temperature.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Heat" } ]
+  },
+  {
+    "id": "nda-2022-2-q65",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electromagnetic Waves",
+    "text": "Which one of the following wavelengths corresponds to the wavelength of X-rays?",
+    "options": [
+      "500 nm",
+      "5000 nm",
+      "100 nm",
+      "1 nm"
+    ],
+    "correctAnswer": 3,
+    "explanation": "X-rays have extremely short wavelengths, typically ranging from 0.01 to 10 nm.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Waves" } ]
+  },
+  {
+    "id": "nda-2022-2-q66",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "An electric bulb is connected to 220 V generator. The current drawn is 600 mA. What is the power of the bulb?",
+    "options": [
+      "132 W",
+      "13.2 W",
+      "1320 W",
+      "13200 W"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Power = V x I = 220 V x 0.6 A = 132 W.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Power" } ]
+  },
+  {
+    "id": "nda-2022-2-q67",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Sound",
+    "text": "When the pitch of sound increases, which one of the following increases?",
+    "options": [
+      "Intensity",
+      "Loudness",
+      "Wavelength",
+      "Frequency"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The pitch of a sound is directly proportional to its frequency.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Acoustics" } ]
+  },
+  {
+    "id": "nda-2022-2-q68",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals and Non-metals",
+    "text": "Which one of the following is the correct reactivity series with water?",
+    "options": [
+      "Zinc > Iron > Lead > Copper",
+      "Copper > Lead > Zinc > Iron",
+      "Copper > Zinc > Iron > Lead",
+      "Zinc > Copper > Iron > Lead"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Zinc reacts with steam, Iron also reacts with steam but slower, Lead does not react, Copper does not react. Hence Zn > Fe > Pb > Cu.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Reactivity Series" } ]
+  },
+  {
+    "id": "nda-2022-2-q69",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals and Non-metals",
+    "text": "Which one of the following metals floats in cold water?",
+    "options": [
+      "Magnesium",
+      "Calcium",
+      "Potassium",
+      "Copper"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Calcium reacts less violently with cold water, and the bubbles of hydrogen gas form and stick to its surface, making it float.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Reactions" } ]
+  },
+  {
+    "id": "nda-2022-2-q70",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "Which one of the following solutions is not capable of conducting electricity?",
+    "options": [
+      "Copper sulphate",
+      "Sodium chloride",
+      "Sugar",
+      "Sodium hydroxide"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A sugar solution is a non-electrolyte and does not dissociate into ions, so it cannot conduct electricity.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Solutions" } ]
+  },
+  {
+    "id": "nda-2022-2-q71",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "text": "To help deep-sea divers breathe, they carry cylinders of oxygen mixed with",
+    "options": [
+      "chlorine",
+      "helium",
+      "nitrogen",
+      "ozone"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Helium is added to the oxygen mix for deep-sea divers to prevent the bends (nitrogen narcosis).",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Gases" } ]
+  },
+  {
+    "id": "nda-2022-2-q72",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Which of the following compounds undergoes/undergo thermal decomposition?",
+    "options": [
+      "Zinc oxide",
+      "Silver oxide and zinc oxide",
+      "Silver oxide",
+      "Magnesium oxide"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Silver oxide (Ag2O) decomposes upon gentle heating into silver and oxygen gas.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Thermal Decomposition" } ]
+  },
+  {
+    "id": "nda-2022-2-q73",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "The transfer of electrical signals by nerve cells in human body is enabled by",
+    "options": [
+      "sodium",
+      "potassium",
+      "iron",
+      "sodium and potassium"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nerve impulses are propagated through the movement of sodium (Na+) and potassium (K+) ions across the cell membrane.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Nervous System" } ]
+  },
+  {
+    "id": "nda-2022-2-q74",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals and Non-metals",
+    "text": "Silver artefacts get tarnished in air due to the formation of",
+    "options": [
+      "silver chloride",
+      "silver oxide",
+      "silver sulphide",
+      "silver sulphate"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Silver reacts with hydrogen sulphide present in the air to form a black coating of silver sulphide (Ag2S).",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Corrosion" } ]
+  },
+  {
+    "id": "nda-2022-2-q75",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Human eye can see objects at different distances with contrasting illuminations. This is due to",
+    "options": [
+      "far-sightedness",
+      "near-sightedness",
+      "far-sightedness and near-sightedness",
+      "accommodation of eye"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Accommodation is the ability of the eye lens to adjust its focal length to focus on objects at varying distances.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Human Eye" } ]
+  },
+  {
+    "id": "nda-2022-2-q76",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "Which one of the following hormones increases the heartbeat in mammals?",
+    "options": [
+      "Insulin",
+      "Melatonin",
+      "Thyroxine",
+      "Adrenaline"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Adrenaline is secreted during the 'fight or flight' response, leading to increased heart rate.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Endocrine System" } ]
+  },
+  {
+    "id": "nda-2022-2-q77",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "The digestion of fat in human intestine is performed by",
+    "options": [
+      "trypsin",
+      "bile and lipase",
+      "bile and amylase",
+      "bile and pepsin"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bile emulsifies fats into smaller droplets, and lipase breaks them down into fatty acids and glycerol.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Digestive System" } ]
+  },
+  {
+    "id": "nda-2022-2-q78",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following statements about animal cells and plant cells is correct?",
+    "options": [
+      "Animal cells have only cell membrane not cell wall, whereas plant cells have only cell wall not cell membrane.",
+      "Animal cells have only cell membrane not cell wall, but plant cells have both.",
+      "Both animal and plant cells have cell membrane and cell wall.",
+      "Only some cells of animals have cell wall and all plant cells have cell membrane."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Animal cells are enclosed only by a cell membrane. Plant cells have both a cell membrane and an outer cell wall.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Cell Structure" } ]
+  },
+  {
+    "id": "nda-2022-2-q79",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "Lymph is a tissue fluid present in intercellular spaces. It resembles to",
+    "options": [
+      "digestive juice",
+      "cytoplasmic fluid",
+      "urine",
+      "plasma"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Lymph is similar in composition to blood plasma, minus the red blood cells and most large proteins.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Circulatory System" } ]
+  },
+  {
+    "id": "nda-2022-2-q80",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "The breakdown of glucose in cytoplasm results in the formation of",
+    "options": [
+      "pyruvate and energy",
+      "pyruvate and carbon dioxide",
+      "pyruvate and oxygen",
+      "pyruvate and nitrogen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "During glycolysis in the cytoplasm, glucose is broken down into two molecules of pyruvate, releasing a small amount of energy (ATP).",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Respiration" } ]
+  },
+  {
+    "id": "nda-2022-2-q81",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Sports",
+    "text": "Rafael Nadal defeated whom among the following to win the French Open Tennis Tournament, 2022?",
+    "options": [
+      "Austin Krajicek",
+      "Ivan Dodig",
+      "Casper Ruud",
+      "Joran Vliegen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rafael Nadal defeated Casper Ruud to win his 14th French Open title in 2022.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Sports" } ]
+  },
+  {
+    "id": "nda-2022-2-q82",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Health & Technology",
+    "text": "eSanjeevani, the free telemedicine service of the Government of India, was recently integrated with the",
+    "options": [
+      "Ayushman Bharat Digital Mission",
+      "Aam Aadmi Bima Yojana",
+      "Pradhan Mantri Suraksha Bima Yojana",
+      "Universal Health Insurance Scheme"
+    ],
+    "correctAnswer": 0,
+    "explanation": "eSanjeevani has been integrated with the Ayushman Bharat Digital Mission (ABDM) to facilitate seamless digital healthcare services.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Government Schemes" } ]
+  },
+  {
+    "id": "nda-2022-2-q83",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which of the following statements about 'SHRESHTA' scheme, launched recently by the Government of India, is/are correct? 1. This scheme is for residential education for students in high school in targeted areas. 2. It provides for high quality education for meritorious but poor Scheduled Caste students.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "SHRESHTA provides high-quality residential education to meritorious Scheduled Caste (SC) students in targeted areas. Both statements are correct.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Social Welfare" } ]
+  },
+  {
+    "id": "nda-2022-2-q84",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Environment",
+    "text": "In a recent judgement, the Supreme Court of India directed that every protected forest, national park and wildlife sanctuary across the country should have a mandatory eco-sensitive zone (ESZ) of a minimum of",
+    "options": [
+      "1 km starting from their demarcated boundaries",
+      "2 km starting from their demarcated boundaries",
+      "3 km starting from their demarcated boundaries",
+      "5 km starting from their demarcated boundaries"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Supreme Court directed that every protected forest, national park, and wildlife sanctuary must have an ESZ of at least 1 km starting from their demarcated boundaries.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Legal & Environment" } ]
+  },
+  {
+    "id": "nda-2022-2-q85",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Books and Authors",
+    "text": "Who among the following is the author of the book, Tomb of Sand?",
+    "options": [
+      "Arundhati Roy",
+      "Geetanjali Shree",
+      "Chetan Bhagat",
+      "Jhumpa Lahiri"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Geetanjali Shree is the author of 'Tomb of Sand', which won the International Booker Prize.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Literature" } ]
+  },
+  {
+    "id": "nda-2022-2-q86",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Industrial Revolution",
+    "text": "Who among the following invented the flying shuttle?",
+    "options": [
+      "James Hargreaves",
+      "John Kay",
+      "Richard Arkwright",
+      "Humphry Davy"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The flying shuttle was invented by John Kay in 1733.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "World History" } ]
+  },
+  {
+    "id": "nda-2022-2-q87",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Freedom Struggle",
+    "text": "Where did Netaji Subhas Chandra Bose announce the formation of the Government of Free India in 1943?",
+    "options": [
+      "Singapore",
+      "Shanghai",
+      "Berlin",
+      "Mandalay"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Netaji Subhas Chandra Bose announced the formation of the Provisional Government of Free India (Azad Hind) in Singapore on October 21, 1943.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Modern India" } ]
+  },
+  {
+    "id": "nda-2022-2-q88",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Constitutional Framework",
+    "text": "Who among the following introduced the 'Objective Resolution' in the Constituent Assembly on 13th December, 1946?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "B. R. Ambedkar",
+      "Alladi Krishnaswami Aiyar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Jawaharlal Nehru introduced the historic 'Objective Resolution' in the Constituent Assembly, laying down the underlying principles of the Constitution.",
+    "tags": [ { "type": "subject", "label": "Polity" }, { "type": "topic", "label": "Constitution" } ]
+  },
+  {
+    "id": "nda-2022-2-q89",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Freedom Struggle",
+    "text": "Consider the following historical events: 1. Gandhi-Irwin Pact 2. Second Round Table Conference 3. Peasant Movement in Bardoli 4. Peasant Movement in Kheda. Which one of the following is the correct chronological order (starting from the earliest) of the above events?",
+    "options": [
+      "4-1-3-2",
+      "4-3-1-2",
+      "3-1-2-4",
+      "1-2-4-3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kheda Satyagraha (1918) -> Bardoli Satyagraha (1928) -> Gandhi-Irwin Pact (March 1931) -> Second Round Table Conference (Sept-Dec 1931). Thus, 4-3-1-2 is correct.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Modern India" } ]
+  },
+  {
+    "id": "nda-2022-2-q90",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Freedom Struggle",
+    "text": "Which of the following statements about the Unionist Party is/are correct? 1. It was a political party representing the interests of landholders in Punjab. 2. It was opposed to the idea of the partition of India as India and Pakistan.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Unionist Party primarily represented agricultural interests (landholders) in Punjab and actively opposed the partition of India.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Modern India" } ]
+  },
+  {
+    "id": "nda-2022-2-q91",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geology",
+    "text": "Which one of the following statements about metamorphic rocks is not correct?",
+    "options": [
+      "Due to segregation of minerals into wavy bands or platy surfaces, some metamorphic rocks develop foliations.",
+      "Where the foliations develop into broad mineral bands, the metamorphic rock is extremely hard.",
+      "Where the foliations are moderately thin, the metamorphic rock tends to flake apart.",
+      "Rocks that originally were composed of one dominant mineral are often foliated by metamorphism."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Rocks composed of a single dominant mineral (like limestone or quartz) generally form non-foliated metamorphic rocks (like marble or quartzite).",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Rocks" } ]
+  },
+  {
+    "id": "nda-2022-2-q92",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Earth's Interior",
+    "text": "Which one of the following 'discontinuities' separates the Earth's crust from the mantle?",
+    "options": [
+      "Gutenberg",
+      "Mohorovicic",
+      "Conrad",
+      "Repetti"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Mohorovičić discontinuity (Moho) is the boundary that separates the Earth's crust from the underlying mantle.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Geomorphology" } ]
+  },
+  {
+    "id": "nda-2022-2-q93",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Earth's Rotation",
+    "text": "Which one of the following cities of the world would represent the greatest linear velocity of rotation of the Earth?",
+    "options": [
+      "Kampala, Uganda",
+      "St. Petersburg, Russia",
+      "Madrid, Spain",
+      "Stockholm, Sweden"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linear velocity of rotation is greatest at the equator. Kampala is located closest to the equator among the given options.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Physical Geography" } ]
+  },
+  {
+    "id": "nda-2022-2-q94",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Time Zones",
+    "text": "What will happen if you are flying east across the International Date Line?",
+    "options": [
+      "You will lose 12 hours",
+      "You will gain 12 hours",
+      "You will gain 24 hours",
+      "You will lose 24 hours"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Crossing the International Date Line going eastward results in 'losing a day' or subtracting 24 hours from the calendar (going back a day).",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Earth's Rotation" } ]
+  },
+  {
+    "id": "nda-2022-2-q95",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "The Prime Meridian does not pass through which one of the following African countries?",
+    "options": [
+      "Morocco",
+      "Algeria",
+      "Mali",
+      "Ghana"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Prime Meridian passes through Algeria, Mali, and Ghana, but it does not pass through Morocco.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Latitudes and Longitudes" } ]
+  },
+  {
+    "id": "nda-2022-2-q96",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geology",
+    "text": "Piecing together the puzzle of geologic time to create and analyze historical maps of the Earth is known as",
+    "options": [
+      "paleoclimatology",
+      "paleogeomorphology",
+      "paleolithology",
+      "paleogeography"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Paleogeography is the study of historical geography, generally physical landscapes, to understand the Earth's past layouts.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Earth Sciences" } ]
+  },
+  {
+    "id": "nda-2022-2-q97",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "What is the nature of velocity-time graph for a car moving with uniform acceleration?",
+    "options": [
+      "Parabola",
+      "Logarithmic",
+      "Straight line",
+      "Exponential"
+    ],
+    "correctAnswer": 2,
+    "explanation": "For uniform acceleration, velocity increases at a constant rate, resulting in a straight line on a velocity-time graph.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Mechanics" } ]
+  },
+  {
+    "id": "nda-2022-2-q98",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "text": "The amplitude of sound waves is measured in the units of",
+    "options": [
+      "pressure",
+      "distance",
+      "time",
+      "speed"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sound is a longitudinal wave consisting of compressions and rarefactions; its amplitude is typically measured as a change in pressure.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Acoustics" } ]
+  },
+  {
+    "id": "nda-2022-2-q99",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "A current of 0.6 A is drawn by an electric bulb for 10 minutes. Which one of the following is the amount of electric charge that flows through the circuit?",
+    "options": [
+      "6 C",
+      "0.6 C",
+      "360 C",
+      "36 C"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Charge Q = Current I × Time t. Q = 0.6 A × (10 × 60) s = 0.6 × 600 = 360 C.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Electric Current" } ]
+  },
+  {
+    "id": "nda-2022-2-q100",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electromagnetic Induction",
+    "text": "A DC generator works on the principle of",
+    "options": [
+      "Ohm's law",
+      "Joule's law of heating",
+      "Faraday's laws of electromagnetic induction",
+      "None of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Electric generators, including DC generators, operate based on Faraday's laws of electromagnetic induction.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Magnetism" } ]
+  },
+  {
+    "id": "nda-2022-2-q101",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "text": "The presence of magnetic field can be determined using which one of the following instruments?",
+    "options": [
+      "Ammeter",
+      "Voltmeter",
+      "Magnetic needle",
+      "Motor"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A magnetic needle (compass) aligns itself with magnetic field lines, thus determining the presence of a magnetic field.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Magnetic Fields" } ]
+  },
+  {
+    "id": "nda-2022-2-q102",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "Which one of the following statements about speed and velocity is correct?",
+    "options": [
+      "Speed and velocity both are vector quantities.",
+      "Speed and velocity both are scalar quantities.",
+      "Speed is vector quantity and velocity is scalar quantity.",
+      "Speed is scalar quantity and velocity is vector quantity."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Speed is defined only by magnitude (scalar), while velocity includes both magnitude and direction (vector).",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Mechanics" } ]
+  },
+  {
+    "id": "nda-2022-2-q103",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals and Alloys",
+    "text": "Bronze is an alloy of",
+    "options": [
+      "Cu and Zn",
+      "Cu and Sn",
+      "Zn and Mg",
+      "Fe and Cu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bronze is an alloy consisting primarily of copper (Cu) and tin (Sn).",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Alloys" } ]
+  },
+  {
+    "id": "nda-2022-2-q104",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "Which one of the following salts does not possess water of crystallization?",
+    "options": [
+      "Potassium permanganate",
+      "Blue vitriol",
+      "Washing soda",
+      "Mohr's salt"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Potassium permanganate (KMnO4) does not contain water of crystallization, unlike the others.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Salts" } ]
+  },
+  {
+    "id": "nda-2022-2-q105",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "Bee sting leaves an acid which causes pain and irritation. The acid released is",
+    "options": [
+      "tartaric acid",
+      "citric acid",
+      "ethanoic acid",
+      "methanoic acid"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A bee sting injects methanoic acid (formic acid), causing pain and irritation.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Organic Chemistry" } ]
+  },
+  {
+    "id": "nda-2022-2-q106",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Liquid vegetable oils are converted to solid margarine by the use of",
+    "options": [
+      "hydrogen gas",
+      "chlorine gas",
+      "carbon dioxide gas",
+      "oxygen gas"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hydrogenation, using hydrogen gas, converts unsaturated liquid oils into saturated solid fats like margarine.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Hydrocarbons" } ]
+  },
+  {
+    "id": "nda-2022-2-q107",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Carbon Compounds",
+    "text": "The number of structural isomers of pentane is",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pentane (C5H12) has three structural isomers: n-pentane, isopentane, and neopentane.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Isomerism" } ]
+  },
+  {
+    "id": "nda-2022-2-q108",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Vapours of sulphur escaping from a volcano often form a crust on the rocks. The process involved is an example of",
+    "options": [
+      "condensation",
+      "precipitation",
+      "deposition",
+      "evaporation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The direct transition of a substance from a gaseous state to a solid state without passing through the liquid phase is deposition.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Geomorphology" } ]
+  },
+  {
+    "id": "nda-2022-2-q109",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "text": "Dry ice is used on a performing stage to produce mist in air. The process involved is an example of",
+    "options": [
+      "sublimation",
+      "evaporation",
+      "condensation",
+      "precipitation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dry ice (solid CO2) converts directly from a solid to a gas, a process known as sublimation.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Phase Changes" } ]
+  },
+  {
+    "id": "nda-2022-2-q110",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Carbon Compounds",
+    "text": "C4H8 belongs to the homologous series of",
+    "options": [
+      "alkanes",
+      "alkenes",
+      "alkynes",
+      "cycloalkanes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Compounds with the general formula CnH2n (like C4H8) are typically part of the alkene homologous series (or cycloalkanes, but alkenes is the primary group).",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Hydrocarbons" } ]
+  },
+  {
+    "id": "nda-2022-2-q111",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "The protein-digesting enzyme secreted by the stomach wall in case of mammals is called",
+    "options": [
+      "chitinase",
+      "amylase",
+      "pepsin",
+      "trypsin"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The stomach secretes pepsinogen, which is converted to active pepsin by HCl to digest proteins.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Digestive System" } ]
+  },
+  {
+    "id": "nda-2022-2-q112",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following will be resulted when an animal cell is surrounded by a medium with lower concentration of water?",
+    "options": [
+      "Cell will lose water",
+      "No change in movement of water",
+      "Cell will gain water",
+      "Cell will swell up"
+    ],
+    "correctAnswer": 0,
+    "explanation": "If the surrounding medium has a lower concentration of water (hypertonic solution), water will exit the cell through osmosis, causing the cell to shrink or lose water.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Osmosis" } ]
+  },
+  {
+    "id": "nda-2022-2-q113",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "The digestive enzymes are present in",
+    "options": [
+      "mitochondria",
+      "vacuoles",
+      "lysosomes",
+      "ribosomes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lysosomes are organelles that contain digestive (hydrolytic) enzymes for breaking down waste materials and cellular debris.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Cell Organelles" } ]
+  },
+  {
+    "id": "nda-2022-2-q114",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Plant Reproduction",
+    "text": "After fertilization, the fruit and the seed are produced by",
+    "options": [
+      "ovule and ovary, respectively",
+      "ovary and ovule, respectively",
+      "ovary, no ovule required",
+      "ovule, no ovary required"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Following fertilization in plants, the ovary develops into the fruit and the ovules develop into seeds.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Botany" } ]
+  },
+  {
+    "id": "nda-2022-2-q115",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Environment & Defence",
+    "text": "Which among the following has initiated a nationwide flagship campaign 'Puneet Sagar Abhiyan' to clean seashores/ beaches and other water bodies of plastic and other waste materials?",
+    "options": [
+      "Indian Coast Guard",
+      "National Cadet Corps (NCC)",
+      "Indian Navy",
+      "Swachh Bharat Mission"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The National Cadet Corps (NCC) initiated the Puneet Sagar Abhiyan to clean water bodies and seashores.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Conservation" } ]
+  },
+  {
+    "id": "nda-2022-2-q116",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Environment",
+    "text": "Which among the following was the host country of the United Nations World Environment Day, 2022?",
+    "options": [
+      "Canada",
+      "Sweden",
+      "South Africa",
+      "Brazil"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sweden was the host for World Environment Day 2022, with the theme 'Only One Earth'.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "International Events" } ]
+  },
+  {
+    "id": "nda-2022-2-q117",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "Which of the following Indian Naval Ships were decommissioned in June 2022?",
+    "options": [
+      "INS Ganga and INS Nipat",
+      "INS Nishank and INS Akshay",
+      "INS Khukri and INS Sandhayak",
+      "INS Gomati and INS Ranjit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "INS Nishank and INS Akshay were decommissioned in June 2022 after 32 years of glorious service.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Military Forces" } ]
+  },
+  {
+    "id": "nda-2022-2-q118",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "India signed a deal with which one of the following countries to supply MH-60R helicopters to the Indian Navy?",
+    "options": [
+      "Israel",
+      "France",
+      "Russia",
+      "USA"
+    ],
+    "correctAnswer": 3,
+    "explanation": "India signed a deal with the United States for the procurement of MH-60R multi-role helicopters.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "International Relations" } ]
+  },
+  {
+    "id": "nda-2022-2-q119",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "With reference to India's defence, the terms 'Surat' and 'Udaygiri' refer to",
+    "options": [
+      "coast guard patrol boats",
+      "cargo helicopters",
+      "maritime patrol aircrafts",
+      "warships"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Surat and Udaygiri are frontline warships of the Indian Navy (a destroyer and a frigate respectively) launched simultaneously.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Naval Assets" } ]
+  },
+  {
+    "id": "nda-2022-2-q120",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Who among the following laid the foundation of the Vijayanagara Empire?",
+    "options": [
+      "Harihara and Bukka",
+      "Krishnadeva Raya",
+      "Rama Raya",
+      "Virupaksha Raya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Vijayanagara Empire was founded in 1336 by brothers Harihara I and Bukka Raya I of the Sangama Dynasty.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Empires" } ]
+  },
+  {
+    "id": "nda-2022-2-q121",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Art & Culture",
+    "text": "The book, Kalila wa Dimna is an Arabic translation of the",
+    "options": [
+      "Hitopadesha",
+      "Panchatantra",
+      "Suryasiddhanta",
+      "Kathasaritsagar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kalila wa Dimna is the classical Arabic version of the ancient Indian collection of fables, the Panchatantra.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Literature" } ]
+  },
+  {
+    "id": "nda-2022-2-q122",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Who among the following initiated the Bhoodan Movement?",
+    "options": [
+      "Ram Prasad Bismil",
+      "Vinoba Bhave",
+      "Mahatma Gandhi",
+      "Kanhu Murmu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Bhoodan (Land Gift) Movement was a voluntary land reform movement initiated by Acharya Vinoba Bhave in 1951.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Post-Independence Reforms" } ]
+  },
+  {
+    "id": "nda-2022-2-q123",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one of the following rivers in India was not crossed by Alexander and his army?",
+    "options": [
+      "Hyphasis",
+      "Acesines",
+      "Hydraotes",
+      "Hydaspes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alexander's army refused to march further east when they reached the river Hyphasis (Beas). Thus, it was not crossed.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Invasions" } ]
+  },
+  {
+    "id": "nda-2022-2-q124",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Who among the following has described the medieval Indian postal system as of two kinds the horse-post called 'Uluq' and the foot-post called 'Dawa'?",
+    "options": [
+      "Al-Biruni",
+      "Duarte Barbosa",
+      "Ibn Battuta",
+      "Seydi Ali Reis"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Moroccan traveller Ibn Battuta detailed the highly efficient postal system in India during the reign of Muhammad bin Tughlaq.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Foreign Travellers" } ]
+  },
+  {
+    "id": "nda-2022-2-q125",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "At which among the following Harappan sites are fire altars found?",
+    "options": [
+      "Kalibangan",
+      "Harappa",
+      "Mohenjo-daro",
+      "Rakhi Garhi"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fire altars, indicating possible ritualistic practices, have been discovered at Kalibangan and Lothal.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Indus Valley Civilization" } ]
+  },
+  {
+    "id": "nda-2022-2-q126",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Human Geography",
+    "text": "Consider the following statements on computation of density: 1. Physiological density can be computed by dividing the total population by the net cultivable area. 2. Agricultural density can be computed by dividing the total agricultural population by the net cultivable area. 3. Population density can be computed by dividing the total population by the total area. How many of the above statements is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three formulas correctly define Physiological density, Agricultural density, and arithmetic Population density respectively.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Demography" } ]
+  },
+  {
+    "id": "nda-2022-2-q127",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "The formation of 'tors' on small rocky hills is associated with which among the following?",
+    "options": [
+      "Granite",
+      "Limestone",
+      "Alluvial",
+      "Dolomite"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tors are large, free-standing rock outcrops typically associated with granite landscapes shaped by weathering.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Landforms" } ]
+  },
+  {
+    "id": "nda-2022-2-q128",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Consider the following statements about anticyclones: 1. Anticyclones are high pressure systems. 2. Air in the centre of the system must be subsiding. 3. Anticyclones are characterized by converging winds. How many of the above statements is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Anticyclones are high-pressure systems with subsiding air. However, they are characterized by diverging (not converging) winds. Thus, statements 1 and 2 are correct.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Weather Systems" } ]
+  },
+  {
+    "id": "nda-2022-2-q129",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Earth's Interior",
+    "text": "Which of the following statements is/are correct? 1. The Earth's crust is brittle in nature. 2. The mean thickness of the oceanic crust is 15 km, whereas that of the continental crust is around 30 km.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Earth's crust is brittle. Statement 2 is incorrect because the oceanic crust is much thinner (average ~5 km) than the 15 km stated.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Crust" } ]
+  },
+  {
+    "id": "nda-2022-2-q130",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "States and Territories",
+    "text": "In January 2020, the administration of which of the following Union Territories has been merged together?",
+    "options": [
+      "Daman and Diu and Puducherry",
+      "Puducherry and Dadra and Nagar Haveli",
+      "Puducherry and Andaman and Nicobar Islands",
+      "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The UTs of Dadra and Nagar Haveli and Daman and Diu were merged into a single UT effective January 26, 2020.",
+    "tags": [ { "type": "subject", "label": "Polity" }, { "type": "topic", "label": "Union Territories" } ]
+  },
+  {
+    "id": "nda-2022-2-q131",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Two convex lenses have focal lengths of 50 cm and 25 cm, respectively. If these two lenses are placed in contact, then the net power of this combination will be equal to",
+    "options": [
+      "+2 dioptre",
+      "+6 dioptre",
+      "-6 dioptre",
+      "+3 dioptre"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Power P1 = 100/50 = +2 D. Power P2 = 100/25 = +4 D. Net Power P = P1 + P2 = 2 + 4 = +6 dioptre.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Lenses" } ]
+  },
+  {
+    "id": "nda-2022-2-q132",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "Which one of the following terms cannot represent electrical power in a circuit?",
+    "options": [
+      "VI",
+      "I^2/R",
+      "I^2R",
+      "V^2/R"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Electrical power P can be written as P=VI, P=I²R, or P=V²/R. The expression I²/R does not represent power.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Power" } ]
+  },
+  {
+    "id": "nda-2022-2-q133",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "The refractive index of crown glass is close to 3/2. If the speed of light in air is c, then the speed of light in the crown glass will be close to",
+    "options": [
+      "(3/2)c",
+      "(4/9)c",
+      "(2/3)c",
+      "(9/4)c"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Speed of light in a medium (v) = c / refractive index (n). v = c / (3/2) = (2/3)c.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Light" } ]
+  },
+  {
+    "id": "nda-2022-2-q134",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Fluids",
+    "text": "The volume of a sealed packet is 1 litre and its mass is 800 g. The packet is first put inside water with density 1 g cm^-3 and then in another liquid B with density 1.5 g cm^-3. Then which one of the following statements holds true?",
+    "options": [
+      "The packet will float in both water and liquid B.",
+      "The packet will sink in both water and liquid B.",
+      "The packet will sink in water but will float in liquid B.",
+      "The packet will float in water and sink in liquid B."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The density of the packet = Mass/Volume = 800 g / 1000 cm³ = 0.8 g/cm³. Since 0.8 is less than the density of both water (1.0) and liquid B (1.5), the packet will float in both.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Density & Buoyancy" } ]
+  },
+  {
+    "id": "nda-2022-2-q135",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Oscillations",
+    "text": "A simple pendulum having bob of mass m and length of string l has time period of T. If the mass of the bob is doubled and the length of the string is halved, then the time period of this pendulum will be",
+    "options": [
+      "T",
+      "T/sqrt(2)",
+      "2T",
+      "sqrt(2)T"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Time period T = 2π√(l/g). It is independent of mass. When length is halved, T' = 2π√(l/2g) = T/√2.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Pendulum" } ]
+  },
+  {
+    "id": "nda-2022-2-q136",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Energy",
+    "text": "In which one of the following devices, the light energy is converted into the electrical energy?",
+    "options": [
+      "Light-emitting diode",
+      "Laser diode",
+      "Solar cell",
+      "Transistor"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A solar cell (photovoltaic cell) is an electrical device that converts the energy of light directly into electricity.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Energy Conversion" } ]
+  },
+  {
+    "id": "nda-2022-2-q137",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Local Government",
+    "text": "Which one of the following is not a power of Panchayats under Article 243G?",
+    "options": [
+      "Land improvement",
+      "Implementation of land reforms",
+      "Land consolidation and soil conservation",
+      "Regulation of land revenue"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Regulation of land revenue falls under the jurisdiction of the State Government, not the Panchayats.",
+    "tags": [ { "type": "subject", "label": "Polity" }, { "type": "topic", "label": "Panchayati Raj" } ]
+  },
+  {
+    "id": "nda-2022-2-q138",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Match List-I (Mahamatta) with List-II (Function): A. Anta-mahamatta B. Ithijhakha-mahamatta C. Dhamma-mahamatta D. Nagalaviyohalaka-mahamatta. 1. Women's welfare 2. Spread of Dhamma 3. Associated with city administration 4. In-charge of frontier areas",
+    "options": [
+      "A-3, B-2, C-1, D-4",
+      "A-3, B-1, C-2, D-4",
+      "A-4, B-1, C-2, D-3",
+      "A-4, B-2, C-1, D-3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Anta-mahamattas managed frontier areas (4). Ithijhakha-mahamattas looked after women's welfare (1). Dhamma-mahamattas spread Dhamma (2). Nagalaviyohalaka managed city administration (3).",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Mauryan Administration" } ]
+  },
+  {
+    "id": "nda-2022-2-q139",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Who among the following is the author of the Hastyayurveda?",
+    "options": [
+      "Palakapya",
+      "Vagbhata",
+      "Sushruta",
+      "Charaka"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 'Hastyayurveda' is an ancient Indian treatise on the diseases of elephants, traditionally ascribed to the sage Palakapya.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Literature" } ]
+  },
+  {
+    "id": "nda-2022-2-q140",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Which one of the following areas was acquired by the British under the Treaty of Deogaon, 1803?",
+    "options": [
+      "Cuttack",
+      "Murshidabad",
+      "Surat",
+      "Calicut"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Treaty of Deogaon (1803) was signed between the Bhonsle Marathas and the British, under which Cuttack (Odisha) was ceded to the East India Company.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "British Expansion" } ]
+  },
+  {
+    "id": "nda-2022-2-q141",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Transport",
+    "text": "Consider the following statements: 1. Maharashtra State has the maximum share of national highways (length in kilometres). 2. The nature of terrain and the level of economic development is one of the reasons for the maximum share of national highways in Maharashtra. Which of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Maharashtra possesses the longest network of National Highways in India, largely driven by its level of economic development and terrain connectivity needs.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Infrastructure" } ]
+  },
+  {
+    "id": "nda-2022-2-q142",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Human Geography",
+    "text": "The activities or services focussed on creation, rearrangement and interpretation of new and existing ideas are referred to as",
+    "options": [
+      "quaternary activities",
+      "quinary activities",
+      "tertiary activities",
+      "secondary activities"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quinary activities involve high-level decision-making, creation, and interpretation of ideas, often done by top executives and research scientists.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Economic Activities" } ]
+  },
+  {
+    "id": "nda-2022-2-q143",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Current Affairs",
+    "text": "Consider the following statements about 'Ude Desh ka Aam Nagrik (UDAN)' scheme: 1. It is an innovative scheme to develop the regional aviation market. 2. It creates affordability yet economically viable and profitable flight on regional routes. Which of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "UDAN (Ude Desh ka Aam Nagrik) aims to enhance regional aviation connectivity and make air travel affordable, promoting economic viability.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Infrastructure" } ]
+  },
+  {
+    "id": "nda-2022-2-q144",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Drainage System",
+    "text": "Consider the following statements: 1. The Sharavati river creates Jog Falls. 2. The Brahmani river is formed by the confluence of the Kosi and Sankh rivers. 3. The Tamraparni is a river of Tirunelveli district of Tamil Nadu. How many of the above statements is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 and 3 are correct. Statement 2 is incorrect because the Brahmani river is formed by the confluence of the Sankh and South Koel rivers, not Kosi.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Rivers" } ]
+  },
+  {
+    "id": "nda-2022-2-q145",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "text": "SONAR is a device that is used to measure the distance of underwater objects by a ship. Which of the following types of waves does it use for this purpose?",
+    "options": [
+      "Infrasonic waves",
+      "Sound waves in audible range for human beings",
+      "Ultrasonic waves",
+      "All of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "SONAR (Sound Navigation and Ranging) relies on the reflection of ultrasonic waves to detect underwater objects.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Acoustics" } ]
+  },
+  {
+    "id": "nda-2022-2-q146",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "text": "Which one of the following statements about the speed of sound waves is not correct?",
+    "options": [
+      "The speed of sound waves in steel is higher than that in water.",
+      "The speed of sound waves in air decreases with increase in temperature.",
+      "The speed of sound waves in air increases with increase in temperature.",
+      "The speed of sound waves in water is higher than that in air."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The speed of sound in air actually increases with an increase in temperature, making statement (b) incorrect.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Speed of Sound" } ]
+  },
+  {
+    "id": "nda-2022-2-q147",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Anatomy",
+    "text": "The part of the human ear that converts the pressure variations associated with audible sound waves to electrical signals is",
+    "options": [
+      "auditory nerve",
+      "cochlea",
+      "eardrum",
+      "eustachian tube"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The cochlea is a fluid-filled part of the inner ear containing hair cells that convert vibrational pressure into electrical signals sent to the brain.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Sensory Organs" } ]
+  },
+  {
+    "id": "nda-2022-2-q148",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "Which one of the following metals is most commonly used for making filament of incandescent electric bulbs?",
+    "options": [
+      "Aluminium",
+      "Silver",
+      "Copper",
+      "Tungsten"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Tungsten is used for bulb filaments because of its high melting point and resistance to glowing at high temperatures without melting.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Materials" } ]
+  },
+  {
+    "id": "nda-2022-2-q149",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "A bullet of mass 10 g is horizontally fired with velocity 300 m s^-1 from a pistol of mass 1 kg. What is the recoil velocity of the pistol?",
+    "options": [
+      "0.3 m s^-1",
+      "3 m s^-1",
+      "-3 m s^-1",
+      "-0.3 m s^-1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "By conservation of momentum: m_bullet * v_bullet + m_pistol * v_pistol = 0 -> (0.010 kg)(300) + (1 kg)(v_pistol) = 0 -> v_pistol = -3 m/s.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Momentum" } ]
+  },
+  {
+    "id": "nda-2022-2-q150",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "text": "A microphone converts",
+    "options": [
+      "electrical signals to sound waves",
+      "sound waves to electrical signals",
+      "microwaves to sound waves",
+      "sound waves to microwaves"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A microphone functions as a transducer that converts acoustic energy (sound waves) into an electrical signal.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Transducers" } ]
+  }
+]

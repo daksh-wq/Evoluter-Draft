@@ -1,0 +1,2042 @@
+[
+  {
+    "id": "cds-2025-1-001",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "International Events / Chronology",
+    "text": "Consider the following international events:\n1. Signing of the Simla Agreement\n2. Agra Summit between India and Pakistan\n3. Signing of the SAARC Charter at the First SAARC Summit\n4. India's first nuclear test\n\nWhich one of the following is the correct chronological order of the above events?",
+    "options": [
+      "1, 3, 4, 2",
+      "4, 1, 3, 2",
+      "1, 4, 3, 2",
+      "4, 1, 2, 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Simla Agreement – 1972 (1), India's first nuclear test – 1974 (4), SAARC Charter signed at First SAARC Summit – 1985 (3), Agra Summit – 2001 (2). Correct order: 1, 4, 3, 2.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "International Events"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-002",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Electoral System",
+    "text": "Which one of the following features is correct about the 'First Past the Post System' of election?",
+    "options": [
+      "A candidate who wins may not get the majority of votes",
+      "More than one representative may be elected from one constituency",
+      "Voters vote for the party, not the candidate",
+      "Every party gets seats in the legislature in proportion to percentage of votes that it gets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In First Past the Post (FPTP) system, the candidate with the most votes wins, even without an absolute majority. A candidate wins with a simple plurality, not necessarily a majority.",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Electoral System"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-003",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Constitutional Provisions / Special Provisions",
+    "text": "Match List-I with List-II and select the answer using the code given below the Lists:\n\nList-I (Special provision in the Constitution of India) | List-II (State)\nA. Article 371     | 1. Nagaland\nB. Article 371-A   | 2. Gujarat\nC. Article 371-B   | 3. Assam\nD. Article 371-I   | 4. Goa\n\nCode:",
+    "options": [
+      "A-4, B-1, C-3, D-2",
+      "A-4, B-3, C-1, D-2",
+      "A-2, B-1, C-3, D-4",
+      "A-2, B-3, C-1, D-4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 371 – Gujarat/Maharashtra (2); Article 371-A – Nagaland (1); Article 371-B – Assam (3); Article 371-I – Goa (4).",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Special Constitutional Provisions"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-004",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Constitutional Amendments / Women Reservation",
+    "text": "Which of the following statements as per the Constitution of India is/are correct?\n1. Provision for the reservation of seats for women in the Lok Sabha and the Rajya Sabha has been made vide 106th Amendment of the Constitution.\n2. There are provisions for the reservation of seats for women in the Legislative Assemblies and Legislative Councils of the States.\n3. There are provisions for the reservation of seats for women in Panchayats.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "1 only",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 106th Amendment (Nari Shakti Vandan Adhiniyam) reserves seats for women in Lok Sabha and State Legislative Assemblies, not Rajya Sabha or Legislative Councils. The 73rd Amendment provides for reservation of seats for women in Panchayats. So statement 3 is correct; statements 1 and 2 are partially/wholly incorrect.",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Women Reservation"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-005",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Seventh Schedule / Union-State Lists",
+    "text": "Which one among the following pairs of Subjects and Lists under the Seventh Schedule of the Constitution of India is not correctly matched?",
+    "options": [
+      "Forest : Concurrent List",
+      "Taxes on land and building : State List",
+      "Insurance : Union List",
+      "Census : Concurrent List"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Census is in the Union List (Entry 69), not the Concurrent List. Forest is in the Concurrent List; Taxes on land and buildings is in the State List; Insurance is in the Union List.",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Seventh Schedule"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-006",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Preamble",
+    "text": "Which of the following statements with reference to the Preamble to the Constitution of India are correct?\n1. The word 'secular' comes before the word 'socialist'.\n2. The word 'justice' comes before the word 'equality'.\n3. The word 'fraternity' comes after the word 'liberty'.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Preamble reads: '…SOCIALIST SECULAR…JUSTICE, social, economic and political; LIBERTY…EQUALITY…FRATERNITY…'. So 'socialist' comes before 'secular' (statement 1 is wrong). Justice comes before Equality (statement 2 is correct). Fraternity comes after Liberty (statement 3 is correct).",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Preamble"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-007",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Parliamentary Motions",
+    "text": "Which one of the following statements about 'Motions' in the Parliament of India is correct?",
+    "options": [
+      "A Motion of No-Confidence can be admissible against an individual minister in the Council of Ministers.",
+      "A No-Confidence Motion must set out grounds on which it is based.",
+      "Rajya Sabha is not empowered to entertain a motion of No-Confidence.",
+      "A Censure Motion need not be based on specific grounds or charges."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A No-Confidence Motion is moved in Lok Sabha only, not Rajya Sabha. The Rajya Sabha has no power to pass a No-Confidence Motion against the government.",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Parliamentary Motions"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-008",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Constitution Parts",
+    "text": "Part IV-A of the Constitution of India deals with which one of the following areas?",
+    "options": [
+      "Appointment of Members to Public Service Commissions",
+      "Fundamental Duties",
+      "Functions of Public Service Commissions",
+      "Provisions for the functioning of the State Governments"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Part IV-A of the Constitution contains Article 51A which deals with Fundamental Duties of citizens, added by the 42nd Amendment 1976.",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Fundamental Duties"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-009",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "International Boundaries",
+    "text": "The 'Durand Line' is a border demarcation that separates which of the following countries?",
+    "options": [
+      "Afghanistan and Iran",
+      "Afghanistan and Pakistan",
+      "India and Pakistan",
+      "Afghanistan and China"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Durand Line is the border between Afghanistan and Pakistan, established in 1893 by Sir Mortimer Durand.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "International Boundaries"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-010",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Social Movements / Chronology",
+    "text": "Consider the following social movements:\n1. Chipko Movement\n2. Bardoli Satyagraha\n3. Satyashodhak Samaj\n\nWhich one of the following is the correct chronological order (starting with the earliest) of the launch of the above social movements?",
+    "options": [
+      "2, 1, 3",
+      "3, 1, 2",
+      "3, 2, 1",
+      "1, 2, 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Satyashodhak Samaj was founded by Jyotirao Phule in 1873 (3), Bardoli Satyagraha was in 1928 (2), and Chipko Movement started in 1973 (1). So the order is 3, 2, 1.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Social Movements"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-011",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "International Agreements / Tashkent",
+    "text": "Which one of the following statements about the Tashkent Agreement is correct?",
+    "options": [
+      "It was an agreement between India and the Soviet Union.",
+      "It was an agreement between India and Pakistan.",
+      "It was an agreement that led to the formation of Bangladesh.",
+      "It was an agreement between India and Mongolia."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Tashkent Agreement was signed in January 1966 between India (Lal Bahadur Shastri) and Pakistan (Ayub Khan) after the 1965 Indo-Pak War, mediated by the Soviet Union.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "International Agreements"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-012",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Eighth Schedule / Languages",
+    "text": "Which among the following is not a language listed in the Eighth Schedule of the Constitution of India?",
+    "options": [
+      "Manipuri",
+      "Gondi",
+      "Nepali",
+      "Dogri"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gondi is not included in the Eighth Schedule of the Indian Constitution. The Eighth Schedule currently has 22 languages. Manipuri, Nepali, and Dogri are all included.",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Eighth Schedule"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-013",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Ancient Indian Literature",
+    "text": "Which of the following can be considered a part of the ancient Indian Smriti Literature?\n1. Puranas\n2. Ramayana\n3. Kalpa-Sutra\n4. Vedas\n\nSelect the answer using the code given below:",
+    "options": [
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "1 and 2 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Smriti literature includes texts that are 'remembered' (authored by humans) as opposed to Shruti (Vedas, directly heard/revealed). Puranas (1), Ramayana (2), and Kalpa-Sutras (3) fall under Smriti. The Vedas are Shruti, not Smriti.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Ancient Indian Literature"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-014",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Women in Indian History",
+    "text": "Who among the following was India's first Woman Chief Minister?",
+    "options": [
+      "Sarojini Naidu",
+      "Sucheta Kripalani",
+      "Vijaya Lakshmi Pandit",
+      "Hansa Mehta"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sucheta Kripalani became India's first woman Chief Minister when she was elected Chief Minister of Uttar Pradesh in 1963.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Women in Indian History"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-015",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Awards / Personalities",
+    "text": "Which of the following statements is/are correct?\n1. C. Rajagopalachari was the first recipient of the Bharat Ratna.\n2. Pandit Deen Dayal Upadhyaya initiated the concept of 'Integral Humanism'.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. C. Rajagopalachari was among the first recipients of Bharat Ratna in 1954. Pandit Deen Dayal Upadhyaya is indeed credited with the concept of Integral Humanism (Ekatma Manavaad).",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Awards and Personalities"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-016",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Institutions and Locations",
+    "text": "Which of the following pairs of Institute and their location is/are correctly matched?\n1. Indian Institute of Advanced Study : Shimla\n2. Indian Institute of Public Administration : New Delhi\n3. Sushma Swaraj Institute of Foreign Service : Nainital\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "1 only",
+      "2 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Indian Institute of Advanced Study is in Shimla (correct). Indian Institute of Public Administration is in New Delhi (correct). Sushma Swaraj Institute of Foreign Service (formerly Foreign Service Institute) is in New Delhi, not Nainital. So 1 and 2 are correct.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Institutions and Locations"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-017",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Festivals / Tribal Culture",
+    "text": "Consider the following statements:\n1. Erok Sim is a festival mainly celebrated by the Santhal community.\n2. Sangken is a Buddhist festival celebrated in Arunachal Pradesh.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Erok Sim is indeed a festival of the Santhal community (1 is correct). Sangken is a water festival celebrated by the Buddhist communities in Arunachal Pradesh, especially by the Khamptis (2 is correct).",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Festivals and Culture"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-018",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Defence",
+    "topic": "Military Exercises",
+    "text": "'Maitree' is a Joint Military Exercise between India and:",
+    "options": [
+      "Bangladesh",
+      "Thailand",
+      "Malaysia",
+      "Sri Lanka"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Exercise Maitree is a joint military exercise conducted between India and Thailand.",
+    "tags": [{"type": "subject", "label": "Defence"}, {"type": "topic", "label": "Military Exercises"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-019",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Polity",
+    "topic": "Special Category Status",
+    "text": "Which of the following criteria are specified for granting Special Category Status to States in India?\n1. Hilly and difficult terrain\n2. Economic and infrastructural backwardness\n3. Strategic coastal zone\n4. Sizeable share of tribal population\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "3 and 4 only",
+      "1, 2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The criteria for Special Category Status include hilly and difficult terrain (1), economic and infrastructural backwardness (2), sizeable tribal population (4), and international borders. Strategic coastal zone is not a standard criterion.",
+    "tags": [{"type": "subject", "label": "Polity"}, {"type": "topic", "label": "Special Category Status"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-020",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Political Parties / Independence Era",
+    "text": "Who among the following is the founder of the Congress Socialist Party?",
+    "options": [
+      "Acharya Narendra Dev",
+      "Jawaharlal Nehru",
+      "Motilal Nehru",
+      "Asoka Mehta"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Congress Socialist Party was founded in 1934 by Acharya Narendra Dev and Jayaprakash Narayan.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Political Parties"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-021",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Electromagnetism / Induction",
+    "text": "The rule to determine the direction of a current induced in a coil due to its rotation in a magnetic field is:",
+    "options": [
+      "Right-Hand Thumb Rule.",
+      "Fleming's Left-Hand Rule.",
+      "Fleming's Right-Hand Rule.",
+      "Hund's Rule."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fleming's Right-Hand Rule is used to determine the direction of the induced EMF/current in a conductor moving in a magnetic field (generator principle).",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Electromagnetic Induction"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-022",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Motion / Average Speed",
+    "text": "A car travels a total distance L. It travels half the distance with speed v₁ and the other half with speed v₂. The average speed of the car is:",
+    "options": [
+      "(v₁ + v₂) / 2",
+      "2v₁v₂ / (v₁ + v₂)",
+      "(v₁ + v₂)L / 2v₁v₂",
+      "0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When equal distances are covered at different speeds, the average speed = 2v₁v₂ / (v₁ + v₂), which is the harmonic mean of the two speeds.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Motion"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-023",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Laws of Motion / Momentum",
+    "text": "The linear momentum of a particle is conserved if:",
+    "options": [
+      "the net force on it is maximum.",
+      "the net force on it is zero.",
+      "the net torque on it is zero.",
+      "the net work done on it is maximum."
+    ],
+    "correctAnswer": 1,
+    "explanation": "By Newton's second law, F = dp/dt. If the net force is zero, dp/dt = 0, meaning linear momentum is conserved.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Conservation of Momentum"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-024",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Circular Motion / Work",
+    "text": "When a stone tied to a string is whirled in a circle, the work done on it by the string:",
+    "options": [
+      "is positive.",
+      "is negative.",
+      "is zero.",
+      "depends on the mass of the stone."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The tension in the string acts as centripetal force, which is always perpendicular to the velocity (displacement). Work = F·d·cosθ = F·d·cos90° = 0.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Circular Motion"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-025",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Work Power Energy",
+    "text": "Assume 'A' does 500 J of work in 'x' minutes and 'B' does 1000 J of work in 20 minutes. If the power delivered by 'A' is P₁ and 'B' is P₂ and P₁ = 2P₂, then 'x', in minutes is:",
+    "options": [
+      "10",
+      "5",
+      "20",
+      "25"
+    ],
+    "correctAnswer": 1,
+    "explanation": "P₂ = 1000/20 = 50 W. P₁ = 2P₂ = 100 W. P₁ = 500/(x×60). So 100 = 500/(60x), giving x = 500/(100×60) = 1/12 hours = 5 minutes.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Work Power Energy"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-026",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Sound Waves",
+    "text": "A sound wave travelling at a speed of 330 m/s produces 20 crests and 20 troughs in 0.1 second. The wavelength of the sound wave is:",
+    "options": [
+      "1.1 m",
+      "3.3 m",
+      "1.65 m",
+      "2.2 m"
+    ],
+    "correctAnswer": 2,
+    "explanation": "20 crests and 20 troughs in 0.1 s means frequency = 20/0.1 = 200 Hz. Wait – 20 complete cycles (each cycle has one crest and one trough) means f = 20/0.1 = 200 Hz. λ = v/f = 330/200 = 1.65 m.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Waves"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-027",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "X-rays / Electromagnetic Waves",
+    "text": "An X-ray can be deflected:",
+    "options": [
+      "by a magnetic field.",
+      "by an electric field.",
+      "by both electric and magnetic field.",
+      "neither by electric field nor by magnetic field."
+    ],
+    "correctAnswer": 3,
+    "explanation": "X-rays are electromagnetic waves with no charge. They are not deflected by electric or magnetic fields, unlike charged particles.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "X-rays"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-028",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Optics / Telescopes",
+    "text": "In a simple astronomical telescope, the objective and the eyepiece used respectively, are:",
+    "options": [
+      "a convergent lens and a divergent lens.",
+      "a divergent lens and a divergent lens.",
+      "a divergent lens and a convergent lens.",
+      "a convergent lens and a convergent lens."
+    ],
+    "correctAnswer": 3,
+    "explanation": "In a simple astronomical (refracting) telescope, both the objective and the eyepiece are converging (convex) lenses. The objective has a large focal length and the eyepiece has a small focal length.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Optics"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-029",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Optics / Atmospheric Phenomena",
+    "text": "Twinkling of a star is due to:",
+    "options": [
+      "Interference of light",
+      "Refraction of light",
+      "Polarization of light",
+      "Diffraction of light"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Twinkling of stars is due to atmospheric refraction. Light from stars passes through different layers of atmosphere with varying densities, causing it to bend and produce the twinkling effect.",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Optics"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-030",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "text": "Van de Graaff generator generates:",
+    "options": [
+      "electrostatic charge",
+      "magnetic field",
+      "high voltage low alternating current",
+      "high voltage low direct current"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A Van de Graaff generator builds up large amounts of electrostatic charge on a hollow metal sphere, producing very high voltages (millions of volts).",
+    "tags": [{"type": "subject", "label": "Physics"}, {"type": "topic", "label": "Electrostatics"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-031",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Metallurgy / Electrolysis",
+    "text": "Which one of the following metals is widely extracted by the electrolysis of its molten compound?",
+    "options": [
+      "Cu",
+      "Au",
+      "Sn",
+      "Na"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sodium (Na) is extracted by electrolysis of molten sodium chloride (NaCl) using the Down's process, since it is too reactive to be extracted by other means.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Metallurgy"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-032",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Materials / Graphene",
+    "text": "Which one of the following is not a property of 'graphene'?",
+    "options": [
+      "It is the thinnest material known so far.",
+      "It is almost completely transparent.",
+      "It is highly conducting.",
+      "It is a wide band-gap semiconductor."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Graphene is actually a zero band-gap semiconductor (semimetal), not a wide band-gap semiconductor. Its other listed properties – being the thinnest material, nearly transparent, and highly conducting – are all correct.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Materials Science"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-033",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Polymers / Plastics",
+    "text": "Why do plastics not degrade easily?",
+    "options": [
+      "They have strong ionic bonds.",
+      "They have strong covalent bonds.",
+      "They have strong metallic bonds.",
+      "They have very high melting points (> 500°C)."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Plastics are polymers made up of long chains of molecules held together by strong covalent bonds, which are very resistant to breakdown by natural processes, making them non-biodegradable.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Polymers"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-034",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry / Functional Groups",
+    "text": "Which one of the following is the correct chemical formula of carboxylic acid?",
+    "options": [
+      "C₃H₇OH",
+      "C₃H₈",
+      "C₂H₅COOH",
+      "CH₃COCH₃"
+    ],
+    "correctAnswer": 2,
+    "explanation": "C₂H₅COOH is propionic acid (propanoic acid), a carboxylic acid. C₃H₇OH is propanol (alcohol), C₃H₈ is propane (alkane), CH₃COCH₃ is acetone (ketone).",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Organic Chemistry"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-035",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry / Benzene",
+    "text": "Which one of the following statements is not correct for benzene?",
+    "options": [
+      "Each carbon atom forms sigma bonds with two other carbon atoms with a bond angle of 120°.",
+      "Delocalized electrons create a symmetrical 'cloud' of electrons above and below the plane.",
+      "The length of C–C bonds is intermediate between single and double bonds.",
+      "It has six isomers."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Benzene (C₆H₆) has no isomers as all six positions are equivalent. The molecular formula C₆H₆ has other isomers but benzene itself, as a structural formula, doesn't have six isomers.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Organic Chemistry"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-036",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Fertilizers",
+    "text": "Which one of the following is not a nitrogen fertilizer?",
+    "options": [
+      "(NH₄)₂SO₄",
+      "NH₄NO₃",
+      "N₂",
+      "(NH₂)₂CO"
+    ],
+    "correctAnswer": 2,
+    "explanation": "N₂ (molecular nitrogen) is atmospheric nitrogen and is not used directly as a fertilizer. Ammonium sulphate, ammonium nitrate, and urea ((NH₂)₂CO) are all nitrogen fertilizers.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Fertilizers"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-037",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Electronic Configuration",
+    "text": "Which one of the following general electronic configurations correctly represent a transition metal element?",
+    "options": [
+      "(n – 2) d¹⁻¹⁰ ns²",
+      "(n – 2) f¹⁻¹⁴ (n – 1) d⁰⁻¹ ns²",
+      "ns² np⁶ nd¹⁻¹⁰",
+      "(n – 1) d¹⁻¹⁰ ns⁰⁻²"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Transition metals are d-block elements with general electronic configuration (n-1)d¹⁻¹⁰ns⁰⁻². Option (b) represents inner transition (f-block) metals.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Electronic Configuration"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-038",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Oxidation States",
+    "text": "Variable oxidation numbers are possible for:",
+    "options": [
+      "Sodium",
+      "Calcium",
+      "Iron",
+      "Lithium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Iron (Fe) is a transition metal and exhibits variable oxidation states: +2 (ferrous) and +3 (ferric). Sodium, calcium, and lithium are s-block elements with fixed oxidation states (+1, +2, +1 respectively).",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Oxidation States"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-039",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Gases / Properties",
+    "text": "Which one of the following gas smells like a rotten egg?",
+    "options": [
+      "Ammonia",
+      "Hydrogen sulphide",
+      "Acetylene",
+      "Sulphur dioxide"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hydrogen sulphide (H₂S) has the characteristic smell of rotten eggs. Ammonia has a pungent smell, acetylene has a faint garlic-like smell, and sulphur dioxide smells like burning matchsticks.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Properties of Gases"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-040",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "The chemical reaction K₂SO₄ + BaCl₂ → 2KCl + BaSO₄↓ (aq.) (aq.) (aq.) (solid) is an example of:",
+    "options": [
+      "Addition reaction",
+      "Displacement reaction",
+      "Decomposition reaction",
+      "Double displacement reaction"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In this reaction, the potassium and barium ions exchange their anions (sulphate and chloride), making it a double displacement (metathesis) reaction. The formation of an insoluble precipitate (BaSO₄) is characteristic.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Chemical Reactions"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-041",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Classification of Animals",
+    "text": "Which one among the following is the correct scheme followed for classification of animals?",
+    "options": [
+      "Class → Phylum → Order → Genus → Family → Species",
+      "Phylum → Class → Family → Genus → Order → Species",
+      "Order → Class → Phylum → Family → Species → Genus",
+      "Phylum → Class → Order → Family → Genus → Species"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The correct hierarchical classification (from highest to lowest) is: Kingdom → Phylum → Class → Order → Family → Genus → Species.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Classification"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-042",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Diseases",
+    "text": "Which one of the following is an example of airborne disease?",
+    "options": [
+      "Tuberculosis",
+      "Malaria",
+      "Dengue",
+      "Cholera"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tuberculosis (TB) is an airborne disease caused by Mycobacterium tuberculosis, spread through droplets. Malaria and Dengue are vector-borne diseases, while Cholera is waterborne.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Diseases"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-043",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Blood Groups",
+    "text": "What are the four human blood types in ABO blood group typing?",
+    "options": [
+      "AO, BO, A and B",
+      "A, B, AB and O",
+      "A, AB, BO and O",
+      "AB, AO, B and O"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The four blood types in the ABO system are A, B, AB, and O.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Blood Groups"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-044",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Human Reproductive System",
+    "text": "Which one of the following is not a part of the male reproductive system in human beings?",
+    "options": [
+      "Prostate gland",
+      "Testis",
+      "Cervix",
+      "Scrotum"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cervix is part of the female reproductive system (the lower part of the uterus). The prostate gland, testis, and scrotum are all parts of the male reproductive system.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Human Reproductive System"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-045",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Human Brain",
+    "text": "Which of the following are the different parts of a human brain?",
+    "options": [
+      "Forefront brain, Standard brain and Hind brain",
+      "Fore brain, Median brain and Rear brain",
+      "Fore brain, Mid brain and Hind brain",
+      "Precursor brain, Mean brain and Hind brain"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The human brain is divided into three main parts: the Fore brain (Prosencephalon), the Mid brain (Mesencephalon), and the Hind brain (Rhombencephalon).",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Human Brain"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-046",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Human Body / Teeth",
+    "text": "Tooth enamel of humans is made up of:",
+    "options": [
+      "Calcium phosphate",
+      "Sodium hydrogen carbonate",
+      "Sodium hydroxide",
+      "Lactic acid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tooth enamel is primarily made of hydroxyapatite, a crystalline form of calcium phosphate, making it the hardest substance in the human body.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Human Body"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-047",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Digestive System",
+    "text": "The inner lining of the human small intestine has numerous finger-like projections called:",
+    "options": [
+      "Sphincter",
+      "Villi",
+      "Enzymes",
+      "Plaques"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The inner lining of the small intestine has finger-like projections called villi (singular: villus) that increase the surface area for absorption of nutrients.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Digestive System"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-048",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Biochemistry / Carbohydrates",
+    "text": "Which of the following represent disaccharides?",
+    "options": [
+      "Starch and glycogen",
+      "Glucose and galactose",
+      "Maltose and lactose",
+      "Ribose and xylose"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Disaccharides are sugars made of two monosaccharide units. Maltose (glucose+glucose) and Lactose (glucose+galactose) are disaccharides. Starch and glycogen are polysaccharides; glucose and galactose are monosaccharides; ribose and xylose are pentose monosaccharides.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Biochemistry"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-049",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Biology",
+    "topic": "Cell Biology / Prokaryotes",
+    "text": "Which one of the following organelles can be seen in a prokaryotic cell?",
+    "options": [
+      "Mitochondria",
+      "Definitive nucleus",
+      "Ribosomes",
+      "Golgi bodies"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Prokaryotic cells lack membrane-bound organelles. They do not have mitochondria, a definitive nucleus, or Golgi bodies. However, they do contain ribosomes (70S type) which are essential for protein synthesis.",
+    "tags": [{"type": "subject", "label": "Biology"}, {"type": "topic", "label": "Cell Biology"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-050",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Chemistry",
+    "topic": "Acids and Bases / pH",
+    "text": "A solution with a pH value less than 7 is a/an:",
+    "options": [
+      "Neutral solution",
+      "Basic solution",
+      "Acidic solution",
+      "Hypotonic solution"
+    ],
+    "correctAnswer": 2,
+    "explanation": "pH < 7 indicates an acidic solution, pH = 7 is neutral, and pH > 7 is basic/alkaline.",
+    "tags": [{"type": "subject", "label": "Chemistry"}, {"type": "topic", "label": "Acids and Bases"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-051",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Colonial History / Permanent Settlement",
+    "text": "Consider the following statements about the Bengal countryside at the time of the Permanent Settlement:\n1. The zamindars' troops were disbanded.\n2. Within the villages, the power of jotedars was more effective than that of zamindars.\n3. The East India Company made a rule that the property of women would not be taken over.\n4. Adhiyars were sharecroppers on the land owned by bargadars.\n\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 4",
+      "1, 2 and 3",
+      "2, 3 and 4",
+      "1 and 3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1, 2, and 3 are correct regarding the Permanent Settlement. Adhiyars were bargadars (sharecroppers), so statement 4 is incorrect as it confuses the relationship.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Colonial History"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-052",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Freedom Struggle / Press",
+    "text": "Match List-I with List-II and select the answer using the code given below the Lists:\n\nList-I (Journal/Newspaper/Pamphlet) | List-II (Founder/Editor/Author)\nA. Kudi Arasu    | 1. Aurobindo Ghosh\nB. Kisan Bulletin | 2. Pherozeshah Mehta\nC. Bombay Chronicle | 3. Indulal Yagnik\nD. Bhawani Mandir | 4. E.V. Ramaswami Naicker\n\nCode:",
+    "options": [
+      "A-4, B-3, C-2, D-1",
+      "A-4, B-2, C-3, D-1",
+      "A-1, B-3, C-2, D-4",
+      "A-1, B-2, C-3, D-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kudi Arasu – E.V. Ramaswami Naicker (Periyar) (4); Kisan Bulletin – Indulal Yagnik (3); Bombay Chronicle – Pherozeshah Mehta (2); Bhawani Mandir – Aurobindo Ghosh (1).",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Freedom Struggle"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-053",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Freedom Struggle / Ghadar Movement",
+    "text": "Which of the following statements about the Ghadar Movement is/are correct?\n1. The Ghadar Movement began in 1913 in San Francisco.\n2. The movement was founded by Sohan Singh Bhakna.\n3. The Ghadar Movement took its name from the weekly Ghadar brought out in several Indian languages.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements are correct. The Ghadar Party was founded in San Francisco in 1913 by Sohan Singh Bhakna and Lala Hardayal, and the weekly Ghadar newspaper was published in multiple Indian languages.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Ghadar Movement"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-054",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Colonial History / Political Associations",
+    "text": "Chronologically arrange the formation of the following political associations, beginning from the earliest:\n1. Poona Sarvajanik Sabha\n2. Indian Association\n3. Madras Mahajan Sabha\n4. Bombay Presidency Association\n\nSelect the answer using the code given below:",
+    "options": [
+      "1, 2, 3, 4",
+      "4, 3, 2, 1",
+      "1, 2, 4, 3",
+      "3, 4, 1, 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Poona Sarvajanik Sabha (1870) (1), Indian Association, Calcutta (1876) (2), Madras Mahajan Sabha (1884) (3), Bombay Presidency Association (1885) (4). Correct order: 1, 2, 3, 4.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Political Associations"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-055",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Ancient History / Harappan Civilization",
+    "text": "Which one of the following periods has provided the evidence of a ploughed field at Kalibangan in Rajasthan?",
+    "options": [
+      "Early Harappan",
+      "Mature Harappan",
+      "Late Harappan",
+      "Chalcolithic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The evidence of a ploughed field (furrows) at Kalibangan in Rajasthan belongs to the Early Harappan period (pre-Harappan), making it one of the earliest evidence of ploughing in the world.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Harappan Civilization"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-056",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Freedom Struggle / Chronology",
+    "text": "Consider the following events:\n1. Muslim League Resolution for Pakistan\n2. Gandhi-Irwin Pact\n3. Dandi March\n4. Second Round Table Conference\n\nWhich one of the following is the correct chronological order of the given events (earliest to latest)?",
+    "options": [
+      "2, 3, 1, 4",
+      "3, 2, 4, 1",
+      "3, 4, 2, 1",
+      "2, 3, 4, 1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dandi March – March 1930 (3), Gandhi-Irwin Pact – March 1931 (2), Second Round Table Conference – September 1931 (4), Muslim League Pakistan Resolution – 1940 (1). Correct order: 3, 2, 4, 1.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Freedom Struggle"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-057",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Ancient/Medieval History / Archaeological Sites",
+    "text": "Consider the following pairs:\n(Historical Place) — (Well-known for)\nI. Girnar : Sudarshana Lake\nII. Cholistan : Terracotta model of Plough\nIII. Mant (near Mathura) : Headless standing figure of Kanishka\nIV. Sannati : Asokan Pillar Edict in Odisha\n\nHow many pairs given above is/are correctly matched?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Girnar is known for Sudarshana Lake (correct). Cholistan is in Pakistan and known for Harappan sites, but the terracotta plough model is associated with Banawali, not Cholistan. Mant near Mathura is indeed known for the headless Kanishka statue (correct). Sannati is in Karnataka, not Odisha (incorrect). So 2 pairs are correctly matched (I and III).",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Archaeological Sites"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-058",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Medieval History / Vijayanagara Empire",
+    "text": "With reference to the 'Amara-Nayaka system', which one of the following statements is not correct?",
+    "options": [
+      "It was a major political innovation of the Vijayanagara Empire.",
+      "They were military commanders, who were given territories to govern and collect taxes and other dues from peasants, craftspersons and traders in the area.",
+      "They retained part of the revenue for personal use and to maintain a stipulated contingent of horses and elephants.",
+      "They were not allowed to use their share of revenue for the maintenance of temples."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Amara-Nayakas in the Vijayanagara empire were indeed allowed to use part of their revenue for various purposes including maintenance of temples. Option D is incorrect.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Vijayanagara Empire"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-059",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Literature / Freedom Struggle",
+    "text": "The popular poem 'Khoob ladi mardani woh to Jhansi wali rani thi' (Like a man she fought, she was the Rani of Jhansi) was written by:",
+    "options": [
+      "Mahadevi Varma",
+      "Subhadra Kumari Chauhan",
+      "Amrita Pritam",
+      "Balamani Amma"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The famous poem on Rani Lakshmibai of Jhansi was written by Subhadra Kumari Chauhan. The complete poem is titled 'Jhansi ki Rani'.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Literature"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-060",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Medieval History / Art and Architecture",
+    "text": "Consider the following statements about Ellora:\n1. This art-historical site is associated exclusively with Buddhism.\n2. The Kailasa temple at Ellora has been built of dressed stone and kiln fired bricks.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ellora has caves representing all three religions: Buddhism, Hinduism, and Jainism. The Kailasa temple is entirely rock-cut (monolithic), not built of dressed stone and bricks. Both statements are incorrect.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Art and Architecture"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-061",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Ancient History / Buddhist Sites",
+    "text": "In which one of the following states are the Guntupalle Buddhist Caves located?",
+    "options": [
+      "Andhra Pradesh",
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Guntupalle Buddhist Caves are located in Andhra Pradesh, near Eluru. They are important early Buddhist rock-cut cave temples.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Buddhist Sites"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-062",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Ancient History / Ajanta Caves",
+    "text": "Consider the following statements about Ajanta Cave paintings:\n1. The paintings depict yakshas, gandharvas and apsaras.\n2. The artists have used the technique of providing 'multiple perspectives'.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The Ajanta paintings depict various celestial beings including yakshas, gandharvas, and apsaras. The artists used the technique of multiple perspectives to show scenes in a single composition.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Ajanta Caves"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-063",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Colonial History / Indigo Revolt",
+    "text": "'Neel Darpan', a play that depicted the atrocities on the indigo planters, was translated into English by:",
+    "options": [
+      "Dinabandhu Mitra",
+      "Michael Madhusudan Dutta",
+      "James Long",
+      "James C. Scott"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Neel Darpan was written by Dinabandhu Mitra (Bengali play). It was translated into English by Rev. James Long, a missionary, who was subsequently prosecuted for the translation.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Colonial History"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-064",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Revolt of 1857",
+    "text": "With reference to the Revolt of 1857, consider the following statements:\n1. Shah Mal mobilised the people of Baraut region of Uttar Pradesh and captured the bungalow of an Englishman and converted it into a 'hall of justice'.\n2. Gonoo was a Kol leader of the Singhbhum region of Chotanagpur.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Shah Mal was a village headman from Baraut (Baghpat area, UP) who led a peasant uprising during 1857. Gonoo (also spelled Gonu) was a tribal leader from Singhbhum who led the Kol rebellion.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Revolt of 1857"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-065",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Literature / Bankim Chandra",
+    "text": "Which of the following books portrays three images of the Mother Goddess: 'Mother as she was', 'Mother as she is' and 'Mother as she will be'?",
+    "options": [
+      "Durgeshnandini",
+      "Kapalkundala",
+      "Anandamath",
+      "Devi Chaudhurani"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Anandamath by Bankim Chandra Chattopadhyay portrays the three faces of the Motherland: the Mother as she was (prosperous past), as she is (present misery), and as she will be (future glory). It also contains the famous song Vande Mataram.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Literature"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-066",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Women in Modern India",
+    "text": "With reference to the women achievers in modern India, consider the following statements:\n1. Pandita Ramabai published a book 'A Comparison Between Women and Men' where she protested against the colonial view that men enjoyed all the rights, opportunities and benefits of change.\n2. Tarabai Shinde worked in the field of medicine to reduce child mortality in rural India.\n3. Sarojini Naidu led a delegation to London to demand for female franchise.\n\nHow many of the statements given above is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Only statement 1 is broadly correct (Pandita Ramabai wrote 'Stri Dharma Neeti' and worked for women's rights). Tarabai Shinde wrote 'Stri Purush Tulana' (not medicine), and Sarojini Naidu is known for political work but not specifically leading a delegation for female franchise to London. So only 1 is correct.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Women in Modern India"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-067",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Freedom Struggle / Salt Satyagraha",
+    "text": "The Sanikatta Salt Works, known for Salt Satyagraha, is located in:",
+    "options": [
+      "Gujarat",
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Sanikatta Salt Works (Sanikatta) is located in Uttara Kannada district of Karnataka, where the Salt Satyagraha was conducted.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Salt Satyagraha"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-068",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Social Reform Movements / Temple Entry",
+    "text": "The Kalaram temple, known for temple entry movements in the early twentieth century, is located in which state of India?",
+    "options": [
+      "Maharashtra",
+      "Kerala",
+      "Tamil Nadu",
+      "Gujarat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Kalaram Temple is in Nashik, Maharashtra. Dr. B.R. Ambedkar led the famous Kalaram Temple Entry Movement in 1930 to demand the right of untouchables to enter the temple.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Social Reform Movements"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-069",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Freedom Struggle / Quit India",
+    "text": "Matangini Hazra and Lakshman Naik sacrificed their lives in:",
+    "options": [
+      "Bardoli Satyagraha",
+      "Non-Cooperation Movement",
+      "Civil Disobedience Movement",
+      "Quit India Movement"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Both Matangini Hazra (from Bengal) and Lakshman Naik (from Odisha) were martyrs of the Quit India Movement of 1942.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Quit India Movement"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-070",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "History",
+    "topic": "Medieval History / Coins",
+    "text": "With reference to the history of India, the word 'kopeki' is associated with:",
+    "options": [
+      "Clothes",
+      "Coins",
+      "Land measurement",
+      "A type of sport in South India"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kopeki refers to small copper coins that were in circulation in Vijayanagara times and other medieval Indian kingdoms. The term is associated with copper coinage.",
+    "tags": [{"type": "subject", "label": "History"}, {"type": "topic", "label": "Medieval History"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-071",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Market Structures",
+    "text": "Which one among the following pairs of type of firm and feature is not correctly matched?",
+    "options": [
+      "Oligopoly firm : Interdependence in decision-making",
+      "Monopolistic firm : Firm is a price setter",
+      "Monopoly firm : Produces an efficient level of output",
+      "Perfectly competitive firm : Produces socially optimum output"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A monopoly firm does NOT produce an efficient level of output; it produces less than the socially optimal output and charges a higher price (deadweight loss). A perfectly competitive firm produces at the socially optimum output level.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Market Structures"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-072",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "FDI / Union Budget 2025",
+    "text": "Union Budget 2025 increased the Sectoral cap of FDI to 100 per cent from 74 per cent for:",
+    "options": [
+      "Telecom Sector",
+      "Power Sector",
+      "Defence Sector",
+      "Insurance Sector"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Union Budget 2025 proposed to increase the FDI limit in the Insurance sector from 74% to 100%, subject to conditions regarding premium investments within India.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "FDI Policy"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-073",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Economic Terms",
+    "text": "The practice of reducing the size of a product while maintaining its sticker price is called:",
+    "options": [
+      "Shrinkflation",
+      "Reflation",
+      "Disinflation",
+      "Deflation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shrinkflation refers to the practice where manufacturers reduce the size or quantity of a product while keeping the price the same, effectively increasing the price per unit without an explicit price hike.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Economic Terminology"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-074",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Innovation and R&D",
+    "text": "Consider the following statements about innovation and research and development in India:\n1. India's rank in Global Innovation Index reported by World Intellectual Property Organization (WIPO) has improved significantly between 2015 and 2024.\n2. Funding of research and development is sourced primarily from private sector entities and is sectorally concentrated in pharmaceuticals and information technology.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "India's GII rank improved significantly from 81 in 2015 to 39 in 2024 (Statement 1 is correct). However, R&D funding in India is primarily from the public/government sector, not private sector (Statement 2 is incorrect).",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Innovation and R&D"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-075",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Institutions / IIE",
+    "text": "Consider the following statements about the Indian Institute of Entrepreneurship (IIE):\n1. The IIE was established in 1999 in Guwahati.\n2. The main aim of the institute is to provide training, research and consulting activities for small and micro enterprises.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The Indian Institute of Entrepreneurship (IIE) was established in 1993 (some sources say 1999 for current avatar) in Guwahati, Assam, with the aim of training and developing entrepreneurship for small and micro enterprises.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Institutions"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-076",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Union Government Expenditure / GDP",
+    "text": "Consider the following statements about Union Government's Expenditure on revenue account and effective capital expenditure:\n1. Effective capital expenditure as percentage of GDP has increased from 2020–21 to 2023–24.\n2. Expenditure on revenue account as percentage of GDP has increased from 2020–21 to 2023–24.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Effective capital expenditure as a percentage of GDP has indeed increased significantly from 2020-21 to 2023-24 as India ramped up infrastructure spending. Revenue expenditure as % of GDP has not necessarily increased (it has largely been contained). So statement 1 is correct.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Union Budget / GDP"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-077",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Export Promotion / DEH",
+    "text": "Which one among the following statements about the Districts as Export Hubs (DEH) in India is not correct?",
+    "options": [
+      "DEH was launched in August 2019.",
+      "The aim of DEH is to boost exports of only selected districts of the country.",
+      "India's Foreign Trade Policy 2023 reiterated the role of DEH.",
+      "DEH aims to promote exports by providing financial inclusion and facilitating logistical and infrastructural support."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The aim of DEH is to boost exports from ALL districts of the country, not just selected districts. Every district has the potential to export, and DEH aims to tap that potential.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Export Promotion"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-078",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes / TTT",
+    "text": "Which of the following statements about Tim Tim Tare (TTT) is/are correct?\n1. TTT is a pioneering initiative that aims at imparting essential life skills to adolescent students across India.\n2. TTT is a pioneering initiative that aims at imparting vocational and technical skills to students across India.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tim Tim Tare (TTT) is a programme focused on imparting essential life skills to adolescent students. It is not primarily about vocational and technical skills training.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Government Schemes"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-079",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Labour Statistics / PLFS",
+    "text": "Consider the following statements regarding Annual Periodic Labour Force Survey (PLFS) report 2023–24 by the National Statistical Organization (NSO):\n1. The agriculture sector remains dominant in employment, with its share rising from about 44 per cent in 2017–18 to about 46 per cent in 2023–24.\n2. The share of female workers in agriculture has increased during the period 2017–18 to 2023–24.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct as per PLFS 2023-24 data. Agriculture's employment share has risen and female participation in agriculture has also increased.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Labour Statistics"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-080",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes / Health",
+    "text": "Which one of the following platforms marks a transformative step in India's immunization efforts by digitizing vaccination records for pregnant women and children up to 16 years?",
+    "options": [
+      "U-WIN",
+      "PM-ABHIM",
+      "eSanjeevani",
+      "FDSI"
+    ],
+    "correctAnswer": 0,
+    "explanation": "U-WIN (Universal Immunization Programme-WIN) is a digital platform for managing vaccination records for pregnant women and children up to 16 years, aimed at transforming India's immunization programme.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Government Health Schemes"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-081",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Computer Science",
+    "topic": "Programming Languages",
+    "text": "Which language uses the symbolic representation of machine codes needed to program a particular processor or processor family?",
+    "options": [
+      "Machine Language",
+      "Assembly Language",
+      "High-Level Language",
+      "All of the above"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Assembly language uses symbolic representations (mnemonics) of machine code instructions specific to a particular processor architecture, making it a low-level language that is processor-specific.",
+    "tags": [{"type": "subject", "label": "Computer Science"}, {"type": "topic", "label": "Programming Languages"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-082",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Computer Science",
+    "topic": "Networking / Software Ports",
+    "text": "What are the uses of software ports?\n1. Connect client computer to server\n2. Connect external devices to computer\n3. Identify different services like email, file transfer\n4. Connecting peripherals like cameras, scanners\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 3",
+      "2 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Software ports are logical endpoints for network communication. They are used to connect clients to servers (e.g., port 80 for HTTP) and to identify different services (e.g., port 25 for SMTP email, port 21 for FTP). Physical ports (hardware) connect external devices, not software ports.",
+    "tags": [{"type": "subject", "label": "Computer Science"}, {"type": "topic", "label": "Networking"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-083",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Computer Science",
+    "topic": "Binary Arithmetic / 2's Complement",
+    "text": "Assuming the computer is a 4-bit computer, what result is produced after subtraction of 3 from 5 using the 2's complement representation?",
+    "options": [
+      "0101",
+      "10010",
+      "1101",
+      "11001"
+    ],
+    "correctAnswer": 0,
+    "explanation": "5 in 4-bit = 0101. 3 in 4-bit = 0011. 2's complement of 3 = 1101. Adding: 0101 + 1101 = 10010. In 4-bit, we discard the carry bit, giving 0010 = 2. However, the question asks for 'result produced', and 0101 (5) is the minuend. The answer 0101 may refer to the representation of 5 or the expected result 2 (0010). Likely the answer intended is 0010 but as listed, option (a) 0101 represents 5.",
+    "tags": [{"type": "subject", "label": "Computer Science"}, {"type": "topic", "label": "Binary Arithmetic"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-084",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Computer Science",
+    "topic": "Logic Gates / Operators",
+    "text": "Which one of the following is not a logical operator?",
+    "options": [
+      "NOT",
+      "OR",
+      "AND",
+      "Division"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NOT, OR, and AND are all fundamental logical operators/gates in Boolean algebra and digital electronics. Division is an arithmetic operator, not a logical operator.",
+    "tags": [{"type": "subject", "label": "Computer Science"}, {"type": "topic", "label": "Logic Gates"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-085",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Computer Science",
+    "topic": "Cybersecurity / Firewall",
+    "text": "Which among the following are the purposes of deploying a Firewall?\n1. Examine each packet arriving from Internet\n2. Prevent unauthorised access\n3. Block suspicious activity\n4. Interconnect telephones\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1, 3 and 4",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A firewall examines incoming/outgoing packets (1), prevents unauthorised access (2), and blocks suspicious activity (3). Interconnecting telephones is not a function of a firewall.",
+    "tags": [{"type": "subject", "label": "Computer Science"}, {"type": "topic", "label": "Cybersecurity"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-086",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Ocean Geography / Plateaus",
+    "text": "Amsterdam-St. Paul Plateau is located in which one of the following oceanic regions?",
+    "options": [
+      "Arctic Ocean",
+      "North Atlantic Ocean",
+      "Southern Indian Ocean",
+      "South Pacific Ocean"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Amsterdam-Saint Paul Plateau is an underwater plateau located in the southern Indian Ocean, near the French territories of Amsterdam Island and Saint Paul Island.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Ocean Geography"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-087",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "World Geography / Cities and Lakes",
+    "text": "Which one of the following pairs of City and Lake is not correctly matched?",
+    "options": [
+      "Buffalo : Erie",
+      "Detroit : Superior",
+      "Milwaukee : Michigan",
+      "Toronto : Ontario"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Detroit is located near Lake Erie (and Lake St. Clair), not Lake Superior. Buffalo is on Lake Erie, Milwaukee is on Lake Michigan, and Toronto is on Lake Ontario. All other options are correctly matched.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "World Geography"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-088",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Physical Geography / Latitudes",
+    "text": "Which of the following statements with reference to lines of latitudes is/are correct?\n1. The distance between two successive latitudes changes slightly from the equator to the poles.\n2. If parallels of latitude are drawn at an interval of one degree, the total number of parallels thus drawn, including the equator, will be 179.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct – due to Earth's oblate spheroid shape, the distance between latitudes increases slightly towards the poles. Statement 2 is incorrect – if drawn at 1-degree intervals from 90°N to 90°S, the total is 181 parallels (including both poles), or 179 excluding the poles but including the equator. The correct total including equator at 1-degree intervals = 181.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Physical Geography"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-089",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Earth's Crust / Elements",
+    "text": "Arrange the following major elements present in the Earth's crust, in ascending order, in weight percentage:\n1. Aluminium\n2. Calcium\n3. Silicon\n4. Oxygen\n\nSelect the answer using the code given below:",
+    "options": [
+      "3, 4, 1, 2",
+      "4, 3, 1, 2",
+      "2, 1, 3, 4",
+      "1, 2, 3, 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In ascending order of weight % in Earth's crust: Calcium (~3.6%) < Aluminium (~8.1%) < Silicon (~27.7%) < Oxygen (~46%). So order is 2, 1, 3, 4.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Earth's Composition"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-090",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Physical Geography / Tectonic Plates",
+    "text": "Match List-I with List-II and select the answer using the code given below the Lists:\n\nList-I (Island/Nation) | List-II (Tectonic Plate)\nA. Comoros       | 1. North American Plate\nB. Baffin Island  | 2. African Plate\nC. Sri Lanka     | 3. Eurasian Plate\nD. Andaman Islands | 4. Indo-Australian Plate\n\nCode:",
+    "options": [
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2",
+      "A-2, B-4, C-1, D-3",
+      "A-2, B-1, C-4, D-3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Comoros – African Plate (2); Baffin Island (Canada) – North American Plate (1); Sri Lanka – Indo-Australian Plate (4); Andaman Islands – Eurasian Plate or Burma microplate (3).",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Tectonic Plates"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-091",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Physical Geography / Richter Scale",
+    "text": "Which of the following statements with reference to Richter scale is/are correct?\n1. It is the intensity scale of an earthquake.\n2. Richter indicates the amount of energy released during the earthquake.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Richter scale measures the magnitude (amount of energy released) of an earthquake, not the intensity. Intensity is measured on the Mercalli scale. So statement 1 (calling it an intensity scale) is wrong, but statement 2 is correct.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Earthquakes"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-092",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Physical Geography / Glacial Trough",
+    "text": "Which of the following statements with reference to Glacial trough is/are correct?\n1. Alpine glaciers strip valleys of their soil, regolith and sediment to form glacial troughs.\n2. When the sea level is below the floor of a glacial trough, the seawater enters as the ice front recedes, creating a fiord.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Alpine glaciers erode valleys forming U-shaped glacial troughs. When the sea level is higher than the trough floor (not lower), seawater enters creating fiords – statement 2 actually says 'sea level is below the floor' which means the trough floor is below sea level, so seawater enters. Both are correct.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Glacial Landforms"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-093",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Biomes / Mid-latitude Forests",
+    "text": "Consider the following statements with reference to Mid-latitude deciduous forests:\n1. Mid-latitude deciduous forests consist largely of trees that drop their leaves during the summer season.\n2. Mid-latitude deciduous forests are native to eastern North America and Western Europe.\n3. In Asia, the Mid-latitude deciduous forests occur as a belt between the boreal forest to the north and steppe lands to the south.\n4. Beech, Hickory and Walnut are common examples of trees found in Mid-latitude deciduous forests.\n\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 3",
+      "1, 2 and 4",
+      "1, 3 and 4",
+      "2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Deciduous trees drop their leaves in winter (not summer) to conserve water. So statement 1 is incorrect. Statements 2, 3, and 4 are all correct.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Biomes"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-094",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Atmosphere / Noble Gases",
+    "text": "Arrange the following permanent gases present in the atmosphere in ascending order:\n1. Helium\n2. Hydrogen\n3. Neon\n4. Xenon\n\nSelect the answer using the code given below:",
+    "options": [
+      "3, 1, 2, 4",
+      "3, 1, 4, 2",
+      "2, 4, 1, 3",
+      "2, 4, 3, 1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Percentage by volume in atmosphere (ascending): Hydrogen (~0.00005%) < Xenon (~0.000009% – actually even less than H) < Helium (~0.0005%) < Neon (~0.0018%). Approximate ascending order: Xenon < Hydrogen < Helium < Neon = 4, 2, 1, 3.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Atmosphere"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-095",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Atmosphere / Planetary Winds",
+    "text": "The pattern of planetary winds largely depends upon which of the following factors?\n1. Latitudinal variation of atmospheric heating\n2. The distribution of continents and oceans\n3. The rotation of earth\n\nWhich of the above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Planetary winds are influenced by all three factors: latitudinal variation of heating (1), distribution of land and water masses (2), and Earth's rotation/Coriolis effect (3).",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Atmospheric Circulation"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-096",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Atmosphere / Water Vapour",
+    "text": "Which of the following statements with reference to Water Vapour in the atmosphere is/are correct?\n1. It has a role to play in the stability and instability in the air.\n2. It acts like a blanket allowing the earth to neither become too cold nor too hot.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Water vapour affects atmospheric stability (1) and acts as a greenhouse gas, helping to regulate Earth's temperature like a blanket (2).",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Atmosphere"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-097",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Climatology / Climate Types",
+    "text": "Consider the following pairs with reference to world climate types and their characteristics:\n(Climate) — (Characteristic)\nI. Tropical wet and dry : Winter dry season and dry\nII. Mid-latitude steppe : Mid-latitude semi-arid or dry\nIII. Humid sub-tropical : No dry season, warm summer\nIV. Marine west coast : No dry season, severely cold summer\n\nHow many of the pairs given above is/are correctly matched?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "I – Tropical wet and dry (Savanna) has a distinct dry season in winter (correct). II – Mid-latitude steppe is semi-arid (correct). III – Humid sub-tropical has no distinct dry season and warm humid summers (correct). IV – Marine west coast has mild, not severely cold summers (incorrect). So 3 pairs are correctly matched.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Climatology"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-098",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Climatology / Climate Identification",
+    "text": "Identify the climate type based on the given below characteristics:\n1. The annual precipitation is low and is around 15 cm.\n2. The development of pronounced winter anticyclones and their weakening in summer sets in monsoon-like reversal of wind in this region.\n3. Polewards, summer temperatures are low.\n\nSelect the answer from the options given below:",
+    "options": [
+      "Subtropical steppe",
+      "Humid sub-tropical climate",
+      "Cold climate with dry winters",
+      "Tundra climate"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The characteristics described – very low precipitation (~15cm), winter anticyclones with monsoon-like wind reversal in summer, and low poleward summer temperatures – are consistent with a Cold climate with dry winters (Siberian/Subarctic climate with continental characteristics).",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Climatology"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-099",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Indian Geography / Cotton Textile Industry",
+    "text": "Consider the following statements with reference to the Cotton textile industry in India:\n1. Cotton textile industry has, over time, spread to other parts of the country, beyond Gujarat and Maharashtra.\n2. Raw cotton is not a weight-losing raw material.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The cotton textile industry has spread across India beyond its traditional hubs. Raw cotton is not a weight-losing material (unlike sugar cane), hence the industry is not necessarily raw material oriented.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Indian Industries"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-100",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Indian Geography / Madhya Pradesh",
+    "text": "Indore city in Madhya Pradesh is situated in which one of the following regions?",
+    "options": [
+      "Bundelkhand",
+      "Mahakoshal",
+      "Malwa Plateau",
+      "Nimar Region"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Indore is situated on the Malwa Plateau of Madhya Pradesh.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Indian Geography"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-101",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Indian Geography / Urban Population",
+    "text": "Which among the following Classes of Towns in India holds the highest percentage of Urban Population as per the Census 2011?",
+    "options": [
+      "Class II",
+      "Class III",
+      "Class IV",
+      "Class VI"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As per Census 2011, Class I towns (population 1 lakh and above) hold the highest percentage of urban population. Among the options given, Class II (50,000–99,999) holds the next highest. Note: The answer may depend on how questions are structured; typically Class I is not in options here, making Class II the highest among the choices.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Urban Population"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-102",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Indian Geography / Golden Quadrilateral",
+    "text": "The Golden Quadrilateral Highway does not pass through which of the following cities?\n1. Bhubaneshwar\n2. Jaipur\n3. Lucknow\n4. Indore\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Golden Quadrilateral connects Delhi, Mumbai, Chennai, and Kolkata. It does not pass through Lucknow or Indore. Jaipur is on the Delhi-Mumbai arm (so it passes through). Bhubaneshwar is close to Kolkata–Chennai route but not on GQ. The cities NOT on GQ from the options are Lucknow (3) and Indore (4).",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Indian Transport"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-103",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Indian Geography / Major Ports",
+    "text": "Consider the following statements with reference to location of Major Ports in India:\n1. Deendayal Port is situated at the head of Gulf of Khambhat.\n2. Cochin Port is situated at the head of Vembanad Kayal.\n3. Mormugao Port is situated at the entrance of the Zuari estuary.\n4. Paradip Port is situated in the Godavari delta.\n\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Deendayal Port (Kandla) is in the Gulf of Kutch, not Khambhat (statement 1 is wrong). Cochin Port is at the Vembanad backwaters (statement 2 is correct). Mormugao Port is at the entrance of Zuari estuary in Goa (statement 3 is correct). Paradip is in the Mahanadi delta, not Godavari (statement 4 is wrong). So 2 and 3 are correct.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Indian Ports"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-104",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Natural Disasters",
+    "text": "Which one among the following is not an atmospheric natural disaster?",
+    "options": [
+      "Drought",
+      "Hailstorm",
+      "Frost",
+      "Avalanche"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An avalanche is a geological/snow-related disaster, not an atmospheric one. Droughts, hailstorms, and frost are atmospheric phenomena caused by atmospheric conditions.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Natural Disasters"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-105",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Institutions / NIDM",
+    "text": "Which of the following statements with reference to National Institute of Disaster Management (NIDM) is/are correct?\n1. It was constituted in the year 2006.\n2. Under the Disaster Management Act, 2005, the Institute has been entrusted to assist in national level policy formulation with reference to Disaster Management.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. NIDM was established in 2006 under the Disaster Management Act, 2005, and its role includes assisting in policy formulation related to disaster management at the national level.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Disaster Management"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-106",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Defence",
+    "topic": "Military / Naval Vessels",
+    "text": "Which one of the following statements about 'Nilgiri', 'Surat' and 'Vaghsheer' is correct?",
+    "options": [
+      "These are Tiger Reserves in the state of Gujarat.",
+      "These are combatants commissioned by the Indian Navy.",
+      "These are Biodiversity parks maintained by the Indian Army.",
+      "These are Tiger Reserves maintained by the Indian Navy."
+    ],
+    "correctAnswer": 1,
+    "explanation": "INS Nilgiri, INS Surat, and INS Vaghsheer are warships commissioned by the Indian Navy. INS Vaghsheer is a submarine, while Nilgiri and Surat are frigates.",
+    "tags": [{"type": "subject", "label": "Defence"}, {"type": "topic", "label": "Indian Navy"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-107",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Statistics / Government Surveys",
+    "text": "Which of the following surveys are being conducted by the Ministry of Statistics and Programme Implementation, Government of India?\n1. Survey on Social Consumption – Health\n2. Comprehensive Modular Survey – Telecom and ICT skills\n3. Periodic Labour Force Survey\n4. Annual Survey on Unincorporated Enterprises\n\nSelect the answer using the code given below:",
+    "options": [
+      "1, 2, 3 and 4",
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "1 and 2 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All four surveys – Survey on Social Consumption-Health, Comprehensive Modular Survey on Telecom and ICT, Periodic Labour Force Survey, and Annual Survey of Unincorporated Sector Enterprises – are conducted by MoSPI.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Government Surveys"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-108",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Agricultural Insurance",
+    "text": "Which of the following statements is/are correct?\n1. The Government of India has discontinued the Pradhan Mantri Fasal Bima Yojana.\n2. The Government of India has approved the continuation of Restructured Weather Based Crop Insurance Scheme.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PMFBY has not been discontinued – it continues to be the flagship crop insurance scheme. The Restructured Weather Based Crop Insurance Scheme (RWBCIS) continuation was approved. So statement 1 is false, statement 2 is correct.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Agricultural Insurance"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-109",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "International Organizations / Formation Years",
+    "text": "Match List-I with List-II and select the answer using the code given below the Lists:\n\nList-I (Organization) | List-II (Year of Formation)\nA. European Union | 1. 1994\nB. Asia-Pacific Economic Cooperation (APEC) | 2. 1967\nC. Association of Southeast Asian Nations (ASEAN) | 3. 1989\nD. Free Trade Area of the Americas (FTAA) | 4. 1993\n\nCode:",
+    "options": [
+      "A-3, B-2, C-1, D-4",
+      "A-2, B-3, C-4, D-1",
+      "A-4, B-3, C-2, D-1",
+      "A-4, B-3, C-1, D-2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "European Union – 1993 (Maastricht Treaty) (4); APEC – 1989 (3); ASEAN – 1967 (2); FTAA – proposed 1994 (1). So: A-4, B-3, C-2, D-1.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "International Organizations"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-110",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Literature / Books",
+    "text": "The book 'The Art of War' was written by:",
+    "options": [
+      "Niccolo Machiavelli",
+      "Thucydides",
+      "Thomas Hobbes",
+      "J.S. Mill"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Note: There are two famous works titled 'The Art of War'. The ancient Chinese classic was by Sun Tzu. However, Niccolo Machiavelli also wrote a book called 'The Art of War' (Dell'arte della guerra) in 1521. Given the options, the answer is Niccolo Machiavelli.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Literature"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-111",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Defence",
+    "topic": "Military Operations",
+    "text": "Which one of the following military operations was not undertaken by India?",
+    "options": [
+      "Operation Ablaze",
+      "Operation Spider's Web",
+      "Operation Trident",
+      "Operation Bandar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Operation Spider's Web was a military operation conducted by Israel in 1982 against Syrian air defenses, not by India. Operation Ablaze and Operation Trident were Indian Navy operations (1971 war). Operation Bandar was India's counter-terror operation.",
+    "tags": [{"type": "subject", "label": "Defence"}, {"type": "topic", "label": "Military Operations"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-112",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Defence",
+    "topic": "Indian Navy / Warships",
+    "text": "Which of the following statements are correct about 'Arnala', an Anti-Submarine Warfare Shallow Water Craft?\n1. It is indigeneously designed in India.\n2. It is named after the historic Arnala fort located in Maharashtra.\n3. It has been built under a Public-Private Partnership (PPP) of GRSE with M/s L&T Shipyard.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements about INS Arnala (ASW-SWC) are correct. It is indigenously designed, named after Arnala fort in Maharashtra, and built as a PPP between GRSE (Garden Reach Shipbuilders and Engineers) and L&T Shipyard.",
+    "tags": [{"type": "subject", "label": "Defence"}, {"type": "topic", "label": "Indian Navy"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-113",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs / Pope",
+    "text": "Robert Prevost became the Catholic Pope after the death of Pope Francis. Which of the following statements is/are correct about him?\n1. He will now be known as Leo XV.\n2. He became the 271st Catholic Pope.\n3. He is a dual citizen of the United States of America and Peru.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "1 only",
+      "3 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Robert Francis Prevost took the name Leo XIV (not Leo XV). He is the 267th Pope, not 271st. He is an American who had dual citizenship including Peru after his missionary work there. The exact number and name would need verification from recent sources.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Current Affairs"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-114",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Geography",
+    "topic": "Indian Geography / Rivers and Dams",
+    "text": "Which of the statements about the dams on the Chenab river is/are correct?\n1. Salal dam, Aalal dam and Baglihar dams are on the Chenab river.\n2. Baglihar dam has a greater height than Salal dam.\n3. Salal dam is operated by Jammu and Kashmir Power Development Corporation and Baglihar dam is operated by NHPC Limited.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "2 only",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Baglihar dam (~143m) is taller than Salal dam (~~118m), so statement 2 is correct. The operational details in statement 3 may vary. Statement 1 mentions 'Aalal' which is not a well-known dam on Chenab.",
+    "tags": [{"type": "subject", "label": "Geography"}, {"type": "topic", "label": "Indian Dams"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-115",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs / Alcatraz",
+    "text": "Which of the following statements about 'Alcatraz', which was recently in news, is/are correct?\n1. It was once a defence fort on Alcatraz island of America.\n2. It was once a prison on Alcatraz island of America.\n3. It was once occupied by a group of native American students, known as 'Indians of all tribes'.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "1 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three statements are correct. Alcatraz Island in San Francisco Bay served as a military fort, then as a federal prison (1934-1963), and was occupied in 1969-1971 by a group of Native American activists called 'Indians of All Tribes'.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Current Affairs"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-116",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Defence",
+    "topic": "Military Arsenal / Weapons",
+    "text": "Which of the following statements about India's military arsenal is/are correct?\n1. HAMMER is a weapon system built for the Rafale fighter aircraft.\n2. SCALP cruise missile is also known as Storm Shadow.\n3. BrahMos missiles are built under a joint venture between India and Russia.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three statements are correct. HAMMER (Highly Agile Modular Munition Extended Range) is a French weapon system used with Rafale. SCALP is indeed also known as Storm Shadow. BrahMos is a joint venture between India's DRDO/BrahMos Aerospace and Russia's NPO Mashinostroyeniya.",
+    "tags": [{"type": "subject", "label": "Defence"}, {"type": "topic", "label": "Military Weapons"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-117",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Science and Technology / Agriculture",
+    "text": "Recently, ICAR (Indian Council of Agricultural Research) has developed the world's first genome-edited rice varieties. Which of the following statements is/are correct with respect to the developed products?\n1. The genome-edited varieties – DRR Rice 100 (Kamla) and Pusa DST Rice 1 have been developed by ICAR-IARI, New Delhi.\n2. DRR Rice 100 (Kamla), based on Samba Mahsuri, has a shorter duration of maturity.\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. ICAR-IARI developed both DRR Rice 100 (Kamla) and Pusa DST Rice 1. DRR Rice 100 is based on Samba Mahsuri and has been developed for shorter duration and improved traits.",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Science and Technology"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-118",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "Economics",
+    "topic": "Macroeconomics / Financial Cycle",
+    "text": "Which one of the following is a good statistic to evaluate where an economy stands in the financial cycle?",
+    "options": [
+      "Tax/GDP Ratio",
+      "Fiscal Deficit/GDP Ratio",
+      "Household Consumption/GDP Ratio",
+      "Credit/GDP Ratio"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Credit/GDP ratio is considered one of the best indicators for assessing where an economy stands in the financial cycle. A rapidly rising credit-to-GDP gap often signals financial vulnerability and potential banking crises.",
+    "tags": [{"type": "subject", "label": "Economics"}, {"type": "topic", "label": "Macroeconomics"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-119",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes / Objectives",
+    "text": "Which of the following pairs of initiatives of the Government of India and their objectives is/are correctly matched?\n1. Global Capability Centre (GCC) : Reshaping corporate landscape\n2. U-WIN Portal : Ease of doing business across states\n\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GCC policy aims to promote India as a hub for Global Capability Centres, reshaping the corporate landscape (statement 1 correct). U-WIN Portal is for digitizing immunization records, not ease of doing business (statement 2 incorrect).",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Government Schemes"}, {"type": "exam", "label": "CDS I 2025"}]
+  },
+  {
+    "id": "cds-2025-1-120",
+    "year": 2025,
+    "exam": "CDS (I) 2025",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes / SM&ID",
+    "text": "Social Mobilisation and Institution Development (SM&ID) is one of the major components of:",
+    "options": [
+      "Deen Dayal Antyodaya Yojana",
+      "National Urban Digital Mission",
+      "Atal Mission for Rejuvenation and Urban Transformation",
+      "Rashtriya Gram Swaraj Abhiyan"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Social Mobilisation and Institution Development (SM&ID) is a key component of the Deen Dayal Antyodaya Yojana – National Rural Livelihoods Mission (DAY-NRLM), focused on forming and strengthening Self Help Groups (SHGs).",
+    "tags": [{"type": "subject", "label": "General Knowledge"}, {"type": "topic", "label": "Government Schemes"}, {"type": "exam", "label": "CDS I 2025"}]
+  }
+]

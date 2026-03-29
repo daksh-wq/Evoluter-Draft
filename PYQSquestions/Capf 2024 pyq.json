@@ -1,0 +1,3627 @@
+[
+  {
+    "id": "pyq-2024-1",
+    "year": 2024,
+    "subject": "Computer Science",
+    "topic": "Programming Languages",
+    "text": "Which one among the following is NOT a non-procedural computer language?",
+    "options": [
+      "LISP",
+      "Python",
+      "Prolog",
+      "ML"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Python is a procedural and object-oriented programming language. In contrast, LISP, Prolog, and ML are considered non-procedural or declarative languages where the focus is on 'what' is to be computed rather than strictly 'how'.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Computer Science"
+      },
+      {
+        "type": "topic",
+        "label": "Programming Languages"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-2",
+    "year": 2024,
+    "subject": "Computer Science",
+    "topic": "File Formats & Compression",
+    "text": "Consider the following:\n1. MPEG\n2. P*64\n3. Indeo\nWhich of the above can be used to compress video files?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "MPEG is a widely used standard for digital video compression. P*64 is the ITU-T H.261 standard designed for video teleconferencing. Indeo is a family of video codecs developed by Intel. Therefore, all three can be used to compress video files.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Computer Science"
+      },
+      {
+        "type": "topic",
+        "label": "File Formats & Compression"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-3",
+    "year": 2024,
+    "subject": "Physics",
+    "topic": "Electromagnetic Spectrum",
+    "text": "Which one among the following has largest energy per photon?",
+    "options": [
+      "X-ray",
+      "Ultra-violet ray",
+      "Visible-ray",
+      "Infra-red ray"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The energy of a photon is inversely proportional to its wavelength (E = hc/λ). Among the given options, X-rays have the shortest wavelength and therefore possess the highest energy per photon.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electromagnetic Spectrum"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-4",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Solar System",
+    "text": "In Sun-Earth system, the distance between Lagrange points L2 and L3 is about",
+    "options": [
+      "15 lakh kilometre",
+      "30 lakh kilometre",
+      "16 crore kilometre",
+      "32 crore kilometre"
+    ],
+    "correctAnswer": 3,
+    "explanation": "L2 lies about 1.5 million (15 lakh) km from Earth on the anti-sunward side. L3 lies directly on the opposite side of the Sun, at roughly the same distance from the Sun as Earth (1 AU or ~15 crore km). The total distance from L2 to L3 spans the entire diameter of the Earth's orbit plus the extra offset for L2, making it slightly more than 2 AU (~30 crore km). The closest mathematical approximation given is 32 crore kilometres.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Solar System"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-5",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Greenhouse Effect",
+    "text": "Which one of the following statements with regard to greenhouse effect is correct?",
+    "options": [
+      "It can take place inside a glass chamber where no radiation can pass into it or pass back through it",
+      "It can take place inside a glass chamber where long wavelength infrared radiation can pass through into it and short wavelength infrared radiation cannot pass back through it",
+      "It can take place inside a glass chamber where short wavelength infrared radiation can pass through into it and long wavelength infrared radiation cannot pass back through it",
+      "It can take place inside a glass chamber where all infrared radiation can pass into it or pass back through it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The greenhouse effect occurs when short-wavelength radiation (from the sun) easily passes through a barrier (like glass or greenhouse gases), gets absorbed and re-emitted as long-wavelength infrared radiation (heat), which is then trapped because it cannot pass back out through the barrier.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Greenhouse Effect"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-6",
+    "year": 2024,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "A canon shoots a ball upwards with an initial speed of 100 m/s. The total time of flight of the ball is 20 s before it hits the ground. The ball looses 70% of its speed after hitting the ground. Which among the following is the correct height that the ball will bounce up after its first bounce? (g=10 m/s2)",
+    "options": [
+      "100 m",
+      "70 m",
+      "50 m",
+      "45 m"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The ball hits the ground with its initial speed of 100 m/s. After losing 70% of its speed, the rebound speed (v) is 30% of 100 m/s, which is 30 m/s. The maximum height (h) reached after bouncing is given by the formula h = v^2 / 2g. So, h = (30 * 30) / (2 * 10) = 900 / 20 = 45 meters.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Kinematics"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-7",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Air Pollution",
+    "text": "Which one of the following statements correctly defines PM1 particles in air?",
+    "options": [
+      "These are suspended particles of diameter more than 10 micron",
+      "These are the particles that are filtered by the nose during respiration",
+      "These are extremely fine particles of diameter less than 1 micron",
+      "These are coarse particles that penetrate directly through the lungs into the bloodstream"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Particulate Matter 1 (PM1) refers to extremely fine suspended particles in the air that have a diameter of less than 1 micrometer (micron).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Air Pollution"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-8",
+    "year": 2024,
+    "subject": "Physics",
+    "topic": "Heat Transfer",
+    "text": "Which one of the following heat transfer mechanism does NOT require a medium?",
+    "options": [
+      "Conduction",
+      "Convection",
+      "Radiation",
+      "Collision"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Radiation is a mode of heat transfer that occurs through electromagnetic waves and does not require any material medium, which allows the Sun's heat to travel through the vacuum of space to Earth.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Heat Transfer"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-9",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Earth and Universe",
+    "text": "Which one of the following statements about the solstices, an event that occurs when the Sun appears to reach most northerly or southerly, is correct?",
+    "options": [
+      "The winter solstice takes place on June 21 in both the northern and southern hemispheres",
+      "The winter solstice takes place on December 21 in both the northern and southern hemispheres",
+      "The summer solstice occurs in northern hemisphere on June 21 and on December 21 in southern hemisphere",
+      "The summer solstice occurs in northern hemisphere on December 21 and on June 21 in southern hemisphere"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The summer solstice (the longest day of the year) occurs when a hemisphere is tilted closest to the sun. This happens around June 21 for the Northern Hemisphere and around December 21 for the Southern Hemisphere.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Earth and Universe"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-10",
+    "year": 2024,
+    "subject": "Physics",
+    "topic": "Electromagnetic Induction",
+    "text": "Which one among the following does NOT have any linkage with the phenomenon of electromagnetic induction?",
+    "options": [
+      "Electric transformer",
+      "Induction cooker",
+      "Galvanometer",
+      "Electron microscope"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Electric transformers, induction cookers, and moving-coil galvanometers (which utilize eddy currents for damping) all operate on or relate directly to the principles of electromagnetic induction. An electron microscope, however, uses electron beams and electromagnetic lenses to focus the beam based on the Lorentz force, not electromagnetic induction.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electromagnetic Induction"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-11",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "States of Matter",
+    "text": "Which one among the following statements about matter is NOT correct?",
+    "options": [
+      "On increasing the temperature of solids, the kinetic energy of particles increases",
+      "The maximum temperature at which a solid melts to become a liquid at atmospheric pressure is called its melting point",
+      "Particles of steam have more energy than water at 100°C",
+      "Direct change of gas to solid is called deposition"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The melting point is not defined as a 'maximum' temperature, but rather as the specific, constant temperature at which a solid converts into a liquid at atmospheric pressure. The other statements are scientifically correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "States of Matter"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-12",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Isotopes",
+    "text": "The isotope of which one among the following elements is used in the treatment of cancer?",
+    "options": [
+      "Uranium",
+      "Cobalt",
+      "Iodine",
+      "Fluorine"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cobalt-60 is a radioactive isotope of cobalt that is widely used in medical radiation therapy to treat cancer by producing high-energy gamma rays to destroy cancer cells.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Isotopes"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-13",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Properties of Water",
+    "text": "Water is a good solvent for dissolving ionic compounds because",
+    "options": [
+      "It has a high specific heat",
+      "It has no colour",
+      "It has a high dipole moment",
+      "It has a high boiling point"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Water is a highly polar molecule with a high dipole moment. The positive and negative ends of the water molecule attract the respective negative and positive ions of an ionic compound, separating them and causing the compound to dissolve.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Properties of Water"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-14",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Chemical Bonding",
+    "text": "Which among the following is correct with respect to bond formation in an ethyne molecule?",
+    "options": [
+      "Carbon-Carbon single bond",
+      "Carbon-Carbon double bond",
+      "Carbon-Carbon triple bond",
+      "Carbon-Hydrogen double bond"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ethyne (also known as acetylene) has the chemical formula C2H2. In its structure, the two carbon atoms are bonded together by a carbon-carbon triple bond, and each carbon is bonded to one hydrogen atom by a single bond.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Bonding"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-15",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Manufacturing of Glass",
+    "text": "Which among the following are the main ingredients for manufacturing of glass?",
+    "options": [
+      "Silica, sodium carbonate, borax, alumina and cullets",
+      "Iron oxide, lead, sodium bicarbonate, alumina and cullets",
+      "Magnesium carbonate, alumina, silica and cullets",
+      "Iron oxide, sodium, alumina, silica and cullets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The primary ingredients for manufacturing standard glass are silica (the main former), sodium carbonate (acts as a flux to lower melting point), borax, alumina (increases durability), and cullets (recycled waste glass that lowers energy consumption).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Manufacturing of Glass"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-16",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "text": "Which one among the following statements with respect to the atomic number of an atom is correct?",
+    "options": [
+      "The number of neutrons is same as atomic number",
+      "The sum of electrons and neutrons is same as atomic number",
+      "The number of protons is same as atomic number",
+      "The sum of protons and neutrons is same as atomic number"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The atomic number of an element is defined as the number of protons present in the nucleus of an atom of that element. The sum of protons and neutrons is called the mass number.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Structure"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-17",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Which one among the following is an example of endothermic process?",
+    "options": [
+      "Combustion of carbon",
+      "Mixing acid and alkali",
+      "Photosynthesis",
+      "Respiration"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Photosynthesis is an endothermic process because plants absorb energy (sunlight) to convert carbon dioxide and water into glucose and oxygen. Combustion, acid-base neutralization (mixing acid and alkali), and respiration are all exothermic processes because they release heat/energy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Reactions"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-18",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Everyday Chemistry",
+    "text": "Which one among the following is used in the manufacture of ultra-violet protective glasses?",
+    "options": [
+      "Aluminium oxide",
+      "Tungsten oxide",
+      "Molybdenum oxide",
+      "Cerium oxide"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cerium oxide is commonly added to glass (such as Crookes glass) to give it the property of sharply absorbing harmful ultra-violet rays from sunlight without significantly altering the transmission of visible light.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Everyday Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-19",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Chemical Compounds",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\n\nList I (Pigment in paint)\nA. Natural pigment\nB. Synthetic pigment\nC. Reactive pigment\nD. Inert pigment\n\nList II (Example)\n1. Chalk\n2. White lead\n3. Red lead\n4. Titanium dioxide",
+    "options": [
+      "A-1, B-2, C-3, D-4",
+      "A-1, B-3, C-2, D-4",
+      "A-4, B-3, C-2, D-1",
+      "A-4, B-2, C-3, D-1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chalk (calcium carbonate) is a natural pigment/filler. White lead is one of the oldest synthetic pigments. Red lead is known as a reactive pigment as it reacts with the vehicle (drying oil) to form lead soaps, providing anti-corrosive properties. Titanium dioxide is highly unreactive and serves as a premium inert white pigment.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Compounds"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-20",
+    "year": 2024,
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\n\nList I (Element)\nA. Boron\nB. Nitrogen\nC. Oxygen\nD. Neon\n\nList II (Unpaired electron)\n1. Zero\n2. Two\n3. One\n4. Three",
+    "options": [
+      "A-1, B-4, C-2, D-3",
+      "A-1, B-2, C-4, D-3",
+      "A-3, B-2, C-4, D-1",
+      "A-3, B-4, C-2, D-1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Based on electronic configurations: Boron (atomic number 5) has 1 unpaired electron (2p1). Nitrogen (atomic number 7) has 3 unpaired electrons (2p3). Oxygen (atomic number 8) has 2 unpaired electrons (2p4). Neon (atomic number 10) is a noble gas with a full shell and 0 unpaired electrons (2p6). Thus, A-3, B-4, C-2, D-1.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Structure"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-21",
+    "year": 2024,
+    "subject": "Biology",
+    "topic": "Biotechnology",
+    "text": "Which one among the following biotechnologies is applied to manufacture pharmaceutical products such as insulin, antibiotics and vaccines?",
+    "options": [
+      "White Biotechnology",
+      "Red Biotechnology",
+      "Green Biotechnology",
+      "Blue Biotechnology"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Biotechnology is color-coded by application: Red biotechnology deals with medical and pharmaceutical applications (vaccines, antibiotics, insulin). White applies to industrial processes. Green applies to agriculture. Blue relates to marine and aquatic applications.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Biotechnology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-22",
+    "year": 2024,
+    "subject": "Biology",
+    "topic": "Genetics",
+    "text": "In which organism did Gregor J. Mendel conduct the experiment to explain principles of inheritance?",
+    "options": [
+      "Groundnut",
+      "Garden Pea",
+      "Four O'clock plant",
+      "Fruit fly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gregor J. Mendel, the father of modern genetics, discovered the fundamental laws of inheritance through his work on the garden pea plant (Pisum sativum).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Genetics"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-23",
+    "year": 2024,
+    "subject": "Biology",
+    "topic": "Plant Anatomy",
+    "text": "In which layer of the plant tissue Guard cells are present?",
+    "options": [
+      "Palisade mesophyll",
+      "Spongy mesophyll",
+      "Epidermis",
+      "Xylem"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Guard cells are specialized plant cells present in the epidermis (the outermost layer) of leaves, stems, and other organs that are used to control gas exchange by regulating the opening and closing of stomatal pores.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Plant Anatomy"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-24",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Renewable Energy",
+    "text": "Identify the correct option from the following about the proportion of different gases in Biogas?",
+    "options": [
+      "Methane > Carbon dioxide > Nitrogen",
+      "Methane > Nitrogen > Carbon dioxide",
+      "Methane > Oxygen > Carbon monoxide",
+      "Nitrogen > Methane > Carbon dioxide"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Biogas primarily consists of Methane (50-75%), followed by Carbon dioxide (25-50%), and smaller amounts of other gases like Nitrogen (0-10%), hydrogen, and hydrogen sulfide. Thus, the proportion is Methane > Carbon dioxide > Nitrogen.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Renewable Energy"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-25",
+    "year": 2024,
+    "subject": "Physics",
+    "topic": "Sound",
+    "text": "Which one of the following is the audible range of hearing for humans?",
+    "options": [
+      "20 kHz - 200 kHz",
+      "20 Hz - 20 kHz",
+      "20 Hz - 35 kHz",
+      "20 Hz - 40 kHz"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The human ear can generally hear sounds with frequencies between 20 Hz (hertz) and 20,000 Hz (20 kHz). Sounds below 20 Hz are infrasonic, and above 20 kHz are ultrasonic.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Sound"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-26",
+    "year": 2024,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "In what form excess of glucose is stored in human body?",
+    "options": [
+      "Fructose",
+      "Glycogen",
+      "Glucose",
+      "Starch"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In the human body, excess glucose is synthesized into glycogen, which is primarily stored in the liver and skeletal muscle cells for later energy use.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-27",
+    "year": 2024,
+    "subject": "Biology",
+    "topic": "Biotechnology",
+    "text": "Biotechnological research is promoted through the development of \"Biotechnology Parks\". Which of the following is/are essential to bring technology to market?\n1. Development of new product\n2. Entrepreneurship\n3. Technology incubation",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1, 2 and 3",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bringing a biotechnology innovation from the lab to the market involves the development of the new product, technology incubation (to mature and test the technology in a safe environment like biotech parks), and entrepreneurship (to build a viable business model).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Biotechnology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-28",
+    "year": 2024,
+    "subject": "Biology",
+    "topic": "Biotechnology",
+    "text": "Which one of the following is the correct chronology of invention/discovery in the field of Biotechnology?",
+    "options": [
+      "Discovery of Plasmid, Double Helical structure of DNA, DNA fingerprinting, cloning of Dolly",
+      "Double Helical structure of DNA, Discovery of Plasmid, DNA fingerprinting, cloning of Dolly",
+      "DNA fingerprinting, cloning of Dolly, Double Helical structure of DNA, Discovery of Plasmid",
+      "Double Helical structure of DNA, DNA fingerprinting, Discovery of Plasmid, cloning of Dolly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The generally accepted timeline highlights: Double Helical structure of DNA (Watson & Crick in 1953), Discovery/widespread characterization of Plasmids (throughout the mid-to-late 1950s), DNA fingerprinting (Alec Jeffreys in 1984), and the cloning of Dolly the sheep (1996).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Biotechnology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-29",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Ecology",
+    "text": "In an ecosystem why is the number of trophic levels of a food chain usually limited?",
+    "options": [
+      "Lower trophic level has lesser energy than the higher trophic level",
+      "Because of the loss of energy at each trophic level",
+      "Higher trophic level individual can control the lower ones more efficiently",
+      "Limited trophic level makes a food chain less vulnerable to parasites"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to the 10% law in ecology, only about 10% of the energy is transferred from one trophic level to the next. The remaining energy is lost largely through metabolic processes as heat, making it energetically unviable to support numerous successive levels.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Ecology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-30",
+    "year": 2024,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following structure is NOT found in prokaryotes?",
+    "options": [
+      "Nuclear envelope",
+      "Cell membrane",
+      "Ribosome",
+      "Cell wall"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Prokaryotes lack membrane-bound organelles. Therefore, their genetic material floats freely in the nucleoid region and is not enclosed by a nuclear envelope (nuclear membrane). They do possess cell membranes, cell walls, and ribosomes.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Cell Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-31",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Earth's Rotation and Time",
+    "text": "Consider the following statements regarding the rotation of the Earth:\n1. Since the Earth rotates by 15° each hour, time zones normally differ by one hour\n2. At the International Date Line, the calendar day changes - advancing a day for eastward travel, dropping back a day for westward travel\n3. Daylight saving time advances the clock by one hour\n4. The Moon rotates and revolves about the Earth in the same direction that the Earth revolves around the Sun\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "3 and 4 only",
+      "1, 3 and 4",
+      "2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is correct; Earth rotates 360° in 24 hours (15° per hour). Statement 2 is incorrect; crossing the International Date Line eastward means going back a day, while crossing westward means advancing a day. Statement 3 is correct; DST typically advances clocks by one hour. Statement 4 is correct; the Moon revolves and rotates counterclockwise (prograde), the same direction Earth revolves around the Sun.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Earth's Rotation and Time"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-32",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Biodiversity and Conservation",
+    "text": "Which of the following statements regarding faunal resources of India is/are correct?\n1. High degree of endemism has been noticed in the biodiversity hotspots of India\n2. Of the total biosphere reserves in India, the Sundarbans has the largest number of species and Nokrek has the smallest number of species\nSelect the answer using the codes given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct; India's biodiversity hotspots (like the Western Ghats) exhibit a very high degree of endemism. Statement 2 is incorrect; while Sundarbans is a massive and diverse biosphere reserve, stating it has the absolute largest number of species across all taxa compared to reserves like the Gulf of Mannar or Nilgiri is factually inaccurate. Nokrek also does not necessarily have the smallest.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Biodiversity and Conservation"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-33",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Consider the following characteristics of a type of wind:\n1. They occur at upper levels in the atmosphere\n2. They are subjected to two forces, a pressure gradient force and the Coriolis force\n3. When the forces balance, air moves at right angles to the pressure gradient, parallel to the isobars\nIdentify the type of wind on the basis of the given characteristics:",
+    "options": [
+      "Jet Stream",
+      "Geostrophic Wind",
+      "Westerlies",
+      "Easterlies"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A geostrophic wind is a theoretical wind that results from an exact balance between the Coriolis force and the pressure gradient force. This condition occurs predominantly in the upper atmosphere, causing the wind to blow parallel to the isobars.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-34",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Soil Geography",
+    "text": "Where does podsolization take place?",
+    "options": [
+      "Regions in high middle latitudes",
+      "Coastal regions in lower latitudes",
+      "Regions with hot and humid climate",
+      "Regions having arid climate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Podzolization is a soil-forming process that occurs predominantly in cool, moist climates under coniferous forest cover, typical of the taiga or boreal regions located in high middle latitudes.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Soil Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-35",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Origin of the Universe",
+    "text": "Which one of the following statements with reference to the Nebular Hypothesis for the origin of Solar System is correct?",
+    "options": [
+      "The initiation of the nebular hypothesis can be considered as a diffuse, roughly spherical, slowly rotating expanding nebula",
+      "As a result of rotation and expansion, a disk is formed with matter concentrated in the centre",
+      "Expansion continues with the formation of the proto-Sun and the rings of material are left behind",
+      "The material in the rings get condensed and form the planets that revolve in orbits around the Sun"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Nebular Hypothesis postulates that the solar system formed from a contracting and cooling (not expanding) nebula. As it contracted, it rotated faster, flattening into a disk. Rings of material separated from this central mass (which became the sun) and condensed to form the planets.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Origin of the Universe"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-36",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Time Zones",
+    "text": "If it is 31st December, 2023 in New Zealand, at the same time what will be the date in the Hawaiian Islands and Alaska?",
+    "options": [
+      "Both have 01 January, 2024",
+      "Both have 30 December, 2023",
+      "31 December, 2023 in Alaska and 01 January, 2024 Hawaiian Islands",
+      "31 December, 2023 in Hawaiian Islands and 01 January, 2024 in Alaska"
+    ],
+    "correctAnswer": 1,
+    "explanation": "New Zealand is located just west of the International Date Line (UTC+12/13), making it one of the first places to experience a new day. Hawaii (UTC-10) and Alaska (UTC-9) are to the east of the IDL and are nearly 22-23 hours behind New Zealand. Therefore, if it is December 31 in New Zealand, it is still December 30 in both Hawaii and Alaska.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Time Zones"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-37",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which one of the following statement with reference to hailstones is NOT correct?",
+    "options": [
+      "Their formation usually occurs during the monsoon season",
+      "They are associated with dense cumulonimbus clouds",
+      "Rain that forms in the warmer, upper layer solidifies into tiny ice pellets or hailstones in the lower, subfreezing layer",
+      "Hailstones have multiple, concentric layers of ice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Option (c) actually describes the formation of sleet (ice pellets), not hail. Hail forms inside large cumulonimbus clouds where strong updrafts carry supercooled water droplets upwards into subfreezing layers where they freeze and grow by accretion, forming multiple concentric layers.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-38",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\n\nList I (Ocean Current)\nA. Kuroshio Current\nB. Agulhas Current\nC. East Wind Drift\nD. Antilles Current\n\nList II (Location)\n1. Antarctic Ocean\n2. Pacific Ocean\n3. Atlantic Ocean\n4. Indian Ocean",
+    "options": [
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2",
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Kuroshio Current flows in the Pacific Ocean (2). The Agulhas Current is a western boundary current of the southwest Indian Ocean (4). The East Wind Drift is a coastal current in the Antarctic Ocean (1). The Antilles Current flows in the Atlantic Ocean (3). Matching them up gives A-2, B-4, C-1, D-3.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Oceanography"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-39",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Wildlife Conservation",
+    "text": "With reference to 'Black Tigers', which of the following statements is/are correct?\n1. They are also referred to as Melanistic Tigers\n2. In India they are found only in Similipal Tiger Reserve in Odisha\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Black tigers are a rare colour variant of the Bengal tiger due to a condition called pseudo-melanism. In India, they have been exclusively recorded in the Similipal Tiger Reserve located in Odisha.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Wildlife Conservation"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-40",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Energy Sector",
+    "text": "Which one among the following statements about the Singareni Collieries Company Limited is correct?",
+    "options": [
+      "Located at Kothagudem in Telengana, this is the first and the oldest coal mining company in India in the private sector",
+      "It has now diversified into thermal and solar power generation, explosive manufacturing for blasting in opencast mines and consultancy works",
+      "It has been conferred with 'Navratna' status since 2011",
+      "It is the single largest coal producing company in the world"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Singareni Collieries Company Limited (SCCL) is a government-owned coal mining corporation. Over the years, it has strategically diversified beyond coal mining into the energy sector, establishing thermal power plants (like Singareni Thermal Power Plant) and entering solar power generation.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Energy Sector"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-41",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which of the following processes is/are part of the Rock Cycle?\n1. Lithification\n2. Metamorphism\n3. Solidification\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The rock cycle involves the constant transformation of rocks from one type to another. Lithification transforms sediments into sedimentary rocks, metamorphism turns existing rocks into metamorphic rocks due to heat and pressure, and solidification (or crystallization) turns magma/lava into igneous rocks. All three are integral parts.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-42",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Consider the following statements regarding the temperature of the Earth's surface:\n1. The temperature of a surface is determined by net radiation\n2. Net radiation produces a radiant energy flow that can heat or cool a surface\n3. Net radiation balance is usually positive during the daytime and negative during night time\n4. Soil surface loses energy as temperature increases during the daytime\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "3 and 4 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statements 1, 2, and 3 accurately describe the net radiation balance on Earth's surface. Statement 4 is incorrect because during the daytime, while the temperature increases, the soil surface is experiencing a net gain in energy from solar insolation, not a net loss.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-43",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "Soils of India",
+    "text": "Consider the following statements\n1. Black soil is considered suitable for growing rain-fed crops\n2. Black soil can retain moisture for a prolonged period, aiding crops to survive even in dry seasons\nWith regard to the statements given above which of the following is/are correct?",
+    "options": [
+      "Both the statements are correct and statement 2 is the correct explanation of statement 1",
+      "Both the statements are correct and statement 2 is NOT the correct explanation of statement 1",
+      "Statement 1 is correct but statement 2 is false",
+      "Statement 1 is false but statement 2 is correct"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Black soil (regur) has a high clay content, giving it excellent moisture retention capacity. This ability to hold moisture for prolonged periods makes it highly suitable for rain-fed crops (like cotton) because the crops can draw on this stored water during dry spells.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Soils of India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-44",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Which one among the following countries is NOT a part of the Arabian Peninsula?",
+    "options": [
+      "Kuwait",
+      "Oman",
+      "Libya",
+      "Yemen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Libya is located in the Maghreb region of North Africa. Kuwait, Oman, and Yemen are all situated on the Arabian Peninsula in Western Asia.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-45",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Climatology",
+    "text": "With reference to 'South Coast of Australia' which of the following statements is/are correct?\n1. It is situated along the Indian Ocean\n2. It experiences rain during its winter months of December and January\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is considered correct in standard geographical contexts as the Indian Ocean (or Southern Ocean) bounds the southern coast of Australia. Statement 2 is incorrect; winter in the Southern Hemisphere (Australia) occurs during June, July, and August, not December and January. Thus, the winter rain in the region's Mediterranean climate occurs around mid-year.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-46",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "text": "The remainder, when 1 + (1x2) + (1x2x3) + ... + (1x2x3x...x500) is divided by 8, is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The series is a sum of factorials: 1! + 2! + 3! + 4! + ... + 500!. We need to find the remainder when this sum is divided by 8. Note that 4! = 24, which is divisible by 8. All subsequent terms (5!, 6!, etc.) will also be multiples of 4! and therefore divisible by 8 (remainder 0). We only need to sum the terms before 4!, which are 1! + 2! + 3! = 1 + 2 + 6 = 9. When 9 is divided by 8, the remainder is 1.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Number System"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-47",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "text": "The angle (in degrees) made by a sector having area one-sixth of the area of a semicircle is",
+    "options": [
+      "15°",
+      "30°",
+      "45°",
+      "60°"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The area of a semicircle is (1/2) * \u03c0 * r^2. The area of the sector is 1/6th of the semicircle, so Area of sector = (1/6) * (1/2) * \u03c0 * r^2 = (1/12) * \u03c0 * r^2. The area of a sector can also be written as (\u03b8/360) * \u03c0 * r^2. Equating the two gives \u03b8/360 = 1/12. Solving for \u03b8, we get \u03b8 = 360 / 12 = 30°.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Geometry"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-48",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Averages",
+    "text": "Which one of the following is the average of first five multiples of each of the numbers from 11, 12, 13, ..., 20?",
+    "options": [
+      "40.5",
+      "42.5",
+      "44.5",
+      "46.5"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The first five multiples of a number 'n' are n, 2n, 3n, 4n, 5n. Their sum is 15n, so their average is 15n / 5 = 3n. We need to find the average of these averages for n = 11 to 20. The sequence of averages is 3(11), 3(12), ..., 3(20). This is an arithmetic progression. The average of an AP is (first term + last term) / 2. Here, it is (33 + 60) / 2 = 93 / 2 = 46.5.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Averages"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-49",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Averages",
+    "text": "Which of the following statements is/are correct?\n1. The average of four numbers 10, 15, 20 and 25 is 17.5\n2. If a, b and c are three different natural numbers such that a + b + c = abc then the average of a, b and c is 3\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1: The average of 10, 15, 20, 25 is (10 + 15 + 20 + 25) / 4 = 70 / 4 = 17.5. This is correct. Statement 2: The only distinct natural numbers satisfying a + b + c = abc are 1, 2, and 3 (since 1+2+3 = 6 and 1*2*3 = 6). Their average is (1+2+3)/3 = 6/3 = 2, not 3. So statement 2 is incorrect.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Averages"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-50",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "text": "The ratio of present ages (in years) of X to Y is equal to the ratio of present ages (in years) of Y to Z. If the present age of Y is 15 years, then which of the following can be the sum of the ages (in years) of X, Y and Z?",
+    "options": [
+      "35",
+      "40",
+      "49",
+      "55"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Given X/Y = Y/Z. So, Y^2 = XZ. With Y = 15, we get XZ = 225. We need the sum X + Y + Z = X + Z + 15. Let's check the options for X + Z: For option (c) 49, X + Z = 49 - 15 = 34. We need two numbers that sum to 34 and multiply to 225. Solving the quadratic equation t^2 - 34t + 225 = 0 gives roots 9 and 25 (9+25=34, 9*25=225). Since these are valid ages, 49 can be the sum.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Ratio and Proportion"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-51",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "text": "If x + 1/x = 2, then which one of the following is the value of x^32 + 1/x^32 ?",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Given x + 1/x = 2. Multiplying by x gives x^2 + 1 = 2x, which rearranges to x^2 - 2x + 1 = 0, or (x - 1)^2 = 0. Therefore, x = 1. Substituting x = 1 into the target expression: 1^32 + 1/(1^32) = 1 + 1 = 2.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Algebra"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-52",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "text": "A shopkeeper sold a product at 30% loss. Had his selling price been Rs 150 more, he would have made a profit of 10%. What was the cost price?",
+    "options": [
+      "Rs 375",
+      "Rs 400",
+      "Rs 425",
+      "Rs 450"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let the cost price be CP. Selling at a 30% loss means SP1 = 0.70 * CP. A 10% profit means SP2 = 1.10 * CP. The difference between these two selling prices is Rs 150. So, 1.10 * CP - 0.70 * CP = 150. This gives 0.40 * CP = 150. Solving for CP gives CP = 150 / 0.40 = 375.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Profit and Loss"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-53",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "text": "A, B and C can finish a work in 20, 25 and 30 days, respectively. They start working together but B quits after working for 3 days. In how many days from the start shall the work be completed?",
+    "options": [
+      "9 8/15 days",
+      "10 1/15 days",
+      "10 14/25 days",
+      "11 1/10 days"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let total work be LCM(20, 25, 30) = 300 units. Daily work rates are A=15, B=12, C=10 units/day. They work together for 3 days, doing (15+12+10)*3 = 37*3 = 111 units. Remaining work = 300 - 111 = 189 units. B quits, so A and C continue with a combined rate of 15+10 = 25 units/day. Time taken for remaining work = 189/25 = 7 14/25 days. Total time from start = 3 + 7 14/25 = 10 14/25 days.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Time and Work"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-54",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Pipes and Cisterns",
+    "text": "Two taps A and B can fill a tank with water in 20 minutes and 15 minutes, respectively. A third tap C can empty the full tank in 6 minutes. After the taps A and B fill the tank for 5 minutes, the tap C is opened to empty while A and B continue to fill it. In how many minutes after the start shall the tank get empty?",
+    "options": [
+      "10 1/3 minutes",
+      "10 2/5 minutes",
+      "10 4/5 minutes",
+      "11 2/3 minutes"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let tank capacity be LCM(20, 15, 6) = 60 units. Filling rates: A = +3 units/min, B = +4 units/min. Emptying rate: C = -10 units/min. In the first 5 mins, A and B fill (3+4)*5 = 35 units. Then C is opened. The net rate is 3 + 4 - 10 = -3 units/min (the tank is emptying). Time to empty the 35 units = 35 / 3 = 11 2/3 minutes. The question asks 'after the start', but usually such phrasing means from the moment C starts emptying, or the options align with just the emptying duration. 11 2/3 matches the emptying time.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Pipes and Cisterns"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-55",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Time, Speed and Distance",
+    "text": "A and B start at the same time to reach the same destination. B travelled at 5/7 of A's speed and reached the destination 1 hour 20 minutes after A. What was the time taken by B to reach the destination?",
+    "options": [
+      "4 hours 40 minutes",
+      "4 hours 55 minutes",
+      "5 hours 5 minutes",
+      "5 hours 15 minutes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since distance is constant, time is inversely proportional to speed. Speed ratio of B to A is 5/7, so Time ratio of B to A is 7/5. Let time taken by A be 5x and by B be 7x. The difference is 7x - 5x = 2x. We are given the difference is 1 hour 20 mins = 80 minutes. So 2x = 80 -> x = 40. Time taken by B = 7x = 7 * 40 = 280 minutes. 280 minutes = 4 hours and 40 minutes.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Time, Speed and Distance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-56",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Percentages",
+    "text": "There was a hike in petrol price by 12%. By how much percentage should a person decrease his petrol consumption such that there is no change in his expenditure on petrol?",
+    "options": [
+      "8.6%",
+      "9.8%",
+      "10.7%",
+      "12%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let initial price be 100. New price is 112. To keep expenditure same, consumption must be reduced from 112 back down to 100, a decrease of 12. Percentage decrease = (12 / 112) * 100% = 300 / 28 % = 75 / 7 % \u2248 10.71%.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Percentages"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-57",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Averages",
+    "text": "If 19a + 19b + 19c = 437, then what is the mean of a, b and c?",
+    "options": [
+      "6.33",
+      "7.66",
+      "9.33",
+      "11.55"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Factor out 19 from the given equation: 19(a + b + c) = 437. Divide by 19: a + b + c = 437 / 19 = 23. The mean of three numbers a, b, and c is (a + b + c) / 3 = 23 / 3 = 7.666...",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Averages"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-58",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Permutations and Combinations",
+    "text": "Out of the six digits 1, 2, 3, 4, 5 and 6; how many two digit numbers can be formed without repetition of digits?",
+    "options": [
+      "6",
+      "15",
+      "30",
+      "40"
+    ],
+    "correctAnswer": 2,
+    "explanation": "We need to form 2-digit numbers using 6 available digits without repetition. The tens place can be filled in 6 ways, and the units place can be filled with any of the remaining 5 digits. So, total numbers = 6 * 5 = 30.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Permutations and Combinations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-59",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Time, Speed and Distance",
+    "text": "A train travelling at a speed of 60 km/hr crosses a platform in 20 seconds. The same train crosses a person who is walking at a speed of 6 km/hr in the same direction as that of the train in 12 seconds. What is the length of the train and that of the platform, respectively?",
+    "options": [
+      "160 m and 153.33 m",
+      "170 m and 166.66 m",
+      "180 m and 153.33 m",
+      "180 m and 170 m"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Speed of train = 60 km/hr = 60 * 5/18 = 50/3 m/s. Speed of person = 6 km/hr = 6 * 5/18 = 5/3 m/s. Relative speed to person = 50/3 - 5/3 = 15 m/s. Length of train = Relative speed * Time = 15 m/s * 12 s = 180 m. Now, crossing platform: Total distance = Train Length + Platform Length. (180 + P) / (50/3) = 20 s -> 180 + P = 1000 / 3 -> 180 + P = 333.33 -> P = 333.33 - 180 = 153.33 m.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Time, Speed and Distance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-60",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Partnership",
+    "text": "In a partnership firm, A invests 1/6th of the total investment for 1/6th of the tenure. B invests 1/3rd of the total investment for 1/3rd of the tenure while C invests the remaining part for the full duration. Out of total profit of Rs 46,00,000, what shall be C's share?",
+    "options": [
+      "Rs 30,00,000",
+      "Rs 32,00,000",
+      "Rs 34,00,000",
+      "Rs 36,00,000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Investment of C = 1 - (1/6 + 1/3) = 1 - 1/2 = 1/2. Time for C = 1 (full tenure). Profit sharing ratio = (Inv_A * Time_A) : (Inv_B * Time_B) : (Inv_C * Time_C) = (1/6 * 1/6) : (1/3 * 1/3) : (1/2 * 1) = 1/36 : 1/9 : 1/2. Multiplying by 36 to remove fractions gives 1 : 4 : 18. Total parts = 1 + 4 + 18 = 23. C's share = (18 / 23) * 46,00,000 = 18 * 2,00,000 = Rs 36,00,000.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Partnership"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-61",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "text": "The sum of the ages of A and B (in years) is 22. The product of their ages two years back was 77. Which one of the following is the value of the difference of their current ages?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the present ages of A and B be A and B. We are given A + B = 22. Two years ago, their ages were (A - 2) and (B - 2). The product (A - 2)(B - 2) = 77. Let x = A - 2 and y = B - 2. Then x + y = A + B - 4 = 22 - 4 = 18. We have a system: x + y = 18 and xy = 77. The two numbers that add to 18 and multiply to 77 are 11 and 7. Thus, x = 11, y = 7 (or vice versa). So, A - 2 = 11 \u2192 A = 13. B - 2 = 7 \u2192 B = 9. The difference in their current ages is 13 - 9 = 4 years.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Algebra"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-62",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "text": "A shopkeeper sells two items, A and B. Item B's cost price is twice as that of item A. The shopkeeper sells item A at 10% profit and item B at 20% profit. Which one of the following is the value of net profit?",
+    "options": [
+      "15%",
+      "13.33%",
+      "18%",
+      "16.66%"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let the cost price (CP) of item A be 100. Then the CP of item B is 200. Total CP = 100 + 200 = 300. Profit on A is 10% of 100 = 10. Profit on B is 20% of 200 = 40. Total Profit = 10 + 40 = 50. Net Profit Percentage = (Total Profit / Total CP) * 100% = (50 / 300) * 100% = 50/3 % \u2248 16.66%.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Profit and Loss"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-63",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Set Theory",
+    "text": "Out of a class of 100 students, 25 play at least cricket and football, 15 play at least cricket and hockey, 12 play at least football and hockey and 10 play all the three sports. The number of students playing cricket, football and hockey are 50, 37 and 22, respectively. The number of students who do NOT play any of the three sports is",
+    "options": [
+      "33",
+      "23",
+      "27",
+      "30"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let C, F, and H denote the sets of students playing cricket, football, and hockey. Total students = 100. We are given: n(C) = 50, n(F) = 37, n(H) = 22. Intersections: n(C \u2229 F) = 25, n(C \u2229 H) = 15, n(F \u2229 H) = 12. All three: n(C \u2229 F \u2229 H) = 10. Using the principle of inclusion-exclusion, the number of students playing at least one sport is n(C \u222a F \u222a H) = n(C) + n(F) + n(H) - n(C \u2229 F) - n(C \u2229 H) - n(F \u2229 H) + n(C \u2229 F \u2229 H) = 50 + 37 + 22 - 25 - 15 - 12 + 10 = 67. The number of students playing none = Total - n(C \u222a F \u222a H) = 100 - 67 = 33.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Set Theory"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-64",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Permutations and Combinations",
+    "text": "A group of five people consisting of a couple are to be seated on a round table for a meeting. What is the total number of ways in which the seating arrangement can be made so that the couple do NOT sit next to each other?",
+    "options": [
+      "24",
+      "18",
+      "12",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Total people = 5. The total number of ways to seat 5 people around a round table is (5 - 1)! = 4! = 24. Now, find the number of ways where the couple sits together. Treat the couple as a single unit. We now have 4 units to arrange in a circle, which can be done in (4 - 1)! = 3! = 6 ways. The couple can swap seats with each other in 2! = 2 ways. So, ways they sit together = 6 * 2 = 12. Finally, the ways they do NOT sit next to each other = Total ways - Ways they sit together = 24 - 12 = 12.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Permutations and Combinations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-65",
+    "year": 2024,
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "text": "A fair coin is tossed three times and the outcomes are noted. What is the probability of getting exactly two heads?",
+    "options": [
+      "2/3",
+      "1/2",
+      "5/8",
+      "3/8"
+    ],
+    "correctAnswer": 3,
+    "explanation": "When a fair coin is tossed three times, the total number of possible outcomes is 2^3 = 8. The sample space is {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}. The outcomes with exactly two heads are HHT, HTH, and THH. There are 3 such favorable outcomes. Therefore, the probability is 3/8.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Mathematics"
+      },
+      {
+        "type": "topic",
+        "label": "Probability"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-66",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Consider the following statements about the costumes and headgear/hairstyle in India during 4th - 7th century AD :\n1. There was a marked preference for stitched garment as compared to any previous age\n2. Simple plaits without any floral embellishment dominated the hairstyle of women\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct: The 4th to 7th century AD (Gupta period) saw a marked increase in the use of stitched garments (like the kancuka or tunic), a lasting influence of earlier Central Asian contacts (Kushanas). Statement 2 is incorrect: Art from this period, particularly the Ajanta frescoes, depicts women with elaborate hairstyles, curls, and heavy floral embellishments, not just simple unadorned plaits.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-67",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Which of the following statements are correct?\n1. The Third Round Table Conference met in London in November 1932 without the participation of Congress\n2. The discussions in the Third Round Table Conference led to the passing of the Government of India Act, 1935\n3. The Government of India Act, 1935 did not favor the idea of provincial autonomy\n4. The Governor was not given any power in the Act of 1935 to take over and run the administration of a province\nSelect the answer using the code given below:",
+    "options": [
+      "3 and 4",
+      "1 and 2",
+      "2 and 3",
+      "1 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is correct; the Indian National Congress boycotted the Third Round Table Conference. Statement 2 is correct; the outcomes of the conferences culminated in a White Paper which formed the basis of the Government of India Act, 1935. Statement 3 is incorrect; a key feature of the 1935 Act was the introduction of Provincial Autonomy. Statement 4 is incorrect; Governors retained special powers (e.g., Section 93) to assume control of the provincial administration if the constitutional machinery failed.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-68",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Consider the following pairs of texts and their subjects:\n1. Tilakmanjari : Mathematics\n2. Nighantu : Medicine\n3. Janakiharan : Logic\nWhich of the pairs given above is/are correctly matched?",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 2",
+      "2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tilakamanjari was written by Dhanapala and is a prose romance/literary work, not a text on mathematics. Janakiharana is a classical Sanskrit epic poem (Mahakavya) by Kumaradasa dealing with the abduction of Sita, not logic. Nighantu refers to a traditional glossary; in the context of ancient Indian sciences, texts like the Dhanvantari Nighantu and Bhava Prakasha Nighantu act as encyclopedias/glossaries of medicinal plants and materia medica in Ayurveda.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-69",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "The Junagarh inscription goes on to tell us that during the reign of Rudradaman, in the year 72 of the Saka era, there occurred a terrible storm. What would be the time in CE of the occurrence of that terrible storm?",
+    "options": [
+      "150 CE",
+      "181 CE",
+      "130 CE",
+      "120 CE"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Saka era is generally accepted to have begun in 78 CE. To convert a Saka era date to the Common Era (CE), you add 78. Therefore, the year 72 of the Saka era corresponds to 72 + 78 = 150 CE.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-70",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Abdur Razzak, the traveler to Vijayanagar, had referred to the presence of a number of flower merchants in Vijayanagar and noted a particular flower that seemed as necessary as food to the people of that part. Which variety of flower was being referred to by Abdur Razzak?",
+    "options": [
+      "Jasmine",
+      "Lotus",
+      "Hibiscus",
+      "Rose"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Abdur Razzak, a Persian ambassador who visited the Vijayanagara Empire in the 15th century, explicitly noted the abundance and importance of roses. He wrote, 'Roses are sold everywhere. These people could not live without roses, and they look upon them as quite as necessary as food.'",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-71",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "In Kautilya's Arthashashtra, the conquerer king is expected to establish, in the conquered territories, a social order based on the",
+    "options": [
+      "varna system only",
+      "dharma, varna and ashrama systems",
+      "dharma only",
+      "varna and ashrama systems"
+    ],
+    "correctAnswer": 3,
+    "explanation": "According to Kautilya's Arthashastra, the social order is founded on the Varnashramadharma system. A king (including a conqueror in new territories) is instructed to protect and maintain the structural division of society based on the four 'varnas' (social classes) and four 'ashramas' (stages of life), ensuring that duties related to each are fulfilled.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-72",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Consider the following eras in early India:\n1. Shaka era\n2. Kalachuri era\n3. Vikrama era\n4. Harsha era\n5. Gupta era\nWhich one of the following is the correct chronological order of the above eras starting with the earliest?",
+    "options": [
+      "1-2-3-4-5",
+      "3-1-5-2-4",
+      "2-3-1-4-5",
+      "3-1-2-5-4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The chronological starting points of these eras are: Vikrama era (57 BCE), Shaka era (78 CE), Kalachuri (Chedi) era (248 CE), Gupta era (319-320 CE), and Harsha era (606 CE). Therefore, the correct chronological order is 3-1-2-5-4.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-73",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "What is Nalayira Divyaprabandham?",
+    "options": [
+      "Compositions by the Alvars compiled in the form of an anthology",
+      "Hymns composed by Nayanars",
+      "Eulogies composed for Chola kings",
+      "An exposition of the hymns of Rig Veda in Malayalam"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Nalayira Divya Prabandham is a collection of 4,000 Tamil verses (hymns) composed by the 12 Alvars, the Vaishnava poet-saints of South India. It was compiled in its present form by Nathamuni during the 9th-10th centuries.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-74",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "What are bhuni, pachara, and dopati mentioned frequently in the biographies of the Vaishnava reformers of medieval Assam?",
+    "options": [
+      "Vessels of metal used in religious oblation",
+      "Agricultural implements",
+      "Musical instruments used at the time of Bohag Bihu festival",
+      "Pieces of men's clothes"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In medieval Assam, particularly in the contexts and biographies (Charit Puthis) of Neo-Vaishnavite reformers like Srimanta Sankardeva, terms like 'bhuni', 'pachara', and 'dopati' refer to traditional items of woven apparel or pieces of men's clothing used during that era.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-75",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Consider the following statements about the Rowlatt Act of 1919:\n1. It was passed by the Imperial Legislative Council\n2. Khilafat Committee was formed to oppose the Act\n3. While Gandhiji was arrested, the local leaders were allowed to continue the protest\nHow many of the above statements is/are NOT correct?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is correct: The Anarchical and Revolutionary Crimes Act of 1919, popularly known as the Rowlatt Act, was passed by the Imperial Legislative Council in Delhi. Statement 2 is incorrect: The Khilafat Committee was formed to defend the powers of the Ottoman Caliphate, not specifically to oppose the Rowlatt Act (which was opposed by the Satyagraha Sabha). Statement 3 is incorrect: Local leaders (such as Dr. Saifuddin Kitchlew and Dr. Satyapal in Punjab) were not allowed to continue protests; their arrest and deportation directly led to the Jallianwala Bagh gathering. Thus, two statements (2 and 3) are incorrect.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-76",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Consider the following statements about Mahanavami dibba, a massive platform:\n1. It is situated on one of the highest points in the city of Vijayanagara\n2. Virupaksha temple is located on it\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct: The Mahanavami Dibba is a massive platform located on one of the highest points in the Royal Centre of Vijayanagara. Statement 2 is incorrect: The Virupaksha temple is located in the Sacred Centre, not on the Mahanavami Dibba. The Dibba was used for royal ceremonies like the Mahanavami festival.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-77",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Which of the following statements about the Bundela rebellion against Aurangzeb are correct?\n1. Shivaji advised Chhatrasal to promote local risings against Aurangzeb\n2. Chhatrasal levied chauth like marathas\n3. In 1705, Aurangzeb decided to make peace with Chhatrasal and Chhatrasal was granted mansab of four-thousand\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements are correct. Chhatrasal met Shivaji, who inspired him to lead an independent rebellion in Bundelkhand against the Mughals. Emulating the Marathas, Chhatrasal also started levying 'chauth' from neighboring territories. Eventually, in 1705, Aurangzeb was forced to make peace and recognized Chhatrasal, granting him a mansab of 4000.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-78",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Consider the following statements about the Dutch trade in Mughal period:\n1. The Dutch transported silk goods from Bengal through Hooghly\n2. Cloves and nutmegs were collected at Surat by the Dutch and exported to Europe\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct: The Dutch established a factory at Chinsurah (near Hooghly) and heavily engaged in exporting Bengal silk and textiles. Statement 2 is incorrect: Cloves and nutmegs (spices) were collected from the Indonesian archipelago (Spice Islands). The Dutch brought these spices TO Surat to trade for Indian textiles, rather than collecting them AT Surat for export to Europe.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-79",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Which naval forts were erected by Shivaji?\n1. Suvarnadurg\n2. Vijayadurg\n3. Sindhudurg\n4. Kolaba\nSelect the answer using the code given below:",
+    "options": [
+      "1, 2, 3 and 4",
+      "1, 2 and 4 only",
+      "3 and 4 only",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shivaji realized the importance of a strong navy and coastal defense. He built, captured, and extensively strengthened several coastal forts to secure the Konkan coastline. Sindhudurg, Vijayadurg, Suvarnadurg, and Kolaba are all prominently recognized as the key naval/coastal forts erected or heavily fortified by Shivaji to establish Maratha naval supremacy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-80",
+    "year": 2024,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Which of the following statements about the economy of Assam in the medieval period is/are correct?\n1. Ahoms cast excellent matchlocks and made first rate gunpowder and artillery pieces\n2. Assam adopted new crafts of brass-casting and making granulated sugar during this period\n3. Sarthebari village (in Kamrup) was known for its skill in metal casting\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements are correct. The Ahom kingdom was well known for manufacturing its own high-quality gunpowder, matchlocks, and artillery. During the medieval period, Assam adopted and developed various artisanal crafts including brass-casting and sugar granulation. Sarthebari village in the Kamrup region became historically famous for its bell-metal and brass crafts.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-81",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Governance",
+    "text": "Which of the following sectors have been identified as 'critical sectors' by the National Critical Information Infrastructure Protection Centre?\n1. Power and Energy\n2. Industry\n3. Banking and Financial services\n4. Irrigation\n5. Education\nSelect the answer using the code given below:",
+    "options": [
+      "3, 4 and 5",
+      "1 and 3 only",
+      "1, 2 and 4",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The National Critical Information Infrastructure Protection Centre (NCIIPC) has identified specific sectors as critical: Power & Energy; Banking, Financial Services & Insurance; Telecom; Transport; Government; and Strategic & Public Enterprises. Industry, Irrigation, and Education are not on this primary list. Therefore, only Power and Energy (1) and Banking and Financial services (3) apply.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Governance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-82",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Executive",
+    "text": "Who, among the following Presidents of India, sent back the Post Office (Amendment) Bill, 1986 for the reconsideration of the Parliament?",
+    "options": [
+      "R. Venkataraman",
+      "Shankar Dayal Sharma",
+      "Giani Zail Singh",
+      "K. R. Narayanan"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In 1986, President Giani Zail Singh exercised a 'pocket veto' by indefinitely withholding his assent to the controversial Indian Post Office (Amendment) Bill. However, it was his successor, President R. Venkataraman, who formally sent the bill back to the Parliament in 1990 for reconsideration, after which the V.P. Singh government allowed it to lapse.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Executive"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-83",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Consider the following statements about the emblem of the Milano Cortina 2026 Winter Olympic and Paralympic Games:\n1. The name of the emblem is 'Futura'\n2. The emblem of the Games was decided by a popular vote for the first time in the history of the Olympic\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The official emblem for the Milano Cortina 2026 Winter Olympics is named 'Futura'. In a historic first for the Olympic Games, the emblem was chosen by the general public through a global online popular vote.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Sports"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-84",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "Which one among the following statements with regard to India's maritime initiative, SAGAR, is correct?",
+    "options": [
+      "It is a platform for conducting joint naval exercises under QUAD",
+      "It aimed at promoting maritime cooperation with countries of the Indian Ocean Region",
+      "It is an alliance of India, USA and Japan to provide safety to merchant ships passing through the Indian Ocean Region",
+      "It is the name given to India's participation in the Contact Group on Piracy set up by the UN Security Council"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SAGAR (Security and Growth for All in the Region) is India's strategic vision for the Indian Ocean Region (IOR). Introduced in 2015, it aims to promote maritime cooperation, economic development, and security partnerships with the littoral states of the IOR.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-85",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\n\nList I (Climate Conference)\nA. COP-26\nB. COP-27\nC. COP-28\nD. COP-29\n\nList II (Country)\n1. Egypt\n2. Azerbaijan\n3. United Kingdom\n4. UAE",
+    "options": [
+      "A-3, B-4, C-1, D-2",
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3",
+      "A-3, B-1, C-4, D-2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The correct match is: COP-26 was hosted by the United Kingdom in Glasgow (A-3). COP-27 was hosted by Egypt in Sharm el-Sheikh (B-1). COP-28 was hosted by the UAE in Dubai (C-4). COP-29 was assigned to be hosted by Azerbaijan in Baku (D-2). This makes the correct code A-3, B-1, C-4, D-2.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Climate Change"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-86",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "Under which one among the following Articles of the Constitution of India, a member of a Civil Service, whether of the Union or of a State, seeks protection from unlawful dismissal from service?",
+    "options": [
+      "Article 309",
+      "Article 311",
+      "Article 315",
+      "Article 320"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 311 of the Indian Constitution provides safeguards to civil servants against arbitrary dismissal, removal, or reduction in rank. It states that no person who is a member of a civil service shall be dismissed or removed by an authority subordinate to that by which they were appointed, ensuring procedural protection.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Bodies"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-87",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "International Relations",
+    "text": "Which of the following statements are correct with regard to the UN Convention on the Law of the Sea (UNCLOS)?\n1. UNCLOS authorizes the UN Security Council to take a direct action in case of the disputes between States on sovereign rights over Exclusive Economic Zones\n2. UNCLOS defines contiguous zones and specifies its functions\n3. Both the US and India have ratified UNCLOS\n4. UNCLOS grants certain rights to Landlocked States\nSelect the answer using the code given below:",
+    "options": [
+      "1, 2 and 4 only",
+      "1 and 2 only",
+      "2 and 4 only",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 2 is correct; UNCLOS defines maritime zones like the contiguous zone, territorial sea, and EEZ. Statement 4 is correct; it grants landlocked states the right of access to and from the sea. Statement 1 is incorrect; UNCLOS uses its own mechanisms (like ITLOS) or arbitration for disputes, not direct UNSC action over EEZ. Statement 3 is incorrect; while India has ratified UNCLOS, the United States has not.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-88",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Public Administration",
+    "text": "Which of the following statements is/are correct?\n1. The Muddiman Committee recommended the separation of Accounts from Audit as a necessary financial reform\n2. Indian Institute of Public Administration was set up on the lines recommended by Dr. Paul H. Appleby\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect. The Muddiman Committee (1924) was formed to evaluate the working of diarchy under the Government of India Act 1919, not for financial reforms like separating accounts from audit. Statement 2 is correct. The Indian Institute of Public Administration (IIPA) was established in 1954 based on the recommendations of Paul H. Appleby's report on Indian Administration.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Public Administration"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-89",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Public Administration",
+    "text": "Which one among the following reports states that the budget is seen, not as a simple balancing of tax receipts against expenditure but as a sophisticated process in which instruments of taxation and expenditure are used to influence the course of the Economy?",
+    "options": [
+      "Administrative Reforms Committee Report",
+      "Hoover Commission Report",
+      "Haldane Committee Report",
+      "Plowden Report on Control of Expenditure"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Plowden Report on Control of Public Expenditure (1961) in the United Kingdom highlighted the modern view of the budget. It emphasized that budgeting is not merely an accounting exercise of balancing receipts and expenditures, but a macroeconomic tool to plan and influence the long-term course of the economy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Public Administration"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-90",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "Which of the following statements are correct about the composition of the G 20?\n1. All G 7 countries are members of G 20\n2. All BRICS countries are members of G 20\n3. All ASEAN countries are members of G 20\n4. All permanent members of Security Council are members of G 20\nSelect the answer using the code given below:",
+    "options": [
+      "1, 2 and 3",
+      "2 and 4 only",
+      "1 and 4",
+      "2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is correct; the G7 (US, UK, France, Germany, Italy, Japan, Canada) are all in the G20. Statement 4 is correct; the P5 of the UNSC (US, UK, France, Russia, China) are all in the G20. Statement 2 is incorrect; following the BRICS expansion in Jan 2024 (adding Ethiopia, Iran, etc.), not all BRICS members are in the G20. Statement 3 is incorrect; only Indonesia from ASEAN is a G20 member state. Thus, 1 and 4 are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-91",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which of the following statements is/are correct?\n1. Some Rights contained in Part-III of the Constitution of India are enforceable against the State only\n2. Some Rights contained in Part-III of the Constitution of India are enforceable in favor of citizens only\n3. Some Rights contained in Part-III of the Constitution of India are enforceable against both, the state and individuals\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "1 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statement 1 is correct (e.g., Article 14, 18(1)). Statement 2 is correct (Articles 15, 16, 19, 29, 30 are available only to citizens). Statement 3 is correct (e.g., Article 15(2), Article 17, Article 23, and Article 24 are enforceable against private individuals as well as the State).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Rights"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-92",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Committees and Commissions",
+    "text": "Match List I with List II and select the correct answer using the code given below the Lists:\n\nList I (Commission/ Committee)\nA. Kothari Commission\nB. Satish Chandra Committee\nC. P. C. Hota Committee\nD. Prof. Y. K. Alagh Committee\n\nList II (Suggested Reform in Civil Services Examination)\n1. Inclusion of Medical and Engineering subjects\n2. Entrance Examination for Civil Service after Class XII\n3. Objective methodology for personality assessment\n4. Civil Services Mains examination (Written and Interview)\n\nCode:",
+    "options": [
+      "A-4, B-1, C-2, D-3",
+      "A-4, B-2, C-1, D-3",
+      "A-3, B-1, C-2, D-4",
+      "A-3, B-2, C-1, D-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kothari Commission (1976) recommended a three-stage examination process including the Mains written exam and interview (A-4). Satish Chandra Committee (1989) recommended the inclusion of Medical and Engineering subjects in the list of optional subjects (B-1). P.C. Hota Committee (2004) suggested an aptitude/entrance exam potentially linking to after Class XII (C-2). Y.K. Alagh Committee (2001) recommended objective methodology for personality assessment (D-3).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Committees and Commissions"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-93",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Local Government",
+    "text": "Under which one among the following Articles of the Constitution of India, the seats are reserved for the Scheduled Caste and the Scheduled Tribe in every Municipality?",
+    "options": [
+      "Article 243-R",
+      "Article 243-S",
+      "Article 243-T",
+      "Article 243-ZA"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 243T of the Indian Constitution deals with the reservation of seats for Scheduled Castes and Scheduled Tribes in every Municipality. (Article 243D provides for the same in Panchayats).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Local Government"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-94",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Governance",
+    "text": "Which of the following statements is/are correct?\n1. The abolition of the Official Secrets Act, 1923 was recommended by the Second Administrative Reforms Commission\n2. The Right to Information Act was enacted in 2005\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is correct: The Second Administrative Reforms Commission (2nd ARC) in its report \"Right to Information: Master Key to Good Governance\" recommended the repeal of the Official Secrets Act, 1923, and substituting it with a chapter in the National Security Act. Statement 2 is correct: The RTI Act was passed and enacted in 2005.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Governance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-95",
+    "year": 2024,
+    "subject": "Science & Technology",
+    "topic": "Defense Technology",
+    "text": "\"Mission Shakti\" (DRDO) is the name given by India to",
+    "options": [
+      "Inter-Continental Ballistic Missile",
+      "Air-to-Air Missile",
+      "Anti-Satellite Missile",
+      "Nuclear-Powered Attack Submarine"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mission Shakti was a joint programme of the Defence Research and Development Organisation (DRDO) and the Indian Space Research Organisation (ISRO). Under this mission, India successfully tested an Anti-Satellite (ASAT) weapon on March 27, 2019, destroying a live satellite in Low Earth Orbit.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Science & Technology"
+      },
+      {
+        "type": "topic",
+        "label": "Defense Technology"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-96",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Public Finance",
+    "text": "Consider the following statements:\n1. The 15th Finance Commission used fiscal effort as a criterion for horizontal devolution unlike the 14th Finance Commission\n2. Both the 14th and the 15th Finance Commission used pre-2011 demographic variables as a criteria for horizontal devolution\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct: The 15th Finance Commission introduced 'tax and fiscal efforts' (2.5% weight) as a criterion for horizontal devolution, which was absent in the 14th Finance Commission. Statement 2 is incorrect: The 15th Finance Commission completely discarded the 1971 population data and solely used the 2011 demographic data (post-2011 technically, or exactly 2011) unlike the 14th which used both 1971 and 2011.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Public Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-97",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Social Sectors",
+    "text": "Which of the following does NOT show an improvement in rural areas from the National Family Health Survey 4 to National Family Health Survey 5?",
+    "options": [
+      "Infant mortality rate",
+      "Obesity in women",
+      "Anaemia in children",
+      "Total fertility rate"
+    ],
+    "correctAnswer": 2,
+    "explanation": "According to the NFHS-5 data, the prevalence of anaemia among children aged 6-59 months actually worsened (increased) significantly from 58.6% in NFHS-4 to 67.1% in NFHS-5 overall, showing no improvement. (Note: Obesity also increased, which is technically a worsening health outcome, but Anaemia in children is universally highlighted as a major setback in the report).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Social Sectors"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-98",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Microeconomics",
+    "text": "Consider the following statements:\n1. Burden of a tax on a commodity is independent of who (buyer or seller) it is explicitly imposed upon\n2. Burden of a tax on a commodity depends on the slope of the demand and supply curves\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. In economics, the statutory incidence of a tax (who physically pays the tax to the government) does not determine the economic incidence (who bears the actual burden). The burden depends entirely on the relative price elasticities (slopes) of the demand and supply curves.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Microeconomics"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-99",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Macroeconomics",
+    "text": "In recent years, which one among the following is the source of demand in the Indian economy in descending order?",
+    "options": [
+      "Private Consumption, Government Consumption, Net Exports, Gross Fixed Capital Formation",
+      "Government Consumption, Private Consumption, Net Exports, Gross Fixed Capital Formation",
+      "Private Consumption, Gross Fixed Capital Formation, Government Consumption, Net Exports",
+      "Government Consumption, Private Consumption, Gross Fixed Capital Formation, Net Exports"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the Indian economy, Private Final Consumption Expenditure (PFCE) accounts for the largest share of GDP (around 55-60%). This is followed by Gross Fixed Capital Formation (GFCF, around 28-32%), then Government Final Consumption Expenditure (GFCE, around 10-12%), and finally Net Exports (which is usually negative as imports exceed exports). Thus, the descending order is Private Consumption, GFCF, Government Consumption, Net Exports.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Macroeconomics"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-100",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Public Finance",
+    "text": "What is the percentage weightage assigned to Forest and Ecology in the devolution formula given by the Fifteenth Finance Commission of India for sharing of Union tax revenue with the States?",
+    "options": [
+      "10%",
+      "15%",
+      "7.5%",
+      "2.5%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 15th Finance Commission assigned a weight of 10% to the 'Forest and Ecology' criterion for horizontal devolution of taxes among the states, an increase from the 7.5% assigned by the 14th Finance Commission.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Public Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-101",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Monetary Policy",
+    "text": "Consider the following statements regarding instruments of Monetary Policy:\n1. The Central Bank can increase the money supply by increasing the bank rate\n2. The Central Bank can increase the money supply by purchasing securities from the public\n3. The Central Bank can decrease the money supply by increasing the cash reserve ratio\nWhich of the statements given above is/are correct?",
+    "options": [
+      "2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect: Increasing the bank rate makes borrowing more expensive, which decreases the money supply. Statement 2 is correct: Open Market Operations (OMO) involving purchasing securities injects liquidity (increases money supply). Statement 3 is correct: Increasing the Cash Reserve Ratio (CRR) leaves less money with banks to lend, thereby decreasing the money supply.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Monetary Policy"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-102",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Infrastructure",
+    "text": "Which of the following statements with regard to National Logistics Policy (NLP) is NOT correct?",
+    "options": [
+      "NLP was launched in 2022",
+      "NLP would improve the competitiveness of Indian goods",
+      "NLP would enhance economic growth and increase employment opportunities",
+      "NLP would provide an opportunity for deleveraging balance sheets and providing fiscal space for investment in new infrastructure assets"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Option (d) describes the primary objective of the National Monetisation Pipeline (NMP), not the National Logistics Policy (NLP). NMP is about unlocking value from brownfield projects by engaging the private sector, which helps deleverage balance sheets and provides fiscal space. The NLP, launched in 2022, focuses on reducing logistics costs, improving competitiveness, and boosting economic growth.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Infrastructure"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-103",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Microeconomics",
+    "text": "Consider the following statements regarding Public Goods and Externalities:\n1. Non-rivalry and non-excludability are two characteristics of Public Goods\n2. Market can provide the optimal amount of a good in the presence of externalities\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct: Public goods are defined by non-rivalry (one person's consumption doesn't reduce another's) and non-excludability (you cannot stop someone from using it). Statement 2 is incorrect: In the presence of externalities (positive or negative), the free market fails to provide the socially optimal amount of a good, leading to market failure.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Microeconomics"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-104",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Public Finance",
+    "text": "Population of the year 2011 was first introduced in the tax devolution formula for sharing Union tax revenue with the States by",
+    "options": [
+      "Thirteenth Finance Commission",
+      "Fifteenth Finance Commission",
+      "Fourteenth Finance Commission",
+      "Twelfth Finance Commission"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 14th Finance Commission was the first to introduce the 2011 census population data into the tax devolution formula (giving it a 10% weight, while keeping the 1971 population data at a 17.5% weight) to reward states that controlled population while reflecting the latest demographic realities.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Public Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-105",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Government Schemes",
+    "text": "Which of the following statements is NOT correct for Pradhan Mantri Mudra Yojana (PMMY)?",
+    "options": [
+      "It was launched in 2015",
+      "It grants loans of up to 15 lakhs for income generating manufacturing, trading and services sectors",
+      "Under this scheme only the term loan requirements can be met and not the working capital requirements",
+      "There is no insistence on collateral for the sanction of loan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Option (c) is incorrect because PMMY covers both term loans and working capital requirements (often provided via MUDRA cards). Also note that while the original limit was Rs 10 lakh, it was expanded in subsequent years, but the glaring factual error here remains the assertion that it does not meet working capital requirements.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-106",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Economic Reforms",
+    "text": "What were the main reforms undertaken under the New Economic Policy of the early 1990s?\n1. Trade liberalization\n2. Public Sector Disinvestment\n3. Poverty Alleviation\n4. Rapid industrialization\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "3 and 4",
+      "1 and 2",
+      "2 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The New Economic Policy (LPG Reforms) of 1991 primarily focused on Liberalization (including trade liberalization), Privatization (including public sector disinvestment), and Globalization. While poverty alleviation and rapid industrialization are broader economic goals, the specific structural reforms undertaken were trade liberalization and public sector disinvestment.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Economic Reforms"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-107",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Infrastructure",
+    "text": "Consider the following statements:\n1. National Monetisation Pipeline estimates that for the period 2022-2025, the top three sectors in terms of monetization potential are roads, railways, and oil and gas pipelines\n2. Under the National Monetisation Pipeline, the instruments to be used for asset monetization include Public-Private Partnership concessions and Infrastructure Investment Trusts\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect: The top 3 sectors by estimated value under the National Monetisation Pipeline (NMP) are Roads (27%), Railways (25%), and Power Sector (15%), not oil and gas pipelines. Statement 2 is correct: The primary instruments for asset monetization under NMP include direct contractual approaches like PPP concessions and capital market instruments like Infrastructure Investment Trusts (InvITs).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Infrastructure"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-108",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Inflation",
+    "text": "Retail core inflation is calculated excluding which of the following?\n1. Food and beverages\n2. Fuel and light\n3. Transport and communication\n4. Clothing and Education\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4",
+      "3 and 4 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Core inflation is a measure of inflation that excludes highly volatile items from the Consumer Price Index (CPI) basket. In India, retail core inflation is calculated by excluding 'food and beverages' and 'fuel and light' components from the headline CPI.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Inflation"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-109",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Public Finance",
+    "text": "Which of the following is a part of the capital receipt of the Government of India?\n1. Disinvestment receipts\n2. Interest receipts\n3. Small savings\n4. Net market borrowing\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 3 only",
+      "2 and 4 only",
+      "1, 2, 3 and 4",
+      "1, 3 and 4 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Capital receipts are those receipts that either create a liability or cause a reduction in the assets of the government. Disinvestment receipts (reduces assets), small savings (creates liability), and net market borrowings (creates liability) are capital receipts. Interest receipts are revenue receipts because they neither create a liability nor reduce assets.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Public Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-110",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Public Finance",
+    "text": "Arrange the following sources of revenue of the Central Government in ascending manner in terms of percentage contribution to the total revenues of the Central Government in 2023-24",
+    "options": [
+      "Union Excise Duty, Custom, Corporation Tax, GST",
+      "Custom, Union Excise Duty, GST, Corporation Tax",
+      "Custom, Union Excise Duty, Corporation Tax, GST",
+      "Custom, GST, Union Excise Duty, Corporation Tax"
+    ],
+    "correctAnswer": 2,
+    "explanation": "According to the Union Budget 2023-24 estimates (Rupee Comes From), the relative percentage contributions to the total revenue are approximately: Customs (4%), Union Excise Duties (7%), Corporation Tax (15%), and GST (17%). Thus, the ascending order is Custom, Union Excise Duty, Corporation Tax, GST.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Public Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-111",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "Which of the following statements with regard to the outcomes of the talks between the Prime Minister of India and the President of UAE held in February, 2024 is/are correct?\n1. Both countries signed an agreement on inter-linking of domestic debit/credit cards\n2. An MoU was signed on cooperation in digital infrastructure projects\n3. Both countries agreed that a Bilateral Investment Treaty shall be signed in the next meeting at the ministerial level\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statements 1 and 2 are correct: India and UAE signed agreements to inter-link their domestic card networks (RuPay and JAYWAN) and signed an MoU on digital infrastructure projects. Statement 3 is incorrect: The Bilateral Investment Treaty (BIT) was actually signed *during* this February 2024 visit itself, not deferred to a future ministerial meeting.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-112",
+    "year": 2024,
+    "subject": "Economy",
+    "topic": "Foreign Trade",
+    "text": "Which of the following is NOT one of the pillars of India's 'Foreign Trade Policy-2023'?",
+    "options": [
+      "Enlarging MFN (Most Favored Nations)",
+      "Export promotion through collaboration",
+      "Ease of doing business",
+      "Emerging areas - streamlining SCOMET policy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "India's Foreign Trade Policy (FTP) 2023 rests on four main pillars: (i) Incentive to Remission, (ii) Export promotion through collaboration - Exporters, States, Districts, Indian Missions, (iii) Ease of doing business, reduction in transaction cost and e-initiatives, and (iv) Emerging Areas – E-Commerce Developing Districts as Export Hubs and streamlining SCOMET policy. Enlarging MFN is not one of these pillars.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Foreign Trade"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-113",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "Which of the following statements about 'Vibrant Village Programme' of the Government of India is/are correct?\n1. It aims at comprehensive development of the identified villages\n2. Fairs, festivals, sports meet etc. are organized under this programme\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The Vibrant Villages Programme (VVP) is a Centrally Sponsored Scheme aimed at the comprehensive development of selected villages in border blocks. As part of promoting tourism, cultural heritage, and community engagement, organizing fairs, festivals, and sports meets is a key component of the scheme.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-114",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Summits",
+    "text": "Which of the following countries chaired the 43rd ASEAN SUMMIT?",
+    "options": [
+      "Thailand",
+      "Philippines",
+      "Indonesia",
+      "Cambodia"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 43rd ASEAN Summit was held in September 2023 in Jakarta, and it was chaired by Indonesia.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Summits"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-115",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honors",
+    "text": "Which one among the following Indian PSUs has been declared as the winner at the Brandon Hall Group's Excellence in Technology Award-2023?",
+    "options": [
+      "NTPC",
+      "BHEL",
+      "Balmer Lawrie",
+      "HPCL"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NTPC Limited, India's largest power utility, won the Brandon Hall Group's Excellence in Technology Award 2023 for its innovative approaches in corporate HR and technology integration.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Awards and Honors"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-116",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which of the following two organizations are parts of TIWB (Tax Inspectors Without Borders)?",
+    "options": [
+      "United Nations Development Programme (UNDP) and Association of Southeast Asian Nations (ASEAN)",
+      "Organization for Economic Cooperation and Development (OECD) and ASEAN",
+      "UNDP and Organization for Economic Cooperation and Development (OECD)",
+      "International Labour Organization (ILO) and ASEAN"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tax Inspectors Without Borders (TIWB) is a joint initiative of the United Nations Development Programme (UNDP) and the Organisation for Economic Co-operation and Development (OECD) designed to support developing countries in building tax audit capacity.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Organizations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-117",
+    "year": 2024,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Which of the following countries does NOT share boundary with Ukraine?",
+    "options": [
+      "Romania",
+      "Moldova",
+      "Poland",
+      "Lithuania"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ukraine shares its borders with Russia, Belarus, Poland, Slovakia, Hungary, Romania, and Moldova. It does not share a border with Lithuania; Belarus lies between Ukraine and Lithuania.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-118",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Economy",
+    "text": "JAYWAN is the domestic Debit Card of which of the following countries?",
+    "options": [
+      "UAE",
+      "Egypt",
+      "Saudi Arabia",
+      "Nepal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "JAYWAN is the domestic card payment scheme of the United Arab Emirates (UAE). An agreement to inter-link India's RuPay and UAE's JAYWAN was signed in February 2024.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Economy"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-119",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honors",
+    "text": "Who, amongst the following, has won International Emmy Award-2023 for 'Best Actor'?",
+    "options": [
+      "Jim Sarbh",
+      "Shefali Shah",
+      "Vir Das",
+      "Martin Freeman"
+    ],
+    "correctAnswer": 3,
+    "explanation": "At the 2023 International Emmy Awards, British actor Martin Freeman won the Best Actor award for his performance in 'The Responder'. Jim Sarbh was nominated in the same category but did not win.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Awards and Honors"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-120",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "Which of the following statements about CBAM (Carbon Border Adjustment Mechanisms) is/are correct?\n1. These are an emerging set of trade policy tools to allow movement of carbon-intensive economic activity from a jurisdiction having less stringent climate policy to a jurisdiction having stringent climate policy\n2. These are meant to increase the environmental effectiveness of climate policies\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect: Carbon Border Adjustment Mechanisms (CBAM) are designed to *prevent* \"carbon leakage\", which is the movement of carbon-intensive production from jurisdictions with strict climate policies to those with less stringent policies. It puts a fair price on the carbon emitted during the production of carbon-intensive goods entering the enforcing jurisdiction. Statement 2 is correct: CBAM aims to increase the environmental effectiveness of domestic climate policies by ensuring that domestic efforts to reduce emissions are not offset by increased emissions outside their borders.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Climate Change"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-121",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honors",
+    "text": "Which of the following statements about the Nobel Peace Prize for 2023 is/are correct?\n1. The 2023 Nobel Peace Prize was awarded to Narges Mohammadi\n2. Narges Mohammadi was awarded the prize for her struggle to bring peace in Afghanistan and Iran\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct: The 2023 Nobel Peace Prize was awarded to Iranian activist Narges Mohammadi. Statement 2 is incorrect: She was awarded the prize specifically for her fight against the oppression of women in Iran and her struggle to promote human rights and freedom for all, not for bringing peace in Afghanistan.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Awards and Honors"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-122",
+    "year": 2024,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "Which one among the following statements with regard to the United Nations Climate Change Conference (COP28) is NOT correct?",
+    "options": [
+      "The 'Global Stocktake' is the central outcome of COP28",
+      "It recognized the need to limit global warming to 1.5°C",
+      "It directed the developing countries to lead the transition away from fossil fuel",
+      "It emphasized accelerated phase-down of coal-power"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Option (c) is not correct. The COP28 agreement called on *all* parties (countries) to contribute to global efforts to transition away from fossil fuels in energy systems, in a just, orderly, and equitable manner. It did not single out or direct 'developing countries' specifically to lead this transition; typically, international climate agreements emphasize that developed countries should take the lead based on historic responsibility.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Climate Change"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-123",
+    "year": 2024,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "Which of the following statements with regard to the Anoop Barenwal v. Union of India (2023) case is/are correct?\n1. The case was heard by a Constitutional Bench\n2. According to the judgment, the grounds for removal of Election Commissioners shall be the same as the Chief Justice of India\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct: The case regarding the appointment process of the Chief Election Commissioner (CEC) and Election Commissioners (ECs) was heard by a 5-judge Constitution Bench of the Supreme Court. Statement 2 is incorrect: The Supreme Court judgment directed the formation of a committee for appointments but specifically declined to equate the removal process of Election Commissioners with that of the CEC (which is akin to a Supreme Court judge). ECs continue to be removed on the recommendation of the CEC.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Judiciary"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-124",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "Institutions",
+    "text": "The National Council of Science Museums (NCSM), which is developing Science Centres/Museums/Innovation Hubs in India, works under",
+    "options": [
+      "the Ministry of Science and Technology",
+      "the Ministry of Culture",
+      "the Ministry of Education",
+      "the Ministry of Earth Sciences"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The National Council of Science Museums (NCSM) is an autonomous society under the Ministry of Culture, Government of India. It is primarily engaged in popularizing science and technology through a network of science centres and museums.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Institutions"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2024-125",
+    "year": 2024,
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which one among the following cities was included as the 'City of Music' in the year 2023 in the UNESCO's Creative Cities Network?",
+    "options": [
+      "Kozhikode",
+      "Chennai",
+      "Varanasi",
+      "Gwalior"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In 2023, UNESCO designated Gwalior as a 'City of Music' in its Creative Cities Network, recognizing its rich musical heritage (notably the Gwalior Gharana). In the same year, Kozhikode was named a 'City of Literature'.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Organizations"
+      },
+      {
+        "type": "pyq",
+        "label": "UPSC CAPF 2024"
+      }
+    ]
+  }
+]

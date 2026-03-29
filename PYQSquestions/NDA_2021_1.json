@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "nda-2021-1-q1",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Her smile was contagious.",
+    "options": [
+      "arrogant",
+      "disrespectful",
+      "sarcastic",
+      "catching"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The word 'contagious' means likely to spread to and affect others, which is synonymous with 'catching'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q2",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Her dynamic nature impressed everyone.",
+    "options": [
+      "enduring",
+      "attentive",
+      "evolutionary",
+      "jealous"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Among the given options, 'evolutionary' is closest to 'dynamic', implying constant change, activity, or progress.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q3",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "She was lamenting her destiny.",
+    "options": [
+      "celebrating",
+      "bemoaning",
+      "blaming",
+      "making"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To 'lament' means to express passionate grief or sorrow, which is synonymous with 'bemoaning'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q4",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Under his leadership the company grew in an organic manner.",
+    "options": [
+      "natural",
+      "speedy",
+      "unusual",
+      "disciplined"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In this context, 'organic' growth refers to a 'natural' and gradual process of expansion.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q5",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "His charm lies in his oratory.",
+    "options": [
+      "deceit",
+      "eloquence",
+      "looks",
+      "nobility"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The word 'oratory' refers to the art of public speaking, which is synonymous with 'eloquence'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q6",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "She is a patron of art and culture.",
+    "options": [
+      "entrepreneur",
+      "admirer",
+      "critique",
+      "backer"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A 'patron' is a person who gives financial or other support to a person, organization, cause, or activity, meaning a 'backer'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q7",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Arrogance is a hallmark of his nature.",
+    "options": [
+      "concern",
+      "unpretentiousness",
+      "conceit",
+      "simplicity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Arrogance' is an exaggerated sense of one's own importance or abilities, which is synonymous with 'conceit'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q8",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "She undertook a reconnaissance of the entire issue.",
+    "options": [
+      "revaluation",
+      "ratification",
+      "investigation",
+      "regularisation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Reconnaissance' refers to preliminary surveying or research, which is akin to an 'investigation'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q9",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "My daughter is my replica.",
+    "options": [
+      "pride",
+      "clone",
+      "love",
+      "original"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A 'replica' is an exact copy or model of something, synonymous with a 'clone' in this figurative context.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q10",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The sardonic nature of her stories made her stand out among the contemporary writers.",
+    "options": [
+      "compassionate",
+      "insightful",
+      "mocking",
+      "comic"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Sardonic' means grimly mocking or cynical.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q11",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "He found her extremely attractive and charming.",
+    "options": [
+      "unnatural",
+      "modern",
+      "repulsive",
+      "disapproving"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The opposite of 'attractive' is 'repulsive'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q12",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The sky is boundless.",
+    "options": [
+      "high",
+      "vast",
+      "expansive",
+      "finite"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The opposite of 'boundless' (unlimited) is 'finite' (having limits or bounds).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q13",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The sky is clear today.",
+    "options": [
+      "bright",
+      "opaque",
+      "cloudless",
+      "blue"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The opposite of 'clear' (transparent/see-through) is 'opaque'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q14",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "I have a fascination for deep waters.",
+    "options": [
+      "dark",
+      "light",
+      "dangerous",
+      "shallow"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The opposite of 'deep' is 'shallow'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q15",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "My boss has been too generous.",
+    "options": [
+      "stingy",
+      "rough",
+      "evil",
+      "hostile"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The opposite of 'generous' (liberal in giving) is 'stingy' (unwilling to give or spend).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q16",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Spring is a time of plenty.",
+    "options": [
+      "ugliness",
+      "scarcity",
+      "roughness",
+      "dryness"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The opposite of 'plenty' (abundance) is 'scarcity'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q17",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "He is an industrious workman.",
+    "options": [
+      "active",
+      "productive",
+      "lazy",
+      "disloyal"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The opposite of 'industrious' (hard-working) is 'lazy'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q18",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Plants grow in abundance here.",
+    "options": [
+      "shrivel",
+      "stretch",
+      "spread",
+      "enlarge"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The opposite of 'grow' (thrive/expand) is 'shrivel' (wither/shrink).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q19",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "She rarely comes here.",
+    "options": [
+      "seldom",
+      "never",
+      "always",
+      "frequently"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The opposite of 'rarely' is 'frequently'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q20",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "She is a rather crooked woman.",
+    "options": [
+      "polite",
+      "generous",
+      "straightforward",
+      "happy"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The opposite of 'crooked' (dishonest or evasive) is 'straightforward'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q21",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Overstep the mark",
+    "options": [
+      "To tell people how successful you are",
+      "To step into someone else's areas of expertise",
+      "To upset someone by doing/saying more than you should",
+      "To do something in an excited way"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'overstep the mark' means to go beyond what is proper or acceptable, thereby upsetting someone.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q22",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Palsy-walsy friends",
+    "options": [
+      "Good friends",
+      "Friends who help each other in difficult situations",
+      "Friends by choice, and not by chance",
+      "Unfriendly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The phrase 'palsy-walsy' means very friendly or chummy, indicating good friends.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q23",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Open a Pandora's box",
+    "options": [
+      "To do something that causes a lot of new problems that you did not expect",
+      "To do something out of compulsion",
+      "To do something beyond expectation",
+      "To do something out of the box, that causes awards and ceremonies for you"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'open a Pandora's box' is to start a process that causes many unforeseen and unmanageable problems.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q24",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Pull your socks up",
+    "options": [
+      "To get well-dressed for the occasion",
+      "Improve your work or behaviour",
+      "To speak in an honest way without hesitation",
+      "To be in control of an organization, often secretly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To 'pull your socks up' is an idiom meaning to make an effort to improve your performance or behavior.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q25",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "To get under somebody's skin",
+    "options": [
+      "To deceive someone",
+      "To admire someone",
+      "To annoy someone",
+      "To support someone"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'get under somebody's skin' means to annoy or irritate them intensely.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q26",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Turn topsy-turvy",
+    "options": [
+      "To completely change something",
+      "To completely evaluate something",
+      "To enjoy yourself greatly",
+      "To exhaust yourself completely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'turn topsy-turvy' means to turn something upside down or into a state of utter confusion and change.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q27",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "A clarion call",
+    "options": [
+      "A trumpet call",
+      "An intimidating voice",
+      "A strong request",
+      "An urgent order"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 'clarion call' is a strongly expressed demand or request for action.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q28",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Fire in the belly",
+    "options": [
+      "Fear and hatred",
+      "Powerful ambition",
+      "Love and dedication",
+      "Lethargy and indifference"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Having 'fire in the belly' means possessing a strong ambition, determination, or passion.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q29",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "A hunky-dory situation",
+    "options": [
+      "There are serious issues among people",
+      "There are no problems and people are happy",
+      "There is war and bloodshed all over",
+      "There is no work, only enjoyment"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If a situation is 'hunky-dory', it means everything is fine, perfectly satisfactory, and there are no problems.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q30",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Give somebody a leg up",
+    "options": [
+      "To pull someone down",
+      "To deceive and betray someone",
+      "To help someone for their livelihood",
+      "To help someone to be successful"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'give somebody a leg up' means to help them improve their situation, especially to become successful.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q31",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "You don't have a monopoly on suffering; other people don't have problems too. No error",
+    "options": [
+      "You don't have a monopoly on suffering;",
+      "other people don't have",
+      "problems too.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The error lies in part (b). The sentence should read 'other people have problems too' to maintain logical consistency.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q32",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "If you say that someone you admire has feet of clay, you mean that they have hidden faults. No error",
+    "options": [
+      "If you say that someone",
+      "you admire has feet of clay,",
+      "you mean that they have hidden faults.",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "There is no grammatical or logical error in this sentence.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q33",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "He refused to change his decision; he refused it point out. No error",
+    "options": [
+      "He refused to change his decision;",
+      "he refused it",
+      "point out.",
+      "No error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct phrase is 'point blank', not 'point out'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q34",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The importance of trade in Mughal times reinforced the cultural definition of wealth as something comprising of movable property. No error",
+    "options": [
+      "The importance of trade in Mughal times reinforced",
+      "the cultural definition of wealth as something",
+      "comprising of movable property.",
+      "No error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The word 'comprising' takes a direct object without the preposition 'of'. It should be 'comprising movable property'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q35",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "In the nineteenth century, most traditional scholars tried to stay clear from the imperial Government. No error",
+    "options": [
+      "In the nineteenth century, most traditional scholars",
+      "tried to stay clear",
+      "from the imperial Government.",
+      "No error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct idiom is 'stay clear of', not 'stay clear from'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q36",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "He began his discussion by pointing over that men and women had different biological functions. No error",
+    "options": [
+      "He began his discussion by pointing over",
+      "that men and women",
+      "had different biological functions.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct phrasal verb is 'pointing out', not 'pointing over'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q37",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Though he is poor, but he is honest. No error",
+    "options": [
+      "Though he is poor,",
+      "but he is",
+      "honest.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When a sentence starts with 'Though', it should be followed by 'yet' or a comma, not 'but'. The word 'but' is superfluous.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q38",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "My mother has been doing everything for the family. No error",
+    "options": [
+      "My mother has been",
+      "doing everything",
+      "for the family.",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sentence is grammatically correct.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q39",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "When learning to dive it is important to relax in between and take breaks. No error",
+    "options": [
+      "When learning to dive",
+      "it is important to relax in between",
+      "and take breaks.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The phrase 'relax in between' is grammatically incorrect in this context without an object; it should be 'relax between dives'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q40",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "I have the opportunity to study in America next year. No error",
+    "options": [
+      "I have the opportunity",
+      "to study",
+      "in America next year.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The indefinite article should be used here: 'I have an opportunity'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q41",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "There was a time when West Germany was a distinct ________.",
+    "options": [
+      "policy",
+      "polity",
+      "abstract",
+      "hierarchy"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A 'polity' refers to a form or process of civil government or constitution, which fits the context of West Germany being a distinct state.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q42",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "I was ________ with the film; I had expected it to be better.",
+    "options": [
+      "disappointed",
+      "disappointing",
+      "annoying",
+      "prejudiced"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Disappointed' correctly describes the speaker's feeling of letdown.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q43",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "It was a ________ experience. Everybody was shocked.",
+    "options": [
+      "terrified",
+      "horrified",
+      "terrifying",
+      "denouncing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The experience itself causes terror, hence it is 'terrifying'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q44",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "Elephants ________ when they perceive danger.",
+    "options": [
+      "trumpet",
+      "frolic",
+      "whine",
+      "sing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The characteristic sound an elephant makes, especially when alarmed, is 'trumpeting'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q45",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The first film on Tagore was such a success that now they are going to make a ________.",
+    "options": [
+      "serial",
+      "sequence",
+      "sequel",
+      "sequential"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 'sequel' is a published, broadcast, or recorded work that continues the story or develops the theme of an earlier one.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q46",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The United Nations had ________ 2020 as the International Year of Plant Health.",
+    "options": [
+      "ruled",
+      "ordered",
+      "foretold",
+      "declared"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The United Nations 'declares' specific years to mark international observances.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q47",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "My brother is ________ punctual, but he is late today.",
+    "options": [
+      "normatively",
+      "primarily",
+      "normally",
+      "basically"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Normally' indicates what happens typically or under normal circumstances.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q48",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "My son is very ________; he trusts everyone.",
+    "options": [
+      "fallible",
+      "gullible",
+      "sensible",
+      "credible"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Gullible' describes someone who is easily persuaded to believe something or trust others too readily.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q49",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "Mahatma Gandhi was a lover of humanity and a ________ believer in the goodness of human nature.",
+    "options": [
+      "staunch",
+      "powerful",
+      "cheerful",
+      "hopeful"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A 'staunch' believer is someone who is firm and steadfast in their beliefs.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q50",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "I wish I ________ her before we met.",
+    "options": [
+      "know",
+      "have known",
+      "knew",
+      "known"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The past subjunctive 'knew' is used after 'wish' to express a desire for a different present or past state.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q51",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Consider the following statements about Light year:\n1. Light year is a unit for measurement of very large distances.\n2. Light year is a unit for measurement of very large time intervals.\n3. Light year is a unit for measurement of intensity of light.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A light-year is a unit of length used to express astronomical distances and is equivalent to the distance that light travels in vacuum in one Julian year.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q52",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following regarding density of water at atmospheric pressure is correct?",
+    "options": [
+      "Density of water at 4°C is 1000 kg/m³.",
+      "Density of water at 0°C is 1000 kg/m³.",
+      "Density of water at 0°C is 100 kg/m³.",
+      "Density of water at 4°C is 10 kg/m³."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Water has its maximum density of approximately 1000 kg/m³ at 4°C.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q53",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which of the following pairs of physical phenomenon and the discoverer is/are correctly matched?\n1. James Chadwick : Photoelectric effect\n2. Albert Einstein : Neutron\n3. Marie Curie : Radium\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "2 and 3 only",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "James Chadwick discovered the neutron, Einstein discovered the law of the photoelectric effect, and Marie Curie discovered Radium and Polonium.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q54",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "LED (a semi-conductor device) is an abbreviation that stands for",
+    "options": [
+      "Licence for Energy Detector.",
+      "Light Energy Device.",
+      "Light Emitting Diode.",
+      "Lost Energy Detector."
+    ],
+    "correctAnswer": 2,
+    "explanation": "LED stands for Light Emitting Diode.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q55",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The statement \"friction force is a contact force while magnetic force is a non-contact force\" is",
+    "options": [
+      "always true.",
+      "true only at 0°C.",
+      "a false statement.",
+      "either true or false depending upon the temperature of the surroundings."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Friction inherently requires physical contact between surfaces, whereas magnetic force acts over a distance through a field.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q56",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following is the chemical formula of Hypobromous acid?",
+    "options": [
+      "HBrO4",
+      "HOBr",
+      "HBr",
+      "HBrO3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hypobromous acid is a weak, unstable acid with the chemical formula HOBr.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q57",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "The composition of gases in exosphere is",
+    "options": [
+      "Helium and Hydrogen.",
+      "Neon and Oxygen.",
+      "Neon and Hydrogen.",
+      "Helium and Neon."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The exosphere, the outermost layer of Earth's atmosphere, is composed mainly of extremely low densities of hydrogen and helium.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q58",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following is not used as a raw material in the manufacture of glass?",
+    "options": [
+      "Soda",
+      "Alumina",
+      "Borax",
+      "Gypsum"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Gypsum is used in the manufacture of cement and plaster, not glass. Glass requires silica, soda ash, limestone, and sometimes alumina or borax.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q59",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "In electrolytic refining of copper, the electrolyte is a solution of",
+    "options": [
+      "acidified copper chloride.",
+      "acidified copper sulphate.",
+      "potassium chloride.",
+      "sodium sulphate."
+    ],
+    "correctAnswer": 1,
+    "explanation": "In the electrolytic refining of copper, an acidified solution of copper sulphate is used as the electrolyte.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q60",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Solder is an alloy of",
+    "options": [
+      "Cu and Sn.",
+      "Fe and Zn.",
+      "Pb and Sn.",
+      "Ag and Zn."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Solder is a fusible metal alloy typically made of Lead (Pb) and Tin (Sn).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q61",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements about dihydrogen (H2) is not correct?",
+    "options": [
+      "H2 is lighter than air and insoluble in water.",
+      "H2 is inert at room temperature due to high H-H bond dissociation enthalpy.",
+      "H2 reacts with alkali metals at high temperature to yield metal hydrides.",
+      "A mixture of NO2 and H2 is known as Syngas."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Syngas (synthesis gas) is a mixture consisting primarily of hydrogen (H2) and carbon monoxide (CO), not NO2 and H2.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q62",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which of the following sets of elements has the same valency?",
+    "options": [
+      "Na, Mg, Ca",
+      "Na, Mg, Al",
+      "Mg, Ca, K",
+      "Mg, Ca, Ba"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Magnesium (Mg), Calcium (Ca), and Barium (Ba) are all alkaline earth metals (Group 2) and have a valency of 2.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q63",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following is the lowest possible temperature?",
+    "options": [
+      "0° Celsius",
+      "-073° Celsius",
+      "-173° Celsius",
+      "-273° Celsius"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Absolute zero, the lowest possible temperature where molecular motion ceases, is -273.15°C.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q64",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Numerically two thermometers, one in Fahrenheit scale and another in Celsius scale shall read same at",
+    "options": [
+      "-40°",
+      "0°",
+      "-273°",
+      "100°"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Celsius and Fahrenheit scales intersect at -40 degrees.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q65",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The image we see in plane mirror is",
+    "options": [
+      "real and thus can be photographed.",
+      "virtual and nearer than the object.",
+      "virtual and is laterally inverted.",
+      "real but cannot be photographed."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A plane mirror forms an image that is virtual, erect, laterally inverted, and at the same distance behind the mirror as the object is in front.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q66",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following colours may be obtained by combining green and red colours?",
+    "options": [
+      "Blue",
+      "Magenta",
+      "Pink",
+      "Yellow"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In additive color mixing (light), combining green and red light produces yellow light.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q67",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which of the following are the primary colours of light?",
+    "options": [
+      "Yellow, Red and Green",
+      "Blue, Red and Green",
+      "Violet, Red and Yellow",
+      "Indigo, Violet and Green"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The primary colors of light in the additive color system are Red, Green, and Blue (RGB).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q68",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "According to the New Cartesian Sign Convention, which one of the following is correct in respect of the formula 1/f = 1/v + 1/u where symbols have their usual meanings?",
+    "options": [
+      "It applies only to spherical mirrors.",
+      "It applies only to spherical lenses.",
+      "It applies to spherical mirrors as well as spherical lenses.",
+      "It is an invalid formula."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The formula 1/f = 1/v + 1/u is the standard mirror formula, applicable exclusively to spherical mirrors.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q69",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Movement of materials to different parts of cytoplasm and nucleus is generally carried out by",
+    "options": [
+      "Ribosomes.",
+      "Mitochondria.",
+      "Lysosomes.",
+      "Endoplasmic reticulum."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Endoplasmic Reticulum (ER) acts as a transport network for molecules targeting specific destinations within the cell.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q70",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In mitochondria, ATP synthesizing chemical reactions take place in the",
+    "options": [
+      "Outer membrane.",
+      "Matrix.",
+      "Inner membrane.",
+      "DNA of mitochondria."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The inner membrane of the mitochondria contains the electron transport chain and ATP synthase enzymes where ATP is synthesized.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q71",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Squamous epithelial cells are found in the inner lining of",
+    "options": [
+      "Oesophagus.",
+      "Small intestine.",
+      "Ducts of salivary gland.",
+      "Kidney."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Stratified squamous epithelium is found in the lining of the oesophagus to protect against abrasion.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q72",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Transformation of meristematic cells into specific permanent tissues occurs by the process of",
+    "options": [
+      "Cell differentiation.",
+      "Cell division.",
+      "Cell multiplication.",
+      "Cell regeneration."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cell differentiation is the process by which unspecialized (meristematic) cells take on individual characteristics to form permanent tissues.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q73",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The gaseous product of a process in plants is a requirement for another vital process that releases energy. Identify the correct combination of the process and product.",
+    "options": [
+      "Respiration and Nitric oxide",
+      "Transpiration and Water vapour",
+      "Photosynthesis and Oxygen",
+      "Germination and Carbon dioxide"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Photosynthesis produces Oxygen, which is required for cellular respiration (the process that releases energy).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q74",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In a dicot pot herb, vaseline/vegetable oil was applied on the upper surface of one leaf (Experimental leaf 1) and on the lower surface of another leaf (Experimental leaf 2). Vaseline/Vegetable oil was not applied on the control leaf. The plant was deliberately not watered for several days. Which leaf will dry up last?",
+    "options": [
+      "Experimental leaf 1",
+      "Experimental leaf 2",
+      "Control leaf",
+      "All the leaves will dry up simultaneously"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In dicots, stomata are predominantly on the lower surface. Coating the lower surface (Leaf 2) with vaseline prevents transpiration most effectively, causing it to retain water and dry up last.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q75",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following statements is not correct for light rays?",
+    "options": [
+      "Light travels at different speeds in different media.",
+      "Light travels at almost 300 million metres per second in air.",
+      "Light speeds down as it leaves a water surface and enters the air.",
+      "Light speeds up as it leaves a glass surface and enters the air."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Light travels faster in a rarer medium (air) than in a denser medium (water). Thus, it speeds up, not down, when leaving water for air.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q76",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A glass prism splits white light into different colours. This phenomenon is called dispersion of light by prism. Which one of the following statements is correct?",
+    "options": [
+      "Red light will deviate the most and it is because of the reflection of light.",
+      "Violet light will deviate the most and it is because of the refraction of light.",
+      "Red light will deviate the most and it is because of the refraction of light.",
+      "Violet light will deviate the most and it is because of the reflection of light."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dispersion is caused by refraction. Violet light bends (refracts) the most because it has the shortest wavelength and experiences the highest refractive index in glass.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q77",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A current of 1.0 A is drawn by a filament of an electric bulb for 10 minutes. The amount of electric charge that flows through the circuit is",
+    "options": [
+      "0.1 C",
+      "10 C",
+      "600 C",
+      "800 C"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Charge (Q) = Current (I) × Time (t). t = 10 mins = 600 seconds. Q = 1.0 A × 600 s = 600 Coulombs.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q78",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following formulas does not represent electrical power?",
+    "options": [
+      "I^2 R",
+      "I R^2",
+      "VI",
+      "V^2 / R"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The valid formulas for electrical power are P = VI, P = I^2 R, and P = V^2 / R. The expression I R^2 is dimensionally incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q79",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The sound created in a big hall persists because of the repeated reflections. The phenomenon is called",
+    "options": [
+      "Reverberation.",
+      "Dispersion.",
+      "Refraction.",
+      "Diffraction."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reverberation is the persistence of sound in an enclosed space after the original sound is removed, caused by multiple reflections.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q80",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "When light is scattered by a molecule and the frequency of the scattered light is changed, this phenomenon is called",
+    "options": [
+      "Rayleigh scattering.",
+      "Raman effect.",
+      "Photoelectric effect.",
+      "Rutherford scattering."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Raman effect describes the inelastic scattering of photons by molecules, resulting in a shift (change) in the frequency and wavelength of the scattered light.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q81",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements about the cleansing action of soap is not true?",
+    "options": [
+      "The oil and dirt gets collected in the centre of the micelle.",
+      "Soap micelles scatter light.",
+      "Soaps are ammonium salts of long chain carboxylic acids.",
+      "Soap forms insoluble precipitates with the calcium and magnesium ions in hard water."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Soaps are sodium or potassium salts of long-chain carboxylic acids, not ammonium salts.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q82",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Hydrogenation of vegetable oils using nickel catalyst is an example of",
+    "options": [
+      "Substitution reaction.",
+      "Elimination reaction.",
+      "Addition reaction.",
+      "Free-radical polymerization."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The hydrogenation of unsaturated vegetable oils involves adding hydrogen across the double bonds, making it an addition reaction.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q83",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following materials is not an allotrope of carbon?",
+    "options": [
+      "Diamond",
+      "Graphene",
+      "Fly ash",
+      "Fullerene"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fly ash is a coal combustion product containing various mineral impurities, mostly silicon dioxide and calcium oxide. It is not an allotrope of carbon like diamond, graphene, or fullerene.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q84",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following reactions does not result in the evolution of hydrogen gas?",
+    "options": [
+      "Reaction of zinc metal with dilute sulphuric acid solution",
+      "Mixing water to Plaster of Paris",
+      "Heating zinc metal with sodium hydroxide solution",
+      "Reaction of potassium metal with water"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mixing water with Plaster of Paris causes it to set into hard gypsum through a hydration reaction, but it does not evolve hydrogen gas.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q85",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following acids is predominantly found in tomatoes?",
+    "options": [
+      "Acetic acid",
+      "Tartaric acid",
+      "Oxalic acid",
+      "Lactic acid"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Oxalic acid and citric acid are predominantly found in tomatoes. (Tartaric is in grapes/tamarind, lactic in milk, acetic in vinegar).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q86",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following conclusions could not be derived from Rutherford's a-particle scattering experiment?",
+    "options": [
+      "Most of the space in the atom is empty.",
+      "The radius of the atom is about 10^5 times the radius of the nucleus.",
+      "Electrons move in a circular path of fixed energy called orbits.",
+      "Nearly all the mass of the atom resides in the nucleus."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The concept of electrons moving in specific, fixed-energy circular orbits was proposed by Niels Bohr, not Ernest Rutherford.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q87",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Reaction of quick lime (CaO) with water to produce slaked lime (Ca(OH)2) is an example of",
+    "options": [
+      "Displacement reaction.",
+      "Endothermic reaction.",
+      "Decomposition reaction.",
+      "Exothermic reaction."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The reaction of quick lime with water is highly exothermic, releasing a large amount of heat as it forms slaked lime.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q88",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Environment",
+    "text": "Which one of the following is not a bio-mass energy source?",
+    "options": [
+      "Wood",
+      "Nuclear reactor",
+      "Gobar gas",
+      "Coal"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A nuclear reactor relies on the fission of heavy elements like Uranium or Plutonium, which is not derived from biological matter.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Environment" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q89",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Twinkling of stars is due to",
+    "options": [
+      "particular frequencies of the starlight.",
+      "reflection of starlight from the oceanic surface.",
+      "atmospheric refraction of starlight.",
+      "magnetic field of Earth."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The twinkling of stars is an optical phenomenon caused by the continuous refraction (bending) of starlight as it passes through the fluctuating layers of Earth's atmosphere.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q90",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following cannot be the unit of frequency of a sound wave?",
+    "options": [
+      "dB",
+      "s^-1",
+      "Hz",
+      "min^-1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Decibel (dB) is a unit of sound intensity or loudness, not frequency. Frequency is measured in Hertz (Hz), s^-1, or min^-1.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q91",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "'Beats' is a phenomenon that occurs when frequencies of two harmonic waves are",
+    "options": [
+      "equal.",
+      "far apart.",
+      "multiples of each other.",
+      "nearly same."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Beats are produced by the interference of two sound waves having slightly different (nearly same) frequencies.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q92",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Light waves are incident on an air-glass boundary. Some of the light waves are reflected and some are refracted in the glass. Which one of the following properties is the same for the incident wave and the refracted wave?",
+    "options": [
+      "Speed",
+      "Direction",
+      "Brightness",
+      "Frequency"
+    ],
+    "correctAnswer": 3,
+    "explanation": "When light passes from one medium to another, its speed and wavelength change, but its frequency remains constant because it depends only on the source of the light.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q93",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following statements is true for a simple harmonic oscillator?",
+    "options": [
+      "Force acting is directly proportional to the displacement from the mean position and is in same direction.",
+      "Force acting is directly proportional to the displacement from the mean position and is in opposite direction.",
+      "Acceleration of the oscillator is constant.",
+      "The velocity of the oscillator is not periodic."
+    ],
+    "correctAnswer": 1,
+    "explanation": "In Simple Harmonic Motion (SHM), the restoring force is directly proportional to the displacement but acts in the opposite direction towards the equilibrium position (F = -kx).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q94",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "During seed germination, the part of the embryo which grows into root is",
+    "options": [
+      "Radicle.",
+      "Plumule.",
+      "Cotyledon.",
+      "Epicotyl."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The radicle is the embryonic root of the plant, which develops into the primary root during germination.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q95",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "In a typical flower, germinating pollen grains pass through several parts of the gynoecium before they reach the ovule. A list of the parts of gynoecium is given below in different combinations. Choose the combination that represents the correct sequence of pollen tube pathway/journey:",
+    "options": [
+      "Style, Stigma, Ovary",
+      "Stigma, Style, Ovary",
+      "Pistil, Stigma, Ovary",
+      "Ovary, Pistil, Style"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pollen lands on the stigma, germinates, and the pollen tube grows down through the style to reach the ovary.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q96",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "If human blood is placed in a 2% detergent solution, what will happen to the RBC?",
+    "options": [
+      "The RBC will shrink.",
+      "The RBC will swell and become turgid.",
+      "The RBC will swell and burst.",
+      "The RBC will lyse."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Detergents disrupt the lipid bilayer of the cell membrane, causing the Red Blood Cells (RBCs) to break open or lyse.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q97",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The major source of vitamins and minerals for vegetarians is",
+    "options": [
+      "black gram and wheat.",
+      "rice and mustard.",
+      "vegetables and fruits.",
+      "soya bean and milk."
+    ],
+    "correctAnswer": 2,
+    "explanation": "While grains and beans offer proteins and carbohydrates, fresh vegetables and fruits are the primary natural sources of essential vitamins and minerals for a vegetarian diet.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q98",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "If a ray of light enters from a rarer medium to a denser medium at zero angle of incidence, it would",
+    "options": [
+      "reflect back.",
+      "go straight.",
+      "turn towards right.",
+      "bend at 45°."
+    ],
+    "correctAnswer": 1,
+    "explanation": "If the angle of incidence is zero (normal incidence), the light ray enters perpendicular to the surface and passes straight through without bending (refracting).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q99",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Mirage is an illustration of",
+    "options": [
+      "only dispersion of light.",
+      "only reflection of light.",
+      "only total internal reflection of light.",
+      "both refraction and total internal reflection of light."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A mirage is formed due to the continuous atmospheric refraction of light through varying air density layers, followed by total internal reflection near the hot surface.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q100",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Common salt (NaCl) is not used as a raw material for preparation of which one of the following compounds?",
+    "options": [
+      "Bleaching powder",
+      "Baking soda",
+      "Plaster of Paris",
+      "Washing soda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Plaster of Paris is made from heating gypsum (Calcium sulphate dihydrate). It does not involve sodium chloride (common salt) as a raw material.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q101",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one of the following Harappan sites was a specialised centre for making shell objects?",
+    "options": [
+      "Lothal",
+      "Balakot",
+      "Amri",
+      "Kot Diji"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Balakot, along with Nageshwar, were coastal Harappan sites renowned as specialized centers for making shell objects like bangles, ladles, and inlay.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q102",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one of the following was not a part of the dhamma of King Ashoka?",
+    "options": [
+      "Honouring the king",
+      "Tolerance of religions other than one's own",
+      "Respecting Brahmanas",
+      "Promoting the welfare of his subjects"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ashoka's Dhamma emphasized moral and social codes like tolerance, respecting elders and Brahmanas, and public welfare, but it did not mandate 'honouring the king' as a religious duty.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q103",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which of the following statements about Saguna bhakti traditions is/are correct?\n1. Saguna bhakti traditions focus on the worship of specific deities such as Vishnu or his avatars.\n2. In Saguna bhakti traditions, Gods and Goddesses are conceptualised in anthropomorphic forms.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Saguna bhakti involves worshiping a personal God with attributes (form), often conceptualized in human-like (anthropomorphic) forms like Rama or Krishna.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q104",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "At which one of the following places was a Shiva temple not constructed under the patronage of the Chola rulers?",
+    "options": [
+      "Chidambaram",
+      "Thanjavur",
+      "Gangaikonda Cholapuram",
+      "Naneghat"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Naneghat in Maharashtra is famous for the inscriptions of the Satavahana dynasty, not the Chola rulers who built temples in Thanjavur, Chidambaram, and Gangaikonda Cholapuram.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q105",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which of the following statements about the Deccan Riots Commission is/are correct?\n1. The Commission did not hold enquiries in the districts which were not affected.\n2. The Commission did record the statements of ryots, sahukars and eye-witnesses.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Deccan Riots Commission recorded comprehensive statements from ryots, sahukars, and witnesses. However, statement 1 is incorrect because they also held inquiries in districts that were unaffected to act as a control comparison.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q106",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which one of the following is the correct meaning of ziyarat?",
+    "options": [
+      "Pilgrimage to the tombs of sufi saints",
+      "The practice of revenue farming",
+      "The death anniversary of a sufi shaikh",
+      "A form of Islamic divorce"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ziyarat refers to the pilgrimage to sites associated with Muhammad, his family, and descendants, or to the tombs of Sufi saints (dargahs).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q107",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Environment",
+    "text": "Keppel Island is completely bleached mainly due to the expansion of",
+    "options": [
+      "Starfish.",
+      "Blue whale.",
+      "Octopus.",
+      "Sea horse."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Keppel Island's coral reefs suffered significant bleaching and destruction largely due to the outbreak and expansion of the Crown-of-Thorns Starfish, which feed on coral polyps.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Environment" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q108",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian River System",
+    "text": "Which one of the following rivers is not a tributary of river Brahmaputra?",
+    "options": [
+      "River Manas",
+      "River Kameng",
+      "River Mahananda",
+      "River Subansiri"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Mahananda River is a trans-boundary river that flows through India and Bangladesh and is a major tributary of the Ganga, not the Brahmaputra.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian River System" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q109",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following is not a minor plate?",
+    "options": [
+      "Cocos Plate",
+      "Nazca Plate",
+      "Caroline Plate",
+      "Antarctic Plate"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Antarctic Plate is one of the seven major tectonic plates of the Earth, whereas Cocos, Nazca, and Caroline are considered minor plates.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q110",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Advantage(s) of tectonic activity in Iceland include(s):\n1. Source of natural geothermal energy\n2. Creation of new land\n3. Attraction of tourists\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Iceland's location on the Mid-Atlantic Ridge provides vast geothermal energy, builds new land via volcanism (like Surtsey), and drives a massive tourism industry around its geysers and volcanic landscapes.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q111",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "The process whereby certain minerals absorb water, expand and change is called as",
+    "options": [
+      "Hydration.",
+      "Oxidation.",
+      "Hydrolysis.",
+      "Carbonation."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hydration is the chemical weathering process where minerals absorb water into their structure, causing them to expand and change.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q112",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following is the longest Latitude?",
+    "options": [
+      "90 degree Latitude",
+      "23.5 degree Latitude",
+      "0.0 degree Latitude",
+      "66.5 degree Latitude"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 0.0 degree latitude is the Equator, which is a great circle and the longest line of latitude on Earth.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q113",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "If it is 12.00 Noon in India, on which meridian will it be 7.00 am of the same day?",
+    "options": [
+      "7.5 degree E. Longitude",
+      "7.5 degree W. Longitude",
+      "75 degree E. Longitude",
+      "75 degree W. Longitude"
+    ],
+    "correctAnswer": 0,
+    "explanation": "India is at 82.5° E longitude. 7:00 AM is 5 hours behind 12:00 Noon. Earth rotates 15° per hour, so 5 hours = 75°. 82.5° E - 75° = 7.5° E Longitude.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q114",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Who among the following was considered to be the preceptor of Mirabai?",
+    "options": [
+      "Dadu",
+      "Raidas",
+      "Ramanand",
+      "Surdas"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Raidas (or Ravidas), a prominent saint-poet of the Bhakti movement, is traditionally considered to be the spiritual guru (preceptor) of Mirabai.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q115",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Consider the following statements about the Mahanavami Dibba:\n1. It was the name of a giant box of sweets distributed at the Mahanavami festival.\n2. It was the name of a massive platform with a base covered with relief carvings.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Mahanavami Dibba in Hampi (Vijayanagara Empire) is a massive stone platform (not a box of sweets) where the king observed festivals like Mahanavami.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q116",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which one of the following statements about the Ain-i-Akbari is not correct?",
+    "options": [
+      "It was written by Abu'l Fazl.",
+      "It is a part of a larger work called Akbar Nama.",
+      "It describes the Mughal Empire as having a diverse population and a composite culture.",
+      "It was later revised by Sadullah Khan on the orders of Shah Jahan."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Padshahnama (history of Shah Jahan) was revised by Sadullah Khan, not the Ain-i-Akbari which was strictly Abu'l Fazl's work on Akbar's administration.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q117",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Swami Dayanand Saraswati\n1. was opposed to the worship of idols of Gods and Goddesses.\n2. regarded the Vedas as infallible.\n3. had met and had discussions with Ishwar Chandra Vidyasagar.\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1 and 2 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Swami Dayanand Saraswati (founder of Arya Samaj) opposed idol worship, believed in the infallibility of the Vedas, and interacted with various social reformers of his time, including Vidyasagar.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q118",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Consider the following statements:\n1. Muhammadan Anglo-Oriental College was founded at Aligarh by Sayyid Ahmad Khan.\n2. Sayyid Ahmad Khan was a great believer in religious toleration, and Hindus, Parsis and Christians had contributed to the funds of his college.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Sir Syed Ahmad Khan founded the MAO College and heavily promoted rationalism, seeking cooperation and funding from people of all faiths.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q119",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Basket-of-eggs topography is related to",
+    "options": [
+      "Drumlins.",
+      "Eskers.",
+      "Cirques.",
+      "Moraines."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A landscape extensively covered with drumlins (elongated, teardrop-shaped hills of glacial till) is commonly referred to as 'basket-of-eggs topography'.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q120",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following planets has the highest density?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Jupiter",
+      "Earth"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Earth is the densest planet in the Solar System, with an average density of 5.51 g/cm³.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q121",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Point of Origin of Earthquake Wave is known as",
+    "options": [
+      "Epicentre.",
+      "Focus.",
+      "Photosphere.",
+      "Seismic Zone."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The point within the Earth where an earthquake rupture starts is called the focus or hypocenter.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q122",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "The maximum depth of Lithosphere is found in the",
+    "options": [
+      "Pacific Ocean.",
+      "Siberian Plain.",
+      "Patagonian Desert.",
+      "Himalayan Mountains."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The lithosphere (crust + rigid upper mantle) is thickest underneath large continental mountain ranges like the Himalayas.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q123",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "A large body of magmatic material that cools in the deeper depth of the Earth's crust and develops in the form of large domes is known as",
+    "options": [
+      "Batholiths.",
+      "Lacoliths.",
+      "Lopoliths.",
+      "Phacoliths."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Batholiths are large masses of intrusive igneous rock that cool deep in the Earth's crust to form dome-like structures.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q124",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following Oil Refineries is not located in Assam?",
+    "options": [
+      "Tatipaka",
+      "Numaligarh",
+      "Bongaigaon",
+      "Digboi"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tatipaka oil refinery is located in Andhra Pradesh. Numaligarh, Bongaigaon, and Digboi are in Assam.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q125",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Where and when did Mahatma Gandhi make his first public appearance in India on coming back from South Africa after two decades?",
+    "options": [
+      "Champaran in 1917",
+      "Lucknow in 1916",
+      "Banaras Hindu University in 1916",
+      "Ahmedabad in 1918"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Gandhi's first major public appearance in India after his return from South Africa was at the opening of the Banaras Hindu University in February 1916.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q126",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "When and where was the demand for \"Purna Swaraj\" or complete independence made by the Indian National Congress?",
+    "options": [
+      "Bombay, 1885",
+      "Lahore, 1929",
+      "Kheda, 1917",
+      "Bombay, 1942"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The historic Purna Swaraj (total independence) resolution was passed at the Lahore session of the Indian National Congress in December 1929.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q127",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which one of the following provides for the complete equality of men and women in India?",
+    "options": [
+      "Articles 14 and 15 of the Constitution of India",
+      "Fifth Schedule of the Constitution of India",
+      "The Indian Independence Act",
+      "Article 20 of the Constitution of India"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Articles 14 and 15 of the Indian Constitution guarantee equality before the law and prohibit discrimination on grounds of religion, race, caste, sex, or place of birth.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q128",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "International Organizations",
+    "text": "Which of the following statements about the non-permanent members of the Security Council of the United Nations is/are correct?\n1. Their total number is now 10, but was originally only 6.\n2. They are elected for a term of two years only.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The UN Security Council originally had 6 non-permanent members, expanded to 10 in 1965. They are elected by the General Assembly for two-year terms.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q129",
+    "year": 2021,
+    "subject": "History",
+    "topic": "World History",
+    "text": "At which of the following was the American Declaration of Independence adopted on 4 July, 1776?",
+    "options": [
+      "Washington Conference",
+      "San Francisco Conference",
+      "Second Continental Congress",
+      "First Continental Congress"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The American Declaration of Independence was adopted by the Second Continental Congress meeting in Philadelphia on July 4, 1776.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q130",
+    "year": 2021,
+    "subject": "History",
+    "topic": "World History",
+    "text": "Who among the following was the head of the Government that was overthrown by the Bolsheviks in the 1917 Revolution?",
+    "options": [
+      "Alexander Kerensky",
+      "Prince Lvov",
+      "Grand Duke Sergei",
+      "Tsar Nicholas II"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Bolsheviks (led by Lenin) overthrew the Russian Provisional Government in the October 1917 revolution, which was headed by Alexander Kerensky at the time.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q131",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following is not a form of condensation?",
+    "options": [
+      "Dew",
+      "Fog",
+      "Frost",
+      "Sleet"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sleet is a form of precipitation (frozen or partially frozen rain), whereas dew, fog, and frost are direct forms of condensation.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q132",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following clouds is a rain-bearing cloud?",
+    "options": [
+      "Cumulus cloud",
+      "Stratus cloud",
+      "Nimbus cloud",
+      "Cirrus cloud"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The prefix or suffix 'nimbus' designates a rain-bearing cloud (e.g., cumulonimbus or nimbostratus).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q133",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "In which one of the following countries is intensive subsistence agriculture not predominantly practised?",
+    "options": [
+      "India",
+      "Japan",
+      "Canada",
+      "Indonesia"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Intensive subsistence agriculture is heavily practiced in densely populated Asian nations. Canada, with vast land and low population density, predominantly practices extensive commercial agriculture.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q134",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "The Headquarters of South-Eastern Railway is located at",
+    "options": [
+      "Bilaspur.",
+      "Secunderabad.",
+      "Kolkata.",
+      "Bhubaneswar."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The headquarters of the South Eastern Railway zone in India is located in Kolkata, West Bengal.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q135",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Bharatmala Pariyojana is related to",
+    "options": [
+      "interlinking of Northern and Southern Indian rivers in a garland shape.",
+      "networks of National Highways in India.",
+      "interlinking of all cities of India through Railways.",
+      "interlinking of all industrial regions of India through pipelines."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bharatmala Pariyojana is a centrally-sponsored and funded road and highways project of the Government of India designed to build a solid network of National Highways.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q136",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "The natural vegetation which covers the maximum geographical areas of India is",
+    "options": [
+      "Tropical deciduous forests.",
+      "Tropical thorn forests.",
+      "Montane forests.",
+      "Tropical evergreen forests."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tropical deciduous forests (also known as monsoon forests) are the most widespread forests in India.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q137",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian River System",
+    "text": "River Beas, flowing from Himachal and Punjab, joins the river",
+    "options": [
+      "Indus.",
+      "Satluj.",
+      "Chenab.",
+      "Ravi."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Beas river meets the Sutlej river at Harike in the Tarn Taran district of Punjab.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian River System" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q138",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Constitution of India",
+    "text": "With regard to the Constitution of India, which one of the following statements is not correct?",
+    "options": [
+      "The words - Socialist and Secular, were not originally part of the Constitution.",
+      "The Preamble states the objects of the Constitution of India.",
+      "The Preamble is enforceable in a Court of Law.",
+      "A Republic refers to the people as the source of all authority under the Constitution."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Preamble is non-justiciable, meaning its provisions are not enforceable in a court of law.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitution of India" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q139",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which one of the following is not a power of the Speaker of the Lok Sabha?",
+    "options": [
+      "Speaker shall preside over the House of the People.",
+      "Speaker will cast vote in the first instance in the House.",
+      "Speaker will have power to maintain order within the House of the People.",
+      "Speaker can adjourn the House or suspend the meeting till there is a quorum."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Speaker does not vote in the first instance. They can only exercise a casting vote in the event of a tie.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q140",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Fundamental Duties",
+    "text": "Which one of the following is included in Article 51A (Part IV A) of the Constitution of India?",
+    "options": [
+      "Fundamental Duties",
+      "Suspension of Fundamental Rights",
+      "Special Powers of Governors",
+      "Writs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Part IV A (Article 51A) of the Indian Constitution exclusively deals with the Fundamental Duties of citizens.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Duties" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q141",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Economy",
+    "text": "As per the data up to November, 2020, released by the Union Finance Ministry, which one of the following countries ranks 1 in terms of ODI (Outward Direct Investment) for the year 2020-21?",
+    "options": [
+      "USA",
+      "Singapore",
+      "Mauritius",
+      "United Kingdom"
+    ],
+    "correctAnswer": 1,
+    "explanation": "As per the 2020-21 data, Singapore was a top destination and consistently ranked highly for India's Outward Direct Investment (ODI).",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Economy" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q142",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "Exercise Desert Knight - 21 is a bilateral air exercise between the Indian Air Force and the Air Force of which one of the following countries?",
+    "options": [
+      "USA",
+      "France",
+      "Britain",
+      "Israel"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Exercise Desert Knight-21 was a bilateral air exercise hosted by the Indian Air Force alongside the French Air and Space Force.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q143",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honours",
+    "text": "Tableau of which one of the following States/Union Territory was adjudged best in the Republic Day Parade, 2021?",
+    "options": [
+      "Ladakh",
+      "Uttar Pradesh",
+      "Tripura",
+      "Uttarakhand"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Uttar Pradesh's tableau, which showcased the upcoming Ram Temple in Ayodhya, won the first prize at the 2021 Republic Day parade.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Awards and Honours" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q144",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "International Events",
+    "text": "In the recently concluded elections in December 2020, Faustin-Archange Touadéra has won a second term in office as President of one of the following countries. Identify the country.",
+    "options": [
+      "Central African Republic",
+      "Republic of South Africa",
+      "Republic of Ghana",
+      "Republic of Mozambique"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Faustin-Archange Touadéra was re-elected as the President of the Central African Republic (CAR) in the December 2020 elections.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Events" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q145",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honours",
+    "text": "Which one of the following statements is not correct in respect of the 'Legion of Merit' award?",
+    "options": [
+      "This award is conferred by the President of the United States of America.",
+      "This award was conferred to the Prime Minister of India in December, 2020.",
+      "This was also awarded to the Prime Minister of Australia, Scott Morrison.",
+      "It is the highest civilian award of the United States of America."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 'Legion of Merit' is a military award (often given to foreign heads of state), not the highest civilian award (which is the Presidential Medal of Freedom).",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Awards and Honours" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q146",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "Which one of the following statements is most appropriate about Exercise Kavach?",
+    "options": [
+      "It is a military exercise of the Indian Army only.",
+      "It is a joint military exercise involving the Indian Army and the Indian Navy only.",
+      "It is a joint military exercise involving the Indian Army, the Indian Navy and the Indian Air Force only.",
+      "It is a joint military exercise involving the Indian Army, the Indian Navy, the Indian Air Force and also the Indian Coast Guard."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Exercise Kavach is a large-scale joint military exercise involving assets from the Indian Army, Indian Navy, Indian Air Force, and the Indian Coast Guard.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q147",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "International Events",
+    "text": "Recently a state of emergency has been declared in which one of the following countries?",
+    "options": [
+      "Maldives",
+      "Bhutan",
+      "Nepal",
+      "Myanmar"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In February 2021, the military in Myanmar staged a coup and declared a one-year state of emergency.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Events" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q148",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Which one of the following teams is the winner of the Syed Mushtaq Ali Trophy, 2021?",
+    "options": [
+      "Uttar Pradesh",
+      "Punjab",
+      "Tamil Nadu",
+      "Baroda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tamil Nadu won the Syed Mushtaq Ali Trophy in 2021 by defeating Baroda in the final.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q149",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Which country has replaced Maldives to host the 2023 Indian Ocean Island Games?",
+    "options": [
+      "Madagascar",
+      "Sri Lanka",
+      "India",
+      "Mauritius"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Due to challenges in Maldives, the hosting rights for the 2023 Indian Ocean Island Games were transferred to Madagascar.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-1-q150",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Identify the correct reason, out of the following, about Claire Polosak for being in the news:",
+    "options": [
+      "She has been honoured with the Pulitzer Prize.",
+      "She recently won a Grand Slam championship.",
+      "She became the first female match official to conduct a men's cricket test match.",
+      "She has been conferred with the Gandhi Peace Prize."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia's Claire Polosak made history in 2021 by becoming the first female match official (fourth umpire) in a men's Test match during the India vs Australia series.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  }
+]

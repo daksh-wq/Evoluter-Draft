@@ -1,0 +1,2522 @@
+[
+  {
+    "id": "cds-2021-1-gk-001",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "National Income",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "Real GDP is calculated by valuing outputs of different years at common prices.",
+      "Potential GDP is the real GDP that the economy would produce if its resources were fully employed.",
+      "Nominal GDP is calculated by valuing outputs of different years at constant prices.",
+      "Real GDP per capita is the ratio of real GDP divided by population."
+    ],
+    "correctAnswer": "2",
+    "explanation": "Nominal GDP is calculated by valuing outputs of different years at CURRENT prices (not constant prices). Real GDP is calculated at constant prices. So statement (c) is incorrect — it wrongly attributes the use of constant prices to Nominal GDP.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "National Income" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-002",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "Unemployment",
+    "text": "The mismatch in the regional or occupational pattern of job vacancies and the pattern of worker availability results in",
+    "options": [
+      "Structural unemployment",
+      "Disguised unemployment",
+      "Altered unemployment",
+      "Cyclical unemployment"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Structural unemployment arises from a mismatch between the skills or location of job seekers and the requirements or location of job vacancies. When the regional or occupational pattern of vacancies does not match the pattern of worker availability, it is structural unemployment.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Unemployment" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-003",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "Inflation",
+    "text": "The situation in an economy which is growing slowly along with rapid inflation (rising price level) is called",
+    "options": [
+      "Stagnation",
+      "Deflation",
+      "Stagflation",
+      "Recession"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Stagflation refers to the combination of slow economic growth (stagnation) and rapid inflation (rising prices). It is different from a recession which involves negative growth, and from deflation which is falling price levels.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Inflation" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-004",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "Fiscal Policy",
+    "text": "The increase in private investment spending induced by the increase in Government spending is known as",
+    "options": [
+      "Crowding in",
+      "Deficit financing",
+      "Crowding out",
+      "Pumping out"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Crowding in refers to the phenomenon where increased government spending leads to an increase in private investment spending. This is the opposite of crowding out, where government borrowing raises interest rates and reduces private investment.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Fiscal Policy" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-005",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "Banking",
+    "text": "The asset or assets that a borrower pledges in order to guarantee repayment of a loan is called as",
+    "options": [
+      "Cheque",
+      "Collateral",
+      "Guarantee card",
+      "Bond"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Collateral is an asset pledged by a borrower to a lender as security for a loan. If the borrower defaults, the lender can seize the collateral to recover the loan amount.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-006",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "Banking",
+    "text": "The percentage by which the money the borrower pays back exceeds the money that was borrowed is called as",
+    "options": [
+      "Bank rate",
+      "Nominal interest rate",
+      "Real interest rate",
+      "Terms of credit"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The nominal interest rate is the percentage by which the total repayment exceeds the original borrowed amount, expressed as a percentage of the principal. It does not account for inflation, unlike the real interest rate.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-007",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following statements about the Gandhi-Irwin Pact of 1931 is correct?",
+    "options": [
+      "The Government would not release those prisoners who had been non-violent.",
+      "The Government would not release those prisoners who had indulged in the peaceful picketing of liquor and foreign cloth shops.",
+      "The Congress did not agree to the suspension of the Civil Disobedience Movement.",
+      "The Congress agreed to take part in the Second Round Table Conference."
+    ],
+    "correctAnswer": "3",
+    "explanation": "The Gandhi-Irwin Pact of 1931 included the agreement that Congress would participate in the Second Round Table Conference. The Government agreed to release political prisoners (except those involved in violence), and Congress agreed to suspend the Civil Disobedience Movement.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-008",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Who among the following founded the Bhil Seva Mandal in 1922?",
+    "options": [
+      "Dayaram Gidumal",
+      "Gurusaday Dutt",
+      "Dhondo Keshav Karve",
+      "Amritlal Vithaldas Thakkar"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Amritlal Vithaldas Thakkar (also known as Thakkar Bapa) founded the Bhil Seva Mandal in 1922. He was a social reformer who dedicated his life to the welfare of tribal communities and underprivileged sections of society.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-009",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "In 1911, who among the following introduced a bill in the Imperial Legislative Council for introduction of compulsory and free primary education in India?",
+    "options": [
+      "Dadabhai Naoroji",
+      "Bal Gangadhar Tilak",
+      "Sir Harcourt Butler",
+      "Gopal Krishna Gokhale"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Gopal Krishna Gokhale introduced a bill in the Imperial Legislative Council in 1911 for compulsory and free primary education in India. Though the bill was not passed, it highlighted the importance of education for national development.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-010",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following statements about the Act V of 1843 relating to Slavery in India is correct?",
+    "options": [
+      "It gave the masters the right to wilfully keep their slaves tied to their estates.",
+      "It denied the masters the use of Courts to assert their claims on slaves.",
+      "The Law Courts and masters worked jointly in resolving the cases of desertion.",
+      "The slaves became the owners of the land."
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Indian Slavery Act V of 1843 denied slave owners the right to use courts to enforce their claims on slaves. It made the legal enforcement of slavery illegal, though it did not immediately free existing slaves. Masters could no longer go to courts to reclaim runaway slaves.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-011",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which Maratha statesman signed the Treaty of Bassein on December 31, 1802?",
+    "options": [
+      "Baji Rao II",
+      "Vithuji Holkar",
+      "Daulat Rao Sindhia",
+      "Madhava Rao Narayan"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Baji Rao II, the last Peshwa of the Maratha Confederacy, signed the Treaty of Bassein on December 31, 1802 with the British East India Company. This treaty made the Marathas a subsidiary ally of the British, which effectively ended Maratha independence.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-012",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "The Amara-Nayaka system was a major political innovation of which Indian imperial rulers?",
+    "options": [
+      "Cholas",
+      "Chalukyas",
+      "Guptas",
+      "Vijayanagara"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The Amara-Nayaka system was a major political and military innovation of the Vijayanagara Empire. Under this system, military commanders (Nayakas) were given territories to govern in return for military service and tribute to the king.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-013",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Government Schemes",
+    "text": "KIRAN (Knowledge Involvement in Research Advancement through Nurturing) is an initiative to provide opportunities to women scientists who",
+    "options": [
+      "had a break in their career due to family reasons.",
+      "are pursuing innovative research in life sciences.",
+      "have collaborative projects with labs in foreign countries.",
+      "have leading edge projects in Nano-Science and Technology."
+    ],
+    "correctAnswer": "0",
+    "explanation": "KIRAN (Knowledge Involvement in Research Advancement through Nurturing) is a scheme by the Department of Science and Technology, Government of India, aimed at bringing women scientists who had a break in their career due to family or social obligations back into the scientific mainstream.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-014",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "NIDHI is an umbrella scheme for the promotion of",
+    "options": [
+      "young and aspiring innovators.",
+      "scientific research.",
+      "primary health care.",
+      "primary education in rural areas."
+    ],
+    "correctAnswer": "0",
+    "explanation": "NIDHI (National Initiative for Developing and Harnessing Innovations) is an umbrella programme launched by the Department of Science and Technology (DST) to nurture and promote startups and young innovators in India through a network of Technology Business Incubators.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-015",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "The Saubhagya Scheme aims at universal",
+    "options": [
+      "LPG connection.",
+      "household electrification.",
+      "primary school education.",
+      "public health insurance."
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Pradhan Mantri Sahaj Bijli Har Ghar Yojana – 'Saubhagya' was launched in 2017 with the aim of providing electricity connections to all households (both APL and BPL) in rural areas and all poor households in urban areas to achieve universal household electrification.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-016",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Mission Indradhanush aims at",
+    "options": [
+      "reducing child deaths due to pneumonia.",
+      "reducing the impact of rotavirus.",
+      "elimination of maternal tetanus.",
+      "full immunisation of children."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Mission Indradhanush, launched in 2014 by the Ministry of Health and Family Welfare, aims to immunize all children under two years of age and pregnant women against seven vaccine-preventable diseases, with the goal of achieving full immunization coverage.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-017",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which one of the following statements about the DDU – GKY is NOT correct?",
+    "options": [
+      "It is a skill training programme.",
+      "It is for rural youth from poor families.",
+      "Its objective is placement in wage employment.",
+      "It relies entirely on skill training by Government agencies."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY) does not rely entirely on government agencies for skill training. It involves Public-Private Partnerships and allows private training providers (Project Implementing Agencies) to conduct skill training programs.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-018",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which of the following statements about the Pradhan Mantri Gram Sadak Yojana are correct?\n1. It is part of Government of India's poverty reduction strategy.\n2. It is a centrally sponsored scheme for rural development.\n3. It provides connectivity in rural areas.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only"
+    ],
+    "correctAnswer": "0",
+    "explanation": "All three statements about Pradhan Mantri Gram Sadak Yojana (PMGSY) are correct. It is indeed (1) part of India's poverty reduction strategy, (2) a centrally sponsored scheme for rural development, and (3) aimed at providing all-weather road connectivity in rural areas.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-019",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "India's territorial limit extends towards the sea up to",
+    "options": [
+      "10 nautical miles",
+      "12 nautical miles",
+      "14 nautical miles",
+      "15 nautical miles"
+    ],
+    "correctAnswer": "1",
+    "explanation": "India's territorial sea extends up to 12 nautical miles from the baseline (coast). Beyond this, India has a Contiguous Zone up to 24 nautical miles and an Exclusive Economic Zone (EEZ) up to 200 nautical miles.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-020",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Ocean Currents",
+    "text": "Which one of the following is a cold ocean current?",
+    "options": [
+      "Brazilian Current",
+      "Gulf Stream",
+      "North Equatorial Current",
+      "California Current"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The California Current is a cold ocean current that flows southward along the western coast of North America. The Brazilian Current and Gulf Stream are warm currents, and the North Equatorial Current is generally a warm current.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Ocean Currents" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-021",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Soil Types",
+    "text": "Identify the type of soil on the basis of the given characteristics:\n1. They are rich in lime, iron, magnesia and alumina.\n2. They are generally clayey, deep and impermeable.\n3. They are mainly found in Maharashtra, Madhya Pradesh and Gujarat.\nSelect the correct answer from the given alternatives:",
+    "options": [
+      "Late rite soil",
+      "Red and yellow soil",
+      "Saline soil",
+      "Black soil"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Black soil (Regur soil) is rich in lime, iron, magnesia and alumina. It is clayey, deep and impermeable — retaining moisture for long periods. It is mainly found in the Deccan Plateau, particularly in Maharashtra, Madhya Pradesh, Gujarat and parts of Andhra Pradesh.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Soil Types" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-022",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "Arabica, Robusta and Liberica are varieties of",
+    "options": [
+      "Coffee",
+      "Tea",
+      "Sugarcane",
+      "Cotton"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Arabica, Robusta (Canephora) and Liberica are the three main varieties/species of coffee. Arabica is the most widely grown and accounts for about 60% of world coffee production. Robusta is the second most common variety.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-023",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry - Metals",
+    "text": "Aluminium is manufactured from",
+    "options": [
+      "Copper ore",
+      "Bauxite ore",
+      "Mica ore",
+      "Manganese ore"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Aluminium is extracted from Bauxite ore, which is the primary ore of aluminium. The process involves two steps: Bayer's process to extract alumina (Al2O3) from bauxite, followed by Hall-Héroult electrolytic process to reduce alumina to aluminium.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry - Metals" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-024",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Indian Ports",
+    "text": "Which one of the following sea ports gained significance for handling iron-ore exports to Japan?",
+    "options": [
+      "Kand la",
+      "Ennore",
+      "Kochi",
+      "Mormugao"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Mormugao Port in Goa gained significant importance as a major iron-ore exporting port, particularly for exports to Japan. It is one of India's premier iron-ore exporting ports, with large quantities of Goan iron ore being exported through it.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Ports" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-025",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "Money and Banking",
+    "text": "Which one of the following is NOT a function of money?",
+    "options": [
+      "Acts  as an intermediate in the exchange process",
+      "Acts as a store of value",
+      "Used as the unit of account",
+      "Used for regulating consumption"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The primary functions of money are: medium of exchange, store of value, unit of account (measure of value), and standard of deferred payment. 'Regulating consumption' is not a function of money — it is an economic policy tool, not a function of money itself.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Money and Banking" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-026",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "National Income",
+    "text": "The situation where the equilibrium level of real GDP falls short of potential GDP is known as",
+    "options": [
+      "Recessionary gap",
+      "Inflationary gap",
+      "Demand-side inflation",
+      "Supply-side inflation"
+    ],
+    "correctAnswer": "0",
+    "explanation": "A recessionary gap (also called a deflationary gap) occurs when the actual/equilibrium level of real GDP is below the potential GDP. This means the economy is operating below its full employment capacity, leading to unemployment.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "National Income" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-027",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "Fiscal Policy",
+    "text": "The excess of total expenditure of Government over its total receipts, excluding borrowings, is known as",
+    "options": [
+      "Primary deficit",
+      "Fiscal deficit",
+      "Current deficit",
+      "Capital deficit"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Fiscal deficit is the difference between the government's total expenditure and its total receipts (excluding borrowings). It indicates the total borrowing requirement of the government. Note: Primary deficit = Fiscal deficit minus interest payments.",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "Fiscal Policy" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-028",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Economics",
+    "topic": "International Economics",
+    "text": "Exchange rates state the value of one currency in terms of other currencies. Which one of the following statements with respect to the exchange rate of currency is correct?",
+    "options": [
+      "Floating exchange rates are rates in which the Governments interfere by buying or selling their currencies.",
+      "Fixed exchange rates are rates set by Government decisions and maintained by Government actions.",
+      "Under the Bretton Woods System, the exchange rates are floated in terms of rise or fall in price of gold.",
+      "Under the classical gold standard, the exchange rates are fixed in terms of price of dollar."
+    ],
+    "correctAnswer": "1",
+    "explanation": "Fixed exchange rates are set by government decisions (usually by the central bank) and are maintained through government intervention. Option (a) describes managed/dirty float, not pure floating rates. Under Bretton Woods, rates were pegged to the US dollar (not floated in terms of gold). Under classical gold standard, rates were fixed in terms of gold (not dollar).",
+    "tags": [
+      { "type": "subject", "label": "Economics" },
+      { "type": "topic", "label": "International Economics" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-029",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "François Bernier was physician to",
+    "options": [
+      "Prince Murad",
+      "Princess Jahanara",
+      "Emperor Shah Jahan",
+      "Prince Dara Shikoh"
+    ],
+    "correctAnswer": "3",
+    "explanation": "François Bernier, the French physician and traveller, served as the personal physician to Prince Dara Shikoh, the eldest son of Emperor Shah Jahan. After Dara Shikoh's death, he later served in Aurangzeb's court. He wrote 'Travels in the Mughal Empire'.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-030",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following British firms was taken over by Soorajmull-Nagarmull group?",
+    "options": [
+      "McLeod",
+      "Octavius Steel",
+      "Davenport",
+      "Andrew Yule"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Soorajmull-Nagarmull group, an Indian business house, took over Octavius Steel, a British managing agency firm in India. This was part of the Indianization of major British business houses in India during the post-independence period.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-031",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following statements with regard to ryotwari settlement is NOT correct?",
+    "options": [
+      "In southern and western India, the ryotwari settlement was adopted.",
+      "Ryotwari was in principle a direct contract between the ryot and the state.",
+      "It means a tax contract valid for usually 30 years.",
+      "In principle, it strengthened the former elite, the zamindars and weakened the peasantry."
+    ],
+    "correctAnswer": "3",
+    "explanation": "The ryotwari settlement actually bypassed the zamindars and created a direct contract between the peasant (ryot) and the state. It did not strengthen zamindars — in fact, it was the zamindari settlement (permanent settlement) that strengthened the zamindars. So option (d) is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-032",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following statements about the British Indian Medical Service (IMS) is NOT correct?",
+    "options": [
+      "IMS  began in 1764.",
+      "It recruited health professionals by means of a competitive examination.",
+      "Indians were never admitted to IMS.",
+      "The IMS was at first meant to look after the troops."
+    ],
+    "correctAnswer": "2",
+    "explanation": "The statement 'Indians were never admitted to IMS' is incorrect. Indians were admitted to the Indian Medical Service (IMS), though they faced discrimination and were admitted in limited numbers. The first Indian to pass the IMS examination was Soorjo Coomar Goodeve Chuckerbutty in 1855.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-033",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "When was the monopoly of China trade lost by East India Company?",
+    "options": [
+      "1813",
+      "1833",
+      "1838",
+      "1860"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Charter Act of 1833 ended the East India Company's monopoly over trade with China. Earlier, the Charter Act of 1813 had ended the Company's monopoly over trade with India (except trade with China and tea trade). The China trade monopoly continued until 1833.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-034",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "National Disaster Management Authority is headed by",
+    "options": [
+      "the Prime Minister.",
+      "the Home Minister.",
+      "the President.",
+      "the Health Minister."
+    ],
+    "correctAnswer": "0",
+    "explanation": "The National Disaster Management Authority (NDMA) is headed by the Prime Minister of India as its Chairperson. It was established under the Disaster Management Act, 2005. The Vice-Chairperson is a Cabinet Minister-level official.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-035",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which of the following statements regarding the 'casting vote' in the Parliament is/are correct?\n1. It is cast by the speaker or a person acting as such.\n2. It is cast in addition to voting in the first instance.\n3. It is cast in the case of equality of votes.\n4. It is always cast to maintain the status quo.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3 only",
+      "1 and 3 only",
+      "2 and 4 only",
+      "3 only"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Statements 1 and 3 are correct. The casting vote is cast by the Speaker (or person acting as such) only in cases of equality of votes (tie). The Speaker does NOT vote in the first instance — only uses casting vote when there is a tie. Statement 4 is incorrect because the casting vote need not always maintain the status quo; the Speaker exercises discretion.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-036",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Equality before the law or equal protection of the laws within the territory of India is guaranteed under which one of the following Articles of the Constitution of India?",
+    "options": [
+      "Article 14",
+      "Article 15",
+      "Article 16",
+      "Article 22"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Article 14 of the Indian Constitution guarantees equality before the law and equal protection of laws to all persons within the territory of India. Article 15 prohibits discrimination on grounds of religion, race, caste, sex or place of birth. Article 16 deals with equality of opportunity in public employment.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-037",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Political Theory",
+    "text": "'Legal Positivism' theory was developed by",
+    "options": [
+      "T.H. Green",
+      "Thomas Hobbes",
+      "John Austin",
+      "Patrick Devlin"
+    ],
+    "correctAnswer": "2",
+    "explanation": "John Austin developed the theory of Legal Positivism. He defined law as commands issued by a sovereign and backed by sanctions. His work 'The Province of Jurisprudence Determined' (1832) laid the foundation of legal positivism.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Political Theory" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-038",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Political Theory",
+    "text": "Who among the following said that Democracy means a system of 'Government by Consent'?",
+    "options": [
+      "John Locke",
+      "J.S. Mill",
+      "Jeremy Bentham",
+      "J.J. Rousseau"
+    ],
+    "correctAnswer": "0",
+    "explanation": "John Locke is associated with the concept of government by consent. He argued in his 'Two Treatises of Government' that legitimate government must be based on the consent of the governed, and that people have natural rights to life, liberty, and property.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Political Theory" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-039",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "Milpa and Ladang are different names for",
+    "options": [
+      "shifting cultivation.",
+      "mixed farming.",
+      "truck farming.",
+      "plantation agriculture."
+    ],
+    "correctAnswer": "0",
+    "explanation": "Milpa (in Central America/Mexico) and Ladang (in Southeast Asia) are regional names for shifting cultivation (also called slash-and-burn agriculture or jhum cultivation). In this system, farmers clear land, cultivate it for a few years, and then move to a new area.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-040",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Human Development",
+    "text": "Which one of the following approaches of human development was initially proposed by the International Labour Organisation (ILO) and emphasised on health, education, food, water supply, sanitation and housing?",
+    "options": [
+      "Welf are approach",
+      "Basic needs approach",
+      "Income approach",
+      "Capability approach"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Basic Needs Approach to human development was proposed by the International Labour Organisation (ILO) in the 1970s. It emphasized meeting the fundamental needs of people — food, shelter, clothing, health, education, water supply, and sanitation — as the primary goal of development.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Human Development" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-041",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Rivers of India",
+    "text": "Which one of the following tributaries of river Indus feeds the canal system of the Bhakra Nangal Project?",
+    "options": [
+      "Chen ab",
+      "Satluj",
+      "Ravi",
+      "Jhelum"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Bhakra Nangal Project is built on the Satluj (Sutlej) River in Himachal Pradesh. The Bhakra Dam is located on the Satluj and is one of India's largest dams, feeding one of the most extensive canal irrigation systems in the country.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Rivers of India" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-042",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Drainage Patterns",
+    "text": "When the rivers discharge their waters from all directions into a lake or depression, the pattern is known as",
+    "options": [
+      "Trellis",
+      "Dendritic",
+      "Radial",
+      "Centripetal"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Centripetal drainage pattern occurs when rivers flow from all directions towards a central depression, lake or inland basin. This is the opposite of radial drainage where rivers flow outward from a central elevated point (like a hill or dome).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Drainage Patterns" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-043",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following statements about the Coriolis force is NOT correct?",
+    "options": [
+      "It is maximum at the Poles.",
+      "It is absent at the Equator.",
+      "It deflects the wind to the right direction in the southern hemisphere.",
+      "It deflects the wind to the right direction in the northern hemisphere."
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Coriolis force deflects winds to the RIGHT in the Northern Hemisphere and to the LEFT in the Southern Hemisphere. So option (c) is incorrect — in the southern hemisphere, winds are deflected to the LEFT, not the right. Option (d) is correct.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-044",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Chronologically arrange the following treaties/conventions signed between the Marathas and the British (starting with the earliest):\n1. Treaty of Salbai\n2. Treaty of Purandar\n3. Convention of Wadgaon\n4. Treaty of Surat\nSelect the correct answer using the code given below:",
+    "options": [
+      "4-2-3-1",
+      "4-3-2-1",
+      "1-3-2-4",
+      "1-2-3-4"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The correct chronological order is: Treaty of Surat (1775) → Treaty of Purandar (1776) → Convention of Wadgaon (1779) → Treaty of Salbai (1782). So the order is 4-2-3-1.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-045",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which of the following statements about the Sanyasi and Faqir disturbances/rebellions are correct?\n1. Governor-General Warren Hastings faced the persistent Sanyasi and Faqir disturbances in Bengal and Bihar.\n2. There were a number of Shaivite Naga Sanyasis who formed into armed bands.\n3. Majnu Shah, who led bands into Bengal from 1771, was their prominent leader.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "1",
+    "explanation": "All three statements are correct. Warren Hastings did face Sanyasi and Faqir rebellions in Bengal and Bihar. There were Shaivite Naga Sanyasis who formed armed bands. And Majnu Shah was indeed the prominent Faqir leader who led raids into Bengal from 1771. Bankim Chandra Chatterjee's 'Anandamath' was inspired by these rebellions.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-046",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "In 1943, young leaders in which one of the following districts of Maharashtra set up a parallel Government (prati sarkar) with volunteer corps (seva dals) and village units (tufan dals)?",
+    "options": [
+      "Pune",
+      "Nasik",
+      "Nagpur",
+      "Satara"
+    ],
+    "correctAnswer": "3",
+    "explanation": "In 1943, young leaders in Satara district of Maharashtra established a parallel government (Prati Sarkar) under Nana Patil during the Quit India Movement. They organized volunteer corps (seva dals) and village units (tufan dals) to run an alternative administration.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-047",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Who founded the Central Hindu School at Benaras which was later developed into Benaras Hindu University?",
+    "options": [
+      "Madan Mohan Malaviya",
+      "Annie Besant",
+      "Ishwar Chandra Vidyasagar",
+      "Madame H.P. Blavatsky"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Annie Besant founded the Central Hindu School (also called Central Hindu College) at Benaras in 1898. This institution later became the nucleus of the Benaras Hindu University (BHU), which was formally founded by Madan Mohan Malaviya in 1916.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-048",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Political Theory",
+    "text": "Which one among the following is NOT a feature of centralization?",
+    "options": [
+      "Nati onal unity",
+      "Uniformity",
+      "Prosperity",
+      "Liberty"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Liberty (freedom) is NOT a feature of centralization. Centralization is characterized by national unity, uniformity of administration, and can lead to efficiency (prosperity), but it tends to restrict individual and local freedom (liberty). Decentralization is more associated with liberty.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Political Theory" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-049",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "Which one of the following is NOT an objective of NITI Aayog?",
+    "options": [
+      "It p rovides a critical direction and strategic input for development process.",
+      "It functions as a 'think tank' in providing key elements of policy.",
+      "It monitors and evaluates the implementation of the programmes.",
+      "It offers a platform for resolution of inter-state conflicts as 'provider of first and last resort'."
+    ],
+    "correctAnswer": "3",
+    "explanation": "NITI Aayog does not serve as a provider of first and last resort for resolution of inter-state conflicts. That is a function of the Supreme Court or the Inter-State Council. NITI Aayog is a policy think tank that provides strategic and technical advice, monitors programs, and facilitates cooperative federalism.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-050",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "Article 231 of the Constitution of India grants power to establish a common High Court for two or more states to",
+    "options": [
+      "the Parliament.",
+      "the Supreme Court.",
+      "the President of India.",
+      "the Union Cabinet."
+    ],
+    "correctAnswer": "0",
+    "explanation": "Article 231 of the Indian Constitution empowers Parliament to establish a common High Court for two or more states or a state and a union territory. For example, the High Court of Punjab and Haryana serves both states.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Judiciary" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-051",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which one among the following motions CANNOT be made while introducing an ordinary Bill in the Parliament?",
+    "options": [
+      "That the Bill be taken into consideration",
+      "That the Bill be circulated for the purpose of eliciting public opinion",
+      "That the Bill be referred to a Select Committee",
+      "That the Bill be referred to a Joint Committee of the House without the concurrence of the other House"
+    ],
+    "correctAnswer": "3",
+    "explanation": "A Joint Committee of both Houses requires the concurrence (agreement) of the other House — it cannot be formed without the other House's consent. A Bill can be referred to a Joint Committee only when both Houses agree. Options (a), (b), and (c) are valid motions that can be made when introducing an ordinary Bill.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-052",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Constitutional Amendments",
+    "text": "Which one among the following was eliminated by the 44th Amendment Act of the Parliament?",
+    "options": [
+      "Righ t against Exploitation",
+      "Right to Constitutional Remedies",
+      "Right to Property",
+      "Right to Education"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The 44th Constitutional Amendment Act of 1978 removed the Right to Property (Article 31) from the list of Fundamental Rights. It was made a legal right under Article 300A instead of a fundamental right. The 42nd Amendment had already curtailed property rights significantly.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Amendments" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-053",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "Identify the crop on the basis of the following characteristics:\n1. It is a kharif crop.\n2. Aus, Aman and Boro are its three different growing periods in an agricultural year.\n3. About one-fourth of the total cropped area of India is under its cultivation.\nSelect the correct answer using the code given below:",
+    "options": [
+      "Whea t",
+      "Rice",
+      "Pulses",
+      "Cotton"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Rice (paddy) is the crop described. It is primarily a kharif crop. Aus, Aman and Boro are the three varieties/seasons of rice cultivation in West Bengal and Bangladesh. Rice occupies about one-fourth of the total cropped area in India and is the staple food of a majority of Indians.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-054",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Geology - Rocks",
+    "text": "Which one of the following is a type of igneous rock?",
+    "options": [
+      "Marble",
+      "Halite",
+      "Granite",
+      "Shale"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Granite is an intrusive igneous rock formed by the slow cooling of magma beneath the Earth's surface. Marble is a metamorphic rock (formed from limestone), Shale is a sedimentary rock, and Halite (rock salt) is a sedimentary/evaporite mineral.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Geology - Rocks" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-055",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Atmosphere",
+    "text": "Ozone layer, which absorbs the ultra-violet radiation, is found in which one of the following layers of the atmosphere?",
+    "options": [
+      "Ionosphere",
+      "Troposphere",
+      "Mesosphere",
+      "Stratosphere"
+    ],
+    "correctAnswer": "3",
+    "explanation": "The ozone layer is located in the Stratosphere, approximately 15-35 km above the Earth's surface. It absorbs harmful ultraviolet (UV) radiation from the Sun, protecting life on Earth. The ozone concentration is highest at about 25 km altitude.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-056",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Earthquakes",
+    "text": "Which one of the following statements about primary waves of earthquakes is NOT correct?",
+    "options": [
+      "They  are similar to sound waves.",
+      "They can travel only through solid materials.",
+      "They travel through gaseous, liquid and solid materials.",
+      "They move faster and are the first to arrive at the surface."
+    ],
+    "correctAnswer": "1",
+    "explanation": "Primary waves (P-waves) can travel through solid, liquid, and gaseous materials — they are the only seismic waves that can pass through all states of matter. So statement (b) is incorrect. P-waves are compressional waves similar to sound waves and are the fastest seismic waves, arriving first at seismograph stations.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Earthquakes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-057",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Soil Types",
+    "text": "Alluvial soils vary in nature from sandy loam to clay. They are generally",
+    "options": [
+      "poo  r in potash and rich in phosphorus.",
+      "poor in both potash and phosphorus.",
+      "rich in both potash and phosphorus.",
+      "rich in potash and poor in phosphorus."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Alluvial soils are generally rich in potash but poor in phosphorus. They are the most fertile soils in India and cover the vast Indo-Gangetic Plains. While they are rich in lime and potash, they are deficient in phosphorus, nitrogen, and humus.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Soil Types" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-058",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Who among the following was popularly known as 'Lokahitwadi'?",
+    "options": [
+      "Gopa l Hari Deshmukh",
+      "Mahadev Govind Ranade",
+      "Gopal Krishna Gokhale",
+      "Jyotiba Phule"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Gopal Hari Deshmukh was popularly known as 'Lokahitwadi' (meaning one who works for the welfare of the people). He was a 19th century Maharashtrian social reformer, thinker and writer who advocated social reform through his writings in newspapers.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-059",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Who among the following socialist activists persuaded Gandhiji NOT to restrict the salt march protest to men alone?",
+    "options": [
+      "Kamaladevi Chattopadhyay",
+      "Sarojini Naidu",
+      "Matangini Hazra",
+      "Mithuben Petit"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Kamaladevi Chattopadhyay, a prominent socialist activist and social reformer, persuaded Mahatma Gandhi to allow women to participate in the Salt March (Dandi March) of 1930. Gandhi had initially intended to restrict it to men only.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-060",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which one of the following painters was NOT associated with Humayun?",
+    "options": [
+      "Mir Sayyid Ali",
+      "Maulana Dost Musawir",
+      "Maulana Yusuf",
+      "Bihzad"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Bihzad (Kamal ud-Din Bihzad) was a Persian painter who lived in the 15th century and was associated with the Timurid court of Herat, not with Humayun. Mir Sayyid Ali and Abdus Samad were the famous painters brought to India by Humayun. Bihzad predated Humayun's interest in Safavid painting.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-061",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Author) — List II (Poetical work)\nA. Brindavan Das — 1. Shivasankirttan\nB. Krishnadas Kaviraj — 2. Chandimangal\nC. Mukundaram Chakravarti — 3. Chaitanyacharitamrita\nD. Rameshwar Bhattacharya — 4. Chaitanyamangal",
+    "options": [
+      "A-4, B-2, C-3, D-1",
+      "A-4, B-3, C-2, D-1",
+      "A-1, B-3, C-2, D-4",
+      "A-1, B-2, C-3, D-4"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The correct matching is: Brindavan Das wrote Chaitanyamangal (4), Krishnadas Kaviraj wrote Chaitanyacharitamrita (3), Mukundaram Chakravarti wrote Chandimangal (2), and Rameshwar Bhattacharya wrote Shivasankirttan (1). So A-4, B-3, C-2, D-1.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-062",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which one of the following scholars of Akbar's court translated Bhaskaracharya's Lilavati into Persian?",
+    "options": [
+      "Abul Fazl",
+      "Faizi",
+      "Fathullah Shirazi",
+      "Ataullah Rashidi"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Faizi (Abu Faiz), the famous poet of Akbar's court and brother of Abul Fazl, translated Bhaskaracharya's mathematical treatise 'Lilavati' into Persian. He was one of the Navaratnas (nine gems) of Akbar's court.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-063",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "Who among the following was the Chairman of the National Commission for Review of the Working of the Constitution (2000)?",
+    "options": [
+      "Justice M.N. Venkatachaliah",
+      "Justice J.S. Verma",
+      "Justice Ranganath Mishra",
+      "Justice Y.K. Sabharwal"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Justice M.N. Venkatachaliah, former Chief Justice of India, was appointed as the Chairman of the National Commission to Review the Working of the Constitution (NCRWC) in 2000. The commission submitted its report in 2002.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-064",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Centre-State Relations",
+    "text": "M.M. Punchhi Commission on Centre-State Relations has recommended the disposal of a bill reserved for the consideration of the Union Executive within",
+    "options": [
+      "four months.",
+      "six months.",
+      "eight months.",
+      "five months."
+    ],
+    "correctAnswer": "1",
+    "explanation": "The M.M. Punchhi Commission on Centre-State Relations (2010) recommended that bills reserved by the Governor for the consideration of the President (Union Executive) should be disposed of within six months.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Centre-State Relations" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-065",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Who among the following founded the Marathi newspaper 'Kesari'?",
+    "options": [
+      "Lokmanya Tilak",
+      "Vallabhbhai Patel",
+      "Lala Lajpat Rai",
+      "Mahatma Gandhi"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Bal Gangadhar Tilak (Lokmanya Tilak) founded the Marathi newspaper 'Kesari' (meaning Lion) in 1881. He also founded the English newspaper 'Mahratta'. Kesari became one of the most influential newspapers during the Indian freedom struggle.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-066",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Public Sector Undertakings",
+    "text": "Which mega public sector undertaking is designated with 'Navratna' status?",
+    "options": [
+      "Indi anOil Corporation Limited",
+      "Gas Authority of India Limited",
+      "Bharat Petroleum Corporation Limited",
+      "Bharat Electronics Limited"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Bharat Electronics Limited (BEL) holds the Navratna status. IndianOil Corporation Limited and Bharat Petroleum Corporation Limited hold Maharatna status. Gas Authority of India Limited (GAIL) also holds Navratna status. BEL is specifically mentioned in this question as a Navratna company.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Public Sector Undertakings" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-067",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "States and Union Territories",
+    "text": "Which of the following statements with regard to the creation of a new state or alteration of boundaries of states is/are correct?\n1. An amendment has to be moved in the Parliament under Article 368 of the Constitution of India.\n2. Ratification by one half of the states is necessary after the amendment is made by the Parliament.\n3. The legislation can be passed by a simple majority of both Houses of Parliament.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 3 only",
+      "2 only",
+      "3 only",
+      "2 and 3 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "For creating a new state or altering boundaries of existing states, Article 3 of the Constitution applies — NOT Article 368. Such a bill is passed by Parliament by a simple majority. No ratification by states is required (though the affected state legislature's views must be sought). So only statement 3 is correct.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "States and Union Territories" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-068",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following is the largest linguistic group of India?",
+    "options": [
+      "Sino-Tibetan",
+      "Austric",
+      "Indo-Aryan",
+      "Dravidian"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Indo-Aryan is the largest linguistic group in India, spoken by about 75% of the Indian population. It includes languages like Hindi, Bengali, Marathi, Gujarati, Punjabi, Urdu, Odia, and many others. Dravidian is the second largest group.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-069",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following water bodies separates the Andaman and the Nicobar islands?",
+    "options": [
+      "Gulf of Mannar",
+      "Ten Degree Channel",
+      "Eleven Degree Channel",
+      "Palk Strait"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The Ten Degree Channel separates the Andaman Islands (North) from the Nicobar Islands (South). It lies at approximately 10°N latitude. The Eleven Degree Channel separates the Nicobar Islands from Sumatra (Indonesia).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-070",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following longitudes is the standard meridian of India?",
+    "options": [
+      "83°30' E",
+      "82°30' E",
+      "82°30' W",
+      "83°30' W"
+    ],
+    "correctAnswer": "1",
+    "explanation": "82°30' E (82.5°E) is the Standard Meridian of India, known as Indian Standard Time (IST) meridian. It passes through Mirzapur in Uttar Pradesh. IST is 5 hours 30 minutes ahead of GMT/UTC.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-071",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I — List II\nA. Cyclones — 1. Western Australia\nB. Hurricanes — 2. South China Sea\nC. Typhoons — 3. Indian Ocean\nD. Willy-willies — 4. Atlantic Ocean",
+    "options": [
+      "A-3, B-2, C-4, D-1",
+      "A-3, B-4, C-2, D-1",
+      "A-1, B-4, C-2, D-3",
+      "A-1, B-2, C-4, D-3"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Cyclones occur in the Indian Ocean (3), Hurricanes occur in the Atlantic Ocean (4), Typhoons occur in the South China Sea/Pacific (2), and Willy-willies are found in Western Australia (1). So the correct matching is A-3, B-4, C-2, D-1.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-072",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which of the following is/are social security scheme(s)?\n1. Atal Pension Yojana\n2. Pradhan Mantri Jeevan Jyoti Bima Yojana\n3. Pradhan Mantri Suraksha Bima Yojana\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "All three are social security schemes launched by the Government of India: Atal Pension Yojana (APY) provides pension to unorganized sector workers; Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) provides life insurance cover; and Pradhan Mantri Suraksha Bima Yojana (PMSBY) provides accident insurance cover.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-073",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Media",
+    "text": "Which one of the following units is NOT a part of All India Radio's Transcription and Programme Exchange Service?",
+    "options": [
+      "Central Archives",
+      "Sound Archives",
+      "Advanced Research Unit",
+      "Transcription Unit"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The All India Radio's Transcription and Programme Exchange Service comprises the Sound Archives, Advanced Research Unit, and Transcription Unit. 'Central Archives' is not a specific unit of AIR's Transcription and Programme Exchange Service.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Media" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-074",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Local Government",
+    "text": "Which of the following statements about the Panchayati Raj System are correct?\n1. All seats in a Panchayat are filled by persons chosen by direct election.\n2. The 'Gram Sabha' consists of persons registered in the village electoral rolls.\n3. The Chairperson of a Panchayat is elected in accordance with a law passed by each state.\n4. All states in India have a three-tier system of Panchayats.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 4 only",
+      "1, 2 and 3 only",
+      "2 and 3 only",
+      "2, 3 and 4 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Statements 2 and 3 are correct. Statement 1 is incorrect — some seats may be filled through indirect election (e.g., chairpersons of intermediate and district level panchayats in some states). Statement 4 is incorrect — states with population less than 20 lakhs may not have three-tier panchayats (they may have two-tier). So only 2 and 3 are correct.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Local Government" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-075",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Local Government",
+    "text": "Which of the following statements is/are correct?\n1. The elections to the Panchayat are conducted by the State Election Commission.\n2. The State Election Commissioner is appointed by the Chief Election Commissioner of India.\n3. The State Legislatures have the power to make laws on all matters relating to Panchayat elections.\nSelect the correct answer using the code given below:",
+    "options": [
+      "2 only",
+      "1 and 2 only",
+      "1, 2 and 3",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Statements 1 and 3 are correct. The State Election Commission conducts Panchayat elections (not the Election Commission of India). The State Legislatures can legislate on Panchayat election matters. Statement 2 is incorrect — the State Election Commissioner is appointed by the Governor of the state, NOT by the Chief Election Commissioner of India.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Local Government" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-076",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Executive",
+    "text": "Which one of the following is NOT a correct description of the Union Cabinet?",
+    "options": [
+      "It is part of the Parliament.",
+      "It is responsible to the Parliament.",
+      "It remains in power till it enjoys the confidence of the Parliament.",
+      "A person from outside the Parliament can never be appointed a member of the Cabinet."
+    ],
+    "correctAnswer": "3",
+    "explanation": "A person from outside Parliament CAN be appointed as a member of the Cabinet. However, such a person must become a member of either House of Parliament within six months of appointment. So statement (d) is incorrect. The Cabinet is NOT part of Parliament but is collectively responsible to it.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Executive" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-077",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which one of the following statements about the composition of the Parliament is NOT correct?",
+    "options": [
+      "Representatives of the states in Rajya Sabha are elected directly by the people.",
+      "Representatives from Union Territories in Lok Sabha are chosen by direct elections.",
+      "Rajya Sabha has 12 nominated members.",
+      "Lok Sabha has seats reserved for SCs and STs."
+    ],
+    "correctAnswer": "0",
+    "explanation": "Representatives of states in Rajya Sabha are NOT elected directly by the people. They are elected by the elected members of the State Legislative Assemblies through a system of single transferable vote (indirect election). Only Lok Sabha members are elected directly by the people.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-078",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which among the following fundamental rights is/are available to non-citizens?\n1. Freedom of speech\n2. Protection against self-incrimination\n3. Freedom of conscience\n4. Non-discrimination in matters of employment\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3 only",
+      "1, 3 and 4 only",
+      "2 and 3 only",
+      "2 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Protection against self-incrimination (Article 20) and Freedom of conscience (Article 25) are available to all persons including non-citizens. Freedom of speech (Article 19) and non-discrimination in employment (Article 16) are available only to citizens. So statements 2 and 3 are correct.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-079",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Constitutional Offices",
+    "text": "Which one of the following statements about the Vice-President of India is NOT correct?",
+    "options": [
+      "He is not eligible for re-election.",
+      "He must not be less than 35 years of age.",
+      "He is elected by members of an electoral college consisting of members of both Houses of Parliament.",
+      "His term of office is five years."
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Vice-President of India IS eligible for re-election. There is no bar on re-election. For example, Dr. S. Radhakrishnan served two terms as Vice-President. The other statements are correct — the VP must be 35 years or older, is elected by both Houses of Parliament, and serves a 5-year term.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Offices" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-080",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "A motion of no-confidence is moved against",
+    "options": [
+      "an individual Minister.",
+      "the Council of Ministers.",
+      "the Prime Minister.",
+      "a political party."
+    ],
+    "correctAnswer": "1",
+    "explanation": "A motion of no-confidence (no-confidence motion) is moved against the Council of Ministers as a whole (the Cabinet), not against an individual Minister or the Prime Minister alone. If passed, the entire Council of Ministers must resign, including the Prime Minister.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-081",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "Which one of the following is correct about 'Pinaka'?",
+    "options": [
+      "It is a multi-barrel rocket system.",
+      "It is a type of battle tank.",
+      "It is an advanced submarine.",
+      "It is an indigenously developed drone system."
+    ],
+    "correctAnswer": "0",
+    "explanation": "Pinaka is an indigenously developed multi-barrel rocket system (MBRL) developed by the Defence Research and Development Organisation (DRDO) of India. It is named after the bow of Lord Shiva and is used by the Indian Army for artillery support.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-082",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "International Relations",
+    "text": "Which one of the following is NOT a member of the Quad group of nations?",
+    "options": [
+      "France",
+      "USA",
+      "Australia",
+      "Japan"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Quad (Quadrilateral Security Dialogue) consists of four nations: USA, Australia, Japan, and India. France is NOT a member of the Quad. The Quad is an informal strategic grouping focused on the Indo-Pacific region.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "International Relations" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-083",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "The first phase of Exercise Malabar, 2020 was conducted at",
+    "options": [
+      "Port Blair",
+      "Mumbai",
+      "Visakhapatnam",
+      "Kochi"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The first phase of Exercise Malabar 2020 was conducted at Visakhapatnam in November 2020. The exercise involved the navies of India, USA, Japan, and Australia (Quad nations). The second phase was held in the Northern Arabian Sea.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-084",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs",
+    "text": "Hollywood actor Sir Sean Connery, who died recently, was popularly known for the portrayal of the role",
+    "options": [
+      "Rocky",
+      "Captain Jack Sparrow",
+      "Terminator",
+      "James Bond"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Sir Sean Connery was popularly known for portraying James Bond (Agent 007), appearing as the iconic spy in seven films starting with 'Dr. No' (1962). He died on October 31, 2020. Rocky was Sylvester Stallone's role, Captain Jack Sparrow was Johnny Depp's, and Terminator was Arnold Schwarzenegger's.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Current Affairs" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-085",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Rivers of India",
+    "text": "The Luhri Hydro-Electric Power Project is being constructed on the river",
+    "options": [
+      "Satluj",
+      "Beas",
+      "Ravi",
+      "Chenab"
+    ],
+    "correctAnswer": "0",
+    "explanation": "The Luhri Hydro-Electric Power Project is being constructed on the Satluj (Sutlej) River in Himachal Pradesh. It is a run-of-river project with a capacity of 210 MW. It is being developed by the Satluj Jal Vidyut Nigam (SJVN).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Rivers of India" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-086",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Defence - Military Exercises",
+    "text": "'CARAT Bangladesh 2020' was a joint naval exercise between Bangladesh and",
+    "options": [
+      "India",
+      "USA",
+      "Japan",
+      "Thailand"
+    ],
+    "correctAnswer": "1",
+    "explanation": "CARAT (Cooperation Afloat Readiness and Training) Bangladesh 2020 was a joint naval exercise between Bangladesh and the USA (United States Navy). CARAT is a series of bilateral exercises conducted by the US Navy with Southeast Asian and South Asian nations.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Defence - Military Exercises" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-087",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "International Organizations",
+    "text": "Peninsula Shield Force is a military arm of",
+    "options": [
+      "Organization of Islamic Cooperation",
+      "Organization of the Petroleum Exporting Countries",
+      "Gulf Cooperation Council",
+      "Arab League"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Peninsula Shield Force is the joint military force of the Gulf Cooperation Council (GCC). It was established in 1984 and serves as a collective defense mechanism for GCC member states (Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, Oman).",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-088",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "Which one of the following ships was involved in 'Mission Sagar – II'?",
+    "options": [
+      "INS Shakti",
+      "INS Vikramaditya",
+      "INS Kesari",
+      "INS Airavat"
+    ],
+    "correctAnswer": "2",
+    "explanation": "INS Kesari was deployed for Mission Sagar – II in 2020. This mission was undertaken by the Indian Navy to deliver COVID-19 relief material (medicines, food items) to the island nations of the Indian Ocean Region including Comoros, Djibouti, Eritrea, Sudan and South Sudan.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-089",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Environment",
+    "text": "In the year 2020 which one of the following tiger reserves of India was declared by UNESCO as a Biosphere Reserve?",
+    "options": [
+      "Panna Tiger Reserve",
+      "Namdapha Tiger Reserve",
+      "Dudhwa Tiger Reserve",
+      "Pench Tiger Reserve"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Panna Tiger Reserve in Madhya Pradesh was declared a UNESCO Biosphere Reserve in 2020. It is located along the Vindhya hills and is also known for the successful tiger reintroduction program started in 2009.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Environment" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-090",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Knowledge",
+    "topic": "Current Affairs",
+    "text": "The Kaleshwaram Lift Irrigation System, which was in the news recently, is constructed in",
+    "options": [
+      "Kerala",
+      "Gujarat",
+      "Telangana",
+      "Maharashtra"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The Kaleshwaram Lift Irrigation System is constructed in Telangana on the Godavari River. It is the world's largest multi-stage lift irrigation project, designed to provide water to drought-prone areas of Telangana.",
+    "tags": [
+      { "type": "subject", "label": "General Knowledge" },
+      { "type": "topic", "label": "Current Affairs" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-091",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Cell Biology",
+    "text": "Cell wall is NOT present in cells of",
+    "options": [
+      "Bacteria",
+      "Plants",
+      "Fungi",
+      "Humans"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Human (animal) cells do NOT have a cell wall. They only have a cell membrane (plasma membrane). Bacteria have peptidoglycan cell walls, plant cells have cellulose cell walls, and fungal cells have chitin cell walls.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Cell Biology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-092",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Genetics",
+    "text": "A child receives a tall beautiful plant as a birthday gift from his father with a quiz. The father asked her how she would verify whether this tall plant was the progeny of both the tall parents or one tall and one short parent plant. She could verify this through",
+    "options": [
+      "cross-pollination",
+      "self-pollination",
+      "tissue culture",
+      "negative propagation"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Self-pollination (selfing) would reveal whether the tall plant is true-breeding (homozygous TT) or heterozygous (Tt). If both parents were tall and true-breeding (TT × TT), self-pollination would give all tall offspring. If one parent was short (tt), resulting in Tt plants, self-pollination would give 3 tall:1 short ratio, revealing heterozygosity.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Genetics" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-093",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Plant Physiology",
+    "text": "A student was doing an experiment on increasing the cell division among plants. She asked her supervisor to suggest the specific plant hormone for the same. Had you been her supervisor, which plant hormone would you suggest?",
+    "options": [
+      "Abscisic acid",
+      "Gibberellins",
+      "Cytokinin",
+      "Auxin"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Cytokinin is the plant hormone primarily responsible for promoting cell division (cytokinesis). Auxin promotes cell elongation, Gibberellins promote stem elongation and seed germination, and Abscisic acid is a growth inhibitor associated with dormancy and stress responses.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Plant Physiology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-094",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Cell Biology",
+    "text": "Which cell organelles have their own DNA and Ribosomes?",
+    "options": [
+      "Golgi body and Endoplasmic Reticulum",
+      "Mitochondria and Plastids",
+      "Lysosome and Golgi body",
+      "Vacuole and Plastids"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Mitochondria and Plastids (chloroplasts) are the two cell organelles that contain their own DNA and ribosomes, supporting the endosymbiotic theory of their evolution. This semi-autonomous nature allows them to synthesize some of their own proteins.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Cell Biology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-095",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Cell Biology",
+    "text": "Osmosis is the process of movement of water molecules from its",
+    "options": [
+      "higher concentration to its lower concentration through a cell wall.",
+      "lower concentration to its higher concentration through a fully permeable membrane.",
+      "higher concentration to its lower concentration through a fully permeable membrane.",
+      "higher concentration to its lower concentration through a semi-permeable membrane."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Osmosis is the movement of water molecules from a region of higher water concentration (lower solute concentration) to a region of lower water concentration (higher solute concentration) through a semi-permeable (selectively permeable) membrane.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Cell Biology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-096",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "Growing of two or more crops simultaneously on the same field in a definite pattern is known as",
+    "options": [
+      "mixed cropping",
+      "inter cropping",
+      "mixed farming",
+      "hybrid farming"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Inter cropping is the practice of growing two or more crops simultaneously in the same field in a definite row pattern. It is different from mixed cropping (where crops are grown without a definite pattern) and mixed farming (which combines crop growing with livestock rearing).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-097",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "When we heat lead nitrate [Pb(NO3)2] in a boiling tube, we observe the emission of brown fumes. Which one of the following is the brown gas?",
+    "options": [
+      "NO",
+      "N2O2",
+      "NO3",
+      "NO2"
+    ],
+    "correctAnswer": "3",
+    "explanation": "When lead nitrate [Pb(NO3)2] is heated, it decomposes to produce lead oxide (PbO), nitrogen dioxide (NO2), and oxygen. The brown/reddish-brown fumes observed are NO2 (nitrogen dioxide). This is a classic thermal decomposition reaction used in chemistry experiments.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-098",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following substances do silver articles react with, that makes the silver articles black?",
+    "options": [
+      "Sulphur",
+      "Oxygen",
+      "Carbon dioxide",
+      "Phosphorus"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Silver articles turn black when they react with hydrogen sulphide (H2S) or sulphur compounds present in the air, forming silver sulphide (Ag2S), which is black. This process is called tarnishing of silver.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-099",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry - Metals",
+    "text": "Which one of the following metals is kept immersed in Kerosene oil to protect it and to prevent accidental fire?",
+    "options": [
+      "Calcium",
+      "Sodium",
+      "Vanadium",
+      "Magnesium"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Sodium is kept immersed in kerosene oil to prevent it from reacting with oxygen and moisture in the air. Sodium is highly reactive and can catch fire spontaneously when exposed to air. Kerosene acts as a protective barrier by preventing contact with air and water.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry - Metals" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-100",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "A solution contains 20 g of solute in 180 g of solvent. If the solvent is water, what is the concentration of the solution in terms of mass by mass percentage?",
+    "options": [
+      "11.1%",
+      "22.2%",
+      "10%",
+      "20%"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Mass by mass percentage = (Mass of solute / Mass of solution) × 100. Mass of solution = Mass of solute + Mass of solvent = 20 + 180 = 200 g. Therefore, concentration = (20/200) × 100 = 10%.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-101",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following elements is a non-metal but is lustrous?",
+    "options": [
+      "Carbon",
+      "Silicon",
+      "Germanium",
+      "Iodine"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Iodine is a non-metal that is lustrous (shiny). It has a characteristic metallic luster with a dark greyish-purple appearance. While carbon (graphite form) can be somewhat lustrous, iodine is the classic example of a lustrous non-metal. Silicon and Germanium are metalloids.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-102",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry - Metals",
+    "text": "Which one of the following metals has both malleability and ductility properties?",
+    "options": [
+      "Na",
+      "Au",
+      "Ce",
+      "Hg"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Gold (Au) is known for being highly malleable and ductile. It can be beaten into very thin sheets (gold leaf) and drawn into fine wires. Mercury (Hg) is a liquid at room temperature so it lacks these properties; Sodium (Na) is soft but very reactive; Cerium (Ce) is a rare earth metal with limited malleability.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry - Metals" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-103",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Electricity",
+    "text": "We are given three copper wires of different lengths and different areas of cross-section. Which one of the following would have highest resistivity?",
+    "options": [
+      "Copper wire of 50 cm length and 1 mm diameter",
+      "Copper wire of 25 cm length and 0.5 mm diameter",
+      "Copper wire of 10 cm length and 2.0 mm diameter",
+      "All the wires would have same resistivity"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Resistivity (specific resistance) is an intrinsic property of a material and does NOT depend on the length or cross-sectional area of the conductor. Since all three wires are made of copper, they all have the same resistivity. Resistance (not resistivity) depends on length and cross-section.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Electricity" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-104",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Reproduction",
+    "text": "Which of the following statements about 'fission' is correct?\n1. It is related with the creation of new individuals by means of cell division in unicellular organism.\n2. It is related with the transformation of heavier nuclei into smaller nuclei.\n3. It is related with the creation of a heavier nuclei by means of combining two higher nuclei.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 2 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Statements 1 and 2 are both correct uses of the term 'fission'. Statement 1 refers to binary fission in unicellular organisms (biological fission). Statement 2 refers to nuclear fission (physics) — splitting of a heavy nucleus into smaller ones. Statement 3 describes nuclear fusion (not fission). So (c) 1 and 2 only is correct.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Reproduction" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-105",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Electricity",
+    "text": "Which one of the following is an electric conductor?",
+    "options": [
+      "A plastic sheet",
+      "Distilled water",
+      "Human body",
+      "A wooden thin sheet"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The human body is an electric conductor because it contains water with dissolved salts (electrolytes), which allows electricity to pass through it. Distilled water (pure water) is a poor conductor as it lacks ions. Plastic and wood are insulators.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Electricity" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-106",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Optics",
+    "text": "A non-spherical shining spoon can generally be considered as a",
+    "options": [
+      "Spherical mirror",
+      "Parabolic mirror",
+      "Plane mirror",
+      "Lens"
+    ],
+    "correctAnswer": "0",
+    "explanation": "A shining spoon acts as a curved mirror. The concave side of the spoon acts as a concave (spherical) mirror, and the convex side acts as a convex (spherical) mirror. While not perfectly spherical, it is most commonly approximated as a spherical mirror for practical purposes.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Optics" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-107",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Electricity",
+    "text": "Who amongst the following is a pioneer in discovering the heating effect of electric current?",
+    "options": [
+      "Isaac Newton",
+      "Galileo Galilei",
+      "James P. Joule",
+      "J.J. Thomson"
+    ],
+    "correctAnswer": "2",
+    "explanation": "James Prescott Joule discovered the heating effect of electric current, now known as Joule's law or Joule heating. He established that the heat produced is proportional to the square of current, resistance, and time (H = I²Rt). The unit of energy 'Joule' is named after him.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Electricity" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-108",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Electromagnetism",
+    "text": "Which one of the following laws of electromagnetism does NOT give the direction of magnetic field?",
+    "options": [
+      "Right-hand thumb rule",
+      "Fleming's left-hand rule",
+      "Fleming's right-hand rule",
+      "Faraday's law of electromagnetic induction"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Faraday's law of electromagnetic induction deals with the magnitude (quantity) of induced EMF, not the direction of magnetic field. The Right-hand thumb rule, Fleming's left-hand rule, and Fleming's right-hand rule all give directions — of magnetic field, force on conductor, and induced current respectively.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Electromagnetism" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-109",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Microbiology",
+    "text": "An antibiotic is not useful against a virus whereas a vaccine is. Which one of the following is the most appropriate reason for this?",
+    "options": [
+      "An antibiotic can break RNA only, whereas virus has DNA.",
+      "An antibiotic is a carbohydrate in its chemical nature, whereas a vaccine is a protein which works well to kill a virus.",
+      "Only a vaccine can break the genetic material of a virus.",
+      "A virus does not use biochemical pathways which can be blocked by an antibiotic. But a vaccine can boost an immune system to fight the virus."
+    ],
+    "correctAnswer": "3",
+    "explanation": "Antibiotics work by targeting specific biochemical pathways or structures unique to bacteria (like cell wall synthesis, protein synthesis). Viruses lack these pathways — they use host cell machinery to replicate. Vaccines, on the other hand, stimulate the immune system to recognize and fight viruses. This is why antibiotics are ineffective against viruses.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Microbiology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-110",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Diseases",
+    "text": "'Sleeping sickness' is caused by",
+    "options": [
+      "Trypanosoma",
+      "Leishmania",
+      "Plasmodium",
+      "Paramecium"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Sleeping sickness (African trypanosomiasis) is caused by the protozoan parasite Trypanosoma brucei, transmitted through the bite of the tsetse fly. Leishmania causes Leishmaniasis (Kala-azar), Plasmodium causes malaria, and Paramecium is a free-living protozoan.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Diseases" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-111",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Zoology",
+    "text": "Which one among the following is a free living animal?",
+    "options": [
+      "Liver fluke",
+      "Wuchereria",
+      "Plasmodium",
+      "Planaria"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Planaria is a free-living flatworm found in freshwater environments. Liver fluke is a parasitic flatworm, Wuchereria is a parasitic roundworm causing filariasis, and Plasmodium is a parasitic protozoan causing malaria. Planaria is well-known for its remarkable regenerative abilities.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Zoology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-112",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Biology - Human Physiology",
+    "text": "Which one of the following is the structure of a cardiac muscle cell?",
+    "options": [
+      "Cylindrical, Unbranched and Multinucleate",
+      "Spinal shaped, Unbranched and Uninucleate",
+      "Spinal shaped, Branched and Uninucleate",
+      "Cylindrical, Branched and Uninucleate"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Cardiac muscle cells (cardiomyocytes) are cylindrical, branched, and uninucleate (usually one nucleus, occasionally two). They are involuntary muscles found only in the heart. Skeletal muscle cells are cylindrical, unbranched and multinucleate, while smooth muscle cells are spindle-shaped and uninucleate.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Biology - Human Physiology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-113",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following naturally occurring acids is found in abundance in tomato?",
+    "options": [
+      "Acetic acid",
+      "Citric acid",
+      "Oxalic acid",
+      "Tartaric acid"
+    ],
+    "correctAnswer": "2",
+    "explanation": "Oxalic acid is found in abundance in tomatoes. Tomatoes also contain citric acid and malic acid, but oxalic acid is present in significant quantities. Acetic acid is found in vinegar, and tartaric acid is found in grapes.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-114",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following is used in soda-acid fire extinguishers?",
+    "options": [
+      "Sodium chloride",
+      "Sodium hydrogen carbonate",
+      "Calcium hydroxide",
+      "Acetic acid"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Soda-acid fire extinguishers use sodium hydrogen carbonate (NaHCO3, baking soda) and sulphuric acid. When the acid reacts with NaHCO3, it produces CO2 gas which extinguishes the fire. NaHCO3 + H2SO4 → Na2SO4 + H2O + CO2.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-115",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following sodium compounds is used for softening hard water?",
+    "options": [
+      "Na2CO3",
+      "NaHCO3",
+      "NaOH",
+      "Na2SO4"
+    ],
+    "correctAnswer": "0",
+    "explanation": "Sodium carbonate (Na2CO3, washing soda) is used for softening hard water. It reacts with calcium and magnesium salts in hard water, precipitating them as insoluble carbonates, thus removing the hardness. Na2CO3 + CaSO4 → CaCO3↓ + Na2SO4.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-116",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Calcium oxide reacts vigorously with water to produce slaked lime whose solution is used for white-washing walls. This slaked lime reacts with component (A) in air to form a thin layer of component (B) to give a shiny finish. What are the components (A) and (B)?",
+    "options": [
+      "A – O2; B – CaCO3",
+      "A – CO2; B – Ca(OH)2",
+      "A – O2; B – Ca(OH)2",
+      "A – CO2; B – CaCO3"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Slaked lime (Ca(OH)2) reacts with carbon dioxide (CO2, component A) in the air to form calcium carbonate (CaCO3, component B): Ca(OH)2 + CO2 → CaCO3 + H2O. This process (carbonation) forms a hard, shiny layer of calcium carbonate on the wall.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-117",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Optics",
+    "text": "How many internal reflections of light take place in the formation of primary rainbow?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "More than 2"
+    ],
+    "correctAnswer": "1",
+    "explanation": "In the formation of a primary rainbow, light undergoes one (1) internal reflection inside each water droplet along with two refractions (entry and exit). A secondary rainbow involves two internal reflections, which is why it appears fainter and has reversed colors.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Optics" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-118",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Motion",
+    "text": "The direction of acceleration in uniform circular motion is along the",
+    "options": [
+      "direction of motion.",
+      "tangent to the circle at the point of observation.",
+      "direction of velocity.",
+      "direction perpendicular to velocity."
+    ],
+    "correctAnswer": "3",
+    "explanation": "In uniform circular motion, the acceleration (centripetal acceleration) is always directed towards the center of the circle, which is perpendicular to the velocity (which is tangential). The acceleration does not change the speed but changes the direction of motion.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Motion" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-119",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Physics - Forces",
+    "text": "The weight of an object is due to",
+    "options": [
+      "the net force acting on it.",
+      "the total of all forces acting on it irrespective of their directions.",
+      "the force that it exerts on the ground.",
+      "its inert property."
+    ],
+    "correctAnswer": "2",
+    "explanation": "Weight is the gravitational force exerted on an object by the Earth. By Newton's third law, the force an object exerts on the ground equals the force the ground exerts on it (normal force). Weight is defined as the force with which the object is attracted toward the Earth, which equals the force the object exerts on the ground (when stationary).",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Physics - Forces" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  },
+  {
+    "id": "cds-2021-1-gk-120",
+    "year": 2021,
+    "exam": "CDS Exam (I) 2021",
+    "subject": "General Science",
+    "topic": "Nanotechnology",
+    "text": "The size of particles being studied in 'nano-technology' is about",
+    "options": [
+      "1 Å – 10 nm",
+      "1 – 100 nm",
+      "1 – 50 µ",
+      "1 mm – 10 mm"
+    ],
+    "correctAnswer": "1",
+    "explanation": "Nanotechnology deals with materials and structures at the nanometer scale, typically in the range of 1 to 100 nanometers (nm). At this scale, materials exhibit unique physical, chemical, and biological properties different from their bulk counterparts.",
+    "tags": [
+      { "type": "subject", "label": "General Science" },
+      { "type": "topic", "label": "Nanotechnology" },
+      { "type": "pyq", "label": "CDS 2021 I" }
+    ]
+  }
+]

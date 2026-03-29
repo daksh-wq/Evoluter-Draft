@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "nda-2023-1-q1",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Over long periods of time, layers of sediments builds up to a height of a few kilometers.",
+    "options": [
+      "Over long periods of time,",
+      "layers of sediments builds",
+      "up to a height of a few kilometers.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The subject 'layers' is plural, so the verb should be 'build' instead of 'builds' to maintain subject-verb agreement.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Grammar" } ]
+  },
+  {
+    "id": "nda-2023-1-q2",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "When a gas is cooled down it turns into a liquid from a process called condensation.",
+    "options": [
+      "When a gas is cooled down",
+      "it turns into a liquid",
+      "from a process called condensation.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct preposition is 'by'. It should be 'by a process called condensation'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Prepositions" } ]
+  },
+  {
+    "id": "nda-2023-1-q3",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "If you want to know the news you can read a newspaper.",
+    "options": [
+      "If you want to know",
+      "the news you can",
+      "read a newspaper.",
+      "No Error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sentence is grammatically correct.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Grammar" } ]
+  },
+  {
+    "id": "nda-2023-1-q4",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Columbus made his first voyage from Europe to America on 1492.",
+    "options": [
+      "Columbus made his first voyage",
+      "from Europe to America",
+      "on 1492.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Years are preceded by the preposition 'in'. It should be 'in 1492'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Prepositions" } ]
+  },
+  {
+    "id": "nda-2023-1-q5",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Whenever the sky is clear, you can see the stars in the night.",
+    "options": [
+      "Whenever the sky is clear,",
+      "you can see the stars",
+      "in the night.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct idiomatic phrase is 'at night'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Prepositions" } ]
+  },
+  {
+    "id": "nda-2023-1-q6",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "I'm not working tomorrow, so I don't had to get up early.",
+    "options": [
+      "I'm not working tomorrow,",
+      "so I don't had to",
+      "get up early.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct auxiliary verb for the present/future context is 'have'. It should be 'don't have to'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Verbs" } ]
+  },
+  {
+    "id": "nda-2023-1-q7",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "She didn't tell anybody about her plans.",
+    "options": [
+      "She didn't tell",
+      "anybody about",
+      "her plans.",
+      "No Error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sentence is grammatically correct.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Grammar" } ]
+  },
+  {
+    "id": "nda-2023-1-q8",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "She wouldn't have has an accident, if she had driven carefully.",
+    "options": [
+      "She wouldn't have has an accident,",
+      "if she had",
+      "driven carefully.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The past participle form of 'have' must be used. It should be 'wouldn't have had'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Conditionals" } ]
+  },
+  {
+    "id": "nda-2023-1-q9",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "I will watch film if I finish the work in time.",
+    "options": [
+      "I will watch film",
+      "if I finish",
+      "the work in time.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Film' is a singular countable noun and needs an article. It should be 'watch a film'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Articles" } ]
+  },
+  {
+    "id": "nda-2023-1-q10",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "In 1989, the government did an about-face and Iran restored it's family planning program.",
+    "options": [
+      "In 1989, the government did an about-face",
+      "and Iran restored",
+      "it's family planning program.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The possessive pronoun 'its' should be used, not the contraction 'it's' (it is).",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Pronouns" } ]
+  },
+  {
+    "id": "nda-2023-1-q11",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "During the pandemic the indigent people had to suffer a lot.",
+    "options": [
+      "very poor",
+      "opulent",
+      "solvent",
+      "prosperous"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Indigent' means poor or needy. A synonym is 'very poor'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q12",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "She had no idea what made him angry in one minute and jovial the next.",
+    "options": [
+      "aggrieved",
+      "melancholic",
+      "doleful",
+      "mirthful"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Jovial' means cheerful and friendly. 'Mirthful' is the closest synonym.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q13",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "It is sheer lunacy to drive a car in this frosty weather.",
+    "options": [
+      "prudence",
+      "normalcy",
+      "insanity",
+      "sanity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Lunacy' refers to extreme folly or eccentricity. 'Insanity' is synonymous.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q14",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Operating on a child with cancer needs meticulous planning and teamwork.",
+    "options": [
+      "strong",
+      "long",
+      "playful",
+      "scrupulous"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Meticulous' means showing great attention to detail. 'Scrupulous' is a synonym.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q15",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The thrill of over-speeding the vehicle can be exhilarating, but it is important not to take the consequences lightly.",
+    "options": [
+      "humdrum",
+      "dreary",
+      "exciting",
+      "agitating"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Exhilarating' means making one feel very happy or thrilled. 'Exciting' is the nearest meaning.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q16",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The redemption will now depend on his new strategy of inclusiveness.",
+    "options": [
+      "retrieval",
+      "forfeiture",
+      "corporation",
+      "desecration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Redemption' means the action of saving or being saved. 'Retrieval' is the closest contextual synonym.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q17",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Only three candidates are now in contention for the title.",
+    "options": [
+      "involved in dispute",
+      "in agreement with each other",
+      "chance of winning",
+      "amiable to each other"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Being 'in contention' means having a good chance of success in a contest.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q18",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "All my fishing paraphernalia is in the car.",
+    "options": [
+      "boxes",
+      "accessories",
+      "fuel",
+      "food"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Paraphernalia' refers to miscellaneous articles, especially equipment needed for a particular activity. 'Accessories' fits best.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q19",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The public watched in astonishment as he took a sudden jump from the bridge.",
+    "options": [
+      "anticipation",
+      "hurriedly",
+      "wonderment",
+      "calmness"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Astonishment' means great surprise. 'Wonderment' is synonymous.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q20",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "Drinking inordinate amount of liquor is not good for health.",
+    "options": [
+      "temperate",
+      "exorbitant",
+      "moderate",
+      "regular"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Inordinate' means unusually or disproportionately large. 'Exorbitant' is a synonym.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q21",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: because I feel you remember it better when you write something, / Q: I make at least three drafts of a song / R: [Fragmented text from source] / S: [Fragmented text from source]",
+    "options": [
+      "SPRQ",
+      "RQPS",
+      "QRSP",
+      "PRSQ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The logical flow connects the action (making drafts) with the reason (remembering better).",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q22",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: for hours in the shop / Q: a gunman who held / R: a hostage demanded ransom of 10 lakh / S: [Fragmented text from source]",
+    "options": [
+      "SPRQ",
+      "RQPS",
+      "QRPS",
+      "PRSQ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sequence builds appropriately: 'A gunman who held a hostage for hours in the shop demanded ransom of 10 lakh.'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q23",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: Ukraine has urged its citizens to leave the / Q: living in Russia country immediately / R: [Fragmented text from source] / S: [Fragmented text from source]",
+    "options": [
+      "SPRQ",
+      "RPSQ",
+      "RSQP",
+      "PRSQ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sentence structuring flows to combine 'Ukraine has urged its citizens' with the 'leaving' context.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q24",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: ripping roofs off houses and raising fears of / Q: cyclone Emnati crashed into the southeastern / R: coast of Madagascar in the early hours, / S: flooding and food shortages in the region",
+    "options": [
+      "SPRQ",
+      "RPSQ",
+      "RQPS",
+      "PRSQ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Logical sequence describes the cyclone hitting the coast, then ripping roofs off, and finally causing fears of floods.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q25",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: ecology is protected and aquatic life thrives / Q: we need to utilize the resources of water / R: for different purposes while ensuring that its natural / S: [Fragmented text from source]",
+    "options": [
+      "SPRQ",
+      "RQPS",
+      "QRSP",
+      "PRSQ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Syntax completes the thought of utilizing water resources responsibly.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q26",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: very difficult / Q: the poor visibility made the movement of traffic / R: [Fragmented text from source] / S: due to fog",
+    "options": [
+      "SPRQ",
+      "RQPS",
+      "QRPS",
+      "QSRP"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Proper sequence reads: 'The poor visibility due to fog made the movement of traffic very difficult.'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q27",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: avenues for the patients to indict / Q: but rarely is it the other way round / R: there are multiple legal / S: the doctors",
+    "options": [
+      "SPRQ",
+      "RPSQ",
+      "QRPS",
+      "QSRP"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The order is 'There are multiple legal avenues for the patients to indict the doctors but rarely is it the other way round.'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q28",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: flight, and each person / Q: makes his or / R: her own journey / S: life is a solo",
+    "options": [
+      "SPRQ",
+      "RPQS",
+      "RPSQ",
+      "PQRS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The order is 'Life is a solo flight, and each person makes his or her own journey.'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q29",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: made it evolve / Q: technologies and equipment has / R: into a rare centre of excellence / S: adoption of the latest",
+    "options": [
+      "PQRS",
+      "RPQS",
+      "SQPR",
+      "QSRP"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The order is 'Adoption of the latest technologies and equipment has made it evolve into a rare centre of excellence.'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q30",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Ordering of Words",
+    "text": "P: please mark the same / Q: be made in response to this notice / R: if you have any complaint to / S: to the concerned authority",
+    "options": [
+      "PQRS",
+      "RPQS",
+      "SQPR",
+      "RQPS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The order is 'If you have any complaint to be made in response to this notice please mark the same to the concerned authority.'",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Sentence Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q31",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The parental support can fortify a child's learning.",
+    "options": [
+      "weaken",
+      "encourage",
+      "brace",
+      "strengthen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Fortify' means to strengthen. The opposite is 'weaken'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q32",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Now we can have another dazzling thought, as an outcome of my brilliant research!",
+    "options": [
+      "splendid",
+      "murky",
+      "dazing",
+      "fulgent"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Dazzling' implies bright or impressive. The opposite is 'murky' (dark and gloomy).",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q33",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The group held some clandestine meetings to resolve the matter.",
+    "options": [
+      "secret",
+      "covert",
+      "sneaky",
+      "public"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Clandestine' means kept secret. The opposite is 'public'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q34",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "In the winters, the countryside view is bleak and the house is drafty.",
+    "options": [
+      "cheerless",
+      "verdant",
+      "desolate",
+      "bare"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Bleak' means bare, dreary or lacking vegetation. 'Verdant' (green with grass/vegetation) is its antonym.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q35",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Amid commotion the leader and his supporters remained passive.",
+    "options": [
+      "quietude",
+      "uproar",
+      "tempest",
+      "stir"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Commotion' implies a state of confused and noisy disturbance. 'Quietude' is the opposite.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q36",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "He had the audacity to blame him.",
+    "options": [
+      "boldness",
+      "vigour",
+      "temerity",
+      "politeness"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Audacity' implies rude or disrespectful bold behavior. 'Politeness' is an antonym.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q37",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "They are making plans for the abatement of the nuisance within a specified time.",
+    "options": [
+      "subsidence",
+      "ebbing",
+      "accumulation",
+      "mitigation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Abatement' means the reduction or lessening of something. 'Accumulation' is its opposite.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q38",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "There is exponential growth in the development of the scientific researches in the recent few decades.",
+    "options": [
+      "aggressive",
+      "rampant",
+      "meager",
+      "augmented"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Exponential' means becoming more and more rapid/large. 'Meager' is the closest opposite meaning small/inadequate.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q39",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "He was known for his sagacity.",
+    "options": [
+      "prudence",
+      "wisdom",
+      "ignorance",
+      "sapience"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Sagacity' means the quality of being sage or having good judgment. 'Ignorance' is an antonym.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q40",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "The river Ganges culminates in the Bay of Bengal.",
+    "options": [
+      "concludes",
+      "flows",
+      "originates",
+      "merges"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Culminates' implies reaching an end or conclusion. The opposite is 'originates'.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Vocabulary" } ]
+  },
+  {
+    "id": "nda-2023-1-q41",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "The lion's share",
+    "options": [
+      "A portion of something",
+      "The largest and the best part of something",
+      "An important decision",
+      "An aggressive statement"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'The lion's share' refers to the largest part of something.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q42",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Spill the beans",
+    "options": [
+      "Reveal a secret",
+      "Forced to leave belongings",
+      "Share the news",
+      "Take offence at someone's rude behaviour"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'spill the beans' means to reveal secret information unintentionally or indiscreetly.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q43",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Cook someone's goose",
+    "options": [
+      "To assist others",
+      "Hypnotize other's mind",
+      "To spoil other's plans",
+      "Inviting misfortune"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'cook someone's goose' means to ruin someone's plans or chances of success.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q44",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Disappear into thin air",
+    "options": [
+      "Lost forever",
+      "Become forgetful",
+      "Become uncaring",
+      "Disappear suddenly"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'disappear into thin air' implies vanishing suddenly and completely.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q45",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Put the screws on",
+    "options": [
+      "Forcing someone to do what you want",
+      "Never letting go of things",
+      "Keep the past alive",
+      "Using someone's trick for own benefit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'put the screws on' someone means to exert pressure on them to do what is required.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q46",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Sit on the fence",
+    "options": [
+      "Avoid meeting someone",
+      "Waiting patiently",
+      "Avoid taking sides",
+      "Hiding from someone"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'sit on the fence' means to avoid making a decision or choosing a side in an argument.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q47",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Be as sharp as a tack",
+    "options": [
+      "A talkative person",
+      "A shrewd person",
+      "A clumsy person",
+      "A clever person"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Being 'as sharp as a tack' means being very intelligent, clever, or quick-witted.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q48",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "From pillar to post",
+    "options": [
+      "Upside down",
+      "Constructing a huge building",
+      "Keep moving from one place to another",
+      "Jumping from the top of the mountain"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To be driven 'from pillar to post' means to be forced to keep moving from one place to another.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q49",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "Heath Robinson",
+    "options": [
+      "Very complicated system or machine for doing a simple task",
+      "Treating everyone as enemy, when they are not",
+      "Sleeping all day, doing nothing",
+      "Very lazy person, slow in action"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Heath Robinson' refers to a machine or system that is absurdly complex for a simple task, named after the British cartoonist.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q50",
+    "year": 2023,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "As thick as thieves",
+    "options": [
+      "Dumb person",
+      "Good for nothing",
+      "Someone who uses everyone for personal gain",
+      "Very close friends who are looked upon with suspicion"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To be 'as thick as thieves' means to be very close friends and sharing secrets.",
+    "tags": [ { "type": "subject", "label": "English" }, { "type": "topic", "label": "Idioms" } ]
+  },
+  {
+    "id": "nda-2023-1-q51",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "Two identical spring balances S1 and S2 are connected one after the other and are held vertically as shown in the figure. A mass of 10 kg is hanging from S2. If the readings on S1 and S2 are W1 and W2 respectively, then:",
+    "options": [
+      "W1 = 5 kg and W2 = 10 kg",
+      "W1 = 10 kg and W2 = 5 kg",
+      "W1 = 5 kg and W2 = 5 kg",
+      "W1 = 10 kg and W2 = 10 kg"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Both springs must support the 10 kg mass below them (assuming massless springs), so both will read 10 kg.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Forces" } ]
+  },
+  {
+    "id": "nda-2023-1-q52",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "A stone is thrown horizontally from the top of a 20 m high building with a speed of 12 m/s. It hits the ground at a distance R from the building. Taking g = 10 m/s^2 and neglecting air resistance will give:",
+    "options": [
+      "R = 12 m",
+      "R = 18 m",
+      "R = 24 m",
+      "R = 30 m"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Time to hit ground: t = sqrt(2h/g) = sqrt(2*20/10) = 2 s. Distance R = v*t = 12 * 2 = 24 m.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Projectile Motion" } ]
+  },
+  {
+    "id": "nda-2023-1-q53",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Fluids",
+    "text": "A sphere of volume V is made of a material with lower density than water. While on Earth, it floats on water with its volume f1V (f1 < 1) submerged. On the other hand, on a spaceship accelerating with acceleration a < g (g is the acceleration due to gravity on Earth) in outer space, its submerged volume in water is f2V. Then:",
+    "options": [
+      "f2 = f1",
+      "f2 = (1 - a/g)f1",
+      "f2 > f1",
+      "f2 = (a/g)f1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The fraction submerged depends on the ratio of densities (solid/liquid), which is independent of the effective gravitational acceleration.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Buoyancy" } ]
+  },
+  {
+    "id": "nda-2023-1-q54",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Work and Energy",
+    "text": "Two identical containers X and Y are connected at the bottom by a thin tube of negligible volume. The tube has a valve in it, as shown in the figure. Initially container X has a liquid filled up to height h in it and container Y is empty. When the valve is opened, both containers have equal amount of liquid in equilibrium. If the initial (before the valve is opened) potential energy of the liquid is P1 and the final potential energy is P2 then",
+    "options": [
+      "P1 = P2",
+      "P1 = 4 P2",
+      "P1 = 2 P2",
+      "P1 = 8 P2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Initial PE: Mg(h/2). Final PE: (M/2)g(h/4) + (M/2)g(h/4) = Mgh/4. Thus P1 = 2 P2.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Potential Energy" } ]
+  },
+  {
+    "id": "nda-2023-1-q55",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "A particle is moving in a circle of radius R with constant speed v. Its average acceleration over the time when it moves over half the circle is:",
+    "options": [
+      "v^2/R",
+      "(pi * v^2) / (2R)",
+      "(2v^2) / (pi * R)",
+      "0"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Change in velocity = 2v. Time = pi*R/v. Average acceleration = Delta(v)/t = 2v / (pi*R/v) = 2v^2 / (pi*R).",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Circular Motion" } ]
+  },
+  {
+    "id": "nda-2023-1-q56",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "Two forces of 5.0 N each are acting on a point mass. If the angle between the forces is 60 degrees, then the net force acting on the point mass has magnitude close to:",
+    "options": [
+      "8.6 N",
+      "4.3 N",
+      "5.0 N",
+      "6.7 N"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Resultant = sqrt(F1^2 + F2^2 + 2*F1*F2*cos(60)) = sqrt(25+25+25) = sqrt(75) ≈ 8.66 N.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Vectors" } ]
+  },
+  {
+    "id": "nda-2023-1-q57",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geology",
+    "text": "Which one of the following is not an igneous rock?",
+    "options": [
+      "Granite",
+      "Slate",
+      "Basalt",
+      "Gabbro"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Slate is a metamorphic rock formed from shale or mudstone. The others are igneous.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Rocks" } ]
+  },
+  {
+    "id": "nda-2023-1-q58",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which of the following statements is/are correct? 1. Hypocenter is the point on the surface of the Earth, nearest to the focus. 2. Velocity of earthquake waves is higher in denser materials. 3. P waves move faster and are the first to arrive at the surface of the Earth.",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "1 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect (the Epicenter is on the surface, Hypocenter is the focus inside the earth). Statements 2 and 3 are correct.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Earthquakes" } ]
+  },
+  {
+    "id": "nda-2023-1-q59",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geology",
+    "text": "In terms of geological time scale, the quaternary period consists of two epochs. They are:",
+    "options": [
+      "Pleistocene and Pliocene",
+      "Holocene and Pleistocene",
+      "Pleistocene and Miocene",
+      "Holocene and Eocene"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Quaternary period consists of the Pleistocene and Holocene epochs.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Geological Time Scale" } ]
+  },
+  {
+    "id": "nda-2023-1-q60",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Astronomy",
+    "text": "Which one of the following is the correct sequence of arrangement of the given planets in descending order of their density (in gm/cm^3)?",
+    "options": [
+      "Earth > Jupiter > Venus > Saturn",
+      "Jupiter > Earth > Saturn > Venus",
+      "Earth > Venus > Jupiter > Saturn",
+      "Earth > Venus > Saturn > Jupiter"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Earth (5.51) > Venus (5.24) > Jupiter (1.33) > Saturn (0.69).",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Solar System" } ]
+  },
+  {
+    "id": "nda-2023-1-q61",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "Which one of the following is not a cold current?",
+    "options": [
+      "Western Australian Current",
+      "Eastern Australian Current",
+      "Benguela Current",
+      "Peru Current"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Eastern Australian Current is a warm ocean current.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Ocean Currents" } ]
+  },
+  {
+    "id": "nda-2023-1-q62",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Soil Geography",
+    "text": "The process of Podsolization is predominantly found in:",
+    "options": [
+      "Equatorial forest",
+      "Monsoon forest",
+      "Taiga forest",
+      "Mediterranean forest"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Podsolization is dominant in the cool, humid climates characteristic of Taiga (boreal) forests.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Soils" } ]
+  },
+  {
+    "id": "nda-2023-1-q63",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "Joint Military exercise 'Keen Sword 23' was conducted between:",
+    "options": [
+      "India and Japan",
+      "India and USA",
+      "USA and Japan",
+      "Japan and Taiwan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Exercise Keen Sword is a joint military exercise held between the USA and Japan.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Military Exercises" } ]
+  },
+  {
+    "id": "nda-2023-1-q64",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defence History",
+    "text": "The Battle of Rezang La, an epic battle in hostile conditions, was fought by the Indian Army in:",
+    "options": [
+      "1948",
+      "1956",
+      "1962",
+      "1972"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Battle of Rezang La was fought during the Sino-Indian War of 1962.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Post-Independence" } ]
+  },
+  {
+    "id": "nda-2023-1-q65",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "Consider the following statements about Exercise 'Sea Vigil-22': 1. Its aim is to assess India's preparedness in the domain of Maritime security and coastal defence. 2. Naval forces of USA and Japan also took part in the exercise. Which of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Exercise Sea Vigil is a national-level coastal defence exercise by the Indian Navy, so USA and Japan did not participate. Thus, only statement 1 is correct.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Military Exercises" } ]
+  },
+  {
+    "id": "nda-2023-1-q66",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Sports",
+    "text": "Consider the following statements: 1. England is the only country that won the ICC T20 World Cup twice. 2. Virat Kohli is the only player to be adjudged as the Player of the Series in the ICC T20 World Cup twice. Which of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct based on records up to early 2023. West Indies also won it twice later, but in the context of the question's timeline, England had won it in 2010 and 2022.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Sports" } ]
+  },
+  {
+    "id": "nda-2023-1-q67",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Awards",
+    "text": "Who among the following is not a recipient of Nobel Prize in Chemistry in 2022?",
+    "options": [
+      "Carolyn R. Bertozzi",
+      "Benjamin List",
+      "Morten Meldal",
+      "K. Barry Sharpless"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Benjamin List won the Nobel Prize in Chemistry in 2021, not 2022.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Nobel Prize" } ]
+  },
+  {
+    "id": "nda-2023-1-q68",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Consider the following statements regarding cell wall composition: 1. Bacterial cell wall is made of peptidoglycan. 2. Fungal cell wall is made of cellulose. 3. Animals lack cell wall and have extracellular matrix made up of sugar and proteins. Which of the statements given above is/are correct?",
+    "options": [
+      "2 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 2 is incorrect as fungal cell walls are made of chitin. Statements 1 and 3 are correct.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Cell Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q69",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following structures is not present in a prokaryotic cell?",
+    "options": [
+      "Cell wall",
+      "Ribosomes",
+      "Nucleus",
+      "Plasma membrane"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Prokaryotic cells lack a true nucleus and membrane-bound organelles.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Cell Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q70",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "In a plant cell, which one of the following contains their own DNA?",
+    "options": [
+      "Nucleus and Endoplasmic Reticulum",
+      "Ribosome and Golgi apparatus",
+      "Mitochondria and Chloroplast",
+      "Chloroplast and Vacuoles"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mitochondria and Chloroplasts are semi-autonomous organelles that contain their own circular DNA.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Cell Organelles" } ]
+  },
+  {
+    "id": "nda-2023-1-q71",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "text": "One advantage of sexual reproduction over asexual reproduction is that it helps species to survive over long evolutionary time. This is because sexual reproduction produces:",
+    "options": [
+      "more offspring in each reproductive cycle.",
+      "robust and healthy offspring.",
+      "genetically similar offspring.",
+      "more variation in offspring."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sexual reproduction generates genetic variation through recombination, enhancing the population's adaptability.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Genetics" } ]
+  },
+  {
+    "id": "nda-2023-1-q72",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following structures or components is not always present in living cells?",
+    "options": [
+      "Cell wall",
+      "Plasma membrane",
+      "Cytoplasm",
+      "Genetic material"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Animal cells lack a cell wall, so it is not always present in all living cells.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Cell Structure" } ]
+  },
+  {
+    "id": "nda-2023-1-q73",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Everyday Chemistry",
+    "text": "Browning of the chopped apple can be minimized by:",
+    "options": [
+      "using table sugar.",
+      "preserving in a container.",
+      "using lemon juice.",
+      "using milk of magnesia."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lemon juice contains ascorbic acid (Vitamin C), an antioxidant that prevents the oxidation (browning) of apples.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Chemical Reactions" } ]
+  },
+  {
+    "id": "nda-2023-1-q74",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Hydrocarbons",
+    "text": "Which of the hydrocarbons are arranged as per the increasing order of their boiling points?",
+    "options": [
+      "Methane, Butane, Propane, Heptane",
+      "Propane, Butane, Pentane, Octane",
+      "Propane, Butane, Heptane, Methane",
+      "Octane, Ethane, Methane, Propane"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Boiling points of alkanes increase with molecular weight: Propane (C3) < Butane (C4) < Pentane (C5) < Octane (C8).",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Organic Chemistry" } ]
+  },
+  {
+    "id": "nda-2023-1-q75",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Separation Techniques",
+    "text": "Which one of the following apparatus is used for separating benzene and water mixture?",
+    "options": [
+      "Round bottom flask",
+      "Conical flask",
+      "Separating funnel",
+      "Dean and Stark apparatus"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A separating funnel is used to separate immiscible liquids like benzene and water based on density differences.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Lab Equipment" } ]
+  },
+  {
+    "id": "nda-2023-1-q76",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "An iron nail dipped in copper sulphate solution turns brown. This is due to which one of the following types of reactions?",
+    "options": [
+      "Addition reaction",
+      "Decomposition reaction",
+      "Substitution reaction",
+      "Displacement reaction"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Iron displaces copper from the copper sulphate solution because it is more reactive, forming a brown deposit of copper on the nail.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Metals" } ]
+  },
+  {
+    "id": "nda-2023-1-q77",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Everyday Chemistry",
+    "text": "Among the following, which is not the correct method for keeping the curd?",
+    "options": [
+      "Keeping in stainless steel vessel",
+      "Keeping in copper vessel",
+      "Keeping in plastic vessel",
+      "Keeping in glass vessel"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Curd contains lactic acid which reacts with copper, potentially forming toxic compounds.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Acids and Bases" } ]
+  },
+  {
+    "id": "nda-2023-1-q78",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Everyday Chemistry",
+    "text": "Toothpaste prevents tooth decay by:",
+    "options": [
+      "neutralizing the excess acidity.",
+      "means of emulsification.",
+      "the action of fluoride.",
+      "making a coat of calcium over the teeth surface."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Toothpaste is generally basic in nature and neutralizes the acid produced by bacteria in the mouth.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Acids and Bases" } ]
+  },
+  {
+    "id": "nda-2023-1-q79",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Freedom Struggle",
+    "text": "Freedom fighter Kanaklata Barua was martyred in:",
+    "options": [
+      "Sepoy Mutiny",
+      "Quit India Movement",
+      "Non-Cooperation Movement",
+      "Peasant Uprising of 1893-1894"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kanaklata Barua was shot dead by police during the Quit India Movement in 1942 while leading a procession bearing the National Flag.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Modern India" } ]
+  },
+  {
+    "id": "nda-2023-1-q80",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Which one among the following statements about the Mansabdari system is correct?",
+    "options": [
+      "All army troopers were allotted mansabs.",
+      "Mansabs were usually assigned on the basis of ancestry.",
+      "Position and salary of mansabdars were indicated by a numerical designation called zat.",
+      "Mansabdars were never paid in cash."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the Mansabdari system, 'zat' fixed the personal rank and salary of a Mansabdar.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Mughal Empire" } ]
+  },
+  {
+    "id": "nda-2023-1-q81",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Which Governor General of Bengal underwent impeachment proceedings in the British Parliament?",
+    "options": [
+      "Robert Clive",
+      "Henry Vansittart",
+      "Warren Hastings",
+      "Lord Cornwallis"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Warren Hastings was impeached in the British Parliament for his administrative actions in India, though he was ultimately acquitted.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "British Rule" } ]
+  },
+  {
+    "id": "nda-2023-1-q82",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Who among the following composed the 'Prayag Prashasti' of Samudragupta?",
+    "options": [
+      "Harishena",
+      "Chand Bardai",
+      "Vishakhadatta",
+      "Kalidasa"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Harishena, the court poet of Samudragupta, composed the Prayag Prashasti (Allahabad Pillar Inscription).",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Gupta Empire" } ]
+  },
+  {
+    "id": "nda-2023-1-q83",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Which one of the following kingdoms was founded by the two brothers Harihar and Bukka?",
+    "options": [
+      "Bahmani",
+      "Vijayanagara",
+      "Malwa",
+      "Maratha"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Vijayanagara Empire was established in 1336 by brothers Harihara I and Bukka Raya I.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Empires" } ]
+  },
+  {
+    "id": "nda-2023-1-q84",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "At which one of the following places did the Danes establish their settlement in India?",
+    "options": [
+      "Chinsura",
+      "Karaikal",
+      "Mahe",
+      "Tranquebar"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Danes established their primary settlement at Tranquebar (Tharangambadi) in Tamil Nadu in 1620.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "European Arrival" } ]
+  },
+  {
+    "id": "nda-2023-1-q85",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "A rectangle ABCD is kept in front of a concave mirror of focal length f with its corners A and B being, respectively, at distances 2f and 3f from the mirror with AB along the principal axis as shown in the figure. It forms an image A'B'C'D' in front of the mirror. What is the ratio of B'C' to A'D'?",
+    "options": [
+      "1",
+      "2",
+      "1/2",
+      "2/3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Point A is at 2f, so its image A' is also at 2f with magnification -1 (A'D' = AD). Point B is at 3f, so its image B' is at 1.5f with magnification m = f/(f-3f) = -1/2. Thus B'C' = 0.5 BC. Since ABCD is a rectangle, AD = BC. The ratio of B'C' to A'D' is 1/2.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Mirrors" } ]
+  },
+  {
+    "id": "nda-2023-1-q86",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Shown in the figure are two plane mirrors XY and YZ (XY ⊥ YZ) joined at their edge. Also shown is a light ray falling on one of the mirrors and reflected back parallel to its original path as a result of this arrangement. The two mirrors are now rotated by an angle θ to their new position X'YZ', as shown. As a result the new reflected ray is at an angle α from the original reflected ray. Then:",
+    "options": [
+      "α = 0",
+      "α = θ",
+      "α = 2θ",
+      "α = 4θ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "For two mutually perpendicular plane mirrors, the incident ray and the emergent reflected ray are always anti-parallel to each other regardless of the angle of incidence. Rotating the entire system by θ doesn't change this relative orientation, so α = 0.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Reflection" } ]
+  },
+  {
+    "id": "nda-2023-1-q87",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "A railway wagon (open at the top) of mass M1 is moving with speed v1 along a straight track. As a result of rain, after some time it gets partially filled with water so that the mass of the wagon becomes M2 and speed becomes v2. Taking the rain to be falling vertically and water stationary inside the wagon, the relation between the two speeds v1 and v2 is:",
+    "options": [
+      "v1 = v2",
+      "(1/2)M1*v1^2 < (1/2)M2*v2^2",
+      "M1*v1 = M2*v2",
+      "M1*v1 < M2*v2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "There are no external horizontal forces, so the horizontal momentum is conserved. M1*v1 = M2*v2.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Momentum" } ]
+  },
+  {
+    "id": "nda-2023-1-q88",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "text": "Which one of the following statements is not true for a flute, a musical instrument?",
+    "options": [
+      "Momentum of waves on the blowing jet determines the loudness of the produced note.",
+      "Arrival time of the waves on the blowing jet determines the pitch of the produced note.",
+      "Sound comes from a vibrating column of air inside the flute.",
+      "Sound comes from a vibrating column of air inside as well as outside the flute."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sound in a flute originates specifically from the resonating, vibrating column of air inside the instrument tube.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Acoustics" } ]
+  },
+  {
+    "id": "nda-2023-1-q89",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "text": "A positive charge is moving towards south in a space where magnetic field is pointing in the north direction. The moving charge will experience:",
+    "options": [
+      "a deflecting force towards north direction.",
+      "a deflecting force towards east direction.",
+      "a deflecting force towards west direction.",
+      "no deflecting force."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The charge is moving South and the magnetic field is North. The angle is 180°. Force F = qvB sin(180°) = 0. Therefore, no force.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Lorentz Force" } ]
+  },
+  {
+    "id": "nda-2023-1-q90",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which one of the following is not a main greenhouse gas?",
+    "options": [
+      "Water vapour",
+      "Oxygen",
+      "Carbon dioxide",
+      "Methane"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Oxygen (O2) does not absorb infrared radiation and is not a greenhouse gas.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Environment" } ]
+  },
+  {
+    "id": "nda-2023-1-q91",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "text": "Which one of the following statements about X-rays is not true?",
+    "options": [
+      "They have wavelengths of about 1 Å.",
+      "These can be generated by bombarding a metal target by high energy electrons.",
+      "Due to their wavelengths being shorter, these can be used for radar systems.",
+      "These are also used for the treatment of certain forms of cancer."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Radar systems use radio waves and microwaves, not X-rays, because radar relies on the reflection of waves off macroscopic objects over long distances.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Electromagnetic Spectrum" } ]
+  },
+  {
+    "id": "nda-2023-1-q92",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "India Geography",
+    "text": "Which one among the following is the northernmost geographical location?",
+    "options": [
+      "New Delhi",
+      "Kathmandu",
+      "Thimphu",
+      "Dhaka"
+    ],
+    "correctAnswer": 0,
+    "explanation": "New Delhi is at ~28.6°N, Kathmandu is ~27.7°N, Thimphu is ~27.4°N, and Dhaka is ~23.8°N.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Locations" } ]
+  },
+  {
+    "id": "nda-2023-1-q93",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Cartography",
+    "text": "Consider the following statements: 1. Distance between the longitudes becomes zero on North Pole and South Pole. 2. Distance between the longitudes is maximum on the Equator. 3. Number of longitudes is more than number of latitudes. Which of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Longitudes converge at poles (distance = 0) and are widest at the equator. There are 360 longitudes and 181 latitudes. All statements are correct.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Coordinates" } ]
+  },
+  {
+    "id": "nda-2023-1-q94",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Economic Geography",
+    "text": "Which one among the following states is the leading producer of Manganese in India?",
+    "options": [
+      "Madhya Pradesh",
+      "Jharkhand",
+      "Rajasthan",
+      "Karnataka"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Madhya Pradesh is the leading manganese-producing state in India.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Minerals" } ]
+  },
+  {
+    "id": "nda-2023-1-q95",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Economic Geography",
+    "text": "Mica is mainly used in:",
+    "options": [
+      "food and beverage industry.",
+      "iron and steel industry.",
+      "aluminium industry.",
+      "electrical and electronic industries."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mica is an excellent insulator and can withstand high voltage, making it indispensable in electrical and electronic industries.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Minerals" } ]
+  },
+  {
+    "id": "nda-2023-1-q96",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "According to Koppen's climatic classifications, the Great Northern Plains of India have which one of the following climates?",
+    "options": [
+      "Aw climate",
+      "Cwg climate",
+      "Amw climate",
+      "Dfc climate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cwg (Monsoon type with dry winter) corresponds to the Great Northern Plains of India.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Climate" } ]
+  },
+  {
+    "id": "nda-2023-1-q97",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Important Personalities",
+    "text": "Which of the following statements about Lachit Borphukan is/are correct? 1. He was a General of the Ahom Force. 2. He is known for his leadership in the Battle of Saraighat. 3. Lachit Borphukan Gold Medal is given to the best cadet at the National Defence Academy. Select the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 only",
+      "2 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All three statements about the famous Ahom general Lachit Borphukan are true.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Medieval India" } ]
+  },
+  {
+    "id": "nda-2023-1-q98",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defence Exercises",
+    "text": "The 4th edition of joint military exercise 'DUSTLIK' between the Indian Army and the Uzbekistan Army was held in:",
+    "options": [
+      "Ranikhet",
+      "Gangtok",
+      "Pithoragarh",
+      "Leh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 4th edition of the exercise DUSTLIK was held in Pithoragarh, Uttarakhand.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Military" } ]
+  },
+  {
+    "id": "nda-2023-1-q99",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Science & Tech",
+    "text": "Which of the following is India's first privately developed rocket launched by ISRO recently?",
+    "options": [
+      "Skyroot",
+      "Prarambh",
+      "Bazoomq",
+      "Vikram-S"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Vikram-S, developed by Skyroot Aerospace, was India's first privately developed rocket to be launched.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Space" } ]
+  },
+  {
+    "id": "nda-2023-1-q100",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Environment",
+    "text": "Which one among the following villages was recently declared as India's first 24x7 solar-powered village?",
+    "options": [
+      "Mawlynnong, Meghalaya",
+      "Modhera, Gujarat",
+      "Ziro village, Arunachal Pradesh",
+      "Malana, Himachal Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Modhera in Gujarat was declared as India's first 24x7 solar-powered village.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Renewable Energy" } ]
+  },
+  {
+    "id": "nda-2023-1-q101",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "National Events",
+    "text": "Tableaux of which one of the following States was adjudged the best in the Republic Day Parade, 2023?",
+    "options": [
+      "Uttarakhand",
+      "Punjab",
+      "Gujarat",
+      "Uttar Pradesh"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Uttarakhand's tableau, showcasing the state's wildlife and religious sites, won the first prize in 2023.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Republic Day" } ]
+  },
+  {
+    "id": "nda-2023-1-q102",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Ecology",
+    "text": "Organisms capable of using CO2 as principal carbon source are called:",
+    "options": [
+      "Autotrophs",
+      "Heterotrophs",
+      "Parasites",
+      "Decomposers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Autotrophs (like plants and some bacteria) can fix atmospheric carbon dioxide into organic compounds.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Nutrition" } ]
+  },
+  {
+    "id": "nda-2023-1-q103",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "When yeast cells are O2 starved, fermentation serves as the source of energy. This results in the production of:",
+    "options": [
+      "ATP + CO2 + Ethanol",
+      "ATP + O2 + Pyruvate",
+      "ATP + CO2 + Lactic acid",
+      "ATP + O2 + Acetaldehyde"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In anaerobic conditions (O2 starved), yeast undergoes alcoholic fermentation, producing Ethanol, CO2, and ATP.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Respiration" } ]
+  },
+  {
+    "id": "nda-2023-1-q104",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "During a laboratory experiment, a student immerses epidermal leaf peel in a hypertonic solution. After some time, the student examined the cells under a microscope and observed that:",
+    "options": [
+      "the cells swelled.",
+      "the cells were plasmolysed.",
+      "the cells built up turgor pressure.",
+      "the cells size was unaffected."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A hypertonic solution draws water out of the plant cells, causing the cell membrane to pull away from the cell wall, a process called plasmolysis.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Osmosis" } ]
+  },
+  {
+    "id": "nda-2023-1-q105",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Diversity in Living Organisms",
+    "text": "Which one of the following is not a characteristic feature of fungi?",
+    "options": [
+      "Cell wall is made of chitin",
+      "Filamentous mycelium is present",
+      "Can carry out photosynthesis",
+      "Asexual spores are produced"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fungi lack chlorophyll and are heterotrophic, meaning they cannot carry out photosynthesis.",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Kingdom Fungi" } ]
+  },
+  {
+    "id": "nda-2023-1-q106",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Plant Kingdom",
+    "text": "Which one of the following statements about bryophytes is not correct?",
+    "options": [
+      "The plant body is a gametophyte.",
+      "They are also called the amphibians of plant kingdom.",
+      "The plant body is attached to the substratum by rhizoids.",
+      "Specialized water-conducting tissues are present."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bryophytes are non-vascular plants, meaning they lack specialized water-conducting tissues (xylem and phloem).",
+    "tags": [ { "type": "subject", "label": "Biology" }, { "type": "topic", "label": "Botany" } ]
+  },
+  {
+    "id": "nda-2023-1-q107",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Everyday Chemistry",
+    "text": "What is the specific purpose of using potassium hydroxide during the saponification process?",
+    "options": [
+      "To obtain soaps which are hard on the skin",
+      "To obtain soaps which are soft on the skin",
+      "To obtain natural fragrance",
+      "To make the saponification very economical"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Potassium hydroxide (KOH) is used instead of sodium hydroxide (NaOH) to produce liquid or softer soaps that are gentler on the skin.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Soaps" } ]
+  },
+  {
+    "id": "nda-2023-1-q108",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Metals",
+    "text": "Which one of the following is the correct arrangement of metals in the decreasing order of their reactivity?",
+    "options": [
+      "Iron, Sodium, Silver, Copper",
+      "Silver, Copper, Iron, Sodium",
+      "Sodium, Copper, Silver, Iron",
+      "Sodium, Iron, Copper, Silver"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sodium is highly reactive, followed by Iron. Copper is less reactive, and Silver is least reactive among them.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Reactivity Series" } ]
+  },
+  {
+    "id": "nda-2023-1-q109",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Carbon",
+    "text": "Which among the following statements is not correct with respect to allotropes of Carbon?",
+    "options": [
+      "Graphite is a good conductor of electricity.",
+      "Diamond is the hardest substance known.",
+      "Fullerene is one of the allotropes of carbon.",
+      "Next to diamond, graphite is the second hardest known substance."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Graphite is soft and slippery because its layers can easily slide over one another. It is not the second hardest known substance.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Allotropes" } ]
+  },
+  {
+    "id": "nda-2023-1-q110",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Industrial Chemistry",
+    "text": "Which among the following is the popular method for manufacture of ammonia?",
+    "options": [
+      "Ostwald's process",
+      "Haber-Bosch process",
+      "Electric furnace process",
+      "Electrolysis process"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Haber-Bosch process is the main industrial procedure for the production of ammonia from nitrogen and hydrogen gases.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Ammonia" } ]
+  },
+  {
+    "id": "nda-2023-1-q111",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "text": "For manufacturing of glass, which among the following is used as a source of silica?",
+    "options": [
+      "Fine clay soil",
+      "Wood powder",
+      "Coconut shell",
+      "Sand"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Silica sand (silicon dioxide) is the primary component and source of silica in glass manufacturing.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Glass" } ]
+  },
+  {
+    "id": "nda-2023-1-q112",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "text": "Which among the following is the correct arrangement of halogens in the increasing order of their oxidizing nature?",
+    "options": [
+      "F, Cl, Br, I",
+      "Cl, Br, F, I",
+      "Br, I, Cl, F",
+      "I, Br, Cl, F"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Oxidizing power increases up the group in halogens. Iodine is the weakest, and Fluorine is the strongest. Thus, I < Br < Cl < F.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Halogens" } ]
+  },
+  {
+    "id": "nda-2023-1-q113",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Salts",
+    "text": "Copper sulphate crystals available in the market are blue coloured crystals. By careful heating, they turn to white colour. Which one of the following is responsible for the blue colour?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Water",
+      "Hydrogen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The blue colour of copper sulphate crystals is due to the presence of water of crystallization (CuSO4·5H2O). When heated, it loses water and turns white.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Hydrated Salts" } ]
+  },
+  {
+    "id": "nda-2023-1-q114",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Gases",
+    "text": "Equal volume of all gases, when measured at the same temperature and pressure, contain an equal number of particles. Who proposed the above law?",
+    "options": [
+      "Charles",
+      "Boyle",
+      "Avogadro",
+      "Lussac"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Avogadro's law states that equal volumes of all gases, at the same temperature and pressure, have the same number of molecules.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Gas Laws" } ]
+  },
+  {
+    "id": "nda-2023-1-q115",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Airbags work on the principle of a chemical reaction triggered by the impact producing a gaseous product that causes a sudden volume change. Which one among the following chemical conversions is responsible for this?",
+    "options": [
+      "Sodium azide into nitrogen gas",
+      "Solid carbon dioxide into gaseous carbon dioxide",
+      "Carbon dioxide into carbon monoxide",
+      "Sudden conversion of gaseous carbon dioxide into carbon monoxide"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Upon impact, sodium azide (NaN3) decomposes rapidly to produce sodium metal and nitrogen gas, which inflates the airbag.",
+    "tags": [ { "type": "subject", "label": "Chemistry" }, { "type": "topic", "label": "Applications" } ]
+  },
+  {
+    "id": "nda-2023-1-q116",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Which one among the following districts of Eastern India held a referendum in 1947 to decide whether or not to join Pakistan?",
+    "options": [
+      "Sylhet",
+      "Goalpara",
+      "Cachar",
+      "Jalpaiguri"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Sylhet referendum was held in July 1947 to decide whether the district of Sylhet in Assam would remain in India or join East Bengal (Pakistan).",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Partition" } ]
+  },
+  {
+    "id": "nda-2023-1-q117",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one of the following statements about Rabatak inscription is not correct?",
+    "options": [
+      "It throws important light on Kushana genealogy.",
+      "It refers to Kanishka as 'a king of kings and a son of God'.",
+      "The 23-line inscription is written in Gandhari language.",
+      "It mentions names of States which were part of Kanishka's empire."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Rabatak inscription is written in the Bactrian language and Greek script, not Gandhari.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Inscriptions" } ]
+  },
+  {
+    "id": "nda-2023-1-q118",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Who among the following was the author of the famous Sanskrit work 'Mrichchhakatika'?",
+    "options": [
+      "Kalidasa",
+      "Bhasa",
+      "Valmiki",
+      "Shudraka"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Sanskrit play 'Mrichchhakatika' (The Little Clay Cart) was written by King Shudraka.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Literature" } ]
+  },
+  {
+    "id": "nda-2023-1-q119",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "Yashovarman was ruler of which one of the following kingdoms?",
+    "options": [
+      "Kannauj",
+      "Mewar",
+      "Marwar",
+      "Kalinga"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yashovarman was a powerful king of Kannauj in the early 8th century.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Kingdoms" } ]
+  },
+  {
+    "id": "nda-2023-1-q120",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one among the following rulers established Pataliputra as the capital of the Magadhan Empire?",
+    "options": [
+      "Bimbisara",
+      "Bindusara",
+      "Ajatashatru",
+      "Ashoka"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ajatashatru (and his successor Udayin) built the fort at Pataligrama, which eventually became the capital Pataliputra.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Empires" } ]
+  },
+  {
+    "id": "nda-2023-1-q121",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Astronomy",
+    "text": "Which one of the following astronomers proved that the Earth and other planets revolve around the Sun?",
+    "options": [
+      "Copernicus",
+      "Kepler",
+      "Galileo",
+      "Newton"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nicolaus Copernicus was the first to formulate a comprehensive heliocentric cosmology which displaced the Earth from the center of the universe.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "History of Science" } ]
+  },
+  {
+    "id": "nda-2023-1-q122",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "Sand falls vertically on a conveyor belt at a rate of 0.1 kg/s. In order to keep the belt moving at a uniform speed of 2 m/s, the force required to be applied on the belt is:",
+    "options": [
+      "0 N",
+      "0.2 N",
+      "1.0 N",
+      "2.0 N"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Force F = v * (dm/dt) = 2 m/s * 0.1 kg/s = 0.2 N.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Momentum" } ]
+  },
+  {
+    "id": "nda-2023-1-q123",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Work and Energy",
+    "text": "The power required to lift a mass of 8.0 kg up a vertical distance of 4 m in 2 s is (taking acceleration due to gravity as 10 m/s^2):",
+    "options": [
+      "80 W",
+      "160 W",
+      "320 W",
+      "640 W"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Work done W = mgh = 8 * 10 * 4 = 320 J. Power = W/t = 320 / 2 = 160 W.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Power" } ]
+  },
+  {
+    "id": "nda-2023-1-q124",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "One block of 2.0 kg mass is placed on top of another block of 3.0 kg mass. The coefficient of static friction between the two blocks is 0.2. The bottom block is pulled with a horizontal force F such that both the blocks move together without slipping. Taking acceleration due to gravity as 10 m/s^2, the maximum value of the frictional force is:",
+    "options": [
+      "50 N",
+      "30 N",
+      "4 N",
+      "10 N"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The maximum static frictional force between the blocks is f_max = mu * N = 0.2 * (2.0 kg * 10 m/s^2) = 0.2 * 20 = 4 N.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Friction" } ]
+  },
+  {
+    "id": "nda-2023-1-q125",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "A mass is attached to a spring that hangs vertically. The extension produced in the spring is 6 cm on Earth. The acceleration due to gravity on the surface of the Moon is one-sixth of its value on the surface of the Earth. The extension of the spring on the Moon would be:",
+    "options": [
+      "6 cm",
+      "1 cm",
+      "0 cm",
+      "36 cm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Extension x = mg/k. Since g_moon = g_earth / 6, the extension on the moon will be 6 cm / 6 = 1 cm.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Springs" } ]
+  },
+  {
+    "id": "nda-2023-1-q126",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "Which one of the following is an example of Second Class Lever?",
+    "options": [
+      "A pair of scissors",
+      "A bottle opener",
+      "A cricket bat",
+      "A bow and arrow"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In a second-class lever, the load is located between the fulcrum and the effort (e.g., bottle opener, wheelbarrow).",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Machines" } ]
+  },
+  {
+    "id": "nda-2023-1-q127",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "In an electric circuit, a wire of resistance 10 Ω is used. If this wire is stretched to a length double of its original value, the current in the circuit would become:",
+    "options": [
+      "half of its original value.",
+      "double of its original value.",
+      "one-fourth of its original value.",
+      "four times of its original value."
+    ],
+    "correctAnswer": 2,
+    "explanation": "When a wire is stretched to double its length, its area halves. New resistance R' = rho(2L)/(A/2) = 4 * R. Since resistance becomes 4 times, current becomes one-fourth.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Resistance" } ]
+  },
+  {
+    "id": "nda-2023-1-q128",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "What is the total resistance in the following circuit element? [Three resistors each of R arranged in a specific way, usually parallel or series combinations. Based on common questions with 'R', 'R', 'R' in a triangle/bridge]:",
+    "options": [
+      "R/2",
+      "3R",
+      "3R/2",
+      "2R/3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For three equal resistors R in parallel, it's R/3. If two are in parallel and one in series, it's 1.5 R. Without the image, a common structure resulting in '2R/3' is two in series in parallel with one (2R || R = 2R/3).",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Circuits" } ]
+  },
+  {
+    "id": "nda-2023-1-q129",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which of the following scheme(s) is/are included under Bharatmala Pariyojana? 1. Develop the road connectivity to border areas 2. Development of coastal roads 3. Improvement in the efficiency of National Corridors Select the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bharatmala Pariyojana is an umbrella program for the highways sector that focuses on optimizing efficiency, coastal road development, and border connectivity.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Infrastructure" } ]
+  },
+  {
+    "id": "nda-2023-1-q130",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Transport",
+    "text": "Deendayal Port was earlier known as:",
+    "options": [
+      "Paradip Port",
+      "Tuticorin Port",
+      "Kandla Port",
+      "Visakhapatnam Port"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kandla Port in Gujarat was renamed as Deendayal Port in 2017.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Ports" } ]
+  },
+  {
+    "id": "nda-2023-1-q131",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defence",
+    "text": "The Counter Insurgency and Jungle Warfare School of Indian Army is situated at:",
+    "options": [
+      "Dehradun",
+      "Vairengte",
+      "Gulmarg",
+      "Mhow"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Counter Insurgency and Jungle Warfare School (CIJWS) is located in Vairengte, Mizoram.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Military Training" } ]
+  },
+  {
+    "id": "nda-2023-1-q132",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Soil Geography",
+    "text": "In the soil-forming regime, which one of the following occurs in a region where evapotranspiration exceeds precipitation significantly?",
+    "options": [
+      "Calcification",
+      "Laterization",
+      "Podsolization",
+      "Gleization"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Calcification occurs in arid and semi-arid regions where evapotranspiration exceeds precipitation, bringing calcium carbonate to the upper soil layers.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Soils" } ]
+  },
+  {
+    "id": "nda-2023-1-q133",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Earth's Interior",
+    "text": "Which one of the following is found in the innermost part of the Earth?",
+    "options": [
+      "Conrad discontinuity",
+      "Moho discontinuity",
+      "Guttenberg discontinuity",
+      "Lehmann discontinuity"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Lehmann discontinuity separates the liquid outer core from the solid inner core, making it the innermost.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Geomorphology" } ]
+  },
+  {
+    "id": "nda-2023-1-q134",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Flora",
+    "text": "Which of the following tree species is/are found on Himalayas? 1. Oak 2. Rhododendron 3. Rosewood Select the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3",
+      "1 and 2",
+      "1 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Oak and Rhododendron are typical of the Himalayan temperate forests. Rosewood is a tropical hardwood.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Vegetation" } ]
+  },
+  {
+    "id": "nda-2023-1-q135",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one of the following is the lowermost/innermost intrusive igneous rock?",
+    "options": [
+      "Laccolith",
+      "Batholith",
+      "Lopolith",
+      "Phacolith"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Batholiths are massive intrusive igneous rock bodies that form deep within the Earth's crust.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Rocks" } ]
+  },
+  {
+    "id": "nda-2023-1-q136",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Time Zones",
+    "text": "If it is 12 noon in New Delhi, what will be the time in London, UK?",
+    "options": [
+      "6:30 A.M.",
+      "6:30 P.M.",
+      "5:30 A.M.",
+      "5:30 P.M."
+    ],
+    "correctAnswer": 0,
+    "explanation": "IST is GMT+5:30. Therefore, London (GMT) is 5 hours and 30 minutes behind New Delhi. 12:00 Noon - 5:30 = 6:30 A.M.",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Time" } ]
+  },
+  {
+    "id": "nda-2023-1-q137",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "Which of the following positions of Sun, Earth and Moon is/are suitable for Spring Tide? 1. SYZYGY Conjunction 2. SYZYGY Opposition 3. Quadrature Select the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3",
+      "1 and 2",
+      "1 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Spring tides occur when the Sun, Earth, and Moon are aligned (Syzygy), which includes both conjunction (new moon) and opposition (full moon).",
+    "tags": [ { "type": "subject", "label": "Geography" }, { "type": "topic", "label": "Tides" } ]
+  },
+  {
+    "id": "nda-2023-1-q138",
+    "year": 2023,
+    "subject": "History",
+    "topic": "World History",
+    "text": "Which Renaissance artist painted 'The Last Supper'?",
+    "options": [
+      "Michelangelo",
+      "Donatello",
+      "Botticelli",
+      "Leonardo da Vinci"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'The Last Supper' is a famous late 15th-century mural painting by Leonardo da Vinci.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Renaissance" } ]
+  },
+  {
+    "id": "nda-2023-1-q139",
+    "year": 2023,
+    "subject": "History",
+    "topic": "World History",
+    "text": "Which one of the following European explorer conquered Mexico?",
+    "options": [
+      "Vasco da Gama",
+      "Bartholomew Diaz",
+      "Magellan",
+      "Hernán Cortés"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hernán Cortés was a Spanish conquistador who led an expedition that caused the fall of the Aztec Empire in Mexico.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Explorations" } ]
+  },
+  {
+    "id": "nda-2023-1-q140",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Near which one of the following cities in India have large statues of Kushana rulers been discovered?",
+    "options": [
+      "Karnal",
+      "Ropar",
+      "Hisar",
+      "Mathura"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mathura was a major center for Kushana art, and several large, headless statues of Kushana kings (like Kanishka) have been found near Mathura (at Mat).",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Art & Culture" } ]
+  },
+  {
+    "id": "nda-2023-1-q141",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "The Treaty of Yandabo was concluded as part of which one of the following wars?",
+    "options": [
+      "First Anglo-Burmese War",
+      "Second Anglo-Burmese War",
+      "Anglo-Kuki War",
+      "Anglo-Maratha War"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Treaty of Yandabo (1826) ended the First Anglo-Burmese War.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Treaties" } ]
+  },
+  {
+    "id": "nda-2023-1-q142",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Planning",
+    "text": "Plan allocation in agriculture and irrigation as percentage of total plan outlay was highest in:",
+    "options": [
+      "Seventh Five-Year Plan",
+      "Third Five-Year Plan",
+      "First Five-Year Plan",
+      "Second Five-Year Plan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The First Five-Year Plan (1951-56) focused predominantly on agriculture and irrigation, having the highest percentage allocation to these sectors.",
+    "tags": [ { "type": "subject", "label": "Economy" }, { "type": "topic", "label": "Five Year Plans" } ]
+  },
+  {
+    "id": "nda-2023-1-q143",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "International Affairs",
+    "text": "The UN COP-27 Summit relates to:",
+    "options": [
+      "Russia-Ukraine war",
+      "Terrorism and counter-terrorism",
+      "Climate change",
+      "Interpol"
+    ],
+    "correctAnswer": 2,
+    "explanation": "COP-27 is the 27th United Nations Climate Change conference.",
+    "tags": [ { "type": "subject", "label": "Current Affairs" }, { "type": "topic", "label": "Environment" } ]
+  },
+  {
+    "id": "nda-2023-1-q144",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Tribes",
+    "text": "Which one of the following tribes from India's North-East had the earliest known association with cultivation and production of tea?",
+    "options": [
+      "Khasis",
+      "Garos",
+      "Singphos",
+      "Jayantias"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Singpho tribe in Assam were the earliest known cultivators of tea in India.",
+    "tags": [ { "type": "subject", "label": "History" }, { "type": "topic", "label": "Economy" } ]
+  },
+  {
+    "id": "nda-2023-1-q145",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Constitutional Amendments",
+    "text": "By which one of the following amendments, was Article 51A, relating to the Fundamental Duties, inserted into the Constitution of India?",
+    "options": [
+      "The Constitution (42nd Amendment) Act",
+      "The Constitution (44th Amendment) Act",
+      "The Constitution (85th Amendment) Act",
+      "The Constitution (92nd Amendment) Act"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fundamental Duties were added by the 42nd Constitutional Amendment Act of 1976.",
+    "tags": [ { "type": "subject", "label": "Polity" }, { "type": "topic", "label": "Constitution" } ]
+  },
+  {
+    "id": "nda-2023-1-q146",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Gravity",
+    "text": "Which one of the following statements is true?",
+    "options": [
+      "The force of gravity of the Earth on the Moon is greater than the force of gravity of the Moon on the Earth.",
+      "The force of gravity of the Moon on the Earth is greater than the force of gravity of the Earth on the Moon.",
+      "The force of gravity of the Earth on the Moon and of the Moon on the Earth are equal in magnitude and are in the same direction.",
+      "The force of gravity of the Earth on the Moon and of the Moon on the Earth are equal in magnitude but are in opposite directions."
+    ],
+    "correctAnswer": 3,
+    "explanation": "By Newton's third law of motion, the gravitational force exerted by the Earth on the Moon is equal in magnitude and opposite in direction to the force exerted by the Moon on the Earth.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Gravitation" } ]
+  },
+  {
+    "id": "nda-2023-1-q147",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "An electric bulb is rated as 220 V and 80 W. When it is operated on 110 V, the power rating would be:",
+    "options": [
+      "80 W",
+      "60 W",
+      "40 W",
+      "20 W"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Power P = V^2 / R. When voltage is halved (110 V instead of 220 V), the power consumed becomes (1/2)^2 = 1/4 of the original power. 80 W / 4 = 20 W.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Power" } ]
+  },
+  {
+    "id": "nda-2023-1-q148",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "In the dispersion of white light by a common glass prism, which one among the following is correct?",
+    "options": [
+      "Red light deviates the most because red light has highest speed in prism",
+      "Blue light deviates the most because blue light has highest speed in prism",
+      "Red light deviates the most because red light has lowest speed in prism",
+      "Blue light deviates the most because blue light has lowest speed in prism"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Blue light bends (deviates) the most because its speed is the lowest in glass compared to red light (having a shorter wavelength and higher refractive index).",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Light" } ]
+  },
+  {
+    "id": "nda-2023-1-q149",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "text": "Which one among the following is true for the speed of sound in a given medium?",
+    "options": [
+      "Speed of sound remains same at all frequencies",
+      "Speed of sound is faster at higher frequencies",
+      "Speed of sound is slower at higher frequencies",
+      "Speed of sound is slower at higher wavelengths"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The speed of sound in a given medium is a property of the medium and is largely independent of frequency.",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Acoustics" } ]
+  },
+  {
+    "id": "nda-2023-1-q150",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Which one of the following telescopes contains only mirrors?",
+    "options": [
+      "Galilean telescope",
+      "Keplerian telescope",
+      "Newtonian telescope",
+      "Schmidt telescope"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Newtonian telescope is a type of reflecting telescope that uses only mirrors (a concave primary mirror and a flat diagonal secondary mirror).",
+    "tags": [ { "type": "subject", "label": "Physics" }, { "type": "topic", "label": "Telescopes" } ]
+  }
+]

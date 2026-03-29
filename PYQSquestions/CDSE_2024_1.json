@@ -1,0 +1,2052 @@
+[
+  {
+    "id": "cds-2024-1-001",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Ancient India / Prehistoric Cultures",
+    "text": "Consider the following statements about the Jorwe culture of the Deccan:\n1. It covers, practically, the whole of modern Maharashtra except the coastal Konkan district.\n2. The Pravara-Godavari valleys seem to have been the nuclear zone.\n3. The large sites of this culture yield evidence of shifting agriculture.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. The Jorwe culture covered practically the whole of modern Maharashtra except the coastal Konkan district, and the Pravara-Godavari valleys were the nuclear zone. Statement 3 is incorrect — the large sites of this culture yield evidence of settled (not shifting) agriculture.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Prehistoric Cultures"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-002",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Ancient India / Sangam Age",
+    "text": "Consider the following statements about Madurai, the capital city of the Pandya kingdom:\n1. It has been described in Maduraikkanchi as a large grand city, enclosed by walls on three sides and the Vaigai river on the fourth side.\n2. The Arthashastra mentions it as a centre of fine cotton textiles.\n3. Other literary sources describe it as a major craft centre.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. Madurai is described in Maduraikkanchi as a grand city enclosed by walls on three sides with the Vaigai river on the fourth side, and the Arthashastra mentions it as a centre of fine cotton textiles. Statement 3 is less specifically supported — it is mainly known as a textile centre, not a general 'major craft centre' in other literary sources.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Sangam Age"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-003",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Astronomy",
+    "text": "Consider the following statements about Sawai Jai Singh's astronomical work:\n1. He learnt of the accuracy of European observations, and obtained de La Hire's tables from which he reproduced a refraction table.\n2. His astronomers also developed a telescope of their own to observe the lunar phases of Venus.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — Sawai Jai Singh did learn of European astronomical accuracy and used de La Hire's tables to reproduce a refraction table. Statement 2 is incorrect — his astronomers developed a telescope to observe the phases of Venus, not the 'lunar phases of Venus'; moreover the telescope was to observe Venus's phases, not lunar phases.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Science"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-004",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Art & Culture",
+    "text": "Man Kautuhal, a work on music, was prepared under the aegis of",
+    "options": ["Raja Man Singh of Gwalior", "Tansen", "Meera Bai", "Amir Khusrau"],
+    "correctAnswer": "a",
+    "explanation": "Man Kautuhal, an important treatise on music, was composed under the patronage of Raja Man Singh of Gwalior (reign 1486–1516). It is one of the earliest systematic works on Hindustani classical music.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Music"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-005",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Government Schemes",
+    "text": "Consider the following statements regarding the Sugamya Bharat Abhiyan:\n1. This programme is initiated by the Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment.\n2. It aims to develop an inclusive society for persons with disabilities.\n3. It has provisions of pension for persons with disabilities.\nWhich of the statements given above is/are correct?",
+    "options": ["1, 2 and 3", "1 and 2 only", "2 and 3 only", "1 only"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. Sugamya Bharat Abhiyan (Accessible India Campaign) was launched by the Department of Empowerment of Persons with Disabilities under the Ministry of Social Justice and Empowerment, with the aim of creating an accessible and inclusive society for persons with disabilities. Statement 3 is incorrect — the scheme focuses on accessibility (physical infrastructure, transport, ICT), not pensions.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Government Schemes"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-006",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Modern India / Freedom Movement",
+    "text": "Which one among the following was not a part of the action programme of the Non-Cooperation Movement?",
+    "options": [
+      "The Congress organisation was to reach down to the village and the Mohalla level",
+      "Boycott of government affiliated schools and colleges",
+      "Taking control of the law and order machinery of the State by the Congress Working Committee",
+      "Surrender of titles and honours given by the government"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Taking control of the law and order machinery of the State by the Congress Working Committee was NOT part of the Non-Cooperation Movement's action programme. The movement was fundamentally non-violent and focused on withdrawal of cooperation from the British government — surrendering titles, boycotting institutions, and building grassroots Congress organisation — not seizing control of governmental machinery.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Modern India / Freedom Movement"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-007",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Ancient India / Mauryan Empire",
+    "text": "Consider the following statements about the Mauryan State and the forest people:\n1. The forest people were subjected to new forms of political and economic dominance and the necessity to subordinate and assimilate them led to a change in the earlier attitude of excluding these people from imperial territory.\n2. The State recognised that the forest produce was the sole monopoly of the forest people.\n3. The State was concerned with the conservation of forests and to this end the burning of forests was prohibited.\n4. The forest people could be harnessed to serve the State and could be used as troops, spies and assassins.\nHow many of the above statements is/are correct?",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": "c",
+    "explanation": "Statements 1, 3, and 4 are correct. The Mauryan state did integrate forest people into the imperial system, prohibited burning of forests for conservation, and used forest people as troops, spies, and assassins. Statement 2 is incorrect — the State claimed monopoly rights over forest produce, not recognised it as the forest people's sole monopoly.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Ancient India / Mauryan Empire"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-008",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Delhi Sultanate",
+    "text": "At which of the following places was diamond mining carried out during the Delhi Sultanate period?",
+    "options": ["Awadh", "Khambhat", "Panna", "Lakhnauti"],
+    "correctAnswer": "c",
+    "explanation": "Panna (in present-day Madhya Pradesh) was famous for diamond mining during the Delhi Sultanate period. It has historically been one of the most significant diamond-producing regions of India.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Delhi Sultanate"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-009",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science & Technology",
+    "topic": "Space Technology",
+    "text": "Which one of the following statements is true for James Webb Space Telescope launched in December 2021?",
+    "options": [
+      "It orbits the Sun, about 15 lakh km away from the Earth.",
+      "It orbits the Earth, about 15 lakh km away.",
+      "It is stationary in space nearly 10 lakh km away from the Earth.",
+      "It revolves around the Moon nearly 3.5 lakh km away from the Earth."
+    ],
+    "correctAnswer": "a",
+    "explanation": "The James Webb Space Telescope orbits the Sun at the second Lagrange point (L2), which is approximately 1.5 million km (15 lakh km) away from the Earth, on the side opposite to the Sun. It does not orbit the Earth or Moon.",
+    "tags": [
+      {"type": "subject", "label": "Science & Technology"},
+      {"type": "topic", "label": "Space Technology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-010",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Physics / Subatomic Particles",
+    "text": "Which of the following particles are subatomic particles?\n1. Electron\n2. Proton\n3. Neutron\n4. Muon\nSelect the correct answer using the code given below.",
+    "options": ["1 and 4 only", "1, 2, 3 and 4", "2 and 3 only", "1, 2 and 3 only"],
+    "correctAnswer": "b",
+    "explanation": "All four — Electron, Proton, Neutron, and Muon — are subatomic particles. Electrons, protons, and neutrons are the classic constituents of atoms. The muon is a subatomic particle similar to the electron but with greater mass, classified as a lepton.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Physics / Subatomic Particles"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-011",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science & Technology",
+    "topic": "Quantum Computing",
+    "text": "Qubit refers to a two-valued quantity used in",
+    "options": ["classical computers", "classical cryptography", "quantum computers", "lasers"],
+    "correctAnswer": "c",
+    "explanation": "A qubit (quantum bit) is the basic unit of quantum information used in quantum computers. Unlike a classical bit that can be either 0 or 1, a qubit can exist in a superposition of both states simultaneously.",
+    "tags": [
+      {"type": "subject", "label": "Science & Technology"},
+      {"type": "topic", "label": "Quantum Computing"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-012",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Famous Scientific Images",
+    "text": "Photo 51 refers to an image of",
+    "options": ["a crater on the Moon", "DNA molecules", "the virus responsible for COVID-19", "the virus responsible for common cold"],
+    "correctAnswer": "b",
+    "explanation": "Photo 51 is the famous X-ray diffraction image of DNA taken by Rosalind Franklin and Raymond Gosling in 1952. It provided crucial evidence for the double-helix structure of DNA and played a key role in Watson and Crick's model of DNA.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / DNA"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-013",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Physics / Particle Physics",
+    "text": "The rest mass of Higgs boson is estimated to be close to",
+    "options": ["0.5 MeV", "900 MeV", "100 GeV", "1000 GeV"],
+    "correctAnswer": "c",
+    "explanation": "The Higgs boson has a rest mass of approximately 125–126 GeV/c², which is closest to 100 GeV among the given options. It was discovered at CERN's Large Hadron Collider in 2012.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Physics / Particle Physics"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-014",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Physics / Atomic Clock",
+    "text": "Which one of the following correctly describes the principle of the working of an atomic clock?",
+    "options": [
+      "Vibration of a small quartz crystal",
+      "Simple harmonic motion of atoms inside a crystal",
+      "Resonant frequency in cesium (or rubidium) atom",
+      "Excitation and de-excitation of hydrogen atoms"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Atomic clocks work based on the resonant frequency of transitions in cesium-133 (or rubidium) atoms. The SI second is defined as 9,192,631,770 oscillations of the cesium-133 atom. This makes atomic clocks the most accurate timekeeping devices.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Physics / Atomic Clock"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-015",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Political Science",
+    "topic": "Political Theory / Approaches",
+    "text": "Political analysis involves both normative and empirical approaches. Which of the following statements is/are correct about the two approaches?\n1. Knowledge acquired through the empirical approach is value-loaded.\n2. Knowledge acquired through the normative approach is objectively neutral.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "d",
+    "explanation": "Both statements are incorrect. The empirical approach aims to be value-free and objective (not value-loaded). The normative approach is explicitly value-laden and not objectively neutral — it deals with what ought to be, based on values and ideals. So neither statement 1 nor statement 2 is correct.",
+    "tags": [
+      {"type": "subject", "label": "Political Science"},
+      {"type": "topic", "label": "Political Theory / Approaches"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-016",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Political Science",
+    "topic": "Political Theory / Totalitarianism",
+    "text": "Which one amongst the following cannot be a feature of a 'totalitarian regime'?",
+    "options": [
+      "State control of the political and often personal realms of individual life",
+      "A monopoly of the means of mass communication",
+      "One-party State",
+      "Autonomy of civil society"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Autonomy of civil society cannot be a feature of a totalitarian regime. Totalitarianism is characterized by total state control over all aspects of public and private life, elimination of independent civil society, one-party rule, and monopoly over mass communication. An autonomous civil society is antithetical to totalitarianism.",
+    "tags": [
+      {"type": "subject", "label": "Political Science"},
+      {"type": "topic", "label": "Political Theory / Totalitarianism"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-017",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Political Science",
+    "topic": "International Relations",
+    "text": "Which of the following statements are not correct?\n1. In world politics, 'hard power' can be exercised by both States and other actors involving use of threat or coercion.\n2. Globalisation is necessarily economic, not cultural.\n3. The term 'Washington Consensus' refers to a policy that seeks intervention in the market.\n4. 'Autarky' is generally understood as economic 'self-sufficiency'.\nSelect the correct answer using the code given below.",
+    "options": ["1 and 4 only", "2 and 3 only", "2, 3 and 4 only", "1, 2, 3 and 4"],
+    "correctAnswer": "b",
+    "explanation": "Statements 2 and 3 are incorrect. Globalisation is not necessarily only economic — it is also cultural, social, and political. The Washington Consensus refers to a set of free-market economic policies advocating deregulation and minimal state intervention, NOT intervention in the market. Statements 1 and 4 are correct.",
+    "tags": [
+      {"type": "subject", "label": "Political Science"},
+      {"type": "topic", "label": "International Relations"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-018",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Indian Constitution / Fundamental Rights",
+    "text": "Consider the following statements:\n1. Under Part III of the Constitution of India, individuals can enforce rights guaranteed by this Part when they are violated by the action of a government authority.\n2. Under Part III of the Constitution of India, individuals can enforce rights guaranteed by this Part when they are violated by not only the action of a government authority, but also by its inaction.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. Under Part III (Fundamental Rights) of the Indian Constitution, rights can be enforced both against positive acts of government authorities (statement 1) and also against their inaction or failure to perform constitutional duties (statement 2). The Supreme Court has consistently held that fundamental rights are enforceable both against action and inaction of the State.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Indian Constitution / Fundamental Rights"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-019",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "International Law / Human Rights",
+    "text": "Consider the following statements:\n1. The International Covenant on Civil and Political Rights (ICCPR) provides that everyone shall have the right to recognition everywhere as a person before the law.\n2. Although India agrees in principle with the ethos of ICCPR, it has not yet ratified it fully.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — Article 16 of the ICCPR does provide that everyone shall have the right to recognition everywhere as a person before the law. Statement 2 is incorrect — India ratified the ICCPR in 1979, so it has fully ratified it.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "International Law / Human Rights"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-020",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Indian Constitution / Legal Aid",
+    "text": "Which of the following statements with respect to the right to have a legal aid is/are correct?\n1. Under the Constitution of India, it is given under the Directive Principles of State Policy.\n2. It is the duty of the police to inform the nearest Legal Aid Committee immediately after the arrest of a person.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. Article 39A (Directive Principles) mandates the State to ensure equal justice and free legal aid. Additionally, the Code of Criminal Procedure and Supreme Court directions mandate that the police must inform an arrested person of their right to legal aid and notify the nearest Legal Aid Committee.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Indian Constitution / Legal Aid"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-021",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Human Rights / UDHR",
+    "text": "Which of the following statements as per the 'Universal Declaration of Human Rights' is/are correct?\n1. The Declaration provides that everyone has a right to seek and enjoy in other country's asylum from prosecution in respect of political crimes.\n2. The Declaration provides that everyone has the freedom from arbitrary deprival of nationality, except for the freedom to change nationality.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — Article 14 of UDHR provides the right to seek and enjoy asylum from persecution in other countries for political crimes. Statement 2 is incorrect — Article 15 of UDHR states that no one shall be arbitrarily deprived of nationality NOR denied the right to change nationality, making it broader than stated.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Human Rights / UDHR"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-022",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "International Organisations / UN",
+    "text": "Which of the following UN organisations has been awarded with Nobel Prize twice?",
+    "options": ["IPCC", "IAEA", "UNHCR", "UNICEF"],
+    "correctAnswer": "c",
+    "explanation": "UNHCR (United Nations High Commissioner for Refugees) has been awarded the Nobel Peace Prize twice — in 1954 and 1981. IAEA and its Director General Mohamed ElBaradei jointly won in 2005 (once). UNICEF won once in 1965.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "International Organisations / UN"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-023",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Immunology / Vaccination",
+    "text": "Which of the following statements is/are correct about vaccination that provides protection against an infectious disease?\n1. It blocks the entry of the infectious agent into body.\n2. It produces antibodies against infection.\n3. It kills the infectious agent when it enters in the body.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "2 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "b",
+    "explanation": "Statement 2 is correct — vaccination stimulates the immune system to produce antibodies against the specific infectious agent. Statement 1 is incorrect — vaccines do not physically block the entry of pathogens. Statement 3 is incorrect — vaccines prepare the immune system to kill pathogens, but it is the immune response (not the vaccine itself) that kills the infectious agent after entry.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Immunology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-024",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Cell Biology",
+    "text": "Which cells in human body have no nucleus?",
+    "options": ["Muscle cells", "Phagocytic cells", "Red blood cells", "Ciliated cells"],
+    "correctAnswer": "c",
+    "explanation": "Mature Red Blood Cells (erythrocytes) in humans have no nucleus. They lose their nucleus during development (maturation) to maximize space for haemoglobin, which is essential for oxygen transport.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Cell Biology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-025",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Environment / Plastics",
+    "text": "The use of plastics has led to a number of environment-related problems. For this, which one of the following statements is correct?",
+    "options": [
+      "They are non-biodegradable.",
+      "They do not get released into water and food.",
+      "They do not have any biochemical synthesis activity.",
+      "They are harmless to humans."
+    ],
+    "correctAnswer": "a",
+    "explanation": "The correct statement is that plastics are non-biodegradable, meaning they cannot be broken down by natural biological processes. This persistence in the environment is the primary reason plastics cause environmental problems. The other options are incorrect — plastics do leach into water and food, they can interfere with biochemical processes, and they are not harmless to humans.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Environment / Plastics"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-026",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Cell Biology / Microbodies",
+    "text": "Microbodies found to be present in plant and animal cells contain",
+    "options": ["broken down membranes", "enzymes", "acidic fluids", "waste metabolites"],
+    "correctAnswer": "b",
+    "explanation": "Microbodies (such as peroxisomes and glyoxysomes) found in plant and animal cells contain enzymes. Peroxisomes contain oxidative enzymes like catalase and peroxidase that are involved in metabolic reactions including the breakdown of fatty acids and detoxification of hydrogen peroxide.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Cell Biology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-027",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Biochemistry / Enzymes",
+    "text": "An antibacterial enzyme present in saliva and tears is called",
+    "options": ["ribozyme", "lipase", "lysozyme", "isomerase"],
+    "correctAnswer": "c",
+    "explanation": "Lysozyme is an antibacterial enzyme found in saliva, tears, mucus, and other body secretions. It works by breaking down the cell walls of bacteria, particularly gram-positive bacteria, thus providing a natural defence against bacterial infection.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Biochemistry / Enzymes"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-028",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Botany / Plant Stems",
+    "text": "Which set of vegetables is underground stem or modified stem of a plant?",
+    "options": [
+      "Potato, artichoke, round gourd",
+      "Onion, garlic, carrot",
+      "Potato, onion, garlic",
+      "Potato, garlic, turnip"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Potato (tuber — modified underground stem), Onion (bulb — modified underground stem), and Garlic (bulb — modified underground stem) are all modified stems. Carrot and turnip are modified roots (not stems), and round gourd is a fruit.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Botany"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-029",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Monetary Policy / Indicators",
+    "text": "Which of the following indicators is/are used to observe the monetary transmission mechanism in the economy?\n1. Weighted average lending rate\n2. Weighted average domestic term deposit rate\n3. 1-year median MCLR\n4. SDF rate\nSelect the correct answer using the code given below.",
+    "options": ["1 and 2 only", "1, 2 and 3", "3 and 4", "4 only"],
+    "correctAnswer": "b",
+    "explanation": "The weighted average lending rate, weighted average domestic term deposit rate, and 1-year median MCLR (Marginal Cost of Funds Based Lending Rate) are key indicators used to observe the monetary transmission mechanism. The SDF (Standing Deposit Facility) rate is a monetary policy instrument, not a transmission indicator per se.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Monetary Policy"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-030",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Monetary Policy / SDF",
+    "text": "Consider the following statements regarding instruments of monetary policy:\n1. Standing deposit facility (SDF) rate was introduced in April 2022.\n2. SDF rate replaced fixed reverse repo rate as the floor of the LAF corridor.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. The Standing Deposit Facility (SDF) was introduced by the RBI in April 2022 as a new instrument for absorbing liquidity. The SDF rate replaced the fixed reverse repo rate as the floor of the Liquidity Adjustment Facility (LAF) corridor.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Monetary Policy / SDF"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-031",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Price Indices / WPI",
+    "text": "Consider the following statements regarding weightage of different articles in Wholesale Price Index (WPI):\n1. Fuel and power have higher weightage in WPI than that of primary articles.\n2. Weightage of manufactured products in WPI is higher than that of fuel and power.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "b",
+    "explanation": "Statement 2 is correct — Manufactured products have the highest weightage in WPI (approximately 64%), followed by Primary Articles (~22%) and Fuel & Power (~13%). Statement 1 is incorrect — Fuel and Power have lower weightage than Primary Articles in WPI.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Price Indices / WPI"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-032",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "International Trade / FTA",
+    "text": "If India enters into Free Trade Agreements (FTAs) with other nations, then the growth of exports of India would depend upon which of the following?\n1. Extent of tariff reduction vis-à-vis MFN tariffs\n2. Extent of relaxation in terms of rules of origin\n3. Extent of relaxation in sanitary and phytosanitary measures\n4. Level of infrastructure in India\n5. Income in nations with which India enters into FTAs\nSelect the correct answer using the code given below.",
+    "options": ["1, 3 and 4 only", "1, 2 and 4 only", "2, 3 and 5 only", "1, 2, 3, 4 and 5"],
+    "correctAnswer": "d",
+    "explanation": "All five factors are relevant to India's export growth under FTAs. Tariff reductions, relaxed rules of origin, sanitary/phytosanitary measures, domestic infrastructure quality, and the income levels of partner nations all significantly influence the growth of India's exports.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "International Trade / FTA"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-033",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Amphoteric Oxides",
+    "text": "Which one of the following is an amphoteric oxide?",
+    "options": ["MgO", "P4O10", "Na2O", "Al2O3"],
+    "correctAnswer": "d",
+    "explanation": "Al2O3 (Aluminium oxide) is an amphoteric oxide, meaning it can react with both acids and bases. MgO and Na2O are basic oxides, while P4O10 is an acidic oxide.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Oxides"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-034",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Octane Number",
+    "text": "The correct order of octane number of butane, pentane, hexane and cyclohexane is",
+    "options": [
+      "butane > pentane > hexane > cyclohexane",
+      "butane > pentane > cyclohexane > hexane",
+      "butane > cyclohexane > pentane > hexane",
+      "cyclohexane > butane > pentane > hexane"
+    ],
+    "correctAnswer": "d",
+    "explanation": "The octane numbers are approximately: cyclohexane (~83), butane (~94 for n-butane, but effectively ~113 for isobutane — here considering n-butane ~94 is debated; the key ordering for this question is cyclohexane > butane > pentane > hexane for straight-chain variants, where branching and ring structures increase octane number while longer straight chains decrease it).",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Fuels"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-035",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Reactivity Series",
+    "text": "Which one of the following is the correct order of reactivity of Mg, Al, Zn and Fe with HCl?",
+    "options": ["Mg > Al > Zn > Fe", "Mg > Al > Fe > Zn", "Zn > Fe > Mg > Al", "Fe > Al > Zn > Mg"],
+    "correctAnswer": "a",
+    "explanation": "The correct order of reactivity with HCl (based on the electrochemical/activity series) is: Mg > Al > Zn > Fe. Magnesium is most reactive, followed by aluminium, then zinc, and iron is the least reactive among the four.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Reactivity Series"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-036",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Methanol Toxicity",
+    "text": "Methanol is toxic because",
+    "options": [
+      "methanol coagulates the protoplasm",
+      "methanol gets oxidised to methanal in liver which coagulates the protoplasm",
+      "methanol gets oxidised to acetic acid in liver which coagulates the protoplasm",
+      "methanol gets oxidised to CO in liver which coagulates the protoplasm"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Methanol (CH3OH) is toxic because it is metabolised in the liver by alcohol dehydrogenase to methanal (formaldehyde / HCHO), which is extremely toxic and coagulates proteins in the protoplasm, leading to cell death, blindness, and potentially death.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Organic Chemistry"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-037",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Vinegar",
+    "text": "Vinegar is",
+    "options": [
+      "5-8% solution of acetic acid in water",
+      "5-8% solution of carbonic acid in water",
+      "5-8% solution of ethanol in water",
+      "10-15% solution of propionic acid in water"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Vinegar is a dilute solution of acetic acid (ethanoic acid) in water, typically containing 5–8% acetic acid by volume. It is produced by the fermentation of ethanol by acetic acid bacteria.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Acids"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-038",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Climate / Global Dimming",
+    "text": "Which one of the following is related to global dimming?",
+    "options": [
+      "Fall of atmospheric pressure due to increased particulates",
+      "Raise of atmospheric pressure due to increased particulates",
+      "Raise of temperature due to increased particulates",
+      "Fall of temperature due to increased particulates"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Global dimming refers to the reduction in the amount of solar radiation reaching the Earth's surface. It is caused by increased particulates (aerosols, soot, etc.) in the atmosphere, which reflect and absorb sunlight, leading to a fall in temperature at the Earth's surface.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Climate"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-039",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Organic Chemistry / Cetane",
+    "text": "Which one of the following is known as cetane?",
+    "options": ["Hexadecane", "Heptadecane", "Octadecane", "Nonadecane"],
+    "correctAnswer": "a",
+    "explanation": "Cetane is the common name for hexadecane (C16H34), a 16-carbon straight-chain alkane. The cetane number of diesel fuel is measured relative to cetane (hexadecane), which has a cetane number of 100.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Organic Chemistry"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-040",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "World Geography / Arabian Peninsula",
+    "text": "Which one among the following countries is not part of the Arabian Peninsula?",
+    "options": ["Kuwait", "Oman", "Jordan", "Yemen"],
+    "correctAnswer": "c",
+    "explanation": "Jordan is NOT part of the Arabian Peninsula. The Arabian Peninsula includes Saudi Arabia, Yemen, Oman, UAE, Qatar, Bahrain, and Kuwait. Jordan is located to the north of the Arabian Peninsula in the Levant region.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "World Geography"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-041",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Antarctica",
+    "text": "Which of the following statements regarding continent of Antarctica is/are correct?\n1. It has the highest average elevation as compared to all other continents.\n2. Mount Vinson is the highest peak of this continent.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. Antarctica has the highest average elevation of all continents (~2,300 m above sea level), largely due to the thick ice sheet. Mount Vinson (4,892 m) is indeed the highest peak in Antarctica.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Antarctica"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-042",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Indian Geography / Biosphere Reserves",
+    "text": "Which one of the following biosphere reserves is spread over three States in India?",
+    "options": ["Nilgiri", "Achanakmar-Amarkantak", "Seshachalam", "Agasthyamalai"],
+    "correctAnswer": "b",
+    "explanation": "Achanakmar-Amarkantak Biosphere Reserve is spread across three states: Chhattisgarh, Madhya Pradesh, and a small portion of Maharashtra. Nilgiri spans Tamil Nadu, Kerala, and Karnataka (also three states), but Achanakmar-Amarkantak is the standard answer for this question.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Indian Geography / Biosphere Reserves"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-043",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Indian Geography / Wildlife Sanctuaries",
+    "text": "Which one of the following pairs is not correctly matched?",
+    "options": [
+      "Ramnagar Wildlife Sanctuary : Uttarakhand",
+      "Chakrashila Wildlife Sanctuary : Assam",
+      "Nahar Wildlife Sanctuary : Haryana",
+      "Kane Wildlife Sanctuary : Arunachal Pradesh"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Kane Wildlife Sanctuary is located in Himachal Pradesh, not Arunachal Pradesh. The other pairs are correctly matched.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Indian Geography / Wildlife Sanctuaries"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-044",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Indian Geography / Agriculture / Lakshadweep",
+    "text": "Which of the following statements regarding coconut production in Lakshadweep is/are correct?\n1. Productivity per hectare is highest in India.\n2. Oil content in nuts is highest in the world.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. Lakshadweep has the highest per hectare coconut productivity in India, and the coconuts grown there have the highest oil content in the world due to the unique soil and climatic conditions of the coral islands.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Indian Geography / Agriculture"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-045",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Barrier Islands",
+    "text": "Which of the following statements regarding barrier islands is/are correct?\n1. These are small chain of sand islands that form offshore, far from the coast.\n2. Lagoons or shallower marshes separate the barrier islands from the mainland.\n3. Such locations are hazardous for settlements because they are easily swept away by storms and hurricanes.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "d",
+    "explanation": "All three statements are correct. Barrier islands are narrow, elongated sand formations that form offshore (parallel to the coast). Lagoons or marshes separate them from the mainland. They are highly vulnerable to storms and hurricanes, making settlements there hazardous.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Coastal Features"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-046",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Clouds",
+    "text": "Identify the type of cloud on the basis of the given characteristics:\n1. High, thin, puffy white clouds of ice crystals that look like ripples\n2. They appear between 20000 feet and 40000 feet above the Earth's surface\n3. One of its types is called a 'mackerel sky' because the clouds resemble large fish scales, especially when they are coloured pink at sunset\nSelect the correct answer.",
+    "options": ["Altostratus", "Cirrostratus", "Altocumulus", "Cirrocumulus"],
+    "correctAnswer": "d",
+    "explanation": "Cirrocumulus clouds are high-altitude ice-crystal clouds that appear as small, white puffs arranged in rows, resembling fish scales — creating what is called a 'mackerel sky.' They occur at altitudes of 20,000–40,000 feet (6,000–12,000 m).",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Clouds"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-047",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Drainage Patterns",
+    "text": "Identify the type of drainage pattern on the basis of the given characteristics:\n1. It represents the most common pattern of streams and their tributaries\n2. It occurs in areas of uniform rock type and regular slope\n3. A map, or aerial photograph, shows a pattern like the veins on a leaf — smaller streams join the main stream at an acute angle\nSelect the correct answer.",
+    "options": ["Dendritic", "Radial", "Trellis", "Centripetal"],
+    "correctAnswer": "a",
+    "explanation": "Dendritic drainage pattern is the most common drainage pattern that resembles the branching pattern of a tree or leaf veins. It develops in areas with uniform rock type and regular slope, where tributaries join the main stream at acute angles.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Drainage Patterns"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-048",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Human Geography / Gateway City",
+    "text": "Which of the following regarding gateway city is/are correct?\n1. City whose physical location makes it a link between one country and others, or between one region and others\n2. A gateway city exercises control over a large area because it commands the entry and exit rights and powers for a particular country or region\n3. Most gateway cities are ports, many of which were formerly administrative centres for a colonial government\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "d",
+    "explanation": "All three statements about gateway cities are correct. Gateway cities are defined by their strategic physical location as links between regions/countries, they exercise control over entry/exit, and most are historically ports that served as colonial administrative centres.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Human Geography / Urban Geography"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-049",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Chola Art",
+    "text": "Which one of the following has been an important early Chola painting discovered at the Brihadisvara Temple, Thanjavur in 1931?",
+    "options": [
+      "Buddha with Chauri-bearers on either side",
+      "Shiva as Yoga-Dakshinamurti",
+      "Yakshi Kali",
+      "Parshvanatha with snake-hood on a lion-throne"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The important early Chola painting discovered at the Brihadisvara Temple (Brihadeeswara) at Thanjavur in 1931 depicts Shiva as Yoga-Dakshinamurti. These paintings were found under the later Nayaka paintings and represent some of the earliest examples of Chola-period mural painting.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Art"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-050",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Modern India / Railways",
+    "text": "Consider the following statements about the initial development of railways in India by the British:\n1. Private financial investors for railways would get land free from the British Government in India.\n2. The investors would get a return of 5 percent on their capital from the government if they ran at a loss or secured inadequate profit.\n3. The railways would be jointly managed with the government.\nHow many of the above statements is/are correct?",
+    "options": ["1", "2", "3", "None"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. Under the Guarantee System introduced in 1849, private railway companies received free land from the colonial government and a guaranteed return of 5% on their capital. Statement 3 is incorrect — early railways were privately owned and managed, not jointly managed with the government.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Modern India / Economic History"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-051",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Modern India / Economic History",
+    "text": "Which of the following industries was most affected by the 'deindustrialisation' of India in the 19th century?",
+    "options": ["Silk manufacture", "Cotton textiles", "Iron and steel", "Woollen manufacture"],
+    "correctAnswer": "b",
+    "explanation": "The cotton textiles industry was most severely affected by the deindustrialisation of India in the 19th century. The influx of cheap machine-made British cotton cloth destroyed India's traditional handloom weaving industry, causing massive unemployment among weavers.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Modern India / Economic History"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-052",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Modern India / National Movement",
+    "text": "Consider the following statements about the early phase of the National Movement in India:\n1. Ferozeshah Mehta, Badruddin Tyabji and others formed the Bombay Presidency Association.\n2. Surendranath Banerjee and his group planned an Indian National Conference at Calcutta.\n3. Allan Octavian Hume decided to create an all-India body as a rival to the above organisations to give vent to the grievances of the poor and marginalised Indians.\nHow many of the above statements is/are correct?",
+    "options": ["1", "2", "All", "None"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. The Bombay Presidency Association was indeed formed by Ferozeshah Mehta, Badruddin Tyabji and others, and Surendranath Banerjee did plan the Indian National Conference in Calcutta. Statement 3 is incorrect — A.O. Hume established the Indian National Congress not as a rival to these bodies, but as a safety valve and platform for educated Indians, under guidance of the Viceroy.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Modern India / National Movement"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-053",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science & Technology",
+    "topic": "Space Technology / Radio Telescope",
+    "text": "The Giant Metrewave Radio Telescope consists of",
+    "options": [
+      "a single parabolic antenna",
+      "multiple parabolic antennas",
+      "multiple circular antennas",
+      "a combination of circular and parabolic antennas"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The Giant Metrewave Radio Telescope (GMRT), located near Pune, India, consists of 30 fully steerable dish-shaped parabolic antennas, each 45 metres in diameter. It is operated by the National Centre for Radio Astrophysics (NCRA).",
+    "tags": [
+      {"type": "subject", "label": "Science & Technology"},
+      {"type": "topic", "label": "Space Technology / Radio Telescopes"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-054",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science & Technology",
+    "topic": "Space Technology / Commercial Space Station",
+    "text": "Which one of the following is the first commercial space station?",
+    "options": ["Axiom Station", "International Space Station", "Galileo", "Voyager 1"],
+    "correctAnswer": "a",
+    "explanation": "Axiom Station (Axiom Space) is being developed as the world's first commercial space station. It initially plans to attach modules to the ISS before eventually becoming a free-flying independent commercial station.",
+    "tags": [
+      {"type": "subject", "label": "Science & Technology"},
+      {"type": "topic", "label": "Space Technology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-055",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Physics / Ferromagnetic Materials",
+    "text": "Which one of the following is not a ferromagnetic material?",
+    "options": ["Cobalt", "Iron", "Silver", "Ferric chloride"],
+    "correctAnswer": "c",
+    "explanation": "Silver is not a ferromagnetic material — it is diamagnetic (weakly repelled by magnetic fields). Iron, Cobalt, and Nickel are the classic ferromagnetic elements. Ferric chloride (FeCl3) exhibits weak ferromagnetic properties. Silver shows no ferromagnetic behaviour.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Physics / Magnetism"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-056",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Physics / Heat Transfer",
+    "text": "On a day when I am in hurry to go to office, I have a fixed quantity of rice which was just cooked and kept in a bowl. In order to cool it quickly, which one of the following is the best option?",
+    "options": [
+      "Let it be kept on the table in a room where there is no fan, no air conditioner",
+      "Let it be kept in a room with AC set at a temperature around 23°C and a ceiling fan (or table fan) operating at slow speed",
+      "Let it be kept in a bowl of water (at room temperature) and operating a ceiling fan (or table fan) at full speed",
+      "Let it be kept in a bowl of water at room temperature only"
+    ],
+    "correctAnswer": "c",
+    "explanation": "The best option is to place the rice bowl in a bowl of water at room temperature with a fan running at full speed. Water conducts heat much more efficiently than air (conduction), and the fan accelerates evaporation and convective cooling, maximising the rate of heat transfer from the rice.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Physics / Heat Transfer"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-057",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "International Relations / Marrakech Partnership",
+    "text": "Which of the following statements about 'Marrakech Partnership' is/are correct?\n1. It is an intergovernmental partnership for global climate action.\n2. It is not only an intergovernmental partnership for global climate action but also a collaboration between governments and other stakeholders like cities, businesses and investors.\n3. This partnership is guided by the 2030 Agenda for Sustainable Development.\nSelect the correct answer using the code given below.",
+    "options": ["1 and 2 only", "1 and 3 only", "1, 2 and 3", "2 only"],
+    "correctAnswer": "a",
+    "explanation": "Statements 1 and 2 are correct. The Marrakech Partnership for Global Climate Action, established at COP22 in 2016, is both an intergovernmental partnership and a broader multi-stakeholder collaboration involving cities, businesses, and investors. Statement 3 is incorrect — the Marrakech Partnership is guided by the Paris Agreement, not the 2030 Agenda for Sustainable Development (which is the framework for the SDGs).",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "International Relations / Climate"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-058",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Indian Constitution / Marriage Rights / UDHR",
+    "text": "Consider the following statements:\n1. In India, the Special Marriage Act protects an individual if one enters into an interreligious marriage.\n2. Right to marry a person of one's choice is an integral aspect of one's Fundamental Rights under Article 21 of the Constitution of India.\n3. The Universal Declaration of Human Rights also resonates marital rights of every adult consenting individuals.\nWhich of the statements given above is/are correct?",
+    "options": ["2 and 3 only", "1 and 3 only", "1, 2 and 3", "1 only"],
+    "correctAnswer": "c",
+    "explanation": "All three statements are correct. The Special Marriage Act, 1954 provides a civil law framework for marriages regardless of religion. The Supreme Court has held the right to marry a person of one's choice as part of the right to life under Article 21. Article 16 of the UDHR recognises the right of adults to marry and found a family without limitation due to race, nationality or religion.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Indian Constitution / Fundamental Rights"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-059",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "International Law / International Court of Justice",
+    "text": "Which of the following statements about the International Court of Justice is/are correct?\n1. The Court consists of members, wherein two members cannot be nationals of the same State.\n2. The General Assembly and the Security Council proceed independently of one another to elect the members of the Court.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. The ICJ consists of 15 judges, and no two judges can be nationals of the same state. The judges are elected by an absolute majority vote in both the UN General Assembly and the Security Council, which vote independently and simultaneously.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "International Law / ICJ"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-060",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science & Technology",
+    "topic": "Space Technology / Remote Sensing",
+    "text": "Consider the following statements regarding Bhoonidhi Vista:\n1. It is a data visualisation service of Bhoonidhi providing full resolution mosaicked data visualisation capability through Web Map Service.\n2. It is enabled for ResourceSat-2/2A, Sentinel 1 and 2 satellites.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. Bhoonidhi Vista is ISRO's data visualisation service providing full resolution mosaicked data visualisation through Web Map Service (WMS). It supports data from ResourceSat-2/2A as well as Sentinel-1 and Sentinel-2 satellites.",
+    "tags": [
+      {"type": "subject", "label": "Science & Technology"},
+      {"type": "topic", "label": "Remote Sensing / ISRO"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-061",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "International Affairs / G20",
+    "text": "Which of the following were objectives of the G20 Summit, 2023 under India's Presidency?\n1. Green development\n2. Accelerating progress on SDGs\n3. Women-led development\nSelect the correct answer using the code given below.",
+    "options": ["1 and 2 only", "2 and 3 only", "1, 2 and 3", "1 and 3 only"],
+    "correctAnswer": "c",
+    "explanation": "All three — Green development, Accelerating progress on SDGs, and Women-led development — were key objectives of the G20 Summit 2023 under India's Presidency with the theme 'Vasudhaiva Kutumbakam' (One Earth, One Family, One Future). India's G20 Presidency emphasised all three priorities.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "International Affairs / G20"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-062",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Virology / Dengue",
+    "text": "The causal organism of dengue fever is a mosquito-borne virus which belongs to which one among the following categories?",
+    "options": ["Flavi-ribo virus", "Adenovirus", "Vaccinia virus", "Nipah virus"],
+    "correctAnswer": "a",
+    "explanation": "The dengue virus belongs to the Flaviviridae family and is classified as a Flavivirus (Flavi-ribo virus). It is an RNA virus transmitted by Aedes mosquitoes. Other flaviviruses include Zika, Yellow fever, and West Nile virus.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Virology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-063",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Blood / Clotting",
+    "text": "From which among the following are blood clotting factors released?",
+    "options": ["RBCs", "Eosinophils", "Platelets", "Monocytes"],
+    "correctAnswer": "c",
+    "explanation": "Blood clotting factors are released from Platelets (thrombocytes). When a blood vessel is damaged, platelets aggregate at the site and release clotting factors that initiate the coagulation cascade to form a blood clot.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Blood / Physiology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-064",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Human Physiology / Pulse",
+    "text": "Pulse is felt due to the rhythmic contraction and relaxation of the",
+    "options": ["chambers of heart", "valves present in veins", "aorta and main arteries", "valves of heart"],
+    "correctAnswer": "c",
+    "explanation": "The pulse is felt due to the rhythmic expansion and recoil (contraction and relaxation) of the aorta and main arteries in response to the heart's pumping action. Each heartbeat sends a pressure wave through the arterial walls, which is felt as a pulse.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Human Physiology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-065",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Biology / Biochemistry / Protein Denaturation",
+    "text": "When eggs are heated, the transparent liquid portion around yolk turns solid and turbid white. This happens due to the thermal denaturation of",
+    "options": ["fats", "proteins", "ribose sugar", "carbohydrates"],
+    "correctAnswer": "b",
+    "explanation": "When eggs are heated, the egg white (albumen) — which is primarily composed of proteins like ovalbumin — undergoes thermal denaturation. Heat causes the protein molecules to unfold and aggregate, turning the clear liquid into a solid, opaque white substance.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Biology / Biochemistry"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-066",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Macroeconomics / GDP Deflator",
+    "text": "Which of the following statements is/are correct?\n1. GDP deflator captures the average price of an unchanging basket of commodities that constitutes the GDP of the country.\n2. GDP deflator can be used to measure the real GDP of the economy but not the inflation rate.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — the GDP deflator measures the average price level of all goods and services included in GDP (the entire basket of goods produced in the economy). Statement 2 is incorrect — the GDP deflator CAN also be used to measure the inflation rate (it is actually one of the standard measures of inflation, alongside CPI).",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Macroeconomics / National Income"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-067",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Macroeconomics / Price Index",
+    "text": "Which of the following statements is/are correct?\n1. A price index captures the change in the average price of a constant basket of commodities.\n2. If the price index takes values 100, 110 and 121 in three consecutive years respectively, then the inflation rates in the 2nd and 3rd years are 10% and 21% respectively.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — a price index measures the change in the average price of a fixed (constant) basket of goods. Statement 2 is incorrect — the inflation rate in the 3rd year is (121-110)/110 × 100 = 10%, NOT 21%. The 21% figure is the cumulative change from the base year, not the annual inflation rate.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Macroeconomics / Inflation"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-068",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Macroeconomics / Foreign Exchange Reserves",
+    "text": "Which of the following statements is/are correct?\n1. Most of India's reserves is held in the form of foreign currency.\n2. There is no cost of holding foreign currency as reserves by a nation.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — the majority of India's foreign exchange reserves are held in the form of foreign currency assets (mainly US dollars). Statement 2 is incorrect — there IS a cost (opportunity cost) of holding foreign currency reserves, as the funds could otherwise be used for development or higher-yielding investments.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Macroeconomics / Foreign Reserves"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-069",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Microeconomics / Externalities",
+    "text": "Which one of the following statements is not correct?",
+    "options": [
+      "The market mechanism overproduces a good that generates positive externality.",
+      "A cap and trade of pollution permits can be used by the government to achieve the social optimum.",
+      "The optimal amount of subsidy in the case of an activity that produces a positive externality is the difference between the social benefit and the private benefit at the optimum.",
+      "Tragedy of Commons is an example of negative externality."
+    ],
+    "correctAnswer": "a",
+    "explanation": "Statement (a) is incorrect. The market mechanism UNDERproduces goods that generate positive externalities (not overproduces), because the market price does not account for the social benefits. Conversely, goods with negative externalities are overproduced by the market.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Microeconomics / Externalities"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-070",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Taxation / GST",
+    "text": "Which one of the following statements regarding GST is not correct?",
+    "options": [
+      "Amendment 115 to the Constitution of India kept alcohol for human use and five petroleum products outside the ambit of GST.",
+      "Amendment 122 to the Constitution of India kept only alcohol for human use outside the ambit of GST.",
+      "Precious metals are taxed at a rate of 1% under GST.",
+      "Unworked diamond is taxed at a rate of 0.25%."
+    ],
+    "correctAnswer": "a",
+    "explanation": "Statement (a) is incorrect. It was the 101st Constitutional Amendment Act (originally introduced as the 122nd Amendment Bill) that brought in GST. The amendment kept alcohol for human consumption AND five petroleum products (petroleum crude, high speed diesel, motor spirit, natural gas, aviation turbine fuel) outside GST. The Amendment Bill number was 122, not 115.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Taxation / GST"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-071",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Poverty Estimation / Tendulkar Committee",
+    "text": "Which of the following statements with regard to the Report of Tendulkar Committee (2009) on poverty estimates is/are correct?\n1. The Committee had used an all-India urban poverty line basket as a reference to derive both rural and urban poverty levels.\n2. The Committee had anchored the poverty line to the official food calorie norms.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — the Tendulkar Committee used the urban poverty line basket as the reference consumption basket for deriving both urban and rural poverty lines. Statement 2 is incorrect — the Tendulkar Committee explicitly moved AWAY from anchoring the poverty line to official food calorie norms, which was a key departure from previous methodology.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Poverty Estimation"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-072",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Taxation / Petroleum / Centre-State",
+    "text": "Which of the following components of Central Government taxes on petroleum products is/are not shareable with the States?\n1. Basic Excise Duty\n2. Additional Excise Duty\n3. Special Additional Excise Duty\nSelect the correct answer using the code given below.",
+    "options": ["1 and 2 only", "1, 2 and 3", "3 only", "2 and 3 only"],
+    "correctAnswer": "d",
+    "explanation": "Additional Excise Duty (AED) and Special Additional Excise Duty (SAED) on petroleum products are NOT shareable with the States, as they are levied in lieu of sales tax and are kept outside the divisible pool. Basic Excise Duty is part of the divisible pool and is shareable.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Taxation / Fiscal Federalism"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-073",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Macroeconomics / Per Capita GDP",
+    "text": "Level of per capita GDP depends upon which of the following?\n1. Proportion of population in the working age\n2. Work participation rate\n3. Per worker productivity\nSelect the correct answer using the code given below.",
+    "options": ["3 only", "1 and 3 only", "1 and 2 only", "1, 2 and 3"],
+    "correctAnswer": "d",
+    "explanation": "Per capita GDP depends on all three factors: (1) the proportion of the population in working age (demographic dividend), (2) the work participation rate (what fraction actually works), and (3) per worker productivity (output per worker). Together these determine total output per person.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Macroeconomics / Economic Growth"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-074",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Monetary Economics / Money Supply M1",
+    "text": "Which of the following are included in M1 definition of money for the Indian economy?\n1. Reserves\n2. Currency\n3. Time deposits\n4. Demand deposits\nSelect the correct answer using the code given below.",
+    "options": ["1 and 3 only", "2 and 3", "2 and 4", "1, 3 and 4"],
+    "correctAnswer": "c",
+    "explanation": "M1 (narrow money) in India includes Currency with the public (notes and coins) and Demand deposits with banks. It does NOT include Reserves (which are held by banks with RBI) or Time/fixed deposits (which are part of M3/broader money supply).",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Monetary Economics / Money Supply"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-075",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "National Income Accounting",
+    "text": "Which one of the following statements is not correct for National Income Accounting for India?",
+    "options": [
+      "Imports are subtracted in calculating Gross Domestic Product.",
+      "Net factor payments earned from abroad are included in Gross Domestic Product.",
+      "Purchase and sale of second-hand goods are not included in Gross Domestic Product.",
+      "Inventories are included in Gross Domestic Capital Formation."
+    ],
+    "correctAnswer": "b",
+    "explanation": "Statement (b) is incorrect. Net factor payments earned from abroad are included in Gross NATIONAL Product (GNP), NOT in Gross Domestic Product (GDP). GDP measures production within the domestic territory regardless of ownership, while GNP adds net factor income from abroad to GDP.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "National Income Accounting"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-076",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Economics",
+    "topic": "Microeconomics / Supply and Demand",
+    "text": "Under normal downward sloping demand curve and fully elastic supply curve of a commodity, an exogenous decrease in demand would lead to",
+    "options": [
+      "increase in equilibrium price and quantity",
+      "decrease in equilibrium price and quantity",
+      "decrease in equilibrium quantity and no change in price",
+      "increase in equilibrium price and no change in quantity"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Under a perfectly elastic (horizontal) supply curve, any leftward shift in demand results in a decrease in both the equilibrium price and equilibrium quantity. The price falls because the demand decrease intersects the perfectly elastic supply at a lower point.",
+    "tags": [
+      {"type": "subject", "label": "Economics"},
+      {"type": "topic", "label": "Microeconomics / Supply and Demand"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-077",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Atomic Radius",
+    "text": "The correct order of atomic radius of Li, Na, Be and O is",
+    "options": ["Na > Li > Be > O", "Na > Be > Li > O", "Be > Li > Na > O", "O > Be > Li > Na"],
+    "correctAnswer": "a",
+    "explanation": "Atomic radius increases down a group and decreases across a period. Na (period 3, group 1) > Li (period 2, group 1) > Be (period 2, group 2) > O (period 2, group 16). So the correct order is Na > Li > Be > O.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Periodic Table"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-078",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Catalysis / Hydrogenation",
+    "text": "Which of the following catalytic systems is used for the reduction of unsaturated hydrocarbon to saturated hydrocarbon?",
+    "options": ["Copper and H2", "Iron and H2", "Zinc and H2", "Nickel and H2"],
+    "correctAnswer": "d",
+    "explanation": "Nickel catalyst (along with hydrogen gas) is the classic catalytic system used for the hydrogenation of unsaturated hydrocarbons (alkenes/alkynes) to saturated hydrocarbons (alkanes). This is known as catalytic hydrogenation and is used industrially in vegetable oil hardening.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Organic Chemistry / Catalysis"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-079",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Chemistry / Ionic Character",
+    "text": "Which one of the following has the highest ionic character?",
+    "options": ["BeF3", "SiO2", "NCl3", "K2S"],
+    "correctAnswer": "d",
+    "explanation": "K2S has the highest ionic character among the options. Ionic character increases with greater electronegativity difference between the bonding atoms. Potassium (K) is a very electropositive metal and sulfur (S) is electronegative, giving K2S very high ionic character. BeF2 has significant covalent character due to small Be2+ size.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Chemistry / Chemical Bonding"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-080",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Climate / Ice-cap Climate",
+    "text": "Which of the following statements regarding ice-cap climate is/are correct?\n1. In the Koeppen climate classification, the ice-cap climate is signified by the letters EF.\n2. It is the Earth's most severe climate, where the mean monthly temperature is never above 0 degree Celsius.\n3. This climate is found in the Pir Panjal and the Great Himalayas.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. EF (ice-cap climate) in Koeppen's classification signifies areas where all months have mean temperatures below 0°C, making it the most severe climate on Earth. Statement 3 is incorrect — ice-cap climate is found in Antarctica and Greenland (polar regions), not in the Pir Panjal or Great Himalayas (which have ET - tundra climate).",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Climate"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-081",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "World History / Industrial Revolution",
+    "text": "Which of the following statements regarding the Industrial Revolution is/are correct?\n1. It was change of a society from a rural and agricultural lifestyle to one in which most people earned their living in the industrial or secondary sector of the economy.\n2. The first Industrial Revolution began in Germany in the early eighteenth century.\n3. During Industrial Revolution, technological advances in iron smelting, and later steel production, were accompanied by the invention of steam engine.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "c",
+    "explanation": "Statements 1 and 3 are correct. The Industrial Revolution was indeed a shift from agrarian to industrial society, and it was accompanied by advances in iron/steel smelting and the steam engine. Statement 2 is incorrect — the first Industrial Revolution began in Britain (England), not Germany, in the late 18th century.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "World History / Industrial Revolution"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-082",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Insolation",
+    "text": "Which of the following statements regarding insolation is/are correct?\n1. Insolation is predominantly short-wave radiation, with wavelengths in the range of 0.39 micrometre to 0.76 micrometre.\n2. Insolation is evenly distributed across the Earth because of the Earth's curved surface.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "a",
+    "explanation": "Statement 1 is correct — insolation (incoming solar radiation) is predominantly in the visible spectrum, with wavelengths mainly between 0.39 to 0.76 micrometres (visible light), though it extends into UV and near-infrared. Statement 2 is incorrect — insolation is NOT evenly distributed; the Earth's curved surface means higher latitudes receive less insolation per unit area than the equatorial regions.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Insolation"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-083",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / River Meanders",
+    "text": "Which of the following statements regarding river meanders is/are correct?\n1. It is a U-shaped bend in a river.\n2. An extremely tight meander is called a gooseneck; it is likely to become a cutoff, or oxbow lake, after a flood.\n3. Tectonic uplift can cause a river to continue downcutting along its meandering course, producing incised or entrenched meanders.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "d",
+    "explanation": "All three statements are correct. A meander is a U-shaped bend; extremely tight meanders (goosenecks) can be cut off during floods to form oxbow lakes; and tectonic uplift causes rivers to downcut while maintaining a meandering pattern, resulting in incised/entrenched meanders.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Fluvial Landforms"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-084",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Humidity",
+    "text": "How can one determine the relative humidity on a particular day at a given place?",
+    "options": [
+      "If temperature is given",
+      "If absolute humidity is given",
+      "If both temperature and absolute humidity are given",
+      "If percentage of absolute humidity is given"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Relative humidity is defined as the ratio of actual water vapour content (absolute humidity) to the maximum water vapour capacity (saturation humidity) at a given temperature, expressed as a percentage. To calculate it, you need both the temperature (to determine saturation capacity) and the absolute humidity (actual moisture content).",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Atmospheric Moisture"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-085",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Greenhouse Gases",
+    "text": "Which greenhouse gas has maximum average residence time in the atmosphere?",
+    "options": ["CFC", "CH4", "N2O", "Water vapour"],
+    "correctAnswer": "a",
+    "explanation": "Chlorofluorocarbons (CFCs) have the longest average atmospheric residence time among greenhouse gases — certain CFCs can persist for hundreds to thousands of years in the atmosphere. N2O lasts about 114 years, CH4 about 12 years, and water vapour only days to weeks.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Climate Change"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-086",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Physical Geography / Climate Classification",
+    "text": "What does BW stand for as per the Koeppen climate classification?",
+    "options": ["Steppe climate", "Desert climate", "Tundra climate", "Mesothermal climate"],
+    "correctAnswer": "b",
+    "explanation": "In Koeppen's climate classification, 'B' denotes dry climates and 'W' denotes desert (Wüste in German). So BW refers to hot desert climate (BWh) or cold desert climate (BWk), collectively known as desert climate.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Physical Geography / Climate Classification"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-087",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Environment / Endangered Species",
+    "text": "Which organisation publishes worldwide list of endangered species?",
+    "options": [
+      "The International Union for Conservation of Nature (IUCN)",
+      "The World Wide Fund for Nature (WWF)",
+      "The United Nations Environment Programme (UNEP)",
+      "The United Nations Development Programme (UNDP)"
+    ],
+    "correctAnswer": "a",
+    "explanation": "The International Union for Conservation of Nature (IUCN) publishes the IUCN Red List, which is the world's most comprehensive inventory of the conservation status of species, including the list of endangered species.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Environment / Conservation"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-088",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Indian Geography / National Waterways",
+    "text": "On which among the following is National Waterway No. 2 situated?",
+    "options": [
+      "The Ganga, Haldia–Prayagraj",
+      "West Coast Canal, Kottapuram–Kollam",
+      "The Brahmaputra, Sadiya–Dhubri",
+      "Godavari and Krishna, Kakinada–Puducherry"
+    ],
+    "correctAnswer": "c",
+    "explanation": "National Waterway No. 2 (NW-2) is on the Brahmaputra River, stretching from Sadiya to Dhubri in Assam, with a length of about 891 km. NW-1 is on the Ganga (Allahabad/Prayagraj to Haldia).",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Indian Geography / Waterways"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-089",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Geography",
+    "topic": "Indian Geography / Agriculture / Wasteland",
+    "text": "What is culturable wasteland?",
+    "options": [
+      "Land that has been left fallow in last four years",
+      "Land that has been left fallow between one and two years",
+      "Land that has been left fallow for less than one year",
+      "Land that has been left fallow for more than five years"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Culturable wasteland refers to land that has been left uncultivated for more than five years. It is potentially cultivable but is currently not being used for cultivation.",
+    "tags": [
+      {"type": "subject", "label": "Geography"},
+      {"type": "topic", "label": "Indian Geography / Land Use"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-090",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science",
+    "topic": "Physics / Earth's Rotation",
+    "text": "Which of the following statements is/are correct?\n1. Angular velocity for all locations on the Earth's surface is the same while linear velocity varies.\n2. Linear velocity is maximum at the equator and minimum at the poles.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. Since all points on Earth complete one rotation in the same time period (24 hours), the angular velocity (ω = 2π/T) is the same everywhere. However, linear velocity (v = ωr) depends on the distance from the Earth's axis (r), which is maximum at the equator and zero at the poles.",
+    "tags": [
+      {"type": "subject", "label": "Science"},
+      {"type": "topic", "label": "Physics / Rotational Motion"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-091",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Rajput Rulers",
+    "text": "Consider the following statements about Rana Kumbha of Mewar:\n1. He wrote a commentary on Jayadeva's Gitagovinda.\n2. He wrote four dramas in which he is said to have made use of four provincial languages.\n3. He erected Kirtistambha in Chitor in commemoration of his victory over Gujarat.\nWhich of the statements given above is/are correct?",
+    "options": ["1, 2 and 3", "2 and 3 only", "1 and 2 only", "3 only"],
+    "correctAnswer": "a",
+    "explanation": "All three statements are correct. Rana Kumbha (1433–1468) of Mewar was a great patron of arts and literature. He wrote a commentary on Jayadeva's Gitagovinda, composed four dramas using four regional languages, and erected the famous Kirtistambha (Tower of Victory) at Chittorgarh to celebrate his victory over the combined forces of Gujarat and Malwa.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Rajput History"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-092",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Chola Dynasty",
+    "text": "Who among the following Chola kings encouraged the Sailendra ruler of Sri Vijaya to build a Buddhist Vihara in Negapatnam?",
+    "options": ["Parantaka I", "Rajaraja I", "Rajendra I", "Kulottunga I"],
+    "correctAnswer": "b",
+    "explanation": "Rajaraja I (985–1014 CE) encouraged the Sailendra king of Sri Vijaya (Srivijaya) to build a Buddhist Vihara at Nagapatnam (Negapatnam). This is documented in the Leiden grant which records his permission for the construction of the Chudamani Vihara.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Chola Dynasty"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-093",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Vijayanagara Empire",
+    "text": "Who among the following was not a court poet of king Krishnadevaraya?",
+    "options": ["Timmana", "Dhurjati", "Mallana", "Siddheshvara"],
+    "correctAnswer": "d",
+    "explanation": "Siddheshvara was NOT a court poet of Krishnadevaraya. The 'Ashtadiggajas' (eight court poets) of Krishnadevaraya included Allasani Peddana, Nandi Timmana, Muddupalani, Dhurjati, Ayyalaraju Ramabhadra, Pingali Surana, Ramarajabhushana, and Tenali Ramakrishna. Mallana was also associated. Siddheshvara does not belong to this group.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Vijayanagara"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-094",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Ancient India / Pallava Art",
+    "text": "The royal portraits of Simhavishnu and Mahendravarman are found in which cave temple at Mamallapuram?",
+    "options": ["Varaha Cave", "Ramanuja Cave", "Adivaraha Cave", "Trimurti Cave"],
+    "correctAnswer": "c",
+    "explanation": "The Adivaraha Cave (also called Adivaraha Mandapam) at Mamallapuram contains royal portraits of Pallava kings Simhavishnu and Mahendravarman I along with their queens. This is one of the most important examples of early Pallava sculpture.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Ancient India / Pallava Art"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-095",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Bhakti Movement",
+    "text": "How many of the following statements about Bhakti poet Namdev is/are correct?\n1. He seems to have played a part in transmitting the southern Bhakti to northern India.\n2. He was a rigorous monotheist and opposed caste distinctions.\n3. He was a devout follower of Kabir.\nSelect the correct answer.",
+    "options": ["1", "2", "3", "None"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. Namdev (1270–1350) played a role in spreading Bhakti from Maharashtra to the north. He was a strong monotheist and opposed caste discrimination. Statement 3 is incorrect — Namdev preceded Kabir (1440–1518) by several generations, so he could not have been a follower of Kabir.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Bhakti Movement"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-096",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Medicine",
+    "text": "How many of the following statements regarding medicine and related practices in medieval India is/are correct?\n1. Indian medicine of the Graeco-Arabic tradition (Tibb-i-Yunani) was almost identical in its practice with contemporary Persian medicine.\n2. Harvey's discovery of the circulation of blood was explained to a scholarly noble by European traveller Francois Bernier.\n3. The practice of smallpox inoculation was described in contemporary Yunani and Ayurvedic texts.\nSelect the correct answer.",
+    "options": ["1", "2", "3", "None"],
+    "correctAnswer": "c",
+    "explanation": "All three statements are correct. Tibb-i-Yunani (Greco-Arabic medicine) as practised in India closely paralleled Persian medicine. Francois Bernier (who visited India 1656–1668) did explain Harvey's theory of blood circulation to Mughal court nobility. Smallpox inoculation (variolation) was indeed practiced and described in both Yunani and Ayurvedic traditions in India well before Jenner's vaccination.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Science and Medicine"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-097",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Virashaivism",
+    "text": "Which of the following statements about Virashaivism is/are correct?\n1. The Virashaivism traces its origin to the five great religious teachers — Renuka, Daruka, Ghantakarna, Dhenukarna and Vishvakarna.\n2. The Virashaiva philosophy is called Shaktivishishtadvaita — the non-duality of God.\n3. Ashtavarana are the eight rules of the Virashaivism to be observed by the followers.\nSelect the correct answer using the code given below.",
+    "options": ["1 and 2 only", "1, 2 and 3", "1 and 3 only", "3 only"],
+    "correctAnswer": "b",
+    "explanation": "All three statements are correct. Virashaivism (Lingayatism) traces its origin to the five Panchacharyas including Renuka, Daruka, Ghantakarna, Dhenukarna and Vishvakarna. The Virashaiva philosophy is known as Shaktivishishtadvaita. The Ashtavarana (eight shields/rules) are the eight principles to be observed by Lingayat followers.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Bhakti / Virashaivism"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-098",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "History",
+    "topic": "Medieval India / Kashmir Shaivism",
+    "text": "Who propounded Kashmir Shaivism?",
+    "options": ["Vasugupta", "Abhinavagupta", "Ramakantha", "Ranganathacharya"],
+    "correctAnswer": "a",
+    "explanation": "Vasugupta (c. 875–925 CE) is credited with founding Kashmir Shaivism. He is said to have discovered the Shiva Sutras, which form the foundational text of this philosophical tradition. Abhinavagupta later systematised and elaborated the Kashmir Shaiva philosophy.",
+    "tags": [
+      {"type": "subject", "label": "History"},
+      {"type": "topic", "label": "Medieval India / Philosophy"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-099",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Human Rights / Protection of Human Rights Act",
+    "text": "Which one among the following is not under the jurisdiction of the Protection of Human Rights Act, 1993?",
+    "options": [
+      "The National Human Rights Commission",
+      "The State Human Rights Commission",
+      "The Human Rights Courts",
+      "The Human Rights Council"
+    ],
+    "correctAnswer": "d",
+    "explanation": "The Human Rights Council (UN Human Rights Council) is an international body and is NOT under the jurisdiction of India's Protection of Human Rights Act, 1993. The Act establishes and governs the National Human Rights Commission (NHRC), State Human Rights Commissions (SHRCs), and Human Rights Courts.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Human Rights / PHRA 1993"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-100",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Indian Constitution / Fundamental Rights",
+    "text": "According to B. R. Ambedkar, which one among the following Articles is the 'heart and soul' of the Constitution of India?",
+    "options": ["Article 15", "Article 21", "Article 23", "Article 32"],
+    "correctAnswer": "d",
+    "explanation": "Dr. B.R. Ambedkar described Article 32 (Right to Constitutional Remedies) as the 'heart and soul' of the Indian Constitution. Article 32 provides the right to move the Supreme Court for enforcement of fundamental rights and empowers it to issue writs for this purpose.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Indian Constitution / Fundamental Rights"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-101",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Indian Constitution / Right to Privacy",
+    "text": "Who among the following filed the Writ Petition that led to the famous verdict of the Supreme Court of India recognising the Right to Privacy as a Fundamental Right?",
+    "options": [
+      "Justice P. N. Bhagwati",
+      "Justice Rohinton Fali Nariman",
+      "Justice K. S. Puttaswamy",
+      "Justice Anil R. Dave"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Justice K. S. Puttaswamy (Retired), a former judge of the Karnataka High Court, filed the Writ Petition challenging the Aadhaar scheme on grounds of privacy. This led to the landmark 2017 Supreme Court judgment in Justice K.S. Puttaswamy v. Union of India, which unanimously recognised the Right to Privacy as a fundamental right under Article 21.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Indian Constitution / Landmark Judgements"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-102",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Indian Constitution / Constitutional Amendments",
+    "text": "Through the Forty Second Amendment to the Constitution of India, which of the following was/were inserted into its Preamble?\n1. 'Liberty of thought, expression and belief' was substituted by 'Liberty of thought, expression, belief, faith and worship'.\n2. The expression 'Unity of the Nation' was substituted by 'Unity and Integrity of the Nation'.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. The 42nd Constitutional Amendment (1976) made significant changes to the Preamble: it added 'faith and worship' to the Liberty clause (statement 1) and substituted 'Unity of the Nation' with 'Unity and Integrity of the Nation' (statement 2). It also added 'Socialist' and 'Secular' to the description of India.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Indian Constitution / Preamble / Amendments"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-103",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Polity",
+    "topic": "Indian Constitution / Seventh Schedule / State List",
+    "text": "As per the State List under the Seventh Schedule of the Constitution of India, the States have jurisdiction over agricultural land in connection with which of the following subjects?\n1. Taxes on agricultural income\n2. Duties in respect of succession of agricultural land\n3. Estate duty in respect of agricultural land\nSelect the correct answer using the code given below.",
+    "options": ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
+    "correctAnswer": "d",
+    "explanation": "All three subjects — taxes on agricultural income (Entry 46), duties in respect of succession to agricultural land (Entry 47), and estate duty in respect of agricultural land (Entry 48) — are in the State List (List II) of the Seventh Schedule of the Indian Constitution.",
+    "tags": [
+      {"type": "subject", "label": "Polity"},
+      {"type": "topic", "label": "Indian Constitution / Seventh Schedule"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-104",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "International Conferences / Indian Ocean Conference",
+    "text": "The 7th edition of the Indian Ocean Conference was held at",
+    "options": ["Dhaka", "New Delhi", "Malé", "Perth"],
+    "correctAnswer": "a",
+    "explanation": "The 7th Indian Ocean Conference was held in Dhaka, Bangladesh. The Indian Ocean Conference is an annual conclave bringing together heads of government, ministers, and policymakers from countries in the Indian Ocean region.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "International Conferences"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-105",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Political Science",
+    "topic": "Political Theory / Thinkers",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Political idea) — List-II (Thinker)\nA. Human beings, unlike all other objects, possess dignity — 1. Aung San Suu Kyi\nB. It is Swaraj when we learn to rule ourselves — 2. Subhas Chandra Bose\nC. Freedom implies not only emancipation from political bondage but also equal distribution of wealth — 3. Immanuel Kant\nD. For me real freedom is freedom from fear — 4. Mahatma Gandhi\nCode:",
+    "options": [
+      "A-3, B-2, C-4, D-1",
+      "A-1, B-4, C-2, D-3",
+      "A-3, B-4, C-2, D-1",
+      "A-1, B-2, C-4, D-3"
+    ],
+    "correctAnswer": "c",
+    "explanation": "A-3 (Immanuel Kant emphasised human dignity as foundational to morality), B-4 (Mahatma Gandhi defined Swaraj as self-rule/self-governance), C-2 (Subhas Chandra Bose linked freedom with economic equality), D-1 (Aung San Suu Kyi's famous quote: 'real freedom is freedom from fear').",
+    "tags": [
+      {"type": "subject", "label": "Political Science"},
+      {"type": "topic", "label": "Political Theory / Thinkers"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-106",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Books & Authors / Military",
+    "text": "Who among the following is the author of the book Four Stars of Destiny: An Autobiography?",
+    "options": ["Sam Manekshaw", "K. J. S. Dhillon", "Bipin Rawat", "Manoj Mukund Naravane"],
+    "correctAnswer": "b",
+    "explanation": "Four Stars of Destiny: An Autobiography was written by Lt. General K. J. S. Dhillon. He is a retired Indian Army officer who served as the commander of Chinar Corps (XV Corps) in Jammu & Kashmir.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Books & Authors"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-107",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Defence / Military Operations",
+    "text": "The Indian Army launched 'Operation Sarvashakti' to flush out terrorists in",
+    "options": ["Myanmar", "Manipur", "Jammu and Kashmir", "Chhattisgarh"],
+    "correctAnswer": "c",
+    "explanation": "Operation Sarvashakti was launched by the Indian Army in Jammu and Kashmir to flush out terrorists, particularly in the Pir Panjal range area. It was a large-scale counter-terrorism operation involving multiple security agencies.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Defence / Military Operations"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-108",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Awards / Swachh Survekshan",
+    "text": "Which of the following cities were conferred with the cleanest city award under Swachh Survekshan Awards, 2023?",
+    "options": [
+      "Varanasi and Prayagraj",
+      "Indore and Surat",
+      "Prayagraj and Indore",
+      "Surat and Varanasi"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Under Swachh Survekshan 2023, Indore won the award for the cleanest city for the 7th consecutive time, and Surat was awarded as the second cleanest city. Together they topped the cleanest city rankings.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Awards / Urban Development"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-109",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science & Technology",
+    "topic": "Defence Technology / Indigenous Weapons",
+    "text": "Which one of the following is an indigenous assault rifle developed by DRDO?",
+    "options": ["Heckler", "T91", "Tikka", "Ugram"],
+    "correctAnswer": "d",
+    "explanation": "UGRAM is an indigenous assault rifle developed by the Defence Research and Development Organisation (DRDO) of India. It is a 7.62×51mm assault rifle designed to replace foreign rifles in the Indian Army's inventory.",
+    "tags": [
+      {"type": "subject", "label": "Science & Technology"},
+      {"type": "topic", "label": "Defence Technology"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-110",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Sports / Asian Championship",
+    "text": "With which one among the following sports is Yogesh Singh, who won a Gold Medal in an Asian Championship in 2024, associated?",
+    "options": ["Badminton", "Shooting", "Archery", "Wrestling"],
+    "correctAnswer": "c",
+    "explanation": "Yogesh Singh won a Gold Medal in Archery at an Asian Championship in 2024. He is an Indian archer who has represented India in international competitions.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Sports"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-111",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Art & Culture / Classical Music / Gharanas",
+    "text": "Renowned classical singer Prabha Atre, who passed away recently, was an exponent of which one of the following Gharanas?",
+    "options": ["Kirana Gharana", "Patiala Gharana", "Gwalior Gharana", "Agra Gharana"],
+    "correctAnswer": "a",
+    "explanation": "Pandit Prabha Atre (1932–2024) was a legendary classical vocalist who belonged to the Kirana Gharana. She was one of the foremost exponents of Kirana style Hindustani classical music and received the Padma Vibhushan.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Art & Culture / Classical Music"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-112",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "History / Indian Army",
+    "text": "Who among the following was the first Indian Commander-in-Chief of the Indian Army of independent India?",
+    "options": ["S. M. Srinagesh", "K. M. Cariappa", "K. S. Thimayya", "K. S. Rajendrasinhji"],
+    "correctAnswer": "b",
+    "explanation": "Field Marshal K. M. Cariappa (later promoted to Field Marshal) was the first Indian Commander-in-Chief of the Indian Army after independence, taking over from General Sir Francis Butcher on 15 January 1949 (now celebrated as Army Day).",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Indian Military History"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-113",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "Science & Technology",
+    "topic": "Defence Technology / Indian Army",
+    "text": "Which one of the following is an 'end-to-end secure mobile ecosystem' developed recently by the Indian Army?",
+    "options": ["SANCHAR", "VAIBHAV", "SAMPARK", "SAMBHAV"],
+    "correctAnswer": "d",
+    "explanation": "SAMBHAV is the end-to-end secure mobile ecosystem developed by the Indian Army. It is a secure smartphone platform designed to provide safe communication facilities to the Indian Army, ensuring encrypted communications.",
+    "tags": [
+      {"type": "subject", "label": "Science & Technology"},
+      {"type": "topic", "label": "Defence Technology / Cybersecurity"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-114",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "International Affairs / RCEP",
+    "text": "Consider the following statements about the Regional Comprehensive Economic Partnership (RCEP):\n1. It is a comprehensive free trade agreement between the ASEAN member States and ASEAN's free trade agreement partners.\n2. India opted out of RCEP.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. RCEP is the world's largest free trade agreement comprising ASEAN's 10 members plus China, Japan, South Korea, Australia, and New Zealand (ASEAN's FTA partners). India was originally part of negotiations but opted out in November 2019 citing concerns about its trade deficit and market access issues.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "International Affairs / Trade Agreements"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-115",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "International Affairs / Lithium Mining",
+    "text": "Recently the Government of India entered into an agreement for a lithium exploration and mining project with which one among the following countries?",
+    "options": ["Brazil", "Australia", "Argentina", "Chile"],
+    "correctAnswer": "c",
+    "explanation": "The Government of India entered into an agreement with Argentina for lithium exploration and mining. KABIL (Khanij Bidesh India Limited), a joint venture of three central PSUs, signed an MoU with Argentina's state-owned mining company CAMYEN SE for lithium exploration and development.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "International Affairs / Critical Minerals"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-116",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "International Affairs / SCO",
+    "text": "Consider the following statements about the Shanghai Cooperation Organisation (SCO):\n1. One of the goals of SCO is to promote a new democratic, fair and rational international political and economic order.\n2. Iran is a permanent member of SCO.\nWhich of the statements given above is/are correct?",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. One of the stated goals of the SCO is to promote a new democratic, fair and rational international political and economic order. Iran became a full permanent member of the SCO in 2023, joining at the Samarkand Summit.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "International Organisations / SCO"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-117",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Sports / Cricket / ICC",
+    "text": "Which of the following statements about the ICC under-19 Men's Cricket World Cup, 2024 is/are correct?\n1. Australia won this title for the 4th time.\n2. It was organised in South Africa.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. Australia won the ICC Under-19 Men's Cricket World Cup 2024 for the 4th time, defeating India in the final. The tournament was held in South Africa (January–February 2024).",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Sports / Cricket"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-118",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Awards / Bharat Ratna",
+    "text": "Which of the following statements with regard to Bharat Ratna Award is/are correct?\n1. It was instituted in the year 1972.\n2. The award does not carry any monetary grant.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "b",
+    "explanation": "Statement 1 is incorrect — Bharat Ratna was instituted in 1954, not 1972. Statement 2 is correct — the Bharat Ratna award does not carry any monetary grant; it consists of a citation and a medallion.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Awards / National Honours"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-119",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Science & Technology / Innovation Index",
+    "text": "Which of the following statements about India's rank in the Global Innovation Index-2023, published by the World Intellectual Property Organisation, is/are correct?\n1. India has been placed at 40th rank.\n2. India has been on a rising trajectory over the period 2015–2023.\nSelect the correct answer using the code given below.",
+    "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    "correctAnswer": "c",
+    "explanation": "Both statements are correct. India was ranked 40th in the Global Innovation Index 2023, and India has consistently improved its ranking since 2015 (when it was ranked around 81st), demonstrating a strong rising trajectory in innovation.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Innovation / Science Policy"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  },
+  {
+    "id": "cds-2024-1-120",
+    "year": 2024,
+    "exam": "CDS Examination (1)",
+    "subject": "General Knowledge",
+    "topic": "Environment / Green Credit Initiative",
+    "text": "Which of the following statements about 'Green Credit Initiative' is/are correct?\n1. It is a response to the challenge of climate change.\n2. It promotes plantations on wasteland and river catchment areas.\n3. It is a scheme of the Government of India to replace the kerosene oil with solar power used by the rural poor.\nSelect the correct answer using the code given below.",
+    "options": ["1, 2 and 3", "1 and 2 only", "2 only", "1 and 3 only"],
+    "correctAnswer": "b",
+    "explanation": "Statements 1 and 2 are correct. The Green Credit Programme (GCP) under India's Environment Protection Act is a market-based mechanism designed to incentivize voluntary pro-environmental actions including tree plantation on degraded lands and river catchment areas, as a response to climate change. Statement 3 is incorrect — replacing kerosene with solar power is the objective of the Pradhan Mantri Ujjwala Yojana and solar energy schemes, not the Green Credit Initiative.",
+    "tags": [
+      {"type": "subject", "label": "General Knowledge"},
+      {"type": "topic", "label": "Environment / Green Initiatives"},
+      {"type": "exam", "label": "CDS 2024 (1)"}
+    ]
+  }
+]

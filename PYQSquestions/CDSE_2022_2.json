@@ -1,0 +1,3482 @@
+[
+  {
+    "id": "cdse-2022-2-q1",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following cell organelles is not found in animal cells?",
+    "options": [
+      "Cell membrane",
+      "Endoplasmic reticulum",
+      "Cell wall",
+      "Mitochondria"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cell walls are found in plants, fungi, and bacteria to provide structural support. Animal cells only have a cell membrane.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Cell Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q2",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Microbiology",
+    "text": "Which one of the following is not a components of chlorophyll?",
+    "options": [
+      "Calcium",
+      "Carbon",
+      "Magnesium",
+      "Hydrogen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The chemical formula for chlorophyll a is C55H72O5N4Mg. Magnesium is the central metal ion. Calcium is not a part of the chlorophyll molecule.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Microbiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q3",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Botany",
+    "text": "Which one of the following statements about 'meristematic tissues' in plants is correct?",
+    "options": [
+      "These are dead tissues and form wood.",
+      "They provide flexibility to plants due to their thickened walls.",
+      "These are growing tissues and cause increase in length.",
+      "These provide support to the plant."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Meristematic tissues consist of actively dividing cells. They are responsible for the primary and secondary growth of plants (length and girth).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Botany"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q4",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "Which one of the following is the correct sequence of passage of light in a human eye?",
+    "options": [
+      "Cornea, Pupil, Lens, Retina",
+      "Retina, Pupil, Lens, Cornea",
+      "Cornea, Lens, Pupil, Retina",
+      "Lens, Cornea, Pupil, Retina"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Light first enters the eye through the transparent cornea, passes through the pupil (opening in the iris), is focused by the lens, and finally hits the retina.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q5",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "Which one of the following forms of energy is produced during cellular respiration?",
+    "options": [
+      "Photon",
+      "ATP",
+      "Glucose",
+      "NADH"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cellular respiration converts biochemical energy from nutrients into Adenosine Triphosphate (ATP), which is the energy currency of the cell.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q6",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Genetics",
+    "text": "The sex of a newborn child is determined by the chromosomes inherited from",
+    "options": [
+      "the mother",
+      "the father",
+      "both mother and father",
+      "the grandmother"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mothers always provide an X chromosome. Fathers provide either an X or a Y chromosome. Therefore, the father's genetic contribution determines the sex (XY for male, XX for female).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Genetics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q7",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Which one of the following is the size of the image of an object which is placed at the focus of a concave mirror?",
+    "options": [
+      "Highly magnified",
+      "Point size",
+      "Same size",
+      "Diminished"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When an object is placed at the focus of a concave mirror, the reflected rays are parallel, forming a highly magnified image at infinity.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q8",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "The refractive index of crown glass is close to 3/2. If the speed of light in air is c, then the speed of light in the crown glass will be",
+    "options": [
+      "3c/2",
+      "2c/3",
+      "c/3",
+      "4c/3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Refractive index (n) = c / v. Given n = 3/2, then 3/2 = c / v, which gives v = 2c/3.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q9",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "The volume of a 100 g sugar solution is 100 mL. What is the density of the solution?",
+    "options": [
+      "1.0 g/mL",
+      "1.1 g/mL",
+      "1.2 g/mL",
+      "1.3 g/mL"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Density = Mass / Volume. Density = 100 g / 100 mL = 1.0 g/mL.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "General Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q10",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "Which one of the following is the correct relation between the unit of Resistance and the unit of Current?",
+    "options": [
+      "1 Ohm = 1 Volt / 1 Ampere",
+      "1 Ohm = 1 Ampere / 1 Volt",
+      "1 Ohm = 1 Volt × 1 Ampere",
+      "1 Ohm = 1 / (1 Volt × 1 Ampere)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to Ohm's Law, V = IR, so R = V / I. Thus, 1 Ohm = 1 Volt / 1 Ampere.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electricity"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q11",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals and Non-metals",
+    "text": "Which one of the following is a liquid at room temperature?",
+    "options": [
+      "Mercury",
+      "Iron",
+      "Sodium",
+      "Potassium"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mercury is the only metal that is liquid at standard room temperature and pressure.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Metals and Non-metals"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q12",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Matter",
+    "text": "The process of conversion of a solid directly into gas is known as",
+    "options": [
+      "Evaporation",
+      "Sublimation",
+      "Condensation",
+      "Boiling"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sublimation is the transition of a substance directly from the solid to the gas phase without passing through the intermediate liquid phase.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Matter"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q13",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "text": "Which one of the following is the number of maximum electrons that can be accommodated in the L-shell?",
+    "options": [
+      "2",
+      "8",
+      "18",
+      "32"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The maximum number of electrons in a shell is given by 2n². For the L-shell (n=2), it is 2(2)² = 8.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Structure"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q14",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "Which one of the following is the chemical formula of Washing Soda?",
+    "options": [
+      "NaHCO3",
+      "Na2CO3·10H2O",
+      "NaOH",
+      "Ca(OH)2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Washing soda is Sodium Carbonate Decahydrate (Na2CO3·10H2O). NaHCO3 is Baking Soda.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids, Bases and Salts"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q15",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "The variety of coal which contains the highest percentage of Carbon is",
+    "options": [
+      "Anthracite",
+      "Bituminous",
+      "Lignite",
+      "Peat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Anthracite is the highest grade of coal, containing 86%–97% carbon.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q16",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Which one of the following is the deepest ocean in the world?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions, containing the Mariana Trench.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q17",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "The 'Dustlik' is a joint military exercise between India and",
+    "options": [
+      "Uzbekistan",
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Tajikistan"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EX-DUSTLIK is a joint training exercise between the armies of India and Uzbekistan.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q18",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "Basic Economics",
+    "text": "The headquarters of the World Intellectual Property Organization (WIPO) is located in",
+    "options": [
+      "Paris",
+      "Geneva",
+      "New York",
+      "London"
+    ],
+    "correctAnswer": 1,
+    "explanation": "WIPO is one of the 15 specialized agencies of the United Nations, headquartered in Geneva, Switzerland.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q19",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Constitutional Framework",
+    "text": "Which one of the following articles of the Constitution of India provides for the 'Abolition of Untouchability'?",
+    "options": [
+      "Article 14",
+      "Article 17",
+      "Article 19",
+      "Article 21"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 17 of the Constitution of India abolishes 'Untouchability' and forbids its practice in any form.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Framework"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q20",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Medieval India",
+    "text": "The 'Iqta system' was introduced in India by",
+    "options": [
+      "Iltutmish",
+      "Balban",
+      "Alauddin Khalji",
+      "Muhammad bin Tughluq"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Iqta system (granting land revenue to officers in lieu of salary) was introduced by Shamsuddin Iltutmish of the Slave Dynasty.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q21",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "The 'Pact of 1916' between the Indian National Congress and the Muslim League is known as the",
+    "options": [
+      "Lucknow Pact",
+      "Lahore Pact",
+      "Delhi Pact",
+      "Poona Pact"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Lucknow Pact was an agreement reached between the INC and the Muslim League at their joint session in 1916 to pressure the British for self-government.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q22",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian States",
+    "text": "Which one of the following is the capital of the state of Nagaland?",
+    "options": [
+      "Kohima",
+      "Imphal",
+      "Dimapur",
+      "Agartala"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kohima is the capital of Nagaland. Imphal is the capital of Manipur and Agartala is the capital of Tripura.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian States"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q23",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "text": "Which one of the following is the unit of Magnetic Flux?",
+    "options": [
+      "Tesla",
+      "Weber",
+      "Henry",
+      "Gauss"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The SI unit of magnetic flux is the Weber (Wb). Tesla is the unit of magnetic field strength.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Magnetism"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q24",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "text": "Which one of the following is the most reactive metal?",
+    "options": [
+      "Potassium",
+      "Sodium",
+      "Calcium",
+      "Iron"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the reactivity series, Potassium is at the top among these options, making it the most reactive.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Elements"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q25",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Vitamins",
+    "text": "Which one of the following vitamins is responsible for blood clotting?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin E",
+      "Vitamin K"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Vitamin K is essential for the synthesis of proteins required for blood coagulation.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Vitamins"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q26",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "The famous university of Nalanda was founded by",
+    "options": [
+      "Kumaragupta I",
+      "Chandragupta II",
+      "Samudragupta",
+      "Harshavardhana"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nalanda University was established during the Gupta Empire, specifically during the reign of Kumaragupta I in the 5th century CE.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q27",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Executive",
+    "text": "The President of India can be impeached for violation of the Constitution under which article?",
+    "options": [
+      "Article 52",
+      "Article 61",
+      "Article 74",
+      "Article 78"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 61 of the Constitution of India details the procedure for the impeachment of the President.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Executive"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q28",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "The layer of the atmosphere which reflects radio waves is",
+    "options": [
+      "Troposphere",
+      "Stratosphere",
+      "Mesosphere",
+      "Ionosphere"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Ionosphere (part of the thermosphere) contains ionized particles that reflect radio waves back to Earth, allowing for long-distance communication.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Atmosphere"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q29",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "General Knowledge",
+    "text": "The 'NITI Aayog' was established in the year",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The National Institution for Transforming India (NITI Aayog) replaced the Planning Commission on January 1, 2015.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q30",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Health and Disease",
+    "text": "Which one of the following is a water-borne disease?",
+    "options": [
+      "Tuberculosis",
+      "Cholera",
+      "Malaria",
+      "Influenza"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cholera is an acute diarrheal infection caused by ingestion of food or water contaminated with the bacterium Vibrio cholerae.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Health and Disease"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q31",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "The 'Dandi March' was started by Gandhiji in 1930 to protest against",
+    "options": [
+      "Salt tax",
+      "Land tax",
+      "Forest laws",
+      "Indigo cultivation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Salt March (Dandi March) was an act of nonviolent civil disobedience against the British salt monopoly and tax in India.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q32",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "The 'Sardar Sarovar Dam' is built on the river",
+    "options": [
+      "Narmada",
+      "Tapti",
+      "Mahi",
+      "Sabarmati"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Sardar Sarovar Dam is a concrete gravity dam built on the Narmada River in Gujarat.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q33",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Work and Energy",
+    "text": "The kinetic energy of a body of mass m moving with velocity v is given by",
+    "options": [
+      "mv",
+      "mv²",
+      "1/2 mv²",
+      "mgh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kinetic Energy (KE) = 1/2 mv². mgh is the formula for Potential Energy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Work and Energy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q34",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Gases",
+    "text": "Which one of the following is the major constituent of Natural Gas?",
+    "options": [
+      "Methane",
+      "Ethane",
+      "Propane",
+      "Butane"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Natural gas is primarily composed of methane (CH4), usually ranging from 70% to 90%.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Gases"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q35",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Local Government",
+    "text": "The 73rd Amendment Act of the Constitution of India deals with",
+    "options": [
+      "Municipalities",
+      "Panchayati Raj",
+      "Fundamental Duties",
+      "Anti-defection law"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 73rd Constitutional Amendment Act (1992) gave constitutional status to Panchayati Raj Institutions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Local Government"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q36",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Botany",
+    "text": "The process by which plants lose water in the form of vapor is called",
+    "options": [
+      "Respiration",
+      "Transpiration",
+      "Photosynthesis",
+      "Osmosis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transpiration is the exhalation of water vapor through the stomata of plants.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Botany"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q37",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian States",
+    "text": "Which one of the following states is the largest producer of Tea in India?",
+    "options": [
+      "West Bengal",
+      "Assam",
+      "Kerala",
+      "Tamil Nadu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Assam is the largest tea-producing state in India, followed by West Bengal.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian States"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q38",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "The 'Indian National Army' (INA) was founded by",
+    "options": [
+      "Subhas Chandra Bose",
+      "Rash Behari Bose",
+      "Captain Mohan Singh",
+      "Bhagat Singh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The INA was first formed by Captain Mohan Singh with Indian prisoners of war in 1942. It was later reorganized by Subhas Chandra Bose.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q39",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Fundamental Duties",
+    "text": "The Fundamental Duties were added to the Constitution of India by the",
+    "options": [
+      "42nd Amendment",
+      "44th Amendment",
+      "52nd Amendment",
+      "61st Amendment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fundamental Duties (Part IV-A) were added to the Constitution by the 42nd Amendment Act in 1976 based on the Swaran Singh Committee recommendations.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Duties"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q40",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Matter",
+    "text": "Which one of the following is not a mixture?",
+    "options": [
+      "Air",
+      "Sea water",
+      "Distilled water",
+      "Brass"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Distilled water is a pure chemical compound (H2O). Air is a mixture of gases, sea water a mixture of salts and water, and brass an alloy (mixture) of copper and zinc.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Matter"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q41",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Light",
+    "text": "The phenomenon of splitting of white light into its constituent colors is called",
+    "options": [
+      "Refraction",
+      "Reflection",
+      "Dispersion",
+      "Diffraction"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dispersion is the separation of white light into a spectrum of colors when it passes through a prism.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Light"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q42",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Solar System",
+    "text": "Which planet is known as the 'Red Planet'?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mars is known as the Red Planet due to the iron oxide on its surface, which gives it a reddish appearance.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Solar System"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q43",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Health",
+    "text": "The deficiency of Iron in the human body causes",
+    "options": [
+      "Scurvy",
+      "Rickets",
+      "Anemia",
+      "Goitre"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Iron is needed to produce hemoglobin. A deficiency results in iron-deficiency anemia.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Health"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q44",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "The 'Gayatri Mantra' is found in the",
+    "options": [
+      "Rig Veda",
+      "Sama Veda",
+      "Yajur Veda",
+      "Atharva Veda"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Gayatri Mantra is a highly revered mantra from the Rig Veda (Mandala 3, Sukta 62).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q45",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "The judges of the Supreme Court of India retire at the age of",
+    "options": [
+      "60 years",
+      "62 years",
+      "65 years",
+      "70 years"
+    ],
+    "correctAnswer": 2,
+    "explanation": "As per the Constitution, Supreme Court judges hold office until they attain the age of 65.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Judiciary"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q46",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "General Knowledge",
+    "text": "The currency of Japan is",
+    "options": [
+      "Yuan",
+      "Yen",
+      "Won",
+      "Euro"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Japanese Yen is the official currency of Japan.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q47",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Sound",
+    "text": "The velocity of sound is maximum in",
+    "options": [
+      "Air",
+      "Water",
+      "Steel",
+      "Vacuum"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sound travels fastest in solids because particles are more tightly packed. Steel (a solid) has a much higher sound velocity than water or air.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Sound"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q48",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals",
+    "text": "The alloy used in making the heating element of an electric iron is",
+    "options": [
+      "Brass",
+      "Bronze",
+      "Nichrome",
+      "Steel"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nichrome (Nickel and Chromium) is used because it has high resistance and does not oxidize easily at high temperatures.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Metals"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q49",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Human Body",
+    "text": "The total number of bones in a normal human adult is",
+    "options": [
+      "200",
+      "206",
+      "210",
+      "215"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The human skeleton consists of 206 bones in an adult.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Body"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q50",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Rivers",
+    "text": "Which one of the following rivers is known as the 'Dakshina Ganga'?",
+    "options": [
+      "Godavari",
+      "Krishna",
+      "Cauvery",
+      "Mahanadi"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Godavari River is known as 'Dakshina Ganga' (Southern Ganges) due to its length and religious significance.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Rivers"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q51",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "Monetary System",
+    "text": "Which one of the following forms of money supply is considered as the most widely used in the Indian monetary system?",
+    "options": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "M3 is known as 'Broad Money' and is considered the most widely used measure of money supply in the Indian monetary system. [cite: 4551, 4565]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Monetary System"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q52",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Government Initiatives",
+    "text": "Which one of the following is the first State in India to have 100 percent households with tap water connection?",
+    "options": [
+      "Gujarat",
+      "Goa",
+      "Delhi",
+      "Andhra Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Goa became the first 'Har Ghar Jal' state in India by providing 100% tap water connections to all rural households. [cite: 4569, 4580]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Initiatives"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q53",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Labour Laws",
+    "text": "Which one of the following Labour Codes notified by the Government of India incorporated various provisions of the Central Labour Acts such as the Factories Act, 1948 and Plantations Labour Act, 1951?",
+    "options": [
+      "The Occupational Safety, Health and Working Conditions Code, 2020",
+      "The Industrial Relations Code, 2020",
+      "The Code on Wages, 2019",
+      "The Code on Social Security, 2020"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Occupational Safety, Health and Working Conditions Code, 2020 subsumed several acts including the Factories Act, 1948 and the Plantations Labour Act, 1951. [cite: 4515, 4525]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Labour Laws"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q54",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Demographics",
+    "text": "If you were to browse a table of a recent period showing life expectancy at birth for all categories of rural-urban and male-female divisions for all States of India, you are not likely to observe that:\n1. Urban life expectancy is higher than the rural one.\n2. Male life expectancy is higher than the female one.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In India, female life expectancy is generally higher than male life expectancy, so you are 'not likely to observe' that male life expectancy is higher. [cite: 4539, 4549]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Demographics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q55",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Agriculture Technology",
+    "text": "Consider the following statements: The Government is promoting the 'Kisan Drone' for:\n1. Spraying weedicides.\n2. Digitisation of land records.\n3. Crop assessment.",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "1 only",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The government is promoting Kisan Drones for crop assessment, digitization of land records, and spraying of insecticides and nutrients. [cite: 4567, 4582]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Agriculture Technology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q56",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Government Portals",
+    "text": "Recently launched 'Jan Samarth' portal:",
+    "options": [
+      "provides single point access for authenticated health information to citizens.",
+      "assists farmers to access links to useful farming-specific information.",
+      "provides access Pan India to e-Government services.",
+      "provides link to Government credit schemes."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Jan Samarth portal is a unique digital platform linking various credit-linked government schemes to connect beneficiaries directly to lenders. [cite: 4671, 4714]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Portals"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q57",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Science and Technology",
+    "text": "Recently India commissioned its first liquid mirror telescope at:",
+    "options": [
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Ladakh",
+      "Arunachal Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "India's first International Liquid Mirror Telescope (ILMT) was commissioned at the Devasthal Observatory campus in Uttarakhand. [cite: 4671, 4716]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Science and Technology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q58",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Institutions",
+    "text": "National Tribal Research Institute is situated at:",
+    "options": [
+      "Bilaspur",
+      "Raipur",
+      "Ranchi",
+      "New Delhi"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The National Tribal Research Institute (NTRI) was inaugurated in New Delhi to act as a premier national-level institute for tribal concerns. [cite: 4671, 4737]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Institutions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q59",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Sports",
+    "text": "Avani Lekhara excels in which one of the following sports?",
+    "options": [
+      "Table Tennis",
+      "Cycling",
+      "Shooting",
+      "Boxing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Avani Lekhara is a prominent Indian Paralympian who won gold and bronze medals in Shooting at the Tokyo 2020 Paralympics. [cite: 4671, 4749]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q60",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Planetary Science",
+    "text": "The atmosphere of Planet Venus is made up of thick and yellowish clouds of:",
+    "options": [
+      "Chlorine",
+      "Sulphuric acid",
+      "Nitric acid",
+      "Bromine"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Venus is surrounded by a thick atmosphere of carbon dioxide and clouds of sulphuric acid, giving it its yellowish appearance. [cite: 4671, 4661]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Planetary Science"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q61",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Medical Science",
+    "text": "A patient's abdomen (alimentary canal) can be examined by X-ray after administering which one of the following metal salts in the patient's meal?",
+    "options": [
+      "Barium sulphate",
+      "Barium chloride",
+      "Strontium sulphate",
+      "Magnesium chloride"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Barium sulphate is used as a radiopaque contrast medium for X-ray examination of the gastrointestinal tract. [cite: 4671, 4597]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Medical Science"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q62",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cryopreservation",
+    "text": "Storage of biological tissues such as blood, organs, semen requires low temperature which is achieved upon the usage of:",
+    "options": [
+      "Liquid nitrogen",
+      "Solid carbon dioxide",
+      "Liquid air",
+      "Helium"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Liquid nitrogen is commonly used in cryopreservation for storing biological samples at extremely low temperatures. [cite: 4671, 4618]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Cryopreservation"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q63",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Thermite Process",
+    "text": "In the joining of railway tracks, iron oxide is made to react with:",
+    "options": [
+      "Aluminium",
+      "Zinc",
+      "Copper",
+      "Tin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Thermite welding uses the reaction between iron oxide and aluminium powder to produce molten iron for joining railway tracks. [cite: 4671, 4641]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Thermite Process"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q64",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Medieval Technology",
+    "text": "What was a munjaniq in medieval period?",
+    "options": [
+      "Cannon",
+      "Catapult",
+      "Gun carriage",
+      "Portable armoury"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Munjaniq (or Mangonel) was a type of medieval siege engine used as a catapult to throw heavy stones. [cite: 4671, 4659]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval Technology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q65",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient Literature",
+    "text": "Match List I (Literary Work) with List II (Author):\nA. Duta Ghatotkacha - 1. Bhatti\nB. Mrichchhakatikam - 2. Bhasa\nC. Kiratarjuniyam - 3. Shudraka\nD. Ravanavadha - 4. Bharavi",
+    "options": [
+      "A-2, B-3, C-4, D-1",
+      "A-1, B-4, C-3, D-2",
+      "A-2, B-4, C-3, D-1",
+      "A-3, B-1, C-4, D-2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bhasa wrote Duta Ghatotkacha; Shudraka wrote Mrichchhakatikam; Bharavi wrote Kiratarjuniyam; and Bhatti wrote Ravanavadha. [cite: 4775, 4719]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q66",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Vedic Period",
+    "text": "On the banks of which of the following rivers was the Battle of Ten Kings fought in the Early Vedic Period?",
+    "options": [
+      "Sarasvati",
+      "Drishadvati",
+      "Parushni",
+      "Shutudri"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Dasrajan (Battle of Ten Kings) was fought on the banks of the Parushni (modern Ravi) river. [cite: 4775, 4737]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Vedic Period"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q67",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "The Bengal Famine of 1769-70 was worsened by:",
+    "options": [
+      "Locust attacks",
+      "Rat infestation",
+      "High levels of taxation",
+      "Smallpox epidemic"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The devastating Bengal famine was severely aggravated by a massive smallpox epidemic during 1770. [cite: 4775, 4753]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q68",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one of the following is not the work of Ashvaghosha?",
+    "options": [
+      "Sariputraprakarana",
+      "Buddhacharita",
+      "Saundarananda",
+      "Manjushrimulakalpa"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ashvaghosha is known for Buddhacharita, Saundarananda, and Sariputraprakarana. Manjushrimulakalpa is an unrelated Mahayana text. [cite: 4775, 4764]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q69",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Anatomy",
+    "text": "Fat in human body is stored in:",
+    "options": [
+      "Adipose tissue",
+      "Red blood cells",
+      "Muscle tissue",
+      "Epithelial tissue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Adipose tissue acts as the primary site for fat storage in the human body. [cite: 4775, 4677]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Anatomy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q70",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which one of the following is a feature of Membrane?",
+    "options": [
+      "Bilayer of phospholipid molecule in which proteins and cholesterol are embedded",
+      "Bilayer of proteins molecule in which lipid and cholesterol are embedded",
+      "Bilayer of neutral lipid in which proteins and cholesterol are embedded",
+      "Bilayer of neutral lipid lacking cholesterol and proteins"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cell membranes consist of a phospholipid bilayer with embedded proteins and cholesterol, following the fluid mosaic model. [cite: 4775, 4697]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Cell Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q71",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Physiology",
+    "text": "Which one of the following parts of human alimentary canal can be of maximum length?",
+    "options": [
+      "Stomach",
+      "Small intestine",
+      "Large intestine",
+      "Rectum"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The small intestine is the longest part of the human alimentary canal, measuring about 6-7 meters. [cite: 4775, 4743]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q72",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "International Cooperation",
+    "text": "While forming the 'Indo-Pacific Economic Framework for Prosperity', the member countries launched collective discussions towards future negotiations on four pillars. Which one of the following is not one of those pillars?",
+    "options": [
+      "Clean energy, decarbonisation and infrastructure",
+      "Defence cooperation and intelligence sharing",
+      "Supply chain",
+      "Tax and anti-corruption"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The four pillars of IPEF are Trade, Supply Chains, Clean Economy, and Fair Economy. Defence cooperation is not a core pillar of this framework. [cite: 4775, 4771]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "International Cooperation"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q73",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "World Geography",
+    "text": "The regions known as Donetsk and Luhansk are sometimes mentioned in the news. They are the separatist regions of:",
+    "options": [
+      "Ethiopia",
+      "Sudan",
+      "Ukraine",
+      "Yemen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Donetsk and Luhansk are regions in eastern Ukraine (the Donbas) that have been centers of separatist conflict. [cite: 4872, 4809]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q74",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "International Relations",
+    "text": "Recently which of the following countries were placed in the 'Grey List' of Financial Action Task Force?",
+    "options": [
+      "Bolivia and Mozambique",
+      "Colombia and Ecuador",
+      "Iraq and Qatar",
+      "Turkey and UAE"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In 2021-22, Turkey and the UAE were notably added to the FATF's 'Grey List' (countries under increased monitoring). [cite: 4872, 4839]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q75",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "International Finance",
+    "text": "Which one of the following assists a country through 'Extended Fund Facility', often talked about in news?",
+    "options": [
+      "International Fund for Agricultural Development",
+      "International Monetary Fund",
+      "International Bank for Reconstruction and Development",
+      "United Nations Development Programme"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Extended Fund Facility (EFF) is a service provided by the IMF to assist countries with serious medium-term balance of payments problems. [cite: 4872, 4842]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "International Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q76",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "Digital Assets",
+    "text": "The terms Ethereum, Solana, Polkadot and Tether', sometimes mentioned in the news, refer to:",
+    "options": [
+      "Cryptocurrencies",
+      "Earth Observation Satellites",
+      "Hypersonic Cruise Missiles",
+      "Virtual Private Network service providers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These terms refer to various popular cryptocurrencies and blockchain-based assets. [cite: 4872, 4860]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Digital Assets"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q77",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "State Emergency",
+    "text": "In which one of the following States has the President's Rule been imposed most number of times?",
+    "options": [
+      "Bihar",
+      "Karnataka",
+      "Manipur",
+      "Punjab"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Among the given options, Manipur has seen the highest frequency of President's Rule imposition (10 times). [cite: 4872, 4816]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "State Emergency"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q78",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Election Commission",
+    "text": "The use of Electors 'Photo Identity Cards (EPIC)' by the Election Commission of India was started in which one of the following years?",
+    "options": [
+      "1992",
+      "1993",
+      "1995",
+      "2001"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Election Commission of India first introduced Photo Identity Cards (EPIC) for voters in 1993. [cite: 4872, 4830]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Election Commission"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q79",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Constitutional Executive",
+    "text": "Which one of the following best describes the electoral system to elect the President of India?",
+    "options": [
+      "Proportional Representation",
+      "Proportional Representation and Single Transferable Vote System",
+      "First-Past-the-Post System",
+      "List System"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The President is elected by members of an electoral college by means of proportional representation with single transferable vote. [cite: 4872, 4848]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Executive"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q80",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Legislative Procedure",
+    "text": "Which one of the following statements about Money Bill is not correct?",
+    "options": [
+      "Money Bill cannot be introduced in the Council of States.",
+      "The Council of States has no power to reject or amend the Money Bill.",
+      "The Speaker of the Lok Sabha has the sole and final power in deciding whether a Bill is a Money Bill or otherwise.",
+      "The Council of States has no power to discuss the Money Bill."
+    ],
+    "correctAnswer": 3,
+    "explanation": "While the Council of States (Rajya Sabha) cannot amend or reject a Money Bill, it still has the power to discuss it during its 14-day window. [cite: 4872, 4869]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Legislative Procedure"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q81",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "State Legislature",
+    "text": "Which of the following States has/have bicameral legislature?\n1. Andhra Pradesh\n2. Telangana\n3. Bihar\n4. Uttar Pradesh",
+    "options": [
+      "1 only",
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All four states mentioned (Andhra Pradesh, Telangana, Bihar, and Uttar Pradesh) currently have bicameral legislatures (Legislative Assembly and Legislative Council). [cite: 4879, 4873]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "State Legislature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q82",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "By which one of the following Constitutional Amendment Acts, was the Article 21A (Right to Education) inserted into the Constitution of India?",
+    "options": [
+      "83rd Amendment Act",
+      "84th Amendment Act",
+      "85th Amendment Act",
+      "86th Amendment Act"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Article 21A, making education a fundamental right for children aged 6 to 14, was added by the 86th Amendment Act, 2002. [cite: 4879, 4872]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Rights"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q83",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "An object is dropped from a height onto the floor. Which one of the following remains uniform as it falls?",
+    "options": [
+      "Its acceleration",
+      "Its momentum",
+      "Its kinetic energy",
+      "Its potential energy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In free fall, the object falls with a constant acceleration equal to 'g' (acceleration due to gravity), while velocity and energy change. [cite: 4879, 4873]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Kinematics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q84",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "If an object is placed at the focus of a convex lens, its image is:",
+    "options": [
+      "at the focus on the same side.",
+      "at the focus on the opposite side.",
+      "coincident with the lens.",
+      "at infinity."
+    ],
+    "correctAnswer": 3,
+    "explanation": "For a convex lens, when the object is at the focal point, the refracted rays are parallel, forming an image at infinity. [cite: 4879, 4879]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q85",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Which one of the following statements about the aperture of a convex lens is correct?",
+    "options": [
+      "It is equal to its radius of curvature.",
+      "It is equal to its focal length.",
+      "It is independent of its radius of curvature.",
+      "It is equal to half of its focal length."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The aperture of a lens (the diameter of the light-collecting area) is a physical dimension independent of optical parameters like radius of curvature. [cite: 4879, 4879]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q86",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Thermal Expansion",
+    "text": "When water is heated from 0°C to 4°C, its density:",
+    "options": [
+      "remains constant.",
+      "increases.",
+      "decreases.",
+      "first increases then decreases to its original value."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Due to the anomalous expansion of water, it contracts when heated from 0°C to 4°C, meaning its density increases and reaches a maximum at 4°C. [cite: 4879, 4872]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Thermal Expansion"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q87",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Gravity",
+    "text": "The acceleration due to gravity at the Earth's surface depends on:",
+    "options": [
+      "its mass only.",
+      "its radius only.",
+      "both its mass and radius.",
+      "either its mass or its radius."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The formula for 'g' is $GM/R^2$, showing it depends on both the mass (M) and the radius (R) of the Earth. [cite: 4879, 4873]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Gravity"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q88",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Forest Types",
+    "text": "In which one of the following highlands of India can you find temperate forests called 'Sholas'?",
+    "options": [
+      "Nilgiris",
+      "Vindhyas",
+      "Satpuras",
+      "Himalayas"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sholas are high-altitude temperate evergreen forests found in the valleys of the Nilgiri and other Western Ghats highlands. [cite: 4975, 4883]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Forest Types"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q89",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "'Pingos' are associated with which one of the following process?",
+    "options": [
+      "Glacial",
+      "Peri-glacial",
+      "Aeolian",
+      "Fluvial"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pingos are ice-cored mounds found in permafrost regions, characteristic of peri-glacial environments. [cite: 4975, 4902]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q90",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Drainage Patterns",
+    "text": "Match List I (Drainage Pattern) with List II (Feature):\nA. Insequent - 1. Direction controlled by rock structure\nB. Consequent - 2. No apparent reason for following the path\nC. Subsequent - 3. Flow in same direction as consequent but at lower level\nD. Resequent - 4. Course determined by original slope of land",
+    "options": [
+      "A-2, B-4, C-1, D-3",
+      "A-2, B-1, C-4, D-3",
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Insequent streams follow paths without apparent reason; Consequent streams follow original slopes; Subsequent streams are controlled by rock structure; Resequent streams follow the original slope at lower levels. [cite: 4975, 4954]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Drainage Patterns"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q91",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Weathering Processes",
+    "text": "Which one of the following processes leads to expansion of certain minerals as they take up water, causing additional stress in the rock?",
+    "options": [
+      "Hydrolysis",
+      "Hydration",
+      "Oxidation",
+      "Carbonation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hydration is the chemical addition of water to minerals, causing them to expand and exert mechanical pressure on surrounding rocks. [cite: 4975, 4893]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Weathering Processes"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q92",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geological Time Scale",
+    "text": "The Indian desert also known as Marusthali is believed to be under the sea during which one of the following eras?",
+    "options": [
+      "Cenozoic era",
+      "Palaeozoic era",
+      "Mesozoic era",
+      "Archaean and Pre-Cambrian era"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Marine fossils found in Rajasthan indicate that parts of the Indian desert were submerged under the sea during the Mesozoic era. [cite: 4975, 4920]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geological Time Scale"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q93",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Indian Philosophy",
+    "text": "Which among the following are Charvaka Schools of Philosophy?\n1. Dhurtta\n2. Nyaya\n3. Sushikshita\n4. Vaisheshika",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "2 and 4 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Charvaka (Materialist) philosophy developed two distinct branches: Dhurtta (naive) and Sushikshita (refined/educated). [cite: 4975, 4970]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Philosophy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q94",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient Terminology",
+    "text": "During the 8th-14th centuries, in the Sanskrit texts and inscriptions, which of the following terms were used to denote Muslims?\n1. Turushka\n2. Tajika\n3. Parashika\n4. Kardamaka",
+    "options": [
+      "1, 2 and 3",
+      "1, 2 and 4",
+      "2 and 3 only",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Medieval Sanskrit texts used Turushka (Turks), Tajika (Tajiks/Arabs), and Parashika (Persians) to denote Muslim groups. [cite: 5056, 4991]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient Terminology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q95",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Indus Valley Civilization",
+    "text": "In the citadel and lower-town areas of which one of the following Harappan cities, have several large cisterns and reservoirs been found?",
+    "options": [
+      "Banawali",
+      "Mohenjodaro",
+      "Dholavira",
+      "Rakhigarhi"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dholavira is famous for its sophisticated water management system, including numerous large stone-cut reservoirs. [cite: 5056, 5016]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Indus Valley Civilization"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q96",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Medieval Warfare",
+    "text": "Consider the following statements about cavalry warfare in India:\n1. The iron stirrup made it possible for the armoured warrior to sit firmly on a horse without falling off.\n2. The iron stirrup also allowed a cavalry charge with lances held tightly to the body, without the rider being thrown off by the shock of impact.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The introduction of the iron stirrup revolutionized warfare by giving riders stability to sit firmly and use heavy weapons during charges. [cite: 5056, 5045]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval Warfare"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q97",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "The British policy towards Afghanistan in the first half of the 19th century aimed at:",
+    "options": [
+      "Strengthening Afghanistan as a buffer against Russia.",
+      "Weakening Russian influence in Afghanistan but not promoting a strong Afghanistan either.",
+      "Promoting Russian influence in Afghanistan to control insurgent tribal leaders.",
+      "Annexing Afghanistan as a directly-controlled British Territory."
+    ],
+    "correctAnswer": 1,
+    "explanation": "During the 'Great Game', the British sought to counter Russian influence in Afghanistan through 'Forward Policy' without allowing Afghanistan to become too powerful. [cite: 5056, 4986]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q98",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Current Affairs",
+    "text": "Recently, the United Nations agreed to change the name of which one of the following countries?",
+    "options": [
+      "Algeria",
+      "Jordan",
+      "Morocco",
+      "Turkey"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In 2022, the United Nations approved the name change of Turkey to 'Türkiye' following a request from the country. [cite: 5056, 5018]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q99",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "Financial Systems",
+    "text": "The SWIFT (The Society for Worldwide Interbank Financial Telecommunication) frequently mentioned in news, is essentially a:",
+    "options": [
+      "Global financial intelligence agency",
+      "Global terror finance detection system",
+      "Global money transfer system",
+      "Global stock-market information sharing system"
+    ],
+    "correctAnswer": 2,
+    "explanation": "SWIFT is a secure messaging system that banks and other financial institutions use to send and receive information, such as money transfer instructions. [cite: 5056, 5032]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Financial Systems"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q100",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Defence Projects",
+    "text": "P-75 I (or P-75 India) project refers to manufacture of:",
+    "options": [
+      "Diesel-electric submarines.",
+      "Nuclear-powered submarines.",
+      "Aircraft carrier warships.",
+      "Field guns."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Project-75 (India) is a follow-on to Project-75 for the construction of advanced diesel-electric submarines for the Indian Navy. [cite: 5056, 5051]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defence Projects"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q101",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Defence Systems",
+    "text": "The term 'Thermal High Altitude Area Defense', sometimes mentioned in news, refers to:",
+    "options": [
+      "Anti-Missile system.",
+      "Air-launched cruise missile.",
+      "Aircraft navigation system.",
+      "Surface-to-air guided weapon."
+    ],
+    "correctAnswer": 0,
+    "explanation": "THAAD is a highly advanced American anti-ballistic missile defense system designed to shoot down short, medium, and intermediate-range ballistic missiles. [cite: 5120, 5066]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defence Systems"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q102",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Defence Systems",
+    "text": "With reference to BrahMos missile, consider the following statements:\n1. It has a flight range of up to 290 km.\n2. It is capable of attaining a speed of 2.8 Mach.\n3. Its cruising altitude could be up to 30 km.",
+    "options": [
+      "1 and 2",
+      "2 only",
+      "1 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BrahMos originally had a restricted range of 290 km (now extended) and travels at supersonic speeds of around Mach 2.8. [cite: 5120, 5092]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defence Systems"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q103",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which one of the following is not a category under which the President of India nominates Members of Parliament?",
+    "options": [
+      "Literature",
+      "Science",
+      "Art",
+      "State Service"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The President nominates members to the Rajya Sabha based on special knowledge or experience in Literature, Science, Art, and Social Service. 'State Service' is not a category. [cite: 5120, 5117]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q104",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Demographics",
+    "text": "India is still a young country as the median age of its population is:",
+    "options": [
+      "Less than 25 years",
+      "Between 25 to 30 years",
+      "Between 30 to 35 years",
+      "Between 35 to 40 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "India's median age is estimated to be around 28-29 years, making it one of the youngest countries globally. [cite: 5120, 5068]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Demographics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q105",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "International Cooperation",
+    "text": "Blue Helmets are:",
+    "options": [
+      "United Nations Peacekeepers",
+      "Violent Non-State Actors",
+      "Civil Society Organisations",
+      "Environmental Organisations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Blue Helmets is the popular term for the military personnel of United Nations Peacekeeping forces. [cite: 5120, 5082]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Cooperation"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q106",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "Economic Systems",
+    "text": "Which one of the following central features is not associated with Capitalist Economy?",
+    "options": [
+      "There is generalised commodity production - it has market value.",
+      "Productive wealth is held predominantly in private hands.",
+      "Economic life is organised according to market principles.",
+      "Economic organisation is based on planning, a supposedly rational process of resource allocation."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A planned economic organization is a feature of a Socialist or Command economy, not a pure Capitalist economy. [cite: 5120, 5100]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Economic Systems"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q107",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Constitutional Features",
+    "text": "Which among the following is not the strength or chief benefit of Bicameralism?",
+    "options": [
+      "Second chambers check the first chambers and prevent majoritarian rule.",
+      "It checks the powers of the executive.",
+      "The second chambers can act as a constitutional safeguard.",
+      "It often acts as a check on democratic rule, particularly when their members are non-elected or indirectly elected."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Acting as a 'check on democratic rule' via non-elected members is often cited as a criticism or weakness of bicameralism, not its primary strength. [cite: 5125, 5123]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Features"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q108",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "Regulatory Bodies",
+    "text": "The Insolvency and Bankruptcy Board of India (IBBI) was established in the year:",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The IBBI was established on October 1, 2016, under the Insolvency and Bankruptcy Code. [cite: 5125, 5123]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Regulatory Bodies"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q109",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one of the following is the other term used for 'Focus' in relation with an earthquake?",
+    "options": [
+      "Hypocentre",
+      "Epicentre",
+      "Isocentre",
+      "Principal Point"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The focus, or hypocentre, is the point within the earth where an earthquake rupture starts. [cite: 5125, 5123]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q110",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following is not a mountain peak of the Andaman and Nicobar Islands?",
+    "options": [
+      "Saddle Peak",
+      "Mount Thuillier",
+      "Lhotse Peak",
+      "Mount Diavolo"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lhotse is the fourth highest mountain in the world, located in the Himalayas on the border of Nepal and China. [cite: 5125, 5123]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q111",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Match List I (Cloud Form) with List II (Characteristic):\nA. Cirrus - 4. Entirely of ice particles\nB. Cumulus - 3. Fair-weather clouds\nC. Nimbostratus - 1. Storm clouds\nD. Stratus - 2. High fog 'Low Ceiling'",
+    "options": [
+      "A-4, B-3, C-1, D-2",
+      "A-2, B-4, C-3, D-1",
+      "A-4, B-1, C-3, D-2",
+      "A-2, B-3, C-1, D-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cirrus clouds are composed of ice; Cumulus are puffy fair-weather clouds; Nimbostratus are dark rain/storm clouds; Stratus are uniform low-layer clouds. [cite: 5125, 5123]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q112",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Planetary Science",
+    "text": "Which one among the following planets has the largest number of known satellites?",
+    "options": [
+      "Mars",
+      "Neptune",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Saturn currently holds the record for the highest number of discovered moons/satellites in the solar system. [cite: 5125, 5123]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Planetary Science"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q113",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Who among the following usurped power in Kanyakubja after the death of Harshavardhana?",
+    "options": [
+      "Adityasena",
+      "Arunashva",
+      "Shashanka",
+      "Lalitaditya"
+    ],
+    "correctAnswer": 1,
+    "explanation": "After Harsha's death, his minister Arunashva (or Arjun) is recorded to have usurped the throne of Kanauj. [cite: 5125, 5123]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q114",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient Literature",
+    "text": "The legend of Prahlad and his father Hiranyakashyap was first set out in the:",
+    "options": [
+      "Bhagwat Purana",
+      "Vishnu Purana",
+      "Vamana Purana",
+      "Agni Purana"
+    ],
+    "correctAnswer": 1,
+    "explanation": "While appearing in many texts, the Vishnu Purana contains one of the earliest and most detailed accounts of Prahlad's devotion. [cite: 5131, 5128]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q115",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Legal History",
+    "text": "Which one of the following statements on the issue of ownership according to Smriti literature is not correct?",
+    "options": [
+      "The paternal estate was to be divided equally amongst sons.",
+      "Women were allowed to retain the gifts they received on the occasion of their marriage.",
+      "The gifts to women on the occasion of their marriage were known as Stridhana.",
+      "Stridhana was not inherited by the children without the permission of the husband."
+    ],
+    "correctAnswer": 3,
+    "explanation": "According to most Smriti literature, children had a direct right to inherit their mother's Stridhana, often without requiring the husband's permission. [cite: 5131, 5128]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Legal History"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q116",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern India",
+    "text": "Who among the following was not a woman labour leader who organised workers in the strikes in the 1920s?",
+    "options": [
+      "Sarala Devi Chaudhurani",
+      "Ushabai Dange",
+      "Prabhabati Devi",
+      "Anasuya Behn"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sarala Devi Chaudhurani was a prominent nationalist leader but not primarily known as a labor organizer like the others listed. [cite: 5131, 5128]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q117",
+    "year": 2022,
+    "subject": "Economics",
+    "topic": "Economic Theory",
+    "text": "Among the following countries, where did the idea of 'Social Market Economy' emerge in 1950s?",
+    "options": [
+      "Germany",
+      "France",
+      "United States of America",
+      "United Kingdom"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 'Social Market Economy' model (Soziale Marktwirtschaft) was implemented in West Germany after WWII to combine free-market capitalism with social welfare. [cite: 5131, 5128]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Economic Theory"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q118",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient Philosophy",
+    "text": "Which one of the following Indian thinkers first spoke of food-for-work programmes to counteract the effects of famines?",
+    "options": [
+      "Kautilya.",
+      "Aryabhatta",
+      "Chandragomin",
+      "Prabhakara"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the Arthashastra, Kautilya describes famine relief measures, including the concept of providing grain in exchange for public labor. [cite: 5131, 5128]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient Philosophy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q119",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Environment",
+    "text": "The 'Ramsar Convention' relates to which one of the following areas?",
+    "options": [
+      "Wetland preservation",
+      "Promote afforestation",
+      "Action plan on climate change",
+      "Combat desertification"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Ramsar Convention is an international treaty for the conservation and sustainable use of wetlands. [cite: 5131, 5128]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Environment"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2022-2-q120",
+    "year": 2022,
+    "subject": "General Knowledge",
+    "topic": "Sustainability",
+    "text": "Which one among the following reports defines Sustainable Development as development that meets the needs of the present generation without compromising the ability of future generations to meet their own needs?",
+    "options": [
+      "Brundtland Report",
+      "United Nations Human Development Report",
+      "Agenda-21 of the Rio Earth Summit",
+      "OECD Policy Brief (2006)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Brundtland Report (Our Common Future), published in 1987, provided the most widely accepted definition of sustainable development. [cite: 5131, 5128]",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sustainability"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2022 (2)"
+      }
+    ]
+  }
+]

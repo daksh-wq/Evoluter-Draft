@@ -1,0 +1,3482 @@
+[
+  {
+    "id": "cdse-2025-1-q1",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography - Geomorphology",
+    "text": "Consider the following statements with reference to Secondary waves (S-Waves) generated during an earthquake: \n1. They create troughs and crests in the material through which they pass.\n2. The direction of vibrations of S-waves is perpendicular to the wave direction in the vertical plane.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Secondary waves (S-waves) are transverse waves, meaning the particle motion is perpendicular to the direction of wave propagation[cite: 2132, 2135]. This motion creates crests and troughs in the material they travel through[cite: 2133]. Both statements correctly describe their physical properties.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q2",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography - Minerals",
+    "text": "Identify the Mineral on the basis of the following characteristics relating to it: \nI. It is usually a greenish crystal.\nII. It is often found in basaltic rocks.\nIII. Magnesium, iron and silica are its major elements.",
+    "options": [
+      "Amphibolite",
+      "Feldspar",
+      "Pyroxene",
+      "Olivine"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Olivine is a magnesium iron silicate characterized by its distinctive olive-green color[cite: 2164, 2171]. It is a common constituent of mafic and ultramafic igneous rocks like basalt[cite: 2168].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Minerals"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q3",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography - Weathering",
+    "text": "Which of the following statements with reference to Salt Weathering is/are correct?\n1. Salt crystallisation is the most effective of all the salt weathering processes.\n2. Salt crystal growth is more effective over sedimentary rocks as compared to igneous rocks.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Salt crystallization is widely considered the most potent form of salt weathering[cite: 2193, 2194]. It is more effective in sedimentary rocks due to their higher porosity and presence of bedding planes which allow salt solutions to penetrate more easily than in dense igneous rocks[cite: 2195].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Weathering"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q4",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography - Climatology",
+    "text": "Which of the following statements with reference to Surface inversion of temperature is/are correct?\n1. It causes instability in the lower layers of the atmosphere.\n2. This inversion commonly lasts for a few hours until the Sun comes up.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Temperature inversion actually causes stability (not instability) because warmer air lies over cooler air, suppressing vertical movement[cite: 2137, 2139]. Surface inversions are typically nocturnal and dissipate a few hours after sunrise as the ground warms up[cite: 2141].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q5",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography - Climatology",
+    "text": "Identify the cloud on the basis of the following characteristics relating to it: \nI. They look like cotton wool.\nII. They exist in patches and have flat base.\nIII. They are generally formed at a height of 4 to 7 km.",
+    "options": [
+      "Cirrus",
+      "Cumulus",
+      "Nimbus",
+      "Stratus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cumulus clouds are characterized by their 'cotton wool' appearance, flat bases, and existence in isolated patches[cite: 2159, 2162, 2166]. While standard cumulus are low clouds, they can develop at various heights depending on convection[cite: 2170].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q6",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Geography - Climatology",
+    "text": "Identify the type of climate on the basis of the following characteristics relating to it: \nI. Temperature is high throughout the year.\nII. Rainfall is variable with a short wet season and a longer dry season.\nIII. Climate of Sudan and Paraguay is an example of this climate type.",
+    "options": [
+      "Sub-tropical steppe climate",
+      "Mid-latitude steppe",
+      "Tropical monsoon climate",
+      "Tropical wet and dry climate"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Tropical wet and dry climate (Savanna) is found in regions like Sudan and Paraguay[cite: 2196, 2201]. It features high temperatures year-round and distinct seasonal rainfall—a short wet season followed by a prolonged dry period[cite: 2198, 2200].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q7",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "What is the correct sequence of the following salts in ascending order according to their presence in the sea water?\n1. Calcium Carbonate\n2. Calcium Sulphate\n3. Magnesium Chloride",
+    "options": [
+      "3, 1, 2",
+      "1, 3, 2",
+      "1, 2, 3",
+      "2, 1, 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In seawater composition, Calcium Carbonate (0.3%) is found in the lowest quantity among these three, followed by Calcium Sulphate (3.6%), with Magnesium Chloride (10.9%) being significantly more abundant[cite: 2303, 2306, 2308, 2310]. Therefore, the ascending order is 1-2-3.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Oceanography"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q8",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography - Soils",
+    "text": "Which of the following statements with reference to Humus is/are correct?\n1. It is a dark coloured amorphous substance.\n2. Being colloidal in nature, it serves as a reservoir of nutrients.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Humus is defined as a dark, organic, amorphous substance formed by the decomposition of plant and animal matter[cite: 2332, 2335]. Due to its colloidal nature and high surface area, it effectively holds and provides essential nutrients to plants[cite: 2338].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Soils"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q9",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Geography - Ecology",
+    "text": "Which one among the following Biosphere Reserves is spread over three states in India?",
+    "options": [
+      "Dehang Debang",
+      "Nilgiris",
+      "Nokrek",
+      "Seshachalam"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Nilgiri Biosphere Reserve is the first biosphere reserve in India and spans across three states: Tamil Nadu, Kerala, and Karnataka[cite: 2357, 2364].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Ecology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q10",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Geography - Rivers",
+    "text": "River Danube does not flow through which one of the following capital cities in Europe?",
+    "options": [
+      "Belgrade",
+      "Budapest",
+      "Prague",
+      "Vienna"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Danube flows through four national capitals: Vienna (Austria), Bratislava (Slovakia), Budapest (Hungary), and Belgrade (Serbia)[cite: 2372, 2378, 2382, 2388]. Prague is the capital of the Czech Republic and is situated on the Vltava River[cite: 2384].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Rivers"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q11",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Geography - Locations",
+    "text": "Which of the following statements with reference to Easter Island, a UNESCO World Heritage Site, is/are correct?\n1. It is part of Polynesia group of islands.\n2. It is a territory of the South American nation Chile.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Easter Island (Rapa Nui) is a remote volcanic island located in the southeastern Pacific Ocean and is culturally part of Polynesia[cite: 2304, 2311]. It was annexed by and remains a territory of Chile[cite: 2313].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Locations"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q12",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Geography - Environment",
+    "text": "Which one among the following is home to the endangered mountain gorillas in Africa?",
+    "options": [
+      "Mount Kenya",
+      "Mount Kilimanjaro",
+      "Ngorongoro Crater",
+      "Virunga Mountains"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Virunga Mountains, a chain of volcanoes spanning the borders of Rwanda, Uganda, and the DRC, are the primary habitat for the world's remaining endangered mountain gorillas[cite: 2336, 2353].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Environment"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q13",
+    "year": 2025,
+    "subject": "History",
+    "topic": "World History - West Asia",
+    "text": "Which of the following statements with reference to Jordan is/are correct?\n1. The country of Jordan was created through the British Mandate after World War I.\n2. It is a landlocked country.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Jordan was indeed established as Transjordan under the British Mandate following WWI[cite: 2359, 2367]. However, it is not landlocked; it has a small coastline on the Gulf of Aqaba (Red Sea)[cite: 2371].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "World History - West Asia"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q14",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Geography - Locations",
+    "text": "Which one among the following places is situated close to the Pearl River Estuary in Asia?",
+    "options": [
+      "Bangkok",
+      "Hong Kong",
+      "Macau",
+      "Singapore"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Pearl River Estuary is located in South China. Both Hong Kong (to the east) and Macau (to the west) are situated at this estuary[cite: 2393, 2399, 2401]. While both are close, Macau is often directly associated with the Pearl River delta's western side.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Locations"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q15",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Geography - Australia",
+    "text": "Consider the following statements with regard to Australia:\n1. The Coral Sea separates the Great Barrier Reef from the South Pacific.\n2. The Great Dividing Range extends from Melbourne to Perth in Australia.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Coral Sea is located between the Great Barrier Reef and the open South Pacific[cite: 2420, 2421]. The Great Dividing Range is a mountain system on the *eastern* coast of Australia, whereas Perth is on the *western* coast[cite: 2424].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Australia"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q16",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Geography - Mountains",
+    "text": "What is the correct sequence of the following mountain ranges as one moves from North towards South?\n1. Karakoram\n2. Kunlun\n3. Ladakh\n4. Zaskar",
+    "options": [
+      "1, 2, 3, 4",
+      "1, 2, 4, 3",
+      "2, 1, 4, 3",
+      "2, 1, 3, 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "From North to South, the sequence begins with the Kunlun Mountains (Tibet), followed by the Karakoram, then the Ladakh range, and finally the Zaskar range[cite: 2453, 2455, 2457, 2459, 2461].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Mountains"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q17",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Geography - Soils",
+    "text": "Which of the following statements with reference to saline soil in India is/are correct?\n1. They are rich in nitrogen.\n2. They occur in arid and semi-arid regions, and in waterlogged and swampy areas.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Saline soils in India are generally deficient (not rich) in nitrogen[cite: 2405]. They typically form in arid/semi-arid regions due to high evaporation or in swampy areas where salts accumulate[cite: 2394, 2407].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Soils"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q18",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Geography - Rivers",
+    "text": "Salal Power Project is situated on which one among the following rivers?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Nubra",
+      "Shyok"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Salal Power Project is a run-of-the-river hydroelectric project located on the Chenab River in the Reasi district of Jammu and Kashmir[cite: 2422, 2427].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Rivers"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q19",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Geography - Rivers",
+    "text": "Which one among the following tributaries of Indus River does not originate in the Himalayas?",
+    "options": [
+      "Gilgit",
+      "Gomal",
+      "Hunza",
+      "Zaskar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Gomal River originates in the southeastern part of Afghanistan and is a right-bank tributary of the Indus, unlike the Gilgit, Hunza, and Zaskar which originate in the Himalayan/Trans-Himalayan ranges[cite: 2442, 2448].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Rivers"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q20",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Geography - Resources",
+    "text": "As per the Annual Report 2023-24 of the Ministry of Mines, Government of India, which of the following are the major bauxite producing states in India?",
+    "options": [
+      "Odisha and Madhya Pradesh",
+      "Odisha and Jharkhand",
+      "Jharkhand and Madhya Pradesh",
+      "Jharkhand and Karnataka"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Odisha is consistently the largest producer of bauxite in India, followed by states like Gujarat, Jharkhand, and Chhattisgarh[cite: 2462, 2470].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Resources"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q21",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "If your image appears to be erect, no matter how far you stand from a mirror, the mirror is likely to be:",
+    "options": [
+      "Plane",
+      "Concave",
+      "Convex",
+      "Either plane or convex"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A plane mirror always forms an erect image. A convex mirror also always forms an erect (though diminished) image regardless of the object's distance[cite: 2484, 2494].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q22",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "text": "The rule that determines the direction of a magnetic field produced around a straight conductor carrying current is:",
+    "options": [
+      "Right-hand thumb rule",
+      "Fleming's left-hand rule",
+      "Fleming's right-hand rule",
+      "Hund's rule"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Right-Hand Thumb Rule states that if the thumb of the right hand points in the direction of the current, the curled fingers show the direction of the magnetic field around the conductor[cite: 2484, 2494].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Magnetism"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q23",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "A motorcycle has initial velocity of 5 m/s. After 3 seconds, the velocity is 7 m/s. The displacement of the motorcycle in 3 seconds is:",
+    "options": [
+      "21 m",
+      "18 m",
+      "36 m",
+      "6 m"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Using the formula $s = \frac{u+v}{2} \times t$: $s = \frac{5+7}{2} \times 3 = 6 \times 3 = 18$ meters[cite: 2484, 2494].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Kinematics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q24",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "The minimum power required to lift a mass of 50 kg up to a vertical distance of 8 m in 10 s is: (Take g = 10 m/s^2)",
+    "options": [
+      "400 W",
+      "40 W",
+      "50 W",
+      "500 W"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Power $P = \frac{mgh}{t}$. $P = \frac{50 \times 10 \times 8}{10} = 50 \times 8 = 400$ Watts[cite: 2484, 2494].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Mechanics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q25",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "text": "Which one among the following statements is not correct?",
+    "options": [
+      "All bodies in the universe attract each other due to the gravitational force.",
+      "Newton's law of gravitation follows from Newton's laws of motion.",
+      "The value of g (acceleration due to gravity) at the centre of the Earth is zero.",
+      "Mass and weight are measured in different units."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Newton's Universal Law of Gravitation is a fundamental law of nature and is independent of his Laws of Motion, though they are often used together in mechanics[cite: 2484, 2494].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Gravitation"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q26",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Fluid Mechanics",
+    "text": "A body floats in a liquid if the buoyant force is:",
+    "options": [
+      "equal to its weight.",
+      "less than its weight.",
+      "greater than its weight.",
+      "zero."
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to the principle of floatation, a body floats in a fluid if the buoyant force acting on it is equal to its weight[cite: 2484, 2494].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Fluid Mechanics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q27",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Fluid Mechanics",
+    "text": "A metallic sphere of mass 1 kg and volume 2 x 10^-4 m^3 is completely immersed in water. The buoyant force exerted by water on the sphere is: (Given: density of water = 1000 kg/m^3, g = 10 m/s^2)",
+    "options": [
+      "0.5 N",
+      "1.5 N",
+      "2 N",
+      "2.5 N"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Buoyant force $F_b = \rho_{liquid} \times V_{displaced} \times g$. $F_b = 1000 \times (2 \times 10^{-4}) \times 10 = 1000 \times 0.0002 \times 10 = 2$ N[cite: 2569, 2570, 2573].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Fluid Mechanics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q28",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "A light bulb rated as 60 W at 220 V has a potential difference of 110 V across its ends. The power dissipated in this light bulb is:",
+    "options": [
+      "30 W",
+      "45 W",
+      "15 W",
+      "2 W"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Resistance $R = \frac{V^2}{P} = \frac{220^2}{60}$. New power $P' = \frac{V_{new}^2}{R} = \frac{110^2}{(220^2/60)} = 60 \times (\frac{110}{220})^2 = 60 \times (\frac{1}{2})^2 = 15$ W[cite: 2598, 2601].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electricity"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q29",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Which one among the following is used in a simple microscope?",
+    "options": [
+      "Diverging lens",
+      "Concave mirror",
+      "Converging lens",
+      "Plane mirror"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A simple microscope consists of a single converging lens (convex lens) of short focal length used to produce an enlarged virtual image of an object[cite: 2619, 2630].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q30",
+    "year": 2025,
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "text": "The force with which the Earth attracts an object is called:",
+    "options": [
+      "Weight of the object",
+      "Mass of the object",
+      "Density of the object",
+      "Magnitude of the object"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Weight is defined as the gravitational force exerted by the Earth on an object[cite: 2636, 2641].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Gravitation"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q31",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Jainism",
+    "text": "Which of the following is one of the 'three gems' (triratna) of Jainism?",
+    "options": [
+      "Brahmacharya",
+      "Samyag-darshana",
+      "Sunrita",
+      "Asteya"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Triratnas of Jainism are Right Faith (Samyag-darshana), Right Knowledge (Samyag-jnana), and Right Conduct (Samyag-charitra)[cite: 2569, 2578]. Brahmacharya and Asteya are part of the Five Vows (Pancha Mahavrata).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Jainism"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q32",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Indus Valley Civilization",
+    "text": "Which one among the following motifs does not appear on Harappan seals?",
+    "options": [
+      "Humped Bull",
+      "Elephant",
+      "Lion",
+      "Crocodile"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Harappan seals frequently depict animals like the humped bull, elephant, rhinoceros, and crocodile[cite: 2592, 2595, 2597, 2603]. The lion was generally not depicted on Indus Valley seals.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Indus Valley Civilization"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q33",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Literature",
+    "text": "Which one among the following is the earliest text?",
+    "options": [
+      "Natyashastra of Bharata",
+      "Sushruta Samhita",
+      "Ashtadhyayi",
+      "Manusmriti"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Panini's Ashtadhyayi (c. 4th century BCE) predates the compiled versions of the Manusmriti, Sushruta Samhita, and Natyashastra[cite: 2613, 2621].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q34",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Maurya Empire",
+    "text": "Which one of the following statements about Ashoka's inscriptions is correct?",
+    "options": [
+      "The Major Rock Edict found in Kerala is in Sanskrit.",
+      "Minor Rock Edicts in Bihar are found only in Pataliputra.",
+      "The Dhauli Major Rock Edict makes a mention of the Kalinga War.",
+      "Kalsi in Uttarakhand is a site of Major Rock Edicts."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Kalsi in Dehradun, Uttarakhand, is a well-known site of Ashoka's Major Rock Edicts[cite: 2631, 2651]. Notably, the Kalinga War is omitted from the Dhauli and Jaugada rock edicts (replaced by the separate 'Kalinga Edicts')[cite: 2650].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Maurya Empire"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q35",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Religions",
+    "text": "Which one of the following statements about the Ajivikas is not correct?",
+    "options": [
+      "They did not practise discrimination on the basis of caste or class.",
+      "They had a corporate organisation and canonical texts.",
+      "They practised severe asceticism, often eating very little food.",
+      "They formed an alliance with Jainas against Buddhists."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Ajivikas were a heterodox sect that often clashed with both Buddhists and Jains[cite: 35]. There is no historical evidence of a formal alliance between Ajivikas and Jainas against Buddhists[cite: 35].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Religions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q36",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval India - Military Technology",
+    "text": "Consider the following statements about the use of stirrup in India:\n1. The Konarak horse sculpture (c. 1250) shows a ring-stirrup.\n2. A broad, probably wooden, stirrup appears in Khajuraho sculptures (probably 10th century).\n3. The iron-stirrup was used in the Delhi Sultans' armies from the thirteenth century onwards.\nHow many of the above statements is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "Nil"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Archaeological and sculptural evidence from Konarak and Khajuraho confirms early variants of stirrups in India[cite: 36]. The widespread use of the iron stirrup by the Delhi Sultanate's cavalry in the 13th century was a significant military development[cite: 36].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Military Technology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q37",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Vedic Period",
+    "text": "In the Rig Veda Samhita, use of the terms ishukrit and isukara referred to the maker of:",
+    "options": [
+      "Arrows",
+      "Swords",
+      "Vajra (Thunderbolt)",
+      "Maces"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The terms 'ishukrit' and 'ishukara' in the Rig Veda denote makers of arrows ('ishu')[cite: 37].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Vedic Period"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q38",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Warfare",
+    "text": "Which one of the following does not refer to the bow (and arrow) as a weapon of war in ancient India?",
+    "options": [
+      "Sharnga",
+      "Kunta",
+      "Kodanda",
+      "Karmuka"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sharnga (Vishnu's bow), Kodanda, and Karmuka are all names or synonyms for a bow[cite: 38]. 'Kunta' refers to a spear or lance[cite: 38].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Warfare"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q39",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval India - Military Technology",
+    "text": "What is the military-device referred to by the term manjaniq?",
+    "options": [
+      "A device for loading field-guns with gunpowder",
+      "Preparing cavalry for rapid charge",
+      "A bolting device for strengthening the gates of forts",
+      "A device for throwing stones (mangonel)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A 'manjaniq' was a medieval siege engine or mangonel used for throwing large stones or projectiles at fortresses[cite: 39].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Military Technology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q40",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval India - Economy",
+    "text": "In medieval India, the process of indigo extraction underwent great improvement as a result of the:",
+    "options": [
+      "use of fertilizer enhancing the quality of indigo crop.",
+      "introduction of mechanical crushing tools for indigo stems.",
+      "use of gypsum and lime mortars in making the inner surfaces of indigo vats water-proof.",
+      "employment of slave labour in quick desilting of indigo crucibles."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The efficiency of indigo processing in medieval India was significantly improved by the introduction of lime-plastered vats (using gypsum and lime mortars), which prevented leakage and improved quality[cite: 40].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Economy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q41",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval India - Administration",
+    "text": "Which one of the following is listed in the Ain-i Akbari as one of the 'Indian sciences' prescribed by Akbar for scholars to learn at school?",
+    "options": [
+      "Ayurveda",
+      "Vyakarana",
+      "Ganita",
+      "Jyotisha"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Abul Fazl in the Ain-i Akbari records that Akbar encouraged the study of practical subjects like Mathematics (Ganita), along with logic, agriculture, and other sciences in schools[cite: 41].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Administration"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q42",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern India - Military History",
+    "text": "Consider the following statements about the arms used by Europeans in warfare in India:\n1. The flint-lock muskets could work even in wet weather.\n2. The addition of bayonet made musket a more effective and dangerous weapon in close combat.\n3. The wrought-iron cannon barrels were easy to move and manoeuvre.\nHow many of the above statements is/are correct?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "Nil"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 2 is correct; the bayonet transformed the musket into a dual-purpose weapon for both shooting and melee[cite: 42]. Statement 1 is generally incorrect as flint-locks often misfired in damp conditions. Statement 3 is incorrect as large cannon barrels were notoriously difficult to maneuver[cite: 42].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Military History"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q43",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Grammarians",
+    "text": "Which one of the following statements about the grammarian Katyayana is correct?",
+    "options": [
+      "He was a contemporary of Panini.",
+      "He was a contemporary of Patanjali.",
+      "He belonged to a period between Panini and Patanjali.",
+      "He belonged to a period later than both Panini and Patanjali."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Katyayana lived approximately in the 3rd century BCE, placing him chronologically between the great grammarians Panini (c. 4th century BCE) and Patanjali (c. 2nd century BCE)[cite: 43].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Grammarians"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q44",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Vedic Religion",
+    "text": "Which one of the following statements about Rig Vedic goddesses is correct?",
+    "options": [
+      "Ushas represents freedom from sickness.",
+      "Sinivali bestows children.",
+      "Aditi is goddess of dawn.",
+      "Raka is goddess of speech."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sinivali is a Vedic goddess associated with fertility and childbirth[cite: 44]. Ushas is the goddess of dawn (not Aditi), and Saraswati is the goddess of speech[cite: 44].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Vedic Religion"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q45",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Buddhism",
+    "text": "Which one of the following statements about the Buddhist Goddess Hariti is correct?",
+    "options": [
+      "She was converted by the Buddha from a blood-thirsty yakshi to a benevolent maternal figure.",
+      "She is the feminine personification of wisdom.",
+      "She protects people from eight great fears.",
+      "She is a warrior goddess associated with the dawn."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hariti was originally a demoness (yakshi) who devoured children, but after an encounter with the Buddha, she became a protector of children and a symbol of motherhood[cite: 45].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Buddhism"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q46",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Languages",
+    "text": "Consider the following statements about the literary language Apabhramsha:\n1. It appeared in recognizable forms by the sixth century.\n2. It developed out of mixtures of regional vernaculars with the Prakrits and Sanskrit.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Apabhramsha represents a transitional stage between Middle Indo-Aryan Prakrits and modern regional languages, becoming distinct by the 6th century CE[cite: 46]. It evolved from a fusion of various Prakrit dialects with local vernacular influences[cite: 46].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Languages"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q47",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval India - Literature",
+    "text": "Who composed Zainavilas, a history of the rulers of Kashmir, in the time of Zainul Abidin?",
+    "options": [
+      "Bhattavatara",
+      "Jonaraja",
+      "Shrivara",
+      "Vachaspati"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bhattavatara was a court poet of Sultan Zainul Abidin of Kashmir and composed the 'Zainavilas'[cite: 47].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q48",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval India - Literature",
+    "text": "In which one of the following works has Amir Khusrau praised the climate of India, its languages, notably Sanskrit, its arts and music and even its animals?",
+    "options": [
+      "Ijaz-i Khusrawi",
+      "Dewal Rani Khizr Khani",
+      "Khazainul Futuh",
+      "Nuh Sipihr"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In his work 'Nuh Sipihr' (The Nine Skies), Amir Khusrau expressed great pride in India, praising its learning, language (Sanskrit), and natural environment[cite: 48].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q49",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval India - Literature",
+    "text": "Which one of the following works was written in early eighteenth century by the Bengali poet Rameshwar Bhattacharya?",
+    "options": [
+      "Dharmamangal",
+      "Shivsankirttan",
+      "Mansimha",
+      "Vidyasundar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rameshwar Bhattacharya is best known for composing 'Shivsankirttan' (also known as Shivanayan) in the early 18th century, which provides insights into Bengali rural life[cite: 49].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q50",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient India - Maurya Empire",
+    "text": "Which one of the following present day territories was outside the limits of Ashoka's empire?",
+    "options": [
+      "Brahmaputra valley, Assam",
+      "Baluchistan",
+      "North Bengal",
+      "Kashmir valley"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While Ashoka's empire covered most of the Indian subcontinent, including Kashmir, Bengal, and Baluchistan, it did not extend into the Brahmaputra valley of Assam[cite: 50].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Maurya Empire"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q51",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "text": "Isobars of elements have same :",
+    "options": [
+      "Atomic numbers.",
+      "Number of electrons.",
+      "Mass numbers.",
+      "Number of neutrons."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Isobars are atoms of different chemical elements that have the same mass number (total number of nucleons) but different atomic numbers.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Structure"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q52",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Atomic Models",
+    "text": "Which one of the following could not be explained by Rutherford's nuclear model ?",
+    "options": [
+      "Stability of the atom",
+      "Presence of nucleus in the centre of an atom",
+      "Comparison of sizes of atom and nucleus",
+      "Nucleus is positively charged"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rutherford's model could not explain why an accelerating electron revolving around the nucleus does not lose energy and spiral into the nucleus, which relates to the stability of the atom.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Models"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q53",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Elements and Valency",
+    "text": "If atomic number of an element is 11, the correct name, symbol and valency are:",
+    "options": [
+      "Lithium, Li, 1",
+      "Magnesium, Mg, 2",
+      "Boron, B, 3",
+      "Sodium, Na, 1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The element with atomic number 11 is Sodium (Na). Its electronic configuration is 2, 8, 1, giving it a valency of 1.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Elements and Valency"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q54",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Chemical Substances",
+    "text": "Which one of the following gas is used in making soft drinks ?",
+    "options": [
+      "NH3",
+      "PH3",
+      "COCl2",
+      "CO2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Carbon dioxide (CO2) is used in soft drinks to create carbonation, providing the characteristic fizz and acting as a mild preservative.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Substances"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q55",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Classification of Matter",
+    "text": "Which one of the following is considered as a compound?",
+    "options": [
+      "Silicon",
+      "Tin",
+      "Sugar solution",
+      "Calcium carbonate"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Calcium carbonate (CaCO3) is a chemical compound. Silicon and Tin are elements, and a sugar solution is a mixture.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Classification of Matter"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q56",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Atomic Models",
+    "text": "Rutherford's alpha-particle scattering experiment on gold foil is responsible for the discovery of:",
+    "options": [
+      "Neutron",
+      "Electron",
+      "Proton",
+      "Atomic nucleus"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Rutherford's experiment showed that most of an atom's mass and positive charge is concentrated in a tiny central region, which he discovered as the atomic nucleus.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Models"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q57",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Classification of Elements",
+    "text": "Which one of the following is a metalloid ?",
+    "options": [
+      "Germanium",
+      "Coke",
+      "Iodine",
+      "Sugar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Germanium is a metalloid because it has properties intermediate between those of metals and solid nonmetals.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Classification of Elements"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q58",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Atomic Theory",
+    "text": "Which one of the following is not explained by the Dalton's atomic theory?",
+    "options": [
+      "Law of conservation of mass",
+      "Law of constant composition",
+      "Presence of different kind of sub-atomic particles in an atom",
+      "Law of multiple proportion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dalton's atomic theory considered the atom to be indivisible and did not account for sub-atomic particles like electrons, protons, and neutrons.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Theory"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q59",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Acids and Bases",
+    "text": "Which one of the following contains all Lewis acids?",
+    "options": [
+      "AlCl3, Co3+, BF3",
+      "BCl3, NH3, OH-",
+      "Mg2+, H2O, F-",
+      "BF3, NH3, H2O"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lewis acids are electron-pair acceptors. AlCl3, Co3+, and BF3 are all species that can accept an electron pair due to empty orbitals or positive charge.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids and Bases"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q60",
+    "year": 2025,
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "text": "Number of electrons present in the species H2+, He, H2 and O2+ respectively are:",
+    "options": [
+      "1, 2, 2, 15",
+      "1, 2, 1, 14",
+      "2, 2, 2, 16",
+      "0, 2, 1, 14"
+    ],
+    "correctAnswer": 0,
+    "explanation": "H2+ (2-1=1), He (2), H2 (2), O2+ (16-1=15).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Atomic Structure"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q61",
+    "year": 2025,
+    "subject": "Economics",
+    "topic": "Indian Economy - Foreign Trade",
+    "text": "Consider the following statements with respect to performance of the merchandise export of India in FY-2024: \n1. Share of capital goods such as machinery, equipment and other durable goods decreased substantially.\n2. Share of consumer goods and intermediate goods increased.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In FY24, while overall exports faced global headwinds, there was a shift in composition where segments like consumer and intermediate goods showed resilience or growth relative to capital goods.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Economy - Foreign Trade"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q62",
+    "year": 2025,
+    "subject": "Economics",
+    "topic": "Banking and Finance",
+    "text": "Which one among the following statements about Project Nexus is correct?",
+    "options": [
+      "It is an international agreement to enable labour movement between countries.",
+      "It is an international initiative to enable instant cross-border retail payments.",
+      "It is an international initiative to transfer technology between countries.",
+      "It is an international agreement to create database on financial inclusion."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Project Nexus is an initiative by the BIS Innovation Hub to connect domestic instant payment systems (IPS) globally to enable seamless, instant cross-border retail payments.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Banking and Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q63",
+    "year": 2025,
+    "subject": "Economics",
+    "topic": "Inflation Indices",
+    "text": "While calculating the consumer price index, 'housing' as an item is classified as:",
+    "options": [
+      "Core consumer durable",
+      "Core consumer non-durable",
+      "Core capital goods",
+      "Core service"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Housing in the context of CPI (Consumer Price Index) is categorized under services because it represents the consumption of housing services (like rent or owner-equivalent rent).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Inflation Indices"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q64",
+    "year": 2025,
+    "subject": "Economics",
+    "topic": "Business - IT Services",
+    "text": "Which one among the following established the first Global Capability Centre in India?",
+    "options": [
+      "Honeywell",
+      "Citibank",
+      "Texas Instruments",
+      "SAP Labs India"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Texas Instruments was the first multinational to set up an R&D/Global Capability Centre in India, established in Bengaluru in 1985.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Business - IT Services"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q65",
+    "year": 2025,
+    "subject": "Economics",
+    "topic": "Macroeconomics - Trade",
+    "text": "Which of the following pairs is/are not correctly matched? \n1. Global Value Chains (GVC) : International Product Sharing\n2. World Integrated Trade Solutions : Database on GVC related Trade\n3. Foreign Direct Investment : Current Account Deficit (CAD)",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Foreign Direct Investment (FDI) belongs to the Capital Account, not the Current Account. CAD relates to trade balance, services, and transfers.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Macroeconomics - Trade"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q66",
+    "year": 2025,
+    "subject": "Economics",
+    "topic": "Macroeconomics - Exchange Rates",
+    "text": "How can currency depreciation stimulate an increase in net exports? \n1. By reducing export costs\n2. By reducing import prices",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Currency depreciation makes domestic goods cheaper for foreigners (reducing the cost of exports in foreign currency) and makes imports more expensive (not cheaper), which tends to increase net exports.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Macroeconomics - Exchange Rates"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q67",
+    "year": 2025,
+    "subject": "Economics",
+    "topic": "Inflation",
+    "text": "Core inflation is :",
+    "options": [
+      "CPI headline inflation minus all non-food items",
+      "WPI inflation minus all food and non-food items",
+      "CPI headline inflation minus food and energy items",
+      "WPI inflation minus food and energy items"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Core inflation excludes volatile components like food and energy from the headline inflation to show the underlying long-term trend in the price level.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Inflation"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q68",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes - Education",
+    "text": "In alignment with the guidelines of NEP 2020, 'Poshan bhi Padhai bhi' (PBPB) was launched under which one among the following programmes?",
+    "options": [
+      "Integrated Teacher Training Programme",
+      "Vidya Pravesh",
+      "Early Childhood Care and Education",
+      "Samagra Shiksha Abhiyan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Poshan bhi Padhai bhi' is a flagship program under Mission Saksham Anganwadi and Poshan 2.0 to strengthen Early Childhood Care and Education (ECCE) through Anganwadis.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes - Education"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q69",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Economy - Labor",
+    "text": "Which one among the following defines flexi workers in India?",
+    "options": [
+      "Formal contract staff employed through organised contract",
+      "Informal sector employees working in urban areas",
+      "Agricultural labour migrating to urban areas",
+      "Regular salaried workers working in registered companies"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flexi-staffing refers to hiring workers through formal third-party agencies on a contractual basis, providing flexibility to firms while maintaining a formal employment contract for the worker.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Economy - Labor"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q70",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes - Education",
+    "text": "Which one among the following is an integrated teacher training programme?",
+    "options": [
+      "Vidya Pravesh",
+      "NISHTHA",
+      "Vidyanjali",
+      "DIKSHA"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NISHTHA (National Initiative for School Heads' and Teachers' Holistic Advancement) is a nationwide integrated training program for school heads and teachers.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes - Education"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q71",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "Which instrument is used to measure the blood pressure manually?",
+    "options": [
+      "Sphygmomanometer",
+      "Centrifuge",
+      "Electrophoresis",
+      "Thermal cycler"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A sphygmomanometer, often used with a stethoscope, is the standard medical instrument for measuring blood pressure manually.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q72",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Human Physiology - Eye",
+    "text": "Myopia is also known as:",
+    "options": [
+      "Far-sightedness",
+      "Near-sightedness",
+      "Cataract",
+      "Presbyopia"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Myopia is near-sightedness, a condition where close objects appear clearly, but far ones don't.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology - Eye"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q73",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Why does the Rough Endoplasmic Reticulum look 'rough' under a microscope ?",
+    "options": [
+      "Due to the presence of ribosomes on its surface",
+      "Due to the absence of ribosomes on its surface",
+      "Due to the presence of lysosomes on its surface",
+      "Due to the presence of mitochondria on its surface"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Rough ER is studded with ribosomes, which are the sites of protein synthesis, giving it a bumpy or rough appearance under an electron microscope.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Cell Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q74",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Hormones",
+    "text": "Which one among the following is not a plant hormone?",
+    "options": [
+      "Gibberellins",
+      "Abscisic acid",
+      "Auxins",
+      "Thyroxine"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Thyroxine is an animal hormone produced by the thyroid gland. Gibberellins, ABA, and Auxins are all phytohormones.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Hormones"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q75",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "The normal systolic pressure in human beings is:",
+    "options": [
+      "80 mm of Hg",
+      "100 mm of Hg",
+      "120 mm of Hg",
+      "140 mm of Hg"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A healthy adult's normal systolic blood pressure is generally around 120 mm Hg, while diastolic is around 80 mm Hg.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q76",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Zoology",
+    "text": "Sponges belong to which one among the following phylum?",
+    "options": [
+      "Porifera",
+      "Platyhelminthes",
+      "Cnidaria",
+      "Annelida"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sponges are the primary members of the phylum Porifera, characterized by their porous bodies and lack of true tissues.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Zoology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q77",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Biochemistry",
+    "text": "Lactose is made up of:",
+    "options": [
+      "Glucose only",
+      "Glucose and Fructose",
+      "Glucose and Sucrose",
+      "Glucose and Galactose"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Lactose is a disaccharide sugar composed of one molecule of glucose and one molecule of galactose.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Biochemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q78",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Enzymology",
+    "text": "The enzymes which catalyze the same reaction but have different amino acid compositions are commonly referred as:",
+    "options": [
+      "Isoenzymes",
+      "Isotopes",
+      "Isomers",
+      "Coenzymes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Isoenzymes (or isozymes) are multiple forms of an enzyme that catalyze the same reaction but differ in their physical/chemical properties or amino acid sequence.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Enzymology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q79",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Respiration",
+    "text": "How many Carbon atoms are present in a Pyruvate molecule ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "During glycolysis, a 6-carbon glucose molecule is split into two 3-carbon pyruvate molecules.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Respiration"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q80",
+    "year": 2025,
+    "subject": "Biology",
+    "topic": "Human Physiology - Eye",
+    "text": "The human eye has a point that lacks photoreceptor cells. This is identified as:",
+    "options": [
+      "Fovea",
+      "Blind spot",
+      "Dark spot",
+      "Orbit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The blind spot is the location on the retina where the optic nerve exits the eye; because there are no rods or cones here, it cannot detect light.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology - Eye"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q81",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Taxation - GST",
+    "text": "Which of the following Constitution Amendment Acts introduced GST (Goods and Services Tax) in course of inter-state trade or commerce?",
+    "options": [
+      "Constitution (One Hundred and First Amendment) Act",
+      "Constitution (One Hundred and Second Amendment) Act",
+      "Constitution (One Hundred and Fourth Amendment) Act",
+      "Constitution (One Hundred and Sixth Amendment) Act"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 101st Constitutional Amendment Act, 2016, introduced the Goods and Services Tax (GST) in India.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Taxation - GST"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q82",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "International Organisations - Nobel Prize",
+    "text": "Which one among the following UN agencies has received the Nobel Prize more than once ?",
+    "options": [
+      "ILO",
+      "WFP",
+      "UNICEF",
+      "UNHCR"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Office of the United Nations High Commissioner for Refugees (UNHCR) received the Nobel Peace Prize twice, in 1954 and 1981.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Organisations - Nobel Prize"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q83",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Statutory Bodies - CVC",
+    "text": "Consider the following statements about Central Vigilance Commission (CVC): \n1. Central Vigilance Commissioner is appointed by the President of India.\n2. The Committee to recommend the appointment of Central Vigilance Commissioner has the Minister of Home Affairs as one of the members.\n3. In certain circumstances the Leader of the single largest group in opposition in Lok Sabha can be on the Committee to recommend the appointment of Central Vigilance Commissioner.\nHow many of the above statements is/are correct?",
+    "options": [
+      "Nil",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All statements are correct. The Commissioner is appointed by the President on the recommendation of a committee consisting of the PM, the Home Minister, and the Leader of the Opposition (or single largest group) in the Lok Sabha.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Statutory Bodies - CVC"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q84",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Important Days",
+    "text": "International Day of Democracy, as decided vide a UN General Assembly resolution, is observed on:",
+    "options": [
+      "20 January",
+      "1 July",
+      "15 September",
+      "9 December"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In 2007, the UN General Assembly resolved to observe 15 September as the International Day of Democracy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Important Days"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q85",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Planning - NITI Aayog",
+    "text": "Which of the following statements about the NITI Aayog is/are correct?\n1. Prime Minister of India is the Chairperson of its Governing Council.\n2. Lieutenant Governor of Ladakh is a member of its Governing Council.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The PM is the Chairperson of NITI Aayog. Its Governing Council includes Chief Ministers of all States and Lt. Governors of Union Territories, including Ladakh.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Planning - NITI Aayog"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q86",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Statutory Bodies - NCW",
+    "text": "Which of the following statements about National Commission for Women are correct?\n1. It is a statutory body.\n2. It has the mandate to review the constitutional and legal safeguards for women.\n3. It has the mandate to advise the Government on all policy matters affecting women.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The NCW was established under the National Commission for Women Act, 1990 (statutory). Its functions include reviewing legal safeguards and advising the government on women's policy issues.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Statutory Bodies - NCW"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q87",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Constitution - Schedules",
+    "text": "Which, amongst the following, is the latest language to be included in the Eighth Schedule of the Constitution of India?",
+    "options": [
+      "Maithili",
+      "Nepali",
+      "Konkani",
+      "Manipuri"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Maithili (along with Bodo, Dogri, and Santhali) was added via the 92nd Amendment in 2003. Nepali, Konkani, and Manipuri were added earlier in 1992 (71st Amendment).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitution - Schedules"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q88",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Parliament - Rajya Sabha",
+    "text": "Which one among the following states has the highest number of seats in the Council of States?",
+    "options": [
+      "Andhra Pradesh",
+      "Bihar",
+      "Madhya Pradesh",
+      "Tamil Nadu"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Among the options: Tamil Nadu (18 seats), Bihar (16 seats), Andhra Pradesh (11 seats), Madhya Pradesh (11 seats).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament - Rajya Sabha"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q89",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "International Relations - Treaties",
+    "text": "Which of the following statements about the Indus Waters Treaty is/are correct?\n1. The term 'Eastern Rivers' means the Sutlej, the Beas and the Ravi taken together.\n2. The term 'Western Rivers' means the Indus, the Jhelum and the Chenab taken together.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 1960 treaty classifies the six rivers of the Indus system into 'Eastern Rivers' (given to India) and 'Western Rivers' (given primarily to Pakistan) as listed.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations - Treaties"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q90",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Fundamental Rights and DPSP",
+    "text": "Which of the following statements is/are correct as per the Constitution of India?\n1. The Constitution (Eighty-sixth Amendment) Act has added the Right to Education to the chapter of Directive Principles of State Policy.\n2. Right to Work and Right to Education are both, Fundamental Rights and Directive Principles of State Policy.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 86th Amendment added Article 21A (Fundamental Right) and also changed the subject matter of Article 45 (DPSP). Statement 2 is incorrect as 'Right to Work' is only a DPSP (Article 41) and not a Fundamental Right.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Rights and DPSP"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q91",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Fundamental Rights - Article 12",
+    "text": "As defined in Article 12 of the Constitution of India, 'State' includes:\n1. Parliament of India\n2. State Governments\n3. State Legislatures\n4. Local authorities in India",
+    "options": [
+      "1 and 3 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4",
+      "2 and 4 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 12 defines 'State' broadly for the purpose of Part III (Fundamental Rights) to include the central government/parliament, state governments/legislatures, local authorities, and other statutory bodies.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Rights - Article 12"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q92",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Parliament - Privileges",
+    "text": "Which of the following descriptions with regard to Parliamentary Privilege for Members of the Parliament of India is/are correct?\n1. The Speaker is empowered to refer suo moto any question of privilege for investigation\n2. A question of privilege is accorded priority over other items in the List of Business\n3. The privilege extends to freedom from preventive arrest or detention",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Privilege does NOT extend to freedom from preventive detention; it only applies to civil cases during sessions. Statements 1 and 2 correctly describe procedural aspects of privilege questions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament - Privileges"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q93",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Parliament - Motions",
+    "text": "Which one among the following statements about an adjournment motion in the Parliament of India is not correct?",
+    "options": [
+      "Its objective is to draw attention of the House to any recent matter of urgent public importance.",
+      "Adjournment motion is an extraordinary procedure.",
+      "This motion can be invoked on any matter of urgent importance that may even be within the jurisdiction of a State Government.",
+      "The Chair has absolute discretion to refuse consent."
+    ],
+    "correctAnswer": 2,
+    "explanation": "An adjournment motion must relate to a matter that is primarily the responsibility of the Government of India; it cannot normally be used for matters within the exclusive jurisdiction of a State Government.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament - Motions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q94",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Environment - Conventions",
+    "text": "The Kyoto Protocol specifically relates to which one among the following issues?",
+    "options": [
+      "Emission reduction",
+      "Ozone layer depletion",
+      "Chlorofluorocarbons",
+      "Biodiversity management"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Kyoto Protocol is an international treaty that commits state parties to reduce greenhouse gas emissions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Environment - Conventions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q95",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern India - Partition",
+    "text": "Who among the following was responsible for demarcating the borders between India and Pakistan during the partition in 1947?",
+    "options": [
+      "Cyril Radcliffe",
+      "Mortimer Durand",
+      "Henry McMahon",
+      "Arthur Belfour"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sir Cyril Radcliffe headed the boundary commissions for the Punjab and Bengal provinces to determine the new borders of India and Pakistan.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Partition"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q96",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern India - Personalities",
+    "text": "Which one among the following statements about Dr. Muthulakshmi Reddy, a freedom fighter, is not correct?",
+    "options": [
+      "She was the first girl student to be admitted into a men's college.",
+      "She was the first woman legislator in British India.",
+      "She was a medical professional.",
+      "She was honoured with Bharat Ratna in 1956."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dr. Muthulakshmi Reddy was a pioneering doctor and legislator but she was not a recipient of the Bharat Ratna. She was awarded the Padma Bhushan in 1956.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Personalities"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q97",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "International Organisations - UNESCO",
+    "text": "\"Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed.\" This observation can be found in the Constitution of which one of the following Organs of the United Nations?",
+    "options": [
+      "World Health Organisation",
+      "United Nations Educational, Scientific and Cultural Organisation",
+      "International Atomic Energy Agency",
+      "United Nations Economic and Social Council"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This famous line is the preamble to the UNESCO Constitution.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Organisations - UNESCO"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q98",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Geography - Locations",
+    "text": "Which one among the following countries does not share its territorial boundary with Ukraine?",
+    "options": [
+      "Poland",
+      "Romania",
+      "Lithuania",
+      "Belarus"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ukraine borders Poland, Romania, Belarus, Russia, Slovakia, Hungary, and Moldova. Lithuania does not share a border with Ukraine.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Locations"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q99",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Legal System - IPC",
+    "text": "Which of the following statements is/are correct?\n1. First Law Commission recommended Indian Penal Code, 1860.\n2. Indian Penal Code, 1860 has been completely replaced by the Bharatiya Nyaya Sanhita, 2023.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The first Law Commission under Macaulay drafted the IPC. It was replaced by the Bharatiya Nyaya Sanhita (BNS) which came into effect in 2024.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Legal System - IPC"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q100",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Statutory Bodies - Commissions",
+    "text": "Consider the following statements with regard to the setting up of the Backward Class Commission in India:\n1. The First Backward Class Commission, set up by the Government of India, is popularly known as Kaka Kalelkar Commission.\n2. The Third Backward Class Commission, set up by the Government of India, is popularly known as Mandal Commission.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The First commission was the Kaka Kalelkar Commission (1953). The *Second* (not third) was the Mandal Commission (1979).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Statutory Bodies - Commissions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q101",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Computer Science - Security",
+    "text": "Which one among the following is the purpose of firewall?",
+    "options": [
+      "Preventing unauthorised access to computer via the internet",
+      "Installation of software that can harm the computer",
+      "Recording everything that is done on computer",
+      "Running checks to prevent virus attacks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules to block unauthorized access.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Computer Science - Security"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q102",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Computer Science",
+    "text": "Which one of the following is not an application software?",
+    "options": [
+      "Spreadsheet",
+      "AutoCAD",
+      "MS PowerPoint",
+      "Linker"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Spreadsheets, AutoCAD, and PowerPoint are application software. A linker is a type of system software (utility) that combines object files into a single executable file.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Computer Science"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q103",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Computer Science - Security",
+    "text": "Which among the following is a malicious software?",
+    "options": [
+      "Hacking",
+      "Password Cracking",
+      "Trojan Horse",
+      "Firewall"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A Trojan Horse is a type of malware (malicious software). Hacking and Password Cracking are activities/processes, and a firewall is a security tool.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Computer Science - Security"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q104",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Computer Science",
+    "text": "What is an interactive combination of text, graphics, video, audio and images termed as?",
+    "options": [
+      "JPEG",
+      "Multimedia",
+      "AVA",
+      "PNG"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Multimedia is the integration of multiple forms of media including text, graphics, audio, video, etc. into a single interactive presentation.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Computer Science"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q105",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Computer Science - AI",
+    "text": "Which one of the following is the characteristic of Artificial Intelligence?",
+    "options": [
+      "Replicates human decision making",
+      "Stores relevant information",
+      "Stores similar kind of data for a specific purpose",
+      "Allows user to interact with media"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The core goal of AI is to create systems capable of performing tasks that normally require human intelligence, particularly complex decision-making and problem-solving.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Computer Science - AI"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q106",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Initiatives",
+    "text": "Which organisation/institute has recently started the new initiatives such as Bharat Vidya Pariyojana, Brihattar Bharat and Nari Samvaad Prakalp?",
+    "options": [
+      "IGNOU",
+      "Sahitya Akademi",
+      "Centre for Cultural Resources and Training (CCRT)",
+      "Indira Gandhi National Centre for Arts (IGNCA)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The IGNCA has launched these projects to promote Indian cultural heritage and discourse.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs - Initiatives"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q107",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Institutions",
+    "text": "Which one among the following educational institutions established under the Union Ministry of Culture is promoting to preserve, protect and promote Lord Buddha's teaching and value of love, compassion and non-violence for developing good moral values and practices?",
+    "options": [
+      "Indian Institute of Advanced Study, Shimla",
+      "National Council of Educational Research & Training, New Delhi",
+      "Nava Nalanda Mahavihara, Nalanda",
+      "IGNOU, New Delhi"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nava Nalanda Mahavihara is a deemed university under the Ministry of Culture dedicated to Buddhist studies and Pali language.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs - Institutions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q108",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes - Women",
+    "text": "\"Nirbhaya Fund\", a non-lapsable corpus fund, which specifically is to be utilized for the projects designed to improve the safety and security of women is administered by:",
+    "options": [
+      "The Ministry of Women & Child Development",
+      "The Ministry of Home Affairs",
+      "The Ministry of Finance",
+      "The Ministry of Education"
+    ],
+    "correctAnswer": 2,
+    "explanation": "While the MWCD is the nodal ministry for approving projects, the Nirbhaya Fund is technically administered by the Department of Economic Affairs, Ministry of Finance.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes - Women"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q109",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes - Agriculture",
+    "text": "The Paramparagat Krishi Vikas Yojana (PKVY) launched in 2015-16 by the Central Government is aimed to:",
+    "options": [
+      "make agriculture more modern and globally competitive.",
+      "provide improved access to irrigation and enhanced water efficiency.",
+      "support promotion of organic farming in the country.",
+      "reduce dependence of agriculture on monsoon."
+    ],
+    "correctAnswer": 2,
+    "explanation": "PKVY is a component of Soil Health Management under the NMSA, aimed at supporting and promoting organic farming via a cluster-based approach.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes - Agriculture"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q110",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Governance - Ministries",
+    "text": "When did the Union Government establish a separate 'Ministry of Cooperation' with the vision of \"Sahkar Se Samriddhi\"?",
+    "options": [
+      "2014",
+      "2016",
+      "2018",
+      "2021"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Ministry of Cooperation was created in July 2021 to provide a separate administrative, legal, and policy framework for strengthening the cooperative movement.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Governance - Ministries"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q111",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Defense",
+    "text": "The Ministry of Defence, Government of India, has declared 2025 as the year of:",
+    "options": [
+      "Rehabilitation of the families of martyrs",
+      "Reforms",
+      "Peace",
+      "Self-reliance"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Ministry of Defence declared 2025 as the 'Year of Reforms' focusing on modernization and structural improvements.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs - Defense"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q112",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Initiatives",
+    "text": "Which of the following statements about Open Network for Digital Commerce (ONDC) is/are correct?\n1. It was launched in 2021 by the Government of India.\n2. Its aim is to democratize e-commerce in India.\n3. India has surpassed China in 2024 in e-retail penetration.",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "2 and 3 only",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ONDC was launched as a private non-profit company in late 2021 to democratize e-commerce. While India's e-retail is growing rapidly, China still maintains significantly higher e-retail penetration.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs - Initiatives"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q113",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Schemes",
+    "text": "\"Million Minds Augmenting National Aspirations and Knowledge\" (MANAK), scheme under the flagship programme Innovation in Science Pursuit for Inspired Research (INSPIRE), caters to:",
+    "options": [
+      "The college students studying in undergraduate programme in the group of 19-25 years.",
+      "The research scholars in recognized research laboratories of national importance.",
+      "The college teachers of the country.",
+      "The school children studying in classes 6-10 in the age group of 10 - 15 years"
+    ],
+    "correctAnswer": 3,
+    "explanation": "INSPIRE Awards-MANAK specifically targets school students in classes 6 to 10 to build a scientific temper and encourage original technological ideas.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs - Schemes"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q114",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Awards - Sports",
+    "text": "Who among the following were awarded Major Dhyan Chand Khel Ratna Award 2024\n1. Shri Gukesh D\n2. Shri Harmanpreet Singh\n3. Shri Praveen Kumar\n4. Ms. Manu Bhaker",
+    "options": [
+      "1, 2, 3 and 4",
+      "1 and 4 only",
+      "1, 2 and 4 only",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "For 2024, sportspersons including Gukesh D (Chess), Harmanpreet Singh (Hockey), and Manu Bhaker (Shooting) were primary nominees/recipients of the nation's highest sporting honor.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Awards - Sports"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q115",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Cinema",
+    "text": "Consider the following statements about prominent film personality of India : \nHe was born in Hyderabad. He emerged in 1970s with a series of films that challenged mainstream Bollywood. He became widely known for Bharat Ek Khoj, a landmark 53-episode television series. He directed a 2023 biopic about Sheikh Mujibur Rahman.\nIdentify the personality from the following:",
+    "options": [
+      "Govind Nihalani",
+      "Girish Karnad",
+      "Shyam Benegal",
+      "Mani Ratnam"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Shyam Benegal, born in Hyderabad, is a pioneer of parallel cinema. He created 'Bharat Ek Khoj' and directed the biopic 'Mujib: The Making of a Nation' (2023).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Cinema"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q116",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Awards",
+    "text": "The Order of Mubarak Al-Kabeer' is the highest national award of:",
+    "options": [
+      "Egypt",
+      "Kuwait",
+      "Bahrain",
+      "United Arab Emirates"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This is the highest civilian honor of Kuwait, named after the country's founder.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Awards"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q117",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Symbols",
+    "text": "Bald eagle has recently been officially declared as the national bird of which one among the following countries?",
+    "options": [
+      "China",
+      "England",
+      "USA",
+      "Ireland"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Bald Eagle has long been the national emblem of the United States of America.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Symbols"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q118",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Defense - Exercises",
+    "text": "Surya Kiran is a joint military exercise between India and:",
+    "options": [
+      "Bangladesh",
+      "Bhutan",
+      "Singapore",
+      "Nepal"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Surya Kiran is the name for the recurring bilateral joint military exercise conducted between the Indian Army and the Nepal Army.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defense - Exercises"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q119",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Current Affairs - Culture",
+    "text": "Which of the following statements is/are correct?\n1. Moidam-The Mound-Burial system of the Ahom dynasty was inscribed in the UNESCO World Heritage list.\n2. The Government of India conferred the status of classical language to Pali, Assamese, Bengali and Maithili.\n3. Project PARI is an initiative of Ministry of Education.",
+    "options": [
+      "2 only",
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In 2024, the Ahom Moidams became a World Heritage site. The union cabinet approved classical status for Marathi, Pali, Prakrit, Assamese, and Bengali. Project PARI (Public Art of India) is an initiative of the Ministry of Culture/Lalit Kala Akademi (not Education). Note: The question seems to have incorrect pairing in provided options; based on facts, 1 and 2 are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Current Affairs - Culture"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2025-1-q120",
+    "year": 2025,
+    "subject": "General Knowledge",
+    "topic": "Space - ISRO",
+    "text": "Which one of the following PSLVs, launched by ISRO, is not correctly matched with their Missions?",
+    "options": [
+      "PSLV C60 : SPADEX",
+      "PSLV C59 : Proba-3",
+      "PSLV C58 : XPoSat",
+      "PSLV C57 : DS-SAR"
+    ],
+    "correctAnswer": 3,
+    "explanation": "PSLV-C57 was the mission that launched Aditya-L1 (India's solar mission). DS-SAR was launched by PSLV-C56.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Space - ISRO"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2025 (1)"
+      }
+    ]
+  }
+]

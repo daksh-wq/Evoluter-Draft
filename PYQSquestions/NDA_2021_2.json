@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "nda-2021-2-q1",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Nursery classes for the children starts on April every year. No error",
+    "options": [
+      "Nursery classes for the children",
+      "starts on April",
+      "every year.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The error is in part (b). The subject 'Nursery classes' is plural, so the verb should be 'start'. Additionally, the correct preposition for months is 'in', so it should be 'start in April'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q2",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The pollution level is very high in our city, and becomes a health hazard. No error",
+    "options": [
+      "The pollution level is very high",
+      "in our city, and becomes",
+      "a health hazard.",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The error is in part (b). The tense needs to be consistent. It should be 'and has become' or 'and is becoming' instead of 'and becomes'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q3",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "India is a country of linguistic and cultural diversity with multiple ethnic and social groups. No error",
+    "options": [
+      "India is a country of linguistic and cultural diversity",
+      "with multiple ethnic",
+      "and social groups.",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "There is no grammatical error in this sentence.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q4",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Why does the lapse rate effect the tendency of air to rise? No error",
+    "options": [
+      "Why does the lapse rate",
+      "effect the tendency",
+      "of air to rise?",
+      "No error"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The error is in part (b). The word 'effect' is typically a noun. The correct verb form here should be 'affect'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q5",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The thorax is the upper part of your body from the neck down to the bottom of the ribs and diaphragm. No error",
+    "options": [
+      "The thorax is the upper part of your body",
+      "from the neck down",
+      "to the bottom of the ribs and diaphragm.",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sentence is grammatically correct and conveys the meaning properly.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q6",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "The practical uses of astrology have seldom been seriously studied outside India. No error",
+    "options": [
+      "The practical uses of astrology",
+      "have seldom been seriously",
+      "studied outside India.",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "There is no error in the sentence. The subject 'uses' is plural, which correctly takes the plural verb 'have'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q7",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "She collected some armful of medicines and poured them down a drain. No error",
+    "options": [
+      "She collected some armful of medicines",
+      "and poured them",
+      "down a drain.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The error is in part (a). The word 'some' indicates plurality, so it should either be 'some armfuls' or 'an armful'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q8",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "In many countries, the United Nations or other internationally organised peacekeeping forces are trying to keep the peace. No error",
+    "options": [
+      "In many countries, the United Nations or other internationally organised",
+      "peacekeeping forces are trying",
+      "to keep the peace.",
+      "No error"
+    ],
+    "correctAnswer": 3,
+    "explanation": "There is no error in this sentence. The verb 'are' correctly agrees with the nearest subject 'forces' following the 'or' conjunction.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q9",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Early cities rely on food and water from the surrounding countryside, but today cities often depend on distant sources. No error",
+    "options": [
+      "Early cities rely on food and water",
+      "from the surrounding countryside,",
+      "but today cities often depend on distant sources.",
+      "No error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The error is in part (a). Because it refers to 'Early cities', the tense should be past: 'relied' instead of 'rely'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q10",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Climate change, whether it is natural or human-induced, is stressful for the people. No error",
+    "options": [
+      "Climate change, whether it is natural",
+      "or human-induced,",
+      "is stressful for the people.",
+      "No error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The error is in part (c). The definite article 'the' is unnecessary when speaking about people in general. It should be 'stressful for people'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q11",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Once-over'",
+    "options": [
+      "To do something quickly",
+      "To do something elaborately",
+      "To do something perforce",
+      "To do something for others"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To give something the 'once-over' means to look at or examine it quickly.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q12",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'A bag of bones'",
+    "options": [
+      "An extremely fat person",
+      "An extremely thin person",
+      "A wealthy person",
+      "A healthy person"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The phrase 'a bag of bones' is used to describe a person or animal who is extremely thin or emaciated.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q13",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Muddy the waters'",
+    "options": [
+      "To spread dirt around",
+      "To make a situation easy",
+      "To make one's life happy",
+      "To make the situation complicated"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'muddy the waters' means to make an issue or situation more confused or complicated.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q14",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'To level with'",
+    "options": [
+      "To be honest",
+      "To be on a plain",
+      "To cheat someone",
+      "To take revenge"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'level with' someone means to be completely honest and frank with them.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q15",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Show your hand'",
+    "options": [
+      "To tell people about the past",
+      "To tell people about the future",
+      "To tell people about them",
+      "To tell people about your plans"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'show your hand' means to reveal your intentions or plans, originating from card games where a player reveals their cards.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q16",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'To pull up'",
+    "options": [
+      "To lift heavy weights",
+      "To check oneself",
+      "To shorten the distance",
+      "Too short of destination"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To 'pull up' generally means to stop, halt, or check oneself from doing something.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q17",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Be out of action'",
+    "options": [
+      "To get punishment",
+      "To get reward",
+      "To become dysfunctional",
+      "To become superactive"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To be 'out of action' means to be unable to work, operate, or function normally.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q18",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Learning from the school of hard knocks'",
+    "options": [
+      "Learning things from experience",
+      "Learning things from others",
+      "Learning things from environment",
+      "Learning things through difficult experiences"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 'school of hard knocks' refers to learning through difficult or painful life experiences rather than through formal education.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q19",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'Raise some hackles'",
+    "options": [
+      "To annoy",
+      "To make someone happy",
+      "To do a great task",
+      "To sit idle"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To 'raise someone's hackles' means to make them very angry, annoyed, or defensive.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q20",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Idioms and Phrases",
+    "text": "What is the meaning of the idiom: 'A man of letters'",
+    "options": [
+      "An excellent artist",
+      "A scholar in literature",
+      "An outstanding sportsman",
+      "A known novelist"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'A man of letters' refers to a male scholar, author, or a person heavily involved in literary pursuits.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Idioms and Phrases" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q21",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: symbolic of peace, and prosperity \nQ: the Gupta Empire in India is \nR: represented through numismatic \nS: archaeological and literary evidences of multiple kinds",
+    "options": [
+      "QPRS",
+      "QSRP",
+      "PSQR",
+      "RSQP"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is QPRS: 'The Gupta Empire in India is (Q) symbolic of peace, and prosperity (P) represented through numismatic, (R) archaeological and literary evidences of multiple kinds (S).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q22",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: the transportation system so that it \nQ: and not just the affluent section of society \nR: provides mobility to everyone \nS: there are many ways to restructure",
+    "options": [
+      "PQRS",
+      "RQPS",
+      "SPRQ",
+      "QRPS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct logical order is SPRQ: 'There are many ways to restructure (S) the transportation system so that it (P) provides mobility to everyone (R) and not just the affluent section of society (Q).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q23",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: and accurately displays spatial relationships \nQ: between landforms and water bodies \nR: the globe shows Earth's spherical shape \nS: and comparative distance between locations",
+    "options": [
+      "PQRS",
+      "RPQS",
+      "SPQR",
+      "QRPS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct logical order is RPQS: 'The globe shows Earth's spherical shape (R) and accurately displays spatial relationships (P) between landforms and water bodies (Q) and comparative distance between locations (S).' Note: Options adapt slightly to context, but starting with the main subject (The globe) is key.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q24",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: the function of the capillaries \nQ: and other material to all the cells in \nR: is to take nutrients, oxygen \nS: the body and to take away their waste material",
+    "options": [
+      "PRQS",
+      "RPQS",
+      "SPQR",
+      "QRPS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is PRQS: 'The function of the capillaries (P) is to take nutrients, oxygen (R) and other material to all the cells in (Q) the body and to take away their waste material (S).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q25",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: even to someone with \nQ: a tin ear \nR: her singing sounded pretty melodious \nS: like mine",
+    "options": [
+      "PRQS",
+      "RPQS",
+      "SPQR",
+      "QRPS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct logical order is RPQS: 'Her singing sounded pretty melodious (R) even to someone with (P) a tin ear (Q) like mine (S).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q26",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: the sorry state of affairs in the modern factories \nQ: the Government of India \nR: under the British was pro-capitalist \nS: though it took some half-hearted steps to mitigate",
+    "options": [
+      "PRQS",
+      "QRSP",
+      "SPQR",
+      "QPSR"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct logical order is QRSP: 'The Government of India (Q) under the British was pro-capitalist (R) though it took some half-hearted steps to mitigate (S) the sorry state of affairs in the modern factories (P).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q27",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: of extreme poverty among its people \nQ: economic policies was the prevalence \nR: a major characteristic of British rule in India \nS: and the net result of British",
+    "options": [
+      "PRQS",
+      "QRSP",
+      "RSQP",
+      "QPSR"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct logical order is RSQP: 'A major characteristic of British rule in India (R) and the net result of British (S) economic policies was the prevalence (Q) of extreme poverty among its people (P).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q28",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: you can't judge \nQ: very intelligent, but \nR: a book by its cover \nS: he doesn't look",
+    "options": [
+      "SQPR",
+      "QRSP",
+      "RSQP",
+      "QPSR"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is SQPR: 'He doesn't look (S) very intelligent, but (Q) you can't judge (P) a book by its cover (R).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q29",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: membership and partisanship as well as \nQ: can be found in the decline in party \nR: evidence of a crisis in party politics \nS: in the rise of antiparty groups and movements",
+    "options": [
+      "RQPS",
+      "QRSP",
+      "RSQP",
+      "QPSR"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is RQPS: 'Evidence of a crisis in party politics (R) can be found in the decline in party (Q) membership and partisanship as well as (P) in the rise of antiparty groups and movements (S).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q30",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Re-arrange the following parts to form a meaningful sentence:\nP: government, market and voluntary organisations \nQ: mixture of contributions from \nR: the provision of public goods and services \nS: can be regarded as a complex",
+    "options": [
+      "RQPS",
+      "QRSP",
+      "RSQP",
+      "QPSR"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct logical order is RSQP: 'The provision of public goods and services (R) can be regarded as a complex (S) mixture of contributions from (Q) government, market and voluntary organisations (P).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q31",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "He is essentially a lowbrow person.",
+    "options": [
+      "coarse",
+      "proud",
+      "passionate",
+      "pathetic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The word 'lowbrow' refers to someone not highly intellectual or cultured, making 'coarse' the closest synonym in meaning.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q32",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "His nostalgia is deep.",
+    "options": [
+      "excitement",
+      "longing",
+      "happiness",
+      "ability"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nostalgia is a sentimental longing or wistful affection for the past, making 'longing' the correct synonym.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q33",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "His truancy is detrimental.",
+    "options": [
+      "loyalty",
+      "integrity",
+      "honesty",
+      "absenteeism"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Truancy refers to the action of staying away from school or work without good reason, which aligns with 'absenteeism'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q34",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "He is a maleficent person.",
+    "options": [
+      "generous",
+      "cunning",
+      "criminal",
+      "friendly"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Maleficent means causing harm or destruction (often deliberately), which is most closely associated with 'criminal' behavior in this context.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q35",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "His solemnity is celebrated.",
+    "options": [
+      "greed",
+      "desire",
+      "trust",
+      "dignity"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Solemnity refers to the state or quality of being serious and dignified.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q36",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "His bounty is limitless.",
+    "options": [
+      "benevolence",
+      "gallantry",
+      "nepotism",
+      "chivalry"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bounty in this context refers to generosity or an act of giving freely, which is synonymous with 'benevolence'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q37",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The Holocaust was experienced by millions.",
+    "options": [
+      "celebration",
+      "destruction",
+      "construction",
+      "beautiful"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A holocaust means destruction or slaughter on a mass scale.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q38",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "His aversion is known to all.",
+    "options": [
+      "hospitality",
+      "hostility",
+      "humility",
+      "humbleness"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Aversion refers to a strong dislike or disinclination, which corresponds to 'hostility'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q39",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "To be able to decipher something is wonderful.",
+    "options": [
+      "decode",
+      "encode",
+      "simulate",
+      "animate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To decipher is to convert a text written in code or a hidden language into normal language, meaning to 'decode'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q40",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "It is the opportune time to think about investment in the real estate sector.",
+    "options": [
+      "honorary",
+      "appropriate",
+      "difficult",
+      "unsuitable"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Opportune means a time that is especially convenient or appropriate for a particular action or event.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q41",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "His opinion is lopsided.",
+    "options": [
+      "partial",
+      "crooked",
+      "unequal",
+      "balanced"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Lopsided means with one side lower or smaller than the other (disproportionate or biased). The opposite is 'balanced'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q42",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "His work is praiseworthy.",
+    "options": [
+      "admirable",
+      "condemnable",
+      "commendable",
+      "creditable"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Praiseworthy means deserving approval and admiration. The opposite is 'condemnable'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q43",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "His deeds had retrograde results.",
+    "options": [
+      "progressive",
+      "negative",
+      "retreating",
+      "reverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Retrograde implies moving backward or reverting to an earlier/inferior condition. The opposite is 'progressive'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q44",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "He always offers palatable solutions.",
+    "options": [
+      "acceptable",
+      "agreeable",
+      "unacceptable",
+      "pleasant"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Palatable means acceptable or satisfactory. The direct opposite is 'unacceptable'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q45",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "His views on the subject are microscopic.",
+    "options": [
+      "broad-based",
+      "minute",
+      "precise",
+      "fine"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Microscopic metaphorically means extremely limited, narrow, or tiny. The opposite is 'broad-based'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q46",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "He is always obdurate in his behaviour towards other people.",
+    "options": [
+      "flexible",
+      "callous",
+      "insensible",
+      "obnoxious"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Obdurate means stubbornly refusing to change one's opinion or action. The antonym is 'flexible'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q47",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Mohan always had profound respect for Sohan.",
+    "options": [
+      "deep",
+      "extreme",
+      "sincere",
+      "superficial"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Profound means very great or intense. Its opposite is 'superficial'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q48",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "We were living in turbulent times.",
+    "options": [
+      "destructive",
+      "unstable",
+      "calm",
+      "stormy"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Turbulent means characterized by conflict, disorder, or confusion. The opposite is 'calm'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q49",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Amit is a dogmatic person.",
+    "options": [
+      "assertive",
+      "amenable",
+      "bold",
+      "rigid"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dogmatic refers to someone inclined to lay down principles as incontrovertibly true. The opposite is 'amenable' (open and responsive to suggestion).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q50",
+    "year": 2021,
+    "subject": "English",
+    "topic": "Antonyms",
+    "text": "Sachin is very fickle in his behaviour.",
+    "options": [
+      "stable",
+      "capricious",
+      "mercurial",
+      "vacillating"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fickle means changing frequently, especially as regards one's loyalties or affections. The opposite is 'stable'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Antonyms" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q51",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Solar System",
+    "text": "Which one from among the following planets is largest in size?",
+    "options": [
+      "Earth",
+      "Venus",
+      "Mars",
+      "Mercury"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Among the terrestrial planets listed, Earth is the largest in size and mass. Its radius is approximately 6,371 km.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Solar System" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q52",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Place)\nA. Mumbai\nB. Visakhapatnam\nC. Chennai\nD. Kochi\nList II (Feature)\n1. Queen of the Arabian Sea\n2. Biggest port of India\n3. Land-locked harbour\n4. Oldest port on the Eastern Coast",
+    "options": [
+      "A-2, B-4, C-3, D-1",
+      "A-2, B-3, C-4, D-1",
+      "A-1, B-3, C-4, D-2",
+      "A-1, B-4, C-3, D-2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mumbai is the biggest port of India (A-2). Visakhapatnam is a major land-locked harbour (B-3). Chennai is the oldest artificial port on the Eastern Coast (C-4). Kochi is famously known as the Queen of the Arabian Sea (D-1).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q53",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Lakes",
+    "text": "Which one of the following is a crater lake in India?",
+    "options": [
+      "Lonar Lake",
+      "Sambhar Lake",
+      "Chilika Lake",
+      "Vembanad Lake"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lonar Lake in Maharashtra is a notified National Geo-heritage Monument, known universally as a saline, alkaline crater lake created by a meteorite impact.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Lakes" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q54",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Fine-grained bed of ephemeral lake in a desert is also known as",
+    "options": [
+      "Playa",
+      "Oasis",
+      "Drumlin",
+      "Natural levee"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A playa is a dry, vegetation-free, flat area at the lowest part of an undrained desert basin. It is an ephemeral lake bed consisting of fine-grained sediments.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q55",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following factors does not affect the distribution of groundwater?",
+    "options": [
+      "Amount of precipitation",
+      "Rate of evaporation",
+      "Ability of the ground surface to allow water to infiltrate into the groundwater system",
+      "Distance from the sea"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Groundwater distribution heavily depends on the amount of precipitation, evaporation rates, and infiltration capacities of soil/rock. Distance from the sea does not intrinsically determine the distribution/abundance of groundwater.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q56",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Constitutional Amendments",
+    "text": "The Constitution (35th Amendment) Act of 1974 is related to which one of the following States?",
+    "options": [
+      "Mizoram",
+      "Sikkim",
+      "Nagaland",
+      "Arunachal Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 35th Constitutional Amendment Act (1974) altered the status of Sikkim from a protectorate to an 'Associate State' of the Indian Union.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Amendments" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q57",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Electoral System",
+    "text": "Which one of the following best describes the electoral system of India?",
+    "options": [
+      "First-Past-the-Post System",
+      "Proportional Representation",
+      "Mixed System",
+      "General Ticket"
+    ],
+    "correctAnswer": 0,
+    "explanation": "India predominantly uses the First-Past-the-Post (FPTP) system for its direct elections to the Lok Sabha and State Legislative Assemblies.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Electoral System" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q58",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which one of the following is a non-justiciable right?",
+    "options": [
+      "Right to adequate livelihood",
+      "Right against exploitation",
+      "Right of accused",
+      "Right to life and personal liberty"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 'Right to an adequate means of livelihood' is enshrined under Article 39(a) as a Directive Principle of State Policy, making it non-justiciable in court.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q59",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Writs",
+    "text": "Which one of the following is not a writ?",
+    "options": [
+      "Mandamus",
+      "Habeas Corpus",
+      "Certiorari",
+      "Severability"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Severability is a legal doctrine applied in constitutional law (Doctrine of Severability). Mandamus, Habeas Corpus, and Certiorari are prerogative writs.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Writs" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q60",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which one of the following is not a part of Fundamental Rights?",
+    "options": [
+      "Right to education",
+      "Right to establish educational institutions by minorities",
+      "Right to be conferred with titles",
+      "Right against untouchability"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 18 of the Indian Constitution actually abolishes titles (except military and academic). Therefore, the 'Right to be conferred with titles' is not a Fundamental Right.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q61",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Constitution of India",
+    "text": "Which one of the following is not a function of the Constitution of India?",
+    "options": [
+      "To ensure participation of good people in politics",
+      "To guarantee a set of rights to citizens",
+      "To define the power of the different organs of government",
+      "To create conditions for a just society"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While the Constitution establishes the electoral and governmental framework, it does not (and cannot) guarantee or 'ensure' the participation of 'good people' in politics.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitution of India" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q62",
+    "year": 2021,
+    "subject": "Environment",
+    "topic": "Biodiversity",
+    "text": "Which one of the following statements about biodiversity is not correct?",
+    "options": [
+      "The term 'biodiversity' was coined by Walter G. Rosen in 1986.",
+      "The term 'biodiversity hotspots' was coined by Norman Myers in 1988.",
+      "The regions having richest biodiversity are called 'biodiversity hotspots'.",
+      "More than 100 hotspots of biodiversity are identified in the world."
+    ],
+    "correctAnswer": 3,
+    "explanation": "There are currently 36 globally recognized biodiversity hotspots, not 'more than 100'.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Biodiversity" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q63",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "The Earth's atmosphere is mainly heated by which one of the following?",
+    "options": [
+      "Short wave solar radiation",
+      "Reflected solar radiation",
+      "Long wave terrestrial radiation",
+      "Scattered solar radiation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Earth's atmosphere is relatively transparent to incoming short-wave solar radiation. It gets heated primarily from below by the long-wave terrestrial radiation emitted by the Earth's surface.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q64",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Atmosphere",
+    "text": "Which one of the following is the correct sequence of layers as we move from the Earth's surface upwards?",
+    "options": [
+      "Troposphere, Stratosphere, Thermosphere, Mesosphere",
+      "Troposphere, Stratosphere, Mesosphere, Thermosphere",
+      "Thermosphere, Mesosphere, Stratosphere, Troposphere",
+      "Stratosphere, Mesosphere, Troposphere, Thermosphere"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct sequence of the atmospheric layers from the surface upwards is: Troposphere, Stratosphere, Mesosphere, and Thermosphere (followed by the Exosphere).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Atmosphere" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q65",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one of the following is not a soil forming factor?",
+    "options": [
+      "Parent material",
+      "Topography",
+      "Climate",
+      "Human habitation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The five active primary factors of soil formation are parent material, climate, topography (relief), biological factors (flora/fauna), and time. Human habitation is not a natural soil-forming factor.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q66",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one of the following best describes the Lithosphere?",
+    "options": [
+      "Upper and lower mantle",
+      "Crust and core",
+      "Crust and upper mantle",
+      "Lower mantle and core"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Lithosphere is the solid, outer part of the Earth, consisting of the crust and the rigid uppermost portion of the mantle.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q67",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Which one of the following countries has the maximum time difference from Greenwich Mean Time (GMT)?",
+    "options": [
+      "India",
+      "Nepal",
+      "Sri Lanka",
+      "Bhutan"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bhutan's standard time is UTC+06:00. India and Sri Lanka are at UTC+05:30. Nepal is at UTC+05:45. Thus, Bhutan has the maximum time difference from GMT.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q68",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Constitution of India",
+    "text": "Which one of the following is not a feature of the Constitution of India?",
+    "options": [
+      "It provides a set of basic rules.",
+      "It specifies the power of the Government.",
+      "It is the supreme law of the land.",
+      "It specifies the supremacy of the judiciary."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Indian Constitution establishes a balance between Parliamentary sovereignty and Judicial review. It establishes the supremacy of the Constitution itself, not the absolute supremacy of the judiciary.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitution of India" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q69",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Constitutional Bodies",
+    "text": "Which one of the following statements about the Attorney General of India is not correct?",
+    "options": [
+      "He has the right of audience only in the Supreme Court of India.",
+      "He shall receive such remuneration as the President may determine.",
+      "He shall be qualified to be appointed as a Judge of the Supreme Court.",
+      "He shall give advice to the Government of India on all legal matters."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Article 76(3), the Attorney General of India has the right of audience in all courts within the territory of India, not just the Supreme Court.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Bodies" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q70",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Directive Principles of State Policy",
+    "text": "Who among the following described the Directive Principles of State Policy as the novel feature of the Constitution of India?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "S.N. Mukherjee",
+      "B.R. Ambedkar"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dr. B.R. Ambedkar described the Directive Principles of State Policy as the 'novel features' of the Indian Constitution.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Directive Principles of State Policy" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q71",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Constitutional History",
+    "text": "Which of the following statements about the Indian Councils Act of 1861 is/are correct?\n1. It enlarged the Governor General's Council for the purpose of making laws.\n2. The Governor General was not authorised to increase the number of members.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct. Statement 2 is incorrect because the Act explicitly authorized the Governor General to add 6 to 12 additional members to the council for legislative purposes.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Constitutional History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q72",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following statements about Tattvabodhini Patrika is correct?",
+    "options": [
+      "It promoted a systematic study of India's past in the Bengali language.",
+      "It promoted a systematic study of India's past through Sanskrit sources.",
+      "It promoted a systematic study of India's past through Persian sources.",
+      "It promoted a systematic study of India's past through Western sources."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tattvabodhini Patrika, established by Debendranath Tagore in 1843, was published in Bengali and promoted a systematic study of India's past and Upanishadic philosophy in the Bengali language.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q73",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Tribal Movements",
+    "text": "In which one of the following years did the British demarcate a large area of land as Damin-i-koh for settling the Santhals?",
+    "options": [
+      "1810",
+      "1793",
+      "1885",
+      "1832"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In 1832, the British demarcated a large area of land in the Rajmahal hills as Damin-i-koh to settle the Santhals as agriculturists.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Tribal Movements" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q74",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "The Tropic of Cancer does not pass through which one of the following States?",
+    "options": [
+      "Manipur",
+      "West Bengal",
+      "Gujarat",
+      "Jharkhand"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Tropic of Cancer passes through 8 Indian states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram. It does not pass through Manipur.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q75",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "Which of the following pairs of crop and product is/are correctly matched ?\n1. Food crop : Ragi\n2. Cash crop : Jute\n3. Plantation crop : Coconut\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "All three pairs are correctly matched. Ragi is a food crop (millet). Jute is a cash crop. Coconut is heavily cultivated as a plantation crop.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q76",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following coalfields is not located in Jharkhand?",
+    "options": [
+      "Jharia",
+      "Ramgarh",
+      "Deogarh",
+      "Umaria"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Umaria coalfield is located in the state of Madhya Pradesh, whereas Jharia, Ramgarh, and Deogarh are in Jharkhand.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q77",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following is the longest parallel of latitude?",
+    "options": [
+      "Tropic of Cancer",
+      "Tropic of Capricorn",
+      "Arctic Circle",
+      "Equator"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Equator (0 degrees latitude) is the longest parallel of latitude, forming a great circle around the Earth.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q78",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "The periodic rise and fall of ocean water in response to gravitational forces is called",
+    "options": [
+      "Current",
+      "Waves",
+      "Tides",
+      "Tsunami"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tides are the periodic rise and fall of sea levels caused by the combined effects of the gravitational forces exerted by the Moon and the Sun, and the rotation of the Earth.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Oceanography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q79",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which of the following statements about the first Indian Factory Act passed in 1881 is/are correct?\n1. The Act dealt primarily with the problem of child labour.\n2. The Act laid down that children between 7 years and 12 years of age would not work for more than 9 hours a day.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The first Indian Factory Act (1881) primarily addressed child labor, setting the minimum age for employment at 7 and capping the working hours for children aged 7 to 12 at 9 hours per day. Both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q80",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which of the following statements about Mahatma Gandhi's anti-untouchability campaign is/are correct?\n1. The All India Harijan Sevak Sangh was founded for this purpose.\n2. The campaign was to root out untouchability, since it did not enjoy the sanction of the Hindu shastras.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Gandhi founded the Harijan Sevak Sangh in 1932. He strongly argued that untouchability was a corruption of Hinduism and had no genuine sanction in the fundamental Hindu shastras.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q81",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "The founders of the Paramhansa Mandali founded in Maharashtra believed in which one of the following?",
+    "options": [
+      "Social distancing along caste lines",
+      "Glorification of caste system",
+      "Forbidding widow remarriage",
+      "One God and in breaking caste rules"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Paramhansa Mandali, founded in 1849 in Maharashtra, was a secret socio-religious group that believed in one God and was primarily aimed at breaking caste rules and restrictions.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q82",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which one of the following statements about the ishtahars issued during the Revolt of 1857 is correct?",
+    "options": [
+      "They glorified the Muslim rule in India.",
+      "They glorified the co-existence of different communities under the Mughal Empire.",
+      "They glorified the message of Islam.",
+      "They glorified the role of Queen Victoria."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The ishtahars (proclamations) issued during the 1857 revolt frequently appealed to all sections of society, emphasizing the pre-British era's shared heritage and glorifying the co-existence of Hindus and Muslims under the Mughal Empire.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q83",
+    "year": 2021,
+    "subject": "History",
+    "topic": "World History",
+    "text": "During the Industrial Revolution, who among the following designed the 'flying shuttle loom'?",
+    "options": [
+      "Samuel Crompton",
+      "Edmund Cartwright",
+      "John Kay",
+      "Richard Arkwright"
+    ],
+    "correctAnswer": 2,
+    "explanation": "John Kay invented the flying shuttle in 1733, which greatly accelerated the speed of weaving and played a key role in the early Industrial Revolution.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q84",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Match List I with List II and select the correct answer using the code given below the lists:\nList I (Dam)\nA. Hirakud\nB. Panchet\nC. Kosi\nD. Ukai\nList II (State)\n1. Gujarat\n2. Bihar\n3. Odisha\n4. Jharkhand",
+    "options": [
+      "A-3, B-4, C-2, D-1",
+      "A-3, B-2, C-4, D-1",
+      "A-1, B-2, C-4, D-3",
+      "A-1, B-4, C-2, D-3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hirakud is in Odisha (A-3). Panchet Dam is in Jharkhand (B-4). Kosi project benefits Bihar (C-2). Ukai Dam is in Gujarat (D-1).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q85",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following features is the result of erosion and deposition work of a river?",
+    "options": [
+      "Pothole",
+      "Oxbow lake",
+      "Levee",
+      "Rapid"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An oxbow lake is formed by both the erosional and depositional work of a meandering river, eventually cutting off a meander loop.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q86",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Agriculture",
+    "text": "Which one of the following is not a feature of agriculture in India?",
+    "options": [
+      "Subsistence agriculture",
+      "Pressure of population on agriculture",
+      "Dependence upon Monsoon",
+      "Predominance of cash crops"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Indian agriculture is predominantly characterized by food crops rather than cash crops to support its large population. Thus, 'Predominance of cash crops' is not a correct feature.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Agriculture" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q87",
+    "year": 2021,
+    "subject": "Geography",
+    "topic": "Indian Agriculture",
+    "text": "Which one of the following is not a specified Sub-Mission of the National Livestock Mission?",
+    "options": [
+      "Livestock development",
+      "Pig development in north-western region",
+      "Fodder and feed development",
+      "Skill development, technology transfer and extension"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The National Livestock Mission includes a Sub-Mission on Pig Development in the North-Eastern Region (NER), not the north-western region.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Agriculture" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q88",
+    "year": 2021,
+    "subject": "Polity",
+    "topic": "Political Theory",
+    "text": "Who among the following wrote the famous text 'A Discourse on Political Economy'?",
+    "options": [
+      "Montesquieu",
+      "Voltaire",
+      "Rousseau",
+      "Adam Smith"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jean-Jacques Rousseau wrote the essay 'A Discourse on Political Economy' in 1755.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Political Theory" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q89",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Which of the following statements about the resolution adopted in the Karachi session of the Indian National Congress with regard to fundamental rights and economic policy is/are correct?\n1. It was opposed by Ambalal Sarabhai.\n2. Its 20 points included demands for civil liberties and adult suffrage.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 1931 Karachi Resolution on Fundamental Rights and Economic Policy included demands for basic civil liberties, adult suffrage, and free primary education. It faced opposition from Indian capitalists like Ambalal Sarabhai due to its socialist leanings.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q90",
+    "year": 2021,
+    "subject": "History",
+    "topic": "Constitutional History",
+    "text": "Which of the following statements about the Law Commission headed by Lord Macaulay is/are correct?\n1. It attempted to codify the laws.\n2. It was opposed to uniform system of Courts.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The First Law Commission headed by Lord Macaulay was appointed in 1834 to codify Indian laws (resulting in the IPC). It was not opposed to a uniform system of courts; rather, codification was a step towards uniformity.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Constitutional History" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q91",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Dingko Singh, an Asian Games gold medallist, who died recently, was associated with which one of the following games?",
+    "options": [
+      "Swimming",
+      "Boxing",
+      "Archery",
+      "Gymnastics"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ngangom Dingko Singh was an Indian boxer who won a gold medal at the 1998 Asian Games in Bangkok.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q92",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Who among the following is the lone Indian Cricketer included in the ICC Hall of Fame special inductions to mark the inaugural ICC World Test Championship Final?",
+    "options": [
+      "Dilip Vengsarkar",
+      "Ravi Shastri",
+      "Mohinder Amarnath",
+      "Vinoo Mankad"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Vinoo Mankad was one of the 10 cricket icons inducted into the ICC Hall of Fame to mark the inaugural ICC World Test Championship Final in 2021.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q93",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which one of the following nations is not a permanent member of G7?",
+    "options": [
+      "India",
+      "Canada",
+      "France",
+      "Italy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Group of Seven (G7) consists of Canada, France, Germany, Italy, Japan, the United Kingdom, and the United States. India is often invited as a guest but is not a permanent member.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q94",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Environment and Wildlife",
+    "text": "Operation Olivia, an initiative to protect Olive Ridley turtles, is undertaken by",
+    "options": [
+      "Indian Navy",
+      "Indian Coast Guard",
+      "Ministry of Environment, Forest and Climate Change",
+      "Ministry of Earth Sciences"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Operation Olivia was initiated by the Indian Coast Guard in the early 1980s to help protect Olive Ridley turtles during their annual breeding and nesting season along the Odisha coast.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Environment and Wildlife" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q95",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Who among the following is the winner of the French Open 2021 Men's Singles Final?",
+    "options": [
+      "Novak Djokovic",
+      "Rafael Nadal",
+      "Stefanos Tsitsipas",
+      "Daniil Medvedev"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Novak Djokovic won the 2021 French Open Men's Singles title by defeating Stefanos Tsitsipas in the final.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Sports" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q96",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "International Appointments",
+    "text": "Economist Rebeca Grynspan, who recently became the first woman to be appointed as the head of the United Nations Conference on Trade and Development (UNCTAD), hails from",
+    "options": [
+      "Germany",
+      "Poland",
+      "Costa Rica",
+      "Mexico"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rebeca Grynspan is a Costa Rican economist and former Vice President of Costa Rica.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Appointments" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q97",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "'Belt and Road Initiative' is a foreign policy initiative of",
+    "options": [
+      "China",
+      "United States of America",
+      "Canada",
+      "Japan"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Belt and Road Initiative (BRI) is a massive global infrastructure development strategy adopted by the Chinese government in 2013.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q98",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Important Days",
+    "text": "Which one of the following is the theme of the International Day of Yoga 2021?",
+    "options": [
+      "Yoga at home and yoga with family",
+      "Yoga for climate action",
+      "Yoga for well-being",
+      "Yoga for peace"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The theme for the 7th International Day of Yoga in 2021 was 'Yoga for well-being'.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Important Days" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q99",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Obituaries",
+    "text": "Kenneth Kaunda, who died recently at the age of 97, was the former president of",
+    "options": [
+      "Brazil",
+      "Mexico",
+      "Zambia",
+      "South Sudan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kenneth Kaunda was a Zambian politician who served as the first President of Zambia from 1964 to 1991.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Obituaries" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q100",
+    "year": 2021,
+    "subject": "Current Affairs",
+    "topic": "Defence Exercises",
+    "text": "The maiden Indian Navy European Union Naval Force (IN-EUNAVFOR) Exercise (2021) was conducted in",
+    "options": [
+      "Gulf of Mannar",
+      "Gulf of Aden",
+      "Gulf of Khambhat",
+      "Gulf of Aqaba"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The first-ever IN-EUNAVFOR joint naval exercise was conducted in the Gulf of Aden in June 2021 to enhance maritime security operations.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence Exercises" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q101",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "The pH value of Milk of Magnesia is approximately",
+    "options": [
+      "Zero",
+      "7",
+      "10",
+      "14"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Milk of Magnesia (Magnesium hydroxide) is a mild base commonly used as an antacid, and its pH value is approximately 10.5.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q102",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following compounds is used in 'black and white' photography?",
+    "options": [
+      "AgF",
+      "AgBr",
+      "AgCl",
+      "Ag2SO4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Silver bromide (AgBr) is a light-sensitive compound extensively used in photographic films and papers for black and white photography.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q103",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What is the number of water molecules present in a Ferrous Sulphate crystal?",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The chemical formula for a standard Ferrous Sulphate crystal (green vitriol) is FeSO4·7H2O. It contains 7 molecules of water of crystallization.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q104",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What is the colour of the precipitate obtained by passing CO2 gas through lime water?",
+    "options": [
+      "Green",
+      "Blue",
+      "White",
+      "Brown"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Passing carbon dioxide through lime water (calcium hydroxide) produces a white precipitate of calcium carbonate (CaCO3), turning the solution milky.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q105",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following pairs of elements is liquid at room temperature and at normal pressure?",
+    "options": [
+      "Gallium and Bromine",
+      "Mercury and Bromine",
+      "Gallium and Mercury",
+      "Gallium and Caesium"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mercury (a metal) and Bromine (a non-metal) are the only two elements on the periodic table that are liquid at standard room temperature and pressure.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q106",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following methods can be used to separate anthracene from a mixture of salt and anthracene?",
+    "options": [
+      "Distillation",
+      "Sublimation",
+      "Evaporation",
+      "Chromatography"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Anthracene is a sublime substance (it transitions directly from solid to gas when heated). Sublimation is the best method to separate it from a non-sublime substance like salt.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q107",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Shoots of plant show upward movement and it can be designated to be",
+    "options": [
+      "Negatively phototropic",
+      "Positively chemotropic",
+      "Positively hydrotropic",
+      "Negatively geotropic"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Shoots grow upwards, away from the pull of gravity. This response is known as negative geotropism (or negative gravitropism).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q108",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following statements about the process of photosynthesis is correct?",
+    "options": [
+      "Chemical energy is converted into light energy.",
+      "Carbon dioxide is oxidised to form carbohydrate.",
+      "Water molecule splits into hydrogen and oxygen.",
+      "Light energy is directly used to split water."
+    ],
+    "correctAnswer": 2,
+    "explanation": "During the light-dependent reactions of photosynthesis, water molecules undergo photolysis, splitting into hydrogen ions, electrons, and oxygen gas.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q109",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "How are evergreen plants with woody stems having naked seed classified?",
+    "options": [
+      "Angiosperms",
+      "Monocotyledons",
+      "Pteridophytes",
+      "Gymnosperms"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Gymnosperms (meaning 'naked seeds') are a group of seed-producing plants that include conifers, cycads, and ginkgos, typically having woody stems and lacking an enclosed ovary (fruit).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q110",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following tissues is known as basic packing tissue and found in xylem and phloem?",
+    "options": [
+      "Collenchyma",
+      "Parenchyma",
+      "Sclerenchyma",
+      "Vessels"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Parenchyma is the most common fundamental tissue, acting as a 'packing tissue' to fill spaces. It is also found in vascular tissues as xylem parenchyma and phloem parenchyma.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q111",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Girth of stem of a plant increases due to division of cells in",
+    "options": [
+      "apical meristem only.",
+      "lateral meristem only.",
+      "apical and intercalary meristem.",
+      "both apical and lateral meristem."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The increase in girth or thickness (secondary growth) of a plant stem is due to the lateral meristem (vascular cambium and cork cambium).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q112",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Different varieties of the same gene are called",
+    "options": [
+      "Genotypes",
+      "Sib pairs",
+      "Alleles",
+      "Isomers"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Alleles are variant forms of a given gene, located at the same genetic locus on a chromosome.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q113",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following viruses used to be responsible for highly infectious disease Smallpox?",
+    "options": [
+      "Adenovirus",
+      "Variola virus",
+      "Aichi virus",
+      "Coxsackie virus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Smallpox was an infectious disease caused by one of two virus variants, Variola major and Variola minor.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q114",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Buoyancy is a/an",
+    "options": [
+      "upward pressure",
+      "downward pressure",
+      "downward force",
+      "upward force"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Buoyancy is an upward force exerted by a fluid that opposes the weight of a partially or fully immersed object.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q115",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Weight and mass of an object are defined with Newton's laws of motion. Which among the following is true?",
+    "options": [
+      "Weight is a constant of proportionality.",
+      "Mass is a constant of proportionality.",
+      "Mass is not a constant of proportionality.",
+      "Weight is a universal constant."
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to Newton's Second Law (F = ma), mass (m) is the constant of proportionality relating force and acceleration.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q116",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Fundamental laws of physics require",
+    "options": [
+      "conservation of energy and non-conservation of charge.",
+      "conservation of charge and non-conservation of linear momentum.",
+      "conservation of charge and non-conservation of energy.",
+      "conservation of energy, momentum and charge."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The fundamental laws of nature require the strict conservation of energy, linear momentum, angular momentum, and electric charge.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q117",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Work is said to be one Joule when a force of",
+    "options": [
+      "4 N moves an object by 25 cm.",
+      "2 N moves an object by 1 m.",
+      "1 N moves an object by 1 cm.",
+      "1 N moves an object by 50 cm."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Work (W) = Force (F) × Distance (d). 1 Joule = 1 N × 1 m. For option A: 4 N × 0.25 m = 1 Joule.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q118",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A uniform motion of a car along a circular path experiences",
+    "options": [
+      "a change in speed due to a change in its direction of motion.",
+      "a change in velocity due to a change in its direction of motion.",
+      "a change in momentum due to no change in its direction of motion.",
+      "a constant momentum due to a change in its direction of motion."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Velocity is a vector quantity (has both speed and direction). Even if the car's speed is constant, its continuous change in direction along the circular path means its velocity is constantly changing.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q119",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Three equal resistors are connected in parallel configuration in a closed electrical circuit. Then the total resistance in the circuit becomes",
+    "options": [
+      "one-third of the individual resistance.",
+      "two-third of the individual resistance.",
+      "equal to the individual resistance.",
+      "three times of the individual resistance."
+    ],
+    "correctAnswer": 0,
+    "explanation": "For 'n' equal resistors of resistance 'R' connected in parallel, the equivalent resistance Req is R/n. Thus, for three resistors, Req = R/3 (one-third of the individual resistance).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q120",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Rutherford's alpha-particle (a) scattering experiment was responsible for the discovery of which one of the following?",
+    "options": [
+      "Electron",
+      "Proton",
+      "Atomic Nucleus",
+      "Neutron"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rutherford's famous gold foil experiment demonstrated that atoms have a small, dense, positively charged center, leading to the discovery of the atomic nucleus.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q121",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What is the maximum number of electrons in the M-Shell?",
+    "options": [
+      "6",
+      "8",
+      "18",
+      "32"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The maximum number of electrons a shell can hold is given by 2n², where 'n' is the shell number. The M-Shell is the 3rd shell (n=3). Therefore, 2(3)² = 18.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q122",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Chlorine occurs in nature in two isotopic forms of masses 35 u and 37 u in the ratio of 3:1 respectively. What is the average atomic mass of the Chlorine atom?",
+    "options": [
+      "36.1 u",
+      "35.5 u",
+      "36.5 u",
+      "35.1 u"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Average atomic mass = (Mass1 × Abundance1 + Mass2 × Abundance2) / Total Abundance = (35 × 3 + 37 × 1) / 4 = (105 + 37) / 4 = 142 / 4 = 35.5 u.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q123",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following elements' isotopes is used in the treatment of cancer?",
+    "options": [
+      "Iodine",
+      "Sodium",
+      "Cobalt",
+      "Uranium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cobalt-60, a radioactive isotope of cobalt, is widely used in radiation therapy to treat cancer because it produces high-energy gamma rays.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q124",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "To protect steel and iron from rusting, a thin layer of which one of the following metals is applied?",
+    "options": [
+      "Magnesium",
+      "Zinc",
+      "Aluminium",
+      "Lead"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The process of applying a protective zinc coating to steel or iron to prevent rusting is called galvanization.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q125",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Cinnabar is an ore of which one of the following?",
+    "options": [
+      "Copper",
+      "Zinc",
+      "Mercury",
+      "Manganese"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cinnabar (HgS) is a toxic mercury sulfide mineral and is the most common source ore for refining elemental mercury.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q126",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Imagine a current-carrying straight conductor with magnetic field of lines in anti-clockwise direction. Then the direction of current is determined by",
+    "options": [
+      "the Right-Hand Thumb rule and it would be in the downward direction.",
+      "the Left-Hand Thumb rule and it would be in the downward direction.",
+      "the Right-Hand Thumb rule and it would be in the upward direction.",
+      "the Left-Hand Thumb rule and it would be in the upward direction."
+    ],
+    "correctAnswer": 2,
+    "explanation": "According to Maxwell's Right-Hand Thumb Rule, if the fingers curl in the anti-clockwise direction (representing the magnetic field lines), the thumb points upwards, indicating the direction of the current.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q127",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The device used to produce electric current is known as",
+    "options": [
+      "motor",
+      "generator",
+      "ammeter",
+      "galvanometer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An electric generator converts mechanical energy into electrical energy, thereby producing an electric current.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q128",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Myopia is a defect in human vision where an image of a",
+    "options": [
+      "nearby object is focused beyond the retina.",
+      "nearby object is focused before the retina.",
+      "distant object is focused before the retina.",
+      "distant object is focused beyond the retina."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Myopia (nearsightedness) occurs when the eyeball is too long or the lens is too powerful, causing images of distant objects to focus in front of (before) the retina.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q129",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Tyndall effect is a phenomenon of",
+    "options": [
+      "scattering of light by the colloidal particles.",
+      "refraction of light by the colloidal particles.",
+      "dispersion of light by dust particles.",
+      "refraction of light by dust particles."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Tyndall effect is the scattering of light as a light beam passes through a colloid, making the beam's path visible.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q130",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Twinkling of stars is primarily due to the atmospheric",
+    "options": [
+      "refraction",
+      "reflection",
+      "polarization",
+      "dispersion"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The twinkling of a star is caused by atmospheric refraction. As starlight enters the Earth's atmosphere, it continuously undergoes refraction due to shifting air density.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q131",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Cornea in human eye",
+    "options": [
+      "is a light sensitive screen.",
+      "is a muscular diaphragm.",
+      "contains blood vessels.",
+      "is composed of proteins and cells."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The cornea is the clear front surface of the eye. It is avascular (contains no blood vessels) to maintain transparency and is composed of specialized proteins and cells.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q132",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Power of a lens of focal length 25 cm is",
+    "options": [
+      "+2-5 Dioptre",
+      "+3 Dioptre",
+      "+4 Dioptre",
+      "+5 Dioptre"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Power (P) = 1 / focal length (f in meters). f = 25 cm = 0.25 m. P = 1 / 0.25 = +4 Dioptres.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q133",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "What is the total number of chambers in the stomach of domestic animals like cattle, buffalo, goat and sheep?",
+    "options": [
+      "Four",
+      "Two",
+      "One",
+      "Three"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ruminants like cattle, sheep, and goats have a specialized four-chambered stomach (rumen, reticulum, omasum, abomasum) to digest tough plant matter.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q134",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Intestinal bacteria are main source of which one of the following vitamins?",
+    "options": [
+      "Vitamin E",
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin A"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Gut flora (intestinal bacteria) synthesize several essential vitamins, most notably Vitamin K and several B vitamins, including Vitamin B12.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q135",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which one of the following hormones is responsible for the development of female sexual characters ?",
+    "options": [
+      "Prolactin",
+      "Estrogen",
+      "Oxytocin",
+      "Progesterone"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Estrogen is the primary female sex hormone responsible for the development and regulation of the female reproductive system and secondary sex characteristics.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q136",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Spherical mirror formula relating an object distance 'u', image distance 'v' and focal length of mirror 'f' may be applied to a plane mirror when",
+    "options": [
+      "focal length goes to infinity.",
+      "focal length goes to zero.",
+      "image distance goes to zero.",
+      "image distance goes to infinity."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A plane mirror can be considered a spherical mirror with an infinite radius of curvature, making its focal length (f) approach infinity.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q137",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Nuclear energy is generated by",
+    "options": [
+      "nuclear fission and its expression was proposed by Einstein.",
+      "nuclear fission and its expression was proposed by Rutherford.",
+      "nuclear fusion and its expression was proposed by Bohr.",
+      "nuclear fusion and its expression was proposed by Heisenberg."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Commercial nuclear power plants generate energy through nuclear fission. The mathematical expression relating mass and energy (E=mc²) was proposed by Albert Einstein.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q138",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Reverberation is a phenomenon associated with a",
+    "options": [
+      "multiple refraction of sound.",
+      "multiple reflection of sound.",
+      "single refraction of sound.",
+      "single reflection of sound."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Reverberation occurs in an enclosed space when sound waves continuously bounce off surfaces, creating a prolonged, overlapping 'echo' due to multiple reflections.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q139",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which among the following is true for propagation of sound waves?",
+    "options": [
+      "Sound can travel in vacuum and it is a transverse wave in air.",
+      "Sound cannot travel in vacuum and it is a longitudinal wave in air.",
+      "Sound can travel in vacuum and it is a longitudinal wave in air.",
+      "Sound cannot travel in vacuum and it is a transverse wave in air."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sound is a mechanical wave that requires a medium to travel (hence it cannot travel in a vacuum), and in gases like air, it propagates as a longitudinal wave.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q140",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A tennis ball is thrown in the vertically upward direction and the ball attains a maximum height of 20 m. The ball was thrown approximately with an upward velocity of",
+    "options": [
+      "8 m/s",
+      "12 m/s",
+      "16 m/s",
+      "20 m/s"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Using the kinematic equation v² = u² - 2gh. At maximum height, final velocity v = 0. So, 0 = u² - 2 * 10 * 20. u² = 400. u = 20 m/s.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q141",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "An object of mass 2000 g possesses 100 J kinetic energy. The object must be moving with a speed of",
+    "options": [
+      "10.0 m/s",
+      "11.1 m/s",
+      "11.2 m/s",
+      "12.1 m/s"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mass (m) = 2000 g = 2 kg. Kinetic Energy (KE) = 100 J. KE = 1/2 * m * v². 100 = 1/2 * 2 * v². 100 = v². Therefore, v = 10 m/s.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q142",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following ions is not iso-electronic with F-?",
+    "options": [
+      "O2-",
+      "Na+",
+      "Ne",
+      "N-"
+    ],
+    "correctAnswer": 3,
+    "explanation": "F- has 10 electrons (9 + 1). O2- has 10 (8 + 2). Na+ has 10 (11 - 1). Ne has 10. Nitrogen (N) has 7 electrons; N- would have 8 electrons, so it is not isoelectronic with F-.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q143",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What is the total number of covalent bonds in methanol?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The chemical formula for methanol is CH3OH. It has 3 C-H bonds, 1 C-O bond, and 1 O-H bond, making a total of 5 covalent bonds.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q144",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following is the chemical formula of Plaster of Paris?",
+    "options": [
+      "CaSO4·1/2H2O",
+      "CaSO4·2H2O",
+      "CaSO4·5H2O",
+      "CaSO4·4H2O"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Plaster of Paris is calcium sulfate hemihydrate, represented by the chemical formula CaSO4·½H2O.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q145",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The unit of the ratio between thrust and impulse is same as that of",
+    "options": [
+      "frequency",
+      "speed",
+      "wavelength",
+      "acceleration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Thrust has the unit of Force (Newtons). Impulse has the unit of Force × Time (N·s). The ratio Thrust / Impulse is N / (N·s) = 1/s, which is the unit of frequency (Hertz).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q146",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following figures correctly shows the path of a ray of light through a glass prism?",
+    "options": [
+      "(a)",
+      "(b)",
+      "(c)",
+      "(d)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When light passes through a glass prism, it bends towards the normal upon entering (from rarer to denser medium) and bends away from the normal upon exiting (from denser to rarer). In both cases, the net effect is that the ray bends towards the base of the prism.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q147",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "When a light beam falls on a triangular glass prism, a band of colours is obtained. Which one of the following statements is correct in this regard?",
+    "options": [
+      "Red light bends the most, as the refractive index of glass for red light is greatest.",
+      "Red light bends the most, as the refractive index of glass for red light is lowest.",
+      "Violet light bends the most, as the refractive index of glass for violet light is greatest.",
+      "Violet light bends the most, as the refractive index of glass for violet light is lowest."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In dispersion, violet light has the shortest wavelength and experiences the highest refractive index in glass, causing it to bend (refract) the most.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q148",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The image of an object formed by a plane mirror is",
+    "options": [
+      "erect, real and larger.",
+      "erect, virtual and same size.",
+      "inverted, virtual and same size.",
+      "inverted, real and smaller."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A plane mirror forms an image that is always virtual (cannot be projected on a screen), erect (upright), laterally inverted, and exactly the same size as the original object.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q149",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following is not a conservative force?",
+    "options": [
+      "Frictional force",
+      "Electric force",
+      "Gravitational force",
+      "Spring force"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A conservative force (like gravity, electric, or spring force) is one where the work done depends only on initial and final positions. Frictional force is non-conservative because the work done depends on the path taken.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  },
+  {
+    "id": "nda-2021-2-q150",
+    "year": 2021,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A negative work is done when an applied force F and the corresponding displacement S are",
+    "options": [
+      "perpendicular to each other.",
+      "parallel to each other.",
+      "anti-parallel to each other.",
+      "equal in magnitude."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Work = F * S * cos(θ). Negative work occurs when the angle θ between the force and displacement vectors is 180 degrees (anti-parallel), making cos(180°) = -1.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2021" }
+    ]
+  }
+]

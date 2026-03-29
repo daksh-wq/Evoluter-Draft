@@ -1,0 +1,2503 @@
+[
+  {
+    "id": "pyq-capf-2022-q1",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "text": "Which one of the following is the difference of the sum of cubes of first ten natural numbers and the sum of squares of first ten natural numbers?",
+    "options": [
+      "2400",
+      "2640",
+      "2880",
+      "2000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The sum of cubes of the first 10 natural numbers is (10 * 11 / 2)^2 = 3025. The sum of squares of the first 10 natural numbers is (10 * 11 * 21) / 6 = 385. The difference is 3025 - 385 = 2640.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q2",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Percentages",
+    "text": "A person buys an item from a shop for which the shopkeeper offers a discount of 10% on the marked price. The person pays using an e-wallet which gives 10% cash back. Which one of the following is the value of effective discount?",
+    "options": [
+      "20%",
+      "18%",
+      "19%",
+      "21%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the marked price be 100. After a 10% discount, the price is 90. The 10% cashback on 90 is 9. Therefore, the total amount spent is 90 - 9 = 81. The effective discount is 100 - 81 = 19%.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q3",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "text": "A solid spherical ball made of iron is melted and two new balls are made whose diameters are in the ratio of 1:2. The ratio of the volume of the smaller new ball to the original ball is",
+    "options": [
+      "1:3",
+      "1:5",
+      "2:9",
+      "1:9"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let the diameters of the two new balls be d and 2d. Their volumes are proportional to the cube of their diameters, so the ratio of their volumes is 1:8. The total volume of the original ball is 1 + 8 = 9 units. Thus, the ratio of the smaller ball's volume to the original ball is 1:9.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q4",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Simple & Compound Interest",
+    "text": "Suppose a bank gives an interest of 10% per annum compounded annually for a fixed deposit for a period of two years. What should be the simple interest rate per annum if the maturity amount after two years is to remain the same?",
+    "options": [
+      "10%",
+      "10.5%",
+      "11%",
+      "12%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "At 10% compound interest for 2 years, the total interest earned is (1.1^2) - 1 = 0.21, or 21%. To get the same total interest of 21% over 2 years using simple interest, the annual rate must be 21% / 2 = 10.5%.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Simple & Compound Interest" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q5",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Speed, Distance & Time",
+    "text": "A runner's average speed reduces by 25% every hour. If he runs 16 km in the first hour and he runs for 3 hours, then what is his overall average speed?",
+    "options": [
+      "12 km/hr",
+      "12.33 km/hr",
+      "10.33 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In the 1st hour, the runner covers 16 km. In the 2nd hour, speed reduces by 25%, so he runs 12 km. In the 3rd hour, speed reduces another 25%, so he runs 9 km. Total distance = 16 + 12 + 9 = 37 km. Overall average speed = 37 / 3 = 12.33 km/hr.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Speed, Distance & Time" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q6",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Trough and ridge are",
+    "options": [
+      "elongated area of low pressure and of high pressure respectively",
+      "elongated areas of low pressure",
+      "elongated areas of high pressure",
+      "elongated area of high pressure and of low pressure respectively"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In meteorology, a trough is an elongated region of relatively low atmospheric pressure, whereas a ridge is an elongated region of relatively high atmospheric pressure.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q7",
+    "year": 2022,
+    "subject": "Environment",
+    "topic": "Ecology",
+    "text": "The boundary layer of the forest at which the energy exchange occurs and some insolation is returned directly to space is",
+    "options": [
+      "forest floor",
+      "forest soil",
+      "forest canopy",
+      "forest litter"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The forest canopy is the upper layer of the forest where primary energy exchange (like photosynthesis and insolation reflection) with the atmosphere and space occurs.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Ecology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q8",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Ecology",
+    "text": "The organisms that prefer high salt concentration habitats refer to as",
+    "options": [
+      "alkaliphiles",
+      "calcifuges",
+      "halophiles",
+      "nitrophiles"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Halophiles are extremophile organisms that thrive in high salt concentrations. 'Halo' means salt and 'phile' means loving.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Ecology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q9",
+    "year": 2022,
+    "subject": "Computer Science",
+    "topic": "Operating Systems",
+    "text": "Which one of the following is not an operating system?",
+    "options": [
+      "MS-Windows",
+      "Linux",
+      "Ubuntu",
+      "MS-Excel"
+    ],
+    "correctAnswer": 3,
+    "explanation": "MS-Excel is a spreadsheet software application, not an Operating System. MS-Windows, Linux, and Ubuntu are all operating systems.",
+    "tags": [
+      { "type": "subject", "label": "Computer Science" },
+      { "type": "topic", "label": "Operating Systems" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q10",
+    "year": 2022,
+    "subject": "Computer Science",
+    "topic": "Networking",
+    "text": "Which one of the following protocols is not an application layer of the TCP/IP model?",
+    "options": [
+      "FTP",
+      "HTTP",
+      "DNS",
+      "IP"
+    ],
+    "correctAnswer": 3,
+    "explanation": "IP (Internet Protocol) belongs to the Network layer of the TCP/IP model. FTP, HTTP, and DNS are protocols of the Application layer.",
+    "tags": [
+      { "type": "subject", "label": "Computer Science" },
+      { "type": "topic", "label": "Networking" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q11",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electronics",
+    "text": "Which one of the following is a semi-conductor device that is used to increase the power of the incoming signals by preserving the shape of the original signal?",
+    "options": [
+      "Register",
+      "Transistor",
+      "Flip-flop",
+      "Diode"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A Transistor acts as an amplifier, boosting the power of the incoming signals while preserving the shape of the original signal.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Electronics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q12",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Which of the following combinations correctly represents the genetic materials in prokaryotes and eukaryotes respectively?",
+    "options": [
+      "Nucleoid and Chromatin",
+      "Chromatin and Nucleoid",
+      "Nucleoid and Nucleolus",
+      "Nucleolus and Chromatin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In prokaryotes, the genetic material is concentrated in a region called the nucleoid, which is not membrane-bound. In eukaryotes, DNA forms chromatin within a distinct membrane-bound nucleus.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Cell Biology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q13",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "Lysosomes are sacs of the cell filled with digestive enzymes. These digestive enzymes are synthesized by",
+    "options": [
+      "Golgi bodies",
+      "smooth endoplasmic reticulum",
+      "rough endoplasmic reticulum",
+      "lysosome itself"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The digestive enzymes contained in lysosomes are synthesized by ribosomes attached to the rough endoplasmic reticulum (RER).",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Cell Biology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q14",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Botany",
+    "text": "Which of the following best represents the cells of a meristem of plant?",
+    "options": [
+      "Dense cytoplasm, thin cell wall, large nuclei and absence of vacuoles",
+      "Dense cytoplasm, thin cell wall, large nuclei and large vacuoles",
+      "Dense cytoplasm, thin cell wall, small nuclei and absence of vacuoles",
+      "Dense cytoplasm, thick cell wall, small nuclei and large vacuoles"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Meristematic cells are constantly dividing. They possess dense cytoplasm, thin cell walls (to allow division), large prominent nuclei, and lack vacuoles (as they don't need to store food/sap).",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Botany" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q15",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Zoology",
+    "text": "Which one of the following animals has a four-chambered heart?",
+    "options": [
+      "King cobra",
+      "Turtle",
+      "Chameleon",
+      "Crocodile"
+    ],
+    "correctAnswer": 3,
+    "explanation": "While most reptiles have a three-chambered heart, crocodilians (including crocodiles) have a fully developed four-chambered heart.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Zoology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q16",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Botany",
+    "text": "One way of incorporating desired characters into crop varieties is hybridization. In this process, there is crossing between genetically dissimilar plants. Which one of the following crossings will not refer to hybridization?",
+    "options": [
+      "Intervarietal",
+      "Interspecific",
+      "Intergenic",
+      "Intragenic"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hybridization involves crossing genetically dissimilar individuals. Intervarietal, interspecific, and intergeneric (often spelled intergenic in this context) are all hybridization methods. Intragenic refers to crossing/modifications within the same specific gene, not typically categorized under whole-plant hybridization techniques in this context.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Botany" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q17",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Plant Nutrition",
+    "text": "Depending on the requirements, plant nutrients are classified as micronutrients and macronutrients. Which one of the following is an example of a macronutrient?",
+    "options": [
+      "Manganese",
+      "Copper",
+      "Magnesium",
+      "Chlorine"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Macronutrients are required by plants in larger quantities. Magnesium is a secondary macronutrient. Manganese, Copper, and Chlorine are micronutrients.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Plant Nutrition" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q18",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "text": "Buds produced in the notches along the leaf margin of Bryophyllum fall on soil and develop into new plants. This is an example of which one of the following types of reproduction?",
+    "options": [
+      "Vegetative propagation",
+      "Budding",
+      "Spore formation",
+      "Regeneration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The development of new plants from roots, stems, or leaves (like Bryophyllum) is termed vegetative propagation.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Reproduction" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q19",
+    "year": 2022,
+    "subject": "Biology",
+    "topic": "Botany",
+    "text": "Phloem tissues are mostly responsible for transport of",
+    "options": [
+      "water",
+      "oxygen",
+      "minerals",
+      "food"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Phloem is the vascular tissue responsible for transporting food (sugars synthesized during photosynthesis) from leaves to other parts of the plant.",
+    "tags": [
+      { "type": "subject", "label": "Biology" },
+      { "type": "topic", "label": "Botany" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q20",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "Two objects, x and y, have equal mass and are moving with speeds u and 3u respectively. Their kinetic energies kx and ky are related as",
+    "options": [
+      "kx=ky",
+      "2kx=ky",
+      "9kx=ky",
+      "3kx=ky"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kinetic energy (K) = 1/2 * m * v^2. Since y's speed is 3 times that of x, its kinetic energy will be 3^2 = 9 times that of x. Hence, 9kx = ky.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Mechanics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q21",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "Which one of the following is not the unit of pressure?",
+    "options": [
+      "pascal (Pa)",
+      "N/m2",
+      "J/m2",
+      "bar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "J/m2 represents Energy per unit area, which is equivalent to N/m (surface tension), not pressure. Pascal, N/m2, and bar are valid units of pressure.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Mechanics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q22",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "Which one of the following materials cannot be used to make a convex lens?",
+    "options": [
+      "Aluminium",
+      "Glass",
+      "Sapphire",
+      "Water"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lenses must be made from transparent materials to refract light. Aluminium is opaque and therefore cannot be used to make a lens.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Optics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q23",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "The optical phenomenon responsible for the blue colour of sky is",
+    "options": [
+      "dispersion",
+      "reflection",
+      "refraction",
+      "scattering"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The blue color of the sky is caused by Rayleigh scattering. Molecules in the air scatter blue light from the sun more than they scatter red light.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Optics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q24",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electromagnetism",
+    "text": "The electrical device used for converting mechanical energy into electrical energy is called",
+    "options": [
+      "voltmeter",
+      "ammeter",
+      "motor",
+      "generator"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An electrical generator is a device that converts motive power (mechanical energy) into electrical power for use in an external circuit.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Electromagnetism" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q25",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "The magnitude of focal length of a concave lens is 2 m. What is the power of the lens?",
+    "options": [
+      "+0.5 dioptre",
+      "-0.5 dioptre",
+      "+2.0 dioptre",
+      "-1.0 dioptre"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A concave lens has a negative focal length. So, f = -2 m. The power P = 1/f = 1/(-2) = -0.5 dioptre.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Optics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q26",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "At the time of short circuit, the current in an electric circuit",
+    "options": [
+      "becomes zero",
+      "remains same",
+      "increases sharply",
+      "decreases sharply"
+    ],
+    "correctAnswer": 2,
+    "explanation": "During a short circuit, the electrical current bypasses the normal load and flows through a path of very low resistance. According to Ohm's law (I = V/R), a sharp drop in resistance causes the current to increase sharply.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Electricity" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q27",
+    "year": 2022,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "text": "If the linear momentum of a moving object changes by two times, then its kinetic energy will change by a factor of",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kinetic energy (K) is related to linear momentum (p) by the formula K = p^2 / 2m. If the momentum changes by a factor of 2, the new kinetic energy becomes (2p)^2 / 2m = 4(p^2 / 2m) = 4K. Therefore, the kinetic energy changes by a factor of 4.",
+    "tags": [
+      { "type": "subject", "label": "Physics" },
+      { "type": "topic", "label": "Mechanics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q28",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "Which one of the following oxides reacts with both acid and base?",
+    "options": [
+      "Aluminium oxide",
+      "Calcium oxide",
+      "Sodium oxide",
+      "Potassium oxide"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Aluminium oxide (Al2O3) is an amphoteric oxide, which means it can react with both acids (like HCl) and bases (like NaOH) to produce salt and water.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Acids, Bases and Salts" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q29",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Chemistry in Everyday Life",
+    "text": "Which of the following makes bread soft and spongy when baking soda is added?",
+    "options": [
+      "Sodium salt of acid",
+      "NaHCO3",
+      "CO2",
+      "H2O"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When baking soda (sodium bicarbonate) is mixed with a mild edible acid and heated, it decomposes to produce carbon dioxide (CO2) gas. The bubbles of CO2 get trapped in the dough, causing it to rise and making the bread soft and spongy.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Chemistry in Everyday Life" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q30",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Average",
+    "text": "The average age of father and elder son is 35 years, the average age of father and younger son is 32 years and the average age of the two sons is 17 years. What is the average age of the father and his two sons?",
+    "options": [
+      "30 years",
+      "27 years",
+      "28 years",
+      "29 years"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let F be the father, E be the elder son, and Y be the younger son. \nF + E = 35 * 2 = 70 \nF + Y = 32 * 2 = 64 \nE + Y = 17 * 2 = 34 \nAdding all three equations: 2F + 2E + 2Y = 168. So, F + E + Y = 84. \nThe average age of all three = 84 / 3 = 28 years.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Average" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q31",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "text": "A number is 124 more than its one-third. What is that number?",
+    "options": [
+      "194",
+      "180",
+      "189",
+      "186"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let the number be x. \nx = (x/3) + 124 \nx - x/3 = 124 \n2x/3 = 124 \nx = (124 * 3) / 2 = 62 * 3 = 186.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q32",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Speed, Distance & Time",
+    "text": "A car travels 3/4 of the distance at a speed of 60 km/hr and the remaining 1/4 of the distance at a speed of v km/hr. If the average speed for the full journey is 50 km/hr, then the value of v is",
+    "options": [
+      "40",
+      "30",
+      "100/3",
+      "35"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the total distance be D. \nTotal time = Time for first part + Time for second part \nTotal time = (3D/4) / 60 + (D/4) / v = D/80 + D/(4v) \nAverage Speed = Total Distance / Total Time = D / [D(1/80 + 1/(4v))] = 50 \n1 / (1/80 + 1/(4v)) = 50 \n1/80 + 1/(4v) = 1/50 \n1/(4v) = 1/50 - 1/80 = 3/400 \n4v = 400/3 \nv = 100/3",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Speed, Distance & Time" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q33",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Time & Work",
+    "text": "Suppose A and B can complete a work together in 10 days. If B alone can complete the work in 15 days, then in how many days can A alone finish the work?",
+    "options": [
+      "20 days",
+      "24 days",
+      "25 days",
+      "30 days"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Work done by A and B in 1 day = 1/10. \nWork done by B in 1 day = 1/15. \nWork done by A in 1 day = (1/10) - (1/15) = (3-2)/30 = 1/30. \nTherefore, A alone can finish the work in 30 days.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Time & Work" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q34",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Average",
+    "text": "If the average of the first four of five numbers in decreasing order is 25 and the average of the last four numbers is 20, then what is the difference between the first and the last number?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let the 5 numbers in decreasing order be a, b, c, d, e. \nAverage of first four = (a + b + c + d) / 4 = 25  => a + b + c + d = 100. \nAverage of last four = (b + c + d + e) / 4 = 20  => b + c + d + e = 80. \nSubtracting the second equation from the first: (a + b + c + d) - (b + c + d + e) = 100 - 80. \na - e = 20. \nThe difference between the first and the last number is 20.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Average" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q35",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Important Compounds",
+    "text": "Borax is prepared from",
+    "options": [
+      "calcium carbonate",
+      "magnesium carbonate",
+      "potassium carbonate",
+      "sodium carbonate"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Borax can be prepared by reacting colemanite (a borate mineral) with a boiling solution of sodium carbonate (Na2CO3).",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Important Compounds" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q36",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals and Non-Metals",
+    "text": "Cinnabar is an ore of",
+    "options": [
+      "mercury",
+      "zinc",
+      "copper",
+      "lead"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cinnabar (HgS) is the bright scarlet to brick-red form of mercury(II) sulfide. It is the most common source ore for refining elemental mercury.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Metals and Non-Metals" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q37",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Metals and Non-Metals",
+    "text": "White gold is an alloy of",
+    "options": [
+      "gold, nickel and palladium",
+      "gold, cobalt and palladium",
+      "gold, titanium and platinum",
+      "gold, magnesium and palladium"
+    ],
+    "correctAnswer": 0,
+    "explanation": "White gold is an alloy of gold and at least one white metal, commonly nickel, manganese, or palladium. Copper and zinc are also sometimes added.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Metals and Non-Metals" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q38",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "text": "Hydrogenation of alkenes can be carried out in the presence of",
+    "options": [
+      "copper",
+      "zinc",
+      "aluminium",
+      "nickel"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The hydrogenation of alkenes to form alkanes is typically carried out using a catalyst such as finely divided nickel (Raney nickel), palladium, or platinum.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Organic Chemistry" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q39",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Calcium oxide reacts with water to produce slaked lime. It is an example of",
+    "options": [
+      "combination reaction",
+      "decomposition reaction",
+      "oxidation reaction",
+      "addition reaction"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When calcium oxide (CaO) reacts with water (H2O), they combine to form a single product, calcium hydroxide (Ca(OH)2), which is slaked lime. A reaction where two or more reactants combine to form a single product is a combination reaction.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Chemical Reactions" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q40",
+    "year": 2022,
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "text": "The atomic radius of hydrogen atom is",
+    "options": [
+      "37 nanometer",
+      "37 picometer",
+      "17 picometer",
+      "57 picometer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The typical atomic radius of a hydrogen atom is roughly 37 picometers (pm) or 0.37 angstroms.",
+    "tags": [
+      { "type": "subject", "label": "Chemistry" },
+      { "type": "topic", "label": "Atomic Structure" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q41",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Permutation and Combination",
+    "text": "There is a group of 5 people among which there is one couple. In how many ways can these 5 people be seated in a row having 5 chairs if the couple is to be seated next to each other?",
+    "options": [
+      "24",
+      "48",
+      "60",
+      "120"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Treat the couple as a single distinct unit. Now there are 4 units to arrange (the couple unit + the 3 other individuals). These 4 units can be arranged in 4! = 24 ways. Within the couple unit, the two individuals can switch places in 2! = 2 ways. Total number of arrangements = 24 * 2 = 48 ways.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Permutation and Combination" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q42",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Speed, Distance & Time",
+    "text": "Two friends 10 km apart start running towards each other at speeds of 10 km/hr and 14 km/hr respectively. After how much time will they meet each other?",
+    "options": [
+      "20 minutes",
+      "25 minutes",
+      "28 minutes",
+      "30 minutes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Since they are running towards each other, their relative speed is 10 + 14 = 24 km/hr. Time to meet = Distance / Relative Speed = 10 / 24 hours. To convert to minutes: (10/24) * 60 = 25 minutes.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Speed, Distance & Time" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q43",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "text": "A coin is tossed 3 times. The probability of getting exactly 2 heads is",
+    "options": [
+      "1/3",
+      "3/8",
+      "1/2",
+      "5/8"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When tossing a coin 3 times, there are 2^3 = 8 possible outcomes. The outcomes with exactly 2 heads are HHT, HTH, and THH. That makes 3 favorable outcomes. Probability = 3/8.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Probability" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q44",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Linear Equations",
+    "text": "A test consists of 25 MCQs. Each correct answer gives +4 marks and incorrect answer gives -1 mark. If a candidate scores 74 marks, then how many questions were left unattempted?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "9"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let C be correct answers and I be incorrect ones. Marks = 4C - I = 74. Since maximum questions are 25, let's substitute possible values for C. If C=19, then 4(19) - I = 74 => 76 - I = 74 => I = 2. Total attempted = 19 + 2 = 21. Total unattempted = 25 - 21 = 4. Other values for C do not give a valid number of unattempted questions within limits.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Linear Equations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q45",
+    "year": 2022,
+    "subject": "Mathematics",
+    "topic": "Linear Equations",
+    "text": "A person has a total of 100 coins consisting of Rs 2 and Rs 5 coins. If the total value of the coins is Rs 320, then the number of Rs 2 coins is",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "70"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let x be the number of Rs 2 coins, and y be the number of Rs 5 coins. \nx + y = 100  => y = 100 - x. \nValue: 2x + 5y = 320. \nSubstitute y: 2x + 5(100 - x) = 320 \n2x + 500 - 5x = 320 \n-3x = 320 - 500 \n3x = 180 \nx = 60. \nSo, there are 60 Rs 2 coins.",
+    "tags": [
+      { "type": "subject", "label": "Mathematics" },
+      { "type": "topic", "label": "Linear Equations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q46",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Defence Technology",
+    "text": "The technology known as 'Electromagnetic Air Lift System' is sometimes talked about in reference to",
+    "options": [
+      "launching guided missiles from silos",
+      "launching aircraft from warships",
+      "navigation of nuclear-powered submarines",
+      "development of reusable rockets"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The technology usually refers to the Electromagnetic Aircraft Launch System (EMALS), which is used on modern aircraft carriers to launch aircraft from warships.",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Defence Technology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q47",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Space Technology",
+    "text": "Consider the following statements:\n1. Aluminium powder is used as a solid fuel for rocket engines.\n2. Compared to liquid fuel propelled rocket engines, the thrust per amount of fuel burned is higher in solid fuel propelled rocket engines.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Aluminium powder is indeed used as fuel in solid rocket boosters. However, liquid-propellant rockets generally have a higher specific impulse (thrust produced per unit of fuel consumed) compared to solid rockets. Therefore, statement 2 is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Space Technology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q48",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Defence Technology",
+    "text": "Consider the following missiles:\n1. Agni-I\n2. BrahMos\n3. Dhanush\nWhich of the above is/are cruise missile/missiles?",
+    "options": [
+      "1 and 2",
+      "2 only",
+      "1 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "BrahMos is a supersonic cruise missile. Agni-I is a medium-range ballistic missile, and Dhanush is a short-range ship-launched ballistic missile.",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Defence Technology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q49",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Defence Technology",
+    "text": "With reference to India's defence, consider the following helicopters:\n1. Cheetah\n2. Chetak\n3. Rudra\nWhich of the above has/have turret gun, rocket system and air-to-air missile?",
+    "options": [
+      "1 and 2",
+      "2 only",
+      "1 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "HAL Rudra is the weaponised (armed) version of the HAL Dhruv utility helicopter. It is equipped with a 20 mm turret gun, 70 mm rocket pods, and anti-tank guided missiles/air-to-air missiles. Cheetah and Chetak are basic utility helicopters.",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Defence Technology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q50",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "Recently, India gave a coastal radar system to which one of the following countries?",
+    "options": [
+      "Bangladesh",
+      "Maldives",
+      "Sri Lanka",
+      "United Arab Emirates"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In 2022, India handed over a coastal radar system to the Maldives to bolster maritime security in the Indian Ocean Region.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Relations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q51",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "Which one of the following artworks was hailed by Sister Nivedita as the 'first masterpiece of Indian art'?",
+    "options": [
+      "Bharatmata by Abanindranath Tagore",
+      "Arjuna and Subhadra by Raja Ravi Varma",
+      "Sita in Captivity in Lanka by Abanindranath Tagore",
+      "Sati by Nandalal Bose"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sister Nivedita, a disciple of Swami Vivekananda, praised Abanindranath Tagore's painting 'Bharat Mata' (created in 1905) as the first great masterpiece of Indian art for its profound nationalistic and spiritual symbolism.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q52",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "'Operation Sankalp' was initiated and implemented by the",
+    "options": [
+      "Indian Air Force",
+      "Indian Army",
+      "Indian Navy",
+      "Ministry of Home Affairs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Operation Sankalp was initiated by the Indian Navy in 2019 to ensure the safety and security of Indian-flagged merchant vessels transiting through the Persian Gulf and the Gulf of Oman following maritime security incidents in the region.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q53",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Government Schemes and Policies",
+    "text": "Which one of the following statements is not true with regard to tribal welfare?",
+    "options": [
+      "The Comprehensive Tribal Development Programme aims at land development activities, improvement of roof houses, infrastructure development and so on.",
+      "As per the Scheduled Tribes and Other Traditional Forest Dwellers Act, villages in forests are provided with community rights.",
+      "The Special Area Development Programme aims at distribution of forest area produces to the tribals equitably.",
+      "The Special Central Assistance to Tribal Subplan provides dairy cows to tribal groups living below the poverty line."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Special Area Development Programme (SADP) focuses on the integrated development of specific regions like hill areas, Western Ghats, etc., focusing on infrastructure and ecological restoration. It is not specifically mandated with the equitable distribution of forest area produces to tribals.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Government Schemes and Policies" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q54",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Poverty and Employment",
+    "text": "Which one of the following statements is not correct?",
+    "options": [
+      "The 'Swarna Jayanti Shahari Rozgar Yojana' is an urban self-employment programme.",
+      "Drought-Prone Area Programme and Desert Development Programme were launched in 1970s.",
+      "The 'Sampoorna Grameen Rozgar Yojana' was launched after restructuring the Integrated Rural Development Programme' in 2001.",
+      "The 'Swarna Jayanti Gram Swarozgar Yojana' is a rural self-employment programme."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 'Sampoorna Grameen Rozgar Yojana' (SGRY) was launched in 2001 by merging the Employment Assurance Scheme (EAS) and Jawahar Gram Samridhi Yojana (JGSY). It was the 'Swarnjayanti Gram Swarozgar Yojana' (SGSY) that was launched in 1999 after restructuring the Integrated Rural Development Programme (IRDP).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Poverty and Employment" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q55",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Medieval History",
+    "text": "The Battle of Rakshasi-Tangadi is popularly known as the",
+    "options": [
+      "Battle of Talikota",
+      "Battle of Khanwa",
+      "Battle of Panipat",
+      "Battle of Dharmat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Battle of Rakshasi-Tangadi, fought in 1565, is more popularly known as the Battle of Talikota. It resulted in the defeat of the Vijayanagara Empire by the combined forces of the Deccan Sultanates.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q56",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient History",
+    "text": "Ashokan inscriptions in Afghanistan are written in which one of the following scripts?",
+    "options": [
+      "Brahmi",
+      "Sharada",
+      "Kharoshthi",
+      "Greek-Aramaic"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ashoka's inscriptions in the Indian subcontinent were primarily in Brahmi, while those in the northwestern regions (like present-day Pakistan) were in Kharoshthi. In Afghanistan, they were written in Greek and Aramaic scripts to cater to the local Hellenistic and Aramaic-speaking populations.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q57",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient History",
+    "text": "Which one of the following statements about coins struck during 200 BCE to 300 CE in the Indian subcontinent is not correct?",
+    "options": [
+      "The Indo-Greeks introduced bilingual and biscript legends on their coins.",
+      "The Kushanas minted large quantities of gold coins as well as copper coins of low denomination.",
+      "The Satavahanas issued coins of silver, copper, lead and potin.",
+      "Absence of Negama coins suggests the declining power and authority of merchant guilds."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The statement about the 'absence of Negama coins' is incorrect. Negama (Nigama) coins, which were struck by merchant guilds, have been found in places like Taxila. Their presence actually indicates the significant power, authority, and economic influence of merchant guilds during the post-Mauryan period.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q58",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient History",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Vedic name of river): A. Drishadvati, B. Askini, C. Vitasta, D. Purushni\nList-II (Modern name): 1. Chenab, 2. Chautang, 3. Ravi, 4. Jhelum",
+    "options": [
+      "A-2, B-4, C-1, D-3",
+      "A-2, B-1, C-4, D-3",
+      "A-3, B-1, C-4, D-2",
+      "A-3, B-4, C-1, D-2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In Vedic literature, Drishadvati corresponds to the modern Chautang river, Askini is Chenab, Vitasta is Jhelum, and Purushni is the Ravi river. Therefore, the correct matching is A-2, B-1, C-4, D-3.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q59",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "When was the Kothari Commission appointed by the Government of India to look into the education sector of India?",
+    "options": [
+      "1967",
+      "1966",
+      "1965",
+      "1964"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Kothari Commission (National Education Commission) was appointed by the Government of India in 1964 under the chairmanship of Daulat Singh Kothari to evaluate and provide recommendations for the educational sector in India.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q60",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "Which one of the following is not correct?",
+    "options": [
+      "The Gulf Stream is a warm ocean current.",
+      "The North Atlantic Drift is a warm ocean current.",
+      "The Labrador Current is a cold ocean current.",
+      "The California Current is a warm ocean current."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The California Current is a cold ocean current that moves southward along the western coast of North America, not a warm one.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Oceanography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q61",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which of the following statements about maps are correct?\n1. Maps that maintain the true shapes of areas are known as conformal maps.\n2. Maps are used to show spatial relationships.\n3. Maps cannot show route from one place to another.",
+    "options": [
+      "2 and 3 only",
+      "1 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is correct; conformal (or orthomorphic) projections preserve local shapes. Statement 2 is correct as maps display spatial relationships. Statement 3 is incorrect because maps are fundamentally used to show routes and navigate between places.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q62",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following statements about 'great circle' is not correct?",
+    "options": [
+      "Every great circle divides the Earth into equal halves.",
+      "Every great circle is a circumference of the Earth.",
+      "Great circles mark the longest travel routes between locations on the Earth's surface.",
+      "Great circle is the largest circle that can be drawn around the Earth through two particular points."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Great circles actually mark the SHORTEST travel routes (the shortest distance) between any two locations on the surface of a sphere, which is why ships and aircraft follow great circle routes.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q63",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which one of the following statements is correct with reference to normal lapse rate?",
+    "options": [
+      "Temperature is highest at ground level and decreases with increasing altitude.",
+      "Temperature is lowest at ground level and increases with increasing altitude.",
+      "Temperature remains stable with increasing altitude.",
+      "Temperature first increases with increasing altitude and gradually starts decreasing."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The normal lapse rate in the troposphere is the rate at which atmospheric temperature decreases with an increase in altitude. The Earth's surface is heated by the sun, making the ground level the warmest, and the temperature drops as you go higher.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q64",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following is a tributary of the Brahmaputra River?",
+    "options": [
+      "Ghaggar",
+      "Mahi",
+      "Kosi",
+      "Manas"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Manas is a major right-bank tributary of the Brahmaputra River. Ghaggar is an inland river in northern India. Mahi flows into the Arabian Sea, and Kosi is a tributary of the Ganga.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q65",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "The landmark case of D. C. Wadhwa vs. State of Bihar in the Supreme Court is related to which one of the following powers of the Governor?",
+    "options": [
+      "To repromulgate ordinances",
+      "To appoint a Chief Minister",
+      "To grant pardon, etc.",
+      "To revise the emoluments and allowances of the MLAS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the D.C. Wadhwa vs. State of Bihar (1987) case, the Supreme Court ruled that the repromulgation of ordinances without placing them before the legislature is a subversion of the democratic legislative process and a fraud on the Constitution.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Judiciary" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q66",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Agriculture",
+    "text": "'Operation Flood' is also popularly known as",
+    "options": [
+      "the Green Revolution",
+      "the White Revolution",
+      "the Blue Revolution",
+      "the Yellow Revolution"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Operation Flood, launched in 1970, was a dairy development program led by Verghese Kurien. It transformed India from a milk-deficient nation into the world's largest milk producer. It is popularly known as the White Revolution.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q67",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Government Schemes",
+    "text": "The 'Stand-Up India Scheme' is related to which one of the following issues?",
+    "options": [
+      "Social security during old age",
+      "Providing technical knowhow to young, educated or skilled workers from rural areas",
+      "Promoting entrepreneurship amongst women, SC and ST communities",
+      "Insurance cover to people in the age group of 18-50 years"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Stand-Up India scheme was launched by the Government of India to facilitate bank loans between Rs 10 lakh and Rs 1 Crore to at least one Scheduled Caste (SC) or Scheduled Tribe (ST) borrower and at least one woman borrower per bank branch for setting up a greenfield enterprise.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q68",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Federalism",
+    "text": "Which one of the following is not a feature of Indian federalism?",
+    "options": [
+      "Courts can interpret the Constitution and powers of different levels of the Government.",
+      "Sources of revenue for the Union Government and the State Governments are specified.",
+      "Powers of the Union and the States are specified in the Constitution.",
+      "Indian federalism is based on the principle of Separation of Powers."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Indian federalism is based on the 'Division of Powers' between the Union and the States. The 'Separation of Powers' refers to the division of government responsibilities into distinct branches (Executive, Legislative, Judicial) to limit any one branch from exercising the core functions of another.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Federalism" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q69",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "Consider the following statements:\n1. The early Malwa school of paintings was influenced by Shirazi school while the early Mughal paintings initially followed Bihzad school.\n2. The major exponents of Bihzad school in India were Sayyid Ali and Abdus Samad.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Early Malwa paintings show traits of the Shirazi school. Humayun brought Mir Sayyid Ali and Abdus Samad to India, who were from the Persian Safavid tradition (following the famous Persian painter Bihzad), laying the foundation of Mughal miniature painting.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q70",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "Which of the following statements about 'Ek Bharat Shreshtha Bharat' programme is/are correct?\n1. It was announced in the year 2014.\n2. Its aim is to create an environment which promotes learning between the States by sharing best practices and experiences.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 'Ek Bharat Shreshtha Bharat' programme was announced by the Prime Minister in 2015 (not 2014) on the occasion of the 140th birth anniversary of Sardar Vallabhbhai Patel. Statement 2 is correct regarding its aim to foster national integration.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q71",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Defence Technology",
+    "text": "Consider the following statements:\n1. Mirage 2000 is a twin-engine fighter jet.\n2. HAL Tejas is a delta-winged fighter jet.\n3. Rafale is a hypersonic fighter jet.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2",
+      "2 only",
+      "1 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mirage 2000 is a single-engine fighter jet (Statement 1 is incorrect). HAL Tejas is indeed a single-engine, delta-wing, light multirole fighter (Statement 2 is correct). Rafale is a twin-engine multirole fighter jet capable of supersonic speeds, not hypersonic (Statement 3 is incorrect).",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Defence Technology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q72",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Space Technology",
+    "text": "Which one of the following aerospace companies designed and manufactured 'Falcon 9' a reusable rocket?",
+    "options": [
+      "Blue Origin",
+      "Boeing",
+      "Lockheed Martin",
+      "SpaceX"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Falcon 9 is a partially reusable two-stage-to-orbit medium-lift launch vehicle designed and manufactured by SpaceX (Space Exploration Technologies Corp).",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Space Technology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q73",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "'The Kh-47M2 Kinzhal', a nuclear-capable hypersonic missile, belongs to which one of the following countries?",
+    "options": [
+      "China",
+      "France",
+      "Russia",
+      "USA"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Kh-47M2 Kinzhal (Dagger) is a Russian nuclear-capable hypersonic aero-ballistic air-to-surface missile.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q74",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "International Affairs",
+    "text": "Mariupol city, frequently mentioned in news in the context of Russia-Ukraine conflict, is situated on the coast of",
+    "options": [
+      "Aral Sea",
+      "Baltic Sea",
+      "Caspian Sea",
+      "Sea of Azov"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mariupol is a city in southeastern Ukraine, situated on the north coast of the Sea of Azov at the mouth of the Kalmius river.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Affairs" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q75",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "Economy",
+    "text": "Recently, with which one of the following countries did India sign the 'Comprehensive Economic Partnership Agreement'?",
+    "options": [
+      "Egypt",
+      "Israel",
+      "South Africa",
+      "United Arab Emirates"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In February 2022, India and the United Arab Emirates (UAE) signed a landmark Comprehensive Economic Partnership Agreement (CEPA) aimed at boosting bilateral trade.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Economy" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q76",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Security Forces",
+    "text": "Which one of the following is the oldest Central Paramilitary Force in India?",
+    "options": [
+      "The Central Reserve Police Force",
+      "The Border Security Force",
+      "The Assam Rifles",
+      "The Commando Battalion for Resolute Action"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Assam Rifles is the oldest paramilitary force in India, originally raised in 1835 as the Cachar Levy.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Security Forces" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q77",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "Which of the following statements about 'Agency Houses' is/are correct?\n1. They were important commercial formations in the late eighteenth and nineteenth century India.\n2. The operation of managing agencies remained confined to Calcutta.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Agency Houses were indeed major commercial entities during the East India Company's rule (Statement 1 is correct). However, their operations were not confined only to Calcutta; they also operated in Bombay and Madras (Statement 2 is incorrect).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q78",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient History",
+    "text": "Which one of the following statements about Tolkappiyam is not correct?",
+    "options": [
+      "It is a treatise on grammar.",
+      "It was composed between first to fourth century CE.",
+      "It was part of the Sangam corpus.",
+      "It was composed by Panini."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Tolkappiyam was authored by Tolkappiyar, not Panini. Panini is famous for authoring the Ashtadhyayi, a foundational text on Sanskrit grammar.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q79",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Post-Independence India",
+    "text": "Which one of the following statements about 'Princely States' in India is not correct?",
+    "options": [
+      "The British Government declared that States were free to join either India or Pakistan or remain independent.",
+      "The decision to join either India or Pakistan or remain independent was left not to the people of Princely States but to the Princely Rulers.",
+      "The Ruler of Travancore first decided to remain independent.",
+      "The State of Travancore finally joined India through a plebiscite."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Travancore did not join India through a plebiscite. The Dewan of Travancore, C. P. Ramaswami Iyer, initially wanted independence but agreed to join the Indian Union after an assassination attempt on him.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Post-Independence India" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q80",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Ancient History",
+    "text": "Which one of the following books was authored by Harshavardhana?",
+    "options": [
+      "Harshacharita",
+      "Kadambari",
+      "Ratnavali",
+      "Gitagovinda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "King Harshavardhana authored three famous Sanskrit plays: Ratnavali, Nagananda, and Priyadarsika. Harshacharita and Kadambari were written by his court poet Banabhatta.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q81",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "The 'King of Dance' is a description of",
+    "options": [
+      "Trimurti at Elephanta Caves",
+      "Kaliyamardan of Krishna",
+      "Bodhisattva Maitreya at Gandhara",
+      "Bronze Nataraja of the Cholas"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 'King of Dance' (Nataraja) is a famous depiction of the Hindu god Shiva performing his divine dance. The Chola bronze sculptures of Nataraja are widely acclaimed.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q82",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Anasagar Lake is located in which one of the following States?",
+    "options": [
+      "Gujarat",
+      "Uttarakhand",
+      "Rajasthan",
+      "Karnataka"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Anasagar Lake is an artificial lake situated in the city of Ajmer in Rajasthan, India. It was built by Arnoraja (Ana), the grandfather of Prithviraj Chauhan.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q83",
+    "year": 2022,
+    "subject": "Environment",
+    "topic": "Important Days",
+    "text": "The World Wetland Day is celebrated on which one of the following dates every year?",
+    "options": [
+      "10th June",
+      "13th February",
+      "9th March",
+      "2nd February"
+    ],
+    "correctAnswer": 3,
+    "explanation": "World Wetlands Day is celebrated globally on 2nd February every year to raise awareness about the vital role of wetlands for people and the planet, marking the date of the adoption of the Convention on Wetlands in 1971 in Ramsar, Iran.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Important Days" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q84",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Ganga water is being shared at Farakka with which one of the following countries?",
+    "options": [
+      "Nepal",
+      "Bhutan",
+      "Bangladesh",
+      "Myanmar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Farakka Barrage is located in West Bengal, India. It was built to divert water from the Ganges River into the Hooghly River. The sharing of the Ganga waters at Farakka is a matter governed by a treaty between India and Bangladesh.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q85",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following is a part of Deccan Plateau?",
+    "options": [
+      "Aravalli Hills",
+      "Karbi Anglong Hills",
+      "Shivalik Hills",
+      "Vindhyan Hills"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Karbi Anglong plateau in Assam is an eastward extension of the Indian Peninsular Plateau (Deccan Plateau block).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q86",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "In which one of the following States, more than 50% area is under Jhum cultivation?",
+    "options": [
+      "Manipur",
+      "Assam",
+      "Sikkim",
+      "Mizoram"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mizoram relies heavily on shifting agriculture, locally known as Jhum cultivation, with a significant majority of its arable land dedicated to this traditional practice.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q87",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "'Dhivehi' is a principal language of which one of the following Union Territories?",
+    "options": [
+      "Puducherry",
+      "Ladakh",
+      "Lakshadweep",
+      "Jammu and Kashmir"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dhivehi is an Indo-Aryan language spoken primarily in the Maldives, but it is also the principal language of Minicoy Island in the Indian Union Territory of Lakshadweep (where it is referred to as Mahl).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q88",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Indian Constitution",
+    "text": "Which of the following is/are source/sources of Law in India?\n1. Constitution of India\n2. Statutes\n3. Customary Law\n4. Case Law",
+    "options": [
+      "1 only",
+      "1, 2 and 4 only",
+      "2 and 3 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sources of law in India encompass the Constitution (the supreme law), Statutes (legislation by Parliament/state legislatures), Customary Law (established local customs recognized by courts), and Case Law (precedents set by higher courts like the Supreme Court and High Courts).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Indian Constitution" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q89",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Executive",
+    "text": "Which among the following is/are the function/functions of the Cabinet Secretariat?\n1. To ensure interministerial coordination\n2. Management of major crisis situations in the country",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Cabinet Secretariat is responsible for the administration of the Government of India (Transaction of Business) Rules. It ensures inter-ministerial coordination to iron out differences and plays a crucial role in managing major crisis situations in the country.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Executive" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q90",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which of the following statements about the Committee on Public Undertakings is/are correct?\n1. There are more members from the Rajya Sabha than the Lok Sabha in the Committee.\n2. The Chairperson of the Committee is appointed by the Speaker of the Lok Sabha.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect because the Committee on Public Undertakings consists of 22 members: 15 from the Lok Sabha and 7 from the Rajya Sabha. Statement 2 is correct as the Chairperson is appointed by the Speaker from amongst its Lok Sabha members.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q91",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which one of the following statements is not correct?",
+    "options": [
+      "A censure motion can be moved against a single Minister of the Council of Ministers.",
+      "A motion of no-confidence cannot be moved against the Prime Minister alone.",
+      "A censure motion cannot be moved against the entire Council of Ministers.",
+      "A censure motion can be moved against a group of Ministers."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A censure motion can be moved against an individual minister, a group of ministers, or the entire Council of Ministers for failing to act or for some policy. Therefore, the statement 'A censure motion cannot be moved against the entire Council of Ministers' is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q92",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "Which one of the following is not a thrust area of the 'Atal Mission for Rejuvenation and Urban Transformation (AMRUT)'?",
+    "options": [
+      "Water supply",
+      "Storm water drainage to reduce flooding",
+      "Motorized urban transport and capacity building",
+      "Green spaces and park"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AMRUT focuses on non-motorized urban transport (like walking and cycling facilities), not motorized urban transport.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q93",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Technology in Banking/Finance",
+    "text": "Nowadays, 'nonfungible tokens' are talked about in the context of",
+    "options": [
+      "digital assets on a blockchain",
+      "operations of 'banking correspondents' in rural areas",
+      "multifactor authentication security requirement in banking transactions",
+      "transactions through 'small finance banks'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Non-fungible tokens (NFTs) are unique digital identifiers recorded on a blockchain, used to certify ownership and authenticity of a specific digital asset, like art or media.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Technology in Banking/Finance" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q94",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Space Technology",
+    "text": "The term 'Sagittarius A*', sometimes mentioned in news, refers to",
+    "options": [
+      "a supermassive black hole in our Milky Way Galaxy",
+      "two giant black holes spiralling around each other several light-years away from the Earth",
+      "a Supernova explosion seen in real time for the first time ever by scientists",
+      "a huge asteroid that passed by very close to the Earth"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sagittarius A* (Sgr A*) is the supermassive black hole at the Galactic Center of the Milky Way.",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Space Technology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q95",
+    "year": 2022,
+    "subject": "Science and Technology",
+    "topic": "Cyber Security",
+    "text": "Consider the following statements with reference to the latest guidelines issued by the Indian Computer Emergency Response Team (CERT-In):\n1. Data centres and service providers shall compulsorily report cyber security breaches within 24 hours.\n2. Virtual Private Network providers shall retain user data for at least five years and share records with authorities when required.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The CERT-In guidelines mandate that service providers, intermediaries, data centres, etc., must report severe cyber incidents within 6 hours (not 24 hours). VPN providers are required to retain user data for five years.",
+    "tags": [
+      { "type": "subject", "label": "Science and Technology" },
+      { "type": "topic", "label": "Cyber Security" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q96",
+    "year": 2022,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "The principle of 'common but differentiated responsibilities and respective capabilities', often talked about in media, refers to",
+    "options": [
+      "WHO's COVID-19 Global Vaccination Drive",
+      "contributions to the International Monetary Fund",
+      "reduction of greenhouse gas emissions",
+      "contributions to the United Nations Peacekeeping Operations"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Common But Differentiated Responsibilities (CBDR) is a principle within the United Nations Framework Convention on Climate Change (UNFCCC) that acknowledges all states have a shared obligation to address environmental destruction (like greenhouse gas emissions), but are not equally responsible.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Climate Change" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q97",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Banking",
+    "text": "With reference to Indian economy, the term 'bad bank', frequently mentioned in news, refers to",
+    "options": [
+      "an asset reconstruction company",
+      "an asset management company",
+      "a bank with huge 'nonperforming assets'",
+      "a bank that has become insolvent"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A 'bad bank' is an Asset Reconstruction Company (ARC) or an Asset Management Company that takes over the bad loans or non-performing assets of commercial banks, manages them, and finally recovers the money over a period of time.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q98",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "Which one of the following was not a feature of the art of painting in India in the 19th century?",
+    "options": [
+      "Art was being produced for the open market.",
+      "The artist (Shilpi) became distinct from the artisan (Karigar).",
+      "The technique of oil painting was developed.",
+      "The distinction between elite and popular art widened."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The technique of oil painting was not 'developed' in 19th-century India; rather, it was introduced and popularized by European artists and later adopted by Indian painters like Raja Ravi Varma.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q99",
+    "year": 2022,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "As part of the Look/Act East Policy, which one of the following capitals of North-East Indian States is proposed to be connected with Bangladesh via rail route?",
+    "options": [
+      "Agartala",
+      "Kohima",
+      "Imphal",
+      "Itanagar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Akhaura-Agartala rail link connects the capital of Tripura, Agartala, with Bangladesh to enhance trade and connectivity under the Act East Policy.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "International Relations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q100",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "Which one of the following is correct in respect of the appointment of District Judges?",
+    "options": [
+      "They are appointed by the Chief Justice of the concerned High Court.",
+      "They are appointed by the President of India on the advice of the Chief Justice of the concerned High Court.",
+      "They are appointed by the Governor in consultation with the High Court of the concerned State.",
+      "They are appointed by the Supreme Court on the advice of the concerned High Court."
+    ],
+    "correctAnswer": 2,
+    "explanation": "According to Article 233 of the Indian Constitution, the appointment, posting, and promotion of district judges in any state are made by the Governor of the state in consultation with the High Court exercising jurisdiction in relation to such state.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Judiciary" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q101",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "Consider the following historical events in India carefully:\n1. The Indian press failed to protest against the Vernacular Press Act of 1878.\n2. The Vernacular Press Act of 1878 was introduced by Viceroy Lytton against the counsel of his own Law Member.\nWhich of the above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect because there was strong and widespread protest by the Indian press and nationalist leaders against the Vernacular Press Act of 1878. Statement 2 is correct; Lytton pushed it through despite opposition from some members of his council.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q102",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "Which of the following pairs of years and historical events is correctly matched?",
+    "options": [
+      "1878: Second Anglo-Afghan War",
+      "1885: Ilbert Bill Controversy",
+      "1785: Fox's India Bill",
+      "1898: Lord Curzon becomes the Viceroy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Second Anglo-Afghan War began in 1878. The Ilbert Bill was in 1883. Fox's India Bill was introduced in 1783. Lord Curzon became Viceroy in 1899.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q103",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which of the following sets of Indian States are landlocked and do not have an international boundary?",
+    "options": [
+      "Andhra Pradesh, Chhattisgarh, Haryana, Jharkhand and Madhya Pradesh",
+      "Chhattisgarh, Haryana, Jharkhand, Madhya Pradesh and Telangana",
+      "Chhattisgarh, Haryana, Himachal Pradesh, Madhya Pradesh and Telangana",
+      "Andhra Pradesh, Chhattisgarh, Haryana, Himachal Pradesh and Madhya Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The five completely landlocked states in India that share no international boundary and have no coastline are Haryana, Madhya Pradesh, Chhattisgarh, Jharkhand, and Telangana.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q104",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Arrange the following passes from West to East direction:\n1. Bara Lacha La\n2. Shipki La\n3. Jelep La\n4. Bomdi La",
+    "options": [
+      "1-2-3-4",
+      "1-3-2-4",
+      "2-3-4-1",
+      "2-4-3-1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bara Lacha La is in Himachal Pradesh (Lahaul-Spiti). Shipki La is also in HP but further east near the Tibet border. Jelep La is in Sikkim. Bomdi La is in Arunachal Pradesh. The correct West to East order is 1-2-3-4.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q105",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which of the following statements is/are correct?\n1. The jet streams are high altitude easterly winds.\n2. El Nino is a warm ocean current.\n3. El Nino appears along the Peru coast.",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jet streams are generally high-altitude *westerly* winds, so statement 1 is incorrect. El Nino is an anomalous warming of the ocean water (warm ocean current) that appears along the coast of Peru, making statements 2 and 3 correct.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q106",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Type of plain): A. Bhabar, B. Bhangar, C. Khadar, D. Delta\nList-II (Characteristic feature): 1. Marsh, 2. Silt, 3. Gravels, 4. Kankar",
+    "options": [
+      "A-4, B-3, C-1, D-2",
+      "A-3, B-4, C-2, D-1",
+      "A-2, B-1, C-3, D-4",
+      "A-2, B-3, C-1, D-4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bhabar plain is characterized by gravels and unassorted sediments. Bhangar is older alluvium containing calcareous deposits called Kankar. Khadar is newer alluvium composed of fine silt. Delta regions are characterized by marshes.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q107",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Banking",
+    "text": "A non-banking financial company cannot",
+    "options": [
+      "give loans",
+      "make investments",
+      "borrow from bank",
+      "seek demand deposits from public and cannot issue cheques"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NBFCs lend and make investments and hence their activities are akin to that of banks; however, unlike banks, NBFCs cannot accept demand deposits and do not form part of the payment and settlement system (they cannot issue cheques drawn on themselves).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q108",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Constitutional Amendments",
+    "text": "The Swaran Singh Committee recommended the insertion of which one of the following provisions into the Constitution of India?",
+    "options": [
+      "Doctrine of Pleasure",
+      "Fundamental Duties",
+      "Nomination of Anglo-Indian Members to the Lok Sabha",
+      "Impeachment of the President of India"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Swaran Singh Committee (1976) was constituted to make recommendations about fundamental duties, leading to the 42nd Amendment Act which inserted Article 51A specifying a code of ten fundamental duties.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Amendments" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q109",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Public Finance",
+    "text": "The proceeds from disinvestment are included as",
+    "options": [
+      "non-tax revenue",
+      "revenue receipts",
+      "capital receipts",
+      "tax revenue"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Disinvestment involves the sale or liquidation of assets by the government, leading to a reduction in its assets. Therefore, the proceeds from disinvestment are classified as capital receipts.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Public Finance" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q110",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Taxation",
+    "text": "GST is a/an",
+    "options": [
+      "destination-based consumption tax",
+      "origin-based production tax",
+      "destination-based sales tax on transaction",
+      "origin-based tax on sales transaction"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Goods and Services Tax (GST) is an indirect, multi-stage, comprehensive, destination-based consumption tax. It is levied where the goods or services are consumed rather than where they are produced.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Taxation" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q111",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Macroeconomics",
+    "text": "In the first quarter of fiscal year 2020-21, GDP contracted by 23.9 percent and in the second quarter, by 7.5 percent. The Economic Survey, 2020-21 preferred to call it a recovery in",
+    "options": [
+      "U-shape",
+      "V-shape",
+      "K-shape",
+      "W-shape"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Economic Survey 2020-21 described India's economic rebound post the initial COVID-19 lockdown as a 'V-shaped' economic recovery, supported by a mega vaccination drive.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Macroeconomics" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q112",
+    "year": 2022,
+    "subject": "Economy",
+    "topic": "Indexes and Reports",
+    "text": "Based on the scoring on SDG (Sustainable Development Goals) India Index, the NITI Aayog has classified various States into certain categories. Which one of the following is not one of the categories?",
+    "options": [
+      "Aspirants",
+      "Performers",
+      "Fast runners",
+      "Achievers"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The NITI Aayog classifies States/UTs into four categories based on their SDG score: Aspirant (0-49), Performer (50-64), Front Runner (65-99), and Achiever (100). 'Fast runners' is not a recognized category.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Indexes and Reports" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q113",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "Who among the following is credited with the introduction and popularization of Dhrupad form of music?",
+    "options": [
+      "Raja Man Singh Tomar of Gwalior",
+      "Tansen",
+      "Naik Gopal",
+      "Shaikh Bahauddin of Barnawa"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Raja Man Singh Tomar of Gwalior is traditionally credited with patronizing and significantly popularizing the Dhrupad style of Indian classical music during his reign.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q114",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Post-Independence India",
+    "text": "Who among the following is the author of the famous partition narrative, The Other Side of Silence?",
+    "options": [
+      "Amrita Pritam",
+      "Urvashi Butalia",
+      "Saadat Hasan Manto",
+      "Manju Kapur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'The Other Side of Silence: Voices from the Partition of India' is a highly acclaimed book by feminist writer and publisher Urvashi Butalia.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Post-Independence India" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q115",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "Which one of the following cities on the banks of Ganges declined in importance when the railway link to Bombay started operating?",
+    "options": [
+      "Benaras",
+      "Kanpur",
+      "Mirzapur",
+      "Patna"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mirzapur was a major trading center for cotton on the Ganges. Its economic importance declined significantly when railways began connecting the hinterland directly to Bombay, bypassing riverine trade routes.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q116",
+    "year": 2022,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "When was the first All India Census attempted?",
+    "options": [
+      "1871",
+      "1872",
+      "1881",
+      "1861"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The first census in India was conducted non-synchronously in different parts of the country in 1872 under Lord Mayo. The first synchronous national census was held in 1881.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern History" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q117",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Transport and Communication",
+    "text": "Consider the following statements about the seaports in India:\n1. There are 4 major and 25 minor seaports in India.\n2. The major ports are under the administrative control of the Ministry of Ports, Shipping and Waterways.\n3. The minor ports are under the jurisdiction of respective State Maritime Board/State Government.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1, 2 and 3",
+      "3 only",
+      "1 and 2 only",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statement 1 is incorrect as India has 12 major ports (with Wadhavan being developed as the 13th) and around 200 non-major/minor ports. Statements 2 and 3 are correct regarding their respective jurisdictions.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Transport and Communication" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q118",
+    "year": 2022,
+    "subject": "International Relations",
+    "topic": "International Organizations",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Regional block): A. ASEAN, B. CIS, C. EU, D. OPEC\nList-II (Headquarters): 1. Brussels, 2. Vienna, 3. Minsk, 4. Jakarta",
+    "options": [
+      "A-4, B-3, C-1, D-2",
+      "A-4, B-1, C-3, D-2",
+      "A-2, B-1, C-3, D-4",
+      "A-2, B-3, C-1, D-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ASEAN is headquartered in Jakarta (Indonesia). CIS headquarters is in Minsk (Belarus). The EU's de facto capital/headquarters is Brussels (Belgium). OPEC is headquartered in Vienna (Austria).",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q119",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Solifluction is a geomorphic process involving a special type of soil flow that is noticed in",
+    "options": [
+      "desert regions",
+      "karst regions",
+      "permafrost regions",
+      "savanna regions"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Solifluction is a type of mass wasting where waterlogged soil flows slowly downslope. It is most commonly associated with periglacial environments and permafrost regions where the frozen ground underneath acts as an impermeable layer.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q120",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one of the following geologic time periods is associated with the first appearance of the marsupials?",
+    "options": [
+      "Lower Cretaceous",
+      "Upper Cretaceous",
+      "Early Jurassic",
+      "Middle Jurassic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The first definitive marsupial fossils appear in the geological record during the Early (Lower) Cretaceous period.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q121",
+    "year": 2022,
+    "subject": "Geography",
+    "topic": "Transport and Communication",
+    "text": "Which of the following statements about the Border Roads Organization (BRO) is/are correct?\n1. BRO is concerned with the construction and maintenance of roads in strategically sensitive areas.\n2. BRO undertakes snow clearance in high altitude areas.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "BRO develops and maintains road networks in India's border areas and friendly neighboring countries. They manage strategic border roads and are heavily involved in snow clearance operations in regions like Ladakh and parts of the Himalayas.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Transport and Communication" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q122",
+    "year": 2022,
+    "subject": "International Relations",
+    "topic": "International Organizations",
+    "text": "Which among the following countries is not a member of the North Atlantic Treaty Organization (NATO)?",
+    "options": [
+      "Hungary",
+      "Poland",
+      "Belarus",
+      "Turkey"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Belarus is not a member of NATO; it maintains close political and military ties with Russia. Hungary, Poland, and Turkey are all NATO member states.",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q123",
+    "year": 2022,
+    "subject": "International Relations",
+    "topic": "International Organizations",
+    "text": "Which of the following statements is/are correct?\n1. The 15th ASEAN-India Summit was held virtually in March 2022.\n2. European Union is India's largest regional trading partner.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect (the 15th Summit was held earlier; the 19th was held in 2022). Statement 2 is correct as the European Union represents one of India's largest and most significant regional trading blocs.",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q124",
+    "year": 2022,
+    "subject": "Polity",
+    "topic": "Constitutional/Non-Constitutional Bodies",
+    "text": "What is the term of office of the Chairperson and Members of the National Human Rights Commission?",
+    "options": [
+      "5 years or up to 70 years of age",
+      "3 years or up to 70 years of age",
+      "5 years or up to 65 years of age",
+      "3 years or up to 65 years of age"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Protection of Human Rights (Amendment) Act, 2019 reduced the term of the Chairperson and members of the NHRC from five years to three years or till the age of 70 years, whichever is earlier.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional/Non-Constitutional Bodies" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  },
+  {
+    "id": "pyq-capf-2022-q125",
+    "year": 2022,
+    "subject": "International Relations",
+    "topic": "International Organizations",
+    "text": "Which of the following sets of nations are members of the BIMSTEC Initiative?",
+    "options": [
+      "Bangladesh, Bhutan, Nepal, India and Sri Lanka",
+      "Bangladesh, Bhutan, Nepal, India, Sri Lanka, Thailand and Myanmar",
+      "Bangladesh, Bhutan, Nepal, India, Sri Lanka and Maldives",
+      "Bangladesh, Bhutan, Nepal, India, Myanmar, Sri Lanka and Indonesia"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation (BIMSTEC) comprises seven member states: Bangladesh, Bhutan, India, Nepal, Sri Lanka, Myanmar, and Thailand.",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "International Organizations" },
+      { "type": "pyq", "label": "CAPF 2022" }
+    ]
+  }
+
+]

@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "cisf-2025-q1",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Which one of the following is NOT the reason for the difficulty in estimating the number of languages of the world?",
+    "options": [
+      "New languages continue to be discovered",
+      "There are still unexplored regions",
+      "New languages are considered a dialect of a known language",
+      "People who speak the language do not claim their language"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage mentions new discoveries, unexplored regions, and similarities with known dialects as reasons for difficulty. It does not mention people not claiming their language.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q2",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Which one of the following is a way to establish the discovery of a new language?",
+    "options": [
+      "By establishing contact over a period of time with the speakers of the language",
+      "By finding the similarities of the language with other languages",
+      "By comparing with the lingua franca of the region",
+      "By conducting a survey of all languages of the region"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage explicitly states, 'It takes a language survey to establish the facts' regarding the identity of a new language.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q3",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Which one of the following statements is correct?",
+    "options": [
+      "Language surveys have been conducted by all nations",
+      "There is hardly any language to be discovered in the world",
+      "All the languages are either complete languages or dialects of other major languages",
+      "No new language needs to be discovered since all languages are known to the world"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage strongly implies that languages often initially appear to be dialects of major known languages until established otherwise.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q4",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "'The people may be known, but the identity of their language may not be,' means",
+    "options": [
+      "People are recognised as different ethnic groups but not necessarily their language",
+      "People are recognised as different ethnic groups and their language is recognised",
+      "People are not recognised as different ethnic groups, and so are their languages",
+      "Because the people are not from different ethnic groups and their language is recognised"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This sentence highlights that while an ethnic group of people might be well-known to outsiders, their specific native tongue might remain unidentified due to their bilingual nature.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q5",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Reading Comprehension",
+    "text": "Which one of the following words from passage means 'come to be known'?",
+    "options": [
+      "transpire",
+      "lingua franca",
+      "straight",
+      "variant"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In this context, 'transpire' means to occur, happen, or come to be known/revealed.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q6",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Direct and Indirect Speech",
+    "text": "Convert from direct speech to indirect speech:\nCharu said to her friend, \"I want you to be here at 6.00 p.m. tomorrow for the meeting.\"",
+    "options": [
+      "Charu told her friend that she wanted her to be there at 6.00 p.m. the next day for the meeting",
+      "Charu told her friend that she wanted her to be there at 6.00 p.m. tomorrow for the meeting",
+      "Charu requested her friend that she wanted her to be there at 6.00 p.m. tomorrow for the meeting",
+      "Charu told her friend that she will want her to be here at 6.00 p.m. the next day for the meeting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In indirect speech, 'here' becomes 'there', 'tomorrow' becomes 'the next day', and the present tense 'want' changes to the past tense 'wanted'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Direct and Indirect Speech" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q7",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Direct and Indirect Speech",
+    "text": "Convert from direct speech to indirect speech:\nNitin said to his brother, \"What a beautiful painting it is?\"",
+    "options": [
+      "Nitin wondered to his brother that what a beautiful painting it was",
+      "Nitin wondered before his brother that it was a beautiful painting",
+      "Nitin exclaimed that it is a beautiful painting",
+      "Nitin asked his brother whether it was beautiful painting"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The original sentence is exclamatory (despite the incorrect question mark in the prompt). The reporting verb becomes 'exclaimed'. Option (c) is the most structurally fitting among the choices provided.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Direct and Indirect Speech" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q8",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Direct and Indirect Speech",
+    "text": "Convert from indirect speech to direct speech:\nThe teacher asked her students why they had been quiet in the previous class.",
+    "options": [
+      "The teacher asked her students, \"Why were they keeping quiet in the previous class?\"",
+      "The teacher said to her students, \"Why were you quiet in the previous class?\"",
+      "The teacher said to her students, \"Why had you been quiet in the previous class?\"",
+      "The teacher said to her students, \"Why were you quiet in previous class ?\""
+    ],
+    "correctAnswer": 1,
+    "explanation": "The past perfect continuous 'had been quiet' in indirect speech usually comes from the simple past 'were quiet' in direct speech. 'The previous class' comes from 'the previous class' or 'the last class'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Direct and Indirect Speech" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q9",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Which one of the following sentences is correct?",
+    "options": [
+      "He is considered as the brightest intellectual in the country",
+      "He is considered as one among the brightest intellectual in the country",
+      "He is considered as one among the brighter intellectual in the country",
+      "He is considered as one of the intellectual in the country"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Option (a) is grammatically the most acceptable among the choices, although in strictly formal English, 'considered the brightest' without 'as' is preferred. The others have subject-verb or pluralization errors (e.g., 'one among the brightest intellectual' should be 'intellectuals').",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q10",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Spotting Errors",
+    "text": "Which one of the following sentences is correct?",
+    "options": [
+      "No other mountain is taller than the Himalayas",
+      "No other mountain is tall than the Himalayas",
+      "No other mountains taller than the Himalayas",
+      "No other mountain is taller then the Himalayas"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Option (a) is grammatically perfect, using the comparative degree correctly with 'than'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Spotting Errors" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q11",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Confident and Confidant",
+    "options": [
+      "Confident means certain and confidant means close friend",
+      "Confidant means certain and confident means close friend",
+      "Confident means belief and confidant means an emissary",
+      "Confident means assurance and confidant means intimate person"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Confident' means feeling or showing certainty or assurance. A 'confidant' is an intimate person with whom one shares a secret or private matter.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q12",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Broke and brook",
+    "options": [
+      "Broke means abundance and brook means a flowing water body",
+      "Broke means bankrupt and brook means a stream",
+      "Broke means fractured and brook means nonsense",
+      "Broke means negotiate and brook means a stream"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Broke' colloquially means having completely run out of money (bankrupt). A 'brook' is a small stream.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q13",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Accept and Except",
+    "options": [
+      "Accept means apart from and except means recognise",
+      "Accept means recognise and except means include",
+      "Accept means consent and except means apart from",
+      "Accept means allude and except means apart from"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To 'accept' means to consent to receive or undertake something. 'Except' means not including or apart from.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q14",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Accord and Accrued",
+    "options": [
+      "Accord means collected and accrued means agreement",
+      "Accord means agreement and accrued means arrived",
+      "Accord means accepted and accrued means received",
+      "Accord means agreement and accrued means accumulated"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Accord' means an official agreement or treaty. 'Accrued' refers to something (like a benefit or money) received or accumulated in regular or increasing amounts over time.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q15",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Guarantee and Warranty",
+    "options": [
+      "Guarantee is an agreement and warranty is a service contract",
+      "Guarantee is a business agreement and warranty is a service contract",
+      "Guarantee is a promise and warranty is a service contract",
+      "Guarantee is acceptance and warranty is a service contract"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 'Guarantee' is generally a promise or assurance (often about product quality), whereas a 'Warranty' is a formal written service contract to repair or replace.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q16",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The Constitution of India ensures proportionate representation from all regions.",
+    "options": [
+      "balanced",
+      "partial",
+      "unlikely",
+      "suffragette"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Proportionate means corresponding in size or amount to something else, which is synonymous with 'balanced'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q17",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "There is a feeling of disenchantment among the members of the group.",
+    "options": [
+      "delight",
+      "disappointment",
+      "idealism",
+      "unrelenting"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Disenchantment is a feeling of disappointment about someone or something you previously respected or admired.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q18",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "She believed that it was imminent that he would be chosen as the leader of the group.",
+    "options": [
+      "timely",
+      "distant",
+      "unlikely",
+      "inevitable"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Imminent means about to happen. In this context, 'inevitable' (certain to happen) is the closest synonym among the given options.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q19",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The brave soldiers left an indelible impression on the people of the land.",
+    "options": [
+      "permanent",
+      "fleeting",
+      "hilarious",
+      "eradicable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Indelible means making marks that cannot be removed, or not able to be forgotten. 'Permanent' is the exact synonym.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q20",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Synonyms",
+    "text": "The manager always provides instantaneous replies to all queries.",
+    "options": [
+      "immediate",
+      "delayed",
+      "deliberate",
+      "unwanted"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Instantaneous means occurring or done in an instant or instantly. 'Immediate' is the correct synonym.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Synonyms" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q21",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "S1: Although all sources of energy ultimately come from natural processes, non-renewable resources cannot be replaced naturally at the rate they are being used.\nS6: The sustainable use of natural resources in a manner that provides the maximum benefit of these resources to humans over a period of time can be termed as conservation.\nP: This will increase the time and cost of mining and once these resources are used up they cannot be replaced.\nQ: Hence, we must remember that though our country is rich in mineral deposits these resources are short-lived.\nR: Extraction of these ores through the process of mining will soon become difficult and very expensive because these minerals have to be mined from greater depths over time.\nS: Mineral resources can be said to be finite and non-renewable.",
+    "options": [
+      "QPRS",
+      "SPQR",
+      "SQRP",
+      "SQPR"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The logical flow begins by introducing mineral resources as finite (S). This is followed by the difficulty of extracting them over time (R), which increases the time and cost of mining (P). The conclusion is that we must remember they are short-lived (Q), linking directly to S6.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q22",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "S1: India, at present, has one of the largest road networks in the world.\nS6: It passes through Howrah, Delhi and Amritsar and terminates in Kabul (Afghanistan).\nP: The importance of roads has been recognised in India since the ancient times.\nQ: The Grand Trunk Road was built by Sher Shah Suri across the Indo-Gangetic plain, from Chittagong (Bangladesh) to Peshawar (Pakistan).\nR: Kings such as Ashoka and Chandragupta built roads for easy transportation of goods and people.\nS: Construction of roads continued as an important activity in the late medieval period.",
+    "options": [
+      "QPRS",
+      "SPQR",
+      "PQRS",
+      "PRSQ"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The flow starts by recognizing road importance since ancient times (P), then gives examples of ancient kings (R), moves chronologically to the medieval period (S), and gives a specific example of the Grand Trunk Road (Q), which links perfectly to S6 'It passes through...'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q23",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "S1: National highways connect one state with another and are of national importance.\nS6: These road systems are also known as primary road systems and are laid and operated under the supervision of the National Highway Authority of India.\nP: They are important because whereas they constitute merely two per cent of the total road networks, they nevertheless carry 40 per cent of the total road traffic.\nQ: The road infrastructure of the country is therefore crucial, and their construction and maintenance is of critical importance.\nR: They bear the load of traffic because these roads connect long distances and pass through major cities and towns.\nS: Since they cover the length and breadth of the nation and connect cities and towns, these highways are the primary facilitators of trade and connectivity.",
+    "options": [
+      "PRSQ",
+      "SPQR",
+      "PRQS",
+      "SQRP"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage logically flows from the broad purpose of highways (S), to why they bear heavy traffic (Q), followed by their specific traffic load statistics (R, P). Sequence SQRP provides the most coherent flow.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q24",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "S1: The South African Constitution was inaugurated in December 1996.\nS6: A special constitutional court enforces the rights enshrined in the Constitution.\nP: Its creation and promulgation took place at a time when South Africa still faced the threat of a civil war after the dissolution of the Apartheid Government.\nQ: The South African Constitution says that its \"Bill of Rights is a cornerstone of democracy in South Africa.\"\nR: Apropos, it forbids discrimination on the grounds of \"race, gender, pregnancy, marital status, ethnic or social origin, colour, age, disability, religion, conscience, belief, culture, language and birth\".\nS: The Bill of Rights grants perhaps the most extensive range of rights to the citizens.",
+    "options": [
+      "QSRP",
+      "SPQR",
+      "PQRS",
+      "PQSR"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The flow starts with the context of the constitution's creation (P). Then it introduces the Bill of Rights (Q), describes its extensive nature (S), and details the anti-discrimination aspects (R). Thus, PQSR.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q25",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "S1: Our Constitution reminds us of the necessity of representation in a large democracy.\nS6: Elections have today become the most visible symbol of the democratic process.\nP: This is why elections become important.\nQ: Therefore representatives are elected by the people.\nR: Whenever we think of India as a democracy, our mind invariably turns to our successful elections.\nS: All citizens cannot participate in taking every decision.",
+    "options": [
+      "QSRP",
+      "SPQR",
+      "PQSR",
+      "SQPR"
+    ],
+    "correctAnswer": 3,
+    "explanation": "S1 introduces the necessity of representation. S explains why: all citizens cannot participate. Q follows logically: therefore representatives are elected. P concludes the thought: this is why elections become important. R links this to India, leading to S6. Sequence is SQPR.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q26",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ your transfer request is concerned, we'll be discussing it at the next meeting.",
+    "options": [
+      "As far as",
+      "To begin with",
+      "By the way",
+      "Talking about"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The phrase 'As far as [something] is concerned' is standard English usage to introduce a topic of discussion.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q27",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ did you know Ravi has a new job?",
+    "options": [
+      "In the meanwhile",
+      "By the way",
+      "Engagingly",
+      "As a result"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'By the way' is a discourse marker used to introduce a new, often unrelated, topic into a conversation.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q28",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ the wind, it was getting stronger, and I was getting colder.",
+    "options": [
+      "To begin with",
+      "By the way",
+      "First of all",
+      "Speaking of"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Speaking of' is used to introduce a topic that relates to something that has just been mentioned or is currently relevant.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q29",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ what are you doing in my room?",
+    "options": [
+      "On the other hand",
+      "Excuse me",
+      "Look there",
+      "Eventually"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Excuse me' is used here as an interjection to express surprise, indignation, or to get someone's attention aggressively.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q30",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ an unhappy childhood leads to criminal behaviour.",
+    "options": [
+      "Still if",
+      "Even somewhat",
+      "In some cases",
+      "In progression"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'In some cases' fits grammatically and logically, indicating that this causality is not absolute but happens occasionally.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q31",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ the problem is nothing but a wrong assumption about processes.",
+    "options": [
+      "For one thing",
+      "Somewhat",
+      "In the first place",
+      "In other words"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'In other words' is used to introduce a restatement or a simplified explanation of a previously stated concept.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q32",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "Many, _______, hesitate to publicly broach such question for fear of nurturing discrimination.",
+    "options": [
+      "understandably",
+      "despite",
+      "until",
+      "of course"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Understandably' fits naturally as an adverb modifying the entire clause, meaning it is logical that they would hesitate.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q33",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ one notes that in the nineteenth century an important development of reflection and questioning gained momentum.",
+    "options": [
+      "Particularly speaking",
+      "Generally speaking",
+      "Otherwise",
+      "Of course"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Generally speaking' is a common discourse marker used to introduce a broad observation or summary.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q34",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ the situation has completely transformed over the past few years.",
+    "options": [
+      "Somewhat",
+      "Believably",
+      "Thus",
+      "Predominantly"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Predominantly' (meaning mostly or largely) or 'Thus' could fit, but as a sentence starter reflecting a comprehensive change, 'Predominantly' or 'Thus' are options. Given the context of a transformation, 'Thus' acts as a conclusion, but 'Predominantly' modifies the extent.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q35",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Discourse Markers",
+    "text": "_______ the committee is of the opinion that all academic matters will be discussed in the Executive Body Meeting.",
+    "options": [
+      "Hence",
+      "But",
+      "Later",
+      "Although"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Hence' is used to draw a conclusion or show the result of preceding statements, fitting perfectly in a formal committee resolution context.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Discourse Markers" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q36",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Cynosure:",
+    "options": [
+      "Person or thing that causes a change",
+      "Person or thing that attracts a lot of attention",
+      "Person or thing regarded as exact copy",
+      "Person or animal that lives in a particular place"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A cynosure is a person or thing that is the center of attention or admiration.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q37",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Coeval:",
+    "options": [
+      "Person of roughly the same age",
+      "Person or organisation that cooperates with others",
+      "Person employed to drive a private car",
+      "Person employed in taking census"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coeval means having the same age or date of origin; a contemporary.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q38",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Retrogression:",
+    "options": [
+      "Sudden sharp drop in price",
+      "Reverse pressure",
+      "Return to earlier state",
+      "Sudden occurrence of a past event"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Retrogression refers to the process of returning to an earlier state, typically a worse one.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q39",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Imprest:",
+    "options": [
+      "Surprise attack by people",
+      "Money used to manage small expenses",
+      "Sudden occurrence of laughter",
+      "Sudden increase in activity"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An imprest is a fund used by a business for small items of expenditure and restored to a fixed amount periodically (petty cash).",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q40",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Vocabulary",
+    "text": "Turgid:",
+    "options": [
+      "Determined or loyal",
+      "Dirty or untidy",
+      "Swollen or distended",
+      "Excited or upset"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Turgid means swollen and distended or congested.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Vocabulary" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q41",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the following parts: participate in the function (P) / many of the people who had come to (Q) / the auditorium was over-crowded (R) / could not find a seat because (S)",
+    "options": [
+      "PRQS",
+      "PQRS",
+      "QPSR",
+      "SPRQ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct logical order is QPSR: 'Many of the people who had come to (Q) participate in the function (P) could not find a seat because (S) the auditorium was over-crowded (R).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q42",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the following parts: lay outside her existing life (P) / she knew that the answer (Q) / somewhere in the back of her mind (R) / to her questions about life (S)",
+    "options": [
+      "RPQS",
+      "QSPR",
+      "QPSR",
+      "RQSP"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The correct logical order is RQSP: 'Somewhere in the back of her mind (R) she knew that the answer (Q) to her questions about life (S) lay outside her existing life (P).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q43",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the following parts: works of literature (P) / inside the pages of all good (Q) / lies the truth about some of the more (R) / challenging questions posed by humanity (S)",
+    "options": [
+      "PRQS",
+      "QPRS",
+      "QPSR",
+      "RPSQ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct logical order is QPRS: 'Inside the pages of all good (Q) works of literature (P) lies the truth about some of the more (R) challenging questions posed by humanity (S).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q44",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the following parts: takes on account of its economic successes (P) / to address continuing social inequality (Q) / for every stride of progress any nation (R) / it takes two back if it is unable (S)",
+    "options": [
+      "PRQS",
+      "QPRS",
+      "RPSQ",
+      "RPQS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The correct logical order is RPSQ: 'For every stride of progress any nation (R) takes on account of its economic successes (P) it takes two back if it is unable (S) to address continuing social inequality (Q).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q45",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Sentence Ordering",
+    "text": "Rearrange the following parts: the book-value of a loan or (P) / used to periodically lower (R) / an intangible asset over a set period of time (Q) / amortisation is an accounting technique (S)",
+    "options": [
+      "SRPQ",
+      "RSPQ",
+      "SRQP",
+      "RPSQ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct logical order is SRPQ: 'Amortisation is an accounting technique (S) used to periodically lower (R) the book-value of a loan or (P) an intangible asset over a set period of time (Q).'",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Sentence Ordering" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q46",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "There is more than _______ to get the job done.",
+    "options": [
+      "one way",
+      "one ways",
+      "any ways",
+      "any way"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The phrase 'more than one way' is grammatically correct; 'one' must be followed by a singular noun.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q47",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The class decided to organise _______.",
+    "options": [
+      "picnic",
+      "a picnic",
+      "picnics",
+      "the picnic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The singular countable noun 'picnic' requires an indefinite article 'a' in this general context.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q48",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The accused _______ before the judge.",
+    "options": [
+      "tried",
+      "was trial",
+      "sat trial",
+      "stood trial"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To 'stand trial' is the correct legal idiom meaning to be judged in a court of law.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q49",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "The manner in which the demolitions have been carried out _______ scrutiny by the High Court.",
+    "options": [
+      "was under",
+      "under",
+      "is under",
+      "however under"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The subject is 'The manner' (singular), requiring the singular present tense verb 'is' to match the present perfect 'have been carried out'.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q50",
+    "year": 2025,
+    "subject": "English",
+    "topic": "Fill in the blanks",
+    "text": "I _______ consider the opinions of all stakeholders before taking a final decision.",
+    "options": [
+      "will not",
+      "have",
+      "will",
+      "shall"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Will' (or 'shall') acts as the correct modal verb here. 'Will' is generally preferred in modern English to express determination or future intent.",
+    "tags": [
+      { "type": "subject", "label": "English" },
+      { "type": "topic", "label": "Fill in the blanks" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q51",
+    "year": 2025,
+    "subject": "History",
+    "topic": "World History",
+    "text": "Which of the following main industry/industries was/were developed in the second industrial revolution that took place after about 1850?",
+    "options": [
+      "Coal and iron",
+      "Cotton spinning and weaving",
+      "Chemical and electrical",
+      "Steam engines"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Second Industrial Revolution (late 19th and early 20th centuries) is characterized by the expansion of electricity, petroleum, and chemical industries.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q52",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which among the following materials was used in making the Harappan seals?",
+    "options": [
+      "Sandstone",
+      "Lapis lazuli",
+      "Jasper",
+      "Steatite"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The vast majority of Harappan seals were made from steatite, a soft soapstone that was easy to carve.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q53",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one among the following mahajanapadas in ancient India was an oligarchy?",
+    "options": [
+      "Vajji",
+      "Kosala",
+      "Gandhara",
+      "Magadha"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Vajji (or Vriji) mahajanapada was a confederacy of neighboring clans (an oligarchy/republic or Gana-Sangha), unlike Magadha or Kosala which were monarchies.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q54",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Art and Culture",
+    "text": "Which one of the following sculptures found at Sanchi Stupa is NOT directly inspired by Buddhist ideas?",
+    "options": [
+      "Empty seat",
+      "Shalbhanjika",
+      "Tree",
+      "Wheel"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Shalbhanjika (a woman holding a tree branch) is a pre-Buddhist, popular fertility and auspicious motif that was incorporated into Buddhist art at Sanchi.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q55",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "In British India, which one among the following Acts permitted detention without trial for up to two years?",
+    "options": [
+      "Regulating Act, 1773",
+      "Rowlatt Act, 1919",
+      "Pitt's India Act, 1784",
+      "Government of India Act, 1935"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Anarchical and Revolutionary Crimes Act of 1919, popularly known as the Rowlatt Act, authorized the British to imprison suspects without trial for up to two years.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q56",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Post-Independence India",
+    "text": "Which one of the following statements about the Bhoodan Movement is correct?",
+    "options": [
+      "The target was to get one-sixth of cultivable land in India as donation",
+      "It was approved through a Central Government Act",
+      "It was ensured that the donated land was free from all litigation",
+      "The first donation of land was in Bihar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vinoba Bhave's Bhoodan Movement aimed to collect 50 million acres of land (roughly one-sixth of India's cultivable land at the time) to distribute to the landless. The first donation was in Pochampally, Telangana, not Bihar.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Post-Independence India" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q57",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Local Self-Government",
+    "text": "The Constitution (Seventy-third Amendment) Act provides for",
+    "options": [
+      "an elaborate system of establishing municipal self-government",
+      "an elaborate system of establishing panchayats as units of self-government",
+      "establishing a Commission for Linguistic Minorities",
+      "the creation of the Jharkhand State"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 73rd Amendment Act, 1992 added Part IX to the Constitution, providing a constitutional framework for Panchayati Raj Institutions (rural local self-government).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Local Self-Government" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q58",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Governance",
+    "text": "BHARATPOL portal has been developed by",
+    "options": [
+      "The Election Commission of India",
+      "The Central Bureau of Investigation",
+      "The Enforcement Directorate",
+      "The Securities and Exchange Board of India"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Central Bureau of Investigation (CBI), functioning as the National Central Bureau for Interpol in India, manages the BHARATPOL (or similar Interpol-coordinated) intelligence portals.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Governance" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q59",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Which one of the following statements about the Parliament of India is correct?",
+    "options": [
+      "A majority of members of Rajya Sabha are elected by a system of proportional representation by means of single transferable vote",
+      "The Deputy Chairperson of the Rajya Sabha is nominated by the President from among the members of the Rajya Sabha",
+      "The Lok Sabha cannot be dissolved before the completion of its five year term",
+      "The members of Lok Sabha also vote in the election of the members of Rajya Sabha"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Members of the Rajya Sabha are elected by the elected members of State Legislative Assemblies in accordance with the system of proportional representation by means of the single transferable vote.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Parliament" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q60",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Foreign Policy",
+    "text": "Which one among the following does NOT figure among the Five Principles of Panchsheel?",
+    "options": [
+      "Mutual respect for each other's territorial integrity and sovereignty",
+      "Equality and mutual benefit",
+      "Peaceful coexistence",
+      "Nuclear non-proliferation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Five Principles of Peaceful Coexistence (Panchsheel) include mutual respect, mutual non-aggression, mutual non-interference, equality, and peaceful co-existence. Nuclear non-proliferation is not one of them.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Foreign Policy" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q61",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Maize (makka) was introduced into India in the seventeenth century via",
+    "options": [
+      "Portugal",
+      "Africa and Spain",
+      "China and Mongolia",
+      "Turkey"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Portuguese introduced maize (along with potatoes, tomatoes, and tobacco) to India from the New World.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q62",
+    "year": 2025,
+    "subject": "Economy",
+    "topic": "Economic Planning",
+    "text": "Match List I with List II and select the answer using the code given below the Lists:\nList I (Five Year Plan):\nA. Fifth Five Year Plan\nB. Seventh Five Year Plan\nC. Ninth Five Year Plan\nD. Eleventh Five Year Plan\nList II (Objective):\n1. Towards Faster and More Inclusive Growth\n2. Garibi Hatao (Removal of Poverty)\n3. Food, Work and Productivity\n4. Growth with Social Justice and Equality",
+    "options": [
+      "A-1, B-4, C-3, D-2",
+      "A-2, B-3, C-4, D-1",
+      "A-2, B-4, C-3, D-1",
+      "A-1, B-3, C-4, D-2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fifth Plan focused on Garibi Hatao (A-2). Seventh Plan focused on Food, Work, and Productivity (B-3). Ninth Plan focused on Growth with Social Justice and Equality (C-4). Eleventh Plan focused on Faster and More Inclusive Growth (D-1).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Economic Planning" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q63",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval Literature",
+    "text": "Which of the following statements about Srimanta Shankardeva is/are correct?\n1. In the late fifteenth century Shankardeva emerged as one of the leading proponents of Vaishnavism in Assam\n2. He was the founder of Gaudiya Vaishnavism\n3. His teachings are known as Bhagavati Dharma\n4. He encouraged the establishment of satra and naam ghar",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Srimanta Shankardeva founded Ekasarana Dharma (not Gaudiya Vaishnavism, which was founded by Chaitanya Mahaprabhu). Statements 1, 3, and 4 are correct attributes of his life and teachings in Assam.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Literature" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q64",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "At which one among the following places did the British East India Company found its factory in the year 1611?",
+    "options": [
+      "Madras",
+      "Masulipatam",
+      "Bombay",
+      "Balasore"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The British East India Company established its first factory in South India at Masulipatam (Machilipatnam) in 1611.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q65",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Indian National Movement",
+    "text": "Chronologically arrange the following political events related to Indian National Movement beginning from the earliest:\n1. Formation of Swaraj Party\n2. Communal Award\n3. Lucknow Pact\n4. Simla Conference",
+    "options": [
+      "3, 1, 2, 4",
+      "1, 3, 2, 4",
+      "2, 1, 4, 3",
+      "1, 2, 3, 4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lucknow Pact (1916), Formation of Swaraj Party (1923), Communal Award (1932), Simla Conference (1945). The chronological order is 3, 1, 2, 4.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Indian National Movement" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q66",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Constitutional History",
+    "text": "Which among the following Acts provided for the establishment of a Supreme Court of Justice at Calcutta for Europeans, their employees and the citizens of India?",
+    "options": [
+      "The Regulating Act of 1773",
+      "The Charter Act of 1793",
+      "The Charter Act of 1813",
+      "Government of India Act of 1858"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Regulating Act of 1773 established the Supreme Court of Judicature at Fort William, Calcutta.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Constitutional History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q67",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Who, among the following, has introduced a resolution in 1882 which is also called the Magna Carta of Local Self-Government in India?",
+    "options": [
+      "Lord Macaulay",
+      "Lord Canning",
+      "Lord Ripon",
+      "Lord William Bentinck"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lord Ripon's Resolution of 1882 is widely hailed as the Magna Carta of local self-government in India.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q68",
+    "year": 2025,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Which one of the following terms is associated with the practice of Sufism?",
+    "options": [
+      "Jizya",
+      "Ijma",
+      "Muqaddam",
+      "Murid"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In Sufism, a 'murid' refers to a disciple or seeker who pledges allegiance to a spiritual guide (murshid).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q69",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "Political Theory",
+    "text": "Consider the following features:\n1. Consent of the governed\n2. Political equality\n3. Accountability of the ruled to the ruler\nWhich of the above feature/features outline democratic rule ?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Democracy requires the consent of the governed and political equality. Statement 3 is authoritarian; in a democracy, the ruler is accountable to the ruled, not vice versa.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Political Theory" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q70",
+    "year": 2025,
+    "subject": "Polity",
+    "topic": "World History",
+    "text": "Placing the earliest first, arrange the following countries in the chronological order in which they granted universal adult franchise:\n1. USA\n2. Sri Lanka\n3. Japan\n4. India",
+    "options": [
+      "1, 2, 3, 4",
+      "2, 3, 4, 1",
+      "1, 3, 4, 2",
+      "3, 4, 1, 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sri Lanka granted universal suffrage in 1931. Japan in 1945. India in 1950. The USA secured full universal suffrage (protecting minority rights comprehensively) via the Voting Rights Act in 1965.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "World History" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q71",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "The molecules of soap are sodium or potassium salts of long chain fatty acids",
+      "The molecules of soap contain both hydrophobic and hydrophilic ends",
+      "Detergents are more effective than soaps in hard water",
+      "In micelles the ionic-end of the molecules is towards oil droplet while the other end faces outside"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In a micelle, the hydrophobic (hydrocarbon) tail points inwards towards the oil droplet, while the hydrophilic (ionic) head faces outwards towards the water. Option (d) reverses this.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q72",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following statements is correct?",
+    "options": [
+      "A neutron is formed by combination of an electron and a proton. Therefore, it is neutral",
+      "The mass of an electron is about 1/2000 times that of a proton",
+      "An isotope of cobalt is used in the treatment of goiter",
+      "J. J. Thomson proposed that the nucleus of an atom contains only neutrons"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The mass of an electron is roughly 1/1836 (about 1/2000) of the mass of a proton. (Iodine is used for goiter, not cobalt. Thomson proposed the plum pudding model, not the nucleus).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q73",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following particles in the nucleus of an atom was discovered by J. Chadwick?",
+    "options": [
+      "Electron",
+      "Proton",
+      "Positron",
+      "Neutron"
+    ],
+    "correctAnswer": 3,
+    "explanation": "James Chadwick discovered the neutron in 1932.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q74",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following findings is NOT observed in Rutherford's Nuclear Model of Atom?",
+    "options": [
+      "There is a neutral centre in an atom called nucleus",
+      "Nearly all the mass of an atom resides in the nucleus",
+      "The electrons revolve around the nucleus in a circular path",
+      "The size of a nucleus is very small as compared to the size of atom"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rutherford proposed a *positively* charged center in an atom called the nucleus, not a neutral one.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q75",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Element X forms a chloride with the formula XCl2 which is a solid with high melting point. X would most likely be in the same group of periodic table as",
+    "options": [
+      "Na",
+      "Al",
+      "Mg",
+      "K"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The formula XCl2 indicates that X has a valency of 2 (it forms a +2 cation). Alkaline earth metals like Magnesium (Mg) belong to Group 2 and form such chlorides (e.g., MgCl2).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q76",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following oxides is a neutral oxide ?",
+    "options": [
+      "CO",
+      "CO2",
+      "Na2O",
+      "MgO"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Carbon monoxide (CO) is a classic example of a neutral non-metal oxide. CO2 is acidic, while Na2O and MgO are basic.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q77",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following is also known as Dry ice in its solid form?",
+    "options": [
+      "SiO2",
+      "CO2",
+      "CaO",
+      "MgO"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Solid carbon dioxide (CO2) is commonly known as dry ice.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q78",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "A scale measuring hydrogen ion concentration in a solution is called pH scale",
+      "The higher the hydrogen ion concentration in a solution, higher is its pH",
+      "We can measure pH generally from 0 to 14 on a pH scale",
+      "The 'p' in pH stands for 'potenz' in German meaning power"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The pH scale is logarithmic and inversely indicates the concentration of hydrogen ions. A higher concentration of hydrogen ions yields a LOWER pH value (more acidic).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q79",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "Half mole of nitrogen gas is measured 11.2 litre at STP",
+      "17 gram of ammonia gas contains 6.022x10^23 molecules at STP",
+      "22.4 litre of CO2 gas at STP contains 44 gram of molecules",
+      "4 gram of hydrogen gas contains 6.022x10^23 molecules"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hydrogen gas (H2) has a molar mass of 2 g/mol. Therefore, 4 grams of hydrogen gas is 2 moles, which contains 2 * (6.022x10^23) molecules, not just 6.022x10^23.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "cisf-2025-q80",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements about a compound is NOT correct?",
+    "options": [
+      "A compound is a substance composed of two or more elements, chemically combined in a fixed proportion",
+      "Properties of a compound are different from its constituent elements",
+      "A compound is an impure substance",
+      "The constituents of a compound can be separated only by chemical or electrochemical reactions"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A compound is a pure substance, not an impure substance. Impure substances are mixtures.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "CISF AC(EXE)LDCE 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q81",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Match List I with List II and select the answer using the code given below the Lists:\nList I (Chemical Name):\nA. Washing soda\nB. Baking soda\nC. Bleaching powder\nD. Gypsum\nList II (Chemical Formula):\n1. CaOCl2\n2. NaHCO3\n3. Na2CO3·10H2O\n4. CaSO4·2H2O",
+    "options": [
+      "A-4, B-2, C-1, D-3",
+      "A-4, B-1, C-2, D-3",
+      "A-3, B-1, C-2, D-4",
+      "A-3, B-2, C-1, D-4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Washing soda is Sodium carbonate decahydrate (A-3). Baking soda is Sodium bicarbonate (B-2). Bleaching powder is Calcium oxychloride (C-1). Gypsum is Calcium sulfate dihydrate (D-4).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q82",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following nitrogen oxides may dimerize?",
+    "options": [
+      "N2O",
+      "NO2",
+      "N2O3",
+      "N2O5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nitrogen dioxide (NO2) has an odd number of valence electrons (an unpaired electron). It readily dimerizes to form dinitrogen tetroxide (N2O4) to pair up this electron and achieve stability.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q83",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements regarding oxidation and reduction reactions is NOT correct?",
+    "options": [
+      "If a substance loses hydrogen during reaction, it is reduced",
+      "If a substance loses oxygen during reaction, it is reduced",
+      "If a substance gains hydrogen during reaction, it is reduced",
+      "If a substance gains oxygen during reaction, it is oxidized"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Loss of hydrogen is classically defined as oxidation, not reduction. Therefore, the statement 'If a substance loses hydrogen during reaction, it is reduced' is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q84",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Match List I with List II and select the answer using the code given below the Lists:\nList I (Physical Quantity):\nA. Temperature\nB. Weight\nC. Mass\nD. Pressure\nList II (SI Unit):\n1. Kelvin\n2. Kilogram\n3. Pascal\n4. Newton",
+    "options": [
+      "A-1, B-2, C-4, D-3",
+      "A-3, B-4, C-2, D-1",
+      "A-1, B-4, C-2, D-3",
+      "A-3, B-2, C-4, D-1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Temperature is measured in Kelvin (A-1). Weight is a force, measured in Newtons (B-4). Mass is measured in Kilograms (C-2). Pressure is measured in Pascals (D-3).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q85",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Environment",
+    "text": "For acid rain, the pH of rain water should be less than",
+    "options": [
+      "7.0",
+      "6.6",
+      "5.6",
+      "8.0"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Normal, unpolluted rain is slightly acidic with a pH of about 5.6 due to dissolved carbon dioxide. Rain is classified as acid rain only when its pH drops below 5.6.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Environment" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q86",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Consider the following lines of Longitude and Latitude:\n1. Prime Meridian\n2. Tropic of Cancer\n3. Equator\nWhich of the above lines is/are a Great Circle?",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "1 and 3 only",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A Great Circle divides the Earth into two equal hemispheres. The Equator (3) is the only line of latitude that is a great circle. All meridians of longitude, including the Prime Meridian (1), form half of a great circle (or a full one when paired with their anti-meridian). The Tropic of Cancer is a small circle.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q87",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following is the correct ascending order of the given minerals in terms of their presence in the Earth's crust?\n1. Amphibolite\n2. Mica\n3. Pyroxene\nSelect the answer using the code given below:",
+    "options": [
+      "2, 3, 1",
+      "1, 2, 3",
+      "2, 1, 3",
+      "1, 3, 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In terms of abundance in the Earth's crust: Mica (~4%), Amphibole (~5%), and Pyroxene (~11%). Therefore, the ascending order (lowest to highest) is Mica, Amphibolite, Pyroxene (2, 1, 3).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q88",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which of the following is/are the applied forces in mechanical weathering process?\n1. Gravitational force\n2. Expansion force\n3. Force due to water pressure\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mechanical (physical) weathering involves the physical breakdown of rocks. Gravitational forces (causing rock falls), expansion forces (due to temperature changes or unloading), and water pressure (like frost wedging or moving water) are all active forces in this process.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Geomorphology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q89",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "Which of the following is/are cold ocean current/currents?\n1. Alaska Current\n2. North Atlantic Drift\n3. West Wind Drift\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2",
+      "2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Alaska Current and North Atlantic Drift are warm ocean currents. The West Wind Drift (Antarctic Circumpolar Current) is a cold ocean current.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Oceanography" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q90",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which one of the following latitudes will experience a minimum angle of the Sun's rays when it is Summer Solstice in the Northern Hemisphere?",
+    "options": [
+      "Arctic Circle",
+      "Equator",
+      "Tropic of Cancer",
+      "Tropic of Capricorn"
+    ],
+    "correctAnswer": 3,
+    "explanation": "During the Northern Hemisphere's Summer Solstice (June 21), the sun is directly overhead at the Tropic of Cancer (90°). The further south you go from this point, the lower the angle of the sun's rays. Among the choices, the Tropic of Capricorn (23.5°S) is the furthest south, thus experiencing the minimum angle.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q91",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which of the following statements with reference to Coriolis force is/are correct?\n1. Coriolis force acts perpendicular to the pressure gradient force\n2. At the equator, the Coriolis force is zero and the wind blows perpendicular to the isobars\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The Coriolis force acts perpendicular to both the velocity vector and the pressure gradient force. It is maximum at the poles and zero at the equator, meaning winds at the equator flow directly across isobars (perpendicular to them) under the influence of pressure gradient alone.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q92",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Which of the following statements with reference to Sleet is/are correct?\n1. Sleet is frozen raindrops and refrozen melted snow-water\n2. It occurs when a layer of air with the temperature below freezing point overlies a warm layer near the ground surface\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct; sleet consists of frozen raindrops or refrozen melted snow. Statement 2 is inverted: sleet forms when a layer of *warm* air overlies a *sub-freezing* layer of air near the ground, causing falling rain/melted snow to freeze before hitting the surface.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q93",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "World Climate",
+    "text": "Humid Subtropical Climate is NOT experienced in which one among the following regions?",
+    "options": [
+      "Coastal South Africa",
+      "East coast of Australia",
+      "South Japan",
+      "South Argentina"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Humid Subtropical climates are typically found on the eastern sides of continents between 20° and 35° latitude (e.g., eastern Australia, southern Japan, eastern South Africa). South Argentina (Patagonia) is characterized by an arid/semi-arid cold desert climate.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Climate" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q94",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Mahendragiri, the highest peak of the Eastern Ghats, is located in which one of the following states?",
+    "options": [
+      "Andhra Pradesh",
+      "Odisha",
+      "Telangana",
+      "Tamil Nadu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mahendragiri (1,501 meters) is a major peak in the Eastern Ghats, located in the Gajapati district of Odisha.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Geography" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q95",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Vegetation",
+    "text": "Temperate forests of South India, known as 'Sholas' are found in which of the following hills?\n1. Anaimalai\n2. Nilgiris\n3. Palani\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sholas are patches of stunted tropical montane forest found in valleys amid rolling grassland in the higher montane regions of South India, specifically in the Nilgiris, Anaimalai, and Palani hills.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Vegetation" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q96",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Resources",
+    "text": "As per the Annual Report 2023-24 of the Ministry of Mines, Government of India, which of the following states are the major producer of Copper in the country?",
+    "options": [
+      "Rajasthan and Gujarat",
+      "Rajasthan and Madhya Pradesh",
+      "Jharkhand and Rajasthan",
+      "Jharkhand and Madhya Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Madhya Pradesh (Malanjkhand belt) and Rajasthan (Khetri belt) are the top two states in India for copper ore production.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Resources" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q97",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Resources",
+    "text": "Which one among the following is NOT a major oil field located in Gujarat?",
+    "options": [
+      "Ankaleshwar",
+      "Kosamba",
+      "Mehsana",
+      "Moran"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Moran (Moran-Hugrijan) is an important oilfield located in Assam, not Gujarat. Ankaleshwar, Kosamba, and Mehsana are situated in Gujarat.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Resources" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q98",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "As per the Land Revenue Records, any land is categorized as Culturable Waste-Land if it is left fallow (uncultivated) for more than",
+    "options": [
+      "2 years",
+      "3 years",
+      "4 years",
+      "5 years"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In Indian land-use classification, land left uncultivated for more than five agricultural years is termed 'Culturable Waste-Land'.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q99",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "Which one among the following is NOT included in the National Food Security Mission Commercial Crops (NFSM-CC)?",
+    "options": [
+      "Cotton",
+      "Coffee",
+      "Jute",
+      "Sugar cane"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The NFSM-Commercial Crops program specifically targets the enhancement of production for Jute, Cotton, and Sugarcane. Coffee is not included under this specific mission.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q100",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Industry",
+    "text": "Consider the following statements with regard to a steel plant:\nI. It was setup in 1964 with Russian collaboration\nII. It receives iron ore from the Rourkela region\nIII. Water and Hydel power is supplied by the Damodar Valley Corporation\nIdentify the Steel Plant on the basis of the above facts:",
+    "options": [
+      "Bhilai Steel Plant",
+      "Bokaro Steel Plant",
+      "Rourkela Steel Plant",
+      "Durgapur Steel Plant"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Bokaro Steel Plant (in Jharkhand) was established in 1964 with Soviet (Russian) collaboration, receives water/power from the DVC, and iron ore from the Keonjhar/Rourkela region.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Industry" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q101",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Transport",
+    "text": "An offshore terminal at Vadinar has been developed to reduce pressure from which of the following major ports in India?",
+    "options": [
+      "Kandla Port",
+      "Cochin Port",
+      "Mormugao Port",
+      "New Mangalore Port"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vadinar, located in the Gulf of Kutch, was developed as an offshore oil terminal specifically to relieve congestion and handle crude oil traffic for the nearby Kandla Port (Deendayal Port).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Transport" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q102",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Indian Forests",
+    "text": "As per the India State of Forest Report 2021, which one of the following Himalayan states has the highest percentage of its geographical area under forest?",
+    "options": [
+      "Arunachal Pradesh",
+      "Himachal Pradesh",
+      "Sikkim",
+      "Uttarakhand"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Arunachal Pradesh has approximately 79.33% of its total geographical area under forest cover, which is the highest among the listed Himalayan states.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Indian Forests" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q103",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which of the following statements with reference to L-Wave or Long Wave generated by an earthquake is/are correct?\n1. They follow the Earth's circumference\n2. They travel at more or less at a constant rate\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "L-waves (Love waves or surface waves) travel along the surface/circumference of the Earth and generally travel at a relatively constant velocity compared to body waves. Both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q104",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following is formed when volcanic ash is carried by running water and is deposited as a sedimentary layer?",
+    "options": [
+      "Basalt",
+      "Lapilli",
+      "Slate",
+      "Tuff"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Tuff is a type of rock made of volcanic ash ejected from a vent during a volcanic eruption. When it is deposited and consolidated (often reworked by water), it forms a sedimentary-like layer known as volcanic tuff.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Physical Geography" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q105",
+    "year": 2025,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Condensation of water vapour into water is influenced by which of the following factor/factors?\n1. Volume of air\n2. Humidity\n3. Temperature\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Condensation is influenced by the temperature of the air (cooling below dew point), the volume of the air (which affects pressure and temperature), and the existing humidity (amount of water vapour already present).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q106",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The lactic acid that gets accumulated in the muscle cells during rigorous exercise causing muscle cramps is produced from",
+    "options": [
+      "ATP",
+      "Pyruvate",
+      "Ethanol",
+      "Glucose"
+    ],
+    "correctAnswer": 1,
+    "explanation": "During anaerobic respiration in muscle cells, glucose is first broken down into Pyruvate via glycolysis. Pyruvate is then directly reduced to lactic acid.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q107",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "A chain of peptide containing linear sequences of amino acid linked by peptide bonds best represent the",
+    "options": [
+      "Primary structure",
+      "Secondary structure",
+      "Tertiary structure",
+      "Quaternary structure"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The primary structure of a protein is its simplest level, consisting strictly of the linear sequence of amino acids connected by peptide bonds.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q108",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Cambium is an example of",
+    "options": [
+      "Lateral meristem",
+      "Apical meristem",
+      "Intercalary meristem",
+      "Permanent tissue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The cambium (vascular cambium and cork cambium) is a lateral meristem responsible for the secondary growth (increase in girth/thickness) of plants.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q109",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "What happens when the fat and oil containing food materials are left outside for a long time?",
+    "options": [
+      "Fats and oils in the food get oxidized",
+      "Fats and oils in the food get reduced",
+      "Fats and oils in the food get ice-covered",
+      "No reaction takes place"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When exposed to air for extended periods, fats and oils undergo oxidation (rancidification), which produces foul smells and bad tastes.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q110",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which is the correct base pairing found in a normal DNA molecule ?",
+    "options": [
+      "Adenine pairs with Thymine",
+      "Adenine pairs with Guanine",
+      "Adenine pairs with Cytosine",
+      "Thymine pairs with Guanine"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to Chargaff's rules of base pairing for DNA, Adenine (A) always pairs with Thymine (T), and Guanine (G) always pairs with Cytosine (C).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q111",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Clotting of blood involves which one among the following clotting proteins ?",
+    "options": [
+      "Pathogen",
+      "Fibrinogen",
+      "Macrophage",
+      "Phagocytes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fibrinogen is a soluble plasma glycoprotein that is converted by thrombin into fibrin during the blood coagulation (clotting) process.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q112",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Initial discovery of antibiotic penicillin was done by",
+    "options": [
+      "Francis Crick",
+      "Maurice Wilkins",
+      "Charles Darwin",
+      "Alexander Fleming"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sir Alexander Fleming discovered the world's first broadly effective antibiotic substance, which he named penicillin, in 1928.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q113",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "The vector of malaria parasites is",
+    "options": [
+      "Male Anopheles mosquito",
+      "Male Culex mosquito",
+      "Female Anopheles mosquito",
+      "Female Culex mosquito"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Malaria is transmitted exclusively through the bites of infected female Anopheles mosquitoes.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q114",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Which of the following pairs is/are correctly matched ?\n1. Malaria : Mycobacterium\n2. TB : Plasmodium\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The pathogens are reversed. Malaria is caused by the *Plasmodium* parasite. Tuberculosis (TB) is caused by the bacterium *Mycobacterium tuberculosis*.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q115",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Vitamin B1 is also known as",
+    "options": [
+      "Riboflavin",
+      "Thiamin",
+      "Retinol",
+      "Tocopherol"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Vitamin B1 is scientifically known as Thiamin. Riboflavin is B2, Retinol is A, and Tocopherol is E.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q116",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Art and Culture",
+    "text": "Gaja Dwar, Ashwa Dwar, Garuda Dwar, Makar Dwar, Shardula Dwar and Hamsa Dwar are located in a building at",
+    "options": [
+      "New Delhi",
+      "Varanasi",
+      "Aurangabad",
+      "Thanjevur"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These are the names of the intricately designed six entrances (gates) of the New Parliament Building located in New Delhi.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q117",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Art and Culture",
+    "text": "Which dance form of India has been inscribed into UNESCO's Representative List of Intangible Cultural Heritage of Humanity?",
+    "options": [
+      "Kathakali",
+      "Garba",
+      "Bhangra",
+      "Odissi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In 2023, the traditional dance form 'Garba of Gujarat' was officially inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Art and Culture" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q118",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "Which Ministry has initiated the \"Dhara\", a special initiative dedicated to Indian Knowledge System (IKS) ?",
+    "options": [
+      "The Ministry of Education",
+      "The Ministry of Home Affairs",
+      "The Ministry of Information & Broadcasting",
+      "The Ministry of Culture"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Dhara: An Ode to Indian Knowledge Systems' is a flagship initiative of the Ministry of Culture, aimed at celebrating and showcasing India's rich traditions and civilizational achievements.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q119",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "The scheme PRASHAD (Pilgrimage Rejuvenation & Spiritual Heritage Augmentation Drive) provides assistance for",
+    "options": [
+      "e-Visa Facility",
+      "Multilingual Tourist Infoline",
+      "The development of tourism infrastructures in States & Union Territories",
+      "Promoting Dekho Apna Desh scheme"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The PRASHAD scheme, launched by the Ministry of Tourism, provides financial assistance for the integrated development of identified pilgrimage and heritage tourism infrastructure across states.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q120",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Science and Technology",
+    "text": "The Joint Venture named 'ASHVINI' to develop nuclear power facility in India is between",
+    "options": [
+      "NPCIL and NTPC",
+      "TMC and VECC",
+      "HWB and BARC",
+      "IGACR and NTPC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Anushakti Vidhyut Nigam Ltd (ASHVINI) is a joint venture company incorporated between the Nuclear Power Corporation of India Limited (NPCIL) and NTPC Limited.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q121",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Infrastructure",
+    "text": "Which one of the following statements about 'REJUPAVE' is correct?",
+    "options": [
+      "It's a joint venture between Food and Agriculture Organisation (FAO) and Government of India to promote organic farming",
+      "It's the name given to the lightest surveillance aircraft developed by DRDO",
+      "It's a centrally sponsored flagship Programme of the Ministry of Women and Child Development, Government of India",
+      "It's an indigenously developed road construction technology at high altitudes"
+    ],
+    "correctAnswer": 3,
+    "explanation": "REJUPAVE is an indigenous technology developed by CSIR-CRRI that utilizes a bio-oil based asphalt modifier to construct high-altitude bituminous roads at sub-zero temperatures (used by BRO in border areas).",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Infrastructure" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q122",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Science and Technology",
+    "text": "Which of the following statements about 'C-Bot' is/are correct?\n1. It's an underwater vehicle to monitor coral reefs\n2. It has been developed by CSIR and NIO\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "C-Bot (Coral Bot) is an autonomous underwater vehicle (AUV) specifically designed for coral reef monitoring and bathymetry, developed jointly by CSIR and the National Institute of Oceanography (NIO). Both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Science and Technology" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q123",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Defence",
+    "text": "India's Gas Turbine Research Establishment (GTRE), part of the Defence Research and Development Organisation (DRDO) has developed an aero-engine which will potentially make India self-reliance in aero-engine technology. What is the name of the engine?",
+    "options": [
+      "Ganga",
+      "Yamuna",
+      "Krishna",
+      "Kaveri"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The GTX-35VS Kaveri is an afterburning turbofan project developed by GTRE (DRDO) to power indigenous combat aircraft.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Defence" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q124",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Awards and Honours",
+    "text": "Who among the following Presidents/Vice Presidents of the United States of America was awarded Nobel Peace Prize for work to find peaceful solutions to international conflicts, to advance democracy and human rights, and to promote economic and social development?",
+    "options": [
+      "Jimmy Carter",
+      "Woodrow Wilson",
+      "Barack Obama",
+      "Al Gore"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Jimmy Carter was awarded the 2002 Nobel Peace Prize precisely for his decades of untiring effort to find peaceful solutions, advance democracy and human rights, and promote economic and social development.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Awards and Honours" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q125",
+    "year": 2025,
+    "subject": "Current Affairs",
+    "topic": "Institutions",
+    "text": "Which among the following agencies releases report on 'S.A.F.E. Accommodation: Worker Housing for Manufacturing Growth'?",
+    "options": [
+      "RBI",
+      "NITI Aayog",
+      "National Housing Bank",
+      "Housing and Urban Development Corporation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The report 'S.A.F.E. Accommodation: Worker Housing for Manufacturing Growth' in the Indian context is commonly associated with strategic policy reviews by NITI Aayog regarding urbanization and industrial growth.",
+    "tags": [
+      { "type": "subject", "label": "Current Affairs" },
+      { "type": "topic", "label": "Institutions" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q126",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "An object is placed between infinity and the pole (P) of a convex mirror. The position of the image is",
+    "options": [
+      "between pole (P) and the focus (F), behind the mirror",
+      "between the focus (F) and infinity, behind the mirror",
+      "between the pole (P) and the infinity, in front of the mirror",
+      "at the focus (F), behind the mirror"
+    ],
+    "correctAnswer": 0,
+    "explanation": "For a convex mirror, wherever an object is placed between infinity and the pole, the image is always formed behind the mirror, between the pole (P) and the principal focus (F). It is always virtual, erect, and diminished.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q127",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The work done in moving a charge of 2 coulomb (C) from point A to point B is 24 J. What is the potential difference between A and B ?",
+    "options": [
+      "48 V",
+      "6 V",
+      "12 V",
+      "0.08 V"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Potential difference (V) = Work done (W) / Charge (Q). V = 24 J / 2 C = 12 V.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q128",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Two conducting wires of the same material and of equal lengths and equal diameters are first connected in parallel and then in series in a circuit across the same potential difference. The ratio of heat produced in parallel and series combinations is",
+    "options": [
+      "2:1",
+      "4:1",
+      "1:2",
+      "1:4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let the resistance of each wire be R. In parallel, Req = R/2. In series, Req = 2R. The heat produced H = (V^2 / Req) * t. Therefore, H_parallel / H_series = (V^2 / (R/2)) / (V^2 / (2R)) = (2/R) * (2R/1) = 4:1.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q129",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The magnetic field inside a long straight solenoid-carrying current",
+    "options": [
+      "is zero",
+      "decreases as we move towards its end",
+      "increases as we move towards its end",
+      "is uniform inside the solenoid"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The magnetic field inside a long straight current-carrying solenoid is nearly uniform throughout its inner volume, acting parallel to its axis.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q130",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A car has an initial velocity of 12 m/s and is brought to rest over a distance of 45 m. The acceleration of the car is",
+    "options": [
+      "+1.6 m/s²",
+      "+3.2 m/s²",
+      "-1.6 m/s²",
+      "-0.8 m/s²"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Using the equation v^2 = u^2 + 2as. Here, v = 0, u = 12, s = 45. So, 0 = (12)^2 + 2*a*45. 0 = 144 + 90a. a = -144/90 = -1.6 m/s².",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q131",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The universal constant of gravitation G has the unit",
+    "options": [
+      "N",
+      "m/s",
+      "Joule",
+      "N-m²/kg²"
+    ],
+    "correctAnswer": 3,
+    "explanation": "From Newton's law of gravitation, F = G(m1*m2)/r^2. Rearranging for G gives G = F*r^2 / (m1*m2). The unit is Newton * (meter)^2 / (kilogram)^2.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q132",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Two bodies of unequal masses are dropped from a tower. At any instant, they have equal",
+    "options": [
+      "Momentum",
+      "Acceleration",
+      "Potential energy",
+      "Kinetic energy"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When dropped in a vacuum (or neglecting air resistance), all bodies fall with the same constant acceleration due to gravity (g), regardless of their mass.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q133",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The frequency (f), wavelength (λ) and speed (v) of a sound wave are related as",
+    "options": [
+      "f=vλ",
+      "λ=vf",
+      "f=λ/v",
+      "v=λf"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The fundamental wave equation relates velocity, wavelength, and frequency as: Velocity (v) = Wavelength (λ) × Frequency (f).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q134",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "The length of a simple pendulum is increased four times to its previous value while the mass is doubled. What is the ratio of the new and previous time period of the pendulum?",
+    "options": [
+      "3:1",
+      "2:5",
+      "2:1",
+      "3:2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The time period of a simple pendulum T = 2π√(L/g). It is independent of mass. If L is increased by a factor of 4, the new time period T' = 2π√(4L/g) = 2 * 2π√(L/g) = 2T. The ratio T':T is 2:1.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q135",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following is NOT a basic property of electric charge?",
+    "options": [
+      "Charges can be added",
+      "Charge is conserved",
+      "Charge on a body is always an integral multiple of an electron or a proton charge",
+      "Charges can be created and destroyed in an isolated system"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The principle of conservation of charge dictates that the net charge of an isolated system remains constant; charges can neither be created nor destroyed in such a system.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q136",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "What happens when the sunlight travels through the Earth's atmosphere?",
+    "options": [
+      "The blue colour is scattered more compared to the red colour",
+      "The red colour is scattered more compared to the blue colour",
+      "Both the blue and the red colours are scattered equally",
+      "The blue colour is not scattered but the red colour is scattered the most"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to Rayleigh scattering, shorter wavelengths of light (like blue) scatter much more efficiently than longer wavelengths (like red) as they pass through the Earth's atmosphere.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q137",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "When a solid body is partially or completely immersed in a fluid, the fluid exerts an upward force on the body. The magnitude of the force is equal to\n1. the mass of the body\n2. the weight of the displaced fluid by the body\nWhich of the above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to Archimedes' principle, the upward buoyant force exerted on a body immersed in a fluid is equal to the weight of the fluid that the body displaces (not the mass of the body itself).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q138",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "If the length of a copper wire is increased by twice, then its resistivity will be",
+    "options": [
+      "Doubled",
+      "Halved",
+      "Same",
+      "One-fourth"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Resistivity is an intrinsic material property. It depends on the nature of the material and temperature, but is completely independent of the dimensions (length or area) of the wire.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q139",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following is dimensionless quantity?",
+    "options": [
+      "Stress",
+      "Strain",
+      "Pressure",
+      "Force"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Strain is defined as the change in dimension divided by the original dimension (e.g., ΔL / L). Since it is a ratio of two identical units, it is a dimensionless quantity.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q140",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A system that does NOT allow exchange of heat with its surrounding is called",
+    "options": [
+      "Adiabatic system",
+      "Non-adiabatic system",
+      "Equilibrium system",
+      "Non-equilibrium system"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An adiabatic process or system is perfectly insulated, meaning no heat is transferred into or out of the system.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q141",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "If the speed of light in carbon disulfide and vacuum is X and Y respectively, then",
+    "options": [
+      "X < Y",
+      "X > Y",
+      "X ≥ Y",
+      "X = Y"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Light travels fastest in a vacuum (Y = c). In any material medium like carbon disulfide, the refractive index is greater than 1, so the speed of light (X) is reduced. Therefore, X < Y.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q142",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "A current through a horizontal power line flows in east to west direction. What will be the direction of magnetic field at a point directly below it when viewed from east end?",
+    "options": [
+      "Clockwise in a plane perpendicular to the wire",
+      "Anti-clockwise in a plane perpendicular to the wire",
+      "Clockwise in a plane of parallel to the wire",
+      "Anti-clockwise in a plane of parallel to the wire"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Using the Right-Hand Grip Rule: if viewing from the East, the current is flowing away from you (West). Point your right thumb into the page; your fingers curl in a clockwise direction in the plane perpendicular to the wire.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q143",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Chemistry",
+    "text": "Which one among the following elements is known to be discovered the earliest?",
+    "options": [
+      "Copper",
+      "Gold",
+      "Oxygen",
+      "Uranium"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Copper was the first metal to be discovered and used by early human societies to make tools (initiating the Chalcolithic/Copper Age), dating back around 10,000 years. (Gold was also discovered in antiquity, but copper marks the first widely utilized functional element).",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Chemistry" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q144",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "When a light ray passes through from air to water with a non-zero angle the ray will be",
+    "options": [
+      "bending towards the normal",
+      "bending away from the normal",
+      "propagating in straight line",
+      "reflected towards the opposite direction"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When light passes from an optically rarer medium (air) to an optically denser medium (water), its speed decreases and it refracts (bends) towards the normal.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q145",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following equations related to the motion of an object is NOT correct? (Symbols carry their usual meanings)",
+    "options": [
+      "s = ut + 1/2at²",
+      "u = v - at",
+      "u² - v² = 2as",
+      "Distance travelled during nth second = u + a(2n-1)/2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The standard kinematic equation is v² - u² = 2as. Option (c) is written backward as u² - v² = 2as, which implies a negative value for acceleration, thus it is mathematically incorrect in its standard form.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q146",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
+      "An ammeter is always connected in series in the circuit to measure the current",
+      "A Voltmeter is always connected to parallel in a circuit to measure the voltage",
+      "A voltmeter has a high resistance and an ammeter has a low resistance",
+      "A voltmeter has a low resistance and an ammeter has a high resistance"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A voltmeter requires high resistance so it doesn't draw current from the circuit it measures, while an ammeter requires low resistance so it doesn't impede the current flowing through it. Option (d) states the exact opposite, making it incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q147",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Environment",
+    "text": "Which one of the following is a non-conventional source of energy?",
+    "options": [
+      "Petroleum",
+      "Natural Gas",
+      "Tidal energy",
+      "Coal"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tidal energy is a renewable, non-conventional source of energy. Petroleum, Natural Gas, and Coal are conventional, non-renewable fossil fuels.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Environment" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q148",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "If three resistors of 1 Ohm each connect in parallel to each other the resultant resistance is",
+    "options": [
+      "1 Ohm",
+      "1/3 Ohm",
+      "3 Ohm",
+      "9 Ohm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For identical resistors connected in parallel, the equivalent resistance Req = R / n, where n is the number of resistors. Req = 1 Ohm / 3 = 1/3 Ohm.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q149",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "We hear an echo due to",
+    "options": [
+      "Refraction of sound waves",
+      "Reflection of sound waves",
+      "Diffraction of sound waves",
+      "Resonance due to sound waves"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An echo is a sound that is repeated because the sound waves are reflected back from a hard surface (like a mountain or wall) to the listener.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  },
+  {
+    "id": "nda-2025-1-q150",
+    "year": 2025,
+    "subject": "Science",
+    "topic": "Physics",
+    "text": "At uniform speed the acceleration is",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Zero",
+      "Constant"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Acceleration is the rate of change of velocity. If a body moves in a straight line at a uniform speed (uniform velocity), there is no change in velocity, so its acceleration is zero.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Physics" },
+      { "type": "pyq", "label": "NDA 2025" }
+    ]
+  }
+]

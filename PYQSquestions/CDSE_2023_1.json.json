@@ -1,0 +1,3482 @@
+[
+  {
+    "id": "cdse-2023-1-q1",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "A sprinter feels cramps and pain in the thigh muscles after a run. This is due to accumulation of",
+    "options": [
+      "lactic acid",
+      "CO2",
+      "pyruvic acid",
+      "ethanol"
+    ],
+    "correctAnswer": 0,
+    "explanation": "During vigorous exercise like sprinting, the demand for energy is high but the supply of oxygen to the muscles is limited. This leads to anaerobic respiration where glucose is converted into lactic acid. The accumulation of lactic acid in the muscle cells causes fatigue, cramps, and pain.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q2",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "text": "A leaf was plucked from a plant on a sunny day and kept for 2 minutes in boiling water. It was subsequently immersed in boiling alcohol and treated with iodine solution. What will be the final colour of the leaf after the test?",
+    "options": [
+      "Colourless",
+      "Green",
+      "Blue",
+      "White"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The procedure described is the starch test. Boiling in water kills the cells, and boiling in alcohol removes chlorophyll. Treating the de-colorized leaf with iodine solution causes it to turn blue-black if starch is present (which it would be after a sunny day), confirming photosynthesis occurred.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Plant Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q3",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "If the red blood cells (RBCs) of human blood are isolated and are diluted in normal saline (an isotonic solution to blood), what will happen to the RBCs?",
+    "options": [
+      "The RBCs will swell",
+      "The RBCs will swell and burst",
+      "The RBCs will shrink",
+      "No change in the diameters of the RBCs"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In an isotonic solution (like normal saline relative to human blood), the concentration of solutes is the same inside and outside the cell. Therefore, there is no net movement of water into or out of the cells by osmosis, resulting in no change in the shape or diameter of the RBCs.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Cell Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q4",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "Which one of the following statements regarding bile secreted by liver is not correct?",
+    "options": [
+      "Bile contains enzymes for digestion of lipids.",
+      "Bile facilitates emulsification of fats.",
+      "Bile neutralizes the acidic pH of the food coming from stomach.",
+      "Bile makes the pH of the food alkaline and facilitates action of pancreatic enzymes."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bile does not contain any digestive enzymes. Its primary role in digestion is the emulsification of fats (breaking them into small droplets) and providing an alkaline environment for pancreatic enzymes to function. The actual digestion of lipids is performed by lipase enzymes from the pancreas.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q5",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "text": "The blood pressure of a normal human being is found to be 120/80 mmHg. These 'numbers' represent the blood pressure at",
+    "options": [
+      "ventricular contraction and ventricular relaxation, respectively",
+      "ventricular relaxation and ventricular contraction, respectively",
+      "auricular contraction and auricular relaxation, respectively",
+      "ventricular contraction and auricular contraction, respectively"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the blood pressure reading 120/80 mmHg, 120 represents the Systolic pressure (the pressure when the ventricles contract) and 80 represents the Diastolic pressure (the pressure when the ventricles relax).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q6",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Sound",
+    "text": "A person burned a firecracker in front of a cliff and heard its echo 5s after it burst. The distance of the cliff from the person, if the speed of the sound is 340 m/s, is close to",
+    "options": [
+      "1700 m",
+      "170 m",
+      "85 m",
+      "850 m"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The formula for distance in an echo is $d = \frac{v \times t}{2}$, where $v$ is the speed of sound and $t$ is the time taken. Here, $v = 340$ m/s and $t = 5$ s. So, $d = \frac{340 \times 5}{2} = 850$ m. The sound travels to the cliff and back, so the distance to the cliff is half the total distance covered by the sound.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Sound"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q7",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Electronics",
+    "text": "Consider the following statements about the microphone and the speaker of a mobile phone: \n1. The microphone converts sound to a mechanical signal.\n2. The microphone converts sound to an electrical signal.\n3. The speaker converts a mechanical signal to sound.\n4. The speaker converts an electrical signal to sound.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 3",
+      "1 and 4",
+      "2 and 3",
+      "2 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A microphone is a transducer that converts sound waves (acoustic energy) into an electrical signal. A speaker is a transducer that converts electrical signals back into sound waves. Mechanical energy is an intermediate step in some designs, but the primary function is sound to/from electrical signals.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electronics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q8",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "A 100 W electric bulb is used for 10 hours a day. How many units of electrical energy are consumed by the bulb in 3 days? (1 unit = 1 kWh)",
+    "options": [
+      "3.00",
+      "1.08",
+      "2.16",
+      "0.33"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Energy (kWh) = $\frac{\text{Power (W)} \times \text{Time (hours)} \times \text{Days}}{1000}$. \nEnergy = $\frac{100 \times 10 \times 3}{1000} = 3$ kWh. Since 1 unit = 1 kWh, the energy consumed is 3.00 units.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electricity"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q9",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "The area under the velocity-time graph for a particle moving in a straight line with uniform acceleration gives",
+    "options": [
+      "its average velocity",
+      "its net displacement",
+      "the distance travelled by it",
+      "its average speed"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In a velocity-time graph, the area between the graph and the time axis represents the displacement of the particle. If the motion is in a straight line without reversing direction, displacement and distance are equal, but 'net displacement' is the technically accurate term for the integral of velocity over time.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Kinematics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q10",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Optics",
+    "text": "The power of a lens of focal length 10 cm is",
+    "options": [
+      "0.1 dioptre",
+      "1 dioptre",
+      "10 dioptre",
+      "100 dioptre"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Power of a lens $P = \frac{1}{f (\text{in meters})}$. \nGiven $f = 10$ cm $= 0.1$ m. \n$P = \frac{1}{0.1} = 10$ Dioptres.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Optics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q11",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Consider the following statements regarding burning of magnesium ribbon in air: \n1. White powder of MgO is formed.\n2. It is an example of combustion reaction.\n3. Heat and light are produced.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "When magnesium burns in air, it reacts with oxygen ($2Mg + O_2 \rightarrow 2MgO$). This is a combustion reaction that produces a dazzling white light and heat, leaving behind a white powder of Magnesium Oxide (MgO). Thus, all statements are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Reactions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q12",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Which of the following statements with regard to the reaction given below are correct? \n$CaO(s) + H_2O(l) \rightarrow Ca(OH)_2(aq) + Heat$\n1. Quicklime is used for whitewashing of walls.\n2. The solution of slaked lime is used for whitewashing of walls.\n3. CaO reacts slowly with CO2 in air to form a thin layer of CaCO3 on walls.\n4. Calcium hydroxide called 'slaked lime' is an inorganic compound.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 4 only",
+      "2 and 4",
+      "2 and 3",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 2 is correct because slaked lime ($Ca(OH)_2$) solution is applied to walls. Statement 4 is correct as $Ca(OH)_2$ is an inorganic compound. Statement 1 is incorrect because Quicklime (CaO) must be reacted with water first. Statement 3 is incorrect because it is $Ca(OH)_2$ that reacts with $CO_2$ on the walls to form $CaCO_3$, not CaO.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Reactions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q13",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Which of the following statements with regard to heating of lead nitrate powder over a flame are correct?\n1. Brown fumes of NO are released.\n2. Colourless O2 gas is released.\n3. It is an example of oxidation reaction.\n4. It is an example of thermal decomposition used for production of NO2 gas.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "2, 3 and 4",
+      "1, 3 and 4",
+      "2 and 4 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The reaction is $2Pb(NO_3)_2 \rightarrow 2PbO + 4NO_2 + O_2$. Statement 1 is incorrect because the brown fumes are $NO_2$, not NO. Statement 2 is correct ($O_2$ is produced). Statement 4 is correct as it is a thermal decomposition. Statement 3 is also considered correct as decomposition involves redox changes. Hence, 2 and 4 are the most accurate pairing among options.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Reactions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q14",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Which one of the following is not an oxidation reaction?",
+    "options": [
+      "Rusting of iron",
+      "Opening of soda bottle",
+      "Rancidity",
+      "Combustion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Opening a soda bottle is a physical process where dissolved carbon dioxide gas escapes due to a decrease in pressure. Rusting, Rancidity, and Combustion are all chemical processes involving the reaction of substances with oxygen (oxidation).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Reactions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q15",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian States",
+    "text": "Consider the following clues about a State of India:\n1. It is known as 'land of red river and blue hills'.\n2. It contains three of the six physiographic divisions of India.\n3. It covers about 2.39 percent of total areas of the country.\nIdentify the State on the basis of the given clues.",
+    "options": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Assam",
+      "Chhattisgarh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Assam is famously known as the 'Land of the Red River (Brahmaputra) and Blue Hills'. It occupies about 2.39% of India's land area ($78,438 km^2$ out of $3.28$ million $km^2$).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian States"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q16",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Map",
+    "text": "Which of the following sets of States shares boundary with Telangana?",
+    "options": [
+      "Odisha, Andhra Pradesh, Karnataka, Maharashtra",
+      "Chhattisgarh, Andhra Pradesh, Karnataka, Madhya Pradesh",
+      "Odisha, Andhra Pradesh, Karnataka, Madhya Pradesh",
+      "Chhattisgarh, Andhra Pradesh, Karnataka, Maharashtra"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Telangana is a landlocked state in southern India. It shares its borders with Maharashtra to the north, Chhattisgarh to the northeast, Karnataka to the west, and Andhra Pradesh to the south and east. It does not share a border with Odisha or Madhya Pradesh.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Map"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q17",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Lakes",
+    "text": "Rani told her friends that last year she did boating in four different lakes, namely, Loktak, Barapani, Kolleru and Pulicat. Which of the following States did she visit?",
+    "options": [
+      "Manipur, Meghalaya, Kerala, Tamil Nadu",
+      "Manipur, Meghalaya, Andhra Pradesh, Tamil Nadu",
+      "Mizoram, Assam, Kerala, Tamil Nadu",
+      "Mizoram, Assam, Andhra Pradesh, Tamil Nadu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Loktak Lake is in Manipur. Barapani (Umiam Lake) is in Meghalaya. Kolleru Lake is in Andhra Pradesh. Pulicat Lake is on the border of Andhra Pradesh and Tamil Nadu.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Lakes"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q18",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Human Geography - Census",
+    "text": "According to the Census 2011, which of the following statements is/are correct? \n1. A person who can only read but cannot write, is not literate. \n2. A person aged seven years and above, who can both read and write with understanding in any language is treated as literate.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "According to the Census of India, a person aged seven and above who can both read and write with understanding in any language is treated as literate. A person who can only read but cannot write is considered illiterate.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Human Geography - Census"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q19",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "The Tropic of Cancer passes through how many coastal and landlocked States of India, respectively?",
+    "options": [
+      "1 and 7",
+      "2 and 6",
+      "2 and 5",
+      "3 and 5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Tropic of Cancer passes through 8 Indian states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram. Among these, Gujarat and West Bengal are coastal (2 states), while the other 6 (Rajasthan, MP, Chhattisgarh, Jharkhand, Tripura, Mizoram) are landlocked. The question asks 'respectively', making 2 and 6 the correct count.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q20",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Inflation",
+    "text": "Which one of the following situations can lead to inflation?",
+    "options": [
+      "Rapid growth of aggregate demand outweighing supply",
+      "Sluggish growth of aggregate demand",
+      "Reduction in the money supply",
+      "Higher levels of unemployment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Inflation occurs when there is a general increase in prices. Demand-pull inflation happens when the aggregate demand for goods and services in an economy rises more rapidly than an economy's productive capacity (supply).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Inflation"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q21",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Monetary and Fiscal Policy",
+    "text": "Which of the following policies help to raise interest rate unambiguously and thereby lead to appreciation of currency?",
+    "options": [
+      "Expansionary fiscal and monetary policy",
+      "Contractionary fiscal and monetary policy",
+      "Contractionary fiscal policy and expansionary monetary policy",
+      "Contractionary monetary policy and expansionary fiscal policy"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Contractionary monetary policy (decreasing money supply) directly increases interest rates. Expansionary fiscal policy (increasing government spending/decreasing taxes) leads to higher government borrowing, which also pushes interest rates up. Higher interest rates attract foreign investment, leading to an appreciation of the domestic currency.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Monetary and Fiscal Policy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q22",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Fiscal Policy",
+    "text": "The contraction of private investment spending due to deficit spending by the Government is called",
+    "options": [
+      "crowding out",
+      "crowding in",
+      "pump priming",
+      "dumping"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Crowding out is an economic theory arguing that rising public sector spending drives down or even eliminates private sector spending. When the government borrows to fund a deficit, it increases the demand for loanable funds, raising interest rates and making it more expensive for the private sector to invest.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Fiscal Policy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q23",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "NITI Aayog",
+    "text": "Which among the following is/are the objective/objectives of the NITI Aayog?\n1. Imposing policies on the States/UTs\n2. Allocation of funds at National and State levels\n3. Design strategies and long-term policies and programme frameworks",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NITI Aayog is a policy think tank. Unlike the former Planning Commission, it does not have the power to impose policies or allocate funds. Its role is to foster cooperative federalism and design strategic/long-term policy frameworks. Therefore, only statement 3 is correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "NITI Aayog"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q24",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Poverty",
+    "text": "The computation of poverty in terms of Monthly Per Capita Consumption Expenditure (MPCE) based on the Mixed Reference Period was recommended by the",
+    "options": [
+      "Lakdawala Committee",
+      "Tendulkar Committee",
+      "Dandekar Committee",
+      "Alagh Committee"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Tendulkar Committee (2009) recommended shifting away from calorie-based poverty estimation to a basket of goods and moved the basis of poverty estimation to Monthly Per Capita Consumption Expenditure (MPCE) based on Mixed Reference Period (MRP).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Poverty"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q25",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which of the following is/are the sub-mission/sub-missions of the National Skill Development Mission (NSDM)?\n1. Institutional training\n2. Overseas employment\n3. Leveraging of public infrastructure",
+    "options": [
+      "1 only",
+      "2 only",
+      "1, 2 and 3",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The National Skill Development Mission consists of several sub-missions including Institutional Training, Infrastructure, Convergence, Trainers, Overseas Employment, Sustainable Livelihoods, and Leveraging Public Infrastructure. Thus all three are sub-missions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q26",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which of the following strategies is/are adopted for implementing the POSHAN Abhiyaan?\n1. Inter-sectoral convergence for better service delivery\n2. Use of technology (ICT) for real-time growth monitoring of women and children",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "POSHAN Abhiyaan (PM's Overarching Scheme for Holistic Nourishment) focuses on inter-sectoral convergence between various ministries and uses the ICDS-CAS (Integrated Child Development Services-Common Application Software) to monitor growth in real-time.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q27",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Judiciary - Writs",
+    "text": "Which of the following conditions is/are necessary for the issue of a writ of certiorari in India?\n1. There should be a tribunal or an officer having legal authority to determine questions affecting rights of subjects and having a duty to act judicially.\n2. Such tribunal or officer has acted without jurisdiction.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The writ of Certiorari is issued by a higher court to a lower court or tribunal to quash its order if it has acted without jurisdiction, in excess of jurisdiction, or in violation of natural justice. Both conditions listed are fundamental requirements for the writ.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Judiciary - Writs"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q28",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "Who among the following Chief Justices of India ordered the constitution of a Special Bench called 'Social Justice Bench'?",
+    "options": [
+      "Justice H. L. Dattu",
+      "Justice K. G. Balakrishnan",
+      "Justice R. M. Lodha",
+      "Justice Y. K. Sabharwal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In December 2014, Chief Justice of India H. L. Dattu ordered the creation of a specialized 'Social Justice Bench' in the Supreme Court to exclusively hear cases related to social issues and the rights of the underprivileged.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Judiciary"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q29",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Indian National Movement",
+    "text": "Who among the following is the author of the book, Bandi Jivan?",
+    "options": [
+      "Rash Behari Bose",
+      "Veer Savarkar",
+      "Aruna Asaf Ali",
+      "Sachindranath Sanyal"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sachindranath Sanyal wrote 'Bandi Jivan' (A Life of Captivity), which became a textbook for many young revolutionaries in the Indian independence movement. He was a founder of the Hindustan Republican Association.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Indian National Movement"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q30",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "In the election held in 1937, in which two provinces was the Indian National Congress not able to emerge as the single largest party?",
+    "options": [
+      "Punjab and Sind",
+      "Assam and North-West Frontier Province",
+      "Punjab and Assam",
+      "Assam and Madras"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the 1937 provincial elections, the Congress emerged as the single largest party in most provinces except Punjab, Sind, and Bengal. In Punjab, the Unionist Party was dominant, and in Sind, regional groups held sway.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern History"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q31",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Indian National Army",
+    "text": "Consider the following statements: After forming the Indian National Army, Subhas Chandra Bose\n1. recruited a large number of soldiers from the Indian Prisoners of War in Japanese camp\n2. introduced a women's detachment named after the Rani of Jhansi\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Subhas Chandra Bose reorganized the INA (Azad Hind Fauj). He recruited significantly from Indian Prisoners of War (PoWs) captured by the Japanese. He also formed the Rani of Jhansi Regiment, one of the few all-female combat units of the time.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Indian National Army"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q32",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Bhakti Movement",
+    "text": "Which one of the following pairs denoting various forms of 'Bhakti' is not correctly matched?",
+    "options": [
+      "Saguna : Belief in Gods with attributes",
+      "Nirguna : Belief in Gods without attributes",
+      "Alvars : Believed in devotion of Shakti",
+      "Nayanars: Believed in devotion of Shiva"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Alvars were Tamil poet-saints of South India who were devoted to Lord Vishnu (Vaishnavism), not Shakti. The Nayanars were devoted to Lord Shiva (Shaivism). Saguna and Nirguna definitions are correctly matched.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Bhakti Movement"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q33",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Rivers",
+    "text": "Which two rivers flow in the region between Gulbarga and Vijayanagara Hampi?",
+    "options": [
+      "Narmada and Godavari",
+      "Mahanadi and Godavari",
+      "Kaveri and Periyar",
+      "Krishna and Tungabhadra"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Vijayanagara Empire (with Hampi as its capital) was situated on the banks of the Tungabhadra river. The region between Gulbarga and Hampi is part of the Krishna-Tungabhadra doab.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Rivers"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q34",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defense and Security",
+    "text": "Which of the following is the only paramilitary force with a dual control structure?",
+    "options": [
+      "Central Reserve Police Force",
+      "Assam Rifles",
+      "Indo-Tibetan Border Police",
+      "Central Industrial Security Force"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Assam Rifles has a unique dual control structure: its administrative control is under the Ministry of Home Affairs (MHA), while its operational control is under the Indian Army (Ministry of Defence).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defense and Security"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q35",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Ethnic Communities",
+    "text": "Which one of the following is an ethnic community of Assam?",
+    "options": [
+      "Bhil",
+      "Gond",
+      "Ahom",
+      "Adi"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Ahom community is a prominent ethnic group in Assam, descendants of the Tai people who established the Ahom kingdom. Bhils and Gonds are primarily found in central India, and the Adi tribe is from Arunachal Pradesh.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Ethnic Communities"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q36",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Sports",
+    "text": "The Chevrons is the name of the cricket team of which one of the following countries?",
+    "options": [
+      "Australia",
+      "The Netherlands",
+      "Ireland",
+      "Zimbabwe"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Zimbabwe national cricket team is nicknamed 'The Chevrons', referring to the chevron patterns found in the ruins of Great Zimbabwe, which are also featured on the national flag.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q37",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Environment - Wildlife",
+    "text": "Cheetahs, brought from Namibia, were introduced in India to which one of the following National Parks?",
+    "options": [
+      "Kaziranga National Park",
+      "Keoladeo Ghana National Park",
+      "Keibul Lamjao National Park",
+      "Kuno National Park"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In 2022, cheetahs were reintroduced to India as part of Project Cheetah. Eight cheetahs brought from Namibia were released into Kuno National Park in Madhya Pradesh.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Environment - Wildlife"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q38",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Awards - Nobel Prize",
+    "text": "Who among the following is not a recipient of the Nobel Prize in Physics in 2022?",
+    "options": [
+      "Alain Aspect",
+      "John F. Clauser",
+      "Klaus Hasselmann",
+      "Anton Zeilinger"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Alain Aspect, John F. Clauser, and Anton Zeilinger won the 2022 Nobel Prize in Physics for their work on quantum mechanics. Klaus Hasselmann was one of the recipients of the 2021 Nobel Prize in Physics for climate modeling.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Awards - Nobel Prize"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q39",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Human Physiology - Nervous System",
+    "text": "Reflex arcs are evolved in animals for quick and efficient responses. Which one of the following sequences correctly represents a reflex arc?",
+    "options": [
+      "Receptor-Sensory neuron-Relay neuron in spinal cord-Brain-Motor neuron-Effector",
+      "Receptor-Sensory neuron-Brain-Relay neuron in spinal cord-Motor neuron-Effector",
+      "Receptor-Sensory neuron-Relay neuron in spinal cord-Motor neuron-Effector",
+      "Receptor-Motor neuron-Brain-Sensory neuron-Effector"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A reflex arc is the pathway of a nerve impulse during a reflex. It bypasses the brain for speed. The correct sequence is: Receptor (detects stimulus) → Sensory neuron → Relay neuron (in the spinal cord) → Motor neuron → Effector (muscle or gland). Note: Option (c) is the standard arc; option (a) and (b) incorrectly involve the brain as a mandatory link in the immediate arc.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology - Nervous System"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q40",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Human Physiology - Endocrine System",
+    "text": "Which one of the following is essential for thyroid gland to make thyroxin?",
+    "options": [
+      "NaCl",
+      "KCl",
+      "Cholesterol",
+      "Iodine"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Iodine is a critical component required by the thyroid gland to synthesize thyroxine (T4) and triiodothyronine (T3). Deficiency of iodine leads to goitre and other thyroid-related issues.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Human Physiology - Endocrine System"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q41",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "text": "In plant cells, RNA is present in",
+    "options": [
+      "cytoplasm only",
+      "nuclei and cytoplasm only",
+      "nuclei, cytoplasm, mitochondria, chloroplast and endoplasmic reticulum",
+      "nuclei, cytoplasm, mitochondria, chloroplast and ribosomes"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In plant cells, RNA is found in the nucleus (mRNA, tRNA, rRNA synthesis), cytoplasm, and within organelles that have their own genetic material (mitochondria and chloroplasts). It is also a major component of ribosomes.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Cell Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q42",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Plant Biology - Tissues",
+    "text": "In grasses, intercalary meristem is usually located at",
+    "options": [
+      "root tip",
+      "lateral sides of stem",
+      "base of leaves",
+      "shoot tip"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Intercalary meristems are found at the base of leaves or at internodes (nodes) in grasses. They help in the elongation of these parts and are responsible for the regrowth of grass after it is cut or grazed.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Plant Biology - Tissues"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q43",
+    "year": 2023,
+    "subject": "Biology",
+    "topic": "Plant Biology - Tissues",
+    "text": "Xylem is a type of complex tissue in plants for upward conduction of water. Which one of the following xylem tissues consists of living cells?",
+    "options": [
+      "Tracheid",
+      "Vessel",
+      "Xylem parenchyma",
+      "Xylem fibre"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Xylem is composed of four types of cells: tracheids, vessels, xylem fibres (all of which are dead at maturity) and xylem parenchyma. Xylem parenchyma is the only living component of the xylem tissue.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Biology"
+      },
+      {
+        "type": "topic",
+        "label": "Plant Biology - Tissues"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q44",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "Three resistors of resistances 11 Ω, 22 Ω and 33 Ω are connected in parallel. Their equivalent resistance is equal to",
+    "options": [
+      "66 Ω",
+      "22 Ω",
+      "12 Ω",
+      "6 Ω"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For resistors in parallel: $\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$. \n$\frac{1}{R_p} = \frac{1}{11} + \frac{1}{22} + \frac{1}{33} = \frac{6+3+2}{66} = \frac{11}{66} = \frac{1}{6}$. \nTherefore, $R_p = 6$ Ω.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electricity"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q45",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "text": "The r.m.s. potential difference between the red live wire and black neutral wire in Indian domestic electric supply is",
+    "options": [
+      "160 V",
+      "220 V",
+      "300 V",
+      "410 V"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In India, the standard domestic electrical supply is alternating current (AC) with a root mean square (r.m.s.) voltage of 220 V and a frequency of 50 Hz.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Electricity"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q46",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Nuclear Physics",
+    "text": "The hydrogen bomb and the uranium bomb are based, respectively on",
+    "options": [
+      "nuclear fusion and fission",
+      "fission and thermonuclear fusion",
+      "geothermal fission and fusion",
+      "geothermal fusion and fission"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A hydrogen bomb works on the principle of nuclear fusion (combining light nuclei like isotopes of hydrogen), while a uranium bomb (atomic bomb) works on the principle of nuclear fission (splitting heavy nuclei like Uranium-235).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Nuclear Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q47",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Waves",
+    "text": "Sound and light waves are",
+    "options": [
+      "respectively longitudinal and transverse in air",
+      "respectively transverse and longitudinal in air",
+      "both longitudinal in air",
+      "both transverse in air"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sound waves require a medium and travel as pressure variations, making them longitudinal waves. Light waves are electromagnetic waves that do not require a medium and oscillate perpendicular to the direction of travel, making them transverse waves.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Waves"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q48",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "text": "A car moving with a speed of 12 m/s is subjected to brakes which produces a deceleration of $6 m/s^2$. The car takes 2s to stop after the application of brakes. What is the distance covered by the car after the application of brakes?",
+    "options": [
+      "12 m",
+      "24 m",
+      "36 m",
+      "48 m"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Using equation of motion $s = ut + \frac{1}{2}at^2$. \n$u = 12$ m/s, $a = -6$ $m/s^2$, $t = 2$ s. \n$s = (12 \times 2) + \frac{1}{2} \times (-6) \times (2^2) = 24 - 12 = 12$ m.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Kinematics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q49",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "What is the chemical composition of a soda-acid type fire extinguisher?",
+    "options": [
+      "Solution of sodium hydrogen carbonate and sulfuric acid",
+      "Solution of sodium carbonate and sulfuric acid",
+      "Solution of carbon dioxide and sulfuric acid",
+      "Solution of sodium chloride and sulfuric acid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A soda-acid fire extinguisher contains a solution of Sodium Hydrogen Carbonate ($NaHCO_3$) and Sulfuric Acid ($H_2SO_4$) in separate containers. When mixed, they react to produce Carbon Dioxide ($CO_2$) gas, which extinguishes the fire.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids, Bases and Salts"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q50",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "Consider the following statements: While diluting concentrated nitric acid solution\n1. the concentration of [H3O+] ions/volume increases\n2. water must be added slowly to concentrated acid\n3. acid must be added slowly to water\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "3 only",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When diluting an acid, the concentration of ions per unit volume decreases (not increases). To ensure safety, acid must be added slowly to water with constant stirring (statement 3). Adding water to concentrated acid (statement 2) can cause the mixture to splash out due to the highly exothermic nature of the reaction.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids, Bases and Salts"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q51",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "text": "Which one of the following is the correct order of pH for the given substances?",
+    "options": [
+      "Coffee < Lemon juice < Milk of magnesia < Blood",
+      "Milk of magnesia < Blood < Coffee < Lemon juice",
+      "Lemon juice < Blood < Coffee < Milk of magnesia",
+      "Lemon juice < Coffee < Blood < Milk of magnesia"
+    ],
+    "correctAnswer": 3,
+    "explanation": "pH values determine acidity or alkalinity. Lemon juice is highly acidic (pH ~2), coffee is mildly acidic (pH ~5), blood is slightly alkaline (pH ~7.4), and Milk of Magnesia is basic (pH ~10.5). Thus, the correct increasing order is Lemon juice < Coffee < Blood < Milk of Magnesia[cite: 846, 855].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Acids, Bases and Salts"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q52",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Metals and Non-metals",
+    "text": "Which one of the following is not true for anodizing process?",
+    "options": [
+      "It makes aluminium corrosion resistant.",
+      "Metals like aluminium, titanium and magnesium can be anodized.",
+      "Clean aluminium article is the anode and oxygen gas is evolved at the cathode.",
+      "It is used in aircraft industry."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the anodizing process, the metal part (like aluminium) acts as the anode. However, during electrolysis, oxygen gas is evolved at the anode (to form the oxide layer), not the cathode. Therefore, option (c) is incorrect[cite: 860, 863].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Metals and Non-metals"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q53",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Carbon and its Compounds",
+    "text": "Naphthalene burns with a yellow sooty flame. This is because",
+    "options": [
+      "carbon to hydrogen ratio is low",
+      "there is incomplete combustion",
+      "there is excess supply of air",
+      "of presence of impurities of nitrogen and sulfur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Naphthalene is an aromatic hydrocarbon with a high carbon-to-hydrogen ratio. Such unsaturated compounds often undergo incomplete combustion in air, leading to unburnt carbon particles that glow yellow and produce soot[cite: 865, 867].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Carbon and its Compounds"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q54",
+    "year": 2023,
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "text": "Which of the following statements are true for the reaction of Fe2O3 with aluminium?\n1. It is known as the 'thermite reaction'.\n2. The heat evolved is used for welding purpose.\n3. Aluminium metal acts as an oxidizing agent.\n4. Molten Fe and Al are formed at the end of the reaction.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "1 and 4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The reaction $Fe_2O_3 + 2Al \rightarrow Al_2O_3 + 2Fe + Heat$ is the thermite reaction (Statement 1). The intense heat melts the iron, which is used to weld railway tracks (Statement 2). Aluminium acts as a reducing agent, not an oxidizing agent (Statement 3 is false), and while Fe is molten, Al is converted to $Al_2O_3$[cite: 847, 850, 853, 857, 871].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Chemistry"
+      },
+      {
+        "type": "topic",
+        "label": "Chemical Reactions"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q55",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Vicky told his friends about his visit to Stewart Island, Bay of Plenty and Hawke Bay. Which country did Vicky visit?",
+    "options": [
+      "Canada",
+      "Australia",
+      "New Zealand",
+      "Ireland"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Stewart Island (Rakiura), the Bay of Plenty, and Hawke Bay are all prominent geographical features and regions located in New Zealand[cite: 875, 880].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q56",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Heritage Sites",
+    "text": "Manav is planning to visit all UNESCO World Heritage Sites in Delhi. He will be visiting",
+    "options": [
+      "Red Fort, Qutab Minar, Jama Masjid",
+      "Red Fort, India Gate, Qutab Minar",
+      "Red Fort, Qutab Minar, Humayun Tomb",
+      "Red Fort, Humayun Tomb, India Gate"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Delhi currently has three UNESCO World Heritage Sites: The Red Fort Complex, the Qutub Minar and its Monuments, and Humayun's Tomb. India Gate and Jama Masjid are not designated UNESCO World Heritage Sites[cite: 942, 949].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Heritage Sites"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q57",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Rivers",
+    "text": "What will be the correct sequence of cities on the bank of river Ganga if someone moves from west to east?",
+    "options": [
+      "Prayagraj, Kanpur, Bhagalpur, Patna",
+      "Prayagraj, Kanpur, Patna, Bhagalpur",
+      "Kanpur, Prayagraj, Bhagalpur, Patna",
+      "Kanpur, Prayagraj, Patna, Bhagalpur"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Following the course of the Ganga from West to East (upstream to downstream): Kanpur comes first, followed by Prayagraj (at the confluence with Yamuna), then Patna (Bihar), and finally Bhagalpur (Eastern Bihar)[cite: 952, 962].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Rivers"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q58",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - States",
+    "text": "Which one among the following States has the longest extension in north-south direction?",
+    "options": [
+      "Jharkhand",
+      "Telangana",
+      "Odisha",
+      "Chhattisgarh"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Among the given options, Chhattisgarh has a notably long vertical (north-south) stretch, extending from the border of UP/Jharkhand in the north down to the border of Telangana/Andhra Pradesh in the south[cite: 965, 969].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - States"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q59",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Important Days",
+    "text": "Match List-I (Day) with List-II (Date):\nA. World Wetlands Day - 1. 29 July\nB. International Tiger Day - 2. 22 April\nC. World Water Day - 3. 2 February\nD. International Mother Earth Day - 4. 24 March",
+    "options": [
+      "A-3, B-4, C-1, D-2",
+      "A-3, B-1, C-4, D-2",
+      "A-2, B-1, C-4, D-3",
+      "A-2, B-4, C-1, D-3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "World Wetlands Day is February 2 (A-3). International Tiger Day is July 29 (B-1). World Water Day is March 22 (C-4). International Mother Earth Day is April 22 (D-2)[cite: 951, 954].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Important Days"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q60",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Education - Indices",
+    "text": "Which one of the following States/UTs is not among the top five in the Performance Grading Index (PGI), published by the Ministry of Education for the year 2020-2021?",
+    "options": [
+      "Kerala",
+      "Punjab",
+      "NCT of Delhi",
+      "Chandigarh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the PGI 2020-21, Kerala, Punjab, and Chandigarh were top performers. NCT of Delhi, while high-performing, was not in the top five bracket for that specific assessment period[cite: 970, 974].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Education - Indices"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q61",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Awards - Cinema",
+    "text": "Identify the actress: She is a renowned film actress, director and producer, and an accomplished Indian classical dancer. She was conferred the Padma Shri in 1992 and has served as the Head of Central Board for Film Certification from 1998 to 2001. She was honoured with the Dadasaheb Phalke Award.",
+    "options": [
+      "Vyjayanthimala",
+      "Waheeda Rehman",
+      "Mala Sinha",
+      "Asha Parekh"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Asha Parekh was the first female chairperson of the CBFC (1998-2001), received the Padma Shri in 1992, and was awarded the Dadasaheb Phalke Award for the year 2020[cite: 1016, 1022].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Awards - Cinema"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q62",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "International Summits",
+    "text": "Which one of the following is the venue of the UN 2023 Water Conference?",
+    "options": [
+      "Washington, DC",
+      "New York",
+      "San Diego",
+      "New Delhi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The UN 2023 Water Conference was held at the United Nations Headquarters in New York in March 2023[cite: 1041, 1044].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Summits"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q63",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Awards - Literature",
+    "text": "Which of the following statements is/are correct?\n1. Tomb of Sand, written by Geetanjali Shree, is the first book originally written in any Indian language to win the International Booker Prize.\n2. Tomb of Sand is the first novel translated from Hindi to be given the International Booker Prize.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Geetanjali Shree's 'Ret Samadhi' (translated as Tomb of Sand by Daisy Rockwell) became the first Hindi novel and the first book by an Indian author in an Indian language to win the International Booker Prize[cite: 1023, 1031].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Awards - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q64",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defense - Exercises",
+    "text": "The eighth edition of the Exercise Garuda Shakti, a bilateral military-to-military exercise, was conducted recently between the special forces of India and",
+    "options": [
+      "Japan",
+      "Indonesia",
+      "Bhutan",
+      "Myanmar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Garuda Shakti is a bilateral joint training exercise between the Special Forces of India and Indonesia[cite: 1033, 1037].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defense - Exercises"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q65",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Inflation Control",
+    "text": "Which one of the following is a measure that can be used by the Government for combatting inflation?",
+    "options": [
+      "Increasing the non-planned expenditure on defence, police, etc.",
+      "Providing more subsidies on exports",
+      "Increasing the rate of interest on savings and fixed deposits",
+      "Reduction in the cash reserve ratio (CRR)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "To combat inflation, the government and central bank aim to reduce liquidity in the market. Increasing interest rates on savings encourages people to save more and spend less, thereby reducing aggregate demand and cooling down inflation[cite: 1047, 1052].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Inflation Control"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q66",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Macroeconomics",
+    "text": "The sustained decrease in the general price level is called as",
+    "options": [
+      "deflation",
+      "stagflation",
+      "devaluation",
+      "recession"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Deflation is characterized by a general and sustained decrease in the price levels of goods and services[cite: 1091, 1092].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Macroeconomics"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q67",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Poverty - Indices",
+    "text": "Which one of the following indicators is included in the National Multidimensional Poverty Index (MPI)?",
+    "options": [
+      "Years of schooling",
+      "Literacy rate",
+      "Life expectancy",
+      "Per capita income"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The National MPI (based on the Oxford-UNDP methodology used by NITI Aayog) uses indicators like nutrition, child mortality, years of schooling, and school attendance, rather than pure income metrics[cite: 1104, 1105].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Poverty - Indices"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q68",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Unemployment",
+    "text": "The unemployment that occurs due to changes in the technology or in the demand for particular products is called",
+    "options": [
+      "frictional unemployment",
+      "structural unemployment",
+      "cyclical unemployment",
+      "disguised unemployment"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Structural unemployment arises from a mismatch between the skills of the labor force and the requirements of the new technology or changes in the structure of the economy[cite: 1113, 1115].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Unemployment"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q69",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Government Schemes",
+    "text": "Which of the following is/are the objective/objectives of the Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)?\n1. Correcting regional imbalances in the availability of tertiary health care services\n2. Providing universal access to public health services and universal immunization\n3. Augmenting facilities for quality medical education in the country",
+    "options": [
+      "1 and 3 only",
+      "2 and 3 only",
+      "1 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "PMSSY aims to correct imbalances in tertiary healthcare (like setting up new AIIMS) and augment medical education facilities (Statement 1 and 3). Universal immunization falls under different missions like Mission Indradhanush[cite: 1096, 1109].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q70",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern History",
+    "text": "Who among the following political leaders suggested the dissolution of the Indian National Congress as a political organization and its replacement by a Lok Sevak Sangh?",
+    "options": [
+      "Vallabhbhai Patel",
+      "Dr. B. R. Ambedkar",
+      "M. K. Gandhi",
+      "Jawaharlal Nehru"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mahatma Gandhi, in his 'Last Will and Testament' written just before his assassination, suggested that the Congress had served its purpose as an instrument for independence and should be disbanded and transformed into a social service organization called Lok Sevak Sangh[cite: 1120, 1123].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern History"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q71",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "International Relations",
+    "text": "India is the first country in the world to deploy an all-woman contingent to a UN Peacekeeping Mission. In which country did this mission operate?",
+    "options": [
+      "Liberia",
+      "Sudan",
+      "Burundi",
+      "Croatia"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In 2007, India became the first country to deploy an all-women contingent to a UN peacekeeping mission, sending a Formed Police Unit (FPU) to Liberia[cite: 1164, 1165, 1166].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q72",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Education - Initiatives",
+    "text": "Which one among the following is not a part of the SWAYAM programme?",
+    "options": [
+      "Video lectures",
+      "Classroom lectures",
+      "Online discussion forum for clearing doubts",
+      "Specially prepared material that can be downloaded/printed"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SWAYAM is an online platform for MOOCs. It consists of four quadrants: video lectures, specially prepared reading material, self-assessment tests, and an online discussion forum[cite: 1170, 1171, 1173, 1174, 1176]. Physical classroom lectures are not part of this digital initiative[cite: 1172].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Education - Initiatives"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q73",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Governance - Ministries",
+    "text": "Which one among the following Departments/Authorities is not under the Ministry of Home Affairs?",
+    "options": [
+      "The Department of States",
+      "The Department of Official Language",
+      "The National Authority Chemical Weapons Convention",
+      "The Department of Jammu, Kashmir and Ladakh Affairs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The National Authority Chemical Weapons Convention (NACWC) is an office in the Cabinet Secretariat, not under the MHA[cite: 1184, 1185]. The other three are departments within the Ministry of Home Affairs[cite: 1178, 1179, 1183, 1204, 1206].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Governance - Ministries"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q74",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Constitutional Provisions - Scheduled Areas",
+    "text": "Who among the following is given discretionary powers under the Fifth Schedule of the Constitution of India to set up a Tribes Advisory Council in a State which has Scheduled Tribes but not Scheduled Areas?",
+    "options": [
+      "The Governor of the concerned State",
+      "The President of India",
+      "The Inter-State Council",
+      "The Parliament of India"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Under the Fifth Schedule, while a TAC is mandatory for states with Scheduled Areas, the President may direct the establishment of such a council in a state that has Scheduled Tribes but no Scheduled Areas[cite: 1187, 1189, 1190].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Provisions - Scheduled Areas"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q75",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Governance - Zonal Councils",
+    "text": "Which of the following States/UTs are included in the Northern Zonal Council?",
+    "options": [
+      "Uttarakhand, Uttar Pradesh, Haryana, Punjab, Jammu and Kashmir",
+      "Haryana, Punjab, Himachal Pradesh, Rajasthan and NCT of Delhi",
+      "Uttar Pradesh, Uttarakhand, Punjab, Haryana and Rajasthan",
+      "Uttarakhand, Uttar Pradesh, Himachal Pradesh, Punjab and Haryana"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Northern Zonal Council comprises Haryana, Himachal Pradesh, Punjab, Rajasthan, NCT of Delhi, and the UTs of Jammu & Kashmir and Ladakh[cite: 1193, 1196]. Uttar Pradesh and Uttarakhand are part of the Central Zonal Council[cite: 1194].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Governance - Zonal Councils"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q76",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Kushanas",
+    "text": "The notion of kinship projected by the Kushana rulers is best evidenced through which of the following?",
+    "options": [
+      "Their identification with deities",
+      "Grants to religious institutions",
+      "Inscriptional panegyrics",
+      "Coins and sculpture"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kushana rulers claimed divine status to legitimize their rule, often adopting titles like 'Devaputra' (Son of God) and depicting themselves alongside deities on coins and in colossal sculptures like those at Mat[cite: 1199, 1200, 1205].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Kushanas"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q77",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Buddhism",
+    "text": "Who among the following were referred to as the 'Theris' in ancient India?",
+    "options": [
+      "Respected women",
+      "Elder nuns in Buddhism",
+      "Women denied the Bhikkhuni status",
+      "Women expelled from the Buddhist Sangha"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In early Buddhism, 'Theris' were senior or elder nuns who had attained liberation. Their verses are collected in the 'Therigatha'[cite: 1267, 1269].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Buddhism"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q78",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Social Reforms",
+    "text": "Which member of the Servants of India Society founded the Seva Samiti at Allahabad in 1914?",
+    "options": [
+      "Shri Ram Bajpai",
+      "Hriday Nath Kunzru",
+      "S. G. Vaze",
+      "Srinivas Shastri"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hriday Nath Kunzru, a prominent member of the Servants of India Society, founded the Seva Samiti at Allahabad in 1914 to promote social service and education[cite: 1272, 1281].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Social Reforms"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q79",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Maratha Wars",
+    "text": "The First Anglo-Maratha War concluded by which one of the following?",
+    "options": [
+      "The Treaty of Surat",
+      "The Treaty of Purandar",
+      "The Convention of Wadgaon",
+      "The Treaty of Salbai"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The First Anglo-Maratha War ended in 1782 with the signing of the Treaty of Salbai, which established peace between the British and the Marathas for twenty years[cite: 1285, 1286, 1302].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Maratha Wars"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q80",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Regional States",
+    "text": "Name the battle in which the Travancore King defeated the Dutch in 1741.",
+    "options": [
+      "The Battle of Porto Novo",
+      "The Battle of Colachel",
+      "The Battle of Pollilore",
+      "The Battle of Changanassery"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In the Battle of Colachel (1741), King Marthanda Varma of Travancore defeated the Dutch East India Company, effectively ending Dutch colonial ambitions in India[cite: 1303, 1305].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Regional States"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q81",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Tribal Revolts",
+    "text": "In which one of the following revolts did the Koya and Konda tribal chiefs rise against the local overlord from a Mansabdar family?",
+    "options": [
+      "The Rampa Rebellion, 1879-1880",
+      "The Gudem Uprising, 1886",
+      "The Rampa Rebellion, 1922-1924",
+      "The Telangana Armed Struggle, 1946-1951"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Rampa Rebellion of 1879-1880 was led by Koya and Konda hill chiefs against the oppression of the local Mansabdar and British forest laws[cite: 1273, 1274].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Tribal Revolts"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q82",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Sports - Football",
+    "text": "Which country won the FIFA World Cup (Men) for maximum number of times?",
+    "options": [
+      "Argentina",
+      "Brazil",
+      "France",
+      "Spain"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Brazil holds the record for the most FIFA World Cup titles, having won the tournament five times[cite: 1278, 1293].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports - Football"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q83",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Literature",
+    "text": "Who among the following is the author of the famous novel, City of Joy?",
+    "options": [
+      "Larry Collins",
+      "Dominique Lapierre",
+      "Rudyard Kipling",
+      "Mark Tully"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dominique Lapierre is the author of the 1985 novel 'City of Joy', set in the slums of Kolkata[cite: 1297, 1309].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q84",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Awards - Environment",
+    "text": "Who among the following is honoured with the UN Environment Programme's 2022 Champions of the Earth Award in the Entrepreneurial Vision category?",
+    "options": [
+      "Ela Bhatt",
+      "Amit Dasgupta",
+      "Purnima Devi Barman",
+      "Vanshika Parmar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dr. Purnima Devi Barman, an Indian wildlife biologist, won the 2022 Champions of the Earth award for her conservation efforts with the 'Hargila Army'[cite: 1313, 1318].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Awards - Environment"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q85",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Culture",
+    "text": "The theme of India's G20 Presidency 'Vasudhaiva Kutumbakam' or 'One Earth-One Family-One Future' is drawn from the",
+    "options": [
+      "Maha Purana",
+      "Maha Upanishad",
+      "Rig Veda",
+      "Smriti"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The phrase 'Vasudhaiva Kutumbakam' is taken from the Maha Upanishad[cite: 1358, 1360].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Culture"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q86",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Defense - Exercises",
+    "text": "The 16th edition of Indo-Nepal annual joint training exercise in jungle warfare and counterterrorism operations was held in December 2022 at Nepal Army Battle School, Saljhandi. What is the name of this exercise?",
+    "options": [
+      "Sampriti",
+      "Mitra Shakti",
+      "Yudh Abhyas",
+      "Surya Kiran"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Surya Kiran is the name of the joint military exercise conducted between the armies of India and Nepal[cite: 1369, 1374].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Defense - Exercises"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q87",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "General Geography - Time",
+    "text": "If it is 10:00 a.m. at Greenwich Mean Time (GMT), then what will be the time at 90° E longitude?",
+    "options": [
+      "5:00 a.m.",
+      "4:00 a.m.",
+      "3:00 p.m.",
+      "4:00 p.m."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Time increases by 4 minutes for every 1° of eastward longitude. For 90° E, the time difference is $90 \times 4 = 360$ minutes (6 hours). Therefore, it will be $10:00$ a.m. $+ 6$ hours $= 4:00$ p.m.[cite: 1375, 1379].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "General Geography - Time"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q88",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography - Solar System",
+    "text": "Which of the following groups of planets is termed as 'gas planets' as they are composed primarily of lighter ices, liquids and gases?",
+    "options": [
+      "Mars, Jupiter, Neptune, Uranus",
+      "Jupiter, Uranus, Neptune, Saturn",
+      "Saturn, Mars, Jupiter, Neptune",
+      "Neptune, Saturn, Mars, Uranus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The outer planets—Jupiter, Saturn, Uranus, and Neptune—are known as the gas giants or Jovian planets because they lack a solid surface and are mostly gas and ice[cite: 1363, 1366].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Solar System"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q89",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Soils",
+    "text": "Consider the following characteristics of a soil type:\n1. These soils consist of various proportions of sand, silt and clay.\n2. These soils contain adequate proportions of potash, phosphoric acid and lime.\n3. These soils can be further classified on the basis of their age.\nIdentify the type of soil on the basis of the given characteristics.",
+    "options": [
+      "Alluvial",
+      "Laterite",
+      "Arid",
+      "Black"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alluvial soils are classified by age into Khadar (new) and Bangar (old), contain diverse proportions of sand/silt/clay, and are rich in potash and lime[cite: 1381, 1382, 1385, 1386, 1388].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Soils"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q90",
+    "year": 2023,
+    "subject": "Physics",
+    "topic": "Energy - Thermal Power",
+    "text": "Consider the following statements:\n1. In a thermal power station, fuels such as oil, coal or natural gas are used to generate electricity.\n2. Fuels are burned to heat water and turn it into steam, which goes through a turbine, which spins and turns, generating electricity.\nIdentify the correct answer using the code given below:",
+    "options": [
+      "Statement 1 is correct but statement 2 is not correct",
+      "Statement 2 is correct but statement 1 is not correct",
+      "Both the statements are correct and statement 2 explains statement 1",
+      "Both the statements are correct but statement 2 does not explain statement 1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements accurately describe the components and process of a thermal power plant, where burning fossil fuels creates steam to drive turbines for electricity generation[cite: 1434, 1435, 1436, 1441].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Physics"
+      },
+      {
+        "type": "topic",
+        "label": "Energy - Thermal Power"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q91",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Rivers",
+    "text": "Indus river basin is extended up to",
+    "options": [
+      "Ladakh, Jammu and Kashmir, Himachal Pradesh, Punjab",
+      "Ladakh, Jammu and Kashmir, Punjab, Haryana",
+      "Ladakh, Jammu and Kashmir, Punjab, Haryana, Rajasthan",
+      "Ladakh, Jammu and Kashmir, Himachal Pradesh, Punjab, Haryana, Rajasthan"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In India, the Indus river basin covers parts of Ladakh, Jammu & Kashmir, Himachal Pradesh, Punjab, Haryana, and Rajasthan[cite: 1443, 1471].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Rivers"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q92",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Constitutional Bodies - SGI",
+    "text": "Which one of the following statements about the Solicitor General of India (SGI) is not correct?",
+    "options": [
+      "The SGI is the Government's chief legal advisor.",
+      "The SGI is the secondary law officer of the country.",
+      "The post of the SGI is a constitutional post.",
+      "The SGI is appointed by the Appointments Committee of the Cabinet."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The post of the Solicitor General of India is a statutory post, not a constitutional one (unlike the Attorney General, who is under Article 76)[cite: 1446, 1450, 1451, 1453].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Constitutional Bodies - SGI"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q93",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Parliament - Committees",
+    "text": "Which one of the following committees does not have members from the Rajya Sabha?",
+    "options": [
+      "The Public Accounts Committee",
+      "The Committee on Public Undertakings",
+      "The Estimates Committee",
+      "The Committee on the Welfare of Scheduled Castes and Scheduled Tribes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Estimates Committee consists of 30 members, all of whom are elected only from the Lok Sabha[cite: 1456, 1459].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament - Committees"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q94",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Executive - President",
+    "text": "Which one of the following statements about the election of the President of India is not correct?",
+    "options": [
+      "A Union Minister shall not be eligible for election as the President.",
+      "The President is elected by the elected members of the Parliament and the Legislative Assemblies of States and Union Territories.",
+      "The Electoral College does not include elected members of the Legislative Councils.",
+      "The system of proportional representation by means of single transferable vote is followed."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A person holding the office of a Union Minister is not considered to hold an 'office of profit' and is eligible to contest for the Presidency, provided they meet other criteria[cite: 1462, 1474].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Executive - President"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q95",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Citizenship",
+    "text": "The Citizenship Act, 1955 deals with the determination of citizenship on or after",
+    "options": [
+      "26th January, 1950",
+      "26th November, 1949",
+      "15th August, 1947",
+      "14th August, 1947"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While the Constitution (Articles 5-11) dealt with citizenship at its commencement (January 26, 1950), the Citizenship Act, 1955 provides for the acquisition and loss of citizenship after that date[cite: 1479, 1521, 1522].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Citizenship"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q96",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Poverty - MPI",
+    "text": "According to the National Multi-dimensional Poverty Index (MPI) constructed by the NITI Aayog, a household is considered deprived if\n1. a single member of the household is identified as under-nourished\n2. the body mass index of a woman member, between 15 years and 49 years of age, is below 18.5 kg/m^2",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The National MPI considers a household deprived if any member (child, woman, or man) is undernourished. Specifically, for women aged 15-49, a BMI below $18.5$ $kg/m^2$ is a marker of deprivation[cite: 1487, 1488, 1526, 1527, 1529, 1534].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Poverty - MPI"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q97",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval India - Dynasties",
+    "text": "The titles of 'Rayagajakesari' and 'Dayagajakesari' were associated with which one of the following dynasties?",
+    "options": [
+      "Kakatiya",
+      "Vijayanagara",
+      "Gajapati",
+      "Rashtrakuta"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These titles were adopted by rulers of the Kakatiya dynasty[cite: 1497, 1498, 1547, 1548].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Dynasties"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q98",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Art & Culture",
+    "text": "Name the location of the musical inscription containing groups of musical notes arranged for the benefit of his pupils by a king in the seventh or eighth century CE.",
+    "options": [
+      "Ennayiram",
+      "Uttaramerur",
+      "Siyyamangalam",
+      "Kudumiyamalai"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Kudumiyamalai inscription in Tamil Nadu is a famous musical inscription attributed to a Pallava king (Mahendravarman I)[cite: 1536, 1537, 1541].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Art & Culture"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q99",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Trade",
+    "text": "In the context of eighteenth century India, what was 'Dastak'?",
+    "options": [
+      "Signature",
+      "Land document",
+      "Trade permit",
+      "Tax on textiles"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A 'Dastak' was a trade permit issued to the East India Company, allowing their goods to move without paying internal custom duties[cite: 1542, 1545].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Trade"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q100",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Economy",
+    "text": "Which one of the following was primarily associated with 'Dadni' system?",
+    "options": [
+      "Textile production",
+      "Warfare",
+      "Payment to officials",
+      "Revenue collection"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Dadni system involved giving cash advances to artisans (especially weavers) for the production of textiles to be exported by the Company[cite: 1552, 1553].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Economy"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q101",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Archaeology",
+    "text": "Consider the following statements about Kanaganahalli archaeological site:\n1. It is situated on the bank of Bhima river.\n2. The remains of the Kanaganahalli Stupa can be dated between 1st and 3rd centuries CE.\n3. Emperor Ashoka's image was found at the site.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All statements are correct. Kanaganahalli (Karnataka) is on the Bhima river, the stupa dates to the early centuries CE, and it famously houses a unique inscribed relief of 'Raya Asoka'[cite: 1596, 1597, 1598, 1599, 1604].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Archaeology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q102",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography - Volcanoes",
+    "text": "Which of the following statements about volcanoes are correct?\n1. The strength of a volcano is measured by the Volcanic Explosive Index.\n2. Iceland and Philippines were created by volcanic activity.\n3. Volcanic soils are rich, deep and fertile and allow intensive agriculture to take place.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All statements are correct. VEI measures volcanic intensity, both Iceland and the Philippines are volcanic in origin, and weathered volcanic ash creates highly fertile soils[cite: 1605, 1606, 1609, 1610, 1612, 1617].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Volcanoes"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q103",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography - Climatology",
+    "text": "Consider the following characteristics of a cloud type:\n1. They are born through convection.\n2. Only cloud type that can produce hail, thunder and lightning.\n3. They are large cauliflower-shaped towers, often 'anvil tops'.\nIdentify the type of cloud on the basis of the given characteristics.",
+    "options": [
+      "Stratocumulus",
+      "Cumulonimbus",
+      "Cirrocumulus",
+      "Nimbostratus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cumulonimbus clouds are vertical towers formed by convection, responsible for thunderstorms and hail, and often characterized by an anvil-shaped top[cite: 1618, 1620, 1623, 1624, 1627].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Climatology"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q104",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Practical Geography - Graphs",
+    "text": "Meena wants to show diagrammatically how two sets of data, namely, population size and number of services are related to each other. Which one of the following will be the most suitable for the presentation?",
+    "options": [
+      "Pie chart",
+      "Scatter graph",
+      "Bar chart",
+      "Triangular graph"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A scatter graph is used to display the relationship (correlation) between two numerical variables[cite: 1630, 1633].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Practical Geography - Graphs"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q105",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Coastline",
+    "text": "Which one of the following Indian States has the longest coastline?",
+    "options": [
+      "Tamil Nadu",
+      "Gujarat",
+      "Maharashtra",
+      "Andhra Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gujarat has the longest coastline among all Indian states, exceeding $1,600$ km[cite: 1678, 1681].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Coastline"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q106",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Ports",
+    "text": "Which of the following statements is/are correct?\n1. Visakhapatnam Port is a land-locked harbour.\n2. Deendayal Port is a tidal port.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Visakhapatnam is a natural, land-locked deep-water harbour. Deendayal Port (Kandla) is a major tidal port in Gujarat[cite: 1684, 1685, 1686, 1690].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Ports"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q107",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Forests",
+    "text": "There is an increase in forest cover area of India between 2011 and 2021. However, there is a decrease in forest cover area of India during the same period in",
+    "options": [
+      "very dense forest (canopy density of more than 70 percent)",
+      "moderately dense forest (canopy density between 40-70 percent)",
+      "open forest (canopy density between 10-20 percent)",
+      "Both (b) and (c)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "While total forest cover increased, the India State of Forest Reports (ISFR) showed a specific decline in the 'moderately dense forest' category over this period[cite: 1692, 1694].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Forests"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q108",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Education - Policies",
+    "text": "Consider the following statements concerning the National Education Policy, 2020:\n1. At least 50 percent of the learners through school and higher education system to get exposure to vocational education by 2025.\n2. Secondary schools should collaborate with ITIs, Polytechnics and local industries.\n3. Vocational education to be exclusively provided by NGOs.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 are goals of NEP 2020. Statement 3 is incorrect as vocational education is to be integrated into the mainstream school and higher education system, not provided exclusively by NGOs[cite: 1698, 1699, 1702, 1703, 1706].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Education - Policies"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q109",
+    "year": 2023,
+    "subject": "Economics",
+    "topic": "Sustainable Development - Indices",
+    "text": "Which of the following sets of States is at the bottom of the Composite SDG India Index, 2020-2021 as per the NITI Aayog?",
+    "options": [
+      "Assam, Jharkhand, Bihar",
+      "Uttar Pradesh, Jharkhand, Bihar",
+      "Uttar Pradesh, Bihar, Assam",
+      "Odisha, Bihar, Jharkhand"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the NITI Aayog's SDG India Index 2020-21, Bihar, Jharkhand, and Assam were ranked as the bottom three states[cite: 1709, 1710].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economics"
+      },
+      {
+        "type": "topic",
+        "label": "Sustainable Development - Indices"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q110",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "DPSP - International Relations",
+    "text": "Which one of the following is not a part of Article 51 of the Constitution of India?",
+    "options": [
+      "Promote international peace and security",
+      "Maintain just and honourable relations between nations",
+      "Use of UN peacekeeping force for resolution of international disputes",
+      "Encourage settlement of international disputes by arbitration"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 51 (DPSP) mandates the State to promote peace, maintain honourable relations, foster respect for international law, and encourage arbitration for disputes. It does not explicitly mention the use of 'UN peacekeeping forces'[cite: 1751, 1752, 1753, 1754, 1767].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "DPSP - International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q111",
+    "year": 2023,
+    "subject": "History",
+    "topic": "World History - NAM",
+    "text": "Who among the following was not in the core leadership of the Non-Aligned Movement (NAM) in its formative phase?",
+    "options": [
+      "Kwame Nkrumah",
+      "Gamal Abdel Nasser",
+      "Jawaharlal Nehru",
+      "Fidel Castro"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The five founding leaders of NAM were Nehru (India), Nasser (Egypt), Sukarno (Indonesia), Tito (Yugoslavia), and Nkrumah (Ghana)[cite: 1768, 1775, 1776, 1777]. Fidel Castro (Cuba) became a leader later[cite: 1780].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "World History - NAM"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q112",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval India - Society",
+    "text": "In respect to Balutedars, which of the statements given below are correct?\n1. They were village servants and artisans.\n2. They were employed by individual peasant family.\n3. They existed in the Medieval Deccan and Maharashtra.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Balutedars were village artisans/servants in the medieval Deccan/Maharashtra who served the *entire village* and were paid a share of the crop (baluta), rather than being employed by individual families[cite: 1755, 1756, 1759, 1760, 1765].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Society"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q113",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Colonial Administration",
+    "text": "Which one of the following Viceroys was the first to officially shift his Council to Simla in summer season?",
+    "options": [
+      "John Lawrence",
+      "Lord Dalhousie",
+      "Lord Mayo",
+      "William Bentinck"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While Dalhousie made Shimla his summer residence, it was John Lawrence who officially made it the summer capital of the British Raj in 1864[cite: 1769, 1771].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Colonial Administration"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q114",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Literature",
+    "text": "Who among the following is the author of Maze Vidyapeeth, the famous poem about the life of working class of Bombay?",
+    "options": [
+      "Narayan Surve",
+      "Amol Palekar",
+      "Bhalchandra Nemade",
+      "Narendra Jadhav"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Narayan Surve is a renowned Marathi poet known for 'Maze Vidyapeeth' (My University), which depicts the struggles of the urban working class[cite: 1778, 1779].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q115",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Social Reforms",
+    "text": "Who among the following founded the Hindu Dharma Sabha in the 19th century?",
+    "options": [
+      "Radhakanta Deb",
+      "Ram Mohan Roy",
+      "Dwarkanath Tagore",
+      "Keshab Chandra Sen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Radhakanta Deb founded the Dharma Sabha in 1830 to counter the socio-religious reforms of Raja Ram Mohan Roy's Brahmo Samaj[cite: 1871, 1873].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Social Reforms"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q116",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "International Initiatives",
+    "text": "The resolution adopted by the United Nations General Assembly on 3 March, 2021 decided to celebrate the year 2023 as the International Year of",
+    "options": [
+      "Basic Sciences for Sustainable Development",
+      "Glass",
+      "Millets",
+      "Camelids"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The UN General Assembly declared 2023 as the International Year of Millets (IYM 2023) following a proposal by India[cite: 1800, 1806, 1877, 1880].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Initiatives"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q117",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Sports - Cricket",
+    "text": "Karthik Meiyappan, who secured a hat-trick in the ICC Men's T20 World Cup, 2022, represents",
+    "options": [
+      "Zimbabwe",
+      "United Arab Emirates",
+      "Sri Lanka",
+      "Namibia"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Karthik Meiyappan plays for the UAE national cricket team[cite: 1890, 1895].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports - Cricket"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q118",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "International Agreements",
+    "text": "Which one of the following statements about the Wassenaar Arrangement is not correct?",
+    "options": [
+      "There are 42 participating nations in the Arrangement.",
+      "It is formed primarily as a nuclear weapon overseer.",
+      "India is the current Chairman of the Arrangement.",
+      "India joined the Arrangement in the year 2017."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Wassenaar Arrangement is an export control regime for *conventional arms and dual-use goods and technologies*, not a nuclear weapon overseer (which is the role of the NSG or NPT)[cite: 1829, 1839, 1854, 1860, 1912, 1923, 1929, 1935, 1944].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "International Agreements"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q119",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Sports - Personalities",
+    "text": "Who among the following is known as 'Payyoli Express'?",
+    "options": [
+      "Hima Das",
+      "Dutee Chand",
+      "P. T. Usha",
+      "Shiny Abraham"
+    ],
+    "correctAnswer": 2,
+    "explanation": "P.T. Usha, the legendary Indian sprinter, is nicknamed the 'Payyoli Express' after her hometown in Kerala[cite: 1796, 1799, 1882, 1885].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Sports - Personalities"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  },
+  {
+    "id": "cdse-2023-1-q120",
+    "year": 2023,
+    "subject": "General Knowledge",
+    "topic": "Awards - Literature",
+    "text": "Match List-I (Sahitya Akademi Award 2022) with List-II (Author):\nA. Bhool Satya (Short Stories) - 1. Kamal Ranga\nB. Tumadi Ke Shabd (Poetry) - 2. Veena Gupta\nC. Chhe Roopak (Drama) - 3. Badri Narayan\nD. Alekhun Amba (Play) - 4. Manoj Kumar Goswami",
+    "options": [
+      "A-4, B-3, C-2, D-1",
+      "A-4, B-2, C-3, D-1",
+      "A-1, B-2, C-3, D-4",
+      "A-1, B-3, C-2, D-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Manoj Kumar Goswami (Bhool Satya - A-4), Badri Narayan (Tumadi Ke Shabd - B-3), Veena Gupta (Chhe Roopak - C-2), and Kamal Ranga (Alekhun Amba - D-1) were 2022 Sahitya Akademi winners[cite: 1810, 1814, 1815, 1823, 1826, 1828, 1887, 1899, 1902, 1906, 1909, 1911, 1940, 1941, 1942, 1943].",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Knowledge"
+      },
+      {
+        "type": "topic",
+        "label": "Awards - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CDS 2023 (1)"
+      }
+    ]
+  }
+]

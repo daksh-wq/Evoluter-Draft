@@ -1,0 +1,3627 @@
+[
+  {
+    "id": "pyq-2023-capf-q1",
+    "year": 2023,
+    "subject": "General Mental Ability",
+    "topic": "Blood Relations",
+    "text": "Pointing towards a photograph Mr. Ajit said, \"She is my father's wife's son's only sister.\" What is the relation of the person in the photograph with Mr. Ajit?",
+    "options": [
+      "Daughter",
+      "Mother's sister",
+      "Cousin",
+      "Sister"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mr. Ajit's 'father's wife' is his mother. His 'mother's son' is either Mr. Ajit himself or his brother. The 'son's only sister' refers to the sister of Mr. Ajit. Therefore, the person in the photograph is his sister.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Mental Ability"
+      },
+      {
+        "type": "topic",
+        "label": "Blood Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q2",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "text": "Three circles of radius 5 cm each, touch each other. If the points of contact are P, Q and R, then what is the area of the triangle PQR in sq. cm?",
+    "options": [
+      "25√3/6",
+      "25√3/4",
+      "25√3/2",
+      "25√3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let the centers of the three circles be A, B, and C. Joining these centers forms an equilateral triangle ABC with a side length of 10 cm (5 cm + 5 cm). The points of contact P, Q, and R are the midpoints of the sides of triangle ABC. The area of the large equilateral triangle ABC is (√3/4) * 10^2 = 25√3 sq. cm. The triangle formed by joining the midpoints of an equilateral triangle has exactly one-fourth of the area of the large triangle. Therefore, the area of triangle PQR is (25√3)/4 sq. cm.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Geometry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q3",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "text": "The right-angled triangle ABC is such that angle B = 90 degrees. Point D is picked on BC such that triangles ABC and DBA are similar. If AB:BC = m:n what is Area ABC : Area ABD?",
+    "options": [
+      "n:m",
+      "n^2:m^2",
+      "(m+n):n",
+      "(m+n)^2:n^2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If triangles ABC and DBA are similar, the ratio of their areas is equal to the square of the ratio of their corresponding sides. The side corresponding to BC in triangle ABC is AB in triangle DBA. The ratio of the area of triangle ABC to triangle ABD is (BC/AB)^2. Given AB:BC = m:n, we have BC/AB = n/m. Squaring this ratio yields n^2:m^2.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Geometry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q4",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Mensuration",
+    "text": "On a large ground, there is a straight tall vertical wall of length 28 m. A goat is tied to a point on the ground which is at the middle of the wall, using a rope. If the length of the rope is 21 m, what is the area of the region (in sq. m) around the wall that the goat can access?",
+    "options": [
+      "847",
+      "851",
+      "693",
+      "654"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The goat is tied at the midpoint of the 28m wall, leaving 14m of wall on either side. On the side it is tied, the goat can graze in a semicircle of radius 21m. The area of this semicircle is (1/2) * pi * 21^2 = (1/2) * (22/7) * 441 = 693 sq. m. Based on the options provided, the region accessed on the primary side of the wall is the intended answer.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Mensuration"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q5",
+    "year": 2023,
+    "subject": "General Mental Ability",
+    "topic": "Permutation and Combination",
+    "text": "A rectangular wall is divided into four squares of equal size where there are two rows each having two squares. The top left square is coloured with green. If, including green, there are three colours available and each square is coloured using any one of these three colours such that no two adjacent squares get painted with the same colour; then how many colour combinations are possible?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the squares be Top-Left (TL), Top-Right (TR), Bottom-Left (BL), and Bottom-Right (BR). TL is Green (G). TR and BL are adjacent to TL, so they can be either Colour 1 (C1) or Colour 2 (C2), giving 2 choices each. Case 1: TR and BL are the same colour (2 ways). Because BR is adjacent to both, BR can be G or the other unused colour (2 ways), resulting in 2 * 2 = 4 combinations. Case 2: TR and BL are different colours (2 ways). Because BR is adjacent to both C1 and C2, BR must be painted G (1 way), resulting in 2 * 1 = 2 combinations. Total combinations = 4 + 2 = 6.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Mental Ability"
+      },
+      {
+        "type": "topic",
+        "label": "Permutation and Combination"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q6",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Emergency Provisions",
+    "text": "Which of the following statements about National Emergency is/are correct? 1. A Proclamation of Emergency may be made by the President only when the security of India or any part thereof is threatened by war or external aggression or armed rebellion. 2. The Government of India acquires power to give directions to a State on any matter. 3. The Proclamation of Emergency does not suspend the State legislature. 4. The Proclamation of Emergency can continue for a maximum period of six months at a time only if approved by resolutions of both the Houses of Parliament.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statements 1, 2, and 3 are correct. During a National Emergency, the Centre gets concurrent powers to make laws on state subjects, but the State Legislature is not suspended. The Parliament can give executive directions on any matter. Statement 4 contains a slight catch: the emergency can continue indefinitely but requires periodic approval every six months, however, the combination of 1, 2, and 3 represents the most definitively correct options available.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Emergency Provisions"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q7",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "Which one of the following statements with regard to the impeachment of a Judge of the Supreme Court of India is not correct?",
+    "options": [
+      "A motion addressed to the President, signed by at least 100 members of both the Houses of the Parliament is delivered to the Speaker.",
+      "The motion is investigated by a Committee of three (2 Judges of the Supreme Court and a distinguished Jurist).",
+      "If the Committee finds the Judge guilty of misbehaviour or that he suffers from incapacity, the motion together with the report of the Committee is taken up for consideration in the House where the motion is pending.",
+      "The Judge will be removed after the President gives his order for removal."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The first statement is incorrect. An impeachment motion requires the signatures of at least 100 members if introduced in the Lok Sabha (delivered to the Speaker) or 50 members if introduced in the Rajya Sabha (delivered to the Chairman). It does not require 100 members of 'both' houses combined.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Judiciary"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q8",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "Which of the following are India's G20 priorities? 1. Green Development 2. Women-led Development 3. Climate Finance 4. Digital Public Infrastructure",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "India's G20 presidency focused on a variety of priorities including Green Development, Climate Finance and LiFE (Lifestyle for Environment), accelerated, inclusive & resilient growth, accelerating progress on SDGs, technological transformation & Digital Public Infrastructure, multilateral institutions for the 21st century, and Women-led development.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q9",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which of the following are the objectives of SAARC? 1. To promote the welfare of the peoples of South Asia and to improve the quality of life 2. To promote and strengthen collective self-reliance among the countries of South Asia 3. To contribute to mutual trust, understanding and appreciation of one another's problems 4. To work towards ending cross-border terrorism",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4",
+      "3 and 4 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The core objectives listed in the SAARC Charter include promoting the welfare of the people, strengthening collective self-reliance, and contributing to mutual trust and understanding. Eradicating cross-border terrorism, while a crucial regional discussion point, is not formally listed as an original SAARC Charter objective.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Organizations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q10",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Pure, demineralized water, free from all soluble mineral salts is obtained by which of the following method?",
+    "options": [
+      "Passing water through microfiltration membrane",
+      "Calgon's method",
+      "Passing water through a cation exchange and an anion exchange resin bed",
+      "By boiling"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Demineralized water is produced by removing all the mineral salts using an ion-exchange process. This is achieved by passing the water successively through a cation exchange resin (which replaces cations with H+ ions) and an anion exchange resin (which replaces anions with OH- ions).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q11",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Consider the following redox reaction: 2Cu2O(s) + Cu2S(s) -> 6Cu(s) + SO2(g). Identify the species among the following acting as oxidant and reductant, respectively:",
+    "options": [
+      "Cu(I) and S of Cu2S",
+      "Cu and S of SO2",
+      "Cu and O of SO2",
+      "Cu(I) and O of SO2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In the reaction, Copper (Cu) is reduced from a +1 oxidation state in both Cu2O and Cu2S to an oxidation state of 0 in the elemental form (Cu), making Cu(I) the oxidant (electron acceptor). Sulfur (S) is oxidized from a -2 oxidation state in Cu2S to a +4 oxidation state in SO2, making the S in Cu2S the reductant (electron donor).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q12",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements is not correct regarding the setting of cement?",
+    "options": [
+      "The addition of a small percentage of gypsum (CaSO4) lengthens the setting period of cement.",
+      "According to the colloidal theory, gels of hydrated silicates are formed and when these gels harden, the set cement loses strength.",
+      "Tricalcium silicate is responsible for initial setting of cement.",
+      "Dicalcium silicate and tricalcium silicate are responsible for the final strength which occurs in about a year."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement (b) is incorrect. According to the colloidal theory of cement setting, the gels of hydrated silicates form and harden over time, which actually increases the strength of the set cement, rather than losing it.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q13",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one is the most abundant of all the elements on Earth?",
+    "options": [
+      "Silicon",
+      "Aluminium",
+      "Carbon",
+      "Oxygen"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Oxygen is the most abundant element in the Earth's crust (comprising about 46.6% by mass). While Iron is the most abundant element in the Earth as a whole, it is not listed in the options, making Oxygen the correct choice among the given alternatives.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q14",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following metals does not react with oxygen directly?",
+    "options": [
+      "Ti",
+      "Fe",
+      "Pt",
+      "Zn"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Platinum (Pt) is a noble metal. It is highly unreactive and does not react directly with oxygen, unlike Titanium (Ti), Iron (Fe), and Zinc (Zn), which readily form oxides.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q15",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Consider the following observations about the largest stupa at Sanchi:\n1. Going by information available from the inscriptions on the railings of the stupa, the construction of part of one of its gateways was financed by the Guild of Ivory workers.\n2. In its original early form, this stupa was plain except for the stone railings and the gateways, which were richly carved.\n3. The panels on the four gateways contain sculptures only in the front and have no sculptures on the rear side.\n4. In 1918, when the stupa was discovered, all of its four gates were intact but the mound was in poor condition.\n5. Art historians have established clear connections between the sculptures of the stupa with events described in Jataka Tales.\n6. War scenes have also been depicted in these sculptures.\nWhich of the observations given above are correct?",
+    "options": [
+      "1, 2, 3 and 4 only",
+      "2, 3, 4 and 5 only",
+      "3, 4, 5 and 6 only",
+      "1, 2, 5 and 6 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Observations 1, 2, 5, and 6 are correct. Observation 3 is incorrect because the gateways have carvings on both the front and rear sides. Observation 4 is incorrect because the stupa was discovered in 1818, not 1918.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q16",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which of the following pairs are correctly matched?\n(Inscription/Event) : (Time Period)\n1. Prayag Prashasti by Harishena : 4th century CE\n2. Chinese traveller Fa Xian's Account : 6th century CE\n3. Mudrarakshasa of Vishakhadatta : 5th century CE\n4. Harshacharita of Banabhatta : 6th century CE\n5. Aihole Prashasti of Ravikirti : 7th century CE\n6. Kavirajamarga of Amoghavarsha : 8th century CE\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "4, 5 and 6 only",
+      "1, 3 and 5 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pairs 1, 3, and 5 are correct. Prayag Prashasti is from the 4th century (Samudragupta). Aihole Prashasti is from the 7th century (634 CE). Fa Xian visited in the early 5th century (not 6th). Harshacharita was written in the 7th century (not 6th). Kavirajamarga was written in the 9th century (not 8th).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q17",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one of the following statements is correct?",
+    "options": [
+      "Brahmi, used for writing many Ashokan inscriptions, shows local variations.",
+      "The system of hieroglyphic writing was developed in ancient Mesopotamia.",
+      "The system of cuneiform writing developed around 3rd millennium BCE in Egypt.",
+      "An ancient script, Kharoshthi was widely used in the southern part of India."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Brahmi script shows local variations in Ashokan inscriptions. The other statements are incorrect: Hieroglyphs were developed in Egypt (not Mesopotamia), Cuneiform was developed in Mesopotamia (not Egypt), and Kharoshthi was used in North-Western India (not the southern part).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q18",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one of the following activities was not a part of the daily time-table for a King as prescribed in Arthashastra?",
+    "options": [
+      "Receive reports on defense",
+      "Visit the town incognito",
+      "Receive revenue in cash",
+      "Consult his Council of Ministers"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to Kautilya's Arthashastra, a king's daily schedule is strictly divided into eight parts for the day and eight for the night. Routine activities included receiving revenue, consulting ministers, and reviewing defense reports. Visiting the town incognito was not part of the king's standard daily schedule, as espionage tasks were largely assigned to spies.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q19",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "Which organelle other than nucleus in eukaryotic cells has its own DNA, ribosomes and proteins?",
+    "options": [
+      "Golgi",
+      "Mitochondria",
+      "Lysosomes",
+      "Nucleosomes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mitochondria (and chloroplasts in plant cells) are semi-autonomous organelles. They contain their own circular DNA, ribosomes (70S), and proteins, enabling them to synthesize some of their own proteins.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q20",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "For protein synthesis, the amino acids are recognized and carried by:",
+    "options": [
+      "mRNA",
+      "snRNA",
+      "miRNA",
+      "tRNA"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Transfer RNA (tRNA) is responsible for carrying specific amino acids to the ribosome during protein synthesis (translation) and matching them to the corresponding codon on the messenger RNA (mRNA).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q21",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "In vertebrates, smooth endoplasmic reticulum in cells of which organ plays a crucial role in detoxification of toxic compounds?",
+    "options": [
+      "Spleen",
+      "Intestine",
+      "Kidney",
+      "Liver"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In vertebrates, the cells of the liver (hepatocytes) contain an abundant smooth endoplasmic reticulum (SER) that plays a critical role in detoxifying various poisons, drugs, and other toxic metabolic byproducts.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q22",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "The rate of an enzyme catalyzed reaction depends:",
+    "options": [
+      "upon substrate concentration, temperature and pH.",
+      "only on substrate concentration and pH, but not on temperature.",
+      "only on pH and temperature, but not on substrate concentration.",
+      "only on temperature, but not on pH and substrate concentration."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Enzyme activity is highly sensitive to its environment. The rate of an enzyme-catalyzed reaction is influenced by several factors, including temperature, pH, and the concentration of both the enzyme and the substrate.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q23",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "Both starch and glycogen are made up of glucose, however :",
+    "options": [
+      "starch is present in liver and glycogen is present in red blood cells.",
+      "glycogen is made in animal cells, but starch is made in plant cells.",
+      "both starch and glycogen are present in animal and plant cells.",
+      "both starch and glycogen are present in plant cells only."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Starch and glycogen are both polysaccharides made of glucose monomers used for energy storage. However, starch is exclusively synthesized and stored by plants, whereas glycogen is synthesized and stored in animal cells (primarily in the liver and muscles).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q24",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "In some viral infections, number of platelets are reduced quickly. Platelets are essential because:",
+    "options": [
+      "they along with red blood cells carry oxygen.",
+      "platelets are important to carry food to cells through blood.",
+      "platelets remove carbon dioxide from blood.",
+      "platelets have a role in blood clotting."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Platelets (thrombocytes) are specialized blood cells whose primary function is to stop bleeding by clumping and forming plugs in blood vessel injuries (blood clotting or coagulation).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q25",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Five Year Plans",
+    "text": "The focus of the Second Five Year Plan was:",
+    "options": [
+      "establishment of a self-reliant and self-generating economy with emphasis on agriculture.",
+      "rapid industrialization with emphasis on the development of basic and heavy industries.",
+      "removal of poverty and attainment of self-reliance.",
+      "acceleration of food-grain production and increase in employment opportunities and overall productivity."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Second Five Year Plan (1956-1961), based on the Mahalanobis model, shifted the focus from agriculture (the primary focus of the First Plan) to rapid industrialization, specifically emphasizing basic and heavy industries.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Five Year Plans"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q26",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "External Sector",
+    "text": "An Indian businessperson buys shares in a British car company. This transaction will be reflected in:",
+    "options": [
+      "Balance of Trade, but not in Balance of Payments.",
+      "Balance of Payments, but not in Balance of Trade.",
+      "both Balance of Payments and Balance of Trade.",
+      "neither Balance of Payments nor Balance of Trade."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Buying shares in a foreign company is a capital account transaction involving the outflow of foreign exchange. Therefore, it is recorded in the Balance of Payments (BoP). However, the Balance of Trade (BoT) only includes the export and import of physical goods (visible items), so it will not be reflected there.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "External Sector"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q27",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Macroeconomics",
+    "text": "Which of the following are High Frequency Indicators of the Indian economy?\n1. Power Consumption\n2. IIP General Index\n3. 10-year G-sec yield\nSelect the correct answer using the code below.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "High-Frequency Indicators (HFIs) are data series that are released frequently (e.g., daily, weekly, or monthly) and provide a real-time picture of the economy's health. Power consumption, the Index of Industrial Production (IIP), and 10-year Government Securities (G-sec) yields are all closely tracked HFIs by the RBI and government to gauge economic momentum.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Macroeconomics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q28",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "National Income",
+    "text": "Suppose an Indian citizen makes an investment abroad and earns a positive return on her investment. Which of the following is correct?",
+    "options": [
+      "Her income is part of India's GDP, but not part of India's national income.",
+      "Her income is part of India's national income, but not part of India's GDP.",
+      "Her income is part of both India's GDP and national income.",
+      "Her income is neither part of India's GDP, nor its national income."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gross Domestic Product (GDP) measures the value of goods and services produced within the domestic territory of a country, regardless of who produces them. National Income (conceptually related to Gross National Product - GNP) includes Net Factor Income from Abroad (NFIA). Therefore, the income earned by an Indian citizen abroad is added to India's National Income but is excluded from India's GDP.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "National Income"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q29",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Monetary Policy",
+    "text": "If the Cash Reserve Ratio is lowered by the RBI, supply of money in the economy will:",
+    "options": [
+      "remain unchanged.",
+      "decrease.",
+      "increase.",
+      "have ambiguous impact."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Cash Reserve Ratio (CRR) is the percentage of deposits that commercial banks must keep with the RBI. If the CRR is lowered, banks are required to hold less money in reserve and thus have more funds available to lend out. This increases the money multiplier effect, leading to an increase in the overall money supply in the economy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Monetary Policy"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q30",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Environment & Ecology",
+    "text": "Which one of the following is the main cause of the acid rains?",
+    "options": [
+      "The Sun causes heating of upper layer of atmosphere.",
+      "The burning of fossil fuels releases oxides of carbon, nitrogen and sulphur in the atmosphere.",
+      "The electrical charges are produced due to friction amongst clouds.",
+      "The atmosphere of the Earth contains acids."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Acid rain is primarily caused by the emission of sulfur dioxide (SO2) and nitrogen oxides (NOx) into the atmosphere, which are predominantly released from the burning of fossil fuels. These gases react with water, oxygen, and other chemicals to form sulfuric and nitric acids, which then fall to the ground with precipitation.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Environment & Ecology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q31",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Biogas is considered to be an excellent fuel which burns without smoke. The main constituent of biogas is:",
+    "options": [
+      "methane",
+      "hydrogen",
+      "carbon dioxide",
+      "hydrogen sulphide"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Biogas is produced by the anaerobic digestion of organic matter. Its main combustible constituent is methane (CH4), which typically makes up about 50-75% of the gas. The remaining volume is primarily carbon dioxide, with trace amounts of hydrogen sulfide and water vapor.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q32",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Environment & Ecology",
+    "text": "The depletion in atmospheric ozone layer in last century was due to:",
+    "options": [
+      "chlorofluorocarbon",
+      "carbon monoxide",
+      "methane",
+      "pesticides"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chlorofluorocarbons (CFCs), formerly used widely in refrigeration, aerosols, and air conditioning, are synthetic chemicals that migrate to the stratosphere. Ultraviolet radiation breaks them down, releasing chlorine atoms that catalyze the destruction of ozone molecules, causing the thinning of the ozone layer.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Environment & Ecology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q33",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Physics",
+    "text": "Which one of the following holds true for a freely falling object?",
+    "options": [
+      "It moves with a uniform velocity.",
+      "It moves with a uniform speed.",
+      "It moves with a non-uniform acceleration.",
+      "It moves with a uniform acceleration."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A freely falling object is subject only to the force of gravity (ignoring air resistance). Near the surface of the Earth, gravity causes objects to accelerate downwards at a constant rate, approximately 9.8 m/s^2. Thus, it moves with uniform acceleration.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q34",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Physics",
+    "text": "A sound wave of frequency of 2 kHz has a wavelength of 35 cm in a given medium. How long will it take to travel a distance of 2.1 km through the medium ?",
+    "options": [
+      "30 s",
+      "2.1 s",
+      "3.0 s",
+      "4.1 s"
+    ],
+    "correctAnswer": 2,
+    "explanation": "First, calculate the velocity of the sound wave using v = f * \u03bb. Frequency (f) = 2 kHz = 2000 Hz. Wavelength (\u03bb) = 35 cm = 0.35 m. Velocity (v) = 2000 * 0.35 = 700 m/s. The distance to travel is 2.1 km = 2100 m. Time = Distance / Velocity = 2100 / 700 = 3.0 seconds.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q35",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Physics",
+    "text": "Which one of the following conservation laws is a consequence of the Newton's third law of motion?",
+    "options": [
+      "Conservation of energy",
+      "Conservation of momentum",
+      "Conservation of charge",
+      "Conservation of mass"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Law of Conservation of Momentum states that the total momentum of a closed system remains constant. This is a direct consequence of Newton's Third Law (every action has an equal and opposite reaction); the mutual forces of action and reaction between two bodies are equal, opposite, and collinear, so the total momentum change is zero.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q36",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following is a permeable rock that allows water to pass through it ?",
+    "options": [
+      "Granite",
+      "Limestone",
+      "Quartzite",
+      "Sill"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Permeable rocks allow water to pass through them due to the presence of interconnected pores, joints, or cracks. Limestone is a highly permeable sedimentary rock. Over time, water can dissolve the calcium carbonate in limestone, creating larger passages and cave systems (karst topography). Granite, quartzite, and sills (intrusive igneous structures) are generally impermeable unless heavily fractured.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q37",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Which one of the following is the deepest, inland and protected port on the east coast of India?",
+    "options": [
+      "Chennai",
+      "Paradip",
+      "Tuticorin",
+      "Visakhapatnam"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Visakhapatnam is the deepest, landlocked, and protected port on the eastern coast of India. It handles a significant volume of cargo, particularly iron ore exports.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q38",
+    "year": 2023,
+    "subject": "Environment",
+    "topic": "Biodiversity",
+    "text": "The greatest diversity of animal and plant species is found in:",
+    "options": [
+      "Temperate forests",
+      "Deserts and Savannas",
+      "Arctic and Alpine systems",
+      "Tropical moist forests"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Tropical moist forests (or tropical rainforests) hold the greatest biodiversity on Earth. Thanks to consistent warmth, ample rainfall, and a year-round growing season, they support an incredibly dense and varied array of plant and animal life.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Biodiversity"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q39",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Which one among the following statements about Drumlin is correct?",
+    "options": [
+      "It is a streamlined hill moulded in glacial drift on the till plains.",
+      "It is a city located in central Europe.",
+      "It is a river.",
+      "It is a narrow road in Tibet."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A drumlin is an elongated, teardrop-shaped hill formed by the action of glacial ice acting on underlying unconsolidated till or ground moraine. It points in the direction of the glacier's flow.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q40",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Human Geography",
+    "text": "Which one of the following is the busiest sea route and links two industrially developed regions of the world?",
+    "options": [
+      "Mediterranean - Indian Ocean sea route",
+      "The Northern Atlantic sea route",
+      "Cape of Good Hope sea route",
+      "The North Pacific sea route"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The North Atlantic Sea Route connects the heavily industrialized regions of North-Eastern U.S.A. and North-Western Europe. Historically and presently, it is one of the busiest ocean trade routes in the world, carrying massive amounts of freight.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Human Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q41",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Agriculture",
+    "text": "Using the code given below identify the type of farming on the basis of given characteristics :\n1. The produce is consumed entirely or mainly by the family who work the land or tend the livestock.\n2. If a small surplus is produced, it may be sold or bartered.\n3. It is generally small scale and labour intensive with little or no technological input.\nCode:",
+    "options": [
+      "Extensive farming",
+      "Intensive farming",
+      "Subsistence farming",
+      "Commercial farming"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Subsistence farming occurs when farmers grow food crops to meet the needs of themselves and their families on smallholdings. There is little or no surplus for trade, and it typically involves intensive manual labor with minimal use of modern technology.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Agriculture"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q42",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "Car A takes 1 hour more than car B, which travels at a speed of 60 km per hour, to cover some fixed distance. If car A had doubled its speed, it could cover the distance in 1 hour less time than car B travelling at 60 km per hour. What is the original speed of car A in km per hour?",
+    "options": [
+      "30",
+      "40",
+      "45",
+      "50"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the distance be D km and the original speed of car A be v km/h. Time taken by B = D/60. Time taken by A = D/v. Given: D/v - D/60 = 1 (Equation 1). If A doubles its speed to 2v, time taken is D/2v. Given: D/60 - D/2v = 1 (Equation 2). Adding both equations: D/v - D/2v = 2 => D/2v = 2 => D = 4v. Substitute D = 4v in Equation 1: 4v/v - 4v/60 = 1 => 4 - v/15 = 1 => v/15 = 3 => v = 45 km/h.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Time, Speed and Distance"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q43",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Pipes and Cisterns",
+    "text": "Suppose A, B and C are three taps fixed to the bottom of a tank with draining capacity 1:2:3. When all three of them are on, it takes 1 hour to drain out the full tank. If A and C are on but B is off, then how much time, in minutes, will it take to empty out a full tank of water?",
+    "options": [
+      "75",
+      "90",
+      "105",
+      "120"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let the draining capacities (rates) of taps A, B, and C be 1x, 2x, and 3x units per minute, respectively. Their combined rate is 1x + 2x + 3x = 6x units per minute. They take 60 minutes to drain the tank, so total tank capacity = 60 * 6x = 360x units. If only A and C are open, their combined rate is 1x + 3x = 4x units per minute. The time taken to empty the tank will be 360x / 4x = 90 minutes.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Pipes and Cisterns"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q44",
+    "year": 2023,
+    "subject": "General Mental Ability",
+    "topic": "Direction Sense",
+    "text": "Assume that the Earth is a spherical ball of radius x km with a smooth surface so that one can travel along any direction. If you have travelled from point P on the Earth's surface along the East direction a distance of x km, which direction do you have to travel to return to P so that the distance required to travel is minimum?",
+    "options": [
+      "East only",
+      "West only",
+      "East or West but not any other direction",
+      "Any fixed direction"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Travelling East means moving along a line of latitude. Since the distance travelled (x km) is much less than the circumference of the Earth (2πx ≈ 6.28x km), the shortest path to retrace the exact same route and return to point P is to simply turn around and travel directly West.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Mental Ability"
+      },
+      {
+        "type": "topic",
+        "label": "Direction Sense"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q45",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Number System",
+    "text": "If x and y are two-digit prime numbers such that y is obtained from x by interchanging its digits and x - y = 36, then what is the value of xy?",
+    "options": [
+      "1611",
+      "2701",
+      "4031",
+      "5603"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let x = 10a + b and y = 10b + a. Given x - y = 36, we have 9(a - b) = 36, which means a - b = 4. The possible single-digit pairs (a, b) are (9, 5), (8, 4), (7, 3), (6, 2), and (5, 1). This gives possible pairs for (x, y) as (95, 59), (84, 48), (73, 37), (62, 26), and (51, 15). Since x and y must both be prime numbers, the only valid pair is (73, 37). Therefore, xy = 73 * 37 = 2701.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Number System"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q46",
+    "year": 2023,
+    "subject": "General Mental Ability",
+    "topic": "Cubes and Dice",
+    "text": "Sixty-four cubes of sides 2 cm each are combined to form a cube of side 8 cm. If four of the smaller cubes along the diagonal of a surface are removed from the surface of the large cube, which one of the following statements about the surface area of this solid object is true?",
+    "options": [
+      "It is equal to the surface area of the large cube.",
+      "It is less than the surface area of the large cube.",
+      "It is more than the surface area of the large cube.",
+      "Insufficient data"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The large cube has a 4x4 face of smaller cubes. The diagonal of this face consists of 4 cubes: 2 corner cubes and 2 non-corner edge cubes. Removing a corner cube removes 3 exposed faces but creates 3 new inner exposed faces, resulting in no net change to the total surface area. Removing a non-corner edge cube (which initially exposes 1 face on that surface) creates 5 new inner exposed faces (a net increase of 4 faces). Since two such non-corner cubes are removed along the diagonal, the total surface area increases by 8 small cube faces. Thus, the new surface area is greater.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Mental Ability"
+      },
+      {
+        "type": "topic",
+        "label": "Cubes and Dice"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q47",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which of the following statements about Organization for Security and Cooperation in Europe (OSCE) are correct?\n1. There are total 57 states from Europe, Central Asia and America.\n2. It offers a forum for political negotiations and decision-making in the field of early warning, conflict prevention, crisis management and post-conflict rehabilitation.\n3. OSCE has the primary responsibility of providing military security in the European Region.\n4. The decisions of OSCE are legally binding.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4",
+      "3 and 4 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statements 1 and 2 are correct. The OSCE has 57 participating states and serves as a forum for political negotiations and crisis management. Statement 3 is incorrect as primary military security in Europe is provided by NATO. Statement 4 is incorrect because OSCE decisions are politically, not legally, binding.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Organizations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q48",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "Which of the following statements about Quad is/are correct?\n1. It is a group of four countries, namely, India, Australia, USA and France.\n2. Maritime cooperation is an important binding force among members of the Quad.\n3. The Quad members formed a working group on COVID-19 vaccines.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1 is incorrect because the Quad consists of India, Australia, the USA, and Japan (not France). Statements 2 and 3 are correct; maritime security is a core pillar, and they launched a major vaccine partnership during the pandemic.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q49",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Statutory Bodies",
+    "text": "The National Human Rights Commission was established under the statute of:",
+    "options": [
+      "The Protection of Human Rights Act, 1993",
+      "The Protection and Implementation of Human Rights Act, 1993",
+      "The Human Rights Act, 1993",
+      "The Human Rights Commission Act, 1993"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The National Human Rights Commission (NHRC) of India is a statutory public body constituted on 12 October 1993 under the Protection of Human Rights Ordinance of 28 September 1993. It was given a statutory basis by the Protection of Human Rights Act, 1993 (PHRA).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Statutory Bodies"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q50",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Organizations",
+    "text": "Which of the following is/are not an official language(s) of the United Nations?\n1. Arabic\n2. German\n3. Spanish\n4. Chinese\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 3 only",
+      "1 and 4 only",
+      "1 and 2 only",
+      "2 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The United Nations has six official languages: Arabic, Chinese, English, French, Russian, and Spanish. German is not an official language of the UN.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Organizations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q51",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "The method used in separating a mixture of two miscible liquids having sufficient difference in their boiling points is:",
+    "options": [
+      "Filtration",
+      "Solvent Extraction",
+      "Centrifugation",
+      "Simple Distillation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Simple distillation is a procedure by which two liquids with different boiling points can be separated. When a mixture is heated, the liquid with the lower boiling point vaporizes first, and the vapor is then condensed and collected.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q52",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "Which one of the following statements is correct?",
+    "options": [
+      "Alloys are mixtures.",
+      "Alloys are compounds.",
+      "Alloys are always made up of metals.",
+      "All alloys contain carbon as one of their components."
+    ],
+    "correctAnswer": 0,
+    "explanation": "An alloy is considered a solid solution or a homogeneous mixture of two or more elements, at least one of which is a metal. They are not chemically bonded into distinct compounds. Furthermore, alloys can contain non-metals (like carbon in steel), so they aren't exclusively metals, and not all of them contain carbon.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q53",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "The common element in graphite, fullerene, diamond and graphene is:",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen",
+      "Carbon"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Graphite, fullerene, diamond, and graphene are all allotropes of carbon. They consist entirely of carbon atoms arranged in different structural forms.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q54",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "The gas generated on reacting zinc with dilute sulphuric acid is:",
+    "options": [
+      "Argon",
+      "Helium",
+      "Hydrogen",
+      "Nitrogen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When zinc (Zn), an active metal, reacts with dilute sulfuric acid (H2SO4), it undergoes a single displacement reaction to produce zinc sulfate (ZnSO4) and hydrogen gas (H2).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q55",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "text": "An aqueous solution of a salt is known as brine. The salt is:",
+    "options": [
+      "Sodium chloride",
+      "Potassium chloride",
+      "Calcium chloride",
+      "Sodium nitrate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Brine is specifically a high-concentration solution of salt in water. In different contexts, brine may refer to salt solutions ranging from about 3.5% up to about 26%. The salt primarily dissolved in this context is Sodium Chloride (NaCl).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Chemistry"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q56",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Pre-Independence Commissions",
+    "text": "Which one of the following commissions was not associated with public services in India?",
+    "options": [
+      "Aitchison Commission",
+      "Islington Commission",
+      "Lee Commission",
+      "Radhakrishnan Commission"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Radhakrishnan Commission (1948-49) was established to report on Indian University Education and suggest improvements. The Aitchison (1886), Islington (1912), and Lee (1923) Commissions were all set up by the British government to examine and reform public services in India.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Pre-Independence Commissions"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q57",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Social Reform Movements",
+    "text": "Who among the following was known as 'Lokhitwadi'?",
+    "options": [
+      "Keshub Chandra Sen",
+      "Gopal Hari Deshmukh",
+      "M.G. Ranade",
+      "Gopal Ganesh Agarkar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gopal Hari Deshmukh was an Indian activist, thinker, social reformer, and writer from Maharashtra. He wrote articles in the weekly 'Prabhakar' under the pen name 'Lokhitwadi' (the one who acts for the good of the people), criticizing orthodox religious practices.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Social Reform Movements"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q58",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - IVC",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Harappan Site)\nA. Nageshwar\nB. Alamgirpur\nC. Kalibangan\nD. Rakhigarhi\n\nList-II (Location)\n1. Uttar Pradesh\n2. Rajasthan\n3. Saurashtra\n4. Haryana\n\nCode: A B C D",
+    "options": [
+      "3 1 2 4",
+      "4 2 1 3",
+      "4 1 2 3",
+      "3 2 1 4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nageshwar is located in Gujarat (Saurashtra). Alamgirpur is the easternmost site of the Indus Valley Civilization, located in Uttar Pradesh. Kalibangan is located in Rajasthan. Rakhigarhi is a prominent site in Haryana. Therefore, the correct matching is A-3, B-1, C-2, D-4.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - IVC"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q59",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Modern India - Literature",
+    "text": "Which one of the following pairs of books and their authors is not correctly matched?",
+    "options": [
+      "Bandi Jiwan : Sachindranath Sanyal",
+      "The Philosophy of the Bomb : Bhagwati Charan Vohra",
+      "Indian Unrest : Annie Besant",
+      "Desher Katha : Sakharam Ganesh Deuskar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The book 'Indian Unrest' was written by Sir Valentine Chirol, a British journalist, not by Annie Besant. In this book, he famously termed Bal Gangadhar Tilak as the 'Father of Indian Unrest'.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Modern India - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q60",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which of the following is/are important markers for the archaeologists to identify an archaeological site as a 'center of craft production'?\n1. Evidence of raw materials such as stone nodules, whole shells, etc.\n2. Geographical expanse of the site\n3. Evidence of unfinished objects, rejects and waste material\n4. Evidence of variety of pottery\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 3 only",
+      "2 and 4 only",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To identify centers of craft production, archaeologists primarily look for the presence of raw materials (like stone nodules, whole shells, and copper ore) and tools. More importantly, they look for waste materials, unfinished objects, and rejects, as manufacturing almost always leaves behind specialized debris at the production site.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q61",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "In humans, urea is mainly formed from the metabolism of which one of the following components of food?",
+    "options": [
+      "Fatty acids",
+      "Vitamins",
+      "Amino acids",
+      "Glucose"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Urea is primarily formed in the liver through the urea cycle as a safe way to excrete ammonia. Ammonia is a highly toxic byproduct of the deamination (breakdown) of amino acids, which are the building blocks of proteins.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q62",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "The lymph is mainly formed from the plasma of blood and it surrounds the cells. The main difference between blood and lymph is:",
+    "options": [
+      "Lymph does not contain red blood cells.",
+      "Lymph does not contain white blood cells.",
+      "Lymph contains both red blood cells and white blood cells.",
+      "Lymph does not contain any cells."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lymph is a clear fluid that originates from blood plasma that has leaked out of capillaries into interstitial spaces. It contains a high concentration of white blood cells (especially lymphocytes) vital for immune defense, but unlike whole blood, it does not contain red blood cells.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q63",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "For the digestion of carbohydrate, protein and fat, enzymes such as amylase, trypsin and lipase are required. It is secreted into the duodenum through:",
+    "options": [
+      "Bile",
+      "Plasma",
+      "Lymph",
+      "Pancreatic juice"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pancreatic juice, secreted by the pancreas into the duodenum, contains a complete array of digestive enzymes. Amylase breaks down carbohydrates, trypsin digests proteins, and pancreatic lipase digests fats.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q64",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Biology",
+    "text": "Lactic acid is formed in the muscles during exercise or running. It is formed:",
+    "options": [
+      "to give extra energy from fat.",
+      "to give extra oxygen from lungs.",
+      "to give extra energy from glucose.",
+      "to give extra energy from vitamins."
+    ],
+    "correctAnswer": 2,
+    "explanation": "During strenuous exercise, oxygen demand in muscles can exceed the supply. To continue producing energy quickly, muscle cells switch to anaerobic respiration (glycolysis without oxygen), breaking down glucose to yield ATP and lactic acid as a byproduct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Biology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q65",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Public Finance",
+    "text": "Fiscal deficit in the Union Budget means:",
+    "options": [
+      "the difference between current expenditure and current revenue.",
+      "net increase in the borrowings of the Union Government from the Reserve Bank of India.",
+      "the sum of budgetary deficits and the net increase in internal and external borrowings.",
+      "None of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fiscal deficit represents the total borrowing requirements of the government. It mathematically equals the sum of budgetary deficits and total borrowings (both internal and external) required to bridge the gap between total expenditure and total receipts excluding borrowings.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Public Finance"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q66",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Union Budget",
+    "text": "Which one of the following is the largest component of revenue expenditure in the Union Budget 2022-23?",
+    "options": [
+      "Interest payments",
+      "Defense expenditure",
+      "Expenditure on healthcare",
+      "Subsidies"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consistently over recent years, including the Union Budget 2022-23, interest payments on past debts form the largest single component of the Government of India's revenue expenditure.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Union Budget"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q67",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "External Sector",
+    "text": "Adequacy of foreign exchange reserves of a country is captured by which of the following indicators?\n1. Reserves to import ratio\n2. Reserves to external debt ratio\n3. Reserves to GDP ratio\n4. Reserves to monetary aggregates\nSelect the correct answer using the code below:",
+    "options": [
+      "1 and 3 only",
+      "1, 2, 3 and 4",
+      "2, 3 and 4 only",
+      "1, 2 and 4 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Reserve Bank of India (RBI) and global institutions assess the adequacy of foreign exchange reserves using a combination of indicators. These include import cover (reserves to import ratio), debt servicing capacity (reserves to external debt, particularly short-term), economic size (reserves to GDP), and potential capital flight risk (reserves to broad money/monetary aggregates).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "External Sector"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q68",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Macroeconomics",
+    "text": "If all the people of the economy increase the proportion of income they save, the total value of savings in the economy will either decrease or remain unchanged. This phenomenon is known as:",
+    "options": [
+      "Crowding out",
+      "Crowding in",
+      "Paradox of thrift",
+      "Paradox of prosperity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 'Paradox of Thrift' is a Keynesian economic concept. It states that an autonomous increase in saving by everyone leads to a decrease in aggregate demand, which in turn lowers total economic output (GDP). Because income falls, the actual total amount saved ends up being the same or even less than before.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Macroeconomics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q69",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Monetary Policy",
+    "text": "The banks are required to maintain a certain ratio between their cash in hand and total assets. This ratio is known as:",
+    "options": [
+      "Cash Reserve Ratio (CRR)",
+      "Statutory Liquidity Ratio (SLR)",
+      "Central Bank Reserve (CBR)",
+      "Statutory Bank Ratio (SBR)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statutory Liquidity Ratio (SLR) is the mandatory reserve requirement that commercial banks in India must maintain as liquid assets (cash, gold, or approved securities) relative to their total Net Demand and Time Liabilities (NDTL) before they can offer credit to customers. CRR, on the other hand, is the fraction of deposits maintained exclusively as cash balances with the RBI.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Monetary Policy"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q70",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Physics",
+    "text": "A simple harmonic motion of a particle is represented as, y = 10 cos ωt. The acceleration of the particle at time t = π/2ω will be: (symbols here carry their usual meanings)",
+    "options": [
+      "10 ω",
+      "-10 ω^2",
+      "0",
+      "10/ω"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Given displacement y = 10 cos(ωt). Velocity (v) is the derivative of displacement: v = dy/dt = -10ω sin(ωt). Acceleration (a) is the derivative of velocity: a = dv/dt = -10ω^2 cos(ωt). At time t = π/2ω, substitute t into the acceleration equation: a = -10ω^2 cos(ω * π/2ω) = -10ω^2 cos(π/2). Since cos(π/2) = 0, the acceleration is 0.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q71",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Physics",
+    "text": "A wire of resistance R is cut into four equal parts. These parts are then connected in parallel. If the equivalent resistance of this combination is R', then the ratio R'/R is:",
+    "options": [
+      "1/16",
+      "1/4",
+      "4",
+      "16"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When a wire of resistance R is cut into 4 equal parts, the resistance of each part becomes R/4. When these four parts are connected in parallel, the equivalent resistance R' is given by 1/R' = 1/(R/4) + 1/(R/4) + 1/(R/4) + 1/(R/4) = 4/R + 4/R + 4/R + 4/R = 16/R. Therefore, R' = R/16. The ratio R'/R is (R/16) / R = 1/16.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q72",
+    "year": 2023,
+    "subject": "General Science",
+    "topic": "Physics",
+    "text": "In experiment #1, a bar magnet is moved towards a conducting wire loop axially, with the magnet's north pole facing the loop. In experiment #2, the same process as in experiment #1 is repeated except that the south pole of the magnet faces the loop. Which one of the following statements is true in this context?",
+    "options": [
+      "The direction of current in the loop will be of opposite nature in both the experiments.",
+      "The direction of current in the loop will be the same in both the experiments.",
+      "No current will flow in either of the two experiments.",
+      "More current will flow in the loop in experiment #1."
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to Lenz's Law, the direction of the induced current will be such that it opposes the change in magnetic flux that produced it. When the North pole approaches the loop, the induced current will flow in a counter-clockwise direction to create a North pole to repel the magnet. When the South pole approaches, the current will flow in a clockwise direction to create a South pole. Thus, the current directions are opposite.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "General Science"
+      },
+      {
+        "type": "topic",
+        "label": "Physics"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q73",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "text": "Which one of the following correctly explains the change in seasons on Earth?",
+    "options": [
+      "Tilt of the Earth's axis",
+      "Rotation of the Earth on its own axis",
+      "Revolution of the Moon around the Sun",
+      "Interaction of the Earth with other planets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The change in seasons is primarily caused by the tilt of the Earth's rotational axis (at an angle of about 23.5 degrees) relative to its orbital plane around the Sun. As the Earth revolves around the Sun, different parts of the Earth receive varying amounts of sunlight throughout the year.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q74",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography",
+    "text": "Consider the following statements:\n1. The Great Northern Plains are formed by basins of three distinct river systems - the Indus, the Ganga and the Brahmaputra.\n2. They are one of the most densely populated areas on Earth.\n3. Between the Yamuna at Delhi and the Bay of Bengal, nearly 1600 km away, there is a drop of only 200 metres in elevation.\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1 and 3 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All three statements are correct. The Great Northern Plains are formed by the interplay of the Indus, Ganga, and Brahmaputra river systems. Because of fertile soil and abundant water, it is one of the most densely populated regions globally. The gradient of the plain is remarkably flat, dropping only about 200 meters over a stretch of nearly 1600 km from Delhi to the Bay of Bengal.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q75",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Consider the following statements:\n1. Many of the world's largest mountain chains exist beneath the sea.\n2. Some mountain chains are revealed as island arcs.\n3. The mid-oceanic ridges form the longest mountain chains.\n4. The mid-Atlantic ridge rises thirty-three metres above the floor of the Atlantic.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "3 and 4 only",
+      "1, 2 and 4 only",
+      "1, 2 and 3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Statements 1, 2, and 3 are correct. The Mid-Ocean Ridge system is the longest mountain chain on Earth, largely underwater. Island arcs are indeed volcanic mountain chains that break the ocean surface. Statement 4 is incorrect because the Mid-Atlantic Ridge rises thousands of meters above the ocean floor, not merely thirty-three meters.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q76",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (Temperate Grassland)\nA. Prairies\nB. Steppes\nC. Pampas\nD. Veldt\n\nList-II (Region)\n1. Eurasia\n2. South Africa\n3. North America\n4. South America\n\nCode: A B C D",
+    "options": [
+      "2 1 4 3",
+      "2 4 1 3",
+      "3 1 4 2",
+      "3 4 1 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Prairies are found in North America (3). Steppes are found in Eurasia (1). Pampas are located in South America, particularly Argentina (4). The Veldt is found in South Africa (2). Thus, the correct matching is A-3, B-1, C-4, D-2.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q77",
+    "year": 2023,
+    "subject": "Agriculture",
+    "topic": "Cropping Patterns",
+    "text": "Consider the following statements about millets:\n1. Millets are often referred to as climate-resilient crops because they can grow on arid lands with minimal inputs and maintenance.\n2. Millets are a good source of minerals, dietary fibre, antioxidants and protein.\n3. Millets, including sorghum, account for less than 3% of the global grains trade.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements are correct. Millets are highly climate-resilient, requiring very little water. They are nutritionally superior to major cereals in terms of proteins, minerals, and vitamins. Despite their benefits, they currently make up a very small fraction (less than 3%) of the global grain trade, which is dominated by wheat, rice, and maize.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Agriculture"
+      },
+      {
+        "type": "topic",
+        "label": "Cropping Patterns"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q78",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Directions: The next three items are based on a survey on occurrence of vowels in a certain book irrespective of whether they are in upper or lower case.\nVowel : Percentage\nA : 20\nE : 45\nI : 15\nO : 8\nU : 12\n\nFor how many pairs of vowels is the chance of occurrence of any one of the two more than 34% in the book?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 1,
+    "explanation": "We need to find the pairs where the sum of their percentages > 34%. The pairs are:\nA+E = 20+45 = 65% (>34%)\nA+I = 20+15 = 35% (>34%)\nA+O = 20+8 = 28%\nA+U = 20+12 = 32%\nE+I = 45+15 = 60% (>34%)\nE+O = 45+8 = 53% (>34%)\nE+U = 45+12 = 57% (>34%)\nI+O = 15+8 = 23%\nI+U = 15+12 = 27%\nO+U = 8+12 = 20%\nThere are 5 pairs where the combined chance of occurrence is greater than 34%.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Data Interpretation"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q79",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Among the three vowels which occur minimum number of times, what is the percentage of occurrence of the letter that occurs the maximum number of times among them?",
+    "options": [
+      "42 6/7 %",
+      "41 5/7 %",
+      "40 4/7 %",
+      "39 2/7 %"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The three vowels occurring the minimum number of times are I (15%), O (8%), and U (12%). The maximum among these three is I, at 15%. The total percentage of these three vowels combined is 15 + 8 + 12 = 35%. The percentage of I among this specific group is (15 / 35) * 100% = (3 / 7) * 100% = 300 / 7 % = 42 6/7 %.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Data Interpretation"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q80",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Data Interpretation",
+    "text": "If \"O\" and \"U\", irrespective of upper or lower case, occur exactly 5040 times, then how many times does the letter \"E\" occur in the book in the upper or the lower case?",
+    "options": [
+      "11840",
+      "11600",
+      "11430",
+      "11340"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The combined percentage for O (8%) and U (12%) is 20%. This 20% corresponds to 5040 occurrences. We need to find the occurrences of E, which has a percentage of 45%. Let total occurrences be T. (20/100) * T = 5040, so T = 25200. Occurrences of E = 45% of 25200 = (45/100) * 25200 = 11340.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Data Interpretation"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q81",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Number System",
+    "text": "Suppose a, b and c are three distinct natural numbers such that a + b + c = abc. Consider the following statements:\n1. The arithmetic mean of a, b and c is a natural number.\n2. The harmonic mean of a, b and c lies between 1 and 2.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The only distinct natural numbers that satisfy a + b + c = abc are 1, 2, and 3 (1+2+3 = 6; 1*2*3 = 6). \nStatement 1: Arithmetic Mean = (1+2+3)/3 = 6/3 = 2, which is a natural number. Statement 1 is correct.\nStatement 2: Harmonic Mean = 3 / (1/a + 1/b + 1/c) = 3 / (1/1 + 1/2 + 1/3) = 3 / (11/6) = 18/11 ≈ 1.636. This value lies between 1 and 2. Statement 2 is correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Number System"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q82",
+    "year": 2023,
+    "subject": "Quantitative Aptitude",
+    "topic": "Number System",
+    "text": "How many three-digit numbers are possible such that the difference between the original number and the number obtained by reversing the digits is 396? (no digit is repeated)",
+    "options": [
+      "4",
+      "5",
+      "50",
+      "40"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let the 3-digit number be 100a + 10b + c. The reversed number is 100c + 10b + a. The difference is 99(a - c) = 396. This simplifies to a - c = 4. The possible pairs for (a, c) are (5,1), (6,2), (7,3), (8,4), and (9,5). There are 5 such pairs. For each pair, the middle digit 'b' can be any digit from 0 to 9, except 'a' and 'c' because no digit is repeated. Thus, 'b' has 10 - 2 = 8 possibilities. Total possible numbers = 5 pairs * 8 choices for b = 40.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Quantitative Aptitude"
+      },
+      {
+        "type": "topic",
+        "label": "Number System"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q83",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Demography",
+    "text": "Which of the following statements is/are correct?\n1. Population ageing is the process by which the share of the older population becomes proportionately lesser.\n2. In most of the developed countries, the population in higher age groups has increased.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect: Population ageing is the process by which the share of the older population becomes proportionately GREATER, not lesser, due to declining birth rates and increasing life expectancy. Statement 2 is correct: Developed countries generally have a larger proportion of their population in higher age brackets.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Demography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q84",
+    "year": 2023,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "Which of the following statements is/are correct about 'Action for Climate Empowerment' (ACE)?\n1. It is a term adopted by the UN Framework Convention on Climate Change.\n2. This term is related to the Paris Agreement.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Action for Climate Empowerment (ACE) is a term adopted by the United Nations Framework Convention on Climate Change (UNFCCC) for work under Article 6 of the Convention and Article 12 of the Paris Agreement.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Climate Change"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q85",
+    "year": 2023,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "What is 'Climate Neutral Now' initiative?\n1. It encourages organizations and other interested stakeholders to act now in order to achieve a carbon neutral world by 2030.\n2. It derives its aims from the Paris Agreement.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect because the initiative encourages stakeholders to act now to achieve a climate-neutral world by 2050, not 2030. Statement 2 is correct as the initiative was launched by UN Climate Change in 2015 to support the aims of the Paris Agreement.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Climate Change"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q86",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Defense and Security",
+    "text": "Which of the following statements is/are correct about KAVACH-2023?\n1. It is a joint coordination committee of all three wings of India's armed forces to protect India's borders.\n2. It is India's national level hackathon jointly launched by AICTE and BPRD to tackle cyber threats.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "KAVACH-2023 was a unique national-level hackathon launched jointly by the All India Council for Technical Education (AICTE) and the Bureau of Police Research and Development (BPR&D) to identify innovative ideas and technological solutions for tackling cyber security and cybercrime challenges of the 21st century. It is not a military committee.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Defense and Security"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q87",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Prehistory",
+    "text": "Which one among the following statements with reference to the 'Neolithic Period' is not correct?",
+    "options": [
+      "The characteristic features of the period included ground and polished stone tools, agriculture, animal domestication and pottery.",
+      "This period is also known as the 'New Stone Age'.",
+      "The characteristic features appeared almost at the same time in various parts of the subcontinent.",
+      "Earliest evidence of agriculture is found from Mehrgarh around 8000 BCE."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Neolithic period did not begin simultaneously across the Indian subcontinent. The transition to agriculture and settled life occurred at vastly different times depending on the region (e.g., Mehrgarh in the northwest saw these developments much earlier than regions in the south or northeast).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Prehistory"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q88",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Which one of the following is not a pottery type?",
+    "options": [
+      "OCP",
+      "CCE",
+      "NBP",
+      "BRW"
+    ],
+    "correctAnswer": 1,
+    "explanation": "OCP stands for Ochre Coloured Pottery, NBP stands for Northern Black Polished Ware, and BRW stands for Black and Red Ware. All three are distinct historical pottery cultures in ancient India. 'CCE' is not a recognized ancient Indian pottery type.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q89",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Mauryan Empire",
+    "text": "Which one of the following political centers finds a mention in Ashokan inscriptions?",
+    "options": [
+      "Indraprastha",
+      "Kaushambi",
+      "Suvarnagiri",
+      "Kandahar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ashokan inscriptions explicitly mention several major provincial centers of the Mauryan Empire, including Tosali, Ujjayini, Taxila, and Suvarnagiri (the 'golden mountain', likely an important center for gold mining in the south).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Mauryan Empire"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q90",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Post-Mauryan Period",
+    "text": "Which one of the following statements with reference to the ancient Indian coins is not correct?",
+    "options": [
+      "The Indo-Greeks issued the first coins bearing the name and images of rulers.",
+      "The Kushanas issued the first gold coins.",
+      "The Kushana gold coins were different in weight from the coins issued by contemporary Roman emperors.",
+      "These Kushana gold coins have been found from several sites in north India and central Asia."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Kushana gold coins were actually virtually identical in weight to those issued by contemporary Roman emperors and Parthian rulers of Iran. This standardization facilitated extensive international trade.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Post-Mauryan Period"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q91",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Vedic Period",
+    "text": "Consider the following statements about the practice of Vedic sacrifices:\n1. The shrauta (Vedic sacrifices) involved the use of three fires - the garhapatya (householder's fire), ahavaniya (offeratorial fire) and dakshinagni (southern fire).\n2. These fires were supposed to be placed in pits of different shapes, i.e., the garhapatya to be square, ahavaniya to be round and that of the dakshinagni, rectangle-shaped.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct; the Shrauta rituals required three sacred fires. Statement 2 is incorrect because the shapes are mismatched: the Garhapatya fire altar is circular, the Ahavaniya is square, and the Dakshinagni is semi-circular.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Vedic Period"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q92",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "World Geography - Transport",
+    "text": "Trans-Siberian Railway from St. Petersburg to Vladivostok does not run across :",
+    "options": [
+      "Altai range",
+      "Caucasus mountains",
+      "Ural mountains",
+      "Ob and Yenisei rivers"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Trans-Siberian Railway is an extensive network spanning across Russia. It crosses the Ural Mountains and major Siberian rivers like the Ob and Yenisei. However, it does not cross the Caucasus mountains, which are located far to the south, between the Black Sea and the Caspian Sea.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "World Geography - Transport"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q93",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Geomorphology",
+    "text": "Consider the following statements about Barchans:\n1. These landforms are found in Thar desert in India.\n2. The windward side has concave slope with maximum height at the centre.\n3. Two ends of the barchan are called horns.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Barchans are crescent-shaped sand dunes found in deserts like the Thar (Statement 1 is correct). The two ends (tips) of the crescent are called horns, pointing downwind (Statement 3 is correct). Statement 2 is incorrect because the windward side of a barchan is convex and gently sloping, while the leeward (slip face) side is concave and steeper.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Geomorphology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q94",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Energy Resources",
+    "text": "Consider the following statements:\n1. Geothermal energy can be used to produce electricity or its hot water can be used directly for industry, agriculture, bathing and cleaning.\n2. Nuclear energy is often cheaper than some other sources of electricity.\n3. Thermal power stations burn fossil fuels to create steam to drive the turbines.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1, 2 and 3",
+      "1 and 3 only",
+      "2 and 3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statements 1 and 3 are fundamentally correct facts regarding energy production. Statement 2 is generally considered incorrect in contemporary broad contexts because nuclear power often carries exceptionally high capital, regulatory, and decommissioning costs compared to established fossil fuels and increasingly cheap renewables like solar and wind.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Energy Resources"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q95",
+    "year": 2023,
+    "subject": "Environment",
+    "topic": "International Conventions",
+    "text": "Match List-I with List-II and select the correct answer using the code given below the Lists:\nList-I (International Convention)\nA. Stockholm Convention\nB. Minamata Convention\nC. Basel Convention\nD. Rotterdam Convention\n\nList-II (Theme)\n1. Hazardous chemicals and pesticides in international trade\n2. Persistent organic pollutants\n3. Binding instrument on mercury\n4. Transboundary movement of hazardous wastes and their disposal\n\nCode: A B C D",
+    "options": [
+      "1 4 3 2",
+      "1 3 4 2",
+      "2 4 3 1",
+      "2 3 4 1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Stockholm Convention is for Persistent Organic Pollutants (POPs) (A-2). The Minamata Convention is an international treaty designed to protect human health and the environment from anthropogenic emissions of mercury (B-3). The Basel Convention covers the transboundary movement of hazardous wastes (C-4). The Rotterdam Convention is on the Prior Informed Consent Procedure for Certain Hazardous Chemicals and Pesticides in International Trade (D-1).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "International Conventions"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q96",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Important Judgments",
+    "text": "The Judgment of the Supreme Court in Peoples' Union for Civil Liberties v. Union of India 2004 is related to which of the following?",
+    "options": [
+      "Right to Shelter",
+      "Right against Custodial violence",
+      "Right to Information",
+      "Right to Speedy trial"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The PUCL v. Union of India case of 2004 fundamentally dealt with the voter's right to know the antecedents of candidates. This forms a core component of the broader Right to Information framework in Indian jurisprudence.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Important Judgments"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q97",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which among the following deals with Habeas Corpus?",
+    "options": [
+      "State of Uttar Pradesh v. Raj Narain and Ors. (1975)",
+      "Additional District Magistrate, Jabalpur v. Shivakant Shukla (1976)",
+      "Mrs. Maneka Gandhi v. Union of India (1978)",
+      "Nandini Satpathy v. P.L. Dani (1978)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ADM Jabalpur v. Shivakant Shukla (1976) is infamously known as the 'Habeas Corpus case'. During the Emergency, the Supreme Court ruled that a person's right to life and liberty (Article 21) could be suspended, preventing citizens from moving courts for a writ of habeas corpus.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Fundamental Rights"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q98",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "Which among the following statements regarding the powers of the High Courts under Article 226 of the Constitution of India is not correct?",
+    "options": [
+      "It can issue writs of habeas corpus, mandamus, quo warranto, certiorari, and prohibition.",
+      "Writs can be issued to enforce any rights conferred by Part-III and for any other purpose.",
+      "This power can derogate the power conferred on the Supreme Court under Article 32(2).",
+      "Writ can be issued to any authority under its jurisdiction."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement (c) is not correct. Article 226(4) explicitly states that the power conferred on a High Court by this article shall not be in derogation of the power conferred on the Supreme Court by clause (2) of Article 32.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Judiciary"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q99",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Centre-State Relations",
+    "text": "Which among the following is not correct?",
+    "options": [
+      "Legislation on criminal law, barring exceptions, is a subject under the Concurrent List.",
+      "Bankruptcy and Insolvency are subjects under the Concurrent List.",
+      "Inter-State trade and commerce is a subject under the State List.",
+      "Banking is exclusively under the Union List."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Inter-State trade and commerce is a subject under the Union List (Entry 42 of List I), not the State List. The State List covers trade and commerce within the State.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Centre-State Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q100",
+    "year": 2023,
+    "subject": "Environment",
+    "topic": "International Conventions",
+    "text": "'Basel Convention', 'Rotterdam Convention' and 'Stockholm Convention' relate to which of the following?",
+    "options": [
+      "Human Rights of Prisoners",
+      "Management of Pollutants",
+      "Conservation of Wetlands",
+      "Conservation of Rivers"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Basel, Rotterdam, and Stockholm conventions are multilateral environmental agreements that share the common objective of protecting human health and the environment from hazardous chemicals and wastes (Management of Pollutants).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "International Conventions"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q101",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Government Schemes",
+    "text": "Which of the following is/are not correct about the Mother's Absolute Affection Programme?\n1. Allows all pregnant women to absolutely free and no-expense delivery in public health institutions.\n2. Provides assured, comprehensive and quality antenatal care.\n3. Promotes undiluted focus on breastfeeding.\n4. Provides medical and nutritional care to severely acute malnourished children.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 2 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 4 only",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MAA (Mothers' Absolute Affection) is a nationwide programme of the Ministry of Health and Family Welfare to promote breastfeeding (Statement 3 is correct). Free delivery is covered under Janani Shishu Suraksha Karyakaram (JSSK). Antenatal care is covered under Pradhan Mantri Surakshit Matritva Abhiyan (PMSMA). Care for malnourished children falls under Nutritional Rehabilitation Centres (NRCs). Therefore, statements 1, 2, and 4 are NOT correct regarding the MAA programme.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Government Schemes"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q102",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Statutory Bodies",
+    "text": "Which of the following statements about the Right to Information Act, 2005 is/are correct?\n1. There shall be not more than twelve (12) Information Commissioners.\n2. The Chief Information Commissioner shall hold office for a term of five years.\n3. The Chief Information Commissioner is eligible for reappointment.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect (the act specifies not more than 10 Information Commissioners). Statement 3 is incorrect (the CIC is not eligible for reappointment). Statement 2 represents the original provision of the RTI Act 2005 (a 5-year term), although an amendment in 2019 allowed the central government to prescribe the term (currently set at 3 years). Within the context of traditional multiple-choice questions relying on the base Act, Statement 2 is often the targeted correct answer.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Statutory Bodies"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q103",
+    "year": 2023,
+    "subject": "Polity",
+    "topic": "Parliament",
+    "text": "Who among the following was the first pro-tem Speaker to be unanimously elected as the Speaker of the Lok Sabha ?",
+    "options": [
+      "Rabi Ray",
+      "Hiren Mukherjee",
+      "Somnath Chatterjee",
+      "P.A. Sangma"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Somnath Chatterjee was appointed as the Pro-tem Speaker in the 14th Lok Sabha and was subsequently elected unanimously as the Speaker of the Lok Sabha.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Polity"
+      },
+      {
+        "type": "topic",
+        "label": "Parliament"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q104",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Jainism",
+    "text": "Consider the following statements with reference to Jainism:\n1. Vardhamana Mahavira attained Kaivalyajnana outside the town of Jrimbhikagrama, on the banks of river Rijupalika and in the field of a householder named Samaga.\n2. The state when the Karma particles actually begin to flow towards the Jiva to bind it is known as Asrava.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. Mahavira attained Kevala Jnana (omniscience) outside Jrimbhikagrama on the banks of the Rijupalika River. In Jain philosophy, Asrava is the influx of karma particles to the soul (Jiva).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Jainism"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q105",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India",
+    "text": "Consider the following pairs with reference to textiles in Southern India:\n(Tax) : (Meaning)\n1. Panjupeeli : on cotton yarn\n2. Nulayam : on cotton thread\n3. Tari kadamai : on silk clothes\n4. Sella : on silk thread\nWhich of the pairs given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Panjupeeli was a tax on cotton yarn, and Nulayam was a tax on cotton thread. Tari Kadamai was a tax on looms, not specifically on silk clothes. Hence, pairs 1 and 2 are correct.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q106",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Art & Architecture",
+    "text": "Which one of the following animals does not come under the category of four noble animals (Maha-Ajaneya Pasu) carved on the round drum (Anda-Phalaka) of the lion capital at Sarnath?",
+    "options": [
+      "Deer",
+      "Lion",
+      "Bull",
+      "Horse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The four animals carved on the abacus (drum) of the Sarnath Lion Capital are the Lion, Elephant, Bull, and Horse, representing the four directions. The deer is not one of them (though deer are depicted at the base in some broader Buddhist iconographies to represent the Deer Park where Buddha gave his first sermon).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Art & Architecture"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q107",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Dynasties",
+    "text": "The ruler Vindhyashakti during the period preceding the Gupta Age is associated with which one of the following dynasties?",
+    "options": [
+      "Vakatakas",
+      "Chalukyas",
+      "Kalachuris",
+      "Sungas"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vindhyashakti (c. 250 – 270 CE) was the founder of the Vakataka dynasty, which ruled parts of the Deccan and Central India prior to and contemporary with the Gupta Empire.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Dynasties"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q108",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Ancient India - Literature",
+    "text": "The ancient Indian medical treatise for horses called Ashvashastra is attributed to which one of the following persons?",
+    "options": [
+      "Vagbhatta of the seventh century",
+      "The sage Shalihotra",
+      "Bhartrihari of the seventh century",
+      "Varahamihira of the sixth century"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The sage Shalihotra is widely considered the founder of veterinary sciences in ancient India. He is credited with writing the 'Shalihotra Samhita' (also known as Ashvashastra), a seminal treatise on the care and management of horses.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Ancient India - Literature"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q109",
+    "year": 2023,
+    "subject": "History",
+    "topic": "Medieval India - Bhakti Movement",
+    "text": "The celebrated group of poets in medieval Mathura and Vrindavana called the Ashta-Chhapa were the successors of which one of the following medieval Bhakti Saints?",
+    "options": [
+      "Kabir of Benaras",
+      "Chaitanya of Bengal",
+      "Guru Nanak of Punjab",
+      "Surdas of Braj region"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Ashta-Chhapa (Eight Seals) was a group of eight prominent Bhakti poets devoted to Lord Krishna in the Pushtimarg tradition, founded by Vallabhacharya. While Vallabhacharya is the foundational guru, among the given options, Surdas is the most famous constituent member and essentially the leading figure of the group, though the phrasing 'successors of' makes the question contextually debated.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "History"
+      },
+      {
+        "type": "topic",
+        "label": "Medieval India - Bhakti Movement"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q110",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Soils",
+    "text": "Consider the following statements about Laterite soil found in India:\n1. Laterite soil is found in high altitudes of Himalaya.\n2. It is a very fertile soil.\n3. It is a red colour soil due to presence of iron oxide.\n4. It is poor in Nitrogen, Potash and organic matter.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "3 only",
+      "2 and 4 only",
+      "3 and 4 only",
+      "1, 3 and 4 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Laterite soils are formed under conditions of high temperature and heavy rainfall with alternate wet and dry periods, generally found in the Western Ghats, not high altitudes of the Himalayas (Statement 1 is incorrect). They are leached soils and poor in organic matter, nitrogen, and potash, rendering them not very fertile naturally (Statement 2 is incorrect, Statement 4 is correct). They are red due to iron oxide (Statement 3 is correct).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Soils"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q111",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Indian Geography - Agriculture",
+    "text": "Which of the following statements about Ragi crop grown in India is correct?",
+    "options": [
+      "It is a millet crop grown in drier parts of south India.",
+      "It is a Rabi crop sown between November and March.",
+      "It is a rainfed crop grown on red, light black and sandy loam soil.",
+      "It is grown between 20 degree Celsius and 30 degree Celsius of temperature and 50-100 cm rainfall."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ragi is a crop of dry regions and grows exceptionally well on red, light black, sandy, loamy, and shallow black soils. While it is predominantly grown in southern states like Karnataka, the most precise and defining characteristic provided among the options according to standard agricultural geography textbooks is its soil compatibility.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Indian Geography - Agriculture"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q112",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography - Rocks",
+    "text": "Consider the following statements about rock structure:\n1. Conglomerates are clastic sedimentary rocks.\n2. Slate is a non-clastic sedimentary rock.\n3. Granite is a plutonic igneous rock.\n4. Basalt is an extrusive igneous rock.\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 3 only",
+      "3 and 4 only",
+      "1 and 2 only",
+      "1, 3 and 4 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Conglomerates are clastic sedimentary rocks formed from rounded gravel (Statement 1 is correct). Granite forms deep underground as magma cools slowly (plutonic igneous - Statement 3 is correct). Basalt cools rapidly on the surface (extrusive igneous - Statement 4 is correct). Statement 2 is incorrect because Slate is a metamorphic rock formed from shale, not a sedimentary rock.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Rocks"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q113",
+    "year": 2023,
+    "subject": "Environment",
+    "topic": "Biodiversity Conservation",
+    "text": "Consider the following statements about Ramsar Wetland sites in India:\n1. Gahirmatha is the habitat of Olive Ridley Turtles.\n2. Chilka lake is the habitat of Irrawaddy Dolphin as its flagship species.\n3. Nalsarovar Wetland is also the habitat of Indian Wild Ass (Khur).\n4. Tso Moriri Wetland is the habitat and breeding ground of Black-necked Crane.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 3 only",
+      "1, 3 and 4 only",
+      "2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chilika Lake is famous for the Irrawaddy Dolphin (Statement 2 is correct). Tso Moriri is an important breeding ground for the Black-necked Crane (Statement 4 is correct). Statement 3 is incorrect because the Indian Wild Ass is found in the Little Rann of Kutch, not Nalsarovar (which is primarily a bird sanctuary).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Environment"
+      },
+      {
+        "type": "topic",
+        "label": "Biodiversity Conservation"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q114",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Physical Geography - Soils",
+    "text": "Which of the following soil formation process takes place in Phumdis (floating fields) in Loktak Lake of Manipur?",
+    "options": [
+      "Laterization",
+      "Podzolization",
+      "Gleization",
+      "Calcification"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Gleization is a soil formation process that occurs in waterlogged, anaerobic conditions, typically in wetlands or lake margins. Phumdis are heterogeneous masses of vegetation, soil, and organic matter in various stages of decay floating on Loktak Lake, representing ideal conditions for gleization.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Physical Geography - Soils"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q115",
+    "year": 2023,
+    "subject": "Geography",
+    "topic": "Oceanography",
+    "text": "Which one of the following statements is correct about Spring tides?",
+    "options": [
+      "High tide is higher than average high tide and Low tide is higher than average low tide.",
+      "High tide is lower than average high tide and Low tide is higher than average low tide.",
+      "High tide is higher than average high tide and Low tide is lower than average low tide.",
+      "High tide is lower than average high tide and Low tide is lower than average low tide."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Spring tides occur just after a new or full moon when there is an alignment of the gravitational pull of the Sun and Moon. This creates a larger-than-average tidal range, meaning high tides are exceptionally high and low tides are exceptionally low.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Geography"
+      },
+      {
+        "type": "topic",
+        "label": "Oceanography"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q116",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Consider the following statements about IPL cricket tournament:\n1. Two teams won the tournament five times each.\n2. Chennai Super Kings remained runner-up in five editions of the tournament.\n3. On three occasions, the final was played abroad.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "As of the time of the exam (mid-2023), both Mumbai Indians and Chennai Super Kings had won the IPL five times (Statement 1 is correct). Chennai Super Kings had also been runners-up five times (Statement 2 is correct). The IPL final has been played abroad twice (2009 in South Africa, 2020 in UAE), not three times, making Statement 3 incorrect.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Sports"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q117",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Sports",
+    "text": "Consider the following statements about Khelo India University Games (KIUG):\n1. The first edition of KIUG was held in Odisha.\n2. The name of the mascot of the third edition of KIUG was Jeetu.\n3. The first edition of KIUG was postponed due to COVID.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The first edition of KIUG was indeed held in Odisha in early 2020 (Statement 1 is correct). The mascot for the third edition (held in UP) was 'Jeetu', representing the state animal Swamp Deer (Statement 2 is correct). The first edition concluded before the major COVID-19 lockdowns in India; it was the second edition that faced delays/postponements due to the pandemic (Statement 3 is incorrect).",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Sports"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q118",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Defense Exercises",
+    "text": "Exercise Ajeya Warrior is a biennial training event between the Indian Army and the army of:",
+    "options": [
+      "Nepal",
+      "United Kingdom",
+      "Russia",
+      "Japan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Exercise 'Ajeya Warrior' is a joint military exercise between the armed forces of India and the United Kingdom. Its objective is to build inter-operability and share expertise.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Defense Exercises"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q119",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Government Initiatives",
+    "text": "The journey of the First Phase of Sagar Parikrama Yatra, an initiative of the Government of India, was started from:",
+    "options": [
+      "Andaman and Nicobar Islands",
+      "Maharashtra",
+      "Karnataka",
+      "Gujarat"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The first phase of the 'Sagar Parikrama' initiative commenced from Mandvi, Gujarat, in March 2022. It aims to interact with fisherfolk communities along the coastal belt.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Government Initiatives"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q120",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Art & Culture",
+    "text": "The annual Kheer Bhawani Mela is organized at:",
+    "options": [
+      "Kabaw Valley",
+      "Kashmir Valley",
+      "Dah Hanu Valley",
+      "Upper Dibang Valley"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The annual Kheer Bhawani Mela is a significant Hindu festival celebrated at the Mata Kheer Bhawani temple in Tulmulla, Ganderbal district, located in the Kashmir Valley.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Art & Culture"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q121",
+    "year": 2023,
+    "subject": "Science & Technology",
+    "topic": "Space Technology",
+    "text": "NISAR satellite is manufactured jointly by Indian Space Research Organisation and:",
+    "options": [
+      "Japan Aerospace Exploration Agency",
+      "National Aeronautics and Space Administration",
+      "Russian Federal Space Agency",
+      "European Space Agency"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NISAR stands for NASA-ISRO Synthetic Aperture Radar. It is a joint Earth-observing mission developed collaboratively by ISRO and NASA (National Aeronautics and Space Administration) to measure Earth's changing ecosystems, dynamic surfaces, and ice masses.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Science & Technology"
+      },
+      {
+        "type": "topic",
+        "label": "Space Technology"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q122",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "International Relations",
+    "text": "'Operation Kaveri' is a rescue operation launched by the Government of India to evacuate Indian citizens who were stranded in:",
+    "options": [
+      "Kuwait",
+      "Ukraine",
+      "Afghanistan",
+      "Sudan"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Operation Kaveri was launched by the Indian Armed Forces in 2023 to evacuate Indian citizens and foreign nationals from Sudan during the violent conflict that erupted between rival military factions.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "International Relations"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q123",
+    "year": 2023,
+    "subject": "Economy",
+    "topic": "Public Sector Undertakings",
+    "text": "Rail Vikas Nigam Limited' is a :",
+    "options": [
+      "Maharatna CPSE",
+      "Navaratna CPSE",
+      "Miniratna I CPSE",
+      "Miniratna II CPSE"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rail Vikas Nigam Limited (RVNL), a Central Public Sector Enterprise under the Ministry of Railways, was upgraded to a 'Navaratna' CPSE in April 2023.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Economy"
+      },
+      {
+        "type": "topic",
+        "label": "Public Sector Undertakings"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q124",
+    "year": 2023,
+    "subject": "Science & Technology",
+    "topic": "IT and Computers",
+    "text": "What are Airawat, Param Siddhi, Pratyus and Mihir?",
+    "options": [
+      "Super Computers of India",
+      "Battle Tanks of India",
+      "Supersonic Missiles of India",
+      "Indian Naval Ships"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Airawat, Param Siddhi, Pratyush, and Mihir are some of the fastest and most prominent high-performance Supercomputers developed and operated by various institutions in India.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Science & Technology"
+      },
+      {
+        "type": "topic",
+        "label": "IT and Computers"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  },
+  {
+    "id": "pyq-2023-capf-q125",
+    "year": 2023,
+    "subject": "Current Affairs",
+    "topic": "Defense and Security",
+    "text": "Which one of the following Indian Naval Ships has recently concluded a 17,000-nm trans-ocean intercontinental voyage?",
+    "options": [
+      "INS Tarangini",
+      "INS Mandovi",
+      "INSV Mhadei",
+      "INSV Tarini"
+    ],
+    "correctAnswer": 3,
+    "explanation": "INSV Tarini (Indian Naval Sailing Vessel Tarini) completed a grueling 17,000 nautical mile trans-ocean inter-continental voyage, spanning over several months with a crew including female officers, further demonstrating the ocean-sailing capabilities of the Indian Navy.",
+    "tags": [
+      {
+        "type": "subject",
+        "label": "Current Affairs"
+      },
+      {
+        "type": "topic",
+        "label": "Defense and Security"
+      },
+      {
+        "type": "pyq",
+        "label": "CAPF 2023"
+      }
+    ]
+  }
+]
