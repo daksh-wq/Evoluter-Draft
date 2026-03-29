@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { History, Search, PlayCircle, X, Check, ChevronDown, CheckCircle2, Circle } from 'lucide-react';
 import { PYQ_DATABASE } from '@/constants/pyqDatabase';
+import { SUBJECTS, SUBJECT_CODES, TOPIC_CODES } from '@/constants/appConstants';
 
 const currentYear = new Date().getFullYear();
 
@@ -28,10 +29,10 @@ const Dropdown = ({ label, value, options, onChange, icon: Icon }) => {
     }, []);
 
     return (
-        <div className="relative w-full sm:w-auto" ref={ref}>
+        <div className="relative w-full" ref={ref}>
             <button
                 onClick={() => setOpen(o => !o)}
-                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full sm:w-auto min-w-[160px] ${isActive
+                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full min-w-[160px] ${isActive
                     ? 'bg-[#2278B0] text-white border-[#2278B0]'
                     : 'bg-white text-slate-700 border-slate-200 hover:border-[#2278B0]/40 hover:bg-slate-50'
                     }`}
@@ -50,7 +51,7 @@ const Dropdown = ({ label, value, options, onChange, icon: Icon }) => {
             </button>
 
             {open && (
-                <div className="absolute top-full mt-2 left-0 z-50 bg-white border border-slate-200 rounded-2xl shadow-lg min-w-[200px] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150">
+                <div className="absolute top-full mt-2 left-0 w-full z-50 bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150">
                     <div className="px-3 py-2 border-b border-slate-100">
                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{label}</p>
                     </div>
@@ -81,10 +82,9 @@ const Dropdown = ({ label, value, options, onChange, icon: Icon }) => {
 };
 
 // ── Multi-select dropdown for subtopics ──────────────────────────────────────
-const MultiDropdown = ({ label, options, selected, onToggle, onClear }) => {
+const MultiDropdown = ({ label, options, selected, onToggle }) => {
     const [open, setOpen] = useState(false);
     const ref = useRef(null);
-    const count = selected.size;
 
     useEffect(() => {
         const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
@@ -92,32 +92,23 @@ const MultiDropdown = ({ label, options, selected, onToggle, onClear }) => {
         return () => document.removeEventListener('mousedown', handler);
     }, []);
 
-    const displayLabel = count === 0 ? label : `${count} selected`;
-    const isActive = count > 0;
+    const isActive = !label.startsWith('All ');
 
     return (
-        <div className="relative w-full sm:w-auto" ref={ref}>
+        <div className="relative w-full" ref={ref}>
             <button
                 onClick={() => setOpen(o => !o)}
-                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full sm:w-auto min-w-[160px] ${isActive
+                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full min-w-[160px] ${isActive
                     ? 'bg-[#2278B0] text-white border-[#2278B0]'
                     : 'bg-white text-slate-700 border-slate-200 hover:border-[#2278B0]/40 hover:bg-slate-50'
                     }`}
             >
-                <span className="flex-1 text-left truncate">{displayLabel}</span>
-                {isActive && (
-                    <span
-                        onClick={(e) => { e.stopPropagation(); onClear(); }}
-                        className="p-0.5 rounded-full bg-white/20 hover:bg-white/40 transition-colors flex-shrink-0"
-                    >
-                        <X size={10} />
-                    </span>
-                )}
+                <span className="flex-1 text-left truncate">{label}</span>
                 <ChevronDown size={14} className={`flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
             </button>
 
             {open && (
-                <div className="absolute top-full mt-2 left-0 z-50 bg-white border border-slate-200 rounded-2xl shadow-lg min-w-[220px] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150">
+                <div className="absolute top-full mt-2 left-0 w-full z-50 bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150">
                     <div className="px-3 py-2 border-b border-slate-100 flex items-center justify-between">
                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{label}</p>
                         <span className="text-[10px] text-slate-400 font-medium">Multi-select</span>
@@ -152,32 +143,53 @@ const MultiDropdown = ({ label, options, selected, onToggle, onClear }) => {
 // ── Main Component ────────────────────────────────────────────────
 const PYQView = ({ startCustomTest }) => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedSubjects, setSelectedSubjects] = useState(new Set()); // multi-select
-    const [selectedSubtopics, setSelectedSubtopics] = useState(new Set());
+    const [selectedSubjects, setSelectedSubjects] = useState(new Set(['All Subjects']));
+    const [selectedSubtopics, setSelectedSubtopics] = useState(new Set(['All Subtopics']));
     const [selectedDuration, setSelectedDuration] = useState('All');
     const [selectedSource, setSelectedSource] = useState('All');
 
-    const subjects = useMemo(() =>
-        [...new Set(PYQ_DATABASE.map(q => q.subject))].sort(),
-        []);
+    // Use SUBJECTS from constants, excluding 'All Subjects' for the list
+    const subjects = useMemo(() => SUBJECTS.filter(s => s !== 'All Subjects'), []);
 
-    // Subtopics from ALL selected subjects (union); empty = no filter
+    // Logic for subtopics
     const subtopics = useMemo(() => {
-        if (selectedSubjects.size === 0) return [];
-        return [...new Set(
-            PYQ_DATABASE
-                .filter(q => selectedSubjects.has(q.subject))
-                .map(q => q.topic)
-        )].sort();
-    }, [selectedSubjects]);
+        let codes = [];
+        if (selectedSubjects.has('All Subjects') || selectedSubjects.size === 0) {
+            // Get all subtopics from all subjects
+            subjects.forEach(sub => {
+                const code = SUBJECT_CODES[sub];
+                if (code && TOPIC_CODES[code]) {
+                    codes = [...codes, ...Object.values(TOPIC_CODES[code])];
+                }
+            });
+        } else {
+            // Get subtopics from only selected subjects
+            [...selectedSubjects].forEach(sub => {
+                const code = SUBJECT_CODES[sub];
+                if (code && TOPIC_CODES[code]) {
+                    codes = [...codes, ...Object.values(TOPIC_CODES[code])];
+                }
+            });
+        }
+        return [...new Set(codes)].sort();
+    }, [selectedSubjects, subjects]);
 
     const activeDuration = DURATION_OPTIONS.find(o => o.label === selectedDuration) || null;
 
     const filteredQuestions = useMemo(() => {
         return PYQ_DATABASE.filter(q => {
             if (activeDuration && (q.year < activeDuration.min || q.year > activeDuration.max)) return false;
-            if (selectedSubjects.size > 0 && !selectedSubjects.has(q.subject)) return false;
-            if (selectedSubtopics.size > 0 && !selectedSubtopics.has(q.topic)) return false;
+            
+            // Check subject filtering
+            if (!selectedSubjects.has('All Subjects')) {
+                // If specific subjects are selected and question doesn't match
+                if (selectedSubjects.size > 0 && !selectedSubjects.has(q.subject)) return false;
+            }
+
+            // Check subtopic filtering
+            if (!selectedSubtopics.has('All Subtopics')) {
+                if (selectedSubtopics.size > 0 && !selectedSubtopics.has(q.topic)) return false;
+            }
             if (selectedSource === 'Only UPSC CSE') {
                 const examTag = q.tags?.find(t => t.type === 'pyq');
                 if (examTag) {
@@ -193,13 +205,13 @@ const PYQView = ({ startCustomTest }) => {
         });
     }, [selectedSubjects, selectedSubtopics, activeDuration, selectedSource, searchTerm]);
 
-    const hasActiveFilters = searchTerm || selectedSubjects.size > 0 || selectedSubtopics.size > 0
+    const hasActiveFilters = searchTerm || (!selectedSubjects.has('All Subjects') && selectedSubjects.size > 0) || (!selectedSubtopics.has('All Subtopics') && selectedSubtopics.size > 0)
         || selectedDuration !== 'All' || selectedSource !== 'All';
 
     const clearAll = () => {
         setSearchTerm('');
-        setSelectedSubjects(new Set());
-        setSelectedSubtopics(new Set());
+        setSelectedSubjects(new Set(['All Subjects']));
+        setSelectedSubtopics(new Set(['All Subtopics']));
         setSelectedDuration('All');
         setSelectedSource('All');
     };
@@ -207,16 +219,37 @@ const PYQView = ({ startCustomTest }) => {
     const toggleSubject = (sub) => {
         setSelectedSubjects(prev => {
             const next = new Set(prev);
-            next.has(sub) ? next.delete(sub) : next.add(sub);
+            if (sub === 'All Subjects') {
+                return new Set(['All Subjects']);
+            } else {
+                next.delete('All Subjects'); // Remove 'All' if a specific one is picked
+                if (next.has(sub)) {
+                    next.delete(sub);
+                    if (next.size === 0) return new Set(['All Subjects']);
+                } else {
+                    next.add(sub);
+                }
+            }
             return next;
         });
-        setSelectedSubtopics(new Set()); // clear subtopics on subject change
+        // "All sub-topics" selected by default whenever Subject changes
+        setSelectedSubtopics(new Set(['All Subtopics']));
     };
 
     const toggleSubtopic = (topic) => {
         setSelectedSubtopics(prev => {
             const next = new Set(prev);
-            next.has(topic) ? next.delete(topic) : next.add(topic);
+            if (topic === 'All Subtopics') {
+                return new Set(['All Subtopics']);
+            } else {
+                next.delete('All Subtopics');
+                if (next.has(topic)) {
+                    next.delete(topic);
+                    if (next.size === 0) return new Set(['All Subtopics']);
+                } else {
+                    next.add(topic);
+                }
+            }
             return next;
         });
     };
@@ -274,64 +307,75 @@ const PYQView = ({ startCustomTest }) => {
                 </div>
 
                 {/* Dropdowns row */}
-                <div className="flex flex-wrap gap-4 items-end">
-
-                    {/* Subject — multi-select */}
-                    <div className="flex flex-col gap-1">
-                        <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Subject</span>
-                        <MultiDropdown
-                            label="All Subjects"
-                            options={subjects}
-                            selected={selectedSubjects}
-                            onToggle={toggleSubject}
-                            onClear={() => { setSelectedSubjects(new Set()); setSelectedSubtopics(new Set()); }}
-                        />
-                    </div>
-
-                    {/* Subtopic — only when subjects are selected */}
-                    {selectedSubjects.size > 0 && subtopics.length > 0 && (
-                        <div className="flex flex-col gap-1">
-                            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Subtopic</span>
+                <div className="flex flex-col gap-4">
+                    
+                    {/* 40 / 60 Filter Row */}
+                    <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
+                        {/* Subject — 40% (2/5) width */}
+                        <div className="flex flex-col gap-1 md:col-span-2">
+                            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Select Subject</span>
                             <MultiDropdown
-                                label="All Subtopics"
-                                options={subtopics}
-                                selected={selectedSubtopics}
-                                onToggle={toggleSubtopic}
-                                onClear={() => setSelectedSubtopics(new Set())}
+                                label={
+                                    selectedSubjects.has('All Subjects') 
+                                        ? 'All Subjects' 
+                                        : (selectedSubjects.size === 1 ? [...selectedSubjects][0] : `${selectedSubjects.size} Subjects`)
+                                }
+                                options={['All Subjects', ...subjects]}
+                                selected={selectedSubjects}
+                                onToggle={toggleSubject}
                             />
                         </div>
-                    )}
 
-                    {/* Duration */}
-                    <div className="flex flex-col gap-1">
-                        <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Duration</span>
-                        <Dropdown
-                            label="All Years"
-                            value={selectedDuration}
-                            options={DURATION_OPTIONS}
-                            onChange={setSelectedDuration}
-                        />
+                        {/* Subtopic — 60% (3/5) width */}
+                        <div className="flex flex-col gap-1 md:col-span-3">
+                            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Select Sub-Topics</span>
+                            <MultiDropdown
+                                label={
+                                    selectedSubtopics.has('All Subtopics') 
+                                        ? 'All Sub-topics' 
+                                        : (selectedSubtopics.size === 1 ? [...selectedSubtopics][0] : `${selectedSubtopics.size} Sub-topics`)
+                                }
+                                options={['All Subtopics', ...subtopics]}
+                                selected={selectedSubtopics}
+                                onToggle={toggleSubtopic}
+                            />
+                        </div>
                     </div>
 
-                    {/* Source */}
-                    <div className="flex flex-col gap-1">
-                        <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Source</span>
-                        <Dropdown
-                            label="All UPSC Exams"
-                            value={selectedSource}
-                            options={SOURCE_OPTIONS}
-                            onChange={setSelectedSource}
-                        />
-                    </div>
+                    {/* Secondary Filters */}
+                    <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-2 w-full items-end">
+                        {/* Duration */}
+                        <div className="flex flex-col gap-1 md:col-span-2">
+                            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Duration</span>
+                            <Dropdown
+                                label="All Years"
+                                value={selectedDuration}
+                                options={DURATION_OPTIONS}
+                                onChange={setSelectedDuration}
+                            />
+                        </div>
 
-                    {hasActiveFilters && (
-                        <button
-                            onClick={clearAll}
-                            className="flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-red-500 hover:bg-red-50 rounded-xl transition-colors border border-red-100 mb-0.5"
-                        >
-                            <X size={12} /> Clear All
-                        </button>
-                    )}
+                        {/* Source */}
+                        <div className="flex flex-col gap-1 md:col-span-3">
+                            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Source</span>
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                                <Dropdown
+                                    label="All UPSC Exams"
+                                    value={selectedSource}
+                                    options={SOURCE_OPTIONS}
+                                    onChange={setSelectedSource}
+                                />
+                                {hasActiveFilters && (
+                                    <button
+                                        onClick={clearAll}
+                                        className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-red-500 hover:bg-red-50 rounded-xl transition-colors border border-red-100 sm:mb-0.5 sm:ml-auto w-full sm:w-auto mt-2 sm:mt-0"
+                                    >
+                                        <X size={12} /> Clear Filters
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Active filter tags */}

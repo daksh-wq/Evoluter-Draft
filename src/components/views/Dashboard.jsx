@@ -100,21 +100,20 @@ const Dashboard = ({
     const handleGenerateTest = useCallback(() => {
         // Subject is compulsory
         if (selectedSubjects.length === 0 && !uploadedResource) {
-            return; // button will be disabled, but guard here too
+            return;
         }
-        if (selectedSubjects.length > 1 || selectedSubjects.includes('All') || aiTopic.trim() || uploadedResource) {
-            const baseChapter = aiTopic.trim();
-            const subtopicsArr = Array.from(selectedSubtopics);
-
+        if (selectedSubjects.length > 0 || uploadedResource) {
+            const subtopicsArr = Array.from(selectedSubtopics).filter(t => t !== 'All Sub-topics');
+            
             let finalTopic;
             if (uploadedResource) {
                 finalTopic = `Test from ${resourceName}`;
-            } else if (selectedSubjects.length > 1 || selectedSubjects.includes('All')) {
-                finalTopic = `Comprehensive Test: ${selectedSubjects.join(', ')}`;
-            } else if (subtopicsArr.length > 0) {
-                finalTopic = `${baseChapter} > ${subtopicsArr.join(', ')}`;
+            } else if (selectedSubjects.includes('All Subjects')) {
+                finalTopic = subtopicsArr.length > 0 ? `Comprehensive Test > ${subtopicsArr.join(', ')}` : `Comprehensive Test: All Subjects`;
+            } else if (selectedSubjects.length > 1) {
+                finalTopic = `Test: ${selectedSubjects.join(', ')}`;
             } else {
-                finalTopic = baseChapter;
+                finalTopic = subtopicsArr.length > 0 ? `${selectedSubjects[0]} > ${subtopicsArr.join(', ')}` : selectedSubjects[0];
             }
 
             generateAITest(finalTopic, questionCount, difficulty, uploadedResource, pyqPercentage);
@@ -124,7 +123,7 @@ const Dashboard = ({
             setResourceName('');
             setPyqPercentage(0);
         }
-    }, [aiTopic, selectedSubtopics, selectedSubjects, uploadedResource, resourceName, questionCount, difficulty, pyqPercentage, generateAITest]);
+    }, [selectedSubtopics, selectedSubjects, uploadedResource, resourceName, questionCount, difficulty, pyqPercentage, generateAITest]);
 
     // Fix #6: stable handler shared by all three notification item types
     const handleGoToClassroom = useCallback(() => {
@@ -191,39 +190,21 @@ const Dashboard = ({
         if (isGeneratingTest) return; // don't touch visibility during generation
         if (selectedSubjects.length > 0) {
             setShowSuggestions(true);
-        } else if (!aiTopic.trim()) {
-            // Clear suggestions if no subjects selected and no typed topic
+        } else {
             setTopicSuggestions([]);
             setShowSuggestions(false);
         }
-    }, [selectedSubjects, aiTopic, isGeneratingTest]);
+    }, [selectedSubjects, isGeneratingTest]);
 
     // Clear subtopics when chapter changes (stale subtopics don't apply to new chapter)
     React.useEffect(() => {
-        setSelectedSubtopics(new Set());
+        // We now handle this inside ChapterSelector and SubjectSelector
     }, [aiTopic]);
 
-    // Manual Subtopic Mapping Effect
+    // Manual Subtopic Mapping Effect - No longer needed as ChapterSelector handles Subtopics
     React.useEffect(() => {
-        const keyword = aiTopic.trim();
-        // Use typed keyword OR selected subjects as the seed
-        const effectiveKeyword = keyword || (selectedSubjects.length > 0 ? selectedSubjects.join(' ') : '');
-
-        if (!effectiveKeyword || effectiveKeyword.length < 2) {
-            setTopicSuggestions([]);
-            return;
-        }
-
-        // Fetch from manual mapping
-        // effectiveKeyword will normally be the chapter string right out of ChapterSelector
-        const chapterObj = CHAPTERS_LIST.find(c => c.name.toLowerCase() === effectiveKeyword.toLowerCase());
-        if (chapterObj) {
-            const subs = SUBTOPICS_LIST.filter(s => s.chapterId === chapterObj.id).map(s => s.name);
-            setTopicSuggestions(subs);
-        } else {
-            setTopicSuggestions([]);
-        }
-    }, [aiTopic, selectedSubjects]);
+        setTopicSuggestions([]);
+    }, [selectedSubjects]);
 
 
 
@@ -397,69 +378,29 @@ const Dashboard = ({
                             />
 
                             {/* Main Input Group */}
-                            <div className="grid grid-cols-1 md:grid-cols-12 gap-3">
+                            <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+                                {/* Subject 40% (2/5) */}
                                 <SubjectSelector
-                                    onSelect={setAiTopic}
+                                    onSelect={(val) => {
+                                        setSelectedSubtopics(new Set([val]));
+                                    }}
                                     onSubjectsChange={setSelectedSubjects}
                                     disabled={isGeneratingTest}
-                                    className="md:col-span-4"
+                                    className="md:col-span-2"
                                 />
 
-                                <div className="md:col-span-8">
+                                {/* Subtopic 60% (3/5) */}
+                                <div className="md:col-span-3">
                                     <ChapterSelector
                                         selectedSubjects={selectedSubjects}
-                                        value={aiTopic}
-                                        onChange={(val) => {
-                                            setShowSuggestions(true);
-                                            setAiTopic(val);
+                                        value={Array.from(selectedSubtopics)}
+                                        onChange={(valArr) => {
+                                            setSelectedSubtopics(new Set(valArr));
                                         }}
-                                        disabled={isGeneratingTest || selectedSubjects.length > 1 || selectedSubjects.includes('All')}
+                                        disabled={isGeneratingTest}
                                     />
                                 </div>
                             </div>
-
-                            {/* AI Suggestions Tags Here Below the Grid */}
-                            {selectedSubjects.length === 1 && !selectedSubjects.includes('All') && showSuggestions && aiTopic.length >= 2 && (
-                                <div className="w-full animate-in fade-in slide-in-from-top-1">
-                                    {isSuggesting ? (
-                                        <div className="text-xs text-blue-200 flex items-center gap-1.5 px-2 font-medium">
-                                            <div className="animate-spin w-3 h-3 border-2 border-white/50 border-t-transparent rounded-full" />
-                                            Neural Engine analyzing...
-                                        </div>
-                                    ) : topicSuggestions?.length > 0 ? (
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mt-2">
-                                            {topicSuggestions.map((suggestion) => {
-                                                const isActiveSub = selectedSubtopics.has(suggestion);
-                                                return (
-                                                    <button
-                                                        key={suggestion}
-                                                        title={suggestion}
-                                                        type="button"
-                                                        disabled={isGeneratingTest}
-                                                        onClick={() => {
-                                                            if (isGeneratingTest) return;
-                                                            setSelectedSubtopics(prev => {
-                                                                const next = new Set(prev);
-                                                                next.has(suggestion) ? next.delete(suggestion) : next.add(suggestion);
-                                                                return next;
-                                                            });
-                                                        }}
-                                                        className={`w-full px-3.5 py-2.5 text-xs font-bold rounded-xl transition-all flex items-center gap-2 shadow-sm border text-left ${isGeneratingTest
-                                                            ? 'opacity-50 cursor-not-allowed pointer-events-none ' + (isActiveSub ? 'bg-blue-500 border-blue-400 text-white' : 'text-blue-100 bg-white/20 border-white/30')
-                                                            : isActiveSub
-                                                                ? 'bg-blue-500 border-blue-400 text-white cursor-pointer shadow-md'
-                                                                : 'text-blue-50 bg-white/10 border-white/20 hover:bg-white/20 hover:border-white/30 cursor-pointer hover:shadow-md'
-                                                            }`}
-                                                    >
-                                                        <Sparkles size={12} className={`flex-shrink-0 ${isActiveSub ? 'text-white' : 'text-blue-300 opacity-80'}`} />
-                                                        <span className="truncate leading-tight">{suggestion}</span>
-                                                    </button>
-                                                );
-                                            })}
-                                        </div>
-                                    ) : null}
-                                </div>
-                            )}
 
                             {/* Resource Upload Section */}
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-4">
@@ -531,7 +472,7 @@ const Dashboard = ({
                             <div className="hidden lg:block mt-2">
                                 <button
                                     onClick={handleGenerateTest}
-                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (selectedSubjects.length === 1 && !selectedSubjects.includes('All') && !aiTopic.trim() && !uploadedResource)}
+                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource)}
                                     className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
                                         }`}
                                 >
@@ -566,7 +507,7 @@ const Dashboard = ({
                             <div className="lg:hidden mt-2">
                                 <button
                                     onClick={handleGenerateTest}
-                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource) || (selectedSubjects.length === 1 && !selectedSubjects.includes('All') && !aiTopic.trim() && !uploadedResource)}
+                                    disabled={isGeneratingTest || (selectedSubjects.length === 0 && !uploadedResource)}
                                     className={`w-full bg-white text-[#2278B0] py-3 md:py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0 disabled:shadow-none ${selectedSubjects.length === 0 && !uploadedResource ? 'relative group' : ''
                                         }`}
                                 >

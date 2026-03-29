@@ -6,10 +6,15 @@ import { SUBJECTS } from '../../constants/appConstants';
  * SubjectSelector Component
  * Multi-select dropdown for subject selection.
  */
-export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false, className = "md:col-span-4" }) => {
+export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false, className = "md:col-span-2" }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState([]); // array 
+    const [selected, setSelected] = useState(['All Subjects']); // array 
     const dropdownRef = useRef(null);
+
+    useEffect(() => {
+        // Initial setup to parent
+        if (onSubjectsChange) onSubjectsChange(['All Subjects']);
+    }, []);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -23,27 +28,32 @@ export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false, 
 
     const selectSubject = (subject) => {
         let newSelected;
-        if (subject === 'All') {
-            newSelected = selected.includes('All') ? [] : ['All'];
+        if (subject === 'All Subjects') {
+            newSelected = ['All Subjects'];
         } else {
             if (selected.includes(subject)) {
                 newSelected = selected.filter(s => s !== subject);
+                if (newSelected.length === 0) newSelected = ['All Subjects'];
             } else {
-                newSelected = [...selected.filter(s => s !== 'All'), subject];
+                newSelected = [...selected.filter(s => s !== 'All Subjects'), subject];
             }
         }
         
         setSelected(newSelected);
-        onSelect(''); // clear chapter when subject changes
+        onSelect('All Sub-topics'); // clear topic or default logic
         if (onSubjectsChange) onSubjectsChange(newSelected);
     };
 
     let displayValue = 'Select Subjects...';
-    if (selected.length === 1) {
+    if (selected.includes('All Subjects')) {
+        displayValue = 'All Subjects';
+    } else if (selected.length === 1) {
         displayValue = selected[0];
     } else if (selected.length > 1) {
-        displayValue = `${selected.length} Subjects Selected`;
+        displayValue = `${selected.length} Subjects`;
     }
+
+    const allOptions = ['All Subjects', ...SUBJECTS];
 
     return (
         <div className={`${className} relative group`} ref={dropdownRef}>
@@ -64,7 +74,7 @@ export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false, 
 
             {isOpen && (
                 <div className="absolute z-50 w-full mt-2 bg-white rounded-xl shadow-xl border border-slate-100 py-2 max-h-60 overflow-y-auto">
-                    {SUBJECTS.map((subject) => {
+                    {allOptions.map((subject) => {
                         const isSelected = selected.includes(subject);
                         return (
                             <div

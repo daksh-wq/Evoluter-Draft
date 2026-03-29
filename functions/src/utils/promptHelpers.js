@@ -156,8 +156,20 @@ SOLUTION FORMAT (mandatory for EVERY question):
 /** Tagging instruction injected into every prompt so AI self-classifies each question. */
 const TAGGING_INSTRUCTION = `
 TAGGING FIELDS (mandatory for EVERY question — use the exact codes below):
-"subjectCode": one of [IP, AM, MI, IC, GE, EI, EN, ST, CA, TR]
-"topicCode":   2-digit string e.g. "02" (best matching sub-topic number within the subject)
+"subjectCode": one of [PC, IE, GE, ST, IR, AC, EN, AH, MH, MO]
+
+"topicCode": 2-digit string representing the specific sub-topic based STRICTLY on the subject you select. Treat this as a lookup table:
+- IF subject is PC (Polity & Constitution): [01: Constitutional Framework, 02: Rights & Duties, 03: Union & State Executive, 04: Union & State Legislature, 05: Judiciary, 06: Local Government, 07: Federalism & Relations, 08: Bodies & Provisions]
+- IF subject is IE (Indian Economy): [01: National Income & Accounting, 02: Fiscal Policy & Budgeting, 03: Monetary Policy & Banking, 04: External Sector, 05: Financial Markets, 06: Social Sector & Poverty, 07: Sectors of Economy, 08: International Organizations]
+- IF subject is GE (Geography): [01: Geomorphology, 02: Climatology, 03: Oceanography & Hydrology, 04: Human Geography, 05: Indian Physical Geography, 06: Biogeography, 07: Economic Geography, 08: Mapping]
+- IF subject is ST (Science & Technology): [01: Space Technology & Astronomy, 02: Biotechnology & Health, 03: IT, Computing & Electronics, 04: General Science – Physics, Chemistry, Biology, 05: Defense Technology]
+- IF subject is IR (International Relations): [01: Bilateral Relations, 02: Global Groupings, 03: Global Institutions]
+- IF subject is AC (Art & Culture): [01: Indian Architecture, 02: Sculptures of India, 03: Indian Paintings, 04: Indian Music and Dance Forms, 05: Theatres & Puppetry, Calendars, Fairs & Festivals, 06: Literary Arts & Philosophy]
+- IF subject is EN (Environment): [01: Ecology Basics & Ecosystems, 02: Ecosystem Functions, 03: Terrestrial & Aquatic Biomes, 04: Biodiversity & Species, 05: Protected Area Network (PAN), 06: Climate Change & Mitigation, 07: Pollution & Waste Management, 08: Environmental Governance & Acts]
+- IF subject is AH (Ancient History): [01: Pre-Historic & Indus Valley Civilization, 02: Vedic Culture & Religious Movements, 03: The Mauryan Empire, 04: Post-Mauryan & Sangam Age, 05: Gupta & Post-Gupta Era, 06: South Indian Kingdoms, 07: Ancient Art & Culture]
+- IF subject is MH (Medieval History): [01: Early Medieval India, 02: Rajput Era & Early Invasions, 03: Delhi Sultanate, 04: Bhakti & Sufi Movements, 05: Vijayanagar & Bahmani Empires, 06: Mughal Empire, 07: Maratha Empire, 08: Medieval Art & Architecture]
+- IF subject is MO (Modern History): [01: Expansion of British Power, 02: British Policies & Admin, 03: Early Resistance & 1857, 04: Socio-Religious Reforms, 05: Early National Movement, 06: Gandhian Era & Mass Movements, 07: Constitutional Evolution, 08: Independence & Beyond]
+
 "sourceCode":  one of [SN=Standard/NCERT, AD=Advanced/official-docs, CI=Current-Issue, RN=Random, NA=Not-Applicable]
 "typeCode":    one of [FA=Factual, CO=Conceptual, AB=Application-Based, DE=Definition, IN=Informative]
 "difficultyCode": one of [ET=Extreme-Tough, TO=Tough, ME=Medium, ES=Easy, FO=Foundational]

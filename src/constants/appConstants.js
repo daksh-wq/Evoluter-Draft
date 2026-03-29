@@ -1,12 +1,15 @@
 export const SUBJECTS = [
-    'All',
-    'Polity',
-    'History',
-    'Art and Culture',
+    'All Subjects',
+    'Polity & Constitution',
+    'Indian Economy',
     'Geography',
-    'Economy',
+    'Science & Technology',
+    'International Relations',
+    'Art & Culture',
     'Environment',
-    'Science and Technology'
+    'Ancient History',
+    'Medieval History',
+    'Modern History'
 ];
 
 export const DIFFICULTY_LEVELS = ['Easy', 'Intermediate', 'Hard'];
@@ -81,14 +84,17 @@ export const QUESTION_TYPE_DISTRIBUTION = {
  * Segment 1 of the 16-char Question ID.
  */
 export const SUBJECT_CODES = {
-    'All': 'MX',
-    'Polity': 'PO',
-    'History': 'HI',
-    'Art and Culture': 'AC',
+    'All Subjects': 'MX',
+    'Polity & Constitution': 'PC',
+    'Indian Economy': 'IE',
     'Geography': 'GE',
-    'Economy': 'EC',
+    'Science & Technology': 'ST',
+    'International Relations': 'IR',
+    'Art & Culture': 'AC',
     'Environment': 'EN',
-    'Science and Technology': 'ST'
+    'Ancient History': 'AH',
+    'Medieval History': 'MH',
+    'Modern History': 'MO'
 };
 
 /** Reverse map: code → subject name */
@@ -102,78 +108,95 @@ export const SUBJECT_CODE_TO_NAME = Object.fromEntries(
  * Format: { subjectCode: { topicCode: topicName } }
  */
 export const TOPIC_CODES = {
-    PO: {
-        '01': 'Constitutional Fundamentals',
-        '02': 'Core Rights (FR, DPSP, FD)',
-        '03': 'Union Executive',
-        '04': 'Union Legislature (Parliament)',
-        '05': 'Judiciary & Judicial Review',
-        '06': 'Federal Structure & Centre-State',
-        '07': 'State & Local Governance',
-        '08': 'Constitutional Bodies',
-        '09': 'Governance & Rights',
+    PC: {
+        '01': 'Constitutional Framework',
+        '02': 'Rights & Duties',
+        '03': 'Union & State Executive',
+        '04': 'Union & State Legislature',
+        '05': 'Judiciary',
+        '06': 'Local Government',
+        '07': 'Federalism & Relations',
+        '08': 'Bodies & Provisions',
     },
-    HI: {
-        '01': 'Indus Valley & Vedic Period',
-        '02': 'Mahajanapadas & Magadhan Ascendancy',
-        '03': 'Heterodox Sects (Buddhism & Jainism)',
-        '04': 'Mauryan & Post-Mauryan Period',
-        '05': 'Gupta & Post-Gupta Period',
-        '06': 'Delhi Sultanate (1206-1526)',
-        '07': 'Mughal Empire (1526-1707)',
-        '08': 'Colonial Expansion',
-        '09': 'Administrative & Social Changes',
-        '10': 'Early Resistance (Pre-1857)',
-        '11': 'Rise of Nationalism (1885-1905)',
-        '12': 'Extremist & Revolutionary Phase',
-        '13': 'The Gandhian Era (1919-1947)',
-        '14': 'Constitutional Developments',
-        '15': 'Towards Independence & Partition',
-    },
-    AC: {
-        '01': 'Ancient Architecture & Sculpture',
-        '02': 'Rock-Cut & Cave Architecture',
-        '03': 'Temple Architecture',
-        '04': 'Indo-Islamic Architecture',
-        '05': 'Classical Performing Arts',
-        '06': 'Folk Arts & Crafts',
-        '07': 'Philosophy & Literature',
-        '08': 'Bhakti and Sufi Movements',
+    IE: {
+        '01': 'National Income & Accounting',
+        '02': 'Fiscal Policy & Budgeting',
+        '03': 'Monetary Policy & Banking',
+        '04': 'External Sector',
+        '05': 'Financial Markets',
+        '06': 'Social Sector & Poverty',
+        '07': 'Sectors of Economy',
+        '08': 'International Organizations',
     },
     GE: {
-        '01': 'Geomorphology & Lithosphere',
-        '02': 'Climatology & Atmosphere',
-        '03': 'Oceanography & Hydrosphere',
-        '04': 'Indian Physiography',
-        '05': 'Indian Climate & Monsoon',
-        '06': 'Indian Resources & Agriculture',
-        '07': 'Human & Economic Geography',
-    },
-    EC: {
-        '01': 'Basic Concepts & National Income',
-        '02': 'Inflation & Monetary Policy',
-        '03': 'Public Finance & Taxation',
-        '04': 'Banking & Financial Markets',
-        '05': 'External Sector',
-        '06': 'Sectoral Issues & Reforms',
-        '07': 'Poverty, Unemployment & Schemes',
-    },
-    EN: {
-        '01': 'Basic Ecology',
-        '02': 'Biodiversity',
-        '03': 'Conservation Initiatives (India)',
-        '04': 'Pollution & Waste Management',
-        '05': 'Climate Change',
-        '06': 'International Treaties',
-        '07': 'Institutions & Governance',
+        '01': 'Geomorphology',
+        '02': 'Climatology',
+        '03': 'Oceanography & Hydrology',
+        '04': 'Human Geography',
+        '05': 'Indian Physical Geography',
+        '06': 'Biogeography',
+        '07': 'Economic Geography',
+        '08': 'Mapping',
     },
     ST: {
-        '01': 'Space Technology',
+        '01': 'Space Technology & Astronomy',
         '02': 'Biotechnology & Health',
-        '03': 'IT & Digital Tech',
-        '04': 'Defence & Nuclear',
-        '05': 'Basic Science',
+        '03': 'IT, Computing & Electronics',
+        '04': 'General Science – Physics, Chemistry, Biology',
+        '05': 'Defense Technology',
     },
+    IR: {
+        '01': 'Bilateral Relations',
+        '02': 'Global Groupings',
+        '03': 'Global Institutions',
+    },
+    AC: {
+        '01': 'Indian Architecture',
+        '02': 'Sculptures of India',
+        '03': 'Indian Paintings',
+        '04': 'Indian Music and Dance Forms',
+        '05': 'Theatres & Puppetry, Calendars, Fairs & Festivals',
+        '06': 'Literary Arts & Philosophy',
+    },
+    EN: {
+        '01': 'Ecology Basics & Ecosystems',
+        '02': 'Ecosystem Functions',
+        '03': 'Terrestrial & Aquatic Biomes',
+        '04': 'Biodiversity & Species',
+        '05': 'Protected Area Network (PAN)',
+        '06': 'Climate Change & Mitigation',
+        '07': 'Pollution & Waste Management',
+        '08': 'Environmental Governance & Acts',
+    },
+    AH: {
+        '01': 'Pre-Historic & Indus Valley Civilization',
+        '02': 'Vedic Culture & Religious Movements',
+        '03': 'The Mauryan Empire',
+        '04': 'Post-Mauryan & Sangam Age',
+        '05': 'Gupta & Post-Gupta Era',
+        '06': 'South Indian Kingdoms',
+        '07': 'Ancient Art & Culture',
+    },
+    MH: {
+        '01': 'Early Medieval India',
+        '02': 'Rajput Era & Early Invasions',
+        '03': 'Delhi Sultanate',
+        '04': 'Bhakti & Sufi Movements',
+        '05': 'Vijayanagar & Bahmani Empires',
+        '06': 'Mughal Empire',
+        '07': 'Maratha Empire',
+        '08': 'Medieval Art & Architecture',
+    },
+    MO: {
+        '01': 'Expansion of British Power',
+        '02': 'British Policies & Admin',
+        '03': 'Early Resistance & 1857',
+        '04': 'Socio-Religious Reforms',
+        '05': 'Early National Movement',
+        '06': 'Gandhian Era & Mass Movements',
+        '07': 'Constitutional Evolution',
+        '08': 'Independence & Beyond',
+    }
 };
 
 /**
@@ -196,17 +219,27 @@ export const SOURCE_CODE_TO_NAME = Object.fromEntries(
  * Books per subject (Core / Standard / Advanced) — for source classification.
  */
 export const SUBJECT_SOURCE_MAP = {
-    'Polity': {
+    'Polity & Constitution': {
         core: ['NCERT Class 11 — Indian Constitution at Work', 'NCERT Political Theory'],
         standard: ['Indian Polity by M. Laxmikanth'],
         advanced: ['Constitution of India by D.D. Basu', 'Constitution Bare Act', '2nd ARC Report'],
     },
-    'History': {
-        core: ['NCERT Class XII — Themes in Indian History Part I & II', 'Modern India by Bipin Chandra (Old NCERT)'],
-        standard: ['Old NCERT — Ancient India by R.S. Sharma', 'Medieval India by Satish Chandra', 'Spectrum — History of Modern India'],
+    'Ancient History': {
+        core: ['Old NCERT — Ancient India by R.S. Sharma'],
+        standard: ['Standard Textbooks'],
+        advanced: ['Advanced Historical Research'],
+    },
+    'Medieval History': {
+        core: ['NCERT Medieval India by Satish Chandra'],
+        standard: ['Standard Textbooks'],
+        advanced: ['Advanced Historical Research'],
+    },
+    'Modern History': {
+        core: ['NCERT Class XII — Themes in Modern Indian History', 'Modern India by Bipin Chandra'],
+        standard: ['Spectrum — History of Modern India'],
         advanced: ["India's Struggle for Independence by Bipin Chandra"],
     },
-    'Art and Culture': {
+    'Art & Culture': {
         core: ['NCERT Class XI — An Introduction to Indian Art'],
         standard: ['Indian Art and Culture by Nitin Singhania'],
         advanced: ['CCRT (Centre for Cultural Resources and Training) material'],
@@ -216,7 +249,7 @@ export const SUBJECT_SOURCE_MAP = {
         standard: ['Certificate in Physical and Human Geography by G.C. Leong'],
         advanced: ['Geography by Majid Hussain'],
     },
-    'Economy': {
+    'Indian Economy': {
         core: ['NCERT Class X, XI (Indian Economic Development)', 'NCERT Class XII (Introductory Macroeconomics)'],
         standard: ['Indian Economy by Ramesh Singh', 'Indian Economy by Sanjeev Verma'],
         advanced: ['Economic Survey', 'Union Budget Document'],
@@ -226,11 +259,16 @@ export const SUBJECT_SOURCE_MAP = {
         standard: ['PMF IAS Environment Material'],
         advanced: ['Ministry of Environment Reports', 'Down to Earth', 'Yojana'],
     },
-    'Science and Technology': {
+    'Science & Technology': {
         core: ['NCERT Class VI–X'],
         standard: ['TMH Science and Technology Book'],
         advanced: ['Newspapers & Current Science Publications'],
     },
+    'International Relations': {
+        core: ['Standard Textbooks', 'Newspapers'],
+        standard: ['Ministry of External Affairs Updates', 'Diplomatic Periodicals'],
+        advanced: ['Think Tank Reports (ORF, IDSA)'],
+    }
 };
 
 /**
