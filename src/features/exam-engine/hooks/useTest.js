@@ -41,8 +41,8 @@ export function useTest() {
     // Status flags
     const [isGeneratingTest, setIsGeneratingTest] = useState(false);
     const [generationProgress, setGenerationProgress] = useState(0);
-    const [isTestCompleted, setIsTestCompleted] = useState(false);
-    const [testResults, setTestResults] = useState(null);
+    const [isTestCompleted, setIsTestCompleted] = useState(() => loadSavedState('isTestCompleted') ?? false);
+    const [testResults, setTestResults] = useState(() => loadSavedState('testResults') ?? null);
     const [isInstitutionTest, setIsInstitutionTest] = useState(() => loadSavedState('isInstitutionTest') ?? false);
     const [activeTestName, setActiveTestName] = useState(() => loadSavedState('activeTestName') ?? null); // Title for institution tests
 
@@ -59,13 +59,15 @@ export function useTest() {
                 timeLeft,
                 totalDuration,
                 isInstitutionTest,
-                startTime: startTimeRef.current
+                startTime: startTimeRef.current,
+                isTestCompleted,
+                testResults
             };
             sessionStorage.setItem('evoluter_test_state', JSON.stringify(stateToSave));
         } else {
             sessionStorage.removeItem('evoluter_test_state');
         }
-    }, [activeTest, activeTestId, activeTestName, currentQuestionIndex, answers, markedForReview, timeLeft, totalDuration, isInstitutionTest]);
+    }, [activeTest, activeTestId, activeTestName, currentQuestionIndex, answers, markedForReview, timeLeft, totalDuration, isInstitutionTest, isTestCompleted, testResults]);
 
     /**
      * Helper to initialize test state
@@ -156,6 +158,7 @@ export function useTest() {
             const durationSeconds = getDurationForCount(count);
 
             setupTestSession(questions, durationSeconds);
+            setActiveTestName(topic || 'Mixed'); // Persist chosen topic so submitTest saves it correctly
 
             // Initialize History in Backend
             if (auth.currentUser) {
@@ -310,10 +313,13 @@ export function useTest() {
         if (auth.currentUser) {
             try {
                 const testId = activeTestId || `test-${Date.now()}`;
-                // For institution tests use the stored name; for AI tests derive from question tags
-                const topic = isInstitutionTest && activeTestName
-                    ? activeTestName
-                    : (activeTest[0]?.tags?.find(t => t.type === 'topic')?.label || 'Mixed');
+                // Topic: prefer the explicitly-stored name (works for AI, custom & institution tests),
+                // then fall back to q.topic (always set by normalizeQuestion to the selected topic),
+                // then give up and call it 'Mixed'.
+                const topic = activeTestName
+                    || activeTest[0]?.topic
+                    || activeTest[0]?.tags?.find(t => t.type === 'subject')?.label
+                    || 'Mixed';
 
                 // Save Result
                 await testService.saveTestResult(

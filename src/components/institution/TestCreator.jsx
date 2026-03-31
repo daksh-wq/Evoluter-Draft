@@ -10,8 +10,9 @@ import { extractTextFromPDF } from '../../utils/pdfExtractor';
 import { batchService } from '../../features/exam-engine/services/batchService';
 import { CustomDropdown } from '../common';
 import { toast } from '../../utils/toast';
-import { SUBJECTS } from '../../constants/appConstants';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { SubjectSelector } from '../dashboard/SubjectSelector';
+import { ChapterSelector } from '../dashboard/ChapterSelector';
 
 const TestCreator = ({ userData }) => {
     const navigate = useNavigate();
@@ -26,9 +27,20 @@ const TestCreator = ({ userData }) => {
 
     // Test Metadata
     const [title, setTitle] = useLocalStorage('tc_title', '');
-    const [subject, setSubject] = useLocalStorage('tc_subject', '');
-    const [subTopic, setSubTopic] = useLocalStorage('tc_subTopic', '');
     const [duration, setDuration] = useLocalStorage('tc_duration', 30);
+
+    // Subject / sub-topic — stored as arrays for the shared selectors,
+    // then derived as strings for AI generation and publish logic.
+    const [selectedSubjectsArr, setSelectedSubjectsArr] = useState(['All Subjects']);
+    const [selectedSubtopicsArr, setSelectedSubtopicsArr] = useState(['All Sub-topics']);
+
+    // Derived strings for downstream usage (generation, publish, sync)
+    const subject = selectedSubjectsArr.includes('All Subjects') || selectedSubjectsArr.length === 0
+        ? ''
+        : selectedSubjectsArr.join(', ');
+    const subTopic = selectedSubtopicsArr.includes('All Sub-topics') || selectedSubtopicsArr.length === 0
+        ? ''
+        : selectedSubtopicsArr.join(', ');
 
     // Questions State
     const [questions, setQuestions] = useLocalStorage('tc_questions', [
@@ -423,8 +435,8 @@ const TestCreator = ({ userData }) => {
 
             // Clear the local session after publishing successfully
             setTitle('');
-            setSubject('General');
-            setSubTopic('');
+            setSelectedSubjectsArr(['All Subjects']);
+            setSelectedSubtopicsArr(['All Sub-topics']);
             setDuration(30);
             setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0, explanation: '' }]);
             setMode('manual');
@@ -503,8 +515,8 @@ const TestCreator = ({ userData }) => {
                             setTestCode(null);
                             setIsPublished(false);
                             setTitle('');
-                            setSubject('General');
-                            setSubTopic('');
+                            setSelectedSubjectsArr(['All Subjects']);
+                            setSelectedSubtopicsArr(['All Sub-topics']);
                             setDuration(30);
                             setQuestions([{ id: 1, text: '', options: ['', '', '', ''], correctOption: 0, explanation: '' }]);
                             setIsSubmitting(false);
@@ -577,25 +589,24 @@ const TestCreator = ({ userData }) => {
                                         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-semibold text-slate-800 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
                                     />
                                 </div>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div className="space-y-3">
                                     <div>
                                         <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Subject</label>
-                                        <CustomDropdown
-                                            options={[
-                                                ...SUBJECTS.map(s => ({ label: s, value: s }))
-                                            ]}
-                                            value={subject}
-                                            onChange={(val) => setSubject(val)}
-                                            fullWidth={true}
+                                        <SubjectSelector
+                                            className=""
+                                            onSelect={() => setSelectedSubtopicsArr(['All Sub-topics'])}
+                                            onSubjectsChange={(arr) => {
+                                                setSelectedSubjectsArr(arr);
+                                                setSelectedSubtopicsArr(['All Sub-topics']);
+                                            }}
                                         />
                                     </div>
                                     <div>
                                         <label className="text-xs font-bold text-slate-500 uppercase mb-1.5 block">Sub-Topic</label>
-                                        <input
-                                            placeholder="e.g. Indus Valley & Vedic Period"
-                                            value={subTopic}
-                                            onChange={(e) => setSubTopic(e.target.value)}
-                                            className="w-full text-sm bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 font-semibold text-slate-800 focus:bg-white focus:border-indigo-500 focus:ring-0 transition-all outline-none"
+                                        <ChapterSelector
+                                            selectedSubjects={selectedSubjectsArr}
+                                            value={selectedSubtopicsArr}
+                                            onChange={setSelectedSubtopicsArr}
                                         />
                                     </div>
                                 </div>

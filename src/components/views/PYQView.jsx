@@ -1,6 +1,8 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { History, Search, PlayCircle, X, Check, ChevronDown, CheckCircle2, Circle } from 'lucide-react';
-import { ALL_PYQ_QUESTIONS, getPYQSubjects, getPYQTopics } from '@/services/pyqService';
+import { ALL_PYQ_QUESTIONS } from '@/services/pyqService';
+import { SUBJECT_CODES, TOPIC_CODES } from '@/constants/appConstants';
+import { SubjectSelector } from '@/components/dashboard/SubjectSelector';
 
 const currentYear = new Date().getFullYear();
 
@@ -150,15 +152,29 @@ const PYQView = ({ startCustomTest }) => {
     const [selectedDuration, setSelectedDuration] = useState('All');
     const [selectedSource, setSelectedSource] = useState('All');
 
-    // Derive subjects directly from the loaded PYQ data
-    const subjects = useMemo(() => getPYQSubjects(), []);
+    // Bridge: SubjectSelector gives an array; PYQ filters work on a Set
+    const handleSubjectsChange = (arr) => {
+        setSelectedSubjects(new Set(arr));
+        setSelectedSubtopics(new Set(['All Subtopics']));
+    };
 
-    // Derive subtopics from selected subjects using real data
+    // Derive subtopics from selected subjects using dashboard logic
     const subtopics = useMemo(() => {
-        if (selectedSubjects.has('All Subjects') || selectedSubjects.size === 0) {
-            return getPYQTopics([]);
+        let codes = [];
+        const subjectsArray = Array.from(selectedSubjects);
+        if (!subjectsArray || subjectsArray.length === 0 || subjectsArray.includes('All Subjects')) {
+            Object.values(TOPIC_CODES).forEach(topicsObj => {
+                codes = [...codes, ...Object.values(topicsObj)];
+            });
+        } else {
+            subjectsArray.forEach(sub => {
+                const code = SUBJECT_CODES[sub];
+                if (code && TOPIC_CODES[code]) {
+                    codes = [...codes, ...Object.values(TOPIC_CODES[code])];
+                }
+            });
         }
-        return getPYQTopics([...selectedSubjects]);
+        return [...new Set(codes)].sort();
     }, [selectedSubjects]);
 
     const activeDuration = DURATION_OPTIONS.find(o => o.label === selectedDuration) || null;
@@ -205,23 +221,15 @@ const PYQView = ({ startCustomTest }) => {
         setSelectedSource('All');
     };
 
+    // Used only by active-filter tags to remove a single subject chip
     const toggleSubject = (sub) => {
-        setSelectedSubjects(prev => {
-            const next = new Set(prev);
-            if (sub === 'All Subjects') {
-                return new Set(['All Subjects']);
-            } else {
-                next.delete('All Subjects'); // Remove 'All' if a specific one is picked
-                if (next.has(sub)) {
-                    next.delete(sub);
-                    if (next.size === 0) return new Set(['All Subjects']);
-                } else {
-                    next.add(sub);
-                }
-            }
-            return next;
-        });
-        // "All sub-topics" selected by default whenever Subject changes
+        const next = new Set(selectedSubjects);
+        if (sub === 'All Subjects') {
+            setSelectedSubjects(new Set(['All Subjects']));
+        } else {
+            next.delete(sub);
+            setSelectedSubjects(next.size === 0 ? new Set(['All Subjects']) : next);
+        }
         setSelectedSubtopics(new Set(['All Subtopics']));
     };
 
@@ -297,21 +305,16 @@ const PYQView = ({ startCustomTest }) => {
 
                 {/* Dropdowns row */}
                 <div className="flex flex-col gap-4">
-                    
+
                     {/* 40 / 60 Filter Row */}
                     <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
                         {/* Subject — 40% (2/5) width */}
                         <div className="flex flex-col gap-1 md:col-span-2">
                             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Select Subject</span>
-                            <MultiDropdown
-                                label={
-                                    selectedSubjects.has('All Subjects') 
-                                        ? 'All Subjects' 
-                                        : (selectedSubjects.size === 1 ? [...selectedSubjects][0] : `${selectedSubjects.size} Subjects`)
-                                }
-                                options={['All Subjects', ...subjects]}
-                                selected={selectedSubjects}
-                                onToggle={toggleSubject}
+                            <SubjectSelector
+                                className=""
+                                onSelect={() => {}}
+                                onSubjectsChange={handleSubjectsChange}
                             />
                         </div>
 
@@ -320,8 +323,8 @@ const PYQView = ({ startCustomTest }) => {
                             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Select Sub-Topics</span>
                             <MultiDropdown
                                 label={
-                                    selectedSubtopics.has('All Subtopics') 
-                                        ? 'All Sub-topics' 
+                                    selectedSubtopics.has('All Subtopics')
+                                        ? 'All Sub-topics'
                                         : (selectedSubtopics.size === 1 ? [...selectedSubtopics][0] : `${selectedSubtopics.size} Sub-topics`)
                                 }
                                 options={['All Subtopics', ...subtopics]}

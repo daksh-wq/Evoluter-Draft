@@ -568,12 +568,12 @@ const Dashboard = ({
                     <KnowledgeGraph mastery={userStats.topicMastery} />
 
                     {/* Weakness Spotlight */}
-                    <div className="mt-6">
-                        <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+                   <div className="mt-6">
+                        {/* <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
                             Weakness Spotlight
-                        </h4>
+                        </h4> */}
                         {/* Fix #8: memoized — only recomputed when topicMastery changes */}
-                        <div className="flex flex-wrap gap-2">
+                        {/* <div className="flex flex-wrap gap-2">
                             {weakTopics.map(([t, s]) => (
                                 <div
                                     key={t}
@@ -586,8 +586,8 @@ const Dashboard = ({
                                     </div>
                                 </div>
                             ))}
-                        </div>
-                    </div>
+                        </div> */}
+                    </div> 
                 </div>
 
                 {/* Standard Protocols */}
@@ -614,21 +614,23 @@ const Dashboard = ({
                             </p>
                         </button>
 
-
-
-                        {/* Flashcard Blitz */}
-                        {/* <div
-                            className="p-4 bg-blue-50 rounded-xl border border-blue-100 cursor-pointer hover:bg-blue-100 transition-colors"
-                            onClick={() => setView('flashcards')}
+                        {/* Full Mock Test */}
+                        <button
+                            type="button"
+                            className="w-full text-left p-4 bg-orange-50 rounded-xl border border-orange-100 cursor-pointer hover:bg-orange-100 transition-colors"
+                            onClick={() => startMission && startMission()}
                         >
                             <div className="flex justify-between items-center mb-1">
-                                <span className="font-bold text-blue-800">Flashcard Blitz</span>
-                                <span className="text-xs bg-white px-2 py-1 rounded text-blue-600 font-bold">
-                                    Rapid
+                                <span className="font-bold text-orange-800">Full Mock Test</span>
+                                <span className="text-xs bg-white px-2 py-1 rounded text-orange-600 font-bold shadow-sm">
+                                    100 Qs
                                 </span>
                             </div>
-                            <p className="text-xs text-blue-600/80">Quick recall session.</p>
-                        </div> */}
+                            <p className="text-xs text-orange-600/80">
+                                Standard comprehensive diagnostic over the complete syllabus.
+                            </p>
+                        </button>
+
                     </div>
                 </div>
             </div>

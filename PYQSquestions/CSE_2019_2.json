@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "upsc-2019-p2-q1",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'historical injustice': What is the main idea that we can infer from the passage?",
+    "options": [
+      "Untouchability in India has not been taken seriously by political theorists.",
+      "Historical injustice is inevitable in any society and is always beyond repair.",
+      "Social discrimination and deprivation have their roots in bad economies.",
+      "It is difficult, if not impossible, to repair every manifestation of historical injustice."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage highlights that historical injustice tends to resist repair due to its deep roots and complex, overlapping nature.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q2",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'historical injustice': Which of the following assumptions is/are valid?\n1. Removal of economic discrimination leads to removal of social discrimination.\n2. Democratic polity is the best way to repair historical wrongs.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage states social discrimination acquires partial autonomy, invalidating statement 1. Statement 2 is not mentioned.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q3",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Education': Which of the following assumptions is/are valid?\n1. A society without well educated people cannot be transformed into a modern society.\n2. Without acquiring culture, a person's education is not complete.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage emphasizes combining expert knowledge with culture for a complete human existence, validating statement 2.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q4",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Soil': Which of the following assumptions is/are valid?\n1. Large scale soil erosion is a major reason for widespread food insecurity in the world.\n2. Soil erosion is mainly anthropogenic.\n3. Sustainable management of soils helps in combating climate change.",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage states soil traps huge quantities of carbon dioxide, helping combat climate change. Statements 1 and 2 are unsupported extrapolations.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q5",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Inequality': Which of the following assumptions is/are valid?\n1. Economic power is the only reason for the existence of inequality in a society.\n2. Inequality of different kinds, income, wealth, etc. reinforces power.\n3. Economic power can be analysed more through its effects than by direct empirical methods.",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage says economic power is invisible and not measurable directly, but its effects are seen pervasively, validating statement 3.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q6",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Climate change and plants': Which one of the following is the most logical and rational inference that can be made?",
+    "options": [
+      "Farmers who modernize their methods and diversify their fields will be in an advantageous position in future.",
+      "Climate change will adversely affect the crop diversity.",
+      "Shifting major crops to new croplands will lead to a great increase in the total area under cultivation and thus an increase in overall agricultural production.",
+      "Climate change is the most important factor affecting the agricultural economy in the future."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage notes that agricultural practices and adaptation will influence how farms fare, pointing to modernizing/diversifying as an advantage.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q7",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'A bat's wings': Which one of the following is the most logical, scientific and rational inference that can be made?",
+    "options": [
+      "Different species having similar structure of hands is an example of biodiversity.",
+      "Limbs being used by different species for different kinds of work is an example of biodiversity.",
+      "Man and the aforementioned animals having similar structure of limbs is an example of coincidence in evolution.",
+      "Man and the aforementioned animals have a shared evolutionary history."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The presence of homologous limb structures across diverse species scientifically points to a shared evolutionary history.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q8",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Palaeocene Eocene Thermal Maximum (PETM)': Which of the following assumptions are valid?\n1. Global warming has a bearing on the planet's biological evolution.\n2. Separation of land masses causes the release of huge quantities of carbon into the atmosphere.\n3. Increased warming of Earth's atmosphere can change the composition of its flora and fauna.\n4. The present man-made global warming will finally lead to conditions similar to those which happened 56 million years ago.",
+    "options": [
+      "1 and 2",
+      "3 and 4",
+      "1 and 3",
+      "2 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage links sudden warming to extinctions and drastic biological changes, validating 1 and 3. Statement 2 is not causally proven, and 4 is a speculative leap.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q9",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "The number of times the digit 5 will appear while writing the integers from 1 to 1000 is",
+    "options": [
+      "269",
+      "271",
+      "300",
+      "302"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The digit 5 appears 100 times in the units place, 100 times in the tens place, and 100 times in the hundreds place between 1 and 1000. Total = 300.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q10",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Cubes and Cuboids",
+    "text": "A solid cube is painted yellow, blue and black such that opposite faces are of same colour. The cube is then cut into 36 cubes of two different sizes such that 32 cubes are small and the other four cubes are big. None of the faces of the bigger cubes is painted blue. How many cubes have only one face painted?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cutting a cube into 32 small and 4 large cubes implies dividing it such that the large cubes form a 2x2x2 block on one half, leaving smaller cubes elsewhere. The resulting number of cubes with exactly one face painted evaluates to 8.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Cubes and Cuboids" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q11",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "A and B are two heavy steel blocks. If B is placed on the top of A, the weight increases by 60%. How much weight will reduce with respect to the total weight of A and B, if B is removed from the top of A?",
+    "options": [
+      "60%",
+      "45.5%",
+      "40%",
+      "37.5%"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let A = 100. Then B = 60. Total = 160. Removing B removes 60 from the total 160. Reduction % = (60/160) * 100 = 37.5%.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q12",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Calendars",
+    "text": "Mr 'X' has three children. The birthday of the first child falls on the 5th Monday of April, that of the second one falls on the 5th Thursday of November. On which day is the birthday of his third child, which falls on 20th December?",
+    "options": [
+      "Monday",
+      "Thursday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correctAnswer": 1,
+    "explanation": "April has 30 days, so the 5th Monday must be the 29th or 30th. Nov has 30 days, 5th Thursday must be 29th or 30th. Calculating the exact day shifts yields Thursday for Dec 20.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Calendars" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q13",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "Statements: 1. Some rats are cats. 2. Some cats are dogs. 3. No dog is a cow.\nConclusions: I. No cow is a cat. II. No dog is a rat. III. Some cats are rats.\nWhich of the above conclusions is/are drawn from the statements?",
+    "options": [
+      "I, II and III",
+      "Only I and II",
+      "Only III",
+      "Only II and III"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Conclusion I and II are not definite. Conclusion III ('Some cats are rats') is the direct converse of statement 1 ('Some rats are cats') and is definitively true.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q14",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "The number of parallelograms that can be formed from a set of four parallel lines intersecting another set of four parallel lines, is",
+    "options": [
+      "18",
+      "24",
+      "32",
+      "36"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A parallelogram requires 2 lines from the first set and 2 lines from the second set. Combinations = 4C2 * 4C2 = 6 * 6 = 36.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q15",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "In a school every student is assigned a unique identification number. A student is a football player if and only if the identification number is divisible by 4, whereas a student is a cricketer if and only if the identification number is divisible by 6. If every number from 1 to 100 is assigned to a student, then how many of them play cricket as well as football?",
+    "options": [
+      "4",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Students playing both must have an ID divisible by the LCM of 4 and 6, which is 12. There are 8 multiples of 12 between 1 and 100 (12, 24, 36, 48, 60, 72, 84, 96).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q16",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "When a runner was crossing the 12 km mark, she was informed that she had completed only 80% of the race. How many kilometres was the runner supposed to run in this event?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "16.5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If 80% of the distance = 12 km, then 100% of the distance = 12 / 0.8 = 15 km.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q17",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "Raju has ₹9000 with him and he wants to buy a mobile handset; but he finds that he has only 75% of the amount required to buy the handset. Therefore, he borrows ₹2000 from a friend. Then",
+    "options": [
+      "Raju still does not have enough amount to buy the handset.",
+      "Raju has exactly the same amount as required to buy the handset.",
+      "Raju has enough amount to buy the handset and he will have ₹500 with him after buying the handset.",
+      "Raju has enough amount to buy the handset and he will have ₹1000 with him after buying the handset."
+    ],
+    "correctAnswer": 0,
+    "explanation": "If 9000 is 75% of the cost, the cost is 12000. He borrows 2000, bringing his total to 11000. He is still 1000 short.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q18",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Problems on Ages",
+    "text": "In 2002, Meenu's age was one-third of the age of Meera, whereas in 2010, Meenu's age was half the age of Meera. What is Meenu's year of birth?",
+    "options": [
+      "1992",
+      "1994",
+      "1996",
+      "1998"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let Meenu's age in 2002 be x. Meera's age = 3x. In 2010, x + 8 = 0.5(3x + 8). Solving gives 2x + 16 = 3x + 8, so x = 8. Meenu was 8 in 2002, meaning she was born in 1994.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Problems on Ages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q19",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "Rakesh and Rajesh together bought 10 balls and 10 rackets. Rakesh spent ₹1300 and Rajesh spent ₹1500. If each racket costs three times a ball does, then what is the price of a racket?",
+    "options": [
+      "₹70",
+      "₹90",
+      "₹210",
+      "₹240"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Total spent = 2800. 10 balls + 10 rackets = 2800. So 1 ball + 1 racket = 280. Since Racket = 3 * Ball, Ball + 3*Ball = 280, 4*Ball = 280. Ball = 70, Racket = 210.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q20",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Set Theory",
+    "text": "In a conference, out of a total 100 participants, 70 are Indians. If 60 of the total participants are vegetarian, then which of the following statements is/are correct?\n1. At least 30 Indian participants are vegetarian.\n2. At least 10 Indian participants are non-vegetarian.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Indians = 70, Non-Indians = 30. Vegetarians = 60, Non-vegetarians = 40. Minimum Indian vegetarians = 60 - 30 = 30. Minimum Indian non-vegetarians = 70 - 60 = 10. Both statements are correct.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Set Theory" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q21",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Low-end IoT': Which one of the following statements is the most logical and rational inference that can be made?",
+    "options": [
+      "Development of enabling technologies in India can be a big boost to its manufacturing sector.",
+      "India is not yet fully ready to adopt IoT in view of the imminent security challenges.",
+      "Life becomes more comfortable with the development of cheap low-end IoT devices.",
+      "As we go digital, we must recognise the huge threat to Internet security from some IoT devices."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage highlights the exponential expansion of cheap IoT devices and stresses that their lack of security features poses daunting new security challenges.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q22",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Big Data': Which one of the following is the most logical and rational corollary to the above passage?",
+    "options": [
+      "Globalization is not in the interests of India as it undermines its socio-economic structures.",
+      "India should be careful to protect its digital sovereignty in global trade talks.",
+      "India should charge monopoly rents from multinational companies in exchange for Big Data.",
+      "The loss of Big Data from India is proportional to the degree/value of its foreign trade."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage discusses global trade negotiations eyeing the digital area to pre-emptively colonize Big Data from developing countries, implying India must protect its digital sovereignty.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q23",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Big Data': Which of the following is most definitively implied by the above passage?",
+    "options": [
+      "Big Data is the key resource in the digital space.",
+      "Big economies create Big Data.",
+      "Access to Big Data is the prerogative of developed countries.",
+      "Access to and possession of Big Data is a characteristic of developed countries."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage details how Big Data is mined and transformed into intelligence to control sectors and extract rents, implying it is the fundamental key resource in the digital age.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q24",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Rural poor / Small farms': What is the most logical and rational corollary to the above passage?",
+    "options": [
+      "Supporting small farmers is an important part of any agenda regarding environmentally sustainable development.",
+      "Poor countries have little role to play in the mitigation of global warming.",
+      "Due to a large number of farmer households, India will not have food security problem in the foreseeable future.",
+      "Only small-holder farmers in India can ensure food security."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage links rural poor and small farmers directly to coping with climate change effects and maintaining food security, making their support an essential development agenda.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q25",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Rural poor / Small farms': The above passage implies that\n1. There is a potential problem of food insecurity in India.\n2. India will have to strengthen its disaster management capabilities.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage highlights extreme weather events spelling disaster and new threats impacting water supply, implying needs for better disaster management and highlighting potential food insecurity risks.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q26",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Climate change and investors': Which of the above assumptions is/are valid?\n1. Governments and companies need to be adequately prepared to face the climate change.\n2. Extreme weather events will reduce the economic growth of governments and companies in future.\n3. Ignoring climate change is a huge risk for investors.",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage warns of stranded assets, higher taxes, and economic damage from extreme weather impacting investor returns, which validates all three assumptions.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q27",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Quotas in private schools': Which of the above assumptions is/are valid?\n1. Making equality of opportunity a reality is the fundamental goal of the Indian education system.\n2. The present Indian school system is unable to provide egalitarian education.\n3. Abolition of private schools and establishment of more government schools is the only way to ensure egalitarian education.",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "2 and 3 only",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage states that access to quality exhibits a sharp gradient with socio-economic status, validating assumption 2. Assumptions 1 and 3 are absolute statements not supported by the text.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q28",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'TB in India': Which one of the following is the most logical, rational and crucial message conveyed by the above passage?",
+    "options": [
+      "TB is not a curable disease in Indian circumstances.",
+      "Curing TB requires more than diagnosis and medical treatment.",
+      "Government's surveillance mechanism is deficient; and poor people have no access to treatment.",
+      "India will be free from diseases like TB only when its poverty alleviation programmes are effectively and successfully implemented."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage stresses that poverty, lack of nutrition, housing, counseling, and social support demotivate patients, implying that a holistic approach beyond mere medical diagnosis is essential.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q29",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "A five-storeyed building with floors from I to V is painted using four different colours and only one colour is used to paint a floor.\nConsider the following statements:\n1. The middle three floors are painted in different colours.\n2. The second (II) and the fourth (IV) floors are painted in different colours.\n3. The first (I) and the fifth (V) floors are painted red.\nTo ensure that any two consecutive floors have different colours",
+    "options": [
+      "Only statement 2 is sufficient",
+      "Only statement 3 is sufficient",
+      "Statement 1 is not sufficient, but statement 1 along with statement 2 is sufficient",
+      "Statement 3 is not sufficient, but statement 3 along with statement 2 is sufficient"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If statement 3 is true, Floor I and V are Red. Since there are 4 colors total and we only have 3 remaining floors (II, III, IV), we can simply assign the remaining 3 colors uniquely to the middle floors, guaranteeing no consecutive floors share a color.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q30",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "P, Q and R are three towns. The distance between P and Q is 60 km, whereas the distance between P and R is 80 km. Q is in the West of P and R is in the South of P. What is the distance between Q and R?",
+    "options": [
+      "140 km",
+      "130 km",
+      "110 km",
+      "100 km"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The towns form a right-angled triangle with P at the right angle. Distance QR = √(60² + 80²) = √(3600 + 6400) = √10000 = 100 km.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q31",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Set Theory",
+    "text": "All members of a club went to Mumbai and stayed in a hotel. On the first day, 80% went for shopping and 50% went for sightseeing, whereas 10% took rest in the hotel. Which of the following conclusion(s) can be drawn from the above data?\n1. 40% members went for shopping as well as sightseeing.\n2. 20% members went for only shopping.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "10% rested, so 90% went out. Shopping = 80%, Sightseeing = 50%. Both = (80 + 50) - 90 = 40%. Only shopping = 80 - 40 = 40%. Therefore, statement 1 is true and statement 2 is false.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Set Theory" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q32",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "In a school, 60% students play cricket. A student who does not play cricket, plays football. Every football player has got a two-wheeler. Which of the following conclusions cannot be drawn from the above data?\n1. 60% of the students do not have two-wheelers.\n2. No cricketer has a two-wheeler.\n3. Cricket players do not play football.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "We know 40% play football and have two-wheelers. We do not know if the 60% cricketers have two-wheelers or not, making 1 and 2 unable to be drawn. The phrasing implies non-cricketers play football, so cricketers do not play football (3 can be drawn).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q33",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "The ratio of a two-digit natural number to a number formed by reversing its digits is 4:7. The number of such pairs is",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "(10x+y)/(10y+x) = 4/7 => 70x+7y = 40y+4x => 66x = 33y => y = 2x. Valid single digit pairs for (x,y) are (1,2), (2,4), (3,6), (4,8). These 4 pairs form the valid numbers 12, 24, 36, 48.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q34",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "In an examination, A has scored 20 marks more than B. If B has scored 5% less marks than A, how much has B scored?",
+    "options": [
+      "360",
+      "380",
+      "400",
+      "420"
+    ],
+    "correctAnswer": 1,
+    "explanation": "B's marks = A - 20. Also B = A - 5% of A. Therefore, 5% of A = 20. A = 400. Thus, B = 400 - 20 = 380.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q35",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "LCM and HCF",
+    "text": "Seeta and Geeta go for a swim after a gap of every 2 days and every 3 days respectively. If on 1st January both of them went for a swim together, when will they go together next?",
+    "options": [
+      "7th January",
+      "8th January",
+      "12th January",
+      "13th January"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Gap of 2 days means swimming on the 3rd day. Gap of 3 days means swimming on the 4th day. The LCM of 3 and 4 is 12. They will swim together 12 days after Jan 1st, which is Jan 13th.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "LCM and HCF" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q36",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "X, Y and Z are three contestants in a race of 1000 m. Assume that all run with different uniform speeds. X gives Y a start of 40 m and X gives Z a start of 64 m. If Y and Z were to compete in a race of 1000 m, how many metres start will Y give to Z?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When X runs 1000m, Y runs 960m and Z runs 936m. The ratio of Y's speed to Z's speed is 960:936. If Y runs 1000m, Z will run 1000 * (936/960) = 975m. Y gives Z a start of 1000 - 975 = 25m.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time, Speed and Distance" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q37",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Inequalities",
+    "text": "If x is greater than or equal to 25 and y is less than or equal to 40, then which one of the following is always correct?",
+    "options": [
+      "x is greater than y",
+      "(y-x) is greater than 15",
+      "(y-x) is less than or equal to 15",
+      "(x+y) is greater than or equal to 65"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Given y <= 40 and x >= 25 (which means -x <= -25). Adding the inequalities gives y - x <= 40 - 25, so y - x <= 15.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Inequalities" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q38",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Problems on Ages",
+    "text": "Ena was born 4 years after her parents' marriage. Her mother is three years younger than her father and 24 years older than Ena, who is 13 years old. At what age did Ena's father get married?",
+    "options": [
+      "22 years",
+      "23 years",
+      "24 years",
+      "25 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ena is 13. Mother is 13 + 24 = 37. Father is 37 + 3 = 40. Ena was born 4 years after marriage, meaning marriage was 13 + 4 = 17 years ago. Father's age at marriage = 40 - 17 = 23 years.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Problems on Ages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q39",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "Rakesh had money to buy 8 mobile handsets of a specific company. But the retailer offered very good discount on that particular handset. Rakesh could buy 10 mobile handsets with the amount he had. What was the discount the retailer offered?",
+    "options": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let the original price of one handset be 100. Rakesh had 800. He bought 10 handsets for 800, making the new price 80. The discount is 20 on the original 100, which is 20%.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q40",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "text": "The average marks of 100 students are given to be 40. It was found later that marks of one student were 53 which were misread as 83. The corrected mean marks are",
+    "options": [
+      "39",
+      "39.7",
+      "40",
+      "40.3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total sum = 100 * 40 = 4000. The error is an overestimation of 30 marks (83 - 53). Corrected sum = 4000 - 30 = 3970. Corrected mean = 3970 / 100 = 39.7.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Averages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q41",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'GM technology': Which one of the following is the most logical, rational and crucial message conveyed by the above passage?",
+    "options": [
+      "Public research institutions should take the lead in GM technology and prioritise the technology agenda.",
+      "Developing countries should raise this issue in WTO and ensure the abolition of Intellectual Property Rights.",
+      "Private corporations should not be allowed to do agribusiness in India, particularly the seed business.",
+      "Present Indian circumstances do not favour the cultivation of genetically modified crops."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage criticizes corporate-driven GM technology for focusing on short-term profits over vital stress-resistance traits, implying public research should take the lead to prioritize long-term needs.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q42",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'GM technology': Which of the above assumptions is/are valid?\n1. The issue of effects of natural calamities on agriculture is not given due consideration by GM companies.\n2. In the long run, GM technology will not be able to solve agricultural problems arising due to global warming.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage confirms that GM companies prioritize short-term pest/herbicide resistance over drought/salinity resistance, validating 1. Statement 2 is too extreme an assumption to make definitively from the text.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q43",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Invasive species': Which one of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": [
+      "Invasive species should be used to rehabilitate desert areas and wastelands of a country.",
+      "Laws against the introduction of foreign plants are unnecessary.",
+      "Sometimes, the campaigns against foreign plants are pointless.",
+      "Foreign plants should be used to increase the biodiversity of a country."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage downplays the threat of invasive species, calling them 'nature's opportunists' that often do little harm, inferring that extreme campaigns against them might be unnecessary or pointless.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q44",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Diarrhoeal deaths': Which of the above assumptions is/are valid?\n1. Food safety is a complex issue that calls for a multipronged solution.\n2. Great investments need to be made in developing the manpower for surveillance and training.\n3. India needs to make sufficient legislation for governing food processing industry.",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The text lists myriad factors needing regulation (1) and highlights the need for good training of inspection staff and street vendors (2). It does not specifically demand new legislation.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q45",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Urban planning for the poor': The passage seems to argue",
+    "options": [
+      "against the monopoly of builders and the interests of elite groups.",
+      "against the need for global and smart cities.",
+      "in favour of planning cities mainly for working class and poor people.",
+      "in favour of participation of peoples' groups in city planning."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage criticizes top-down planning drawn exclusively from technical expertise that is distanced from people's lived experiences, arguing for the inclusive participation of the populace.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q46",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Organised sector employment': The above passage seems to imply that\n1. most of modern economic growth is based on technological progress.\n2. much of modern Indian economy does not nurture sufficient symbiotic relationship with labour-intensive, natural resource-based livelihoods.\n3. service sector in India is not very labour-intensive.\n4. literate rural population is not willing to enter organised sector.",
+    "options": [
+      "1 and 2 only",
+      "3 and 4 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage highlights 'jobless growth' where high economic growth leads to lower employment growth, implying reliance on tech (1), lack of labor-intensive symbiosis (2), and a non-labor-intensive service sector (3).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q47",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Banking correspondents': Which one of the following is the most logical, rational and crucial inference that can be derived from the above passage?",
+    "options": [
+      "Efforts to bring people in India's hinterland into the banking system are not successful.",
+      "For meaningful financial inclusion, India's banking system needs more number of banking correspondents and other such last-mile workers.",
+      "Meaningful financial inclusion in India requires that banking correspondents have diverse skills.",
+      "Better banking outreach would be impossible unless each banking correspondent is allowed to serve a number of banks."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage argues that outreach succeeds only if providers offer diverse products and have better incentives, indicating a critical need to empower these last-mile workers for meaningful inclusion.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q48",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "What is X in the sequence 132, 129, 124, 117, 106, 93, X?",
+    "options": [
+      "74",
+      "75",
+      "76",
+      "77"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The differences between consecutive terms are 3, 5, 7, 11, 13 (a sequence of prime numbers). The next prime number is 17. 93 - 17 = 76.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q49",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Clocks",
+    "text": "A wall clock moves 10 minutes fast in every 24 hours. The clock was set right to show the correct time at 8:00 a.m. on Monday. When the clock shows the time 6:00 p.m. on Wednesday, what is the correct time?",
+    "options": [
+      "5:36 p.m.",
+      "5:30 p.m.",
+      "5:24 p.m.",
+      "5:18 p.m."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The clock shows 58 hours passed (Mon 8am to Wed 6pm). The clock gains 10 mins every 24 hrs, meaning 24 hours true time = 24 hrs 10 mins (145/144 hrs) clock time. True time = 58 * (144/145) = 57.6 hours = 57 hrs 36 mins. This is 5:36 p.m. on Wednesday.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Clocks" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q50",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Fractions",
+    "text": "If the numerator and denominator of a proper fraction are increased by the same positive quantity which is greater than zero, the resulting fraction is",
+    "options": [
+      "always less than the original fraction",
+      "always greater than the original fraction",
+      "always equal to the original fraction",
+      "such that nothing can be claimed definitely"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For a proper fraction (a/b where a < b), adding a constant positive quantity x to both numerator and denominator yields (a+x)/(b+x). Since b > a, the ratio increases, so the new fraction is always greater.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Fractions" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q51",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "What is X in the sequence 4, 196, 16, 144, 36, 100, 64, X?",
+    "options": [
+      "48",
+      "64",
+      "125",
+      "256"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This is an alternating series of squares. Even terms: 196 (14^2), 144 (12^2), 100 (10^2), X (8^2 = 64).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q52",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Set Theory",
+    "text": "In a group of 15 people; 7 can read French, 8 can read English while 3 of them can read neither of these two languages. The number of people who can read exactly one language is",
+    "options": [
+      "10",
+      "9",
+      "5",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total = 15. Neither = 3. People reading at least one = 15 - 3 = 12. Using F + E - Both = 12 => 7 + 8 - Both = 12 => Both = 3. Exactly one = Total Readers - Both = 12 - 3 = 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Set Theory" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q53",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "A printer numbers the pages of a book starting with 1 and uses 3089 digits in all. How many pages does the book have?",
+    "options": [
+      "1040",
+      "1048",
+      "1049",
+      "1050"
+    ],
+    "correctAnswer": 2,
+    "explanation": "1-9 uses 9 digits. 10-99 uses 180 digits. 100-999 uses 2700 digits. Total up to 999 = 2889 digits. Digits remaining = 3089 - 2889 = 200 digits. Since pages >= 1000 have 4 digits: 200 / 4 = 50 pages. Total pages = 999 + 50 = 1049.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q54",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Letter Series",
+    "text": "Consider the following sequence that follows some arrangement: c_accaa_aa_bc_b. The letters that appear in the gaps are",
+    "options": [
+      "abba",
+      "cbbb",
+      "bbbb",
+      "cccc"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Filling in 'cbbb' creates the pattern 'cc a cc aa b aa bb c bb', which follows a repeating symmetry or cluster pattern common in such letter series.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Letter Series" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q55",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "text": "A family has two children along with their parents. The average of the weights of the children and their mother is 50 kg. The average of the weights of the children and their father is 52 kg. If the weight of the father is 60 kg, then what is the weight of the mother?",
+    "options": [
+      "48 kg",
+      "50 kg",
+      "52 kg",
+      "54 kg"
+    ],
+    "correctAnswer": 3,
+    "explanation": "C1 + C2 + M = 150. C1 + C2 + F = 156. We know F = 60, so C1 + C2 = 96. Substitute back: 96 + M = 150, so M = 54 kg.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Averages" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q56",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "Suppose you have sufficient amount of rupee currency in three denominations: ₹1, ₹10 and ₹50. In how many different ways can you pay a bill of ₹107?",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Using 2 ₹50s: 1 way (seven ₹1s). Using 1 ₹50: leaves ₹57. Can use 0,1,2,3,4,5 ₹10s (6 ways). Using 0 ₹50s: leaves ₹107. Can use 0 to 10 ₹10s (11 ways). Total = 1 + 6 + 11 = 18 ways.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q57",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Direction Sense",
+    "text": "'A' started from his house and walked 20 m towards East, where his friend 'B' joined him. They together walked 10 m in the same direction. Then 'A' turned left while 'B' turned right and travelled 2 m and 8 m respectively. Again 'B' turned left to travel 4 m followed by 5 m to his right to reach his office. 'A' turned right and travelled 12 m to reach his office. What is the shortest distance between the two offices?",
+    "options": [
+      "15 m",
+      "17 m",
+      "19 m",
+      "20 m"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A is at (42, 2). B is at (34, -13). Distance dx = 8, dy = 15. Euclidean distance = √(8² + 15²) = √(64 + 225) = √289 = 17 m.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Direction Sense" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q58",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Consider two statements S1 and S2 followed by a question: S1: p and q both are prime numbers. S2: p + q is an odd integer. Question: Is pq an odd integer? Which one of the following is correct?",
+    "options": [
+      "S1 alone is sufficient to answer the question",
+      "S2 alone is sufficient to answer the question",
+      "Both S1 and S2 taken together are not sufficient to answer the question",
+      "Both S1 and S2 are necessary to answer the question"
+    ],
+    "correctAnswer": 3,
+    "explanation": "If p+q is odd, one must be even and one odd. Since both are prime, the even one must be 2. Therefore, pq = 2 * odd prime = even. Since we definitively answered 'No', both statements together are necessary and sufficient.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q59",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Calendars",
+    "text": "Which year has the same calendar as that of 2009?",
+    "options": [
+      "2018",
+      "2017",
+      "2016",
+      "2015"
+    ],
+    "correctAnswer": 3,
+    "explanation": "2009 is 1 year after a leap year (2008). A year immediately following a leap year repeats its calendar after 6 years. 2009 + 6 = 2015.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Calendars" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q60",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Number 136 is added to 5B7 and the sum obtained is 7A3, where A and B are integers. It is given that 7A3 is exactly divisible by 3. The only possible value of B is",
+    "options": [
+      "2",
+      "5",
+      "7",
+      "8"
+    ],
+    "correctAnswer": 3,
+    "explanation": "136 + 5B7 = 7A3. 6+7=13 (carry 1). 1+3+B = 10+A => B-A = 6. Since 7A3 is divisible by 3, 7+A+3 = 10+A is a multiple of 3. So A can be 2, 5, 8. Only A=2 makes B=8 a single digit.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q61",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Regulations in India': Which one of the following is the most logical, rational and crucial inference that can be derived from the above passage?",
+    "options": [
+      "A better regulatory system will help India achieve the size of economy appropriate to its population.",
+      "In a competitive global economy, India must use regulations strategically.",
+      "Regulations in India do not favour its integration with today's hyper competitive global economy.",
+      "Job creation and economic growth should be dominant considerations in developing India's regulatory system."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage argues that regulations often fail to consider impacts on jobs and growth, and asserts they should be viewed as 'weapons' to improve the economic well-being of citizens.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q62",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Regulations in India': Which of the above assumptions is/are valid?\n1. In today's global economy, regulations are not effectively used to protect local markets.\n2. Social and environmental concerns are generally ignored by the governments across the world while implementing the regulations.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage states regulations *are* used to protect local markets (invalidating 1). It also says they *seek* social/environmental benefits, not that they are generally ignored globally (invalidating 2).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q63",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Microbiomes of infants': Which one of the following is the most logical, rational and crucial inference that can be derived from the above passage?",
+    "options": [
+      "If malnourished condition in children is caused by gut bacteria, it cannot be treated.",
+      "The guts of malnourished babies should be inoculated with mature microbiomes.",
+      "Babies of malnourished mothers should be fed with dairy milk fortified with sialylated oligosaccharides instead of mother's milk.",
+      "Research on benign effects of gut bacteria on nutrition has policy implications."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage details that malnourished mothers lack the specific modified sugar (sialylated oligosaccharides) necessary for the infant's microbiome to mature, leading to malnutrition. Thus, supplementing this sugar would be the logical intervention.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q64",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Microbiomes of infants': Which of the above assumptions is/are valid?\n1. Processed probiotic foods are a solution to treat the children suffering from malnutrition due to immature gut bacteria composition.\n2. The babies of malnourished mothers generally tend to be malnourished.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage clearly establishes a chain of causality that ends with babies of malnourished mothers becoming malnourished (validating 2). Probiotics add bacteria but don't address the core lack of the specific sugar food source, invalidating 1.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q65",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Antarctic Peninsula': Which of the above assumptions is/are valid?\n1. Regions of glaciers warm faster than other regions due to global warming.\n2. Global warming can lead to seafloor sedimentation in some areas.\n3. Melting glaciers can reduce marine biodiversity in some areas.",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage notes that melting glaciers cause increased suspended sediment (2) and a loss of species diversity among benthos (3). It does not claim *all* glacier regions warm faster than other regions.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q66",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Owl roosts and small mammals': Which of the above assumptions is/are valid?\n1. Global warming is a frequently occurring natural phenomenon.\n2. The impending global warming will not adversely affect small mammals.\n3. Humans are responsible for the loss of the Earth's natural resilience.",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage points to 'human-made changes' causing an enormous drop in energy flow, meaning modern ecosystems cannot adapt as easily as they did in the past. This squarely pins the loss of natural resilience on humans.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q67",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding 'Food varieties extinction': Which of the above assumptions are valid?\n1. Humans have been the main reason for the large scale extinction of plant species.\n2. Consumption of food mainly from locally cultivated crops ensures crop diversity.\n3. The present style of production and distribution of food will finally lead to the problem of food scarcity in the near future.\n4. Our food security may depend on our ability to preserve the locally cultivated varieties of crops.",
+    "options": [
+      "1 and 3",
+      "2 and 4",
+      "2 and 3",
+      "1 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage implies humans let varieties 'go extinct' (1) due to dependence on a few high-yielding varieties. It also warns that we might desperately need those extinct varieties if disease strikes, highlighting the need for preservation (4).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q68",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "If every alternative letter of the English alphabet from B onwards (including B) is written in lower case (small letters) and the remaining letters are capitalized, then how is the first month of the second half of the year written?",
+    "options": [
+      "JuLY",
+      "jULy",
+      "july",
+      "jUlY"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A=Upper, B=lower, C=Upper, D=lower... J=lower(j), U=Upper(U), L=lower(l), Y=Upper(Y). The word is jUlY.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q69",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "Sunita cuts a sheet of paper into three pieces. Length of first piece is equal to the average of the three single digit odd prime numbers. Length of the second piece is equal to that of the first plus one-third the length of the third. The third piece is as long as the other two pieces together. The length of the original sheet of paper is",
+    "options": [
+      "13 units",
+      "15 units",
+      "16 units",
+      "30 units"
+    ],
+    "correctAnswer": 3,
+    "explanation": "L1 = avg(3,5,7) = 5. L2 = 5 + L3/3. L3 = L1 + L2 = 5 + 5 + L3/3 = 10 + L3/3. 2/3 L3 = 10 => L3 = 15. L2 = 5 + 5 = 10. Total = 5 + 10 + 15 = 30.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q70",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "In the sequence 1, 5, 7, 3, 5, 7, 4, 3, 5, 7, how many such 5s are there which are not immediately preceded by 3 but are immediately followed by 7?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Looking for '_ 5 7' where '_' is not 3. Instances: '1, 5, 7' (Valid). '3, 5, 7' (Invalid). '3, 5, 7' (Invalid). Only 1 such instance exists.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q71",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Blood Relations",
+    "text": "A joint family consists of seven members A, B, C, D, E, F and G with three females. G is a widow and sister-in-law of D's father F. B and D are siblings and A is daughter of B. C is cousin of B. Who is E?\n1. Wife of F\n2. Grandmother of A\n3. Aunt of C\nSelect the correct answer using the code given below",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "F is father of B and D. G is widow sister-in-law of F, so C (cousin of B) is child of G. E must be wife of F. Since E is wife of F (1), she is mother of B and grandmother of A (2). As wife of F, she is the aunt of C (3). Thus, all are correct.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Blood Relations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q72",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "Each face of a cube can be painted in black or white colours. In how many different ways can the cube be painted?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Using Burnside's Lemma or simple enumeration for a 2-color cube coloring (accounting for rotational symmetry), the total distinct colorings are exactly 10.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q73",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "How many triplets (x, y, z) satisfy the equation x+y+z=6, where x, y and z are natural numbers?",
+    "options": [
+      "4",
+      "5",
+      "9",
+      "10"
+    ],
+    "correctAnswer": 3,
+    "explanation": "This is a standard stars and bars problem. For positive integers, the number of solutions is (n-1)C(k-1). Here n=6, k=3. 5C2 = 10.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q74",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Mathematical Operations",
+    "text": "If $ means 'divided by'; @ means 'multiplied by'; # means 'minus', then the value of 10#5@1$5 is",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "9"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Substitute symbols: 10 - 5 * 1 / 5. According to BODMAS: 1 / 5 = 0.2. 5 * 0.2 = 1. 10 - 1 = 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Mathematical Operations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q75",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "An 8-digit number 4252746B leaves remainder 0 when divided by 3. How many values of B are possible?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Divisibility rule for 3: Sum of digits must be divisible by 3. Sum = 4+2+5+2+7+4+6+B = 30 + B. For (30+B) to be divisible by 3, B can be 0, 3, 6, 9. That's 4 possible values.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q76",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Six students A, B, C, D, E and F appeared in several tests. Either C or F scores the highest. Whenever C scores the highest, then E scores the least. Whenever F scores the highest, B scores the least. In all the tests they got different marks; D scores higher than A, but they are close competitors; A scores higher than B; C scores higher than A. If F stands second in the ranking, then the position of B is",
+    "options": [
+      "Third",
+      "Fourth",
+      "Fifth",
+      "Sixth"
+    ],
+    "correctAnswer": 2,
+    "explanation": "If F is 2nd, C must be highest (1st). If C is 1st, E is least (6th). Order so far: C(1), F(2), E(6). Remaining spots are 3, 4, 5. We know D>A>B, and D & A are close (consecutive). So D=3, A=4, B=5. Thus B is Fifth.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q77",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Based on the same 6 students data: If B scores the least, the rank of C will be",
+    "options": [
+      "Second",
+      "Third",
+      "Fourth",
+      "Second or third"
+    ],
+    "correctAnswer": 3,
+    "explanation": "If B is least (6th), F must be highest (1st). Order: F(1), B(6). Remaining: C, D, A, E. We know C>A and D>A. Since A>B, A must be 5th. D and C must occupy 2nd and 3rd in some order. So C is Second or Third.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q78",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Based on the same 6 students data: If E is ranked third, then which one of the following is correct?",
+    "options": [
+      "E gets more marks than C",
+      "C gets more marks than E",
+      "A is ranked fourth",
+      "D is ranked fifth"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If E is 3rd, C cannot be 1st (otherwise E is 6th). So F is 1st, meaning B is 6th. F(1), E(3), B(6). D and A are close and D>A, so D=4, A=5. This forces C into 2nd. If C is 2nd and E is 3rd, then C gets more marks than E.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q79",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Read the following statements S1 and S2: S1: Twice the weight of Sohan is less than the weight of Mohan or that of Rohan. S2: Twice the weight of Rohan is greater than the weight of Mohan or that of Sohan. Which one of the following statements is correct?",
+    "options": [
+      "Weight of Mohan is greatest",
+      "Weight of Sohan is greatest",
+      "Weight of Rohan is greatest",
+      "'Whose weight is greatest' cannot be determined"
+    ],
+    "correctAnswer": 3,
+    "explanation": "From S1: 2S < M and 2S < R. So S is very small. From S2: 2R > M and 2R > S. We know S is the smallest. However, between M and R, there is no direct relationship established. M could be larger than R or vice versa. Thus, it cannot be determined.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-p2-q80",
+    "year": 2019,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Based on the same statements: S1: Twice the weight of Sohan is less than the weight of Mohan or that of Rohan. S2: Twice the weight of Rohan is greater than the weight of Mohan or that of Sohan. Which one of the following statements is correct?",
+    "options": [
+      "Weight of Mohan is least",
+      "Weight of Sohan is least",
+      "Weight of Rohan is least",
+      "'Whose weight is least' cannot be determined"
+    ],
+    "correctAnswer": 1,
+    "explanation": "From S1: 2S < M and 2S < R. This means S < M/2 and S < R/2. Therefore, Sohan's weight is definitively the smallest of the three.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  }
+]

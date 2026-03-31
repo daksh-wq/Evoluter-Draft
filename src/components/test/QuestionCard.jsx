@@ -74,31 +74,102 @@ export const QuestionCard = ({
                 {/* ── Question Text + Options ── */}
                 <div ref={scrollRef} className="px-4 sm:px-6 md:px-8 py-2 flex-1 overflow-y-auto">
                     <div className="mb-4 sm:mb-6 md:mb-8">
-                        {question.text
-                            .replace(/\s*\([a-eA-E]\)\s+[^()]+(?=\s*\([a-eA-E]\)|$)/g, '')
-                            .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
-                            .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                            .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Fa-f])\.\s)/g)
-                            .map((part, i) => {
-                                const trimmed = part.trim();
-                                const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(trimmed);
-                                if (!trimmed) return null;
-                                return (
-                                    <div key={i} className={`mb-3 sm:mb-4 ${isStatement
-                                        ? 'pl-4 sm:pl-5 text-sm sm:text-base md:text-lg text-slate-700 font-medium bg-slate-50 p-3 sm:p-4 rounded-xl border-l-4 border-blue-200 flex gap-2 sm:gap-3 items-start'
-                                        : 'text-base sm:text-lg md:text-xl font-serif text-slate-900 leading-relaxed'
-                                        }`}>
-                                        {isStatement ? (
-                                            <>
-                                                <span className="shrink-0 font-bold text-blue-800">{trimmed.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
-                                                <span className="flex-1">{trimmed.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
-                                            </>
-                                        ) : (
-                                            trimmed
-                                        )}
-                                    </div>
-                                );
-                            })}
+                        {(() => {
+                            const parts = question.text
+                                .replace(/\s*\([a-eA-E]\)\s+[^()]+(?=\s*\([a-eA-E]\)|$)/g, '')
+                                .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
+                                .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Fa-f])\.\s)/g)
+                                .map(p => p.trim())
+                                .filter(Boolean);
+
+                            const rawChunks = [];
+                            let currentStmtGroup = [];
+
+                            const flushCurrentStmts = () => {
+                                if (currentStmtGroup.length > 0) {
+                                    rawChunks.push({ type: 'statements', items: currentStmtGroup });
+                                    currentStmtGroup = [];
+                                }
+                            };
+
+                            parts.forEach(p => {
+                                const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(p);
+                                if (isStatement) {
+                                    currentStmtGroup.push(p);
+                                } else {
+                                    flushCurrentStmts();
+                                    rawChunks.push({ type: 'text', content: p });
+                                }
+                            });
+                            flushCurrentStmts();
+
+                            const blocks = [];
+                            for (let i = 0; i < rawChunks.length; i++) {
+                                const chunk = rawChunks[i];
+
+                                // Intercept Match Lists (List I / List II)
+                                if (chunk.type === 'text' && /^\s*List[-\s]?(?:I|1)\s*:?\s*$/i.test(chunk.content)) {
+                                    if (
+                                        i + 3 < rawChunks.length &&
+                                        rawChunks[i + 1].type === 'statements' &&
+                                        rawChunks[i + 2].type === 'text' && /^\s*List[-\s]?(?:II|2)\s*:?\s*$/i.test(rawChunks[i + 2].content) &&
+                                        rawChunks[i + 3].type === 'statements'
+                                    ) {
+                                        blocks.push(
+                                            <div key={`match-${i}`} className="mb-4 sm:mb-6 w-full grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 bg-slate-50/50 p-4 rounded-2xl border border-slate-100">
+                                                <div>
+                                                    <div className="font-bold text-slate-800 mb-3 ml-1">{chunk.content}</div>
+                                                    <div className="flex flex-col gap-2 sm:gap-3">
+                                                        {rawChunks[i + 1].items.map((stmt, idx) => (
+                                                            <div key={idx} className="pl-3 sm:pl-4 text-sm sm:text-base text-slate-700 font-medium bg-white p-2.5 sm:p-3 rounded-xl border-l-4 border-blue-300 shadow-sm flex gap-2 sm:gap-3 items-start h-full">
+                                                                <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div className="font-bold text-slate-800 mb-3 ml-1">{rawChunks[i + 2].content}</div>
+                                                    <div className="flex flex-col gap-2 sm:gap-3">
+                                                        {rawChunks[i + 3].items.map((stmt, idx) => (
+                                                            <div key={idx} className="pl-3 sm:pl-4 text-sm sm:text-base text-slate-700 font-medium bg-white p-2.5 sm:p-3 rounded-xl border-l-4 border-blue-300 shadow-sm flex gap-2 sm:gap-3 items-start h-full">
+                                                                <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        );
+                                        i += 3;
+                                        continue;
+                                    }
+                                }
+
+                                if (chunk.type === 'statements') {
+                                    // Side-by-side ONLY if exactly 4 statements and they are short
+                                    const isShort4 = chunk.items.length === 4 && !chunk.items.some(s => s.split(' ').length > 12);
+                                    blocks.push(
+                                        <div key={`group-${i}`} className={`mb-3 sm:mb-4 w-full grid gap-3 sm:gap-4 ${isShort4 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                                            {chunk.items.map((stmt, idx) => (
+                                                <div key={idx} className="pl-4 sm:pl-5 text-sm sm:text-base md:text-lg text-slate-700 font-medium bg-slate-50 p-3 sm:p-4 rounded-xl border-l-4 border-blue-200 flex gap-2 sm:gap-3 items-start h-full">
+                                                    <span className="shrink-0 font-bold text-blue-800">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                    <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    );
+                                } else {
+                                    blocks.push(
+                                        <div key={`p-${i}`} className="mb-3 sm:mb-4 text-base sm:text-lg md:text-xl font-serif text-slate-900 leading-relaxed">
+                                            {chunk.content}
+                                        </div>
+                                    );
+                                }
+                            }
+                            return blocks;
+                        })()}
                     </div>
 
                     {/* ── Options ── */}

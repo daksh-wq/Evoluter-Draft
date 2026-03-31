@@ -113,25 +113,8 @@ const StudentInstitutionView = ({ startInstitutionTest, startMission }) => {
                 </div>
             )}
             
-            {/* Quick Actions (Full Mock Test) */}
-            {!foundTest && !loading && (
-                <div className="grid grid-cols-1 gap-4 mb-8">
-                    <div
-                        className="p-4 bg-orange-50 rounded-xl border border-orange-100 cursor-pointer hover:bg-orange-100 transition-colors shadow-sm"
-                        onClick={() => startMission && startMission()}
-                    >
-                        <div className="flex justify-between items-center mb-1">
-                            <span className="font-bold text-orange-800 text-lg">Full Mock Test</span>
-                            <span className="text-sm bg-white px-3 py-1 rounded shadow-sm text-orange-600 font-bold">
-                                100 Qs
-                            </span>
-                        </div>
-                        <p className="text-sm text-orange-600/80">
-                            Standard comprehensive diagnostic over the complete syllabus.
-                        </p>
-                    </div>
-                </div>
-            )}
+
+
 
             {/* Test Preview Card */}
             {foundTest && (

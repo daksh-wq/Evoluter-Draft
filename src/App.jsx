@@ -64,14 +64,17 @@ const StudentClassroom = lazy(() => import('./components/student/StudentClassroo
 const InstitutionStudentManager = lazy(() => import('./components/institution/InstitutionStudentManager'));
 
 // Fix: module-level constant — never re-allocated on render
+// Must match SUBJECTS in appConstants.js (excluding 'All Subjects')
 const CANONICAL_TOPICS = [
-  'Polity',
-  'History',
-  'Art and Culture',
+  'Polity & Constitution',
+  'Indian Economy',
   'Geography',
-  'Economy',
+  'Science & Technology',
+  'International Relations',
+  'Art & Culture',
   'Environment',
-  'Science and Technology'
+  'Ancient & Medieval History',
+  'Modern History'
 ];
 
 // Fix: defined outside App so it is never re-created on every render cycle

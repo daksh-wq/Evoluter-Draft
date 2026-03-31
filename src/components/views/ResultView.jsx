@@ -286,47 +286,110 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {/* Simple Correct vs Incorrect Graph */}
+                            {/* Question Type Performance Graph */}
                             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative group">
                                 <h3 className="font-bold text-slate-800 mb-6 flex items-center gap-2 relative z-10">
-                                    <Activity size={18} className="text-indigo-600" /> Accuracy Overview
+                                    <BarChart2 size={18} className="text-indigo-600" /> Question Format Analysis
                                 </h3>
                                 <div className="h-[260px] w-full relative z-10">
                                     {(() => {
-                                        const barData = [
-                                            { name: 'Correct', count: results.correct, color: '#16a34a' },     // text-green-600
-                                            { name: 'Incorrect', count: results.incorrect, color: '#dc2626' }, // text-red-600
-                                            { name: 'Skipped', count: results.unanswered, color: '#94a3b8' }   // text-slate-400
-                                        ];
+                                        let typeStats = {};
+
+                                        (test || []).forEach(q => {
+                                            let type = q.questionType;
+                                            // Fallback inference if type is missing or generic
+                                            if (!type || type.toLowerCase() === 'mcq') {
+                                                if (/Assertion.*Reason/i.test(q.text) || /Assertion\s*\(A\).*Reason\s*\(R\)/i.test(q.text)) {
+                                                    type = 'Assertion-Reason';
+                                                } else if (/Match.*List I.*List II/i.test(q.text) || /Match the following/i.test(q.text)) {
+                                                    type = 'Match the Following';
+                                                } else if (/(Consider the following statements|Which of the statements)/i.test(q.text) || /\b1\.\s.*\b2\.\s/i.test(q.text)) {
+                                                    type = 'Statement Based';
+                                                } else if (q.options?.some(opt => /both/i.test(opt) || /neither/i.test(opt) || /only (1|2|3|one)/i.test(opt))) {
+                                                    type = 'Multi-Statement';
+                                                } else {
+                                                    type = 'Direct MCQ';
+                                                }
+                                            }
+
+                                            // Humanize names
+                                            if (/match/i.test(type)) type = 'Matching';
+                                            if (/assertion/i.test(type)) type = 'Assertion';
+                                            if (/statement/i.test(type)) type = 'Statements';
+                                            if (/one[\s-]?liner/i.test(type)) type = 'One-Liner';
+
+                                            if (!typeStats[type]) {
+                                                typeStats[type] = { total: 0, correct: 0, incorrect: 0, skipped: 0 };
+                                            }
+
+                                            const userAnswer = answers[q.id];
+                                            typeStats[type].total++;
+
+                                            if (userAnswer === undefined || userAnswer === null) {
+                                                typeStats[type].skipped++;
+                                            } else if (userAnswer === q.correctAnswer) {
+                                                typeStats[type].correct++;
+                                            } else {
+                                                typeStats[type].incorrect++;
+                                            }
+                                        });
+
+                                        const barData = Object.entries(typeStats)
+                                            .map(([name, stats]) => ({
+                                                name,
+                                                ...stats,
+                                                acc: Math.round((stats.correct / stats.total) * 100)
+                                            }))
+                                            .sort((a, b) => b.total - a.total); // Sort by highest frequency
+
+                                        if (barData.length === 0) return (
+                                            <div className="flex items-center justify-center h-full text-slate-400 font-medium">No question format data available</div>
+                                        );
+
+                                        const CustomTooltip = ({ active, payload, label }) => {
+                                            if (active && payload && payload.length) {
+                                                const data = payload[0].payload;
+                                                return (
+                                                    <div className="bg-white p-3 border border-slate-200 shadow-lg rounded-xl min-w-[140px]">
+                                                        <p className="font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">{label}</p>
+                                                        <div className="space-y-1 text-sm">
+                                                            <div className="flex justify-between gap-4"><span className="text-green-600 font-medium">Correct</span><span className="font-bold">{data.correct}</span></div>
+                                                            <div className="flex justify-between gap-4"><span className="text-red-500 font-medium">Incorrect</span><span className="font-bold">{data.incorrect}</span></div>
+                                                            <div className="flex justify-between gap-4"><span className="text-slate-400 font-medium">Skipped</span><span className="font-bold">{data.skipped}</span></div>
+                                                        </div>
+                                                        <div className="mt-2 pt-2 border-t border-slate-100 text-xs text-slate-500 font-medium text-center">
+                                                            Accuracy: <span className="font-bold text-slate-700">{data.acc}%</span>
+                                                        </div>
+                                                    </div>
+                                                );
+                                            }
+                                            return null;
+                                        };
 
                                         return (
                                             <ResponsiveContainer width="100%" height="100%">
-                                                <BarChart data={barData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-                                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                                                <BarChart data={barData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }} barGap={2} barCategoryGap="30%">
+                                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                                                     <XAxis 
                                                         dataKey="name" 
                                                         axisLine={false} 
                                                         tickLine={false} 
-                                                        tick={{ fill: '#64748b', fontSize: 13, fontWeight: 'bold' }} 
-                                                        dy={10} 
+                                                        tick={{ fill: '#475569', fontSize: 11, fontWeight: 'bold' }} 
+                                                        dy={10}
                                                     />
                                                     <YAxis 
+                                                        type="number" 
                                                         axisLine={false} 
                                                         tickLine={false} 
                                                         tick={{ fill: '#64748b', fontSize: 12 }} 
                                                         allowDecimals={false}
                                                     />
-                                                    <RechartsTooltip 
-                                                        cursor={{ fill: 'transparent' }}
-                                                        contentStyle={{ backgroundColor: '#ffffff', borderColor: '#e2e8f0', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                                        itemStyle={{ color: '#0f172a', fontWeight: 'bold' }}
-                                                        formatter={(value) => [`${value} Questions`, 'Count']}
-                                                    />
-                                                    <Bar dataKey="count" radius={[8, 8, 0, 0]} maxBarSize={40}>
-                                                        {barData.map((entry, index) => (
-                                                            <Cell key={`cell-${index}`} fill={entry.color} />
-                                                        ))}
-                                                    </Bar>
+                                                    <RechartsTooltip cursor={{ fill: 'transparent' }} content={<CustomTooltip />} />
+                                                    <Bar dataKey="correct" fill="#22c55e" radius={[4, 4, 0, 0]} maxBarSize={12} />
+                                                    <Bar dataKey="incorrect" fill="#ef4444" radius={[4, 4, 0, 0]} maxBarSize={12} />
+                                                    {barData.some(d => d.skipped > 0) && (
+                                                        <Bar dataKey="skipped" fill="#cbd5e1" radius={[4, 4, 0, 0]} maxBarSize={12} />
+                                                    )}
                                                 </BarChart>
                                             </ResponsiveContainer>
                                         );
@@ -516,30 +579,100 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                         </div>
 
                                         {/* Question text */}
-                                        <div className="mb-4 space-y-1">
-                                            {q.text
-                                                .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
-                                                .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                                                .split(/\n/g)
-                                                .map((part, i) => {
-                                                    const t = part.trim();
-                                                    if (!t) return null;
-                                                    const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(t);
-                                                    return (
-                                                        <div key={i} className={isStatement
-                                                            ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 sm:p-3 rounded-lg border-l-2 border-slate-300 text-sm flex gap-2 items-start'
-                                                            : 'font-semibold text-slate-800'}>
-                                                            {isStatement ? (
-                                                                <>
-                                                                    <span className="shrink-0 font-bold text-slate-500">{t.match(/^(?:\d{1,2}|[A-Da-d])\./)[0]}</span>
-                                                                    <span className="flex-1">{t.replace(/^(?:\d{1,2}|[A-Da-d])\.\s*/, '')}</span>
-                                                                </>
-                                                            ) : (
-                                                                t
-                                                            )}
-                                                        </div>
-                                                    );
-                                                })}
+                                        <div className="mb-4">
+                                            {(() => {
+                                                const parts = q.text
+                                                    .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
+                                                    .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                                    .split(/\n/g)
+                                                    .map(p => p.trim())
+                                                    .filter(Boolean);
+
+                                                const rawChunks = [];
+                                                let currentStmtGroup = [];
+
+                                                const flushCurrentStmts = () => {
+                                                    if (currentStmtGroup.length > 0) {
+                                                        rawChunks.push({ type: 'statements', items: currentStmtGroup });
+                                                        currentStmtGroup = [];
+                                                    }
+                                                };
+
+                                                parts.forEach(p => {
+                                                    const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(p);
+                                                    if (isStatement) {
+                                                        currentStmtGroup.push(p);
+                                                    } else {
+                                                        flushCurrentStmts();
+                                                        rawChunks.push({ type: 'text', content: p });
+                                                    }
+                                                });
+                                                flushCurrentStmts();
+
+                                                const blocks = [];
+                                                for (let i = 0; i < rawChunks.length; i++) {
+                                                    const chunk = rawChunks[i];
+
+                                                    if (chunk.type === 'text' && /^\s*List[-\s]?(?:I|1)\s*:?\s*$/i.test(chunk.content)) {
+                                                        if (
+                                                            i + 3 < rawChunks.length &&
+                                                            rawChunks[i + 1].type === 'statements' &&
+                                                            rawChunks[i + 2].type === 'text' && /^\s*List[-\s]?(?:II|2)\s*:?\s*$/i.test(rawChunks[i + 2].content) &&
+                                                            rawChunks[i + 3].type === 'statements'
+                                                        ) {
+                                                            blocks.push(
+                                                                <div key={`match-${i}`} className="mb-4 w-full grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-50/50 p-3 rounded-lg border border-slate-100">
+                                                                    <div>
+                                                                        <div className="font-bold text-slate-800 mb-2 ml-1">{chunk.content}</div>
+                                                                        <div className="flex flex-col gap-2">
+                                                                            {rawChunks[i + 1].items.map((stmt, idx) => (
+                                                                                <div key={idx} className="pl-3 text-slate-700 font-medium bg-white p-2 sm:p-3 rounded-md border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full shadow-sm">
+                                                                                    <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                                    <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                                                </div>
+                                                                            ))}
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div className="font-bold text-slate-800 mb-2 ml-1">{rawChunks[i + 2].content}</div>
+                                                                        <div className="flex flex-col gap-2">
+                                                                            {rawChunks[i + 3].items.map((stmt, idx) => (
+                                                                                <div key={idx} className="pl-3 text-slate-700 font-medium bg-white p-2 sm:p-3 rounded-md border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full shadow-sm">
+                                                                                    <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                                    <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                                                </div>
+                                                                            ))}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            );
+                                                            i += 3;
+                                                            continue;
+                                                        }
+                                                    }
+
+                                                    if (chunk.type === 'statements') {
+                                                        const isShort4 = chunk.items.length === 4 && !chunk.items.some(s => s.split(' ').length > 12);
+                                                        blocks.push(
+                                                            <div key={`group-${i}`} className={`mb-2 w-full grid gap-2 ${isShort4 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                                                                {chunk.items.map((stmt, idx) => (
+                                                                    <div key={idx} className="pl-3 text-slate-700 font-medium bg-slate-50 p-2 sm:p-3 rounded-lg border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full">
+                                                                        <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                        <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                        );
+                                                    } else {
+                                                        blocks.push(
+                                                            <div key={`p-${i}`} className="mb-2 font-semibold text-slate-800">
+                                                                {chunk.content}
+                                                            </div>
+                                                        );
+                                                    }
+                                                }
+                                                return blocks;
+                                            })()}
                                         </div>
 
                                         {/* Options */}

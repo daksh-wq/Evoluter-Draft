@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "upsc-2018-p2-q1",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "Consider the following three-dimensional figure: How many triangles does the above figure have?",
+    "options": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The figure is a regular octahedron, which consists of 8 equilateral triangles, but with internal diagonals added, the total number of distinct triangles formed is 20.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q2",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "Consider the following sum: \n• + 1• + 2• + •3 + •1 = 21• \nIn the above sum, • stands for",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let • be x. The equation is x + (10+x) + (20+x) + (10x+3) + (10x+1) = 210 + x. Simplifying gives 23x + 34 = 210 + x. 22x = 176, so x = 8.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q3",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "Consider the following pattern of numbers:\n8  10 15 13\n6  5  7  4\n4  6  8  8\n6 11 16  ?\nWhat is the number at ? in the above pattern?",
+    "options": [
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Looking at the rows: R1 - R2 + R3 = R4. For the first column: 8 - 6 + 4 = 6. Second column: 10 - 5 + 6 = 11. Third: 15 - 7 + 8 = 16. Fourth: 13 - 4 + 8 = 17.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q4",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "How many diagonals can be drawn by joining the vertices of an octagon?",
+    "options": [
+      "20",
+      "24",
+      "28",
+      "64"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The number of diagonals in an n-sided polygon is given by the formula n(n-3)/2. For an octagon (n=8), it is 8(8-3)/2 = 8(5)/2 = 20.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q5",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "The figure drawn below gives the velocity graphs of two vehicles A and B. The straight line OKP represents the velocity of vehicle A at any instant, whereas the horizontal straight line CKD represents the velocity of vehicle B at any instant. In the figure, D is the point where perpendicular from P meets the horizontal line CKD such that PD = 1/2 LD. What is the ratio between the distances covered by vehicles A and B in the time interval OL?",
+    "options": [
+      "1:2",
+      "2:3",
+      "3:4",
+      "1:1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Distance is the area under the velocity-time graph. Area for B = OL * LD. Area for A = 1/2 * OL * PL. Since PD = 0.5 LD, PL = 1.5 LD. Area A = 0.75 * OL * LD. Ratio A:B = 0.75 : 1 = 3:4.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q6",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "A train 200 metres long is moving at the rate of 40 kmph. In how many seconds will it cross a man standing near the railway line?",
+    "options": [
+      "12",
+      "15",
+      "16",
+      "18"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Speed = 40 kmph = 40 * (5/18) = 200/9 m/s. Time to cross a stationary point = Distance / Speed = 200 / (200/9) = 18 seconds.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time, Speed and Distance" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q7",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Global population was around 1.6 billion in 1990—today it is around 7.2 billion and growing. Recent estimates on population growth predict a global population of 9.6 billion in 2050 and 10.9 billion in 2100. Unlike Europe and North America, where only three to four per cent of population is engaged in agriculture, around 47 per cent of India's population is dependent upon agriculture. Even if India continues to do well in the service sector and the manufacturing sector picks up, it is expected that around 2030 when India overtakes China as the world's most populous country, nearly 42 per cent of India's population will still be predominantly dependent on agriculture.\nWhich of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": [
+      "Prosperity of agriculture sector is of critical importance to India.",
+      "Indian economy greatly depends on its agriculture.",
+      "India should take strict measures to control its rapid population growth.",
+      "India's farming communities should switch over to other occupations to improve their economic conditions."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage highlights that a massive portion of India's population will remain dependent on agriculture even as other sectors grow. This infers that the prosperity of the agriculture sector is vital for the well-being of such a large segment of the population.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q8",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Many pathogens that cause foodborne illnesses are unknown. Food contamination can occur at any stage from farm to plate. Since most cases of food poisoning go unreported, the true extent of global foodborne illnesses is unknown. Improvements in international monitoring have led to greater public awareness, yet the rapid globalization of food production increases consumers' vulnerability by making food harder to regulate and trace. \"We have the world on our plates\", says an official of WHO.\nWhich of the following is the most logical corollary to the above passage?",
+    "options": [
+      "With more options for food come more risks.",
+      "Food processing is the source of all foodborne illnesses.",
+      "We should depend on locally produced food only.",
+      "Globalization of food production should be curtailed."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage suggests that the rapid globalization of food makes it harder to trace and regulate, thereby increasing vulnerability. Having 'the world on our plates' logically implies that with more options come more inherent risks.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q9",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "I am a scientist, privileged to be somebody who tries to understand nature using the tools of science. But it is also clear that there are some really important questions that science cannot really answer, such as: Why is there something instead of nothing? Why are we here? In those domains, I have found that faith provides a better path to answers. I find it oddly anachronistic that in today's culture there seems to be a widespread presumption that scientific and spiritual views are incompatible.\nWhich of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": [
+      "It is the faith and not science that can finally solve all the problems of mankind.",
+      "Science and faith can be mutually complementary if their proper domains are understood.",
+      "There are some very fundamental questions which cannot be answered by either science or faith.",
+      "In today's culture, scientific views are given more importance than spiritual views."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The author finds it anachronistic to presume science and faith are incompatible, indicating they can comfortably co-exist and complement each other across different domains of questioning.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q10",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Though I have discarded much of past tradition and custom, and am anxious that India should rid herself of all shackles that bind and contain her and divide her people, and suppress vast numbers of them, and prevent the free development of the body and the spirit; though I seek all this, yet I do not wish to cut myself off from that past completely. I am proud of that great inheritance that has been and is, ours and I am conscious that I too, like all of us, am a link in that unbroken chain which goes back to the dawn of history in the immemorial past of India.\nThe author wants India to rid herself of certain past bonds because",
+    "options": [
+      "he is not able to see the relevance of the past",
+      "there is not much to be proud of",
+      "he is not interested in the history of India",
+      "they obstruct her physical and spiritual growth"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage explicitly states the desire to rid India of shackles that 'suppress vast numbers of them, and prevent the free development of the body and the spirit'.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q11",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Based on a bar graph showing imports of three different types of steel over a period of six months, what was the approximate difference (in thousands of tons) by which the import of sheet steel exceeded the import of coil steel in the first three months of the year? (Coil imports: Jan 30, Feb 31, Mar 33; Sheet imports: Jan 40, Feb 37, Mar 36).",
+    "options": [
+      "11",
+      "15",
+      "19",
+      "23"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Coil steel in the first three months = 30 + 31 + 33 = 94. Sheet steel in the first three months = 40 + 37 + 36 = 113. Difference = 113 - 94 = 19 thousand tons.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q12",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Based on the same graph, what was the approximate total value (in $) of sheet steel imported over the six months period? (Sheet imports: Jan 40, Feb 37, Mar 36, Apr 36, May 34, Jun 34. Average cost: $256 per ton).",
+    "options": [
+      "45,555",
+      "50,555",
+      "55,550",
+      "65,750"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Total sheet steel imported = 40 + 37 + 36 + 36 + 34 + 34 = 217 thousand tons. Total value = 217,000 * 256 = $55,552,000, which is approximately 55,550 thousands (the options are scaled).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q13",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Based on the same graph, what was the approximate ratio of sheet steel and scrap steel imports in the first three months of the year? (Sheet: 113 thousand tons. Scrap: Jan 32, Feb 34, Mar 32 = 98 thousand tons).",
+    "options": [
+      "1:1",
+      "1.2:1",
+      "1.4:1",
+      "1.6:1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total sheet steel = 113. Total scrap steel = 98. Ratio = 113 / 98 ≈ 1.153, which rounds closest to 1.2:1.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q14",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Spatial Reasoning",
+    "text": "Rotated positions of a single solid cube are shown. The faces are marked with dots, a cross, and a line. What is the symbol on the face opposite to that containing a single dot?",
+    "options": [
+      "Four dots",
+      "Three dots",
+      "Two dots",
+      "Cross"
+    ],
+    "correctAnswer": 1,
+    "explanation": "By comparing the adjacent faces across the different rotated views of the dice, the face containing a single dot is opposite the face containing three dots.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Spatial Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q15",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Spatial Reasoning",
+    "text": "Based on the same solid cube, what is the symbol on the face opposite to that containing two dots?",
+    "options": [
+      "Single dot",
+      "Three dots",
+      "Four dots",
+      "Line"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Using standard dice unfolding logic from the given adjacent configurations, the face with two dots sits opposite to the face with four dots.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Spatial Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q16",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Spatial Reasoning",
+    "text": "Based on the same solid cube, what is the symbol on the face opposite to that containing the cross?",
+    "options": [
+      "Single dot",
+      "Two dots",
+      "Line",
+      "Four dots"
+    ],
+    "correctAnswer": 2,
+    "explanation": "From the process of elimination based on the previous two questions, the cross and the line are on opposite faces.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Spatial Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q17",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "It is no longer enough for us to talk about providing for universal access to education. Making available schooling facilities is an essential prerequisite, but is insufficient to ensure that all children attend school and participate in the learning process. The school may be there, but children may not attend or they may drop out after a few months. Through school and social mapping, we must address the entire gamut of social, economic, cultural and indeed linguistic and pedagogic issues, factors that prevent children from weaker sections and disadvantaged groups, as also girls, from regularly attending and complementing elementary education.\nAccording to the passage, which of the following is/are of paramount importance under the Right to Education?\n1. Sending of children to school by all parents\n2. Provision of adequate physical infrastructure in schools\n3. Curricular reforms for developing child-friendly learning system\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "3 only",
+      "None of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage argues that infrastructure is insufficient and stresses addressing pedagogic issues. Further in the text, it explicitly calls for 'a massive programme for curricular reform should be initiated to provide for a child-friendly learning system'. Thus, option 3 reflects the text's deeper requirements.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q18",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "With reference to the above passage, the following assumptions have been made:\n1. The Right to Education guarantees teachers' accountability for the learning process of children.\n2. The Right to Education guarantees 100% enrolment of children in the schools.\n3. The Right to Education intends to take full advantage of demographic dividend.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "3 only",
+      "None of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "None of these assumptions are explicitly supported by the text. The text says we *need* accountability, not that the Act itself instantly guarantees it or 100% enrollment, nor does it explicitly mention demographic dividends.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q19",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "According to the passage, which one of the following is critical in bringing quality in education?",
+    "options": [
+      "Ensuring regular attendance of children as well as teachers in school",
+      "Giving pecuniary benefits to teachers to motivate them",
+      "Understanding the socio-cultural background of children",
+      "Inculcating learning through activities and discovery"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage explicitly references the Right of Children to Free and Compulsory Education Act laying down that 'the curriculum should provide for learning through activities, exploration and discovery' as an integral part of quality.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q20",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "What is the essential message in this passage?",
+    "options": [
+      "The Right to Education now is a Fundamental Right.",
+      "The Right to Education enables the children of poor and weaker sections of the society to attend schools.",
+      "The Right to Free and Compulsory Education should include quality education for all.",
+      "The Government as well as parents should ensure that all children attend schools."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage asserts that mere access is not enough; 'The right to education goes beyond free and compulsory education to include quality education for all.'",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q21",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Coding and Decoding",
+    "text": "If LSJXVC is the code for MUMBAI, the code for DELHI is",
+    "options": [
+      "CCIDD",
+      "CDKGH",
+      "CCJFG",
+      "CCIFE"
+    ],
+    "correctAnswer": 0,
+    "explanation": "MUMBAI to LSJXVC: M-1=L, U-2=S, M-3=J, B-4=X, A-5=V, I-6=C. Applying this to DELHI: D-1=C, E-2=C, L-3=I, H-4=D, I-5=D. The code is CCIDD.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Coding and Decoding" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q22",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Coding and Decoding",
+    "text": "If RAMON is written as 12345 and DINESH as 675849, then HAMAM will be written as",
+    "options": [
+      "92233",
+      "92323",
+      "93322",
+      "93232"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Substitute the direct codes mapped from the words: H=9, A=2, M=3, A=2, M=3. Therefore, HAMAM = 92323.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Coding and Decoding" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q23",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "If X is between -3 and -1, and Y is between -1 and 1, then X² - Y² is in between which of the following?",
+    "options": [
+      "-9 and 1",
+      "-9 and -1",
+      "0 and 8",
+      "0 and 9"
+    ],
+    "correctAnswer": 3,
+    "explanation": "X is in (-3, -1), so X² is in (1, 9). Y is in (-1, 1), so Y² is in [0, 1). Therefore, X² - Y² ranges strictly between 1 - 1 = 0 (infimum) and 9 - 0 = 9 (supremum). Thus, it lies between 0 and 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q24",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "X and Y are natural numbers other than 1, and Y is greater than X. Which of the following represents the largest number?",
+    "options": [
+      "XY",
+      "X/Y",
+      "Y/X",
+      "(X+Y)/XY"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since X and Y are natural numbers > 1, let X=2, Y=3. XY = 6. X/Y = 0.67. Y/X = 1.5. (X+Y)/XY = 5/6 = 0.83. The product XY represents the largest number.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q25",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "The plan of an office block for six officers A, B, C, D, E and F is as follows. Both B and C occupy offices to the right of the corridor (as one enters the office block) and A occupies on the left of the corridor. E and F occupy offices on opposite sides of the corridor but their offices do not face each other. The offices of C and D face each other. E does not have a corner office. F's office is further down the corridor than A's, but on the same side.\nIf E sits in his office and faces the corridor, whose office is to his left?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Right: C(entry), E(mid), B(end). Left: D(entry), A(mid), F(end). If E sits facing the corridor (looking towards A), his left hand points towards the entrance where C is located.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q26",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Who is/are F's immediate neighbour/neighbours?",
+    "options": [
+      "A only",
+      "A and D",
+      "C only",
+      "B and C"
+    ],
+    "correctAnswer": 0,
+    "explanation": "F is at the far end of the left side of the corridor. The only office adjacent to F on the same side is A's. Thus, A is F's only immediate neighbor.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q27",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "'Desertification' is a term used to explain a process of decline in the biological productivity of an ecosystem, leading to total loss of productivity. While this phenomenon is often linked to the arid, semi-arid and sub-humid ecosystems, even in the humid tropics, the impact could be most dramatic. Impoverishment of human-impacted terrestrial ecosystems may exhibit itself in a variety of ways : accelerated erosion as in the mountain regions of the country, salinization of land as in the semi-arid and arid 'green revolution' areas of the country... A major consequence of deforestation is that it relates to adverse alterations in the hydrology and related soil and nutrient losses. The consequences of deforestation invariably arise out of site degradation through erosive losses.\nAccording to the passage, which of the following are the consequences of decline in forest cover?\n1. Loss of topsoil\n2. Loss of smaller rivers\n3. Adverse effect on agricultural production\n4. Declining of groundwater\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage details the ultimate consequences of desertification and deforestation, including soil degradation (topsoil loss), drying of underground springs and smaller rivers, and a consequent decline in food yields (agriculture). All four are validated.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q28",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Which of the following is/are the correct inference/inferences that can be made from the passage on Desertification?\n1. Deforestation can cause changes in the course of rivers.\n2. Salinization of land takes place due to human activities only.\n3. Intense monoculture practice in plains is a major reason for desertification in Tropical Asia, Africa and South America.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "None of the above is a correct inference"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The text mentions that the loss in productivity is due to 'the changing course of the river system' driven by siltation caused by upland deforestation (1 is valid). It doesn't restrict salinization to 'only' human activities, nor does it solely blame monoculture for tropical desertification (ascribed to erosive losses).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q29",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "With reference to 'desertification', as described in the passage, the following assumptions have been made:\n1. Desertification is a phenomenon in tropical areas only.\n2. Deforestation invariably leads to floods and desertification.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage states it is 'often linked to the arid, semi-arid and sub-humid ecosystems' (not 'only' tropical). It says consequences of deforestation 'invariably arise out of site degradation', but does not guarantee it leads strictly to floods *and* desertification in every instance.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q30",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "A diversity of natural assets will be needed to cope with climate change and ensure productive agriculture, forestry, and fisheries. For example, crop varieties are needed that perform well under drought, heat, and enhanced CO2. But the private-sector and farmer-led process of choosing crops favours homogeneity adapted to past or current conditions... Accelerated breeding programmes are needed to conserve a wider pool of genetic resources of existing crops, breeds, and their wild relatives. Relatively intact ecosystems, such as forested catchments, mangroves, wetlands, can buffer the impacts of climate change... Connections between natural areas, such as migration corridors, may be needed to facilitate species movements to keep up with the change in climate.\nWith reference to the above passage, which of the following would assist us in coping with the climate change?\n1. Conservation of natural water sources\n2. Conservation of wider gene pool\n3. Existing crop management practices\n4. Migration corridors",
+    "options": [
+      "1, 2 and 3 only",
+      "1, 2 and 4 only",
+      "3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage explicitly criticizes existing crop management practices (favoring homogeneity). However, it supports conserving wider genetic pools, utilizing intact ecosystems (natural water sources like catchments/wetlands), and maintaining migration corridors.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q31",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "With reference to the above passage, the following assumptions have been made:\n1. Diversification of livelihoods acts as a coping strategy for climate change.\n2. Adoption of monocropping practice leads to the extinction of plant varieties and their wild relatives.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage discusses a diversity of natural assets (not diversification of human livelihoods). While it warns against homogeneity (monocropping), it does not assert that it directly leads to the 'extinction' of wild relatives, just that it leaves crops vulnerable to climate change. Thus, neither assumption is strictly valid based on the text.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q32",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Today, the top environmental challenge is a combination of people and their aspirations. If the aspirations are more like the frugal ones we had after the Second World War, a lot more is possible than if we view the planet as a giant shopping mall. We need to get beyond the fascination with glitter and understand that the planet works as a biological system.\nWhich of the following is the most crucial and logical inference that can be made from the above passage?",
+    "options": [
+      "The Earth can meet only the basic needs of humans for food, clothing and shelter.",
+      "The only way to meet environmental challenge is to limit human population.",
+      "Reducing our consumerism is very much in our own interest.",
+      "Knowledge of biological systems can only help us save this planet."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage criticizes treating the planet as a 'giant shopping mall' and the 'fascination with glitter', implying that excessive consumerism is the core environmental threat. Therefore, reducing consumerism is crucial.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q33",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Some people believe that leadership is a quality which you have at birth or not at all. This theory is false, for the art of leadership can be acquired and can indeed be taught. This discovery is made in time of war and the results achieved can surprise even the instructors. Faced with the alternatives of going left or right, every soldier soon grasps that a prompt decision either way is better than an endless discussion. A firm choice of direction has an even chance of being right while to do nothing will be almost certainly wrong.\nThe author of the passage holds the view that",
+    "options": [
+      "leadership can be taught through war experience only",
+      "leadership can be acquired as well as taught",
+      "the results of training show that more people acquire leadership than are expected",
+      "despite rigorous instruction, very few leaders are produced"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The author explicitly states, 'This theory is false, for the art of leadership can be acquired and can indeed be taught.'",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q34",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "A number consists of three digits of which the middle one is zero and their sum is 4. If the number formed by interchanging the first and last digits is greater than the number itself by 198, then the difference between the first and last digits is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let the number be x0y. Sum = x + y = 4. Reversed number is y0x. y0x - x0y = 198. (100y + x) - (100x + y) = 198 => 99(y - x) = 198 => y - x = 2. The difference is 2.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q35",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Cubes and Cuboids",
+    "text": "A solid cube of 3 cm side, painted on all its faces, is cut up into small cubes of 1 cm side. How many of the small cubes will have exactly two painted faces?",
+    "options": [
+      "12",
+      "8",
+      "6",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The cubes with exactly two painted faces are the middle cubes along the edges. A cube has 12 edges. For an n x n x n cube, there are 12(n - 2) such cubes. Since n=3, 12(3 - 2) = 12.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Cubes and Cuboids" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q36",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "While writing all the numbers from 700 to 1000, how many numbers occur in which the digit at hundred's place is greater than the digit at ten's place, and the digit at ten's place is greater than the digit at unit's place?",
+    "options": [
+      "61",
+      "64",
+      "85",
+      "91"
+    ],
+    "correctAnswer": 2,
+    "explanation": "We need numbers H > T > U. For H=7, T can be 6 to 1. U possibilities sum to 6+5+4+3+2+1 = 21. For H=8, sum = 7+6+5+4+3+2+1 = 28. For H=9, sum = 8+7+6+5+4+3+2+1 = 36. Total = 21 + 28 + 36 = 85.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q37",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "If Pen < Pencil, Pencil < Book and Book > Cap, then which one of the following is always true?",
+    "options": [
+      "Pen > Cap",
+      "Pen < Book",
+      "Pencil = Cap",
+      "Pencil > Cap"
+    ],
+    "correctAnswer": 1,
+    "explanation": "We are given Pen < Pencil and Pencil < Book, which implies Pen < Book. We also know Cap < Book. We cannot determine the relationship between Cap and Pen or Pencil. Therefore, only 'Pen < Book' is always true.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q38",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "A bookseller sold 'a' number of Geography textbooks at the rate of x per book, 'a+2' number of History textbooks at the rate of (x+2) per book and 'a-2' number of Mathematics textbooks at the rate of (x-2) per book. What is his total sale in Rs?",
+    "options": [
+      "3x + 3a",
+      "3ax + 8",
+      "9ax",
+      "x³a³"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total sale = (a)(x) + (a+2)(x+2) + (a-2)(x-2) = ax + (ax + 2a + 2x + 4) + (ax - 2a - 2x + 4) = 3ax + 8.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q39",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Probability",
+    "text": "A bag contains 15 red balls and 20 black balls. Each ball is numbered either 1 or 2 or 3. 20% of the red balls are numbered 1 and 40% of them are numbered 3. Similarly, among the black balls, 45% are numbered 2 and 30% are numbered 3. A boy picks a ball at random. He wins if the ball is red and numbered 3 or if it is black and numbered 1 or 2. What are the chances of his winning?",
+    "options": [
+      "1/2",
+      "4/7",
+      "5/9",
+      "12/13"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total balls = 35. Winning red balls (numbered 3) = 40% of 15 = 6. Black balls numbered 2 = 45% of 20 = 9. Black balls numbered 1 = 100% - 45% - 30% = 25% of 20 = 5. Winning black balls = 9 + 5 = 14. Total winning balls = 6 + 14 = 20. Probability = 20/35 = 4/7.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Probability" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q40",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "Two persons, A and B are running on a circular track. At the start, B is ahead of A and their positions make an angle of 30° at the centre of the circle. When A reaches the point diametrically opposite to his starting point, he meets B. What is the ratio of speeds of A and B, if they are running with uniform speeds?",
+    "options": [
+      "6:5",
+      "4:3",
+      "6:1",
+      "4:2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A travels 180 degrees to reach the diametrically opposite point. B starts 30 degrees ahead, so B travels 180 - 30 = 150 degrees in the same time. Ratio of distances (and thus speeds) = 180 : 150 = 6:5.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time, Speed and Distance" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q41",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "A student has to get 40% marks to pass in an examination. Suppose he gets 30 marks and fails by 30 marks, then what are the maximum marks in the examination?",
+    "options": [
+      "100",
+      "120",
+      "150",
+      "300"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Passing marks = 30 + 30 = 60 marks. 40% of Maximum Marks = 60. Therefore, Maximum Marks = (60 / 40) * 100 = 150.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q42",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Set Theory",
+    "text": "19 boys turn out for playing hockey. Of these, 11 are wearing hockey shirts and 14 are wearing hockey pants. There are no boys without shirts and/or pants. What is the number of boys wearing full uniform?",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Total = 19. Shirts = 11. Pants = 14. According to set theory, n(A U B) = n(A) + n(B) - n(A ∩ B). 19 = 11 + 14 - n(A ∩ B). 19 = 25 - n(A ∩ B). Therefore, n(A ∩ B) = 6.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Set Theory" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q43",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "A, B, C and D are students studying in four different cities (P, Q, R, S) and four different colleges (Science, Arts, Commerce, Engineering) situated in four different States (Gujarat, Rajasthan, Assam, Kerala). D is studying in Assam. Arts college is located in city S which is in Rajasthan. A is studying in Commerce college. B is studying in city Q. Science college is located in Kerala. Where is A studying?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "city Q",
+      "Kerala"
+    ],
+    "correctAnswer": 1,
+    "explanation": "D = Assam = Engineering. Arts = S = Rajasthan (which implies C is here, as B is in Q). A = Commerce = Gujarat. B = Science = Q = Kerala. Therefore, A is studying in Gujarat.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q44",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Based on the same information as the previous question: Where is the Science college located?",
+    "options": [
+      "city Q",
+      "city S",
+      "city R",
+      "city P"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Science college is located in Kerala. Student B is in city Q and studying Science in Kerala. Therefore, Science college is in city Q.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q45",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Based on the same information as the previous question: Where is C studying?",
+    "options": [
+      "Science college",
+      "Rajasthan",
+      "Gujarat",
+      "city Q"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A = Commerce, Gujarat. B = Science, Kerala, City Q. D = Engineering, Assam. This leaves C, who must be studying Arts in city S, Rajasthan.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q46",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Based on the same information as the previous question: Which one of the following statements is correct?",
+    "options": [
+      "D is not studying in city S.",
+      "A is studying in Science college.",
+      "A is studying in Kerala.",
+      "Engineering college is located in Gujarat."
+    ],
+    "correctAnswer": 0,
+    "explanation": "City S is in Rajasthan where Arts college is located. D is studying in Assam. Thus, D is not studying in city S.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q47",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Based on the same information as the previous question: Which one of the following statements is correct regarding Engineering college?",
+    "options": [
+      "C is studying there.",
+      "B is studying there.",
+      "It is located in Gujarat.",
+      "D is studying there."
+    ],
+    "correctAnswer": 3,
+    "explanation": "As established, D is studying in Assam at the Engineering college.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q48",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Based on the same information as the previous question: Which one of the following statements is correct?",
+    "options": [
+      "Engineering college is located in Assam.",
+      "City Q is situated in Assam.",
+      "C is studying in Kerala.",
+      "B is studying in Gujarat."
+    ],
+    "correctAnswer": 0,
+    "explanation": "D studies in Assam at the Engineering college, so the Engineering college is located in Assam.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q49",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "All actions to address climate change ultimately involve costs. Funding is vital in order for countries like India to design and implement adaptation and mitigation plans and projects. The problem is more severe for developing countries like India, which would be one of the hardest hit by climate change, given its need to finance development. Most countries do indeed treat climate change as real threat and are striving to address it in a more comprehensive and integrated manner with the limited resources at their disposal.\nWith reference to the above passage, the following assumptions have been made:\n1. Climate change is not a challenge for developed countries.\n2. Climate change is a complex policy issue and also a development issue for many countries.\n3. Ways and means of finance must be found to enable developing countries to enhance their adaptive capacity.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Assumption 1 is false (the passage says developing countries are 'hardest hit', not that developed countries aren't challenged). The passage strongly implies that climate change policy is intertwined with development financing (2), and specifically notes that funding is vital for developing countries to implement adaptation plans (3).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q50",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Cooking with biomass and coal in India is now recognized to cause major health problems, with women and children in poor populations facing the greatest risk. There are more than 10 lakh premature deaths each year from household air pollution due to polluting cooking fuels with another 1.5 lakh due to their contribution to general outdoor air pollution in the country. Although the fraction of the Indian population using clean cooking fuels, such as LPG, natural gas and electricity, is slowly rising, the number using polluting solid fuels as their primary cooking fuel has remained static for nearly 30 years at about 70 crore.\nWhich of the following is the most crucial and logical inference that can be made from the above passage?",
+    "options": [
+      "Rural people are giving up the use of polluting solid fuels due to their increasing awareness of health hazards.",
+      "Subsidizing the use of clean cooking fuels will solve the problem of India's indoor air pollution.",
+      "India should increase its import of natural gas and produce more electricity.",
+      "Access to cooking gas can reduce premature deaths in poor households."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage establishes a direct link between using polluting solid fuels and massive premature deaths. Since clean fuels are mentioned as the alternative, transitioning to cooking gas logically reduces these premature deaths.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q51",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Scientific knowledge has its dangers, but so has every great thing. Over and beyond the dangers with which it threatens the present, it opens up as nothing else can, the vision of a possible happy world; a world without poverty, without war, with little illness. Science, whatever unpleasant consequences it may have by the way, is in its very nature a liberator.\nWhich one of the following is the most important implication of the passage?",
+    "options": [
+      "A happy world is a dream of science.",
+      "Science only can build a happy world, but it is also the only major threat.",
+      "A happy world is not possible without science.",
+      "A happy world is not at all possible with or without science."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage states that science 'opens up as nothing else can, the vision of a possible happy world'. The phrase 'as nothing else can' implies that without science, achieving this happy world is not possible.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q52",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "The Arctic's vast reserves of fossil fuel, fish and minerals are now accessible for a longer period in a year. But unlike Antarctica, which is protected from exploitation by the Antarctic Treaty framed during the Cold War and is not subject to territorial claims by any country, there is no legal regime protecting the Arctic from industrialization, especially at a time when the world craves for more and more resources. The distinct possibility of ice-free summer has prompted countries with Arctic coastline to scramble for great chunks of the melting ocean.\nWhich one of the following is the most important implication of the passage?",
+    "options": [
+      "India can have territorial claims in the Arctic territory and free access to its resources.",
+      "Melting of summer ice in the Arctic leads to changes in the geopolitics.",
+      "The Arctic region will solve the world's future problem of resource crunch.",
+      "The Arctic region has more resources than Antarctica."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage discusses how the lack of a legal regime and the newly accessible resources are causing countries to 'scramble for great chunks' of the Arctic. This scramble for territory directly indicates significant changes in geopolitics.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q53",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Being a member of the WTO, India is bound by the agreements that have been signed and ratified by its members, including itself. According to Article 6 of the Agriculture Agreement, providing minimum support prices for agricultural products is considered distorting and is subject to limits. The subsidy arising from 'minimal supports' cannot exceed 10 per cent of the value of agricultural production for developing countries. PDS in India entails minimum support prices and public stockholding of food grains. It is possible that, in some years, the subsidy to producers will exceed 10 per cent of the value of agricultural production.\nWhat is the crucial message conveyed by the above passage?",
+    "options": [
+      "India should revise its PDS.",
+      "India should not be a member of WTO.",
+      "For India, food security collides with trade.",
+      "India provides food security to its poor."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage highlights the conflict between India's domestic food security policies (PDS and minimum support prices) and the international trade limits imposed by the WTO, demonstrating that food security collides with global trade agreements.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q54",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "India's educational system is modelled on the mass education system that developed in the 19th century in Europe and later spread around the world. The goal of the system is to condition children as 'good' citizens and productive workers. This suited the industrial age that needed the constant supply of a compliant workforce with a narrow set of capabilities. Our educational institutes resemble factories with bells, uniforms and batch-processing of learners, designed to get learners to conform. But, from an economic point of view, the environment today is very different. It is a complex, volatile and globally interconnected world.\nWith reference to the above passage, the following assumptions have been made:\n1. India continues to be a developing country essentially due to its faulty education system.\n2. Today's learners need to acquire new-age skill-sets.\n3. A good number of Indians go to some developed countries for education because the educational systems there are a perfect reflection of the societies in which they function.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 and 3 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage argues that the current factory-model education suited the industrial age, but today's complex and volatile world requires different capabilities. This inherently supports Assumption 2 (the need for new-age skill-sets). Assumptions 1 and 3 are unsupported extrapolations.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q55",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "The practice of dieting has become an epidemic; everyone is looking out for a way to attain that perfect body. We are all different with respect to our ethnicity, genetics, family history, gender, age, physical and mental and spiritual health status, lifestyles and preferences. Thereby we also differ in what foods we tolerate or are sensitive to. So we really cannot reduce so many complexities into one diet or diet book. This explains the failure of diets across the world in curbing obesity. Unless the reasons for weight gain are well understood and addressed and unless habits are changed permanently, no diet is likely to succeed.\nWhat is the most logical and rational inference that can be made from the above passage?",
+    "options": [
+      "Obesity has become an epidemic all over the world.",
+      "A lot of people are obsessed with attaining a perfect body.",
+      "Obesity is essentially an incurable disease.",
+      "There is no perfect diet or one solution for obesity."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage explicitly states that due to vast individual differences, 'we really cannot reduce so many complexities into one diet or diet book'. Thus, there is no single perfect diet or universal solution for obesity.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q56",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Monoculture carries great risks. A single disease or pest can wipe out swathes of the world's food production, an alarming prospect given that its growing and wealthier population will eat 70% more by 2050. The risks are magnified by the changing climate. As the planet warms and monsoon rains intensify, farmlands in Asia will flood. North America will suffer more intense droughts, and crop diseases will spread to new latitudes.\nWhich of the following is the most logical, rational and crucial message given by the passage?",
+    "options": [
+      "Preserving crop genetic diversity is an insurance against the effects of climate change.",
+      "Despite great risks, monoculture is the only way to ensure food security in the world.",
+      "More and more genetically modified crops only can save the world from impending shortages of food.",
+      "Asia and North America will be worst sufferers from climate change and the consequent shortage of food."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage warns against the 'great risks' of monoculture, particularly its vulnerability to diseases and changing climates. The logical countermeasure (and crucial message) to this risk is preserving genetic diversity to withstand these threats.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q57",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Profit and Loss",
+    "text": "A shopkeeper sells an article at ₹40 and gets X% profit. However, when he sells it at ₹20, he faces same percentage of loss. What is the original cost of the article?",
+    "options": [
+      "₹10",
+      "₹20",
+      "₹30",
+      "₹40"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let Cost Price = CP. Profit % = [(40 - CP)/CP]*100. Loss % = [(CP - 20)/CP]*100. Since Profit % = Loss %, we have 40 - CP = CP - 20. 2CP = 60, so CP = ₹30.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Profit and Loss" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q58",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "There are 24 equally spaced points lying on the circumference of a circle. What is the maximum number of equilateral triangles that can be drawn by taking sets of three points as the vertices?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correctAnswer": 2,
+    "explanation": "An equilateral triangle inscribed in a circle divides the circumference into 3 equal arcs. For 24 equally spaced points, the vertices of an equilateral triangle must be spaced 24/3 = 8 points apart. You can start a triangle at point 1, 2, 3, 4, 5, 6, 7, and 8. Starting at 9 repeats the first triangle. Therefore, exactly 8 equilateral triangles can be formed.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q59",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Calendars",
+    "text": "Consider the sequence given below:\n4/12/95, 1/1/96, 29/1/96, 26/2/96, ....\nWhat is the next term of the series?",
+    "options": [
+      "24/3/96",
+      "25/3/96",
+      "26/3/96",
+      "27/3/96"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The dates are increasing by a fixed interval of 28 days. From 4 Dec 1995 to 1 Jan 1996 is 28 days (Dec has 31 days). 1 Jan to 29 Jan is 28 days. 29 Jan to 26 Feb is 28 days (Jan has 31 days). 1996 is a leap year, so Feb has 29 days. 26 Feb + 28 days = 3 days in Feb + 25 days in March = 25th March 1996 (25/3/96).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Calendars" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q60",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "Twelve equal squares are placed to fit in a rectangle of diagonal 5 cm. There are three rows containing four squares each. No gaps are left between adjacent squares. What is the area of each square?",
+    "options": [
+      "5/7 sq cm",
+      "7/5 sq cm",
+      "1 sq cm",
+      "25/12 sq cm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the side of each square be x. The rectangle has 4 squares in length (4x) and 3 squares in width (3x). The diagonal is given by Pythagoras theorem: √( (4x)² + (3x)² ) = √(16x² + 9x²) = √25x² = 5x. We are given the diagonal is 5 cm, so 5x = 5 => x = 1 cm. The area of each square is x² = 1 sq cm.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q61",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Consider the following graph showing Expected progress and Actual progress of work from 1st April to 1st Sept. The Expected progress curve is consistently above the Actual progress curve until mid-August, after which Actual progress shoots up and finishes before 1st Sept, while Expected finishes exactly on 1st Sept.\nWhich one of the following statements is not correct with reference to the graph given above?",
+    "options": [
+      "On 1st June, the actual progress of work was less than expected.",
+      "The actual rate of progress of work was the greatest during the month of August.",
+      "The work was actually completed before the expected time.",
+      "During the period from 1st April to 1st September, at no time was the actual progress more than the expected progress."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Because the actual progress curve steeply crosses the expected progress curve in late August and reaches 100% completion before September 1st, there is a period in late August where actual progress *is* more than expected progress. Thus, statement (d) is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q62",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "For a sports meet, a winners' stand comprising three wooden blocks is in the following form: A podium with 3 levels. There are six different colours available to choose from and each of the three wooden blocks is to be painted such that no two of them has the same colour. In how many different ways can the winners' stand be painted?",
+    "options": [
+      "120",
+      "81",
+      "66",
+      "36"
+    ],
+    "correctAnswer": 0,
+    "explanation": "There are 3 distinct blocks to paint using 6 available colors without repetition. The first block can be painted in 6 ways, the second in 5 ways, and the third in 4 ways. Total permutations = 6 × 5 × 4 = 120 ways.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q63",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Consider the following graph in which the birthrate and death rate of a country are given from 1970 to 2010. Looking at the graph, it can be inferred that from 1990 to 2010",
+    "options": [
+      "population growth rate has increased",
+      "population growth rate has decreased",
+      "growth rate of population has remained stable",
+      "population growth rate shows no trend"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Population growth rate is determined by the gap between the birth rate and the death rate. In 1990, the gap is narrower (BR ~ 22, DR ~ 14, Diff = 8). By 2010, the death rate has dropped significantly more than the birth rate, widening the gap (BR ~ 17, DR ~ 6, Diff = 11). Since the gap is wider, the growth rate has increased.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q64",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "With reference to the same birthrate/death rate graph, consider the following statements considering 1970 as base year:\n1. Population has stabilized after 35 years.\n2. Population growth rate has stabilized after 35 years.\n3. Death rate has fallen by 10% in the first 10 years.\n4. Birthrate has stabilized after 35 years.\nWhich of the above are the most logical and rational statements that can be made from the above graph?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3",
+      "3 and 4",
+      "2 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "After 35 years (2005), both birthrate and death rate curves flatten out (stabilize), making 4 correct. Since both rates are stable, the gap (growth rate) is also stable, making 2 correct. The population itself hasn't stabilized (it's still growing because BR > DR), making 1 incorrect. The death rate fell from 25 to 20 in the first 10 years, which is a 20% drop, not 10%, making 3 incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q65",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Average hourly earnings per year (E) of the workers in a firm are represented in figures A and B. Figure A's Y-axis starts at 20, while Figure B's Y-axis starts at 0. Both plot the identical linear progression of points (2013: 20, 2014: 25, 2015: 30, 2016: 35, 2017: 40). From the figures, it is observed that the",
+    "options": [
+      "values of E are different",
+      "ranges (i.e., the difference between the maximum and the minimum) of E are different",
+      "slopes of the graphs are same",
+      "rates of increase of E are different"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The plotted data points for hourly earnings are exactly the same in both graphs for each corresponding year. The visual steepness differs only because of the Y-axis scaling (truncation in graph A). The actual mathematical slope (rate of increase) of the data is identical.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q66",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Consider the figures given below forming a 3x3 matrix. Row 1 has shapes with 2, 3, and 4 vertical legs. Row 2 has shapes with 4, 2, and 3 vertical legs. Row 3 has shapes with 3 and 4 vertical legs. To fit the question mark in the bottom right, the correct answer must have:",
+    "options": [
+      "A shape with 2 vertical legs",
+      "A shape with 3 vertical legs",
+      "A shape with 4 vertical legs",
+      "A shape with 5 vertical legs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Based on the pattern, each row and column contains exactly one shape with 2 legs, one with 3 legs, and one with 4 legs. Row 3 already has shapes with 3 and 4 legs, so the missing figure must have exactly 2 vertical legs.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q67",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Consider figures A and B: Fig A shows Cost of Production rising linearly from 5 lakh at 0 units to 8 lakh at 3000 units. Fig B shows Selling price per piece decreasing along a curve, reaching ₹350 at 2000 units. What is the minimum number of pieces that should be manufactured to avoid a loss?",
+    "options": [
+      "2000",
+      "2500",
+      "3000",
+      "3500"
+    ],
+    "correctAnswer": 0,
+    "explanation": "From Fig A, the Cost equation is C = 5,00,000 + 100x. At x = 2000, Cost = 7,00,000. From Fig B, at x = 2000, the selling price is ₹350. Total Revenue = 350 * 2000 = 7,00,000. Since Cost = Revenue at 2000 pieces, this is the break-even point to avoid a loss.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q68",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Arithmetic",
+    "text": "A lift has the capacity of 18 adults or 30 children. How many children can board the lift with 12 adults?",
+    "options": [
+      "6",
+      "10",
+      "12",
+      "15"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The capacity equivalence is 18 adults = 30 children, meaning 1 adult = 30/18 = 5/3 children. If 12 adults are in the lift, remaining adult capacity is 18 - 12 = 6 adults. This equates to 6 * (5/3) = 10 children.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Arithmetic" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q69",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "A person bought a refrigerator worth ₹22,800 with 12.5% interest compounded yearly. At the end of first year he paid ₹8,650 and at the end of second year ₹9,125. How much will he have to pay at the end of third year to clear the debt?",
+    "options": [
+      "9,990",
+      "10,000",
+      "10,590",
+      "11,250"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Principal P = 22800. Rate = 12.5% = 1/8. Year 1 end amount = 22800 * 9/8 = 25650. Paid 8650, balance = 17000. Year 2 end amount = 17000 * 9/8 = 19125. Paid 9125, balance = 10000. Year 3 end amount = 10000 * 9/8 = 11250.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q70",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Consider a sequence of 6 figures showing a shape with a circle, square, and triangle rotating their positions along a curved line. Following the same sequence, which figure will appear at the (VII) stage?",
+    "options": [
+      "Triangle at top, Square at bottom",
+      "Square at top, Circle at bottom",
+      "Circle at top, Triangle at bottom",
+      "Triangle at top, Circle at bottom"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Based on the visual pattern tracking the rotation and displacement of the elements across stages I through VI, the specific configuration at stage VII places the triangle at the top and the circle at the bottom. (Correct answer aligns with official UPSC key (d)).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q71",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Consider the graphs indicating different age groups (<15, 15-64, 64+) in the populations of two countries A and B over a period of few decades. With reference to the graphs, which of the following are the most logical and rational inferences that can be made?\n1. Over the last two and a half decades, the dependency ratio for country B has decreased.\n2. By the end of next two and a half decades, the dependency ratio of country A will be much less than that of country B.\n3. In the next two decades, the work-force relative to its total population will increase in country B as compared to country A.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dependency ratio relates the non-working age groups (<15 and 64+) to the working age group (15-64). For Country B, the 15-64 group grows massively, drastically lowering the dependency ratio (Statement 1 is true). For Country A, by 2040, the 64+ group spikes while the 15-64 drops, increasing its dependency ratio above B's, so Statement 2 is false. Statement 3 is true as B's working-age demographic dividend is expanding relative to A's aging population.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q72",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Lakshmi, her brother, her daughter and her son are badminton players. A game of doubles is about to begin:\n(i) Lakshmi's brother is directly across the net from her daughter.\n(ii) Her son is diagonally across the net from the worst player's sibling.\n(iii) The best player and the worst player are on the same side of the net.\nWho is the best player?",
+    "options": [
+      "Her brother",
+      "Her daughter",
+      "Her son",
+      "Lakshmi"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The teams must be (Brother, X) vs (Daughter, Y). Because best and worst are on the same side, they must be partners. Through logical deduction of sibling relationships (Lakshmi & Brother; Daughter & Son), the constraints are only satisfied if the Brother is the best player paired with the worst player.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q73",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "A graph indicates the changes in key policy rates made by the Central Bank several times in a year. The Repo Rate, Reverse Repo Rate, and CRR all show a steady, upward increasing trend throughout 2010-2011. Which one of the following can be the most likely reason for the Central Bank for such an action?",
+    "options": [
+      "Encouraging foreign investment",
+      "Increasing the liquidity",
+      "Encouraging both public and private savings",
+      "Anti-inflationary stance"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Increasing key policy rates (Repo, Reverse Repo, CRR) restricts the money supply by making borrowing more expensive, which is the classic macroeconomic tool used to combat and control high inflation.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q74",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "With reference to a table mapping GDP growth rate, Per capita income, and Tele-density of 18 states, which of the following is/are the most logical and rational inference/inferences that can be made?\n1. Higher per capita income is generally associated with higher Tele-density.\n2. Higher GDP growth rate always ensures higher per capita income.\n3. Higher GDP growth rate does not necessarily ensure higher Tele-density.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 and 3",
+      "1 and 3",
+      "3 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Looking at the data, high per capita states generally exhibit high tele-density (Statement 1). Some states have high GDP growth but low per capita income, disproving 'always' (Statement 2 is false). Some states with high GDP growth have moderate tele-density, proving it does not necessarily ensure high tele-density (Statement 3 is true).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q75",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "With reference to the same table on GDP, Per capita income, and Tele-density, the following assumptions have been made:\n1. Nowadays, prosperity of an already high performing State cannot be sustained without making further large investments in its telecom infrastructure.\n2. Nowadays, a very high Tele-density is the most essential condition for promoting the business and economic growth in a State.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The provided table is a simple snapshot of data showing correlation, not causation. It contains no information regarding 'sustaining prosperity' via 'further large investments', nor does it prove tele-density is the 'most essential condition' over all other economic factors.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q76",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "A graph indicates the composition of our tax revenue for a period of two decades. Excise and Customs lines are trending downwards, while Corporate tax and Personal income tax are trending upwards. With reference to the graph, which of the following is/are the most logical and rational inference/inferences that can be made?\n1. During the given period, the revenue from Direct Taxes as percentage of gross tax revenue has increased while that of Indirect Taxes decreased.\n2. The trend in the revenue from Excise Duty demonstrates that the growth of manufacturing sector has been negative during the given period.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Corporate and Personal Income taxes are Direct Taxes (showing an upward trend), while Excise and Customs are Indirect Taxes (showing a downward trend), making Statement 1 correct. A decreasing percentage share of Excise duty doesn't mean absolute manufacturing growth was negative; it could just mean other sectors grew faster. Statement 2 is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q77",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "If x - y = 8, then which of the following must be true?\n1. Both x and y must be positive for any value of x and y.\n2. If x is positive, y must be negative for any value of x and y.\n3. If x is negative, y must be positive for any value of x and y.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2 nor 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "If x=10, y=2, both are positive (disproves 2 and 3). If x=-2, y=-10, both are negative (disproves 1). None of the statements must necessarily be true.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q78",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "The quest for cheap and plentiful meat has resulted in factory farms where more and more animals are squeezed into smaller lots in cruel and shocking conditions. Such practices have resulted in many of the world's health pandemics such as the avian flu. Worldwide, livestock are increasingly raised in cruel, cramped conditions, where animals spend their short lives under artificial light, pumped full of antibiotics and growth hormones, until the day they are slaughtered. Meat production is water-intensive—15000 litres of water is needed for every kilogram of meat compared with 3400 litres for rice, 3300 litres for eggs and 255 litres for a kilogram of potatoes.\nWhat is the most rational and crucial message given by the passage?",
+    "options": [
+      "Mass production of meat through industrial farming is cheap and is suitable for providing protein nutrition to poor countries.",
+      "Meat-producing industry violates the laws against cruelty to animals.",
+      "Mass production of meat through industrial farming is undesirable and should be stopped immediately.",
+      "Environmental cost of meat production is unsustainable when it is produced through industrial farming."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage highlights severe ethical, health, and extreme environmental costs (massive water usage) of factory farming. This immense resource drain renders the environmental cost unsustainable.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q79",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "A male tiger was removed from Pench Tiger Reserve and was relocated in Panna National Park. Later, this tiger trekked toward his home 250 miles away. The trek of this solitary tiger highlights a crisis. Many wildlife reserves exist as islands of fragile habitat in a vast sea of humanity, yet tigers can range over a hundred miles, seeking prey, mates and territory. Nearly a third of India's tigers live outside tiger reserves, a situation that is dangerous for both human and animal. Prey and tigers can only disperse if there are recognized corridors of land between protected areas to allow unmolested passage.\nWhich of the following is the most rational and crucial message given by the passage?",
+    "options": [
+      "The conflict between man and wildlife cannot be resolved, no matter what efforts we make.",
+      "Safe wildlife corridors between protected areas is an essential aspect of conservation efforts.",
+      "India needs to declare more protected areas and set up more tiger reserves.",
+      "India's National Parks and Tiger Reserves need to be professionally managed."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage explicitly concludes that prey and tigers can only disperse safely 'if there are recognized corridors of land between protected areas'. This makes safe wildlife corridors essential.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  },
+  {
+    "id": "upsc-2018-p2-q80",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "With reference to the above passage about the relocated tiger, the following assumptions have been made:\n1. The strategy of conservation of wildlife by relocating them from one protected area to another is not often successful.\n2. India does not have suitable legislation to save the tigers, and its conservation efforts have failed which forced the tigers to live outside protected areas.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The story of the tiger trekking 250 miles back home underlines the difficulty and lack of success in simple relocation strategies, making Assumption 1 valid. Assumption 2 is too extreme and not supported by the text, which notes that tigers range widely by nature, not solely due to failed legislation.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2018" }
+    ]
+  }
+]

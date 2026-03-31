@@ -5,7 +5,7 @@ import { db } from '../../services/firebase';
 import { useAuth } from '../../hooks';
 import {
     CheckCircle, XCircle, AlertCircle, ArrowLeft,
-    RefreshCw, Clock, Brain, BookOpen, Lightbulb, ChevronDown, ChevronUp
+    RefreshCw, Clock, Brain, BookOpen, Lightbulb, ChevronDown, ChevronUp, Download
 } from 'lucide-react';
 import { formatTime } from '../../utils/helpers';
 import logger from '../../utils/logger';
@@ -44,6 +44,7 @@ const TestReviewView = () => {
     const [error, setError] = useState(null);
     const [collapsedIds, setCollapsedIds] = useState({});
     const [reviewFilter, setReviewFilter] = useState('all');
+    const [isDownloading, setIsDownloading] = useState(false);
 
     useEffect(() => {
         const fetchTest = async () => {
@@ -122,8 +123,9 @@ const TestReviewView = () => {
             explanation: r.explanation,
         }))
         : legacyQuestions.map((q, idx) => {
-            const userAnswer = legacyAnswers[q.id];
-            const isCorrect = userAnswer !== undefined && userAnswer !== null && userAnswer === q.correctAnswer;
+            const userAnswer = q.userAnswer !== undefined ? q.userAnswer : legacyAnswers[q.id];
+            const isSkipped = userAnswer === undefined || userAnswer === null;
+            const isCorrect = !isSkipped && userAnswer === q.correctAnswer;
             return {
                 id: q.id || idx,
                 text: q.text || '',
@@ -131,7 +133,7 @@ const TestReviewView = () => {
                 userAnswer,
                 correctAnswer: q.correctAnswer,
                 isCorrect,
-                isSkipped: userAnswer === undefined || userAnswer === null,
+                isSkipped,
                 difficulty: q.difficulty,
                 questionType: q.questionType,
                 solution: q.solution,
@@ -141,20 +143,127 @@ const TestReviewView = () => {
 
     const accuracy = testData.accuracy
         ?? (testData.totalQuestions
-            ? Math.round(((testData.score || 0) / testData.totalQuestions) * 100)
+            ? Math.round(((testData.correct || 0) / testData.totalQuestions) * 100)
             : 0);
 
     // ── Data normalisation ──────────────────────────────────────────────────────
-    return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6">
+    const handleExportTest = async () => {
+        setIsDownloading(true);
+        try {
+            const html2pdf = (await import('html2pdf.js')).default;
+            const printContainer = document.createElement('div');
+            printContainer.id = 'print-report';
 
-            {/* Back */}
-            <button
-                onClick={() => navigate('/test-history')}
-                className="flex items-center gap-2 text-slate-500 hover:text-slate-700 font-medium text-sm mb-6 transition-colors"
-            >
-                <ArrowLeft size={16} /> Back to Test History
-            </button>
+            const correctCount = testData.correct || 0;
+            const incorrectCount = testData.incorrect || 0;
+            const unansweredCount = testData.unanswered || 0;
+            const score = accuracy; // derived
+
+            let questionsHtml = '';
+            if (reviewItems && reviewItems.length > 0) {
+                questionsHtml = reviewItems.map((q, idx) => {
+                    const userAnswer = q.userAnswer;
+                    const isCorrect = q.isCorrect;
+                    const isSkipped = q.isSkipped;
+                    const status = isCorrect ? '✓ Correct' : (isSkipped ? '— Skipped' : '✗ Incorrect');
+                    const statusColor = isCorrect ? '#16a34a' : (isSkipped ? '#64748b' : '#dc2626');
+
+                    const optionsHtml = q.options.map((opt, i) => {
+                        const marker = String.fromCharCode(65 + i);
+                        let style = '';
+                        if (i === q.correctAnswer) style = 'color: #16a34a; font-weight: bold;';
+                        else if (i === userAnswer) style = 'color: #dc2626;';
+                        return `<div style="padding: 4px 0; ${style}">${marker}. ${typeof opt === 'string' ? opt.replace(/^([a-dA-D]|\d+)[.)]\s*/, '').trim() : opt}</div>`;
+                    }).join('');
+
+                    return `
+                        <div style="margin-bottom: 16px; padding: 12px; border: 1px solid #e2e8f0; border-radius: 8px; page-break-inside: avoid;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <strong style="color: #64748b; font-size: 12px;">Q${idx + 1}</strong>
+                                <span style="color: ${statusColor}; font-size: 12px; font-weight: bold;">${status}</span>
+                            </div>
+                            <div style="margin: 0 0 8px 0; font-weight: 500;">
+                                ${q.text
+                                    .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
+                                    .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                    .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Da-d])\.\s)/g)
+                                    .map(part => {
+                                        const trimmed = part.trim();
+                                        const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(trimmed);
+                                        if (!trimmed) return '';
+                                        return `<div style="margin-bottom: 4px; ${isStatement ? 'padding-left: 12px; border-left: 2px solid #cbd5e1; background: #f8fafc; padding-top: 4px; padding-bottom: 4px;' : ''}">${trimmed}</div>`;
+                                    }).join('')}
+                            </div>
+                            ${optionsHtml}
+                            ${q.solution ? `
+                                <div style="margin-top: 8px; border-top: 1px solid #f1f5f9; padding-top: 8px;">
+                                    ${(q.solution.correctAnswerReason || q.solution.correct_explanation) ? `<p style="margin: 0 0 4px 0; color: #334155; font-size: 13px;"><strong>✅ Answer:</strong> ${q.solution.correctAnswerReason || q.solution.correct_explanation}</p>` : ''}
+                                    ${(q.solution.approachToSolve || q.solution.solving_approach) ? `<p style="margin: 4px 0; padding: 6px; background: #eff6ff; border-radius: 4px; color: #1e40af; font-size: 12px;"><strong>💡 Approach:</strong> ${q.solution.approachToSolve || q.solution.solving_approach}</p>` : ''}
+                                    ${(q.solution.sourceOfQuestion || q.solution.possible_source) ? `<p style="margin: 4px 0 0 0; color: #64748b; font-size: 11px;"><strong>📖 Source:</strong> ${q.solution.sourceOfQuestion || q.solution.possible_source}</p>` : ''}
+                                </div>
+                            ` : q.explanation ? `<p style="margin-top: 8px; color: #64748b; font-size: 13px; border-top: 1px solid #f1f5f9; padding-top: 8px;"><strong>Explanation:</strong> ${q.explanation}</p>` : ''}
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            printContainer.innerHTML = `
+                <div style="text-align: center; margin-bottom: 24px;">
+                    <h1 style="margin: 0; color: #1e1b4b; font-size: 24px;">Test Performance Report</h1>
+                    <p style="color: #64748b; margin: 4px 0;">Generated on ${new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                </div>
+                <div style="display: flex; justify-content: space-around; margin-bottom: 24px; padding: 16px; background: #f8fafc; border-radius: 12px;">
+                    <div style="text-align: center;"><strong style="font-size: 28px; color: #1e1b4b;">${score}%</strong><br/><span style="color: #64748b; font-size: 12px;">Score</span></div>
+                    <div style="text-align: center;"><strong style="font-size: 28px; color: #16a34a;">${correctCount}</strong><br/><span style="color: #64748b; font-size: 12px;">Correct</span></div>
+                    <div style="text-align: center;"><strong style="font-size: 28px; color: #dc2626;">${incorrectCount}</strong><br/><span style="color: #64748b; font-size: 12px;">Incorrect</span></div>
+                    <div style="text-align: center;"><strong style="font-size: 28px; color: #64748b;">${unansweredCount}</strong><br/><span style="color: #64748b; font-size: 12px;">Skipped</span></div>
+                </div>
+                <h2 style="color: #1e1b4b; margin-bottom: 12px;">Question Review</h2>
+                ${questionsHtml}
+            `;
+
+            printContainer.style.padding = '20px';
+            printContainer.style.fontFamily = 'Helvetica, Arial, sans-serif';
+
+            const opt = {
+                margin: 0.5,
+                filename: `Test_Report_${testData.topic?.replace(/\s+/g, '_') || 'Review'}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            await html2pdf().set(opt).from(printContainer).save();
+            logger.info('PDF report downloaded from Review');
+        } catch (err) {
+            logger.error('Failed to export PDF', err);
+        } finally {
+            setIsDownloading(false);
+        }
+    };
+
+    return (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-20">
+
+            {/* Top Bar with Back & Export */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <button
+                    onClick={() => navigate('/test-history')}
+                    className="flex items-center gap-2 text-slate-500 hover:text-slate-700 font-medium text-sm transition-colors w-max"
+                >
+                    <ArrowLeft size={16} /> Back to Test History
+                </button>
+
+                <button
+                    onClick={handleExportTest}
+                    disabled={isDownloading}
+                    className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 font-bold text-sm shadow-sm rounded-xl hover:bg-slate-50 hover:text-[#2278B0] hover:border-slate-300 transition-all w-max active:scale-95 disabled:opacity-75 disabled:cursor-not-allowed"
+                    title="Export Test as PDF"
+                >
+                    {isDownloading ? <RefreshCw size={16} className="animate-spin" /> : <Download size={16} />}
+                    {isDownloading ? 'Generating PDF...' : 'Download PDF Report'}
+                </button>
+            </div>
 
             {/* Header */}
             <div className="bg-indigo-950 text-white rounded-2xl p-8 mb-8 relative overflow-hidden">
@@ -179,7 +288,7 @@ const TestReviewView = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                    { icon: <CheckCircle className="text-green-500 mx-auto mb-2" size={22} />, val: testData.score ?? testData.correct ?? 0, label: 'Correct' },
+                    { icon: <CheckCircle className="text-green-500 mx-auto mb-2" size={22} />, val: testData.correct ?? reviewItems.filter(r => r.isCorrect).length, label: 'Correct' },
                     { icon: <XCircle className="text-red-500 mx-auto mb-2" size={22} />, val: testData.incorrect ?? reviewItems.filter(r => !r.isCorrect && !r.isSkipped).length, label: 'Incorrect' },
                     { icon: <AlertCircle className="text-slate-400 mx-auto mb-2" size={22} />, val: testData.unanswered ?? reviewItems.filter(r => r.isSkipped).length, label: 'Skipped' },
                     { icon: <Clock className="text-[#2278B0] mx-auto mb-2" size={22} />, val: testData.timeTaken ? formatTime(testData.timeTaken) : '--', label: 'Time' },
@@ -210,10 +319,36 @@ const TestReviewView = () => {
                         <button onClick={() => setReviewFilter('incorrect')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'incorrect' ? 'bg-red-100 text-red-700 ring-2 ring-red-500/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><XCircle size={14} /> Incorrect</button>
                         <button onClick={() => setReviewFilter('skipped')} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-1.5 transition-all ${reviewFilter === 'skipped' ? 'bg-slate-200 text-slate-700 ring-2 ring-slate-400/20' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}><AlertCircle size={14} /> Skipped</button>
                     </div>
-                    {reviewItems.map((q, idx) => {
-                        if (reviewFilter === 'correct' && !q.isCorrect) return null;
-                        if (reviewFilter === 'incorrect' && (q.isCorrect || q.isSkipped)) return null;
-                        if (reviewFilter === 'skipped' && !q.isSkipped) return null;
+                    {reviewItems.filter(q => {
+                        if (reviewFilter === 'correct') return q.isCorrect;
+                        if (reviewFilter === 'incorrect') return !q.isCorrect && !q.isSkipped;
+                        if (reviewFilter === 'skipped') return q.isSkipped;
+                        return true;
+                    }).length === 0 ? (
+                        <div className="bg-slate-50/80 border-2 border-slate-200/50 border-dashed rounded-3xl p-12 text-center flex flex-col items-center">
+                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-sm border border-slate-100">
+                                {reviewFilter === 'correct' ? <CheckCircle size={28} className="text-slate-300" /> :
+                                 reviewFilter === 'incorrect' ? <XCircle size={28} className="text-slate-300" /> :
+                                 <AlertCircle size={28} className="text-slate-300" />}
+                            </div>
+                            <h3 className="text-xl font-black text-slate-700 mb-2">
+                                {reviewFilter === 'correct' ? 'No Correct Answers' :
+                                 reviewFilter === 'incorrect' ? 'No Incorrect Answers' :
+                                 reviewFilter === 'skipped' ? 'No Skipped Questions' :
+                                 'No Questions Found'}
+                            </h3>
+                            <p className="text-sm font-medium text-slate-500">
+                                {reviewFilter === 'correct' ? "You didn't get any questions right in this test." :
+                                 reviewFilter === 'incorrect' ? "Great job! You didn't get any questions wrong." :
+                                 reviewFilter === 'skipped' ? "Awesome! You attempted every single question." :
+                                 "There are no questions to review right now."}
+                            </p>
+                        </div>
+                    ) : (
+                        reviewItems.map((q, idx) => {
+                            if (reviewFilter === 'correct' && !q.isCorrect) return null;
+                            if (reviewFilter === 'incorrect' && (q.isCorrect || q.isSkipped)) return null;
+                            if (reviewFilter === 'skipped' && !q.isSkipped) return null;
 
                         const isCollapsed = collapsedIds[q.id];
 
@@ -276,30 +411,100 @@ const TestReviewView = () => {
                                     </div>
 
                                     {/* Question text */}
-                                    <div className="mb-4 space-y-1">
-                                        {q.text
-                                            .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
-                                            .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                                            .split(/\n/g)
-                                            .map((part, i) => {
-                                                const t = part.trim();
-                                                if (!t) return null;
-                                                const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(t);
-                                                return (
-                                                    <div key={i} className={isStatement
-                                                        ? 'pl-3 text-slate-700 font-medium bg-slate-50 p-2 sm:p-3 rounded-lg border-l-2 border-slate-300 text-sm flex gap-2 items-start'
-                                                        : 'font-semibold text-slate-800'}>
-                                                        {isStatement ? (
-                                                            <>
-                                                                <span className="shrink-0 font-bold text-slate-500">{t.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
-                                                                <span className="flex-1">{t.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
-                                                            </>
-                                                        ) : (
-                                                            t
-                                                        )}
-                                                    </div>
-                                                );
-                                            })}
+                                    <div className="mb-4">
+                                        {(() => {
+                                            const parts = q.text
+                                                .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Fa-f])\.\s)/gi, '$1\n')
+                                                .replace(/([a-z.?'"])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                                .split(/\n/g)
+                                                .map(p => p.trim())
+                                                .filter(Boolean);
+
+                                            const rawChunks = [];
+                                            let currentStmtGroup = [];
+
+                                            const flushCurrentStmts = () => {
+                                                if (currentStmtGroup.length > 0) {
+                                                    rawChunks.push({ type: 'statements', items: currentStmtGroup });
+                                                    currentStmtGroup = [];
+                                                }
+                                            };
+
+                                            parts.forEach(p => {
+                                                const isStatement = /^(?:\d{1,2}|[A-Fa-f])\./.test(p);
+                                                if (isStatement) {
+                                                    currentStmtGroup.push(p);
+                                                } else {
+                                                    flushCurrentStmts();
+                                                    rawChunks.push({ type: 'text', content: p });
+                                                }
+                                            });
+                                            flushCurrentStmts();
+
+                                            const blocks = [];
+                                            for (let i = 0; i < rawChunks.length; i++) {
+                                                const chunk = rawChunks[i];
+
+                                                if (chunk.type === 'text' && /^\s*List[-\s]?(?:I|1)\s*:?\s*$/i.test(chunk.content)) {
+                                                    if (
+                                                        i + 3 < rawChunks.length &&
+                                                        rawChunks[i + 1].type === 'statements' &&
+                                                        rawChunks[i + 2].type === 'text' && /^\s*List[-\s]?(?:II|2)\s*:?\s*$/i.test(rawChunks[i + 2].content) &&
+                                                        rawChunks[i + 3].type === 'statements'
+                                                    ) {
+                                                        blocks.push(
+                                                            <div key={`match-${i}`} className="mb-4 w-full grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-50/50 p-3 rounded-lg border border-slate-100">
+                                                                <div>
+                                                                    <div className="font-bold text-slate-800 mb-2 ml-1">{chunk.content}</div>
+                                                                    <div className="flex flex-col gap-2">
+                                                                        {rawChunks[i + 1].items.map((stmt, idx) => (
+                                                                            <div key={idx} className="pl-3 text-slate-700 font-medium bg-white p-2 sm:p-3 rounded-md border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full shadow-sm">
+                                                                                <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                                <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                                            </div>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="font-bold text-slate-800 mb-2 ml-1">{rawChunks[i + 2].content}</div>
+                                                                    <div className="flex flex-col gap-2">
+                                                                        {rawChunks[i + 3].items.map((stmt, idx) => (
+                                                                            <div key={idx} className="pl-3 text-slate-700 font-medium bg-white p-2 sm:p-3 rounded-md border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full shadow-sm">
+                                                                                <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                                <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                                            </div>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                        i += 3;
+                                                        continue;
+                                                    }
+                                                }
+
+                                                if (chunk.type === 'statements') {
+                                                    const isShort4 = chunk.items.length === 4 && !chunk.items.some(s => s.split(' ').length > 12);
+                                                    blocks.push(
+                                                        <div key={`group-${i}`} className={`mb-2 w-full grid gap-2 ${isShort4 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                                                            {chunk.items.map((stmt, idx) => (
+                                                                <div key={idx} className="pl-3 text-slate-700 font-medium bg-slate-50 p-2 sm:p-3 rounded-lg border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full">
+                                                                    <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Fa-f])\./)[0]}</span>
+                                                                    <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Fa-f])\.\s*/, '')}</span>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    );
+                                                } else {
+                                                    blocks.push(
+                                                        <div key={`p-${i}`} className="mb-2 font-semibold text-slate-800">
+                                                            {chunk.content}
+                                                        </div>
+                                                    );
+                                                }
+                                            }
+                                            return blocks;
+                                        })()}
                                     </div>
 
                                     {/* Options */}
@@ -412,7 +617,7 @@ const TestReviewView = () => {
                                 )}
                             </div>
                         );
-                    })}
+                    }))}
                 </div>
             )}
         </div>

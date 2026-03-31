@@ -7,8 +7,7 @@ export const SUBJECTS = [
     'International Relations',
     'Art & Culture',
     'Environment',
-    'Ancient History',
-    'Medieval History',
+    'Ancient & Medieval History',
     'Modern History'
 ];
 
@@ -92,8 +91,7 @@ export const SUBJECT_CODES = {
     'International Relations': 'IR',
     'Art & Culture': 'AC',
     'Environment': 'EN',
-    'Ancient History': 'AH',
-    'Medieval History': 'MH',
+    'Ancient & Medieval History': 'AM',
     'Modern History': 'MO'
 };
 
@@ -168,7 +166,8 @@ export const TOPIC_CODES = {
         '07': 'Pollution & Waste Management',
         '08': 'Environmental Governance & Acts',
     },
-    AH: {
+    AM: {
+        // ── Ancient History ──────────────────────────────
         '01': 'Pre-Historic & Indus Valley Civilization',
         '02': 'Vedic Culture & Religious Movements',
         '03': 'The Mauryan Empire',
@@ -176,16 +175,15 @@ export const TOPIC_CODES = {
         '05': 'Gupta & Post-Gupta Era',
         '06': 'South Indian Kingdoms',
         '07': 'Ancient Art & Culture',
-    },
-    MH: {
-        '01': 'Early Medieval India',
-        '02': 'Rajput Era & Early Invasions',
-        '03': 'Delhi Sultanate',
-        '04': 'Bhakti & Sufi Movements',
-        '05': 'Vijayanagar & Bahmani Empires',
-        '06': 'Mughal Empire',
-        '07': 'Maratha Empire',
-        '08': 'Medieval Art & Architecture',
+        // ── Medieval History ─────────────────────────────
+        '08': 'Early Medieval India',
+        '09': 'Rajput Era & Early Invasions',
+        '10': 'Delhi Sultanate',
+        '11': 'Bhakti & Sufi Movements',
+        '12': 'Vijayanagar & Bahmani Empires',
+        '13': 'Mughal Empire',
+        '14': 'Maratha Empire',
+        '15': 'Medieval Art & Architecture',
     },
     MO: {
         '01': 'Expansion of British Power',
@@ -224,16 +222,12 @@ export const SUBJECT_SOURCE_MAP = {
         standard: ['Indian Polity by M. Laxmikanth'],
         advanced: ['Constitution of India by D.D. Basu', 'Constitution Bare Act', '2nd ARC Report'],
     },
-    'Ancient History': {
-        core: ['Old NCERT — Ancient India by R.S. Sharma'],
+    'Ancient & Medieval History': {
+        core: ['Old NCERT — Ancient India by R.S. Sharma', 'NCERT Medieval India by Satish Chandra'],
         standard: ['Standard Textbooks'],
         advanced: ['Advanced Historical Research'],
     },
-    'Medieval History': {
-        core: ['NCERT Medieval India by Satish Chandra'],
-        standard: ['Standard Textbooks'],
-        advanced: ['Advanced Historical Research'],
-    },
+
     'Modern History': {
         core: ['NCERT Class XII — Themes in Modern Indian History', 'Modern India by Bipin Chandra'],
         standard: ['Spectrum — History of Modern India'],

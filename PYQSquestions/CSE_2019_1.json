@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "upsc-2019-q1",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "With reference to Mughal India, what is/are the difference/differences between Jagirdar and Zamindar?\n1. Jagirdars were holders of land assignments in lieu of judicial and police duties, whereas Zamindars were holders of revenue rights without obligation to perform any duty other than revenue collection.\n2. Land assignments to Jagirdars were hereditary and revenue rights of Zamindars were not hereditary.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Jagirdars held land in lieu of administrative and military duties, not specifically judicial/police. Zamindari was hereditary, while Jagirdari was non-hereditary.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q2",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Land Reforms",
+    "text": "With reference to land reforms in independent India, which one of the following statements is correct?",
+    "options": [
+      "The ceiling laws were aimed at family holdings and not individual holdings.",
+      "The major aim of land reforms was providing agricultural land to all the landless.",
+      "It resulted in cultivation of cash crops as a predominant form of cultivation.",
+      "Land reforms permitted no exemptions to the ceiling limits."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The primary objective of land reforms, including land ceiling acts, was to distribute surplus land to the landless and poor peasants.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Land Reforms" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q3",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Reports & Indices",
+    "text": "The Global Competitiveness Report is published by the",
+    "options": [
+      "International Monetary Fund",
+      "United Nations Conference on Trade and Development",
+      "World Economic Forum",
+      "World Bank"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Global Competitiveness Report is an annual publication by the World Economic Forum (WEF).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Reports & Indices" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q4",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Consider the following statements about 'the Charter Act of 1813':\n1. It ended the trade monopoly of the East India Company in India except for trade in tea and trade with China.\n2. It asserted the sovereignty of the British Crown over the Indian territories held by the Company.\n3. The revenues of India were now controlled by the British Parliament.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect as the revenues of India came under direct control of the British Parliament later with the Government of India Act 1858.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q5",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "With reference to Swadeshi Movement, consider the following statements:\n1. It contributed to the revival of the indigenous artisan crafts and industries.\n2. The National Council of Education was established as a part of Swadeshi Movement.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Both statements are correct. The Swadeshi movement heavily promoted indigenous industries and led to the founding of the National Council of Education in 1906.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q6",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "Consider the following pairs:\nMovement/Organization : Leader\n1. All India Anti-Untouchability League : Mahatma Gandhi\n2. All India Kisan Sabha : Swami Sahajanand Saraswati\n3. Self-Respect Movement : E. V. Ramaswami Naicker\nWhich of the pairs given above is/are correctly matched?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three pairs are perfectly matched with their respective founders/leaders.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q7",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Which one of the following is not a Harappan site?",
+    "options": [
+      "Chanhudaro",
+      "Kot Diji",
+      "Sohgaura",
+      "Desalpur"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sohgaura is known for an ancient Mauryan-era copper plate inscription, not as a Harappan site. The other three are well-known Indus Valley sites.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q8",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "In which of the following relief sculpture inscriptions is 'Ranyo Ashoka' (King Ashoka) mentioned along with the stone portrait of Ashoka?",
+    "options": [
+      "Kanganahalli",
+      "Sanchi",
+      "Shahbazgarhi",
+      "Sohgaura"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The stupa site at Kanganahalli (Karnataka) has a unique relief sculpture bearing the label 'Ranyo Ashoka' alongside a portrait of the emperor.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q9",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "Consider the following:\n1. Deification of the Buddha\n2. Treading the path of Bodhisattvas\n3. Image worship and rituals\nWhich of the above is/are the feature/features of Mahayana Buddhism?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mahayana Buddhism is distinguished by the deification of the Buddha, belief in the Bodhisattva ideal, and the practice of idol worship and elaborate rituals.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q10",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Ancient Indian History",
+    "text": "With reference to forced labour (Vishti) in India during the Gupta period, which one of the following statements is correct?",
+    "options": [
+      "It was considered a source of income for the State, a sort of tax paid by the people.",
+      "It was totally absent in the Madhya Pradesh and Kathiawar regions of the Gupta Empire.",
+      "The forced labourer was entitled to weekly wages.",
+      "The eldest son of the labourer was sent as the forced labourer."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vishti (forced labour) was considered a regular source of state income and a form of tax extracted from the people, heavily prevalent in central and western India.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Ancient Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q11",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Art & Culture",
+    "text": "Building 'Kalyaana Mandapas' was a notable feature in the temple construction in the kingdom of",
+    "options": [
+      "Chalukya",
+      "Chandela",
+      "Rashtrakuta",
+      "Vijayanagara"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Kalyaana Mandapas (marriage halls for deities) with intricately carved pillars were a hallmark of Vijayanagara temple architecture.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Art & Culture" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q12",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Consider the following statements:\n1. In the revenue administration of Delhi Sultanate, the in-charge of revenue collection was known as 'Amil'.\n2. The Iqta system of Sultans of Delhi was an ancient indigenous institution.\n3. The office of 'Mir Bakshi' came into existence during the reign of Khalji Sultans of Delhi.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct. Statement 2 is incorrect because the Iqta system was a Central Asian/Islamic institution, not indigenous to India. Statement 3 is incorrect because Mir Bakshi was the head of the military department during the Mughal Empire, not under the Khaljis.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q13",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Consider the following statements:\n1. Saint Nimbarka was a contemporary of Akbar.\n2. Saint Kabir was greatly influenced by Shaikh Ahmad Sirhindi.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Both statements are incorrect. Nimbarka lived in the 13th-14th century, predating Akbar. Kabir (15th century) predates Shaikh Ahmad Sirhindi (late 16th century).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q14",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "With reference to the British colonial rule in India, consider the following statements:\n1. Mahatma Gandhi was instrumental in the abolition of the system of 'indentured labour'.\n2. In Lord Chelmsford's 'War Conference', Mahatma Gandhi did not support the resolution on recruiting Indians for World War.\n3. Consequent upon the breaking of Salt Law by Indian people, the Indian National Congress was declared illegal by the colonial rulers.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is correct (Gandhi campaigned heavily against indentured labour). Statement 2 is incorrect because Gandhi actually supported recruitment during WWI in hopes of gaining concessions. Statement 3 is correct (the INC was banned following the Salt Satyagraha).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q15",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Modern Indian History",
+    "text": "With reference to Indian National Movement, consider the following pairs:\nPerson : Position held\n1. Sir Tej Bahadur Sapru : President, All India Liberal Federation\n2. K. C. Neogy : Member, The Constituent Assembly\n3. P. C. Joshi : General Secretary, Communist Party of India\nWhich of the pairs given above is/are correctly matched?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three pairs are correctly matched to their prominent historical roles.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Modern Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q16",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "With reference to Mian Tansen, which one of the following statements is not correct?",
+    "options": [
+      "Tansen was the title given to him by Emperor Akbar.",
+      "Tansen composed Dhrupads on Hindu gods and goddesses.",
+      "Tansen composed songs on his patrons.",
+      "Tansen invented many Ragas."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The title 'Tansen' was given to him by Raja Vikramjit of Gwalior, not Emperor Akbar. Therefore, statement (a) is incorrect.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q17",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Medieval Indian History",
+    "text": "Who among the following Mughal Emperors shifted emphasis from illustrated manuscripts to album and individual portrait?",
+    "options": [
+      "Humayun",
+      "Akbar",
+      "Jahangir",
+      "Shah Jahan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jahangir heavily patronized miniature painting and shifted the focus from manuscript illustrations to individual portraits and albums (Muraqqa).",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Medieval Indian History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q18",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Protected Areas",
+    "text": "Which one of the following National Parks lies completely in the temperate alpine zone?",
+    "options": [
+      "Manas National Park",
+      "Namdapha National Park",
+      "Neora Valley National Park",
+      "Valley of Flowers National Park"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Valley of Flowers National Park (in Uttarakhand) is situated at a high elevation (above 3300m) and lies entirely in the temperate alpine zone.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Protected Areas" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q19",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Government Schemes",
+    "text": "Atal Innovation Mission is set up under the",
+    "options": [
+      "Department of Science and Technology",
+      "Ministry of Labour and Employment",
+      "NITI Aayog",
+      "Ministry of Skill Development and Entrepreneurship"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Atal Innovation Mission (AIM) is a flagship initiative set up by the NITI Aayog to promote a culture of innovation and entrepreneurship.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Government Schemes" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q20",
+    "year": 2019,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "On 21st June, the Sun",
+    "options": [
+      "does not set below the horizon at the Arctic Circle",
+      "does not set below the horizon at Antarctic Circle",
+      "shines vertically overhead at noon on the Equator",
+      "shines vertically overhead at the Tropic of Capricorn"
+    ],
+    "correctAnswer": 0,
+    "explanation": "On June 21 (Summer Solstice in the Northern Hemisphere), the Earth's North Pole is tilted towards the Sun, causing the sun to not set below the horizon anywhere within the Arctic Circle.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q21",
+    "year": 2019,
+    "subject": "History",
+    "topic": "Economic History",
+    "text": "Which one of the following groups of plants was domesticated in the 'New World' and introduced into the 'Old World'?",
+    "options": [
+      "Tobacco, cocoa and rubber",
+      "Tobacco, cotton and rubber",
+      "Cotton, coffee and sugarcane",
+      "Rubber, coffee and wheat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tobacco, cocoa, and rubber originated in the Americas (the New World) and were brought to the Old World after the Columbian Exchange.",
+    "tags": [
+      { "type": "subject", "label": "History" },
+      { "type": "topic", "label": "Economic History" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q22",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Biodiversity",
+    "text": "Consider the following statements:\n1. Asiatic lion is naturally found in India only.\n2. Double-humped camel is naturally found in India only.\n3. One-horned rhinoceros is naturally found in India only.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct (Asiatic lions are restricted to Gir, India). Statement 2 is incorrect (Bactrian camels are native to Central Asia). Statement 3 is incorrect (One-horned rhinos are also found in Nepal and Bhutan).",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Biodiversity" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q23",
+    "year": 2019,
+    "subject": "Geography",
+    "topic": "Rivers",
+    "text": "Consider the following pairs:\nFamous place : River\n1. Pandharpur : Chandrabhaga\n2. Tiruchirappalli : Cauvery\n3. Hampi : Malaprabha\nWhich of the pairs given above are correctly matched?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pandharpur is on the banks of Chandrabhaga (Bhima). Tiruchirappalli is on the Cauvery. Hampi is situated on the Tungabhadra, not the Malaprabha.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Rivers" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q24",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Poverty & Unemployment",
+    "text": "In a given year in India, official poverty lines are higher in some States than in others because",
+    "options": [
+      "poverty rates vary from State to State",
+      "price levels vary from State to State",
+      "Gross State Product varies from State to State",
+      "quality of public distribution varies from State to State"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The official poverty line is based on consumption expenditure (which reflects the cost of a basic basket of goods). Since price levels vary significantly across states, the poverty line is adjusted accordingly.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Poverty & Unemployment" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q25",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "In the context of which of the following do some scientists suggest the use of cirrus cloud thinning technique and the injection of sulphate aerosol into stratosphere?",
+    "options": [
+      "Creating the artificial rains in some regions",
+      "Reducing the frequency and intensity of tropical cyclones",
+      "Reducing the adverse effects of solar wind on the Earth",
+      "Reducing the global warming"
+    ],
+    "correctAnswer": 3,
+    "explanation": "These are geoengineering techniques proposed to reflect more sunlight back into space and allow more heat to escape, specifically aimed at artificially reducing global warming.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Climate Change" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q26",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "Energy",
+    "text": "In the context of which one of the following are the terms 'pyrolysis and plasma gasification' mentioned?",
+    "options": [
+      "Extraction of rare earth elements",
+      "Natural gas extraction technologies",
+      "Hydrogen fuel-based automobiles",
+      "Waste-to-energy technologies"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pyrolysis and plasma gasification are advanced thermal technologies used to treat solid waste and convert it into usable syngas and energy.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "Energy" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q27",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Protected Areas",
+    "text": "Which of the following are in Agasthyamala Biosphere Reserve?",
+    "options": [
+      "Neyyar, Peppara and Shendurney Wildlife Sanctuaries; and Kalakad Mundanthurai Tiger Reserve",
+      "Mudumalai, Sathyamangalam and Wayanad Wildlife Sanctuaries; and Silent Valley National Park",
+      "Kaundinya, Gundla Brahmeswaram and Papikonda Wildlife Sanctuaries; and Mukurthi National Park",
+      "Kawal and Sri Venkateswara Wildlife Sanctuaries; and Nagarjunasagar-Srisailam Tiger Reserve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Agasthyamala Biosphere Reserve is located in the southernmost end of the Western Ghats and specifically encompasses Neyyar, Peppara, Shendurney, and Kalakad Mundanthurai.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Protected Areas" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q28",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Biodiversity",
+    "text": "Consider the following statements:\n1. Some species of turtles are herbivores.\n2. Some species of fish are herbivores.\n3. Some species of marine mammals are herbivores.\n4. Some species of snakes are viviparous.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 3 only",
+      "2, 3 and 4 only",
+      "2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Green sea turtles are herbivores (1). Parrotfish/surgeonfish are herbivores (2). Manatees and dugongs are herbivorous marine mammals (3). Boas and vipers give live birth, meaning they are viviparous (4).",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Biodiversity" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q29",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Biodiversity",
+    "text": "Consider the following pairs:\nWildlife : Naturally found in\n1. Blue-finned Mahseer : Cauvery River\n2. Irrawaddy Dolphin : Chambal River\n3. Rusty-spotted Cat : Eastern Ghats\nWhich of the pairs given above are correctly matched?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Blue-finned Mahseer is found in the Cauvery (1). Rusty-spotted cat is found in the Eastern Ghats (3). Irrawaddy dolphins are found in coastal areas and specific rivers like the Mekong and Irrawaddy (and Chilika lake), but not the Chambal river.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Biodiversity" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q30",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Pollution",
+    "text": "Why is there a great concern about the 'microbeads' that are released into environment?",
+    "options": [
+      "They are considered harmful to marine ecosystems.",
+      "They are considered to cause skin cancer in children.",
+      "They are small enough to be absorbed by crop plants in irrigated fields.",
+      "They are often found to be used as food adulterants."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Microbeads are tiny plastic particles used in cosmetics that bypass water filtration systems and end up in oceans, where they are ingested by marine life, causing severe harm to marine ecosystems.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Pollution" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q31",
+    "year": 2019,
+    "subject": "Science",
+    "topic": "Biology",
+    "text": "Recently, there was a growing awareness in our country about the importance of Himalayan nettle (Girardinia diversifolia) because it is found to be a sustainable source of",
+    "options": [
+      "anti-malarial drug",
+      "biodiesel",
+      "pulp for paper industry",
+      "textile fibre"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Himalayan nettle yields a high-quality, durable natural fibre that is increasingly recognized as a sustainable source for the textile industry.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Biology" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q32",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "Space Technology",
+    "text": "For the measurement/estimation of which of the following are satellite images/remote sensing data used?\n1. Chlorophyll content in the vegetation of a specific location\n2. Greenhouse gas emissions from rice paddies of a specific location\n3. Land surface temperatures of a specific location\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Remote sensing via satellites utilizes various spectral bands to measure chlorophyll index (NDVI), surface temperatures (thermal IR), and even specific greenhouse gas concentrations like methane over rice paddies.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "Space Technology" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q33",
+    "year": 2019,
+    "subject": "Geography",
+    "topic": "Forests",
+    "text": "Consider the following States:\n1. Chhattisgarh\n2. Madhya Pradesh\n3. Maharashtra\n4. Odisha\nWith reference to the States mentioned above, in terms of percentage of forest cover to the total area of State, which one of the following is the correct ascending order?",
+    "options": [
+      "2-3-1-4",
+      "2-3-4-1",
+      "3-2-4-1",
+      "3-2-1-4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Based on the ISFR 2017/2019 data regarding forest cover as a percentage of state area: Maharashtra (~16%), Madhya Pradesh (~25%), Odisha (~33%), Chhattisgarh (~41%). Ascending order is 3-2-4-1.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Forests" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q34",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Climate Change",
+    "text": "Which of the following statements are correct about the deposits of 'methane hydrate'?\n1. Global warming might trigger the release of methane gas from these deposits.\n2. Large deposits of 'methane hydrate' are found in Arctic Tundra and under the seafloor.\n3. Methane in atmosphere oxidizes to carbon dioxide after a decade or two.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All three statements are correct. Methane hydrates are trapped in permafrost and deep ocean floors, vulnerable to warming, and atmospheric methane breaks down into CO2 over roughly 10-12 years.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Climate Change" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q35",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Pollution",
+    "text": "Consider the following:\n1. Carbon monoxide\n2. Methane\n3. Ozone\n4. Sulphur dioxide\nWhich of the above are released into atmosphere due to the burning of crop/biomass residue?",
+    "options": [
+      "1 and 2 only",
+      "2, 3 and 4 only",
+      "1 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Biomass burning directly releases CO, CH4, and SO2. It also releases NOx and VOCs, which react in the presence of sunlight to form ground-level Ozone.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Pollution" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q36",
+    "year": 2019,
+    "subject": "Geography",
+    "topic": "World Geography",
+    "text": "Consider the following pairs:\nSea : Bordering country\n1. Adriatic Sea : Albania\n2. Black Sea : Croatia\n3. Caspian Sea : Kazakhstan\n4. Mediterranean Sea : Morocco\n5. Red Sea : Syria\nWhich of the pairs given above are correctly matched?",
+    "options": [
+      "1, 2 and 4 only",
+      "1, 3 and 4 only",
+      "2 and 5 only",
+      "1, 2, 3, 4 and 5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Albania borders the Adriatic (1). Kazakhstan borders the Caspian (3). Morocco borders the Mediterranean (4). Croatia borders the Adriatic, not the Black Sea. Syria borders the Mediterranean, not the Red Sea.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "World Geography" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q37",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Agriculture",
+    "text": "Among the following, which one is the largest exporter of rice in the world in the last five years?",
+    "options": [
+      "China",
+      "India",
+      "Myanmar",
+      "Vietnam"
+    ],
+    "correctAnswer": 1,
+    "explanation": "India has consistently been the world's largest exporter of rice over the 2014-2019 period.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q38",
+    "year": 2019,
+    "subject": "Geography",
+    "topic": "Rivers",
+    "text": "Consider the following pairs:\nGlacier : River\n1. Bandarpunch : Yamuna\n2. Bara Shigri : Chenab\n3. Milam : Mandakini\n4. Siachen : Nubra\n5. Zemu : Manas\nWhich of the pairs given above are correctly matched?",
+    "options": [
+      "1, 2 and 4",
+      "1, 3 and 4",
+      "2 and 5",
+      "3 and 5"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bandarpunch sources the Yamuna (1). Bara Shigri sources the Chenab (2). Siachen sources the Nubra (4). Milam feeds the Gori Ganga (not Mandakini). Zemu feeds the Teesta (not Manas).",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Rivers" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q39",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Agriculture",
+    "text": "In India, the use of carbofuran, methyl parathion, phorate and triazophos is viewed with apprehension. These chemicals are used as",
+    "options": [
+      "pesticides in agriculture",
+      "preservatives in processed foods",
+      "fruit-ripening agents",
+      "moisturising agents in cosmetics"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These chemicals are highly toxic organophosphate and carbamate pesticides commonly used in agriculture, raising health and environmental concerns.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q40",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Conventions",
+    "text": "Consider the following statements:\n1. Under Ramsar Convention, it is mandatory on the part of the Government of India to protect and conserve all the wetlands in the territory of India.\n2. The Wetlands (Conservation and Management) Rules, 2010 were framed by the Government of India based on the recommendations of Ramsar Convention.\n3. The Wetlands (Conservation and Management) Rules, 2010 also encompass the drainage area or catchment regions of the wetlands as determined by the authority.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ramsar does not mandate the protection of *all* wetlands, only designated ones (Statement 1 false). The 2010 rules were drafted under the EPA 1986, not strictly upon 'recommendations' of Ramsar (Statement 2 false). The rules explicitly encompass the catchment area to prevent degradation (Statement 3 true).",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Conventions" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q41",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Pollution",
+    "text": "Consider the following statements:\n1. Agricultural soils release nitrogen oxides into environment.\n2. Cattle release ammonia into environment.\n3. Poultry industry releases reactive nitrogen compounds into environment.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 3 only",
+      "2 and 3 only",
+      "2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Fertilized agricultural soils release N2O. Cattle and poultry farming produce massive amounts of manure/urine, releasing ammonia and other reactive nitrogen compounds.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Pollution" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q42",
+    "year": 2019,
+    "subject": "Geography",
+    "topic": "Locations",
+    "text": "What is common to the places known as Aliyar, Isapur and Kangsabati?",
+    "options": [
+      "Recently discovered uranium deposits",
+      "Tropical rain forests",
+      "Underground cave systems",
+      "Water reservoirs"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Aliyar (Tamil Nadu), Isapur (Maharashtra), and Kangsabati (West Bengal) are all prominent water reservoirs/dams in India.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Locations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q43",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "Energy",
+    "text": "In the context of proposals to the use of hydrogen-enriched CNG (H-CNG) as fuel for buses in public transport, consider the following statements:\n1. The main advantage of the use of H-CNG is the elimination of carbon monoxide emissions.\n2. H-CNG as fuel reduces carbon dioxide and hydrocarbon emissions.\n3. Hydrogen up to one-fifth by volume can be blended with CNG as fuel for buses.\n4. H-CNG makes the fuel less expensive than CNG.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "H-CNG drastically reduces (but does not eliminate) CO emissions. It reduces CO2 and HC emissions. It consists of up to 18-20% hydrogen blended with CNG. It is more expensive than standard CNG due to the cost of hydrogen.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "Energy" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q44",
+    "year": 2019,
+    "subject": "Geography",
+    "topic": "Climatology",
+    "text": "Why are dewdrops not formed on a cloudy night?",
+    "options": [
+      "Clouds absorb the radiation released from the Earth's surface.",
+      "Clouds reflect back the Earth's radiation.",
+      "The Earth's surface would have low temperature on cloudy nights.",
+      "Clouds deflect the blowing wind to ground level."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Clouds act like a blanket, reflecting terrestrial radiation back to the surface. This prevents the ground from cooling sufficiently to reach the dew point, thus inhibiting dew formation.",
+    "tags": [
+      { "type": "subject", "label": "Geography" },
+      { "type": "topic", "label": "Climatology" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q45",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Constitutional Amendments",
+    "text": "Consider the following statements:\n1. The 44th Amendment to the Constitution of India introduced an Article placing the election of the Prime Minister beyond judicial review.\n2. The Supreme Court of India struck down the 99th Amendment to the Constitution of India as being violative of the independence of judiciary.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 39th Amendment (not 44th) placed the PM's election beyond judicial review. The Supreme Court successfully struck down the 99th Amendment (which established the NJAC) to preserve judicial independence.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitutional Amendments" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q46",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "Consider the following statements:\n1. The motion to impeach a Judge of the Supreme Court of India cannot be rejected by the Speaker of the Lok Sabha as per the Judges (Inquiry) Act, 1968.\n2. The Constitution of India defines and gives details of what constitutes 'incapacity and proved misbehaviour' of the Judges of the Supreme Court of India.\n3. The details of the process of impeachment of the Judges of the Supreme Court of India are given in the Judges (Inquiry) Act, 1968.\n4. If the motion for the impeachment of a Judge is taken up for voting, the law requires the motion to be backed by each House of the Parliament and supported by a majority of total membership of that House and by not less than two-thirds of total members of that House present and voting.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2",
+      "3 only",
+      "3 and 4 only",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Speaker/Chairman CAN refuse the motion (Statement 1 is false). The Constitution does NOT define 'incapacity and proved misbehaviour' (Statement 2 is false). The process is detailed in the 1968 Act and requires a special majority in both houses (Statements 3 and 4 are true).",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Judiciary" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q47",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Constitution",
+    "text": "The Ninth Schedule was introduced in the Constitution of India during the prime ministership of",
+    "options": [
+      "Jawaharlal Nehru",
+      "Lal Bahadur Shastri",
+      "Indira Gandhi",
+      "Morarji Desai"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Ninth Schedule was added by the 1st Constitutional Amendment Act in 1951 to protect land reform laws from judicial review, during Jawaharlal Nehru's tenure.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Constitution" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q48",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Industry",
+    "text": "Consider the following statements:\n1. Coal sector was nationalized by the Government of India under Indira Gandhi.\n2. Now, coal blocks are allocated on lottery basis.\n3. Till recently, India imported coal to meet the shortages of domestic supply, but now India is self-sufficient in coal production.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coal was nationalized in the 1970s under Indira Gandhi. Currently, coal blocks are allocated through competitive auction, not lottery. India is still a massive importer of coal and is not self-sufficient.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Industry" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q49",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Legislature",
+    "text": "Consider the following statements:\n1. The Parliament (Prevention of Disqualification) Act, 1959 exempts several posts from disqualification on the grounds of 'Office of Profit'.\n2. The above-mentioned Act was amended five times.\n3. The term 'Office of Profit' is well-defined in the Constitution of India.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 1959 Act exempts various posts and has been amended five times. The term 'Office of Profit' is explicitly mentioned in the Constitution but is NOT defined anywhere in it.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Legislature" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q50",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Fifth Schedule",
+    "text": "Under which Schedule of the Constitution of India can the transfer of tribal land to private parties for mining be declared null and void?",
+    "options": [
+      "Third Schedule",
+      "Fifth Schedule",
+      "Ninth Schedule",
+      "Twelfth Schedule"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Fifth Schedule provides for the administration and control of Scheduled Areas and Tribes, under which the famous 'Samatha judgement' affirmed that tribal land cannot be leased to private mining entities.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fifth Schedule" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q51",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Tribes",
+    "text": "Consider the following statements about Particularly Vulnerable Tribal Groups (PVTGs) in India:\n1. PVTGs reside in 18 States and one Union Territory.\n2. A stagnant or declining population is one of the criteria for determining PVTG status.\n3. There are 95 PVTGs officially notified in the country so far.\n4. Irular and Konda Reddi tribes are included in the list of PVTGs.\nWhich of the statements given above are correct?",
+    "options": [
+      "1, 2 and 3",
+      "2, 3 and 4",
+      "1, 2 and 4",
+      "1, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "There are exactly 75 recognized PVTGs in India, not 95. They reside in 18 states and 1 UT (A&N Islands), characterized by stagnant/declining populations, pre-agricultural tech, etc. Irular and Konda Reddis are indeed PVTGs.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Tribes" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q52",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "With reference to the Constitution of India, prohibitions or limitations or provisions contained in ordinary laws cannot act as prohibitions or limitations on the constitutional powers under Article 142. It could mean which one of the following?",
+    "options": [
+      "The decisions taken by the Election Commission of India while discharging its duties cannot be challenged in any court of law.",
+      "The Supreme Court of India is not constrained in the exercise of its powers by laws made by the Parliament.",
+      "In the event of grave financial crisis in the country, the President of India can declare Financial Emergency without the counsel from the Cabinet.",
+      "State Legislatures cannot make laws on certain matters without the concurrence of Union Legislature."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 142 grants the Supreme Court the unique power to pass any decree or order necessary for doing 'complete justice'. This constitutional power overrides limitations set by ordinary statutory laws.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Judiciary" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q53",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "State Legislature",
+    "text": "With reference to the Legislative Assembly of a State in India, consider the following statements:\n1. The Governor makes a customary address to Members of the House at the commencement of the first session of the year.\n2. When a State Legislature does not have a rule on a particular matter, it follows the Lok Sabha rule on that matter.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 is correct (Article 176). Statement 2 is incorrect; state legislatures frame their own rules of procedure, and if silent, rely on their own precedents or Speaker's rulings, not automatically Lok Sabha rules.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "State Legislature" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q54",
+    "year": 2019,
+    "subject": "International Relations",
+    "topic": "Treaties",
+    "text": "Consider the following statements:\n1. The United Nations Convention against Corruption (UNCAC) has a 'Protocol against the Smuggling of Migrants by Land, Sea and Air'.\n2. The UNCAC is the ever-first legally binding global anti-corruption instrument.\n3. A highlight of the United Nations Convention against Transnational Organized Crime (UNTOC) is the inclusion of a specific chapter aimed at returning assets to their rightful owners from whom they had been taken illicitly.\n4. The United Nations Office on Drugs and Crime (UNODC) is mandated by its member States to assist in the implementation of both UNCAC and UNTOC.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 3 only",
+      "2, 3 and 4 only",
+      "2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Smuggling of Migrants Protocol belongs to UNTOC, not UNCAC. The asset return chapter belongs to UNCAC, not UNTOC. Statements 2 and 4 are factually correct.",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "Treaties" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q55",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Laws",
+    "text": "Consider the following statements:\n1. As per recent amendment to the Indian Forest Act, 1927, forest dwellers have the right to fell the bamboos grown on forest areas.\n2. As per the Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006, bamboo is a minor forest produce.\n3. The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006 allows ownership of minor forest produce to forest dwellers.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The amendment to the IFA 1927 removed bamboo grown on *non-forest* areas from the definition of a 'tree', not forest areas (Statement 1 is false). FRA 2006 recognizes bamboo as MFP and grants ownership rights over MFP to forest dwellers.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Laws" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q56",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "text": "Which Article of the Constitution of India safeguards one's right to marry the person of one's choice?",
+    "options": [
+      "Article 19",
+      "Article 21",
+      "Article 25",
+      "Article 29"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Supreme Court in the Hadiya case (Shafin Jahan v. Asokan K.M.) recognized that the right to marry a person of one's choice is an integral part of the Right to Life and Personal Liberty under Article 21.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Fundamental Rights" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q57",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Intellectual Property",
+    "text": "Consider the following statements:\n1. According to the Indian Patents Act, a biological process to create a seed can be patented in India.\n2. In India, there is no Intellectual Property Appellate Board.\n3. Plant varieties are not eligible to be patented in India.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 3 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Biological processes to create seeds and plant varieties are explicitly excluded from patentability in India (Statement 1 false, Statement 3 true). An Intellectual Property Appellate Board (IPAB) did exist in India until 2021 (Statement 2 false).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Intellectual Property" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q58",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Laws",
+    "text": "Consider the following statements:\nThe Environment Protection Act, 1986 empowers the Government of India to\n1. state the requirement of public participation in the process of environmental protection, and the procedure and manner in which it is sought\n2. lay down the standards for emission or discharge of environmental pollutants from various sources\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The EPA 1986 gives the central government broad powers, including laying down emission standards (Statement 2). However, it does not explicitly mandate or state requirements for 'public participation' directly within the parent Act (EIA notifications do this separately).",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Laws" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q59",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Waste Management",
+    "text": "As per the Solid Waste Management Rules, 2016 in India, which one of the following statements is correct?",
+    "options": [
+      "Waste generator has to segregate waste into five categories.",
+      "The Rules are applicable to notified urban local bodies, notified towns and all industrial townships only.",
+      "The Rules provide for exact and elaborate criteria for the identification of sites for landfills and waste processing facilities.",
+      "It is mandatory on the part of waste generator that the waste generated in one district cannot be moved to another district."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 2016 Rules lay down precise criteria for the identification and setup of sanitary landfill sites. Waste segregation is into 3 categories (not 5). The rules extend beyond just urban bodies to census towns, ports, etc.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Waste Management" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q60",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Labour Laws",
+    "text": "Consider the following statements:\nAs per the Industrial Employment (Standing Orders) Central (Amendment) Rules, 2018\n1. if rules for fixed-term employment are implemented, it becomes easier for the firms/companies to lay off workers\n2. no notice of termination of employment shall be necessary in the case of temporary workman\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fixed-term employment allows companies to hire workers for a specific duration, ending naturally without notice or severance (making layoffs structurally easier). No notice is required for terminating a temporary/fixed-term workman.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q61",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Banking",
+    "text": "The Service Area Approach was implemented under the purview of",
+    "options": [
+      "Integrated Rural Development Programme",
+      "Lead Bank Scheme",
+      "Mahatma Gandhi National Rural Employment Guarantee Scheme",
+      "National Skill Development Mission"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Service Area Approach was introduced by the RBI in 1989 to improve the efficacy of the Lead Bank Scheme by assigning specific villages to specific bank branches for planned credit delivery.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q62",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Mining",
+    "text": "With reference to the management of minor minerals in India, consider the following statements:\n1. Sand is a 'minor mineral' according to the prevailing law in the country.\n2. State Governments have the power to grant mining leases of minor minerals, but the powers regarding the formation of rules related to the grant of minor minerals lie with the Central Government.\n3. State Governments have the power to frame rules to prevent illegal mining of minor minerals.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 3 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sand is a minor mineral. State governments not only grant leases but also have full powers to frame rules related to the grant and illegal mining of minor minerals (Statement 2 is false).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Mining" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q63",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "External Debt",
+    "text": "Consider the following statements:\n1. Most of India's external debt is owed by governmental entities.\n2. All of India's external debt is denominated in US dollars.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Commercial borrowings (private sector) form the largest component of India's external debt, not governmental entities. The debt is denominated in multiple currencies (USD, Rupee, SDR, Yen, Euro), not exclusively US dollars.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "External Debt" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q64",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Banking",
+    "text": "Which of the following is not included in the assets of a commercial bank in India?",
+    "options": [
+      "Advances",
+      "Deposits",
+      "Investments",
+      "Money at call and short notice"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Deposits represent money owed by the bank to its customers; therefore, they are classified as 'liabilities' on the bank's balance sheet, not assets.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q65",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "External Sector",
+    "text": "In the context of India, which of the following factors is/are contributor/contributors to reducing the risk of a currency crisis?\n1. The foreign currency earnings of India's IT sector\n2. Increasing the government expenditure\n3. Remittances from Indians abroad\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "1 and 3 only",
+      "2 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Foreign currency earnings (IT sector) and inward remittances bring foreign exchange into the country, bolstering reserves and reducing currency risk. Increasing government expenditure can worsen deficits and increase risk.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "External Sector" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q66",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Centre-State Relations",
+    "text": "Which one of the following suggested that the Governor should be an eminent person from outside the State and should be a detached figure without intense political links or should not have taken part in politics in the recent past?",
+    "options": [
+      "First Administrative Reforms Commission (1966)",
+      "Rajamannar Committee (1969)",
+      "Sarkaria Commission (1983)",
+      "National Commission to Review the Working of the Constitution (2000)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "These specific normative recommendations for the appointment of a Governor were prominently laid down by the Sarkaria Commission on Centre-State relations in 1983.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Centre-State Relations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q67",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Financial Markets",
+    "text": "Which of the following is issued by registered foreign portfolio investors to overseas investors who want to be part of the Indian stock market without registering themselves directly?",
+    "options": [
+      "Certificate of Deposit",
+      "Commercial Paper",
+      "Promissory Note",
+      "Participatory Note"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Participatory Notes (P-Notes) are financial instruments used by overseas investors to invest in Indian stock markets without having to register directly with SEBI.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Financial Markets" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q68",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Laws",
+    "text": "Consider the following statements:\n1. As per law, the Compensatory Afforestation Fund Management and Planning Authority exists at both National and State levels.\n2. People's participation is mandatory in the compensatory afforestation programmes carried out under the Compensatory Afforestation Fund Act, 2016.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CAMPA exists at both national and state levels. The CAF Act 2016 faced criticism specifically because it does *not* make Gram Sabha consent or people's participation legally mandatory for carrying out afforestation.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Laws" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q69",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Committees",
+    "text": "In India, which of the following review the independent regulators in sectors like telecommunications, insurance, electricity, etc.?\n1. Ad Hoc Committees set up by the Parliament\n2. Parliamentary Department Related Standing Committees\n3. Finance Commission\n4. Financial Sector Legislative Reforms Commission\n5. NITI Aayog\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "1, 3 and 4",
+      "3, 4 and 5",
+      "2 and 5"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Independent regulators are accountable to the Parliament. This oversight is exercised through regular reviews by Parliamentary Standing Committees and specific Ad Hoc Committees. The Finance Commission and NITI Aayog do not review regulators.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Committees" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q70",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Planning",
+    "text": "With reference to India's Five-Year Plans, which of the following statements is/are correct?\n1. From the Second Five-Year Plan, there was a determined thrust towards substitution of basic and capital good industries.\n2. The Fourth Five-Year Plan adopted the objective of correcting the earlier trend of increased concentration of wealth and economic power.\n3. In the Fifth Five-Year Plan, for the first time, the financial sector was included as an integral part of the Plan.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Second Plan (Mahalanobis model) emphasized heavy/capital goods. The Fourth Plan aimed at reducing inequality (correcting concentration of wealth). The financial sector became an integral part much later (Ninth/Tenth plan era), not in the Fifth Plan.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Planning" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q71",
+    "year": 2019,
+    "subject": "International Relations",
+    "topic": "Organizations",
+    "text": "With reference to Asian Infrastructure Investment Bank (AIIB), consider the following statements:\n1. AIIB has more than 80 member nations.\n2. India is the largest shareholder in AIIB.\n3. AIIB does not have any members from outside Asia.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AIIB has over 100 members globally (including non-Asian countries). China is the largest shareholder, with India being the second largest.",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "Organizations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q72",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Banking",
+    "text": "What was the purpose of Inter-Creditor Agreement signed by Indian banks and financial institutions recently?",
+    "options": [
+      "To lessen the Government of India's perennial burden of fiscal deficit and current account deficit",
+      "To support the infrastructure projects of Central and State Governments",
+      "To act as independent regulator in case of applications for loans of ₹ 50 crore or more",
+      "To aim at faster resolution of stressed assets of ₹ 50 crore or more which are under consortium lending"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Inter-Creditor Agreement (ICA) was formulated under 'Project Sashakt' to facilitate the joint and faster resolution of bad loans (NPAs) sized ₹50 crore or more held by a consortium of banks.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q73",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Banking",
+    "text": "The Chairmen of public sector banks are selected by the",
+    "options": [
+      "Banks Board Bureau",
+      "Reserve Bank of India",
+      "Union Ministry of Finance",
+      "Management of concerned bank"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Banks Board Bureau (now transformed into the Financial Services Institutions Bureau) was established to recommend the selection of heads for Public Sector Banks and financial institutions.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Banking" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q74",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Regulatory Bodies",
+    "text": "Consider the following statements:\n1. Petroleum and Natural Gas Regulatory Board (PNGRB) is the first regulatory body set up by the Government of India.\n2. One of the tasks of PNGRB is to ensure competitive markets for gas.\n3. Appeals against the decisions of PNGRB go before the Appellate Tribunals for Electricity.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PNGRB was established in 2006, making it far from the 'first' regulatory body (e.g., SEBI, TRAI are older). It ensures competitive gas markets, and its appeals indeed go to the Appellate Tribunal for Electricity (APTEL).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Regulatory Bodies" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q75",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "IT & Telecom",
+    "text": "With reference to communication technologies, what is/are the difference/differences between LTE (Long-Term Evolution) and VoLTE (Voice over Long-Term Evolution)?\n1. LTE is commonly marketed as 3G and VoLTE is commonly marketed as advanced 3G.\n2. LTE is data-only technology and VoLTE is voice-only technology.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "LTE is marketed as 4G, not 3G. While LTE initially supported only data (requiring fallback for voice), VoLTE allows voice calls over the 4G LTE data network; it is not 'voice-only' as it inherently runs on a data network.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "IT & Telecom" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q76",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Labour Laws",
+    "text": "Which of the following statements is/are correct regarding the Maternity Benefit (Amendment) Act, 2017?\n1. Pregnant women are entitled for three months pre-delivery and three months post-delivery paid leave.\n2. Enterprises with crèches must allow the mother minimum six crèche visits daily.\n3. Women with two children get reduced entitlements.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Act provides 26 weeks of leave (max 8 weeks pre-delivery), not a strict 3+3 month split. It mandates 4 creche visits daily, not 6. For women having 2 or more surviving children, the leave is reduced to 12 weeks.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Labour Laws" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q77",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Index",
+    "text": "Which one of the following is not a sub-index of the World Bank's Ease of Doing Business Index?",
+    "options": [
+      "Maintenance of law and order",
+      "Paying taxes",
+      "Registering property",
+      "Dealing with construction permits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Ease of Doing Business Index tracked parameters like Paying taxes, Registering property, and Dealing with construction permits. 'Maintenance of law and order' was not one of its designated sub-indices.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Index" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q78",
+    "year": 2019,
+    "subject": "Environment",
+    "topic": "Laws",
+    "text": "In India, 'extended producer responsibility' was introduced as an important feature in which of the following?",
+    "options": [
+      "The Bio-medical Waste (Management and Handling) Rules, 1998",
+      "The Recycled Plastic (Manufacturing and Usage) Rules, 1999",
+      "The e-Waste (Management and Handling) Rules, 2011",
+      "The Food Safety and Standard Regulations, 2011"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Extended Producer Responsibility (EPR) was formally introduced in India as a foundational concept under the e-Waste (Management and Handling) Rules, 2011 to make manufacturers responsible for the end-of-life disposal of electronics.",
+    "tags": [
+      { "type": "subject", "label": "Environment" },
+      { "type": "topic", "label": "Laws" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q79",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Agriculture",
+    "text": "The economic cost of food grains to the Food Corporation of India is Minimum Support Price and bonus (if any) paid to the farmers plus",
+    "options": [
+      "transportation cost only",
+      "interest cost only",
+      "procurement incidentals and distribution cost",
+      "procurement incidentals and charges for godowns"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The economic cost for FCI comprises three main components: the pooled cost of grains (MSP + bonus), procurement incidentals, and the cost of distribution.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q80",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Social Capital",
+    "text": "In the context of any country, which one of the following would be considered as part of its social capital?",
+    "options": [
+      "The proportion of literates in the population",
+      "The stock of its buildings, other infrastructure and machines",
+      "The size of population in the working age group",
+      "The level of mutual trust and harmony in the society"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Social capital refers to the networks of relationships among people who live and work in a particular society, built on shared values, mutual trust, and harmony.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Social Capital" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q81",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Judiciary",
+    "text": "With reference to the Constitution of India, consider the following statements:\n1. No High Court shall have the jurisdiction to declare any central law to be constitutionally invalid.\n2. An amendment to the Constitution of India cannot be called into question by the Supreme Court of India.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 43rd Amendment restored the High Courts' power to declare central laws invalid. The Supreme Court can strike down constitutional amendments if they violate the 'Basic Structure' doctrine.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Judiciary" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q82",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Macroeconomics",
+    "text": "Consider the following statements:\n1. Purchasing Power Parity (PPP) exchange rates are calculated by comparing the prices of the same basket of goods and services in different countries.\n2. In terms of PPP dollars, India is the sixth largest economy in the world.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1 accurately defines PPP. Statement 2 is incorrect because India is the third-largest economy in the world in terms of Purchasing Power Parity.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Macroeconomics" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q83",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Agriculture",
+    "text": "With reference to the cultivation of Kharif crops in India in the last five years, consider the following statements:\n1. Area under rice cultivation is the highest.\n2. Area under the cultivation of jowar is more than that of oilseeds.\n3. Area of cotton cultivation is more than that of sugarcane.\n4. Area under sugarcane cultivation has steadily decreased.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 3 only",
+      "2, 3 and 4 only",
+      "2 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rice indeed covers the highest area. Cotton cultivation area exceeds sugarcane. The area for jowar is much lower than total oilseeds, and sugarcane acreage fluctuates (it does not 'steadily' decrease).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q84",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Agriculture",
+    "text": "Among the agricultural commodities imported by India, which one of the following accounts for the highest imports in terms of value in the last five years?",
+    "options": [
+      "Spices",
+      "Fresh fruits",
+      "Pulses",
+      "Vegetable oils"
+    ],
+    "correctAnswer": 3,
+    "explanation": "India is one of the world's largest importers of vegetable oils (primarily palm and soybean oil), which accounts for the highest import bill among agricultural commodities.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Agriculture" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q85",
+    "year": 2019,
+    "subject": "Polity",
+    "topic": "Political Theory",
+    "text": "In the context of polity, which one of the following would you accept as the most appropriate definition of liberty?",
+    "options": [
+      "Protection against the tyranny of political rulers",
+      "Absence of restraint",
+      "Opportunity to do whatever one likes",
+      "Opportunity to develop oneself fully"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In modern political theory, positive liberty is defined as providing the conditions and opportunities necessary for an individual to develop themselves fully and realize their potential.",
+    "tags": [
+      { "type": "subject", "label": "Polity" },
+      { "type": "topic", "label": "Political Theory" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q86",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Monetary Policy",
+    "text": "Which one of the following is not the most likely measure the Government/RBI takes to stop the slide of Indian rupee?",
+    "options": [
+      "Curbing imports of non-essential goods and promoting exports",
+      "Encouraging Indian borrowers to issue rupee denominated Masala Bonds",
+      "Easing conditions relating to external commercial borrowing",
+      "Following an expansionary monetary policy"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An expansionary monetary policy increases the money supply and lowers interest rates, which typically leads to inflation and capital flight, further sliding (depreciating) the currency.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Monetary Policy" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q87",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Regulatory Bodies",
+    "text": "Consider the following statements:\nThe Reserve Bank of India's recent directives relating to 'Storage of Payment System Data', popularly known as data diktat, command the payment system providers that\n1. they shall ensure that entire data relating to payment systems operated by them are stored in a system only in India\n2. they shall ensure that the systems are owned and operated by public sector enterprises\n3. they shall submit the consolidated system audit report to the Comptroller and Auditor General of India by the end of the calendar year\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The RBI mandate requires local data storage (Statement 1). It does not require systems to be owned by public sector enterprises, nor does it mandate submitting audits to the CAG (audits are submitted to the RBI).",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Regulatory Bodies" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q88",
+    "year": 2019,
+    "subject": "International Relations",
+    "topic": "Organizations",
+    "text": "Which of the following adopted a law on data protection and privacy for its citizens known as 'General Data Protection Regulation' in April 2016 and started implementation of it from 25th May, 2018?",
+    "options": [
+      "Australia",
+      "Canada",
+      "The European Union",
+      "The United States of America"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The General Data Protection Regulation (GDPR) is the landmark privacy and security law drafted and passed by the European Union.",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "Organizations" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q89",
+    "year": 2019,
+    "subject": "International Relations",
+    "topic": "Treaties",
+    "text": "Recently, India signed a deal known as 'Action Plan for Prioritization and Implementation of Cooperation Areas in the Nuclear Field' with which of the following countries?",
+    "options": [
+      "Japan",
+      "Russia",
+      "The United Kingdom",
+      "The United States of America"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This specific comprehensive action plan for nuclear cooperation was signed between India and Russia in October 2018.",
+    "tags": [
+      { "type": "subject", "label": "International Relations" },
+      { "type": "topic", "label": "Treaties" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q90",
+    "year": 2019,
+    "subject": "Economy",
+    "topic": "Monetary Policy",
+    "text": "The money multiplier in an economy increases with which one of the following?",
+    "options": [
+      "Increase in the cash reserve ratio",
+      "Increase in the banking habit of the population",
+      "Increase in the statutory liquidity ratio",
+      "Increase in the population of the country"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An increase in banking habits means people deposit more cash into banks instead of hoarding it. More deposits allow banks to lend more, accelerating the credit creation process and increasing the money multiplier.",
+    "tags": [
+      { "type": "subject", "label": "Economy" },
+      { "type": "topic", "label": "Monetary Policy" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q91",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "IT & Computers",
+    "text": "In the context of digital technologies for entertainment, consider the following statements:\n1. In Augmented Reality (AR), a simulated environment is created and the physical world is completely shut out.\n2. In Virtual Reality (VR), images generated from a computer are projected onto real-life objects or surroundings.\n3. AR allows individuals to be present in the world and improves the experience using the camera of smart-phone or PC.\n4. VR closes the world, and transposes an individual, providing complete immersion experience.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "3 and 4",
+      "1, 2 and 3",
+      "4 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statements 1 and 2 incorrectly swap the definitions of AR and VR. AR overlays digital elements on the real world (Statement 3), while VR completely immerses the user in a simulated world (Statement 4).",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "IT & Computers" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q92",
+    "year": 2019,
+    "subject": "Science",
+    "topic": "Evolution",
+    "text": "The word 'Denisovan' is sometimes mentioned in media in reference to",
+    "options": [
+      "fossils of a kind of dinosaurs",
+      "an early human species",
+      "a cave system found in North-East India",
+      "a geological period in the history of Indian subcontinent"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Denisovans are an extinct species or subspecies of archaic human that ranged across Asia, identified primarily from DNA extracted from fossils found in the Denisova Cave in Siberia.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Evolution" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q93",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "Biotechnology",
+    "text": "With reference to the recent developments in science, which one of the following statements is not correct?",
+    "options": [
+      "Functional chromosomes can be created by joining segments of DNA taken from cells of different species.",
+      "Pieces of artificial functional DNA can be created in laboratories.",
+      "A piece of DNA taken out from an animal cell can be made to replicate outside a living cell in a laboratory.",
+      "Cells taken out from plants and animals can be made to undergo cell division in laboratory petri dishes."
+    ],
+    "correctAnswer": 0,
+    "explanation": "While synthetic biology has advanced significantly, reliably creating entirely functional hybrid chromosomes from different species' DNA segments and having them operate complexly in a living cell was not an established capability.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "Biotechnology" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q94",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "IT & Computers",
+    "text": "Consider the following statements:\nA digital signature is\n1. an electronic record that identifies the certifying authority issuing it\n2. used to serve as a proof of identity of an individual to access information or server on Internet\n3. an electronic method of signing an electronic document and ensuring that the original content is unchanged\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A digital signature identifies the subscriber (the signer), not the certifying authority. It ensures message integrity and non-repudiation (Statement 3). It is not generally a standalone identity proof to access standard servers.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "IT & Computers" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q95",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "IT & Computers",
+    "text": "In the context of wearable technology, which of the following tasks is/are accomplished by wearable devices?\n1. Location identification of a person\n2. Sleep monitoring of a person\n3. Assisting the hearing impaired person\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Smartwatches and fitness trackers easily identify location via GPS and monitor sleep via accelerometers. Advanced wearable hearing aids assist the hearing impaired.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "IT & Computers" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q96",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "Biotechnology",
+    "text": "'RNA interference (RNAi)' technology has gained popularity in the last few years. Why?\n1. It is used in developing gene silencing therapies.\n2. It can be used in developing therapies for the treatment of cancer.\n3. It can be used to develop hormone replacement therapies.\n4. It can be used to produce crop plants that are resistant to viral pathogens.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1, 2 and 4",
+      "2 and 3",
+      "1 and 3",
+      "1 and 4 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "RNAi is a biological process where RNA molecules inhibit gene expression (gene silencing). This is useful for cancer therapies and creating virus-resistant crops. It is not used for hormone replacement.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "Biotechnology" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q97",
+    "year": 2019,
+    "subject": "Science",
+    "topic": "Space",
+    "text": "Recently, scientists observed the merger of giant 'blackholes' billions of light-years away from the Earth. What is the significance of this observation?",
+    "options": [
+      "'Higgs boson particles' were detected.",
+      "'Gravitational waves' were detected.",
+      "Possibility of inter-galactic space travel through 'wormhole' was confirmed.",
+      "It enabled the scientists to understand 'singularity'."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The merger of giant black holes provided the monumental first direct observation of 'Gravitational waves', detected by the LIGO observatories.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Space" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q98",
+    "year": 2019,
+    "subject": "Science",
+    "topic": "Health",
+    "text": "Which of the following are the reasons for the occurrence of multi-drug resistance in microbial pathogens in India?\n1. Genetic predisposition of some people\n2. Taking incorrect doses of antibiotics to cure diseases\n3. Using antibiotics in livestock farming\n4. Multiple chronic diseases in some people\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "2 and 3 only",
+      "1, 3 and 4",
+      "2, 3 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Antimicrobial resistance is driven by the misuse and overuse of antimicrobials in humans (incorrect doses) and animals (livestock farming). Genetic predisposition and chronic diseases do not cause the pathogens themselves to mutate into resistant strains.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Health" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q99",
+    "year": 2019,
+    "subject": "Technology",
+    "topic": "Biotechnology",
+    "text": "What is Cas9 protein that is often mentioned in news?",
+    "options": [
+      "A molecular scissors used in targeted gene editing",
+      "A biosensor used in the accurate detection of pathogens in patients",
+      "A gene that makes plants pest-resistant",
+      "A herbicidal substance synthesized in genetically modified crops"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cas9 (CRISPR associated protein 9) is an enzyme that acts like a pair of molecular scissors, capable of cutting strands of DNA, making it a critical tool in gene editing.",
+    "tags": [
+      { "type": "subject", "label": "Technology" },
+      { "type": "topic", "label": "Biotechnology" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  },
+  {
+    "id": "upsc-2019-q100",
+    "year": 2019,
+    "subject": "Science",
+    "topic": "Health",
+    "text": "Which one of the following statements is not correct?",
+    "options": [
+      "Hepatitis B virus is transmitted much like HIV.",
+      "Hepatitis B, unlike Hepatitis C, does not have a vaccine.",
+      "Globally, the number of people infected with Hepatitis B and C viruses are several times more than those infected with HIV.",
+      "Some of those infected with Hepatitis B and C viruses do not show the symptoms for many years."
+    ],
+    "correctAnswer": 1,
+    "explanation": "This statement is incorrect because a highly effective vaccine *does* exist for Hepatitis B, whereas currently, there is no vaccine available for Hepatitis C.",
+    "tags": [
+      { "type": "subject", "label": "Science" },
+      { "type": "topic", "label": "Health" },
+      { "type": "pyq", "label": "UPSC 2019" }
+    ]
+  }
+]

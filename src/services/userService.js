@@ -1,8 +1,26 @@
-import { doc, updateDoc, increment, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, updateDoc, increment, getDoc, setDoc, serverTimestamp, runTransaction } from 'firebase/firestore';
 import { db } from './firebase';
 import { DEFAULT_USER_STATS } from '../constants/data';
 import { getDefaultSyllabusProgress, calculateSyllabusProgress } from '../constants/syllabusMapping';
 import logger from '../utils/logger';
+
+/**
+ * Lookup: AI tag codes → human-readable subtopic names.
+ * Mirrors TAGGING_INSTRUCTION in functions/src/utils/promptHelpers.js exactly.
+ * Used to decode q.subjectCode + q.topicCode from AI-generated questions.
+ */
+const TOPIC_CODE_NAMES = {
+    'PC': { '01': 'Constitutional Framework', '02': 'Rights & Duties', '03': 'Union & State Executive', '04': 'Union & State Legislature', '05': 'Judiciary', '06': 'Local Government', '07': 'Federalism & Relations', '08': 'Bodies & Provisions' },
+    'IE': { '01': 'National Income & Accounting', '02': 'Fiscal Policy & Budgeting', '03': 'Monetary Policy & Banking', '04': 'External Sector', '05': 'Financial Markets', '06': 'Social Sector & Poverty', '07': 'Sectors of Economy', '08': 'International Organizations' },
+    'GE': { '01': 'Geomorphology', '02': 'Climatology', '03': 'Oceanography & Hydrology', '04': 'Human Geography', '05': 'Indian Physical Geography', '06': 'Biogeography', '07': 'Economic Geography', '08': 'Mapping' },
+    'ST': { '01': 'Space Technology & Astronomy', '02': 'Biotechnology & Health', '03': 'IT, Computing & Electronics', '04': 'General Science – Physics, Chemistry, Biology', '05': 'Defense Technology' },
+    'IR': { '01': 'Bilateral Relations', '02': 'Global Groupings', '03': 'Global Institutions' },
+    'AC': { '01': 'Indian Architecture', '02': 'Sculptures of India', '03': 'Indian Paintings', '04': 'Indian Music and Dance Forms', '05': 'Theatres, Puppetry, Calendars, Fairs & Festivals', '06': 'Literary Arts & Philosophy' },
+    'EN': { '01': 'Ecology Basics & Ecosystems', '02': 'Ecosystem Functions', '03': 'Terrestrial & Aquatic Biomes', '04': 'Biodiversity & Species', '05': 'Protected Area Network (PAN)', '06': 'Climate Change & Mitigation', '07': 'Pollution & Waste Management', '08': 'Environmental Governance & Acts' },
+    'AH': { '01': 'Pre-Historic & Indus Valley Civilization', '02': 'Vedic Culture & Religious Movements', '03': 'The Mauryan Empire', '04': 'Post-Mauryan & Sangam Age', '05': 'Gupta & Post-Gupta Era', '06': 'South Indian Kingdoms', '07': 'Ancient Art & Culture' },
+    'MH': { '01': 'Early Medieval India', '02': 'Rajput Era & Early Invasions', '03': 'Delhi Sultanate', '04': 'Bhakti & Sufi Movements', '05': 'Vijayanagar & Bahmani Empires', '06': 'Mughal Empire', '07': 'Maratha Empire', '08': 'Medieval Art & Architecture' },
+    'MO': { '01': 'Expansion of British Power', '02': 'British Policies & Admin', '03': 'Early Resistance & 1857', '04': 'Socio-Religious Reforms', '05': 'Early National Movement', '06': 'Gandhian Era & Mass Movements', '07': 'Constitutional Evolution', '08': 'Independence & Beyond' },
+};
 
 /**
  * Create or initialize a user profile in Firestore
@@ -112,17 +130,19 @@ const updateSyllabusProgress = async (uid, questions, userAnswers) => {
 };
 
 /**
- * The canonical UPSC subjects that the Knowledge Graph tracks.
- * All raw AI-generated topic tags are normalized to one of these.
+ * The canonical subjects that the Knowledge Graph tracks.
+ * Must match SUBJECTS in appConstants.js (excluding 'All Subjects').
  */
 const CANONICAL_TOPICS = [
-    'Polity',
-    'History',
-    'Art and Culture',
+    'Polity & Constitution',
+    'Indian Economy',
     'Geography',
-    'Economy',
+    'Science & Technology',
+    'International Relations',
+    'Art & Culture',
     'Environment',
-    'Science and Technology'
+    'Ancient & Medieval History',
+    'Modern History'
 ];
 
 /**
@@ -130,41 +150,53 @@ const CANONICAL_TOPICS = [
  * Short-circuit order matters: more specific keys first.
  */
 const TOPIC_KEYWORD_MAP = {
-    'Polity': [
+    'Polity & Constitution': [
         'polity', 'indian polity', 'constitution', 'constitutional', 'parliament', 'preamble',
         'fundamental', 'rights', 'directive', 'governor', 'president',
         'prime minister', 'judiciary', 'election', 'federal', 'union',
         'territory', 'amendment', 'article', 'schedule', 'panchayati',
         'municipal', 'local governance', 'parliamentary', 'governance'
     ],
-    'History': [
-        'history', 'ancient', 'medieval', 'harappan', 'indus', 'mughal', 'sultanate',
-        'vijayanagara', 'mauryan', 'gupta', 'chola', 'modern', 'revolt', 'colonial',
-        'freedom', 'gandhi', 'independence', 'british', 'maratha', '1857', 'nationalism'
+    'Ancient & Medieval History': [
+        'ancient', 'medieval', 'harappan', 'indus', 'vedic', 'mughal', 'sultanate',
+        'vijayanagara', 'mauryan', 'gupta', 'chola', 'rajput', 'maratha',
+        'bhakti', 'sufi', 'delhi sultanate', 'bahmani', 'ancient history', 'medieval history'
     ],
-    'Art and Culture': [
-        'art and culture', 'culture', 'art', 'architecture', 'heritage', 'dance', 'music',
-        'painting', 'literature', 'religion', 'philosophy', 'indian culture'
+    'Modern History': [
+        'modern', 'modern history', 'revolt', 'colonial', 'freedom', 'gandhi',
+        'independence', 'british', '1857', 'nationalism', 'socio-religious reform',
+        'congress', 'non-cooperation', 'civil disobedience', 'quit india'
+    ],
+    'Art & Culture': [
+        'art and culture', 'art & culture', 'culture', 'art', 'architecture', 'heritage',
+        'dance', 'music', 'painting', 'literature', 'religion', 'philosophy', 'indian culture',
+        'temple', 'sculpture', 'folk', 'classical'
     ],
     'Geography': [
         'geography', 'geomorphology', 'climate', 'monsoon', 'river',
         'mountain', 'plateau', 'ocean', 'earthquake', 'volcanic',
-        'indian geography', 'world geography'
+        'indian geography', 'world geography', 'mapping', 'soil', 'tides'
     ],
-    'Economy': [
-        'economy', 'economy of india', 'economic', 'fiscal', 'gdp', 'inflation', 'banking',
-        'finance', 'budget', 'monetary', 'rbi', 'market', 'planning',
-        'balance of payment', 'financial'
+    'Indian Economy': [
+        'economy', 'economy of india', 'indian economy', 'economic', 'fiscal', 'gdp',
+        'inflation', 'banking', 'finance', 'budget', 'monetary', 'rbi', 'market',
+        'planning', 'balance of payment', 'financial', 'gst', 'tax', 'trade'
     ],
     'Environment': [
         'environment', 'ecology', 'biodiversity', 'ecosystem', 'pollution',
-        'food security', 'sustainable', 'climate change', 'conservation', 'wildlife'
+        'food security', 'sustainable', 'climate change', 'conservation', 'wildlife',
+        'national park', 'wetland', 'biosphere', 'tiger reserve'
     ],
-    'Science and Technology': [
-        'science and technology', 'science', 'technology', 'biology', 'chemistry', 'physics',
-        'space', 'health', 'disease', 'nutrition', 'material', 'energy',
-        'nuclear', 'it', 'computer', 'biotech', 'nano', 'defence',
-        'innovation', 'research', 'isro', 'ai', 'robots'
+    'Science & Technology': [
+        'science and technology', 'science & technology', 'science', 'technology',
+        'biology', 'chemistry', 'physics', 'space', 'health', 'disease', 'nutrition',
+        'material', 'energy', 'nuclear', 'it', 'computer', 'biotech', 'nano',
+        'defence', 'innovation', 'research', 'isro', 'ai', 'robots'
+    ],
+    'International Relations': [
+        'international relations', 'bilateral', 'foreign policy', 'diplomatic',
+        'united nations', 'un', 'nato', 'g20', 'brics', 'saarc', 'asean',
+        'global groupings', 'global institutions', 'treaty', 'summit', 'world bank', 'imf'
     ]
 };
 
@@ -246,18 +278,44 @@ const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
         if (isCorrect) perf.subjects[canonical].correct += 1;
 
         // --- SUBTOPICS ---
-        // Try to find a more specific topic or subtopic
-        let specificTopicTag = q.tags?.find(t => t.type === 'topic' || t.type === 'subtopic')?.label || q.topic || q.subtopic;
-        if (!specificTopicTag || specificTopicTag === canonical) {
-            specificTopicTag = 'Core Concepts';
+        // Priority 1: decode AI tag codes (subjectCode + topicCode → e.g. "Rights & Duties")
+        //   This is the primary source for AI-generated questions since they carry codes not tags.
+        // Priority 2: explicit topic/subtopic tag in q.tags
+        // Priority 3: q.subtopic field
+        // Priority 4: q.topic field only if it differs from canonical (avoids same-as-subject noise)
+        // Priority 5: raw subject label if more specific than canonical
+        // No generic 'Core Concepts' fallback — if nothing meaningful, skip subtopic only.
+        let specificTopicTag =
+            (q.subjectCode && q.topicCode ? TOPIC_CODE_NAMES[q.subjectCode]?.[q.topicCode] : null) ||
+            q.tags?.find(t => t.type === 'topic' || t.type === 'subtopic')?.label ||
+            q.subtopic ||
+            null;
+
+        if (!specificTopicTag) {
+            // q.topic is often the test topic itself (same as canonical) — only use if it differs
+            const rawTopic = q.topic?.trim();
+            if (rawTopic && rawTopic.toLowerCase() !== canonical.toLowerCase()) {
+                specificTopicTag = rawTopic;
+            }
         }
 
-        if (!perf.subjects[canonical].subtopics[specificTopicTag]) {
-            perf.subjects[canonical].subtopics[specificTopicTag] = { total: 0, attempted: 0, correct: 0 };
+        if (!specificTopicTag) {
+            // Last resort: raw subject label (e.g. "Indian Geography" vs canonical "Geography")
+            const rawLabel = topicTag?.trim();
+            specificTopicTag = (rawLabel && rawLabel.toLowerCase() !== canonical.toLowerCase())
+                ? rawLabel
+                : null;
         }
-        perf.subjects[canonical].subtopics[specificTopicTag].total += 1;
-        if (isAttempted) perf.subjects[canonical].subtopics[specificTopicTag].attempted += 1;
-        if (isCorrect) perf.subjects[canonical].subtopics[specificTopicTag].correct += 1;
+
+        // Only write subtopic if we have a meaningful tag (does NOT early-return — Resources/Types still count below)
+        if (specificTopicTag) {
+            if (!perf.subjects[canonical].subtopics[specificTopicTag]) {
+                perf.subjects[canonical].subtopics[specificTopicTag] = { total: 0, attempted: 0, correct: 0 };
+            }
+            perf.subjects[canonical].subtopics[specificTopicTag].total += 1;
+            if (isAttempted) perf.subjects[canonical].subtopics[specificTopicTag].attempted += 1;
+            if (isCorrect) perf.subjects[canonical].subtopics[specificTopicTag].correct += 1;
+        }
 
         // --- 3. Resources --- // Smart infer strategy since exact DB tagging might not exist natively
         let resource = 'Standard Books';

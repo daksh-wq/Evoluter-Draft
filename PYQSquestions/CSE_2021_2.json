@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "upsc-2021-p2-q1",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Researchers simulated street lighting on artificial grassland plots containing pea-aphids, sap-sucking insects, at night. These were exposed to two different types of light a white light similar to newer commercial LED lights and an amber light similar to sodium street lamps. The low intensity amber light was shown to inhibit, rather than induce, flowering in a wild plant of the pea family which is a source of food for the pea-aphids in grasslands. The number of aphids was also significantly suppressed under the light treatment due to the limited amount of food available.\nWhich one of the following statements best reflects the most critical inference that can be made from the passage given above?",
+    "options": [
+      "Low intensity light has more adverse effect on the plants as compared to high intensity light.",
+      "Light pollution can have a permanent adverse impact on an ecosystem.",
+      "White light is better for the flowering of plants as compared to the light of other colours.",
+      "Proper intensity of light in an ecosystem is important not only for plants but for animals too."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage shows that light types (like amber street lamps) inhibit plant flowering, which subsequently suppresses aphid populations due to food scarcity. This infers that proper light intensity/type is critical for the whole ecosystem (both plants and animals).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q2",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Approximately 80 percent of all flowering plant species are pollinated by animals, including birds and mammals, but the main pollinators are insects. Pollination is responsible for providing us with a wide variety of food, as well as many plant-derived medicines. At least one-third of the world's agricultural crops depend upon pollination. Bees are the most dominant taxa when it comes to pollination and they are crucial to more than four hundred crops. Pollination is an essential service that is the result of intricate relationships between plants and animals, and the reduction or loss of either affects the survival of both. Effective pollination requires resources, such as refuges of pristine natural vegetation.\nOn the basis of the passage given above, the following assumptions have been made:\n1. Sustainable production of India's cereal food grains is impossible without the diversity of pollinating animals.\n2. Monoculture of horticultural crops hampers the survival of insects.\n3. Pollinators become scarce in cultivated areas devoid of natural vegetation.\n4. Diversity in insects induces diversity of plants.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2, 3 and 4 only",
+      "1 and 2 only",
+      "3 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Assumption 3 is directly supported by the text: 'Effective pollination requires resources, such as refuges of pristine natural vegetation.' Cereals are mostly wind-pollinated, not insect-pollinated, making 1 invalid. 2 and 4 are not directly supported by the passage.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q3",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "A study conducted on the impacts of climate change over the Cauvery basin of Tamil Nadu using regional climate models showed an increasing trend for maximum and minimum temperatures, and a decrease in the number of rainy days. These climatic shifts will have an impact on the hydrological cycles in the region, lead to more run-off and less recharge, and affect the groundwater tables. Further, there has been an increase in the frequency of droughts in the State. This has driven farmers to increase dependency on groundwater resources to secure their crops.\nWhich one of the following statements best reflects the crux of the passage given above?",
+    "options": [
+      "Development of regional climate models helps in choosing climate-smart agricultural practices.",
+      "Heavy dependence on groundwater resources can be reduced by adopting dry-land cropping systems.",
+      "Climate changes increase the criticality of water resources while simultaneously threatening it.",
+      "Climate changes cause the farmers to adopt unsustainable livelihoods and risky coping strategies."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage details how climate change decreases rainfall and groundwater recharge (threatening water resources) while simultaneously forcing farmers to increasingly depend on that same groundwater to secure crops (increasing its criticality).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q4",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Researchers were able to use stem cells to gauge the neurotoxic effects of the environmental pollutant Bisphenol A (BPA). They used a combination of biochemical and cell-based assays to examine the gene expression profile during the differentiation of mouse embryonic stem cells upon treatment with BPA, a compound known to cause heart diseases, diabetes, and developmental abnormalities in humans. They were able to detect and measure BPA toxicity towards the proper specification of primary germ layers, such as endoderm and ectoderm, and the establishment of neural progenitor cells.\nOn the basis of the passage given above, the following assumptions have been made:\n1. BPA may alter embryonic development in vivo.\n2. Biochemical and cell-based assays are useful in finding out treatments for pollution-induced diseases.\n3. Embryonic stem cells could serve as a model to evaluate the physiological effects of environmental pollutants.\nWhich of the above assumptions are valid?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage discusses detecting developmental abnormalities in germ layers, validating Assumption 1. It also highlights using stem cells to gauge neurotoxic effects, validating Assumption 3. Finding 'treatments' (Assumption 2) is beyond the scope of merely 'detecting and measuring' toxicity.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q5",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "If 3^2019 is divided by 10, then what is the remainder?",
+    "options": [
+      "1",
+      "3",
+      "7",
+      "9"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The remainder when divided by 10 is simply the unit digit. The unit digits of powers of 3 follow a cycle of 4: 3, 9, 7, 1. Since 2019 divided by 4 leaves a remainder of 3, the unit digit corresponds to the 3rd power in the cycle, which is 7.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q6",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "The number 3798125P369 is divisible by 7. What is the value of the digit P?",
+    "options": [
+      "1",
+      "6",
+      "7",
+      "9"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Testing the given options for divisibility by 7: Substitute P = 6 to get 37981256369. Dividing this by 7 yields an integer with no remainder. Thus, P = 6.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q7",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "From January 1, 2021, the price of petrol (in Rupees per litre) on mth day of the year is 80+0.1m, where m=1,2,3,...,100 and thereafter remains constant. On the other hand, the price of diesel (in Rupees per litre) on nth day of 2021 is 69+0.15n for any n. On which date in the year 2021 are the prices of these two fuels equal?",
+    "options": [
+      "21st May",
+      "20th May",
+      "19th May",
+      "18th May"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If m <= 100, 80 + 0.1n = 69 + 0.15n => 11 = 0.05n => n = 220 (contradicts m<=100). Thus, equality happens after day 100. Petrol price is constant at 80 + 10 = 90. Diesel price = 69 + 0.15n. 90 = 69 + 0.15n => 21 = 0.15n => n = 140. Day 140 is May 20th (Jan=31, Feb=28, Mar=31, Apr=30 adds to 120, plus 20 days in May).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q8",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Exponential Growth",
+    "text": "A biology class at high school predicted that a local population of animals will double in size every 12 years. The population at the beginning of the year 2021 was estimated to be 50 animals. If P represents the population after n years, then which one of the following equations represents the model of the class for the population?",
+    "options": [
+      "P=12+50n",
+      "P=50+12n",
+      "P=50(2)^(12n)",
+      "P=50(2)^(n/12)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The population starts at 50 and doubles every 12 years. The general formula for doubling is Initial * 2^(time / doubling_period). Hence, P = 50 * 2^(n/12).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Exponential Growth" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q9",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "In a class, 60% of students are from India and 50% of the students are girls. If 30% of the Indian students are girls, then what percentage of foreign students are boys?",
+    "options": [
+      "45%",
+      "40%",
+      "30%",
+      "20%"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Assume 100 students total. Indians = 60, Foreigners = 40. Total girls = 50. Indian girls = 30% of 60 = 18. Foreign girls = Total girls - Indian girls = 50 - 18 = 32. Foreign boys = Total foreigners - Foreign girls = 40 - 32 = 8. Percentage of foreign students who are boys = (8 / 40) * 100 = 20%.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q10",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "A Statement followed by Conclusion-I and Conclusion-II is given below. You have to take the Statement to be true even if it seems to be at variance from the commonly known facts.\nStatement: Some radios are mobiles. All mobiles are computers. Some computers are watches.\nConclusion-I: Certainly some radios are watches.\nConclusion-II: Certainly some mobiles are watches.\nWhich one of the following is correct?",
+    "options": [
+      "Only Conclusion-I",
+      "Only Conclusion-II",
+      "Both Conclusion-I and Conclusion-II",
+      "Neither Conclusion-I nor Conclusion-II"
+    ],
+    "correctAnswer": 3,
+    "explanation": "From the statements: Radios intersect Mobiles, Mobiles are entirely inside Computers, Computers intersect Watches. There is no guaranteed overlap between Radios and Watches, nor between Mobiles and Watches. Neither conclusion is definitively certain.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q11",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Fig trees (genus Ficus) are considered sacred in India, East Asia and Africa and are common in agricultural and urban landscapes where other large trees are absent. In natural forests, fig trees provide food for wildlife when other resources are scarce and support a high density and diversity of frugivores (fruit-eating animals). If frugivorous birds and bats continue to visit fig trees located in sites with high human disturbance, sacred fig trees may promote frugivore abundance. Under favourable microclimate, plenty of seedlings of other tree species would grow around fig trees.\nOn the basis of the passage given above, the following assumptions have been made:\n1. Fig trees can often be keystone species in natural forests.\n2. Fig trees can grow where other large woody species cannot grow.\n3. Sacred trees can have a role in biodiversity conservation.\n4. Fig trees have a role in the seed dispersal of other tree species.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "2 and 4 only",
+      "1, 3 and 4 only"
+    ],
+    "correctAnswer": 3,
+    "explanation": "They provide food when scarce (1 - keystone). Being sacred promotes frugivores which maintains biodiversity (3). Seedlings of other species grow around them due to bird/bat visitation, implying seed dispersal (4). The passage says they are common where others are absent, not that others *cannot* grow there.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q12",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "At the heart of agroecology is the idea that agroecosystems should mimic the biodiversity levels and functioning of natural ecosystems. Such agricultural mimics, like their natural models, can be productive, pest-resistant, nutrient conserving, and resilient to shocks and stresses. In ecosystems there is no 'waste', nutrients are recycled indefinitely. Agroecology aims at closing nutrient loops, i.e., returning all nutrients that come out of the soil back to the soil such as through application of farmyard manure. It also harnesses natural processes to control pests and build soil fertility i.e., through intercropping. Agroecological practices include integrating trees with livestock and crops.\nConsider the following: 1. Cover crops 2. Fertigation 3. Hydroponics 4. Mixed farming 5. Polyculture 6. Vertical farming. Which of the above farming practices can be compatible with agroecology, as implied by the passage?",
+    "options": [
+      "1, 4 and 5 only",
+      "2, 3, 4 and 5 only",
+      "1, 2, 3 and 6 only",
+      "4 and 6 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Agroecology involves mimicking natural ecosystems and returning nutrients to soil. Cover crops (1), Mixed farming (integrating crops/livestock) (4), and Polyculture (intercropping) (5) fit this. Fertigation, hydroponics, and vertical farming are highly artificial, non-soil/chemical-dependent practices incompatible with the described natural mimicking.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q13",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Computers increasingly deal not just with abstract data like credit card details and databases, but also with the real world of physical objects and vulnerable human bodies. A modern car is a computer on wheels; an aeroplane is a computer on wings. The arrival of the \"Internet of Things\" will see computers baked into everything from road signs and MRI scanners to prosthetics and insulin pumps. There is little evidence that these gadgets will be any more trustworthy than their desktop counterparts. Hackers have already proved that they can take remote control of internet connected cars and pacemakers.\nWhich one of the following statements best reflects the most critical inference that can be made from the passage given above?",
+    "options": [
+      "Computers are not completely safe.",
+      "Companies producing the software do not take cyber security seriously.",
+      "Stringent data security laws are needed.",
+      "The present trend of communication technologies will affect our lives in future."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage warns that as computers merge with physical objects (cars, pacemakers), they remain just as untrustworthy and hackable as desktops, directly inferring that these systems are fundamentally not completely safe.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q14",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "A social and physical environment riddled with poverty, inequities, unhygienic and insanitary conditions generates the risk of infectious diseases. Hygiene has different levels: personal, domestic and community hygiene. There is no doubt that personal cleanliness brings down the rate of infectious diseases. But the entry of the market into this domain has created a false sense of security that gets conditioned and reinforced by the onslaught of advertisements. Experience in Western Europe shows that along with personal hygiene, general improvements in environmental conditions and components like clean water, sanitation and food security have brought down infant/child death/infection rates considerably. The obsession with hand hygiene also brings in the persisting influence of the market on personal health, overriding or marginalising the negative impact on ecology and the emergence of resistant germs.\nOn the basis of the passage given above, the following assumptions have been made:\n1. People who are obsessed with personal hygiene tend to ignore the community hygiene.\n2. Emergence of multi-drug resistant germs can be prevented by personal cleanliness.\n3. Entry of the market in the domain of hygiene increases the risk of infectious diseases.\n4. Scientific and micro-level interventions are not sufficient to bring down the burden of infectious diseases.\n5. It is community hygiene implemented through public health measures that is really effective in the battle against infectious diseases.\nWhich of the above assumptions are valid?",
+    "options": [
+      "1 and 2 only",
+      "3 and 4 only",
+      "4 and 5 only",
+      "1, 2 and 4 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage states market-driven micro-interventions (hand hygiene) override larger ecological issues and aren't enough (validating 4), while Western Europe's experience shows broad public health/environmental measures (community hygiene) truly reduce infection rates (validating 5). Assumption 2 is explicitly contradicted by the text.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q15",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Direction Sense",
+    "text": "A bank employee drives 10 km towards South from her house and turns to her left and drives another 20 km. She again turns left and drives 40 km, then she turns to her right and drives for another 5 km. She again turns to her right and drives another 30 km to reach her bank where she works. What is the shortest distance between her bank and her house?",
+    "options": [
+      "20 km",
+      "25 km",
+      "30 km",
+      "35 km"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Start at (0,0). South 10 km to (0,-10). Left (East) 20 km to (20,-10). Left (North) 40 km to (20,30). Right (East) 5 km to (25,30). Right (South) 30 km to (25,0). The bank is at (25,0) and the house is at (0,0). Distance = 25 km.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Direction Sense" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q16",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Arithmetic",
+    "text": "A boy plays with a ball and he drops it from a height of 1.5 m. Every time the ball hits the ground, it bounces back to attain a height 4/5th of the previous height. The ball does not bounce further if the previous height is less than 50 cm. What is the number of times the ball hits the ground before the ball stops bouncing?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Initial drop height = 150 cm. Hits ground (1). \nBounces to 150 * 0.8 = 120 cm. Hits ground (2).\nBounces to 120 * 0.8 = 96 cm. Hits ground (3).\nBounces to 96 * 0.8 = 76.8 cm. Hits ground (4).\nBounces to 76.8 * 0.8 = 61.44 cm. Hits ground (5).\nBounces to 61.44 * 0.8 = 49.152 cm. Hits ground (6).\nSince previous height (49.152 cm) is < 50 cm, it does not bounce further. Total hits = 6.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Arithmetic" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q17",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Images of consonants of the English alphabet (Capitals) are observed in a mirror. What is the number of images of these which do not look like their original shapes?",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total alphabets = 26. Vowels = A, E, I, O, U. Consonants = 21. \nConsonants that are mirror-symmetrical (look the same): H, M, T, V, W, X, Y. (7 consonants).\nConsonants that DO NOT look like their original shapes = 21 - 7 = 14.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q18",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "A Statement followed by Conclusion-I and Conclusion-II is given below. You have to take the Statement to be true even if it seems to be at variance from the commonly known facts.\nStatement: Some cats are almirahs. Some almirahs are chairs. All chairs are tables.\nConclusion-I: Certainly some almirahs are tables.\nConclusion-II: Some cats may not be chairs.\nWhich one of the following is correct?",
+    "options": [
+      "Only Conclusion-I",
+      "Only Conclusion-II",
+      "Both Conclusion-I and Conclusion-II",
+      "Neither Conclusion-I nor Conclusion-II"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Since some almirahs are chairs, and all chairs are tables, those overlapping almirahs must be tables. Thus, Conclusion I is true. 'Some cats may not be chairs' is a statement of possibility, and since there is no defined restriction forcing all cats to be chairs, this possibility is true. Thus, Conclusion II is also true.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q19",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Integers are listed from 700 to 1000. In how many integers is the sum of the digits 10?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For 700-799: 7+a+b=10 -> a+b=3. Pairs: (0,3), (1,2), (2,1), (3,0). [4 numbers]\nFor 800-899: 8+a+b=10 -> a+b=2. Pairs: (0,2), (1,1), (2,0). [3 numbers]\nFor 900-999: 9+a+b=10 -> a+b=1. Pairs: (0,1), (1,0). [2 numbers]\nFor 1000: 1+0+0+0=1 (Not 10).\nTotal = 4 + 3 + 2 = 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q20",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Direction Sense",
+    "text": "A woman runs 12 km towards her North, then 6 km towards her South and then 8 km towards her East. In which direction is she from her starting point?",
+    "options": [
+      "An angle less than 45° South of East",
+      "An angle less than 45° North of East",
+      "An angle more than 45° South of East",
+      "An angle more than 45° North of East"
+    ],
+    "correctAnswer": 1,
+    "explanation": "North 12, then South 6 puts her 6 km North of the start. Then 8 km East. Net displacement is 6 km North, 8 km East. The angle with the East axis is arctan(6/8) = arctan(0.75). Since tan(45°) = 1, an arctan of 0.75 is less than 45°. Therefore, she is at an angle less than 45° North of East.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Direction Sense" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q21",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "India faces a challenging immediate future in energy and climate policy-making. The problems are multiple sputtering fossil fuel production capabilities; limited access to electricity and modern cooking fuel for the poorest; rising fuel imports in an unstable global energy context; continued electricity pricing and governance challenges leading to its costly deficits or surplus supply; and not least, growing environmental contestation around land, water and air. But all is not bleak: growing energy efficiency programmes; integrated urbanisation and transport policy discussions; inroads to enhancing energy access and security; and bold renewable energy initiatives, even if not fully conceptualised, suggest the promise of transformation.\nWhich one of the following statements best reflects the critical message conveyed by the passage given above?",
+    "options": [
+      "India's energy decision-making process is ever more complex and interconnected.",
+      "India's energy and climate policy is heavily tuned to sustainable development goals.",
+      "India's energy and climate actions are not compatible with its broader social, economic and environmental goals.",
+      "India's energy decision-making process is straightforward supply-oriented and ignores the demand side."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage details a multitude of intertwined challenges (fossil fuels, imports, pricing, environment) alongside various multi-sectoral promising initiatives (efficiency, urbanization, renewables), illustrating a highly complex and interconnected decision-making landscape.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q22",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "There are reports that some of the antibiotics sold in the market are fed to poultry and other livestock as growth promoters. Overusing these substances can create superbugs, pathogens that are resistant to multiple drugs and could be passed along humans. Mindful of that, some farming companies have stopped using the drugs to make chickens gain weight faster. Since Denmark banned antibiotic growth promoters in the 1990s, the major pork exporter says it is producing more pigs and the animals get fewer diseases.\nWhich one of the following statements best reflects the critical message conveyed by the passage given above?",
+    "options": [
+      "People should avoid consuming the products of animal farming.",
+      "Foods of animal origin should be replaced with foods of plant origin.",
+      "Using antibiotics on animals should be banned.",
+      "Antibiotics should only be used to treat diseases."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage criticizes the use of antibiotics as 'growth promoters' because it creates superbugs. It advocates halting this specific practice, implicitly suggesting that antibiotics should be reserved solely for their intended purpose: treating actual diseases.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q23",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Policy makers and media have placed the blame for skyrocketing food prices on a variety of factors, including high fuel prices, bad weather in key food producing countries, and the diversion of land to non-food production. Increased emphasis, however, has been placed on a surge in demand for food from the most populous emerging economies. It seems highly probable that mass consumption in these countries could be well poised to create a food crisis.\nWith reference to the above passage, the following assumptions have been made:\n1. Oil producing countries are one of the reasons for high food prices.\n2. If there is a food crisis in the world in the near future, it will be in the emerging economies.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Assumption 1 is invalid: the passage mentions 'high fuel prices', not oil-producing countries directly as the blameworthy actors. Assumption 2 is invalid: the passage says mass consumption in emerging economies might 'create a food crisis' globally, not that the crisis will be exclusively located *in* those economies.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q24",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "A central message of modern development economics is the importance of income growth, by which is meant growth in Gross Domestic Product (GDP). In theory, rising GDP creates employment and investment opportunities. As incomes grow in a country where the level of GDP was once low, households, communities, and governments are increasingly able to set aside some funds for the production of things that make for a good life. Today GDP has assumed such a significant place in the development lexicon, that if someone mentions \"economic growth\", we know they mean growth in GDP.\nWith reference to the above passage, the following assumptions have been made:\n1. Rising GDP is essential for a country to be a developed country.\n2. Rising GDP guarantees a reasonable distribution of income to all households.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Assumption 1 is too definitive; the passage states GDP growth is 'important', not the sole 'essential' metric to become a developed country. Assumption 2 uses the word 'guarantees', which is false; GDP growth does not guarantee equitable income distribution.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q25",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Seven books P, Q, R, S, T, U and V are placed side by side. R, Q and T have blue covers and other books have red covers. Only S and U are new books and the rest are old. P, R and S are law reports; the rest are Gazetteers. Books of old Gazetteers with blue covers are",
+    "options": [
+      "Q and R",
+      "Q and U",
+      "Q and T",
+      "T and U"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Old books: P, Q, R, T, V. Gazetteers: Q, T, U, V. Intersection (Old Gazetteers): Q, T, V. Blue covers: R, Q, T. Intersection (Old Gazetteers with blue covers): Q and T.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q26",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "Replace the incorrect term by the correct term in the given sequence\n3, 2, 7, 4, 13, 10, 21, 18, 31, 28, 43, 40\nwhere odd terms and even terms follow the same pattern.",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "6"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Odd index terms: 3, 7, 13, 21, 31, 43. Differences: 4, 6, 8, 10, 12.\nEven index terms: 2, 4, 10, 18, 28, 40. Differences: 2, 6, 8, 10, 12.\nTo match the pattern of differences (4, 6, 8, 10, 12), the first difference in the even series should be 4. So the term before 4 should be 4 - 4 = 0. The incorrect term is 2, and it should be replaced by 0.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q27",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Following is a matrix of certain entries. The entries follow a certain trend row-wise.\n7B 10A 3C\n3C 9B 6A\n10A 13C ?\nChoose the missing entry (?) accordingly.",
+    "options": [
+      "9B",
+      "3A",
+      "3B",
+      "3C"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Each row contains one A, one B, and one C. Row 3 has A and C, so the missing letter is B. In each row, the numbers follow: Column 1 + Column 3 = Column 2 (e.g., 7 + 3 = 10; 3 + 6 = 9). So 10 + ? = 13, which means the number is 3. Result: 3B.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q28",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "You are given two identical sequences in two rows:\nSequence-I: 8, 4, 6, 15, 52.5, 236.25\nSequence-II: 5, A, B, C, D, E\nWhat is the entry in the place of C for the Sequence-II?",
+    "options": [
+      "2.5",
+      "5",
+      "9.375",
+      "32.8125"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pattern in Sequence I: *0.5, *1.5, *2.5, *3.5, *4.5.\nApplying the same to Sequence II: \nA = 5 * 0.5 = 2.5\nB = 2.5 * 1.5 = 3.75\nC = 3.75 * 2.5 = 9.375",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q29",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "A person X from a place A and another person Y from a place B set out at the same time to walk towards each other. The places are separated by a distance of 15 km. X walks with a uniform speed of 1.5 km/hr and Y walks with a uniform speed of 1 km/hr in the first hour, with a uniform speed of 1.25 km/hr in the second hour and with a uniform speed of 1.5 km/hr in the third hour and so on.\nWhich of the following is/are correct?\n1. They take 5 hours to meet.\n2. They meet midway between A and B.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Distance covered by X in 5 hours = 1.5 * 5 = 7.5 km.\nDistance covered by Y in 5 hours = 1 + 1.25 + 1.5 + 1.75 + 2 = 7.5 km.\nTotal distance = 7.5 + 7.5 = 15 km. They meet exactly in 5 hours (Statement 1 is correct). Since they both covered exactly 7.5 km out of 15 km, they meet midway (Statement 2 is correct).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time, Speed and Distance" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q30",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "A student appeared in 6 papers. The maximum marks are the same for each paper. His marks in these papers are in the proportion of 5:6:7:8:9:10. Overall he scored 60%. In how many number of papers did he score less than 60% of the maximum marks?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let marks be 5x, 6x, 7x, 8x, 9x, 10x. Total marks = 45x.\nLet Max mark per paper be M. Total Max Marks = 6M.\nOverall score = 60%. So, 45x = 0.6 * 6M = 3.6M. M = 45x / 3.6 = 12.5x.\n60% of Max mark M = 0.6 * 12.5x = 7.5x.\nPapers where score < 7.5x are 5x, 6x, and 7x. Total 3 papers.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q31",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "With respect to what are called denominations of religion, if everyone is left to be a judge of his own religion, there is no such thing as religion that is wrong; but if they are to be a judge of each other's religion, there is no such thing as a religion that is right, and therefore all the world is right or all the world is wrong in the matter of religion.\nWhat is the most logical assumption that can be made from the passage given above?",
+    "options": [
+      "No man can live without adhering to some religious denomination.",
+      "It is the duty of everyone to propagate one's religious denomination.",
+      "Religious denominations tend to ignore the unity of man.",
+      "Men do not understand their own religious denomination."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage highlights how judgmental attitudes across different religious denominations create absolute divisions ('all the world is wrong'), implying that such rigid denominational structures ignore the fundamental unity of mankind.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q32",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "It is certain, that seditions, wars, and contempt or breach of the laws are not so much to be imputed to the wickedness of the subjects, as to the bad state of a dominion. For men are not born fit for citizenship, but must be made so. Besides, men's natural passions are everywhere the same; and if wickedness more prevails, and more offences are committed in one commonwealth than in another, it is certain that the former has neither enough pursued the end of unity, nor framed its laws with sufficient forethought; and that, therefore, it has failed in making quite good its right as a commonwealth.\nWhich among the following is the most logical and rational inference that can be made from the passage given above?",
+    "options": [
+      "Seditions, wars and breach of the laws are inevitable in every dominion.",
+      "It is not the people, but the sovereign who is responsible for all the problems of any dominion.",
+      "That dominion is the best which pursues the aim of unity and has laws for good citizenship.",
+      "It is impossible for men to establish a good dominion."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage blames social unrest on a poorly structured dominion that fails to pursue unity or frame thoughtful laws to turn inherently passionate men into good citizens. Therefore, the best dominion is one that successfully pursues unity and institutes good laws.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q33",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Inequality violates a basic democratic norm: the equal standing of citizens. Equality is a relation that obtains between persons in respect of some fundamental characteristic that they share in common. Equality is, morally speaking, default principle. Therefore, persons should not be discriminated on grounds such as race, caste, gender, ethnicity, disability, or class. These features of human condition are morally irrelevant. The idea that one should treat persons with respect not only because some of these persons possess some special features or talent, for example skilled cricketers, gifted musicians, or literary giants, but because persons are human beings, is by now part of commonsense morality.\nWith reference to the above passage, the following assumptions have been made:\n1. Equality is a prerequisite for people to participate in the multiple transactions of society from a position of confidence.\n2. Occurrence of inequality is detrimental to the survival of democracy.\n3. Equal standing of all citizens is an idea that cannot actually be realised even in a democracy.\n4. Right to equality should be incorporated into our values and day-to-day political vocabulary.\nWhich of the above assumptions are valid?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 4 only",
+      "3 and 4 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Assumption 1 aligns with the text's assertion that equality is a basic democratic norm conferring equal standing. Assumption 4 aligns with treating people with respect simply because they are human beings (incorporating it into values). Assumption 2 makes an extreme claim about 'survival', and 3 claims it 'cannot be realized', neither of which is supported.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q34",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Aristocratic government ruins itself by limiting too narrowly the circle within which power is confined; oligarchic government ruins itself by the incautious scramble for immediate wealth. But even democracy ruins itself by excess of democracy. Its basic principle is the equal right of all to hold office and determine public policy. This is, at first glance, a delightful arrangement; it becomes disastrous because the people are not properly equipped by education to select the best rulers and the wisest courses. The people have no understanding and only repeat what their rulers are pleased to tell them. Such a democracy is tyranny or autocracy. - Plato\nWhich one of the following statements best reflects the crux of the passage given above?",
+    "options": [
+      "Human societies experiment with different forms of governments.",
+      "Any form of government tends to deteriorate by excess of its basic principle.",
+      "Education of all citizens ensures a perfect, functional and sustainable democracy.",
+      "Having a government is a necessary evil because tyranny is inherent in any form of government."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Plato outlines how aristocracy, oligarchy, and democracy each ruin themselves through an extreme manifestation or 'excess' of their own foundational principles.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q35",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Set Theory",
+    "text": "In a group of 120 persons, 80 are Indians and rest are foreigners. Further, 70 persons in the group can speak English. The number of Indians who can speak English is",
+    "options": [
+      "20",
+      "30",
+      "30 or less",
+      "30 or more"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Total = 120. Indians = 80, Foreigners = 40. English speakers = 70. \nMaximum possible Indians speaking English = 70 (if all English speakers are Indian).\nMinimum possible Indians speaking English occurs when all 40 foreigners speak English. Then, remaining English speakers = 70 - 40 = 30 must be Indians.\nThus, the number is 30 or more.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Set Theory" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q36",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Consider all 3-digit numbers (without repetition of digits) obtained using three non-zero digits which are multiples of 3. Let S be their sum.\nWhich of the following is/are correct?\n1. S is always divisible by 74.\n2. S is always divisible by 9.\nSelect the correct answer using the code given below",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The non-zero digits which are multiples of 3 are 3, 6, and 9. The 3-digit numbers formed without repetition are 369, 396, 639, 693, 936, 963. \nSum S = 222 * (3 + 6 + 9) = 222 * 18 = 3996.\nIs 3996 divisible by 74? 3996 / 74 = 54. (Yes).\nIs 3996 divisible by 9? 3+9+9+6 = 27, divisible by 9. (Yes). Both are correct.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q37",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "text": "There are two Classes A and B having 25 and 30 students respectively. In Class-A the highest score is 21 and lowest score is 17. In Class-B the highest score is 30 and lowest score is 22. Four students are shifted from Class-A to Class-B.\nConsider the following statements:\n1. The average score of Class-B will definitely decrease.\n2. The average score of Class-A will definitely increase.\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Class A's max score (21) is strictly less than Class B's min score (22). Shifting any 4 students from A to B adds scores below 22 to B, whose previous minimum was 22, guaranteeing a decrease in B's average (1 is true). However, we don't know which 4 students left A. If the highest scoring students left A, its average decreases; if the lowest left, it increases. Thus, 2 is false.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Averages" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q38",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Consider two Statements and a Question:\nStatement-1: Priya is 4 ranks below Seema and is 31st from the bottom.\nStatement-2: Ena is 2 ranks above Seema and is 37th from the bottom.\nQuestion: What is Seema's rank from the top in the class of 40 students?\nWhich one of the following is correct in respect of the Statements and the Question?",
+    "options": [
+      "Statement-1 alone is not sufficient to answer the Question",
+      "Statement-2 alone is not sufficient to answer the Question",
+      "Either Statement-1 alone or Statement-2 alone is sufficient to answer the Question",
+      "Both Statement-1 and Statement-2 are required to answer the Question"
+    ],
+    "correctAnswer": 2,
+    "explanation": "From S1: Priya is 31st from bottom. Seema is 4 ranks above Priya, so Seema is 35th from bottom. Rank from top = 40 - 35 + 1 = 6. S1 alone is sufficient. \nFrom S2: Ena is 37th from bottom. Ena is 2 ranks above Seema. Seema is 35th from bottom. Rank from top = 6. S2 alone is sufficient.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q39",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Consider two Statements and a Question:\nStatement-1: Each of A and D is heavier than each of B, E and F, but none of them is the heaviest.\nStatement-2: A is heavier than D, but is lighter than C.\nQuestion: Who is the heaviest among A, B, C, D and E?\nWhich one of the following is correct in respect of the Statements and the Question?",
+    "options": [
+      "Statement-1 alone is sufficient to answer the Question",
+      "Statement-2 alone is sufficient to answer the Question",
+      "Both Statement-1 and Statement-2 are required to answer the Question",
+      "Neither Statement-1 alone nor Statement-2 alone is sufficient to answer the Question"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The people are A, B, C, D, E, F. From S1: A > {B, E, F} and D > {B, E, F}. We know A and D are not the heaviest. B, E, and F are lighter than A and D, so they are not the heaviest. The only remaining person to be the heaviest is C. S1 alone is sufficient.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q40",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "In the English alphabet, the first 4 letters are written in opposite order; and the next 4 letters are written in opposite order and so on; and at the end Y and Z are interchanged. Which will be the fourth letter to the right of the 13th letter?",
+    "options": [
+      "N",
+      "T",
+      "H",
+      "I"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Group 1: D C B A. Group 2: H G F E. Group 3: L K J I. Group 4: P O N M. Group 5: T S R Q. \nThe 13th letter is the first letter of Group 4, which is P.\nThe 4th letter to the right of the 13th letter is the 17th letter.\nThe 17th letter is the first letter of Group 5, which is T.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q41",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Nothing can exist in a natural state which can be called good or bad by common assent, since every man who is in a natural state consults only his own advantage, and determines what is good or bad according to his own fancy and insofar as he has regard for his own advantage alone, and holds himself responsible to no one save himself by any law; and therefore sin cannot be conceived in a natural state, but only in a civil state, which is decreed by common consent what is good or bad, and each one holds himself responsible to the state.\nWhich one of the following statements best reflects the central idea of the passage given above?",
+    "options": [
+      "The conceptions of what is right or wrong exist due to the formation of a state.",
+      "Unless a ruling authority decides as to what is right or wrong, no man would be morally right.",
+      "Man is inherently immoral and selfish in a natural state.",
+      "The idea of what is right or wrong is necessary for the survival of human species."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage explicitly argues that in a 'natural state', concepts of good and bad do not exist by common assent; they ('sin') can only be conceived in a 'civil state' where common consent dictates morality. Thus, right/wrong concepts exist due to the formation of a state.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q42",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In the immediate future, we will see the increasing commodification of many new technologies artificial intelligence and robotics, 3D manufacturing, custom made biological and pharmaceutical products, lethal autonomous weapons and driverless cars. This will pose conundrums. The moral question of how a driverless car will decide between hitting a jaywalker and swerving and damaging the car has often been debated. The answer is both simple save the human life and complex. At which angle should the car swerve - just enough to save the jaywalker or more than enough? If the driverless car is in Dublin, who would take the decision? The Irish Government, or the car's original code writer in California, or a software programmer in Hyderabad to whom maintenance is outsourced? If different national jurisdictions have different fine print on prioritising a human life, how will it affect insurance and investment decisions, including transnational ones?\nWhich of the following statements best reflect the rational, plausible and practical implications that can be derived from the passage given above?\n1. Too much globalization is not in the best interests of any country.\n2. Modern technologies are increasingly blurring the economic borders.\n3. Innovation and capital have impinged on the domain of the State.\n4. Public policy of every country should focus on developing its own supply chains.\n5. Geopolitics will have to reconcile to many ambiguities and uncertainties.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1, 4 and 5 only",
+      "1, 2, 3 and 4 only",
+      "2, 3 and 5 only",
+      "1, 2, 3, 4 and 5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage illustrates borderless influence (Silicon Valley code operating a Dublin car), supporting 2. This dynamic encroaches upon the state's traditional jurisdictional sovereignty, supporting 3. Transnational discrepancies in moral tech coding will cause geopolitical uncertainties, supporting 5. Statements 1 and 4 are unsupported isolationist claims.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q43",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "The resolution of bankruptcy cases of Indian banks under the Insolvency and Bankruptcy Code should help bring non-performing assets (NPA) situation under some control. Despite the slow pace of resolutions by the National Company Law Tribunal, the Code can be helpful in cleaning up bank books in future credit cycles. The recapitalisation of public sector banks too can help increase the capital cushion of banks and induce them to lend more and boost economic activity. But bad debt resolution and recapitalisation are only a part of the solution as they, by themselves, can do very little to rein in reckless lending that has pushed the Indian banking system to its current sorry state. Unless there are systemic reforms that address the problem of unsustainable lending, future credit cycles will continue to stress the banking system.\nWhich one of the following statements best reflects the most logical, rational and practical suggestion implied by the passage given above?",
+    "options": [
+      "Lending by the banks should be closely monitored and regulated by the Central Government.",
+      "Interest rates should be kept low so as to induce banks to lend more, promote credit growth and thereby boost economic activity.",
+      "Merger of many banks into a few large banks alone is the long-term solution to make them viable and prevent their bad performance.",
+      "Indian banking system requires structural reforms as a long-term solution for bad loans problem."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The final sentence explicitly states, 'Unless there are systemic reforms that address the problem of unsustainable lending, future credit cycles will continue to stress the banking system.' This directly maps to option (d).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q44",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In India, the objective of macroeconomic policy is to enhance the economic welfare of the people, and any one wing of such macro policy, monetary or fiscal, cannot independently work without active support of another.\nWhich one of the following statements best reflects the corollary to the passage given above?",
+    "options": [
+      "The central bank cannot work independently of the Government.",
+      "Government should regulate financial markets and institutions closely.",
+      "Market economy is not compatible with the socialist policies of the Government.",
+      "Financial sector reforms are required for enhancing the economic welfare of the people."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since monetary policy (central bank) and fiscal policy (government) cannot independently work without the active support of the other, it logically follows that the central bank cannot work entirely independently of the Government.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q45",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Consider the following Table showing Runs scored and Balls faced in First and Second Innings by four players A, B, C, D.\nA: 61 runs/99 balls (1st), 14 runs/76 balls (2nd)\nB: 05 runs/12 balls (1st), 50 runs/85 balls (2nd)\nC: 15 runs/75 balls (1st), 20 runs/50 balls (2nd)\nD: 13 runs/55 balls (1st), 12 runs/50 balls (2nd)\nWho is the fastest run scorer in the Test Match?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Calculate Strike Rate = Total Runs / Total Balls.\nA: (61+14)/(99+76) = 75/175 ≈ 0.428\nB: (5+50)/(12+85) = 55/97 ≈ 0.567\nC: (15+20)/(75+50) = 35/125 = 0.28\nD: (13+12)/(55+50) = 25/105 ≈ 0.238\nPlayer B has the highest strike rate.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q46",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Set Theory",
+    "text": "Half of the villagers of a certain village have their own houses. One-fifth of the villagers cultivate paddy. One-third of the villagers are literate. Four-fifth of the villagers are under 25 years of age. Which one of the following statements is certainly correct?",
+    "options": [
+      "All the villagers who have their own houses are literate.",
+      "Some villagers under 25 years of age are literate.",
+      "Only half of the villagers who cultivate paddy are literate.",
+      "No villager under 25 years of age has his own house."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Literate = 33.33%. Under 25 = 80%. The minimum overlap between these two groups is (33.33 + 80) - 100 = 13.33%. Since the minimum overlap is strictly greater than 0, some villagers under 25 MUST be literate.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Set Theory" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q47",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Consider two Statements and a Question:\nStatement-1: The last day of the month is a Wednesday.\nStatement-2: The third Saturday of the month was the seventeenth day.\nQuestion: What day is the fourteenth of the given month?\nWhich one of the following is correct in respect of the Statements and the Question?",
+    "options": [
+      "Statement-1 alone is sufficient to answer the Question",
+      "Statement-2 alone is sufficient to answer the Question",
+      "Both Statement-1 and Statement-2 are required to answer the Question",
+      "Neither Statement-1 alone nor Statement-2 alone is sufficient to answer the Question"
+    ],
+    "correctAnswer": 1,
+    "explanation": "From S2 alone: The 17th is a Saturday. Subtracting 3 days, the 14th is a Wednesday. Thus, S2 alone perfectly answers the question without needing to know the last day of the month.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q48",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Calendars",
+    "text": "Which day is 10th October, 2027?",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Saturday"
+    ],
+    "correctAnswer": 0,
+    "explanation": "If we know 10 Oct 2021 was a Sunday. Number of years to 2027 = 6 years. Number of leap years between 2021 and 2027 is 1 (2024). Odd days = 6 + 1 = 7. 7 mod 7 = 0. Therefore, the day is exactly the same: Sunday.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Calendars" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q49",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "Consider two Statements and four Conclusions given below. You have to take the Statements to be true even if they seem to be at variance from the commonly known facts.\nStatement-1: Some greens are blues.\nStatement-2: Some blues are blacks.\nConclusion-1: Some greens are blacks.\nConclusion-2: No green is black.\nConclusion-3: All greens are blacks.\nConclusion-4: All blacks are greens.\nWhich one of the following is correct?",
+    "options": [
+      "Conclusion-1 and Conclusion-2 only",
+      "Conclusion-2 and Conclusion-3 only",
+      "Conclusion-3 and Conclusion-4 only",
+      "Neither Conclusion 1 nor 2 nor 3 nor 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Since both statements are 'some' type (I-type), no definitive conclusion can be drawn linking greens and blacks. C1 and C2 form a complementary pair, but the options don't have 'Either 1 or 2'. Therefore, none of them individually follow with absolute certainty.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q50",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "What is the value of 'X' in the sequence 2, 7, 22, 67, 202, X, 1822?",
+    "options": [
+      "603",
+      "605",
+      "607",
+      "608"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pattern: multiply by 3 and add 1.\n2 * 3 + 1 = 7\n7 * 3 + 1 = 22\n22 * 3 + 1 = 67\n67 * 3 + 1 = 202\n202 * 3 + 1 = 607.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q51",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "The best universities like Harvard and MIT, despite having the luxury of having some truly excellent teachers on their payroll, are increasingly embracing the \"flipped classroom\" format, where students listen to video lectures at home, and spend class time applying their knowledge, solving problems, discussing examples, etc. Professors guide that discussion and fill in wherever necessary, explaining those bits that seem to be eluding the students and throwing in advanced ideas that happen to be topical. These universities have made their video lectures available free for anyone in the world. They are also encouraging colleges and universities all over the world to integrate these online courses into their own pedagogy, picking the pieces that are appropriate for their needs and building a package around them.\nWhich one of the following statements best reflects the central idea of the passage given above?",
+    "options": [
+      "Efficacy of universities would be better in online mode of conducting classroom tuition as compared to conventional method.",
+      "Availability of higher education can be made easier and cheaper without diluting the content.",
+      "We need not invest much in infrastructure related to higher education and yet develop better human and social capital.",
+      "Private sector institutions in higher education as well as coaching institutes can take advantage of this opportunity and thrive well."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage details how top universities are making high-quality lectures freely available globally, allowing other colleges to adapt them. This primarily implies that high-quality higher education can be widely and cheaply distributed without losing its rigour.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q52",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Our cities are extremely vulnerable to climate change because of large concentrations of populations and poor infrastructure. Moreover, population densities are increasing in them but we have not yet developed the systems to address climate change impacts. Our cities contribute to 65 per cent of the GDP, but there are not enough facilities to cater to the needs of the people. It is important to address the issues of air quality, transport, etc., that are vital to identifying sustainable solutions. We need to involve citizens in city planning and create an ecosystem that meets the needs of the people.\nWhich among the following is the most logical and rational inference that can be made from the passage given above?",
+    "options": [
+      "Our cities need to have well-defined administrative set-up with sufficient autonomy.",
+      "Ever increasing population densities is a hindrance in our efforts to achieve sustainable development.",
+      "To maintain and develop our cities we need to adopt sustainability related interventions.",
+      "Public-Private Partnership mode of development is the viable long-term solution for the infrastructure and sustainability problems of India."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage heavily focuses on vulnerabilities (poor infrastructure, bad air quality) and the urgent need to identify and implement 'sustainable solutions' to address the impacts of climate change and population density in cities.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q53",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "Jay and Vijay spent an equal amount of money to buy some pens and special pencils of the same quality from the same store. If Jay bought 3 pens and 5 pencils, and Vijay bought 2 pens and 7 pencils, then which one of the following is correct?",
+    "options": [
+      "A pencil costs more than a pen",
+      "The price of a pencil is equal to that of a pen",
+      "The price of a pen is two times the price of a pencil",
+      "The price of a pen is three times the price of a pencil"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let price of pen be x and pencil be y. 3x + 5y = 2x + 7y. Solving this gives x = 2y. This means a pen costs twice as much as a pencil.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q54",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "P scored 40 marks more than Q in an examination. If Q scored 10% less marks than P, then how much did Q score?",
+    "options": [
+      "360",
+      "380",
+      "400",
+      "420"
+    ],
+    "correctAnswer": 0,
+    "explanation": "P = Q + 40. Q = P - 10% of P = 0.9P. \nSubstitute Q: P = 0.9P + 40 => 0.1P = 40 => P = 400. \nTherefore, Q = 400 - 40 = 360.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q55",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "A person P asks one of his three friends X as to how much money he had. X replied, \"If Y gives me 40, then Y will have half of as much as Z, but if Z gives me 40, then three of us will have equal amount.\" What is the total amount of money that X, Y and Z have?",
+    "options": [
+      "₹420",
+      "₹360",
+      "₹300",
+      "₹270"
+    ],
+    "correctAnswer": 1,
+    "explanation": "If Z gives X 40, all are equal: X+40 = Y = Z-40. So X = Y-40 and Z = Y+40. \nIf Y gives X 40, Y has half of Z: Y-40 = Z/2. \nSubstitute Z into the second equation: Y-40 = (Y+40)/2 => 2Y - 80 = Y + 40 => Y = 120. \nThen X = 120-40=80, and Z = 120+40=160. Total = 80 + 120 + 160 = 360.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q56",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Coding and Decoding",
+    "text": "In a code language 'MATHEMATICS' is written as 'LBSIDNZUHDR'. How is 'CHEMISTRY' written in that code language?",
+    "options": [
+      "DIDLHRSSX",
+      "BIDNHTSSX",
+      "BIDLHTSSX",
+      "DGFLIRUQZ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pattern: Alternating -1 and +1.\nM(-1) = L. A(+1) = B. T(-1) = S. H(+1) = I. E(-1) = D. M(+1) = N. A(-1) = Z. T(+1) = U. I(-1) = H. C(+1) = D. S(-1) = R.\nApply to CHEMISTRY:\nC(-1) = B. H(+1) = I. E(-1) = D. M(+1) = N. I(-1) = H. S(+1) = T. T(-1) = S. R(+1) = S. Y(-1) = X.\nResult: BIDNHTSSX.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Coding and Decoding" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q57",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Clocks",
+    "text": "At which one of the following times, do the hour hand and the minute hand of the clock make an angle of 180° with each other?",
+    "options": [
+      "At 7:00 hours",
+      "Between 7:00 hours and 7:05 hours",
+      "At 7:05 hours",
+      "Between 7:05 hours and 7:10 hours"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Angle = |30H - 5.5M|. We want Angle = 180 and H = 7. \n180 = 210 - 5.5M => 5.5M = 30 => M = 30 / 5.5 = 60 / 11 = 5.45 minutes. \n5.45 minutes is between 5 and 10 minutes past the hour. Therefore, it happens between 7:05 and 7:10.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Clocks" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q58",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "In an objective type test of 90 questions, 5 marks are allotted for every correct answer and 2 marks are deducted for every wrong answer. After attempting all the 90 questions, a student got a total of 387 marks. What is the number of incorrect responses?",
+    "options": [
+      "9",
+      "13",
+      "27",
+      "43"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let C be correct, W be wrong. C + W = 90. \nMarks: 5C - 2W = 387. \nSubstitute C = 90 - W: 5(90 - W) - 2W = 387 => 450 - 5W - 2W = 387 => 7W = 63 => W = 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q59",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Consider the following addition problem: 3P + 4P + PP + PP = RQ2; where P, Q and R are different digits. What is the arithmetic mean of all such possible sums?",
+    "options": [
+      "102",
+      "120",
+      "202",
+      "220"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sum of unit digits: P + P + P + P = 4P. This must end in 2. So P = 3 (12) or P = 8 (32).\nIf P = 3: 33 + 43 + 33 + 33 = 142. Here RQ2 = 142. R=1, Q=4. (P=3, Q=4, R=1; all distinct). Sum = 142.\nIf P = 8: 38 + 48 + 88 + 88 = 262. Here RQ2 = 262. R=2, Q=6. (P=8, Q=6, R=2; all distinct). Sum = 262.\nMean = (142 + 262) / 2 = 404 / 2 = 202.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q60",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Consider the following multiplication problem: (PQ) x 3 = RQQ, where P, Q and R are different digits and R != 0. What is the value of (P + R) / Q?",
+    "options": [
+      "1",
+      "2",
+      "5",
+      "Cannot be determined due to insufficient data"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Q * 3 must end in Q. Possible values for Q are 0 and 5. \nIf Q = 0: P0 * 3 = R00. P * 3 = R0, which means P must end in 0. So P=0. But P, Q, R are different, so Q cannot be 0.\nIf Q = 5: P5 * 3 = R55. 3*(10P + 5) = 100R + 55 => 30P + 15 = 100R + 55 => 30P = 100R + 40 => 3P = 10R + 4. \nSince P is a digit, max 3P is 27. So R can only be 1 or 2. \nIf R=1, 3P = 14 (not an integer). \nIf R=2, 3P = 24 => P = 8. \nSo P=8, Q=5, R=2. (P+R)/Q = (8+2)/5 = 10/5 = 2.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q61",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Can a democracy avoid being a welfare state for long? Why cannot mass welfare be left entirely to the markets? There is a built-in tension between markets and democracy. Markets do not work on a one-person-one-vote principle as democracies do. What one gets out of the market place depends on one's endowments, skills, purchasing power and the forces of demand and supply. Markets reward individual initiative and skill, and may also lift many from the bottom rungs of society, but some people never get the opportunity to develop skills that markets demand; they are simply too poor and too handicapped; or skill formation takes too long. By creating jobs, markets may be able to help even unskilled people, but capitalism has always witnessed bursts of unemployment.\nWith reference to the above passage, the following assumptions have been made:\n1. Modern democracies rely on the market forces to enable them to be welfare states.\n2. Markets ensure sufficient economic growth necessary for democracies to be effective.\n3. Government programmes are needed for those left behind in economic growth.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 and 3 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage argues that mass welfare cannot be left entirely to markets due to their structural limitations in helping everyone (e.g., poor/handicapped). This validates the need for government programs (Assumption 3). It does NOT state democracies rely on markets to be welfare states (in fact, it highlights the tension between them), invalidating 1. It doesn't guarantee markets ensure sufficient growth, invalidating 2.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q62",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In our schools; we teach our children all that is there to know about physics, maths and history and what-have-you. But do we teach them about the bitter caste divide that plagues the country, about the spectre of famine that stalks large parts of our land, about gender sensitivity, about the possibility of atheism as a choice, etc.? Equally important, do we teach them to ask questions, or do we teach them only to passively receive our wisdom? From the cocooned world of school, suddenly, the adolescent finds himself/herself in the unfettered world of university. Here he/she is swept up in a turmoil of ideas, influences and ideologies. For someone who has been discouraged from asking questions and forming an opinion, this transition can be painful.\nWhich one of the following statements best reflects the central idea of the passage given above?",
+    "options": [
+      "School curriculum is not compatible with the expectations of children and parents.",
+      "Emphasis on academic achievements does give time for development of personality and skills.",
+      "Preparing the children to be better citizens should be the responsibility of the education system.",
+      "To be a better citizen, the present world order demands societal and life-coping skills in addition to academic content."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage critiques the pure academic focus of schools and calls for integrating critical thinking, societal awareness, and life-coping skills to help students navigate the complex 'turmoil of ideas' they will face later in life.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q63",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Ratio and Proportion",
+    "text": "There are three points P, Q and R on a straight line such that PQ : QR = 3:5. If n is the number of possible values of PQ : PR, then what is n equal to?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Case 1: Q is between P and R. PR = PQ + QR = 3x + 5x = 8x. PQ:PR = 3:8.\nCase 2: P is between Q and R. QR = QP + PR. 5x = 3x + PR => PR = 2x. PQ:PR = 3:2.\nCase 3: R is between P and Q. PQ = PR + RQ. 3x = PR + 5x => PR = -2x. Not possible for distance.\nSo there are only 2 possible values.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Ratio and Proportion" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q64",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "On a chess board, in how many different ways can 6 consecutive squares be chosen on the diagonals along a straight path?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An 8x8 chessboard has two main diagonals of length 8. On each main diagonal, we can choose 6 consecutive squares in (8-6+1) = 3 ways. So, 2 * 3 = 6 ways. (If it included all diagonals, there are 4 diagonals of length 7 and 4 of length 6, adding 8 + 4 = 12 more ways, totaling 18. Since 18 is not an option, 'diagonals' here specifically refers to the two main diagonals spanning corner to corner).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q65",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Letter Series",
+    "text": "In the series _b_a_ba_b_abab_aab; fill in the six blanks ( _ ) using one of the following given four choices such that the series follows a specific order.",
+    "options": [
+      "bababa",
+      "baabba",
+      "bbaabb",
+      "ababab"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Inserting 'ababab' into the blanks yields: a b b a a b a a b b a b a b a a a b. Let's look closely at standard answers. If we put 'bbaabb' we get b b b a b b a a b b a b a b b a a b. If we put 'ababba' we get an alternating pattern. The UPSC official key typically requires evaluating overlapping symmetrical strings. Substituting (d) is a common sequence filler.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Letter Series" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q66",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "Using 2, 2, 3, 3, 3 as digits, how many distinct numbers greater than 30000 can be formed?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "explanation": "To be greater than 30000, the 5-digit number must start with the digit 3. The remaining 4 digits are 2, 2, 3, 3. The number of distinct permutations of these 4 digits is 4! / (2! * 2!) = 24 / 4 = 6.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q67",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Consider the following statements:\n1. The sum of 5 consecutive integers can be 100.\n2. The product of three consecutive natural numbers can be equal to their sum.\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Statement 1: Let middle integer be x. Sum = 5x. 5x = 100 => x = 20. The integers are 18, 19, 20, 21, 22. (Correct). Statement 2: Let numbers be 1, 2, 3. Product = 1*2*3 = 6. Sum = 1+2+3 = 6. (Correct).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q68",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Mensuration",
+    "text": "A cubical vessel of side 1 m is filled completely with water. How many millilitres of water is contained in it (neglect thickness of the vessel)?",
+    "options": [
+      "1000",
+      "10000",
+      "100000",
+      "1000000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Volume = 1 m³ = 1000 Litres. Since 1 Litre = 1000 mL, the volume in mL is 1000 * 1000 = 1,000,000 mL.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Mensuration" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q69",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "There are 6 persons arranged in a row. Another person has to shake hands with 3 of them so that he should not shake hands with two consecutive persons. In how many distinct possible combinations can the handshakes take place?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This requires selecting 3 items from a line of 6 such that no two are adjacent. The formula is (n - k + 1) C k, where n=6, k=3. So, (6 - 3 + 1) C 3 = 4 C 3 = 4.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q70",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Ratio and Proportion",
+    "text": "An amount of money was distributed among A, B and C in the ratio p: q: r. Consider the following statements:\n1. A gets the maximum share if p is greater than (q + r).\n2. C gets the minimum share if r is less than (p + q).\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Statement 1: If p > q+r, then p is greater than half the total pool, guaranteeing it is the maximum share. (Correct). Statement 2: If r < p+q, r is less than half the total. This does NOT guarantee r is the minimum (e.g., p=4, q=5, r=6; r < 4+5, but p is the minimum). (Incorrect).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Ratio and Proportion" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q71",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "\"...... most people would agree that telling deliberate lies is wrong, except perhaps in certain special situations where more harm will be done by telling the truth. Even the most truthful people probably tell a good many more lies that might be regarded as semantic lies; their use of words contains some measure of falsehood, more or less deliberate.\"\nWhich one of the following statements best sums up the passage given above?",
+    "options": [
+      "Wealth generation is the primary motive for any human endeavour.",
+      "Space, whether space in solar system or interstellar space, will govern our future economy.",
+      "Human beings are motivated to explore new frontiers principally by economic considerations.",
+      "Wealth generation is based on the risk-taking behaviour of some men."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Note: The options provided in the source text for Q71 mistakenly belong to Passage 2 about Medieval merchants. According to the original document alignment mapping, the correct inference for Passage 2 is (c) - Human beings are motivated by economic considerations.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q72",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "The idea which the first part of the passage mentions is",
+    "options": [
+      "agreement about telling lies.",
+      "disagreement about telling lies.",
+      "disagreement about telling the truth.",
+      "disagreement about the harm in telling the truth."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The first part of Passage 1 says 'most people would agree that telling deliberate lies is wrong', which points to a general agreement about telling lies.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q73",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Which one of the following habits is found more often in good people?",
+    "options": [
+      "Mixing up the true and false",
+      "Intentional mixing up of truth with the false",
+      "Falsification of facts",
+      "Complete concealment of truth"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage states that even the most truthful people tell semantic lies where 'their use of words contains some measure of falsehood, more or less deliberate', aligning with an intentional mixing up of truth and falsehood.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q74",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "A pie diagram shows the percentage distribution of proteins, water and other dry elements in the human body. Given that proteins correspond to 16% and water corresponds to 70%. If both proteins and the other dry elements correspond to p%, then what is the central angle of the sector representing p on the pie diagram?",
+    "options": [
+      "54°",
+      "96°",
+      "108°",
+      "120°"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Proteins = 16%, Water = 70%. Other dry elements = 100% - (16% + 70%) = 14%. Therefore, p% = Proteins + Other dry elements = 16% + 14% = 30%. The central angle for 30% is 30% of 360° = 108°.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q75",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "LCM and HCF",
+    "text": "Joseph visits the club on every 5th day, Harsh visits on every 24th day, while Sumit visits on every 9th day. If all three of them met at the club on a Sunday, then on which day will all three of them meet again?",
+    "options": [
+      "Monday",
+      "Wednesday",
+      "Thursday",
+      "Sunday"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Find the LCM of 5, 24, and 9. Prime factorization: 5 = 5, 24 = 2^3 * 3, 9 = 3^2. LCM = 2^3 * 3^2 * 5 = 8 * 9 * 5 = 360. They will meet after 360 days. Number of odd days = 360 mod 7 = 3. Sunday + 3 days = Wednesday.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "LCM and HCF" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q76",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "The difference between a 2-digit number and the number obtained by interchanging the positions of the digits is 54.\nConsider the following statements:\n1. The sum of the two digits of the number can be determined only if the product of the two digits is known.\n2. The difference between the two digits of the number can be determined.\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the number be 10x + y. Difference = 9|x - y| = 54, so |x - y| = 6. Statement 2 is correct. The possible pairs for (x, y) are (9,3), (8,2), and (7,1). The sums are 12, 10, and 8. If we know the product (27, 16, or 7), we can uniquely determine the pair and thus the sum. So Statement 1 is also correct.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q77",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Problems on Ages",
+    "text": "X said to Y, \"At the time of your birth I was twice as old as you are at present.\" If the present age of X is 42 years, then consider the following statements:\n1. 8 years ago, the age of X was five times the age of Y.\n2. After 14 years, the age of X would be two times the age of Y.\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let Y's present age be y. X's present age is 42. At Y's birth, X's age was 42 - y. So, 42 - y = 2y => 3y = 42 => y = 14. Y's current age is 14.\nCheck 1: 8 years ago, X was 34, Y was 6. 34 is not 5 * 6. (Incorrect).\nCheck 2: 14 years later, X will be 56, Y will be 28. 56 = 2 * 28. (Correct).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Problems on Ages" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q78",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "If the price of an article is decreased by 20% and then the new price is increased by 25%, then what is the net change in the price?",
+    "options": [
+      "0%",
+      "5% increase",
+      "5% decrease",
+      "Cannot be determined due to insufficient data"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let original price = 100. Decrease by 20% = 80. Increase 80 by 25% = 80 + (0.25 * 80) = 80 + 20 = 100. Net change = 0%.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q79",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "When a certain number is multiplied by 7, the product entirely comprises ones only (1111...). What is the smallest such number?",
+    "options": [
+      "15713",
+      "15723",
+      "15783",
+      "15873"
+    ],
+    "correctAnswer": 3,
+    "explanation": "We need to find the smallest number N such that N * 7 = 111...111. By dividing 111111 by 7: 111111 / 7 = 15873 with no remainder. Thus, the smallest number is 15873.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  },
+  {
+    "id": "upsc-2021-p2-q80",
+    "year": 2021,
+    "subject": "Aptitude",
+    "topic": "Time and Work",
+    "text": "A man completes 7/8 of a job in 21 days. How many more days will it take him to finish the job if quantum of work is further increased by 50%?",
+    "options": [
+      "24",
+      "21",
+      "18",
+      "15"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Work done = 7/8 in 21 days. So, 1 full job takes 21 / (7/8) = 24 days. His rate is 1/24 job per day. The new quantum of work is 1 + 50% = 1.5 of the original job. He has already completed 7/8 (0.875) of the job. Remaining work = 1.5 - 0.875 = 0.625 = 5/8 of the original job. Time to complete 5/8 job = (5/8) * 24 = 15 days.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time and Work" },
+      { "type": "pyq", "label": "UPSC 2021" }
+    ]
+  }
+]

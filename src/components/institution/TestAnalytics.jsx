@@ -196,22 +196,99 @@ const TestAnalytics = () => {
                                         </span>
                                     </div>
                                     <div className="mb-4">
-                                        {q.text
-                                            .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
-                                            .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
-                                            .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Da-d])\.\s)/g)
-                                            .map((part, i) => {
-                                                const trimmed = part.trim();
-                                                const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(trimmed);
+                                        {(() => {
+                                            const parts = q.text
+                                                .replace(/([a-z.?!])\s+(?=(?:\d{1,2}|[A-Da-d])\.\s)/gi, '$1\n')
+                                                .replace(/([a-z.?'")])\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\b)/gi, '$1\n')
+                                                .split(/\n|(?=(?:^|\s)(?:\d{1,2}|[A-Da-d])\.\s)/g)
+                                                .map(p => p.trim())
+                                                .filter(Boolean);
 
-                                                if (!trimmed) return null;
+                                            const rawChunks = [];
+                                            let currentStmtGroup = [];
 
-                                                return (
-                                                    <div key={i} className={`mb-2 ${isStatement ? 'pl-3 text-slate-700 font-medium bg-slate-50/50 p-2 rounded-lg border-l-2 border-slate-300 text-sm' : 'font-medium text-slate-800'}`}>
-                                                        {trimmed}
-                                                    </div>
-                                                );
-                                            })}
+                                            const flushCurrentStmts = () => {
+                                                if (currentStmtGroup.length > 0) {
+                                                    rawChunks.push({ type: 'statements', items: currentStmtGroup });
+                                                    currentStmtGroup = [];
+                                                }
+                                            };
+
+                                            parts.forEach(p => {
+                                                const isStatement = /^(?:\d{1,2}|[A-Da-d])\./.test(p);
+                                                if (isStatement) {
+                                                    currentStmtGroup.push(p);
+                                                } else {
+                                                    flushCurrentStmts();
+                                                    rawChunks.push({ type: 'text', content: p });
+                                                }
+                                            });
+                                            flushCurrentStmts();
+
+                                            const blocks = [];
+                                            for (let i = 0; i < rawChunks.length; i++) {
+                                                const chunk = rawChunks[i];
+
+                                                if (chunk.type === 'text' && /^\s*List[-\s]?(?:I|1)\s*:?\s*$/i.test(chunk.content)) {
+                                                    if (
+                                                        i + 3 < rawChunks.length &&
+                                                        rawChunks[i + 1].type === 'statements' &&
+                                                        rawChunks[i + 2].type === 'text' && /^\s*List[-\s]?(?:II|2)\s*:?\s*$/i.test(rawChunks[i + 2].content) &&
+                                                        rawChunks[i + 3].type === 'statements'
+                                                    ) {
+                                                        blocks.push(
+                                                            <div key={`match-${i}`} className="mb-4 w-full grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-50/50 p-3 rounded-lg border border-slate-100">
+                                                                <div>
+                                                                    <div className="font-bold text-slate-800 mb-2 ml-1">{chunk.content}</div>
+                                                                    <div className="flex flex-col gap-2">
+                                                                        {rawChunks[i + 1].items.map((stmt, idx) => (
+                                                                            <div key={idx} className="pl-3 text-slate-700 font-medium bg-white p-2 rounded-md border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full shadow-sm">
+                                                                                <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Da-d])\./)[0]}</span>
+                                                                                <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Da-d])\.\s*/, '')}</span>
+                                                                            </div>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="font-bold text-slate-800 mb-2 ml-1">{rawChunks[i + 2].content}</div>
+                                                                    <div className="flex flex-col gap-2">
+                                                                        {rawChunks[i + 3].items.map((stmt, idx) => (
+                                                                            <div key={idx} className="pl-3 text-slate-700 font-medium bg-white p-2 rounded-md border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full shadow-sm">
+                                                                                <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Da-d])\./)[0]}</span>
+                                                                                <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Da-d])\.\s*/, '')}</span>
+                                                                            </div>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                        i += 3;
+                                                        continue;
+                                                    }
+                                                }
+
+                                                if (chunk.type === 'statements') {
+                                                    const isShort4 = chunk.items.length === 4 && !chunk.items.some(s => s.split(' ').length > 12);
+                                                    blocks.push(
+                                                        <div key={`group-${i}`} className={`mb-2 w-full grid gap-2 ${isShort4 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                                                            {chunk.items.map((stmt, idx) => (
+                                                                <div key={idx} className="pl-3 text-slate-700 font-medium bg-slate-50/50 p-2 rounded-lg border-l-2 border-slate-300 text-sm flex gap-2 items-start h-full">
+                                                                    <span className="shrink-0 font-bold text-slate-500">{stmt.match(/^(?:\d{1,2}|[A-Da-d])\./)[0]}</span>
+                                                                    <span className="flex-1">{stmt.replace(/^(?:\d{1,2}|[A-Da-d])\.\s*/, '')}</span>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    );
+                                                } else {
+                                                    blocks.push(
+                                                        <div key={`p-${i}`} className="mb-2 font-medium text-slate-800">
+                                                            {chunk.content}
+                                                        </div>
+                                                    );
+                                                }
+                                            }
+                                            return blocks;
+                                        })()}
                                     </div>
                                     <div className="space-y-2">
                                         {q.options.map((rawOpt, i) => {

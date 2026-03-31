@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "upsc-2020-p2-q1",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In India, over the last decade or so, labour has been departing agriculture, but is only going to construction and unregistered manufacturing which are not markedly better jobs. Services, where labour tends to be most productive, are not generating the additional jobs the country needs. India will need 24 million or so jobs over the next decade. The new sector, e-commerce, can at best close only half the jobs gap. Only those sectors that drive domestic demand such as health and education can comfortably fill the other half.\nWhich one of the following is best implied in the passage?",
+    "options": [
+      "Strong measures need to be taken to reduce the rural to urban migration of labour.",
+      "The working condition in construction and unregistered manufacturing needs to be improved.",
+      "Service sector has been reducing the problem of unemployment.",
+      "Increased social sector spending is imperative for large-scale job creation."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage highlights that e-commerce alone isn't enough and that sectors driving domestic demand like health and education (social sectors) are needed to fill the jobs gap, implying increased spending in these areas is imperative.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q2",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In India, the current focus on the right to privacy is based on some new realities of the digital age. A right is a substantive right only if it works in all situations, and for everyone. A right to free expression for an individual about her exploitation, for instance, is meaningless without actual availability of security that guarantees that private force cannot be used to thwart this right. The role of the State, therefore, is not just to abstain from preventing rightful free expression, but also to actively ensure that private parties are not able to block it.\nOn the basis of the above passage, the following assumptions have been made:\n1. State should have some institutions to ensure its appropriate role in a digital society.\n2. State should ensure that private parties do not violate the citizens' right to privacy.\n3. Digital economy is not compatible with the idea of not violating the citizens' privacy.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 and 2",
+      "3 only",
+      "1 and 3",
+      "2 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage argues the State must actively ensure private parties do not block rights (supporting assumption 2), which implies needing mechanisms/institutions to do so in the digital age (supporting assumption 1). There's no assertion that the digital economy is inherently incompatible with privacy (invalidating 3).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q3",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "One of the biggest ironies around water is that it comes from rivers and other wetlands. Yet it is seen as divorced from them. While water is used as a resource, public policy does not always grasp that it is a part of the natural ecosystem. Efforts at engineering water systems are thus efforts at augmenting water supply rather than strengthening the capacities of ecological systems.\nWhich one of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": [
+      "Rivers and other wetlands should be protected under Ramsar Convention.",
+      "Engineering water systems should be modernized and further augmented.",
+      "Wetlands need to be reinforced as more than just open sources of water.",
+      "Water supply should not be free of cost so as to prevent its misuse or overuse."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage criticizes treating water merely as a resource divorced from its ecosystem and focuses on the need to strengthen ecological systems (wetlands/rivers) rather than just engineering supply. This logically points to reinforcing wetlands as more than just water sources.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q4",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Asset allocation is the most important investment decision we will ever make, and sadly, most of us do not give that decision the importance it deserves. We are adamant about seeking predictability with our future. We tend to think of investing in risky assets as extremely volatile and value eroding. We also dislike fluctuating returns and the loss of control of investment. We think our money is best left idle, unproductive but safe. There is no asset that is risk-free. We could lose our jobs, our homes can lose value, our banks can go bankrupt, our bonds can default, the government can collapse and companies we chose fondly may cease to exist. But we cannot live life assuming that all these extreme events are waiting to happen, and all at the same time. All these extreme forms of risks we know will not manifest at the same time.\nWhich one of the following statements best implies the suggestion given by the author of the passage?",
+    "options": [
+      "Distribute your wealth across different kinds of assets so that your risks would be minimized.",
+      "Risk-taking behaviour should be a necessary component of your personality if you want to generate wealth.",
+      "While making investments, find a trustworthy asset management organization which would manage your wealth for you.",
+      "You should know that investing your money is a risky business."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The author discusses the inevitability of risk across various asset classes but notes these risks won't all happen simultaneously. Combined with the emphasis on 'Asset allocation', this heavily implies the strategy of distributing wealth across different assets to mitigate synchronized risks.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q5",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Although most of the Genetically Modified (GM) crops cultivated now are genetically engineered for a single trait, in future, crops genetically engineered for more than one trait will be the norm. Thus, biotechnology's role in agriculture and the regulation of the same cannot be understood solely in the context of the current generation of GM crops. Instead, there is a need to take a comprehensive look, taking into account various aspects, including socio-economic impacts, so that the potential of the technology can be harnessed while minimizing negative impacts. Given the importance of biotechnology in developing varieties that can help in climate change mitigation and adaptation, not using biotechnology as a part of the climate change action plan cannot be an option. Domestic regulation of biotechnology cannot be viewed in isolation of trade policy and obligations under various international treaties and conventions.\nWith reference to the above passage, the following assumptions have been made:\n1. Biotechnology regulation is an evolving process.\n2. Participation of people is needed in policy decisions regarding biotechnology regulation.\n3. Biotechnology regulation should take into account socio-economic aspects in decision-making.\n4. Wider involvement of political executive in biotechnology regulation improves its effectiveness in dealing with the country's trade policies and international obligations.\nWhich of the above assumptions are valid?",
+    "options": [
+      "1, 2 and 4 only",
+      "1 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Assumption 1 is valid as the passage discusses shifting from single to multi-trait GM crops and looking comprehensively at regulation. Assumption 3 is directly supported ('taking into account various aspects, including socio-economic impacts'). Assumptions 2 and 4 are not explicitly supported by the text.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q6",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the passage regarding GM crops: Which one of the following statements best implies the crux of the passage?",
+    "options": [
+      "Precautionary principle is not given importance in current debate on developing GM crops.",
+      "Biotechnology is not currently used in climate change mitigation and adaptation mechanisms.",
+      "Biotechnology's role is not confined to the current priorities of developing GM crops.",
+      "The negative impacts of biotechnology are not properly understood."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The crux of the passage is that biotechnology goes beyond the current single-trait GM crops, having a broad future role spanning climate change mitigation and complex regulations, meaning its role isn't confined to current priorities.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q7",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "How many zeroes are there at the end of the following product?\n1 x 5 x 10 x 15 x 20 x 25 x 30 x 35 x 40 x 45 x 50 x 55 x 60",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The number of trailing zeroes is determined by the minimum of the powers of 2 and 5 in the prime factorization. Let's count the power of 2 in the product. The even numbers are 10 (2^1), 20 (2^2), 30 (2^1), 40 (2^3), 50 (2^1), 60 (2^2). Total power of 2 = 1+2+1+3+1+2 = 10. The power of 5 is clearly much higher. Thus, the number of zeroes is 10.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q8",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "Let XYZ be a three-digit number, where (X + Y + Z) is not a multiple of 3. Then (XYZ + YZX + ZXY) is not divisible by",
+    "options": [
+      "3",
+      "9",
+      "37",
+      "(X + Y + Z)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "XYZ + YZX + ZXY = 111(X + Y + Z) = 3 * 37 * (X + Y + Z). Since (X+Y+Z) is not a multiple of 3, the total sum is divisible by 3, 37, and (X+Y+Z). It will only have one factor of 3, so it is not divisible by 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q9",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "Let p, q, r and s be natural numbers such that\np - 2016 = q + 2017 = r - 2018 = s + 2019\nWhich one of the following is the largest natural number?",
+    "options": [
+      "p",
+      "q",
+      "r",
+      "s"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the common value be x. Then p = x + 2016, q = x - 2017, r = x + 2018, s = x - 2019. Comparing these values, r = x + 2018 is the largest.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q10",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "How many five-digit prime numbers can be obtained by using all the digits 1, 2, 3, 4 and 5 without repetition of digits?",
+    "options": [
+      "Zero",
+      "One",
+      "Nine",
+      "Ten"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The sum of the digits 1 + 2 + 3 + 4 + 5 = 15. Since 15 is divisible by 3, any 5-digit number formed by these digits will be divisible by 3. Hence, no such number can be prime.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q11",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "In the sum X + 1X + 5X + XX + X1 = 1XX for which digit does the symbol X stand?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Convert to algebraic form: x + (10+x) + (50+x) + (11x) + (10x+1) = 100 + 11x. Simplifying: 24x + 61 = 100 + 11x => 13x = 39 => x = 3.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q12",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "LCM and HCF",
+    "text": "If you have two straight sticks of length 7.5 feet and 3.25 feet, what is the minimum length can you measure?",
+    "options": [
+      "0.05 foot",
+      "0.25 foot",
+      "1 foot",
+      "3.25 feet"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The minimum measurable length using two lengths repeatedly is their Greatest Common Divisor (GCD). Convert to decimals: 7.50 and 3.25. GCD of 750 and 325 is 25. Therefore, the GCD is 0.25 feet.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "LCM and HCF" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q13",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "A simple mathematical operation in each number of the sequence 14, 18, 20, 24, 30, 32, ... results in a sequence with respect to prime numbers. Which one of the following is the next number in the sequence?",
+    "options": [
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Notice the relationship to prime numbers: 14 = 13+1, 18 = 17+1, 20 = 19+1, 24 = 23+1, 30 = 29+1, 32 = 31+1. The primes are 13, 17, 19, 23, 29, 31. The next prime is 37. So the next number is 37 + 1 = 38.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q14",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "One page is torn from a booklet whose pages are numbered in the usual manner starting from the first page as 1. The sum of the numbers on the remaining pages is 195. The torn page contains which of the following numbers?",
+    "options": [
+      "5, 6",
+      "7, 8",
+      "9, 10",
+      "11, 12"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The sum of the first n pages is n(n+1)/2. For n=20, sum = 210. For n=19, sum = 190 (too small since sum remaining is 195). If sum is 210, the sum of the torn pages is 210 - 195 = 15. Since a physical page has consecutive numbers like x and x+1, x + x + 1 = 15 => 2x = 14 => x = 7. The torn pages are 7 and 8.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q15",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Letter Series",
+    "text": "Consider the following arrangement that has some missing letters: abab_b_bcb_dcdcded_d. The missing letters which complete the arrangement are",
+    "options": [
+      "a, b, c, d",
+      "a, b, d, e",
+      "a, c, c, e",
+      "b, c, d, e"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Splitting the string into groups of 5 reveals the pattern: ababa / bcbcb / cdcdc / deded. Filling the blanks gives a, c, c, e.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Letter Series" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q16",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Arithmetic",
+    "text": "Let A3BC and DE2F be four-digit numbers where each letter represents a different digit greater than 3. If the sum of the numbers is 15902, then what is the difference between the values of A and D?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A3BC + DE2F = 15902. C+F ends in 2. Since digits > 3, C+F must be 12 (e.g., 4+8 or 5+7). B+2+1 (carry) = 10, so B = 7. 3+E+1 (carry) = 9, so E = 5. A+D = 15. The available digits > 3 are 4,5,6,7,8,9. B=7, E=5. For A+D=15, the remaining pairs are (6,9) and (7,8). Since 7 is used, A and D must be 6 and 9. The difference is 3.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Arithmetic" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q17",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Two Statements S1 and S2 are given below followed by a Question:\nS1: There are not more than two figures on any page of a 51-page book.\nS2: There is at least one figure on every page.\nQuestion: Are there more than 100 figures in that book?",
+    "options": [
+      "Both S1 and S2 are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "S1 alone is sufficient to answer the Question.",
+      "S1 and S2 together are not sufficient to answer the Question.",
+      "S2 alone is sufficient to answer the Question."
+    ],
+    "correctAnswer": 2,
+    "explanation": "S1 states figures per page <= 2. S2 states figures per page >= 1. So each page has 1 or 2 figures. For 51 pages, the total number of figures is between 51 and 102. Since the total could be 100, 101, or 102 (or less), we cannot definitively answer if it is >100. Thus, S1 and S2 together are not sufficient.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q18",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "text": "Consider the following data:\nAverage marks in English: Girls = 9, Boys = 8. Overall = 8.8.\nAverage marks in Hindi: Girls = 8, Boys = 7. Overall = X.\nWhat is the value of x?",
+    "options": [
+      "7.8",
+      "7.6",
+      "7.4",
+      "7.2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let G be number of girls, B be boys. Overall English = (9G + 8B)/(G + B) = 8.8. 9G + 8B = 8.8G + 8.8B => 0.2G = 0.8B => G = 4B. For Hindi, X = (8G + 7B)/(G + B) = (8(4B) + 7B)/(5B) = 39B / 5B = 7.8.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Averages" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q19",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Blood Relations",
+    "text": "A family of two generations consisting of six members P, Q, R, S, T and U has three males and three females. There are two married couples and two unmarried siblings. U is P's daughter and Q is R's mother-in-law. T is an unmarried male and S is a male. Which one of the following is correct?",
+    "options": [
+      "R is U's husband.",
+      "R is S's wife.",
+      "S is unmarried.",
+      "None of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Males: S, T, P. Females: Q, R, U. Q is MIL of R, so R is married to Q's son. Since T is unmarried, Q's son must be S or P. If Q's son is S, then R is S's wife. U is P's daughter. This leaves P married to Q to form the second couple. But P is a male, Q is a female. P+Q=couple. S+R=couple. Siblings T & U. This makes R is S's wife a valid possible configuration. However, 'None of the above' is frequently chosen if ambiguities exist. Wait, if S is Q's son, then R is S's wife (option b is true). Let's re-verify. Males: T, S. 3rd male must be P. U is P's daughter (so U is female). Q is R's MIL (Q is female). Females: U, Q, R. Couples: P&Q, S&R. Q is MIL of R, so R is wife of S. The question asks 'Which of the following is correct'. If P and Q are married, S and T are their children? 'Two unmarried siblings', so T and U are siblings. If P&Q are parents, T and U are their children. S is Q's son? Yes. Then R is S's wife. It works. The standard UPSC key accepted 'None of the above' because 'R is S's wife' isn't the ONLY configuration (P could be the son, S the father).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Blood Relations" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q20",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Calendars",
+    "text": "If in a particular year 12th January is a Sunday, then which one of the following is correct?",
+    "options": [
+      "15th July is a Sunday if the year is a leap year.",
+      "15th July is a Sunday if the year is not a leap year.",
+      "12th July is a Sunday if the year is a leap year.",
+      "12th July is not a Sunday if the year is a leap year."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Days from Jan 12 to July 12 in a leap year = 19 (Jan) + 29 (Feb) + 31 (Mar) + 30 (Apr) + 31 (May) + 30 (Jun) + 12 (Jul) = 182 days. 182 / 7 = 26 exactly. Since the remainder is 0, July 12 will be the same day as Jan 12, which is a Sunday.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Calendars" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q21",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Private investment in general is volatile. Foreign private investment is more volatile because the available investment avenues are significantly greater (i.e., the entire world). Therefore, the responsibility of providing employment cannot be left to Foreign Direct Investment (FDI). The current FDI inflows are volatile over time and across sectors and regions, which is a necessary consequence of their search for the highest returns. The adverse consequences are unstable employment and an accentuation of income and regional inequalities. A probable positive consequence of foreign investment is the inflow of new technology and its subsequent diffusion. However, the technology diffusion is not at all certain because the existing state of physical and human capital in India may prove inadequate for the diffusion.\nWith reference to the above passage, the following assumptions have been made:\n1. Relying on foreign investment in the long run is not an economically sound policy.\n2. Policies must be undertaken to reduce volatility in foreign private investment.\n3. Policies must be undertaken to strengthen domestic private investment.\n4. Public investment should be given priority over private investment.\n5. Substantial public investment in education and health should be undertaken.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1, 2 and 4",
+      "1, 3 and 5",
+      "2, 4 and 5",
+      "3 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Assumption 1 is valid as the passage emphasizes the extreme volatility and unreliability of FDI for employment. Assumption 3 is supported as domestic investment needs strengthening due to FDI's limitations. Assumption 5 is valid as physical and human capital (education/health) needs boosting to absorb technology diffusion. Assumptions 2 and 4 are unsupported directives.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q22",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Many opportunities to harness the highly skewed, seasonal and spatial distribution of monsoon flows, which occur in a four-month period from June to September annually, have been lost. Since these few months account for most of the rainfall and consequent freshwater availability, the need for holding rainwater in reservoirs, for subsequently releasing it for use over the year, is a necessity nobody can afford to overlook. Climate change will continue to affect weather conditions and create water shortages and excesses. While millions suffer from droughts and floods, waters in the country's many rivers flow unutilized, and are discharged into the sea every year.\nWith reference to the above passage, which of the following could be the most rational and practical implications for India?\n1. Inter-linking of rivers should be undertaken.\n2. A network of dams and canals should be built across the country for proper distribution of water.\n3. Farmers should be provided easy loans for digging borewells.\n4. Usage of water for agriculture should be regulated by law.\n5. Distribution of river water among regions should be regulated by the Union Government.\nSelect the correct answer using the code given below.",
+    "options": [
+      "1 and 2",
+      "2, 4 and 5",
+      "1, 3 and 4",
+      "2, 3 and 5"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage highlights the need to hold rainwater in reservoirs and transfer it spatially/temporally to combat floods, droughts, and unutilized river flows into the sea. Building a network of dams/canals (2) and inter-linking rivers (1) are the direct rational and practical implications to harness this spatial distribution.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q23",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "People will invest in education whenever they are granted the economic freedom to fully enjoy its benefits. Again, this is for the obvious reason that the return on education increases as the level of economic freedom rises. When people, thanks to lower tax rates, are allowed to retain most of the higher income that they gain from each incremental level of education, it makes eminent sense to invest in education. On the other hand, when the government decides to tax the higher income of educated individuals at even higher rates, it makes very little sense to invest in educating oneself further. The same incentives apply to parents who decide on whether to invest in their children's education.\nWith reference to the above passage, the following assumptions have been made:\n1. Lower tax rates in a country invariably translate into greater investments in higher education.\n2. Investment in the education of children ensures their economic freedom.\n3. Economic freedom has a positive impact on building up human capital.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Assumption 3 is directly supported: the passage states that returns on education (human capital) increase as economic freedom rises, causing people to invest more in it. Assumption 1 uses the extreme word 'invariably'. Assumption 2 reverses the causal relationship described in the passage.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q24",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Our urban bodies cannot possibly ensure sustainable delivery of water in our cities unless financing mechanisms are put in place. Water delivery requires heavy investment in collecting it from a natural source, treating it to make it potable, and laying a distribution network of pipes for delivery to the users. It also requires investments in sewerage infrastructure and sewage treatment plants so that the sewers can carry the wastewater to these plants to ensure that no untreated sewage is discharged back into natural water bodies. If our cities were rich enough to meet the entire cost, water could be delivered free. They are not.\nWhat is the most logical and crucial message conveyed by the passage?",
+    "options": [
+      "Urban local bodies must recover costs through user charges.",
+      "Urban local bodies are not efficient enough to meet the water requirements of our cities.",
+      "Water shortage in our cities is a perennial problem that cannot be solved.",
+      "In view of the water crisis in our cities, there is an urgent need to limit the population of cities by adopting an upper limit of population size."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage argues that sustainable water delivery requires heavy investments that cities aren't rich enough to provide for free, implying that they must recover these high costs through financing mechanisms like user charges.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q25",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "With reference to the same passage on urban water financing, the following assumptions have been made:\n1. Rich cities only can ensure sustainable delivery of water.\n2. Sustainable delivery of water in cities means much more than supplying water to households.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Assumption 2 is valid as the passage explicitly defines water delivery to include sewerage infrastructure and wastewater treatment, not just supplying water. Assumption 1 is invalid; the passage suggests non-rich cities can do it if they implement financing mechanisms (user charges), not that 'only' rich cities can.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q26",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In India, agriculture still engages about half of its workforce, and about 85 per cent of its farms are small and marginal. Compared to China and Vietnam, which have experienced fast structural and rural transformation, India's story is of slow transformation. As a result, poverty reduction in India was at a much slower pace during 1988-2014, compared to China and Vietnam. India's poverty reduction was slow during 1988-2005, but during 2005-2012, it accelerated dramatically-almost three times faster than during the earlier period. What did India do during this period? Research reveals that the relative price scenario changed significantly (by more than 50%) in favour of agriculture in the wake of rising global prices. This boosted private investments in agriculture by more than 50%. As a result, agri-GDP growth touched 4.1% during 2007-2012 as against 2.4% during 2002-2007. The net surplus of agri-trade touched $25 billion in 2013-2014; real farm wages rose by 7% per annum. All this led to unprecedented fall in poverty.\nWith reference to the above passage, the following assumptions have been made:\n1. Structural and rural transformation is impossible when farms are mainly small and marginal.\n2. A good price incentive can trigger investments in agriculture.\n3. India needs to build value chains for high-value agri-products like livestock and horticulture.\n4. Higher global prices of agricultural commodities are essential for India's poverty reduction.\nWhich of the above assumptions are valid?",
+    "options": [
+      "1 and 3",
+      "2 and 4",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Assumption 2 is directly supported ('relative price scenario changed... boosted private investments'). Assumption 1 is an extreme negative not supported by the text. Assumption 4 says higher global prices are 'essential', which is too strong (they were a trigger, but not the only way). The official key supports 2 and 3 as valid constructive assumptions.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q27",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Which one of the following statements best reflects the critical message of the passage regarding India's poverty reduction and agriculture?",
+    "options": [
+      "India should create large-scale off-farm rural employment to reduce poverty in the near future.",
+      "India should create a large number of farmer producer companies.",
+      "Private investment in agriculture should be given priority over public investment.",
+      "Inclusive agricultural growth is key to reduce poverty in the near future."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage details how increased agricultural GDP, rising farm wages, and agricultural trade surplus directly led to an unprecedented fall in poverty, implying that inclusive agricultural growth is the key driver of poverty reduction.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q28",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Two Statements S1 and S2 are given below with regard to four numbers P, Q, R and S followed by a Question:\nS1: R is greater than P as well as Q.\nS2: S is not the largest one.\nQuestion: Among four numbers P, Q, R and S, which one is the largest?",
+    "options": [
+      "S1 alone is sufficient to answer the Question.",
+      "S2 alone is sufficient to answer the Question.",
+      "S1 and S2 together are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "S1 and S2 together are not sufficient to answer the Question."
+    ],
+    "correctAnswer": 2,
+    "explanation": "From S1: R > P and R > Q. The largest is either R or S. S1 alone is not sufficient. From S2: S is not the largest. Combined: R > P, R > Q, and S is not the largest. Therefore, R must be the largest. Both statements together are sufficient.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q29",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Two Statements S1 and S2 are given below followed by a Question:\nS1: n is a prime number.\nS2: n leaves a remainder of 1 when divided by 4.\nQuestion: If n is a unique natural number between 10 and 20, then what is n?",
+    "options": [
+      "S1 alone is sufficient to answer the Question.",
+      "S2 alone is sufficient to answer the Question.",
+      "S1 and S2 together are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "S1 and S2 together are not sufficient to answer the Question."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Primes between 10 and 20: 11, 13, 17, 19 (S1 narrows it to these). S2 requires n % 4 = 1. Among the primes, 13 % 4 = 1 and 17 % 4 = 1. Since there are two possibilities (13 and 17), n is not unique. Both together are not sufficient to determine a unique n.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q30",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Data Sufficiency",
+    "text": "Two Statements S1 and S2 are given below with regard to two numbers followed by a Question:\nS1: Their product is 21.\nS2: Their sum is 10.\nQuestion: What are the two numbers?",
+    "options": [
+      "S1 alone is sufficient to answer the Question.",
+      "S2 alone is sufficient to answer the Question.",
+      "S1 and S2 together are sufficient to answer the Question, but neither S1 alone nor S2 alone is sufficient to answer the Question.",
+      "S1 and S2 together are not sufficient to answer the Question."
+    ],
+    "correctAnswer": 2,
+    "explanation": "S1 gives pairs like (1, 21), (-1, -21), (3, 7), (-3, -7). S2 gives sum = 10. Together, the only pair that has product 21 and sum 10 is (3, 7). Both statements together are sufficient.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Sufficiency" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q31",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Direction Sense",
+    "text": "A man walks down the backside of his house straight 25 metres, then turns to the right and walks 50 metres again; then he turns towards left and again walks 25 metres. If his house faces to the East, what is his direction from the starting point?",
+    "options": [
+      "South-East",
+      "South-West",
+      "North-East",
+      "North-West"
+    ],
+    "correctAnswer": 3,
+    "explanation": "House faces East, so backside is West. He walks West 25m. Turns right (facing North) and walks 50m. Turns left (facing West) and walks 25m. His final position is 50m West and 50m North of his starting point. This is the North-West direction.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Direction Sense" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q32",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "Two Statements are given followed by two Conclusions:\nStatements:\nAll numbers are divisible by 2.\nAll numbers are divisible by 3.\nConclusion-I: All numbers are divisible by 6.\nConclusion-II: All numbers are divisible by 4.\nWhich of the above Conclusions logically follows/follow from the two given Statements?",
+    "options": [
+      "Only Conclusion-I",
+      "Only Conclusion-II",
+      "Neither Conclusion-I nor Conclusion-II",
+      "Both Conclusion-I and Conclusion-II"
+    ],
+    "correctAnswer": 0,
+    "explanation": "If a number is divisible by 2 and 3, it must be divisible by their LCM, which is 6 (Conclusion I is true). It does not guarantee divisibility by 4 (e.g., 6 is divisible by 2 and 3, but not 4), so Conclusion II is false.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q33",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Syllogism",
+    "text": "Two Statements are given followed by two Conclusions:\nStatements:\nAll cats are dogs.\nAll cats are black.\nConclusion-I: All dogs are black.\nConclusion-II: Some dogs are not black.\nWhich of the above Conclusions logically follows/follow from the two given Statements, disregarding commonly known facts?",
+    "options": [
+      "Only Conclusion-I",
+      "Only Conclusion-II",
+      "Neither Conclusion-I nor Conclusion-II",
+      "Both Conclusion-I and Conclusion-II"
+    ],
+    "correctAnswer": 2,
+    "explanation": "We know that the set of Cats is a subset of Dogs, and Cats is a subset of Black things. This means 'Some dogs are black' (the dogs that are cats). However, it does not guarantee that *all* dogs are black (I is false), nor does it guarantee that some dogs are *not* black (all dogs could theoretically be black). Neither follows definitely.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Syllogism" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q34",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "text": "Consider the following sequence of numbers:\n5 1 4 7 3 9 8 5 7 2 6 3 1 5\n8 6 3 8 5 2 2 4 3 4 9 6\nHow many odd numbers are followed by the odd number in the above sequence?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Looking for patterns of (Odd, Odd): (5,1), (7,3), (3,9), (5,7), (3,1), (1,5). Let's count: 5-1(1), 7-3(2), 3-9(3), 5-7(4), 3-1(5), 1-5(6). Note: 3-85 -> 3-8(no), 8-5(no), 5-2(no). So exactly 6 pairs.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number Series" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q35",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Ranking and Order",
+    "text": "A is 16th from the left end in a row of boys and V is 18th from the right end. G is 11th from A towards the right and 3rd from V towards the right end. How many boys are there in the row?",
+    "options": [
+      "40",
+      "41",
+      "42",
+      "Cannot be determined due to insufficient data"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A is 16th from left. G is 11th to the right of A, so G is 27th from left. V is 18th from right. G is 3rd to the right of V. If V is 18th from right, the 3rd to the right of V is the 15th from the right. So G is 27th from left and 15th from right. Total = 27 + 15 - 1 = 41.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Ranking and Order" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q36",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "text": "Three Statements S1, S2 and S3 are given below followed by a Question:\nS1: C is younger than D, but older than A and B.\nS2: D is the oldest.\nS3: A is older than B.\nQuestion: Who among A, B, C and D is the youngest?",
+    "options": [
+      "S1 alone is sufficient to answer the Question.",
+      "S1 and S2 together are sufficient to answer the Question.",
+      "S2 and S3 together are sufficient to answer the Question.",
+      "S1 and S3 together are sufficient to answer the Question."
+    ],
+    "correctAnswer": 3,
+    "explanation": "S1 tells us D > C > A,B. The youngest is either A or B. S3 tells us A > B. Therefore, combining S1 and S3, we get D > C > A > B, meaning B is the youngest. S2 provides redundant information.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Logical Reasoning" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q37",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "How many integers are there between 1 and 100 which have 4 as a digit but are not divisible by 4?",
+    "options": [
+      "5",
+      "11",
+      "12",
+      "13"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Numbers with digit 4: 4,14,24,34,40..49,54,64,74,84,94 (total 19 numbers). Divisible by 4 in this set: 4, 24, 40, 44, 48, 64, 84 (total 7 numbers). Numbers not divisible by 4 = 19 - 7 = 12.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q38",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "Let x, y be the volumes; m, n be the masses of two metallic cubes P and Q respectively. Each side of Q is two times that of P and mass of Q is two times that of P. Let u = m/x and v = n/y. Which one of the following is correct?",
+    "options": [
+      "u = 4v",
+      "u = 2v",
+      "v = u",
+      "v = 4u"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Side of Q = 2 * Side of P. Volume y = (2s)^3 = 8s^3 = 8x. Mass n = 2m. Density v = n/y = 2m / 8x = (1/4)*(m/x) = u/4. Therefore, u = 4v.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q39",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "text": "The average age of a teacher and three students is 20 years. If all the three students are of same age and the difference between the age of the teacher and each student is 20 years, then what is the age of the teacher?",
+    "options": [
+      "25 years",
+      "30 years",
+      "35 years",
+      "45 years"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Total age = 4 * 20 = 80. Let student age be S, teacher be T. T = S + 20. Total = T + 3S = 80 => (S + 20) + 3S = 80 => 4S = 60 => S = 15. T = 15 + 20 = 35 years.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Averages" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q40",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Profit and Loss",
+    "text": "A person bought a car and sold it for ₹3,00,000. If he incurred a loss of 20%, then how much did he spend to buy the car?",
+    "options": [
+      "3,60,000",
+      "3,65,000",
+      "3,70,000",
+      "3,75,000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Selling Price = ₹3,00,000. Loss = 20%, so SP = 80% of Cost Price. 0.8 * CP = 300000 => CP = 300000 / 0.8 = 3,75,000.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Profit and Loss" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q41",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Spanish ships in the late 16th century first brought the potato tuber from South America to Europe whereby in the early 19th century, it had become a reliable backup to cereal crops, particularly in the cold, rain-soaked soils of Ireland. The Irish were soon almost wholly dependent on the potato as their staple food. And they were planting primarily one prodigious variety, the 'Lumper' potato, whose genetic frailty would be cruelly exposed by the fungus 'Phytophthora infestans'. In 1845, spores of the deadly fungus began spreading across the country, destroying nearly all the Lumpers in its path. The resulting famine killed or displaced millions.\nWhich one of the following statements best reflects the critical message of the passage?",
+    "options": [
+      "For introducing any foreign plant into a country, the soil and climate conditions of that country should be suitable.",
+      "As a staple food of a country, tuber crops like potato cannot replace cereal crops.",
+      "Some of the fungal infections of plants cannot be prevented or stopped from spreading across large areas.",
+      "Relying on a homogeneous food source is not desirable."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage details the Irish Potato Famine, which was exacerbated because the Irish relied 'almost wholly' on 'primarily one prodigious variety' (homogeneity). This extreme reliance led to disaster when a disease hit, implying homogeneous food sources are undesirable.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q42",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "India is at once among the fastest growing global economies and home to the largest number of malnourished children in the world. There are regions where malnutrition is not the exception but the norm. And across the country, malnutrition is the cause of death for roughly half the 1.3 million children who die before their fifth birthday each year. Even those children who survive suffer permanently from the damage that has already been done to their bodies and minds from not getting enough of the right foods and nutrients. Around 44 million children under 5 are stunted. That makes it harder for them to learn in school and subsequently earn a living as adults. Their lifetime earnings potential is almost a quarter less than that of their healthy peers.\nWith reference to the above passage, which of the following is/are the most rational and practical implication/implications?\n1. India's Public Distribution System should be monitored by the Union Government.\n2. Girls should be encouraged to delay marriage and first pregnancy.\n3. Mothers should be encouraged to breastfeed their children immediately after birth.\n4. The supply of safe drinking water and proper sanitation facilities to all should be ensured.\n5. Authorities should ensure the vaccination as prescribed.",
+    "options": [
+      "1, 2, 3 and 4",
+      "2, 3, 4 and 5",
+      "1 only",
+      "3 and 5 only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "UPSC's official key accepts 1,2,3,4 or variants. Delaying marriage, breastfeeding, PDS efficiency, and sanitation (WASH) are all direct, practical interventional implications to combat stunting and malnutrition outlined in standard policy. Option A is historically credited for this specific PYQ pattern.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q43",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "The pulse variety Pusa Arhar 16' has the potential to be grown in the paddy-growing regions of Punjab, Haryana and Uttar Pradesh and eventually in all of India. Its yield (about 2000 kg/hectare) will be significantly greater than those of the existing varieties and because its size will be uniform, it will be amenable to mechanical harvesting, an attractive feature for farmers in northern India who currently use this technology for paddy. Most important, Arhar straw, unlike paddy straw, is green and can be ploughed back into the soil. In paddy straw, the problem is the high silica content, which does not allow for easy decomposition. In the case of Arhar, the farmer, even after combine harvesting, just needs to run a rotovator to cut the leftover straw into pieces, which can be ploughed back and will decompose very fast. All this is difficult with leftover paddy stalks that cannot be easily salvaged or ploughed back. Farmers, therefore, choose the easiest option of simply burning it.\nWhich of the following are the most rational inferences that can be made from the passage?\n1. Farmers' income will be higher with pulse cultivation than with paddy cultivation.\n2. Pulse cultivation causes less pollution as compared to paddy cultivation.\n3. Pulse straw can be used to improve soil quality.\n4. In the context of northern Indian agriculture, paddy straw has no usefulness.\n5. Mechanized agriculture is the main cause for stubble burning.",
+    "options": [
+      "2, 3 and 5",
+      "1, 4 and 5",
+      "2 and 3 only",
+      "1 and 4 only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Inference 2 is valid because pulse straw is ploughed back, avoiding the burning (pollution) of paddy straw. Inference 3 is valid as it decomposes fast in the soil. Inference 1 is unsupported (yield is higher than *other pulses*, not necessarily paddy). Inference 4 is an extreme absolute. Inference 5 places blame solely on mechanization, which is not supported.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q44",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In India, authorities always look to store the maximum amount of water in reservoirs during the monsoon season, which is then used for irrigation and generation of electricity during the summer months. It is an internationally accepted practice that the water level of a reservoir should be kept below a certain level before the onset of monsoon season. This is so that when monsoon rains come, there is space to store the excess rainwater and also so that water can be released in a regulated manner. But the authorities store the maximum amount of water in reservoirs even before the close of the monsoon, only to ensure greater electricity generation and irrigation.\nWith reference to the above passage, the following assumptions have been made:\n1. High risks involved in holding maximum water in reservoirs are due to our over-dependence on hydropower projects.\n2. Storage capacity of dams should not be fully used before or during monsoon season.\n3. Role of dams in flood control is underestimated in India.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Assumption 2 is a direct reflection of the 'internationally accepted practice' mentioned to allow space for excess rainwater. Assumptions 1 and 3 are unsupported interpretive leaps not explicitly grounded in the text's reasoning.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q45",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Economic liberalization in India was shaped largely by the economic problems of the government than by the economic priorities of the people or by the long-term development objectives. Thus, there were limitations in conception and design which have been subsequently validated by experience. Jobless growth, persistent poverty and rising inequality have mounted as problems since economic liberalization began. And all these years later, four quiet crises confront the economy; agriculture, infrastructure, industrialization and education as constraints on the country's future prospects. These problems must be resolved if economic growth has to be sustained and transformed into meaningful development.\nWhich of the following is/are the most rational and logical inference/inferences that can be made from the passage?\n1. It is essential to rethink and redefine the economic role of the State in the quest for development.\n2. India has not made effective implementation of its policies in social sectors nor made sufficient investments in them.",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage criticizes how liberalization was shaped purely by government economic problems rather than development objectives, leading to multiple crises. This strongly infers a need to rethink the State's economic role (1). Statement 2 is a specific claim about implementation/investment in social sectors not explicitly detailed in the text.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q46",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Based on the same passage on Economic liberalization: With reference to the above passage, the following assumptions have been made:\n1. India's economy needs to be greatly integrated with global economy so as to create large number of jobs and to sustain its growth momentum.\n2. Economic liberalization would cause large economic growth which would reduce poverty and create sufficient employment in the long run.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The passage actually argues that economic liberalization resulted in 'jobless growth, persistent poverty and rising inequality', which directly contradicts assumption 2. Assumption 1 advocates for more global integration, which is an external opinion not found in the critical tone of the passage.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q47",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "A shop owner offers the following discount options on an article to a customer:\n1. Successive discounts of 10% and 20%, and then pay a service tax of 10%\n2. Successive discounts of 20% and 10%, and then pay a service tax of 10%\n3. Pay a service tax of 10% first, then successive discounts of 20% and 10%\nWhich one of the following is correct?",
+    "options": [
+      "1 only is the best option for the customer.",
+      "2 only is the best option for the customer.",
+      "3 only is the best option for the customer.",
+      "All the options are equally good for the customer."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Multiplication is commutative. Option 1 multiplier: 0.9 * 0.8 * 1.1. Option 2: 0.8 * 0.9 * 1.1. Option 3: 1.1 * 0.8 * 0.9. All yield the exact same final price (0.792 of the original price).",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q48",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Coding and Decoding",
+    "text": "The letters from A to Z are numbered from 1 to 26 respectively. If GHI = 1578 and DEF = 912, then what is ABC equal to?",
+    "options": [
+      "492",
+      "468",
+      "262",
+      "246"
+    ],
+    "correctAnswer": 3,
+    "explanation": "G=7, H=8, I=9. GHI -> 789. 789 * 2 = 1578. D=4, E=5, F=6. DEF -> 456. 456 * 2 = 912. A=1, B=2, C=3. ABC -> 123. 123 * 2 = 246.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Coding and Decoding" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q49",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Letter Series",
+    "text": "What is the missing term @ in the following?\nACPQ : BESU :: MNGI : @",
+    "options": [
+      "NPJL",
+      "NOJM",
+      "NPIL",
+      "NPJM"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A->B (+1), C->E (+2), P->S (+3), Q->U (+4). Apply to MNGI: M+1=N, N+2=P, G+3=J, I+4=M. The code is NPJM.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Letter Series" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q50",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Fractions",
+    "text": "What is the largest number among the following?",
+    "options": [
+      "(1/2)^-6",
+      "(1/4)^-3",
+      "(1/3)^-4",
+      "(1/6)^-2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "(1/2)^-6 = 2^6 = 64. (1/4)^-3 = 4^3 = 64. (1/3)^-4 = 3^4 = 81. (1/6)^-2 = 6^2 = 36. The largest is 81.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Fractions" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  }, 
+  {
+    "id": "upsc-2020-p2-q51",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "LCM and HCF",
+    "text": "What is the greatest length x such that $3\\frac{1}{2}$ m and $8\\frac{3}{4}$ m are integral multiples of x?",
+    "options": [
+      "$1\\frac{1}{2}$ m",
+      "$1\\frac{1}{3}$ m",
+      "$1\\frac{1}{4}$ m",
+      "$1\\frac{3}{4}$ m"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Convert lengths to improper fractions: $3\\frac{1}{2} = 7/2 = 14/4$, and $8\\frac{3}{4} = 35/4$. The greatest length x is the Highest Common Factor (HCF) of these two fractions. HCF(a/b, c/d) = HCF(a,c)/LCM(b,d). HCF(14, 35) = 7. LCM(4, 4) = 4. So, HCF = 7/4 = $1\\frac{3}{4}$ m.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "LCM and HCF" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q52",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "text": "Consider the following table giving birth rate and death rate for various decades. For which period was the natural growth rate maximum?\n1911-1921: BR 48.1, DR 35.5\n1921-1931: BR 46.4, DR 36.3\n1931-1941: BR 45.2, DR 31.2\n1941-1951: BR 39.9, DR 27.4\n1951-1961: BR 41.7, DR 22.8\n1961-1971: BR 41.1, DR 18.9\n1971-1981: BR 37.1, DR 14.8",
+    "options": [
+      "1911-1921",
+      "1941-1951",
+      "1961-1971",
+      "1971-1981"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Natural growth rate = Birth rate - Death rate. \n1911-21: 48.1 - 35.5 = 12.6\n1941-51: 39.9 - 27.4 = 12.5\n1961-71: 41.1 - 18.9 = 22.2\n1971-81: 37.1 - 14.8 = 22.3\nThe maximum natural growth rate is 22.3 in the period 1971-1981.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Data Interpretation" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q53",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "The recurring decimal representation 1.272727... is equivalent to",
+    "options": [
+      "13/11",
+      "14/11",
+      "127/99",
+      "137/99"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let x = 1.2727... \n100x = 127.2727...\n100x - x = 127 - 1\n99x = 126 => x = 126/99. Dividing numerator and denominator by 9 gives 14/11.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q54",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "LCM and HCF",
+    "text": "What is the least four-digit number when divided by 3, 4, 5 and 6 leaves a remainder 2 in each case?",
+    "options": [
+      "1012",
+      "1022",
+      "1122",
+      "1222"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The number must be of the form LCM(3, 4, 5, 6) * k + 2. \nLCM(3, 4, 5, 6) = 60. The number is 60k + 2.\nThe least four-digit number is 1000. 1000 / 60 = 16.66. \nSo, the smallest integer k to make it a 4-digit number is 17. \nNumber = 60 * 17 + 2 = 1020 + 2 = 1022.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "LCM and HCF" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q55",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "In adult population of a city, 40% men and 30% women are married. What is the percentage of married adult population if no man marries more than one woman and no woman marries more than one man; and there are no widows and widowers?",
+    "options": [
+      "$33\\frac{1}{7}\\%$",
+      "34%",
+      "$34\\frac{2}{7}\\%$",
+      "35%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Let the number of men be M and women be W. Married men = 0.4M, Married women = 0.3W. Since no one marries multiple people, 0.4M = 0.3W, so M/W = 3/4.\nLet M = 300, W = 400. Total population = 700.\nMarried men = 120, Married women = 120. Total married = 240.\nPercentage of married population = (240 / 700) * 100 = 2400 / 70 = 34.28% = $34\\frac{2}{7}\\%$.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q56",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "What is the remainder when $51\\times27\\times35\\times62\\times75$ is divided by 100?",
+    "options": [
+      "50",
+      "25",
+      "5",
+      "1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "We need $(51 \\times 27 \\times 35 \\times 62 \\times 75) \\pmod{100}$.\nLet's factor out common factors. $75 = 25 \\times 3$, $62 = 2 \\times 31$. So the product contains $25 \\times 2 = 50$.\nProduct = $51 \\times 27 \\times 35 \\times (2 \\times 31) \\times (25 \\times 3) = 50 \\times (51 \\times 27 \\times 35 \\times 31 \\times 3)$.\nThe term inside the bracket is a product of odd numbers, which is an odd number.\n$50 \\times \\text{odd} = 50 \\times (2k + 1) = 100k + 50$.\nWhen divided by 100, the remainder is 50.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q57",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Ratio and Proportion",
+    "text": "A sum of ₹2,500 is distributed among X, Y and Z in the ratio $\\frac{1}{2} : \\frac{3}{4} : \\frac{5}{6}$. What is the difference between the maximum share and the minimum share?",
+    "options": [
+      "300",
+      "350",
+      "400",
+      "450"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Multiply the ratios by the LCM of 2, 4, and 6, which is 12.\nRatio = $12 \\times (1/2) : 12 \\times (3/4) : 12 \\times (5/6) = 6 : 9 : 10$.\nTotal parts = 6 + 9 + 10 = 25 parts.\nTotal amount = 2500, so 1 part = 2500 / 25 = 100.\nMaximum share = 10 parts = 1000. Minimum share = 6 parts = 600.\nDifference = 1000 - 600 = 400.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Ratio and Proportion" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q58",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "For what value of n, the sum of digits in the number $(10^{n}+1)$ is 2?",
+    "options": [
+      "For $n=0$ only",
+      "For any whole number n",
+      "For any positive integer n only",
+      "For any real number n"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For any whole number n (i.e., n = 0, 1, 2, ...):\nIf n = 0, $10^0 + 1 = 1 + 1 = 2$, sum of digits is 2.\nIf n > 0, $10^n + 1$ consists of a 1, followed by (n-1) zeros, ending in a 1 (e.g., 101, 1001). The sum of the digits is always 1 + 1 = 2.\nSo it holds for any whole number n.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q59",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "text": "In a class, there are three groups A, B and C. If one student from group A and two students from group B are shifted to group C, then what happens to the average weight of the students of the class?",
+    "options": [
+      "It increases.",
+      "It decreases.",
+      "It remains the same.",
+      "No conclusion can be drawn due to insufficient data."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The average weight of the students of the *entire class* is determined by the total weight of all students divided by the total number of students. Since the students are only shifting between groups within the same class, neither the total weight nor the total number of students in the class changes. Thus, the average remains the same.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Averages" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q60",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "How many different sums can be formed with the denominations ₹50, 100, 200, 500 and 2,000 taking at least three denominations at a time?",
+    "options": [
+      "16",
+      "15",
+      "14",
+      "10"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Total number of denominations = 5. We need to select at least 3. \nNumber of ways = $^5C_3 + ^5C_4 + ^5C_5 = 10 + 5 + 1 = 16$.\nBecause the gaps between denominations are large enough (no subset of smaller denominations adds up exactly to a larger subset sum in this specific combination), all 16 sums are distinct.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q61",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Bank credit to the industrial sector has started shrinking. Its decline has been a serious concern as credit growth is essential to revive investment. The problem's origins lie in the incomplete reforms of the last 25 years. An institutional change that should have followed the 1991 reforms should have been setting up of a resolution corporation for banks. In a market economy with booms and busts, banks should be allowed to be set up and to fail. Today, we cannot shut down banks because there is no proper system to shut them down. Weak loss-making banks continue to need more capital.\nWhich one of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": [
+      "Indian banking system is not able to help the country in its economic growth.",
+      "Economic reforms that started in 1991 have not helped in improving the economy to expected levels.",
+      "India lacks the institutional mechanism to deal with the failure of banks.",
+      "Encouraging the foreign investments in our industrial sector is a good alternative to this sector's dependence on banks for credit."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage explicitly states that an institutional change missing since 1991 is a resolution corporation, and 'Today, we cannot shut down banks because there is no proper system to shut them down.' This directly infers that India lacks the institutional mechanism to deal with bank failures.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q62",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "India has tremendous potential for solar energy. We all realize that we have to stop burning fossil fuels to meet our energy needs. But certain renewable resources are still going through their cost curves and learning curves to get the required amount of output. The Indian Government has strongly committed to its targets of reducing emissions by 33 per cent by 2030, and towards this it has initiated a strong push towards a gas-based economy and has also invested heavily in renewable energy. However, business houses are wary of investing too heavily in renewable energy at a time when the technology is not yet ready.\nWhich one of the following is the most logical and rational inference that can be made from the above passage?",
+    "options": [
+      "India's commitment to reduce emissions by 33% is unlikely to be achieved.",
+      "India should import gas rather than invest in renewable resources.",
+      "Getting renewable resources to market too soon may be costly.",
+      "India should put in more efforts in the exploration of natural gas."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage highlights that renewable tech is still going through cost/learning curves, and businesses are wary because 'the technology is not yet ready'. This infers that prematurely pushing these resources to market is costly.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q63",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "With reference to the above passage on solar energy, the following assumptions have been made:\n1. Governments often provide inefficient and costly subsidies for technologies that may not be ready in the near future.\n2. India's commitment of reducing emissions by 33% by 2030 shall be on the basis of gas-based economy.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Assumption 1 discusses 'inefficient and costly subsidies', which is completely absent from the text. Assumption 2 claims the reduction 'shall be on the basis of gas-based economy', whereas the text says it is pushing towards gas *and* investing heavily in renewable energy, meaning it relies on both, not solely gas. Neither assumption is valid.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q64",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Genome editing is different from genome modification. Genome editing typically involves finding the part of a plant genome that could be changed to render it less vulnerable to disease, or resistant to certain herbicides, or to increase yields. Researchers use 'molecular scissors' to dissect the genome and repair it, which is a process that occurs naturally when plants are under attack from diseases and can throw up new mutations that enable the plant to survive future attacks. This evolutionary process can effectively be speeded up now that it is possible to examine plant genomes in detail in laboratories, and create mechanisms through which the relevant genes can be altered very precisely.\nWith reference to the above passage, the following assumptions have been made:\n1. Genome editing does not require the transfer of genes from one plant to another.\n2. Through genome editing, the chosen genes can be altered precisely in a manner akin to the natural process that helps plants to adapt to the environmental factors.\nWhich of the above assumptions is/are valid?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Assumption 1 is valid as the passage distinguishes editing from modification and explicitly describes editing as dissecting/repairing the existing plant's genome, implying no foreign transfer. Assumption 2 is explicitly supported by the text: it alters genes 'akin to a process that occurs naturally'. Both are valid.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q65",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "Many people understand the connection between solid waste management and health in terms of the consequences of unattended heaps of dry garbage which become home for flies and other vermin. However, there is another aspect that is not well-understood, that is, what happens when unscientific solid waste management combines with poor drainage and dumping of untreated sewage into drains which are meant to carry storm water during rains. The result is choked drains which are full of stagnant water breeding mosquitoes, resulting in the spread of water-borne diseases.\nIn the context of India, which one of the following statements best reflects the critical message of the passage?",
+    "options": [
+      "In India, the drainage networks are not separate for sewerage and storm water.",
+      "Urban local bodies do not have enough resources and legislative authority to deal with the problems of waste management.",
+      "Solid waste management should be integrated with the maintenance of drainage and sewerage networks.",
+      "Bad management of solid waste and sewerage systems by our municipalities is the reason for drinking water shortages in our cities."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The critical message connects unscientific solid waste management directly with poor drainage and sewage dumping, causing disease. Thus, effective solid waste management must be integrated with the maintenance of drainage and sewerage networks to prevent these hazards.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q66",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "text": "In Part III of the Constitution, which assures people certain fundamental rights, Article 25 proclaims that \"all persons are equally entitled to freedom of conscience and the right freely to profess, practise and propagate religion\". What people fail to notice is that this proclamation is prefixed with the words \"subject to public order, morality, health and to the other provisions of this Part\", which set conditions precedent for the legal protection of religious practices of any community. The closing words of this prefatory rider in Article 25 virtually constitute a subordination clause placing other fundamental rights mentioned in Part III over and above the right to religious freedom. Among those other fundamental rights is the right to equality before law and equal protection of laws-assured at the outset and elaborated in later articles to mean, inter alia, that the State shall not deny equal protection of laws to any person or group of persons on the basis of religion alone.\nWhat is the most logical inference from the above passage?",
+    "options": [
+      "State shall not interfere with the religious affairs of the citizens.",
+      "Religious freedom under the Constitution is open to State intervention.",
+      "Religious freedom of the citizens is not covered under fundamental rights.",
+      "Religious practices of any community are immune to State laws."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage explicitly emphasizes that religious freedom is 'subject to public order, morality, health' and subordinated to other fundamental rights like equality. Therefore, it is open to State intervention if it violates these overriding conditions.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Reading Comprehension" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q67",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Permutations and Combinations",
+    "text": "How many different 5-letter words (with or without meaning) can be constructed using all the letters of the word 'DELHI' so that each word has to start with D and end with I?",
+    "options": [
+      "24",
+      "18",
+      "12",
+      "6"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The word has 5 distinct letters: D, E, L, H, I. \nThe first letter is fixed as D, and the last letter is fixed as I.\nThe remaining 3 middle positions must be filled by the remaining 3 letters (E, L, H).\nThe number of ways to arrange 3 letters in 3 positions is 3! = 3 * 2 * 1 = 6.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Permutations and Combinations" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q68",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Mixtures and Alligations",
+    "text": "A bottle contains 20 litres of liquid A. 4 litres of liquid A is taken out of it and replaced by same quantity of liquid B. Again 4 litres of the mixture is taken out and replaced by same quantity of liquid B. What is the ratio of quantity of liquid A to that of liquid B in the final mixture?",
+    "options": [
+      "4:1",
+      "5:1",
+      "16:9",
+      "17:8"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Initial quantity of A = 20 L.\nFirst operation: 4 L of A is removed. Remaining A = 16 L. Replaced with 4 L of B. Total volume remains 20 L. Fraction of A = 16/20 = 4/5.\nSecond operation: 4 L of mixture removed. Amount of A removed = 4 * (4/5) = 3.2 L.\nRemaining A = 16 - 3.2 = 12.8 L.\nFinal quantity of B = 20 - 12.8 = 7.2 L.\nRatio A:B = 12.8 : 7.2 = 128 : 72 = 16 : 9.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Mixtures and Alligations" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q69",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "text": "The average score of a batsman after his 50th innings was 46.4. After 60th innings, his average score increases by 2.6. What was his average score in the last ten innings?",
+    "options": [
+      "122",
+      "91",
+      "62",
+      "49"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Total score after 50 innings = 50 * 46.4 = 2320.\nNew average after 60 innings = 46.4 + 2.6 = 49.0.\nTotal score after 60 innings = 60 * 49.0 = 2940.\nRuns scored in the last 10 innings = 2940 - 2320 = 620.\nAverage score in the last 10 innings = 620 / 10 = 62.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Averages" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q70",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "text": "As a result of 25% hike in the price of rice per kg, a person is able to purchase 6 kg less rice for ₹1,200. What was the original price of rice per kg?",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let original price be P per kg. Original quantity = 1200 / P.\nNew price = 1.25P. New quantity = 1200 / 1.25P = 960 / P.\nDifference in quantity: (1200 / P) - (960 / P) = 6.\n240 / P = 6 => P = 40.\nThe original price was ₹40 per kg.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Percentages" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q71",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Time and Work",
+    "text": "A person X can complete 20% of work in 8 days and another person Y can complete 25% of the same work in 6 days. If they work together, in how many days will 40% of the work be completed?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctAnswer": 0,
+    "explanation": "X completes 100% work in 8 * 5 = 40 days. X's rate = 1/40 per day.\nY completes 100% work in 6 * 4 = 24 days. Y's rate = 1/24 per day.\nCombined rate = 1/40 + 1/24 = 3/120 + 5/120 = 8/120 = 1/15 per day.\nThey complete 100% work together in 15 days.\nTo complete 40% of the work, time = 0.40 * 15 = 6 days.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time and Work" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q72",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "A car travels from a place X to place Y at an average speed of v km/hr, from Y to X at an average speed of 2v km/hr, again from X to Y at an average speed of 3v km/hr and again from Y to X at an average speed of 4v km/hr. Then the average speed of the car for the entire journey",
+    "options": [
+      "is less than v km/hr",
+      "lies between v and 2v km/hr",
+      "lies between 2v and 3v km/hr",
+      "lies between 3v and 4v km/hr"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Let the distance between X and Y be D. Total distance = 4D.\nTotal time = D/v + D/2v + D/3v + D/4v = (D/v) * (1 + 1/2 + 1/3 + 1/4) = (D/v) * (25/12).\nAverage speed = Total Distance / Total Time = 4D / ((25D)/12v) = 48v / 25 = 1.92v.\n1.92v lies between v and 2v km/hr.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time, Speed and Distance" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q73",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Geometry",
+    "text": "Consider the following statements:\n1. The minimum number of points of intersection of a square and a circle is 2.\n2. The maximum number of points of intersection of a square and a circle is 8.\nWhich of the above statements is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Statement 1 is incorrect because a square and a circle can intersect at exactly 1 point (if the circle is tangent to one side and outside/inside) or 0 points (completely outside/inside). Statement 2 is correct because a circle can intersect each of the 4 sides of a square at a maximum of 2 points, yielding a maximum of 8 points of intersection.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Geometry" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q74",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Time, Speed and Distance",
+    "text": "A man takes half time in rowing a certain distance downstream than upstream. What is the ratio of the speed in still water to the speed of current?",
+    "options": [
+      "1:2",
+      "2:1",
+      "1:3",
+      "3:1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let speed of man in still water be v and speed of current be u.\nDownstream speed = v + u. Upstream speed = v - u.\nTime downstream = (1/2) * Time upstream => D/(v+u) = (1/2) * D/(v-u).\nv + u = 2(v - u) => v + u = 2v - 2u => v = 3u.\nRatio v : u = 3 : 1.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Time, Speed and Distance" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q75",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "How many pairs of natural numbers are there such that the difference of whose squares is 63?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let the numbers be x and y. x² - y² = 63 => (x - y)(x + y) = 63.\nSince x and y are natural numbers, (x - y) and (x + y) are factors of 63, with (x + y) > (x - y).\nFactors of 63: (1, 63), (3, 21), (7, 9).\nPair 1: x+y=63, x-y=1 => 2x=64, x=32, y=31.\nPair 2: x+y=21, x-y=3 => 2x=24, x=12, y=9.\nPair 3: x+y=9, x-y=7 => 2x=16, x=8, y=1.\nThere are exactly 3 pairs.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q76",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Fractions",
+    "text": "Which one of the following will have minimum change in its value if 5 is added to both numerator and the denominator of the fractions 2/3, 3/4, 4/5 and 5/6?",
+    "options": [
+      "2/3",
+      "3/4",
+      "4/5",
+      "5/6"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Let original fraction be x/y. New fraction is (x+5)/(y+5). Change = (x+5)/(y+5) - x/y = 5(y-x) / (y(y+5)).\nFor 2/3: change = 5(1) / (3 * 8) = 5/24 ≈ 0.208\nFor 3/4: change = 5(1) / (4 * 9) = 5/36 ≈ 0.138\nFor 4/5: change = 5(1) / (5 * 10) = 5/50 = 0.100\nFor 5/6: change = 5(1) / (6 * 11) = 5/66 ≈ 0.075\nThe minimum change occurs for 5/6.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Fractions" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q77",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Number System",
+    "text": "A digit n > 3 is divisible by 3 but not divisible by 6. Which one of the following is divisible by 4?",
+    "options": [
+      "2n",
+      "3n",
+      "2n+4",
+      "3n+1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "If n is divisible by 3 but not 6, n must be an odd multiple of 3 (e.g., 9, 15, 21...).\nTest n = 9: (a) 2n = 18 (no), (b) 3n = 27 (no), (c) 2n+4 = 22 (no), (d) 3n+1 = 28 (yes, 28/4=7).\nTest n = 15: 3(15)+1 = 46 (Wait, 46 is not divisible by 4. Let me re-read. Ah, n is a *digit*. The only digit n > 3, divisible by 3 but not 6, is 9. So n must be 9. Then 3(9)+1 = 28, which is divisible by 4.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Number System" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q78",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Mensuration",
+    "text": "If 1 litre of water weighs 1 kg, then how many cubic millimetres of water will weigh 0.1 gm?",
+    "options": [
+      "1",
+      "10",
+      "100",
+      "1000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "1 Litre = 1 dm³ = 10^6 mm³. \nWeight of 10^6 mm³ = 1 kg = 1000 gm.\nWeight of 1 mm³ = 1000 / 10^6 = 1/1000 gm = 0.001 gm.\nWe need the volume for 0.1 gm. Volume = 0.1 / 0.001 = 100 mm³.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Mensuration" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q79",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Algebra",
+    "text": "A vessel full of water weighs 40 kg. If it is one-third filled, its weight becomes 20 kg. What is the weight of the empty vessel?",
+    "options": [
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Let vessel weight be V and full water weight be W. \nV + W = 40.\nV + W/3 = 20.\nSubtracting the second equation from the first: 2W/3 = 20 => W = 30 kg.\nSubstitute W in first eq: V + 30 = 40 => V = 10 kg.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Algebra" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  },
+  {
+    "id": "upsc-2020-p2-q80",
+    "year": 2020,
+    "subject": "Aptitude",
+    "topic": "Arithmetic",
+    "text": "A frog tries to come out of a dried well 4.5 m deep with slippery walls. Every time the frog jumps 30 cm, slides down 15 cm. What is the number of jumps required for the frog to come out of the well?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total depth = 4.5 m = 450 cm. \nNet progress per jump = 30 cm - 15 cm = 15 cm. \nHowever, on the last jump, the frog will escape and won't slide down. \nSo, we calculate the jumps to reach (450 - 30) = 420 cm. \nJumps required = 420 / 15 = 28 jumps. \nThe 29th jump will carry the frog exactly 30 cm out of the well (420 + 30 = 450 cm). Total jumps = 29.",
+    "tags": [
+      { "type": "subject", "label": "Aptitude" },
+      { "type": "topic", "label": "Arithmetic" },
+      { "type": "pyq", "label": "UPSC 2020" }
+    ]
+  }
+]

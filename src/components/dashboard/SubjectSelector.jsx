@@ -53,7 +53,7 @@ export const SubjectSelector = ({ onSelect, onSubjectsChange, disabled = false, 
         displayValue = `${selected.length} Subjects`;
     }
 
-    const allOptions = ['All Subjects', ...SUBJECTS];
+    const allOptions = ['All Subjects', ...SUBJECTS.filter(s => s !== 'All Subjects')];
 
     return (
         <div className={`${className} relative group`} ref={dropdownRef}>
