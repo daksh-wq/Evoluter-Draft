@@ -200,7 +200,7 @@ TAGGING FIELDS (mandatory for EVERY question — use the exact codes below):
 - IF subject is MO (Modern History): [01: Expansion of British Power, 02: British Policies & Admin, 03: Early Resistance & 1857, 04: Socio-Religious Reforms, 05: Early National Movement, 06: Gandhian Era & Mass Movements, 07: Constitutional Evolution, 08: Independence & Beyond]
 
 "sourceCode":  one of [SN=Standard/NCERT, AD=Advanced/official-docs, CI=Current-Issue, RN=Random, NA=Not-Applicable]
-"typeCode":    one of [FA=Factual, CO=Conceptual, AB=Application-Based, DE=Definition, IN=Informative]
+"typeCode":    one of [DF=Direct-Factual, MS=Multi-Statement, PB=Pair-Based, SR=Statement-Reason, DE=Definitional, HM=How-Many, AB=Application-Based]
 "difficultyCode": one of [ET=Extreme-Tough, TO=Tough, ME=Medium, ES=Easy, FO=Foundational]
 "pyqCode":     one of [CS=CSE, CD=CDSE, ND=NDA, CI=CISF, CP=CAPF, NA=Not-Applicable]
 `;

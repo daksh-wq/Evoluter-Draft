@@ -270,11 +270,13 @@ export const SUBJECT_SOURCE_MAP = {
  * Segment 4 of the 16-char Question ID.
  */
 export const QUESTION_TYPE_CODES = {
-    Factual: 'FA',
-    Conceptual: 'CO',
-    'Application Based': 'AB',
-    Definition: 'DE',
-    Informative: 'IN',
+    'Direct Factual': 'DF',
+    'Multi-Statement': 'MS',
+    'Pair-Based': 'PB',
+    'Statement-Reason': 'SR',
+    'Definitional': 'DE',
+    'How Many': 'HM',
+    'Application-Based': 'AB',
 };
 
 export const QUESTION_TYPE_CODE_TO_NAME = Object.fromEntries(

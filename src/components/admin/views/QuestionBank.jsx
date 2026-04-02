@@ -11,7 +11,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {
     collection, getDocs, query, where,
-    orderBy, limit, addDoc, serverTimestamp
+    orderBy, limit, addDoc, doc, updateDoc, deleteDoc, serverTimestamp
 } from 'firebase/firestore';
 import { httpsCallable } from 'firebase/functions';
 import { db, functions } from '../../../services/firebase';
@@ -23,12 +23,13 @@ import { decodeQuestionId, generateQuestionId, getSubjectSources } from '../../.
 import { toast } from '../../../utils/toast';
 import {
     Search, Filter, Plus, ChevronDown, ChevronUp,
-    BookOpen, Tag, Sparkles, X, Loader, Eye, RefreshCw
+    BookOpen, Tag, Sparkles, X, Loader, Eye, RefreshCw,
+    Edit2, Save, Trash2
 } from 'lucide-react';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 const EMPTY_FORM = {
-    subject: 'Indian Polity', topicCode: '01',
+    subject: 'Polity & Constitution', topicCode: '01',
     sourceCode: 'SN', typeCode: 'FA', difficultyCode: 'ME', pyqCode: 'NA',
     text: '', options: ['', '', '', ''], correctAnswer: 0,
     correctAnswerReason: '', approachToSolve: '', sourceOfQuestion: ''
@@ -145,11 +146,97 @@ const ApproachBriefPanel = ({ brief, decoded }) => {
 };
 
 // ─── Question Row ─────────────────────────────────────────────────────────────
-const QuestionRow = ({ q }) => {
+const QuestionRow = ({ q, onUpdated }) => {
     const [open, setOpen] = useState(false);
+    const [editing, setEditing] = useState(false);
+    const [saving, setSaving] = useState(false);
+    const [deleting, setDeleting] = useState(false);
     const [generatingBrief, setGeneratingBrief] = useState(false);
     const [brief, setBrief] = useState(q.approachBrief || null);
     const decoded = q.questionId ? decodeQuestionId(q.questionId) : null;
+
+    // Editable state
+    const [editText, setEditText] = useState(q.text || '');
+    const [editOptions, setEditOptions] = useState([...(q.options || ['', '', '', ''])]);
+    const [editCorrect, setEditCorrect] = useState(q.correctAnswer || 0);
+    const [editReason, setEditReason] = useState(q.solution?.correctAnswerReason || '');
+    const [editSource, setEditSource] = useState(q.solution?.sourceOfQuestion || '');
+    const [editApproach, setEditApproach] = useState(q.solution?.approachToSolve || '');
+    const [editSubjectCode, setEditSubjectCode] = useState(q.subjectCode || 'PC');
+    const [editTopicCode, setEditTopicCode] = useState(q.topicCode || '01');
+    const [editSourceCode, setEditSourceCode] = useState(q.sourceCode || 'SN');
+    const [editTypeCode, setEditTypeCode] = useState(q.typeCode || 'DF');
+    const [editDiffCode, setEditDiffCode] = useState(q.difficultyCode || 'ME');
+    const [editPyqCode, setEditPyqCode] = useState(q.pyqCode || 'NA');
+
+    const editTopicMap = TOPIC_CODES[editSubjectCode] || {};
+
+    const handleStartEdit = () => {
+        setEditText(q.text || '');
+        setEditOptions([...(q.options || ['', '', '', ''])]);
+        setEditCorrect(q.correctAnswer || 0);
+        setEditReason(q.solution?.correctAnswerReason || '');
+        setEditSource(q.solution?.sourceOfQuestion || '');
+        setEditApproach(q.solution?.approachToSolve || '');
+        setEditSubjectCode(q.subjectCode || 'PC');
+        setEditTopicCode(q.topicCode || '01');
+        setEditSourceCode(q.sourceCode || 'SN');
+        setEditTypeCode(q.typeCode || 'DF');
+        setEditDiffCode(q.difficultyCode || 'ME');
+        setEditPyqCode(q.pyqCode || 'NA');
+        setEditing(true);
+    };
+
+    const handleSaveEdit = async () => {
+        if (!editText.trim()) { toast.error('Question text is required'); return; }
+        setSaving(true);
+        try {
+            const newId = generateQuestionId(editSubjectCode, editTopicCode, editSourceCode, editTypeCode, editDiffCode, editPyqCode, 0);
+            const realId = newId.replace('-0000', q.questionId?.split('-').pop() ? `-${q.questionId.split('-').pop()}` : `-E${String(Date.now()).slice(-4)}`);
+
+            await updateDoc(doc(db, 'question_bank', q.id), {
+                questionId: realId,
+                subjectCode: editSubjectCode,
+                topicCode: editTopicCode,
+                sourceCode: editSourceCode,
+                typeCode: editTypeCode,
+                difficultyCode: editDiffCode,
+                pyqCode: editPyqCode,
+                text: editText.trim(),
+                options: editOptions.map(o => o.trim()),
+                correctAnswer: editCorrect,
+                solution: {
+                    correctAnswerReason: editReason.trim(),
+                    sourceOfQuestion: editSource.trim(),
+                    approachToSolve: editApproach.trim(),
+                },
+                updatedAt: serverTimestamp(),
+            });
+            toast.success('Question updated!');
+            setEditing(false);
+            if (onUpdated) onUpdated();
+        } catch (err) {
+            console.error(err);
+            toast.error('Failed to update question');
+        } finally {
+            setSaving(false);
+        }
+    };
+
+    const handleDelete = async () => {
+        if (!window.confirm('Are you sure you want to delete this question? This cannot be undone.')) return;
+        setDeleting(true);
+        try {
+            await deleteDoc(doc(db, 'question_bank', q.id));
+            toast.success('Question deleted');
+            if (onUpdated) onUpdated();
+        } catch (err) {
+            console.error(err);
+            toast.error('Failed to delete question');
+        } finally {
+            setDeleting(false);
+        }
+    };
 
     const handleGenerateBrief = async () => {
         setGeneratingBrief(true);
@@ -164,6 +251,12 @@ const QuestionRow = ({ q }) => {
         } finally {
             setGeneratingBrief(false);
         }
+    };
+
+    const setEditOption = (i, v) => {
+        const opts = [...editOptions];
+        opts[i] = v;
+        setEditOptions(opts);
     };
 
     return (
@@ -185,32 +278,132 @@ const QuestionRow = ({ q }) => {
             {/* Detail Expansion */}
             {open && (
                 <div className="border-t border-slate-100 p-4 space-y-4 bg-slate-50">
-                    {/* Full Question */}
+                    {/* Action Buttons */}
+                    <div className="flex items-center gap-2">
+                        {!editing ? (
+                            <>
+                                <button onClick={handleStartEdit}
+                                    className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 text-amber-700 border border-amber-200 rounded-lg text-xs font-bold hover:bg-amber-100 transition-colors">
+                                    <Edit2 size={12} /> Edit
+                                </button>
+                                <button onClick={handleDelete} disabled={deleting}
+                                    className="flex items-center gap-1.5 px-3 py-1.5 bg-red-50 text-red-600 border border-red-200 rounded-lg text-xs font-bold hover:bg-red-100 transition-colors disabled:opacity-50">
+                                    {deleting ? <Loader size={12} className="animate-spin" /> : <Trash2 size={12} />}
+                                    {deleting ? 'Deleting...' : 'Delete'}
+                                </button>
+                            </>
+                        ) : (
+                            <>
+                                <button onClick={handleSaveEdit} disabled={saving}
+                                    className="flex items-center gap-1.5 px-4 py-1.5 bg-green-600 text-white rounded-lg text-xs font-bold hover:bg-green-700 transition-colors disabled:opacity-50">
+                                    {saving ? <Loader size={12} className="animate-spin" /> : <Save size={12} />}
+                                    {saving ? 'Saving...' : 'Save Changes'}
+                                </button>
+                                <button onClick={() => setEditing(false)}
+                                    className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 text-slate-600 border border-slate-200 rounded-lg text-xs font-bold hover:bg-slate-200 transition-colors">
+                                    <X size={12} /> Cancel
+                                </button>
+                            </>
+                        )}
+                    </div>
+
+                    {/* Question Text */}
                     <div>
                         <p className="text-sm font-bold text-slate-700 mb-2">Question</p>
-                        <p className="text-sm text-slate-800 leading-relaxed">{q.text}</p>
+                        {editing ? (
+                            <textarea value={editText} onChange={e => setEditText(e.target.value)} rows={4}
+                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:ring-2 focus:ring-[#2278B0] outline-none resize-none" />
+                        ) : (
+                            <p className="text-sm text-slate-800 leading-relaxed whitespace-pre-wrap">{q.text}</p>
+                        )}
                     </div>
 
                     {/* Options */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        {q.options?.map((opt, i) => (
-                            <div
-                                key={i}
-                                className={`text-sm px-3 py-2 rounded-lg border ${i === q.correctAnswer
-                                    ? 'bg-green-50 border-green-200 text-green-800 font-medium'
-                                    : 'bg-white border-slate-200 text-slate-700'}`}
-                            >
-                                <span className="font-bold mr-2">{String.fromCharCode(65 + i)}.</span>{opt}
-                            </div>
-                        ))}
-                    </div>
+                    {editing ? (
+                        <div className="space-y-2">
+                            <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">Options (select correct)</p>
+                            {editOptions.map((opt, i) => (
+                                <div key={i} className="flex gap-2 items-center">
+                                    <input type="radio" name={`edit-correct-${q.id}`} checked={editCorrect === i}
+                                        onChange={() => setEditCorrect(i)} className="accent-green-600 w-4 h-4 shrink-0" />
+                                    <span className="text-sm font-bold text-slate-500 w-5">{String.fromCharCode(65 + i)}.</span>
+                                    <input type="text" value={opt} onChange={e => setEditOption(i, e.target.value)}
+                                        className="flex-1 border border-slate-200 rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            {q.options?.map((opt, i) => (
+                                <div key={i}
+                                    className={`text-sm px-3 py-2 rounded-lg border ${i === q.correctAnswer
+                                        ? 'bg-green-50 border-green-200 text-green-800 font-medium'
+                                        : 'bg-white border-slate-200 text-slate-700'}`}>
+                                    <span className="font-bold mr-2">{String.fromCharCode(65 + i)}.</span>{opt}
+                                </div>
+                            ))}
+                        </div>
+                    )}
 
-                    {/* Decoded Tag */}
-                    {decoded && (
+                    {/* Tag Fields */}
+                    {editing ? (
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <div>
+                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Subject</label>
+                                <select value={editSubjectCode} onChange={e => { setEditSubjectCode(e.target.value); setEditTopicCode('01'); }}
+                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
+                                    {Object.entries(SUBJECT_CODES).filter(([n]) => n !== 'All Subjects').map(([name, code]) => (
+                                        <option key={code} value={code}>{code} — {name}</option>
+                                    ))}
+                                </select>
+                            </div>
+                            <div>
+                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Sub Topic</label>
+                                <select value={editTopicCode} onChange={e => setEditTopicCode(e.target.value)}
+                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
+                                    {Object.keys(editTopicMap).length > 0 ? (
+                                        Object.entries(editTopicMap).map(([code, name]) => (
+                                            <option key={code} value={code}>{code} — {name}</option>
+                                        ))
+                                    ) : (
+                                        <option value="01">01 — General</option>
+                                    )}
+                                </select>
+                            </div>
+                            <div>
+                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Source</label>
+                                <select value={editSourceCode} onChange={e => setEditSourceCode(e.target.value)}
+                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
+                                    {Object.entries(SOURCE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                </select>
+                            </div>
+                            <div>
+                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Type</label>
+                                <select value={editTypeCode} onChange={e => setEditTypeCode(e.target.value)}
+                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
+                                    {Object.entries(QUESTION_TYPE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                </select>
+                            </div>
+                            <div>
+                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Difficulty</label>
+                                <select value={editDiffCode} onChange={e => setEditDiffCode(e.target.value)}
+                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
+                                    {Object.entries(DIFFICULTY_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                </select>
+                            </div>
+                            <div>
+                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">PYQ</label>
+                                <select value={editPyqCode} onChange={e => setEditPyqCode(e.target.value)}
+                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
+                                    {Object.entries(PYQ_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                </select>
+                            </div>
+                        </div>
+                    ) : decoded && (
                         <div className="bg-white border border-slate-200 rounded-lg p-3 grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
                             {[
                                 ['Subject', decoded.subjectName],
-                                ['Topic', decoded.topicName],
+                                ['Sub Topic', decoded.topicName],
                                 ['Source', decoded.sourceName],
                                 ['Type', decoded.typeName],
                                 ['Difficulty', decoded.difficultyName],
@@ -225,7 +418,20 @@ const QuestionRow = ({ q }) => {
                     )}
 
                     {/* Solution */}
-                    {q.solution && (
+                    {editing ? (
+                        <div className="space-y-2">
+                            <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">Solution</p>
+                            <input type="text" value={editSource} onChange={e => setEditSource(e.target.value)}
+                                placeholder="Source (e.g. NCERT Class 11 Ch.2)"
+                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
+                            <input type="text" value={editReason} onChange={e => setEditReason(e.target.value)}
+                                placeholder="Why is the correct answer right?"
+                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
+                            <input type="text" value={editApproach} onChange={e => setEditApproach(e.target.value)}
+                                placeholder="Approach / strategy to solve"
+                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
+                        </div>
+                    ) : q.solution && (
                         <div className="bg-white border border-slate-200 rounded-lg p-3 text-sm space-y-2">
                             <p className="font-bold text-slate-700">Solution</p>
                             <p className="text-slate-600"><span className="font-semibold">Why Correct: </span>{q.solution.correctAnswerReason}</p>
@@ -235,10 +441,10 @@ const QuestionRow = ({ q }) => {
                     )}
 
                     {/* Approach Brief */}
-                    <ApproachBriefPanel brief={brief} decoded={decoded} />
+                    {!editing && <ApproachBriefPanel brief={brief} decoded={decoded} />}
 
                     {/* Generate Brief Button */}
-                    {!brief && (
+                    {!editing && !brief && (
                         <button
                             onClick={handleGenerateBrief}
                             disabled={generatingBrief}
@@ -248,7 +454,7 @@ const QuestionRow = ({ q }) => {
                             {generatingBrief ? 'Generating...' : 'Generate Approach Brief'}
                         </button>
                     )}
-                    {brief && (
+                    {!editing && brief && (
                         <button
                             onClick={handleGenerateBrief}
                             disabled={generatingBrief}
@@ -345,17 +551,21 @@ const AddQuestionForm = ({ onClose, onSaved }) => {
                             <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Subject</label>
                             <select value={form.subject} onChange={e => { setField('subject', e.target.value); setField('topicCode', '01'); }}
                                 className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                {SUBJECTS.map(s => <option key={s}>{s}</option>)}
+                                {SUBJECTS.filter(s => s !== 'All Subjects').map(s => <option key={s}>{s}</option>)}
                             </select>
                         </div>
-                        {/* Topic */}
+                        {/* Sub Topic */}
                         <div>
-                            <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Topic</label>
+                            <label className="text-xs font-bold text-slate-600 uppercase tracking-wider block mb-1">Sub Topic</label>
                             <select value={form.topicCode} onChange={e => setField('topicCode', e.target.value)}
                                 className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-sm text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                {Object.entries(topicMap).map(([code, name]) => (
-                                    <option key={code} value={code}>{code} — {name}</option>
-                                ))}
+                                {Object.keys(topicMap).length > 0 ? (
+                                    Object.entries(topicMap).map(([code, name]) => (
+                                        <option key={code} value={code}>{code} — {name}</option>
+                                    ))
+                                ) : (
+                                    <option value="01">01 — General</option>
+                                )}
                             </select>
                         </div>
                         {/* Source */}
@@ -593,7 +803,7 @@ const QuestionBank = () => {
                 </div>
             ) : (
                 <div className="space-y-3">
-                    {displayed.map(q => <QuestionRow key={q.id} q={q} />)}
+                    {displayed.map(q => <QuestionRow key={q.id} q={q} onUpdated={fetchQuestions} />)}
                 </div>
             )}
 
