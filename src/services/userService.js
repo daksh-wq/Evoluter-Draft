@@ -327,14 +327,22 @@ const calculatePerformanceMetrics = (questions, userAnswers, currentPerf) => {
         if (isAttempted) perf.resources[resource].attempted += 1;
         if (isCorrect) perf.resources[resource].correct += 1;
 
-        // --- 4. Question Types --- // Smart regex mapping
-        let qType = 'One-liner';
-        if (qText.includes('how many of the above') || qText.includes('how many of the given')) qType = 'Statement (How many)';
-        else if (qText.includes('which of the following statement') || qText.includes('which of the above statement') || /1\s*(and|only|&)/i.test(qText)) qType = 'Statement (Which of)';
-        else if (qText.includes('match the following') || qText.includes('correctly matched') || qText.includes('list i') || qText.includes('list ii')) qType = 'Match the pairs';
-        else if (qText.includes('assertion') && qText.includes('reason')) qType = 'Assertion-Reason';
+        // --- 4. Question Types --- // Smart regex mapping + explicit tag priority
+        let qType = q.questionType;
+        
+        // If no explicit type or it's an old label, use regex mapping
+        if (!perf.questionTypes[qType]) {
+            const qText = (q.text || '').toLowerCase();
+            if (qText.includes('how many of the above') || qText.includes('how many of the given') || qText.includes('only one') && qText.includes('only two')) qType = 'How Many';
+            else if (qText.includes('which of the following statement') || qText.includes('which of the above statement') || /1\s*(and|only|&)/i.test(qText)) qType = 'Multi-Statement (Standard)';
+            else if (qText.includes('match the following') || qText.includes('correctly matched') || qText.includes('pair 1') || qText.includes('pair 2')) qType = 'Pair-Based';
+            else if (qText.includes('assertion') && qText.includes('reason') || qText.includes('statement-i') && qText.includes('statement-ii')) qType = 'Assertion-Reason';
+            else if (qText.includes('best defines') || qText.includes('most appropriate') || qText.includes('term means')) qType = 'Definitional';
+            else if (qText.includes('technology') || qText.includes('can be used') || qText.includes('may be')) qType = 'Application-Based';
+            else qType = 'Direct Factual';
+        }
 
-        if (!perf.questionTypes[qType]) qType = 'One-liner';
+        if (!perf.questionTypes[qType]) qType = 'Direct Factual';
         perf.questionTypes[qType].total += 1;
         if (isAttempted) perf.questionTypes[qType].attempted += 1;
         if (isCorrect) perf.questionTypes[qType].correct += 1;

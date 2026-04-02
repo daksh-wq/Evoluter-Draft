@@ -14,8 +14,14 @@
     "correctAnswer": 2,
     "explanation": "The passage highlights the multi-dimensional conflict between conservation, commercial interests, and livelihoods. It specifically notes that commercial exploitation leads to environmental degradation (deforestation, floods), which in turn hurts livelihoods, creating a cycle of conflict and imbalance[cite: 83, 84, 85, 86].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -33,8 +39,14 @@
     "correctAnswer": 3,
     "explanation": "Assumption I is invalid because the passage explicitly states that commercial exploitation has the potential to boost national income[cite: 86]. Assumption II is invalid because the passage does not discuss international resource sharing or cooperation between countries[cite: 81, 86].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -52,8 +64,14 @@
     "correctAnswer": 3,
     "explanation": "The passage emphasizes that 'moving early and gradually' allows for adjustment and benefits, whereas a 'late' transition is costlier, highlighting that timing is the decisive factor for a smooth transition[cite: 115, 116].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -71,8 +89,14 @@
     "correctAnswer": 1,
     "explanation": "Assumption II is valid as the passage uses the solar energy pattern (90% price drop) as evidence that 'learning by doing' and 'moving early' lead to benefits without disruption[cite: 112, 114, 115]. Assumption I is an over-extension as the passage does not specifically mention India or public finances[cite: 111, 116].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -80,7 +104,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "5. A natural number N is such that it can be expressed as $N=p+q+r$, where p, q and r are distinct factors of N. How many numbers below 50 have this property?",
+    "text": "A natural number N is such that it can be expressed as $N=p+q+r$, where p, q and r are distinct factors of N. How many numbers below 50 have this property?",
     "options": [
       "6",
       "7",
@@ -90,8 +114,14 @@
     "correctAnswer": 2,
     "explanation": "Numbers that can be expressed as the sum of three distinct factors are typically multiples of 6 (where $6 = 1+2+3$) or other perfect/abundant numbers. For N < 50, such numbers include 6, 12, 18, 24, 30, 36, 42, 48. Testing these: 6 (1,2,3), 12 (6,4,2), 18 (9,6,3), 24 (12,8,4), 30 (15,10,5), 36 (18,12,6), 42 (21,14,7), 48 (24,16,8). 20 also works (10,5,4 is 19, no; 10,5,2 is 17). 28 works (14,7,4 is 25). Checking specifically for distinct factors summing to N: 6, 12, 18, 20 (no), 24, 28 (no, 14+7+4+2+1=28), 30, 36, 42, 48. The count of such numbers meeting the criteria $N=p+q+r$ is 8.",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Factors" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Factors"
+      }
     ]
   },
   {
@@ -99,7 +129,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "6. Three prime numbers p, q and r, each less than 20, are such that $p-q=q-r$. How many distinct possible values can we get for $(p+q+r)$?",
+    "text": "Three prime numbers p, q and r, each less than 20, are such that $p-q=q-r$. How many distinct possible values can we get for $(p+q+r)$?",
     "options": [
       "4",
       "5",
@@ -109,8 +139,14 @@
     "correctAnswer": 1,
     "explanation": "The condition $p-q=q-r$ implies $p, q, r$ are in Arithmetic Progression ($2q = p+r$). Prime numbers < 20 are 2, 3, 5, 7, 11, 13, 17, 19. Possible APs: (3,5,7) sum 15; (7,11,15-no); (5,11,17) sum 33; (11,13,15-no); (13,17,21-no); (7,13,19) sum 39; (3,11,19) sum 33 (not distinct sum); (3,7,11) sum 21; (2, q, r) no odd/even mix works except 3,5,7 etc. The distinct sums are 15, 21, 33, 39. Total 5 distinct values found: (3,5,7)=15, (3,7,11)=21, (5,11,17)=33, (7,13,19)=39, (11,13,no). Wait, (5,7,9-no). (13,11,9-no). Distinct sums are 5.",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Prime Numbers" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Prime Numbers"
+      }
     ]
   },
   {
@@ -118,7 +154,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Algebra",
-    "text": "7. How many possible values of $(p+q+r)$ are there satisfying $\\frac{1}{p}+\\frac{1}{q}+\\frac{1}{r}=1$, where p, q and r are natural numbers (not necessarily distinct)?",
+    "text": "How many possible values of $(p+q+r)$ are there satisfying $\\frac{1}{p}+\\frac{1}{q}+\\frac{1}{r}=1$, where p, q and r are natural numbers (not necessarily distinct)?",
     "options": [
       "None",
       "One",
@@ -128,8 +164,14 @@
     "correctAnswer": 2,
     "explanation": "Possible solutions for $(p,q,r)$ are: (3,3,3) sum 9; (2,4,4) sum 10; (2,3,6) sum 11. These yield three distinct values for the sum $(p+q+r)$.",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Equations" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Equations"
+      }
     ]
   },
   {
@@ -137,7 +179,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Series",
-    "text": "8. What comes at X and Y respectively in the following sequence?\nJanuary, January, December, October, X, March, October, Y, September",
+    "text": "What comes at X and Y respectively in the following sequence?\nJanuary, January, December, October, X, March, October, Y, September",
     "options": [
       "July, May",
       "July, April",
@@ -147,8 +189,14 @@
     "correctAnswer": 0,
     "explanation": "The sequence follows the number of letters in the month names. January(7), January(7), December(8), October(7)... or it maps to a specific pattern of month jumps. January to January (0), January to December (-1), December to October (-2), October to X (-3). October is 10th month, 10-3 = 7th month (July). July to March (-4). March is 3rd month, 3-5 = 10th month (October). October to Y (-6). 10-6 = 4th month (April) or 5th (May). Using the subtraction pattern: -0, -1, -2, -3, -4, -5, -6. X is July, Y is April.",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Sequence" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Sequence"
+      }
     ]
   },
   {
@@ -156,7 +204,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Averages",
-    "text": "9. Team X scored a total of N runs in 20 overs. Team Y tied the score in 10% less overs. Had team Y's average run rate (runs per over) been 50% higher, the scores would have been tied in 12 overs. How many runs were scored by team X?",
+    "text": "Team X scored a total of N runs in 20 overs. Team Y tied the score in 10% less overs. Had team Y's average run rate (runs per over) been 50% higher, the scores would have been tied in 12 overs. How many runs were scored by team X?",
     "options": [
       "72",
       "144",
@@ -166,8 +214,14 @@
     "correctAnswer": 3,
     "explanation": "Let Team X score be N. Team Y overs = 20 - 10% of 20 = 18 overs. Team Y run rate $R = N/18$. If run rate was $1.5R$, time taken $T = N/(1.5R)$. $12 = N / (1.5 * (N/18)) = 12 = 18/1.5 = 12$. The equation $12 = 12$ is an identity and holds for any value of N. Therefore, N cannot be determined from the given information[cite: 198, 199].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic"
+      }
     ]
   },
   {
@@ -175,7 +229,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Percentages",
-    "text": "10. The price (p) of a commodity is first increased by k%; then decreased by k%; again increased by k%; and again decreased by k%. If the new price is q, then what is the relation between p and q?",
+    "text": "The price (p) of a commodity is first increased by k%; then decreased by k%; again increased by k%; and again decreased by k%. If the new price is q, then what is the relation between p and q?",
     "options": [
       "$p(10^{4}-k^{2})^{2}=q\\times10^{8}$",
       "$p(10^{4}-k^{2})^{2}=q\\times10^{4}$",
@@ -185,8 +239,14 @@
     "correctAnswer": 0,
     "explanation": "Each pair of increase and decrease by k% results in a multiplier of $(1 - (k/100)^2) = (10000 - k^2)/10000$. Since this happens twice, $q = p \\times [ (10000 - k^2) / 10000 ]^2$. Rearranging: $q = p \\times (10^4 - k^2)^2 / 10^8$, which leads to $p(10^4 - k^2)^2 = q \\times 10^8$[cite: 207, 208].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Successive Percentage" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Successive Percentage"
+      }
     ]
   },
   {
@@ -204,8 +264,14 @@
     "correctAnswer": 3,
     "explanation": "The passage highlights that because each region/state faces 'distinctive' challenges and 'own set of opportunities', goals and strategies must be tailored to these specific localized contexts[cite: 232].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -223,8 +289,14 @@
     "correctAnswer": 0,
     "explanation": "Assumption I is valid as the passage links 'opportunities for reducing emissions' (like wind power) to the specific climatic challenges of states[cite: 232]. Assumption II is invalid because while the passage mentions challenges in these areas, it does not state they are 'much more severe' than in drier districts[cite: 232].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -242,8 +314,14 @@
     "correctAnswer": 3,
     "explanation": "The passage explicitly states that 'insecurity, more than poverty, is the most acutely felt economic problem' and notes that policies are intended to mitigate these[cite: 249].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -261,8 +339,14 @@
     "correctAnswer": 0,
     "explanation": "Assumption I is valid because the passage states 'even those just over the poverty line are subject to multiple economic insecurities'[cite: 249]. Assumption II is not supported by the passage, which focuses on the distinction between poverty and insecurity[cite: 249].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -270,7 +354,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Geometry/Cubes",
-    "text": "15. A solid cube is painted yellow on all its faces. The cube is then cut into 60 smaller but equal pieces by making the minimum number of cuts. Which of the following statements is/are correct?\nI. The minimum number of cuts is 9.\nII. The number of smaller pieces which are not painted on any face is 6.\n\nSelect the correct answer using the code given below:",
+    "text": "A solid cube is painted yellow on all its faces. The cube is then cut into 60 smaller but equal pieces by making the minimum number of cuts. Which of the following statements is/are correct?\nI. The minimum number of cuts is 9.\nII. The number of smaller pieces which are not painted on any face is 6.\n\nSelect the correct answer using the code given below:",
     "options": [
       "I only",
       "II only",
@@ -280,8 +364,14 @@
     "correctAnswer": 2,
     "explanation": "To get 60 pieces with minimum cuts, we use the formula $(l+1)(m+1)(n+1) = 60$. The sets of $(l+1, m+1, n+1)$ that sum to the smallest value are (3, 4, 5). Cuts required: $(3-1) + (4-1) + (5-1) = 2 + 3 + 4 = 9$. Statement I is correct. For unpainted pieces, we look at the inner core: $(3-2) \times (4-2) \times (5-2) = 1 \times 2 \times 3 = 6$. Statement II is correct[cite: 322, 328, 331].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Cubes" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Cubes"
+      }
     ]
   },
   {
@@ -289,7 +379,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Coding-Decoding",
-    "text": "16. If $7*24=25$ and $12*16=20$ then what is $16*63$ equal to?",
+    "text": "If $7*24=25$ and $12*16=20$ then what is $16*63$ equal to?",
     "options": [
       "70",
       "66",
@@ -299,8 +389,14 @@
     "correctAnswer": 2,
     "explanation": "The operation '*' represents the Pythagorean triplet: $\\sqrt{a^2 + b^2}$. $\\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25$. $\\sqrt{12^2 + 16^2} = \\sqrt{144 + 256} = \\sqrt{400} = 20$. For $16*63$: $\\sqrt{16^2 + 63^2} = \\sqrt{256 + 3969} = \\sqrt{4225} = 65$[cite: 344].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Mental Ability" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Mental Ability"
+      }
     ]
   },
   {
@@ -308,7 +404,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Arithmetic/Percentages",
-    "text": "17. The petrol price shot up by 10% as a result of the hike in crude oil prices. The price of petrol before the hike was ₹ 90 per litre. A person travels 2200 km every month and his car gives a mileage of 16 km per litre. By how many km should he reduce his travel if he wants to maintain his expenditure at the previous level?",
+    "text": "The petrol price shot up by 10% as a result of the hike in crude oil prices. The price of petrol before the hike was ₹ 90 per litre. A person travels 2200 km every month and his car gives a mileage of 16 km per litre. By how many km should he reduce his travel if he wants to maintain his expenditure at the previous level?",
     "options": [
       "180 km",
       "200 km",
@@ -318,8 +414,14 @@
     "correctAnswer": 1,
     "explanation": "To keep expenditure constant when price increases by 10% (multiplier 1.1), consumption must decrease by a factor of $1/1.1$. New travel distance = $2200 \times (1/1.1) = 2000$ km. Reduction = $2200 - 2000 = 200$ km[cite: 355, 356, 357, 358].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic"
+      }
     ]
   },
   {
@@ -327,7 +429,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "18. A 4-digit number N is such that when divided by 3, 5, 6, 9 leaves a remainder 1, 3, 4, 7 respectively. What is the smallest value of N?",
+    "text": "A 4-digit number N is such that when divided by 3, 5, 6, 9 leaves a remainder 1, 3, 4, 7 respectively. What is the smallest value of N?",
     "options": [
       "1068",
       "1072",
@@ -337,8 +439,14 @@
     "correctAnswer": 2,
     "explanation": "The difference between divisor and remainder is constant: $3-1=2, 5-3=2, 6-4=2, 9-7=2$. N must be of the form $LCM(3, 5, 6, 9)k - 2$. $LCM(3, 5, 6, 9) = 90$. $N = 90k - 2$. For a 4-digit number, smallest k is 12: $90(12) - 2 = 1080 - 2 = 1078$[cite: 321, 324].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "LCM/Remainder" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "LCM/Remainder"
+      }
     ]
   },
   {
@@ -346,7 +454,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Inequalities",
-    "text": "19. Consider the following statements:\nI. If $A \\le B > C < D > E > F \\ge G = H$ then B is always greater than E.\nII. If $P > Q = R \\ge S = T \\le U = V > W$ then S is always less than V.\n\nWhich of the statements given above is/are correct?",
+    "text": "Consider the following statements:\nI. If $A \\le B > C < D > E > F \\ge G = H$ then B is always greater than E.\nII. If $P > Q = R \\ge S = T \\le U = V > W$ then S is always less than V.\n\nWhich of the statements given above is/are correct?",
     "options": [
       "I only",
       "II only",
@@ -356,8 +464,14 @@
     "correctAnswer": 3,
     "explanation": "In Statement I, the relationship between B and E is $B > C < D > E$. There is a 'gate closed' (opposite signs) between B and E, so no definitive relationship exists. In Statement II, $S = T \\le U = V$. This means $S \\le V$, not 'always less than' (it could be equal). Both are incorrect[cite: 347, 349].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logic"
+      }
     ]
   },
   {
@@ -365,7 +479,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "20. What is the unit digit in the multiplication of $1 \\times 3 \\times 5 \\times 7 \\times 9 \\times ... \\times 999$?",
+    "text": "What is the unit digit in the multiplication of $1 \\times 3 \\times 5 \\times 7 \\times 9 \\times ... \\times 999$?",
     "options": [
       "1",
       "3",
@@ -375,8 +489,14 @@
     "correctAnswer": 2,
     "explanation": "The product consists only of odd numbers and includes the number 5. Any odd number multiplied by 5 results in a unit digit of 5[cite: 370, 380].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Unit Digit" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Unit Digit"
+      }
     ]
   },
   {
@@ -394,8 +514,14 @@
     "correctAnswer": 0,
     "explanation": "The passage highlights the 'sharp contrast' between agricultural stagnation and the consistent growth of the non-agricultural economy since the 1980s. This suggests that the broad economic benefits/reforms seen in other sectors did not reach agriculture effectively[cite: 433, 436].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -413,8 +539,14 @@
     "correctAnswer": 3,
     "explanation": "The passage describes the growth trends but does not offer solutions or analyze the causes of divergence in terms of corporate farming or subsidies. Therefore, neither assumption can be validated based solely on the text[cite: 432, 436].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -432,8 +564,14 @@
     "correctAnswer": 0,
     "explanation": "The author argues that the current 'limited narrative' of tradition/culture used to justify state support is being contested and causes sections of the population to ignore the industry. The message is that this framing needs revision[cite: 461, 463, 466].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -451,8 +589,14 @@
     "correctAnswer": 3,
     "explanation": "Assumption I is not valid because the author discusses the *basis* of state support, not necessarily arguing for its total removal. Assumption II is not valid because the passage says people ignore handlooms because of the 'narrative' and contested 'identities', not explicitly because they are 'unappealing' due to modernity[cite: 463, 466].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -460,7 +604,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "25. Consider the first 100 natural numbers. How many of them are not divisible by any one of 2, 3, 5, 7 and 9?",
+    "text": "Consider the first 100 natural numbers. How many of them are not divisible by any one of 2, 3, 5, 7 and 9?",
     "options": [
       "20",
       "21",
@@ -470,8 +614,14 @@
     "correctAnswer": 1,
     "explanation": "Since 9 is a multiple of 3, we only need to check divisibility by 2, 3, 5, and 7. These are the prime numbers < 10. The numbers not divisible by these are primes > 7 and their products that are < 100. Listing them: 1 (always counts as not divisible), 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97. Total = 22. Wait, 1 is usually excluded or included based on definition; if included, 22. Let's re-verify: the count is usually 21 (excluding 1) or 22 (including 1). Option (c) is 22.",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Divisibility" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Divisibility"
+      }
     ]
   },
   {
@@ -479,7 +629,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Algebra",
-    "text": "26. If $4 \\le x \\le 8$ and $2 \\le y \\le 7$, then what is the ratio of maximum value of $(x+y)$ to minimum value of $(x-y)$?",
+    "text": "If $4 \\le x \\le 8$ and $2 \\le y \\le 7$, then what is the ratio of maximum value of $(x+y)$ to minimum value of $(x-y)$?",
     "options": [
       "6",
       "$\\frac{15}{2}$",
@@ -489,8 +639,14 @@
     "correctAnswer": 1,
     "explanation": "Max $(x+y) = 8 + 7 = 15$. Min $(x-y) = Min(x) - Max(y) = 4 - 7 = -3$. Ratio = $15 / -3 = -5$. Since -5 is not in the specific numeric options (b) or (c) as provided in the PDF snippet (though snippet text for 26 is slightly cut), 'None of the above' is the standard choice[cite: 485].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Inequalities" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Inequalities"
+      }
     ]
   },
   {
@@ -498,7 +654,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Prime Numbers",
-    "text": "27. Let both p and k be prime numbers such that $(p^2+k)$ is also a prime number less than 30. What is the number of possible values of k?",
+    "text": "Let both p and k be prime numbers such that $(p^2+k)$ is also a prime number less than 30. What is the number of possible values of k?",
     "options": [
       "4",
       "5",
@@ -508,8 +664,14 @@
     "correctAnswer": 0,
     "explanation": "If $p=2$, $p^2=4$. $4+k < 30$ and $4+k$ is prime. $k$ can be 3 (7), 7 (11), 13 (17), 19 (23). If $p=3$, $p^2=9$. $9+k < 30$. $k$ must be 2 (11). If $k$ is any other prime (odd), $9+k$ is even (not prime). If $p=5$, $p^2=25$. $25+k < 30$. $k$ must be 2 (27-no). Total values of k are {3, 7, 13, 19, 2}. Total count = 5. Option (b)[cite: 485].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Number System" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Number System"
+      }
     ]
   },
   {
@@ -517,7 +679,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "LCM/HCF",
-    "text": "28. There are n sets of numbers each having only three positive integers with LCM equal to 1001 and HCF equal to 1. What is the value of n?",
+    "text": "There are n sets of numbers each having only three positive integers with LCM equal to 1001 and HCF equal to 1. What is the value of n?",
     "options": [
       "6",
       "7",
@@ -527,8 +689,14 @@
     "correctAnswer": 3,
     "explanation": "$1001 = 7 \times 11 \times 13$. For three numbers to have LCM 1001 and HCF 1, each prime factor must appear at least once as the maximum power in the set. There are many such combinations (e.g., {7, 11, 13}, {77, 13, 1}, etc.). The number of such sets is significantly high, exceeding 8[cite: 494].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Number System" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Number System"
+      }
     ]
   },
   {
@@ -536,7 +704,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Arithmetic/Logic",
-    "text": "29. Let PQR be a 3-digit number, PPT be a 3-digit number and PS be a 2-digit number, where P, Q, R, S, T are distinct non-zero digits. Further, PQR - PS = PPT. If $Q=3$ and $T<6$ then what is the number of possible values of (R, S)?",
+    "text": "Let PQR be a 3-digit number, PPT be a 3-digit number and PS be a 2-digit number, where P, Q, R, S, T are distinct non-zero digits. Further, PQR - PS = PPT. If $Q=3$ and $T<6$ then what is the number of possible values of (R, S)?",
     "options": [
       "2",
       "3",
@@ -546,8 +714,14 @@
     "correctAnswer": 1,
     "explanation": "Equation: $100P + 10Q + R - (10P + S) = 100P + 10P + T$. Simplifying: $10Q + R - 10P - S = 10P + T \\implies 10(Q - 2P) + R - S = T$. Given $Q=3$: $10(3 - 2P) + R - S = T$. Since digits are non-zero and distinct, if $P=1$: $10(1) + R - S = T \\implies 10 + R - S = T$. For $T < 6$: If $R-S = -5, T=5$; If $R-S = -6, T=4$; If $R-S = -7, T=3$ (no, Q=3), If $R-S = -8, T=2$; If $R-S = -9, T=1$ (no, P=1). Possible (R,S) pairs: (2,7), (4,9), (1,7)-no, (2,8), (3,9)-no. Count is limited[cite: 503].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Cryptarithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Cryptarithmetic"
+      }
     ]
   },
   {
@@ -555,7 +729,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Series",
-    "text": "30. Consider the sequence AB_CC_A_BCCC_BBC_C that follows a certain pattern. Which one of the following completes the sequence?",
+    "text": "Consider the sequence AB_CC_A_BCCC_BBC_C that follows a certain pattern. Which one of the following completes the sequence?",
     "options": [
       "B, C, B, C, A",
       "A, C, B, C, A",
@@ -565,8 +739,14 @@
     "correctAnswer": 2,
     "explanation": "The pattern is usually found by breaking the string into equal blocks. String length is 18. Try blocks of 6: AB B CC C / A B B CCC / B B C C C. The sequence likely follows a repeating or incremental pattern of A, B, and C. Option (c) completes it to form a consistent logical flow[cite: 517].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Letter Series" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Letter Series"
+      }
     ]
   },
   {
@@ -584,8 +764,14 @@
     "correctAnswer": 3,
     "explanation": "The passage highlights that the current system is too focused on exams and needs to shift towards critical thinking and multi-disciplinary approaches. It concludes explicitly that 'Teaching has to be re-invented'[cite: 511, 512].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -603,8 +789,14 @@
     "correctAnswer": 0,
     "explanation": "Assumption I is valid because the passage states the 'new demands of society and the future of work require' a change in how we think and learn[cite: 509]. Assumption II is invalid as the passage does not mention funding or resource allocation[cite: 508, 511].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -622,8 +814,14 @@
     "correctAnswer": 1,
     "explanation": "The passage provides specific data (16% and 5-7% recovery rates) to prove that converting plant-based food into animal food is 'far from efficient'[cite: 565, 566, 567].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -641,8 +839,14 @@
     "correctAnswer": 1,
     "explanation": "Assumption II is valid because the passage states that as societies get wealthier, they consume more animal products, which leads to highly inefficient calorie conversion[cite: 563, 565]. Assumption I is not mentioned as the passage does not discuss industry alignment or processing[cite: 562, 567].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -650,7 +854,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "35. What is the maximum value of n such that $7 \times 343 \times 385 \times 1000 \times 2401 \times 777777$ is divisible by $35^{n}$?",
+    "text": "What is the maximum value of n such that $7 \times 343 \times 385 \times 1000 \times 2401 \times 777777$ is divisible by $35^{n}$?",
     "options": [
       "3",
       "4",
@@ -660,8 +864,14 @@
     "correctAnswer": 2,
     "explanation": "$35 = 5 \times 7$. We count the factors of 5 and 7 in the product: 7(1), $343=7^3$(3), $385=5 \times 7 \times 11$(one 5, one 7), $1000=5^3 \times 2^3$(three 5s), $2401=7^4$(4), $777777 = 7 \times 111111$ (at least one 7). Total 7s: $1+3+1+4+1 = 10$. Total 5s: $1+3 = 4$. The limiting factor is 5. So $n=4$[cite: 642, 644].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Divisibility" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Divisibility"
+      }
     ]
   },
   {
@@ -669,7 +879,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Series",
-    "text": "36. What is X in the sequence 24, X, 12, 18, 36, 90?",
+    "text": "What is X in the sequence 24, X, 12, 18, 36, 90?",
     "options": [
       "18",
       "12",
@@ -679,8 +889,14 @@
     "correctAnswer": 1,
     "explanation": "The pattern is multiplication by increasing increments of 0.5: $24 \times 0.5 = 12$, $12 \times 1.0 = 12$, $12 \times 1.5 = 18$, $18 \times 2.0 = 36$, $36 \times 2.5 = 90$. Thus $X = 12$[cite: 652].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Number Series" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Number Series"
+      }
     ]
   },
   {
@@ -688,7 +904,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Time and Distance",
-    "text": "37. P and Q walk along a circular track. They start at 5:00 a.m. from the same point in opposite directions. P walks at an average speed of 5 rounds per hour and Q walks at an average speed of 3 rounds per hour. How many times will they cross each other between 5:20 a.m. and 7:00 a.m.?",
+    "text": "P and Q walk along a circular track. They start at 5:00 a.m. from the same point in opposite directions. P walks at an average speed of 5 rounds per hour and Q walks at an average speed of 3 rounds per hour. How many times will they cross each other between 5:20 a.m. and 7:00 a.m.?",
     "options": [
       "8",
       "9",
@@ -698,8 +914,14 @@
     "correctAnswer": 3,
     "explanation": "Relative speed in opposite direction = $5 + 3 = 8$ rounds per hour. They cross every $1/8$ hour (7.5 minutes). From 5:00 a.m. to 7:00 a.m. (2 hours), they cross $8 \times 2 = 16$ times. We need the count between 5:20 and 7:00. Crossings: 5:07.5, 5:15, 5:22.5, 5:30... The first two happen before 5:20. The last one at 7:00 is usually included or excluded based on 'between'. From 5:20 to 7:00 is 100 minutes. $100 / 7.5 = 13.33$. Considering the start at 5:00, the crossings between 5:20 and 7:00 are 11[cite: 673, 674].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Circular Motion" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Circular Motion"
+      }
     ]
   },
   {
@@ -707,7 +929,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Simplification",
-    "text": "38. If $P=+$, $Q=-$, $R=x$, $S=\\div$, then insert the proper notations between the successive numbers in the equation 60_15_3_20_4 $-4=20$:",
+    "text": "If $P=+$, $Q=-$, $R=x$, $S=\\div$, then insert the proper notations between the successive numbers in the equation 60_15_3_20_4 $-4=20$:",
     "options": [
       "SPRQ",
       "QRPS",
@@ -717,8 +939,14 @@
     "correctAnswer": 0,
     "explanation": "Try SPRQ: $60 \\div 15 + 3 \\times 20 - 4$. $4 + 60 - 4 = 60$. Not 20. Re-evaluating the notation $60\\_15\\_3\\_20\\_4 - 4 = 20$. If SPRQ: $60 S 15 P 3 R 20 Q 4$. $60 \\div 15 + 3 \\times 20 - 4 = 4 + 60 - 4 = 60$. Option (d) SPQR: $60 \\div 15 + 3 - 20 \\times 4$. $4 + 3 - 80 = -73$. Standard BODMAS check required for each[cite: 662].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Mathematical Operations" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Mathematical Operations"
+      }
     ]
   },
   {
@@ -726,7 +954,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Time and Distance",
-    "text": "39. A tram overtakes 2 persons X and Y walking at an average speed of 3 km/hr and 4 km/hr in the same direction and completely passes them in 8 seconds and 9 seconds respectively. What is the length of the tram?",
+    "text": "A tram overtakes 2 persons X and Y walking at an average speed of 3 km/hr and 4 km/hr in the same direction and completely passes them in 8 seconds and 9 seconds respectively. What is the length of the tram?",
     "options": [
       "15 m",
       "18 m",
@@ -736,8 +964,14 @@
     "correctAnswer": 3,
     "explanation": "Let tram length be L and speed V. $L = (V - 3 \\times 5/18) \times 8 = (V - 4 \\times 5/18) \times 9$. $8V - 60/9 = 9V - 180/18 \\implies V = 10 - 6.66 = 3.33$. Calculation yields $L = 24$ meters[cite: 671, 672].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Relative Speed" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Relative Speed"
+      }
     ]
   },
   {
@@ -745,7 +979,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "40. If $N^{2}=12345678987654321$, then how many digits does the number N have?",
+    "text": "If $N^{2}=12345678987654321$, then how many digits does the number N have?",
     "options": [
       "8",
       "9",
@@ -755,8 +989,14 @@
     "correctAnswer": 1,
     "explanation": "A number consisting of digits 1 to n then back to 1 is the square of a number consisting of n ones. $111,111,111^2 = 123,456,789,876,543,21$. So N consists of nine 1s[cite: 684].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Squares" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Squares"
+      }
     ]
   },
   {
@@ -774,8 +1014,14 @@
     "correctAnswer": 1,
     "explanation": "The passage states that even for demand-side behavioral changes (which only cover half the reduction), companies and governments need to provide 'incentives' to make options cheaper[cite: 743, 763].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -793,8 +1039,14 @@
     "correctAnswer": 2,
     "explanation": "The passage explicitly links supply-side investments to making low-carbon options available for behavior change (Assumption I) and states that achieving even half the reduction through behavior *would require* incentives and investment from governments and companies (Assumption II)[cite: 743, 763].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -812,8 +1064,14 @@
     "correctAnswer": 2,
     "explanation": "The passage uses battery recycling as a case study to show that 'reusing materials makes sense' given resource scarcity and supply chain risks, supporting the broader benefits of a circular economy[cite: 777, 779].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -831,8 +1089,14 @@
     "correctAnswer": 1,
     "explanation": "The passage describes *how* batteries should go back to factories for recovery (circularity), implying compatibility between growth and resource reuse (Assumption II)[cite: 779]. Assumption I is invalid because it describes what 'should' happen, not that they are already definitive 'examples'[cite: 779].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -840,7 +1104,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Time and Work/Pipes",
-    "text": "45. A set (X) of 20 pipes can fill 70% of a tank in 14 minutes. Another set (Y) of 10 pipes fills $3/8^{th}$ of the tank in 6 minutes. A third set (Z) of 16 pipes can empty half of the tank in 20 minutes. If half of the pipes of set X are closed and only half of the pipes of set Y are open, and all pipes of the set (Z) are open, then how long will it take to fill 50% of the tank?",
+    "text": "A set (X) of 20 pipes can fill 70% of a tank in 14 minutes. Another set (Y) of 10 pipes fills $3/8^{th}$ of the tank in 6 minutes. A third set (Z) of 16 pipes can empty half of the tank in 20 minutes. If half of the pipes of set X are closed and only half of the pipes of set Y are open, and all pipes of the set (Z) are open, then how long will it take to fill 50% of the tank?",
     "options": [
       "8 minutes",
       "10 minutes",
@@ -850,8 +1114,14 @@
     "correctAnswer": 1,
     "explanation": "Set X rate (20 pipes) = $0.7/14 = 0.05$ tank/min. Set Y rate (10 pipes) = $(3/8)/6 = 1/16$ tank/min. Set Z rate (16 pipes) = $0.5/20 = 0.025$ tank/min (outflow). New rates: X (10 pipes) = 0.025; Y (5 pipes) = 0.03125; Z (16 pipes) = -0.025. Combined rate = $0.025 + 0.03125 - 0.025 = 0.03125$ tank/min. Time to fill 0.5 tank = $0.5 / 0.03125 = 16$ minutes[cite: 789].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Pipes and Cisterns" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Pipes and Cisterns"
+      }
     ]
   },
   {
@@ -859,7 +1129,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "46. If n is a natural number, then what is the number of distinct remainders of $(1^n+2^n)$ when divided by 4?",
+    "text": "If n is a natural number, then what is the number of distinct remainders of $(1^n+2^n)$ when divided by 4?",
     "options": [
       "0",
       "1",
@@ -869,8 +1139,14 @@
     "correctAnswer": 2,
     "explanation": "If $n=1$: $(1+2) = 3$; rem = 3. If $n=2$: $(1+4) = 5$; rem = 1. If $n=3$: $(1+8) = 9$; rem = 1. If $n=4$: $(1+16) = 17$; rem = 1. The distinct remainders are 1 and 3. Total count = 2[cite: 789].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Remainder Theorem" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Remainder Theorem"
+      }
     ]
   },
   {
@@ -878,7 +1154,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "LCM/HCF",
-    "text": "47. Let $P=QQQ$ be a 3-digit number. What is the HCF of P and 481?",
+    "text": "Let $P=QQQ$ be a 3-digit number. What is the HCF of P and 481?",
     "options": [
       "1",
       "13",
@@ -888,8 +1164,14 @@
     "correctAnswer": 2,
     "explanation": "$P = Q \\times 111 = Q \\times 3 \\times 37$. $481 = 13 \\times 37$. The common factor is 37. Since Q is a digit (1-9), the only prime factor common to all $QQQ$ and 481 is 37[cite: 789].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Number System" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Number System"
+      }
     ]
   },
   {
@@ -897,7 +1179,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "48. What is the 489th digit in the number 123456789101112...?",
+    "text": "What is the 489th digit in the number 123456789101112...?",
     "options": [
       "0",
       "3",
@@ -907,8 +1189,14 @@
     "correctAnswer": 3,
     "explanation": "Digits 1-9: 9 digits. Digits 10-99: $90 \\times 2 = 180$ digits. Total so far: 189 digits. Remaining = $489 - 189 = 300$ digits. These come from 3-digit numbers starting from 100. $300 / 3 = 100$ numbers. So we reach the end of the 100th 3-digit number (199). The 489th digit is the last digit of 199, which is 9[cite: 789].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic"
+      }
     ]
   },
   {
@@ -916,7 +1204,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Puzzles",
-    "text": "49. A mobile phone has been stolen. There are 3 suspects P, Q and R. They were questioned knowing that only one of them is guilty. Their responses are as follows:\nP: I did not steal. Q stole it.\nQ: R did not steal. I did not steal.\nR: I did not steal. I do not know who did it.\nWho stole the mobile phone?",
+    "text": "A mobile phone has been stolen. There are 3 suspects P, Q and R. They were questioned knowing that only one of them is guilty. Their responses are as follows:\nP: I did not steal. Q stole it.\nQ: R did not steal. I did not steal.\nR: I did not steal. I do not know who did it.\nWho stole the mobile phone?",
     "options": [
       "P",
       "Q",
@@ -926,8 +1214,14 @@
     "correctAnswer": 3,
     "explanation": "This is a logic puzzle usually involving 'one truth' or 'one lie'. If P is guilty, P's statements are False (I stole) and False (Q didn't). Q's are True and True. R's are True and True. If only one is guilty, we need more constraints (like 'only one statement is true' or 'one person lies'). Based on the standard format of these questions, without such a constraint, it often 'Cannot be concluded'[cite: 839, 853].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logic Puzzles" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logic Puzzles"
+      }
     ]
   },
   {
@@ -935,7 +1229,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Puzzles",
-    "text": "50. Three teams P, Q, R participated in a tournament in which the teams play with one another exactly once. A win fetches a team 2 points and a draw 1 point. A team gets no point for a loss. Each team scored exactly one goal in the tournament. The team P got 3 points, Q got 2 points and R got 1 point.\nWhich of the following statements is/are correct?\nI. The result of the match between P and Q is a draw with the score 0-0.\nII. The number of goals scored by R against Q is 1.\n\nWhich of the statements given above is/are correct?",
+    "text": "Three teams P, Q, R participated in a tournament in which the teams play with one another exactly once. A win fetches a team 2 points and a draw 1 point. A team gets no point for a loss. Each team scored exactly one goal in the tournament. The team P got 3 points, Q got 2 points and R got 1 point.\nWhich of the following statements is/are correct?\nI. The result of the match between P and Q is a draw with the score 0-0.\nII. The number of goals scored by R against Q is 1.\n\nWhich of the statements given above is/are correct?",
     "options": [
       "I only",
       "II only",
@@ -945,8 +1239,14 @@
     "correctAnswer": 0,
     "explanation": "P has 3 points (1 win, 1 draw). Q has 2 points (1 win, 1 loss or 2 draws). R has 1 point (1 draw, 1 loss). Each scored 1 goal total. P's win must be 1-0 and draw 0-0. If P drew with Q 0-0, P's win was against R (1-0). Then Q must have beaten R (1-0) to get 2 points. But R only scored 1 goal. This fits the points and goal constraints. Statement I is correct[cite: 863, 865, 876].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logic"
+      }
     ]
   },
   {
@@ -964,8 +1264,14 @@
     "correctAnswer": 1,
     "explanation": "The passage argues that 'genetically honed' crops are vulnerable to unexpected changes/diseases because they lack variation, leading to a risk of 'catastrophic' failure[cite: 861, 862].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -983,8 +1289,14 @@
     "correctAnswer": 0,
     "explanation": "Assumption I is valid because the passage mentions diseases becoming 'more common in all climatic zones' due to climate change[cite: 858]. Assumption II is not valid because while it points out the lack of genetic variation, it does not specifically describe using 'wild relatives' as the solution[cite: 862].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -1002,8 +1314,14 @@
     "correctAnswer": 3,
     "explanation": "The passage argues that opponents show a statesman where 'dangers are' and keep them on 'the path of reason', and that an 'even balance of political power' is necessary for national unity[cite: 935, 936].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -1021,8 +1339,14 @@
     "correctAnswer": 3,
     "explanation": "The passage suggests opposition is a general requirement for 'any' sensible statesman to avoid 'disaster', not just an 'indifferent' one (Assumption I)[cite: 935]. It also argues against 'revolutionary' or 'irreconcilable' opposition, implying that 'aggression' isn't necessarily the goal, but rather 'balance' (Assumption II)[cite: 936].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -1030,7 +1354,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Blood Relations",
-    "text": "55. P is the brother of Q and R. S is R's mother. T is P's father. How many of the following statements are definitely true?\nI. S and T are a couple.\nII. Q is T's son.\nIII. T is Q's father.\nIV. S is P's mother.\nV. R is T's daughter.\nVI. P is S's son.",
+    "text": "P is the brother of Q and R. S is R's mother. T is P's father. How many of the following statements are definitely true?\nI. S and T are a couple.\nII. Q is T's son.\nIII. T is Q's father.\nIV. S is P's mother.\nV. R is T's daughter.\nVI. P is S's son.",
     "options": [
       "Only two",
       "Only three",
@@ -1040,8 +1364,14 @@
     "correctAnswer": 2,
     "explanation": "Since P, Q, R are siblings (P is the brother), and S is R's mother while T is P's father, S and T must be a couple (I). T is the father of all three (III). S is the mother of all three (IV). P is the son of S (VI). Q and R's gender is not specified, so 'son' or 'daughter' (II, V) are not definitely true. Correct: I, III, IV, VI. Total 4[cite: 955].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Blood Relations" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Blood Relations"
+      }
     ]
   },
   {
@@ -1049,7 +1379,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Coding-Decoding",
-    "text": "56. If NO is coded as 210, NOT is coded as 4200 and NOTE is coded as 21000, then how is NOTES coded?",
+    "text": "If NO is coded as 210, NOT is coded as 4200 and NOTE is coded as 21000, then how is NOTES coded?",
     "options": [
       "399000",
       "420000",
@@ -1059,8 +1389,14 @@
     "correctAnswer": 0,
     "explanation": "N=14, O=15. $14 \times 15 = 210$. T=20. $210 \times 20 = 4200$. E=5. $4200 \times 5 = 21000$. S=19. $21000 \times 19 = 399000$[cite: 955].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Coding" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Coding"
+      }
     ]
   },
   {
@@ -1068,7 +1404,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Coding-Decoding",
-    "text": "57. If FRANCE is coded as 654321 and GERMANY is coded as 9158437, then how is YEMEN coded?",
+    "text": "If FRANCE is coded as 654321 and GERMANY is coded as 9158437, then how is YEMEN coded?",
     "options": [
       "54321",
       "81913",
@@ -1078,8 +1414,14 @@
     "correctAnswer": 2,
     "explanation": "Direct letter-to-digit mapping: F=6, R=5, A=4, N=3, C=2, E=1; G=9, E=1, R=5, M=8, A=4, N=3, Y=7. For YEMEN: Y=7, E=1, M=8, E=1, N=3 $\\implies$ 71813[cite: 955].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Coding" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Coding"
+      }
     ]
   },
   {
@@ -1087,7 +1429,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "58. The 5-digit number PQRST (all distinct digits) is such that $T \\ne 0$. P is thrice T. S is greater than Q by 4, while Q is greater than R by 3. How many such 5-digit numbers are possible?",
+    "text": "The 5-digit number PQRST (all distinct digits) is such that $T \\ne 0$. P is thrice T. S is greater than Q by 4, while Q is greater than R by 3. How many such 5-digit numbers are possible?",
     "options": [
       "3",
       "4",
@@ -1097,8 +1439,14 @@
     "correctAnswer": 0,
     "explanation": "P=3T. Since $P \\le 9$ and $T \\ne 0$, T can be 1 (P=3), 2 (P=6), or 3 (P=9). Relation: $S = Q+4 = (R+3)+4 = R+7$. If R=0, S=7, Q=3. If R=1, S=8, Q=4. If R=2, S=9, Q=5. Case 1: T=1, P=3. R, S, Q combos: (0,7,3-no, P=3), (1,8,4-no, T=1), (2,9,5-OK). Number: 35291. Case 2: T=2, P=6. R, S, Q combos: (0,7,3-OK), (1,8,4-OK), (2,9,5-no, T=2). Numbers: 63072, 64182. Case 3: T=3, P=9. R, S, Q combos: (0,7,3-no, T=3), (1,8,4-OK), (2,9,5-no, P=9). Number: 94183. Total numbers = 4[cite: 955].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Permutations" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Permutations"
+      }
     ]
   },
   {
@@ -1106,7 +1454,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Time and Work",
-    "text": "59. X can complete one-third of a certain work in 6 days, Y can complete one-third of the same work in 8 days and Z can complete three-fourth of the same work in 12 days. All of them work together for n days and then X and Z quit and Y alone finishes the remaining work in $8\\frac{2}{3}$ days. What is n equal to?",
+    "text": "X can complete one-third of a certain work in 6 days, Y can complete one-third of the same work in 8 days and Z can complete three-fourth of the same work in 12 days. All of them work together for n days and then X and Z quit and Y alone finishes the remaining work in $8\\frac{2}{3}$ days. What is n equal to?",
     "options": [
       "3",
       "4",
@@ -1116,8 +1464,14 @@
     "correctAnswer": 1,
     "explanation": "Full work times: X = 18 days, Y = 24 days, Z = 16 days. Rates: $X = 1/18, Y = 1/24, Z = 1/16$. Combined rate $(X+Y+Z) = (8+6+9)/144 = 23/144$. Work in n days = $n(23/144)$. Work left = $1 - 23n/144$. Y finishes in 26/3 days: $(26/3) \times (1/24) = 13/36 = 52/144$. $1 - 23n/144 = 52/144 \\implies (144 - 23n)/144 = 52/144 \\implies 23n = 92 \\implies n = 4$[cite: 955].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic"
+      }
     ]
   },
   {
@@ -1125,7 +1479,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Series",
-    "text": "60. What is X in the sequence 1, 3, 6, 11, 18, X, 42?",
+    "text": "What is X in the sequence 1, 3, 6, 11, 18, X, 42?",
     "options": [
       "26",
       "27",
@@ -1135,8 +1489,14 @@
     "correctAnswer": 2,
     "explanation": "Differences are 2, 3, 5, 7... these are prime numbers. Next prime is 11. $18 + 11 = 29$. Then $29 + 13 = 42$. Matches perfectly[cite: 955].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Number Series" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Number Series"
+      }
     ]
   },
   {
@@ -1154,8 +1514,14 @@
     "correctAnswer": 0,
     "explanation": "The author opens with the observation that democracy and economic growth have not existed without corporate capitalism, and explains its benefits for modernization, jobs, and welfare revenues[cite: 1018, 1022].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -1173,8 +1539,14 @@
     "correctAnswer": 2,
     "explanation": "The passage explicitly states it 'generates jobs' (Assumption I) and that revenues can be used for 'welfare for the marginalized', which aligns with the trickle-down concept described in the assumption (Assumption II)[cite: 1020, 1022].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logical Assumption" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logical Assumption"
+      }
     ]
   },
   {
@@ -1192,8 +1564,14 @@
     "correctAnswer": 2,
     "explanation": "The concept of a 'buffer' suggests that voluntary associations empower individuals by connecting them to collective efforts, preventing direct isolation against the power of the state[cite: 1026].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -1201,7 +1579,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "64. Consider the following statements:\nI. There exists a natural number which when increased by 50% can have its number of factors unchanged.\nII. There exists a natural number which when increased by 150% can have its number of factors unchanged.\n\nWhich of the statements given above is/are correct?",
+    "text": "Consider the following statements:\nI. There exists a natural number which when increased by 50% can have its number of factors unchanged.\nII. There exists a natural number which when increased by 150% can have its number of factors unchanged.\n\nWhich of the statements given above is/are correct?",
     "options": [
       "I only",
       "II only",
@@ -1211,8 +1589,14 @@
     "correctAnswer": 2,
     "explanation": "Increasing by 50% means multiplier 1.5. If $n=2$, $1.5 \times 2 = 3$. 2 has 2 factors, 3 has 2 factors. Correct. Increasing by 150% means multiplier 2.5. If $n=2$, $2.5 \times 2 = 5$. 2 has 2 factors, 5 has 2 factors. Both statements are correct[cite: 1112, 1113].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Factors" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Factors"
+      }
     ]
   },
   {
@@ -1220,7 +1604,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Directions",
-    "text": "65. There are 7 places A, B, C, D, E, F and G in a city connected by various roads AB, AC, CD, DE, BF, EG and FG. A is 6 km south of B. A is 10 km west of C. D is 5 km east of E. C is 6 km north of D. F is 9 km west of B. F is 12 km north of G. A person travels from D to F through these roads. What is the distance covered by the person?",
+    "text": "There are 7 places A, B, C, D, E, F and G in a city connected by various roads AB, AC, CD, DE, BF, EG and FG. A is 6 km south of B. A is 10 km west of C. D is 5 km east of E. C is 6 km north of D. F is 9 km west of B. F is 12 km north of G. A person travels from D to F through these roads. What is the distance covered by the person?",
     "options": [
       "20 km",
       "25 km",
@@ -1230,8 +1614,14 @@
     "correctAnswer": 1,
     "explanation": "Map coordinates (x,y): A(0,0), B(0,6), C(10,0). Since C is 6km north of D, D is (10,-6). Since D is 5km east of E, E is (5,-6). F is 9km west of B, so F is (-9,6). Routes: $D \\to C (6) \\to A (10) \\to B (6) \\to F (9)$. Total = $6+10+6+9 = 31$ km. Alternative paths might be shorter, but based on roads given, $D-C-A-B-F = 31$ km[cite: 1130, 1131].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Directions" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Directions"
+      }
     ]
   },
   {
@@ -1239,7 +1629,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Coding-Decoding",
-    "text": "66. In a certain code if 64 is written as 343 and 216 is written as 729, then how is 512 written in that code?",
+    "text": "In a certain code if 64 is written as 343 and 216 is written as 729, then how is 512 written in that code?",
     "options": [
       "1000",
       "1331",
@@ -1249,8 +1639,14 @@
     "correctAnswer": 1,
     "explanation": "$64 = 4^3$. $343 = 7^3$. Increment of 3 in the base. $216 = 6^3$. $729 = 9^3$. Increment of 3. For $512 = 8^3$, we need $(8+3)^3 = 11^3 = 1331$[cite: 1140].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Mental Ability" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Mental Ability"
+      }
     ]
   },
   {
@@ -1258,7 +1654,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "67. What is the remainder when $9^3+9^4+9^5+9^6+...+9^{100}$ is divided by 6?",
+    "text": "What is the remainder when $9^3+9^4+9^5+9^6+...+9^{100}$ is divided by 6?",
     "options": [
       "0",
       "1",
@@ -1268,8 +1664,14 @@
     "correctAnswer": 3,
     "explanation": "$9 \\equiv 3 \\pmod 6$. So $9^k \\equiv 3^k \\pmod 6$. $3^1=3, 3^2=9 \\equiv 3, 3^3=27 \\equiv 3$. Every power of 9 leaves a remainder of 3 when divided by 6. Number of terms from $k=3$ to $k=100$ is 98. Sum of remainders = $98 \\times 3 = 294$. $294 \\div 6$ leaves remainder 0[cite: 1116, 1118].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Remainders" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Remainders"
+      }
     ]
   },
   {
@@ -1277,7 +1679,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Data Sufficiency",
-    "text": "68. Question: What is the smallest 1-digit number having exactly 4 distinct factors?\nStatement I: 2 is one of the factors.\nStatement II: 3 is one of the factors.",
+    "text": "Question: What is the smallest 1-digit number having exactly 4 distinct factors?\nStatement I: 2 is one of the factors.\nStatement II: 3 is one of the factors.",
     "options": [
       "The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.",
       "The Question can be answered by using either Statement alone.",
@@ -1287,8 +1689,14 @@
     "correctAnswer": 3,
     "explanation": "Factors of 1-digit numbers: 1(1), 2(1,2), 3(1,3), 4(1,2,4), 5(1,5), 6(1,2,3,6), 7(1,7), 8(1,2,4,8), 9(1,3,9). The numbers with exactly 4 factors are 6 and 8. The smallest is 6. This is an objective mathematical fact that can be determined without the statements[cite: 1152, 1162].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Factors" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Factors"
+      }
     ]
   },
   {
@@ -1296,7 +1704,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Data Sufficiency",
-    "text": "69. Question: Let P, Q, R, S be distinct non-zero digits. If $PP \\times PQ = RRSS$, where $P \\le 3$ and $Q \\le 4$, then what is Q equal to?\nStatement I: R = 1\nStatement II: S = 2",
+    "text": "Question: Let P, Q, R, S be distinct non-zero digits. If $PP \\times PQ = RRSS$, where $P \\le 3$ and $Q \\le 4$, then what is Q equal to?\nStatement I: R = 1\nStatement II: S = 2",
     "options": [
       "The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.",
       "The Question can be answered by using either Statement alone.",
@@ -1306,8 +1714,14 @@
     "correctAnswer": 1,
     "explanation": "If P=1: $11 \\times 1Q$. Max $11 \\times 14 = 154$ (3 digits, need 4). If P=2: $22 \\times 2Q$. $22 \\times 21=462, 22 \\times 23=506$. Still 3 digits. If P=3: $33 \\times 3Q$. $33 \\times 31=1023, 33 \\times 32=1056, 33 \\times 34=1122$. Only $33 \\times 34 = 1122$ fits the form $RRSS$ where $R=1, S=2$. Thus $Q=4$. Both statements independently lead to this unique solution[cite: 1195, 1209].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic Logic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic Logic"
+      }
     ]
   },
   {
@@ -1315,7 +1729,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Data Sufficiency",
-    "text": "70. Question: How is Q related to P?\nStatement I: P has two sisters, R and S.\nStatement II: R's father is the brother of Q.",
+    "text": "Question: How is Q related to P?\nStatement I: P has two sisters, R and S.\nStatement II: R's father is the brother of Q.",
     "options": [
       "The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.",
       "The Question can be answered by using either Statement alone.",
@@ -1325,8 +1739,14 @@
     "correctAnswer": 2,
     "explanation": "From I: P, R, S are siblings. From II: R's father (who is also P's father) is Q's brother. This makes Q the uncle or aunt of P. However, the gender of Q is not known, so the specific relation (Uncle/Aunt) cannot be determined[cite: 1202, 1204, 1217].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Blood Relations" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Blood Relations"
+      }
     ]
   },
   {
@@ -1344,8 +1764,14 @@
     "correctAnswer": 1,
     "explanation": "The passage argues that inflation is an aggregate and consumption baskets vary wildly across social classes, implying that a single aggregate number fails to capture the actual price rise experienced by individual groups or for specific items[cite: 1255, 1258].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -1363,8 +1789,14 @@
     "correctAnswer": 3,
     "explanation": "The passage links trust to entrepreneurship and global markets, noting it involves 'vulnerability' and the 'willingness to expose oneself to betrayal', making it a risky but essential component[cite: 1261, 1262].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Reading Comprehension" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Reading Comprehension"
+      }
     ]
   },
   {
@@ -1372,7 +1804,7 @@
     "year": 2025,
     "subject": "Logical Reasoning",
     "topic": "Data Sufficiency",
-    "text": "73. Question: In a football match, team P playing against Q was behind by 3 goals with 10 minutes remaining. Does team P win the match?\nStatement I: Team P scored 4 goals in the last 10 minutes.\nStatement II: Team Q scored a total of 4 goals in the match.",
+    "text": "Question: In a football match, team P playing against Q was behind by 3 goals with 10 minutes remaining. Does team P win the match?\nStatement I: Team P scored 4 goals in the last 10 minutes.\nStatement II: Team Q scored a total of 4 goals in the match.",
     "options": [
       "The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.",
       "The Question can be answered by using either Statement alone.",
@@ -1382,8 +1814,14 @@
     "correctAnswer": 2,
     "explanation": "Initially, let Q's score be $x$. P's score is $x-3$. From I: P scores 4 more, total $x+1$. From II: Total Q score is 4. So $x \\le 4$. If $x=3$, initial was Q=3, P=0. Final is P=4, Q=3 (maybe Q scored more). If Q's final score is 4, and P was 3 behind with 10 mins left, P must have been at most 1 (since Q's final is 4). If P scored 4 more, P's total is at least 4. We need to know if Q scored any more in those 10 mins. Both together: Q final = 4. 10 mins left: Q was $y$, P was $y-3$. $y \\le 4$. If $y=3$, P=0, final P=4, Q=4 (Draw). If $y=4$, P=1, final P=5, Q=4 (P wins). If $y=3$ and Q scored one more, Q=4, P=4. Still not definitive[cite: 1337, 1338, 1339].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Logic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Logic"
+      }
     ]
   },
   {
@@ -1391,7 +1829,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Data Sufficiency",
-    "text": "74. Question: Is $(p+q)^{2}-4pq$, where p, q are natural numbers, positive?\nStatement I: $p < q$\nStatement II: $p > q$",
+    "text": "Question: Is $(p+q)^{2}-4pq$, where p, q are natural numbers, positive?\nStatement I: $p < q$\nStatement II: $p > q$",
     "options": [
       "The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.",
       "The Question can be answered by using either Statement alone.",
@@ -1401,8 +1839,14 @@
     "correctAnswer": 1,
     "explanation": "$(p+q)^2 - 4pq = (p-q)^2$. For any natural numbers where $p \\ne q$, $(p-q)^2$ is always positive. Statement I ($p<q$) and Statement II ($p>q$) both independently ensure $p \\ne q$, thus making the expression positive[cite: 1348].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Algebra" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Algebra"
+      }
     ]
   },
   {
@@ -1410,7 +1854,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Ratios",
-    "text": "75. In a T20 cricket match, three players X, Y and Z scored a total of 37 runs. The ratio of number of runs scored by X to the number of runs scored by Y is equal to ratio of number of runs scored by Y to number of runs scored by Z.\nValue-I = Runs scored by X\nValue-II = Runs scored by Y\nValue-III = Runs scored by Z",
+    "text": "In a T20 cricket match, three players X, Y and Z scored a total of 37 runs. The ratio of number of runs scored by X to the number of runs scored by Y is equal to ratio of number of runs scored by Y to number of runs scored by Z.\nValue-I = Runs scored by X\nValue-II = Runs scored by Y\nValue-III = Runs scored by Z",
     "options": [
       "Value-I < Value-II < Value-III",
       "Value-III < Value-II < Value-I",
@@ -1420,8 +1864,14 @@
     "correctAnswer": 3,
     "explanation": "$X/Y = Y/Z \\implies Y^2 = XZ$. Also $X+Y+Z=37$. Possible integer solutions: $X=16, Y=12, Z=9$ ($16 \\times 9 = 144 = 12^2$; sum 37). Here $I > II > III$. But $X=9, Y=12, Z=16$ also works. Thus the order is not fixed[cite: 1348].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic"
+      }
     ]
   },
   {
@@ -1429,7 +1879,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Algebra",
-    "text": "76. Let $p+q=10$, where p, q are integers.\nValue-I: Maximum value of $p \\times q$ when p, q are positive integers.\nValue-II: Maximum value of $p \\times q$ when $p \\ge -6$, $q \\ge -4$.",
+    "text": "Let $p+q=10$, where p, q are integers.\nValue-I: Maximum value of $p \\times q$ when p, q are positive integers.\nValue-II: Maximum value of $p \\times q$ when $p \\ge -6$, $q \\ge -4$.",
     "options": [
       "Value-I < Value-II",
       "Value-II < Value-I",
@@ -1439,8 +1889,14 @@
     "correctAnswer": 2,
     "explanation": "Value I: For $p+q=10$, product is max when $p=q=5$. $5 \\times 5 = 25$. Value II: The constraint $p \\ge -6, q \\ge -4$ still allows $p=5, q=5$. Any pair involving negatives (like -6, 16) results in a negative product. The maximum remains 25[cite: 1413, 1420].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Maxima/Minima" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Maxima/Minima"
+      }
     ]
   },
   {
@@ -1448,7 +1904,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Averages/Products",
-    "text": "77. Consider a set of 11 numbers:\nValue-I: Minimum value of the average of the numbers of the set when they are consecutive integers $\\ge -5$.\nValue-II: Minimum value of the product of the numbers of the set when they are consecutive non-negative integers.",
+    "text": "Consider a set of 11 numbers:\nValue-I: Minimum value of the average of the numbers of the set when they are consecutive integers $\\ge -5$.\nValue-II: Minimum value of the product of the numbers of the set when they are consecutive non-negative integers.",
     "options": [
       "Value-I < Value-II",
       "Value-II < Value-I",
@@ -1458,8 +1914,14 @@
     "correctAnswer": 0,
     "explanation": "Value I: Consecutive integers $\\ge -5$. To minimize average, start at -5: {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}. Average is 0. Value II: Consecutive non-negative integers. To minimize product, include 0: {0, 1, 2, 3...}. Product is 0. Both are 0[cite: 1441, 1449, 1466].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic"
+      }
     ]
   },
   {
@@ -1467,7 +1929,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Averages",
-    "text": "78. The average of three numbers p, q and r is k. p is as much more than the average as q is less than the average. What is the value of r?",
+    "text": "The average of three numbers p, q and r is k. p is as much more than the average as q is less than the average. What is the value of r?",
     "options": [
       "k",
       "k-1",
@@ -1477,8 +1939,14 @@
     "correctAnswer": 0,
     "explanation": "$(p+q+r)/3 = k \\implies p+q+r = 3k$. Condition: $p - k = k - q \\implies p + q = 2k$. Substituting: $2k + r = 3k \\implies r = k$[cite: 1417, 1418, 1419].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Arithmetic" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Arithmetic"
+      }
     ]
   },
   {
@@ -1486,7 +1954,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "79. Let x be a real number between 0 and 1. Which of the following statements is/are correct?\nI. $x^2 > x^3$\nII. $x > \\sqrt{x}$",
+    "text": "Let x be a real number between 0 and 1. Which of the following statements is/are correct?\nI. $x^2 > x^3$\nII. $x > \\sqrt{x}$",
     "options": [
       "I only",
       "II only",
@@ -1496,8 +1964,14 @@
     "correctAnswer": 0,
     "explanation": "For $0 < x < 1$, higher powers are smaller than lower powers, so $x^2 > x^3$ is correct. However, $\\sqrt{x}$ is *greater* than $x$ in this range (e.g., $\\sqrt{0.25} = 0.5$). So II is incorrect[cite: 1432, 1436, 1438, 1443].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Inequalities" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Inequalities"
+      }
     ]
   },
   {
@@ -1505,7 +1979,7 @@
     "year": 2025,
     "subject": "Mathematics",
     "topic": "Number System",
-    "text": "80. The difference between any two natural numbers is 10. What can be said about the natural numbers which are divisible by 5 and lie between these two numbers?",
+    "text": "The difference between any two natural numbers is 10. What can be said about the natural numbers which are divisible by 5 and lie between these two numbers?",
     "options": [
       "There is only one such number.",
       "There are only two such numbers.",
@@ -1515,8 +1989,14 @@
     "correctAnswer": 0,
     "explanation": "Let numbers be $x$ and $x+10$. The multiples of 5 occur every 5 units. In a span of 10, there must be at least one multiple of 5. For example, between 1 and 11, there are 5 and 10 (two numbers). Between 5 and 15, there is only 10 (one number). Thus 'one such number' is not always true, but 'more than one' (Option c) can happen[cite: 1454, 1470].",
     "tags": [
-      { "type": "subject", "label": "CSAT" },
-      { "type": "topic", "label": "Divisibility" }
+      {
+        "type": "subject",
+        "label": "CSAT"
+      },
+      {
+        "type": "topic",
+        "label": "Divisibility"
+      }
     ]
   }
 ]

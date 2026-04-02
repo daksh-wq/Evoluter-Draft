@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useMemo } from 'react';
+import React, { useEffect, useState, useCallback, useMemo, useRef } from 'react';
 import {
     CheckCircle, XCircle, AlertCircle, Clock, ArrowLeft,
     Brain, Target, ListChecks, ArrowRight, RefreshCw, ChevronDown, Download, BarChart2, BookOpen, Activity,
@@ -15,6 +15,7 @@ const ResultView = ({ test, answers, results, exitTest }) => {
     const [loadingAnalysis, setLoadingAnalysis] = useState(true);
     const [activeTab, setActiveTab] = useState('stats'); // 'stats' | 'insights' | 'review'
     const [reviewFilter, setReviewFilter] = useState('all'); // 'all' | 'correct' | 'incorrect' | 'skipped'
+    const reportRef = useRef(null);
 
     useEffect(() => {
         let cancelled = false;
@@ -44,110 +45,8 @@ const ResultView = ({ test, answers, results, exitTest }) => {
     const [isDownloading, setIsDownloading] = useState(false);
 
     const exportToPDF = useCallback(async () => {
+        if (!reportRef.current) return;
         setIsDownloading(true);
-        // Create the print container
-        const printContainer = document.createElement('div');
-        printContainer.id = 'print-report';
-
-        const correctCount = results.correct || 0;
-        const incorrectCount = results.incorrect || 0;
-        const unansweredCount = results.unanswered || 0;
-
-        let questionsHtml = '';
-        if (test && test.length > 0) {
-            questionsHtml = test.map((q, idx) => {
-                const userAnswer = answers[q.id];
-                const isCorrect = userAnswer === q.correctAnswer;
-                const isSkipped = userAnswer === undefined;
-                const status = isCorrect ? '✓ Correct' : (isSkipped ? '— Skipped' : '✗ Incorrect');
-                const statusColor = isCorrect ? '#16a34a' : (isSkipped ? '#64748b' : '#dc2626');
-
-                const optionsHtml = q.options.map((opt, i) => {
-                    const marker = String.fromCharCode(65 + i);
-                    let style = '';
-                    if (i === q.correctAnswer) style = 'color: #16a34a; font-weight: bold;';
-                    else if (i === userAnswer) style = 'color: #dc2626;';
-                    return `<div style="padding: 4px 0; ${style}">${marker}. ${opt}</div>`;
-                }).join('');
-
-                return `
-                    <div style="margin-bottom: 16px; padding: 12px; border: 1px solid #e2e8f0; border-radius: 8px; page-break-inside: avoid;">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <strong style="color: #64748b; font-size: 12px;">Q${idx + 1}</strong>
-                            <span style="color: ${statusColor}; font-size: 12px; font-weight: bold;">${status}</span>
-                        </div>
-                        <div style="margin: 0 0 8px 0; font-weight: 500;">
-                            ${q.text
-                        .replace(/([a-z.?!])\\s+(?=(?:\\d{1,2}|[A-Da-d])\\.\\s)/gi, '$1\\n')
-                        .replace(/([a-z.?'")])\\s+(?=(Which of the|Which following|Which among|Which one|How many|Select the|Choose the|Identify the)\\b)/gi, '$1\\n')
-                        .split(/\\n|(?=(?:^|\\s)(?:\\d{1,2}|[A-Da-d])\\.\\s)/g)
-                        .map(part => {
-                            const trimmed = part.trim();
-                            const isStatement = /^(?:\\d{1,2}|[A-Da-d])\\./.test(trimmed);
-                            if (!trimmed) return '';
-                            return `<div style="margin-bottom: 4px; ${isStatement ? 'padding-left: 12px; border-left: 2px solid #cbd5e1; background: #f8fafc; padding-top: 4px; padding-bottom: 4px;' : ''}">${trimmed}</div>`;
-                        }).join('')}
-                        </div>
-                        ${optionsHtml}
-                        ${q.solution ? `
-                            <div style="margin-top: 8px; border-top: 1px solid #f1f5f9; padding-top: 8px;">
-                                ${(q.solution.correctAnswerReason || q.solution.correct_explanation) ? `<p style="margin: 0 0 4px 0; color: #334155; font-size: 13px;"><strong>✅ Answer:</strong> ${q.solution.correctAnswerReason || q.solution.correct_explanation}</p>` : ''}
-                                ${(q.solution.approachToSolve || q.solution.solving_approach) ? `<p style="margin: 4px 0; padding: 6px; background: #eff6ff; border-radius: 4px; color: #1e40af; font-size: 12px;"><strong>💡 Approach:</strong> ${q.solution.approachToSolve || q.solution.solving_approach}</p>` : ''}
-                                ${(q.solution.sourceOfQuestion || q.solution.possible_source) ? `<p style="margin: 4px 0 0 0; color: #64748b; font-size: 11px;"><strong>📖 Source:</strong> ${q.solution.sourceOfQuestion || q.solution.possible_source}</p>` : ''}
-                            </div>
-                        ` : q.explanation ? `<p style="margin-top: 8px; color: #64748b; font-size: 13px; border-top: 1px solid #f1f5f9; padding-top: 8px;"><strong>Explanation:</strong> ${q.explanation}</p>` : ''}
-                    </div>
-                `;
-            }).join('');
-        }
-
-        printContainer.innerHTML = `
-            <div style="text-align: center; margin-bottom: 24px;">
-                <h1 style="margin: 0; color: #1e1b4b; font-size: 24px;">Test Performance Report</h1>
-                <p style="color: #64748b; margin: 4px 0;">Generated on ${new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
-            </div>
-            <div style="display: flex; justify-content: space-around; margin-bottom: 24px; padding: 16px; background: #f8fafc; border-radius: 12px;">
-                <div style="text-align: center;"><strong style="font-size: 28px; color: #1e1b4b;">${results.score}%</strong><br/><span style="color: #64748b; font-size: 12px;">Score</span></div>
-                <div style="text-align: center;"><strong style="font-size: 28px; color: #16a34a;">${correctCount}</strong><br/><span style="color: #64748b; font-size: 12px;">Correct</span></div>
-                <div style="text-align: center;"><strong style="font-size: 28px; color: #dc2626;">${incorrectCount}</strong><br/><span style="color: #64748b; font-size: 12px;">Incorrect</span></div>
-                <div style="text-align: center;"><strong style="font-size: 28px; color: #64748b;">${unansweredCount}</strong><br/><span style="color: #64748b; font-size: 12px;">Skipped</span></div>
-                <div style="text-align: center;"><strong style="font-size: 28px; color: #2278B0;">${formatTime(results.timeTaken)}</strong><br/><span style="color: #64748b; font-size: 12px;">Time</span></div>
-            </div>
-            ${analysis ? `
-                <div style="margin-bottom: 24px; padding: 16px; border: 1px solid #e2e8f0; border-radius: 12px;">
-                    <h3 style="color: #1e1b4b; margin: 0 0 8px 0;">AI Insights</h3>
-                    <p style="color: #475569; line-height: 1.6; margin-bottom: 16px;">${analysis.overallFeedback}</p>
-
-                    <div style="display: flex; gap: 16px;">
-                        <div style="flex: 1; padding: 12px; background: #fff7ed; border-radius: 8px;">
-                            <h4 style="color: #c2410c; margin: 0 0 8px 0; font-size: 14px;">Topics to Study</h4>
-                            <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155;">
-                                ${(analysis.focusOn || analysis.focusChecklist || []).map(i => `<li style="margin-bottom: 4px;">${i}</li>`).join('')}
-                            </ul>
-                        </div>
-                        <div style="flex: 1; padding: 12px; background: #f8fafc; border-radius: 8px;">
-                            <h4 style="color: #64748b; margin: 0 0 8px 0; font-size: 14px;">Not Focus On</h4>
-                            <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #64748b;">
-                                ${(analysis.notFocusOn || []).map(i => `<li style="margin-bottom: 4px;">${i}</li>`).join('')}
-                                ${(!analysis.notFocusOn || analysis.notFocusOn.length === 0) ? '<li style="list-style: none; font-style: italic;">None</li>' : ''}
-                            </ul>
-                        </div>
-                        <div style="flex: 1; padding: 12px; background: #f0fdf4; border-radius: 8px;">
-                            <h4 style="color: #15803d; margin: 0 0 8px 0; font-size: 14px;">Key Strengths</h4>
-                            <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155;">
-                                ${(analysis.strengths || []).map(i => `<li style="margin-bottom: 4px;">${i}</li>`).join('')}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            ` : ''}
-            <h2 style="color: #1e1b4b; margin-bottom: 12px;">Question Review</h2>
-            ${questionsHtml}
-        `;
-
-        // Add styling for PDF
-        printContainer.style.padding = '20px';
-        printContainer.style.fontFamily = 'Helvetica, Arial, sans-serif';
 
         try {
             const html2pdf = (await import('html2pdf.js')).default;
@@ -155,11 +54,14 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                 margin: 0.5,
                 filename: `Test_Report_${new Date().toISOString().split('T')[0]}.pdf`,
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
+                html2canvas: { scale: 1, useCORS: true, logging: false },
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
             };
 
-            await html2pdf().set(opt).from(printContainer).save();
+            // Wait for 500ms to ensure the hidden JSX is fully rendered and "painted"
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            await html2pdf().set(opt).from(reportRef.current).save();
             logger.info('PDF report downloaded');
         } catch (error) {
             logger.error('PDF generation error', error);
@@ -744,22 +646,112 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                     </div>
                 )}
 
-                <div className="mt-12 flex flex-col sm:flex-row justify-center gap-3">
-                    <button
-                        onClick={exportToPDF}
-                        disabled={isDownloading}
-                        className="bg-white text-indigo-950 border-2 border-indigo-950 px-8 py-4 rounded-xl font-bold shadow-sm hover:bg-indigo-50 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-wait"
-                    >
-                        {isDownloading ? <RefreshCw className="animate-spin" size={20} /> : <Download size={20} />}
-                        {isDownloading ? 'Generating PDF...' : 'Download Report'}
-                    </button>
-                    <button
-                        onClick={exitTest}
-                        className="bg-indigo-950 text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:bg-indigo-900 transition-all flex items-center justify-center gap-2"
-                    >
-                        Back to Dashboard <ArrowRight size={20} />
-                    </button>
+            <div className="mt-12 flex flex-col sm:flex-row justify-center gap-3">
+                <button
+                    onClick={exportToPDF}
+                    disabled={isDownloading}
+                    className="bg-white text-indigo-950 border-2 border-indigo-950 px-8 py-4 rounded-xl font-bold shadow-sm hover:bg-indigo-50 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-wait"
+                >
+                    {isDownloading ? <RefreshCw className="animate-spin" size={20} /> : <Download size={20} />}
+                    {isDownloading ? 'Generating PDF...' : 'Download Report'}
+                </button>
+                <button
+                    onClick={exitTest}
+                    className="bg-indigo-950 text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:bg-indigo-900 transition-all flex items-center justify-center gap-2"
+                >
+                    Back to Dashboard <ArrowRight size={20} />
+                </button>
+            </div>
+
+            {/* Hidden Export Area for PDF Generation */}
+            <div style={{ position: 'absolute', left: '-10000px', top: 0, width: '850px', backgroundColor: 'white', zIndex: -9999 }}>
+                <div ref={reportRef} style={{ padding: '40px', fontFamily: 'Helvetica, Arial, sans-serif' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+                        <h1 style={{ margin: 0, color: '#1e1b4b', fontSize: '24px' }}>Practice Test Performance Report</h1>
+                        <p style={{ color: '#64748b', margin: '4px 0' }}>Generated on {new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                    </div>
+
+                    <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '24px', padding: '16px', background: '#f8fafc', borderRadius: '12px' }}>
+                        <div style={{ textAlign: 'center' }}><strong style={{ fontSize: '28px', color: '#1e1b4b' }}>{results.score}%</strong><br/><span style={{ color: '#64748b', fontSize: '12px' }}>Score</span></div>
+                        <div style={{ textAlign: 'center' }}><strong style={{ fontSize: '28px', color: '#16a34a' }}>{results.correct}</strong><br/><span style={{ color: '#64748b', fontSize: '12px' }}>Correct</span></div>
+                        <div style={{ textAlign: 'center' }}><strong style={{ fontSize: '28px', color: '#dc2626' }}>{results.incorrect}</strong><br/><span style={{ color: '#64748b', fontSize: '12px' }}>Incorrect</span></div>
+                        <div style={{ textAlign: 'center' }}><strong style={{ fontSize: '28px', color: '#64748b' }}>{results.unanswered}</strong><br/><span style={{ color: '#64748b', fontSize: '12px' }}>Skipped</span></div>
+                        <div style={{ textAlign: 'center' }}><strong style={{ fontSize: '28px', color: '#2278B0' }}>{formatTime(results.timeTaken)}</strong><br/><span style={{ color: '#64748b', fontSize: '12px' }}>Time</span></div>
+                    </div>
+
+                    {analysis && (
+                        <div style={{ marginBottom: '24px', padding: '16px', border: '1px solid #e2e8f0', borderRadius: '12px' }}>
+                            <h3 style={{ color: '#1e1b4b', margin: '0 0 8px 0' }}>Mentor's AI Analysis</h3>
+                            <p style={{ color: '#475569', lineHeight: 1.6, marginBottom: '16px' }}>{analysis.overallFeedback}</p>
+                            
+                            <div style={{ display: 'flex', gap: '16px' }}>
+                                <div style={{ flex: 1, padding: '12px', background: '#fff7ed', borderRadius: '8px' }}>
+                                    <h4 style={{ color: '#c2410c', margin: '0 0 8px 0', fontSize: '14px' }}>Topics to Study</h4>
+                                    <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#334155' }}>
+                                        {(analysis.focusOn || analysis.focusChecklist || analysis.topicsToStudy || []).map((i, idx) => (
+                                            <li key={idx} style={{ marginBottom: '4px' }}>{typeof i === 'string' ? i : (i.topic || '')}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div style={{ flex: 1, padding: '12px', background: '#f0fdf4', borderRadius: '8px' }}>
+                                    <h4 style={{ color: '#15803d', margin: '0 0 8px 0', fontSize: '14px' }}>Key Strengths</h4>
+                                    <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#334155' }}>
+                                        {(analysis.strengths || analysis.keyStrengths || []).map((i, idx) => (
+                                            <li key={idx} style={{ marginBottom: '4px' }}>{i}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    <h2 style={{ color: '#1e1b4b', marginBottom: '12px', borderBottom: '2px solid #f1f5f9', paddingBottom: '8px' }}>Review of Questions</h2>
+                    {test.map((q, idx) => {
+                        const userAnswer = answers[q.id];
+                        const isCorrect = userAnswer === q.correctAnswer;
+                        const isSkipped = userAnswer === undefined || userAnswer === null;
+                        const status = isCorrect ? '✓ Correct' : (isSkipped ? '— Skipped' : '✗ Incorrect');
+                        const statusColor = isCorrect ? '#16a34a' : (isSkipped ? '#64748b' : '#dc2626');
+                        
+                        return (
+                            <div key={q.id} style={{ marginBottom: '24px', padding: '16px', border: '1px solid #e2e8f0', borderRadius: '12px', pageBreakInside: 'avoid' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
+                                    <strong style={{ color: '#64748b', fontSize: '12px' }}>Question {idx + 1}</strong>
+                                    <span style={{ color: statusColor, fontSize: '12px', fontWeight: 'bold' }}>{status}</span>
+                                </div>
+                                <div style={{ marginBottom: '12px', fontWeight: 600, fontSize: '14px', lineHeight: 1.5 }}>
+                                    {q.text}
+                                </div>
+                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '12px' }}>
+                                    {q.options.map((opt, i) => {
+                                        const isUserSelection = i === userAnswer;
+                                        const isCorrectOpt = i === q.correctAnswer;
+                                        let style = { padding: '8px', borderRadius: '6px', fontSize: '13px', border: '1px solid #f1f5f9' };
+                                        if (isCorrectOpt) {
+                                            style = { ...style, background: '#f0fdf4', borderColor: '#bcf0da', color: '#16a34a', fontWeight: 'bold' };
+                                        } else if (isUserSelection && !isCorrect) {
+                                            style = { ...style, background: '#fef2f2', borderColor: '#fecaca', color: '#dc2626' };
+                                        }
+                                        return (
+                                            <div key={i} style={style}>
+                                                {String.fromCharCode(65 + i)}. {opt}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                {(q.solution || q.explanation) && (
+                                    <div style={{ marginTop: '12px', borderTop: '1px solid #f1f5f9', paddingTop: '12px', fontSize: '13px' }}>
+                                        <div style={{ color: '#1e40af', fontWeight: 'bold', marginBottom: '4px' }}>Solution & Explanation:</div>
+                                        <div style={{ color: '#475569', lineHeight: 1.5 }}>
+                                            {q.solution?.correctAnswerReason || q.solution?.correct_explanation || q.explanation}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
                 </div>
+            </div>
             </div>
         </div>
     );

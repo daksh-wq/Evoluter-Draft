@@ -16,6 +16,7 @@ const { generateJSON } = require('./utils/geminiClient');
 const {
     buildTypeDistributionInstruction,
     THREE_LAYER_SOLUTION_INSTRUCTION,
+    TAGGING_INSTRUCTION,
     parseAIJsonResponse,
 } = require('./utils/promptHelpers');
 const { validateUrl } = require('./utils/validators');
@@ -171,6 +172,7 @@ INSTRUCTIONS:
 - Avoid questions that just match text verbatim — test deeper understanding
 ${typeInstruction}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
+${TAGGING_INSTRUCTION}
 
 Return ONLY a valid JSON array:
 [
@@ -185,11 +187,17 @@ Return ONLY a valid JSON array:
       "correctAnswerReason": "...",
       "sourceOfQuestion": "Document / Standard reference",
       "approachToSolve": "..."
-    }
+    },
+    "subjectCode": "...",
+    "topicCode": "...",
+    "sourceCode": "...",
+    "typeCode": "...",
+    "difficultyCode": "...",
+    "pyqCode": "..."
   }
 ]
 
-Generate EXACTLY ${targetQCount} unique questions. Return ONLY the JSON array.`;
+Generate EXACTLY ${targetQCount} unique questions using the JSON structure above. Return ONLY the JSON array.`;
 
             try {
                 const responseText = await generateJSON(prompt);

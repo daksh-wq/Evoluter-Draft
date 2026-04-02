@@ -41,7 +41,15 @@ const SUBJECT_CODES = {
 };
 
 const SOURCE_CODES   = { Standard: 'SN', Advanced: 'AD', Random: 'RN', 'Current Issue': 'CI', 'Not Applicable': 'NA' };
-const QTYPE_CODES    = { Factual: 'FA', Conceptual: 'CO', 'Application Based': 'AB', Definition: 'DE', Informative: 'IN' };
+const QTYPE_CODES    = { 
+    Factual: 'FA', 
+    Conceptual: 'CO', 
+    'Application Based': 'AB', 
+    'Application-Based': 'AB',
+    Definition: 'DE', 
+    Definitional: 'DE',
+    Informative: 'IN' 
+};
 const DIFFICULTY_MAP = { Hard: 'TO', Intermediate: 'ME', Easy: 'ES' };
 const PYQ_CODES      = { CSE: 'CS', CDSE: 'CD', NDA: 'ND', CISF: 'CI', CAPF: 'CP', 'Not Applicable': 'NA' };
 
@@ -191,22 +199,23 @@ OUTPUT: Return ONLY a JSON Array. NO markdown. NO extra text.
 JSON FORMAT:
 [
   {
-    "text": "Question text?",
-    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "text": "Statement-I: ... \nStatement-II: ...",
+    "options": ["...", "...", "...", "..."],
     "correctAnswer": 0,
     "difficultyLevel": "Hard",
-    "questionType": "Assertion-Reasoning",
+    "questionType": "Assertion-Reason",
+    "strategy": "Conceptual Linkage",
     "solution": {
       "correctAnswerReason": "...",
       "sourceOfQuestion": "...",
       "approachToSolve": "..."
     },
-    "subjectCode": "IP",
-    "topicCode": "02",
-    "sourceCode": "SN",
-    "typeCode": "FA",
-    "difficultyCode": "ME",
-    "pyqCode": "NA"
+    "subjectCode": "...",
+    "topicCode": "...",
+    "sourceCode": "...",
+    "typeCode": "...",
+    "difficultyCode": "...",
+    "pyqCode": "..."
   }
 ]`;
 
@@ -334,6 +343,7 @@ Return ONLY a JSON Array (same format as before).`;
                             solution: q.solution,
                             tags: q.tags,
                             questionType: q.questionType,
+                            strategy: q.strategy || 'General',
                             textHash: q.textHash,
                             isAIGenerated: true,
                             addedBy: 'ai-generation',

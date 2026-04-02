@@ -113,9 +113,19 @@ const ProtectedLayout = ({
   }
 
   // Determine Nav Items based on Role
-  // For students: only show Classroom if they are enrolled in at least one batch
   const isInBatch = Array.isArray(userData?.enrolledBatches) && userData.enrolledBatches.length > 0;
-  const baseNavItems = userData?.role === 'institution' ? INSTITUTION_NAV_ITEMS : NAV_ITEMS;
+  
+  let baseNavItems = NAV_ITEMS;
+  if (userData?.role === 'admin') {
+      // Add Admin Console link for admins visiting the student view
+      baseNavItems = [
+          { id: 'admin', label: 'Admin Console', icon: 'ShieldCheck' },
+          ...NAV_ITEMS
+      ];
+  } else if (userData?.role === 'institution') {
+      baseNavItems = INSTITUTION_NAV_ITEMS;
+  }
+
   const navItems = baseNavItems.filter(item =>
       item.id !== 'student/classroom' || isInBatch
   );
@@ -443,9 +453,7 @@ function App() {
         {/* Protected Routes - Student */}
         <Route path={ROUTES.DASHBOARD} element={
           <ProtectedLayout {...layoutProps}>
-            {userData?.role === 'admin' ? (
-              <Navigate to="/admin" replace />
-            ) : userData?.role === 'institution' ? (
+            {userData?.role === 'institution' ? (
               <Navigate to="/institution/dashboard" replace />
             ) : (
               <Dashboard

@@ -7,12 +7,14 @@ import { SubjectSelector } from '@/components/dashboard/SubjectSelector';
 const currentYear = new Date().getFullYear();
 
 const DURATION_OPTIONS = [
+    { label: 'All Years', value: 'All' },
     { label: 'Last 3 Years', min: currentYear - 2, max: currentYear },
     { label: 'Last 5 Years', min: currentYear - 4, max: currentYear },
     { label: 'Last 10 Years', min: currentYear - 9, max: currentYear },
 ];
 
 const SOURCE_OPTIONS = [
+    { label: 'All UPSC Exams', value: 'All' },
     { label: 'Only UPSC CSE', value: 'Only UPSC CSE' },
     { label: 'NDA', value: 'NDA' },
     { label: 'CDSE', value: 'CDSE' },
@@ -20,8 +22,15 @@ const SOURCE_OPTIONS = [
     { label: 'CISF', value: 'CISF' },
 ];
 
+const QUESTION_COUNT_OPTIONS = [
+    { label: '25 Questions', value: 25 },
+    { label: '50 Questions', value: 50 },
+    { label: '100 Questions', value: 100 },
+    { label: 'All Questions', value: 'All' },
+];
+
 // ── Reusable single-select dropdown ──────────────────────────────────────────
-const Dropdown = ({ label, value, options, onChange, icon: Icon }) => {
+const Dropdown = ({ label, value, options, onChange, icon: Icon, align = 'bottom' }) => {
     const [open, setOpen] = useState(false);
     const ref = useRef(null);
     const isActive = value && value !== 'All';
@@ -55,7 +64,7 @@ const Dropdown = ({ label, value, options, onChange, icon: Icon }) => {
             </button>
 
             {open && (
-                <div className="absolute top-full mt-2 left-0 w-full z-50 bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150">
+                <div className={`absolute ${align === 'top' ? 'bottom-full mb-2' : 'top-full mt-2'} left-0 w-full z-50 bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden animate-in fade-in ${align === 'top' ? 'slide-in-from-bottom-2' : 'slide-in-from-top-2'} duration-150`}>
                     <div className="px-3 py-2 border-b border-slate-100">
                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{label}</p>
                     </div>
@@ -151,6 +160,7 @@ const PYQView = ({ startCustomTest }) => {
     const [selectedSubtopics, setSelectedSubtopics] = useState(new Set(['All Subtopics']));
     const [selectedDuration, setSelectedDuration] = useState('All');
     const [selectedSource, setSelectedSource] = useState('All');
+    const [selectedQuestionCount, setSelectedQuestionCount] = useState('All');
 
     // Bridge: SubjectSelector gives an array; PYQ filters work on a Set
     const handleSubjectsChange = (arr) => {
@@ -211,7 +221,7 @@ const PYQView = ({ startCustomTest }) => {
     }, [selectedSubjects, selectedSubtopics, activeDuration, selectedSource, searchTerm]);
 
     const hasActiveFilters = searchTerm || (!selectedSubjects.has('All Subjects') && selectedSubjects.size > 0) || (!selectedSubtopics.has('All Subtopics') && selectedSubtopics.size > 0)
-        || selectedDuration !== 'All' || selectedSource !== 'All';
+        || selectedDuration !== 'All' || selectedSource !== 'All' || selectedQuestionCount !== 'All';
 
     const clearAll = () => {
         setSearchTerm('');
@@ -219,6 +229,7 @@ const PYQView = ({ startCustomTest }) => {
         setSelectedSubtopics(new Set(['All Subtopics']));
         setSelectedDuration('All');
         setSelectedSource('All');
+        setSelectedQuestionCount('All');
     };
 
     // Used only by active-filter tags to remove a single subject chip
@@ -255,15 +266,23 @@ const PYQView = ({ startCustomTest }) => {
         if (filteredQuestions.length === 0) return;
         const seenIds = new Set();
         const seenTexts = new Set();
-        const uniqueQuestions = filteredQuestions.filter(q => {
+        let uniqueQuestions = filteredQuestions.filter(q => {
             const textKey = (q.text || '').trim().toLowerCase().substring(0, 100);
             if (seenIds.has(q.id) || seenTexts.has(textKey)) return false;
             seenIds.add(q.id);
             if (textKey) seenTexts.add(textKey);
             return true;
         });
+
+        // Apply question count limit with random selection
+        if (selectedQuestionCount !== 'All' && typeof selectedQuestionCount === 'number' && uniqueQuestions.length > selectedQuestionCount) {
+            const shuffled = [...uniqueQuestions].sort(() => Math.random() - 0.5);
+            uniqueQuestions = shuffled.slice(0, selectedQuestionCount);
+        }
+
+        const countLabel = selectedQuestionCount !== 'All' ? `${uniqueQuestions.length}Q` : `${uniqueQuestions.length}Q`;
         const subLabel = selectedSubjects.size > 0 ? [...selectedSubjects].join(', ') : 'Mixed';
-        const testTitle = `UPSC PYQs - ${subLabel} (${activeDuration?.label ?? 'All Years'})`;
+        const testTitle = `UPSC PYQs - ${subLabel} (${activeDuration?.label ?? 'All Years'}) - ${countLabel}`;
         if (startCustomTest) startCustomTest(uniqueQuestions, testTitle);
     };
 
@@ -335,9 +354,9 @@ const PYQView = ({ startCustomTest }) => {
                     </div>
 
                     {/* Secondary Filters */}
-                    <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-2 w-full items-end">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 w-full items-end">
                         {/* Duration */}
-                        <div className="flex flex-col gap-1 md:col-span-2">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Duration</span>
                             <Dropdown
                                 label="All Years"
@@ -348,26 +367,27 @@ const PYQView = ({ startCustomTest }) => {
                         </div>
 
                         {/* Source */}
-                        <div className="flex flex-col gap-1 md:col-span-3">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Source</span>
-                            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                                <Dropdown
-                                    label="All UPSC Exams"
-                                    value={selectedSource}
-                                    options={SOURCE_OPTIONS}
-                                    onChange={setSelectedSource}
-                                />
-                                {hasActiveFilters && (
-                                    <button
-                                        onClick={clearAll}
-                                        className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-red-500 hover:bg-red-50 rounded-xl transition-colors border border-red-100 sm:mb-0.5 sm:ml-auto w-full sm:w-auto mt-2 sm:mt-0"
-                                    >
-                                        <X size={12} /> Clear Filters
-                                    </button>
-                                )}
-                            </div>
+                            <Dropdown
+                                label="All UPSC Exams"
+                                value={selectedSource}
+                                options={SOURCE_OPTIONS}
+                                onChange={setSelectedSource}
+                            />
                         </div>
                     </div>
+
+                    {hasActiveFilters && (
+                        <div className="flex justify-end mt-1">
+                            <button
+                                onClick={clearAll}
+                                className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-red-500 hover:bg-red-50 rounded-xl transition-colors border border-red-100"
+                            >
+                                <X size={12} /> Clear Filters
+                            </button>
+                        </div>
+                    )}
                 </div>
 
                 {/* Active filter tags */}
@@ -408,20 +428,36 @@ const PYQView = ({ startCustomTest }) => {
             </div>
 
             {/* Results Header & Generate Action */}
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 bg-indigo-950 p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden text-white">
-                {/* <div className="absolute right-0 top-0 p-8 opacity-10 pointer-events-none">
-                    <History size={150} />
-                </div> */}
-                <div className="text-left sm:text-left">
-                    <h1>
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 bg-indigo-950 p-6 md:p-8 rounded-3xl shadow-lg relative text-white">
+                <div className="text-left sm:text-left z-10">
+                    <p className="text-white/60 text-xs font-bold mb-1">
+                        {filteredQuestions.length} questions available
+                        {selectedQuestionCount !== 'All' ? ` · ${selectedQuestionCount} will be selected` : ''}
+                    </p>
+                    <h1 className="text-xl md:text-2xl font-black md:leading-tight">
                         Ready to test your knowledge against the official UPSC standard?
                     </h1>
                 </div>
-                <div className="z-10 w-full sm:w-auto">
+                <div className="z-10 w-full sm:w-auto flex flex-col sm:flex-row items-center gap-3">
+                    <div className="w-full sm:w-48">
+                        <Dropdown
+                            label="All Questions"
+                            align="top"
+                            value={selectedQuestionCount === 'All' ? 'All' : `${selectedQuestionCount} Questions`}
+                            options={QUESTION_COUNT_OPTIONS}
+                            onChange={(val) => {
+                                if (val === 'All') setSelectedQuestionCount('All');
+                                else {
+                                    const opt = QUESTION_COUNT_OPTIONS.find(o => o.label === val || o.value === val);
+                                    setSelectedQuestionCount(opt ? opt.value : 'All');
+                                }
+                            }}
+                        />
+                    </div>
                     <button
                         onClick={handleGenerateTest}
                         disabled={filteredQuestions.length === 0}
-                        className="w-full sm:w-auto bg-white text-indigo-950 px-8 py-4 rounded-xl font-black flex items-center justify-center gap-3 hover:-translate-y-1 hover:shadow-xl transition-all disabled:opacity-50 disabled:hover:-translate-y-0 disabled:shadow-none"
+                        className="w-full sm:w-auto bg-white text-indigo-950 px-8 py-4 rounded-xl font-black flex items-center justify-center gap-3 hover:-translate-y-1 hover:shadow-xl transition-all disabled:opacity-50 disabled:hover:-translate-y-0 disabled:shadow-none whitespace-nowrap"
                     >
                         <PlayCircle size={20} />
                         Generate PYQ Test

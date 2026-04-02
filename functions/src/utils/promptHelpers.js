@@ -14,120 +14,85 @@
  *  - Complex 3-statement A&R sub-format included
  */
 function buildTypeDistributionInstruction(batchSize) {
-    // Type counts
-    const statement   = Math.round(batchSize * 0.35); // slight reduction to fit one-liners
-    const ar          = Math.round(batchSize * 0.25);
-    const matching    = Math.round(batchSize * 0.15);
-    const oneLiner    = Math.round(batchSize * 0.10);
-    const direct      = batchSize - statement - ar - matching - oneLiner;
-
-    // Statement-based: force answer spread. Divide statement count into 4 equal buckets.
-    const stmtPerBucket   = Math.max(1, Math.floor(statement / 4));
-    const stmtOnlyOne     = stmtPerBucket;
-    const stmtOnlyTwo     = stmtPerBucket;
-    const stmtOnlyThree   = stmtPerBucket;
-    const stmtAll         = statement - stmtOnlyOne - stmtOnlyTwo - stmtOnlyThree;
-
-    // A&R: force answer spread across all 4 options.
-    const arPerBucket = Math.max(1, Math.floor(ar / 4));
-    const arOptA      = arPerBucket;                        // Both A&R correct, R explains A
-    const arOptB      = arPerBucket;                        // Both A&R correct, R does NOT explain A
-    const arOptC      = arPerBucket;                        // A is correct, R is incorrect
-    const arOptD      = ar - arOptA - arOptB - arOptC;      // A is incorrect, R is correct
-
-    // Complex 3-statement A&R: at least 1 if ar >= 4
-    const complexAR = ar >= 4 ? Math.max(1, Math.round(ar * 0.25)) : 0;
+    // Type counts based on user's UPSC anatomy
+    const direct          = Math.max(1, Math.round(batchSize * 0.10));
+    const multiStatement  = Math.max(1, Math.round(batchSize * 0.20));
+    const pairBased       = Math.max(1, Math.round(batchSize * 0.15));
+    const ar              = Math.max(1, Math.round(batchSize * 0.15));
+    const definitional    = Math.max(1, Math.round(batchSize * 0.10));
+    const howMany         = Math.max(1, Math.round(batchSize * 0.15));
+    const application     = batchSize - direct - multiStatement - pairBased - ar - definitional - howMany;
 
     return `
-QUESTION TYPE DISTRIBUTION (strictly follow for this batch of ${batchSize} questions):
+QUESTION TYPE ANATOMY (STRICT ENFORCEMENT for this batch of ${batchSize} questions):
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. STATEMENT-BASED QUESTIONS: ${statement} total
+1. DIRECT FACTUAL / SINGLE STATEMENT: ${direct} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Format: "Consider the following statements: 1. ... 2. ... 3. ... Which of the statements given above is/are CORRECT?"
-   Options MUST be:
-     Option 0: "Only statement 1"  (or "Only 1 and 2" etc.)
-     Option 1: "Only statements 1 and 2"
-     Option 2: "Only statements 2 and 3" (or "Only 1 and 3" etc.)
-     Option 3: "All of the above" (or "None of the above")
-
-   ⚠️ ANSWER DISTRIBUTION RULE — STRICTLY ENFORCE:
-   - ${stmtOnlyOne} question(s) must have correctAnswer = 0  (Only one statement is correct)
-   - ${stmtOnlyTwo} question(s) must have correctAnswer = 1  (Only two statements are correct)
-   - ${stmtOnlyThree} question(s) must have correctAnswer = 2  (Only three / a specific pair are correct)
-   - ${stmtAll} question(s) must have correctAnswer = 3  (All statements are correct)
-   DO NOT make all statement-based questions have "All of the above" as the answer. Distribute evenly.
+   Structure: Simple question, 4 clear options. 
+   Strategy: Recall.
+   Example: "Which city is the largest producer of X?"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. ASSERTION-REASONING QUESTIONS: ${ar} total (including ${complexAR} Complex 3-statement A&R)
+2. MULTI-STATEMENT QUESTIONS (STANDARD): ${multiStatement} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Standard A&R format:
-     "Assertion (A): [factual statement]
-      Reason (R): [explanatory statement]"
-   Options MUST always be in this exact order:
-     Option 0: "Both A and R are correct and R is the correct explanation of A"
-     Option 1: "Both A and R are correct but R is NOT the correct explanation of A"
-     Option 2: "A is correct but R is incorrect"
-     Option 3: "A is incorrect but R is correct"
-
-   ⚠️ ANSWER DISTRIBUTION RULE — STRICTLY ENFORCE:
-   - ${arOptA} question(s) must have correctAnswer = 0  (Both correct, R explains A)
-   - ${arOptB} question(s) must have correctAnswer = 1  (Both correct, R doesn't explain A)
-   - ${arOptC} question(s) must have correctAnswer = 2  (A correct, R wrong)
-   - ${arOptD} question(s) must have correctAnswer = 3  (A wrong, R correct)
-   DO NOT make all A&R questions have correctAnswer = 0. Distribute evenly across all 4 options.
-
-   Complex 3-Statement A&R (${complexAR} of the ${ar}):
-     Use THREE Assertions (A1, A2, A3) and ONE Reason. Example:
-     "Assertion 1 (A1): ...
-      Assertion 2 (A2): ...
-      Assertion 3 (A3): ...
-      Reason (R): ..."
-     Options should reflect which assertions R explains:
-       Option 0: "R correctly explains A1 and A2 only"
-       Option 1: "R correctly explains A2 and A3 only"
-       Option 2: "R correctly explains all three assertions"
-       Option 3: "R does not correctly explain any assertion"
+   Structure: 2 or 3 statements.
+   Strategy: Elimination.
+   Example options: "1 only", "1 and 2 only", "All of the above".
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. MATCHING/PAIR-BASED QUESTIONS: ${matching} total
+3. THE "PAIR-BASED" FORMAT (NEW TREND): ${pairBased} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   CRITICAL: The "text" field MUST contain both lists clearly formatted using newlines.
-   STRICTLY limit List-I to exactly 4 items (1, 2, 3, 4) and List-II to exactly 4 items (A, B, C, D).
-   Do NOT add extra items like E, F, etc.
-   Example format:
-   Match List-I with List-II:
-   List-I:
-   1. Item 1
-   2. Item 2
-   3. Item 3
-   4. Item 4
-   List-II:
-   A. Desc A
-   B. Desc B
-   C. Desc C
-   D. Desc D
+   ⚠️ STRICT RULE: DO NOT use manual matching codes like "1-A, 2-B". 
+   Structure: List 3 or 4 pairs (e.g., "Park : State").
+   Strategy: Exhaustive Knowledge (Elimination kills this).
+   Options MUST BE EXACTLY:
+     Option 0: "Only one pair"
+     Option 1: "Only two pairs"
+     Option 2: "Only three pairs"
+     Option 3: "All four pairs" (or "None of the pairs")
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. ONE-LINER (DIRECT) QUESTIONS: ${oneLiner} total
+4. STATEMENT-REASON (ASSERTION-REASONING): ${ar} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Short, factual recall — one sentence question. Examples:
-   "The term 'Secular' was added to the Constitution by which Amendment?"
-   "Who was the first Governor General of independent India?"
-   "Which Article of the Constitution deals with the Right to Education?"
-   Answer should be a single clear fact. Keep question text under 20 words.
+   ⚠️ STRICT RULE: Use labels "Statement-I" and "Statement-II". DO NOT use "Assertion/Reason".
+   Structure: 
+     Statement-I: [Principal claim]
+     Statement-II: [Logical explanation]
+   Strategy: Conceptual Linkage.
+   Options MUST BE EXACTLY:
+     Option 0: "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I"
+     Option 1: "Both Statement-I and Statement-II are correct but Statement-II is NOT the correct explanation for Statement-I"
+     Option 2: "Statement-I is correct but Statement-II is incorrect"
+     Option 3: "Statement-I is incorrect but Statement-II is correct"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. DIRECT FACTUAL/ANALYTICAL QUESTIONS: ${direct} total
+5. DEFINITIONAL / CONCEPTUAL: ${definitional} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   e.g., "Which of the following is NOT correct regarding..."
-   These may use negative framing, multi-correct elimination logic, etc.
+   Structure: Focus on the "most appropriate description" or "best defines" a specific term.
+   Strategy: Logic & Standard Texts.
+   Example: "Which one of the following best defines the term 'State'?"
 
-CRITICAL OPTION FORMATTING RULE:
-For the "options" JSON array ONLY: DO NOT prefix options with A), B), C), D), 1., 2., etc. The options array must contain ONLY the raw option text.
-BAD: ["A) 1-B, 2-A", "B) 1-A, 2-B"]
-GOOD: ["1-B, 2-A", "1-A, 2-B"]
-NOTE: You MAY use A., B., 1., 2. inside the question "text" field for List-I/List-II and A&R format.`;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. THE "HOW MANY" PATTERN: ${howMany} total
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Structure: List items and ask "How many of the above are correct/true/nocturnal/etc.?"
+   Strategy: Exhaustive Knowledge.
+   Options MUST BE EXACTLY:
+     Option 0: "Only one"
+     Option 1: "Only two"
+     Option 2: "Only three"
+     Option 3: "All four"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. APPLICATION-BASED (SCIENCE & TECH / ENV): ${application} total
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Structure: Focus on "can", "may", or "use cases".
+   Strategy: Possibility Analysis.
+   Example: "With reference to NFC technology, which statements are correct?"
+
+CRITICAL JSON FIELD: Each question MUST include a "strategy" string field (from: Recall, Elimination, Exhaustive Knowledge, Conceptual Linkage, Logic & Standard Texts, Possibility Analysis).
+`;
 }
 
 /**
@@ -135,12 +100,13 @@ NOTE: You MAY use A., B., 1., 2. inside the question "text" field for List-I/Lis
  * Helps normalise how question types are stored.
  */
 const QUESTION_TYPE_LABELS = {
-    'Statement-based': 'Statement-based',
-    'Assertion-Reasoning': 'Assertion-Reasoning',
-    'Assertion-Reasoning-Complex': 'Assertion-Reasoning-Complex',
-    'Matching': 'Matching',
-    'One-liner': 'One-liner',
     'Direct Factual': 'Direct Factual',
+    'Multi-Statement (Standard)': 'Multi-Statement (Standard)',
+    'Pair-Based': 'Pair-Based',
+    'Assertion-Reason': 'Assertion-Reason',
+    'Definitional': 'Definitional',
+    'How Many': 'How Many',
+    'Application-Based': 'Application-Based',
 };
 
 /** 3-layer solution instruction injected into every prompt. */

@@ -18,6 +18,7 @@ import {
     BarChart2,
     LayoutDashboard,
     FileEdit,
+    ShieldCheck,
 } from 'lucide-react';
 
 import logo from '../../assets/logo1.png';
@@ -39,6 +40,7 @@ const ICON_MAP = {
     FileEdit,
     Zap,
     Clock,
+    ShieldCheck,
 };
 
 /**
