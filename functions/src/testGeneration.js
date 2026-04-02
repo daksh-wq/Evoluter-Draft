@@ -42,13 +42,26 @@ const SUBJECT_CODES = {
 
 const SOURCE_CODES   = { Standard: 'SN', Advanced: 'AD', Random: 'RN', 'Current Issue': 'CI', 'Not Applicable': 'NA' };
 const QTYPE_CODES    = { 
-    Factual: 'FA', 
-    Conceptual: 'CO', 
-    'Application Based': 'AB', 
+    // ─── New 7-type UPSC codes ───────────────────────
+    'Direct Factual': 'DF',
+    'Multi-Statement': 'MS',
+    'Pair-Based': 'PB',
+    'Statement-Reason': 'SR',
+    'Definitional': 'DE',
+    'How Many': 'HM',
     'Application-Based': 'AB',
-    Definition: 'DE', 
-    Definitional: 'DE',
-    Informative: 'IN' 
+    // ─── Backward compat for AI legacy labels ────────
+    Factual: 'DF',
+    Conceptual: 'AB',
+    'Application Based': 'AB',
+    Definition: 'DE',
+    Informative: 'DF',
+    'Statement-based': 'MS',
+    'Statement-Based': 'MS',
+    'Assertion-Reasoning': 'SR',
+    'Assertion-Reason': 'SR',
+    'Matching/Pair-based': 'PB',
+    'Match the Following': 'PB',
 };
 const DIFFICULTY_MAP = { Hard: 'TO', Intermediate: 'ME', Easy: 'ES' };
 const PYQ_CODES      = { CSE: 'CS', CDSE: 'CD', NDA: 'ND', CISF: 'CI', CAPF: 'CP', 'Not Applicable': 'NA' };
@@ -798,10 +811,12 @@ exports.syncStudentGeneratedQuestions = functions
                     },
                     tags: q.tags || [],
                     questionType: q.questionType || 'Statement-based',
+                    strategy: q.strategy || 'General',
                     textHash: q.textHash,
                     isAIGenerated: true,
                     addedBy: q.addedBy || userId,
                     source: q.source || 'student-dashboard',
+                    createdAt: admin.firestore.FieldValue.serverTimestamp(),
                     updatedAt: admin.firestore.FieldValue.serverTimestamp(),
                 },
                 options: { merge: true },

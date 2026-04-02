@@ -677,19 +677,31 @@ const QuestionBank = () => {
     const fetchQuestions = useCallback(async () => {
         setLoading(true);
         try {
-            let q = collection(db, 'question_bank');
-            const constraints = [orderBy('createdAt', 'desc'), limit(200)];
-            if (filterSubjectCode) constraints.unshift(where('subjectCode', '==', filterSubjectCode));
-            if (filterDiffCode) constraints.unshift(where('difficultyCode', '==', filterDiffCode));
-            if (filterTypeCode) constraints.unshift(where('typeCode', '==', filterTypeCode));
-            if (filterSource === 'institution') constraints.unshift(where('source', '==', 'institution'));
-            if (filterSource === 'student-dashboard') constraints.unshift(where('source', '==', 'student-dashboard'));
+            const ref = collection(db, 'question_bank');
+            const constraints = [];
 
-            const snap = await getDocs(query(q, ...constraints));
-            setQuestions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+            if (filterSubjectCode) constraints.push(where('subjectCode', '==', filterSubjectCode));
+            if (filterDiffCode) constraints.push(where('difficultyCode', '==', filterDiffCode));
+            if (filterTypeCode) constraints.push(where('typeCode', '==', filterTypeCode));
+            if (filterSource === 'institution') constraints.push(where('source', '==', 'institution'));
+            if (filterSource === 'student-dashboard') constraints.push(where('source', '==', 'student-dashboard'));
+
+            let snap;
+            try {
+                // Try with ordering (requires composite index in Firestore)
+                snap = await getDocs(query(ref, ...constraints, orderBy('createdAt', 'desc'), limit(500)));
+            } catch (indexErr) {
+                // Fallback: query without orderBy if index doesn't exist
+                console.warn('Firestore index missing for orderBy, fetching without sort:', indexErr.message);
+                snap = await getDocs(query(ref, ...constraints, limit(500)));
+            }
+
+            const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+            console.log(`Question Bank loaded: ${docs.length} questions`);
+            setQuestions(docs);
         } catch (err) {
             console.error('Failed to fetch question bank:', err);
-            toast.error('Failed to load questions');
+            toast.error('Failed to load questions: ' + (err.message || 'Unknown error'));
         } finally {
             setLoading(false);
         }
