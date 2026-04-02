@@ -58,3 +58,4 @@ exports.geminiEvaluateAnswer       = geminiProxy.geminiEvaluateAnswer;
 exports.geminiAnalyzePerformance   = geminiProxy.geminiAnalyzePerformance;
 exports.geminiSuggestTopics        = geminiProxy.geminiSuggestTopics;
 exports.geminiGenerateNews         = geminiProxy.geminiGenerateNews;
+exports.geminiChat                 = geminiProxy.geminiChat;
