@@ -17,67 +17,82 @@ import { httpsCallable } from 'firebase/functions';
 import { db, functions } from '../../../services/firebase';
 import {
     SUBJECT_CODES, TOPIC_CODES, SOURCE_CODES, QUESTION_TYPE_CODES,
-    DIFFICULTY_CODES, PYQ_CODES, SUBJECTS
+    DIFFICULTY_CODES, PYQ_CODES, SUBJECTS,
+    SUBJECT_CODE_TO_NAME, QUESTION_TYPE_CODE_TO_NAME, DIFFICULTY_CODE_TO_NAME,
 } from '../../../constants/appConstants';
 import { decodeQuestionId, generateQuestionId, getSubjectSources } from '../../../utils/questionTagUtils';
 import { toast } from '../../../utils/toast';
 import {
     Search, Filter, Plus, ChevronDown, ChevronUp,
     BookOpen, Tag, Sparkles, X, Loader, Eye, RefreshCw,
-    Edit2, Save, Trash2
+    Edit2, Save, Trash2, CheckCircle2, Hash, Bookmark, Clock
 } from 'lucide-react';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 const EMPTY_FORM = {
     subject: 'Polity & Constitution', topicCode: '01',
-    sourceCode: 'SN', typeCode: 'FA', difficultyCode: 'ME', pyqCode: 'NA',
+    sourceCode: 'SN', typeCode: 'DF', difficultyCode: 'ME', pyqCode: 'NA',
     text: '', options: ['', '', '', ''], correctAnswer: 0,
     correctAnswerReason: '', approachToSolve: '', sourceOfQuestion: ''
 };
 
-// ─── Tag Badge ────────────────────────────────────────────────────────────────
-const TAG_COLORS = {
-    IP: 'bg-violet-100 text-violet-700', AM: 'bg-amber-100 text-amber-700',
-    MI: 'bg-orange-100 text-orange-700', IC: 'bg-pink-100 text-pink-700',
-    GE: 'bg-teal-100 text-teal-700', EI: 'bg-green-100 text-green-700',
-    EN: 'bg-emerald-100 text-emerald-700', ST: 'bg-cyan-100 text-cyan-700',
-    CA: 'bg-blue-100 text-blue-700', TR: 'bg-slate-100 text-slate-700',
+// ─── Visual Design Tokens ─────────────────────────────────────────────────────
+const SUBJECT_COLORS = {
+    PC: { bg: '#ede9fe', text: '#6d28d9', bar: '#7c3aed' },
+    IE: { bg: '#ecfdf5', text: '#047857', bar: '#10b981' },
+    GE: { bg: '#f0fdfa', text: '#0f766e', bar: '#14b8a6' },
+    ST: { bg: '#ecfeff', text: '#0e7490', bar: '#06b6d4' },
+    IR: { bg: '#eff6ff', text: '#1d4ed8', bar: '#3b82f6' },
+    AC: { bg: '#fdf2f8', text: '#be185d', bar: '#ec4899' },
+    EN: { bg: '#ecfdf5', text: '#047857', bar: '#34d399' },
+    AM: { bg: '#fffbeb', text: '#b45309', bar: '#f59e0b' },
+    MO: { bg: '#fff7ed', text: '#c2410c', bar: '#f97316' },
+    MX: { bg: '#f8fafc', text: '#475569', bar: '#94a3b8' },
 };
-const DIFF_COLORS = {
-    ET: 'bg-red-100 text-red-700 border-red-200',
-    TO: 'bg-orange-100 text-orange-700 border-orange-200',
-    ME: 'bg-yellow-100 text-yellow-700 border-yellow-200',
-    ES: 'bg-green-100 text-green-700 border-green-200',
-    FO: 'bg-teal-100 text-teal-700 border-teal-200',
+const DIFF_BAR_COLORS = {
+    ET: '#ef4444', TO: '#f97316', ME: '#eab308', ES: '#22c55e', FO: '#14b8a6',
+};
+const DIFF_LABELS = {
+    ET: 'Extreme', TO: 'Tough', ME: 'Medium', ES: 'Easy', FO: 'Foundation',
+};
+const TYPE_LABELS = {
+    DF: 'Direct Factual', MS: 'Multi-Statement', PB: 'Pair-Based',
+    SR: 'Assertion-Reason', DE: 'Definitional', HM: 'How Many', AB: 'Application',
+    FA: 'Factual', CO: 'Conceptual', IN: 'Informative',
 };
 
-const TagBadge = ({ code, label, color }) => (
-    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold ${color}`}>{label}</span>
+const DifficultyPill = ({ code }) => {
+    const bg = { ET: 'bg-red-500', TO: 'bg-orange-500', ME: 'bg-yellow-500', ES: 'bg-green-500', FO: 'bg-teal-500' };
+    return (
+        <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-extrabold text-white ${bg[code] || 'bg-slate-400'}`}>
+            {DIFF_LABELS[code] || code}
+        </span>
+    );
+};
+
+const TypePill = ({ code }) => (
+    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 text-[10px] font-bold border border-indigo-100">
+        {TYPE_LABELS[code] || code}
+    </span>
 );
 
-// ─── Question ID Display ──────────────────────────────────────────────────────
+const SubjectPill = ({ code }) => {
+    const c = SUBJECT_COLORS[code] || SUBJECT_COLORS.MX;
+    return (
+        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold" style={{ background: c.bg, color: c.text }}>
+            {SUBJECT_CODE_TO_NAME[code] || code}
+        </span>
+    );
+};
+
+// ─── Question ID Display (Compact) ───────────────────────────────────────────
 const QuestionIdDisplay = ({ questionId }) => {
     if (!questionId) return null;
-    const parts = questionId.split('-');
-    if (parts.length !== 7) return <code className="text-xs font-mono text-slate-500">{questionId}</code>;
-    const [sub, topic, src, type, diff, pyq, serial] = parts;
+    const serial = questionId.split('-').pop();
     return (
-        <div className="flex items-center gap-1 flex-wrap">
-            {[
-                { code: sub, label: sub, color: TAG_COLORS[sub] || 'bg-slate-100 text-slate-600' },
-                { code: topic, label: topic, color: 'bg-slate-100 text-slate-600' },
-                { code: src, label: src, color: 'bg-blue-50 text-blue-600' },
-                { code: type, label: type, color: 'bg-purple-50 text-purple-600' },
-                { code: diff, label: diff, color: DIFF_COLORS[diff] || 'bg-slate-100 text-slate-600' },
-                { code: pyq, label: pyq, color: 'bg-indigo-50 text-[#2278B0]' },
-                { code: serial, label: `#${serial}`, color: 'bg-slate-50 text-slate-500' },
-            ].map((seg, i) => (
-                <React.Fragment key={i}>
-                    <TagBadge {...seg} />
-                    {i < 6 && <span className="text-slate-300 text-xs">–</span>}
-                </React.Fragment>
-            ))}
-        </div>
+        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-slate-100 rounded text-[10px] font-mono text-slate-500">
+            <Hash size={9} />{serial ? `#${serial}` : questionId.slice(-6)}
+        </span>
     );
 };
 
@@ -145,8 +160,8 @@ const ApproachBriefPanel = ({ brief, decoded }) => {
     );
 };
 
-// ─── Question Row ─────────────────────────────────────────────────────────────
-const QuestionRow = ({ q, onUpdated }) => {
+// ─── Question Row (Redesigned) ────────────────────────────────────────────────
+const QuestionRow = ({ q, index, onUpdated }) => {
     const [open, setOpen] = useState(false);
     const [editing, setEditing] = useState(false);
     const [saving, setSaving] = useState(false);
@@ -170,6 +185,8 @@ const QuestionRow = ({ q, onUpdated }) => {
     const [editPyqCode, setEditPyqCode] = useState(q.pyqCode || 'NA');
 
     const editTopicMap = TOPIC_CODES[editSubjectCode] || {};
+    const sc = SUBJECT_COLORS[q.subjectCode] || SUBJECT_COLORS.MX;
+    const diffColor = DIFF_BAR_COLORS[q.difficultyCode] || '#94a3b8';
 
     const handleStartEdit = () => {
         setEditText(q.text || '');
@@ -193,277 +210,257 @@ const QuestionRow = ({ q, onUpdated }) => {
         try {
             const newId = generateQuestionId(editSubjectCode, editTopicCode, editSourceCode, editTypeCode, editDiffCode, editPyqCode, 0);
             const realId = newId.replace('-0000', q.questionId?.split('-').pop() ? `-${q.questionId.split('-').pop()}` : `-E${String(Date.now()).slice(-4)}`);
-
             await updateDoc(doc(db, 'question_bank', q.id), {
-                questionId: realId,
-                subjectCode: editSubjectCode,
-                topicCode: editTopicCode,
-                sourceCode: editSourceCode,
-                typeCode: editTypeCode,
-                difficultyCode: editDiffCode,
-                pyqCode: editPyqCode,
-                text: editText.trim(),
-                options: editOptions.map(o => o.trim()),
-                correctAnswer: editCorrect,
-                solution: {
-                    correctAnswerReason: editReason.trim(),
-                    sourceOfQuestion: editSource.trim(),
-                    approachToSolve: editApproach.trim(),
-                },
+                questionId: realId, subjectCode: editSubjectCode, topicCode: editTopicCode,
+                sourceCode: editSourceCode, typeCode: editTypeCode, difficultyCode: editDiffCode, pyqCode: editPyqCode,
+                text: editText.trim(), options: editOptions.map(o => o.trim()), correctAnswer: editCorrect,
+                solution: { correctAnswerReason: editReason.trim(), sourceOfQuestion: editSource.trim(), approachToSolve: editApproach.trim() },
                 updatedAt: serverTimestamp(),
             });
-            toast.success('Question updated!');
-            setEditing(false);
+            toast.success('Question updated!'); setEditing(false);
             if (onUpdated) onUpdated();
-        } catch (err) {
-            console.error(err);
-            toast.error('Failed to update question');
-        } finally {
-            setSaving(false);
-        }
+        } catch (err) { console.error(err); toast.error('Failed to update question'); }
+        finally { setSaving(false); }
     };
 
     const handleDelete = async () => {
-        if (!window.confirm('Are you sure you want to delete this question? This cannot be undone.')) return;
+        if (!window.confirm('Delete this question permanently?')) return;
         setDeleting(true);
-        try {
-            await deleteDoc(doc(db, 'question_bank', q.id));
-            toast.success('Question deleted');
-            if (onUpdated) onUpdated();
-        } catch (err) {
-            console.error(err);
-            toast.error('Failed to delete question');
-        } finally {
-            setDeleting(false);
-        }
+        try { await deleteDoc(doc(db, 'question_bank', q.id)); toast.success('Question deleted'); if (onUpdated) onUpdated(); }
+        catch (err) { console.error(err); toast.error('Failed to delete'); }
+        finally { setDeleting(false); }
     };
 
     const handleGenerateBrief = async () => {
         setGeneratingBrief(true);
         try {
-            const generateBrief = httpsCallable(functions, 'generateApproachBrief');
-            const result = await generateBrief({ questionId: q.questionId, questionText: q.text });
-            setBrief(result.data.approachBrief);
-            toast.success('Approach Brief generated!');
-        } catch (err) {
-            console.error(err);
-            toast.error('Failed to generate brief');
-        } finally {
-            setGeneratingBrief(false);
-        }
+            const fn = httpsCallable(functions, 'generateApproachBrief');
+            const result = await fn({ questionId: q.questionId, questionText: q.text });
+            setBrief(result.data.approachBrief); toast.success('Brief generated!');
+        } catch (err) { console.error(err); toast.error('Failed to generate brief'); }
+        finally { setGeneratingBrief(false); }
     };
 
-    const setEditOption = (i, v) => {
-        const opts = [...editOptions];
-        opts[i] = v;
-        setEditOptions(opts);
-    };
+    const setEditOption = (i, v) => { const opts = [...editOptions]; opts[i] = v; setEditOptions(opts); };
 
     return (
-        <div className="border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-slate-300 transition-all">
-            {/* Summary Row */}
-            <div
-                className="flex items-start gap-3 p-4 cursor-pointer select-none"
-                onClick={() => setOpen(o => !o)}
-            >
-                <div className="flex-1 min-w-0">
-                    <QuestionIdDisplay questionId={q.questionId} />
-                    <p className="mt-2 text-sm text-slate-800 line-clamp-2">{q.text}</p>
+        <div className="group rounded-2xl overflow-hidden bg-white border border-slate-200/80 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200">
+            {/* ─── Collapsed Summary ─────────────────────────── */}
+            <div className="flex items-center gap-3 px-4 py-3 cursor-pointer select-none" onClick={() => setOpen(o => !o)}>
+                {/* Number */}
+                <div className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-extrabold" style={{ background: sc.bg, color: sc.text }}>
+                    {index + 1}
                 </div>
-                <div className="shrink-0 text-slate-400 mt-1">
-                    {open ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                    <p className="text-[13px] text-slate-800 font-medium leading-snug line-clamp-1">{q.text}</p>
+                    <div className="flex items-center gap-1.5 mt-1.5 flex-wrap">
+                        <SubjectPill code={q.subjectCode} />
+                        <TypePill code={q.typeCode} />
+                        <DifficultyPill code={q.difficultyCode} />
+                        {q.source === 'student-dashboard' && (
+                            <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-blue-50 text-blue-500 text-[9px] font-bold">AI</span>
+                        )}
+                    </div>
+                </div>
+
+                {/* Expand Arrow */}
+                <div className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-colors ${open ? 'bg-[#2278B0] text-white' : 'bg-slate-100 text-slate-400 group-hover:bg-slate-200'}`}>
+                    {open ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                 </div>
             </div>
 
-            {/* Detail Expansion */}
+            {/* ─── Expanded Detail ──────────────────────────── */}
             {open && (
-                <div className="border-t border-slate-100 p-4 space-y-4 bg-slate-50">
-                    {/* Action Buttons */}
-                    <div className="flex items-center gap-2">
+                <div className="border-t border-slate-100">
+                    {/* Action Toolbar */}
+                    <div className="flex items-center gap-2 px-5 py-2.5 bg-slate-50/70 border-b border-slate-100">
                         {!editing ? (
                             <>
                                 <button onClick={handleStartEdit}
-                                    className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 text-amber-700 border border-amber-200 rounded-lg text-xs font-bold hover:bg-amber-100 transition-colors">
-                                    <Edit2 size={12} /> Edit
+                                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[11px] font-bold text-amber-700 bg-amber-50 border border-amber-200/70 hover:bg-amber-100 transition-colors">
+                                    <Edit2 size={11} /> Edit
                                 </button>
                                 <button onClick={handleDelete} disabled={deleting}
-                                    className="flex items-center gap-1.5 px-3 py-1.5 bg-red-50 text-red-600 border border-red-200 rounded-lg text-xs font-bold hover:bg-red-100 transition-colors disabled:opacity-50">
-                                    {deleting ? <Loader size={12} className="animate-spin" /> : <Trash2 size={12} />}
+                                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[11px] font-bold text-red-600 bg-red-50 border border-red-200/70 hover:bg-red-100 transition-colors disabled:opacity-50">
+                                    {deleting ? <Loader size={11} className="animate-spin" /> : <Trash2 size={11} />}
                                     {deleting ? 'Deleting...' : 'Delete'}
                                 </button>
+                                <div className="flex-1" />
+                                {!brief ? (
+                                    <button onClick={handleGenerateBrief} disabled={generatingBrief}
+                                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[11px] font-bold text-[#2278B0] bg-blue-50 border border-blue-200/70 hover:bg-blue-100 transition-colors disabled:opacity-50">
+                                        {generatingBrief ? <Loader size={11} className="animate-spin" /> : <Sparkles size={11} />}
+                                        {generatingBrief ? 'Generating...' : 'Gen Brief'}
+                                    </button>
+                                ) : (
+                                    <button onClick={handleGenerateBrief} disabled={generatingBrief}
+                                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-bold text-slate-500 hover:text-[#2278B0] transition-colors disabled:opacity-50">
+                                        <RefreshCw size={10} className={generatingBrief ? 'animate-spin' : ''} /> Regen
+                                    </button>
+                                )}
                             </>
                         ) : (
                             <>
                                 <button onClick={handleSaveEdit} disabled={saving}
-                                    className="flex items-center gap-1.5 px-4 py-1.5 bg-green-600 text-white rounded-lg text-xs font-bold hover:bg-green-700 transition-colors disabled:opacity-50">
-                                    {saving ? <Loader size={12} className="animate-spin" /> : <Save size={12} />}
+                                    className="inline-flex items-center gap-1.5 px-4 py-1 rounded-md text-[11px] font-bold text-white bg-green-600 hover:bg-green-700 transition-colors disabled:opacity-50">
+                                    {saving ? <Loader size={11} className="animate-spin" /> : <Save size={11} />}
                                     {saving ? 'Saving...' : 'Save Changes'}
                                 </button>
                                 <button onClick={() => setEditing(false)}
-                                    className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 text-slate-600 border border-slate-200 rounded-lg text-xs font-bold hover:bg-slate-200 transition-colors">
-                                    <X size={12} /> Cancel
+                                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[11px] font-bold text-slate-500 bg-slate-100 hover:bg-slate-200 transition-colors">
+                                    <X size={11} /> Cancel
                                 </button>
                             </>
                         )}
                     </div>
 
-                    {/* Question Text */}
-                    <div>
-                        <p className="text-sm font-bold text-slate-700 mb-2">Question</p>
+                    <div className="p-5 space-y-4">
+                        {/* Question Text */}
+                        <div>
+                            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Question</p>
+                            {editing ? (
+                                <textarea value={editText} onChange={e => setEditText(e.target.value)} rows={4}
+                                    className="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-800 focus:ring-2 focus:ring-[#2278B0]/40 focus:border-[#2278B0] outline-none resize-none" />
+                            ) : (
+                                <p className="text-[13px] text-slate-800 leading-relaxed whitespace-pre-wrap">{q.text}</p>
+                            )}
+                        </div>
+
+                        {/* Options */}
                         {editing ? (
-                            <textarea value={editText} onChange={e => setEditText(e.target.value)} rows={4}
-                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:ring-2 focus:ring-[#2278B0] outline-none resize-none" />
+                            <div className="space-y-2">
+                                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Options (select correct)</p>
+                                {editOptions.map((opt, i) => (
+                                    <div key={i} className="flex gap-2 items-center">
+                                        <input type="radio" name={`edit-correct-${q.id}`} checked={editCorrect === i}
+                                            onChange={() => setEditCorrect(i)} className="accent-green-600 w-4 h-4 shrink-0" />
+                                        <span className="text-sm font-bold text-slate-400 w-5">{String.fromCharCode(65 + i)}.</span>
+                                        <input type="text" value={opt} onChange={e => setEditOption(i, e.target.value)}
+                                            className="flex-1 border border-slate-200 rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-[#2278B0]/40 focus:border-[#2278B0] outline-none" />
+                                    </div>
+                                ))}
+                            </div>
                         ) : (
-                            <p className="text-sm text-slate-800 leading-relaxed whitespace-pre-wrap">{q.text}</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                {q.options?.map((opt, i) => (
+                                    <div key={i}
+                                        className={`flex items-start gap-2 text-[13px] px-3 py-2.5 rounded-xl border transition-all ${
+                                            i === q.correctAnswer
+                                                ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+                                                : 'bg-white border-slate-150 text-slate-700 hover:bg-slate-50'
+                                        }`}>
+                                        {i === q.correctAnswer && <CheckCircle2 size={14} className="text-emerald-500 mt-0.5 shrink-0" />}
+                                        <span>
+                                            <span className="font-bold text-slate-400 mr-1.5">{String.fromCharCode(65 + i)}.</span>
+                                            <span className={i === q.correctAnswer ? 'font-semibold' : ''}>{opt}</span>
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
                         )}
-                    </div>
 
-                    {/* Options */}
-                    {editing ? (
-                        <div className="space-y-2">
-                            <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">Options (select correct)</p>
-                            {editOptions.map((opt, i) => (
-                                <div key={i} className="flex gap-2 items-center">
-                                    <input type="radio" name={`edit-correct-${q.id}`} checked={editCorrect === i}
-                                        onChange={() => setEditCorrect(i)} className="accent-green-600 w-4 h-4 shrink-0" />
-                                    <span className="text-sm font-bold text-slate-500 w-5">{String.fromCharCode(65 + i)}.</span>
-                                    <input type="text" value={opt} onChange={e => setEditOption(i, e.target.value)}
-                                        className="flex-1 border border-slate-200 rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
-                                </div>
-                            ))}
-                        </div>
-                    ) : (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {q.options?.map((opt, i) => (
-                                <div key={i}
-                                    className={`text-sm px-3 py-2 rounded-lg border ${i === q.correctAnswer
-                                        ? 'bg-green-50 border-green-200 text-green-800 font-medium'
-                                        : 'bg-white border-slate-200 text-slate-700'}`}>
-                                    <span className="font-bold mr-2">{String.fromCharCode(65 + i)}.</span>{opt}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-
-                    {/* Tag Fields */}
-                    {editing ? (
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                            <div>
-                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Subject</label>
-                                <select value={editSubjectCode} onChange={e => { setEditSubjectCode(e.target.value); setEditTopicCode('01'); }}
-                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                    {Object.entries(SUBJECT_CODES).filter(([n]) => n !== 'All Subjects').map(([name, code]) => (
-                                        <option key={code} value={code}>{code} — {name}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div>
-                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Sub Topic</label>
-                                <select value={editTopicCode} onChange={e => setEditTopicCode(e.target.value)}
-                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                    {Object.keys(editTopicMap).length > 0 ? (
-                                        Object.entries(editTopicMap).map(([code, name]) => (
+                        {/* Tag Grid */}
+                        {editing ? (
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                <div>
+                                    <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Subject</label>
+                                    <select value={editSubjectCode} onChange={e => { setEditSubjectCode(e.target.value); setEditTopicCode('01'); }}
+                                        className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0]/40 outline-none">
+                                        {Object.entries(SUBJECT_CODES).filter(([n]) => n !== 'All Subjects').map(([name, code]) => (
                                             <option key={code} value={code}>{code} — {name}</option>
-                                        ))
-                                    ) : (
-                                        <option value="01">01 — General</option>
-                                    )}
-                                </select>
-                            </div>
-                            <div>
-                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Source</label>
-                                <select value={editSourceCode} onChange={e => setEditSourceCode(e.target.value)}
-                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                    {Object.entries(SOURCE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
-                                </select>
-                            </div>
-                            <div>
-                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Type</label>
-                                <select value={editTypeCode} onChange={e => setEditTypeCode(e.target.value)}
-                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                    {Object.entries(QUESTION_TYPE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
-                                </select>
-                            </div>
-                            <div>
-                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Difficulty</label>
-                                <select value={editDiffCode} onChange={e => setEditDiffCode(e.target.value)}
-                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                    {Object.entries(DIFFICULTY_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
-                                </select>
-                            </div>
-                            <div>
-                                <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">PYQ</label>
-                                <select value={editPyqCode} onChange={e => setEditPyqCode(e.target.value)}
-                                    className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0] outline-none">
-                                    {Object.entries(PYQ_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
-                                </select>
-                            </div>
-                        </div>
-                    ) : decoded && (
-                        <div className="bg-white border border-slate-200 rounded-lg p-3 grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
-                            {[
-                                ['Subject', decoded.subjectName],
-                                ['Sub Topic', decoded.topicName],
-                                ['Source', decoded.sourceName],
-                                ['Type', decoded.typeName],
-                                ['Difficulty', decoded.difficultyName],
-                                ['PYQ', decoded.pyqName],
-                            ].map(([k, v]) => (
-                                <div key={k}>
-                                    <span className="text-slate-400 font-bold uppercase tracking-wider text-[9px]">{k}</span>
-                                    <p className="text-slate-700 font-medium">{v}</p>
+                                        ))}
+                                    </select>
                                 </div>
-                            ))}
-                        </div>
-                    )}
+                                <div>
+                                    <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Sub Topic</label>
+                                    <select value={editTopicCode} onChange={e => setEditTopicCode(e.target.value)}
+                                        className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0]/40 outline-none">
+                                        {Object.keys(editTopicMap).length > 0 ? (
+                                            Object.entries(editTopicMap).map(([code, name]) => (
+                                                <option key={code} value={code}>{code} — {name}</option>
+                                            ))
+                                        ) : (
+                                            <option value="01">01 — General</option>
+                                        )}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Source</label>
+                                    <select value={editSourceCode} onChange={e => setEditSourceCode(e.target.value)}
+                                        className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0]/40 outline-none">
+                                        {Object.entries(SOURCE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Type</label>
+                                    <select value={editTypeCode} onChange={e => setEditTypeCode(e.target.value)}
+                                        className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0]/40 outline-none">
+                                        {Object.entries(QUESTION_TYPE_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Difficulty</label>
+                                    <select value={editDiffCode} onChange={e => setEditDiffCode(e.target.value)}
+                                        className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0]/40 outline-none">
+                                        {Object.entries(DIFFICULTY_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">PYQ</label>
+                                    <select value={editPyqCode} onChange={e => setEditPyqCode(e.target.value)}
+                                        className="w-full border border-slate-200 rounded-lg px-2 py-1.5 text-xs text-slate-700 focus:ring-2 focus:ring-[#2278B0]/40 outline-none">
+                                        {Object.entries(PYQ_CODES).map(([name, code]) => <option key={code} value={code}>{code} — {name}</option>)}
+                                    </select>
+                                </div>
+                            </div>
+                        ) : decoded && (
+                            <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
+                                {[
+                                    { icon: <Bookmark size={10} />, label: 'Subject', value: decoded.subjectName },
+                                    { icon: <Tag size={10} />, label: 'Sub Topic', value: decoded.topicName },
+                                    { icon: <BookOpen size={10} />, label: 'Source', value: decoded.sourceName },
+                                    { icon: <Eye size={10} />, label: 'Type', value: decoded.typeName },
+                                    { icon: <Clock size={10} />, label: 'Difficulty', value: decoded.difficultyName },
+                                    { icon: <Hash size={10} />, label: 'PYQ', value: decoded.pyqName },
+                                ].map(({ icon, label, value }) => (
+                                    <div key={label} className="bg-slate-50 rounded-lg px-2.5 py-2 text-center">
+                                        <div className="flex items-center justify-center gap-1 text-slate-400 mb-0.5">{icon}<span className="text-[8px] font-bold uppercase tracking-wider">{label}</span></div>
+                                        <p className="text-[11px] font-semibold text-slate-700 truncate">{value}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
 
-                    {/* Solution */}
-                    {editing ? (
-                        <div className="space-y-2">
-                            <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">Solution</p>
-                            <input type="text" value={editSource} onChange={e => setEditSource(e.target.value)}
-                                placeholder="Source (e.g. NCERT Class 11 Ch.2)"
-                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
-                            <input type="text" value={editReason} onChange={e => setEditReason(e.target.value)}
-                                placeholder="Why is the correct answer right?"
-                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
-                            <input type="text" value={editApproach} onChange={e => setEditApproach(e.target.value)}
-                                placeholder="Approach / strategy to solve"
-                                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none" />
-                        </div>
-                    ) : q.solution && (
-                        <div className="bg-white border border-slate-200 rounded-lg p-3 text-sm space-y-2">
-                            <p className="font-bold text-slate-700">Solution</p>
-                            <p className="text-slate-600"><span className="font-semibold">Why Correct: </span>{q.solution.correctAnswerReason}</p>
-                            <p className="text-slate-600"><span className="font-semibold">Source: </span>{q.solution.sourceOfQuestion}</p>
-                            <p className="text-slate-600"><span className="font-semibold">Approach: </span>{q.solution.approachToSolve}</p>
-                        </div>
-                    )}
+                        {/* Solution */}
+                        {editing ? (
+                            <div className="space-y-2">
+                                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Solution</p>
+                                <input type="text" value={editSource} onChange={e => setEditSource(e.target.value)}
+                                    placeholder="Source (e.g. NCERT Class 11 Ch.2)"
+                                    className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0]/40 focus:border-[#2278B0] outline-none" />
+                                <input type="text" value={editReason} onChange={e => setEditReason(e.target.value)}
+                                    placeholder="Why is the correct answer right?"
+                                    className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0]/40 focus:border-[#2278B0] outline-none" />
+                                <input type="text" value={editApproach} onChange={e => setEditApproach(e.target.value)}
+                                    placeholder="Approach / strategy to solve"
+                                    className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0]/40 focus:border-[#2278B0] outline-none" />
+                            </div>
+                        ) : q.solution && (
+                            <div className="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-4 space-y-2.5">
+                                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Solution</p>
+                                <div className="text-[13px] text-slate-700 space-y-1.5">
+                                    <p><span className="font-bold text-emerald-700">Why Correct:</span> {q.solution.correctAnswerReason}</p>
+                                    <p><span className="font-bold text-[#2278B0]">Source:</span> {q.solution.sourceOfQuestion}</p>
+                                    <p><span className="font-bold text-amber-700">Approach:</span> {q.solution.approachToSolve}</p>
+                                </div>
+                            </div>
+                        )}
 
-                    {/* Approach Brief */}
-                    {!editing && <ApproachBriefPanel brief={brief} decoded={decoded} />}
-
-                    {/* Generate Brief Button */}
-                    {!editing && !brief && (
-                        <button
-                            onClick={handleGenerateBrief}
-                            disabled={generatingBrief}
-                            className="flex items-center gap-2 px-4 py-2 bg-[#2278B0] text-white rounded-lg text-sm font-bold hover:bg-[#1b5f8a] transition-colors disabled:opacity-50"
-                        >
-                            {generatingBrief ? <Loader size={14} className="animate-spin" /> : <Sparkles size={14} />}
-                            {generatingBrief ? 'Generating...' : 'Generate Approach Brief'}
-                        </button>
-                    )}
-                    {!editing && brief && (
-                        <button
-                            onClick={handleGenerateBrief}
-                            disabled={generatingBrief}
-                            className="flex items-center gap-2 px-3 py-1.5 text-[#2278B0] border border-[#2278B0]/20 rounded-lg text-xs font-bold hover:bg-indigo-50 transition-colors disabled:opacity-50"
-                        >
-                            <RefreshCw size={12} className={generatingBrief ? 'animate-spin' : ''} />
-                            Regenerate Brief
-                        </button>
-                    )}
+                        {/* Approach Brief */}
+                        {!editing && <ApproachBriefPanel brief={brief} decoded={decoded} />}
+                    </div>
                 </div>
             )}
         </div>
@@ -667,6 +664,7 @@ const QuestionBank = () => {
     const [filterSubjectCode, setFilterSubjectCode] = useState('');
     const [filterDiffCode, setFilterDiffCode] = useState('');
     const [filterTypeCode, setFilterTypeCode] = useState('');
+    const [filterTopicCode, setFilterTopicCode] = useState('');
     const [filterSource, setFilterSource] = useState(''); // '', 'institution', 'student-dashboard'
     const [searchText, setSearchText] = useState('');
 
@@ -681,6 +679,7 @@ const QuestionBank = () => {
             const constraints = [];
 
             if (filterSubjectCode) constraints.push(where('subjectCode', '==', filterSubjectCode));
+            if (filterTopicCode) constraints.push(where('topicCode', '==', filterTopicCode));
             if (filterDiffCode) constraints.push(where('difficultyCode', '==', filterDiffCode));
             if (filterTypeCode) constraints.push(where('typeCode', '==', filterTypeCode));
             if (filterSource === 'institution') constraints.push(where('source', '==', 'institution'));
@@ -705,12 +704,12 @@ const QuestionBank = () => {
         } finally {
             setLoading(false);
         }
-    }, [filterSubjectCode, filterDiffCode, filterTypeCode, filterSource]);
+    }, [filterSubjectCode, filterTopicCode, filterDiffCode, filterTypeCode, filterSource]);
 
     useEffect(() => { fetchQuestions(); }, [fetchQuestions]);
 
     // Reset to page 1 when filters / search change
-    useEffect(() => { setCurrentPage(1); }, [filterSubjectCode, filterDiffCode, filterTypeCode, filterSource, searchText]);
+    useEffect(() => { setCurrentPage(1); }, [filterSubjectCode, filterTopicCode, filterDiffCode, filterTypeCode, filterSource, searchText]);
 
     const filtered = searchText
         ? questions.filter(q => q.text?.toLowerCase().includes(searchText.toLowerCase()))
@@ -747,8 +746,8 @@ const QuestionBank = () => {
                         <div className="flex items-center gap-2 text-slate-500 font-bold text-xs uppercase tracking-wider">
                             <Filter size={14} /> Filters
                         </div>
-                        {(filterSubjectCode || filterDiffCode || filterTypeCode || filterSource || searchText) && (
-                            <button onClick={() => { setFilterSubjectCode(''); setFilterDiffCode(''); setFilterTypeCode(''); setFilterSource(''); setSearchText(''); }}
+                        {(filterSubjectCode || filterTopicCode || filterDiffCode || filterTypeCode || filterSource || searchText) && (
+                            <button onClick={() => { setFilterSubjectCode(''); setFilterTopicCode(''); setFilterDiffCode(''); setFilterTypeCode(''); setFilterSource(''); setSearchText(''); }}
                                 className="text-xs text-slate-500 hover:text-slate-800 flex items-center gap-1 font-bold bg-slate-100 px-2 py-1 rounded-md transition-colors">
                                 <X size={12} /> Clear
                             </button>
@@ -763,13 +762,25 @@ const QuestionBank = () => {
                 </div>
 
                 {/* Dropdowns Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
                     {/* Subject filter */}
-                    <select value={filterSubjectCode} onChange={e => setFilterSubjectCode(e.target.value)}
+                    <select value={filterSubjectCode} onChange={e => { setFilterSubjectCode(e.target.value); setFilterTopicCode(''); }}
                         className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none w-full shadow-sm">
                         <option value="">Subject: All</option>
-                        {Object.entries(SUBJECT_CODES).map(([name, code]) => (
-                            <option key={code} value={code}>Subject: {name}</option>
+                        {Object.entries(SUBJECT_CODES)
+                            .filter(([name]) => name !== 'All Subjects')
+                            .map(([name, code]) => (
+                                <option key={code} value={code}>Subject: {name}</option>
+                            ))}
+                    </select>
+
+                    {/* Sub Topic filter */}
+                    <select value={filterTopicCode} onChange={e => setFilterTopicCode(e.target.value)}
+                        disabled={!filterSubjectCode}
+                        className="border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2278B0] outline-none w-full shadow-sm disabled:bg-slate-50 disabled:text-slate-400">
+                        <option value="">Sub Topic: All</option>
+                        {filterSubjectCode && TOPIC_CODES[filterSubjectCode] && Object.entries(TOPIC_CODES[filterSubjectCode]).map(([code, name]) => (
+                            <option key={code} value={code}>Topic: {code} — {name}</option>
                         ))}
                     </select>
 
@@ -814,8 +825,8 @@ const QuestionBank = () => {
                     <p className="text-sm mt-1">Generate tests to automatically populate the bank, or add manually.</p>
                 </div>
             ) : (
-                <div className="space-y-3">
-                    {displayed.map(q => <QuestionRow key={q.id} q={q} onUpdated={fetchQuestions} />)}
+                <div className="space-y-2.5">
+                    {displayed.map((q, i) => <QuestionRow key={q.id} q={q} index={((safeCurrentPage - 1) * pageSize) + i} onUpdated={fetchQuestions} />)}
                 </div>
             )}
 

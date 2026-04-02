@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { History, Search, PlayCircle, X, Check, ChevronDown, CheckCircle2, Circle } from 'lucide-react';
+import { History, Search, PlayCircle, X, Check, ChevronDown, CheckCircle2, Circle, Tag, Calendar, GraduationCap, Layers } from 'lucide-react';
 import { ALL_PYQ_QUESTIONS } from '@/services/pyqService';
 import { SUBJECT_CODES, TOPIC_CODES } from '@/constants/appConstants';
 import { SubjectSelector } from '@/components/dashboard/SubjectSelector';
@@ -43,24 +43,26 @@ const Dropdown = ({ label, value, options, onChange, icon: Icon, align = 'bottom
 
     return (
         <div className="relative w-full" ref={ref}>
+            <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none z-10">
+                {Icon && <Icon size={16} className={`${isActive ? 'text-white' : 'text-slate-400'} transition-colors`} />}
+            </div>
             <button
                 onClick={() => setOpen(o => !o)}
-                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full min-w-[160px] ${isActive
-                    ? 'bg-[#2278B0] text-white border-[#2278B0]'
-                    : 'bg-white text-slate-700 border-slate-200 hover:border-[#2278B0]/40 hover:bg-slate-50'
+                className={`flex items-center justify-between gap-2 pl-10 pr-4 py-3 md:py-3.5 rounded-xl font-bold text-sm transition-all whitespace-nowrap w-full min-w-[160px] ring-1 ${isActive
+                    ? 'bg-[#2278B0] text-white ring-[#2278B0] shadow-md shadow-[#2278B0]/20'
+                    : 'bg-white text-slate-700 ring-slate-200 hover:ring-[#2278B0]/40 hover:bg-slate-50'
                     }`}
             >
-                {Icon && <Icon size={14} className="opacity-70 flex-shrink-0" />}
                 <span className="flex-1 text-left truncate">{value || label}</span>
                 {isActive && (
                     <span
                         onClick={(e) => { e.stopPropagation(); onChange('All'); setOpen(false); }}
-                        className="p-0.5 rounded-full bg-white/20 hover:bg-white/40 transition-colors flex-shrink-0"
+                        className="p-1 rounded-full bg-white/20 hover:bg-white/40 transition-colors flex-shrink-0 mr-1"
                     >
                         <X size={10} />
                     </span>
                 )}
-                <ChevronDown size={14} className={`flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+                <ChevronDown size={14} className={`flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''} ${isActive ? 'text-white/70' : 'text-slate-400'}`} />
             </button>
 
             {open && (
@@ -109,15 +111,18 @@ const MultiDropdown = ({ label, options, selected, onToggle }) => {
 
     return (
         <div className="relative w-full" ref={ref}>
+            <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none z-10">
+                <Tag size={16} className={`${isActive ? 'text-white' : 'text-slate-400'} transition-colors`} />
+            </div>
             <button
                 onClick={() => setOpen(o => !o)}
-                className={`flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all whitespace-nowrap w-full min-w-[160px] ${isActive
-                    ? 'bg-[#2278B0] text-white border-[#2278B0]'
-                    : 'bg-white text-slate-700 border-slate-200 hover:border-[#2278B0]/40 hover:bg-slate-50'
+                className={`flex items-center justify-between gap-2 pl-10 pr-4 py-3 md:py-3.5 rounded-xl font-bold text-sm transition-all whitespace-nowrap w-full min-w-[160px] ring-1 ${isActive
+                    ? 'bg-[#2278B0] text-white ring-[#2278B0] shadow-md shadow-[#2278B0]/20'
+                    : 'bg-white text-slate-700 ring-slate-200 hover:ring-[#2278B0]/40 hover:bg-slate-50'
                     }`}
             >
                 <span className="flex-1 text-left truncate">{label}</span>
-                <ChevronDown size={14} className={`flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+                <ChevronDown size={14} className={`flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''} ${isActive ? 'text-white/70' : 'text-slate-400'}`} />
             </button>
 
             {open && (
@@ -324,11 +329,9 @@ const PYQView = ({ startCustomTest }) => {
 
                 {/* Dropdowns row */}
                 <div className="flex flex-col gap-4">
-
-                    {/* 40 / 60 Filter Row */}
-                    <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
-                        {/* Subject — 40% (2/5) width */}
-                        <div className="flex flex-col gap-1 md:col-span-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                        {/* Subject */}
+                        <div className="flex flex-col gap-1">
                             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Select Subject</span>
                             <SubjectSelector
                                 className=""
@@ -337,8 +340,8 @@ const PYQView = ({ startCustomTest }) => {
                             />
                         </div>
 
-                        {/* Subtopic — 60% (3/5) width */}
-                        <div className="flex flex-col gap-1 md:col-span-3">
+                        {/* Subtopic */}
+                        <div className="flex flex-col gap-1">
                             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Select Sub-Topics</span>
                             <MultiDropdown
                                 label={
@@ -351,10 +354,7 @@ const PYQView = ({ startCustomTest }) => {
                                 onToggle={toggleSubtopic}
                             />
                         </div>
-                    </div>
 
-                    {/* Secondary Filters */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 w-full items-end">
                         {/* Duration */}
                         <div className="flex flex-col gap-1">
                             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1">Duration</span>
@@ -363,6 +363,7 @@ const PYQView = ({ startCustomTest }) => {
                                 value={selectedDuration}
                                 options={DURATION_OPTIONS}
                                 onChange={setSelectedDuration}
+                                icon={Calendar}
                             />
                         </div>
 
@@ -374,6 +375,7 @@ const PYQView = ({ startCustomTest }) => {
                                 value={selectedSource}
                                 options={SOURCE_OPTIONS}
                                 onChange={setSelectedSource}
+                                icon={GraduationCap}
                             />
                         </div>
                     </div>
@@ -452,6 +454,7 @@ const PYQView = ({ startCustomTest }) => {
                                     setSelectedQuestionCount(opt ? opt.value : 'All');
                                 }
                             }}
+                            icon={Layers}
                         />
                     </div>
                     <button

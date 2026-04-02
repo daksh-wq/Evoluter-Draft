@@ -76,10 +76,34 @@ async function generateJSON(prompt, model = 'gemini-2.0-flash', maxRetries = 3) 
             if (isLast || !isTransientError(err)) throw err;
 
             const delay = Math.pow(2, attempt) * 1000 + Math.random() * 500;
-            console.warn(`Gemini attempt ${attempt + 1} failed (${err.message}), retrying in ${Math.round(delay)}ms...`);
+            console.warn(`Gemini JSON attempt ${attempt + 1} failed (${err.message}), retrying in ${Math.round(delay)}ms...`);
             await new Promise(r => setTimeout(r, delay));
         }
     }
 }
 
-module.exports = { getGenAI, getModel, generateJSON };
+/**
+ * Generate raw text content with exponential-backoff retry.
+ * @param {string} prompt
+ * @param {string} model
+ * @param {number} maxRetries
+ * @returns {Promise<string>} Raw response text
+ */
+async function generateText(prompt, model = 'gemini-2.0-flash', maxRetries = 3) {
+    const m = getModel(model);
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+        try {
+            const result = await m.generateContent(prompt);
+            return result.response.text();
+        } catch (err) {
+            const isLast = attempt === maxRetries - 1;
+            if (isLast || !isTransientError(err)) throw err;
+
+            const delay = Math.pow(2, attempt) * 1000 + Math.random() * 500;
+            console.warn(`Gemini Text attempt ${attempt + 1} failed (${err.message}), retrying in ${Math.round(delay)}ms...`);
+            await new Promise(r => setTimeout(r, delay));
+        }
+    }
+}
+
+module.exports = { getGenAI, getModel, generateJSON, generateText };

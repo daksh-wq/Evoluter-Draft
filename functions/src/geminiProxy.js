@@ -19,7 +19,7 @@
 const functions = require('firebase-functions');
 const { defineSecret } = require('firebase-functions/params');
 const { checkAndIncrementRateLimit } = require('./rateLimit');
-const { generateJSON } = require('./utils/geminiClient');
+const { generateJSON, generateText } = require('./utils/geminiClient');
 const {
     buildTypeDistributionInstruction,
     THREE_LAYER_SOLUTION_INSTRUCTION,
@@ -420,6 +420,32 @@ JSON Schema:
                 score: '6.0', keywords: ['Basics'], missing: ['Depth'],
                 feedback: 'Evaluation error. Please try again.',
             };
+        }
+    });
+
+// ─── 7. Chat Bot Assistant (generic) ──────────────────────────────────────────
+
+exports.geminiChat = functions
+    .runWith({ timeoutSeconds: 60, memory: '512MB', secrets: ['GEMINI_API_KEY'] })
+    .https.onCall(async (data, context) => {
+        if (!context.auth) {
+            throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
+        }
+
+        const { prompt, model = 'gemini-2.5-flash' } = data;
+        if (!prompt || typeof prompt !== 'string') {
+            throw new functions.https.HttpsError('invalid-argument', 'prompt is required');
+        }
+
+        const uid = context.auth.uid;
+        await checkAndIncrementRateLimit(uid, 'ai_evaluation'); // Share eval quota or use generic
+
+        try {
+            const result = await generateText(prompt, model);
+            return { text: result || "" };
+        } catch (error) {
+            console.error('Chat error:', error.message);
+            throw new functions.https.HttpsError('internal', 'Chat service encountered an error.');
         }
     });
 

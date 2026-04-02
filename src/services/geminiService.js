@@ -234,21 +234,20 @@ export function isGeminiConfigured() {
     return true;
 }
 
-// ─── 8. callGemini ───────────────────────────────────────────────────────────
 /**
- * Legacy direct Gemini call used by some views (Mains chat, etc.).
- * Now routes through geminiEvaluateAnswer for safety.
- * Components that use this directly should be migrated to specific functions.
- * @deprecated Use specific service functions instead.
+ * Legacy direct Gemini call now routed through geminiChat for general assistant logic.
+ * @param {string} prompt
+ * @param {boolean} isJson - now ignored as geminiChat is text-first (use generateQuestions for JSON)
+ * @param {string} model - pass specific model name (e.g. gemini-1.5-pro)
+ * @returns {Promise<string>}
  */
-export async function callGemini(prompt, isJson = false) {
-    logger.warn('callGemini() is deprecated — route through a specific service function.');
+export async function callGemini(prompt, isJson = false, model = 'gemini-2.5-flash') {
     try {
-        const fn = httpsCallable(functions, 'geminiEvaluateAnswer', MED_TIMEOUT);
-        const result = await fn({ answerText: prompt });
-        return result.data?.feedback || null;
+        const fn = httpsCallable(functions, 'geminiChat', SHORT_TIMEOUT);
+        const result = await fn({ prompt, model });
+        return result.data?.text || null;
     } catch (error) {
-        logger.error('callGemini CF error:', error);
+        logger.error('callGemini (Chat) CF error:', error);
         return null;
     }
 }
