@@ -1,62 +1,124 @@
 /**
- * Shared Prompt Helpers — Centralized AI prompt building utilities
- * Eliminates duplication between testGeneration.js and pdfProcessing.js
+ * Detect if topic falls into Science/Tech/Environment category.
+ * These subjects get boosted Application-Based and reduced Direct Factual.
  */
+function isSciEnvTopic(topic) {
+    if (!topic) return false;
+    const lower = topic.toLowerCase();
+    const keywords = [
+        'science', 'technology', 'tech', 'environment', 'ecology',
+        'biodiversity', 'climate', 'pollution', 'biotechnology', 'space',
+        'nuclear', 'cyber', 'ai', 'artificial intelligence', 'nfc',
+        'blockchain', 'iot', 'renewable', 'solar', 'wind energy',
+        'genome', 'crispr', 'satellite', 'isro', 'nasa', 'conservation',
+        'wildlife', 'forest', 'marine', 'ozone', 'greenhouse',
+    ];
+    return keywords.some(kw => lower.includes(kw));
+}
 
 /**
  * Build question-type distribution instruction for a given batch size.
- * Mirrors UPSC/competitive exam paper patterns.
+ * Uses UPSC Prelims 2023+ "Modern Surge" weightage by default.
  *
- * Quality rules enforced:
- *  - Statement-based: answer must be distributed evenly (not always "All correct")
- *  - A&R: answer must be distributed across all 4 options (not always Option A)
- *  - One-liner questions explicitly included
- *  - Complex 3-statement A&R sub-format included
+ * Default weights (Modern Surge 2023+):
+ *   Multi-Statement:  35%  (backbone — down from 49% avg to make room for Pair surge)
+ *   Pair-Based:       25%  (surged from ~8% to 47% in 2023; we use 25% as a balanced modern default)
+ *   Direct Factual:   12%  (declining trend)
+ *   How Many:         12%  (rising trend, companion to Pair-Based)
+ *   Conceptual/Applied: 8% (rising for Science/Env)
+ *   Assertion-Reason:  5%  (resurgence in 2024-25)
+ *   Definitional:      3%  (stable, niche)
+ *
+ * Science/Tech/Environment override:
+ *   Application-Based boosted to 20%, Pair-Based trimmed to 18%
+ *
+ * @param {number} batchSize - Number of questions to generate
+ * @param {string} [topic=''] - Topic string for subject-sensitive adjustment
  */
-function buildTypeDistributionInstruction(batchSize) {
-    // Type counts based on user's UPSC anatomy
-    const direct          = Math.max(1, Math.round(batchSize * 0.10));
-    const multiStatement  = Math.max(1, Math.round(batchSize * 0.20));
-    const pairBased       = Math.max(1, Math.round(batchSize * 0.15));
-    const ar              = Math.max(1, Math.round(batchSize * 0.15));
-    const definitional    = Math.max(1, Math.round(batchSize * 0.10));
-    const howMany         = Math.max(1, Math.round(batchSize * 0.15));
-    const application     = batchSize - direct - multiStatement - pairBased - ar - definitional - howMany;
+function buildTypeDistributionInstruction(batchSize, topic = '') {
+    const isSciEnv = isSciEnvTopic(topic);
+
+    // ── Compute counts ──────────────────────────────────────────────
+    let multiStatement, pairBased, direct, howMany, application, ar, definitional;
+
+    if (isSciEnv) {
+        // Science/Tech/Environment — boost Application-Based
+        multiStatement = Math.max(1, Math.round(batchSize * 0.30));
+        pairBased      = Math.max(1, Math.round(batchSize * 0.18));
+        direct         = Math.max(1, Math.round(batchSize * 0.08));
+        howMany        = Math.max(1, Math.round(batchSize * 0.12));
+        application    = Math.max(1, Math.round(batchSize * 0.20));
+        ar             = Math.max(1, Math.round(batchSize * 0.07));
+        definitional   = batchSize - multiStatement - pairBased - direct - howMany - application - ar;
+    } else {
+        // Standard Modern Surge (2023+)
+        multiStatement = Math.max(1, Math.round(batchSize * 0.35));
+        pairBased      = Math.max(1, Math.round(batchSize * 0.25));
+        direct         = Math.max(1, Math.round(batchSize * 0.12));
+        howMany        = Math.max(1, Math.round(batchSize * 0.12));
+        application    = Math.max(1, Math.round(batchSize * 0.08));
+        ar             = Math.max(1, Math.round(batchSize * 0.05));
+        definitional   = batchSize - multiStatement - pairBased - direct - howMany - application - ar;
+    }
+
+    // Ensure definitional is at least 1 for batches >= 10
+    if (definitional < 1 && batchSize >= 10) {
+        definitional = 1;
+        multiStatement = Math.max(1, multiStatement - 1);
+    }
+
+    // Sub-type splits
+    const stmt2 = Math.round(multiStatement * 0.43); // ~21/49
+    const stmt3 = multiStatement - stmt2;             // ~28/49
+    const factCurrent = Math.round(direct * 0.36);    // ~8/22
+    const factStatic  = direct - factCurrent;          // ~14/22
+    const pairStandard = Math.max(0, Math.round(pairBased * 0.47)); // ~7/15
+    const pairCounting = pairBased - pairStandard;                   // ~8/15
+
+    const modeLabel = isSciEnv ? '⚗️ SCIENCE/TECH/ENVIRONMENT MODE (boosted Application-Based)' : '📊 MODERN SURGE MODE (2023+ UPSC Pattern)';
 
     return `
-QUESTION TYPE ANATOMY (STRICT ENFORCEMENT for this batch of ${batchSize} questions):
+QUESTION TYPE ANATOMY — ${modeLabel}
+STRICT ENFORCEMENT for this batch of ${batchSize} questions.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. DIRECT FACTUAL / SINGLE STATEMENT: ${direct} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Structure: Simple question, 4 clear options. 
+   Sub-types:
+   • Current Events / Organisation Names: ${factCurrent} questions
+   • Static Definitions / Mapping / Locations: ${factStatic} questions
    Strategy: Recall.
    Example: "Which city is the largest producer of X?"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 2. MULTI-STATEMENT QUESTIONS (STANDARD): ${multiStatement} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Structure: 2 or 3 statements.
+   Sub-types:
+   • 2-Statement Format: ${stmt2} questions — use exactly 2 statements
+   • 3-Statement Format: ${stmt3} questions — use exactly 3 statements
    Strategy: Elimination.
-   Example options: "1 only", "1 and 2 only", "All of the above".
+   Options: "1 only", "1 and 2 only", "All of the above", etc.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. THE "PAIR-BASED" FORMAT (NEW TREND): ${pairBased} total
+3. PAIR-BASED FORMAT (NEW TREND — ELIMINATION KILLER): ${pairBased} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ⚠️ STRICT RULE: DO NOT use manual matching codes like "1-A, 2-B". 
-   Structure: List 3 or 4 pairs (e.g., "Park : State").
-   Strategy: Exhaustive Knowledge (Elimination kills this).
-   Options MUST BE EXACTLY:
-     Option 0: "Only one pair"
-     Option 1: "Only two pairs"
-     Option 2: "Only three pairs"
-     Option 3: "All four pairs" (or "None of the pairs")
+   Sub-types:
+   • Standard Match the Following: ${pairStandard} questions
+     (List-I vs List-II with coded options like "1-A, 2-B, 3-C, 4-D")
+   • Pair Counting ("How many pairs"): ${pairCounting} questions
+     ⚠️ STRICT: DO NOT use "1-A, 2-B" codes for these.
+     List 3 or 4 pairs. Options MUST BE EXACTLY:
+       Option 0: "Only one pair is correctly matched"
+       Option 1: "Only two pairs are correctly matched"
+       Option 2: "Only three pairs are correctly matched"
+       Option 3: "All four pairs are correctly matched"
+   Strategy: Exhaustive Knowledge.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4. STATEMENT-REASON (ASSERTION-REASONING): ${ar} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    ⚠️ STRICT RULE: Use labels "Statement-I" and "Statement-II". DO NOT use "Assertion/Reason".
-   Structure: 
+   Structure:
      Statement-I: [Principal claim]
      Statement-II: [Logical explanation]
    Strategy: Conceptual Linkage.
@@ -69,14 +131,14 @@ QUESTION TYPE ANATOMY (STRICT ENFORCEMENT for this batch of ${batchSize} questio
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 5. DEFINITIONAL / CONCEPTUAL: ${definitional} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Structure: Focus on the "most appropriate description" or "best defines" a specific term.
+   Structure: "Which of the following BEST defines..." or "The most appropriate description of..."
    Strategy: Logic & Standard Texts.
    Example: "Which one of the following best defines the term 'State'?"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 6. THE "HOW MANY" PATTERN: ${howMany} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Structure: List items and ask "How many of the above are correct/true/nocturnal/etc.?"
+   Structure: List 4 items and ask "How many of the above are correct/true/X?"
    Strategy: Exhaustive Knowledge.
    Options MUST BE EXACTLY:
      Option 0: "Only one"
@@ -87,9 +149,10 @@ QUESTION TYPE ANATOMY (STRICT ENFORCEMENT for this batch of ${batchSize} questio
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 7. APPLICATION-BASED (SCIENCE & TECH / ENV): ${application} total
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Structure: Focus on "can", "may", or "use cases".
+   Structure: Focus on "can", "may", or "use cases". Tests possibilities not just facts.
    Strategy: Possibility Analysis.
    Example: "With reference to NFC technology, which statements are correct?"
+   Note: "All of the above" is often valid since technology capabilities are broad.
 
 CRITICAL JSON FIELD: Each question MUST include a "strategy" string field (from: Recall, Elimination, Exhaustive Knowledge, Conceptual Linkage, Logic & Standard Texts, Possibility Analysis).
 `;

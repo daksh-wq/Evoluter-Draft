@@ -158,7 +158,7 @@ Return ONLY a JSON array of topic strings (max 5):
 
             if (targetQCount <= 0) return [];
 
-            const typeInstruction = buildTypeDistributionInstruction(targetQCount);
+            const typeInstruction = buildTypeDistributionInstruction(targetQCount, identifiedTopics.join(', '));
             const prompt = `You are an expert question generator for competitive exam preparation.
 Based on the specific document chunk below, generate EXACTLY ${targetQCount} high-quality MCQs.
 Go BEYOND surface-level recall — test conceptual understanding using the document as context.
@@ -232,7 +232,7 @@ ${existingSummary}
 DOCUMENT CONTENT:
 ${textChunks[0].substring(0, 8000)}
 
-${buildTypeDistributionInstruction(currentBatchSize)}
+${buildTypeDistributionInstruction(currentBatchSize, identifiedTopics.join(', '))}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
 
 Return ONLY a JSON Array (same format as before).`;

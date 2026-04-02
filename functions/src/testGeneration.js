@@ -182,7 +182,7 @@ exports.generateTest = functions
         if (!questions) {
             await checkAndIncrementRateLimit(userId, 'test_generation');
 
-            const typeInstruction = buildTypeDistributionInstruction(questionCount);
+            const typeInstruction = buildTypeDistributionInstruction(questionCount, topic);
 
             const prompt = `You are a strict Question Setter for UPSC/Competitive Exams. Generate EXACTLY ${questionCount} ${difficulty} MCQs on the topic: '${topic}'.
 
@@ -246,7 +246,7 @@ JSON FORMAT:
 DO NOT repeat these questions (already generated):
 ${existingSummary}
 
-${buildTypeDistributionInstruction(deficit)}
+${buildTypeDistributionInstruction(deficit, topic)}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
 
 Return ONLY a JSON Array (same format as before).`;
@@ -410,6 +410,7 @@ Return ONLY a JSON Array (same format as before).`;
             options: q.options,
             tags: q.tags,
             questionType: q.questionType,
+            strategy: q.strategy,
             difficulty: q.difficulty,
         }));
 
@@ -579,6 +580,7 @@ exports.submitTest = functions
                 },
                 explanation: question.solution?.correctAnswerReason || question.explanation || '',
                 questionType: question.questionType,
+                strategy: question.strategy,
                 difficulty: question.difficulty,
                 tags: question.tags,
             });

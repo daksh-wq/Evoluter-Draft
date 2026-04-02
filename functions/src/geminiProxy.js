@@ -113,9 +113,9 @@ exports.geminiGenerateQuestions = functions
                 : BATCH_SIZE;
             if (batchSize <= 0) return [];
 
-            const typeInstruction = buildTypeDistributionInstruction(batchSize);
-            const diffInstruction = buildDifficultyInstruction(batchSize, difficulty);
             const safeTopic = sanitizeForPrompt(topic);
+            const typeInstruction = buildTypeDistributionInstruction(batchSize, safeTopic);
+            const diffInstruction = buildDifficultyInstruction(batchSize, difficulty);
 
             const prompt = `You are a strict Question Setter for ${targetExam}. Generate EXACTLY ${batchSize} MCQs on the topic: '${safeTopic}'.
 
@@ -189,7 +189,7 @@ DO NOT repeat these already-generated questions:
 ${existingSummary}
 
 ${buildDifficultyInstruction(fillSize, difficulty)}
-${buildTypeDistributionInstruction(fillSize)}
+${buildTypeDistributionInstruction(fillSize, safeTopic)}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
 ${TAGGING_INSTRUCTION}
 
@@ -278,7 +278,7 @@ Return ONLY a JSON array of topic strings (max 5):
 
             const chunkIndex = index % textChunks.length;
             const chunk = textChunks[chunkIndex];
-            const typeInstruction = buildTypeDistributionInstruction(targetQCount);
+            const typeInstruction = buildTypeDistributionInstruction(targetQCount, identifiedTopics.join(', '));
             const safeTitle = sanitizeForPrompt(documentTitle);
 
             const prompt = `You are an expert question generator for competitive exam preparation.
@@ -341,7 +341,7 @@ DO NOT repeat:\n${existingSummary}
 
 DOCUMENT CONTENT:\n${safe0}
 
-${buildTypeDistributionInstruction(Math.min(deficit, 15))}
+${buildTypeDistributionInstruction(Math.min(deficit, 15), identifiedTopics.join(', '))}
 ${THREE_LAYER_SOLUTION_INSTRUCTION}
 ${TAGGING_INSTRUCTION}
 Return ONLY a JSON Array.`;
