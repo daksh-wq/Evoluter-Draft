@@ -105,7 +105,7 @@ const KnowledgeGraph = ({ mastery = {} }) => {
     return (
         <div className="w-full space-y-4">
             {/* Stats Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {statCards.map((s) => (
                     <div
                         key={s.label}
@@ -125,65 +125,66 @@ const KnowledgeGraph = ({ mastery = {} }) => {
                         </div>
                         <div className="text-2xl font-black leading-none" style={{ color: s.valueColor }}>{s.value}</div>
                         {/* Progress bar */}
-                        <div className="h-1 w-full rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.07)' }}>
-                            <motion.div
-                                initial={{ width: 0 }}
-                                animate={{ width: `${s.pct}%` }}
-                                transition={{ duration: 1, ease: 'easeOut' }}
-                                className="h-full rounded-full"
-                                style={{ backgroundColor: s.bar }}
-                            />
-                        </div>
-                        <span className="text-[9px] font-bold text-slate-500">{s.pct}% of total</span>
-                    </div>
+            {/* <div className="h-1 w-full rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.07)' }}>
+                <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: `${s.pct}%` }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
+                    className="h-full rounded-full"
+                    style={{ backgroundColor: s.bar }}
+                />
+            </div>
+            <span className="text-[9px] font-bold text-slate-500">{s.pct}% of total</span>
+        </div>
+    ))
+}
+            </div > */}
+
+{/* Honeycomb Grid */ }
+<div
+    className="relative w-full overflow-hidden rounded-3xl flex items-center justify-center"
+    style={{
+        background: 'linear-gradient(135deg, #112e52 0%, #0e213b 55%, #12315c 100%)',
+        boxShadow: 'inset 0 0 80px rgba(34,120,176,0.15)',
+        border: '1px solid rgba(34,120,176,0.30)',
+    }}
+>
+    {/* Brand-blue dot grid */}
+    <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+            opacity: 0.12,
+            backgroundImage: 'radial-gradient(circle, #2278B0 1px, transparent 1px)',
+            backgroundSize: '24px 24px',
+        }}
+    />
+    {/* Centre glow orb */}
+    <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(34,120,176,0.14) 0%, transparent 70%)' }}
+    />
+
+    {/* Centered responsive container, no scrolling needed since we scale down */}
+    <div className="flex flex-col items-center justify-center relative z-10 w-full px-2 py-10 sm:py-14">
+        {chunks.map((row, rIdx) => (
+            <div
+                key={`row-${rIdx}`}
+                className={`flex justify-center ${rIdx > 0 ? '-mt-[18px] sm:-mt-[24px]' : 'mt-0'}`}
+                style={{ zIndex: chunks.length - rIdx }}
+            >
+                {row.map((item, iIdx) => (
+                    <Hexagon
+                        key={item.subject}
+                        subject={item.subject}
+                        score={item.score}
+                        delay={(rIdx * 3 + iIdx) * 0.1}
+                    />
                 ))}
             </div>
-
-            {/* Honeycomb Grid */}
-            <div
-                className="relative w-full overflow-hidden rounded-3xl flex items-center justify-center"
-                style={{
-                    background: 'linear-gradient(135deg, #112e52 0%, #0e213b 55%, #12315c 100%)',
-                    boxShadow: 'inset 0 0 80px rgba(34,120,176,0.15)',
-                    border: '1px solid rgba(34,120,176,0.30)',
-                }}
-            >
-                {/* Brand-blue dot grid */}
-                <div
-                    className="absolute inset-0 pointer-events-none"
-                    style={{
-                        opacity: 0.12,
-                        backgroundImage: 'radial-gradient(circle, #2278B0 1px, transparent 1px)',
-                        backgroundSize: '24px 24px',
-                    }}
-                />
-                {/* Centre glow orb */}
-                <div
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full pointer-events-none"
-                    style={{ background: 'radial-gradient(circle, rgba(34,120,176,0.14) 0%, transparent 70%)' }}
-                />
-
-                {/* Centered responsive container, no scrolling needed since we scale down */}
-                <div className="flex flex-col items-center justify-center relative z-10 w-full px-2 py-10 sm:py-14">
-                    {chunks.map((row, rIdx) => (
-                        <div
-                            key={`row-${rIdx}`}
-                            className={`flex justify-center ${rIdx > 0 ? '-mt-[18px] sm:-mt-[24px]' : 'mt-0'}`}
-                            style={{ zIndex: chunks.length - rIdx }}
-                        >
-                            {row.map((item, iIdx) => (
-                                <Hexagon
-                                    key={item.subject}
-                                    subject={item.subject}
-                                    score={item.score}
-                                    delay={(rIdx * 3 + iIdx) * 0.1}
-                                />
-                            ))}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
+        ))}
+    </div>
+</div>
+        </div >
     );
 };
 
@@ -194,18 +195,18 @@ const Hexagon = ({ subject, score, delay }) => {
     if (score >= 80) {
         // Green — Mastered
         borderColor = 'rgba(16,185,129,0.50)';
-        glowColor   = 'rgba(16,185,129,0.85)';
-        baseDark    = '#052e16';
+        glowColor = 'rgba(16,185,129,0.85)';
+        baseDark = '#052e16';
     } else if (score >= 50) {
         // Yellow / Amber — Learning
         borderColor = 'rgba(245,158,11,0.50)';
-        glowColor   = 'rgba(245,158,11,0.85)';
-        baseDark    = '#451a03';
+        glowColor = 'rgba(245,158,11,0.85)';
+        baseDark = '#451a03';
     } else {
         // Red — Weak
         borderColor = 'rgba(239,68,68,0.50)';
-        glowColor   = 'rgba(239,68,68,0.85)';
-        baseDark    = '#450a0a';
+        glowColor = 'rgba(239,68,68,0.85)';
+        baseDark = '#450a0a';
     }
 
     const hexClip = 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)';
