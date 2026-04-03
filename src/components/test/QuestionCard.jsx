@@ -22,8 +22,8 @@ export const QuestionCard = ({
     scrollRef,
 }) => {
     return (
-        <div className="w-full max-w-6xl mx-auto h-full px-1 sm:px-2">
-            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm border border-slate-100 flex flex-col min-h-0 sm:min-h-[calc(100vh-110px)] h-full overflow-hidden">
+        <div className="w-full max-w-6xl mx-auto flex-1 flex flex-col min-h-0 px-1 sm:px-2 w-full h-full">
+            <div className="flex-1 bg-white rounded-2xl sm:rounded-3xl shadow-sm border border-slate-100 flex flex-col min-h-0 overflow-hidden">
 
                 {/* ── Top Bar: Question Number + Flag ── */}
                 <div className="flex justify-between items-start px-4 sm:px-6 md:px-8 pt-5 sm:pt-6 pb-2">

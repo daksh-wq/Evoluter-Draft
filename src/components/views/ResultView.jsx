@@ -4,7 +4,7 @@ import {
     Brain, Target, ListChecks, ArrowRight, RefreshCw, ChevronDown, Download, BarChart2, BookOpen, Activity,
     Lightbulb
 } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip as RechartsTooltip, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip as RechartsTooltip, Cell, Legend } from 'recharts';
 import { analyzeTestPerformance } from '../../services/geminiService';
 import { formatTime } from '../../utils/helpers';
 import logger from '../../utils/logger';
@@ -269,31 +269,37 @@ const ResultView = ({ test, answers, results, exitTest }) => {
                                         };
 
                                         return (
-                                            <ResponsiveContainer width="100%" height="100%">
-                                                <BarChart data={barData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }} barGap={2} barCategoryGap="30%">
-                                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-                                                    <XAxis 
-                                                        dataKey="name" 
-                                                        axisLine={false} 
-                                                        tickLine={false} 
-                                                        tick={{ fill: '#475569', fontSize: 11, fontWeight: 'bold' }} 
-                                                        dy={10}
-                                                    />
-                                                    <YAxis 
-                                                        type="number" 
-                                                        axisLine={false} 
-                                                        tickLine={false} 
-                                                        tick={{ fill: '#64748b', fontSize: 12 }} 
-                                                        allowDecimals={false}
-                                                    />
-                                                    <RechartsTooltip cursor={{ fill: 'transparent' }} content={<CustomTooltip />} />
-                                                    <Bar dataKey="correct" fill="#22c55e" radius={[4, 4, 0, 0]} maxBarSize={12} />
-                                                    <Bar dataKey="incorrect" fill="#ef4444" radius={[4, 4, 0, 0]} maxBarSize={12} />
-                                                    {barData.some(d => d.skipped > 0) && (
-                                                        <Bar dataKey="skipped" fill="#cbd5e1" radius={[4, 4, 0, 0]} maxBarSize={12} />
-                                                    )}
-                                                </BarChart>
-                                            </ResponsiveContainer>
+                                            <div className="w-full overflow-y-auto no-scrollbar pb-2 pt-2" style={{ maxHeight: '420px' }}>
+                                                <div style={{ width: '100%', height: Math.max(260, barData.length * 55) }}>
+                                                    <ResponsiveContainer width="100%" height="100%">
+                                                        <BarChart data={barData} layout="vertical" margin={{ top: 10, right: 20, left: -5, bottom: 0 }} barGap={2} barCategoryGap="25%">
+                                                            <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#f1f5f9" />
+                                                            <XAxis 
+                                                                type="number" 
+                                                                axisLine={false} 
+                                                                tickLine={false} 
+                                                                tick={{ fill: '#64748b', fontSize: 12 }} 
+                                                                allowDecimals={false}
+                                                            />
+                                                            <YAxis 
+                                                                dataKey="name" 
+                                                                type="category"
+                                                                axisLine={false} 
+                                                                tickLine={false} 
+                                                                tick={{ fill: '#475569', fontSize: 11, fontWeight: 'bold' }} 
+                                                                width={90}
+                                                            />
+                                                            <RechartsTooltip cursor={{ fill: 'transparent' }} content={<CustomTooltip />} />
+                                                            <Legend verticalAlign="top" height={32} iconType="circle" wrapperStyle={{ fontSize: '12px', fontWeight: 'bold' }} />
+                                                            <Bar name="Correct" dataKey="correct" fill="#22c55e" radius={[0, 4, 4, 0]} maxBarSize={14} />
+                                                            <Bar name="Incorrect" dataKey="incorrect" fill="#e11d48" radius={[0, 4, 4, 0]} maxBarSize={14} />
+                                                            {barData.some(d => d.skipped > 0) && (
+                                                                <Bar name="Skipped" dataKey="skipped" fill="#64748b" radius={[0, 4, 4, 0]} maxBarSize={14} />
+                                                            )}
+                                                        </BarChart>
+                                                    </ResponsiveContainer>
+                                                </div>
+                                            </div>
                                         );
                                     })()}
                                 </div>

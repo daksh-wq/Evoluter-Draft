@@ -107,6 +107,7 @@ const PerformanceReportView = ({ userStats }) => {
 
     const emdData = perfData?.emd || {};
     const resourceData = perfData?.resources || {};
+    const qTypeData = perfData?.questionTypes || {};
     const StatCard = ({ title, data, icon, color }) => {
         const total = data?.total || 0;
         const correct = data?.correct || 0;
@@ -133,6 +134,60 @@ const PerformanceReportView = ({ userStats }) => {
                     <div className="bg-green-50 p-2 rounded-lg border border-green-100">
                         <p className="text-xl font-black text-green-600">{accuracy}%</p>
                         <p className="text-[10px] font-bold text-green-600/60 uppercase tracking-widest mt-1">Accuracy</p>
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
+    const QuestionTypeRow = ({ title, data, icon, colorStr, bgStr }) => {
+        const total = data?.total || 0;
+        const attempt = data?.attempted || 0;
+        const correct = data?.correct || 0;
+        const accuracy = attempt > 0 ? Math.round((correct / attempt) * 100) : 0;
+        const attemptPct = total > 0 ? Math.round((attempt / total) * 100) : 0;
+
+        return (
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 rounded-xl border border-slate-100 hover:border-slate-200 hover:bg-slate-50 transition-colors">
+                <div className="flex items-center gap-4 min-w-[220px]">
+                    <div className={`p-3 rounded-xl ${bgStr} ${colorStr}`}>
+                        {icon}
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-slate-800 text-sm">{title}</h3>
+                        <p className="text-xs font-medium text-slate-500 mt-0.5">{total} total generated</p>
+                    </div>
+                </div>
+                
+                <div className="flex-1 w-full flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-0 sm:px-4">
+                    <div className="flex-1 w-full">
+                        <div className="flex justify-between text-xs font-bold mb-2">
+                            <span className="text-slate-500">Attempted</span>
+                            <span className="text-[#2278B0]">{attempt} / {total}</span>
+                        </div>
+                        <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
+                            <div className="h-full bg-[#2278B0] rounded-full transition-all duration-1000" style={{ width: `${attemptPct}%` }} />
+                        </div>
+                    </div>
+                    
+                    <div className="flex-1 w-full">
+                        <div className="flex justify-between text-xs font-bold mb-2">
+                            <span className="text-slate-500">Accuracy</span>
+                            <span className={accuracy >= 70 ? 'text-green-600' : accuracy >= 40 ? 'text-yellow-600' : 'text-red-500'}>{accuracy}%</span>
+                        </div>
+                        <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
+                            <div 
+                               className={`h-full rounded-full transition-all duration-1000 ${accuracy >= 70 ? 'bg-green-500' : accuracy >= 40 ? 'bg-yellow-500' : 'bg-red-500'}`} 
+                               style={{ width: `${accuracy}%` }} 
+                            />
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="hidden lg:flex items-center justify-center min-w-[80px]">
+                    <div className={`text-center px-4 py-2 rounded-lg border w-full ${accuracy >= 70 ? 'bg-green-50 border-green-100' : accuracy >= 40 ? 'bg-yellow-50 border-yellow-100' : 'bg-red-50 border-red-100'}`}>
+                        <p className={`text-xl font-black ${accuracy >= 70 ? 'text-green-600' : accuracy >= 40 ? 'text-yellow-600' : 'text-red-600'}`}>{accuracy}%</p>
+                        <p className="text-[9px] uppercase tracking-wider font-bold text-slate-400 mt-0.5">Score</p>
                     </div>
                 </div>
             </div>
@@ -321,6 +376,22 @@ const PerformanceReportView = ({ userStats }) => {
                         <StatCard title="NCERT (Fundamental)" data={resourceData['NCERT (Fundamental)']} icon={<BookOpen size={20} />} color="bg-blue-50 text-blue-600" />
                         <StatCard title="Standard Books" data={resourceData['Standard Books']} icon={<BookOpen size={20} />} color="bg-indigo-50 text-indigo-600" />
                         <StatCard title="Advanced Sources" data={resourceData['Advanced Sources']} icon={<Database size={20} />} color="bg-purple-50 text-purple-600" />
+                    </div>
+                </div>
+
+                <div>
+                    <div className="flex items-center justify-between mb-4">
+                        <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
+                            <Target className="text-[#2278B0]" size={22} />
+                            Question Type Performance
+                        </h2>
+                    </div>
+                    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-4 md:p-6 space-y-3 md:space-y-4">
+                        <QuestionTypeRow title="One-Liner" data={qTypeData['One-liner']} icon={<BookOpen size={20} />} bgStr="bg-cyan-50" colorStr="text-cyan-600" />
+                        <QuestionTypeRow title="Statement (How Many)" data={qTypeData['Statement (How many)']} icon={<Target size={20} />} bgStr="bg-teal-50" colorStr="text-teal-600" />
+                        <QuestionTypeRow title="Statement (Which Of)" data={qTypeData['Statement (Which of)']} icon={<Target size={20} />} bgStr="bg-emerald-50" colorStr="text-emerald-600" />
+                        <QuestionTypeRow title="Assertion-Reason" data={qTypeData['Assertion-Reason']} icon={<Brain size={20} />} bgStr="bg-violet-50" colorStr="text-violet-600" />
+                        <QuestionTypeRow title="Match the Pairs" data={qTypeData['Match the pairs']} icon={<Database size={20} />} bgStr="bg-fuchsia-50" colorStr="text-fuchsia-600" />
                     </div>
                 </div>
             </section>

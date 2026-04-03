@@ -225,7 +225,7 @@ const TestView = ({
             <div className="flex-1 flex overflow-hidden">
                 {/* Question Area — fully self-contained card */}
                 <div 
-                    className={`flex-1 overflow-y-auto w-full px-2 sm:px-4 md:px-6 ${isZenMode ? 'pt-16 sm:pt-18 lg:pt-20 pb-4' : 'py-2 sm:py-4 lg:py-6'}`}
+                    className={`flex-1 flex flex-col min-h-0 overflow-hidden w-full px-2 sm:px-4 md:px-6 ${isZenMode ? 'pt-16 sm:pt-18 lg:pt-20 pb-4' : 'py-2 sm:py-4 lg:py-6'}`}
                 >
                     <QuestionCard
                         question={safeQuestion}
